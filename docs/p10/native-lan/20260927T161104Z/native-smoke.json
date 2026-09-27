@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "passed": false,
+  "errorCode": "real_ws_guest_profile_created",
+  "checks": [
+    {
+      "name": "runtime_protocol_and_content_1",
+      "passed": true
+    },
+    {
+      "name": "isolated_offline_realm",
+      "passed": true
+    }
+  ],
+  "starts": 1,
+  "ownedPids": [
+    29916
+  ],
+  "protocolVersion": 6,
+  "contentHash": "p08-C655ECB89DF77CFD",
+  "privateRealmRetained": true,
+  "credentialsWrittenToReport": false,
+  "allOwnedHostsStopped": true,
+  "physicalLanAccepted": false,
+  "releaseAccepted": false,
+  "scope": "Actual self-contained Windows x64 host, loopback HTTP/WS guest, isolated private SQLite transaction and abrupt restart recovery. Not a Unity player, physical two-PC offline LAN or Internet test."
+}

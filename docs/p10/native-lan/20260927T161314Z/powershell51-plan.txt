@@ -1,0 +1,26 @@
+{
+    "executable":  "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\native-win-x64-20260927T161314Z\\RacingBois.Server.Host.exe",
+    "packageRoot":  "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\native-win-x64-20260927T161314Z",
+    "dataRoot":  "D:\\Project\\Unity\\racing-bois\\_local\\p10\\native-lan\\20260927T161314Z\\uncreated-plan-realm",
+    "publicRoot":  "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\native-win-x64-20260927T161314Z\\public",
+    "arguments":  [
+                      "--AllowLan",
+                      "false",
+                      "--Port",
+                      "7777",
+                      "--EnableTls",
+                      "false",
+                      "--TrustLocalProxy",
+                      "false",
+                      "--RealmKind",
+                      "offline",
+                      "--DataRoot",
+                      "D:\\Project\\Unity\\racing-bois\\_local\\p10\\native-lan\\20260927T161314Z\\uncreated-plan-realm",
+                      "--WebRoot",
+                      "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\native-win-x64-20260927T161314Z\\public"
+                  ],
+    "localEndpoint":  "ws://127.0.0.1:7777/multiplayer",
+    "bind":  "loopback",
+    "realmKind":  "offline",
+    "releaseAccepted":  false
+}

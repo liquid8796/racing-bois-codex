@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "passed": true,
+  "errorCode": null,
+  "checks": [
+    {
+      "name": "runtime_protocol_and_content_1",
+      "passed": true
+    },
+    {
+      "name": "isolated_offline_realm",
+      "passed": true
+    },
+    {
+      "name": "real_ws_persistent_offline_profile_created",
+      "passed": true
+    },
+    {
+      "name": "offline_profile_career_view",
+      "passed": true
+    },
+    {
+      "name": "durable_transaction_before_restart",
+      "passed": true
+    },
+    {
+      "name": "sqlite_file_exists_outside_package",
+      "passed": true
+    },
+    {
+      "name": "runtime_protocol_and_content_2",
+      "passed": true
+    },
+    {
+      "name": "realm_identity_after_crash_restart",
+      "passed": true
+    },
+    {
+      "name": "profile_wallet_inventory_ledger_after_restart",
+      "passed": true
+    },
+    {
+      "name": "transaction_replay_after_restart_is_idempotent",
+      "passed": true
+    },
+    {
+      "name": "private_database_not_public",
+      "passed": true
+    },
+    {
+      "name": "no_reported_persistence_failures",
+      "passed": true
+    }
+  ],
+  "starts": 2,
+  "ownedPids": [
+    33148,
+    33472
+  ],
+  "protocolVersion": 6,
+  "contentHash": "p08-C655ECB89DF77CFD",
+  "privateRealmRetained": true,
+  "credentialsWrittenToReport": false,
+  "allOwnedHostsStopped": true,
+  "physicalLanAccepted": false,
+  "releaseAccepted": false,
+  "scope": "Actual self-contained Windows x64 host, loopback HTTP/WS anonymous local profile, isolated private SQLite transaction and abrupt restart recovery. Not a Unity player, physical two-PC offline LAN or Internet test."
+}

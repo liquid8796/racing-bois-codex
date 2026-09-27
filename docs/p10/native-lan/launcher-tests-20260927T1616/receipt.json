@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T16:16:12.702855+00:00",
+  "passed": true,
+  "exitCode": 0,
+  "tests": 11,
+  "sourceStable": true,
+  "sources": {
+    "tools/p10/test_native_lan_launcher.py": "f97a514cd25b49bbe0dcbeef3a000f7cf3ff75d5a1fef19941d1da781eaf361c",
+    "tools/p10/native-lan/launch-native-lan.ps1": "83f98fe35578f60676495270cf1e1c66085177cc9986fe345b21a51186380b51"
+  },
+  "log": "docs/p10/native-lan/launcher-tests-20260927T1616/tests.txt",
+  "logSha256": "174535e9ba7e1cecaa872010153cec31bc90ec4b72559321ce0fef037282c179",
+  "scope": "Real PowerShell5.1/7 launcher validation and plan generation against explicit synthetic fixtures only; no server is launched by these tests.",
+  "releaseAccepted": false
+}
