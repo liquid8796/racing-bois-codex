@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion><EnableDefaultCompileItems>false</EnableDefaultCompileItems><Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings><TreatWarningsAsErrors>true</TreatWarningsAsErrors><AssemblyName>RacingBois.Client.Bootstrap</AssemblyName><AssemblyVersion>0.0.0.0</AssemblyVersion><ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot><UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="ApplicationPreflight.csproj" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/*.cs" Exclude="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs" />
+    <Compile Include="RaceBootstrap.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Adapters.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Presentation.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Simulation.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Protocol.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.NetworkMapping.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.InputSystem.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.*.dll" />
+  </ItemGroup>
+</Project>
