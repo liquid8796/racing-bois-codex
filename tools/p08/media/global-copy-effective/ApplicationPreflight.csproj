@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><AssemblyName>RacingBois.Client.Application</AssemblyName></PropertyGroup>
+ <ItemGroup>
+  <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/*.cs" Exclude="$(ProjectRoot)Assets/RacingBois/Client/Application/UiText.Career.Generated.cs;$(ProjectRoot)Assets/RacingBois/Client/Application/UiText.Multiplayer.Generated.cs" />
+  <Compile Include="$(CareerCopyCandidate)" />
+  <Compile Include="$(MultiplayerCopyCandidate)" />
+  <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Simulation.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Protocol.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.NetworkMapping.dll" />
+ </ItemGroup>
+</Project>

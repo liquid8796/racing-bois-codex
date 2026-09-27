@@ -44,19 +44,23 @@ The main, multiplayer, career and client staging directories under
 translations, generators, metadata and original reviewed handoffs. Their
 historical reports identify those exact revisions.
 
-The current Career output includes one explicit ENU amendment:
+The current Career output retains the explicit ENU amendment:
 `career.garage.pristine` is **BIKE UNDAMAGED**, covering condition 100 for both a
-new bike and a repaired bike. All other cells remain unchanged. Its active inputs
-are identified in `global-copy-pristine-amendment/current-overlay.json`. Use:
+new bike and a repaired bike. Rendered fit review additionally shortens three
+Career labels and one German Multiplayer invite heading. Current inputs are
+identified in `global-copy-effective/current.json`. Use:
 
 ```powershell
-python tools/p08/media/global-copy-pristine-amendment/effective_generate.py --check-live
+python tools/p08/media/global-copy-effective/generate.py --check-live
 ```
 
-The older Career generator refuses to overwrite this overlay. Revision 1 and its
+The older Career generator refuses to overwrite this chain. Revision 1 and its
 native proof remain preserved; revision 2 only adds the active-input source
 comment and has the separate final source/native proofs linked above. Neither
-older handoff should be reapplied over the active amendment.
+older handoff should be reapplied over the active amendment. The latest
+[native fit/viewport checkpoint](../ui-owned-render/FIT_VIEWPORT_20260928.md)
+records 1,976 attached checks, the 108 actual images, the separate 5,743-contract
+pass and the remaining explicit-scroll coverage work.
 
 No content masks, online/LAN authority, locked art concepts or phase acceptance
 flags change. Language review and corresponding rendered UI review remain

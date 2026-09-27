@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "scope": "One observed German Multiplayer invite heading; all prior Career amendments retained",
+  "baseUnion": {
+    "path": "tools/p08/media/global-copy-fit-amendment/authored-text-union.json",
+    "sha256": "b9269f11d6109e8767c6498fdc20f2ce46ff2b147ca3fe2b154ba921f15d2f2d"
+  },
+  "union": {
+    "path": "tools/p08/media/global-copy-fit2-amendment/authored-text-union.json",
+    "sha256": "e48aa2f3d6a99a1acc815c68dc63778ebdc2f922d8c9e3e5d83392a0f27dce4c"
+  },
+  "activePointer": {
+    "path": "tools/p08/media/global-copy-effective/current.json",
+    "sha256": "3766a023c7aeadb9ea4d508def9d8f06ec41ba773b11635017f0fbbcf89b0923"
+  },
+  "amendment": {
+    "path": "tools/p08/media/global-copy-fit2-amendment/amendment.json",
+    "sha256": "f343d4da7c4a09ee802c57b83e5912c83ff2a46ff0564745107c657bb76ab5cf"
+  },
+  "validation": {
+    "path": "tools/p08/media/global-copy-fit2-amendment/validation.json",
+    "sha256": "7fc2ae952323073d3ca170e225326eb61a83e78a5a7713832a9540c0f3ff6a92"
+  },
+  "changedTranslationCells": 1,
+  "files": [
+    {
+      "candidate": "tools/p08/media/global-copy-fit2-amendment/UiText.Multiplayer.Generated.cs",
+      "target": "Assets/RacingBois/Client/Application/UiText.Multiplayer.Generated.cs",
+      "beforeSha256": "893698231f931c761cdf8e0ebb22dd6b1315a8dbd83ec31ea81070acf365b216",
+      "candidateSha256": "d4a13f79ff4e61b7d14ff3d68ded14c3758237fc987be7ee0143e51a9f65ad95",
+      "metaSha256": "a0f2f88c1ca1e8100507fe4dfdf7eaa9bf071a1388294149c55a4cc60523b68c"
+    }
+  ],
+  "preservedFiles": [
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.Main.Generated.cs",
+      "sha256": "a7e1429ebb76418f6445be9fedb54622d4466f6fc39a23334db3d44671365f0b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.Main.Generated.cs.meta",
+      "sha256": "f2497da65fd234b897386802a7c8cc3db6a1295a073807535bf4e3f56794111d"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.Career.Generated.cs",
+      "sha256": "e2b9c1cf7eaafb7316b133064ca84ec318641a6c70d44de3fa3bc44dd2e83131"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.Career.Generated.cs.meta",
+      "sha256": "f551ea1b8fec96eff323d5c6fd648f4be472e569929cff116dbd4c1899cf4edf"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.ClientMessages.Generated.cs",
+      "sha256": "9dba63f68005bf5183ba23031044e25ee33968cfc08e7586c672cbf7b80a81d5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.ClientMessages.Generated.cs.meta",
+      "sha256": "962ea88a727810a62efacf42090e9414209750f58a9246c8d9b74e4ee484d215"
+    }
+  ],
+  "nativeValidation": false
+}

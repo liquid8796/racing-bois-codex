@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><AssemblyName>RacingBois.Client.Presentation</AssemblyName></PropertyGroup>
+ <ItemGroup>
+  <ProjectReference Include="ApplicationPreflight.csproj" />
+  <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/*.cs" Exclude="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceScreen.cs" />
+  <Compile Include="$(RaceScreenCandidate)" />
+  <Reference Include="$(UnityManaged)/UnityEngine/*.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.*.dll" />
+ </ItemGroup>
+</Project>

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "state": "reviewed-staged-candidate",
+  "files": [
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08DesktopBuilder.cs",
+      "target": "Assets/RacingBois/Editor/P08DesktopBuilder.cs",
+      "beforeSha256": "52ee54f1aaad259df9ddab2c657d00431508942fbac33a077c6dc5abf9136770",
+      "candidateSha256": "91ad7c97863beffed9dfd725fb24a6e6532369693064c4b00fe62d98e9083c66",
+      "unchangedMetaSha256": "e4863d232806126987417c1006b3363a6865870fafff77f549256f2c1aefa6a2"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08DesktopBuilder.Owned.cs",
+      "target": "Assets/RacingBois/Editor/P08DesktopBuilder.Owned.cs",
+      "beforeSha256": null,
+      "candidateSha256": "164f50077d2cd11a839385bdf801ff76299050d711c97cf93c38df807b4cd546"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08DesktopBuilder.Owned.cs.meta",
+      "target": "Assets/RacingBois/Editor/P08DesktopBuilder.Owned.cs.meta",
+      "beforeSha256": null,
+      "candidateSha256": "30d432f50f0368f74ce4a2e5d04693bf91764506f046a07fb68fc868fea185df"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08DesktopCompiledSources.cs",
+      "target": "Assets/RacingBois/Editor/P08DesktopCompiledSources.cs",
+      "beforeSha256": null,
+      "candidateSha256": "0826a27c3b886c5154fb913d05ea9fd5472770b3b023838190e2a8616f4222cf"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08DesktopCompiledSources.cs.meta",
+      "target": "Assets/RacingBois/Editor/P08DesktopCompiledSources.cs.meta",
+      "beforeSha256": null,
+      "candidateSha256": "6daef2e6b3c4bb4df5778701675dea030be5b5f532726affaea6c48aad9dd219"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08OwnedUiAssets.cs",
+      "target": "Assets/RacingBois/Editor/P08OwnedUiAssets.cs",
+      "beforeSha256": null,
+      "candidateSha256": "99e5505262a8ca54464f3855061b27fec70365671f003e3d06ac918c6c76c410"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08OwnedUiAssets.cs.meta",
+      "target": "Assets/RacingBois/Editor/P08OwnedUiAssets.cs.meta",
+      "beforeSha256": null,
+      "candidateSha256": "48bb015dd0156094fd09691e2b61a32a0b46b6ceb7dc0cf37e7e1ffa7c7433a3"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08ProtectedUiFonts.cs",
+      "target": "Assets/RacingBois/Editor/P08ProtectedUiFonts.cs",
+      "beforeSha256": null,
+      "candidateSha256": "d604d5c646d34637d7fe1bf1adeddfed8d10ab6ceba68a37fd5aafb4f8428d53"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/P08ProtectedUiFonts.cs.meta",
+      "target": "Assets/RacingBois/Editor/P08ProtectedUiFonts.cs.meta",
+      "beforeSha256": null,
+      "candidateSha256": "b6bcf9912e8451ecb389194c5e36e6c5a78409976cbb0a775b403f9d3af89267"
+    },
+    {
+      "candidate": "tools/p08/desktop/safe-build-staging/audit_desktop.py",
+      "target": "tools/p08/desktop/audit_desktop.py",
+      "beforeSha256": "b9761e4a62939e98d8cac865804249f24b4199efad8cc51c50e1e34ef1c92380",
+      "candidateSha256": "4fb3772db7699396f8b4c8c735e20fe0738560e9d35dbcde11b55a100bd2f55c"
+    }
+  ],
+  "managedCompilationPassed": true,
+  "auditContractTests": 69,
+  "nativeBuildVerified": false,
+  "releaseAccepted": false,
+  "reviews": [
+    "p10: preservation/source/owned-scene flow, no remaining must-fix",
+    "p09: owned UI extraction and exception/loaded-scene preservation fixes, no remaining must-fix"
+  ],
+  "nativeChecksRequired": [
+    "Fresh loaded assembly PE/PDB/source proof",
+    "Actual quiet clean-scene Windows BuildTo",
+    "Original font source/meta/memory/atlas and loaded-scene/settings restoration",
+    "Schema3 source/distribution audit and launch follow-up"
+  ],
+  "validationSha256": "9332f3eb4ac11f75411506f18ab3c3682aec60893add4dcec2c3631b9fac0483"
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "provider": "Multiplayer",
+    "locale": "DEU",
+    "key": "multiplayer.browser.invite-heading",
+    "before": "EINEN CODE VON FREUNDEN ERHALTEN?",
+    "after": "CODE VON FREUNDEN?",
+    "protectedTokens": [],
+    "evidence": [
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-05-1920/multiplayer-browser-actions-deu.png",
+        "sha256": "938faa7f1bf38e4c5592c36b70a5c5fb23f1ee5b71f889d12691822527eca331"
+      },
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-05-1366/multiplayer-browser-actions-deu.png",
+        "sha256": "6dd99fa7145c7d51375c532e2f6eb06cc2b95de73443233a488a0849c5fc526a"
+      }
+    ],
+    "reason": "Actual lower-scroll images at both output sizes clip the invite-code heading at the right edge of the create/join column. Shorten the same invitation question; preserve typography, geometry and behavior. This Label is outside run05 Button-only width measurement."
+  }
+]

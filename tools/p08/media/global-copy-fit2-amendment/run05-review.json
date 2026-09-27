@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T22:58:43.426960+00:00",
+  "nativeReceipt": {
+    "path": "docs/p08/ui-owned-render/20260928-ui-render-05-driver.json",
+    "sha256": "dc9e8eb9f9fa966831c598b321f0a35a046b810d8a22932d426931044e0b2c09"
+  },
+  "nativePassed": false,
+  "captures": 108,
+  "measurementCount": 963,
+  "strictFailureCount": 162,
+  "strictFailuresByWidth": {
+    "1920": 162
+  },
+  "minimumPositiveOverflowLogical": 7.62939453e-06,
+  "maximumPositiveOverflowLogical": 9.15527344e-05,
+  "failuresAboveOneThousandthLogicalUnit": 0,
+  "interpretation": "All strict Button failures are tiny single-precision-scale deltas; no visibly clipped Button was confirmed in the targeted image review. This analysis does not rewrite or pass the failed native receipt. A reviewed precision-aware diagnostic is still required.",
+  "responsiveObservations": [
+    {
+      "targetWidth": 1366,
+      "screenWidth": 1920,
+      "screenHeight": 1080,
+      "compact": true,
+      "narrow": false,
+      "count": 54
+    },
+    {
+      "targetWidth": 1920,
+      "screenWidth": 1920,
+      "screenHeight": 1080,
+      "compact": false,
+      "narrow": false,
+      "count": 54
+    }
+  ],
+  "historical1920Controls": [
+    {
+      "name": "historical-overflow-negative-control",
+      "locale": "DEU",
+      "scenario": "career-garage",
+      "width": 1920,
+      "beforeText": "MOTORRAD UNBESCHÄDIGT",
+      "beforeMeasuredWidth": 327.5,
+      "contentWidth": 244.999969,
+      "wouldOverflow": true,
+      "passed": true
+    },
+    {
+      "name": "historical-overflow-negative-control",
+      "locale": "ESP",
+      "scenario": "career-garage",
+      "width": 1920,
+      "beforeText": "MOTO EN PERFECTO ESTADO",
+      "beforeMeasuredWidth": 330.8333,
+      "contentWidth": 244.999969,
+      "wouldOverflow": true,
+      "passed": true
+    },
+    {
+      "name": "historical-overflow-negative-control",
+      "locale": "FRA",
+      "scenario": "career-garage",
+      "width": 1920,
+      "beforeText": "MOTO EN PARFAIT ÉTAT",
+      "beforeMeasuredWidth": 270.8333,
+      "contentWidth": 244.999969,
+      "wouldOverflow": true,
+      "passed": true
+    }
+  ],
+  "historical1366Observations": [
+    {
+      "name": "historical-label-under-current-compact-style",
+      "locale": "DEU",
+      "scenario": "career-garage",
+      "width": 1366,
+      "beforeText": "MOTORRAD UNBESCHÄDIGT",
+      "beforeMeasuredWidth": 326.953125,
+      "contentWidth": 243.75,
+      "wouldOverflow": true
+    },
+    {
+      "name": "historical-label-under-current-compact-style",
+      "locale": "ESP",
+      "scenario": "career-garage",
+      "width": 1366,
+      "beforeText": "MOTO EN PERFECTO ESTADO",
+      "beforeMeasuredWidth": 330.46875,
+      "contentWidth": 243.75,
+      "wouldOverflow": true
+    },
+    {
+      "name": "historical-label-under-current-compact-style",
+      "locale": "FRA",
+      "scenario": "career-garage",
+      "width": 1366,
+      "beforeText": "MOTO EN PARFAIT ÉTAT",
+      "beforeMeasuredWidth": 270.703125,
+      "contentWidth": 243.75,
+      "wouldOverflow": true
+    }
+  ],
+  "globalStateUnchanged": true,
+  "ownedRenderObjectsReleased": true,
+  "nativeEndInputCheckReached": false,
+  "independentPostReadOfPreflightInputs": {
+    "changed": [],
+    "scope": "Independent read of frozen preflight files after run05. This is not a claim that the aborted native end-binding assertion executed."
+  },
+  "confirmedNewVisualFindings": 1,
+  "conceptAccepted": false,
+  "releaseAccepted": false
+}

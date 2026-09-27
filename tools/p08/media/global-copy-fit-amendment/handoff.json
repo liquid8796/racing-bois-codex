@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "scope": "Three observed Career pristine copy-fit cells; prior ENU semantic correction retained; no behavior or layout changes",
+  "baseUnion": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/authored-text-union.json",
+    "sha256": "ab4c6c3b3ecffb435fc855ea066a85964e85e1b485398dc629b8d0e2100828b1"
+  },
+  "union": {
+    "path": "tools/p08/media/global-copy-fit-amendment/authored-text-union.json",
+    "sha256": "b9269f11d6109e8767c6498fdc20f2ce46ff2b147ca3fe2b154ba921f15d2f2d"
+  },
+  "activePointer": {
+    "path": "tools/p08/media/global-copy-effective/current.json",
+    "sha256": "fd1b43d063face2ca45aca104458f8a5f9573ab313cf97fa8b80eebad562f280"
+  },
+  "amendment": {
+    "path": "tools/p08/media/global-copy-fit-amendment/amendment.json",
+    "sha256": "111f303b8b7df1a45a9595aeb8ca2b41536a5e22795928b4516b4bf785684741"
+  },
+  "changedTranslationCells": 3,
+  "files": [
+    {
+      "candidate": "tools/p08/media/global-copy-fit-amendment/UiText.Career.Generated.cs",
+      "target": "Assets/RacingBois/Client/Application/UiText.Career.Generated.cs",
+      "beforeSha256": "3a3d3dd9a84be09aab6b004cda6911def3dd6c9c50d34d84a5ad4fa029b36dce",
+      "candidateSha256": "e2b9c1cf7eaafb7316b133064ca84ec318641a6c70d44de3fa3bc44dd2e83131",
+      "metaSha256": "f551ea1b8fec96eff323d5c6fd648f4be472e569929cff116dbd4c1899cf4edf"
+    }
+  ],
+  "nativeValidation": false
+}

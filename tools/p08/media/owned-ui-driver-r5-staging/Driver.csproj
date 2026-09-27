@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>RacingBois.Tools.AttachedUiDriverR5</AssemblyName>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AttachedUiDriver.cs" /><Compile Include="TextFit.cs" /><Compile Include="../native-ui-contract-staging/Fixtures.cs" />
+    <Reference Include="../owned-ui-render-r2-staging/bin/Debug/netstandard2.1/RacingBois.Tools.OwnedUiRenderR2.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Adapters.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Presentation.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Bootstrap.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Protocol.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll"><Private>false</Private></Reference>
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll"><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

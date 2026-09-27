@@ -1,0 +1,3338 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T23:13:27.950517+00:00",
+  "scope": "Current read-only source/disk prerequisites; no Unity import, prefab creation, pack, native clip verification or visual acceptance.",
+  "productionReady": false,
+  "generatedContent": [
+    {
+      "path": "Assets/RacingBois/Content/P08/Actors.asset",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "Assets/RacingBois/Content/P08/Library.asset",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "Assets/RacingBois/Content/P08/AudioBank.asset",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "Assets/RacingBois/Content/P08/Route-0.asset",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "Assets/RacingBois/Content/P08/Route-1.asset",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "Assets/RacingBois/Content/P08/Route-2.asset",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "Assets/RacingBois/Content/P08/Route-3.asset",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "Assets/RacingBois/Content/P08/Route-4.asset",
+      "exists": false,
+      "sha256": null
+    }
+  ],
+  "bikes": [
+    {
+      "index": 0,
+      "displayName": "Spark 450",
+      "semanticName": "RB_P08_Bike_00",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_00.prefab",
+        "exists": true,
+        "sha256": "9e78d3f9dd9a53a01429210639f4eb0e67cf814fd507e54b31e148cc992574e1"
+      },
+      "manifestEntry": false,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_00.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_00.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "note": "Existing slot00 is a P06 motorcycle prefab alias, not an accepted Golden Spark."
+    },
+    {
+      "index": 1,
+      "displayName": "Kestrel",
+      "semanticName": "RB_P08_Bike_01",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_01.prefab",
+        "exists": true,
+        "sha256": "c38038b1f85909e0379e877970d5e57acc39bf6f7d2c47062e27b664e45efb5f"
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_01.fbx",
+        "exists": true,
+        "sha256": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_01.blend",
+        "exists": true,
+        "sha256": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 2,
+      "displayName": "Rift 250",
+      "semanticName": "RB_P08_Bike_02",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_02.prefab",
+        "exists": true,
+        "sha256": "657b37c057d0ef5dece7bf00b769e0aae78034550614dc71e533068dcf845285"
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_02.fbx",
+        "exists": true,
+        "sha256": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_02.blend",
+        "exists": true,
+        "sha256": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 3,
+      "displayName": "Jackal",
+      "semanticName": "RB_P08_Bike_03",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_03.prefab",
+        "exists": true,
+        "sha256": "00dedcfb6d0caea48110617d10237ce4928b28678b093ecf9bb4061bfddbc168"
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_03.fbx",
+        "exists": true,
+        "sha256": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_03.blend",
+        "exists": true,
+        "sha256": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 4,
+      "displayName": "Ember",
+      "semanticName": "RB_P08_Bike_04",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_04.prefab",
+        "exists": true,
+        "sha256": "28c05da77a8ded4588ae9b6408713212071b1ca684c95b0eb4028ef269052d96"
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_04.fbx",
+        "exists": true,
+        "sha256": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_04.blend",
+        "exists": true,
+        "sha256": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 5,
+      "displayName": "Apex",
+      "semanticName": "RB_P08_Bike_05",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_05.prefab",
+        "exists": true,
+        "sha256": "d138c7b9c3a6987178252f70b2f922a55c6599c32584a1e4e59fb483397e5436"
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_05.fbx",
+        "exists": true,
+        "sha256": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_05.blend",
+        "exists": true,
+        "sha256": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 6,
+      "displayName": "Corvus",
+      "semanticName": "RB_P08_Bike_06",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_06.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_06.fbx",
+        "exists": true,
+        "sha256": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_06.blend",
+        "exists": true,
+        "sha256": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 7,
+      "displayName": "Viper",
+      "semanticName": "RB_P08_Bike_07",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_07.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_07.fbx",
+        "exists": true,
+        "sha256": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_07.blend",
+        "exists": true,
+        "sha256": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 8,
+      "displayName": "Rift 750 N",
+      "semanticName": "RB_P08_Bike_08",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_08.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_08.fbx",
+        "exists": true,
+        "sha256": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_08.blend",
+        "exists": true,
+        "sha256": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 9,
+      "displayName": "Specter",
+      "semanticName": "RB_P08_Bike_09",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_09.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_09.fbx",
+        "exists": true,
+        "sha256": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_09.blend",
+        "exists": true,
+        "sha256": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 10,
+      "displayName": "Nightjar",
+      "semanticName": "RB_P08_Bike_10",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_10.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_10.fbx",
+        "exists": true,
+        "sha256": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_10.blend",
+        "exists": true,
+        "sha256": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 11,
+      "displayName": "Cinder 10",
+      "semanticName": "RB_P08_Bike_11",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_11.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_11.fbx",
+        "exists": true,
+        "sha256": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_11.blend",
+        "exists": true,
+        "sha256": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 12,
+      "displayName": "Rift 750",
+      "semanticName": "RB_P08_Bike_12",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_12.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": true,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_12.fbx",
+        "exists": true,
+        "sha256": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19"
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_12.blend",
+        "exists": true,
+        "sha256": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb"
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 13,
+      "displayName": "Odyssey",
+      "semanticName": "RB_P08_Bike_13",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_13.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": false,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_13.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_13.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "note": "Disk existence is not visual acceptance."
+    },
+    {
+      "index": 14,
+      "displayName": "Havoc",
+      "semanticName": "RB_P08_Bike_14",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_14.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "manifestEntry": false,
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_14.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Bike_14.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "note": "Disk existence is not visual acceptance."
+    }
+  ],
+  "riders": [
+    {
+      "index": 0,
+      "displayName": "Ash",
+      "semanticName": "RB_P08_Rider_00",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_00.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_00.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_00.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "displayName": "Juno",
+      "semanticName": "RB_P08_Rider_01",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_01.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_01.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_01.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "displayName": "Mako",
+      "semanticName": "RB_P08_Rider_02",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_02.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_02.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_02.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "displayName": "Rook",
+      "semanticName": "RB_P08_Rider_03",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_03.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_03.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_03.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "displayName": "Sol",
+      "semanticName": "RB_P08_Rider_04",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_04.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_04.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_04.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "displayName": "Vale",
+      "semanticName": "RB_P08_Rider_05",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_05.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_05.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_05.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "displayName": "Echo",
+      "semanticName": "RB_P08_Rider_06",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_06.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_06.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_06.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "displayName": "Kai",
+      "semanticName": "RB_P08_Rider_07",
+      "prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_07.prefab",
+        "exists": false,
+        "sha256": null
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_07.fbx",
+        "exists": false,
+        "sha256": null
+      },
+      "source": {
+        "path": "ArtSource/P08/RB_P08_Rider_07.blend",
+        "exists": false,
+        "sha256": null
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_00.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_01.png",
+          "exists": false,
+          "sha256": null
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_02.png",
+          "exists": false,
+          "sha256": null
+        }
+      ]
+    }
+  ],
+  "p08RouteProps": [
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityBusShelter.prefab",
+      "exists": true,
+      "sha256": "7ff6ec6af2a98568ef9a30ffabf26cbbd4cd691cf6e8427bcd70fcd4335bd35c"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityCornerShop.prefab",
+      "exists": true,
+      "sha256": "ed737d07868e31171311f6a4f05ee2cd8e62dde4daf2f78f17710f031cc8f1a5"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityLoadingGantry.prefab",
+      "exists": true,
+      "sha256": "7dff51af3b45358c3f45196933d7fcc8a86430a6637ede6a83f2e465d1d2cb86"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityStreetlamp.prefab",
+      "exists": true,
+      "sha256": "8ee81b2268bbc092490c0b528cdbe8268ca6e33d5311ddf620d4ddcc4f7b77fa"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityWarehouse.prefab",
+      "exists": true,
+      "sha256": "90237754da8803674e7b935ddaefcb94ca84a1c40994512b4093b03b53df8a4e"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityWaterTank.prefab",
+      "exists": true,
+      "sha256": "321b211e46c9828557821504915d8ae4270ea2bec049bdecc724e0fc8a6be70e"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBeacon.prefab",
+      "exists": true,
+      "sha256": "2a13a046a64bb9468454851130a823815d4d876dab66b95d4ef4e3fdbf419d23"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBoulder.prefab",
+      "exists": true,
+      "sha256": "9dd14290886896bbb61373e40b2f804106137b24e33d495134c47fc574433031"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBridgePier.prefab",
+      "exists": true,
+      "sha256": "f784599a3feb2e5415bd071452316e18fa13b2ba82167b5ba61e05868975f076"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBroadleafShrub.prefab",
+      "exists": true,
+      "sha256": "38766869a9b4dd1815b8e02a68ff8c40e97ab06a0800c22b3530479563222b94"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastPalm.prefab",
+      "exists": true,
+      "sha256": "0682253f158c15a176eaafe66b231a6a614222073933dbc6631613caaf319d32"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastSurfShack.prefab",
+      "exists": true,
+      "sha256": "ec9ba898bcdf5be95ca612512fa665e9700d5ff1c242e8a479cdd0859db1f19b"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardAppleTree.prefab",
+      "exists": true,
+      "sha256": "38863a10fbd62a237d192726f1691f3fde3fb794487de6660d89e2ea3bc4abfe"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardBarn.prefab",
+      "exists": true,
+      "sha256": "0157363d128bf378ad96c573997ddeeba62edd73622a5a54269648e99999521b"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardFence.prefab",
+      "exists": true,
+      "sha256": "cb37c28ba9ad6472a208376f0c99f5ac0b4e0fe79bc7cb1d6a3523c2aad3113a"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardHayBale.prefab",
+      "exists": true,
+      "sha256": "62e32830b21aa991405d63601388fb01d3c2683873096c6e80fd9791d060cb78"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardProduceKiosk.prefab",
+      "exists": true,
+      "sha256": "fe2af588a7ceff6ed083303d5ece3f578e47f27c999a87ecd0a26bdbe7cca3a2"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardSilo.prefab",
+      "exists": true,
+      "sha256": "4167b363052a1d813db54e45ef583ba8ddbbf0d91705887e70f90ef990338e6b"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeFir.prefab",
+      "exists": true,
+      "sha256": "958023838a047a93ee9fcf25f200e87a96e5b2af8b7ccfabd8b3f814120b2a47"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeGalleryArch.prefab",
+      "exists": true,
+      "sha256": "4556ce92448ace6380a9b0d1786d3338fd0d2468f60dabd39e36faf1d3596db2"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeGranite.prefab",
+      "exists": true,
+      "sha256": "cbddf57fb3a21e50433bfa88cc3150c338b7874ff02474e2e9caf709268d76d6"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeSnowPole.prefab",
+      "exists": true,
+      "sha256": "f7df228cb7b925b496553f1b3ab59900812295afd443c28e58296be7b1c31cd3"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeStoneWall.prefab",
+      "exists": true,
+      "sha256": "206f8d6393ffaa9bdb8d8ebb4bf21638ffde2b4b53ea553c87fb5696ef29508c"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeTimberHut.prefab",
+      "exists": true,
+      "sha256": "b4cd35943d47204ded1758dd2184e98fe04a9139eb468f0418afa06998a51583"
+    }
+  ],
+  "legacySupportingInputs": [
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_RockA.prefab",
+      "exists": true,
+      "sha256": "8f5e39be5ad951b7da09b4c5320133ba4a0106f9aa3cfdf00f3ad1c3486a233f"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_RockB.prefab",
+      "exists": true,
+      "sha256": "a49e1398f92bd165ec5177dca12abafee3707ec9b868d9710e6a7e31eb066cd2"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Sage.prefab",
+      "exists": true,
+      "sha256": "10584f16d4333fdb164cd87524164e1d18825827b99006751ccd441a1b901bf9"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_DryGrass.prefab",
+      "exists": true,
+      "sha256": "bb5a1ca0eec324518ffd7067f7b37339b4021bf57e1135ac6ee8394749a80de9"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Guardrail.prefab",
+      "exists": true,
+      "sha256": "af043c8a138f7ca0e6e9bfd03861af89a299e136143ab85003efa99f6216111c"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Chevron.prefab",
+      "exists": true,
+      "sha256": "6cbd250951d44dddcf218c842f2809bc57c0df5e2071914b785a218c64b82d83"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_UtilityPole.prefab",
+      "exists": true,
+      "sha256": "52764d0578e2e5b669b7d7a4640eb1c4a70816876cf6c16243517a1305280368"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceMotorcycle.prefab",
+      "exists": true,
+      "sha256": "c9069590474b5c71e65028c0c7f34638d8ce00ba736dc14aad95c9e027cfdf95"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceRider.prefab",
+      "exists": true,
+      "sha256": "2f1927c02960c74b073a98c67ebf59db447a70076cf98a4a5ae1534c68b683ba"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficCoupe.prefab",
+      "exists": true,
+      "sha256": "3e308d535e847860439e7693a8bf8b40fab66eab1170c9e29784374712741134"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficVan.prefab",
+      "exists": true,
+      "sha256": "c2faee19bee0173fd257e5d1badc652892154a71aba27b0f4779cbb2e3c571ed"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_Pedestrian.prefab",
+      "exists": true,
+      "sha256": "a8129f72497eaa6186c604b29accaa8a3b5d6e8e4465239c2eb61bf7f8dbc0f0"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_Club.prefab",
+      "exists": true,
+      "sha256": "fce16a9a40db1d71b29d651302b0a0a007340bbbb79f3a007cc7c06dc18df6bf"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx",
+      "exists": true,
+      "sha256": "d12abec227b04b0ce02f7adfdac87ff32dabe96f2bd2f020beae4245dc22eda4"
+    },
+    {
+      "path": "Assets/RacingBois/Audio/P06/RB_P06_AudioBank.asset",
+      "exists": true,
+      "sha256": "3c77a298c405c3d6f9f909d2a3eb8fc08bea5883a5ecf5bd969a22f49516eed0"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/RacePaint.mat",
+      "exists": true,
+      "sha256": "b928e6cb2d2aa1b884e723471c1fc44e5c1c8bb07727cac5b7b61768eb85fb28"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/RaceYellow.mat",
+      "exists": true,
+      "sha256": "751aec97c4bae98f3edcf3da71f5b8180fcd374d55366cbe6aa02538ba579fe1"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Roadside.mat",
+      "exists": true,
+      "sha256": "1a76f08291b12170fac142083e68ce6beaba048c9c6ca81f549456052846707e"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Asphalt.mat",
+      "exists": true,
+      "sha256": "6f78865adb536fd3772095da882d89f0204dee4078a6f680890f9bc16f94abf8"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Gravel.mat",
+      "exists": true,
+      "sha256": "56013c7c58ee0b9132d98d1904453baa1986c3c9a2bc07223d342e6c7af0397c"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "RB_P08_BikesA_Atlas",
+      "material": {
+        "path": "Assets/RacingBois/Materials/P08/RB_P08_BikesA_Atlas.mat",
+        "exists": true,
+        "sha256": "34e44f7cc073ac790f0d494522d71bcda97f48c4208b3dc80d679aab6437ce30"
+      },
+      "maps": [
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesA_Atlas_BaseColor.png",
+          "exists": true,
+          "sha256": "ec504659c7dfde5afe951645137a44335eb54772025b2d74c5419186555343bf"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesA_Atlas_Normal.png",
+          "exists": true,
+          "sha256": "7a72ab733e661861f7602b820a4a92b10dd8f95a5cb8018a2dc8ac05726f33ee"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesA_Atlas_MetallicSmoothness.png",
+          "exists": true,
+          "sha256": "57b24d2ddfb7f98652f50021e654f76dd45cd134a492a4ea5c1b53044b50a19b"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesA_Atlas_Roughness.png",
+          "exists": true,
+          "sha256": "dbe997ee2d73808b208bba849b9bfac7211f191ed27a06cc19755ed5ec627180"
+        }
+      ]
+    },
+    {
+      "id": "RB_P08_BikesB_Atlas",
+      "material": {
+        "path": "Assets/RacingBois/Materials/P08/RB_P08_BikesB_Atlas.mat",
+        "exists": false,
+        "sha256": null
+      },
+      "maps": [
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesB_Atlas_BaseColor.png",
+          "exists": true,
+          "sha256": "f01d065d05478fc4dd0007beae95e6b75cdba35ad5848ff5de18eeeffa26d611"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesB_Atlas_Normal.png",
+          "exists": true,
+          "sha256": "390571331d86088a9f362a9f55c169c9c1c7cca77c4e482de7dde1a7787bf643"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesB_Atlas_MetallicSmoothness.png",
+          "exists": true,
+          "sha256": "fe095997b3757a2f4260e8b82aa336a96bfc5f519601be18bc5b7ab4c72bbfa6"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesB_Atlas_Roughness.png",
+          "exists": true,
+          "sha256": "556eee55d99d112020976057acc751d7a975b089df15e426137bb4a0f727fa2d"
+        }
+      ]
+    },
+    {
+      "id": "RB_P08_BikesC_Atlas",
+      "material": {
+        "path": "Assets/RacingBois/Materials/P08/RB_P08_BikesC_Atlas.mat",
+        "exists": false,
+        "sha256": null
+      },
+      "maps": [
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesC_Atlas_BaseColor.png",
+          "exists": true,
+          "sha256": "2e8488670a9feffae1d3535370c19cb9784784765a34911612ca4286122df3a2"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesC_Atlas_Normal.png",
+          "exists": true,
+          "sha256": "7a72ab733e661861f7602b820a4a92b10dd8f95a5cb8018a2dc8ac05726f33ee"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesC_Atlas_MetallicSmoothness.png",
+          "exists": true,
+          "sha256": "01ebf2678086e96c8d84d8b504860ed8545c8310fb3e4c4203d1d98e4a7a24aa"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_BikesC_Atlas_Roughness.png",
+          "exists": true,
+          "sha256": "d680cc87b4edb1b37760d50bd226ddd3d265acf2bb2115225a45b0e7292a5444"
+        }
+      ]
+    },
+    {
+      "id": "RB_P08_Coast_Atlas",
+      "material": {
+        "path": "Assets/RacingBois/Materials/P08/RB_P08_Coast_Atlas.mat",
+        "exists": true,
+        "sha256": "7b57e7cc4b41e7a9de60aaf2cf3d083d96309f2e66349675b4640b8951bd0cfe"
+      },
+      "maps": [
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Coast_Atlas_BaseColor.png",
+          "exists": true,
+          "sha256": "e5705fbd7392ad8bfccd450d2199585b4490495a36e14415f39f59e42ac99fd1"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Coast_Atlas_Normal.png",
+          "exists": true,
+          "sha256": "b8c156ed3efc91b94f61630099a4f40e70d171f3e6ef04a7eb28858fca6cab57"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Coast_Atlas_MetallicSmoothness.png",
+          "exists": true,
+          "sha256": "c361b98731bda1694455ff5a01d867e2a16387ea113355998d1cbf22a728367f"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Coast_Atlas_Roughness.png",
+          "exists": true,
+          "sha256": "53c39e42e40f10d69040facc85050fb3ba573017de0d0d0ec08cad820e933feb"
+        }
+      ]
+    },
+    {
+      "id": "RB_P08_Neon_Atlas",
+      "material": {
+        "path": "Assets/RacingBois/Materials/P08/RB_P08_Neon_Atlas.mat",
+        "exists": true,
+        "sha256": "9fdd7272a12ece75aef47aad4e6ad574f283f577de969df1a7f6065d5324a4c6"
+      },
+      "maps": [
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Neon_Atlas_BaseColor.png",
+          "exists": true,
+          "sha256": "80e74cc879c8df92ec1f123a34ed302701ffffa5e196712d4eedc2baaf4e9c77"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Neon_Atlas_Normal.png",
+          "exists": true,
+          "sha256": "b8c156ed3efc91b94f61630099a4f40e70d171f3e6ef04a7eb28858fca6cab57"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Neon_Atlas_MetallicSmoothness.png",
+          "exists": true,
+          "sha256": "64b2aa5e897e017c67703c18d3b92874cd1e5453391f21480f2b95e6406ed012"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Neon_Atlas_Roughness.png",
+          "exists": true,
+          "sha256": "ea22d1af0f0f19a418dd8cae207ee6e4023af4c5feac41bdfbbba1028d647686"
+        }
+      ]
+    },
+    {
+      "id": "RB_P08_Orchard_Atlas",
+      "material": {
+        "path": "Assets/RacingBois/Materials/P08/RB_P08_Orchard_Atlas.mat",
+        "exists": true,
+        "sha256": "68e770c0ef1da121460b51cbb5649d2350b1e95b8b8ce1fd8064d93b031ace54"
+      },
+      "maps": [
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Orchard_Atlas_BaseColor.png",
+          "exists": true,
+          "sha256": "98191d162e2e632977fe77d1a7c3080ee0d9b04649e9505a7d17b21e85a668ca"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Orchard_Atlas_Normal.png",
+          "exists": true,
+          "sha256": "71d4ccc3518f76c3b989894051a14ce49e9251b535ce0ab1693d4d94cdcef57f"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Orchard_Atlas_MetallicSmoothness.png",
+          "exists": true,
+          "sha256": "4bec2ae8aace0962b131f348e950fd712829f183dd5d6255e63c7fa59663d3e3"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Orchard_Atlas_Roughness.png",
+          "exists": true,
+          "sha256": "de1aae5584772abc6aa0613cf85f5176072b720906ba36e9b322e1de504189f2"
+        }
+      ]
+    },
+    {
+      "id": "RB_P08_Ridge_Atlas",
+      "material": {
+        "path": "Assets/RacingBois/Materials/P08/RB_P08_Ridge_Atlas.mat",
+        "exists": true,
+        "sha256": "5e91f25632332da9a6d380d8f300f00da34094724210bd55adc39bf1affdc607"
+      },
+      "maps": [
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Ridge_Atlas_BaseColor.png",
+          "exists": true,
+          "sha256": "45ce072d7bdfebd2afcd03a1cfe1115e9433143da4c278c77673a82b3e1e27b1"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Ridge_Atlas_Normal.png",
+          "exists": true,
+          "sha256": "71d4ccc3518f76c3b989894051a14ce49e9251b535ce0ab1693d4d94cdcef57f"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Ridge_Atlas_MetallicSmoothness.png",
+          "exists": true,
+          "sha256": "d0f36e438d210dfa40807080fd78d6a28b2e4dfd045e52809ace8f37c80533a2"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/RB_P08_Ridge_Atlas_Roughness.png",
+          "exists": true,
+          "sha256": "661e846404473b7574695dfdf31e08b21d2d89455623a124ea7769f95726e543"
+        }
+      ]
+    }
+  ],
+  "routeMaterialsDirectoryExists": false,
+  "artManifestState": {
+    "passed": false,
+    "state": "exported-awaiting-independent-source-and-Unity-QA",
+    "entryCount": 36,
+    "kinds": {
+      "bike": 12,
+      "scenery": 18,
+      "landmark": 2,
+      "foliage": 4
+    },
+    "boundInputs": [
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/01-kestrel-v1.png",
+        "exists": true,
+        "sha256": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+        "asset": "RB_P08_Bike_01",
+        "role": "concept",
+        "expectedSha256": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_01.blend",
+        "exists": true,
+        "sha256": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b",
+        "asset": "RB_P08_Bike_01",
+        "role": "source",
+        "expectedSha256": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_01.fbx",
+        "exists": true,
+        "sha256": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4",
+        "asset": "RB_P08_Bike_01",
+        "role": "fbx",
+        "expectedSha256": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/02-rift-250-v1.png",
+        "exists": true,
+        "sha256": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+        "asset": "RB_P08_Bike_02",
+        "role": "concept",
+        "expectedSha256": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_02.blend",
+        "exists": true,
+        "sha256": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41",
+        "asset": "RB_P08_Bike_02",
+        "role": "source",
+        "expectedSha256": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_02.fbx",
+        "exists": true,
+        "sha256": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999",
+        "asset": "RB_P08_Bike_02",
+        "role": "fbx",
+        "expectedSha256": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/03-jackal-v1.png",
+        "exists": true,
+        "sha256": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+        "asset": "RB_P08_Bike_03",
+        "role": "concept",
+        "expectedSha256": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_03.blend",
+        "exists": true,
+        "sha256": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03",
+        "asset": "RB_P08_Bike_03",
+        "role": "source",
+        "expectedSha256": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_03.fbx",
+        "exists": true,
+        "sha256": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3",
+        "asset": "RB_P08_Bike_03",
+        "role": "fbx",
+        "expectedSha256": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/04-ember-v1.png",
+        "exists": true,
+        "sha256": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+        "asset": "RB_P08_Bike_04",
+        "role": "concept",
+        "expectedSha256": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_04.blend",
+        "exists": true,
+        "sha256": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569",
+        "asset": "RB_P08_Bike_04",
+        "role": "source",
+        "expectedSha256": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_04.fbx",
+        "exists": true,
+        "sha256": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5",
+        "asset": "RB_P08_Bike_04",
+        "role": "fbx",
+        "expectedSha256": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/05-apex-v1.png",
+        "exists": true,
+        "sha256": "baba735ce7f94d64a514ea1e87f9fc3ecdcaee865fd219e8794ec118d1f222f8",
+        "asset": "RB_P08_Bike_05",
+        "role": "concept",
+        "expectedSha256": "baba735ce7f94d64a514ea1e87f9fc3ecdcaee865fd219e8794ec118d1f222f8",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_05.blend",
+        "exists": true,
+        "sha256": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162",
+        "asset": "RB_P08_Bike_05",
+        "role": "source",
+        "expectedSha256": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_05.fbx",
+        "exists": true,
+        "sha256": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262",
+        "asset": "RB_P08_Bike_05",
+        "role": "fbx",
+        "expectedSha256": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/06-corvus-v1.png",
+        "exists": true,
+        "sha256": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+        "asset": "RB_P08_Bike_06",
+        "role": "concept",
+        "expectedSha256": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_06.blend",
+        "exists": true,
+        "sha256": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b",
+        "asset": "RB_P08_Bike_06",
+        "role": "source",
+        "expectedSha256": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_06.fbx",
+        "exists": true,
+        "sha256": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685",
+        "asset": "RB_P08_Bike_06",
+        "role": "fbx",
+        "expectedSha256": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/07-viper-v1.png",
+        "exists": true,
+        "sha256": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+        "asset": "RB_P08_Bike_07",
+        "role": "concept",
+        "expectedSha256": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_07.blend",
+        "exists": true,
+        "sha256": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7",
+        "asset": "RB_P08_Bike_07",
+        "role": "source",
+        "expectedSha256": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_07.fbx",
+        "exists": true,
+        "sha256": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def",
+        "asset": "RB_P08_Bike_07",
+        "role": "fbx",
+        "expectedSha256": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/08-rift-750-n-v1.png",
+        "exists": true,
+        "sha256": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+        "asset": "RB_P08_Bike_08",
+        "role": "concept",
+        "expectedSha256": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_08.blend",
+        "exists": true,
+        "sha256": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26",
+        "asset": "RB_P08_Bike_08",
+        "role": "source",
+        "expectedSha256": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_08.fbx",
+        "exists": true,
+        "sha256": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae",
+        "asset": "RB_P08_Bike_08",
+        "role": "fbx",
+        "expectedSha256": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/09-specter-v1.png",
+        "exists": true,
+        "sha256": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+        "asset": "RB_P08_Bike_09",
+        "role": "concept",
+        "expectedSha256": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_09.blend",
+        "exists": true,
+        "sha256": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea",
+        "asset": "RB_P08_Bike_09",
+        "role": "source",
+        "expectedSha256": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_09.fbx",
+        "exists": true,
+        "sha256": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a",
+        "asset": "RB_P08_Bike_09",
+        "role": "fbx",
+        "expectedSha256": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/10-nightjar-v1.png",
+        "exists": true,
+        "sha256": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+        "asset": "RB_P08_Bike_10",
+        "role": "concept",
+        "expectedSha256": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_10.blend",
+        "exists": true,
+        "sha256": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb",
+        "asset": "RB_P08_Bike_10",
+        "role": "source",
+        "expectedSha256": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_10.fbx",
+        "exists": true,
+        "sha256": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be",
+        "asset": "RB_P08_Bike_10",
+        "role": "fbx",
+        "expectedSha256": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/11-cinder-10-v1.png",
+        "exists": true,
+        "sha256": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+        "asset": "RB_P08_Bike_11",
+        "role": "concept",
+        "expectedSha256": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_11.blend",
+        "exists": true,
+        "sha256": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259",
+        "asset": "RB_P08_Bike_11",
+        "role": "source",
+        "expectedSha256": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_11.fbx",
+        "exists": true,
+        "sha256": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed",
+        "asset": "RB_P08_Bike_11",
+        "role": "fbx",
+        "expectedSha256": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Bikes/12-rift-750-v1.png",
+        "exists": true,
+        "sha256": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+        "asset": "RB_P08_Bike_12",
+        "role": "concept",
+        "expectedSha256": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_Bike_12.blend",
+        "exists": true,
+        "sha256": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb",
+        "asset": "RB_P08_Bike_12",
+        "role": "source",
+        "expectedSha256": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_12.fbx",
+        "exists": true,
+        "sha256": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19",
+        "asset": "RB_P08_Bike_12",
+        "role": "fbx",
+        "expectedSha256": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "asset": "RB_P08_CityBusShelter",
+        "role": "concept",
+        "expectedSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "asset": "RB_P08_CityBusShelter",
+        "role": "source",
+        "expectedSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityBusShelter.fbx",
+        "exists": true,
+        "sha256": "c299d11023a7ad9a0cc526bbb2bdf7faf17149431882b31933a1c68d10cd9271",
+        "asset": "RB_P08_CityBusShelter",
+        "role": "fbx",
+        "expectedSha256": "c299d11023a7ad9a0cc526bbb2bdf7faf17149431882b31933a1c68d10cd9271",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "asset": "RB_P08_CityCornerShop",
+        "role": "concept",
+        "expectedSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "asset": "RB_P08_CityCornerShop",
+        "role": "source",
+        "expectedSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityCornerShop.fbx",
+        "exists": true,
+        "sha256": "bab4682e01904d0431f9ea0604d21a7850eab57771e6cfce652daaaad4736132",
+        "asset": "RB_P08_CityCornerShop",
+        "role": "fbx",
+        "expectedSha256": "bab4682e01904d0431f9ea0604d21a7850eab57771e6cfce652daaaad4736132",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "asset": "RB_P08_CityLoadingGantry",
+        "role": "concept",
+        "expectedSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "asset": "RB_P08_CityLoadingGantry",
+        "role": "source",
+        "expectedSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityLoadingGantry.fbx",
+        "exists": true,
+        "sha256": "c6cc9318824586d088ad2fb077fd2e484e046411dd64c5d1202792228aa7d0b6",
+        "asset": "RB_P08_CityLoadingGantry",
+        "role": "fbx",
+        "expectedSha256": "c6cc9318824586d088ad2fb077fd2e484e046411dd64c5d1202792228aa7d0b6",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "asset": "RB_P08_CityStreetlamp",
+        "role": "concept",
+        "expectedSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "asset": "RB_P08_CityStreetlamp",
+        "role": "source",
+        "expectedSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityStreetlamp.fbx",
+        "exists": true,
+        "sha256": "24a3a8251cf47f8574b12c0d03c104607418e98a1ae14dbc578e26a579512b0c",
+        "asset": "RB_P08_CityStreetlamp",
+        "role": "fbx",
+        "expectedSha256": "24a3a8251cf47f8574b12c0d03c104607418e98a1ae14dbc578e26a579512b0c",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "asset": "RB_P08_CityWarehouse",
+        "role": "concept",
+        "expectedSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "asset": "RB_P08_CityWarehouse",
+        "role": "source",
+        "expectedSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityWarehouse.fbx",
+        "exists": true,
+        "sha256": "1362d12bf93c24b4895980dac3dcbe04200a606fc21c48ba0be6f002d5624875",
+        "asset": "RB_P08_CityWarehouse",
+        "role": "fbx",
+        "expectedSha256": "1362d12bf93c24b4895980dac3dcbe04200a606fc21c48ba0be6f002d5624875",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "asset": "RB_P08_CityWaterTank",
+        "role": "concept",
+        "expectedSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "asset": "RB_P08_CityWaterTank",
+        "role": "source",
+        "expectedSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityWaterTank.fbx",
+        "exists": true,
+        "sha256": "0dddc76cab04106d257ff9cc5f81baa35e495d18509557bb37d257d474642901",
+        "asset": "RB_P08_CityWaterTank",
+        "role": "fbx",
+        "expectedSha256": "0dddc76cab04106d257ff9cc5f81baa35e495d18509557bb37d257d474642901",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "asset": "RB_P08_CoastBeacon",
+        "role": "concept",
+        "expectedSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "asset": "RB_P08_CoastBeacon",
+        "role": "source",
+        "expectedSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx",
+        "exists": true,
+        "sha256": "940d8efe0481447621ae5b35f14dd006581ac387e743d67e871b7f73cd828ae2",
+        "asset": "RB_P08_CoastBeacon",
+        "role": "fbx",
+        "expectedSha256": "940d8efe0481447621ae5b35f14dd006581ac387e743d67e871b7f73cd828ae2",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "asset": "RB_P08_CoastBoulder",
+        "role": "concept",
+        "expectedSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "asset": "RB_P08_CoastBoulder",
+        "role": "source",
+        "expectedSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx",
+        "exists": true,
+        "sha256": "d8ca5ea95ce2507de00bb5ed27210642494e957b0c380d96f074bbafbf7b8213",
+        "asset": "RB_P08_CoastBoulder",
+        "role": "fbx",
+        "expectedSha256": "d8ca5ea95ce2507de00bb5ed27210642494e957b0c380d96f074bbafbf7b8213",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "asset": "RB_P08_CoastBridgePier",
+        "role": "concept",
+        "expectedSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "asset": "RB_P08_CoastBridgePier",
+        "role": "source",
+        "expectedSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx",
+        "exists": true,
+        "sha256": "0e404eed77758b4dd56eee73e274cf267a88056d6396157a9564ad373ba94b09",
+        "asset": "RB_P08_CoastBridgePier",
+        "role": "fbx",
+        "expectedSha256": "0e404eed77758b4dd56eee73e274cf267a88056d6396157a9564ad373ba94b09",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "asset": "RB_P08_CoastBroadleafShrub",
+        "role": "concept",
+        "expectedSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "asset": "RB_P08_CoastBroadleafShrub",
+        "role": "source",
+        "expectedSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx",
+        "exists": true,
+        "sha256": "6e0bb08db0d515bcde3c1ec6336a105b12b40e197abed28b1a0966c8e20b43d3",
+        "asset": "RB_P08_CoastBroadleafShrub",
+        "role": "fbx",
+        "expectedSha256": "6e0bb08db0d515bcde3c1ec6336a105b12b40e197abed28b1a0966c8e20b43d3",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "asset": "RB_P08_CoastPalm",
+        "role": "concept",
+        "expectedSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "asset": "RB_P08_CoastPalm",
+        "role": "source",
+        "expectedSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx",
+        "exists": true,
+        "sha256": "f79fbf463e7dbb9e89081f2f16959ee94807b8fc22283f61c1202367dc8204ba",
+        "asset": "RB_P08_CoastPalm",
+        "role": "fbx",
+        "expectedSha256": "f79fbf463e7dbb9e89081f2f16959ee94807b8fc22283f61c1202367dc8204ba",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "asset": "RB_P08_CoastSurfShack",
+        "role": "concept",
+        "expectedSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "asset": "RB_P08_CoastSurfShack",
+        "role": "source",
+        "expectedSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx",
+        "exists": true,
+        "sha256": "25923ff4a7d3c03480cbd558c127b7ddbeea4be8b113ff0cab6c1cf2c81b2ce5",
+        "asset": "RB_P08_CoastSurfShack",
+        "role": "fbx",
+        "expectedSha256": "25923ff4a7d3c03480cbd558c127b7ddbeea4be8b113ff0cab6c1cf2c81b2ce5",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "asset": "RB_P08_OrchardAppleTree",
+        "role": "concept",
+        "expectedSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "asset": "RB_P08_OrchardAppleTree",
+        "role": "source",
+        "expectedSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardAppleTree.fbx",
+        "exists": true,
+        "sha256": "24b701c3f1cb5ae39f28ddd22d19c0bcafe45e92021def786df55cb59583f57b",
+        "asset": "RB_P08_OrchardAppleTree",
+        "role": "fbx",
+        "expectedSha256": "24b701c3f1cb5ae39f28ddd22d19c0bcafe45e92021def786df55cb59583f57b",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "asset": "RB_P08_OrchardBarn",
+        "role": "concept",
+        "expectedSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "asset": "RB_P08_OrchardBarn",
+        "role": "source",
+        "expectedSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardBarn.fbx",
+        "exists": true,
+        "sha256": "d44af8613fba3ca0ed74704bb67849e8b5c0919d3a3424de5f1c7afdc7ecc742",
+        "asset": "RB_P08_OrchardBarn",
+        "role": "fbx",
+        "expectedSha256": "d44af8613fba3ca0ed74704bb67849e8b5c0919d3a3424de5f1c7afdc7ecc742",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "asset": "RB_P08_OrchardFence",
+        "role": "concept",
+        "expectedSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "asset": "RB_P08_OrchardFence",
+        "role": "source",
+        "expectedSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardFence.fbx",
+        "exists": true,
+        "sha256": "32b9c37ef277672ceb8f8f962a4a959c20b12a4740edad77a9f83f56fe7bd6bd",
+        "asset": "RB_P08_OrchardFence",
+        "role": "fbx",
+        "expectedSha256": "32b9c37ef277672ceb8f8f962a4a959c20b12a4740edad77a9f83f56fe7bd6bd",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "asset": "RB_P08_OrchardHayBale",
+        "role": "concept",
+        "expectedSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "asset": "RB_P08_OrchardHayBale",
+        "role": "source",
+        "expectedSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardHayBale.fbx",
+        "exists": true,
+        "sha256": "761bc59f380178a1a06fd4d54d203546b60130d48d93b6c1bad16f9fe8512398",
+        "asset": "RB_P08_OrchardHayBale",
+        "role": "fbx",
+        "expectedSha256": "761bc59f380178a1a06fd4d54d203546b60130d48d93b6c1bad16f9fe8512398",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "asset": "RB_P08_OrchardProduceKiosk",
+        "role": "concept",
+        "expectedSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "asset": "RB_P08_OrchardProduceKiosk",
+        "role": "source",
+        "expectedSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardProduceKiosk.fbx",
+        "exists": true,
+        "sha256": "e3239b85e3f38562ff775e83f133574cb59834cdf9b74d2aa3a4b90bc7f47105",
+        "asset": "RB_P08_OrchardProduceKiosk",
+        "role": "fbx",
+        "expectedSha256": "e3239b85e3f38562ff775e83f133574cb59834cdf9b74d2aa3a4b90bc7f47105",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "asset": "RB_P08_OrchardSilo",
+        "role": "concept",
+        "expectedSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "asset": "RB_P08_OrchardSilo",
+        "role": "source",
+        "expectedSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matchesDeclared": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardSilo.fbx",
+        "exists": true,
+        "sha256": "7b45624c6bcfd7e00b719b4dd2294120bf5258644d42a331efe78d76f802f1ab",
+        "asset": "RB_P08_OrchardSilo",
+        "role": "fbx",
+        "expectedSha256": "7b45624c6bcfd7e00b719b4dd2294120bf5258644d42a331efe78d76f802f1ab",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "asset": "RB_P08_RidgeFir",
+        "role": "concept",
+        "expectedSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "asset": "RB_P08_RidgeFir",
+        "role": "source",
+        "expectedSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "matchesDeclared": false
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeFir.fbx",
+        "exists": true,
+        "sha256": "684e3b248a149a80e9bf4c8456c61a5455199510fb20afb6b728b7858f35a373",
+        "asset": "RB_P08_RidgeFir",
+        "role": "fbx",
+        "expectedSha256": "79aee4f97f9a0fbf62a78fa61e660a1a2918b52058f7ae9a79002edb22e7d5db",
+        "matchesDeclared": false
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "asset": "RB_P08_RidgeGalleryArch",
+        "role": "concept",
+        "expectedSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "asset": "RB_P08_RidgeGalleryArch",
+        "role": "source",
+        "expectedSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "matchesDeclared": false
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeGalleryArch.fbx",
+        "exists": true,
+        "sha256": "f5ee6144b1472e26c8ed65dd021f6043b4cdc61c8b8aa80cb43a51d12a309d3b",
+        "asset": "RB_P08_RidgeGalleryArch",
+        "role": "fbx",
+        "expectedSha256": "c454333c4efac915ae5bf62671101a0bd4d9b5e5db77d5933699dbf44ffdaea5",
+        "matchesDeclared": false
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "asset": "RB_P08_RidgeGranite",
+        "role": "concept",
+        "expectedSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "asset": "RB_P08_RidgeGranite",
+        "role": "source",
+        "expectedSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "matchesDeclared": false
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeGranite.fbx",
+        "exists": true,
+        "sha256": "bb07add43fa3f16e59e3e3ff88d7429b3f203864fc505542fe1920a7e37673b2",
+        "asset": "RB_P08_RidgeGranite",
+        "role": "fbx",
+        "expectedSha256": "6ef8170cb18713f6695a3e5c027c7b6f33fb864a35362feb98d939ea2db6efd5",
+        "matchesDeclared": false
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "asset": "RB_P08_RidgeSnowPole",
+        "role": "concept",
+        "expectedSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "asset": "RB_P08_RidgeSnowPole",
+        "role": "source",
+        "expectedSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "matchesDeclared": false
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeSnowPole.fbx",
+        "exists": true,
+        "sha256": "18e14ea8fb3c23a0f242c2dc0394243b3cae80e49fd37b2513d9c2073581c8cf",
+        "asset": "RB_P08_RidgeSnowPole",
+        "role": "fbx",
+        "expectedSha256": "e15087b9b33a155d650da8beea1fd745691216a548f2e7061b8cf325347f2c67",
+        "matchesDeclared": false
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "asset": "RB_P08_RidgeStoneWall",
+        "role": "concept",
+        "expectedSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "asset": "RB_P08_RidgeStoneWall",
+        "role": "source",
+        "expectedSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "matchesDeclared": false
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeStoneWall.fbx",
+        "exists": true,
+        "sha256": "86ff88b3f0dd55d0da06862c5dfdabfe99dd4da342a1414bb40ed84f78ad62a2",
+        "asset": "RB_P08_RidgeStoneWall",
+        "role": "fbx",
+        "expectedSha256": "a629ae4addb71e0bba0e25336e444fcf0c72da3d5eb3659ae6550f40dabf235f",
+        "matchesDeclared": false
+      },
+      {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "asset": "RB_P08_RidgeTimberHut",
+        "role": "concept",
+        "expectedSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matchesDeclared": true
+      },
+      {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "asset": "RB_P08_RidgeTimberHut",
+        "role": "source",
+        "expectedSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "matchesDeclared": false
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeTimberHut.fbx",
+        "exists": true,
+        "sha256": "6e2eb1ab1257b71714e3c2e6e7c8acef0f195a5853e8d2dff159d4857db3f1c8",
+        "asset": "RB_P08_RidgeTimberHut",
+        "role": "fbx",
+        "expectedSha256": "274ac9c04cdff0acaf3d3c837ba04b5949c3530bbc2b13a56ecb876fcf26579b",
+        "matchesDeclared": false
+      }
+    ]
+  },
+  "audio": {
+    "clips": [
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_after-the-flag.ogg",
+        "exists": true,
+        "sha256": "a2c4d9de4e73850c9d3b916228076fad76fd002719f947ae33e8efeca5971c14",
+        "id": "after-the-flag",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "a2c4d9de4e73850c9d3b916228076fad76fd002719f947ae33e8efeca5971c14",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_amber-apex.ogg",
+        "exists": true,
+        "sha256": "e5e905369cb9b56c3e34f5705b0641c69ccc8a87b4828de12415fd32f6599403",
+        "id": "amber-apex",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "e5e905369cb9b56c3e34f5705b0641c69ccc8a87b4828de12415fd32f6599403",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blue-hour-service.ogg",
+        "exists": true,
+        "sha256": "c1af10dc78191ee611948fd7ebd51c4637499d6f7e8b0eb3a0f6312fc29ce56e",
+        "id": "blue-hour-service",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "c1af10dc78191ee611948fd7ebd51c4637499d6f7e8b0eb3a0f6312fc29ce56e",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blueprint-lull.ogg",
+        "exists": true,
+        "sha256": "3ee7cabfc3f4e7dc0f04168bb94ad63440c63ae529bd09711fc297709e3172b5",
+        "id": "blueprint-lull",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "3ee7cabfc3f4e7dc0f04168bb94ad63440c63ae529bd09711fc297709e3172b5",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_brake-light-waltz.ogg",
+        "exists": true,
+        "sha256": "284fb17973d9a60cca04bfbf34d6c0d4db28576f5c4d9fc60d6dc8c30ea6986d",
+        "id": "brake-light-waltz",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "284fb17973d9a60cca04bfbf34d6c0d4db28576f5c4d9fc60d6dc8c30ea6986d",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_clutch-and-kindness.ogg",
+        "exists": true,
+        "sha256": "4d91b96e3ca151b0732dba7e905961897a5f2e51786c0f2e23d71a59a8f3753c",
+        "id": "clutch-and-kindness",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "4d91b96e3ca151b0732dba7e905961897a5f2e51786c0f2e23d71a59a8f3753c",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_concrete-comet.ogg",
+        "exists": true,
+        "sha256": "dda546b44fa1ba46236c6dcfea5c5af1f9dba5fa4601497aab18e6f585a4df5a",
+        "id": "concrete-comet",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "dda546b44fa1ba46236c6dcfea5c5af1f9dba5fa4601497aab18e6f585a4df5a",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_copper-weather.ogg",
+        "exists": true,
+        "sha256": "955f60755ea4121ce36e2b36952691911b8aec76875b3b1da8bc39e5818926c8",
+        "id": "copper-weather",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "955f60755ea4121ce36e2b36952691911b8aec76875b3b1da8bc39e5818926c8",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_dust-signal.ogg",
+        "exists": true,
+        "sha256": "45de7c9ea3876f4f2bd7fff9bfc0ebfa9d65fb1c3f87371d6a49bc6b17b79e6f",
+        "id": "dust-signal",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "45de7c9ea3876f4f2bd7fff9bfc0ebfa9d65fb1c3f87371d6a49bc6b17b79e6f",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_found-the-line.ogg",
+        "exists": true,
+        "sha256": "7e1ac50274072de41074612bd97f91535722e7b58c2fd11d58232d1fde474bf9",
+        "id": "found-the-line",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "7e1ac50274072de41074612bd97f91535722e7b58c2fd11d58232d1fde474bf9",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_freight-of-light.ogg",
+        "exists": true,
+        "sha256": "42fc4ca272d9a1ee2dcff6365216ba8174b930fdcb4b8eb1c0ed0e6669324c23",
+        "id": "freight-of-light",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "42fc4ca272d9a1ee2dcff6365216ba8174b930fdcb4b8eb1c0ed0e6669324c23",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_last-light-repair.ogg",
+        "exists": true,
+        "sha256": "5320a36922da10d9f438b1247009d5b5e3f69d66a9c7d34bc5040ed6c20580b6",
+        "id": "last-light-repair",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "5320a36922da10d9f438b1247009d5b5e3f69d66a9c7d34bc5040ed6c20580b6",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_meridian-lobby.ogg",
+        "exists": true,
+        "sha256": "481fa82610bda34fbb3ea4f3c8d2bde66c238af1106dad631349e7393d6e2678",
+        "id": "meridian-lobby",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "481fa82610bda34fbb3ea4f3c8d2bde66c238af1106dad631349e7393d6e2678",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_neon-receipt.ogg",
+        "exists": true,
+        "sha256": "12cae9f4a16a721a724bac95c142370950d1d1d3783c8c0047216a0cee8d3608",
+        "id": "neon-receipt",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "12cae9f4a16a721a724bac95c142370950d1d1d3783c8c0047216a0cee8d3608",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_nightshift-meters.ogg",
+        "exists": true,
+        "sha256": "d295fb7532644f97ab3b1586d20e99109e46bbf0232dc40379f4bd7d1df4f8aa",
+        "id": "nightshift-meters",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "d295fb7532644f97ab3b1586d20e99109e46bbf0232dc40379f4bd7d1df4f8aa",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_orchard-afterburn.ogg",
+        "exists": true,
+        "sha256": "6292d7784c53d6fc31c946a1c63833b2e5113ca576026af77ec5777bb52c1578",
+        "id": "orchard-afterburn",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "6292d7784c53d6fc31c946a1c63833b2e5113ca576026af77ec5777bb52c1578",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_paddock-sunrise.ogg",
+        "exists": true,
+        "sha256": "66085c205e249daab7afa3d38a015a527b23ca7442e8f86a38897e4800109aac",
+        "id": "paddock-sunrise",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "66085c205e249daab7afa3d38a015a527b23ca7442e8f86a38897e4800109aac",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_quiet-pitlane.ogg",
+        "exists": true,
+        "sha256": "e350345e8ec40d25e8a11654bd73058b56954f295e1c8ec690eb00c4f83d446c",
+        "id": "quiet-pitlane",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "e350345e8ec40d25e8a11654bd73058b56954f295e1c8ec690eb00c4f83d446c",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_ridge-line-promise.ogg",
+        "exists": true,
+        "sha256": "713a3dbc33a15ba68900b86522b9ff6442ab3e58ee567364082e5ec63d26d67e",
+        "id": "ridge-line-promise",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "713a3dbc33a15ba68900b86522b9ff6442ab3e58ee567364082e5ec63d26d67e",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_rival-frequency.ogg",
+        "exists": true,
+        "sha256": "690d664dd11642028be1bd29b5c732a14aff0c7a0053490d09f364433da15a16",
+        "id": "rival-frequency",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "690d664dd11642028be1bd29b5c732a14aff0c7a0053490d09f364433da15a16",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_safe-passage.ogg",
+        "exists": true,
+        "sha256": "32b0ee589cc58519683c2f170e32bed0e34b443f80ba82f0739abd9b7aa91042",
+        "id": "safe-passage",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "32b0ee589cc58519683c2f170e32bed0e34b443f80ba82f0739abd9b7aa91042",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_switchback-radio.ogg",
+        "exists": true,
+        "sha256": "fb7c3e5a805796b451f0a3675654fffa8730ce99d6601c89f96a617c56caad83",
+        "id": "switchback-radio",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "fb7c3e5a805796b451f0a3675654fffa8730ce99d6601c89f96a617c56caad83",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_the-short-way.ogg",
+        "exists": true,
+        "sha256": "5c7b44a71261cac684b82d5806da85e0ff8278ec6526f981a2f166d5c9c6a603",
+        "id": "the-short-way",
+        "category": "music",
+        "role": "short-score",
+        "expectedSha256": "5c7b44a71261cac684b82d5806da85e0ff8278ec6526f981a2f166d5c9c6a603",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_two-lane-covenant.ogg",
+        "exists": true,
+        "sha256": "008e78c9c89348b1e223496eec56090c63b855ec00163067863b12e74a205266",
+        "id": "two-lane-covenant",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "008e78c9c89348b1e223496eec56090c63b855ec00163067863b12e74a205266",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_warm-engine-home.ogg",
+        "exists": true,
+        "sha256": "b00b55a7639c9e3ef8e15a6a630ea21f77bece48ccc6b717435ec42060882d2c",
+        "id": "warm-engine-home",
+        "category": "music",
+        "role": "full-composition",
+        "expectedSha256": "b00b55a7639c9e3ef8e15a6a630ea21f77bece48ccc6b717435ec42060882d2c",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_apex-four-engine.ogg",
+        "exists": true,
+        "sha256": "cf5f7c2f4a4b4ca4e2cdd8694dfc70fb155f4d946587ed4fd7585bdee90e3b27",
+        "id": "apex-four-engine",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "cf5f7c2f4a4b4ca4e2cdd8694dfc70fb155f4d946587ed4fd7585bdee90e3b27",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-alert.ogg",
+        "exists": true,
+        "sha256": "e52f8bf9578400ae2e913dc38232fd831d1a41e7d37e5a79aee146eaed230362",
+        "id": "ash-alert",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "e52f8bf9578400ae2e913dc38232fd831d1a41e7d37e5a79aee146eaed230362",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-cheer.ogg",
+        "exists": true,
+        "sha256": "d892366ed392039310bdd60c5c205b3530de29f0e9673080e1811ae0538aeae8",
+        "id": "ash-cheer",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "d892366ed392039310bdd60c5c205b3530de29f0e9673080e1811ae0538aeae8",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-concern.ogg",
+        "exists": true,
+        "sha256": "2fc1f6b6d0a88a4953ecd3d6a74ad10d0c9888f0cc9ea04835b8b75015f2fc7d",
+        "id": "ash-concern",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "2fc1f6b6d0a88a4953ecd3d6a74ad10d0c9888f0cc9ea04835b8b75015f2fc7d",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-effort-hard.ogg",
+        "exists": true,
+        "sha256": "01409f1e8794008da59af9623f8866f6746280363c82b313e028ecd9309bd496",
+        "id": "ash-effort-hard",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "01409f1e8794008da59af9623f8866f6746280363c82b313e028ecd9309bd496",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-refuse.ogg",
+        "exists": true,
+        "sha256": "597fae3592fa5d13a23b4805a57f1a60a6741aada9a29a6e73ac030207439cc5",
+        "id": "ash-refuse",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "597fae3592fa5d13a23b4805a57f1a60a6741aada9a29a6e73ac030207439cc5",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-victory.ogg",
+        "exists": true,
+        "sha256": "4531fe21674fb059f0072ec63b652bf4c83b0d2d52437975b4a7258a9728c58d",
+        "id": "ash-victory",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "4531fe21674fb059f0072ec63b652bf4c83b0d2d52437975b4a7258a9728c58d",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boost-pressure.ogg",
+        "exists": true,
+        "sha256": "b251e3beee807aeecb83329d273d96fb0c58538496453b70087531ca8d4743a4",
+        "id": "boost-pressure",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "b251e3beee807aeecb83329d273d96fb0c58538496453b70087531ca8d4743a4",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-asphalt-step.ogg",
+        "exists": true,
+        "sha256": "9a1a96dbfe8901b4c60a6b267cfbf25be09f22bf9042219d2d1cf743cb2598aa",
+        "id": "boot-asphalt-step",
+        "category": "sfx",
+        "role": "step",
+        "expectedSha256": "9a1a96dbfe8901b4c60a6b267cfbf25be09f22bf9042219d2d1cf743cb2598aa",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-side-contact.ogg",
+        "exists": true,
+        "sha256": "36f44ab5efb107b8170e23940f1a1ad838b7e036e1c24f706d294ef3f4f166e3",
+        "id": "boot-side-contact",
+        "category": "sfx",
+        "role": "impact",
+        "expectedSha256": "36f44ab5efb107b8170e23940f1a1ad838b7e036e1c24f706d294ef3f4f166e3",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-air-sweep.ogg",
+        "exists": true,
+        "sha256": "0028125ac727cf77724c13278aa8f1a298ce954fdadf64ce74d7d117df2df4c2",
+        "id": "chain-air-sweep",
+        "category": "sfx",
+        "role": "sweep",
+        "expectedSha256": "0028125ac727cf77724c13278aa8f1a298ce954fdadf64ce74d7d117df2df4c2",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-link-contact.ogg",
+        "exists": true,
+        "sha256": "fea852c2c50e9711392fda545ed6cf8725421750f85d2ac6824e921974bbe3cb",
+        "id": "chain-link-contact",
+        "category": "sfx",
+        "role": "metal",
+        "expectedSha256": "fea852c2c50e9711392fda545ed6cf8725421750f85d2ac6824e921974bbe3cb",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-barrier-heavy.ogg",
+        "exists": true,
+        "sha256": "d308cd133e2be46350ae547c363b7a27e6ef2412859ecfcb0a469d9d1039c0ec",
+        "id": "crash-barrier-heavy",
+        "category": "sfx",
+        "role": "crash",
+        "expectedSha256": "d308cd133e2be46350ae547c363b7a27e6ef2412859ecfcb0a469d9d1039c0ec",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-shoulder-light.ogg",
+        "exists": true,
+        "sha256": "feb7a4abb4698ae445a5ce4002cf443b2e4edd30ba94ae444218f301e6bf732a",
+        "id": "crash-shoulder-light",
+        "category": "sfx",
+        "role": "crash",
+        "expectedSha256": "feb7a4abb4698ae445a5ce4002cf443b2e4edd30ba94ae444218f301e6bf732a",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-traffic-medium.ogg",
+        "exists": true,
+        "sha256": "734ef955424bf3093266c39857ccdad1d3c4d33556cda9f7e28b2eac902ee046",
+        "id": "crash-traffic-medium",
+        "category": "sfx",
+        "role": "crash",
+        "expectedSha256": "734ef955424bf3093266c39857ccdad1d3c4d33556cda9f7e28b2eac902ee046",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-disbelief.ogg",
+        "exists": true,
+        "sha256": "5361abfbb23d87e97147238aab1fe3d1a97e978fb2e2f21dc26f74ca2d5a68f4",
+        "id": "echo-disbelief",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "5361abfbb23d87e97147238aab1fe3d1a97e978fb2e2f21dc26f74ca2d5a68f4",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-effort-high.ogg",
+        "exists": true,
+        "sha256": "fdf123cd94458043acbad6164f465f37376fa1126ca1a1ee0f5cd3cb650b31c6",
+        "id": "echo-effort-high",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "fdf123cd94458043acbad6164f465f37376fa1126ca1a1ee0f5cd3cb650b31c6",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-refusal.ogg",
+        "exists": true,
+        "sha256": "1c004908a514a66ebb5d7886233032d64a5b2687ea795ad73585e4906938a49c",
+        "id": "echo-refusal",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "1c004908a514a66ebb5d7886233032d64a5b2687ea795ad73585e4906938a49c",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-rev.ogg",
+        "exists": true,
+        "sha256": "efc764d66b5961a3d8b77648e4b28c195f44e01644b66d953dcbe9ae671ed768",
+        "id": "echo-rev",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "efc764d66b5961a3d8b77648e4b28c195f44e01644b66d953dcbe9ae671ed768",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-shock.ogg",
+        "exists": true,
+        "sha256": "ba55e0d2716da473d4d03c14ef16025ee0b4c34e457447a20fb953fcecdfe083",
+        "id": "echo-shock",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "ba55e0d2716da473d4d03c14ef16025ee0b4c34e457447a20fb953fcecdfe083",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-step-aside.ogg",
+        "exists": true,
+        "sha256": "a5f4271a474c6da77323f24288dfdda6347104671ea75601927919d682a04f45",
+        "id": "echo-step-aside",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "a5f4271a474c6da77323f24288dfdda6347104671ea75601927919d682a04f45",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_engine-touring.ogg",
+        "exists": true,
+        "sha256": "33092853d76622a82e2c7bea64fe197d88ca3c7b922bf2c33d8a811af6331358",
+        "id": "engine-touring",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "33092853d76622a82e2c7bea64fe197d88ca3c7b922bf2c33d8a811af6331358",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-air-sweep.ogg",
+        "exists": true,
+        "sha256": "e4199eba17d9c3c4843f50668ce798f2b838d49ac557df604d47e7f2c548ba65",
+        "id": "glove-air-sweep",
+        "category": "sfx",
+        "role": "sweep",
+        "expectedSha256": "e4199eba17d9c3c4843f50668ce798f2b838d49ac557df604d47e7f2c548ba65",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-heavy.ogg",
+        "exists": true,
+        "sha256": "ada1fcb55220c540223aee4effcd2a3de50ccfb6ac737051ebf22ecff2edd022",
+        "id": "glove-contact-heavy",
+        "category": "sfx",
+        "role": "impact",
+        "expectedSha256": "ada1fcb55220c540223aee4effcd2a3de50ccfb6ac737051ebf22ecff2edd022",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-light.ogg",
+        "exists": true,
+        "sha256": "5699271c8d4a4c442ccfd01136dc147d7c9309b0167ea4c8f1784c7f0037d1b3",
+        "id": "glove-contact-light",
+        "category": "sfx",
+        "role": "impact",
+        "expectedSha256": "5699271c8d4a4c442ccfd01136dc147d7c9309b0167ea4c8f1784c7f0037d1b3",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-alarm.ogg",
+        "exists": true,
+        "sha256": "076f509eb1aa95946ca8a7925aab57023945fae4b7148e38ed0b603acbd794b4",
+        "id": "juno-alarm",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "076f509eb1aa95946ca8a7925aab57023945fae4b7148e38ed0b603acbd794b4",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-effort-soft.ogg",
+        "exists": true,
+        "sha256": "61529794978c05610c91c6c8c9085a27cb5ab876ecb4dcf7e30c36e2f7372c53",
+        "id": "juno-effort-soft",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "61529794978c05610c91c6c8c9085a27cb5ab876ecb4dcf7e30c36e2f7372c53",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-lookout.ogg",
+        "exists": true,
+        "sha256": "001cdf37e84ccd64b4dc6bb7794e3a31bc8e1be3158dbcad17237bf533ec540d",
+        "id": "juno-lookout",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "001cdf37e84ccd64b4dc6bb7794e3a31bc8e1be3158dbcad17237bf533ec540d",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-panic.ogg",
+        "exists": true,
+        "sha256": "0775bd475dd82eb2a31da57ddff747cd952e4513a75f8d67a3cbb4f5405b51fe",
+        "id": "juno-panic",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "0775bd475dd82eb2a31da57ddff747cd952e4513a75f8d67a3cbb4f5405b51fe",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-retort.ogg",
+        "exists": true,
+        "sha256": "3bcf6adaa9d29fc2243a238e6f9f59108f5ca8ebb2668dd3aeb772e200d7b78b",
+        "id": "juno-retort",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "3bcf6adaa9d29fc2243a238e6f9f59108f5ca8ebb2668dd3aeb772e200d7b78b",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-surprise.ogg",
+        "exists": true,
+        "sha256": "1485fa7a9715ec95b255e6adfc9aece55d33ac79f8cefdaee481400b5a08731c",
+        "id": "juno-surprise",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "1485fa7a9715ec95b255e6adfc9aece55d33ac79f8cefdaee481400b5a08731c",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-confusion.ogg",
+        "exists": true,
+        "sha256": "2851d9036ac923c374bc80a99370ab985443fd66d12ed8c1799ea53d909e5447",
+        "id": "kai-confusion",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "2851d9036ac923c374bc80a99370ab985443fd66d12ed8c1799ea53d909e5447",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-effort-short.ogg",
+        "exists": true,
+        "sha256": "ce94a2271fc5518d2bfda5a73bd220e6abf5346a1668b18274c5dad3acf8eeeb",
+        "id": "kai-effort-short",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "ce94a2271fc5518d2bfda5a73bd220e6abf5346a1668b18274c5dad3acf8eeeb",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-protest.ogg",
+        "exists": true,
+        "sha256": "4c336d3de3ef9dd5b9d10723fd6019ac565f5a1dcbb1929e4d07e6461a98567e",
+        "id": "kai-protest",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "4c336d3de3ef9dd5b9d10723fd6019ac565f5a1dcbb1929e4d07e6461a98567e",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-surprise.ogg",
+        "exists": true,
+        "sha256": "cea8a7b0ce22f082061b949dbbfda34be3b5f1be15b852f3944955bbdf2ae1df",
+        "id": "kai-surprise",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "cea8a7b0ce22f082061b949dbbfda34be3b5f1be15b852f3944955bbdf2ae1df",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-wait.ogg",
+        "exists": true,
+        "sha256": "ca96ce93520938a1f2f27f8d70113ad3164a32da847063bb92ead1ec8b480a9b",
+        "id": "kai-wait",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "ca96ce93520938a1f2f27f8d70113ad3164a32da847063bb92ead1ec8b480a9b",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_leather-road-slide.ogg",
+        "exists": true,
+        "sha256": "7034282ac0b0f3ca6eeaf6b120df14006d86cfb8a2282c783851bb8fb6feb85d",
+        "id": "leather-road-slide",
+        "category": "sfx",
+        "role": "slide",
+        "expectedSha256": "7034282ac0b0f3ca6eeaf6b120df14006d86cfb8a2282c783851bb8fb6feb85d",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-attention.ogg",
+        "exists": true,
+        "sha256": "dc00975ffd5219c4b0023c3faeceb19666181569cd194536e8b827e886d8b315",
+        "id": "mako-attention",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "dc00975ffd5219c4b0023c3faeceb19666181569cd194536e8b827e886d8b315",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-effort-deep.ogg",
+        "exists": true,
+        "sha256": "a97782c1b7efd11076ef9cf8cc756d0006cb4db60a8dd2070e0210ce6ce1f045",
+        "id": "mako-effort-deep",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "a97782c1b7efd11076ef9cf8cc756d0006cb4db60a8dd2070e0210ce6ce1f045",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-greeting.ogg",
+        "exists": true,
+        "sha256": "c1cafec68f9a96ca959d4542b242eb7abaa00b2272c8b1a3faf5b3a74932d333",
+        "id": "mako-greeting",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "c1cafec68f9a96ca959d4542b242eb7abaa00b2272c8b1a3faf5b3a74932d333",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-stop.ogg",
+        "exists": true,
+        "sha256": "78cce9e6c7f6fd3c9d5d5a69d91ffac90525fbcc13c0bc009a7ca8ed7fca481d",
+        "id": "mako-stop",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "78cce9e6c7f6fd3c9d5d5a69d91ffac90525fbcc13c0bc009a7ca8ed7fca481d",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-tease.ogg",
+        "exists": true,
+        "sha256": "713326dfa270fe6ce14c8210adae61e746338c46fde9825cc34552f478cf56b3",
+        "id": "mako-tease",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "713326dfa270fe6ce14c8210adae61e746338c46fde9825cc34552f478cf56b3",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-warning.ogg",
+        "exists": true,
+        "sha256": "3b686e932785fc80b29c0ca081d2c2a04af378357a9f9a548e1088dc8755a3d3",
+        "id": "mako-warning",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "3b686e932785fc80b29c0ca081d2c2a04af378357a9f9a548e1088dc8755a3d3",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_opponent-engine.ogg",
+        "exists": true,
+        "sha256": "c31b5bb06d6fbc3e90070352aade5ac8b2ff9cc804e048488a710754b7036015",
+        "id": "opponent-engine",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "c31b5bb06d6fbc3e90070352aade5ac8b2ff9cc804e048488a710754b7036015",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-long-call.ogg",
+        "exists": true,
+        "sha256": "ed65e96f4dcf8b62e487277c1c52cdc0bac6205cc2a0628eb45295e5da6807ec",
+        "id": "patrol-long-call",
+        "category": "sfx",
+        "role": "siren",
+        "expectedSha256": "ed65e96f4dcf8b62e487277c1c52cdc0bac6205cc2a0628eb45295e5da6807ec",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-short-call.ogg",
+        "exists": true,
+        "sha256": "65b1ab1e1f298b36691957a9ac2ab4f1ca2eb27c6b6497076384bb15b8452e0c",
+        "id": "patrol-short-call",
+        "category": "sfx",
+        "role": "siren",
+        "expectedSha256": "65b1ab1e1f298b36691957a9ac2ab4f1ca2eb27c6b6497076384bb15b8452e0c",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-amused.ogg",
+        "exists": true,
+        "sha256": "3ffb5661c057673c414ea2ae2d59fb3ab72fecee4f5705ea6d1b0e6802ef4be4",
+        "id": "rook-amused",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "3ffb5661c057673c414ea2ae2d59fb3ab72fecee4f5705ea6d1b0e6802ef4be4",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-caution.ogg",
+        "exists": true,
+        "sha256": "740e390237d366dd83b8f1f74d3b27907dd20a2cf58d07ed1d3bfa08016190d8",
+        "id": "rook-caution",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "740e390237d366dd83b8f1f74d3b27907dd20a2cf58d07ed1d3bfa08016190d8",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-effort-burst.ogg",
+        "exists": true,
+        "sha256": "ef83ef05a51692beef88ab129a5e16911dcde19636661569bb920388b6e028dc",
+        "id": "rook-effort-burst",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "ef83ef05a51692beef88ab129a5e16911dcde19636661569bb920388b6e028dc",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-question.ogg",
+        "exists": true,
+        "sha256": "cf64766343b118615c70ae76a2af8cd35b66d31f643ef6ff0e48c601f94457c4",
+        "id": "rook-question",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "cf64766343b118615c70ae76a2af8cd35b66d31f643ef6ff0e48c601f94457c4",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-startle.ogg",
+        "exists": true,
+        "sha256": "9c4b54fe0fdfb70672f4c85ec9dc5b6ab7a2b8320865a922f44f99bfe59ce37e",
+        "id": "rook-startle",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "9c4b54fe0fdfb70672f4c85ec9dc5b6ab7a2b8320865a922f44f99bfe59ce37e",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-warning.ogg",
+        "exists": true,
+        "sha256": "931622140b8067d74bba2165fc4866ec433ac28959364f118095fddf68a1ae72",
+        "id": "rook-warning",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "931622140b8067d74bba2165fc4866ec433ac28959364f118095fddf68a1ae72",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-challenge.ogg",
+        "exists": true,
+        "sha256": "816d29ac0bea7734174cf3e6ad2c9e99e3a66a3aa11dc35a5d41746a370fd5d5",
+        "id": "sol-challenge",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "816d29ac0bea7734174cf3e6ad2c9e99e3a66a3aa11dc35a5d41746a370fd5d5",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort.ogg",
+        "exists": true,
+        "sha256": "37a6456ae951b5942abf7f2d14c0aa65372ac485407d25c59eebb08fd4fa3f22",
+        "id": "sol-effort",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "37a6456ae951b5942abf7f2d14c0aa65372ac485407d25c59eebb08fd4fa3f22",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort-long.ogg",
+        "exists": true,
+        "sha256": "d16150981b31e4e4fbd07ef181c38e063871fe3621f835702354b8f137c39802",
+        "id": "sol-effort-long",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "d16150981b31e4e4fbd07ef181c38e063871fe3621f835702354b8f137c39802",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-hold.ogg",
+        "exists": true,
+        "sha256": "08502037a211522a24f27e7667c8dc125bc049418565c6d94101f6afb01a246e",
+        "id": "sol-hold",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "08502037a211522a24f27e7667c8dc125bc049418565c6d94101f6afb01a246e",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-question.ogg",
+        "exists": true,
+        "sha256": "a6fd15f82fdc639e79eec38b1eee6191bb07b7b55756583d3b4dc6615a8ac6dd",
+        "id": "sol-question",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "a6fd15f82fdc639e79eec38b1eee6191bb07b7b55756583d3b4dc6615a8ac6dd",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-slow.ogg",
+        "exists": true,
+        "sha256": "fe053b41d8608ae79e55a98bf645a20bc35ab7ff557413a0b7e748d9a665f1fc",
+        "id": "sol-slow",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "fe053b41d8608ae79e55a98bf645a20bc35ab7ff557413a0b7e748d9a665f1fc",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sport-twin-engine.ogg",
+        "exists": true,
+        "sha256": "c9ce893e2c232f35241dcb35b0ebe62ba622757bf267814e83fb58b92b89f75b",
+        "id": "sport-twin-engine",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "c9ce893e2c232f35241dcb35b0ebe62ba622757bf267814e83fb58b92b89f75b",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_street-single-engine.ogg",
+        "exists": true,
+        "sha256": "258fe66ab20e3d7c5f935b2710922eb9cfc8db54ba05af407f4653036bb65771",
+        "id": "street-single-engine",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "258fe66ab20e3d7c5f935b2710922eb9cfc8db54ba05af407f4653036bb65771",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_suspension-bottom.ogg",
+        "exists": true,
+        "sha256": "581a85dd20b24aaa39b679a95f0adcfbaece1339f8701508f99f1e7bb216cded",
+        "id": "suspension-bottom",
+        "category": "sfx",
+        "role": "impact",
+        "expectedSha256": "581a85dd20b24aaa39b679a95f0adcfbaece1339f8701508f99f1e7bb216cded",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-asphalt-drift.ogg",
+        "exists": true,
+        "sha256": "f54f4c853402ce1d11d01b818f4033d04dcddca069adb774c10f977a8327741c",
+        "id": "tire-asphalt-drift",
+        "category": "sfx",
+        "role": "slide",
+        "expectedSha256": "f54f4c853402ce1d11d01b818f4033d04dcddca069adb774c10f977a8327741c",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-gravel-drift.ogg",
+        "exists": true,
+        "sha256": "5fb0fedd02f945410f2d0db2596b19706ba721bf8e9614b48f9d590444a3d5dd",
+        "id": "tire-gravel-drift",
+        "category": "sfx",
+        "role": "slide",
+        "expectedSha256": "5fb0fedd02f945410f2d0db2596b19706ba721bf8e9614b48f9d590444a3d5dd",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_traffic-four-cylinder.ogg",
+        "exists": true,
+        "sha256": "ce99873ced709dfa11239b06f7370054ab0645ba3659573d40465f761ecdae5f",
+        "id": "traffic-four-cylinder",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "ce99873ced709dfa11239b06f7370054ab0645ba3659573d40465f761ecdae5f",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tunnel-engine-resonance.ogg",
+        "exists": true,
+        "sha256": "1b3762314cf994396879a6a4a0998f50f0ab466f55091793be1479334603b922",
+        "id": "tunnel-engine-resonance",
+        "category": "sfx",
+        "role": "engine",
+        "expectedSha256": "1b3762314cf994396879a6a4a0998f50f0ab466f55091793be1479334603b922",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-effort-low.ogg",
+        "exists": true,
+        "sha256": "ee83017b51275d694846c95fbac12cb49a98d66496d0edc83ccbedb618b227c6",
+        "id": "vale-effort-low",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "ee83017b51275d694846c95fbac12cb49a98d66496d0edc83ccbedb618b227c6",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-help.ogg",
+        "exists": true,
+        "sha256": "701e8304d0cd6cbc8a1d9867f238e00f3e5bd077dd364ce3482da21f06990a2d",
+        "id": "vale-help",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "701e8304d0cd6cbc8a1d9867f238e00f3e5bd077dd364ce3482da21f06990a2d",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-ready.ogg",
+        "exists": true,
+        "sha256": "4b78965ab1a6f0935415aa63b9ea226b549b72752d7ae2ed3367c4d1489d7a20",
+        "id": "vale-ready",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "4b78965ab1a6f0935415aa63b9ea226b549b72752d7ae2ed3367c4d1489d7a20",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-startle.ogg",
+        "exists": true,
+        "sha256": "6e725253e920c131ba13eed8dc94586c8ff1b0cb16c9d5c1f31909996a668f13",
+        "id": "vale-startle",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "6e725253e920c131ba13eed8dc94586c8ff1b0cb16c9d5c1f31909996a668f13",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-step-back.ogg",
+        "exists": true,
+        "sha256": "12ce255d29287fafc20168efae5c495754742427dad36a96a32be856632b7cbc",
+        "id": "vale-step-back",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "12ce255d29287fafc20168efae5c495754742427dad36a96a32be856632b7cbc",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-tourist-alarm.ogg",
+        "exists": true,
+        "sha256": "ca88924ae801c25fe3a5948a62ee197e8d0f2cf15eefa5318a8f474129baaaed",
+        "id": "vale-tourist-alarm",
+        "category": "sfx",
+        "role": "reaction",
+        "expectedSha256": "ca88924ae801c25fe3a5948a62ee197e8d0f2cf15eefa5318a8f474129baaaed",
+        "signalAuditPassed": true
+      },
+      {
+        "path": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_wood-grip-contact.ogg",
+        "exists": true,
+        "sha256": "2496adb4e99b915e97fad1082ce189c39195a116a6114e8c49e64c7db3fac7f4",
+        "id": "wood-grip-contact",
+        "category": "sfx",
+        "role": "impact",
+        "expectedSha256": "2496adb4e99b915e97fad1082ce189c39195a116a6114e8c49e64c7db3fac7f4",
+        "signalAuditPassed": true
+      }
+    ],
+    "bindings": [
+      {
+        "path": "docs/p08/media/audio-manifest.json",
+        "exists": true,
+        "sha256": "54cf21f12d20456154599cd78ff0e7d6f6b3b0a7c7e4780653ae0245c962aed6",
+        "expectedSha256": "54cf21f12d20456154599cd78ff0e7d6f6b3b0a7c7e4780653ae0245c962aed6"
+      },
+      {
+        "path": "docs/p08/media/audio-audit.json",
+        "exists": true,
+        "sha256": "a73548b8d1f6e4e9ce2f69d76bd29e1333c854312d51379263d7b6052dbfee83",
+        "expectedSha256": "a73548b8d1f6e4e9ce2f69d76bd29e1333c854312d51379263d7b6052dbfee83"
+      }
+    ],
+    "categories": {
+      "music": 25,
+      "sfx": 72
+    },
+    "roles": {
+      "short-score": 11,
+      "full-composition": 14,
+      "engine": 8,
+      "reaction": 47,
+      "step": 1,
+      "impact": 5,
+      "sweep": 2,
+      "metal": 1,
+      "crash": 3,
+      "slide": 3,
+      "siren": 2
+    }
+  },
+  "declaredP06ClipNames": [
+    "RB_AttackLeft",
+    "RB_AttackRight",
+    "RB_Fall",
+    "RB_Hit",
+    "RB_Idle",
+    "RB_KickLeft",
+    "RB_KickRight",
+    "RB_LeanLeft",
+    "RB_LeanRight",
+    "RB_Remount",
+    "RB_Ride",
+    "RB_Run"
+  ],
+  "promotionManifest": {
+    "path": "docs/p08/promotion/production-bindings.json",
+    "exists": false,
+    "sha256": null
+  },
+  "goldenPrefabs": [
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex.prefab",
+      "exists": true,
+      "sha256": "2133b7457852f93ff67975256e54e59f476c77207ff0e7ac4a3d1666fb90a7a9"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_r3.prefab",
+      "exists": true,
+      "sha256": "29d40b3e9d0e83c1e234d7c9e90b2fe5ec77f353792ea9d11c99a7058b77c740"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_r4.prefab",
+      "exists": true,
+      "sha256": "21c23fca2d3e915936adad89cb2e26733ff1a0a71552e4022bac7dbe1ed54eea"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_r5.prefab",
+      "exists": true,
+      "sha256": "03c47453a76ab37360154dc08bd9fcd17db17c495836cbf0519ea1bbb5f5264b"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8.prefab",
+      "exists": true,
+      "sha256": "1245d541dee70802ed1af0cda70207b7e39cb10ced66bd89494c07c5fb4f410a"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8_r2.prefab",
+      "exists": true,
+      "sha256": "7554d52df6416ef7e854c536d418cc5607d23399093a524df697c3aca5712df7"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V2.prefab",
+      "exists": true,
+      "sha256": "366f74ae04f3876bfabb1155f608581c1b8107a0bf4a636a9f4f1fb5223ebe83"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V3.prefab",
+      "exists": true,
+      "sha256": "8c2b9f664628d1f6085ac48e15154dd8531d56876436fc23a75bd4e5ca45d98b"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V4.prefab",
+      "exists": true,
+      "sha256": "12a50d387abe483d327ab1d2dce0a5ca711aa73f3bc829cf95647470dbec51ff"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V6.prefab",
+      "exists": true,
+      "sha256": "38c656082d8f8cf8ee0af621374f3e2742e5d8a5dc5bd4cd8104db53a972f58b"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V6_GroundOrigin.prefab",
+      "exists": true,
+      "sha256": "9c7f73eb68411797da10617129d3ba3a869900ec391f43cc37fb43687699c12c"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V7.prefab",
+      "exists": true,
+      "sha256": "f5adaebd68258c6e375203e1cebcca5975b114710e75073148aa833316ef1656"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V7R1.prefab",
+      "exists": true,
+      "sha256": "bdfa01b7cfcfe93b4e77ef8771193caa65025abcbeab7e5c63b2f6cb69fb5fb9"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V7R1_UvControl.prefab",
+      "exists": true,
+      "sha256": "de33befbc07386a980b8a3081fae75cc1469e54a2a7c43cbb142ae06b7722519"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V7R2.prefab",
+      "exists": true,
+      "sha256": "4a723d57f58f28d41da31f7da94a863c88e4e7a3cedff1a27252a77032755b70"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v13.prefab",
+      "exists": true,
+      "sha256": "35d6fdee08ff52f01edee6cd064c36e18f0b67fa4e008fb6406ec3c36e57e50e"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v14.prefab",
+      "exists": true,
+      "sha256": "61c1bca4630f5dfb093adb4d2fea0fd5caed1de1aa5a87de5087043a47f21744"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v16.prefab",
+      "exists": true,
+      "sha256": "a6081181ece0d8ffc606f6c1c098a2ab21e5679f689cd0b23eb2e30164fa69aa"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v17.prefab",
+      "exists": true,
+      "sha256": "be853c291a98cb299c4af276b0efac9facb90dcbf30ff118786ed90eb4705bb7"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Garage_v2.prefab",
+      "exists": true,
+      "sha256": "5957e1e28434e055e9cd7fc758cda069e30d61f315acf245642ba7104700a737"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Garage_v3.prefab",
+      "exists": true,
+      "sha256": "71edfedb1c841be832b8d44e6a5a15da63cd38e30e293b7503e9ef53a36d6ec5"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Garage_v4.prefab",
+      "exists": true,
+      "sha256": "00ac86388f8187f75bffeb01138a8717729e200c2983dda2ad15b42150eb7826"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Garage_v5.prefab",
+      "exists": true,
+      "sha256": "89aec305e5802b7f2c77eb0f590043cc0f3276c7d51f0a22adcd2bcfe344ec02"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Garage_v7.prefab",
+      "exists": true,
+      "sha256": "4fab8027a5caad651cc7c9fd7bf7d4fcac32985af6b91dabd2a15faf68786dd8"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_MenuEnvironment_v1.prefab",
+      "exists": true,
+      "sha256": "4a5446cc0ed6e2d871cd138e43856447c1d5a980134959f73d3d6980332719d8"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Spark_v1.prefab",
+      "exists": true,
+      "sha256": "23bb8bb1c5aeffd552770fee193b6483461e193649e7921a4384f00ed989339a"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_ImportOnce_Fresh.prefab",
+      "exists": true,
+      "sha256": "ddf950b20ead54c89d9e218c49752a3af271b828e15dd95d093c6d0ea8c4968a"
+    }
+  ],
+  "ledgerCoverage": {
+    "rows": 491,
+    "state_counts": {
+      "partial": 192,
+      "pending": 299
+    },
+    "all_required_mappings_accepted": false,
+    "semantic_count_gate": "OPEN: compound-family semantics and music composition equivalence unresolved",
+    "global_coverage_percentage": null
+  },
+  "masks": {
+    "route": 1,
+    "bike": 1,
+    "character": 1
+  },
+  "distributionDirectories": {
+    "Build/Content-desktop": false,
+    "Build/Content-editor": false,
+    "Assets/StreamingAssets/Content": false
+  },
+  "protectedClub": {
+    "path": "ArtSource/Weapons/RB_Club.blend",
+    "exists": true,
+    "sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f"
+  },
+  "auditSources": [
+    {
+      "path": "Assets/RacingBois/Art/P08/ArtManifest.json",
+      "exists": true,
+      "sha256": "55f9860a1c9496dc3fb3dbe3c34ec634a9e8388b72fabcbdc5e1f143408ec18c"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P08ContentPackBuilder.cs",
+      "exists": true,
+      "sha256": "a56d70f900fa92b6781e334fef39c0dde2628ed939708b0964d115b9bbcb0a93"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P08ArtBuilder.cs",
+      "exists": true,
+      "sha256": "df8c8bd9b162d4cb0913d87868cee17947be76eb073b446ab39d46fc6a6eb189"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08ActorContent.cs",
+      "exists": true,
+      "sha256": "e9482306c535343b01c103ba9985afe99ba6b08509883fd1a409a8432feaf5ec"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08RouteContent.cs",
+      "exists": true,
+      "sha256": "844473982af994d3c08aa1867fe7a61838f7b1578e23b05b0e84e5b9d8dcfe0f"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenProductionGate.cs",
+      "exists": true,
+      "sha256": "f407d379104688358e81a230b922935294095ebdb47f1ecfd8acc8b8b887e30c"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenProductionBindings.cs",
+      "exists": true,
+      "sha256": "f5219ebf0d422cd7a4d385e106d91e1d9907aa8e5b7ac8fa2d4125570301b387"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/ProductionContent.cs",
+      "exists": true,
+      "sha256": "d8853b358760afe6a93772a41c1d1b83cf4383c7477d4b014a43f8e9c81598c9"
+    },
+    {
+      "path": "docs/p08/content/ContentParityLedger.json",
+      "exists": true,
+      "sha256": "4f00e901fd130b31ede908c0f630c98130637eed7494fc83cda7be8a9ffc89bb"
+    },
+    {
+      "path": "docs/p08/media/audio-delivery.json",
+      "exists": true,
+      "sha256": "51855a645ebc041ba3f05ea1ed8d6b050ff80d399446d70bd9d0ae03e82e99aa"
+    }
+  ]
+}

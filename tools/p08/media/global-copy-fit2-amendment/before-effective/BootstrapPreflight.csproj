@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><AssemblyName>RacingBois.Client.Bootstrap</AssemblyName></PropertyGroup>
+ <ItemGroup>
+  <ProjectReference Include="ApplicationPreflight.csproj" /><ProjectReference Include="PresentationPreflight.csproj" />
+  <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/*.cs" />
+  <Reference Include="$(UnityManaged)/UnityEngine/*.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Adapters.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Simulation.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Protocol.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.NetworkMapping.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.InputSystem.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.*.dll" />
+ </ItemGroup>
+</Project>

@@ -72,7 +72,7 @@ def validate_locale(data,locale,canonical,protected):
 
 
 def generate():
-    raise ValueError('Active reviewed Career overlay: run python tools/p08/media/global-copy-pristine-amendment/effective_generate.py (or --check). Frozen baseline generation is disabled to prevent reverting the ENU amendment.')
+    raise ValueError('Active reviewed Career overlay: run python tools/p08/media/global-copy-effective/generate.py (or --check). Frozen baseline generation is disabled to prevent reverting the ENU amendment.')
     canonical=read_inventory();protected=load(STAGE/'protected-tokens.json')
     tables={}
     inputs=[]

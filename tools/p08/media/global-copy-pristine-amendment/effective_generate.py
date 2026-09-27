@@ -103,6 +103,16 @@ def build(plan=None):
 
 
 def main():
+    # The immutable revision2 build() remains available for historical controls.
+    # Normal generation follows the reviewed active chain, including copy-fit fixes.
+    current_path = HERE.parent / 'global-copy-effective/generate.py'
+    current_spec = importlib.util.spec_from_file_location('active_global_copy', current_path)
+    current = importlib.util.module_from_spec(current_spec)
+    current_spec.loader.exec_module(current)
+    return current.main()
+
+
+def historical_revision2_main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true', help='Verify the staged output without writing it.')
     parser.add_argument('--check-live', action='store_true', help='Also require the installed production module to match.')

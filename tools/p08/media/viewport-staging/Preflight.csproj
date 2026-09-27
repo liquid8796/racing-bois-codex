@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>RacingBois.Client.Presentation</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/*.cs" Exclude="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceScreen.cs" />
+    <Compile Include="RaceScreen.cs" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.*.dll"><Private>false</Private></Reference>
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll"><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

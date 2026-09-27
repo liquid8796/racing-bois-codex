@@ -1,0 +1,1224 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T23:03:16.613281+00:00",
+  "passed": true,
+  "inputsStable": true,
+  "scope": "Current managed source compilation, effective copy generation/lookup and negative contracts; native rendering/readability acceptance remains separate.",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Liquid\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\generate.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\"passed\": true, \"changedCells\": 1, \"changedProviders\": [\"Multiplayer\"], \"artifacts\": 8, \"wroteProduction\": false, \"nativeUiAccepted\": false}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Liquid\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\test_generation.py"
+      ],
+      "exitCode": 0,
+      "output": "{\"passed\": true, \"controls\": 16, \"cases\": [\"exact_authored_provider_and_cells\", \"prior_english_amendment_retained\", \"stale_base_union\", \"stale_base_module\", \"duplicate_cell\", \"wrong_prior_value\", \"unknown_semantic_key\", \"wrong_provider\", \"frozen_vi_cannot_change\", \"extra_argument\", \"malformed_argument\", \"changed_linebreak\", \"changed_currency\", \"missing_evidence\", \"stale_render_evidence\", \"effective_text_covered_by_existing_owned_font_corpus\"], \"nativeUiAccepted\": false}\n"
+    },
+    {
+      "command": [
+        "dotnet",
+        "run",
+        "--project",
+        "D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-fit2-amendment\\Checks.csproj",
+        "--nologo"
+      ],
+      "exitCode": 0,
+      "output": "PASS 5550 union cells,2364 generated lookups; exactly1 Multiplayer cell; all six Career pristine cells retained. Native fit remains unverified.\n"
+    },
+    {
+      "command": [
+        "dotnet",
+        "build",
+        "D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\BootstrapPreflight.csproj",
+        "--nologo",
+        "-p:Flavor=Editor",
+        "-p:MultiplayerCopyCandidate=D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-fit2-amendment\\UiText.Multiplayer.Generated.cs"
+      ],
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  ApplicationPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\ApplicationPreflight\\Editor\\Debug\\netstandard2.1\\RacingBois.Client.Application.dll\n  PresentationPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\PresentationPreflight\\Editor\\Debug\\netstandard2.1\\RacingBois.Client.Presentation.dll\n  BootstrapPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\BootstrapPreflight\\Editor\\Debug\\netstandard2.1\\RacingBois.Client.Bootstrap.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:03.15\n"
+    },
+    {
+      "command": [
+        "dotnet",
+        "build",
+        "D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\BootstrapPreflight.csproj",
+        "--nologo",
+        "-p:Flavor=Windows",
+        "-p:MultiplayerCopyCandidate=D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-fit2-amendment\\UiText.Multiplayer.Generated.cs"
+      ],
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  ApplicationPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\ApplicationPreflight\\Windows\\Debug\\netstandard2.1\\RacingBois.Client.Application.dll\n  PresentationPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\PresentationPreflight\\Windows\\Debug\\netstandard2.1\\RacingBois.Client.Presentation.dll\n  BootstrapPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\BootstrapPreflight\\Windows\\Debug\\netstandard2.1\\RacingBois.Client.Bootstrap.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:03.14\n"
+    },
+    {
+      "command": [
+        "dotnet",
+        "build",
+        "D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\BootstrapPreflight.csproj",
+        "--nologo",
+        "-p:Flavor=Web",
+        "-p:MultiplayerCopyCandidate=D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-fit2-amendment\\UiText.Multiplayer.Generated.cs"
+      ],
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  ApplicationPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\ApplicationPreflight\\Web\\Debug\\netstandard2.1\\RacingBois.Client.Application.dll\n  PresentationPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\PresentationPreflight\\Web\\Debug\\netstandard2.1\\RacingBois.Client.Presentation.dll\n  BootstrapPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\global-copy-effective\\bin\\BootstrapPreflight\\Web\\Debug\\netstandard2.1\\RacingBois.Client.Bootstrap.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:02.93\n"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/AsmDefToCSProjLib.dll",
+      "sha256": "3a2be3529e5d718634bade8973501904f9ac8fe2bd587b2250760a2cc41fc3a4"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Bee.BeeDriver2.dll",
+      "sha256": "3cf0adb73cb243a65e0bafb58d52756a862be3766a2ab7d70a49ba1f52b5b402"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Bee.BinLog.dll",
+      "sha256": "c09456b48eb5593e64f29f2952ebf433b9043f78ed9982374a768d5376476255"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Bee.TinyProfiler2.dll",
+      "sha256": "a9250f993f81499fa38d4f5fb6cdc7a84c5da30a6693ac0622140fa2a6c36c40"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/BeeBuildProgramCommon.Data.dll",
+      "sha256": "0398a2a4c8e94a6ae66705c27a9f589fd9f4d1bd31f74b1009a4b4b9ddd83964"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/ExCSS.Unity.dll",
+      "sha256": "07860534a9a2a91f273d96e8491ddfa065da699b5539423df8eaa1bf5307036d"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Google.Protobuf.dll",
+      "sha256": "c1b8be6de4a1473e590b1c75acf90b9bddba347d1a9fb6fbf8e803f665b5c3b5"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Grpc.Core.Api.dll",
+      "sha256": "0c4e14b08b418a0fda47282cbf36607c6f72ff0ebbb986eeff5b2fd9e2408d55"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Grpc.Net.Client.dll",
+      "sha256": "4327477a190afaaf4da8db8814f518fa1684f217aceedaa206bedd72ef8a85df"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Grpc.Net.Common.dll",
+      "sha256": "c277f136c53efd1fc0ec5acc8d8aa8667f124f728bb9a2f299ad00c0b931d8f2"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Newtonsoft.Json.dll",
+      "sha256": "72cf291d4bab0edd08a9b07c6173e1e7ad1abb7ab727fd7044bf6305d7515661"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/PlayerBuildProgramLibrary.Data.dll",
+      "sha256": "6150b56b3cb511e3aad797354eb93734267c5d83511b33cda0c2e07ff4bc0ec8"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/ScriptCompilationBuildProgram.Data.dll",
+      "sha256": "501c544f30cce1f4e838a80f134ea780f6a5413cfdbec121000a3046dacafe43"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/StandardSocketsHttpHandler.dll",
+      "sha256": "659c784c861fbe5b79ff5c24cf4de0106db27a37e4265023a91ece53d6c4e0b7"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/System.CodeDom.dll",
+      "sha256": "3772e9c431fe84eb53580225ba8fe1dca549e76037375f5ba2be0903733fb716"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.BuildService.dll",
+      "sha256": "d7578aa4c9849a7fa918c310540322a01cc1329b6689dc75cff6db01966dd229"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.Cecil.dll",
+      "sha256": "27a8e20b84f9b6aef707d7ea026eed9e5b93f5d93b09362d61281194dee0f2a4"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.Cecil.Mdb.dll",
+      "sha256": "08db5b40b2610f31ff66dfc00b774cfee455dddd8e73f12a06f030517970f02f"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.Cecil.Pdb.dll",
+      "sha256": "ed6895a9cbe6aafb357b8c386fb9086fcd6e56899d34d4e7c15bc124ef2ccfa2"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.Cecil.Rocks.dll",
+      "sha256": "7ca9ebcef1a3ae21ea4f0d9a98337c0441bcf582571982e5ae29c49f48538e3b"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.CecilTools.dll",
+      "sha256": "36f4a90651176818275dc710ac42b2a9d6ecc39ae3540fc9f8b65858e68c83e3"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.CompilationPipeline.Common.dll",
+      "sha256": "5a6b5aa436b4324bf9a450a114372c43f45a0e835bb34c6558949ff26cbc8f52"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.FileUtilities.dll",
+      "sha256": "109ea0e724051040d055bdbbd10199262f5eed134ee920b354e1c634de98ae07"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.Scripting.dll",
+      "sha256": "6ba801eefe0ab6ef45493496e67aae6cb34582fb33af0a12b8c76c6aad91fcba"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.SerializationLogic.dll",
+      "sha256": "0a3c44fa2626fcc9efe9bc48032f72f735e997665a3dfd0fd456577afc3dfc38"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll",
+      "sha256": "e4c4b534b6f4deb00ea1b893ecae40ba74d93716673505d8da99611a00de0cae"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll",
+      "sha256": "bfd8b5f44cf413d14206629cdbf20605dfa02bd6d171a3af93e0e946d7b4f308"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AIModule.dll",
+      "sha256": "79c4d914d448254901410aaf3a4351d65790f614178f304062ebc8c0cc1a4dac"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AssetComplianceModule.dll",
+      "sha256": "f30b695f5ed998924bafa8287a89f253a46047bb3dd231e2b0f95c30338d5488"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.BuildProfileModule.dll",
+      "sha256": "2e34ee93026e5a364b73107cc7d9c759513530147e7cbf6a2f1a790448d6b3ab"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ClothModule.dll",
+      "sha256": "fea2ff433d13328e6127696f7161ecc24595daaddbf965997d7181e45d5dddd3"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ContentLoadModule.dll",
+      "sha256": "3390f69eae75a4723e73a1598ad1c7cbbbf6a3506b5b18d63fb1a3d5ffa79330"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreBusinessMetricsModule.dll",
+      "sha256": "1658ab2e791363d08ec51c64f9e7e913cd445596b2d196e0a6ed952e5691fccd"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll",
+      "sha256": "b818b53349d11c444902fd36eba2b55d93ea7cf5c07688295716800c8426c634"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll",
+      "sha256": "2225755d43597dbf04643f21604fc3187db70ae7c15b31688a3ce496b1e3d53a"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll",
+      "sha256": "61bc79d7984a77ec0f0200d9a2445639ebb52ee53eb9ec2d6ea6e3ee22447c8b"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll",
+      "sha256": "d85cbfd3c671d6412ad71e87da3cda74fc9c5cdc1bfd1fef5e8a266fc6ed3447"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.EditorToolbarModule.dll",
+      "sha256": "5a3529d2ea24adc3977cde3939718633e62a512b5686969fb6e1efbae8bfe00e"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.EmbreeModule.dll",
+      "sha256": "7361c680ddc71ab29a9f2db179c385b620be482fb69874a203225b34996fafac"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GenericRemoteModule.dll",
+      "sha256": "8946169d2fb07bd379113b61509360cc73361a531c69b5b7d2d31fee3c1e28c1"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GIModule.dll",
+      "sha256": "0e7178248707f3fd612a44dc5689417314faf43dc604d8fbf457dcd1557c1daa"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphicsStateCollectionSerializerModule.dll",
+      "sha256": "fe75996149d007c419fe3f61d4fa5aab0887c1459bbbcb8ff8653abf16d4a1ce"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphToolkitModule.dll",
+      "sha256": "7b0ae5b1c6a6119bec3e84126a0e7f9d16c13765b312c6bb0862c011ebab9eb9"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll",
+      "sha256": "0c10f708cd06baeac76ed33e56c5546fde869a528bd71b4dfda1c11fe2070d7a"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridAndSnapModule.dll",
+      "sha256": "cb0941905c8901401921e319378fd45ba7a3a4439dc6cfca69c6f1c4ca11f80b"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridModule.dll",
+      "sha256": "6273f20f33c61b89f76e3c7bfa1702ee2db7eceead4d1286cb2443a18f4a4560"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.HierarchyModule.dll",
+      "sha256": "3ecc48c5ce368ab45e202243029931ec94877158c3a290dbce8e68b00a389e17"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.LightingModule.dll",
+      "sha256": "900c4f85b9c723a2fd8cacddaef4e28e8dee083f7fdbb22555925e08f6167a30"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.MathematicsModule.dll",
+      "sha256": "07b6471863ec14980d238852012e8b23c0502d0ef867cebd50c976fee42553b3"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.MediaModule.dll",
+      "sha256": "0ca49f9bc8260df97325006b0448e6987a2535d1db758756fa307860730b0514"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.MSBuild.dll",
+      "sha256": "661d6b27811b1dd4b18e0b519b7022b1a21774a6feb0b057615ba3d858caf7b7"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.MultiplayerModule.dll",
+      "sha256": "f1d511737ac219075cd306536fc796cc103e0abd3e4f1366965b3cbac4a16b78"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.Physics2DModule.dll",
+      "sha256": "ac1bb35bafed8e443cbad0eb2d7294b3c576b1cc616b2df394fd752b7d70b65d"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PhysicsCore2DModule.dll",
+      "sha256": "948992aeebd7c8eae49eed22cabd2e513e62778510e28d8aadf9ef6dba426210"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PhysicsModule.dll",
+      "sha256": "b6e86a089f2da9e41346ff970f7d8647485d809c91e27a9e6c08763bbb759bdc"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PlayModeModule.dll",
+      "sha256": "7eead745b2e496b134390e38f26900c5e80267b3123d53e359ea11a70315a889"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PresetsUIModule.dll",
+      "sha256": "a8954be7505decf039f297027f8ff6bf83845af0e4b23b5b486febfba15b7b60"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ProjectAuditorModule.dll",
+      "sha256": "d86b36aa581b5420dcb717cf991d12171b9c95536be6b0c125c3c9b7369657cd"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PropertiesModule.dll",
+      "sha256": "dd585b57e3ce42bdd2fa7ad0f1f31a5c012d849e3ee2d6822ef503fccc6fd450"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.QuickInstallModule.dll",
+      "sha256": "a0a6786cc6e583753cc2be09f0f37285343a055d2f3cf2706a33a5991e525c64"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll",
+      "sha256": "bcc98301d4498087354a723ca8020efe8f3cb9b9aa7d7b7b354a83a157aa9a73"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SafeModeModule.dll",
+      "sha256": "6ee88303641306f2a593a69a82186275fef41f97e0fc5710f7d24c938acdde71"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll",
+      "sha256": "6adabb63a7d506446bee9114452a9bb69572850f3602f28bd286506fab13b27b"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneViewModule.dll",
+      "sha256": "7c5152f59083af9b897c6ea7979b7c3edab45699f8f8ab615fadec0fa0f84238"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderBuildSettingsModule.dll",
+      "sha256": "12af51f84442eb834e74e2dd745f4dab27fde7e2f4cc770dde18d8786f77148b"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderCompilationModule.dll",
+      "sha256": "b5efec4b87d3e9cc91d8223d4dda43caa28decfd3bf1b6f0a2656c8e49839f79"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderFoundryModule.dll",
+      "sha256": "3ec2a76d5c5e4df8acc974b1763d870cc074a7bb43ee35c42add22ed15105e68"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SketchUpModule.dll",
+      "sha256": "d4b156a52f1cc20f6407073cc035b8b0469e5c872dba0164dd61dd032a9f65fa"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteMaskModule.dll",
+      "sha256": "1dc0096a295818f16f543565edb1ec4a6f63658c769b9bcababbf3d70437fdb2"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteShapeModule.dll",
+      "sha256": "0622b32cd04fd1b3ca465492c6f90cf4074854c031b206b81e82d8300e2466ea"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SubstanceModule.dll",
+      "sha256": "b37ebd61b768952bed5d997eb759c491ccb20ef60a10e6b1ec384a1f7eaeafe4"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TerrainModule.dll",
+      "sha256": "26fb8eddd5c6ec378bf2e17883a1a9268a087a98b81c1c5ef96aefee4e46bdb8"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll",
+      "sha256": "8e2e6c2b7fd63be6c45154cfa59c20b74908f698cb89078d4c7baed16d5e1d2c"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll",
+      "sha256": "4a1d3e9cac7b1406f744e93b4425b910d01970af6eb82573c86889ebce4d3656"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextRenderingModule.dll",
+      "sha256": "6448015c3fc488dee2ad88daac315bbb38758e9e8807e565a5594d1041c190f0"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TilemapModule.dll",
+      "sha256": "bdf3c8e637fba54ec7d7ef3b2b6cac01729ef604e021ffdefa8b869bab55dcd0"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TreeModule.dll",
+      "sha256": "b0d9720c45041c0e81c92e56c50fb02d1e64d5e3858b782adaf6b4ade4dd6e11"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.U2DModule.dll",
+      "sha256": "ca9cbd25e52a554a60caf2748f88cd01da6fdd45da9a0945b8d0637631c5c8a4"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIAutomationModule.dll",
+      "sha256": "fa18bf4ef1cc87aa8b92979f04f59f8386a97e685eae9c947e3aa45e17736cf2"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll",
+      "sha256": "afc7bed7f829d2306b3de08d35c17086b37ddf6343449c9d0dd2c413cab32ab0"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll",
+      "sha256": "22758921f7da29b149e8254749db0afe5f2c838bbb542b795461883606f0b1a1"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll",
+      "sha256": "f83bd5c46aded2db8cc2b90be09530b973731dfa01227b7bbd255bb0eae50856"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIToolkitAuthoringModule.dll",
+      "sha256": "732bc4c1d58d2761769ba981a7fd1659f488d3cdf94e203f81db58ffa173d6dd"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UmbraModule.dll",
+      "sha256": "3ee536d419a8ef50a94b1b62c24dab8513333f2ad6359b4b5c9f8683f226f2cd"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll",
+      "sha256": "969e7a86399c06de5930d815e67eba7e424e5ae0ee9fe8159fc625e54da9e0d8"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.VectorGraphicsModule.dll",
+      "sha256": "a77fe0e668d9c44c21b9de33f9e7e9f91fe03fdbdfc1d3c04694df73e78c4dbf"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.VFXModule.dll",
+      "sha256": "bdddb12e42ac10f634cc8b16624462259766d817247f5213fbf593d2e1ef2e7f"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.VideoModule.dll",
+      "sha256": "703e14281710292804d5e44e448a7da27e7d58573fc1a746b1ae8286092a6f9e"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll",
+      "sha256": "c3f6fd7cf243d76f194418bea98404d84e61838d86a22bde3dc0cdf348f770dc"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll",
+      "sha256": "13cee551f9ac83dad67f83d0ee07c6bdf63d2cd0a3b24e2163e3a506a6f45f81"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AdaptivePerformanceModule.dll",
+      "sha256": "246c71ff723545aee6d6310ddb6e698859f257362b94c8a37ff2cca26036fc95"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll",
+      "sha256": "3a16efd380d6eddf37a465130ce34287b4ca134dd4f075cbbddebf1e65be9a63"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AMDModule.dll",
+      "sha256": "e29aae3ffc91dc1a1a36c19eb3a12359908e6a92c458595ff8d4bec7543e64f2"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll",
+      "sha256": "83c35a30ff4fe5ff7297e40443b0b7ac4325913d0aa22012678e2dc685c7e4b5"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll",
+      "sha256": "7bf25b99c0dfc2bb803143b93662dd3a4ddb194623cc790e7d3c01289623fb23"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll",
+      "sha256": "305845b5bc1622f44eca5fbbfbf22b4d1048e1ac5154761a282e7977ec9aed8c"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll",
+      "sha256": "9fa1d41248cd9aa375e2068c56defc287e3da350f37aaecd7e00164f9ba1e6cb"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll",
+      "sha256": "03a04f3f6fae100322b0fbb3e201de95caba212877c72d485b2119c221a8b997"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll",
+      "sha256": "0ddfbc4b746a40fcecd22ce3a4bea5bf1d35b19d9227eefecc3de52642773fcf"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll",
+      "sha256": "fc10b71da5ecc5e374dba48afa0320df4fd3f9ea52db452ff147045722daedea"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll",
+      "sha256": "8912c88e0177afdb76a6ff1f3328389693726daf9e03a055176ca538531cb808"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ContentLoadModule.dll",
+      "sha256": "c96db21b718734c31471b9c0743a9955f90ff3b6287d377398efcf5fea3ef8dd"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll",
+      "sha256": "a4b055a4653a5688cc18ebec8a83834f4d3d744d1ac53dde6a9010a1d3dddc39"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll",
+      "sha256": "468ddbee9c7d88ff470851890d0499142e5cdee26fd8c6d47b0c918fd1b56670"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll",
+      "sha256": "fc68095f627181df3165a0d29bc2f45080723873c71fd6a46cdfbf2f39cabaeb"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll",
+      "sha256": "0523fa63cbf0c6f2f9c7a028b86582e8aca304aad725026693ed57b3f022c65e"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll",
+      "sha256": "d2f5d02d0f8b0eb680e1862a0af17d2e931403b67f692b65033f3717d2e5aeae"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll",
+      "sha256": "cda354c2a846ab2a3eb51528b585803f17c7e64f6b31759e50146463a591dd6d"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll",
+      "sha256": "1efc99f0f0e8198628d8e1511f04c78f3da51d186d0a8c7eec9f1913c77f3021"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+      "sha256": "26b6fcb9b3edae30747bcad6066f3e7376fefdbb020423ef177938159833857e"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll",
+      "sha256": "923df8d5f7af10ec736a3b651f755eadee4f43aee8ee97228fcded032a64c1ef"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyCoreModule.dll",
+      "sha256": "d8d135ef954a2a6764dee683ad1e1e896b8ee5d694312d2fb6a1a2091ff53203"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyModule.dll",
+      "sha256": "33f138b13b531a63e54f8e3d8e58e33f5d136a927f8598f7698fd7315e1f8643"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll",
+      "sha256": "b82c6cd8e08908394792b943ad349cf00d22d8c1165470805860069a7cd979f2"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.IdentifiersModule.dll",
+      "sha256": "8714a86e243d9177af4afa84d97155913149d0a9452cf3af87e81a8c6b98e868"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll",
+      "sha256": "7d889fc1cedba6a8faa0569e8c721b04ec46e5a98d396f7db30c1153ca6f0827"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll",
+      "sha256": "eb01ab61ae402b2475a7d2af3424fbf5607522dc591fc49f52191ac8066bcb76"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputForUIModule.dll",
+      "sha256": "b43813b0eebe168e53574ce395bfe58141a0d1c9f482d91f7a2ec3f1d3e6d95b"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll",
+      "sha256": "184636a0c052a4d7d098c64f1475123d1e2a3321c749a371986aee0ec299f1eb"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll",
+      "sha256": "d09feb74d483790b02f563117452e9b20d683f01ab923f4e312493687b82d81d"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InsightsModule.dll",
+      "sha256": "e1971989e68ba4e9b8a4a26af1a31b63e89e6d750567e42d642811bcc376059f"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll",
+      "sha256": "d9b50afd6dc92730e757bf93ea1218b2f5113129deb96ee61704757ea3e333ef"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll",
+      "sha256": "4254bcc1b5ab3a9e023479ce573c6152c2ae6db0539963b934cf7003579657f4"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.MarshallingModule.dll",
+      "sha256": "9b8bd7a58921da93decccb1c7c193d3edfd32f89e5cbb27e3703bf24dccd4835"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.MathematicsModule.dll",
+      "sha256": "f45118a005fe10c43713889352d3b362fa08adcc0e04012c8283a952db40cc12"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll",
+      "sha256": "001415f6c1b2fce56d4d42a72802961618ff25a1c0267d18e5611ff03876a6a0"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.NVIDIAModule.dll",
+      "sha256": "019f26639cd2687507baf8fd55260e3d0782c3c16a31f69f28279a1430fe0cdd"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll",
+      "sha256": "a5cb9430f88ef2f2ec2e7e807daa08f9cc85947004ebfa05413e2f6bdc13293c"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll",
+      "sha256": "b4d97c4025eb88ca15536faaaba9368912fc3bb46328c2652cdd461bd2454fb3"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll",
+      "sha256": "5343c633d80df5c27f2b7bd5b249600f9ad5ef330e31350a1010524041dc0c35"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsBackendPhysXModule.dll",
+      "sha256": "0076da17b138594c4e8e936daa41325293f7cb4f40c060d04f8cde8d24496f9c"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsCore2DModule.dll",
+      "sha256": "a35f5a657f6fb8ea662bf66b31cc8c0bbb45751c2f35855af2453ca587f510d8"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll",
+      "sha256": "a2c9ae7abb1509d2577adfd7a2d28dcf4b0e42744d0ad807030263e77193d4c7"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PropertiesModule.dll",
+      "sha256": "d3dfed6323c8679d02a92ee7b1e3b2fb804261c20931613ae1441d614da08bc0"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.RenderAs2DModule.dll",
+      "sha256": "81cf81e5af9b7e26f2210a6b783ca8731035218e69c1bf5b25d676396684b42d"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "sha256": "c8938a041de11cf039efd45696bc63e033e6e2a2af03f152c62deae1145e59f5"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll",
+      "sha256": "8f8b42cd32255a098afb49967797ba1f21ce81a3e6ac47fe9dd7390c92df4eab"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScriptingModule.dll",
+      "sha256": "623a219559a1b0e6c576bae9dc172e148d33474a554827e7ed62a7b10b2f7ffa"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ShaderVariantAnalyticsModule.dll",
+      "sha256": "9636575a5f647a9b8599775a77035db53ef6ee69bffc97ed4e77ba0a69cdec01"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll",
+      "sha256": "31e8a7e7a1865e1a0a4e39c6da74009f811f7eb31ea15d45aca96c52a0dea3ec"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll",
+      "sha256": "eaa744acb305fdb758bfbce3270eb69ac5e309b24f7a50c0aaf0bb2f3b4f1c51"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll",
+      "sha256": "4ab07e9910489e057e7e00bc06f9956f101f8cdb1c403617b83f0b27b6acc655"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll",
+      "sha256": "2591a25a058f691184852d9a4a470c273ae15f8af7255062aa9da644844c56d1"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll",
+      "sha256": "33b6d7630000417e28e6446bde3d12a23c22a82645258b6f44b97e00b739af53"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll",
+      "sha256": "64f6650e381849a9c6584d90f976c7c0f1c9eb90bbe4a2257774827bc86fa370"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll",
+      "sha256": "e841f67fe931de4d6167433fa9d6f5dc6c9b3b1c7555c3a1360adb1f8ea3e4d0"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll",
+      "sha256": "c75cff640efa99448a2081cf5a6fcd585eef4377f933c66274d6bebdbd87a7ee"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll",
+      "sha256": "3ed1722f5fd660aeca65e1e00a299b6515be70e80671f8eeea3e2e91a2a59440"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll",
+      "sha256": "acfd25b7c88c07587729f91233ecae963af3a45c1a114ddf9b442b2e1f9880a6"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll",
+      "sha256": "8000976c95416683ae35eec01fe4a012a47051750d46eaf9ef3ad24b6fc4ea93"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll",
+      "sha256": "18e8b2903a7dd0fc7a547b4b3a19a86a85d5f0f76ad4c5a06b57b4ad3647a96e"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll",
+      "sha256": "95cc6e7d8f7963e6f9ca12a6e695d2ab53b3a5cf9a4f4929916d637a995f95ac"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.U2DRuntimeModule.dll",
+      "sha256": "0ddb10c3bf25916a9a17955e2ff3d3a7fabbc685514ca462accca522ca03e632"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll",
+      "sha256": "b1d674936819142f5feb1fc27d5394bdfef150e93d20c99e6607bff8d1168999"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll",
+      "sha256": "15a005eaf3ca52717e46869789cbf869ceaeeaff8481028ab8b5f2c450a82326"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll",
+      "sha256": "7c2e2136efa5cb963cc17a2d7e3001279c4899a36bfa68cd1f18ec5b90f68110"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsCommonModule.dll",
+      "sha256": "f97edd0efa57e00fe59e4cc3e8ba28b41babfb5f91e425708b20a31617be44ea"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll",
+      "sha256": "d9a4dde2702e66a2b60258541437233b71f82056a9c97b7ce862901dba4ecfa8"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll",
+      "sha256": "06f4e87a4a1d6d8b96681a966c966c7bb375e89c5fa36e8cd650f9975da989a9"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConsentModule.dll",
+      "sha256": "92b85a57e5601622b4b8ca277dedc7b0c67676e02be7cf4dacfa6cb4f22f305f"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll",
+      "sha256": "8a6021ca9af460c0b64ba76e21cc9e5ad5c72ecc714a02050d191ea52e644c85"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "sha256": "e3b69216396a658b02b8632fdf39b0ac95edc2f469fc4178eb951aca1eafa9fc"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll",
+      "sha256": "bdbea4c32cc2b9d94e20d9446b5b6db419a430ce21faa2e2e75ec46fecbfb37b"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll",
+      "sha256": "863bc4f67dd7314fe8717b4e38de0616b0fc25c011982dd50b21b8c52884a11c"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll",
+      "sha256": "a333c431f1869bcdf9a660f9895ee21f23d2eb4367d94b22cd8d96711279be4c"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll",
+      "sha256": "0206f8ef1ad0b675a5a2da5ddb86201572f16989eca3e398f4eb4c1cdb89e9f4"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.VectorGraphicsModule.dll",
+      "sha256": "b5b24a7b2e23cda17087e192c2e2db8982bda01e1c2ec265d7d99107bd429e28"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll",
+      "sha256": "d91792eb458966894f11323b5779d3af21cc77129b60f03079f62be9a057e910"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll",
+      "sha256": "ef946a31d5218bd8840eb0877dd42c17e3a05ac53916a6201bb48ed037fa3db2"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll",
+      "sha256": "b49f4359b6ab0bc50bd8133bd7c60bd2d8f4a57a2b929ee4324cc8cc50d6bc12"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll",
+      "sha256": "1631315753b961bb997335e63b11159611ffbceaa6ac31a629ddf18de3ce1186"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll",
+      "sha256": "d063f59a0f824bffb8f4a17e80c75cdd2fba6b8ca6e5f96c33bec79931043495"
+    },
+    {
+      "path": "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll",
+      "sha256": "a211a004d16cfbae66b40d171b1884b5acc8a3f810aa28fd9ea2287333bbad8f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs",
+      "sha256": "4b8f17692a03fa510e3faa19527f3b9702590e42443ca3c92595d30a9b304974"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/DesktopConfiguration.cs",
+      "sha256": "cf10c745096a49c5d5b19cce7304a4dcd157242d88fef005ca1b777720d0f9d2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "sha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08MusicDirector.cs",
+      "sha256": "eb7ad87bd9e73c47408fd4abac7290312edd697fdecc3944583c11818570cdc7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/UnityCareerTransport.cs",
+      "sha256": "5f687e4892165e96b8fc52427044986120e7485d6af795c5bd8eaef5a717638c"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/UnityMultiplayerStorage.cs",
+      "sha256": "4903b6e54cc1d2a6f9edfe7d734d41ad24d4c9f0bc945df4a0670bad4e48d180"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/UnityWireCodec.cs",
+      "sha256": "39da7d07e6b5805872470b512bcd4d2df71b602cc1e56b9fd670503a8eb400c8"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/BenchmarkReadModelProjection.cs",
+      "sha256": "b6a8bc60061a82708c9313c85e66cb009a3b1d2f7cac6beb232aedd16fddd74e"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerMilestoneTracker.cs",
+      "sha256": "b63f51aa110329d8ecf0a37c5d9d315bfa246b8488d9701d47359fdbacdb0955"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerReadModels.cs",
+      "sha256": "5c9bc5530a1b2135e0cf9d6a146393eaa1cbab5d765559c5d213ad09882d5767"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerSession.cs",
+      "sha256": "f6a96d40524cad2309ab5e26222d4a9287a280db96cc80e13d7a9b33026996a2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CinematicCatalog.cs",
+      "sha256": "e534604f6b754ac4da22906b8d6f6a72185cb982f6dfd47afc797f5296e50b5d"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CinematicText.cs",
+      "sha256": "8f4feb63d47333ec065a9686cdfa75047d5ab987a0f3ac65b4273c2538a343ea"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CinematicText.Generated.cs",
+      "sha256": "493d54230453cfba1b58263778eac8c18b0a5a73073cac78a3d2dde01f2eaaef"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/ContentManifestRules.cs",
+      "sha256": "58df69f3801a47ed38001d74869e3a57eaecf4f38db6afdf9cb9f8a808a4a2c5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs",
+      "sha256": "fd88d096abcf1163f947765835b615d7467ae95660fa317c607ba0909c2c84f1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/DisplayLanguage.cs",
+      "sha256": "1da2e4c0d9c201859280d3fb0e9e412aa8db764e3db25de53f3e2dabd4764a68"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/FoundationSession.cs",
+      "sha256": "6a73e99870964cbab13332dd1ebec1d3b7bd5aa45f6483a3d5218ceff8f85713"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/LocalCampaignReadModel.cs",
+      "sha256": "c014ef97141d1cae2de48dac2eb36c8e1d5844fec823d72f250410aa22396dc4"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerPorts.cs",
+      "sha256": "2f8534dfdc89e1bc1bafcdab5515c2449db993374007305af69c16f2a982b6bb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerProjection.cs",
+      "sha256": "d6cac5842b84a8f1d670a510d9a69057870bf8d96eb006d51afb29949bd37169"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerReadModels.cs",
+      "sha256": "7a7a5aaf8f355754fd0c42c5e508d2a3d0670453d5c97d99ecfc790c634af1b2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "sha256": "2bec384dd034e07f1c93a0eaf4f84f6b03678e5565ce8c4528908f3554f7009e"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.InputErrors.cs",
+      "sha256": "fc850f5930026fceb66ece042480e5c82ad989079b1473579610a33ab72b589d"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "sha256": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSnapshotReadModel.cs",
+      "sha256": "b2395b0f463eee8cff1ea9bfc5c97333082dab37f7d401e9977cbdc2573d3f55"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/P08AudioRoles.cs",
+      "sha256": "7ebc78e140ca8211ab74d7877f1f1a93aed856a2537aaed11c463052d2130748"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs",
+      "sha256": "9c529b0d085491a5e8bf4bfe326db51b318bffbdf29de0e9aa2575a23cdcc25b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSession.cs",
+      "sha256": "d4413ba96fca0b45d6192b0b1e4c3eec24609da663fcaa17aa5456bc80c82682"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSnapshotValidator.cs",
+      "sha256": "a6aebd361faf48c2435cf2b15e8a89a6cedca7c05e6d38401806d45d19a69bbb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceStateProjection.cs",
+      "sha256": "9a4446e79f970770f99e5eafc3e8248604af8f1ad12794f4d182a137d63d8804"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceWorldReadModel.cs",
+      "sha256": "e4d1feb7cb818c921ebc3f8434e743b4708dc7ff2111b588d21758dbf4d3dcd7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RemoteMotionSampler.cs",
+      "sha256": "edb0a23e5054551aadf5d599765d379a5c0ef5da26600c0aeecd52b2c387fea5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.Career.Generated.cs",
+      "sha256": "e2b9c1cf7eaafb7316b133064ca84ec318641a6c70d44de3fa3bc44dd2e83131"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.ClientMessages.Generated.cs",
+      "sha256": "9dba63f68005bf5183ba23031044e25ee33968cfc08e7586c672cbf7b80a81d5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.cs",
+      "sha256": "0d3a39e2ab8b64a836396cb28dbe327e6baee69348da2679217570a2dcb23479"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.Main.Generated.cs",
+      "sha256": "a7e1429ebb76418f6445be9fedb54622d4466f6fc39a23334db3d44671365f0b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/UiText.Multiplayer.Generated.cs",
+      "sha256": "893698231f931c761cdf8e0ebb22dd6b1315a8dbd83ec31ea81070acf365b216"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/WorldReadModel.cs",
+      "sha256": "0fe52476bf47c5fc16a52e84d2aac5b37eba9f692c25f2bca3052a7d646a112b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/BootstrapCinematicCoordinator.cs",
+      "sha256": "9a8f67c5134f81e68f33cd566bedbedd6753dbc675674fb0e66f054b136975b0"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceConfiguration.cs",
+      "sha256": "ac300c3889e4d03e980120b831d2b328ae99d47614c623b3d9b04bd34019c3b3"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceRecorder.cs",
+      "sha256": "1a8b01628431e6baf4373ee4da34093541491c590c06c32b2797834c69ddca5f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/FoundationBootstrap.cs",
+      "sha256": "260cf17aad3b78876fa34f5252ff9fd3311d863111ad8f0dcdb84b2363917b06"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/P06BenchmarkRunner.cs",
+      "sha256": "2563790d3efb7d5397f4676fd6f31c96742c99bd71d028a2dd1a9b3566ff260a"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs",
+      "sha256": "3fbcc89643baea1c2cefdd1c43644c5cd31990789a9b4920a51c81084cc065e2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "sha256": "47f78d8cfdfa4bcc819a522517c0fd6a3873bca2595287d82a686d3039677905"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicDirector.cs",
+      "sha256": "cfdb87f043dcb5084e69f1be595258d239fc10cb5c7d8124d8c3e12b108ac805"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicGalleryView.cs",
+      "sha256": "f654907d69df34bee7abf04dddc20d2a2cc671dfe11d6d7967d7c2f2287be3d6"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicPoseSampler.cs",
+      "sha256": "1e4204fc4a16677be7c53054be47b7b15f7a9b9b3601b5cf87915d8c76ed087b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicValidationHarness.cs",
+      "sha256": "5ebf08a3dbcdc2f9da60ab5ea023ea99bae8657573bf27869c2d95924298b37c"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/ContentRegistry.cs",
+      "sha256": "2006b59bdea7f1d2c0e3738af48e51ee06393fb7b7b7a414202ad2942fd63477"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+      "sha256": "feeb794d9dc9ad2ea0964928ff40257d519d684f54320f3fde3c36597fe9fc44"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/FoundationScreen.cs",
+      "sha256": "639d0455469d3e72a24317d5ff6ce7e7cadacfa2813af903fbeb5a5175b49496"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+      "sha256": "c5b7758ee048776b66af5b085713b964cf390b5d079aa22888235906108125b2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+      "sha256": "baac49a22aba7497c26b0d99dcc75791fbe01a4473a23e168ca1151c2e1fcb80"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08ActorContent.cs",
+      "sha256": "e9482306c535343b01c103ba9985afe99ba6b08509883fd1a409a8432feaf5ec"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08ContentLibrary.cs",
+      "sha256": "12549ab7f1cfbb5cff46bf4429ccda98bcaa33bf37d43f7757300297c92c8ddb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08RouteContent.cs",
+      "sha256": "844473982af994d3c08aa1867fe7a61838f7b1578e23b05b0e84e5b9d8dcfe0f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceAudio.cs",
+      "sha256": "6c6188e5ab647d71ddb7a655d956a5b0c012bc99d597dfdbc93b85a1d8cdeb89"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceAudioBank.cs",
+      "sha256": "bafbd365485df9e0fe869871ace5696969985739edafa5830c8e64df67eeb961"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceEffectsView.cs",
+      "sha256": "2d689ec6b3c7e65084eaac3d946fd6d80d03a151ef69756be68a9b11ce21a1a2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+      "sha256": "c0d338e81ed8378305ee377e12d12e6e23a1db9b84350dce3c2ba119ce4585d4"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+      "sha256": "9614ddd9b0a437fc2aab12a6c5e978d3f28022204e49e924d01b885ebbea83b2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.Localization.cs",
+      "sha256": "d1b38a60a59de4158da3dfbaf9dc6a7682c6f352b854858bbaed416757500a2f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceStageView.cs",
+      "sha256": "7784bc797cb0536430aa28e41b1bbd0c0a7cbd0a266be6910d3d0f23be6529ed"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceVisualQuality.cs",
+      "sha256": "238661a51b36ccdd2c48775d18c78303c43e71729301e7ead06d4ead40e2eeb3"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs",
+      "sha256": "e416f2f3b2ae2c36bbe6292374e98a69bfa2f8427778fccc88e28787a0cfb1f8"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RiderAnimationView.cs",
+      "sha256": "e78eea1c0d5547ab8e88d588b99396d470fa2efb01132f3cb3668e9bea97deb2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RoadStageView.cs",
+      "sha256": "f6cafb65f9860cb4e25a8d151bf25462482270fd89ea8b49ea265b34898cb7c7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/SceneScrim.cs",
+      "sha256": "47e35a20960826d5d1475453863089c32655cdbf01516fce37e5cf6156e29711"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/TrackRibbonView.cs",
+      "sha256": "2507f9284ec5a7eb05d673e1ec60c364322879e6755134364817f49d523517c7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/UiBindingScope.cs",
+      "sha256": "3672631e9e545832a0b425ddac09de1f58e104feb38deefed82a43d78e961135"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/UiViewState.cs",
+      "sha256": "e3a0bab64590d20e9042153c694297862084ace08fcec0e2807dfcd9a4ac66eb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/WeaponGripView.cs",
+      "sha256": "575ef392d45085f22f1d3a427bb6f63df10254509ec56afdd6b1767d41df5363"
+    },
+    {
+      "path": "docs/p08/ui-owned-render/20260928-ui-render-05-1366/multiplayer-browser-actions-deu.png",
+      "sha256": "6dd99fa7145c7d51375c532e2f6eb06cc2b95de73443233a488a0849c5fc526a"
+    },
+    {
+      "path": "docs/p08/ui-owned-render/20260928-ui-render-05-1920/multiplayer-browser-actions-deu.png",
+      "sha256": "938faa7f1bf38e4c5592c36b70a5c5fb23f1ee5b71f889d12691822527eca331"
+    },
+    {
+      "path": "Library/ScriptAssemblies/RacingBois.Client.Adapters.dll",
+      "sha256": "2e39f2cfeb178c9ce4511c4c565ae1472cc732b48fcfbdfaea19d29861f533b7"
+    },
+    {
+      "path": "Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll",
+      "sha256": "4b001a7a0bf88f39e99dd12b361cdb5aef97206a02df685167086edfa0706b2f"
+    },
+    {
+      "path": "Library/ScriptAssemblies/RacingBois.NetworkMapping.dll",
+      "sha256": "e898b6594f65b8a167a0b72e674f4d65b6ac807255afcfbb7f28846e168bffaf"
+    },
+    {
+      "path": "Library/ScriptAssemblies/RacingBois.Protocol.dll",
+      "sha256": "349f3c6a7814b90c23340693882ae89b154758b2a0f827bbb41df098f7af1bdb"
+    },
+    {
+      "path": "Library/ScriptAssemblies/RacingBois.Simulation.dll",
+      "sha256": "bdf1ac6c8a0947bfbf9054ddf0119a5dd343bd511e0a8d7e4eaf082ca5da636a"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.InputSystem.dll",
+      "sha256": "b0beb7e2e6909101bd072a0f700914ebdd205f0917adeb8e5aa36c77d26edcf6"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll",
+      "sha256": "14d45940565a6d364ad9dc14af258f3c70d4ab1fffd68fa3ae7b9abe2c3bc2aa"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll",
+      "sha256": "9a9ed7424bd7b9a93da7ab1d9434e87ea386ffae537f95a9f305b396081269ec"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll",
+      "sha256": "759e1568052db2a0bc7b1b24c5f3a15b13c92396146ff63b0def711de039c806"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll",
+      "sha256": "16c1a88a3b7faa99dbd175c2db1748d2cf156aec1547803e380fcc4d873f3b7b"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll",
+      "sha256": "162c467aab7a3f42787bad906c3214e967c876fca786e76c8a5e11506b1a980d"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll",
+      "sha256": "32b278af7bdb46da9fe0edf15c6b1ddfa087553597e0d5a306d502c79faf0cd9"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+      "sha256": "f9a1d0db98ef6ff3fdb7ccd52c9862bc3fe0f9c1f6d868c5c17be69e82c7dcd8"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Editor.Overrides.dll",
+      "sha256": "5480886d2f9da10c5860f712a57357e3e419417e6d27fbab817d972dc25da450"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll",
+      "sha256": "42c27301a1fe0f3232464c6f669509523886c72e8e29108f16f9199811ee1a19"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll",
+      "sha256": "2a6fddf20253ca48c820b53ac69453c260f5d431ec80c8b86f52448c7f5e141a"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll",
+      "sha256": "9f353b9eab5e58380fd626af0fa726429af66d556012d08c246d4e0ec7f52a33"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll",
+      "sha256": "3e59ddb70bae9225dc86d99e450322628bc624412dccccb2a12e037c19b67185"
+    },
+    {
+      "path": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll",
+      "sha256": "dcfade8ca9471c7c749f68d20e7a3bd309808285889fd7c31c008baeeb7cbae1"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/ApplicationPreflight.csproj",
+      "sha256": "0fe0d5363e5564cd35ef658bb909f66f04c13a172c048954377f590851639c3f"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/BootstrapPreflight.csproj",
+      "sha256": "b9ca2d78c42222c131117bbae6b68493f01ed36aea7e4a0631f18279478d2736"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/current.json",
+      "sha256": "3766a023c7aeadb9ea4d508def9d8f06ec41ba773b11635017f0fbbcf89b0923"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/Directory.Build.props",
+      "sha256": "5c83713292a7d1649b455bb996367cdc8f9821a2d4d843a7b5be77f0b8a57b10"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/generate.py",
+      "sha256": "a6ce1843a7a823765c2d7a9025d1e195a6e487df4163a5e83c795f44446510cb"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/preflight.py",
+      "sha256": "10d6fcb42a3d0471c341042a60aa4ca7552b9c8768cbdafd1955a68285da47be"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/PresentationPreflight.csproj",
+      "sha256": "e822f3d4f842f4f574139a9b47c94bb790623ac5d65d40e33ecfbea6ee29c243"
+    },
+    {
+      "path": "tools/p08/media/global-copy-effective/test_generation.py",
+      "sha256": "2ef46b28e0e9f39ed67183bc3b964ffc2cf2a0fc9b5e6dfb8f83f530f99d31cc"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit-amendment/authored-text-union.json",
+      "sha256": "b9269f11d6109e8767c6498fdc20f2ce46ff2b147ca3fe2b154ba921f15d2f2d"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/amendment.json",
+      "sha256": "f343d4da7c4a09ee802c57b83e5912c83ff2a46ff0564745107c657bb76ab5cf"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/authored-text-union.json",
+      "sha256": "e48aa2f3d6a99a1acc815c68dc63778ebdc2f922d8c9e3e5d83392a0f27dce4c"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.Career.Generated.cs",
+      "sha256": "e2b9c1cf7eaafb7316b133064ca84ec318641a6c70d44de3fa3bc44dd2e83131"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.ClientMessages.Generated.cs",
+      "sha256": "9dba63f68005bf5183ba23031044e25ee33968cfc08e7586c672cbf7b80a81d5"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.Main.Generated.cs",
+      "sha256": "a7e1429ebb76418f6445be9fedb54622d4466f6fc39a23334db3d44671365f0b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.Multiplayer.Generated.cs",
+      "sha256": "893698231f931c761cdf8e0ebb22dd6b1315a8dbd83ec31ea81070acf365b216"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/changes.json",
+      "sha256": "b3e915323488fae0874bb0f8a6eba781ac3cabcaa97f88f2e703aa21e02c4bf9"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/Checks.cs",
+      "sha256": "481b9277ba60a6036a92f16ac7061ee1befcdf511112e094739e591b136cc3ac"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/Checks.csproj",
+      "sha256": "15207bdcd8678d4ae31ad425812c8292e9237b1f8140597f704f1b2df1a22c65"
+    },
+    {
+      "path": "tools/p08/media/global-copy-fit2-amendment/UiText.Multiplayer.Generated.cs",
+      "sha256": "d4a13f79ff4e61b7d14ff3d68ded14c3758237fc987be7ee0143e51a9f65ad95"
+    }
+  ],
+  "nativeUiAccepted": false
+}

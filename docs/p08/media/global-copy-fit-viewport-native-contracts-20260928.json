@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "scope": "installed-native-unattached-UI-contracts",
+  "passed": true,
+  "rendered": false,
+  "inputDispatchVerified": false,
+  "focusVerified": false,
+  "fullGameLocalizationAccepted": false,
+  "sections": [
+    "925 keys in all six locales match frozen authored values",
+    "Main six-locale choices/raw data/no-intents and actual event rollover contract",
+    "Career six-locale draft/confirmation payload preservation; explicit callback only, no input/focus claim",
+    "Multiplayer raw names/unknown data/protocol mapping and explicit create callback semantics"
+  ],
+  "assemblies": [
+    {
+      "name": "RacingBois.Client.Application",
+      "mvid": "681b2586-79d5-42d2-a3a5-62e5309287f1",
+      "sha256": "6421b9bc71b149203c60d16c1ff014672fa9473fdb0b56164875f6a08e343b6f"
+    },
+    {
+      "name": "RacingBois.Client.Presentation",
+      "mvid": "2a1411f9-c1bd-499e-9938-306b1d831a6a",
+      "sha256": "e06359a24c581c2273a2a1a0f78a150c1eecb22f67fef1c2e7419d6da8524331"
+    },
+    {
+      "name": "RacingBois.Client.Bootstrap",
+      "mvid": "e3b179de-4047-4782-9932-7cfbead5d4a8",
+      "sha256": "d21edcfc0c921c04e06e316eac3d9a77addf5b745f15b14a6e235a3a4a06b6ff"
+    }
+  ],
+  "ownedObjectsReleased": true,
+  "globalStateUnchanged": true,
+  "checks": 5743,
+  "qualityEvents": 0,
+  "preferenceEvents": 0,
+  "gameplayEvents": 0,
+  "compiledProofSha256": "e30a362ba45e44c646452c8d442b1be5e138d20acce67197aa11f82344f47b8a",
+  "textUnionSha256": "b9269f11d6109e8767c6498fdc20f2ce46ff2b147ca3fe2b154ba921f15d2f2d",
+  "uxmlSha256": "b72df7fe7fd50400d80d7573244a51b2ec50831d45263ad67086ef9f3e6d3401"
+}

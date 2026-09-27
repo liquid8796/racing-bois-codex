@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "scope": "reviewed-copy-fit-amendment",
+  "identity": "global-copy-fit-20260928-02",
+  "baseUnion": {
+    "path": "tools/p08/media/global-copy-fit-amendment/authored-text-union.json",
+    "sha256": "b9269f11d6109e8767c6498fdc20f2ce46ff2b147ca3fe2b154ba921f15d2f2d"
+  },
+  "authoredChanges": {
+    "path": "tools/p08/media/global-copy-fit2-amendment/changes.json",
+    "sha256": "b3e915323488fae0874bb0f8a6eba781ac3cabcaa97f88f2e703aa21e02c4bf9"
+  },
+  "modules": [
+    {
+      "name": "Main",
+      "base": {
+        "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.Main.Generated.cs",
+        "sha256": "a7e1429ebb76418f6445be9fedb54622d4466f6fc39a23334db3d44671365f0b"
+      }
+    },
+    {
+      "name": "Career",
+      "base": {
+        "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.Career.Generated.cs",
+        "sha256": "e2b9c1cf7eaafb7316b133064ca84ec318641a6c70d44de3fa3bc44dd2e83131"
+      }
+    },
+    {
+      "name": "Multiplayer",
+      "base": {
+        "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.Multiplayer.Generated.cs",
+        "sha256": "893698231f931c761cdf8e0ebb22dd6b1315a8dbd83ec31ea81070acf365b216"
+      }
+    },
+    {
+      "name": "ClientMessages",
+      "base": {
+        "path": "tools/p08/media/global-copy-fit2-amendment/before/UiText.ClientMessages.Generated.cs",
+        "sha256": "9dba63f68005bf5183ba23031044e25ee33968cfc08e7586c672cbf7b80a81d5"
+      }
+    }
+  ],
+  "changes": [
+    {
+      "provider": "Multiplayer",
+      "locale": "DEU",
+      "key": "multiplayer.browser.invite-heading",
+      "before": "EINEN CODE VON FREUNDEN ERHALTEN?",
+      "after": "CODE VON FREUNDEN?",
+      "protectedTokens": [],
+      "evidence": [
+        {
+          "path": "docs/p08/ui-owned-render/20260928-ui-render-05-1920/multiplayer-browser-actions-deu.png",
+          "sha256": "938faa7f1bf38e4c5592c36b70a5c5fb23f1ee5b71f889d12691822527eca331"
+        },
+        {
+          "path": "docs/p08/ui-owned-render/20260928-ui-render-05-1366/multiplayer-browser-actions-deu.png",
+          "sha256": "6dd99fa7145c7d51375c532e2f6eb06cc2b95de73443233a488a0849c5fc526a"
+        }
+      ],
+      "reason": "Actual lower-scroll images at both output sizes clip the invite-code heading at the right edge of the create/join column. Shorten the same invitation question; preserve typography, geometry and behavior. This Label is outside run05 Button-only width measurement."
+    }
+  ],
+  "nativeUiAccepted": false,
+  "priorAmendmentPointer": {
+    "path": "tools/p08/media/global-copy-fit2-amendment/before-effective/current.json",
+    "sha256": "fd1b43d063face2ca45aca104458f8a5f9573ab313cf97fa8b80eebad562f280"
+  }
+}

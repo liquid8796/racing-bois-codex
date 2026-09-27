@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "sourceFixture": "native-proven R2 Prepare; rendering not reused",
+  "sources": [
+    {
+      "path": "tools/p08/media/owned-ui-render-r2-staging/OwnedUiRenderFixture.cs",
+      "sha256": "e3bdd332422dadbe8a475664ab6b7c8556d08539b2fced872e4377caa3c0c96a"
+    },
+    {
+      "path": "tools/p08/media/owned-ui-render-r2-staging/ProtectedUiFonts.cs",
+      "sha256": "33bb894fc5d090b616bf5f959fac0581eac18402a1c1beb59fce6c28cbcbc37c"
+    },
+    {
+      "path": "tools/p08/media/owned-ui-render-r2-staging/handoff.json",
+      "sha256": "1a5c46b011a36386934d8d1f24558296a17890e363713d38163b9ed8cae519f9"
+    }
+  ],
+  "scope": "Exact copy/remap/prewarm/ownership/preservation methods retained. Dedicated P08 root/private backup API; no attach, scene, render or font destruction code.",
+  "productionDifference": "Removed diagnostic-only hardcoded user font SHA prerequisites. Production snapshots actual clean-checkout source/meta/memory/pixels/dirty identities at entry and checks exact preservation; no ownership/type relaxation."
+}

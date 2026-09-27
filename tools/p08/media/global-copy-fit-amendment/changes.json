@@ -1,0 +1,59 @@
+[
+  {
+    "provider": "Career",
+    "locale": "DEU",
+    "key": "career.garage.pristine",
+    "before": "MOTORRAD UNBESCHÄDIGT",
+    "after": "UNBESCHÄDIGT",
+    "reason": "Actual run04 images at 1920 and 1366 show the pristine-condition label reaching or exceeding the fixed button border; shorten the same condition meaning while preserving geometry, font size, and disabled behavior. New rendering is required to verify the proposed text fits.",
+    "evidence": [
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-04-1920/career-garage-deu.png",
+        "sha256": "6dcc887f2760851e61bc82001099d63704551428116b9cd9d9f1246b59576ce1"
+      },
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-04-1366/career-garage-deu.png",
+        "sha256": "14e33fee6fb9cb577356728b9c3ce741129d355b1c02323f9ef2f681634f954f"
+      }
+    ],
+    "protectedTokens": []
+  },
+  {
+    "provider": "Career",
+    "locale": "ESP",
+    "key": "career.garage.pristine",
+    "before": "MOTO EN PERFECTO ESTADO",
+    "after": "SIN DAÑOS",
+    "reason": "Actual run04 images at 1920 and 1366 show the pristine-condition label reaching or exceeding the fixed button border; shorten the same condition meaning while preserving geometry, font size, and disabled behavior. New rendering is required to verify the proposed text fits.",
+    "evidence": [
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-04-1920/career-garage-esp.png",
+        "sha256": "c02ec4e7b56801b1b82935f282b8785181176d33dc438788ca41a9587975599b"
+      },
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-04-1366/career-garage-esp.png",
+        "sha256": "64c6efc6c79061c5509a7b54cd27a88c3bec4a36661cc0f22c4224ae32c2c1eb"
+      }
+    ],
+    "protectedTokens": []
+  },
+  {
+    "provider": "Career",
+    "locale": "FRA",
+    "key": "career.garage.pristine",
+    "before": "MOTO EN PARFAIT ÉTAT",
+    "after": "MOTO INTACTE",
+    "reason": "Actual run04 images at 1920 and 1366 show the pristine-condition label reaching or exceeding the fixed button border; shorten the same condition meaning while preserving geometry, font size, and disabled behavior. New rendering is required to verify the proposed text fits.",
+    "evidence": [
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-04-1920/career-garage-fra.png",
+        "sha256": "8dc57e85f46871ca809d5d5209ff56d10e6e6c470db7fda1699a7e5edd961671"
+      },
+      {
+        "path": "docs/p08/ui-owned-render/20260928-ui-render-04-1366/career-garage-fra.png",
+        "sha256": "c78b4ec7a912586e467ed493e6ed83a2ffef3cfcf8147473e5bfa1c1f2b37463"
+      }
+    ],
+    "protectedTokens": []
+  }
+]

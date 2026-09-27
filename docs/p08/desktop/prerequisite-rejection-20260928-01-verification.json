@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "rejectionAndPreservationVerified": true,
+  "nativeBuildAccepted": false,
+  "positiveBuildPathVerified": false,
+  "changedOriginalFiles": [],
+  "attempts": [
+    {
+      "receipt": "docs/p08/desktop/build-87f9466b12774b4386dddf342e69c70b.json",
+      "sha256": "b643d9409417d250e802497eca4dd3d8e7084975b59fbc600ebe038464c94ead",
+      "failureCode": "InvalidOperationException:unsaved_authoring_assets_before_build:Assets/RacingBois/Diagnostics/OwnedUiReview/20260928-ui-render-05-1366/Mirror/Assets/RacingBois/UI/Fonts/NotoSans-Regular SDF.asset:UnityEngine.Texture2D",
+      "outputCreated": false
+    },
+    {
+      "receipt": "docs/p08/desktop/build-800d8fd1cbab496687195190ed672127.json",
+      "sha256": "365f5619bad875a4352217bf0f89d8afb27da3d73642e4176200695948327da3",
+      "failureCode": "InvalidOperationException:Content asset missing: Assets/RacingBois/Content/P08/Actors.asset",
+      "outputCreated": false
+    }
+  ],
+  "ownedAtlasSavedBetweenAttempts": {
+    "path": "Assets/RacingBois/Diagnostics/OwnedUiReview/20260928-ui-render-05-1366/Mirror/Assets/RacingBois/UI/Fonts/NotoSans-Regular SDF.asset",
+    "guid": "fd16d0c100cb33f49aab11be45628e2d",
+    "atlasLocalId": "1100642487506886696",
+    "scope": "Saved only the verified owned dirty atlas; original source/settings hashes remain exact."
+  }
+}
