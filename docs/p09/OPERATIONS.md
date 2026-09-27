@@ -2,6 +2,20 @@
 
 All paths below belong to Racing Bois. Never stop/change other projects on the shared VM. Production UI, content and Windows release acceptance are outside an operator's backend-health check.
 
+## Read-only current-state audit
+
+Run a fresh audit from the repository root with Python 3.11 or later and the existing SSH identity:
+
+```powershell
+python tools/p09/audit-current.py --output docs/p09/readiness/<new-run-id>.json
+```
+
+The command refuses an existing output path. It reads the pinned f package manifest, compares the full current runtime and client/test source inventories (including added/removed paths), verifies the live release files/process/privacy through the existing SSH route, reads existing monitor/backup receipts and checks ordinary trusted HTTPS readiness plus private-route rejection. It creates only the local evidence file; it does not upload, restart, activate, create accounts, generate a backup or run a workload. Missing prerequisites or a failed SSH/HTTPS request are errors; they cannot produce a passing receipt.
+
+The exit code is zero only for the stated read-only staging scope. A runtime-source mismatch, source change during the audit, wrong deployed manifest/protocol, exposed private route, persistence failure, stale backup or stale/failed monitor produces `attention` and a nonzero exit code. Later client/test drift is separately reported because it does not change the deployed backend; historical ARM tests remain bound to their original packaged test sources. No audit result closes visual, full-game, regional-client or capacity gates. Revisit the pinned release and inventory when authorizing a new deployment.
+
+The [2026-09-27 audit](readiness/20260927T155938Z.json) passed with all 68 runtime files matching f and 10 later client/test path changes. It verified 1,986 deployed files, protocol 6, zero automatic restarts and persistence failures, a fresh monitor with no issues and a fresh hourly backup receipt. A backup receipt confirms the recorded backup operation, not a new decryption/restore drill.
+
 ## Layout and recovery identities
 
 | Path/service | Purpose |

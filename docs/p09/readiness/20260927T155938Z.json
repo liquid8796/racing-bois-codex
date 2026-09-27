@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "startedUtc": "2026-09-27T15:59:38.598048+00:00",
+  "completedUtc": "2026-09-27T15:59:49.086965+00:00",
+  "status": "passed_for_read_only_staging_scope",
+  "failures": [],
+  "warnings": [
+    "Historical ARM tests cover packaged sources, not later workspace client/test changes"
+  ],
+  "endpoint": "https://racing-bois.158.180.59.36.sslip.io",
+  "auditSources": [
+    {
+      "path": "tools/p09/audit-current.py",
+      "sha256": "71f533a494c92c7ec69ce902d637012441877013e8fe257748bddee928cf535b"
+    },
+    {
+      "path": "tools/p09/package.py",
+      "sha256": "9a1d38f64f06ea73945e9c9841220ebe8ef67cd61f2648e8b0502a4a59350fda"
+    },
+    {
+      "path": "tools/p09/infra/verify-deployment.py",
+      "sha256": "390078b83bdb5936d7336dcdd0c7263c909c468a6c1c3a1e9bb2a1c51a5c9b5d"
+    }
+  ],
+  "localSourceBinding": {
+    "source": {
+      "matches": true,
+      "packagedSha256": "194d60c159d8978a8520d17df1c900cae09e2614d4b1f620c89b9a5bbcf54c24",
+      "currentSha256": "194d60c159d8978a8520d17df1c900cae09e2614d4b1f620c89b9a5bbcf54c24",
+      "packagedFiles": 68,
+      "currentFiles": 68,
+      "changes": []
+    },
+    "testSource": {
+      "matches": false,
+      "packagedSha256": "f6b89fb632c793ae0446d129da302f195b88780799117f7c80061853b65babd6",
+      "currentSha256": "26378137e3afea3e99c294a53cdec47856cacb4d79ae8a01efc3f2415141e299",
+      "packagedFiles": 141,
+      "currentFiles": 147,
+      "changes": [
+        {
+          "path": "Assets/RacingBois/Client/Application/MultiplayerSession.InputErrors.cs",
+          "packagedSha256": null,
+          "currentSha256": "fc850f5930026fceb66ece042480e5c82ad989079b1473579610a33ab72b589d"
+        },
+        {
+          "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+          "packagedSha256": "075875d50bfe0c8e16f24c8b2d6ecc3ce5024b31276e1c0ac706d2ea04f128c2",
+          "currentSha256": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688"
+        },
+        {
+          "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+          "packagedSha256": "23170db6405a7ba7c33c5adf7439a7ca3d54f992957d581061ef8fd058ac7a9f",
+          "currentSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1"
+        },
+        {
+          "path": "Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs",
+          "packagedSha256": "3e5fe525bbd0cd7d8b194a53fb7396587f709899da3665ea77bbf94a6c727824",
+          "currentSha256": "9c529b0d085491a5e8bf4bfe326db51b318bffbdf29de0e9aa2575a23cdcc25b"
+        },
+        {
+          "path": "src/Tests/RacingBois.NativeTransport.Tests/Program.cs",
+          "packagedSha256": "aec0785d5ba50c389650a50adebf14c7be1df62b932c876d05496435242c9f5c",
+          "currentSha256": "2be06edd46cf7820064626689dfddd006e98d1d096d9006838ec722d03c1b0a2"
+        },
+        {
+          "path": "src/Tests/RacingBois.PredictionImpulse.Tests/Fixtures/first-contact-impulse.json",
+          "packagedSha256": null,
+          "currentSha256": "ab4691a8a6fcd239275d77aa4a4f0f05506ede6c4c7106d4055fd50d1bb313c5"
+        },
+        {
+          "path": "src/Tests/RacingBois.PredictionImpulse.Tests/Program.cs",
+          "packagedSha256": null,
+          "currentSha256": "5ed5c243c5bd38d1b9ee4e43849f8e78fafd7f49b0a6771af35f69e7eec5f599"
+        },
+        {
+          "path": "src/Tests/RacingBois.PredictionImpulse.Tests/RacingBois.PredictionImpulse.Tests.csproj",
+          "packagedSha256": null,
+          "currentSha256": "eddf338c6202935403082fff4b4b13f3de51afbed8c19ba0601c8fe6cf7d0c69"
+        },
+        {
+          "path": "src/Tests/RacingBois.RetiredInput.Tests/Program.cs",
+          "packagedSha256": null,
+          "currentSha256": "9493b44cd4547b30a49961a3f76e388ab41f6a7c79f4e80598d0566d5fa152b0"
+        },
+        {
+          "path": "src/Tests/RacingBois.RetiredInput.Tests/RacingBois.RetiredInput.Tests.csproj",
+          "packagedSha256": null,
+          "currentSha256": "74f1c091317835496c4d751e2e026746389e4743dc21d55eefce5e60acb01375"
+        }
+      ]
+    },
+    "sourceStableDuringAudit": true,
+    "testSourceStableDuringAudit": true
+  },
+  "deployment": {
+    "schemaVersion": 1,
+    "status": "passed",
+    "generatedUtc": "2026-09-27T15:59:42.822786+00:00",
+    "releaseId": "p09-20260927-f",
+    "vm": {
+      "hostname": "jarvis01",
+      "architecture": "aarch64",
+      "logicalCpus": 4,
+      "region": "eu-frankfurt-1",
+      "shape": "VM.Standard.A1.Flex",
+      "memoryBytes": {
+        "MemTotal": 25139458048,
+        "MemAvailable": 22965841920
+      }
+    },
+    "sourceSha256": "194d60c159d8978a8520d17df1c900cae09e2614d4b1f620c89b9a5bbcf54c24",
+    "testSourceSha256": "f6b89fb632c793ae0446d129da302f195b88780799117f7c80061853b65babd6",
+    "verifiedFiles": 1986,
+    "privateModes": {
+      "/var/lib/racing-bois-staging": "0o700",
+      "/var/lib/racing-bois-staging/realm": "0o700",
+      "/var/lib/racing-bois-staging/realm/realm.sqlite3": "0o600",
+      "/var/lib/racing-bois-staging/backup-key": "0o600",
+      "/srv/racing-bois/backups": "0o700"
+    },
+    "services": {
+      "racing-bois-staging": "active",
+      "racing-bois-backup.timer": "active",
+      "racing-bois-monitor.timer": "active",
+      "caddy": "active"
+    },
+    "loopbackOnly": true,
+    "runningExecutableMatchesRelease": true,
+    "resourceLimits": {
+      "MainPID": "1369395",
+      "NRestarts": "0",
+      "CPUQuotaPerSecUSec": "1.500000s",
+      "MemoryHigh": "1073741824",
+      "MemoryMax": "1610612736",
+      "TasksMax": "128"
+    },
+    "health": {
+      "status": "ok",
+      "phase": "P03/P04 gameplay authority",
+      "tick": 3542590,
+      "players": 0,
+      "protocolVersion": 3,
+      "simulationRulesVersion": 3,
+      "legacyProtocolVersion": 1,
+      "rejectedCommands": 0,
+      "slowTicks": 0,
+      "maximumStepMilliseconds": 5.1465,
+      "multiplayer": {
+        "protocolVersion": 6,
+        "serviceTick": 3542591,
+        "roomCount": 0,
+        "sessionCount": 0,
+        "realmId": "5fa398d06a354a64b09ce60848ef9b20",
+        "realmKind": "online",
+        "profilePersistence": true,
+        "rejectedCommands": 0,
+        "slowTicks": 1,
+        "persistenceFailures": 0,
+        "droppedCatchupTicks": 0,
+        "maximumStepMilliseconds": 19.1291,
+        "tickDurationHistogram": {
+          "samples": 3542591,
+          "p50UpperBoundMilliseconds": 0.05,
+          "p95UpperBoundMilliseconds": 0.05,
+          "p99UpperBoundMilliseconds": 0.25,
+          "overflowSamples": 0,
+          "bucketUpperBoundsMilliseconds": [
+            0.05,
+            0.1,
+            0.25,
+            0.5,
+            1,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            16.667,
+            25,
+            50,
+            100,
+            250,
+            null
+          ],
+          "bucketCounts": [
+            3483561,
+            21242,
+            23274,
+            12736,
+            1046,
+            698,
+            21,
+            7,
+            2,
+            2,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "releaseManifestSha256": "5a935b07ee1466d4aaca7765420d6145d80587f72adb2c25a3f9b7c4533a9d8f",
+    "monitor": {
+      "generatedUtc": "2026-09-27T15:56:33.113891+00:00",
+      "status": "passed",
+      "issues": [],
+      "diskFreeBytes": 79291564032,
+      "backupAgeSeconds": 3378.523909,
+      "certificateDaysRemaining": 89.03665377441104,
+      "ageSeconds": 189.709093
+    },
+    "backup": {
+      "createdUtc": "2026-09-27T15:00:14.589982+00:00",
+      "status": "passed",
+      "archiveSha256": "45be976acba28dc0ecd81f086c22c25d572ba896d8785f50b2dd3d5c64581eb1",
+      "archiveBytes": 563283,
+      "ageSeconds": 3568.233002
+    }
+  },
+  "publicRoutes": [
+    {
+      "path": "/ready",
+      "statusCode": 200,
+      "body": {
+        "status": "ready",
+        "protocolVersion": 6,
+        "contentHash": "p08-C655ECB89DF77CFD"
+      }
+    },
+    {
+      "path": "/health",
+      "statusCode": 404
+    },
+    {
+      "path": "/health/",
+      "statusCode": 404
+    },
+    {
+      "path": "/HEALTH",
+      "statusCode": 404
+    },
+    {
+      "path": "/multiplayer/health",
+      "statusCode": 404
+    },
+    {
+      "path": "/multiplayer/health/",
+      "statusCode": 404
+    },
+    {
+      "path": "/metrics",
+      "statusCode": 404
+    },
+    {
+      "path": "/ws",
+      "statusCode": 404
+    },
+    {
+      "path": "/realm.sqlite3",
+      "statusCode": 404
+    }
+  ],
+  "scope": "Read-only deployment bytes/process/privacy, source inventory, monitor/backup freshness and trusted HTTPS routes. No deployment, restart, load or account mutation.",
+  "fullP09PhaseComplete": false,
+  "exclusions": [
+    "Rendered full Unity gameplay",
+    "Regional game clients",
+    "Capacity or performance",
+    "P08 visual/content acceptance",
+    "Physical offline LAN",
+    "Windows release acceptance"
+  ]
+}

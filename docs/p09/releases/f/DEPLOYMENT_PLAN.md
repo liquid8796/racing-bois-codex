@@ -2,6 +2,17 @@
 
 `p09-20260927-f` is now the **active protocol6 staging backend**. Root authorized activation after the [30-minute local protocol/operations run](../../../p10/network/20260926T230400Z/run.json) completed PASS. [Installation](installation.json) verifies the uploaded hashes and1,986files; [ARM validation](arm-validation.json) passes all148groups. A [fresh encrypted backup](backup-before-activation.json) preceded the [scoped activation](activation.json), which retained e as the previous release. [Exact postchecks](activation-postcheck.json) and [actual-process/file validation](deployment-verification.json) pass: logical realm state preserved, protocol6 running from f, loopback listener, unchanged Caddy/counter-normalized firewall, prior unrelated services running and unrelated site200. Only the Racing Bois service was restarted. No Caddy/firewall edit or player-data rollback occurred. Recorded prediction/presentation outliers remain unaccepted; this staging activation does not close P08 visuals, full Windows client acceptance or an8-hour gate.
 
+## Completed follow-up and fresh state — 2026-09-27
+
+The original deployment sequence below is retained as the performed procedure. Its scoped transport/WAN/socket-soak follow-ups have since completed:
+
+- [WAN capacity](capacity.json): 1,800.269 seconds, eight peers, 21 race cycles, 14 planned reconnects and two storms, without additional persistence failures, dropped catch-up ticks or automatic restarts. This measures one Windows network origin to Frankfurt.
+- [Actual Unity Mono WSS specimen](../../../p10/native-wss/README.md): the final run passed 96.594 seconds, one planned resume, no unexpected reconnect and acknowledged leave/logout. Later client transport/turnover fixes have their own source-bound evidence; the original 148 ARM groups are not relabelled as covering them.
+- [Eight-hour local socket soak](../../../p10/network/20260927T003037Z/run.json): completed 28,800.058 seconds and 359 cycles. The operational gate passed; its one dropped catch-up tick and maximum raw correction of 5.489338 m remain recorded. This is separate from WAN capacity and full Unity player acceptance.
+- [Read-only audit at 15:59:49 UTC](../../readiness/20260927T155938Z.json): all 1,986 live files, running process, private modes and loopback listener verified; public readiness/protocol 6 and eight private-route rejections passed. Existing monitor/backup receipts were fresh. All 68 current runtime source files match f, while 10 client/test paths differ from the original package. No server mutation occurred.
+
+P09 remains incomplete: full rendered gameplay with accepted P08 content, actual clients in SEA/EU/NA and the broader operational/capacity gates still need evidence. Readiness and completed bounded soaks do not close those gates.
+
 Package identity:
 
 - Archive `Build/OciStaging/p09-20260927-f.tar.gz`,46,829,359bytes, SHA256 `3eeae66746ba7de5293a3d76b833eb0c930dc3f09bd4388d3e08da2bf9d68ca9`.
@@ -14,7 +25,7 @@ Package identity:
 
 The e test-source manifest did not include Client.Application. Added App inventory rows in the f manifest are improved coverage, not proof that every App file changed. The reviewed30-file patch and `docs/p10/proxy-transition-staging/applied-source-freeze.json` define the actual client/shared/test delta.
 
-## Root-owned deployment sequence (steps1–5 completed; native/WAN/8-hour follow-up remains)
+## Historical root-owned deployment sequence (deployment completed; follow-up evidence above)
 
 1. Re-verify package/fixture SHA and live source freeze. Capture a fresh read-only shared-host baseline, including **counter-normalized** IPv4/IPv6 firewall hashes, Caddy file hashes, unrelated running services/site status, active binary/source/protocol, logical realm state and room count. Require expected `aarch64`, active e and no active room before the switch. An earlier preflight is evidence of its own instant, not an activation-time guarantee.
 2. Upload only these immutable archives and reviewed ops into a new private `/tmp/racing-bois-p09.<random>` directory through the existing authorized SSH route. Validate hashes remotely and prepare a new `/srv/racing-bois/releases/p09-20260927-f` with the existing scoped installer. Do not replace e/current during this step.
