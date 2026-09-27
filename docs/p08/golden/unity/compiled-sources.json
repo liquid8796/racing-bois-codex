@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "utc": "2026-09-27T18:54:40.1461033Z",
+  "utc": "2026-09-27T19:10:22.5897733Z",
   "passed": true,
   "scope": "Compiled PE/PDB identity and actual source checksums; not visual acceptance",
   "assemblies": [
     {
       "name": "RacingBois.Authoring.Editor",
       "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll",
-      "sha256": "3e933b97711fe6b2cb33cc66632722766b7ddae9b9b1f2f77ca481b0d0afa6d8",
-      "pdbSha256": "ce6decec65411704f2111fa0d323af0fce359a7216e2ceb4ef0a98caea5c99f6",
-      "mvid": "9f13610c-607d-484f-b938-9c6528260d8e",
+      "sha256": "77f410a07feb7fdd6a2a28cad11ea922ebb0f9a59c3de516f4d984ab30f473bd",
+      "pdbSha256": "b8c5b34e169f7853d72e3f2c19d31c6d7d79399d07691fe80964434fe4bf3398",
+      "mvid": "2c13e7c1-847a-40ce-bcf0-609c4a5eca8b",
       "passed": true,
       "pdbMatchesAssembly": true,
       "documents": [
@@ -45,8 +45,8 @@
         },
         {
           "path": "Assets/RacingBois/Editor/GoldenProductionGate.cs",
-          "sha256": "d12507f137c9b8f0f6ec533e2c97fcba99389263a65ba0548761097d1780d636",
-          "symbolChecksum": "d12507f137c9b8f0f6ec533e2c97fcba99389263a65ba0548761097d1780d636",
+          "sha256": "f407d379104688358e81a230b922935294095ebdb47f1ecfd8acc8b8b887e30c",
+          "symbolChecksum": "f407d379104688358e81a230b922935294095ebdb47f1ecfd8acc8b8b887e30c",
           "matches": true
         },
         {
@@ -99,8 +99,8 @@
         },
         {
           "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
-          "sha256": "f6e7b0a4d49b746f66a5aaa01c3aa1428f33aa5832afaa89cffc1d429c25603f",
-          "symbolChecksum": "f6e7b0a4d49b746f66a5aaa01c3aa1428f33aa5832afaa89cffc1d429c25603f",
+          "sha256": "3b903432e935cdda251cf87f20878954853957d6115dbc9a86754076c9300483",
+          "symbolChecksum": "3b903432e935cdda251cf87f20878954853957d6115dbc9a86754076c9300483",
           "matches": true
         },
         {
@@ -123,8 +123,14 @@
         },
         {
           "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Promotion.cs",
-          "sha256": "55e5298c5225b241fcb7a8028345e6f7c2f93516333071d0e47c80e9a0251c7f",
-          "symbolChecksum": "55e5298c5225b241fcb7a8028345e6f7c2f93516333071d0e47c80e9a0251c7f",
+          "sha256": "da34bd6616fbcd1fb9f990556b085ec55ac5c3a927cbb40c15a4deef87f9a06f",
+          "symbolChecksum": "da34bd6616fbcd1fb9f990556b085ec55ac5c3a927cbb40c15a4deef87f9a06f",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.ReceiptFiles.cs",
+          "sha256": "5fc33340d90bbc1a29039afdf00304e1e2857f66374de1cd164aa79aadea2357",
+          "symbolChecksum": "5fc33340d90bbc1a29039afdf00304e1e2857f66374de1cd164aa79aadea2357",
           "matches": true
         },
         {
@@ -141,8 +147,8 @@
         },
         {
           "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs",
-          "sha256": "626113d23d1f645a3b1d98e07972b8dda56d97ce3d2358f9c15fa6b1b289bb73",
-          "symbolChecksum": "626113d23d1f645a3b1d98e07972b8dda56d97ce3d2358f9c15fa6b1b289bb73",
+          "sha256": "35b1be54096b1d3e9c75c3cd79d3ec3c7cf459082cdf0fa4459ca4383cbd20ea",
+          "symbolChecksum": "35b1be54096b1d3e9c75c3cd79d3ec3c7cf459082cdf0fa4459ca4383cbd20ea",
           "matches": true
         },
         {
@@ -304,7 +310,7 @@
         {
           "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
           "sha256": "",
-          "symbolChecksum": "94c0b839fe896f08ca27a10032fae6f4ebaf2e5f",
+          "symbolChecksum": "ec5dab3d0e0cf32af579bef26a62d0a8ed853786",
           "matches": null,
           "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
         }

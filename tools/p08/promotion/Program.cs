@@ -56,6 +56,8 @@ Test("fabricated non-native capture type rejected", f => Reject(f, () => { f.Cap
 Test("omitted forced LOD policy rejected", f => Reject(f, () => { f.Captures[0].lodPolicy = null; f.SaveCapture(0); }, "controlled LOD0"));
 Test("review cannot predate capture", f => Reject(f, () => f.Review.reviewedUtc = "2026-01-01T00:00:00.0000000+00:00", "predates"));
 Test("failed native import rejected", f => Reject(f, () => { f.Native.passed = false; f.SaveNative(); }, "Successful source-bound"));
+Test("contradictory successful native import with failure text rejected", f => Reject(f, () => { f.Native.failure = "IOException: Win32 IO returned 1224"; f.SaveNative(); }, "Successful source-bound"));
+Test("whitespace native failure text is not an empty failure", f => Reject(f, () => { f.Native.failure = " "; f.SaveNative(); }, "Successful source-bound"));
 Test("missing native material preservation gate rejected", f => Reject(f, () => { f.Native.assets[0].materialSlotsPreserved = false; f.SaveNative(); }, "material/reference gates"));
 Test("collapsed native LOD declaration rejected", f => Reject(f, () => { f.Native.assets[0].lodTriangles[1] = f.Native.assets[0].lodTriangles[0]; f.SaveNative(); }, "decreasing native LODs"));
 Test("accepted material bytes cannot change during binding", f => Reject(f, () => File.AppendAllText(f.PathOf("surface.mat"), "changed material slots"), "Bound file changed"));
