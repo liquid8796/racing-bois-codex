@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "message": "Runtime error: Role filter retains semantic IDs",
+  "data": {
+    "exceptionType": "InvalidOperationException",
+    "stackTrace": "  at MCPDynamicCode+<Execute>c__AnonStorey0.<>m__0 (System.Boolean passed, System.String reason) [0x00006] in <8488311168494c0cb312807f602e17f2>:0 \r\n  at MCPDynamicCode.Execute () [0x00612] in <8488311168494c0cb312807f602e17f2>:0 \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ",
+    "compiler": "codedom"
+  }
+}

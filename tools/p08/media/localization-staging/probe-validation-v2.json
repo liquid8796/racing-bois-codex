@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T19:44:41.407624+00:00",
+  "scope": "unattached-cinematic-copy-binding",
+  "revision": 2,
+  "reason": "Unattached DropdownField index setters emit no ChangeEvent. Explicitly invoke existing BuildList after fixture selection; no UI input-dispatch claim.",
+  "originalProbe": {
+    "path": "history/NativeCopyProbe.v1.body.cs",
+    "sha256": "c555b0a22f045d4aabafe41fc69be18458df5559be097d9d5b34cf41108e12a1"
+  },
+  "currentProbe": {
+    "path": "NativeCopyProbe.body.cs",
+    "sha256": "51baed595a761961fe1b9002cbaa056964d18c96921a72c55db1c0f9d74da134"
+  },
+  "wrapperSha256": "14503f811aad24e2eb7571ec01458a06cefbc5fb3ccee2211aab459b659f7c48",
+  "managedCompilation": {
+    "passed": true,
+    "warnings": 0,
+    "errors": 0
+  },
+  "nativeExecution": false,
+  "productionSourceChanged": false,
+  "uiInputDispatch": false
+}
