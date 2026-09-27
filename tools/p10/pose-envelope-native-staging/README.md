@@ -82,6 +82,13 @@ would be needed to supervise an Editor shutdown plus a GPU hang.
    diagnostic materials. It never globally calls SaveAssets or replaces game
    build-scene settings. A reverse restoration journal restores only its own
    settings and closes only its own scene, including partial-failure paths.
+   The three project-settings files are bound after the diagnostic overrides.
+   Persistent native settings cannot be written with the untracked serializer:
+   the builder serializes owned transient copies to `BuildEvidence/effective`,
+   verifies full JSON identity and nonempty output, then copies those exact bytes
+   to the scoped settings files before taking the source snapshot. It checks
+   both full in-memory settings and disk hashes after the build. Restoration
+   attempts every original memory state, disk image and dirty flag independently.
 6. Through direct Unity MCP call
    `PosePreviewLaunch.Start(buildDirectory, "docs/p10/pose-envelope-native-staging/captures-<fresh-id>", true)`.
    The launcher verifies all build files before/after execution and returns
@@ -100,3 +107,7 @@ finite values and unique chronological frame observations. It separately flags
 capture timing gaps; successful byte verification does not accept images or
 hide raw prediction uncertainty. Native runs/images do not exist merely because
 the staged compiler or synthetic fixture controls pass.
+The independent verifier also recomputes the source fingerprint, requires exact
+before/after source snapshots and no recorded memory mutations, and matches all
+three effective/before/after settings copies to their source hashes. It does not
+trust `sourceBindingPassed` alone.

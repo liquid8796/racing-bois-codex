@@ -60,3 +60,7 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.ttf filter=lfs diff=lfs merge=lfs -text
 *.obj filter=lfs diff=lfs merge=lfs -text
+/docs/p08/**/*.json -text whitespace=cr-at-eol
+/docs/p09/**/*.json -text whitespace=cr-at-eol
+/docs/p10/**/*.json -text whitespace=cr-at-eol
+/docs/p10/**/*.jsonl -text whitespace=cr-at-eol

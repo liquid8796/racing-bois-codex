@@ -61,9 +61,34 @@ def require_x64(path):
     pointer=struct.unpack_from('<I',data,60)[0]
     require(pointer>=64 and pointer+26<=len(data) and data[pointer:pointer+4]==b'PE\x00\x00','Invalid PE header')
     require(struct.unpack_from('<H',data,pointer+4)[0]==0x8664 and struct.unpack_from('<H',data,pointer+24)[0]==0x20b,'Native player must be x64 PE32+')
+def verify_source_binding(build_root,build):
+    before=build.get('sources');after=build.get('sourcesAfter')
+    require(isinstance(before,list) and before and isinstance(after,list),'Source snapshots required')
+    for rows in [before,after]:
+        paths=[row['path'] for row in rows]
+        require(paths==sorted(set(paths)),'Source snapshots must be unique and sorted')
+        for row in rows:
+            require(isinstance(row['path'],str) and row['path'] and '\\' not in row['path'] and
+                    not any(part in {'','.','..'} or ':' in part for part in row['path'].split('/')),'Noncanonical source path')
+            require(isinstance(row['sha256'],str) and len(row['sha256'])==64 and
+                    all(character in '0123456789abcdef' for character in row['sha256']),'Invalid source digest')
+            require(type(row['bytes']) is int and row['bytes']>=0,'Invalid source size')
+    fingerprint=hashlib.sha256('\n'.join(row['path']+' '+row['sha256'] for row in before).encode()).hexdigest()
+    require(fingerprint==build.get('sourceFingerprint') and before==after and build.get('changedDuringBuild')==[],
+            'Build source or effective settings mutated')
+    by_path={row['path']:row for row in before}
+    for name in ['ProjectSettings','GraphicsSettings','QualitySettings']:
+        row=by_path.get('ProjectSettings/'+name+'.asset')
+        require(row is not None,'Effective project settings missing from source binding')
+        for phase in ['effective','before','after']:
+            path=build_root/'BuildEvidence'/phase/(name+'.asset')
+            require(path.is_file() and path.stat().st_size==row['bytes'] and sha(path)==row['sha256'],
+                    'Effective project settings evidence differs from build sources')
+
 def audit(build_root,output):
     build=json.loads((build_root/'PosePreview.build.json').read_text());binding_path=build_root/'PosePreview.binding.json';binding=json.loads(binding_path.read_text())
     require(build.get('passed') is True and build.get('sourceBindingPassed') is True and build.get('editorStateRestored') is True and build.get('result')=='Succeeded' and build.get('target')=='StandaloneWindows64' and build.get('backend')=='Mono2x','Real successful/restored Unity build required')
+    verify_source_binding(build_root,build)
     require_x64(build_root/'RacingBoisPosePreview.exe');require_x64(build_root/'UnityPlayer.dll')
     require(build['sourceFingerprint']==binding['sourceFingerprint'],'Build/binding identity mismatch')
     for row in build['playerFiles']:

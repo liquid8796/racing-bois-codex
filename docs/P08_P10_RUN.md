@@ -2,7 +2,31 @@
 
 User authorizes completing all three phases without repeated intermediate confirmation. No Jarvis MCP calls. UI/3D100%fidelity to finalized2D prototypes remains a required acceptance condition. Asset-generation recovery uses local/free tools only. Existing Club source is protected by rootAGENTS.md.
 
-## Current workstreams
+## Current checkpoint — session resumption, 2026-09-27
+
+This checkpoint supersedes the current-state wording in the earlier records below. Historical failures, interrupted runs and scoped PASS results remain unchanged. The user now also authorizes validating, committing and normally pushing each completed patch to `master`; initial publication is being prepared and is not claimed complete here.
+
+- **Fresh regression:** [20260927T105143Z](p10/regression/20260927T105143Z/receipt.json) completed at 17:52:46 Bangkok: 261 groups in 17 suites PASS, `sourceStable=true`, no changed sources, `pendingProductionGate=true`.
+- **Completed eight-hour socket soak:** [run 20260927T003037Z](p10/network/20260927T003037Z/run.json) and [raw probe](p10/network/20260927T003037Z/probe.json) completed at 15:30 Bangkok, with 28,800.058 seconds, eight peers, 359 race cycles, 238 planned reconnects and 47 storms. All 163 bound source files were independently rehashed during resumption with no differences. This run records zero persistence failures and replay mismatches, one dropped catch-up tick, a maximum health step of 52.4763 ms and a maximum equal-target raw correction of 5.489338 m. Its operational eight-hour gate passed; Unity graphics/audio, contact alignment and smoothness remain unaccepted. Earlier superseded eight-hour attempts remain non-PASS.
+- **OCI f / multiplayer protocol 6:** [post-soak deployment receipt](p09/releases/f/deployment-after-soak.json) verifies release `p09-20260927-f`, private data, a loopback backend and the public TLS/WSS route. Its [30-minute WAN run](p10/network/20260927T003126Z/run.json) passed with eight peers, 21 cycles, 14 planned reconnects and two storms. [Capacity evidence](p09/releases/f/capacity.json) reports no persistence failures, dropped catch-up ticks or service restarts for that WAN run. It covers one Windows network origin to Frankfurt, not regional game-client acceptance or a current live service check.
+- **Actual Unity Windows WSS:** the native transport backlog was reproduced under Unity Mono and fixed with off-context I/O awaits; callbacks remain through Poll. The [final turnover run and preserved failures](p10/native-wss/README.md) establish a 96.594-second real Mono-player connection, one planned resume, no unexpected reconnect and acknowledged leave/logout. This is not a complete rendered game release.
+- **Visual candidates:** [Unity import](p08/golden/unity/import-6feb434df4ad455f82b3b81efc7ab3f8.json) passed the structural contract for Apex R4, Ash V6 and MenuEnvironment V1. Garage V7 has two baked lightmaps/60 renderers, with visual acceptance false. Ash V7 is a [frozen staging delivery](p08/golden/ash/v7/delivery.json), not yet imported. Spark V1 has an assembled source and source renders, with export/descriptor/native review outstanding. All remain visually unaccepted, and masks remain **1/1/1**.
+- **Menu import diagnosis:** the same V1 FBX resolved its two fallback material slots after secondary-UV generation was disabled. The failed automatic unwrap is the demonstrated cause; [V2](p08/golden/menu-environment/v2/README.md) is a preserved compatibility variant. This material repair does not accept composition or reference fidelity.
+- **Pose-envelope work:** a separate staged renderer candidate has isolated checks, but actual Windows comparison is pending. The retained `Build/PoseEnvelopePreview/20260927-settings03/PosePreview.build.json` reports Unity build success with zero errors/warnings but overall FAIL: three ProjectSettings files changed and source binding failed, despite successful editor-state restoration. Root is repairing that builder/binding path. Do not promote staged smoothing before actual native review and a new runtime validation window.
+
+No phase is complete. Required remaining work includes accepted full roster/routes/semantic content mapping, concept-matched UI/3D, full Windows gameplay/audio/campaign checks, ten-minute performance and player soak, actual input/display/hardware coverage, two physical LAN PCs with WAN disabled, real SEA/EU/NA game clients, and immutable Windows/LAN release packaging. P01/P05/P06 open gates remain tracked.
+
+### Session resumption checklist
+
+1. Preserve source-frozen soak evidence; use the fresh regression above for current linked production logic. Any later runtime edit needs appropriate new source-bound checks.
+2. Finish the pose build settings/binding repair, build into a new directory, run the native comparison and verify actual PNGs/timing/actor visibility before choosing any renderer integration.
+3. Publish and inspect Ash V7 in fresh review paths; complete Spark V1 export/roundtrip/native review. Preserve all locked concepts and prior candidates, including the protected Club source.
+4. Resolve recorded visual mismatches before roster promotion, then complete native content/build/UX/performance gates. Do not replace physical or geographic tests with synthetic evidence.
+5. Close each completed patch with validation and a normal push to `master`, preserving unrelated work. Record the actual commit/push result when obtained.
+
+The earlier cleanup rejection remains unresolved: [cleanup status](p09/cleanup-status.json) records four private failed-restore artifacts retained after automatic approval review rejected deletion as **“blocked by policy”**. Do not retry through another route.
+
+## Historical workstreams — superseded by the checkpoint above
 
 - P08 visual recovery: old mass-produced hero models rejected. Apex v2 + Ash v2 concepts saved/inspected; current Apex v4 and v7, and procedural Ash, remain unaccepted. Direct Blender MCP is the only authoring bridge. Read-only service check found no configuredpaidgeneration; MPFB addon registration was blocked by MCPsafe mode and was not bypassed. Investigating explicitly allowed import of CC0 anatomicalOBJ/numericmorphdata instead. No roster promotion.
 - P08 UI/environment: main-v2 concept inspected; garage-v2 draft requires Spark thumbnail correction before final reference; canyon-v2 inspected. Runtime presentation work must use these references and preserve server/session behavior.
@@ -30,7 +54,7 @@ User authorizes completing all three phases without repeated intermediate confir
 
 ## Ownership and continuation
 
-### Current checkpoint — 2026-09-27 06:10 Bangkok
+### Historical checkpoint — 2026-09-27 06:10 Bangkok
 
 - OCI release e remains active on protocol5. Its30-minute8-peer WAN run completed:21cycles,14reconnects,2storms; no invalid snapshots/persistence failures/restarts/dropped catch-up ticks. It exposed real prediction defects, so its network-operation PASS is not a smoothness PASS. The raw firewall counter hash could not prove unchanged rules without a predeployment normalized baseline; that measurement remains inconclusive.
 - Protocol6 is applied locally after reviewed, hash-guarded staging. It sends bounded current pedestrian/combat context and shares deterministic motion/contact/known-attack order while preserving authoritative health/economy/outcomes. Three immutable episode replays improve9.135m→0.005m,9.815m→0m and16.258m→0m. Future remote inputs/AI/RNG remain uncertain. Fresh production241groups,11career checks and90-second8-peer/fuzz all pass. The30-minute run20260926T230400Z is running, with simultaneous Unity CPU baking recorded as host-load context.
@@ -42,4 +66,4 @@ User authorizes completing all three phases without repeated intermediate confir
 
 Root owns Unity MCP, UI implementation, generatedconceptinspection and acceptance decisions. Each authoring agent owns only its assigned Blender port/scene and output directory. No production masks may change from1/1/1 until matching production QA. Use docs/p08/golden/unity/README.md importer contract for actual candidateinputs; technicalPASS neverclosesvisualfidelity.
 
-Git read-only preflight now reports unborn master/allfilesuntracked, inconsistent with older commitnotes. Preserve currentfiles; do not reset/rebuildGit history or cite historicalcommits ascurrentbindings. Use fresh filehashes forreceipts. No taskphase markedcomplete yet.
+At that historical checkpoint, Git read-only preflight reported unborn master/allfilesuntracked, inconsistent with older commitnotes. Preserve currentfiles; do not reset/rebuildGit history or cite historicalcommits ascurrentbindings. Use fresh filehashes forreceipts. Publication work is tracked in the resumption checkpoint above; no taskphase is markedcomplete.

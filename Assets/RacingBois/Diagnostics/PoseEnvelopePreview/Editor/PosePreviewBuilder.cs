@@ -78,7 +78,7 @@ namespace RacingBois.Diagnostics.PoseEnvelopePreview.Editor
                 Require(preprocessor!=null,"installed_urp_preprocessor_missing");
                 var gather=preprocessor.GetMethod("GatherShaderFeatures",System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic);
                 Require(gather!=null,"installed_urp_prefilter_contract_changed");gather.Invoke(null,new object[]{false});
-                AssetDatabase.SaveAssetIfDirty(pipeline);projectSettings.PersistEffectiveSettings();
+                AssetDatabase.SaveAssetIfDirty(pipeline);projectSettings.PersistEffectiveSettings(Path.Combine(output,"BuildEvidence","effective"));
                 receipt.selectionSha256=PreviewBuildInputs.Digest(selectionPath);receipt.sources=PreviewBuildInputs.Snapshot(receipt.scene,selectionPath,compileProofPath,selection,ownedPipelinePath);receipt.sourceFingerprint=PreviewBuildInputs.Fingerprint(receipt.sources);
                 CaptureSettings(output,"before");
                 receipt.result="Building";Write(output,receipt);
@@ -86,8 +86,9 @@ namespace RacingBois.Diagnostics.PoseEnvelopePreview.Editor
                 receipt.result=built.summary.result.ToString();receipt.errors=built.summary.totalErrors;receipt.warnings=built.summary.totalWarnings;receipt.buildSeconds=built.summary.totalTime.TotalSeconds;
                 receipt.sourcesAfter=PreviewBuildInputs.Snapshot(receipt.scene,selectionPath,compileProofPath,selection,ownedPipelinePath);
                 receipt.changedDuringBuild=receipt.sources.Select(r=>r.path).Union(receipt.sourcesAfter.Select(r=>r.path)).Where(path=>
-                    receipt.sources.FirstOrDefault(r=>r.path==path)?.sha256!=receipt.sourcesAfter.FirstOrDefault(r=>r.path==path)?.sha256).ToArray();
-                receipt.sourceBindingPassed=receipt.sourceFingerprint==PreviewBuildInputs.Fingerprint(receipt.sourcesAfter);
+                    receipt.sources.FirstOrDefault(r=>r.path==path)?.sha256!=receipt.sourcesAfter.FirstOrDefault(r=>r.path==path)?.sha256)
+                    .Union(projectSettings.ChangedDuringBuild()).OrderBy(path=>path,StringComparer.Ordinal).ToArray();
+                receipt.sourceBindingPassed=receipt.changedDuringBuild.Length==0&&receipt.sourceFingerprint==PreviewBuildInputs.Fingerprint(receipt.sourcesAfter);
                 CaptureSettings(output,"after");
                 Require(built.summary.result==BuildResult.Succeeded&&receipt.sourceBindingPassed,"build_or_source_binding_failed");
                 File.WriteAllText(Path.Combine(output,"PosePreview.binding.json"),JsonUtility.ToJson(new PreviewBinding{sourceFingerprint=receipt.sourceFingerprint,fixtureSha256=selection.fixture.sha256,selectionSha256=receipt.selectionSha256,unityVersion=Application.unityVersion},true));
