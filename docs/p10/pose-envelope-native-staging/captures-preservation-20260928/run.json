@@ -1,0 +1,1476 @@
+{
+    "schema": 1,
+    "targetSampleHz": 60,
+    "samples": 1496,
+    "missedSampleSlots": 67,
+    "errors": 0,
+    "warnings": 0,
+    "status": "CAPTURED",
+    "failureCode": "",
+    "startedUtc": "2026-09-27T19:22:13.7465046Z",
+    "finishedUtc": "2026-09-27T19:22:41.2952065Z",
+    "sourceFingerprint": "d3a9e6fe1a9f1920cc1eef0d4e38401399c8c5910528040a5ee42f78575217e5",
+    "bindingSha256": "c2738e4352518e9d875e4ca301bbafc47f2a51087ecef49ab26494a106ac5e53",
+    "fixtureSha256": "284834790ea7192044cd2cde935ac33d709b26a88468278bea5355a034fcd092",
+    "selectionSha256": "4d248cb6960e649653654d4bad2141bd102a6b1927b6a4d4654a4bbfb8b6fbde",
+    "unityVersion": "6000.5.7f1",
+    "platform": "WindowsPlayer",
+    "backend": "Mono2x",
+    "graphicsDevice": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "graphicsApi": "Direct3D11",
+    "screenWidth": 1280,
+    "screenHeight": 720,
+    "graphicsUvStartsAtTop": true,
+    "wallSeconds": 27.575434599999999,
+    "maximumSampleGapSeconds": 0.19591540000000008,
+    "include20": true,
+    "monoDetected": true,
+    "completed": true,
+    "nativeVisualAccepted": false,
+    "warningMessages": [],
+    "captures": [
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "unfiltered",
+            "stage": "before",
+            "file": "largest-riding-to-falling--unfiltered--before.png",
+            "sha256": "1bd5009f29fe812510bde820a410df909f0f5e33685977ad7c678b16788dd603",
+            "unityFrame": 1,
+            "width": 1280,
+            "height": 720,
+            "bytes": 89368,
+            "requestWallSeconds": 0.5584665000000002,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 0.7663030000000002,
+            "rider": {
+                "x": 4.410228729248047,
+                "y": -0.07999999821186066,
+                "z": 5.963231086730957
+            },
+            "bike": {
+                "x": 4.6572723388671879,
+                "y": 0.0,
+                "z": 6.1666259765625
+            },
+            "camera": {
+                "x": -0.36080312728881838,
+                "y": 2.6500000953674318,
+                "z": 2.0351715087890627
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "unfiltered",
+            "stage": "correction",
+            "file": "largest-riding-to-falling--unfiltered--correction.png",
+            "sha256": "44e443a63284c3f72b9c22d1f49832ca6a002de8b1de2d5c0cd4a6d8dc98ae3c",
+            "unityFrame": 13,
+            "width": 1280,
+            "height": 720,
+            "bytes": 115774,
+            "requestWallSeconds": 0.9322195,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 0.9657455000000002,
+            "rider": {
+                "x": -1.132659912109375,
+                "y": 0.0,
+                "z": 1.375732421875
+            },
+            "bike": {
+                "x": 2.2529296875,
+                "y": 0.48000001907348635,
+                "z": 4.5841064453125
+            },
+            "camera": {
+                "x": -0.9988539218902588,
+                "y": 2.6500000953674318,
+                "z": 1.5072147846221924
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "unfiltered",
+            "stage": "mid",
+            "file": "largest-riding-to-falling--unfiltered--mid.png",
+            "sha256": "ff1d3dbf2d3943bce99ab2f4ba0f1f43836b02bd379440565a2922461a143719",
+            "unityFrame": 22,
+            "width": 1280,
+            "height": 720,
+            "bytes": 98021,
+            "requestWallSeconds": 1.0818664,
+            "afterSeconds": 0.15001219999999994,
+            "readbackCompletedWallSeconds": 1.1157731000000002,
+            "rider": {
+                "x": 0.2144927978515625,
+                "y": 0.0,
+                "z": 2.48486328125
+            },
+            "bike": {
+                "x": 6.0064544677734379,
+                "y": 0.48000001907348635,
+                "z": 7.6744384765625
+            },
+            "camera": {
+                "x": -3.7871789932250978,
+                "y": 2.6500000953674318,
+                "z": -0.802302896976471
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "unfiltered",
+            "stage": "settled",
+            "file": "largest-riding-to-falling--unfiltered--settled.png",
+            "sha256": "292e284bf6041d93f8915c334c861d2c50667065a9fd4314a84d4523341e37d2",
+            "unityFrame": 61,
+            "width": 1280,
+            "height": 720,
+            "bytes": 77252,
+            "requestWallSeconds": 1.7318568,
+            "afterSeconds": 0.8000219,
+            "readbackCompletedWallSeconds": 1.76586,
+            "rider": {
+                "x": 6.053985595703125,
+                "y": 0.0,
+                "z": 7.2926025390625
+            },
+            "bike": {
+                "x": 22.2696533203125,
+                "y": 0.48000001907348635,
+                "z": 21.064208984375
+            },
+            "camera": {
+                "x": -0.15033723413944245,
+                "y": 2.6500000953674318,
+                "z": 2.184602737426758
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "envelope40",
+            "stage": "before",
+            "file": "largest-riding-to-falling--envelope40--before.png",
+            "sha256": "07e15f5cbcfb5302dc5478c2ae5c481a7c077ad698538be7c9a16c138fc6bdbb",
+            "unityFrame": 117,
+            "width": 1280,
+            "height": 720,
+            "bytes": 89365,
+            "requestWallSeconds": 2.6656031,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 2.6994715,
+            "rider": {
+                "x": 4.410228729248047,
+                "y": -0.07999999821186066,
+                "z": 5.963231086730957
+            },
+            "bike": {
+                "x": 4.6572723388671879,
+                "y": 0.0,
+                "z": 6.1666259765625
+            },
+            "camera": {
+                "x": -0.36080312728881838,
+                "y": 2.6500000953674318,
+                "z": 2.0351715087890627
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "envelope40",
+            "stage": "correction",
+            "file": "largest-riding-to-falling--envelope40--correction.png",
+            "sha256": "a0ad7203a9319d86224de0b7581ecb73473a15f1b5c60a0f4f1c1d221b4cae9c",
+            "unityFrame": 144,
+            "width": 1280,
+            "height": 720,
+            "bytes": 90996,
+            "requestWallSeconds": 3.1157,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 3.1495868999999998,
+            "rider": {
+                "x": 4.410228729248047,
+                "y": -0.07999999821186066,
+                "z": 5.963231086730957
+            },
+            "bike": {
+                "x": 4.6572723388671879,
+                "y": 0.0,
+                "z": 6.1666259765625
+            },
+            "camera": {
+                "x": -0.3880138397216797,
+                "y": 2.641188383102417,
+                "z": 2.012768507003784
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "envelope40",
+            "stage": "mid",
+            "file": "largest-riding-to-falling--envelope40--mid.png",
+            "sha256": "e253e99342a69592329a31833bb33d1384b0f80117dc6f5ab0bb364399fdb9b1",
+            "unityFrame": 153,
+            "width": 1280,
+            "height": 720,
+            "bytes": 87070,
+            "requestWallSeconds": 3.2656667,
+            "afterSeconds": 0.15004319999999983,
+            "readbackCompletedWallSeconds": 3.2995653,
+            "rider": {
+                "x": 2.522538661956787,
+                "y": -0.033300578594207767,
+                "z": 4.395053386688232
+            },
+            "bike": {
+                "x": 6.0072174072265629,
+                "y": 0.48000001907348635,
+                "z": 7.675048828125
+            },
+            "camera": {
+                "x": -3.205531120300293,
+                "y": 2.6416032314300539,
+                "z": -0.32090651988983157
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "envelope40",
+            "stage": "settled",
+            "file": "largest-riding-to-falling--envelope40--settled.png",
+            "sha256": "55c78d039d64eb4db7436fa1cae4946726dcd5c29c5d99cdd24e53f808877d66",
+            "unityFrame": 192,
+            "width": 1280,
+            "height": 720,
+            "bytes": 77378,
+            "requestWallSeconds": 3.9157439999999998,
+            "afterSeconds": 0.8001452999999996,
+            "readbackCompletedWallSeconds": 3.9496637,
+            "rider": {
+                "x": 6.0555267333984379,
+                "y": 0.0,
+                "z": 7.2939453125
+            },
+            "bike": {
+                "x": 22.272735595703126,
+                "y": 0.48000001907348635,
+                "z": 21.066650390625
+            },
+            "camera": {
+                "x": -0.16742576658725739,
+                "y": 2.6502630710601808,
+                "z": 2.170462131500244
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "comparison20",
+            "stage": "before",
+            "file": "largest-riding-to-falling--comparison20--before.png",
+            "sha256": "24414c10c9afac49d1d48c1693421b7e952c1d7ca249783b142108054e5e4388",
+            "unityFrame": 248,
+            "width": 1280,
+            "height": 720,
+            "bytes": 89365,
+            "requestWallSeconds": 4.849137299999999,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 4.8830323,
+            "rider": {
+                "x": 4.410228729248047,
+                "y": -0.07999999821186066,
+                "z": 5.963231086730957
+            },
+            "bike": {
+                "x": 4.6572723388671879,
+                "y": 0.0,
+                "z": 6.1666259765625
+            },
+            "camera": {
+                "x": -0.36080312728881838,
+                "y": 2.6500000953674318,
+                "z": 2.0351715087890627
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "comparison20",
+            "stage": "correction",
+            "file": "largest-riding-to-falling--comparison20--correction.png",
+            "sha256": "52feb97c7f84a93c08fcb21ee28960434e58aaad9021baef75f1eed626ee7a3a",
+            "unityFrame": 275,
+            "width": 1280,
+            "height": 720,
+            "bytes": 90920,
+            "requestWallSeconds": 5.2992577999999999,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 5.3497053999999999,
+            "rider": {
+                "x": 4.410228729248047,
+                "y": -0.07999999821186066,
+                "z": 5.963231086730957
+            },
+            "bike": {
+                "x": 4.6572723388671879,
+                "y": 0.0,
+                "z": 6.1666259765625
+            },
+            "camera": {
+                "x": -0.38799476623535159,
+                "y": 2.6411948204040529,
+                "z": 2.012784481048584
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "comparison20",
+            "stage": "mid",
+            "file": "largest-riding-to-falling--comparison20--mid.png",
+            "sha256": "3a2f632667a2c7b9f913026a48e70e4822796f2f7f5fabe3a0b0e223b666be36",
+            "unityFrame": 285,
+            "width": 1280,
+            "height": 720,
+            "bytes": 83300,
+            "requestWallSeconds": 5.465735799999999,
+            "afterSeconds": 0.1666021999999998,
+            "readbackCompletedWallSeconds": 5.4997036,
+            "rider": {
+                "x": 4.6477508544921879,
+                "y": -0.061834268271923068,
+                "z": 6.153351783752441
+            },
+            "bike": {
+                "x": 6.767585277557373,
+                "y": 0.410967618227005,
+                "z": 8.243951797485352
+            },
+            "camera": {
+                "x": -1.1346330642700196,
+                "y": 2.6103458404541017,
+                "z": 1.3926429748535157
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-riding-to-falling",
+            "variant": "comparison20",
+            "stage": "settled",
+            "file": "largest-riding-to-falling--comparison20--settled.png",
+            "sha256": "7ab8ef57cfd7e9fb5ff66b9492c92f424ee192bbc7466548ff9808df79dad65e",
+            "unityFrame": 324,
+            "width": 1280,
+            "height": 720,
+            "bytes": 77148,
+            "requestWallSeconds": 6.1158319,
+            "afterSeconds": 0.8166642999999993,
+            "readbackCompletedWallSeconds": 6.149738599999999,
+            "rider": {
+                "x": 6.203765869140625,
+                "y": 0.0,
+                "z": 7.4158935546875
+            },
+            "bike": {
+                "x": 22.686538696289064,
+                "y": 0.48000001907348635,
+                "z": 21.4073486328125
+            },
+            "camera": {
+                "x": -0.019576460123062135,
+                "y": 2.6502339839935304,
+                "z": 2.292172431945801
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "unfiltered",
+            "stage": "before",
+            "file": "largest-falling-to-riding--unfiltered--before.png",
+            "sha256": "51e11f1acd4e1c52ef77192ab1119fdaea50e4a8931a6c5fd85c18beed40617c",
+            "unityFrame": 380,
+            "width": 1280,
+            "height": 720,
+            "bytes": 86543,
+            "requestWallSeconds": 7.049158499999999,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 7.0831184,
+            "rider": {
+                "x": 0.513153076171875,
+                "y": -0.46819496154785159,
+                "z": -7.3287353515625
+            },
+            "bike": {
+                "x": 0.513153076171875,
+                "y": 0.011804580688476563,
+                "z": -7.3287353515625
+            },
+            "camera": {
+                "x": -0.34955090284347536,
+                "y": 1.7546143531799317,
+                "z": -13.930807113647461
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "unfiltered",
+            "stage": "correction",
+            "file": "largest-falling-to-riding--unfiltered--correction.png",
+            "sha256": "fe6d00ece171e6fd73d0a0cd25167d89d4405c235199f1a44348eb873799aa04",
+            "unityFrame": 407,
+            "width": 1280,
+            "height": 720,
+            "bytes": 55536,
+            "requestWallSeconds": 7.499198099999999,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 7.5330286,
+            "rider": {
+                "x": 1.588745355606079,
+                "y": -0.10058772563934326,
+                "z": -0.6029438376426697
+            },
+            "bike": {
+                "x": 1.64398193359375,
+                "y": 0.0,
+                "z": -0.293701171875
+            },
+            "camera": {
+                "x": -0.25890037417411806,
+                "y": 1.8061981201171876,
+                "z": -13.150471687316895
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "unfiltered",
+            "stage": "mid",
+            "file": "largest-falling-to-riding--unfiltered--mid.png",
+            "sha256": "b236fe674eae841be131a04fa47882a436d2883b0e462825ade84ff5dadaf3e1",
+            "unityFrame": 417,
+            "width": 1280,
+            "height": 720,
+            "bytes": 57154,
+            "requestWallSeconds": 7.665842,
+            "afterSeconds": 0.16663430000000013,
+            "readbackCompletedWallSeconds": 7.6997624999999989,
+            "rider": {
+                "x": 2.856020927429199,
+                "y": 0.32691681385040285,
+                "z": 5.7775068283081059
+            },
+            "bike": {
+                "x": 2.9244232177734377,
+                "y": 0.4275045394897461,
+                "z": 6.0841064453125
+            },
+            "camera": {
+                "x": 0.6748324036598206,
+                "y": 2.282615900039673,
+                "z": -5.955930233001709
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "unfiltered",
+            "stage": "settled",
+            "file": "largest-falling-to-riding--unfiltered--settled.png",
+            "sha256": "4470ea4bc35b467a12e5ebd23e86cb37acfd010db541a63d46e19c2152d6f91f",
+            "unityFrame": 455,
+            "width": 1280,
+            "height": 720,
+            "bytes": 58489,
+            "requestWallSeconds": 8.29918,
+            "afterSeconds": 0.8000048999999994,
+            "readbackCompletedWallSeconds": 8.333093499999999,
+            "rider": {
+                "x": 9.62012767791748,
+                "y": -0.15144100785255433,
+                "z": 29.65855598449707
+            },
+            "bike": {
+                "x": 9.720779418945313,
+                "y": -0.08913516998291016,
+                "z": 29.9664306640625
+            },
+            "camera": {
+                "x": 6.2814717292785648,
+                "y": 3.149273633956909,
+                "z": 18.837078094482423
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "envelope40",
+            "stage": "before",
+            "file": "largest-falling-to-riding--envelope40--before.png",
+            "sha256": "7ba43dd46a6f6ffa1c8faa29e0da4f4b4950350ba1c049dc8e310c072f8c0493",
+            "unityFrame": 511,
+            "width": 1280,
+            "height": 720,
+            "bytes": 86541,
+            "requestWallSeconds": 9.2325611,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 9.266473099999999,
+            "rider": {
+                "x": 0.513153076171875,
+                "y": -0.46819496154785159,
+                "z": -7.3287353515625
+            },
+            "bike": {
+                "x": 0.513153076171875,
+                "y": 0.011804580688476563,
+                "z": -7.3287353515625
+            },
+            "camera": {
+                "x": -0.34955090284347536,
+                "y": 1.7546143531799317,
+                "z": -13.930807113647461
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "envelope40",
+            "stage": "correction",
+            "file": "largest-falling-to-riding--envelope40--correction.png",
+            "sha256": "249ace666be63e276377afe601f8a3a03055c360588283585a26123824003e25",
+            "unityFrame": 538,
+            "width": 1280,
+            "height": 720,
+            "bytes": 82853,
+            "requestWallSeconds": 9.682570499999999,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 9.7164969,
+            "rider": {
+                "x": 0.513153076171875,
+                "y": -0.46819496154785159,
+                "z": -7.3287353515625
+            },
+            "bike": {
+                "x": 0.513153076171875,
+                "y": 0.011804580688476563,
+                "z": -7.3287353515625
+            },
+            "camera": {
+                "x": -0.3774157166481018,
+                "y": 1.7657009363174439,
+                "z": -13.891474723815918
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "envelope40",
+            "stage": "mid",
+            "file": "largest-falling-to-riding--envelope40--mid.png",
+            "sha256": "d0e835e2aa6e6546b199dee66d54e745f20f0c349c963143d905c3173eb24a83",
+            "unityFrame": 547,
+            "width": 1280,
+            "height": 720,
+            "bytes": 63422,
+            "requestWallSeconds": 9.8329252,
+            "afterSeconds": 0.15003360000000044,
+            "readbackCompletedWallSeconds": 9.8665065,
+            "rider": {
+                "x": 2.3180289268493654,
+                "y": 0.147781640291214,
+                "z": 2.646124839782715
+            },
+            "bike": {
+                "x": 2.3230719566345217,
+                "y": 0.3897484242916107,
+                "z": 2.579747200012207
+            },
+            "camera": {
+                "x": 0.5115494728088379,
+                "y": 2.21518611907959,
+                "z": -7.043511390686035
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "envelope40",
+            "stage": "settled",
+            "file": "largest-falling-to-riding--envelope40--settled.png",
+            "sha256": "13d8d1ee20f9b2ddd42171e70f7963b4b75af73ec3dede50e28965471282b59d",
+            "unityFrame": 586,
+            "width": 1280,
+            "height": 720,
+            "bytes": 58670,
+            "requestWallSeconds": 10.4825691,
+            "afterSeconds": 0.8000235,
+            "readbackCompletedWallSeconds": 10.5165258,
+            "rider": {
+                "x": 9.62012767791748,
+                "y": -0.15144100785255433,
+                "z": 29.65855598449707
+            },
+            "bike": {
+                "x": 9.720779418945313,
+                "y": -0.08913516998291016,
+                "z": 29.9664306640625
+            },
+            "camera": {
+                "x": 6.285177230834961,
+                "y": 3.1504647731781008,
+                "z": 18.859813690185548
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "comparison20",
+            "stage": "before",
+            "file": "largest-falling-to-riding--comparison20--before.png",
+            "sha256": "8670beae0117055ba7ae8ed5da3fc67f2ec1258ef06ba712cd2b9587702900a5",
+            "unityFrame": 642,
+            "width": 1280,
+            "height": 720,
+            "bytes": 86545,
+            "requestWallSeconds": 11.415996,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 11.449835199999999,
+            "rider": {
+                "x": 0.513153076171875,
+                "y": -0.46819496154785159,
+                "z": -7.3287353515625
+            },
+            "bike": {
+                "x": 0.513153076171875,
+                "y": 0.011804580688476563,
+                "z": -7.3287353515625
+            },
+            "camera": {
+                "x": -0.34955090284347536,
+                "y": 1.7546143531799317,
+                "z": -13.930807113647461
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "comparison20",
+            "stage": "correction",
+            "file": "largest-falling-to-riding--comparison20--correction.png",
+            "sha256": "4b98cd572a0e8497e2e23197c51b16d62e19e7c6b0d9a57f6d3be746c505a9aa",
+            "unityFrame": 669,
+            "width": 1280,
+            "height": 720,
+            "bytes": 82784,
+            "requestWallSeconds": 11.865998699999999,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 11.899884499999999,
+            "rider": {
+                "x": 0.513153076171875,
+                "y": -0.46819496154785159,
+                "z": -7.3287353515625
+            },
+            "bike": {
+                "x": 0.513153076171875,
+                "y": 0.011804580688476563,
+                "z": -7.3287353515625
+            },
+            "camera": {
+                "x": -0.3773772716522217,
+                "y": 1.7656856775283814,
+                "z": -13.891529083251954
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "comparison20",
+            "stage": "mid",
+            "file": "largest-falling-to-riding--comparison20--mid.png",
+            "sha256": "ac421c8d48f1c3596bbc59f11bf3ee6c9f6a7116c9fa6800e332f695f5ea14fb",
+            "unityFrame": 678,
+            "width": 1280,
+            "height": 720,
+            "bytes": 65034,
+            "requestWallSeconds": 12.0161564,
+            "afterSeconds": 0.15006439999999977,
+            "readbackCompletedWallSeconds": 12.0499099,
+            "rider": {
+                "x": 1.8655614852905274,
+                "y": -0.006866484880447388,
+                "z": -0.1835479736328125
+            },
+            "bike": {
+                "x": 1.8715054988861085,
+                "y": 0.3945293724536896,
+                "z": -0.2298603057861328
+            },
+            "camera": {
+                "x": 0.058992862701416019,
+                "y": 2.0605275630950929,
+                "z": -9.87336254119873
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "largest-falling-to-riding",
+            "variant": "comparison20",
+            "stage": "settled",
+            "file": "largest-falling-to-riding--comparison20--settled.png",
+            "sha256": "a376f4e836bb66971f45413615926f5b069a69b2315937586107ad4f293b2f9e",
+            "unityFrame": 717,
+            "width": 1280,
+            "height": 720,
+            "bytes": 58672,
+            "requestWallSeconds": 12.6659904,
+            "afterSeconds": 0.8000341999999989,
+            "readbackCompletedWallSeconds": 12.6999853,
+            "rider": {
+                "x": 9.620439529418946,
+                "y": -0.15149632096290589,
+                "z": 29.65953254699707
+            },
+            "bike": {
+                "x": 9.721092224121094,
+                "y": -0.08919048309326172,
+                "z": 29.9674072265625
+            },
+            "camera": {
+                "x": 6.285285949707031,
+                "y": 3.150438070297241,
+                "z": 18.860200881958009
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "unfiltered",
+            "stage": "before",
+            "file": "same-falling-bike-step--unfiltered--before.png",
+            "sha256": "4bb887446628c29a202d4ea04c8eaf4479b9eca67b839a8a0473e4683678b550",
+            "unityFrame": 773,
+            "width": 1280,
+            "height": 720,
+            "bytes": 80797,
+            "requestWallSeconds": 13.599340599999997,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 13.633251299999996,
+            "rider": {
+                "x": 1.3642578125,
+                "y": -0.03068065643310547,
+                "z": -0.7003173828125
+            },
+            "bike": {
+                "x": 1.5576095581054688,
+                "y": 0.48753929138183596,
+                "z": -0.1422119140625
+            },
+            "camera": {
+                "x": 0.29405736923217776,
+                "y": 2.1921286582946779,
+                "z": -7.271944999694824
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "unfiltered",
+            "stage": "correction",
+            "file": "same-falling-bike-step--unfiltered--correction.png",
+            "sha256": "d3fda23638eb7a52eabf9639bcc664af16474f689c4f22730618cb44d435680e",
+            "unityFrame": 800,
+            "width": 1280,
+            "height": 720,
+            "bytes": 71402,
+            "requestWallSeconds": 14.049406099999997,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 14.083449499999999,
+            "rider": {
+                "x": 1.4725189208984376,
+                "y": 0.0,
+                "z": -0.244384765625
+            },
+            "bike": {
+                "x": 2.3115997314453127,
+                "y": 0.6319046020507813,
+                "z": 1.955322265625
+            },
+            "camera": {
+                "x": 0.30376532673835757,
+                "y": 2.195509195327759,
+                "z": -7.221342086791992
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "unfiltered",
+            "stage": "mid",
+            "file": "same-falling-bike-step--unfiltered--mid.png",
+            "sha256": "77d89e529ee43f805d9492856c64b9a6e6d49a9fa600c078ba5667c87b090c58",
+            "unityFrame": 809,
+            "width": 1280,
+            "height": 720,
+            "bytes": 74973,
+            "requestWallSeconds": 14.199432799999999,
+            "afterSeconds": 0.15007409999999767,
+            "readbackCompletedWallSeconds": 14.233594399999996,
+            "rider": {
+                "x": 1.4725189208984376,
+                "y": 0.0,
+                "z": -0.244384765625
+            },
+            "bike": {
+                "x": 2.453338623046875,
+                "y": 0.6833839416503906,
+                "z": 2.7242431640625
+            },
+            "camera": {
+                "x": 0.3547421097755432,
+                "y": 2.2132606506347658,
+                "z": -6.955623626708984
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "unfiltered",
+            "stage": "settled",
+            "file": "same-falling-bike-step--unfiltered--settled.png",
+            "sha256": "d9997721fad769e134a6f66a867f151c65c675184120402dd26b36499c7ba39b",
+            "unityFrame": 846,
+            "width": 1280,
+            "height": 720,
+            "bytes": 71151,
+            "requestWallSeconds": 14.864857299999999,
+            "afterSeconds": 0.8154855999999988,
+            "readbackCompletedWallSeconds": 14.898755799999999,
+            "rider": {
+                "x": 1.4725189208984376,
+                "y": 0.0,
+                "z": -0.244384765625
+            },
+            "bike": {
+                "x": 3.1297073364257814,
+                "y": 0.9117288589477539,
+                "z": 6.1263427734375
+            },
+            "camera": {
+                "x": 0.3819016218185425,
+                "y": 2.2227189540863039,
+                "z": -6.814053535461426
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "envelope40",
+            "stage": "before",
+            "file": "same-falling-bike-step--envelope40--before.png",
+            "sha256": "f41ddd3ad7a0df8b6ef4acf7dbe2d824c6f071ee601fb2738111135ad0b3ab58",
+            "unityFrame": 902,
+            "width": 1280,
+            "height": 720,
+            "bytes": 80795,
+            "requestWallSeconds": 15.798953599999999,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 15.832743899999999,
+            "rider": {
+                "x": 1.3642578125,
+                "y": -0.03068065643310547,
+                "z": -0.7003173828125
+            },
+            "bike": {
+                "x": 1.5576095581054688,
+                "y": 0.48753929138183596,
+                "z": -0.1422119140625
+            },
+            "camera": {
+                "x": 0.29405736923217776,
+                "y": 2.1921286582946779,
+                "z": -7.271944999694824
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "envelope40",
+            "stage": "correction",
+            "file": "same-falling-bike-step--envelope40--correction.png",
+            "sha256": "e0c4f6fba7e00014d167d2b33afc17f3043537f55ba4b06d988bf5eba62b32df",
+            "unityFrame": 929,
+            "width": 1280,
+            "height": 720,
+            "bytes": 76822,
+            "requestWallSeconds": 16.2491007,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 16.2831188,
+            "rider": {
+                "x": 1.3642578125,
+                "y": -0.03068065643310547,
+                "z": -0.7003173828125
+            },
+            "bike": {
+                "x": 1.5576095581054688,
+                "y": 0.48753929138183596,
+                "z": -0.1422119140625
+            },
+            "camera": {
+                "x": 0.2918369174003601,
+                "y": 2.1921286582946779,
+                "z": -7.271579742431641
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "envelope40",
+            "stage": "mid",
+            "file": "same-falling-bike-step--envelope40--mid.png",
+            "sha256": "5c6410c11ef7ad237e03f6208dbafcc0301966a6973d4f2b0ba8456840e74fc7",
+            "unityFrame": 938,
+            "width": 1280,
+            "height": 720,
+            "bytes": 76624,
+            "requestWallSeconds": 16.399195799999999,
+            "afterSeconds": 0.15010050000000065,
+            "readbackCompletedWallSeconds": 16.4330982,
+            "rider": {
+                "x": 1.4725189208984376,
+                "y": 0.0,
+                "z": -0.244384765625
+            },
+            "bike": {
+                "x": 2.453338623046875,
+                "y": 0.6833839416503906,
+                "z": 2.7242431640625
+            },
+            "camera": {
+                "x": 0.38843387365341189,
+                "y": 2.222809314727783,
+                "z": -6.813729286193848
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "envelope40",
+            "stage": "settled",
+            "file": "same-falling-bike-step--envelope40--settled.png",
+            "sha256": "4595fc87e013d793f88c4681f436fbba9de58eb01dde1863c649266932d8a10a",
+            "unityFrame": 977,
+            "width": 1280,
+            "height": 720,
+            "bytes": 71721,
+            "requestWallSeconds": 17.049546199999999,
+            "afterSeconds": 0.8001244000000014,
+            "readbackCompletedWallSeconds": 17.0832131,
+            "rider": {
+                "x": 1.4725189208984376,
+                "y": 0.0,
+                "z": -0.244384765625
+            },
+            "bike": {
+                "x": 3.1132431030273439,
+                "y": 0.9064645767211914,
+                "z": 6.0479736328125
+            },
+            "camera": {
+                "x": 0.3822280168533325,
+                "y": 2.222809314727783,
+                "z": -6.812708854675293
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "comparison20",
+            "stage": "before",
+            "file": "same-falling-bike-step--comparison20--before.png",
+            "sha256": "f41ddd3ad7a0df8b6ef4acf7dbe2d824c6f071ee601fb2738111135ad0b3ab58",
+            "unityFrame": 1033,
+            "width": 1280,
+            "height": 720,
+            "bytes": 80795,
+            "requestWallSeconds": 17.982647099999999,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 18.0165319,
+            "rider": {
+                "x": 1.3642578125,
+                "y": -0.03068065643310547,
+                "z": -0.7003173828125
+            },
+            "bike": {
+                "x": 1.5576095581054688,
+                "y": 0.48753929138183596,
+                "z": -0.1422119140625
+            },
+            "camera": {
+                "x": 0.29405736923217776,
+                "y": 2.1921286582946779,
+                "z": -7.271944999694824
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "comparison20",
+            "stage": "correction",
+            "file": "same-falling-bike-step--comparison20--correction.png",
+            "sha256": "87a906f936135d1fcdf317fe52b86aa7e14b754ccaf9371ec36d32dfde2d2848",
+            "unityFrame": 1060,
+            "width": 1280,
+            "height": 720,
+            "bytes": 76833,
+            "requestWallSeconds": 18.4326164,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 18.4665242,
+            "rider": {
+                "x": 1.3642578125,
+                "y": -0.03068065643310547,
+                "z": -0.7003173828125
+            },
+            "bike": {
+                "x": 1.5576095581054688,
+                "y": 0.48753929138183596,
+                "z": -0.1422119140625
+            },
+            "camera": {
+                "x": 0.2918381989002228,
+                "y": 2.1921286582946779,
+                "z": -7.271580219268799
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "comparison20",
+            "stage": "mid",
+            "file": "same-falling-bike-step--comparison20--mid.png",
+            "sha256": "e581c62263fdcefdf7ccf968b14884ebd81f54b581047cf92715779573cddce1",
+            "unityFrame": 1069,
+            "width": 1280,
+            "height": 720,
+            "bytes": 75971,
+            "requestWallSeconds": 18.5826031,
+            "afterSeconds": 0.15000500000000017,
+            "readbackCompletedWallSeconds": 18.6165578,
+            "rider": {
+                "x": 1.4725189208984376,
+                "y": 0.0,
+                "z": -0.244384765625
+            },
+            "bike": {
+                "x": 2.4303340911865236,
+                "y": 0.6789793372154236,
+                "z": 2.6602468490600588
+            },
+            "camera": {
+                "x": 0.38843852281570437,
+                "y": 2.222809314727783,
+                "z": -6.813729763031006
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "same-falling-bike-step",
+            "variant": "comparison20",
+            "stage": "settled",
+            "file": "same-falling-bike-step--comparison20--settled.png",
+            "sha256": "ced1e7643dff6305b0e68888007ac9a89402be80bb170eb75489ac8439023294",
+            "unityFrame": 1108,
+            "width": 1280,
+            "height": 720,
+            "bytes": 71707,
+            "requestWallSeconds": 19.2326809,
+            "afterSeconds": 0.8000481000000015,
+            "readbackCompletedWallSeconds": 19.266584599999999,
+            "rider": {
+                "x": 1.4725189208984376,
+                "y": 0.0,
+                "z": -0.244384765625
+            },
+            "bike": {
+                "x": 3.1132431030273439,
+                "y": 0.9064645767211914,
+                "z": 6.0479736328125
+            },
+            "camera": {
+                "x": 0.3822280764579773,
+                "y": 2.222809314727783,
+                "z": -6.812708854675293
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "unfiltered",
+            "stage": "before",
+            "file": "forecast-wrecked--unfiltered--before.png",
+            "sha256": "b5e231ab56afb46ce31dbfa49363b0846465f2249a4fc8c204e6bf520b5e64dc",
+            "unityFrame": 1164,
+            "width": 1280,
+            "height": 720,
+            "bytes": 67263,
+            "requestWallSeconds": 20.1660169,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 20.200006899999999,
+            "rider": {
+                "x": -3.4190409183502199,
+                "y": -0.01267591118812561,
+                "z": 6.072953701019287
+            },
+            "bike": {
+                "x": -3.64215087890625,
+                "y": 0.07051992416381836,
+                "z": 6.30120849609375
+            },
+            "camera": {
+                "x": 0.9196529388427734,
+                "y": 2.655390739440918,
+                "z": 1.6342086791992188
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "unfiltered",
+            "stage": "correction",
+            "file": "forecast-wrecked--unfiltered--correction.png",
+            "sha256": "a4cc749e817ba31bf4cf862b37ab2693a8be306015fbf28710496e3aebdf6c7d",
+            "unityFrame": 1191,
+            "width": 1280,
+            "height": 720,
+            "bytes": 45227,
+            "requestWallSeconds": 20.6161143,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 20.6501096,
+            "rider": {
+                "x": 1.2872161865234376,
+                "y": 0.0,
+                "z": 1.2581787109375
+            },
+            "bike": {
+                "x": 1.2872161865234376,
+                "y": 0.48000001907348635,
+                "z": 1.2581787109375
+            },
+            "camera": {
+                "x": 1.4625133275985718,
+                "y": 2.6476244926452638,
+                "z": 1.0788308382034302
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "unfiltered",
+            "stage": "mid",
+            "file": "forecast-wrecked--unfiltered--mid.png",
+            "sha256": "46b05b8c86f322c234b97945a9652a4d6c361d03c245d5cbee673d8ba3ec65f3",
+            "unityFrame": 1200,
+            "width": 1280,
+            "height": 720,
+            "bytes": 95078,
+            "requestWallSeconds": 20.7661665,
+            "afterSeconds": 0.15012300000000068,
+            "readbackCompletedWallSeconds": 20.8001371,
+            "rider": {
+                "x": 1.2872161865234376,
+                "y": 0.0,
+                "z": 1.2581787109375
+            },
+            "bike": {
+                "x": -1.29559326171875,
+                "y": 0.5169501304626465,
+                "z": 3.90057373046875
+            },
+            "camera": {
+                "x": 4.31533670425415,
+                "y": 2.606811761856079,
+                "z": -1.8397738933563233
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "unfiltered",
+            "stage": "settled",
+            "file": "forecast-wrecked--unfiltered--settled.png",
+            "sha256": "e377d4899c610e923ad6f6e9b356707409d813d5a389fad74d758eef7942b548",
+            "unityFrame": 1239,
+            "width": 1280,
+            "height": 720,
+            "bytes": 64390,
+            "requestWallSeconds": 21.4162562,
+            "afterSeconds": 0.8001722999999998,
+            "readbackCompletedWallSeconds": 21.4501959,
+            "rider": {
+                "x": 1.2872161865234376,
+                "y": 0.0,
+                "z": 1.2581787109375
+            },
+            "bike": {
+                "x": -12.480316162109375,
+                "y": 0.6769599914550781,
+                "z": 15.34320068359375
+            },
+            "camera": {
+                "x": 5.83281946182251,
+                "y": 2.5851025581359865,
+                "z": -3.3922464847564699
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "envelope40",
+            "stage": "before",
+            "file": "forecast-wrecked--envelope40--before.png",
+            "sha256": "b5e231ab56afb46ce31dbfa49363b0846465f2249a4fc8c204e6bf520b5e64dc",
+            "unityFrame": 1295,
+            "width": 1280,
+            "height": 720,
+            "bytes": 67263,
+            "requestWallSeconds": 22.3496906,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 22.3836758,
+            "rider": {
+                "x": -3.4190409183502199,
+                "y": -0.01267591118812561,
+                "z": 6.072953701019287
+            },
+            "bike": {
+                "x": -3.64215087890625,
+                "y": 0.07051992416381836,
+                "z": 6.30120849609375
+            },
+            "camera": {
+                "x": 0.9196529388427734,
+                "y": 2.655390739440918,
+                "z": 1.6342086791992188
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "envelope40",
+            "stage": "correction",
+            "file": "forecast-wrecked--envelope40--correction.png",
+            "sha256": "233f156cc1e8b466e43357ea8c611423cd8b122b53e5c1adb1bb50076e1983f7",
+            "unityFrame": 1322,
+            "width": 1280,
+            "height": 720,
+            "bytes": 67394,
+            "requestWallSeconds": 22.7997871,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 22.8338176,
+            "rider": {
+                "x": -3.4190409183502199,
+                "y": -0.01267591118812561,
+                "z": 6.072953701019287
+            },
+            "bike": {
+                "x": -3.64215087890625,
+                "y": 0.07051992416381836,
+                "z": 6.30120849609375
+            },
+            "camera": {
+                "x": 0.9442591667175293,
+                "y": 2.6462154388427736,
+                "z": 1.6090352535247803
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "envelope40",
+            "stage": "mid",
+            "file": "forecast-wrecked--envelope40--mid.png",
+            "sha256": "0181b641dfbc1e1947bc0722124591deab947385f296e92e279076231c884b94",
+            "unityFrame": 1331,
+            "width": 1280,
+            "height": 720,
+            "bytes": 71926,
+            "requestWallSeconds": 22.949798299999999,
+            "afterSeconds": 0.1500797000000027,
+            "readbackCompletedWallSeconds": 22.983767399999999,
+            "rider": {
+                "x": -0.40729498863220217,
+                "y": -0.0045640249736607079,
+                "z": 2.991762399673462
+            },
+            "bike": {
+                "x": -3.2703235149383547,
+                "y": 0.35284194350242617,
+                "z": 5.920823574066162
+            },
+            "camera": {
+                "x": 4.0850830078125,
+                "y": 2.6061949729919435,
+                "z": -1.6042113304138184
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "envelope40",
+            "stage": "settled",
+            "file": "forecast-wrecked--envelope40--settled.png",
+            "sha256": "de3a877f937bb4f6542d87c70add54417cc15ab492778d112939574022e57064",
+            "unityFrame": 1370,
+            "width": 1280,
+            "height": 720,
+            "bytes": 64225,
+            "requestWallSeconds": 23.5998529,
+            "afterSeconds": 0.8001259000000012,
+            "readbackCompletedWallSeconds": 23.6337805,
+            "rider": {
+                "x": 1.2872161865234376,
+                "y": 0.0,
+                "z": 1.2581787109375
+            },
+            "bike": {
+                "x": -12.4796142578125,
+                "y": 0.6769499778747559,
+                "z": 15.34246826171875
+            },
+            "camera": {
+                "x": 5.8482866287231449,
+                "y": 2.585144281387329,
+                "z": -3.4080708026885988
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "comparison20",
+            "stage": "before",
+            "file": "forecast-wrecked--comparison20--before.png",
+            "sha256": "b5e231ab56afb46ce31dbfa49363b0846465f2249a4fc8c204e6bf520b5e64dc",
+            "unityFrame": 1426,
+            "width": 1280,
+            "height": 720,
+            "bytes": 67263,
+            "requestWallSeconds": 24.5332977,
+            "afterSeconds": -1.0,
+            "readbackCompletedWallSeconds": 24.5672752,
+            "rider": {
+                "x": -3.4190409183502199,
+                "y": -0.01267591118812561,
+                "z": 6.072953701019287
+            },
+            "bike": {
+                "x": -3.64215087890625,
+                "y": 0.07051992416381836,
+                "z": 6.30120849609375
+            },
+            "camera": {
+                "x": 0.9196529388427734,
+                "y": 2.655390739440918,
+                "z": 1.6342086791992188
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "comparison20",
+            "stage": "correction",
+            "file": "forecast-wrecked--comparison20--correction.png",
+            "sha256": "d07640b636c01e5bdc10c2a4f5cdcec30002885fafad199a1c0e5f18e256fb7b",
+            "unityFrame": 1453,
+            "width": 1280,
+            "height": 720,
+            "bytes": 67327,
+            "requestWallSeconds": 24.983379799999999,
+            "afterSeconds": 0.0,
+            "readbackCompletedWallSeconds": 25.0172426,
+            "rider": {
+                "x": -3.4190409183502199,
+                "y": -0.01267591118812561,
+                "z": 6.072953701019287
+            },
+            "bike": {
+                "x": -3.64215087890625,
+                "y": 0.07051992416381836,
+                "z": 6.30120849609375
+            },
+            "camera": {
+                "x": 0.9443111419677734,
+                "y": 2.646195888519287,
+                "z": 1.6089818477630616
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "comparison20",
+            "stage": "mid",
+            "file": "forecast-wrecked--comparison20--mid.png",
+            "sha256": "77717f328c1001f020efedb193089fcf59515d43a93eabb71d70085537648a99",
+            "unityFrame": 1463,
+            "width": 1280,
+            "height": 720,
+            "bytes": 69569,
+            "requestWallSeconds": 25.1499836,
+            "afterSeconds": 0.16664689999999994,
+            "readbackCompletedWallSeconds": 25.1840373,
+            "rider": {
+                "x": -2.2196497917175295,
+                "y": -0.009445452131330967,
+                "z": 4.845907211303711
+            },
+            "bike": {
+                "x": -5.353113174438477,
+                "y": 0.2075970470905304,
+                "z": 8.05160903930664
+            },
+            "camera": {
+                "x": 2.2803468704223635,
+                "y": 2.5984725952148439,
+                "z": 0.24213957786560059
+            },
+            "variedPixels": true
+        },
+        {
+            "episode": "forecast-wrecked",
+            "variant": "comparison20",
+            "stage": "settled",
+            "file": "forecast-wrecked--comparison20--settled.png",
+            "sha256": "684ffcbd537f28ef59748f4f4624dc6a8e6155133f6abddc89de2446b1fe548f",
+            "unityFrame": 1502,
+            "width": 1280,
+            "height": 720,
+            "bytes": 64101,
+            "requestWallSeconds": 25.8000609,
+            "afterSeconds": 0.8166885999999991,
+            "readbackCompletedWallSeconds": 25.8339869,
+            "rider": {
+                "x": 1.2872161865234376,
+                "y": 0.0,
+                "z": 1.2581787109375
+            },
+            "bike": {
+                "x": -12.764114379882813,
+                "y": 0.6810197830200195,
+                "z": 15.633544921875
+            },
+            "camera": {
+                "x": 5.848367214202881,
+                "y": 2.5851142406463625,
+                "z": -3.4081530570983888
+            },
+            "variedPixels": true
+        }
+    ],
+    "samplesFile": "samples.jsonl",
+    "samplesSha256": "5b6a96afc56321a7783f5b3c8392c98a4dd86ff3af010c891d03acaa24dd0eb7",
+    "scope": "Isolated real Unity camera comparison using actual selected prefabs and RiderAnimationView. Reconstructed pose-pair continuation; no server, game bootstrap, full WAN playback, performance or visual acceptance."
+}

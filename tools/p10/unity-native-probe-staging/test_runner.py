@@ -15,8 +15,9 @@ def fixture():
     root=private/uuid.uuid4().hex;build=root/'player';build.mkdir(parents=True);(root/'source.cs').write_text('source');(build/'player.dll').write_text('player')
     def row(path,parent):return {'path':path.relative_to(parent).as_posix(),'bytes':path.stat().st_size,'sha256':runner.digest(path)}
     receipt={'sourceFingerprint':'a'*64,'protocolVersion':6,'sources':[row(root/'source.cs',root)],'playerFiles':[row(build/'player.dll',build)]}
+    receipt['sourceFingerprint']=runner.fingerprint(receipt['sources'])
     path=build/'NativeProbe.build.json';path.write_text(json.dumps(receipt));sha=runner.digest(path)
-    payload={'status':'PASS','sourceFingerprint':'a'*64,'protocolVersion':6,'monoDetected':True,'platform':'WindowsPlayer','backend':'Mono2x','endpoint':'wss://example.test/multiplayer'}
+    payload={'status':'PASS','sourceFingerprint':receipt['sourceFingerprint'],'protocolVersion':6,'monoDetected':True,'platform':'WindowsPlayer','backend':'Mono2x','endpoint':'wss://example.test/multiplayer'}
     return root,build,receipt,sha,payload
 def final(values):return runner.final_verification(*values,'wss://example.test/multiplayer',0)
 test('unchanged_before_after_native_evidence_can_pass',lambda:check(final(fixture())['status']=='PASS'))

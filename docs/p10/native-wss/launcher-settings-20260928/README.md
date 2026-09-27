@@ -1,0 +1,7 @@
+# NativeProbe effective-settings launcher correction
+
+The native `Build/NativeProbe/20260928-preservation01` build completed successfully and restored the original Editor settings. Its source rows intentionally bind the **effective build** settings, while live `ProjectSettings` files contain the restored originals. The old launcher compared those two different states directly and rejected setup before starting a process. That rejection is not a failed 90-second WSS session; no runtime report was produced by that setup attempt.
+
+`native_probe_runner.py` now checks each effective/before/after snapshot against both the bound source row and registered player evidence. Original/restored copies must match their registered player hashes and each other, and current live settings must match those exact original bytes. All non-settings source files still require their exact current hashes. The source-before/source-after manifests and build-time change list must also agree. Historical builds without settings rows retain their original direct live-source check; a modern incomplete evidence set cannot silently fall back to it.
+
+Twelve new mutation controls and seven existing launcher controls passed. The real preservation01 source/evidence/player-file check passed without starting Unity or a process. [Read-only receipt](prelaunch-file-check.json) records the exact launcher/build identity. Native WSS execution remains a separate root-owned run.

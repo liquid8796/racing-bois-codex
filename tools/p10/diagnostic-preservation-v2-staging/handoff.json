@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "candidate": "tools/p10/diagnostic-preservation-v2-staging/NativeProbe/NativeProbeBuilder.cs",
+      "candidateSha256": "bdc2dbd43e7b2817ed70f1dbe73499cd86b4f9293c1296edde895ce9cf53e99b",
+      "destination": "Assets/RacingBois/Diagnostics/NativeProbe/Editor/NativeProbeBuilder.cs",
+      "originalSha256": "73c893c886b0f498fc7d970d86ae7c25b203eb192cba96b8ea89090b2f6be875",
+      "originalMetaSha256": "3e0aab7bfcd23c33307d94737776236b7ec87ff6121b54c1db70b24e655cc5c6"
+    },
+    {
+      "candidate": "tools/p10/diagnostic-preservation-v2-staging/NativeProbe/NativeProbeCompiledSources.cs",
+      "candidateSha256": "e7f18355229a1bc3745e13a2589d3b5e158280f46b08d0bbb993469656261ea9",
+      "destination": "Assets/RacingBois/Diagnostics/NativeProbe/Editor/NativeProbeCompiledSources.cs",
+      "originalSha256": null,
+      "originalMetaSha256": null
+    },
+    {
+      "candidate": "tools/p10/diagnostic-preservation-v2-staging/NativeProbe/RacingBois.Diagnostics.NativeProbe.Editor.asmdef",
+      "candidateSha256": "3543a800df2ca69086d7367ec9dcb5c03bd3f07a41015da297ebaf36cdccbf78",
+      "destination": "Assets/RacingBois/Diagnostics/NativeProbe/Editor/RacingBois.Diagnostics.NativeProbe.Editor.asmdef",
+      "originalSha256": "ea4ccf7f2119d1e7d35436428c78f6bb57da77f193a1483f4a77885723062800",
+      "originalMetaSha256": "e9f227c4532a1ed07e6915f9ba1fd5db43da985d2e848ff15e421ada6bd06c7c"
+    },
+    {
+      "candidate": "tools/p10/diagnostic-preservation-v2-staging/PosePreview/PosePreviewBuilder.cs",
+      "candidateSha256": "8af7b3f7b74d200a9e3e819fb2533edd4b1a94311f1c01050a7e6b1a784b2825",
+      "destination": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/PosePreviewBuilder.cs",
+      "originalSha256": "39ce12dce68c1bb374bf8791311f1b4c100817bfb6a0378637ed505c99f69024",
+      "originalMetaSha256": "c498b24bd8b531dc5901d63f0b598b6b95d047ec44bbbed385157dbc71a4a072"
+    },
+    {
+      "candidate": "tools/p10/diagnostic-preservation-v2-staging/PosePreview/PreviewBuildInputs.cs",
+      "candidateSha256": "90c357bfa1699f53ebe0e31464daa7722bf5c83b9635c0a75695203daf21d540",
+      "destination": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/PreviewBuildInputs.cs",
+      "originalSha256": "1fa48955705f25edda22c9881ee9bf1f00b64a82d97928a82a8619588ba196e1",
+      "originalMetaSha256": "7e1b666a299d0ce4c0ad859cecc0bcb3aef1d1f446ce546a31fc3a866e33eb8f"
+    },
+    {
+      "candidate": "tools/p10/diagnostic-preservation-v2-staging/PosePreview/RacingBois.Diagnostics.PoseEnvelopePreview.Editor.asmdef",
+      "candidateSha256": "883b9a7bcc16d66039f1f497c8d69d733f20150fdcaf7b2e482db6f58cc766fc",
+      "destination": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/RacingBois.Diagnostics.PoseEnvelopePreview.Editor.asmdef",
+      "originalSha256": "9bcc3b317fe4a3d91dffc135f281ff4e63d0e45e56a9b9e51df4b8654ac252b2",
+      "originalMetaSha256": "9665173d22a036d217aaf6ae632608d755b318bd252094533a1c0756142d9e80"
+    }
+  ],
+  "sharedHelpers": [
+    {
+      "path": "Assets/RacingBois/Editor/NativeBuildProjectSettingsScope.cs",
+      "sha256": "1a473831ce7a8b8c1d7e63688a21d460c566d3a99dad295a10bdbd5b3cf47bde"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/NativeBuildDirtyAssetGuard.cs",
+      "sha256": "e65a1939287981c796946941be932960532335576161ca08b27dabcca4b92b75"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/NativeBuildFontPreservationScope.cs",
+      "sha256": "22e0b950258ecfb553c1927d47c82267585cb409ffe04bd777bd13e528042363"
+    }
+  ],
+  "compileAuditSource": {
+    "path": "tools/p10/diagnostic-preservation-v2-staging/CompileAudit/Program.cs",
+    "sha256": "ad34b949024114d051ec31542cf7e9ae0d5d02c5231352e860ebfad1c9e76ae9"
+  },
+  "compiled": true,
+  "testsRun": false,
+  "installed": false,
+  "nativeVerified": false,
+  "scope": "V2 candidate; adds complete NativeProbe owned-pipeline/effective-settings/dependency protection. Independent review and native validation pending."
+}
