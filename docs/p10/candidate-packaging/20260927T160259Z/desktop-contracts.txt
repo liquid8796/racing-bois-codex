@@ -1,0 +1,55 @@
+test_actual_receipt_and_all_player_bytes_bound (test_audit_desktop.DesktopDistributionTests.test_actual_receipt_and_all_player_bytes_bound) ... ok
+test_complete_offline_catalog (test_audit_desktop.DesktopDistributionTests.test_complete_offline_catalog) ... ok
+test_corrupt_or_truncated_content_rejected (test_audit_desktop.DesktopDistributionTests.test_corrupt_or_truncated_content_rejected) ... ok
+test_missing_music_rejected (test_audit_desktop.DesktopDistributionTests.test_missing_music_rejected) ... ok
+test_online_requires_wss (test_audit_desktop.DesktopDistributionTests.test_online_requires_wss) ... ok
+test_path_escape_rejected (test_audit_desktop.DesktopDistributionTests.test_path_escape_rejected) ... ok
+test_pe_x86_rejected (test_audit_desktop.DesktopDistributionTests.test_pe_x86_rejected) ... ok
+test_private_config_field_rejected (test_audit_desktop.DesktopDistributionTests.test_private_config_field_rejected) ... ok
+test_source_snapshot_mutation_rejected (test_audit_desktop.DesktopDistributionTests.test_source_snapshot_mutation_rejected) ... ok
+test_truncated_pe_rejected (test_audit_desktop.DesktopDistributionTests.test_truncated_pe_rejected) ... ok
+test_unregistered_master_rejected (test_audit_desktop.DesktopDistributionTests.test_unregistered_master_rejected) ... ok
+test_userinfo_and_nonpublic_content_rejected (test_audit_desktop.DesktopDistributionTests.test_userinfo_and_nonpublic_content_rejected) ... ok
+test_wrong_gameplay_version_rejected (test_audit_desktop.DesktopDistributionTests.test_wrong_gameplay_version_rejected) ... ok
+test_wrong_platform_rejected (test_audit_desktop.DesktopDistributionTests.test_wrong_platform_rejected) ... ok
+test_boolean_size_rejected (test_dependency_receipt.DependencyReceiptTests.test_boolean_size_rejected) ... ok
+test_case_alias_dependency_rejected (test_dependency_receipt.DependencyReceiptTests.test_case_alias_dependency_rejected) ... ok
+test_changed_closure_aggregate_rejected (test_dependency_receipt.DependencyReceiptTests.test_changed_closure_aggregate_rejected) ... ok
+test_changed_dependency_bytes_rejected (test_dependency_receipt.DependencyReceiptTests.test_changed_dependency_bytes_rejected) ... ok
+test_changed_package_manifest_rejected (test_dependency_receipt.DependencyReceiptTests.test_changed_package_manifest_rejected) ... ok
+test_changed_source_aggregate_rejected (test_dependency_receipt.DependencyReceiptTests.test_changed_source_aggregate_rejected) ... ok
+test_dependency_order_rejected (test_dependency_receipt.DependencyReceiptTests.test_dependency_order_rejected) ... ok
+test_duplicate_dependency_rejected (test_dependency_receipt.DependencyReceiptTests.test_duplicate_dependency_rejected) ... ok
+test_exact_engine_declared_closure_is_allowed (test_dependency_receipt.DependencyReceiptTests.test_exact_engine_declared_closure_is_allowed) ... ok
+test_explicit_builtin_is_version_bound (test_dependency_receipt.DependencyReceiptTests.test_explicit_builtin_is_version_bound) ... ok
+test_extra_dependency_fields_rejected (test_dependency_receipt.DependencyReceiptTests.test_extra_dependency_fields_rejected) ... ok
+test_missing_authored_source_rejected (test_dependency_receipt.DependencyReceiptTests.test_missing_authored_source_rejected) ... ok
+test_missing_dependency_manifest_rejected (test_dependency_receipt.DependencyReceiptTests.test_missing_dependency_manifest_rejected) ... ok
+test_missing_dependency_rejected (test_dependency_receipt.DependencyReceiptTests.test_missing_dependency_rejected) ... ok
+test_missing_required_root_rejected (test_dependency_receipt.DependencyReceiptTests.test_missing_required_root_rejected) ... ok
+test_missing_virtual_package_file_rejected (test_dependency_receipt.DependencyReceiptTests.test_missing_virtual_package_file_rejected) ... ok
+test_nonunity_dependency_rejected (test_dependency_receipt.DependencyReceiptTests.test_nonunity_dependency_rejected) ... ok
+test_not_a_blanket_assets_allowlist (test_dependency_receipt.DependencyReceiptTests.test_not_a_blanket_assets_allowlist) ... ok
+test_other_roots_rejected (test_dependency_receipt.DependencyReceiptTests.test_other_roots_rejected) ... ok
+test_package_mapping_cannot_admit_other_library_file (test_dependency_receipt.DependencyReceiptTests.test_package_mapping_cannot_admit_other_library_file) ... ok
+test_package_root_cannot_admit_whole_cache (test_dependency_receipt.DependencyReceiptTests.test_package_root_cannot_admit_whole_cache) ... ok
+test_package_root_wrong_identity_rejected (test_dependency_receipt.DependencyReceiptTests.test_package_root_wrong_identity_rejected) ... ok
+test_package_version_identity_rejected (test_dependency_receipt.DependencyReceiptTests.test_package_version_identity_rejected) ... ok
+test_path_aliases_and_traversal_rejected (test_dependency_receipt.DependencyReceiptTests.test_path_aliases_and_traversal_rejected) ... ok
+test_same_byte_symlink_rejected (test_dependency_receipt.DependencyReceiptTests.test_same_byte_symlink_rejected) ... ok
+test_source_dependency_record_mismatch_rejected (test_dependency_receipt.DependencyReceiptTests.test_source_dependency_record_mismatch_rejected) ... ok
+test_source_duplicate_case_rejected (test_dependency_receipt.DependencyReceiptTests.test_source_duplicate_case_rejected) ... ok
+test_source_missing_declared_dependency_rejected (test_dependency_receipt.DependencyReceiptTests.test_source_missing_declared_dependency_rejected) ... ok
+test_source_noncanonical_path_rejected (test_dependency_receipt.DependencyReceiptTests.test_source_noncanonical_path_rejected) ... ok
+test_source_nondictionary_rejected (test_dependency_receipt.DependencyReceiptTests.test_source_nondictionary_rejected) ... ok
+test_source_order_gap_rejected (test_dependency_receipt.DependencyReceiptTests.test_source_order_gap_rejected) ... ok
+test_unknown_builtin_cannot_hide_missing_file (test_dependency_receipt.DependencyReceiptTests.test_unknown_builtin_cannot_hide_missing_file) ... ok
+test_unresolved_virtual_package_rejected (test_dependency_receipt.DependencyReceiptTests.test_unresolved_virtual_package_rejected) ... ok
+test_unused_package_record_rejected (test_dependency_receipt.DependencyReceiptTests.test_unused_package_record_rejected) ... ok
+test_virtual_package_resolves_exact_physical_file (test_dependency_receipt.DependencyReceiptTests.test_virtual_package_resolves_exact_physical_file) ... ok
+test_wrong_schema_and_boolean_rejected (test_dependency_receipt.DependencyReceiptTests.test_wrong_schema_and_boolean_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.874s
+
+OK

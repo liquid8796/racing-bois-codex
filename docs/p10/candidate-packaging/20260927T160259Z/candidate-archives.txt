@@ -1,0 +1,25 @@
+test_actual_filesystem_symlink_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_actual_filesystem_symlink_rejected) ... ok
+test_added_player_file_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_added_player_file_rejected) ... ok
+test_altered_player_payload_rejected_with_updated_outer_digest (test_package_desktop_candidate.CandidateArchiveTests.test_altered_player_payload_rejected_with_updated_outer_digest) ... ok
+test_archive_case_alias_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_archive_case_alias_rejected) ... ok
+test_archive_symlink_metadata_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_archive_symlink_metadata_rejected) ... ok
+test_build_player_list_mismatch_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_build_player_list_mismatch_rejected) ... ok
+test_build_receipt_byte_tampering_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_build_receipt_byte_tampering_rejected) ... ok
+test_changed_player_rejected_before_archive_creation (test_package_desktop_candidate.CandidateArchiveTests.test_changed_player_rejected_before_archive_creation) ... ok
+test_exact_fixture_bytes_and_explicit_unaccepted_scope (test_package_desktop_candidate.CandidateArchiveTests.test_exact_fixture_bytes_and_explicit_unaccepted_scope) ... ok
+test_existing_archive_never_overwritten (test_package_desktop_candidate.CandidateArchiveTests.test_existing_archive_never_overwritten) ... ok
+test_external_digest_required_and_checked (test_package_desktop_candidate.CandidateArchiveTests.test_external_digest_required_and_checked) ... ok
+test_missing_player_file_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_missing_player_file_rejected) ... ok
+test_mtime_and_permissions_do_not_change_archive_bytes (test_package_desktop_candidate.CandidateArchiveTests.test_mtime_and_permissions_do_not_change_archive_bytes) ... ok
+test_package_command_cannot_bypass_production_auditor (test_package_desktop_candidate.CandidateArchiveTests.test_package_command_cannot_bypass_production_auditor) ... ok
+test_portable_windows_path_validation (test_package_desktop_candidate.CandidateArchiveTests.test_portable_windows_path_validation) ... ok
+test_receipt_content_identity_mismatch_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_receipt_content_identity_mismatch_rejected) ... ok
+test_release_accepted_bit_cannot_be_injected (test_package_desktop_candidate.CandidateArchiveTests.test_release_accepted_bit_cannot_be_injected) ... ok
+test_same_size_payload_corruption_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_same_size_payload_corruption_rejected) ... ok
+test_source_binding_failure_not_promoted_by_archive (test_package_desktop_candidate.CandidateArchiveTests.test_source_binding_failure_not_promoted_by_archive) ... ok
+test_unregistered_archive_entry_rejected (test_package_desktop_candidate.CandidateArchiveTests.test_unregistered_archive_entry_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.454s
+
+OK
