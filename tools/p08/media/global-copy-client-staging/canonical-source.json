@@ -1,0 +1,634 @@
+{
+  "schema": 1,
+  "boundary": "client-content-status",
+  "entries": [
+    {
+      "key": "client.config.invalid",
+      "vi": "Cấu hình máy chủ không hợp lệ. Đang dùng chế độ LAN tại máy này; hãy sửa RacingBois.runtime.json để chơi online."
+    },
+    {
+      "key": "client.storage.read",
+      "vi": "Trình duyệt không cho đọc hồ sơ đã lưu. Hãy cho phép lưu dữ liệu trang hoặc chọn Khách mới."
+    },
+    {
+      "key": "client.storage.write",
+      "vi": "Không thể lưu dữ liệu trên thiết bị. Phiên này vẫn chạy, nhưng khởi động lại có thể không khôi phục hồ sơ hoặc chỗ đang giữ."
+    },
+    {
+      "key": "content.route.unavailable",
+      "vi": "Đường đua này chưa có gói nội dung sẵn sàng."
+    },
+    {
+      "key": "content.checking",
+      "vi": "Đang kiểm tra gói nội dung…"
+    },
+    {
+      "key": "content.actors.loading",
+      "vi": "Đang tải xe và tay đua…"
+    },
+    {
+      "key": "content.route.loading",
+      "vi": "Đang tải {route}…"
+    },
+    {
+      "key": "content.ready",
+      "vi": "Nội dung đã sẵn sàng."
+    },
+    {
+      "key": "content.catalog.failed",
+      "vi": "Không tải được danh mục nội dung. Hãy kiểm tra kết nối và thử lại."
+    },
+    {
+      "key": "content.download.interrupted",
+      "vi": "Tải nội dung bị gián đoạn. Hãy thử lại."
+    },
+    {
+      "key": "content.bundle.invalid",
+      "vi": "Gói nội dung bị lỗi hoặc không phù hợp phiên bản này."
+    },
+    {
+      "key": "content.version.unavailable",
+      "vi": "Nội dung chưa sẵn sàng hoặc khác phiên bản trò chơi. Hãy khởi động lại hoặc thử lại."
+    },
+    {
+      "key": "client.endpoint.credentials",
+      "vi": "Cần địa chỉ ws:// hoặc wss:// hợp lệ, không chứa thông tin đăng nhập."
+    },
+    {
+      "key": "client.endpoint.invalid",
+      "vi": "Cần địa chỉ ws:// hoặc wss:// hợp lệ."
+    },
+    {
+      "key": "client.player.name.invalid",
+      "vi": "Tên người chơi cần 1–24 ký tự, không chứa mã định dạng."
+    },
+    {
+      "key": "client.room.settings.invalid",
+      "vi": "Tên phòng hoặc số đối thủ không hợp lệ."
+    },
+    {
+      "key": "client.course.unavailable",
+      "vi": "Chặng đua chưa mở hoặc cấp không hợp lệ."
+    },
+    {
+      "key": "client.room.code.invalid",
+      "vi": "Mã phòng không hợp lệ."
+    },
+    {
+      "key": "client.server.ack.missing",
+      "vi": "Mất xác nhận từ máy chủ."
+    },
+    {
+      "key": "client.timeline.resync",
+      "vi": "Dòng thời gian cần đồng bộ lại."
+    },
+    {
+      "key": "client.disconnect.unconfirmed",
+      "vi": "Đã đóng kết nối; máy chủ chưa xác nhận thoát phiên."
+    },
+    {
+      "key": "client.connect.timeout",
+      "vi": "Kết nối quá thời gian chờ."
+    },
+    {
+      "key": "client.server.unresponsive",
+      "vi": "Máy chủ không phản hồi."
+    },
+    {
+      "key": "client.session.suspended_before_welcome",
+      "vi": "Phiên đã tạm dừng trước khi nhận thông tin kết nối."
+    },
+    {
+      "key": "client.session.restoring",
+      "vi": "Đang khôi phục phiên…"
+    },
+    {
+      "key": "client.session.other_tab",
+      "vi": "Phiên đã được mở ở thẻ khác. Chọn Khách mới để chơi thêm một người."
+    },
+    {
+      "key": "client.leave.unconfirmed",
+      "vi": "Máy chủ chưa xác nhận thoát phiên."
+    },
+    {
+      "key": "client.connection.interrupted",
+      "vi": "Kết nối bị gián đoạn."
+    },
+    {
+      "key": "client.session.restore.failed",
+      "vi": "Không khôi phục được phiên. Hãy kết nối lại."
+    },
+    {
+      "key": "client.connect.required",
+      "vi": "Chưa kết nối máy chủ."
+    },
+    {
+      "key": "client.room.required",
+      "vi": "Chưa tham gia phòng."
+    },
+    {
+      "key": "client.response.too_large",
+      "vi": "Phản hồi máy chủ vượt giới hạn."
+    },
+    {
+      "key": "client.response.invalid",
+      "vi": "Dữ liệu máy chủ không hợp lệ. Phiên đã dừng để đồng bộ an toàn."
+    },
+    {
+      "key": "client.state.missing",
+      "vi": "Thiếu thông điệp trạng thái. Đang khôi phục…"
+    }
+  ],
+  "occurrences": [
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs",
+      "member": "Start",
+      "line": 91,
+      "column": 38,
+      "value": "Cấu hình máy chủ không hợp lệ. Đang dùng chế độ LAN tại máy này; hãy sửa RacingBois.runtime.json để chơi online.",
+      "expression": "\"Cấu hình máy chủ không hợp lệ. Đang dùng chế độ LAN tại máy này; hãy sửa RacingBois.runtime.json để chơi online.\"",
+      "expressionStart": 4848,
+      "composite": false,
+      "sourceSha256": "d97f157aa2958b7517c46bf0fc294e55c9364c1207efe8a64584d2b4e8b3bb5b",
+      "key": "client.config.invalid",
+      "wholeTemplate": "Cấu hình máy chủ không hợp lệ. Đang dùng chế độ LAN tại máy này; hãy sửa RacingBois.runtime.json để chơi online."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs",
+      "member": "ConnectMultiplayer",
+      "line": 357,
+      "column": 82,
+      "value": "Trình duyệt không cho đọc hồ sơ đã lưu. Hãy cho phép lưu dữ liệu trang hoặc chọn Khách mới.",
+      "expression": "\"Trình duyệt không cho đọc hồ sơ đã lưu. Hãy cho phép lưu dữ liệu trang hoặc chọn Khách mới.\"",
+      "expressionStart": 22085,
+      "composite": false,
+      "sourceSha256": "d97f157aa2958b7517c46bf0fc294e55c9364c1207efe8a64584d2b4e8b3bb5b",
+      "key": "client.storage.read",
+      "wholeTemplate": "Trình duyệt không cho đọc hồ sơ đã lưu. Hãy cho phép lưu dữ liệu trang hoặc chọn Khách mới."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs",
+      "member": "MultiplayerChanged",
+      "line": 402,
+      "column": 33,
+      "value": "Không thể lưu dữ liệu trên thiết bị. Phiên này vẫn chạy, nhưng khởi động lại có thể không khôi phục hồ sơ hoặc chỗ đang giữ.",
+      "expression": "\"Không thể lưu dữ liệu trên thiết bị. Phiên này vẫn chạy, nhưng khởi động lại có thể không khôi phục hồ sơ hoặc chỗ đang giữ.\"",
+      "expressionStart": 25404,
+      "composite": false,
+      "sourceSha256": "d97f157aa2958b7517c46bf0fc294e55c9364c1207efe8a64584d2b4e8b3bb5b",
+      "key": "client.storage.write",
+      "wholeTemplate": "Không thể lưu dữ liệu trên thiết bị. Phiên này vẫn chạy, nhưng khởi động lại có thể không khôi phục hồ sơ hoặc chỗ đang giữ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "RequestCourse",
+      "line": 54,
+      "column": 66,
+      "value": "Đường đua này chưa có gói nội dung sẵn sàng.",
+      "expression": "\"Đường đua này chưa có gói nội dung sẵn sàng.\"",
+      "expressionStart": 2793,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.route.unavailable",
+      "wholeTemplate": "Đường đua này chưa có gói nội dung sẵn sàng."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "LoadQueue",
+      "line": 73,
+      "column": 26,
+      "value": "Đang kiểm tra gói nội dung…",
+      "expression": "\"Đang kiểm tra gói nội dung…\"",
+      "expressionStart": 3729,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.checking",
+      "wholeTemplate": "Đang kiểm tra gói nội dung…"
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "LoadQueue",
+      "line": 78,
+      "column": 30,
+      "value": "Đang tải xe và tay đua…",
+      "expression": "\"Đang tải xe và tay đua…\"",
+      "expressionStart": 3980,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.actors.loading",
+      "wholeTemplate": "Đang tải xe và tay đua…"
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "LoadQueue",
+      "line": 90,
+      "column": 26,
+      "value": "Đang tải ",
+      "expression": "\"Đang tải \" + CampaignCatalog.GetRoute(course).DisplayName + \"…\"",
+      "expressionStart": 4950,
+      "composite": true,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.route.loading",
+      "wholeTemplate": "Đang tải {route}…"
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "LoadQueue",
+      "line": 105,
+      "column": 40,
+      "value": "Nội dung đã sẵn sàng.",
+      "expression": "\"Nội dung đã sẵn sàng.\"",
+      "expressionStart": 6375,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.ready",
+      "wholeTemplate": "Nội dung đã sẵn sàng."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "LoadManifest",
+      "line": 117,
+      "column": 114,
+      "value": "Không tải được danh mục nội dung. Hãy kiểm tra kết nối và thử lại.",
+      "expression": "\"Không tải được danh mục nội dung. Hãy kiểm tra kết nối và thử lại.\"",
+      "expressionStart": 7140,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.catalog.failed",
+      "wholeTemplate": "Không tải được danh mục nội dung. Hãy kiểm tra kết nối và thử lại."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "LoadBundle",
+      "line": 146,
+      "column": 24,
+      "value": "Tải nội dung bị gián đoạn. Hãy thử lại.",
+      "expression": "\"Tải nội dung bị gián đoạn. Hãy thử lại.\"",
+      "expressionStart": 8674,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.download.interrupted",
+      "wholeTemplate": "Tải nội dung bị gián đoạn. Hãy thử lại."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "LoadBundle",
+      "line": 161,
+      "column": 40,
+      "value": "Gói nội dung bị lỗi hoặc không phù hợp phiên bản này.",
+      "expression": "\"Gói nội dung bị lỗi hoặc không phù hợp phiên bản này.\"",
+      "expressionStart": 9493,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.bundle.invalid",
+      "wholeTemplate": "Gói nội dung bị lỗi hoặc không phù hợp phiên bản này."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "member": "Guard",
+      "line": 166,
+      "column": 142,
+      "value": "Nội dung chưa sẵn sàng hoặc khác phiên bản trò chơi. Hãy khởi động lại hoặc thử lại.",
+      "expression": "\"Nội dung chưa sẵn sàng hoặc khác phiên bản trò chơi. Hãy khởi động lại hoặc thử lại.\"",
+      "expressionStart": 9894,
+      "composite": false,
+      "sourceSha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "key": "content.version.unavailable",
+      "wholeTemplate": "Nội dung chưa sẵn sàng hoặc khác phiên bản trò chơi. Hãy khởi động lại hoặc thử lại."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/CareerSession.cs",
+      "member": "NormalizeEndpoint",
+      "line": 129,
+      "column": 45,
+      "value": "Cần địa chỉ ws:// hoặc wss:// hợp lệ, không chứa thông tin đăng nhập.",
+      "expression": "\"Cần địa chỉ ws:// hoặc wss:// hợp lệ, không chứa thông tin đăng nhập.\"",
+      "expressionStart": 7843,
+      "composite": false,
+      "sourceSha256": "f6a96d40524cad2309ab5e26222d4a9287a280db96cc80e13d7a9b33026996a2",
+      "key": "client.endpoint.credentials",
+      "wholeTemplate": "Cần địa chỉ ws:// hoặc wss:// hợp lệ, không chứa thông tin đăng nhập."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "Connect",
+      "line": 113,
+      "column": 45,
+      "value": "Cần địa chỉ ws:// hoặc wss:// hợp lệ.",
+      "expression": "\"Cần địa chỉ ws:// hoặc wss:// hợp lệ.\"",
+      "expressionStart": 7731,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.endpoint.invalid",
+      "wholeTemplate": "Cần địa chỉ ws:// hoặc wss:// hợp lệ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "Connect",
+      "line": 114,
+      "column": 101,
+      "value": "Tên người chơi cần 1–24 ký tự, không chứa mã định dạng.",
+      "expression": "\"Tên người chơi cần 1–24 ký tự, không chứa mã định dạng.\"",
+      "expressionStart": 7892,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.player.name.invalid",
+      "wholeTemplate": "Tên người chơi cần 1–24 ký tự, không chứa mã định dạng."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "CreateLobby",
+      "line": 124,
+      "column": 142,
+      "value": "Tên phòng hoặc số đối thủ không hợp lệ.",
+      "expression": "\"Tên phòng hoặc số đối thủ không hợp lệ.\"",
+      "expressionStart": 8801,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.room.settings.invalid",
+      "wholeTemplate": "Tên phòng hoặc số đối thủ không hợp lệ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "CreateLobby",
+      "line": 126,
+      "column": 45,
+      "value": "Chặng đua chưa mở hoặc cấp không hợp lệ.",
+      "expression": "\"Chặng đua chưa mở hoặc cấp không hợp lệ.\"",
+      "expressionStart": 9040,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.course.unavailable",
+      "wholeTemplate": "Chặng đua chưa mở hoặc cấp không hợp lệ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "JoinLobby",
+      "line": 134,
+      "column": 82,
+      "value": "Mã phòng không hợp lệ.",
+      "expression": "\"Mã phòng không hợp lệ.\"",
+      "expressionStart": 9629,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.room.code.invalid",
+      "wholeTemplate": "Mã phòng không hợp lệ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "JoinLobby",
+      "line": 135,
+      "column": 96,
+      "value": "Mã phòng không hợp lệ.",
+      "expression": "\"Mã phòng không hợp lệ.\"",
+      "expressionStart": 9752,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.room.code.invalid",
+      "wholeTemplate": "Mã phòng không hợp lệ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "Step",
+      "line": 152,
+      "column": 128,
+      "value": "Mất xác nhận từ máy chủ.",
+      "expression": "\"Mất xác nhận từ máy chủ.\"",
+      "expressionStart": 11198,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.server.ack.missing",
+      "wholeTemplate": "Mất xác nhận từ máy chủ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "Step",
+      "line": 161,
+      "column": 72,
+      "value": "Dòng thời gian cần đồng bộ lại.",
+      "expression": "\"Dòng thời gian cần đồng bộ lại.\"",
+      "expressionStart": 12087,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.timeline.resync",
+      "wholeTemplate": "Dòng thời gian cần đồng bộ lại."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "Poll",
+      "line": 263,
+      "column": 78,
+      "value": "Đã đóng kết nối; máy chủ chưa xác nhận thoát phiên.",
+      "expression": "\"Đã đóng kết nối; máy chủ chưa xác nhận thoát phiên.\"",
+      "expressionStart": 20522,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.disconnect.unconfirmed",
+      "wholeTemplate": "Đã đóng kết nối; máy chủ chưa xác nhận thoát phiên."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "Poll",
+      "line": 267,
+      "column": 76,
+      "value": "Kết nối quá thời gian chờ.",
+      "expression": "\"Kết nối quá thời gian chờ.\"",
+      "expressionStart": 20752,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.connect.timeout",
+      "wholeTemplate": "Kết nối quá thời gian chờ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "Poll",
+      "line": 271,
+      "column": 62,
+      "value": "Máy chủ không phản hồi.",
+      "expression": "\"Máy chủ không phản hồi.\"",
+      "expressionStart": 21134,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.server.unresponsive",
+      "wholeTemplate": "Máy chủ không phản hồi."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "NotifyVisibility",
+      "line": 295,
+      "column": 90,
+      "value": "Phiên đã tạm dừng trước khi nhận thông tin kết nối.",
+      "expression": "\"Phiên đã tạm dừng trước khi nhận thông tin kết nối.\"",
+      "expressionStart": 22628,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.session.suspended_before_welcome",
+      "wholeTemplate": "Phiên đã tạm dừng trước khi nhận thông tin kết nối."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "NotifyVisibility",
+      "line": 296,
+      "column": 35,
+      "value": "Đang khôi phục phiên…",
+      "expression": "\"Đang khôi phục phiên…\"",
+      "expressionStart": 22729,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.session.restoring",
+      "wholeTemplate": "Đang khôi phục phiên…"
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "OnClosed",
+      "line": 328,
+      "column": 20,
+      "value": "Phiên đã được mở ở thẻ khác. Chọn Khách mới để chơi thêm một người.",
+      "expression": "\"Phiên đã được mở ở thẻ khác. Chọn Khách mới để chơi thêm một người.\"",
+      "expressionStart": 24622,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.session.other_tab",
+      "wholeTemplate": "Phiên đã được mở ở thẻ khác. Chọn Khách mới để chơi thêm một người."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "OnClosed",
+      "line": 329,
+      "column": 71,
+      "value": "Máy chủ chưa xác nhận thoát phiên.",
+      "expression": "\"Máy chủ chưa xác nhận thoát phiên.\"",
+      "expressionStart": 24775,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.leave.unconfirmed",
+      "wholeTemplate": "Máy chủ chưa xác nhận thoát phiên."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "OnClosed",
+      "line": 330,
+      "column": 88,
+      "value": "Kết nối bị gián đoạn.",
+      "expression": "\"Kết nối bị gián đoạn.\"",
+      "expressionStart": 24930,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.connection.interrupted",
+      "wholeTemplate": "Kết nối bị gián đoạn."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "ScheduleReconnect",
+      "line": 336,
+      "column": 48,
+      "value": "Không khôi phục được phiên. Hãy kết nối lại.",
+      "expression": "\"Không khôi phục được phiên. Hãy kết nối lại.\"",
+      "expressionStart": 25262,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.session.restore.failed",
+      "wholeTemplate": "Không khôi phục được phiên. Hãy kết nối lại."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "SendCommand",
+      "line": 358,
+      "column": 105,
+      "value": "Chưa kết nối máy chủ.",
+      "expression": "\"Chưa kết nối máy chủ.\"",
+      "expressionStart": 27171,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.connect.required",
+      "wholeTemplate": "Chưa kết nối máy chủ."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "member": "NeedRoom",
+      "line": 361,
+      "column": 89,
+      "value": "Chưa tham gia phòng.",
+      "expression": "\"Chưa tham gia phòng.\"",
+      "expressionStart": 27445,
+      "composite": false,
+      "sourceSha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "key": "client.room.required",
+      "wholeTemplate": "Chưa tham gia phòng."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "member": "OnMessage",
+      "line": 17,
+      "column": 20,
+      "value": "Phản hồi máy chủ vượt giới hạn.",
+      "expression": "\"Phản hồi máy chủ vượt giới hạn.\"",
+      "expressionStart": 661,
+      "composite": false,
+      "sourceSha256": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688",
+      "key": "client.response.too_large",
+      "wholeTemplate": "Phản hồi máy chủ vượt giới hạn."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "member": "OnMessage",
+      "line": 38,
+      "column": 42,
+      "value": "Dữ liệu máy chủ không hợp lệ. Phiên đã dừng để đồng bộ an toàn.",
+      "expression": "\"Dữ liệu máy chủ không hợp lệ. Phiên đã dừng để đồng bộ an toàn.\"",
+      "expressionStart": 1936,
+      "composite": false,
+      "sourceSha256": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688",
+      "key": "client.response.invalid",
+      "wholeTemplate": "Dữ liệu máy chủ không hợp lệ. Phiên đã dừng để đồng bộ an toàn."
+    },
+    {
+      "scope": "active-race-player",
+      "file": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "member": "Reliable",
+      "line": 265,
+      "column": 66,
+      "value": "Thiếu thông điệp trạng thái. Đang khôi phục…",
+      "expression": "\"Thiếu thông điệp trạng thái. Đang khôi phục…\"",
+      "expressionStart": 19121,
+      "composite": false,
+      "sourceSha256": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688",
+      "key": "client.state.missing",
+      "wholeTemplate": "Thiếu thông điệp trạng thái. Đang khôi phục…"
+    }
+  ]
+}

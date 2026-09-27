@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "controls": [
+    {
+      "case": "missing_key",
+      "rejected": true,
+      "reason": "Missing/extra locale keys: ENU"
+    },
+    {
+      "case": "extra_key",
+      "rejected": true,
+      "reason": "Missing/extra locale keys: ENU"
+    },
+    {
+      "case": "blank_text",
+      "rejected": true,
+      "reason": "Blank locale text: ENU/career.bike.preview"
+    },
+    {
+      "case": "wrong_locale",
+      "rejected": true,
+      "reason": "Locale metadata mismatch: ENU"
+    },
+    {
+      "case": "missing_argument",
+      "rejected": true,
+      "reason": "Malformed/lost/extra/repeated named argument: ENU/career.garage.previewTooltip"
+    },
+    {
+      "case": "extra_argument",
+      "rejected": true,
+      "reason": "Malformed/lost/extra/repeated named argument: ENU/career.garage.previewTooltip"
+    },
+    {
+      "case": "duplicate_argument",
+      "rejected": true,
+      "reason": "Malformed/lost/extra/repeated named argument: ENU/career.garage.previewTooltip"
+    },
+    {
+      "case": "unclosed_brace",
+      "rejected": true,
+      "reason": "Malformed/lost/extra/repeated named argument: ENU/career.garage.previewTooltip"
+    },
+    {
+      "case": "stray_brace",
+      "rejected": true,
+      "reason": "Malformed/lost/extra/repeated named argument: ENU/career.garage.previewTooltip"
+    },
+    {
+      "case": "protected_name_changed",
+      "rejected": true,
+      "reason": "Protected authored token changed: ENU/career.garage.restartConfirm/Spark 450"
+    },
+    {
+      "case": "authored_line_break_removed",
+      "rejected": true,
+      "reason": "Authored line-break count changed: ENU/career.bike.compare"
+    },
+    {
+      "case": "source_vi_changed",
+      "rejected": true,
+      "reason": "Original VI template changed: career.bike.preview"
+    },
+    {
+      "case": "duplicate_json_key",
+      "rejected": true,
+      "reason": "Duplicate JSON key: key"
+    },
+    {
+      "case": "canonical_drift",
+      "rejected": true,
+      "reason": "Frozen semantic inventory changed; author a reviewed revision first."
+    },
+    {
+      "case": "live_source_drift",
+      "rejected": true,
+      "reason": "Translation source drift: Assets/RacingBois/Client/Presentation/CareerView.cs"
+    }
+  ],
+  "scope": "Authored-data negative controls using in-memory mutations; no source/locale files changed, no native UI or linguistic acceptance."
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "boundary": "career",
+  "careerKeys": 151,
+  "externalCommonKeys": 5,
+  "expressionSites": 141,
+  "reviewedLiteralOccurrences": 175,
+  "compositionSites": 30,
+  "source": {
+    "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+    "sha256": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819"
+  },
+  "inputs": [
+    {
+      "path": "tools/p08/media/global-copy-career-staging/canonical-source.json",
+      "sha256": "a218856531fc62e289dfa42fb931a850ae40d3e6448284c328b692dd49e44109"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/source-bindings.json",
+      "sha256": "e28baa24342c80fa1c0381057994da2067a35521bf2023db8530bb1fc9a5ef10"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/VI.json",
+      "sha256": "bfdacca598881dfda9c2a6a4e309b99418ea3feca32498130795754824a9b4c2"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/VI-source.tsv",
+      "sha256": "15556f4fe8c25c18d7ed98c3e106dec7fecd4b9fdf44643e798e83c526db587b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/protected-tokens.json",
+      "sha256": "33a3ec0efdda5bea87a240d81ecd1ddd12b16aa94f0a528790a3f2ddebf5aea2"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/expression-equivalence.json",
+      "sha256": "0daa1015d6f761abc0b833febde79482df757cda58c159004f476b8da78dda6b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/generate_equivalence_checks.py",
+      "sha256": "cc295d7e7083c3b7eafe000b82da7243470ee372171f325c744fcd2ae0f0d571"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/prepare_templates.py",
+      "sha256": "1a8bf3a7a893ef5f47831d8f582e03460e4ed8a87324aef011d9be2a0c8d5af7"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/ExpressionEquivalence.csproj",
+      "sha256": "968ea370a15a95265e93831e4d197e8f506bda9355c1f0d13e0a6373b06b6c8f"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/Directory.Build.props",
+      "sha256": "376b9319d21fb1b72785cd24c59a6206c627539dc6e08be9de54e18124be3d37"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/checks/CareerVietnameseFixture.cs",
+      "sha256": "05b06d785e56966ae6d58fec8c38ff3f21193d82204123d599f988033e4d710c"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/checks/ExpressionEquivalence.cs",
+      "sha256": "9c766471dc41d96e7d6543f0b1d365c0537da1cd062c832cb6bd9fcb5ad2ec26"
+    },
+    {
+      "path": "tools/p08/media/global-copy-main-staging/UiText.cs",
+      "sha256": "54fa2d72cf794fa2789d0f8cb51001ab29856a16b4989577e84eb147f2f6c06c"
+    },
+    {
+      "path": "tools/p08/media/global-copy-main-staging/DisplayLanguage.cs",
+      "sha256": "1da2e4c0d9c201859280d3fb0e9e412aa8db764e3db25de53f3e2dabd4764a68"
+    }
+  ],
+  "translationsAuthored": false,
+  "liveSourceModified": false,
+  "nativeUiValidated": false,
+  "scope": "Frozen VI semantic key/template inventory and managed expression equivalence only. Shared API bindings are the version tested, not a restriction on lead-owned later API changes."
+}

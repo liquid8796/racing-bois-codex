@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "key": "career.garage.pristine",
+  "locale": "ENU",
+  "before": "BIKE FULLY REPAIRED",
+  "after": "BIKE UNDAMAGED",
+  "canonical": {
+    "path": "tools/p08/media/global-copy-career-staging/canonical-source.json",
+    "sha256": "a218856531fc62e289dfa42fb931a850ae40d3e6448284c328b692dd49e44109"
+  },
+  "protectedTokens": {
+    "path": "tools/p08/media/global-copy-career-staging/protected-tokens.json",
+    "sha256": "33a3ec0efdda5bea87a240d81ecd1ddd12b16aa94f0a528790a3f2ddebf5aea2"
+  },
+  "baseEnu": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/before/ENU.json",
+    "sha256": "c88fb931ce483c63ba5aca505ec43a42ac46a6be72d8083fc2b5ac301d6af81b"
+  },
+  "baseGenerated": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/before/UiText.Career.Generated.cs",
+    "sha256": "8a7cb783a00c37aa0aa304468db3a74b7c7b94b5e96969b07717f710ac0df80d"
+  },
+  "locales": {
+    "ENU": {
+      "path": "tools/p08/media/global-copy-pristine-amendment/ENU.json",
+      "sha256": "a5192c7abc334dc48c1040294cb856d01a2b64175ed3f527e848f393557e8719"
+    },
+    "DEU": {
+      "path": "tools/p08/media/global-copy-career-staging/locales/DEU.json",
+      "sha256": "9dd0cece2926bdd9472ac044a80372b6b63992e8a187fc19b7b831630314395e"
+    },
+    "ESP": {
+      "path": "tools/p08/media/global-copy-career-staging/locales/ESP.json",
+      "sha256": "5bf42503750eddb7cff4e35d8b2f274adf3399463d2964857f963e5dc5b4ea1f"
+    },
+    "FRA": {
+      "path": "tools/p08/media/global-copy-career-staging/locales/FRA.json",
+      "sha256": "822c2035e2c5bddcda8265c82f440a3d92d45959a4af52562006760568443511"
+    },
+    "ITA": {
+      "path": "tools/p08/media/global-copy-career-staging/locales/ITA.json",
+      "sha256": "f7d65704c6b5e9b76c3b50f682703daf0747ba0773db2ada557b0c9402c935d4"
+    },
+    "VI": {
+      "path": "tools/p08/media/global-copy-career-staging/VI.json",
+      "sha256": "1529d3a2ecca24b04aed5b8c486325223edae019ab16ebab4525c542304c96e9"
+    }
+  },
+  "baseUnion": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/before/authored-text-union.json",
+    "sha256": "59ca10612da4deee68194d7f01bdbddbec22173ce8581afcd0965b47fc4234da"
+  },
+  "union": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/authored-text-union.json",
+    "sha256": "ab4c6c3b3ecffb435fc855ea066a85964e85e1b485398dc629b8d0e2100828b1"
+  },
+  "generated": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/UiText.Career.Generated.cs",
+    "sha256": "3a3d3dd9a84be09aab6b004cda6911def3dd6c9c50d34d84a5ad4fa029b36dce"
+  }
+}

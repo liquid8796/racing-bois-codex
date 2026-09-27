@@ -1,0 +1,103 @@
+key	arguments	vi
+multiplayer.level.current	level	CẤP {level} · HIỆN TẠI
+multiplayer.invite.received	code	Đã nhận lời mời {code}. Kết nối và chọn VÀO PHÒNG khi bạn sẵn sàng.
+multiplayer.level.mismatch	current,room	Hồ sơ của bạn đang ở cấp {current}. Phòng vẫn giữ cấp {room}; hãy rời phòng và tạo chặng ở cấp hiện tại.
+multiplayer.seat.waiting	seat	{seat}   Đang chờ người chơi…
+multiplayer.room.info	players,capacity,bots,course,level,visibility	{players} / {capacity} NGƯỜI · {bots} MÁY\n{course} · CẤP {level}{visibility}
+multiplayer.invite.code	code	Mã phòng: {code}
+multiplayer.countdown	seconds	XUẤT PHÁT SAU {seconds}
+multiplayer.result.finished	rank,seconds	HẠNG {rank} · {seconds}s
+multiplayer.result.wallet	reward,credits	{reward} · QUỸ ${credits}
+multiplayer.room.summary	players,capacity,level	{players} / {capacity} · CẤP {level}
+multiplayer.validation.code		Mã phòng gồm 6 ký tự. Hãy kiểm tra lại mã bạn nhận được.
+multiplayer.validation.create		Chọn một tuyến đã mở và đặt tên phòng trước khi tiếp tục.
+multiplayer.validation.route		Tuyến này chưa sẵn sàng.
+multiplayer.level.guest		Phiên khách chỉ đua ở cấp 1. Rời phòng này rồi tạo hoặc vào phòng cấp 1.
+multiplayer.content.incomplete		Nội dung đường đua chưa tải xong.
+multiplayer.title.saving		ĐANG LƯU KẾT QUẢ
+multiplayer.title.suspended		TẠM DỪNG KẾT NỐI
+multiplayer.title.reconnecting		ĐANG KẾT NỐI LẠI
+multiplayer.title.connecting		ĐANG KẾT NỐI
+multiplayer.title.results		CHẶNG ĐUA KHÉP LẠI.
+multiplayer.title.browser		CÙNG LÊN ĐƯỜNG.
+multiplayer.message.saving		Máy chủ đang xác nhận lưu điểm và phần thưởng. Vui lòng giữ kết nối.
+multiplayer.message.reconnecting		Chỗ của bạn được giữ trong thời gian kết nối lại. Về menu để kết thúc phiên.
+multiplayer.message.results		Kết quả chính thức của phòng. Cùng trở về phòng chờ để bắt đầu chặng mới.
+multiplayer.message.browser		Tạo cuộc đua của riêng bạn hoặc nhập mã để cùng bạn bè lên đường.
+multiplayer.message.room		Mã phòng ở bên dưới. Mời bạn bè, chọn sẵn sàng và chờ chủ phòng xuất phát.
+multiplayer.member.you		 · BẠN
+multiplayer.member.host		 · CHỦ PHÒNG
+multiplayer.member.guest		KHÁCH
+multiplayer.member.saved		HỒ SƠ ĐÃ LƯU
+multiplayer.member.held		GIỮ CHỖ
+multiplayer.ready		SẴN SÀNG
+multiplayer.member.not-ready		CHƯA SẴN SÀNG
+multiplayer.seat.empty		CHỖ TRỐNG
+multiplayer.ready.cancel		HỦY SẴN SÀNG
+multiplayer.hint.countdown		Các tay đua đã sẵn sàng. Giữ nhịp, cuộc đua sắp bắt đầu.
+multiplayer.hint.not-ready		Bạn chưa sẵn sàng. Nhấn SẴN SÀNG để tham gia xuất phát.
+multiplayer.hint.waiting		Đã sẵn sàng. Đang chờ những tay đua còn lại.
+multiplayer.hint.host		Tất cả đã sẵn sàng. Bạn có thể bắt đầu cuộc đua.
+multiplayer.hint.members		Tất cả đã sẵn sàng. Đang chờ chủ phòng xuất phát.
+multiplayer.content.preparing		Đang chuẩn bị nội dung đường đua…
+multiplayer.rematch		VỀ PHÒNG CHỜ
+multiplayer.rematch.waiting		CHỜ CHỦ PHÒNG
+multiplayer.result.receiving		Đang nhận kết quả chính thức từ máy chủ…
+multiplayer.result.saved		ĐÃ LƯU KẾT QUẢ · Thưởng của phiên khách chỉ áp dụng trong phiên này.
+multiplayer.result.pending		ĐANG CHỜ XÁC NHẬN LƯU · Chưa xác nhận phần thưởng vào hồ sơ.
+multiplayer.result.busted		BỊ BẮT
+multiplayer.result.wrecked		HỎNG XE
+multiplayer.result.incomplete		KHÔNG HOÀN THÀNH
+multiplayer.room.racing		ĐANG ĐUA
+multiplayer.room.full		ĐÃ ĐỦ NGƯỜI
+multiplayer.join		VÀO PHÒNG
+multiplayer.room.public		 · CÔNG KHAI
+multiplayer.room.private		 · RIÊNG TƯ
+multiplayer.error.room-full		Phòng đã đủ người. Hãy chọn phòng khác hoặc tạo phòng mới.
+multiplayer.error.room-not-found		Không tìm thấy phòng. Kiểm tra lại mã hoặc làm mới danh sách.
+multiplayer.error.room-started		Cuộc đua đã bắt đầu. Bạn có thể vào sau khi phòng trở về trạng thái chờ.
+multiplayer.error.host-only		Chỉ chủ phòng có thể thực hiện thao tác này.
+multiplayer.error.not-ready		Tất cả tay đua cần kết nối và sẵn sàng trước khi bắt đầu.
+multiplayer.error.invalid-name		Tên cần có từ 1 đến 24 ký tự và không chứa ký tự điều khiển.
+multiplayer.error.room-settings		Kiểm tra tên phòng và số đối thủ máy.
+multiplayer.error.course-unavailable		Tuyến đường này đang được phát triển. Hãy chọn Canyon Run.
+multiplayer.error.campaign-locked		Cấp này chưa mở cho hồ sơ của bạn. Hãy chọn cấp đã mở trong hành trình.
+multiplayer.error.repair-required		Xe đã hỏng. Rời phòng và sửa xe trong garage trước khi xuất phát.
+multiplayer.error.profile-busy		Hồ sơ đang có cuộc đua chưa lưu xong. Chờ kết quả rồi thử lại.
+multiplayer.error.profile-revoked		Phiên hồ sơ đã hết hạn hoặc được thu hồi. Vào tài khoản để đăng nhập lại.
+multiplayer.error.already-in-room		Bạn đang ở một phòng. Hãy rời phòng đó trước.
+multiplayer.error.profile-in-room		Hồ sơ này đang giữ chỗ ở phiên khác. Dùng Khách mới để thêm một người chơi riêng.
+multiplayer.error.profile-unavailable		Chưa đọc được hồ sơ trên máy chủ. Hãy thử lại sau hoặc chọn Khách mới.
+multiplayer.error.resume-expired		Thời gian giữ chỗ đã hết. Hãy kết nối lại và vào một phòng mới.
+multiplayer.error.resume-owner		Phiên đã được mở ở nơi khác. Chọn Khách mới để chơi riêng.
+multiplayer.error.version-mismatch		Bản game và máy chủ khác phiên bản. Tải lại trang hoặc cập nhật gói LAN.
+multiplayer.error.server-full		Máy chủ đang đầy. Hãy thử lại sau.
+multiplayer.error.room-capacity		Máy chủ đã đủ phòng. Hãy vào một phòng còn chỗ.
+multiplayer.error.persistence-pending		Máy chủ đang chuẩn bị. Vui lòng chờ một chút.
+multiplayer.error.persistence-queue-full		Máy chủ đang bận lưu dữ liệu. Hãy thử lại sau.
+multiplayer.error.result-save-retry		Máy chủ đang thử lưu lại kết quả. Giữ phiên này để nhận xác nhận.
+multiplayer.error.start-cancelled		Đếm ngược đã hủy vì thành viên hoặc chủ phòng thay đổi.
+multiplayer.error.result-required		Cuộc đua chưa kết thúc. Vui lòng chờ kết quả chính thức.
+multiplayer.error.command-rate		Bạn thao tác quá nhanh. Chờ một chút rồi thử lại.
+multiplayer.error.not-room-member		Bạn không còn ở phòng này. Hãy làm mới danh sách và vào lại.
+multiplayer.error.unknown		Không thực hiện được yêu cầu này. Hãy thử lại hoặc kết nối lại máy chủ.
+multiplayer.heading.eyebrow		RACING BOIS / CÙNG LÊN ĐƯỜNG
+multiplayer.heading.initial-title		PHÒNG ĐUA
+multiplayer.menu.return		VỀ MENU
+multiplayer.browser.create-heading		TẠO PHÒNG
+multiplayer.browser.room-name-label		Tên phòng
+multiplayer.browser.bot-label		Đối thủ máy
+multiplayer.browser.public-toggle		Hiện trong danh sách phòng
+multiplayer.browser.route-label		Tuyến đường
+multiplayer.browser.profile-level-label		Cấp hiện tại của hồ sơ
+multiplayer.browser.create		TẠO PHÒNG  >
+multiplayer.browser.invite-heading		CÓ MÃ TỪ BẠN BÈ?
+multiplayer.browser.join-code-hint		Nhập 6 ký tự của phòng
+multiplayer.browser.room-list-heading		PHÒNG TRÊN MÁY CHỦ
+multiplayer.browser.refresh		LÀM MỚI
+multiplayer.browser.empty-rooms		Chưa có phòng. Tạo một phòng và gửi mã cho bạn bè.
+multiplayer.room.invite-code-label		MÃ MỜI BẠN BÈ
+multiplayer.invite.copy		SAO CHÉP LỜI MỜI
+multiplayer.invite.link-hint		Chọn và sao chép liên kết này để mời bạn bè.
+multiplayer.start		BẮT ĐẦU
+multiplayer.leave		RỜI PHÒNG

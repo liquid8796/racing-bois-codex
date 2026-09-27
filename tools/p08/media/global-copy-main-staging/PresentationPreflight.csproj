@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion><EnableDefaultCompileItems>false</EnableDefaultCompileItems><Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings><TreatWarningsAsErrors>true</TreatWarningsAsErrors><AssemblyName>RacingBois.Client.Presentation</AssemblyName><AssemblyVersion>0.0.0.0</AssemblyVersion><ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot><UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged></PropertyGroup>
+ <ItemGroup>
+  <ProjectReference Include="ApplicationPreflight.csproj" />
+  <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/*.cs" Exclude="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceScreen.cs;$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs;$(ProjectRoot)Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs;$(ProjectRoot)Assets/RacingBois/Client/Presentation/CareerView.cs;$(ProjectRoot)Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs;$(ProjectRoot)Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs" />
+  <Compile Include="RaceScreen.cs" /><Compile Include="RaceScreen.Content.cs" /><Compile Include="RaceScreen.Localization.cs" /><Compile Include="DesktopDisplaySettings.cs" />
+  <Compile Include="../global-copy-career-staging/CareerView.cs" /><Compile Include="../global-copy-multiplayer-staging/MultiplayerLobbyView.cs" /><Compile Include="../global-copy-multiplayer-staging/MultiplayerCopy.cs" />
+  <Reference Include="$(UnityManaged)/UnityEngine/*.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.*.dll" />
+ </ItemGroup>
+</Project>

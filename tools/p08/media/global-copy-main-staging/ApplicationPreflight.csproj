@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion><EnableDefaultCompileItems>false</EnableDefaultCompileItems><Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings><TreatWarningsAsErrors>true</TreatWarningsAsErrors><AssemblyName>RacingBois.Client.Application</AssemblyName><AssemblyVersion>0.0.0.0</AssemblyVersion><ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot></PropertyGroup>
+ <ItemGroup>
+  <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/*.cs" Exclude="$(ProjectRoot)Assets/RacingBois/Client/Application/CinematicText.cs;$(ProjectRoot)Assets/RacingBois/Client/Application/MultiplayerSession.cs;$(ProjectRoot)Assets/RacingBois/Client/Application/CareerMilestoneTracker.cs" />
+  <Compile Include="DisplayLanguage.cs" /><Compile Include="UiText.cs" /><Compile Include="CinematicText.cs" /><Compile Include="UiText.Main.Generated.cs" />
+  <Compile Include="../global-copy-client-staging/UiText.ClientMessages.Generated.cs" />
+  <Compile Include="../global-copy-career-staging/UiText.Career.Generated.cs" Condition="Exists('../global-copy-career-staging/UiText.Career.Generated.cs')" />
+  <Compile Include="../global-copy-multiplayer-staging/UiText.Multiplayer.Generated.cs" Condition="Exists('../global-copy-multiplayer-staging/UiText.Multiplayer.Generated.cs')" />
+  <Compile Include="../milestone-staging/MultiplayerSession.cs" /><Compile Include="../milestone-staging/CareerMilestoneTracker.cs" />
+  <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Simulation.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Protocol.dll" /><Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.NetworkMapping.dll" />
+ </ItemGroup>
+</Project>

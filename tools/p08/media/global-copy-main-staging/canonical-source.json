@@ -1,0 +1,1814 @@
+{
+  "schema": 1,
+  "boundary": "main-menu-hud-settings-practice",
+  "sourceLanguage": "VI",
+  "sourceFiles": [
+    {
+      "path": "Assets/RacingBois/UI/Race.uxml",
+      "sha256": "97c37af118d428db1871247aec9e219431d009399067cfc9c3ff0037025cca44"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+      "sha256": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+      "sha256": "9bc3c320bc0d95a27e544c499ade4d383c8b0568e24c6263dc6042c88c18984f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+      "sha256": "c7804c86cc32b38a0fec32aa8d5dd056383711d5663a7c13873cd062eb7376fc"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "sha256": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819"
+    }
+  ],
+  "entries": [
+    {
+      "key": "common.done",
+      "vi": "XONG",
+      "enu": "DONE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "line": 49,
+          "sourceExpression": "\"XONG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "settings-close",
+          "line": 78,
+          "sourceExpression": "text=\"XONG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-close",
+          "line": 95,
+          "sourceExpression": "text=\"XONG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "common.cancel",
+      "vi": "HỦY",
+      "enu": "CANCEL",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "line": 57,
+          "sourceExpression": "\"HỦY\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "common.confirm",
+      "vi": "XÁC NHẬN",
+      "enu": "CONFIRM",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "line": 56,
+          "sourceExpression": "\"XÁC NHẬN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "common.refresh",
+      "vi": "LÀM MỚI",
+      "enu": "REFRESH",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "line": 59,
+          "sourceExpression": "\"LÀM MỚI\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-refresh",
+          "line": 59,
+          "sourceExpression": "text=\"LÀM MỚI\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "common.retry",
+      "vi": "THỬ LẠI",
+      "enu": "RETRY",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "line": 60,
+          "sourceExpression": "\"THỬ LẠI\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "content-retry",
+          "line": 109,
+          "sourceExpression": "text=\"THỬ LẠI\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "common.backMenu",
+      "vi": "VỀ MENU",
+      "enu": "BACK TO MENU",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "home",
+          "line": 52,
+          "sourceExpression": "text=\"VỀ MENU\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-disconnect",
+          "line": 55,
+          "sourceExpression": "text=\"VỀ MENU\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.careerOpen",
+      "vi": "GARAGE / HỒ SƠ",
+      "enu": "GARAGE / PROFILE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "career-open",
+          "line": 11,
+          "sourceExpression": "text=\"GARAGE / HỒ SƠ\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.galleryOpen",
+      "vi": "CÂU CHUYỆN",
+      "enu": "STORIES",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "gallery-open",
+          "line": 11,
+          "sourceExpression": "text=\"CÂU CHUYỆN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.open",
+      "vi": "CÀI ĐẶT",
+      "enu": "SETTINGS",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "settings-open",
+          "line": 11,
+          "sourceExpression": "text=\"CÀI ĐẶT\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.offlinePractice",
+      "vi": "LUYỆN TẬP OFFLINE",
+      "enu": "OFFLINE PRACTICE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:eyebrow",
+          "line": 14,
+          "sourceExpression": "text=\"LUYỆN TẬP OFFLINE\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.raceStart",
+      "vi": "VÀO CUỘC ĐUA",
+      "enu": "START RACE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "local",
+          "line": 17,
+          "sourceExpression": "text=\"VÀO CUỘC ĐUA\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.practiceChoose",
+      "vi": "CHỌN TUYẾN / XE",
+      "enu": "CHOOSE ROUTE / BIKE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-open",
+          "line": 18,
+          "sourceExpression": "text=\"CHỌN TUYẾN / XE\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.networkOpen",
+      "vi": "ONLINE / LAN",
+      "enu": "ONLINE / LAN",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "SetNetworkOpen",
+          "line": 181,
+          "sourceExpression": "open?\"ĐÓNG KẾT NỐI\":\"ONLINE / LAN\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 218,
+          "sourceExpression": "reconnecting?\"ĐANG KẾT NỐI LẠI\":status==SessionStatus.Connected?\"ONLINE / LAN\":status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "network-toggle",
+          "line": 19,
+          "sourceExpression": "text=\"ONLINE / LAN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.networkClose",
+      "vi": "ĐÓNG KẾT NỐI",
+      "enu": "CLOSE CONNECTION PANEL",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "SetNetworkOpen",
+          "line": 181,
+          "sourceExpression": "open?\"ĐÓNG KẾT NỐI\":\"ONLINE / LAN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.playerNameLabel",
+      "vi": "TÊN TAY ĐUA",
+      "enu": "RIDER NAME",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:eyebrow",
+          "line": 21,
+          "sourceExpression": "text=\"TÊN TAY ĐUA\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.endpointLabel",
+      "vi": "ĐỊA CHỈ MÁY CHỦ ONLINE / LAN",
+      "enu": "ONLINE / LAN SERVER ADDRESS",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:eyebrow",
+          "line": 23,
+          "sourceExpression": "text=\"ĐỊA CHỈ MÁY CHỦ ONLINE / LAN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.connectSaved",
+      "vi": "HỒ SƠ ĐÃ LƯU",
+      "enu": "SAVED PROFILE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 226,
+          "sourceExpression": "\"HỒ SƠ ĐÃ LƯU\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "connect",
+          "line": 25,
+          "sourceExpression": "text=\"HỒ SƠ ĐÃ LƯU\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.connectGuest",
+      "vi": "KHÁCH MỚI",
+      "enu": "NEW GUEST",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "connect-guest",
+          "line": 25,
+          "sourceExpression": "text=\"KHÁCH MỚI\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.connect",
+      "vi": "KẾT NỐI",
+      "enu": "CONNECT",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowState",
+          "line": 239,
+          "sourceExpression": "status==SessionStatus.Connecting?\"ĐANG KẾT NỐI...\":\"KẾT NỐI\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.connecting",
+      "vi": "ĐANG KẾT NỐI...",
+      "enu": "CONNECTING...",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowState",
+          "line": 239,
+          "sourceExpression": "status==SessionStatus.Connecting?\"ĐANG KẾT NỐI...\":\"KẾT NỐI\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.practiceDisclaimer",
+      "vi": "Kết quả luyện tập không cộng vào hồ sơ máy chủ.",
+      "enu": "Practice results do not count toward your server profile.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowState",
+          "line": 242,
+          "sourceExpression": "string.IsNullOrEmpty(error)?\"Kết quả luyện tập không cộng vào hồ sơ máy chủ.\":error"
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "message",
+          "line": 27,
+          "sourceExpression": "text=\"Kết quả luyện tập không cộng vào hồ sơ máy chủ.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.profileHelp",
+      "vi": "Hồ sơ lưu trên máy chủ; Khách mới tạo một người chơi riêng.",
+      "enu": "Profiles are saved on the server; New guest creates a separate player.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 221,
+          "sourceExpression": "string.IsNullOrEmpty(error)?\"Hồ sơ lưu trên máy chủ; Khách mới tạo một người chơi riêng.\":MultiplayerCopy.Error(error)"
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "menu.level",
+      "vi": "CẤP {level} /",
+      "enu": "LEVEL {level} /",
+      "arguments": [
+        "level"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+          "member": "RefreshPracticeSummary",
+          "line": 86,
+          "sourceExpression": "\"CẤP \" + (PracticeLevelIndex + 1) + \" /\""
+        }
+      ],
+      "argumentSources": {
+        "level": "(PracticeLevelIndex + 1).ToString()"
+      }
+    },
+    {
+      "key": "connection.ready",
+      "vi": "SẴN SÀNG LÊN ĐƯỜNG",
+      "enu": "READY TO RIDE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 218,
+          "sourceExpression": "reconnecting?\"ĐANG KẾT NỐI LẠI\":status==SessionStatus.Connected?\"ONLINE / LAN\":status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowState",
+          "line": 241,
+          "sourceExpression": "active?(mode==RaceSessionMode.Local?\"CHƠI ĐƠN / OFFLINE\":\"ĐÃ KẾT NỐI MÁY CHỦ\"):\r\n                status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "connection",
+          "line": 11,
+          "sourceExpression": "text=\"SẴN SÀNG LÊN ĐƯỜNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "connection.connecting",
+      "vi": "ĐANG KẾT NỐI",
+      "enu": "CONNECTING",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 218,
+          "sourceExpression": "reconnecting?\"ĐANG KẾT NỐI LẠI\":status==SessionStatus.Connected?\"ONLINE / LAN\":status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowState",
+          "line": 241,
+          "sourceExpression": "active?(mode==RaceSessionMode.Local?\"CHƠI ĐƠN / OFFLINE\":\"ĐÃ KẾT NỐI MÁY CHỦ\"):\r\n                status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "connection.reconnecting",
+      "vi": "ĐANG KẾT NỐI LẠI",
+      "enu": "RECONNECTING",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 218,
+          "sourceExpression": "reconnecting?\"ĐANG KẾT NỐI LẠI\":status==SessionStatus.Connected?\"ONLINE / LAN\":status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "connection.onlineLan",
+      "vi": "ONLINE / LAN",
+      "enu": "ONLINE / LAN",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "SetNetworkOpen",
+          "line": 181,
+          "sourceExpression": "open?\"ĐÓNG KẾT NỐI\":\"ONLINE / LAN\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 218,
+          "sourceExpression": "reconnecting?\"ĐANG KẾT NỐI LẠI\":status==SessionStatus.Connected?\"ONLINE / LAN\":status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "network-toggle",
+          "line": 19,
+          "sourceExpression": "text=\"ONLINE / LAN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "connection.latency",
+      "vi": "ONLINE / {milliseconds} MS",
+      "enu": "ONLINE / {milliseconds} MS",
+      "arguments": [
+        "milliseconds"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 219,
+          "sourceExpression": "(degraded?\"ĐỘ TRỄ CAO / \":\"ONLINE / \")+roundTripMs.ToString(\"0\")+\" MS\""
+        }
+      ],
+      "argumentSources": {
+        "milliseconds": "roundTripMs.ToString(\"0\")"
+      }
+    },
+    {
+      "key": "connection.highLatency",
+      "vi": "ĐỘ TRỄ CAO / {milliseconds} MS",
+      "enu": "HIGH LATENCY / {milliseconds} MS",
+      "arguments": [
+        "milliseconds"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowMultiplayer",
+          "line": 219,
+          "sourceExpression": "(degraded?\"ĐỘ TRỄ CAO / \":\"ONLINE / \")+roundTripMs.ToString(\"0\")+\" MS\""
+        }
+      ],
+      "argumentSources": {
+        "milliseconds": "roundTripMs.ToString(\"0\")"
+      }
+    },
+    {
+      "key": "connection.local",
+      "vi": "CHƠI ĐƠN / OFFLINE",
+      "enu": "SOLO / OFFLINE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowState",
+          "line": 240,
+          "sourceExpression": "active?(mode==RaceSessionMode.Local?\"CHƠI ĐƠN / OFFLINE\":\"ĐÃ KẾT NỐI MÁY CHỦ\"):\r\n                status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "connection.server",
+      "vi": "ĐÃ KẾT NỐI MÁY CHỦ",
+      "enu": "CONNECTED TO SERVER",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ShowState",
+          "line": 240,
+          "sourceExpression": "active?(mode==RaceSessionMode.Local?\"CHƠI ĐƠN / OFFLINE\":\"ĐÃ KẾT NỐI MÁY CHỦ\"):\r\n                status==SessionStatus.Connecting?\"ĐANG KẾT NỐI\":\"SẴN SÀNG LÊN ĐƯỜNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.positionLabel",
+      "vi": "VỊ TRÍ",
+      "enu": "POSITION",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:eyebrow",
+          "line": 31,
+          "sourceExpression": "text=\"VỊ TRÍ\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.riderLabel",
+      "vi": "TAY ĐUA",
+      "enu": "RIDER",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:vital-label",
+          "line": 38,
+          "sourceExpression": "text=\"TAY ĐUA\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-character",
+          "line": 100,
+          "sourceExpression": "label=\"TAY ĐUA\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.bikeLabel",
+      "vi": "XE",
+      "enu": "BIKE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:vital-label",
+          "line": 39,
+          "sourceExpression": "text=\"XE\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.weapon.club",
+      "vi": "GẬY",
+      "enu": "CLUB",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 261,
+          "sourceExpression": "rider.Weapon==WeaponKind.Club?\"GẬY\":rider.Weapon==WeaponKind.Chain?\"DÂY XÍCH\":\"TAY KHÔNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.weapon.chain",
+      "vi": "DÂY XÍCH",
+      "enu": "CHAIN",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 261,
+          "sourceExpression": "rider.Weapon==WeaponKind.Club?\"GẬY\":rider.Weapon==WeaponKind.Chain?\"DÂY XÍCH\":\"TAY KHÔNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.weapon.fist",
+      "vi": "TAY KHÔNG",
+      "enu": "BARE HANDS",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 261,
+          "sourceExpression": "rider.Weapon==WeaponKind.Club?\"GẬY\":rider.Weapon==WeaponKind.Chain?\"DÂY XÍCH\":\"TAY KHÔNG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "weapon",
+          "line": 37,
+          "sourceExpression": "text=\"TAY KHÔNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.cruise.on",
+      "vi": "GIỮ GA: BẬT",
+      "enu": "CRUISE: ON",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "SetCruise",
+          "line": 205,
+          "sourceExpression": "value?\"GIỮ GA: BẬT\":\"GIỮ GA: TẮT\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.cruise.off",
+      "vi": "GIỮ GA: TẮT",
+      "enu": "CRUISE: OFF",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "SetCruise",
+          "line": 205,
+          "sourceExpression": "value?\"GIỮ GA: BẬT\":\"GIỮ GA: TẮT\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "cruise",
+          "line": 43,
+          "sourceExpression": "text=\"GIỮ GA: TẮT\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.leave",
+      "vi": "RỜI CUỘC ĐUA",
+      "enu": "LEAVE RACE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "leave",
+          "line": 43,
+          "sourceExpression": "text=\"RỜI CUỘC ĐUA\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.attacking",
+      "vi": "ĐANG RA ĐÒN",
+      "enu": "ATTACKING",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 327,
+          "sourceExpression": "\"ĐANG RA ĐÒN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.hit",
+      "vi": "TRÚNG ĐÒN",
+      "enu": "HIT",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 328,
+          "sourceExpression": "\"TRÚNG ĐÒN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.airborne",
+      "vi": "RỜI MẶT ĐƯỜNG",
+      "enu": "AIRBORNE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 329,
+          "sourceExpression": "\"RỜI MẶT ĐƯỜNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.falling",
+      "vi": "MẤT THĂNG BẰNG",
+      "enu": "LOSING BALANCE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 330,
+          "sourceExpression": "\"MẤT THĂNG BẰNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.detached",
+      "vi": "ĐỨNG DẬY",
+      "enu": "GETTING UP",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 331,
+          "sourceExpression": "\"ĐỨNG DẬY\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.running",
+      "vi": "CHẠY VỀ XE",
+      "enu": "RUNNING TO BIKE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 332,
+          "sourceExpression": "\"CHẠY VỀ XE\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.remounting",
+      "vi": "LÊN XE",
+      "enu": "REMOUNTING",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 333,
+          "sourceExpression": "\"LÊN XE\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.wrecked",
+      "vi": "XE HƯ HỎNG",
+      "enu": "BIKE WRECKED",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 334,
+          "sourceExpression": "\"XE HƯ HỎNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.busted",
+      "vi": "BỊ CẢNH SÁT BẮT",
+      "enu": "BUSTED BY POLICE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 335,
+          "sourceExpression": "\"BỊ CẢNH SÁT BẮT\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.finished",
+      "vi": "ĐÃ VỀ ĐÍCH",
+      "enu": "FINISHED",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 336,
+          "sourceExpression": "\"ĐÃ VỀ ĐÍCH\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.mode.riding",
+      "vi": "ĐANG ĐUA",
+      "enu": "RACING",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ModeText",
+          "line": 337,
+          "sourceExpression": "\"ĐANG ĐUA\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.recovery.running",
+      "vi": "Tay đua đang chạy về xe. Cuộc đua vẫn tiếp tục.",
+      "enu": "Your rider is running back to the bike. The race continues.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 273,
+          "sourceExpression": "rider.Mode==RiderMode.Running?\"Tay đua đang chạy về xe. Cuộc đua vẫn tiếp tục.\":\"Giữ bình tĩnh. Lấy lại nhịp đua.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.recovery.calm",
+      "vi": "Giữ bình tĩnh. Lấy lại nhịp đua.",
+      "enu": "Stay calm. Find your rhythm again.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 273,
+          "sourceExpression": "rider.Mode==RiderMode.Running?\"Tay đua đang chạy về xe. Cuộc đua vẫn tiếp tục.\":\"Giữ bình tĩnh. Lấy lại nhịp đua.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.event.hitOther",
+      "vi": "ĐÁNH TRÚNG",
+      "enu": "HIT LANDED",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 293,
+          "sourceExpression": "item.Kind==RaceEventKind.Hit?(item.SourceId==rider.Id?\"ĐÁNH TRÚNG\":\"TRÚNG ĐÒN\"):\r\n                    item.Kind==RaceEventKind.WeaponStolen?\"ĐỔI VŨ KHÍ\":item.Kind==RaceEventKind.Remounted?\"TRỞ LẠI CUỘC ĐUA\":\r\n                    item.Kind==RaceEventKind.Landed?\"TIẾP ĐẤT\":\"\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.event.gotHit",
+      "vi": "TRÚNG ĐÒN",
+      "enu": "HIT TAKEN",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 293,
+          "sourceExpression": "item.Kind==RaceEventKind.Hit?(item.SourceId==rider.Id?\"ĐÁNH TRÚNG\":\"TRÚNG ĐÒN\"):\r\n                    item.Kind==RaceEventKind.WeaponStolen?\"ĐỔI VŨ KHÍ\":item.Kind==RaceEventKind.Remounted?\"TRỞ LẠI CUỘC ĐUA\":\r\n                    item.Kind==RaceEventKind.Landed?\"TIẾP ĐẤT\":\"\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.event.weaponChanged",
+      "vi": "ĐỔI VŨ KHÍ",
+      "enu": "WEAPON CHANGED",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 294,
+          "sourceExpression": "item.Kind==RaceEventKind.Hit?(item.SourceId==rider.Id?\"ĐÁNH TRÚNG\":\"TRÚNG ĐÒN\"):\r\n                    item.Kind==RaceEventKind.WeaponStolen?\"ĐỔI VŨ KHÍ\":item.Kind==RaceEventKind.Remounted?\"TRỞ LẠI CUỘC ĐUA\":\r\n                    item.Kind==RaceEventKind.Landed?\"TIẾP ĐẤT\":\"\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.event.remounted",
+      "vi": "TRỞ LẠI CUỘC ĐUA",
+      "enu": "BACK IN THE RACE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 294,
+          "sourceExpression": "item.Kind==RaceEventKind.Hit?(item.SourceId==rider.Id?\"ĐÁNH TRÚNG\":\"TRÚNG ĐÒN\"):\r\n                    item.Kind==RaceEventKind.WeaponStolen?\"ĐỔI VŨ KHÍ\":item.Kind==RaceEventKind.Remounted?\"TRỞ LẠI CUỘC ĐUA\":\r\n                    item.Kind==RaceEventKind.Landed?\"TIẾP ĐẤT\":\"\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "hud.event.landed",
+      "vi": "TIẾP ĐẤT",
+      "enu": "LANDED",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 295,
+          "sourceExpression": "item.Kind==RaceEventKind.Hit?(item.SourceId==rider.Id?\"ĐÁNH TRÚNG\":\"TRÚNG ĐÒN\"):\r\n                    item.Kind==RaceEventKind.WeaponStolen?\"ĐỔI VŨ KHÍ\":item.Kind==RaceEventKind.Remounted?\"TRỞ LẠI CUỘC ĐUA\":\r\n                    item.Kind==RaceEventKind.Landed?\"TIẾP ĐẤT\":\"\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "controls.leftStick",
+      "vi": "CẦN TRÁI",
+      "enu": "LEFT STICK",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "RefreshControlHints",
+          "line": 193,
+          "sourceExpression": "\"CẦN TRÁI\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "controls.throttleBrake",
+      "vi": "Ga/Phanh",
+      "enu": "Throttle/Brake",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "RefreshControlHints",
+          "line": 194,
+          "sourceExpression": "\"Ga/Phanh\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "controls.steer",
+      "vi": "Lái",
+      "enu": "Steer",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "RefreshControlHints",
+          "line": 194,
+          "sourceExpression": "\"Lái\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "controls.attack",
+      "vi": "Đánh",
+      "enu": "Attack",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "RefreshControlHints",
+          "line": 194,
+          "sourceExpression": "\"Đánh\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "controls.kick",
+      "vi": "Đá",
+      "enu": "Kick",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "RefreshControlHints",
+          "line": 194,
+          "sourceExpression": "\"Đá\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "results.practiceHeading",
+      "vi": "KẾT QUẢ / LUYỆN TẬP",
+      "enu": "RESULTS / PRACTICE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:eyebrow amber",
+          "line": 48,
+          "sourceExpression": "text=\"KẾT QUẢ / LUYỆN TẬP\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "results.qualified",
+      "vi": "VƯỢT QUA CHẶNG.",
+      "enu": "STAGE CLEARED.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 278,
+          "sourceExpression": "rider.Mode==RiderMode.Finished?(rider.Qualified?\"VƯỢT QUA CHẶNG.\":\"VỀ ĐÍCH.\") : rider.Mode==RiderMode.Busted?\"BỊ BẮT.\":\"XE HƯ HỎNG.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "results.finished",
+      "vi": "VỀ ĐÍCH.",
+      "enu": "FINISHED.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 278,
+          "sourceExpression": "rider.Mode==RiderMode.Finished?(rider.Qualified?\"VƯỢT QUA CHẶNG.\":\"VỀ ĐÍCH.\") : rider.Mode==RiderMode.Busted?\"BỊ BẮT.\":\"XE HƯ HỎNG.\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "result-title",
+          "line": 49,
+          "sourceExpression": "text=\"VỀ ĐÍCH.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "results.busted",
+      "vi": "BỊ BẮT.",
+      "enu": "BUSTED.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 278,
+          "sourceExpression": "rider.Mode==RiderMode.Finished?(rider.Qualified?\"VƯỢT QUA CHẶNG.\":\"VỀ ĐÍCH.\") : rider.Mode==RiderMode.Busted?\"BỊ BẮT.\":\"XE HƯ HỎNG.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "results.wrecked",
+      "vi": "XE HƯ HỎNG.",
+      "enu": "BIKE WRECKED.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 278,
+          "sourceExpression": "rider.Mode==RiderMode.Finished?(rider.Qualified?\"VƯỢT QUA CHẶNG.\":\"VỀ ĐÍCH.\") : rider.Mode==RiderMode.Busted?\"BỊ BẮT.\":\"XE HƯ HỎNG.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "results.finishDetail",
+      "vi": "Hạng {rank} · {seconds} giây\nThưởng luyện tập trong phiên: ${reward}",
+      "enu": "Rank {rank} · {seconds} seconds\nSession practice reward: ${reward}",
+      "arguments": [
+        "rank",
+        "seconds",
+        "reward"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 280,
+          "sourceExpression": "rider.Mode==RiderMode.Finished?\r\n                        \"Hạng \"+rider.Rank+\" · \"+(rider.FinishTick/60f).ToString(\"0.0\")+\" giây\\nThưởng luyện tập trong phiên: $\"+rider.Reward:\r\n                        rider.Mode==RiderMode.Busted?\"Tiền phạt luyện tập trong phiên: $\"+Mathf.Abs(rider.Reward):\"Cuộc đua kết thúc. Thử lại với một đường chạy tốt hơn.\""
+        }
+      ],
+      "argumentSources": {
+        "rank": "rider.Rank.ToString()",
+        "seconds": "(rider.FinishTick/60f).ToString(\"0.0\")",
+        "reward": "rider.Reward.ToString()"
+      }
+    },
+    {
+      "key": "results.fineDetail",
+      "vi": "Tiền phạt luyện tập trong phiên: ${fine}",
+      "enu": "Session practice fine: ${fine}",
+      "arguments": [
+        "fine"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 281,
+          "sourceExpression": "rider.Mode==RiderMode.Finished?\r\n                        \"Hạng \"+rider.Rank+\" · \"+(rider.FinishTick/60f).ToString(\"0.0\")+\" giây\\nThưởng luyện tập trong phiên: $\"+rider.Reward:\r\n                        rider.Mode==RiderMode.Busted?\"Tiền phạt luyện tập trong phiên: $\"+Mathf.Abs(rider.Reward):\"Cuộc đua kết thúc. Thử lại với một đường chạy tốt hơn.\""
+        }
+      ],
+      "argumentSources": {
+        "fine": "Mathf.Abs(rider.Reward).ToString()"
+      }
+    },
+    {
+      "key": "results.wreckDetail",
+      "vi": "Cuộc đua kết thúc. Thử lại với một đường chạy tốt hơn.",
+      "enu": "The race is over. Try again with a better line.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 281,
+          "sourceExpression": "rider.Mode==RiderMode.Finished?\r\n                        \"Hạng \"+rider.Rank+\" · \"+(rider.FinishTick/60f).ToString(\"0.0\")+\" giây\\nThưởng luyện tập trong phiên: $\"+rider.Reward:\r\n                        rider.Mode==RiderMode.Busted?\"Tiền phạt luyện tập trong phiên: $\"+Mathf.Abs(rider.Reward):\"Cuộc đua kết thúc. Thử lại với một đường chạy tốt hơn.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "results.practiceFunds",
+      "vi": "\nQuỹ luyện tập trong phiên: ${credits}",
+      "enu": "\nSession practice funds: ${credits}",
+      "arguments": [
+        "credits"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Render",
+          "line": 282,
+          "sourceExpression": "\"\\nQuỹ luyện tập trong phiên: $\"+campaign.Credits"
+        }
+      ],
+      "argumentSources": {
+        "credits": "campaign.Credits.ToString()"
+      }
+    },
+    {
+      "key": "results.restart",
+      "vi": "ĐUA LẠI  >",
+      "enu": "RACE AGAIN  >",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "restart",
+          "line": 51,
+          "sourceExpression": "text=\"ĐUA LẠI  >\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.eyebrow",
+      "vi": "THEO NHỊP CỦA BẠN",
+      "enu": "AT YOUR PACE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:eyebrow amber",
+          "line": 78,
+          "sourceExpression": "text=\"THEO NHỊP CỦA BẠN\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.title",
+      "vi": "CÀI ĐẶT.",
+      "enu": "SETTINGS.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:settings-title",
+          "line": 78,
+          "sourceExpression": "text=\"CÀI ĐẶT.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.qualityLabel",
+      "vi": "CHẤT LƯỢNG HÌNH ẢNH",
+      "enu": "GRAPHICS QUALITY",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:eyebrow",
+          "line": 80,
+          "sourceExpression": "text=\"CHẤT LƯỢNG HÌNH ẢNH\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.qualityHelp",
+      "vi": "Mức Vừa dành cho trải nghiệm cân bằng. Giảm chất lượng nếu nhịp hình chưa ổn định.",
+      "enu": "Medium offers a balanced experience. Lower the quality if frame pacing is uneven.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:hint",
+          "line": 81,
+          "sourceExpression": "text=\"Mức Vừa dành cho trải nghiệm cân bằng. Giảm chất lượng nếu nhịp hình chưa ổn định.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.quality.low",
+      "vi": "THẤP — ưu tiên tốc độ",
+      "enu": "LOW — prioritize speed",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Initialize",
+          "line": 81,
+          "sourceExpression": "\"THẤP — ưu tiên tốc độ\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.quality.medium",
+      "vi": "VỪA — cân bằng",
+      "enu": "MEDIUM — balanced",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Initialize",
+          "line": 81,
+          "sourceExpression": "\"VỪA — cân bằng\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.quality.high",
+      "vi": "CAO — chi tiết",
+      "enu": "HIGH — detailed",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "Initialize",
+          "line": 81,
+          "sourceExpression": "\"CAO — chi tiết\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.reducedMotion",
+      "vi": "Giảm chuyển động",
+      "enu": "Reduce motion",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "reduced-motion",
+          "line": 83,
+          "sourceExpression": "text=\"Giảm chuyển động\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.reducedMotionHelp",
+      "vi": "Giảm rung camera và chuyển cảnh; tín hiệu chiến đấu vẫn hiển thị.",
+      "enu": "Reduce camera shake and transitions; combat cues remain visible.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:hint",
+          "line": 84,
+          "sourceExpression": "text=\"Giảm rung camera và chuyển cảnh; tín hiệu chiến đấu vẫn hiển thị.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.audio",
+      "vi": "Bật âm thanh",
+      "enu": "Enable audio",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "audio",
+          "line": 85,
+          "sourceExpression": "text=\"Bật âm thanh\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.hudScale",
+      "vi": "KÍCH THƯỚC HUD  ·  {percent}%",
+      "enu": "HUD SIZE  ·  {percent}%",
+      "arguments": [
+        "percent"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "ApplyPreferences",
+          "line": 135,
+          "sourceExpression": "\"KÍCH THƯỚC HUD  ·  \"+Mathf.RoundToInt(HudScale*100)+\"%\""
+        }
+      ],
+      "argumentSources": {
+        "percent": "Mathf.RoundToInt(HudScale*100).ToString()"
+      }
+    },
+    {
+      "key": "settings.hudRange",
+      "vi": "85% — gọn hơn                         115% — dễ đọc hơn",
+      "enu": "85% — compact                         115% — easier to read",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:hint",
+          "line": 88,
+          "sourceExpression": "text=\"85% — gọn hơn                         115% — dễ đọc hơn\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.navigationHelp",
+      "vi": "TAB / PHÍM MŨI TÊN hoặc D-PAD để chọn · ENTER / A để xác nhận",
+      "enu": "TAB / ARROW KEYS or D-PAD to navigate · ENTER / A to confirm",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:settings-help",
+          "line": 89,
+          "sourceExpression": "text=\"TAB / PHÍM MŨI TÊN hoặc D-PAD để chọn · ENTER / A để xác nhận\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.contextRace",
+      "vi": "Cuộc đua vẫn tiếp tục khi mở cài đặt. Xe ngừng nhận điều khiển.",
+      "enu": "The race continues while settings are open. Bike input is suspended.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "OpenSettings",
+          "line": 151,
+          "sourceExpression": "raceActive?\"Cuộc đua vẫn tiếp tục khi mở cài đặt. Xe ngừng nhận điều khiển.\":\"Tinh chỉnh để tìm nhịp đua phù hợp với bạn.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "settings.contextIdle",
+      "vi": "Tinh chỉnh để tìm nhịp đua phù hợp với bạn.",
+      "enu": "Adjust the settings to find your racing rhythm.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "member": "OpenSettings",
+          "line": 151,
+          "sourceExpression": "raceActive?\"Cuộc đua vẫn tiếp tục khi mở cài đặt. Xe ngừng nhận điều khiển.\":\"Tinh chỉnh để tìm nhịp đua phù hợp với bạn.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.title",
+      "vi": "MÀN HÌNH WINDOWS",
+      "enu": "WINDOWS DISPLAY",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 21,
+          "sourceExpression": "\"MÀN HÌNH WINDOWS\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.modeLabel",
+      "vi": "CHẾ ĐỘ",
+      "enu": "MODE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 22,
+          "sourceExpression": "\"CHẾ ĐỘ\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.windowed",
+      "vi": "Cửa sổ",
+      "enu": "Windowed",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 22,
+          "sourceExpression": "\"Cửa sổ\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.borderless",
+      "vi": "Toàn màn hình không viền",
+      "enu": "Borderless fullscreen",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 22,
+          "sourceExpression": "\"Toàn màn hình không viền\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.exclusive",
+      "vi": "Toàn màn hình độc quyền",
+      "enu": "Exclusive fullscreen",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 22,
+          "sourceExpression": "\"Toàn màn hình độc quyền\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.resolutionLabel",
+      "vi": "ĐỘ PHÂN GIẢI",
+      "enu": "RESOLUTION",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 27,
+          "sourceExpression": "\"ĐỘ PHÂN GIẢI\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.apply",
+      "vi": "ÁP DỤNG MÀN HÌNH",
+      "enu": "APPLY DISPLAY SETTINGS",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 29,
+          "sourceExpression": "\"ÁP DỤNG MÀN HÌNH\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.help",
+      "vi": "Độ phân giải lấy từ màn hình hiện tại. Chất lượng hình ảnh được chọn riêng.",
+      "enu": "Resolutions come from the current monitor. Graphics quality is selected separately.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Initialize",
+          "line": 30,
+          "sourceExpression": "\"Độ phân giải lấy từ màn hình hiện tại. Chất lượng hình ảnh được chọn riêng.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "display.requested",
+      "vi": "Đã yêu cầu {resolution} · {mode}. Windows áp dụng vào cuối frame.",
+      "enu": "Requested {resolution} · {mode}. Windows applies the change at the end of the frame.",
+      "arguments": [
+        "resolution",
+        "mode"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "member": "Apply",
+          "line": 43,
+          "sourceExpression": "\"Đã yêu cầu \" + resolution.value + \" · \" + mode.value + \". Windows áp dụng vào cuối frame.\""
+        }
+      ],
+      "argumentSources": {
+        "resolution": "resolution.value",
+        "mode": "mode.value"
+      }
+    },
+    {
+      "key": "practice.title",
+      "vi": "CHỌN HÀNH TRÌNH.",
+      "enu": "CHOOSE YOUR RIDE.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:content-title",
+          "line": 95,
+          "sourceExpression": "text=\"CHỌN HÀNH TRÌNH.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "practice.help",
+      "vi": "Luyện tập tự do với mọi xe và tay đua đã có. Kết quả không cộng vào hồ sơ máy chủ.",
+      "enu": "Practice freely with every available bike and rider. Results do not count toward your server profile.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:description",
+          "line": 96,
+          "sourceExpression": "text=\"Luyện tập tự do với mọi xe và tay đua đã có. Kết quả không cộng vào hồ sơ máy chủ.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "practice.courseLabel",
+      "vi": "TUYẾN ĐƯỜNG",
+      "enu": "ROUTE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-course",
+          "line": 97,
+          "sourceExpression": "label=\"TUYẾN ĐƯỜNG\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "practice.levelLabel",
+      "vi": "CẤP ĐỘ",
+      "enu": "LEVEL",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-level",
+          "line": 98,
+          "sourceExpression": "label=\"CẤP ĐỘ\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "practice.bikeLabel",
+      "vi": "MÔ TÔ",
+      "enu": "MOTORCYCLE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-bike",
+          "line": 99,
+          "sourceExpression": "label=\"MÔ TÔ\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "practice.riderLabel",
+      "vi": "TAY ĐUA",
+      "enu": "RIDER",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:vital-label",
+          "line": 38,
+          "sourceExpression": "text=\"TAY ĐUA\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-character",
+          "line": 100,
+          "sourceExpression": "label=\"TAY ĐUA\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "practice.levelChoice",
+      "vi": "CẤP {level}",
+      "enu": "LEVEL {level}",
+      "arguments": [
+        "level"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+          "member": "InitializeP08",
+          "line": 41,
+          "sourceExpression": "\"CẤP 1\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+          "member": "InitializeP08",
+          "line": 41,
+          "sourceExpression": "\"CẤP 2\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+          "member": "InitializeP08",
+          "line": 41,
+          "sourceExpression": "\"CẤP 3\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+          "member": "InitializeP08",
+          "line": 41,
+          "sourceExpression": "\"CẤP 4\""
+        },
+        {
+          "file": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+          "member": "InitializeP08",
+          "line": 41,
+          "sourceExpression": "\"CẤP 5\""
+        }
+      ],
+      "argumentSources": {
+        "level": "(index + 1).ToString()"
+      }
+    },
+    {
+      "key": "practice.start",
+      "vi": "LÊN ĐƯỜNG  >",
+      "enu": "HIT THE ROAD  >",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "practice-start",
+          "line": 101,
+          "sourceExpression": "text=\"LÊN ĐƯỜNG  >\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "content.heading",
+      "vi": "CHUẨN BỊ HÀNH TRÌNH.",
+      "enu": "PREPARING YOUR RIDE.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "unnamed:content-title",
+          "line": 106,
+          "sourceExpression": "text=\"CHUẨN BỊ HÀNH TRÌNH.\""
+        }
+      ],
+      "argumentSources": {}
+    },
+    {
+      "key": "content.defaultStatus",
+      "vi": "Đang tải nội dung cần dùng…",
+      "enu": "Loading the required content…",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "content-status",
+          "line": 107,
+          "sourceExpression": "text=\"Đang tải nội dung cần dùng…\""
+        }
+      ],
+      "argumentSources": {}
+    }
+  ]
+}

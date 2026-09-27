@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "boundary": "career",
+  "protectedTemplateTokens": {
+    "career.garage.restartConfirm": ["Spark 450"],
+    "career.notice.restart": ["Spark 450"],
+    "career.bike.compare": ["Spark 450", "km/h"],
+    "career.bike.stats": ["km/h", "m/s²"],
+    "career.account.securityHint": ["HTTPS"],
+    "career.error.httpsRequired": ["wss://", "TLS"]
+  },
+  "opaqueArgumentValues": ["bike", "player", "username", "realm", "endpoint", "code"],
+  "scope": "Authored proper names, protocol literals and physical units remain exact. Inserted catalog/player/protocol values are opaque; human display sentences are localized as whole templates."
+}

@@ -1,0 +1,1376 @@
+{
+  "schema": 1,
+  "scope": "Canonical Vietnamese semantic templates and source bindings only; no multilingual or rendered acceptance.",
+  "fileHashes": {
+    "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs": "086eb98c3d361ce16ff69fe7fa0db25489090be28b898495c41adba92a8e283a",
+    "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs": "d36d98135937a0e29f37f4c2f1953b9f1886222532c0e8ebba4c82f069f05684",
+    "Assets/RacingBois/UI/Race.uxml": "97c37af118d428db1871247aec9e219431d009399067cfc9c3ff0037025cca44"
+  },
+  "entries": [
+    {
+      "key": "multiplayer.level.current",
+      "vi": "CẤP {level} · HIỆN TẠI",
+      "arguments": [
+        "level"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "SetCareerLevel",
+          "sourceExpression": "\"CẤP \" + (careerLevel + 1) + \" · HIỆN TẠI\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.invite.received",
+      "vi": "Đã nhận lời mời {code}. Kết nối và chọn VÀO PHÒNG khi bạn sẵn sàng.",
+      "arguments": [
+        "code"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "PrefillInvite",
+          "sourceExpression": "\"Đã nhận lời mời \" + code + \". Kết nối và chọn VÀO PHÒNG khi bạn sẵn sàng.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.level.mismatch",
+      "vi": "Hồ sơ của bạn đang ở cấp {current}. Phòng vẫn giữ cấp {room}; hãy rời phòng và tạo chặng ở cấp hiện tại.",
+      "arguments": [
+        "current",
+        "room"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "RoomLevelHint",
+          "sourceExpression": "\"Hồ sơ của bạn đang ở cấp \" + (expected + 1) + \". Phòng vẫn giữ cấp \" + (session.Room.LevelIndex + 1) + \"; hãy rời phòng và tạo chặng ở cấp hiện tại.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.seat.waiting",
+      "vi": "{seat}   Đang chờ người chơi…",
+      "arguments": [
+        "seat"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render",
+          "sourceExpression": "(i + 1).ToString(\"00\") + \"   Đang chờ người chơi…\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.room.info",
+      "vi": "{players} / {capacity} NGƯỜI · {bots} MÁY\n{course} · CẤP {level}{visibility}",
+      "arguments": [
+        "players",
+        "capacity",
+        "bots",
+        "course",
+        "level",
+        "visibility"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render",
+          "sourceExpression": "room.Members.Count + \" / \" + room.MaxPlayers + \" NGƯỜI · \" + room.BotCount + \" MÁY\\n\" +\n                        CampaignCatalog.GetRoute(room.CourseIndex).DisplayName + \" · CẤP \" + (room.LevelIndex + 1) + (room.PublicRoom ? \" · CÔNG KHAI\" : \" · RIÊNG TƯ\")"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.invite.code",
+      "vi": "Mã phòng: {code}",
+      "arguments": [
+        "code"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render",
+          "sourceExpression": "\"Mã phòng: \"+room.Code"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.countdown",
+      "vi": "XUẤT PHÁT SAU {seconds}",
+      "arguments": [
+        "seconds"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render",
+          "sourceExpression": "\"XUẤT PHÁT SAU \" + seconds"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.finished",
+      "vi": "HẠNG {rank} · {seconds}s",
+      "arguments": [
+        "rank",
+        "seconds"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render",
+          "sourceExpression": "\"HẠNG \" + entry.Rank + \" · \" + (entry.FinishTick / 60f).ToString(\"0.0\") + \"s\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.wallet",
+      "vi": "{reward} · QUỸ ${credits}",
+      "arguments": [
+        "reward",
+        "credits"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render",
+          "sourceExpression": "(entry.Reward >= 0 ? \"+\" : \"\") + \"$\" + entry.Reward + \" · QUỸ $\" + entry.Credits"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.room.summary",
+      "vi": "{players} / {capacity} · CẤP {level}",
+      "arguments": [
+        "players",
+        "capacity",
+        "level"
+      ],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "RoomRow.Bind",
+          "sourceExpression": "entry.Players + \" / \" + entry.MaxPlayers + \" · CẤP \" + (entry.LevelIndex + 1)"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.validation.code",
+      "vi": "Mã phòng gồm 6 ký tự. Hãy kiểm tra lại mã bạn nhận được.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Mã phòng gồm 6 ký tự. Hãy kiểm tra lại mã bạn nhận được.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.validation.create",
+      "vi": "Chọn một tuyến đã mở và đặt tên phòng trước khi tiếp tục.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Chọn một tuyến đã mở và đặt tên phòng trước khi tiếp tục.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.validation.route",
+      "vi": "Tuyến này chưa sẵn sàng.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Tuyến này chưa sẵn sàng.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.level.guest",
+      "vi": "Phiên khách chỉ đua ở cấp 1. Rời phòng này rồi tạo hoặc vào phòng cấp 1.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Phiên khách chỉ đua ở cấp 1. Rời phòng này rồi tạo hoặc vào phòng cấp 1.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.content.incomplete",
+      "vi": "Nội dung đường đua chưa tải xong.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Nội dung đường đua chưa tải xong.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.title.saving",
+      "vi": "ĐANG LƯU KẾT QUẢ",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"ĐANG LƯU KẾT QUẢ\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.title.suspended",
+      "vi": "TẠM DỪNG KẾT NỐI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"TẠM DỪNG KẾT NỐI\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.title.reconnecting",
+      "vi": "ĐANG KẾT NỐI LẠI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"ĐANG KẾT NỐI LẠI\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.title.connecting",
+      "vi": "ĐANG KẾT NỐI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"ĐANG KẾT NỐI\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.title.results",
+      "vi": "CHẶNG ĐUA KHÉP LẠI.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"CHẶNG ĐUA KHÉP LẠI.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.title.browser",
+      "vi": "CÙNG LÊN ĐƯỜNG.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"CÙNG LÊN ĐƯỜNG.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.message.saving",
+      "vi": "Máy chủ đang xác nhận lưu điểm và phần thưởng. Vui lòng giữ kết nối.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Máy chủ đang xác nhận lưu điểm và phần thưởng. Vui lòng giữ kết nối.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.message.reconnecting",
+      "vi": "Chỗ của bạn được giữ trong thời gian kết nối lại. Về menu để kết thúc phiên.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Chỗ của bạn được giữ trong thời gian kết nối lại. Về menu để kết thúc phiên.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.message.results",
+      "vi": "Kết quả chính thức của phòng. Cùng trở về phòng chờ để bắt đầu chặng mới.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Kết quả chính thức của phòng. Cùng trở về phòng chờ để bắt đầu chặng mới.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.message.browser",
+      "vi": "Tạo cuộc đua của riêng bạn hoặc nhập mã để cùng bạn bè lên đường.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Tạo cuộc đua của riêng bạn hoặc nhập mã để cùng bạn bè lên đường.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.message.room",
+      "vi": "Mã phòng ở bên dưới. Mời bạn bè, chọn sẵn sàng và chờ chủ phòng xuất phát.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Mã phòng ở bên dưới. Mời bạn bè, chọn sẵn sàng và chờ chủ phòng xuất phát.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.member.you",
+      "vi": " · BẠN",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\" · BẠN\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.member.host",
+      "vi": " · CHỦ PHÒNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\" · CHỦ PHÒNG\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.member.guest",
+      "vi": "KHÁCH",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"KHÁCH\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.member.saved",
+      "vi": "HỒ SƠ ĐÃ LƯU",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"HỒ SƠ ĐÃ LƯU\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.member.held",
+      "vi": "GIỮ CHỖ",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"GIỮ CHỖ\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.ready",
+      "vi": "SẴN SÀNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"SẴN SÀNG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-ready.text",
+          "sourceExpression": "SẴN SÀNG"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.member.not-ready",
+      "vi": "CHƯA SẴN SÀNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"CHƯA SẴN SÀNG\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.seat.empty",
+      "vi": "CHỖ TRỐNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"CHỖ TRỐNG\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.ready.cancel",
+      "vi": "HỦY SẴN SÀNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"HỦY SẴN SÀNG\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.hint.countdown",
+      "vi": "Các tay đua đã sẵn sàng. Giữ nhịp, cuộc đua sắp bắt đầu.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Các tay đua đã sẵn sàng. Giữ nhịp, cuộc đua sắp bắt đầu.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.hint.not-ready",
+      "vi": "Bạn chưa sẵn sàng. Nhấn SẴN SÀNG để tham gia xuất phát.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Bạn chưa sẵn sàng. Nhấn SẴN SÀNG để tham gia xuất phát.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.hint.waiting",
+      "vi": "Đã sẵn sàng. Đang chờ những tay đua còn lại.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Đã sẵn sàng. Đang chờ những tay đua còn lại.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.hint.host",
+      "vi": "Tất cả đã sẵn sàng. Bạn có thể bắt đầu cuộc đua.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Tất cả đã sẵn sàng. Bạn có thể bắt đầu cuộc đua.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.hint.members",
+      "vi": "Tất cả đã sẵn sàng. Đang chờ chủ phòng xuất phát.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Tất cả đã sẵn sàng. Đang chờ chủ phòng xuất phát.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.content.preparing",
+      "vi": "Đang chuẩn bị nội dung đường đua…",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Đang chuẩn bị nội dung đường đua…\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.rematch",
+      "vi": "VỀ PHÒNG CHỜ",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"VỀ PHÒNG CHỜ\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-rematch.text",
+          "sourceExpression": "VỀ PHÒNG CHỜ"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.rematch.waiting",
+      "vi": "CHỜ CHỦ PHÒNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"CHỜ CHỦ PHÒNG\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.receiving",
+      "vi": "Đang nhận kết quả chính thức từ máy chủ…",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"Đang nhận kết quả chính thức từ máy chủ…\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.saved",
+      "vi": "ĐÃ LƯU KẾT QUẢ · Thưởng của phiên khách chỉ áp dụng trong phiên này.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"ĐÃ LƯU KẾT QUẢ · Thưởng của phiên khách chỉ áp dụng trong phiên này.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.pending",
+      "vi": "ĐANG CHỜ XÁC NHẬN LƯU · Chưa xác nhận phần thưởng vào hồ sơ.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"ĐANG CHỜ XÁC NHẬN LƯU · Chưa xác nhận phần thưởng vào hồ sơ.\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.busted",
+      "vi": "BỊ BẮT",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"BỊ BẮT\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.wrecked",
+      "vi": "HỎNG XE",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"HỎNG XE\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.result.incomplete",
+      "vi": "KHÔNG HOÀN THÀNH",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "MultiplayerLobbyView",
+          "sourceExpression": "\"KHÔNG HOÀN THÀNH\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.room.racing",
+      "vi": "ĐANG ĐUA",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "RoomRow.Bind",
+          "sourceExpression": "\"ĐANG ĐUA\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.room.full",
+      "vi": "ĐÃ ĐỦ NGƯỜI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "RoomRow.Bind",
+          "sourceExpression": "\"ĐÃ ĐỦ NGƯỜI\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.join",
+      "vi": "VÀO PHÒNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "RoomRow.Bind",
+          "sourceExpression": "\"VÀO PHÒNG\""
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-join.text",
+          "sourceExpression": "VÀO PHÒNG"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.room.public",
+      "vi": " · CÔNG KHAI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render visibility argument",
+          "sourceExpression": "\" · CÔNG KHAI\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.room.private",
+      "vi": " · RIÊNG TƯ",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "member": "Render visibility argument",
+          "sourceExpression": "\" · RIÊNG TƯ\""
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.room-full",
+      "vi": "Phòng đã đủ người. Hãy chọn phòng khác hoặc tạo phòng mới.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Phòng đã đủ người. Hãy chọn phòng khác hoặc tạo phòng mới.\"",
+          "serverCodes": [
+            "room_full"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.room-not-found",
+      "vi": "Không tìm thấy phòng. Kiểm tra lại mã hoặc làm mới danh sách.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Không tìm thấy phòng. Kiểm tra lại mã hoặc làm mới danh sách.\"",
+          "serverCodes": [
+            "room_not_found"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.room-started",
+      "vi": "Cuộc đua đã bắt đầu. Bạn có thể vào sau khi phòng trở về trạng thái chờ.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Cuộc đua đã bắt đầu. Bạn có thể vào sau khi phòng trở về trạng thái chờ.\"",
+          "serverCodes": [
+            "room_started",
+            "late_join_closed"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.host-only",
+      "vi": "Chỉ chủ phòng có thể thực hiện thao tác này.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Chỉ chủ phòng có thể thực hiện thao tác này.\"",
+          "serverCodes": [
+            "host_only"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.not-ready",
+      "vi": "Tất cả tay đua cần kết nối và sẵn sàng trước khi bắt đầu.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Tất cả tay đua cần kết nối và sẵn sàng trước khi bắt đầu.\"",
+          "serverCodes": [
+            "not_ready"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.invalid-name",
+      "vi": "Tên cần có từ 1 đến 24 ký tự và không chứa ký tự điều khiển.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Tên cần có từ 1 đến 24 ký tự và không chứa ký tự điều khiển.\"",
+          "serverCodes": [
+            "invalid_name"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.room-settings",
+      "vi": "Kiểm tra tên phòng và số đối thủ máy.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Kiểm tra tên phòng và số đối thủ máy.\"",
+          "serverCodes": [
+            "room_settings"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.course-unavailable",
+      "vi": "Tuyến đường này đang được phát triển. Hãy chọn Canyon Run.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Tuyến đường này đang được phát triển. Hãy chọn Canyon Run.\"",
+          "serverCodes": [
+            "course_unavailable"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.campaign-locked",
+      "vi": "Cấp này chưa mở cho hồ sơ của bạn. Hãy chọn cấp đã mở trong hành trình.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Cấp này chưa mở cho hồ sơ của bạn. Hãy chọn cấp đã mở trong hành trình.\"",
+          "serverCodes": [
+            "campaign_locked"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.repair-required",
+      "vi": "Xe đã hỏng. Rời phòng và sửa xe trong garage trước khi xuất phát.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Xe đã hỏng. Rời phòng và sửa xe trong garage trước khi xuất phát.\"",
+          "serverCodes": [
+            "repair_required"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.profile-busy",
+      "vi": "Hồ sơ đang có cuộc đua chưa lưu xong. Chờ kết quả rồi thử lại.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Hồ sơ đang có cuộc đua chưa lưu xong. Chờ kết quả rồi thử lại.\"",
+          "serverCodes": [
+            "profile_busy"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.profile-revoked",
+      "vi": "Phiên hồ sơ đã hết hạn hoặc được thu hồi. Vào tài khoản để đăng nhập lại.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Phiên hồ sơ đã hết hạn hoặc được thu hồi. Vào tài khoản để đăng nhập lại.\"",
+          "serverCodes": [
+            "profile_revoked"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.already-in-room",
+      "vi": "Bạn đang ở một phòng. Hãy rời phòng đó trước.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Bạn đang ở một phòng. Hãy rời phòng đó trước.\"",
+          "serverCodes": [
+            "already_in_room"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.profile-in-room",
+      "vi": "Hồ sơ này đang giữ chỗ ở phiên khác. Dùng Khách mới để thêm một người chơi riêng.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Hồ sơ này đang giữ chỗ ở phiên khác. Dùng Khách mới để thêm một người chơi riêng.\"",
+          "serverCodes": [
+            "profile_in_room"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.profile-unavailable",
+      "vi": "Chưa đọc được hồ sơ trên máy chủ. Hãy thử lại sau hoặc chọn Khách mới.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Chưa đọc được hồ sơ trên máy chủ. Hãy thử lại sau hoặc chọn Khách mới.\"",
+          "serverCodes": [
+            "profile_unavailable",
+            "profile_storage_unavailable"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.resume-expired",
+      "vi": "Thời gian giữ chỗ đã hết. Hãy kết nối lại và vào một phòng mới.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Thời gian giữ chỗ đã hết. Hãy kết nối lại và vào một phòng mới.\"",
+          "serverCodes": [
+            "resume_expired"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.resume-owner",
+      "vi": "Phiên đã được mở ở nơi khác. Chọn Khách mới để chơi riêng.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Phiên đã được mở ở nơi khác. Chọn Khách mới để chơi riêng.\"",
+          "serverCodes": [
+            "resume_owner",
+            "session_replaced"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.version-mismatch",
+      "vi": "Bản game và máy chủ khác phiên bản. Tải lại trang hoặc cập nhật gói LAN.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Bản game và máy chủ khác phiên bản. Tải lại trang hoặc cập nhật gói LAN.\"",
+          "serverCodes": [
+            "version_mismatch"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.server-full",
+      "vi": "Máy chủ đang đầy. Hãy thử lại sau.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Máy chủ đang đầy. Hãy thử lại sau.\"",
+          "serverCodes": [
+            "server_full",
+            "hello_capacity",
+            "profile_capacity"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.room-capacity",
+      "vi": "Máy chủ đã đủ phòng. Hãy vào một phòng còn chỗ.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Máy chủ đã đủ phòng. Hãy vào một phòng còn chỗ.\"",
+          "serverCodes": [
+            "room_capacity"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.persistence-pending",
+      "vi": "Máy chủ đang chuẩn bị. Vui lòng chờ một chút.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Máy chủ đang chuẩn bị. Vui lòng chờ một chút.\"",
+          "serverCodes": [
+            "persistence_pending",
+            "start_pending"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.persistence-queue-full",
+      "vi": "Máy chủ đang bận lưu dữ liệu. Hãy thử lại sau.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Máy chủ đang bận lưu dữ liệu. Hãy thử lại sau.\"",
+          "serverCodes": [
+            "persistence_queue_full",
+            "persistence_unavailable"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.result-save-retry",
+      "vi": "Máy chủ đang thử lưu lại kết quả. Giữ phiên này để nhận xác nhận.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Máy chủ đang thử lưu lại kết quả. Giữ phiên này để nhận xác nhận.\"",
+          "serverCodes": [
+            "result_save_retry"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.start-cancelled",
+      "vi": "Đếm ngược đã hủy vì thành viên hoặc chủ phòng thay đổi.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Đếm ngược đã hủy vì thành viên hoặc chủ phòng thay đổi.\"",
+          "serverCodes": [
+            "start_cancelled"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.result-required",
+      "vi": "Cuộc đua chưa kết thúc. Vui lòng chờ kết quả chính thức.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Cuộc đua chưa kết thúc. Vui lòng chờ kết quả chính thức.\"",
+          "serverCodes": [
+            "result_required"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.command-rate",
+      "vi": "Bạn thao tác quá nhanh. Chờ một chút rồi thử lại.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Bạn thao tác quá nhanh. Chờ một chút rồi thử lại.\"",
+          "serverCodes": [
+            "command_rate"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.not-room-member",
+      "vi": "Bạn không còn ở phòng này. Hãy làm mới danh sách và vào lại.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Bạn không còn ở phòng này. Hãy làm mới danh sách và vào lại.\"",
+          "serverCodes": [
+            "not_room_member"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.error.unknown",
+      "vi": "Không thực hiện được yêu cầu này. Hãy thử lại hoặc kết nối lại máy chủ.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "member": "MultiplayerCopy.Error",
+          "sourceExpression": "\"Không thực hiện được yêu cầu này. Hãy thử lại hoặc kết nối lại máy chủ.\"",
+          "serverCodes": []
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.heading.eyebrow",
+      "vi": "RACING BOIS / CÙNG LÊN ĐƯỜNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-eyebrow.text",
+          "sourceExpression": "RACING BOIS / CÙNG LÊN ĐƯỜNG"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.heading.initial-title",
+      "vi": "PHÒNG ĐUA",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-title.text",
+          "sourceExpression": "PHÒNG ĐUA"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.menu.return",
+      "vi": "VỀ MENU",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-disconnect.text",
+          "sourceExpression": "VỀ MENU"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.create-heading",
+      "vi": "TẠO PHÒNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-create-heading.text",
+          "sourceExpression": "TẠO PHÒNG"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.room-name-label",
+      "vi": "Tên phòng",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-room-name-label.text",
+          "sourceExpression": "Tên phòng"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.bot-label",
+      "vi": "Đối thủ máy",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-bot-label.text",
+          "sourceExpression": "Đối thủ máy"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.public-toggle",
+      "vi": "Hiện trong danh sách phòng",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-public.text",
+          "sourceExpression": "Hiện trong danh sách phòng"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.route-label",
+      "vi": "Tuyến đường",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-route-label.text",
+          "sourceExpression": "Tuyến đường"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.profile-level-label",
+      "vi": "Cấp hiện tại của hồ sơ",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-profile-level-label.text",
+          "sourceExpression": "Cấp hiện tại của hồ sơ"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.create",
+      "vi": "TẠO PHÒNG  >",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-create.text",
+          "sourceExpression": "TẠO PHÒNG  >"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.invite-heading",
+      "vi": "CÓ MÃ TỪ BẠN BÈ?",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-invite-heading.text",
+          "sourceExpression": "CÓ MÃ TỪ BẠN BÈ?"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.join-code-hint",
+      "vi": "Nhập 6 ký tự của phòng",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-join-code-hint.text",
+          "sourceExpression": "Nhập 6 ký tự của phòng"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.room-list-heading",
+      "vi": "PHÒNG TRÊN MÁY CHỦ",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-room-list-heading.text",
+          "sourceExpression": "PHÒNG TRÊN MÁY CHỦ"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.refresh",
+      "vi": "LÀM MỚI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-refresh.text",
+          "sourceExpression": "LÀM MỚI"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.browser.empty-rooms",
+      "vi": "Chưa có phòng. Tạo một phòng và gửi mã cho bạn bè.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-empty.text",
+          "sourceExpression": "Chưa có phòng. Tạo một phòng và gửi mã cho bạn bè."
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.room.invite-code-label",
+      "vi": "MÃ MỜI BẠN BÈ",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-invite-code-label.text",
+          "sourceExpression": "MÃ MỜI BẠN BÈ"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.invite.copy",
+      "vi": "SAO CHÉP LỜI MỜI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-copy-invite.text",
+          "sourceExpression": "SAO CHÉP LỜI MỜI"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.invite.link-hint",
+      "vi": "Chọn và sao chép liên kết này để mời bạn bè.",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-invite-link.tooltip",
+          "sourceExpression": "Chọn và sao chép liên kết này để mời bạn bè."
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.start",
+      "vi": "BẮT ĐẦU",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-start.text",
+          "sourceExpression": "BẮT ĐẦU"
+        }
+      ]
+    },
+    {
+      "key": "multiplayer.leave",
+      "vi": "RỜI PHÒNG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-leave.text",
+          "sourceExpression": "RỜI PHÒNG"
+        },
+        {
+          "file": "Assets/RacingBois/UI/Race.uxml",
+          "member": "mp-result-leave.text",
+          "sourceExpression": "RỜI PHÒNG"
+        }
+      ]
+    }
+  ],
+  "fiveLocaleTranslationsComplete": false,
+  "visualAccepted": false
+}

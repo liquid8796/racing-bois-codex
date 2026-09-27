@@ -24,6 +24,9 @@
 **/vendor/
 **/_deps/
 /_local/
+# Owned rendering copies contain protected user font data; keep only their receipts in Git.
+/Assets/RacingBois/Diagnostics/OwnedUiReview/
+/Assets/RacingBois/Diagnostics/OwnedUiReview.meta
 # Preserve uncommitted font bytes locally; publish only the scoped probe reports.
 /docs/p10/native-baseline/font-copy-probe-*/*.asset
 /docs/p10/native-baseline/font-copy-probe-*/*.asset.meta

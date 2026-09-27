@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "utc": "2026-09-27T22:07:30.307755+00:00",
+  "scope": "Explicit reviewed overlay generation and comment-only source pointer; no new native or visual acceptance",
+  "passed": true,
+  "cleanCheckoutInputsNotIgnored": true,
+  "generatedOnlyStage": true,
+  "checks": [
+    {
+      "command": "python tools/p08/media/global-copy-pristine-amendment/effective_generate.py --check-live",
+      "exitCode": 0,
+      "output": "{\"passed\": true, \"revision\": 2, \"generatedSha256\": \"3a3d3dd9a84be09aab6b004cda6911def3dd6c9c50d34d84a5ad4fa029b36dce\", \"careerCells\": 906, \"unionCells\": 5550, \"changedTranslationCells\": 1, \"wroteProduction\": false, \"checkedLive\": true}"
+    },
+    {
+      "command": "python tools/p08/media/global-copy-pristine-amendment/test_effective_generation.py ",
+      "exitCode": 0,
+      "output": "{\"passed\": true, \"controls\": 12, \"cases\": [\"exact_active_generation\", \"comment_only_vs_native_revision1\", \"legacy_entry_cannot_revert\", \"wrong_revision\", \"stale_locale_hash\", \"missing_locale\", \"stale_output_hash\", \"stale_union_hash\", \"no_amendment\", \"second_changed_cell\", \"extra_key\", \"canonical_source_drift\"], \"wroteProduction\": false}"
+    }
+  ],
+  "managedCellChecks": "PASS 5550 frozen-union cells and2364 global lookups, one explicit ENU cell",
+  "inputs": [
+    {
+      "path": "tools/p08/media/global-copy-career-staging/VI.json",
+      "sha256": "1529d3a2ecca24b04aed5b8c486325223edae019ab16ebab4525c542304c96e9"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/canonical-source.json",
+      "sha256": "a218856531fc62e289dfa42fb931a850ae40d3e6448284c328b692dd49e44109"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/generate.py",
+      "sha256": "0af6d97db24633ebc6eade44600b6822b3c5a346c231f046bca64a3c4536aa67"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/DEU.json",
+      "sha256": "9dd0cece2926bdd9472ac044a80372b6b63992e8a187fc19b7b831630314395e"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/ESP.json",
+      "sha256": "5bf42503750eddb7cff4e35d8b2f274adf3399463d2964857f963e5dc5b4ea1f"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/FRA.json",
+      "sha256": "822c2035e2c5bddcda8265c82f440a3d92d45959a4af52562006760568443511"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/ITA.json",
+      "sha256": "f7d65704c6b5e9b76c3b50f682703daf0747ba0773db2ada557b0c9402c935d4"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/protected-tokens.json",
+      "sha256": "33a3ec0efdda5bea87a240d81ecd1ddd12b16aa94f0a528790a3f2ddebf5aea2"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/ENU.json",
+      "sha256": "a5192c7abc334dc48c1040294cb856d01a2b64175ed3f527e848f393557e8719"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/UiText.Career.Generated.cs",
+      "sha256": "3a3d3dd9a84be09aab6b004cda6911def3dd6c9c50d34d84a5ad4fa029b36dce"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/authored-text-union.json",
+      "sha256": "ab4c6c3b3ecffb435fc855ea066a85964e85e1b485398dc629b8d0e2100828b1"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/ENU.json",
+      "sha256": "c88fb931ce483c63ba5aca505ec43a42ac46a6be72d8083fc2b5ac301d6af81b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/UiText.Career.Generated.cs",
+      "sha256": "8a7cb783a00c37aa0aa304468db3a74b7c7b94b5e96969b07717f710ac0df80d"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/authored-text-union.json",
+      "sha256": "59ca10612da4deee68194d7f01bdbddbec22173ce8581afcd0965b47fc4234da"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/current-overlay.json",
+      "sha256": "8b99f06f8d10a24e71f4316ece62a6cc79f679cf46fff0bc262593b10a898d69"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/effective_generate.py",
+      "sha256": "0b257eec369e048fb972c59a52b4ce3ce7682b6c1e7018e56b3a8578c5740266"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/handoff.json",
+      "sha256": "030ed9b15102e2788569fcc7b1fbf71b704ff3755b1e91c84bdf1aaa137ef85c"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/install.py",
+      "sha256": "1751b05a2d1c6d31f3eaa15daf4915ee0ffe49e870c11152e1452b2e582725ab"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/test_effective_generation.py",
+      "sha256": "82c6ab4dbdb7a00d99930bbb08aafd247cce60b827300c5a3b0c1e897601816e"
+    }
+  ]
+}

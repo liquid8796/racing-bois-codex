@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "boundary": "career",
+  "passed": true,
+  "localeOrder": [
+    "ENU",
+    "DEU",
+    "ESP",
+    "FRA",
+    "ITA",
+    "VI"
+  ],
+  "keysPerLocale": 151,
+  "explicitCells": 906,
+  "viExpressionAssertions": 288773,
+  "sixLocaleAssertions": 3926,
+  "generationNegativeControls": 15,
+  "managedCompileWarnings": 0,
+  "managedCompileErrors": 0,
+  "source": {
+    "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+    "sha256": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819"
+  },
+  "inputs": [
+    {
+      "path": "tools/p08/media/global-copy-career-staging/canonical-source.json",
+      "sha256": "a218856531fc62e289dfa42fb931a850ae40d3e6448284c328b692dd49e44109"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/CareerView.cs",
+      "sha256": "47f78d8cfdfa4bcc819a522517c0fd6a3873bca2595287d82a686d3039677905"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/CareerView.cs.meta",
+      "sha256": "497821feb5ac7eede4f8372fc158658dcee286d9617a5b1bdfbfb5664dcc8b25"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/checks/CareerVietnameseFixture.cs",
+      "sha256": "05b06d785e56966ae6d58fec8c38ff3f21193d82204123d599f988033e4d710c"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/checks/ExpressionEquivalence.cs",
+      "sha256": "9c766471dc41d96e7d6543f0b1d365c0537da1cd062c832cb6bd9fcb5ad2ec26"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/copy-tests.json",
+      "sha256": "34887fd9f0604dc385a9839e311606b4d70b384228dccce0b7bafe113b67d10f"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/CopyTests.cs",
+      "sha256": "4f6a92c0bd9145f01f431a052af6f40f7e739558ca183dcf7a8ef3ed293ff6fd"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/CopyTests.csproj",
+      "sha256": "f8f8239f1c2493878088e37ccba0552e89d5755d90b2df379896d36c39197721"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/coverage.json",
+      "sha256": "3206323e67349c0c9cd72cf847874d08eac77288eb60aecc13e86ab9c0e046ed"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/Directory.Build.props",
+      "sha256": "376b9319d21fb1b72785cd24c59a6206c627539dc6e08be9de54e18124be3d37"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/expression-equivalence.json",
+      "sha256": "0daa1015d6f761abc0b833febde79482df757cda58c159004f476b8da78dda6b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/ExpressionEquivalence.csproj",
+      "sha256": "968ea370a15a95265e93831e4d197e8f506bda9355c1f0d13e0a6373b06b6c8f"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/generate.py",
+      "sha256": "d91acd7f4c1d8adf18365b08968264ce5c12dbb8ba498b17d53ca3a61472d617"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/generate_equivalence_checks.py",
+      "sha256": "cc295d7e7083c3b7eafe000b82da7243470ee372171f325c744fcd2ae0f0d571"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/generation-controls.json",
+      "sha256": "4f1330b677a91b9a75b4134746df4ab47eaf16d0980c4a0e163d2b2dd0ad287a"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/DEU.json",
+      "sha256": "845d4dd4b4fd97dd822162ab09ce8fba618313b9c91bb6a1094284635b71aef8"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/ENU.json",
+      "sha256": "7d225450952fce44f55da1ac125e40d706701d448d3782936c590cb970e130f0"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/ESP.json",
+      "sha256": "7992d2bd3ff317d722460a73906cdfe10a80dab6cbee7d93528c0cb648117f93"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/FRA.json",
+      "sha256": "72f0d7673112bb4d5251fe3e3943546fc6e4c46e27e1eb6ccccc000b9c1d504c"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/locales/ITA.json",
+      "sha256": "a2cf94bdbe99d3d92d9380c6665a73be093577f2654d8d1268a226d9ba4ebd84"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/preflight-build.txt",
+      "sha256": "6d1882fcdd504ace081440745efb1c04d44bd110c01058bfeac00dcf1e30754d"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/preflight-production-build.txt",
+      "sha256": "11f0ffc07c71fc5dc6f08790ebe4344fcfe8387b133cdddddc61d84edddcfbd2"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/Preflight.csproj",
+      "sha256": "4bddb25746b6b2a8fbf6d639163927a3a016afa3216b6cbd5913233d560ab666"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/prepare_templates.py",
+      "sha256": "1a8bf3a7a893ef5f47831d8f582e03460e4ed8a87324aef011d9be2a0c8d5af7"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/production-expression-equivalence.json",
+      "sha256": "0daa1015d6f761abc0b833febde79482df757cda58c159004f476b8da78dda6b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/ProductionExpressionEquivalence.csproj",
+      "sha256": "d17ec12a748e999bd949f7e793bb2c2d318202b0d38c02a7ab696978132536e0"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/protected-tokens.json",
+      "sha256": "33a3ec0efdda5bea87a240d81ecd1ddd12b16aa94f0a528790a3f2ddebf5aea2"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/README.md",
+      "sha256": "84b937df9c0e6266bdeaea2cc0ea9b8fdc7f9b1a60d581bbd6fd070874734c20"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/source-bindings.json",
+      "sha256": "e28baa24342c80fa1c0381057994da2067a35521bf2023db8530bb1fc9a5ef10"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/stage_view.py",
+      "sha256": "1515391c4117456dc41d0fb9e5b2a9ac647cdf3fc13327364f6d110bea021587"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/templates-freeze.json",
+      "sha256": "73f7459c3e5c025590ff1a550fd6a3131e49fb20e4da87aadb2664f2a589adaa"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/test_generation.py",
+      "sha256": "b3243a0c10808b28dfaf7ee49d62901d6e9aaa726fee5f12c16835e84432c3c6"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/UiText.Career.Generated.cs",
+      "sha256": "8a7cb783a00c37aa0aa304468db3a74b7c7b94b5e96969b07717f710ac0df80d"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/UiText.Career.Generated.cs.meta",
+      "sha256": "f551ea1b8fec96eff323d5c6fd648f4be472e569929cff116dbd4c1899cf4edf"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/VI-source.tsv",
+      "sha256": "15556f4fe8c25c18d7ed98c3e106dec7fecd4b9fdf44643e798e83c526db587b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-career-staging/VI.json",
+      "sha256": "bfdacca598881dfda9c2a6a4e309b99418ea3feca32498130795754824a9b4c2"
+    },
+    {
+      "path": "tools/p08/media/global-copy-main-staging/DisplayLanguage.cs",
+      "sha256": "1da2e4c0d9c201859280d3fb0e9e412aa8db764e3db25de53f3e2dabd4764a68"
+    },
+    {
+      "path": "tools/p08/media/global-copy-main-staging/UiText.cs",
+      "sha256": "0d3a39e2ab8b64a836396cb28dbe327e6baee69348da2679217570a2dcb23479"
+    },
+    {
+      "path": "tools/p08/media/global-copy-main-staging/UiText.Main.Generated.cs",
+      "sha256": "a7e1429ebb76418f6445be9fedb54622d4466f6fc39a23334db3d44671365f0b"
+    }
+  ],
+  "nativeValidation": false,
+  "linguisticAcceptance": false,
+  "layoutAcceptance": false,
+  "installed": false,
+  "scope": "Staged full Career translations, source-expression preservation and managed integration checks. Native UI rendering/state/readability and whole-game acceptance remain separate."
+}

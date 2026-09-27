@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><EnableDefaultCompileItems>false</EnableDefaultCompileItems><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../../../src/Shared/RacingBois.Gameplay.Definitions/RacingBois.Gameplay.Definitions.csproj" /></ItemGroup>
+  <ItemGroup>
+    <Compile Include="DisplayLanguage.cs" /><Compile Include="UiText.cs" /><Compile Include="UiText.Main.Generated.cs" />
+    <Compile Include="../global-copy-client-staging/UiText.ClientMessages.Generated.cs" />
+    <Compile Include="../global-copy-career-staging/UiText.Career.Generated.cs" />
+    <Compile Include="../global-copy-multiplayer-staging/UiText.Multiplayer.Generated.cs" />
+    <Compile Include="CinematicText.cs" /><Compile Include="../../../../Assets/RacingBois/Client/Application/CinematicText.Generated.cs" />
+    <Compile Include="../../../../Assets/RacingBois/Client/Application/CinematicCatalog.cs" /><Compile Include="CoreTests.cs" />
+  </ItemGroup>
+</Project>

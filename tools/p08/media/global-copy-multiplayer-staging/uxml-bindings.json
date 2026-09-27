@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "owner": "shared main stage; do not edit Race.uxml from this module",
+  "bindings": [
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-eyebrow",
+      "attribute": "text",
+      "key": "multiplayer.heading.eyebrow",
+      "vi": "RACING BOIS / CÙNG LÊN ĐƯỜNG"
+    },
+    {
+      "elementType": "Label",
+      "existingName": "mp-title",
+      "suggestedName": "mp-title",
+      "attribute": "text",
+      "key": "multiplayer.heading.initial-title",
+      "vi": "PHÒNG ĐUA"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-disconnect",
+      "suggestedName": "mp-disconnect",
+      "attribute": "text",
+      "key": "multiplayer.menu.return",
+      "vi": "VỀ MENU"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-create-heading",
+      "attribute": "text",
+      "key": "multiplayer.browser.create-heading",
+      "vi": "TẠO PHÒNG"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-room-name-label",
+      "attribute": "text",
+      "key": "multiplayer.browser.room-name-label",
+      "vi": "Tên phòng"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-bot-label",
+      "attribute": "text",
+      "key": "multiplayer.browser.bot-label",
+      "vi": "Đối thủ máy"
+    },
+    {
+      "elementType": "Toggle",
+      "existingName": "mp-public",
+      "suggestedName": "mp-public",
+      "attribute": "text",
+      "key": "multiplayer.browser.public-toggle",
+      "vi": "Hiện trong danh sách phòng"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-route-label",
+      "attribute": "text",
+      "key": "multiplayer.browser.route-label",
+      "vi": "Tuyến đường"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-profile-level-label",
+      "attribute": "text",
+      "key": "multiplayer.browser.profile-level-label",
+      "vi": "Cấp hiện tại của hồ sơ"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-create",
+      "suggestedName": "mp-create",
+      "attribute": "text",
+      "key": "multiplayer.browser.create",
+      "vi": "TẠO PHÒNG  >"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-invite-heading",
+      "attribute": "text",
+      "key": "multiplayer.browser.invite-heading",
+      "vi": "CÓ MÃ TỪ BẠN BÈ?"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-join-code-hint",
+      "attribute": "text",
+      "key": "multiplayer.browser.join-code-hint",
+      "vi": "Nhập 6 ký tự của phòng"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-join",
+      "suggestedName": "mp-join",
+      "attribute": "text",
+      "key": "multiplayer.join",
+      "vi": "VÀO PHÒNG"
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-room-list-heading",
+      "attribute": "text",
+      "key": "multiplayer.browser.room-list-heading",
+      "vi": "PHÒNG TRÊN MÁY CHỦ"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-refresh",
+      "suggestedName": "mp-refresh",
+      "attribute": "text",
+      "key": "multiplayer.browser.refresh",
+      "vi": "LÀM MỚI"
+    },
+    {
+      "elementType": "Label",
+      "existingName": "mp-empty",
+      "suggestedName": "mp-empty",
+      "attribute": "text",
+      "key": "multiplayer.browser.empty-rooms",
+      "vi": "Chưa có phòng. Tạo một phòng và gửi mã cho bạn bè."
+    },
+    {
+      "elementType": "Label",
+      "existingName": null,
+      "suggestedName": "mp-copy-invite-code-label",
+      "attribute": "text",
+      "key": "multiplayer.room.invite-code-label",
+      "vi": "MÃ MỜI BẠN BÈ"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-copy-invite",
+      "suggestedName": "mp-copy-invite",
+      "attribute": "text",
+      "key": "multiplayer.invite.copy",
+      "vi": "SAO CHÉP LỜI MỜI"
+    },
+    {
+      "elementType": "TextField",
+      "existingName": "mp-invite-link",
+      "suggestedName": "mp-invite-link",
+      "attribute": "tooltip",
+      "key": "multiplayer.invite.link-hint",
+      "vi": "Chọn và sao chép liên kết này để mời bạn bè."
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-ready",
+      "suggestedName": "mp-ready",
+      "attribute": "text",
+      "key": "multiplayer.ready",
+      "vi": "SẴN SÀNG"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-start",
+      "suggestedName": "mp-start",
+      "attribute": "text",
+      "key": "multiplayer.start",
+      "vi": "BẮT ĐẦU"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-leave",
+      "suggestedName": "mp-leave",
+      "attribute": "text",
+      "key": "multiplayer.leave",
+      "vi": "RỜI PHÒNG"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-rematch",
+      "suggestedName": "mp-rematch",
+      "attribute": "text",
+      "key": "multiplayer.rematch",
+      "vi": "VỀ PHÒNG CHỜ"
+    },
+    {
+      "elementType": "Button",
+      "existingName": "mp-result-leave",
+      "suggestedName": "mp-result-leave",
+      "attribute": "text",
+      "key": "multiplayer.leave",
+      "vi": "RỜI PHÒNG"
+    }
+  ]
+}

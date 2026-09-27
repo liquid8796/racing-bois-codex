@@ -1,0 +1,107 @@
+0	common.done	DONE	XONG
+1	common.cancel	CANCEL	HỦY
+2	common.confirm	CONFIRM	XÁC NHẬN
+3	common.refresh	REFRESH	LÀM MỚI
+4	common.retry	RETRY	THỬ LẠI
+5	common.backMenu	BACK TO MENU	VỀ MENU
+6	menu.careerOpen	GARAGE / PROFILE	GARAGE / HỒ SƠ
+7	menu.galleryOpen	STORIES	CÂU CHUYỆN
+8	settings.open	SETTINGS	CÀI ĐẶT
+9	menu.offlinePractice	OFFLINE PRACTICE	LUYỆN TẬP OFFLINE
+10	menu.raceStart	START RACE	VÀO CUỘC ĐUA
+11	menu.practiceChoose	CHOOSE ROUTE / BIKE	CHỌN TUYẾN / XE
+12	menu.networkOpen	ONLINE / LAN	ONLINE / LAN
+13	menu.networkClose	CLOSE CONNECTION PANEL	ĐÓNG KẾT NỐI
+14	menu.playerNameLabel	RIDER NAME	TÊN TAY ĐUA
+15	menu.endpointLabel	ONLINE / LAN SERVER ADDRESS	ĐỊA CHỈ MÁY CHỦ ONLINE / LAN
+16	menu.connectSaved	SAVED PROFILE	HỒ SƠ ĐÃ LƯU
+17	menu.connectGuest	NEW GUEST	KHÁCH MỚI
+18	menu.connect	CONNECT	KẾT NỐI
+19	menu.connecting	CONNECTING...	ĐANG KẾT NỐI...
+20	menu.practiceDisclaimer	Practice results do not count toward your server profile.	Kết quả luyện tập không cộng vào hồ sơ máy chủ.
+21	menu.profileHelp	Profiles are saved on the server; New guest creates a separate player.	Hồ sơ lưu trên máy chủ; Khách mới tạo một người chơi riêng.
+22	menu.level	LEVEL {level} /	CẤP {level} /
+23	connection.ready	READY TO RIDE	SẴN SÀNG LÊN ĐƯỜNG
+24	connection.connecting	CONNECTING	ĐANG KẾT NỐI
+25	connection.reconnecting	RECONNECTING	ĐANG KẾT NỐI LẠI
+26	connection.onlineLan	ONLINE / LAN	ONLINE / LAN
+27	connection.latency	ONLINE / {milliseconds} MS	ONLINE / {milliseconds} MS
+28	connection.highLatency	HIGH LATENCY / {milliseconds} MS	ĐỘ TRỄ CAO / {milliseconds} MS
+29	connection.local	SOLO / OFFLINE	CHƠI ĐƠN / OFFLINE
+30	connection.server	CONNECTED TO SERVER	ĐÃ KẾT NỐI MÁY CHỦ
+31	hud.positionLabel	POSITION	VỊ TRÍ
+32	hud.riderLabel	RIDER	TAY ĐUA
+33	hud.bikeLabel	BIKE	XE
+34	hud.weapon.club	CLUB	GẬY
+35	hud.weapon.chain	CHAIN	DÂY XÍCH
+36	hud.weapon.fist	BARE HANDS	TAY KHÔNG
+37	hud.cruise.on	CRUISE: ON	GIỮ GA: BẬT
+38	hud.cruise.off	CRUISE: OFF	GIỮ GA: TẮT
+39	hud.leave	LEAVE RACE	RỜI CUỘC ĐUA
+40	hud.mode.attacking	ATTACKING	ĐANG RA ĐÒN
+41	hud.mode.hit	HIT	TRÚNG ĐÒN
+42	hud.mode.airborne	AIRBORNE	RỜI MẶT ĐƯỜNG
+43	hud.mode.falling	LOSING BALANCE	MẤT THĂNG BẰNG
+44	hud.mode.detached	GETTING UP	ĐỨNG DẬY
+45	hud.mode.running	RUNNING TO BIKE	CHẠY VỀ XE
+46	hud.mode.remounting	REMOUNTING	LÊN XE
+47	hud.mode.wrecked	BIKE WRECKED	XE HƯ HỎNG
+48	hud.mode.busted	BUSTED BY POLICE	BỊ CẢNH SÁT BẮT
+49	hud.mode.finished	FINISHED	ĐÃ VỀ ĐÍCH
+50	hud.mode.riding	RACING	ĐANG ĐUA
+51	hud.recovery.running	Your rider is running back to the bike. The race continues.	Tay đua đang chạy về xe. Cuộc đua vẫn tiếp tục.
+52	hud.recovery.calm	Stay calm. Find your rhythm again.	Giữ bình tĩnh. Lấy lại nhịp đua.
+53	hud.event.hitOther	HIT LANDED	ĐÁNH TRÚNG
+54	hud.event.gotHit	HIT TAKEN	TRÚNG ĐÒN
+55	hud.event.weaponChanged	WEAPON CHANGED	ĐỔI VŨ KHÍ
+56	hud.event.remounted	BACK IN THE RACE	TRỞ LẠI CUỘC ĐUA
+57	hud.event.landed	LANDED	TIẾP ĐẤT
+58	controls.leftStick	LEFT STICK	CẦN TRÁI
+59	controls.throttleBrake	Throttle/Brake	Ga/Phanh
+60	controls.steer	Steer	Lái
+61	controls.attack	Attack	Đánh
+62	controls.kick	Kick	Đá
+63	results.practiceHeading	RESULTS / PRACTICE	KẾT QUẢ / LUYỆN TẬP
+64	results.qualified	STAGE CLEARED.	VƯỢT QUA CHẶNG.
+65	results.finished	FINISHED.	VỀ ĐÍCH.
+66	results.busted	BUSTED.	BỊ BẮT.
+67	results.wrecked	BIKE WRECKED.	XE HƯ HỎNG.
+68	results.finishDetail	Rank {rank} · {seconds} seconds\nSession practice reward: ${reward}	Hạng {rank} · {seconds} giây\nThưởng luyện tập trong phiên: ${reward}
+69	results.fineDetail	Session practice fine: ${fine}	Tiền phạt luyện tập trong phiên: ${fine}
+70	results.wreckDetail	The race is over. Try again with a better line.	Cuộc đua kết thúc. Thử lại với một đường chạy tốt hơn.
+71	results.practiceFunds	\nSession practice funds: ${credits}	\nQuỹ luyện tập trong phiên: ${credits}
+72	results.restart	RACE AGAIN  >	ĐUA LẠI  >
+73	settings.eyebrow	AT YOUR PACE	THEO NHỊP CỦA BẠN
+74	settings.title	SETTINGS.	CÀI ĐẶT.
+75	settings.qualityLabel	GRAPHICS QUALITY	CHẤT LƯỢNG HÌNH ẢNH
+76	settings.qualityHelp	Medium offers a balanced experience. Lower the quality if frame pacing is uneven.	Mức Vừa dành cho trải nghiệm cân bằng. Giảm chất lượng nếu nhịp hình chưa ổn định.
+77	settings.quality.low	LOW — prioritize speed	THẤP — ưu tiên tốc độ
+78	settings.quality.medium	MEDIUM — balanced	VỪA — cân bằng
+79	settings.quality.high	HIGH — detailed	CAO — chi tiết
+80	settings.reducedMotion	Reduce motion	Giảm chuyển động
+81	settings.reducedMotionHelp	Reduce camera shake and transitions; combat cues remain visible.	Giảm rung camera và chuyển cảnh; tín hiệu chiến đấu vẫn hiển thị.
+82	settings.audio	Enable audio	Bật âm thanh
+83	settings.hudScale	HUD SIZE  ·  {percent}%	KÍCH THƯỚC HUD  ·  {percent}%
+84	settings.hudRange	85% — compact                         115% — easier to read	85% — gọn hơn                         115% — dễ đọc hơn
+85	settings.navigationHelp	TAB / ARROW KEYS or D-PAD to navigate · ENTER / A to confirm	TAB / PHÍM MŨI TÊN hoặc D-PAD để chọn · ENTER / A để xác nhận
+86	settings.contextRace	The race continues while settings are open. Bike input is suspended.	Cuộc đua vẫn tiếp tục khi mở cài đặt. Xe ngừng nhận điều khiển.
+87	settings.contextIdle	Adjust the settings to find your racing rhythm.	Tinh chỉnh để tìm nhịp đua phù hợp với bạn.
+88	display.title	WINDOWS DISPLAY	MÀN HÌNH WINDOWS
+89	display.modeLabel	MODE	CHẾ ĐỘ
+90	display.windowed	Windowed	Cửa sổ
+91	display.borderless	Borderless fullscreen	Toàn màn hình không viền
+92	display.exclusive	Exclusive fullscreen	Toàn màn hình độc quyền
+93	display.resolutionLabel	RESOLUTION	ĐỘ PHÂN GIẢI
+94	display.apply	APPLY DISPLAY SETTINGS	ÁP DỤNG MÀN HÌNH
+95	display.help	Resolutions come from the current monitor. Graphics quality is selected separately.	Độ phân giải lấy từ màn hình hiện tại. Chất lượng hình ảnh được chọn riêng.
+96	display.requested	Requested {resolution} · {mode}. Windows applies the change at the end of the frame.	Đã yêu cầu {resolution} · {mode}. Windows áp dụng vào cuối frame.
+97	practice.title	CHOOSE YOUR RIDE.	CHỌN HÀNH TRÌNH.
+98	practice.help	Practice freely with every available bike and rider. Results do not count toward your server profile.	Luyện tập tự do với mọi xe và tay đua đã có. Kết quả không cộng vào hồ sơ máy chủ.
+99	practice.courseLabel	ROUTE	TUYẾN ĐƯỜNG
+100	practice.levelLabel	LEVEL	CẤP ĐỘ
+101	practice.bikeLabel	MOTORCYCLE	MÔ TÔ
+102	practice.riderLabel	RIDER	TAY ĐUA
+103	practice.levelChoice	LEVEL {level}	CẤP {level}
+104	practice.start	HIT THE ROAD  >	LÊN ĐƯỜNG  >
+105	content.heading	PREPARING YOUR RIDE.	CHUẨN BỊ HÀNH TRÌNH.
+106	content.defaultStatus	Loading the required content…	Đang tải nội dung cần dùng…

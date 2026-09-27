@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "scope": "One explicit ENU state-label amendment; no state/intent/layout changes",
+  "key": "career.garage.pristine",
+  "locale": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/ENU.json",
+    "sha256": "a5192c7abc334dc48c1040294cb856d01a2b64175ed3f527e848f393557e8719"
+  },
+  "before": "BIKE FULLY REPAIRED",
+  "after": "BIKE UNDAMAGED",
+  "canonicalViSha256": "a218856531fc62e289dfa42fb931a850ae40d3e6448284c328b692dd49e44109",
+  "files": [
+    {
+      "candidate": "tools/p08/media/global-copy-pristine-amendment/UiText.Career.Generated.cs",
+      "target": "Assets/RacingBois/Client/Application/UiText.Career.Generated.cs",
+      "beforeSha256": "8a7cb783a00c37aa0aa304468db3a74b7c7b94b5e96969b07717f710ac0df80d",
+      "candidateSha256": "303ea00970e150c07c7ee8155cab965e8924d1c1aa73edda1f26c390bb59894a",
+      "metaSha256": "f551ea1b8fec96eff323d5c6fd648f4be472e569929cff116dbd4c1899cf4edf"
+    }
+  ],
+  "union": {
+    "path": "tools/p08/media/global-copy-pristine-amendment/authored-text-union.json",
+    "sha256": "ab4c6c3b3ecffb435fc855ea066a85964e85e1b485398dc629b8d0e2100828b1"
+  },
+  "preserved": [
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/ENU.json",
+      "sha256": "c88fb931ce483c63ba5aca505ec43a42ac46a6be72d8083fc2b5ac301d6af81b"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/UiText.Career.Generated.cs",
+      "sha256": "8a7cb783a00c37aa0aa304468db3a74b7c7b94b5e96969b07717f710ac0df80d"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/combined-handoff.json",
+      "sha256": "30fc23cd8aed049a4c722c56acb1b03db5e0e38d09630961636e701622257b91"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/career-handoff.json",
+      "sha256": "72c8c6e95f86f3a374fbdc0cf706663f191f1e4039b5251bc3635d0a40ea8925"
+    },
+    {
+      "path": "tools/p08/media/global-copy-pristine-amendment/before/authored-text-union.json",
+      "sha256": "59ca10612da4deee68194d7f01bdbddbec22173ce8581afcd0965b47fc4234da"
+    }
+  ],
+  "exactChangedTranslationCells": 1,
+  "otherFiveLocalesUnchanged": true,
+  "nativeValidation": false,
+  "language": "ENU"
+}

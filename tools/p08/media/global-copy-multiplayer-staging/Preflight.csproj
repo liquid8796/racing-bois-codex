@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><ImplicitUsings>disable</ImplicitUsings><Nullable>disable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors><AssemblyName>RacingBois.MultiplayerCopy.Preflight</AssemblyName>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MultiplayerLobbyView.cs" /><Compile Include="MultiplayerCopy.cs" /><Compile Include="UiText.Multiplayer.Generated.cs" />
+    <Compile Include="../global-copy-main-staging/UiText.cs" /><Compile Include="../global-copy-main-staging/DisplayLanguage.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/UiBindingScope.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/UiViewState.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" />
+  </ItemGroup>
+</Project>

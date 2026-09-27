@@ -1,0 +1,2526 @@
+{
+  "schema": 1,
+  "boundary": "career",
+  "source": {
+    "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+    "sha256": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819"
+  },
+  "reviewedInventorySha256": "b85fbf55530beb79c81ba2167512b59a2f99a887d77ef43bf31dd0d11c15a84b",
+  "reviewedLiteralOccurrences": 175,
+  "reviewedDistinctFragments": 161,
+  "reviewedExpressionSites": 141,
+  "reviewedCompositionSites": 30,
+  "commonBindings": [
+    {
+      "key": "common.cancel",
+      "vi": "HỦY",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "sourceExpression": "\"HỦY\""
+        }
+      ]
+    },
+    {
+      "key": "common.confirm",
+      "vi": "XÁC NHẬN",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "sourceExpression": "\"XÁC NHẬN\""
+        }
+      ]
+    },
+    {
+      "key": "common.done",
+      "vi": "XONG",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "sourceExpression": "\"XONG\""
+        }
+      ]
+    },
+    {
+      "key": "common.refresh",
+      "vi": "LÀM MỚI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "sourceExpression": "\"LÀM MỚI\""
+        }
+      ]
+    },
+    {
+      "key": "common.retry",
+      "vi": "THỬ LẠI",
+      "arguments": [],
+      "bindings": [
+        {
+          "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "member": "Initialize",
+          "sourceExpression": "\"THỬ LẠI\""
+        }
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 47,
+      "expressionStart": 2592,
+      "sourceExpression": "\"GARAGE\"",
+      "composite": false,
+      "literalOccurrences": [
+        "GARAGE"
+      ],
+      "keys": [
+        "career.tabs.garage"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.tabs.garage\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 47,
+      "expressionStart": 2618,
+      "sourceExpression": "\"CỬA HÀNG\"",
+      "composite": false,
+      "literalOccurrences": [
+        "CỬA HÀNG"
+      ],
+      "keys": [
+        "career.tabs.shop"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.tabs.shop\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 47,
+      "expressionStart": 2652,
+      "sourceExpression": "\"TAY ĐUA\"",
+      "composite": false,
+      "literalOccurrences": [
+        "TAY ĐUA"
+      ],
+      "keys": [
+        "career.tabs.characters"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.tabs.characters\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 47,
+      "expressionStart": 2683,
+      "sourceExpression": "\"HÀNH TRÌNH\"",
+      "composite": false,
+      "literalOccurrences": [
+        "HÀNH TRÌNH"
+      ],
+      "keys": [
+        "career.tabs.campaign"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.tabs.campaign\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 48,
+      "expressionStart": 2727,
+      "sourceExpression": "\"GIAO DỊCH\"",
+      "composite": false,
+      "literalOccurrences": [
+        "GIAO DỊCH"
+      ],
+      "keys": [
+        "career.tabs.ledger"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.tabs.ledger\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 48,
+      "expressionStart": 2759,
+      "sourceExpression": "\"TÀI KHOẢN\"",
+      "composite": false,
+      "literalOccurrences": [
+        "TÀI KHOẢN"
+      ],
+      "keys": [
+        "career.tabs.account"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.tabs.account\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 49,
+      "expressionStart": 2818,
+      "sourceExpression": "\"XONG\"",
+      "composite": false,
+      "literalOccurrences": [
+        "XONG"
+      ],
+      "keys": [
+        "common.done"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"common.done\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 50,
+      "expressionStart": 2943,
+      "sourceExpression": "\"Kết nối hồ sơ để lưu hành trình của bạn.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Kết nối hồ sơ để lưu hành trình của bạn."
+      ],
+      "keys": [
+        "career.summary.connectToSave"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.summary.connectToSave\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 56,
+      "expressionStart": 3542,
+      "sourceExpression": "\"XÁC NHẬN\"",
+      "composite": false,
+      "literalOccurrences": [
+        "XÁC NHẬN"
+      ],
+      "keys": [
+        "common.confirm"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"common.confirm\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 57,
+      "expressionStart": 3745,
+      "sourceExpression": "\"HỦY\"",
+      "composite": false,
+      "literalOccurrences": [
+        "HỦY"
+      ],
+      "keys": [
+        "common.cancel"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"common.cancel\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 59,
+      "expressionStart": 4010,
+      "sourceExpression": "\"LÀM MỚI\"",
+      "composite": false,
+      "literalOccurrences": [
+        "LÀM MỚI"
+      ],
+      "keys": [
+        "common.refresh"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"common.refresh\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Initialize",
+      "line": 60,
+      "expressionStart": 4100,
+      "sourceExpression": "\"THỬ LẠI\"",
+      "composite": false,
+      "literalOccurrences": [
+        "THỬ LẠI"
+      ],
+      "keys": [
+        "common.retry"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"common.retry\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Close",
+      "line": 91,
+      "expressionStart": 6165,
+      "sourceExpression": "\"Đang chờ máy chủ xác nhận. Vui lòng đợi.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đang chờ máy chủ xác nhận. Vui lòng đợi."
+      ],
+      "keys": [
+        "career.status.awaitingConfirmation"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.status.awaitingConfirmation\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Render",
+      "line": 131,
+      "expressionStart": 8182,
+      "sourceExpression": "profile == null ? \"Kết nối một hồ sơ để bắt đầu hành trình.\" :\r\n                profile.DisplayName + \"   /   $\" + profile.Credits.ToString(\"N0\") + \"   /   CẤP \" + (profile.LevelIndex + 1) + \"   /   \" +\r\n                (profile.RealmKind == \"offline\" ? \"HỒ SƠ LAN · TÁCH BIỆT ONLINE\" : \"HỒ SƠ \" + profile.RealmKind.ToUpperInvariant())",
+      "composite": true,
+      "literalOccurrences": [
+        "Kết nối một hồ sơ để bắt đầu hành trình.",
+        "   /   CẤP ",
+        "HỒ SƠ LAN · TÁCH BIỆT ONLINE",
+        "HỒ SƠ "
+      ],
+      "keys": [
+        "career.summary.empty",
+        "career.summary.offline",
+        "career.summary.realm"
+      ],
+      "arguments": {
+        "career.summary.offline": {
+          "player": "profile.DisplayName",
+          "credits": "profile.Credits.ToString(\"N0\")",
+          "level": "(profile.LevelIndex + 1).ToString()"
+        },
+        "career.summary.realm": {
+          "player": "profile.DisplayName",
+          "credits": "profile.Credits.ToString(\"N0\")",
+          "level": "(profile.LevelIndex + 1).ToString()",
+          "realm": "profile.RealmKind.ToUpperInvariant()"
+        }
+      },
+      "replacementExpression": "profile == null ? T(\"career.summary.empty\") : profile.RealmKind == \"offline\" ? F(\"career.summary.offline\", A(\"player\", profile.DisplayName), A(\"credits\", profile.Credits.ToString(\"N0\")), A(\"level\", (profile.LevelIndex + 1).ToString())) : F(\"career.summary.realm\", A(\"player\", profile.DisplayName), A(\"credits\", profile.Credits.ToString(\"N0\")), A(\"level\", (profile.LevelIndex + 1).ToString()), A(\"realm\", profile.RealmKind.ToUpperInvariant()))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Render",
+      "line": 134,
+      "expressionStart": 8553,
+      "sourceExpression": "\"MÁY CHỦ  \" + session.Endpoint",
+      "composite": true,
+      "literalOccurrences": [
+        "MÁY CHỦ  "
+      ],
+      "keys": [
+        "career.summary.endpoint"
+      ],
+      "arguments": {
+        "career.summary.endpoint": {
+          "endpoint": "session.Endpoint"
+        }
+      },
+      "replacementExpression": "F(\"career.summary.endpoint\", A(\"endpoint\", session.Endpoint))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Render",
+      "line": 135,
+      "expressionStart": 8612,
+      "sourceExpression": "session.Busy ? \"ĐANG XỬ LÝ · Chờ máy chủ xác nhận…\" : !string.IsNullOrEmpty(session.ErrorCode) ? ErrorText(session.ErrorCode) : SuccessText(session.Notice)",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐANG XỬ LÝ · Chờ máy chủ xác nhận…"
+      ],
+      "keys": [
+        "career.status.busy"
+      ],
+      "arguments": {},
+      "replacementExpression": "session.Busy ? T(\"career.status.busy\") : !string.IsNullOrEmpty(session.ErrorCode) ? ErrorText(session.ErrorCode) : SuccessText(session.Notice)"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "RenderBody",
+      "line": 172,
+      "expressionStart": 11406,
+      "sourceExpression": "\"MỖI HÀNH TRÌNH CẦN MỘT HỒ SƠ.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "MỖI HÀNH TRÌNH CẦN MỘT HỒ SƠ."
+      ],
+      "keys": [
+        "career.profile.requiredTitle"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.profile.requiredTitle\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "RenderBody",
+      "line": 173,
+      "expressionStart": 11496,
+      "sourceExpression": "\"Hồ sơ được lưu trên máy chủ đang chọn. Khách mới và chế độ tập offline không tích lũy vào garage này.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Hồ sơ được lưu trên máy chủ đang chọn. Khách mới và chế độ tập offline không tích lũy vào garage này."
+      ],
+      "keys": [
+        "career.profile.storageHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.profile.storageHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "RenderBody",
+      "line": 174,
+      "expressionStart": 11651,
+      "sourceExpression": "\"KẾT NỐI HỒ SƠ\"",
+      "composite": false,
+      "literalOccurrences": [
+        "KẾT NỐI HỒ SƠ"
+      ],
+      "keys": [
+        "career.profile.connect"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.profile.connect\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "RenderBody",
+      "line": 175,
+      "expressionStart": 11762,
+      "sourceExpression": "\"ĐĂNG NHẬP TÀI KHOẢN\"",
+      "composite": false,
+      "literalOccurrences": [
+        "ĐĂNG NHẬP TÀI KHOẢN"
+      ],
+      "keys": [
+        "career.account.openLogin"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.openLogin\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 186,
+      "expressionStart": 12456,
+      "sourceExpression": "\"XE CỦA BẠN\"",
+      "composite": false,
+      "literalOccurrences": [
+        "XE CỦA BẠN"
+      ],
+      "keys": [
+        "career.garage.ownedHeading"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.ownedHeading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 195,
+      "expressionStart": 13136,
+      "sourceExpression": "\"Garage chưa có xe.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Garage chưa có xe."
+      ],
+      "keys": [
+        "career.garage.empty"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.empty\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 204,
+      "expressionStart": 13670,
+      "sourceExpression": "\"Xem trước \" + bike.DisplayName",
+      "composite": true,
+      "literalOccurrences": [
+        "Xem trước "
+      ],
+      "keys": [
+        "career.garage.previewTooltip"
+      ],
+      "arguments": {
+        "career.garage.previewTooltip": {
+          "bike": "bike.DisplayName"
+        }
+      },
+      "replacementExpression": "F(\"career.garage.previewTooltip\", A(\"bike\", bike.DisplayName))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 210,
+      "expressionStart": 14301,
+      "sourceExpression": "\"Ảnh xe đang chờ bản render 3D được kiểm tra.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Ảnh xe đang chờ bản render 3D được kiểm tra."
+      ],
+      "keys": [
+        "career.garage.thumbnailPending"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.thumbnailPending\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 214,
+      "expressionStart": 14646,
+      "sourceExpression": "bike.Id == profile.SelectedBikeId ? \"ĐANG DÙNG\" : \"ĐÃ SỞ HỮU\"",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐANG DÙNG",
+        "ĐÃ SỞ HỮU"
+      ],
+      "keys": [
+        "career.bike.equipped",
+        "career.bike.owned"
+      ],
+      "arguments": {},
+      "replacementExpression": "bike.Id == profile.SelectedBikeId ? T(\"career.bike.equipped\") : T(\"career.bike.owned\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 222,
+      "expressionStart": 15230,
+      "sourceExpression": "\"TÌNH TRẠNG XE\"",
+      "composite": false,
+      "literalOccurrences": [
+        "TÌNH TRẠNG XE"
+      ],
+      "keys": [
+        "career.garage.conditionHeading"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.conditionHeading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 227,
+      "expressionStart": 15776,
+      "sourceExpression": "\"Chọn xe để xem trước. Thay đổi xe dùng\\nkhi máy chủ xác nhận.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Chọn xe để xem trước. Thay đổi xe dùng\nkhi máy chủ xác nhận."
+      ],
+      "keys": [
+        "career.garage.previewHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.previewHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 228,
+      "expressionStart": 15912,
+      "sourceExpression": "inRoom ? \"Rời phòng trước khi đổi hoặc sửa xe.\" : \"Phiên khách không thực hiện giao dịch hồ sơ.\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Rời phòng trước khi đổi hoặc sửa xe.",
+        "Phiên khách không thực hiện giao dịch hồ sơ."
+      ],
+      "keys": [
+        "career.garage.leaveRoom",
+        "career.profile.guestTransactions"
+      ],
+      "arguments": {},
+      "replacementExpression": "inRoom ? T(\"career.garage.leaveRoom\") : T(\"career.profile.guestTransactions\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 231,
+      "expressionStart": 16208,
+      "sourceExpression": "equipped ? \"ĐANG DÙNG\" : \"CHỌN XE\"",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐANG DÙNG",
+        "CHỌN XE"
+      ],
+      "keys": [
+        "career.bike.equipped",
+        "career.garage.equip"
+      ],
+      "arguments": {},
+      "replacementExpression": "equipped ? T(\"career.bike.equipped\") : T(\"career.garage.equip\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 234,
+      "expressionStart": 16650,
+      "sourceExpression": "condition == 100 ? \"XE NGUYÊN VẸN\" : \"SỬA XE · $\" + inspected.RepairCredits.ToString(\"N0\")",
+      "composite": true,
+      "literalOccurrences": [
+        "XE NGUYÊN VẸN",
+        "SỬA XE · $"
+      ],
+      "keys": [
+        "career.garage.pristine",
+        "career.garage.repairButton"
+      ],
+      "arguments": {
+        "career.garage.repairButton": {
+          "cost": "inspected.RepairCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "condition == 100 ? T(\"career.garage.pristine\") : F(\"career.garage.repairButton\", A(\"cost\", inspected.RepairCredits.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 235,
+      "expressionStart": 16772,
+      "sourceExpression": "\"Sửa \" + inspected.DisplayName + \" về 100% với $\" + inspected.RepairCredits.ToString(\"N0\") + \"?\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Sửa ",
+        " về 100% với $"
+      ],
+      "keys": [
+        "career.garage.repairConfirm"
+      ],
+      "arguments": {
+        "career.garage.repairConfirm": {
+          "bike": "inspected.DisplayName",
+          "cost": "inspected.RepairCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "F(\"career.garage.repairConfirm\", A(\"bike\", inspected.DisplayName), A(\"cost\", inspected.RepairCredits.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 245,
+      "expressionStart": 17567,
+      "sourceExpression": "\"HÀNH TRÌNH ĐÃ DỪNG · Xe hỏng và quỹ không đủ sửa.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "HÀNH TRÌNH ĐÃ DỪNG · Xe hỏng và quỹ không đủ sửa."
+      ],
+      "keys": [
+        "career.garage.bankruptNotice"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.bankruptNotice\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 246,
+      "expressionStart": 17673,
+      "sourceExpression": "\"BẮT ĐẦU LẠI HÀNH TRÌNH\"",
+      "composite": false,
+      "literalOccurrences": [
+        "BẮT ĐẦU LẠI HÀNH TRÌNH"
+      ],
+      "keys": [
+        "career.garage.restart"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.restart\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Garage",
+      "line": 246,
+      "expressionStart": 17713,
+      "sourceExpression": "\"Bắt đầu lại từ đầu? Xe và chiến dịch hiện tại sẽ mất. Spark 450 trở về nguyên vẹn, quỹ $0. Tài khoản và lịch sử giao dịch được giữ lại.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bắt đầu lại từ đầu? Xe và chiến dịch hiện tại sẽ mất. Spark 450 trở về nguyên vẹn, quỹ $0. Tài khoản và lịch sử giao dịch được giữ lại."
+      ],
+      "keys": [
+        "career.garage.restartConfirm"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.restartConfirm\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 253,
+      "expressionStart": 18189,
+      "sourceExpression": "shop ? \"TÌM MỘT CẤU HÌNH PHÙ HỢP.\" : \"XE CỦA BẠN.\"",
+      "composite": true,
+      "literalOccurrences": [
+        "TÌM MỘT CẤU HÌNH PHÙ HỢP.",
+        "XE CỦA BẠN."
+      ],
+      "keys": [
+        "career.shop.heading",
+        "career.garage.browserHeading"
+      ],
+      "arguments": {},
+      "replacementExpression": "shop ? T(\"career.shop.heading\") : T(\"career.garage.browserHeading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 254,
+      "expressionStart": 18294,
+      "sourceExpression": "\"Chọn một mẫu để so sánh với xe đang dùng. Giá, quyền sở hữu và tình trạng do máy chủ xác nhận.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Chọn một mẫu để so sánh với xe đang dùng. Giá, quyền sở hữu và tình trạng do máy chủ xác nhận."
+      ],
+      "keys": [
+        "career.shop.compareHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.shop.compareHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 264,
+      "expressionStart": 19009,
+      "sourceExpression": "\"Garage chưa có xe.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Garage chưa có xe."
+      ],
+      "keys": [
+        "career.garage.empty"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.garage.empty\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 272,
+      "expressionStart": 19406,
+      "sourceExpression": "(bike.CatalogIndex + 1).ToString(\"00\") + \"   \" + bike.DisplayName + \"\\n\" +\r\n                    (owned ? \"ĐÃ SỞ HỮU\" : !bike.HasDistinctArt ? \"CHƯA MỞ\" : \"$\" + bike.PriceCredits.ToString(\"N0\")) +\r\n                    (bike.Id == profile.SelectedBikeId ? \" · ĐANG DÙNG\" : \"\")",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐÃ SỞ HỮU",
+        "CHƯA MỞ",
+        " · ĐANG DÙNG"
+      ],
+      "keys": [
+        "career.bikeList.owned",
+        "career.bikeList.ownedEquipped",
+        "career.bikeList.locked",
+        "career.bikeList.lockedEquipped",
+        "career.bikeList.price",
+        "career.bikeList.priceEquipped"
+      ],
+      "arguments": {
+        "career.bikeList.owned": {
+          "index": "(bike.CatalogIndex + 1).ToString(\"00\")",
+          "bike": "bike.DisplayName"
+        },
+        "career.bikeList.ownedEquipped": {
+          "index": "(bike.CatalogIndex + 1).ToString(\"00\")",
+          "bike": "bike.DisplayName"
+        },
+        "career.bikeList.locked": {
+          "index": "(bike.CatalogIndex + 1).ToString(\"00\")",
+          "bike": "bike.DisplayName"
+        },
+        "career.bikeList.lockedEquipped": {
+          "index": "(bike.CatalogIndex + 1).ToString(\"00\")",
+          "bike": "bike.DisplayName"
+        },
+        "career.bikeList.price": {
+          "index": "(bike.CatalogIndex + 1).ToString(\"00\")",
+          "bike": "bike.DisplayName",
+          "cost": "bike.PriceCredits.ToString(\"N0\")"
+        },
+        "career.bikeList.priceEquipped": {
+          "index": "(bike.CatalogIndex + 1).ToString(\"00\")",
+          "bike": "bike.DisplayName",
+          "cost": "bike.PriceCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "owned ? (bike.Id == profile.SelectedBikeId ? F(\"career.bikeList.ownedEquipped\", A(\"index\", (bike.CatalogIndex + 1).ToString(\"00\")), A(\"bike\", bike.DisplayName)) : F(\"career.bikeList.owned\", A(\"index\", (bike.CatalogIndex + 1).ToString(\"00\")), A(\"bike\", bike.DisplayName))) : !bike.HasDistinctArt ? (bike.Id == profile.SelectedBikeId ? F(\"career.bikeList.lockedEquipped\", A(\"index\", (bike.CatalogIndex + 1).ToString(\"00\")), A(\"bike\", bike.DisplayName)) : F(\"career.bikeList.locked\", A(\"index\", (bike.CatalogIndex + 1).ToString(\"00\")), A(\"bike\", bike.DisplayName))) : (bike.Id == profile.SelectedBikeId ? F(\"career.bikeList.priceEquipped\", A(\"index\", (bike.CatalogIndex + 1).ToString(\"00\")), A(\"bike\", bike.DisplayName), A(\"cost\", bike.PriceCredits.ToString(\"N0\"))) : F(\"career.bikeList.price\", A(\"index\", (bike.CatalogIndex + 1).ToString(\"00\")), A(\"bike\", bike.DisplayName), A(\"cost\", bike.PriceCredits.ToString(\"N0\"))))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 287,
+      "expressionStart": 20671,
+      "sourceExpression": "isOwned ? \"TÌNH TRẠNG \" + condition + \"%\" + (equipped ? \" · ĐANG DÙNG\" : \" · ĐÃ SỞ HỮU\") : \"$\" + inspected.PriceCredits.ToString(\"N0\") + \" · \" + (inspected.HasDistinctArt ? \"CÓ THỂ MUA\" : \"CHƯA MỞ\")",
+      "composite": true,
+      "literalOccurrences": [
+        "TÌNH TRẠNG ",
+        " · ĐANG DÙNG",
+        " · ĐÃ SỞ HỮU",
+        "CÓ THỂ MUA",
+        "CHƯA MỞ"
+      ],
+      "keys": [
+        "career.bikeDetail.equipped",
+        "career.bikeDetail.owned",
+        "career.bikeDetail.available",
+        "career.bikeDetail.locked"
+      ],
+      "arguments": {
+        "career.bikeDetail.equipped": {
+          "condition": "condition.ToString()"
+        },
+        "career.bikeDetail.owned": {
+          "condition": "condition.ToString()"
+        },
+        "career.bikeDetail.available": {
+          "cost": "inspected.PriceCredits.ToString(\"N0\")"
+        },
+        "career.bikeDetail.locked": {
+          "cost": "inspected.PriceCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "isOwned ? (equipped ? F(\"career.bikeDetail.equipped\", A(\"condition\", condition.ToString())) : F(\"career.bikeDetail.owned\", A(\"condition\", condition.ToString()))) : (inspected.HasDistinctArt ? F(\"career.bikeDetail.available\", A(\"cost\", inspected.PriceCredits.ToString(\"N0\"))) : F(\"career.bikeDetail.locked\", A(\"cost\", inspected.PriceCredits.ToString(\"N0\"))))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 292,
+      "expressionStart": 21240,
+      "sourceExpression": "\"SO VỚI \" + current.DisplayName.ToUpperInvariant() + \"\\nGiới hạn tốc độ \" + difference.ToString(\"+0.#;-0.#;0\", CultureInfo.InvariantCulture) + \" km/h\\nHệ số 1× lấy Spark 450 làm mốc. Đây là thông số thiết kế trong game.\"",
+      "composite": true,
+      "literalOccurrences": [
+        "SO VỚI ",
+        "\nGiới hạn tốc độ ",
+        " km/h\nHệ số 1× lấy Spark 450 làm mốc. Đây là thông số thiết kế trong game."
+      ],
+      "keys": [
+        "career.bike.compare"
+      ],
+      "arguments": {
+        "career.bike.compare": {
+          "bike": "current.DisplayName.ToUpperInvariant()",
+          "difference": "difference.ToString(\"+0.#;-0.#;0\", CultureInfo.InvariantCulture)"
+        }
+      },
+      "replacementExpression": "F(\"career.bike.compare\", A(\"bike\", current.DisplayName.ToUpperInvariant()), A(\"difference\", difference.ToString(\"+0.#;-0.#;0\", CultureInfo.InvariantCulture)))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 298,
+      "expressionStart": 21679,
+      "sourceExpression": "equipped ? \"ĐANG DÙNG\" : \"CHỌN XE\"",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐANG DÙNG",
+        "CHỌN XE"
+      ],
+      "keys": [
+        "career.bike.equipped",
+        "career.garage.equip"
+      ],
+      "arguments": {},
+      "replacementExpression": "equipped ? T(\"career.bike.equipped\") : T(\"career.garage.equip\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 300,
+      "expressionStart": 21959,
+      "sourceExpression": "\"SỬA XE · $\" + inspected.RepairCredits.ToString(\"N0\")",
+      "composite": true,
+      "literalOccurrences": [
+        "SỬA XE · $"
+      ],
+      "keys": [
+        "career.garage.repairButton"
+      ],
+      "arguments": {
+        "career.garage.repairButton": {
+          "cost": "inspected.RepairCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "F(\"career.garage.repairButton\", A(\"cost\", inspected.RepairCredits.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 300,
+      "expressionStart": 22028,
+      "sourceExpression": "\"Sửa \" + selectedDefinition.DisplayName + \" về 100% với $\" + selectedDefinition.RepairCredits.ToString(\"N0\") + \"?\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Sửa ",
+        " về 100% với $"
+      ],
+      "keys": [
+        "career.garage.repairConfirm"
+      ],
+      "arguments": {
+        "career.garage.repairConfirm": {
+          "bike": "selectedDefinition.DisplayName",
+          "cost": "selectedDefinition.RepairCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "F(\"career.garage.repairConfirm\", A(\"bike\", selectedDefinition.DisplayName), A(\"cost\", selectedDefinition.RepairCredits.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 305,
+      "expressionStart": 22413,
+      "sourceExpression": "\"MUA THÊM · $\" + inspected.PriceCredits.ToString(\"N0\")",
+      "composite": true,
+      "literalOccurrences": [
+        "MUA THÊM · $"
+      ],
+      "keys": [
+        "career.shop.buyButton"
+      ],
+      "arguments": {
+        "career.shop.buyButton": {
+          "cost": "inspected.PriceCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "F(\"career.shop.buyButton\", A(\"cost\", inspected.PriceCredits.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 305,
+      "expressionStart": 22483,
+      "sourceExpression": "\"Mua \" + selectedDefinition.DisplayName + \" với $\" + selectedDefinition.PriceCredits.ToString(\"N0\") + \"?\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Mua ",
+        " với $"
+      ],
+      "keys": [
+        "career.shop.buyConfirm"
+      ],
+      "arguments": {
+        "career.shop.buyConfirm": {
+          "bike": "selectedDefinition.DisplayName",
+          "cost": "selectedDefinition.PriceCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "F(\"career.shop.buyConfirm\", A(\"bike\", selectedDefinition.DisplayName), A(\"cost\", selectedDefinition.PriceCredits.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 308,
+      "expressionStart": 22890,
+      "sourceExpression": "\"ĐỔI XE\"",
+      "composite": false,
+      "literalOccurrences": [
+        "ĐỔI XE"
+      ],
+      "keys": [
+        "career.shop.trade"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.shop.trade\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 308,
+      "expressionStart": 22914,
+      "sourceExpression": "\"Bán chiếc đang dùng với $\" + tradeValue.ToString(\"N0\") + \" và mua \" + selectedDefinition.DisplayName + \" với $\" + selectedDefinition.PriceCredits.ToString(\"N0\") + \"?\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Bán chiếc đang dùng với $",
+        " và mua ",
+        " với $"
+      ],
+      "keys": [
+        "career.shop.tradeConfirm"
+      ],
+      "arguments": {
+        "career.shop.tradeConfirm": {
+          "tradeValue": "tradeValue.ToString(\"N0\")",
+          "bike": "selectedDefinition.DisplayName",
+          "cost": "selectedDefinition.PriceCredits.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "F(\"career.shop.tradeConfirm\", A(\"tradeValue\", tradeValue.ToString(\"N0\")), A(\"bike\", selectedDefinition.DisplayName), A(\"cost\", selectedDefinition.PriceCredits.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeBrowser",
+      "line": 311,
+      "expressionStart": 23380,
+      "sourceExpression": "inRoom ? \"Rời phòng trước khi đổi, mua hoặc sửa xe.\" : \"Phiên khách không thực hiện giao dịch hồ sơ.\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Rời phòng trước khi đổi, mua hoặc sửa xe.",
+        "Phiên khách không thực hiện giao dịch hồ sơ."
+      ],
+      "keys": [
+        "career.shop.leaveRoom",
+        "career.profile.guestTransactions"
+      ],
+      "arguments": {},
+      "replacementExpression": "inRoom ? T(\"career.shop.leaveRoom\") : T(\"career.profile.guestTransactions\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "PreviewButton",
+      "line": 315,
+      "expressionStart": 23613,
+      "sourceExpression": "\"XEM 3D\"",
+      "composite": false,
+      "literalOccurrences": [
+        "XEM 3D"
+      ],
+      "keys": [
+        "career.bike.preview"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.bike.preview\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "PreviewButton",
+      "line": 322,
+      "expressionStart": 23929,
+      "sourceExpression": "\"Xem thiết kế \" + bike.DisplayName + \" và trở lại hồ sơ.\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Xem thiết kế ",
+        " và trở lại hồ sơ."
+      ],
+      "keys": [
+        "career.bike.previewTooltip"
+      ],
+      "arguments": {
+        "career.bike.previewTooltip": {
+          "bike": "bike.DisplayName"
+        }
+      },
+      "replacementExpression": "F(\"career.bike.previewTooltip\", A(\"bike\", bike.DisplayName))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "BikeStats",
+      "line": 329,
+      "expressionStart": 24214,
+      "sourceExpression": "\"GIỚI HẠN \" + (tuning.MaximumSpeedMillimetersPerSecond * .0036).ToString(\"0.#\", CultureInfo.InvariantCulture) + \" km/h\" +\r\n                \"  ·  TĂNG TỐC ×\" + (tuning.EnginePermille / 1000.0).ToString(\"0.00\", CultureInfo.InvariantCulture) +\r\n                \"\\nPHANH \" + (tuning.BrakeDeceleration / 1000.0).ToString(\"0.#\", CultureInfo.InvariantCulture) + \" m/s²\" +\r\n                \"  ·  BÁM CUA ×\" + (tuning.CorneringPermille / 1000.0).ToString(\"0.00\", CultureInfo.InvariantCulture)",
+      "composite": true,
+      "literalOccurrences": [
+        "GIỚI HẠN ",
+        "  ·  TĂNG TỐC ×",
+        "\nPHANH ",
+        "  ·  BÁM CUA ×"
+      ],
+      "keys": [
+        "career.bike.stats"
+      ],
+      "arguments": {
+        "career.bike.stats": {
+          "speed": "(tuning.MaximumSpeedMillimetersPerSecond * .0036).ToString(\"0.#\", CultureInfo.InvariantCulture)",
+          "acceleration": "(tuning.EnginePermille / 1000.0).ToString(\"0.00\", CultureInfo.InvariantCulture)",
+          "braking": "(tuning.BrakeDeceleration / 1000.0).ToString(\"0.#\", CultureInfo.InvariantCulture)",
+          "cornering": "(tuning.CorneringPermille / 1000.0).ToString(\"0.00\", CultureInfo.InvariantCulture)"
+        }
+      },
+      "replacementExpression": "F(\"career.bike.stats\", A(\"speed\", (tuning.MaximumSpeedMillimetersPerSecond * .0036).ToString(\"0.#\", CultureInfo.InvariantCulture)), A(\"acceleration\", (tuning.EnginePermille / 1000.0).ToString(\"0.00\", CultureInfo.InvariantCulture)), A(\"braking\", (tuning.BrakeDeceleration / 1000.0).ToString(\"0.#\", CultureInfo.InvariantCulture)), A(\"cornering\", (tuning.CorneringPermille / 1000.0).ToString(\"0.00\", CultureInfo.InvariantCulture)))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 336,
+      "expressionStart": 24813,
+      "sourceExpression": "\"CHỌN GƯƠNG MẶT CỦA HÀNH TRÌNH.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "CHỌN GƯƠNG MẶT CỦA HÀNH TRÌNH."
+      ],
+      "keys": [
+        "career.characters.heading"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.heading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 337,
+      "expressionStart": 24900,
+      "sourceExpression": "\"8 tay đua, mỗi người một phong cách. Lựa chọn thay đổi diện mạo; sức mạnh và phần thưởng giữ nguyên.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "8 tay đua, mỗi người một phong cách. Lựa chọn thay đổi diện mạo; sức mạnh và phần thưởng giữ nguyên."
+      ],
+      "keys": [
+        "career.characters.selectionHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.selectionHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 341,
+      "expressionStart": 25285,
+      "sourceExpression": "\"XEM BIỂU CẢM\"",
+      "composite": false,
+      "literalOccurrences": [
+        "XEM BIỂU CẢM"
+      ],
+      "keys": [
+        "career.characters.expressionLabel"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.expressionLabel\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 341,
+      "expressionStart": 25320,
+      "sourceExpression": "\"Bình thường\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bình thường"
+      ],
+      "keys": [
+        "career.characters.expressionNeutral"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.expressionNeutral\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 341,
+      "expressionStart": 25335,
+      "sourceExpression": "\"Vui vẻ\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Vui vẻ"
+      ],
+      "keys": [
+        "career.characters.expressionHappy"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.expressionHappy\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 341,
+      "expressionStart": 25345,
+      "sourceExpression": "\"Tập trung\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Tập trung"
+      ],
+      "keys": [
+        "career.characters.expressionFocused"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.expressionFocused\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 369,
+      "expressionStart": 27226,
+      "sourceExpression": "\"Ảnh chân dung sẽ xuất hiện khi nội dung được tải.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Ảnh chân dung sẽ xuất hiện khi nội dung được tải."
+      ],
+      "keys": [
+        "career.characters.portraitPending"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.portraitPending\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 372,
+      "expressionStart": 27425,
+      "sourceExpression": "selected ? \"ĐANG ĐỒNG HÀNH\" : available ? \"SẴN SÀNG LÊN ĐƯỜNG\" : \"CHƯA MỞ\"",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐANG ĐỒNG HÀNH",
+        "SẴN SÀNG LÊN ĐƯỜNG",
+        "CHƯA MỞ"
+      ],
+      "keys": [
+        "career.characters.accompanying",
+        "career.characters.ready",
+        "career.state.locked"
+      ],
+      "arguments": {},
+      "replacementExpression": "selected ? T(\"career.characters.accompanying\") : available ? T(\"career.characters.ready\") : T(\"career.state.locked\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 374,
+      "expressionStart": 27593,
+      "sourceExpression": "selected ? \"ĐANG CHỌN\" : \"CHỌN TAY ĐUA\"",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐANG CHỌN",
+        "CHỌN TAY ĐUA"
+      ],
+      "keys": [
+        "career.characters.selected",
+        "career.characters.choose"
+      ],
+      "arguments": {},
+      "replacementExpression": "selected ? T(\"career.characters.selected\") : T(\"career.characters.choose\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 377,
+      "expressionStart": 27905,
+      "sourceExpression": "\"XEM TAY ĐUA\"",
+      "composite": false,
+      "literalOccurrences": [
+        "XEM TAY ĐUA"
+      ],
+      "keys": [
+        "career.characters.inspect"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.inspect\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 380,
+      "expressionStart": 28206,
+      "sourceExpression": "\"Rời phòng hiện tại trước khi đổi tay đua cho hồ sơ.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Rời phòng hiện tại trước khi đổi tay đua cho hồ sơ."
+      ],
+      "keys": [
+        "career.characters.leaveRoom"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.leaveRoom\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Characters",
+      "line": 381,
+      "expressionStart": 28339,
+      "sourceExpression": "\"Kết nối hồ sơ đã lưu để chọn tay đua cho hành trình. Chế độ luyện tập cho phép thử mọi tay đua đã mở.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Kết nối hồ sơ đã lưu để chọn tay đua cho hành trình. Chế độ luyện tập cho phép thử mọi tay đua đã mở."
+      ],
+      "keys": [
+        "career.characters.connectProfile"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.characters.connectProfile\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Campaign",
+      "line": 398,
+      "expressionStart": 29474,
+      "sourceExpression": "\"5 CẤP. 25 CHẶNG.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "5 CẤP. 25 CHẶNG."
+      ],
+      "keys": [
+        "career.campaign.heading"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.campaign.heading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Campaign",
+      "line": 399,
+      "expressionStart": 29547,
+      "sourceExpression": "\"Top 3 ở đủ 5 tuyến để lên cấp. Chọn một chặng thuộc cấp hiện tại; kết quả luyện tập không cộng vào hồ sơ máy chủ.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Top 3 ở đủ 5 tuyến để lên cấp. Chọn một chặng thuộc cấp hiện tại; kết quả luyện tập không cộng vào hồ sơ máy chủ."
+      ],
+      "keys": [
+        "career.campaign.progressionHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.campaign.progressionHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Campaign",
+      "line": 404,
+      "expressionStart": 29913,
+      "sourceExpression": "\"CẤP \" + (level + 1).ToString(\"00\")",
+      "composite": true,
+      "literalOccurrences": [
+        "CẤP "
+      ],
+      "keys": [
+        "career.campaign.level"
+      ],
+      "arguments": {
+        "career.campaign.level": {
+          "level": "(level + 1).ToString(\"00\")"
+        }
+      },
+      "replacementExpression": "F(\"career.campaign.level\", A(\"level\", (level + 1).ToString(\"00\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Campaign",
+      "line": 409,
+      "expressionStart": 30290,
+      "sourceExpression": "!route.IsPlayable ? \"SẮP RA MẮT\" : level > profile.LevelIndex ? \"CHƯA MỞ\" : qualified ? \"ĐÃ QUA\" : \"ĐUA\"",
+      "composite": true,
+      "literalOccurrences": [
+        "SẮP RA MẮT",
+        "CHƯA MỞ",
+        "ĐÃ QUA",
+        "ĐUA"
+      ],
+      "keys": [
+        "career.campaign.comingSoon",
+        "career.state.locked",
+        "career.campaign.qualified",
+        "career.campaign.race"
+      ],
+      "arguments": {},
+      "replacementExpression": "!route.IsPlayable ? T(\"career.campaign.comingSoon\") : level > profile.LevelIndex ? T(\"career.state.locked\") : qualified ? T(\"career.campaign.qualified\") : T(\"career.campaign.race\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Campaign",
+      "line": 416,
+      "expressionStart": 30857,
+      "sourceExpression": "\"Rời phòng hiện tại trước khi tạo chặng của hành trình.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Rời phòng hiện tại trước khi tạo chặng của hành trình."
+      ],
+      "keys": [
+        "career.campaign.leaveRoom"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.campaign.leaveRoom\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Campaign",
+      "line": 417,
+      "expressionStart": 30993,
+      "sourceExpression": "\"ĐÃ HOÀN THÀNH HÀNH TRÌNH · Bạn có thể đua lại cấp hiện tại hoặc luyện tập tự do.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "ĐÃ HOÀN THÀNH HÀNH TRÌNH · Bạn có thể đua lại cấp hiện tại hoặc luyện tập tự do."
+      ],
+      "keys": [
+        "career.campaign.complete"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.campaign.complete\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Ledger",
+      "line": 421,
+      "expressionStart": 31173,
+      "sourceExpression": "\"LỊCH SỬ GIAO DỊCH\"",
+      "composite": false,
+      "literalOccurrences": [
+        "LỊCH SỬ GIAO DỊCH"
+      ],
+      "keys": [
+        "career.ledger.heading"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.heading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Ledger",
+      "line": 422,
+      "expressionStart": 31247,
+      "sourceExpression": "\"Số dư và phần thưởng chỉ thay đổi sau khi máy chủ ghi nhận thành công.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Số dư và phần thưởng chỉ thay đổi sau khi máy chủ ghi nhận thành công."
+      ],
+      "keys": [
+        "career.ledger.authorityHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.authorityHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Ledger",
+      "line": 424,
+      "expressionStart": 31423,
+      "sourceExpression": "\"Chưa có giao dịch.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Chưa có giao dịch."
+      ],
+      "keys": [
+        "career.ledger.empty"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.empty\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Ledger",
+      "line": 430,
+      "expressionStart": 32023,
+      "sourceExpression": "\"SỐ DƯ $\" + entry.Balance.ToString(\"N0\")",
+      "composite": true,
+      "literalOccurrences": [
+        "SỐ DƯ $"
+      ],
+      "keys": [
+        "career.ledger.balance"
+      ],
+      "arguments": {
+        "career.ledger.balance": {
+          "balance": "entry.Balance.ToString(\"N0\")"
+        }
+      },
+      "replacementExpression": "F(\"career.ledger.balance\", A(\"balance\", entry.Balance.ToString(\"N0\")))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 436,
+      "expressionStart": 32255,
+      "sourceExpression": "\"GIỮ LẠI HÀNH TRÌNH CỦA BẠN.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "GIỮ LẠI HÀNH TRÌNH CỦA BẠN."
+      ],
+      "keys": [
+        "career.account.heading"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.heading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 437,
+      "expressionStart": 32341,
+      "sourceExpression": "\"Tài khoản thuộc máy chủ này. Đăng nhập, đăng ký và đổi mật khẩu cần HTTPS. Mã khôi phục dùng một lần thay cho email; hãy tự lưu ở nơi riêng tư.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Tài khoản thuộc máy chủ này. Đăng nhập, đăng ký và đổi mật khẩu cần HTTPS. Mã khôi phục dùng một lần thay cho email; hãy tự lưu ở nơi riêng tư."
+      ],
+      "keys": [
+        "career.account.securityHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.securityHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 440,
+      "expressionStart": 32615,
+      "sourceExpression": "\"LƯU MÃ KHÔI PHỤC MỚI · Chỉ hiển thị trong lần này\"",
+      "composite": false,
+      "literalOccurrences": [
+        "LƯU MÃ KHÔI PHỤC MỚI · Chỉ hiển thị trong lần này"
+      ],
+      "keys": [
+        "career.account.newRecoveryNotice"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.newRecoveryNotice\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 441,
+      "expressionStart": 32729,
+      "sourceExpression": "\"MÃ KHÔI PHỤC\"",
+      "composite": false,
+      "literalOccurrences": [
+        "MÃ KHÔI PHỤC"
+      ],
+      "keys": [
+        "career.account.recoveryCodeLabel"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.recoveryCodeLabel\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 444,
+      "expressionStart": 32937,
+      "sourceExpression": "\"ĐANG ĐĂNG NHẬP: \" + profile.Username",
+      "composite": true,
+      "literalOccurrences": [
+        "ĐANG ĐĂNG NHẬP: "
+      ],
+      "keys": [
+        "career.account.loggedIn"
+      ],
+      "arguments": {
+        "career.account.loggedIn": {
+          "username": "profile.Username"
+        }
+      },
+      "replacementExpression": "F(\"career.account.loggedIn\", A(\"username\", profile.Username))"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 445,
+      "expressionStart": 33040,
+      "sourceExpression": "\"TÊN TÀI KHOẢN\"",
+      "composite": false,
+      "literalOccurrences": [
+        "TÊN TÀI KHOẢN"
+      ],
+      "keys": [
+        "career.account.usernameLabel"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.usernameLabel\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 448,
+      "expressionStart": 33312,
+      "sourceExpression": "\"MẬT KHẨU (HOẶC MẬT KHẨU MỚI KHI KHÔI PHỤC)\"",
+      "composite": false,
+      "literalOccurrences": [
+        "MẬT KHẨU (HOẶC MẬT KHẨU MỚI KHI KHÔI PHỤC)"
+      ],
+      "keys": [
+        "career.account.passwordLabel"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.passwordLabel\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 449,
+      "expressionStart": 33464,
+      "sourceExpression": "\"MÃ KHÔI PHỤC (CHỈ CẦN KHI QUÊN MẬT KHẨU)\"",
+      "composite": false,
+      "literalOccurrences": [
+        "MÃ KHÔI PHỤC (CHỈ CẦN KHI QUÊN MẬT KHẨU)"
+      ],
+      "keys": [
+        "career.account.recoveryInputLabel"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.recoveryInputLabel\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 451,
+      "expressionStart": 33652,
+      "sourceExpression": "\"ĐĂNG NHẬP\"",
+      "composite": false,
+      "literalOccurrences": [
+        "ĐĂNG NHẬP"
+      ],
+      "keys": [
+        "career.account.login"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.login\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 452,
+      "expressionStart": 33759,
+      "sourceExpression": "\"NÂNG CẤP HỒ SƠ\"",
+      "composite": false,
+      "literalOccurrences": [
+        "NÂNG CẤP HỒ SƠ"
+      ],
+      "keys": [
+        "career.account.register"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.register\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 454,
+      "expressionStart": 33982,
+      "sourceExpression": "\"ĐỔI MẬT KHẨU BẰNG MÃ\"",
+      "composite": false,
+      "literalOccurrences": [
+        "ĐỔI MẬT KHẨU BẰNG MÃ"
+      ],
+      "keys": [
+        "career.account.recover"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.recover\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 455,
+      "expressionStart": 34116,
+      "sourceExpression": "\"Dán mật khẩu và mã được hỗ trợ. Đăng nhập sẽ kết thúc phiên đang mở trước khi đổi hồ sơ.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Dán mật khẩu và mã được hỗ trợ. Đăng nhập sẽ kết thúc phiên đang mở trước khi đổi hồ sơ."
+      ],
+      "keys": [
+        "career.account.pasteHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.pasteHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 458,
+      "expressionStart": 34302,
+      "sourceExpression": "\"KẾT NỐI HỒ SƠ ĐỂ ĐĂNG KÝ\"",
+      "composite": false,
+      "literalOccurrences": [
+        "KẾT NỐI HỒ SƠ ĐỂ ĐĂNG KÝ"
+      ],
+      "keys": [
+        "career.account.connectToRegister"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.connectToRegister\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 461,
+      "expressionStart": 34565,
+      "sourceExpression": "\"Khóa hồ sơ đang lưu đã hết hạn hoặc bị thu hồi. Tài khoản đã đăng ký vẫn có thể đăng nhập hoặc khôi phục ở trên.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Khóa hồ sơ đang lưu đã hết hạn hoặc bị thu hồi. Tài khoản đã đăng ký vẫn có thể đăng nhập hoặc khôi phục ở trên."
+      ],
+      "keys": [
+        "career.account.expiredCredentialHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.expiredCredentialHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 462,
+      "expressionStart": 34729,
+      "sourceExpression": "\"BỎ KHÓA HỒ SƠ ĐÃ HẾT HẠN\"",
+      "composite": false,
+      "literalOccurrences": [
+        "BỎ KHÓA HỒ SƠ ĐÃ HẾT HẠN"
+      ],
+      "keys": [
+        "career.account.forgetCredential"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.forgetCredential\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 462,
+      "expressionStart": 34768,
+      "sourceExpression": "\"Bỏ khóa cũ trên máy này? Bạn sẽ không còn truy cập hồ sơ vô danh cũ bằng khóa này. Nếu đã nâng cấp tài khoản, hãy đăng nhập hoặc khôi phục tài khoản để giữ tiến trình; bản sao lưu máy chủ vẫn cần cơ chế khôi phục của chủ máy. Sau khi bỏ khóa, KẾT NỐI HỒ SƠ sẽ tạo hồ sơ mới.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bỏ khóa cũ trên máy này? Bạn sẽ không còn truy cập hồ sơ vô danh cũ bằng khóa này. Nếu đã nâng cấp tài khoản, hãy đăng nhập hoặc khôi phục tài khoản để giữ tiến trình; bản sao lưu máy chủ vẫn cần cơ chế khôi phục của chủ máy. Sau khi bỏ khóa, KẾT NỐI HỒ SƠ sẽ tạo hồ sơ mới."
+      ],
+      "keys": [
+        "career.account.forgetCredentialConfirm"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.forgetCredentialConfirm\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 467,
+      "expressionStart": 35209,
+      "sourceExpression": "\"ĐĂNG XUẤT MÁY NÀY\"",
+      "composite": false,
+      "literalOccurrences": [
+        "ĐĂNG XUẤT MÁY NÀY"
+      ],
+      "keys": [
+        "career.account.logout"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.logout\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 467,
+      "expressionStart": 35244,
+      "sourceExpression": "\"Thu hồi khóa hồ sơ trên máy này và kết thúc phiên hiện tại?\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Thu hồi khóa hồ sơ trên máy này và kết thúc phiên hiện tại?"
+      ],
+      "keys": [
+        "career.account.logoutConfirm"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.logoutConfirm\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 468,
+      "expressionStart": 35409,
+      "sourceExpression": "\"THU HỒI TẤT CẢ PHIÊN\"",
+      "composite": false,
+      "literalOccurrences": [
+        "THU HỒI TẤT CẢ PHIÊN"
+      ],
+      "keys": [
+        "career.account.logoutAll"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.logoutAll\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 468,
+      "expressionStart": 35447,
+      "sourceExpression": "\"Đăng xuất tất cả phiên của tài khoản? Bạn cần đăng nhập lại trên từng máy.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đăng xuất tất cả phiên của tài khoản? Bạn cần đăng nhập lại trên từng máy."
+      ],
+      "keys": [
+        "career.account.logoutAllConfirm"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.logoutAllConfirm\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 471,
+      "expressionStart": 35680,
+      "sourceExpression": "\"TẠO MÃ KHÔI PHỤC MỚI\"",
+      "composite": false,
+      "literalOccurrences": [
+        "TẠO MÃ KHÔI PHỤC MỚI"
+      ],
+      "keys": [
+        "career.account.rotateRecovery"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.account.rotateRecovery\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 472,
+      "expressionStart": 35841,
+      "sourceExpression": "\"Sao lưu bằng văn bản chỉ dành cho hồ sơ LAN offline; dữ liệu online được quản lý trên máy chủ.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Sao lưu bằng văn bản chỉ dành cho hồ sơ LAN offline; dữ liệu online được quản lý trên máy chủ."
+      ],
+      "keys": [
+        "career.backup.onlineRestriction"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.backup.onlineRestriction\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 473,
+      "expressionStart": 35988,
+      "sourceExpression": "\"SAO LƯU LAN OFFLINE\"",
+      "composite": false,
+      "literalOccurrences": [
+        "SAO LƯU LAN OFFLINE"
+      ],
+      "keys": [
+        "career.backup.heading"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.backup.heading\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 474,
+      "expressionStart": 36066,
+      "sourceExpression": "\"Bản lưu chỉ nhập lại vào hồ sơ offline này và phải qua kiểm tra máy chủ. Nội dung bản lưu có dữ liệu cá nhân; chỉ dán hoặc lưu ở nơi bạn tin cậy.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bản lưu chỉ nhập lại vào hồ sơ offline này và phải qua kiểm tra máy chủ. Nội dung bản lưu có dữ liệu cá nhân; chỉ dán hoặc lưu ở nơi bạn tin cậy."
+      ],
+      "keys": [
+        "career.backup.privacyHint"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.backup.privacyHint\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 475,
+      "expressionStart": 36265,
+      "sourceExpression": "\"NỘI DUNG BẢN LƯU\"",
+      "composite": false,
+      "literalOccurrences": [
+        "NỘI DUNG BẢN LƯU"
+      ],
+      "keys": [
+        "career.backup.contentLabel"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.backup.contentLabel\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 477,
+      "expressionStart": 36515,
+      "sourceExpression": "\"XUẤT BẢN LƯU\"",
+      "composite": false,
+      "literalOccurrences": [
+        "XUẤT BẢN LƯU"
+      ],
+      "keys": [
+        "career.backup.export"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.backup.export\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 478,
+      "expressionStart": 36635,
+      "sourceExpression": "\"NHẬP BẢN LƯU\"",
+      "composite": false,
+      "literalOccurrences": [
+        "NHẬP BẢN LƯU"
+      ],
+      "keys": [
+        "career.backup.import"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.backup.import\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Account",
+      "line": 481,
+      "expressionStart": 36808,
+      "sourceExpression": "\"Nhập bản lưu này? Máy chủ sẽ kiểm tra nguồn và tính hợp lệ trước khi thay thế tiến trình offline.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Nhập bản lưu này? Máy chủ sẽ kiểm tra nguồn và tính hợp lệ trước khi thay thế tiến trình offline."
+      ],
+      "keys": [
+        "career.backup.importConfirm"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.backup.importConfirm\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 503,
+      "expressionStart": 39166,
+      "sourceExpression": "\"Đã thêm xe vào garage.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã thêm xe vào garage."
+      ],
+      "keys": [
+        "career.notice.buy"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.buy\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 503,
+      "expressionStart": 39213,
+      "sourceExpression": "\"Đã đổi xe.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã đổi xe."
+      ],
+      "keys": [
+        "career.notice.trade"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.trade\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 503,
+      "expressionStart": 39249,
+      "sourceExpression": "\"Xe đã được sửa về 100%.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Xe đã được sửa về 100%."
+      ],
+      "keys": [
+        "career.notice.repair"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.repair\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 504,
+      "expressionStart": 39314,
+      "sourceExpression": "\"Đã chọn xe cho chặng tới.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã chọn xe cho chặng tới."
+      ],
+      "keys": [
+        "career.notice.equip"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.equip\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 504,
+      "expressionStart": 39368,
+      "sourceExpression": "\"Đã chọn tay đua cho hành trình.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã chọn tay đua cho hành trình."
+      ],
+      "keys": [
+        "career.notice.character"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.character\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 504,
+      "expressionStart": 39427,
+      "sourceExpression": "\"Đã nâng cấp hồ sơ. Hãy lưu mã khôi phục.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã nâng cấp hồ sơ. Hãy lưu mã khôi phục."
+      ],
+      "keys": [
+        "career.notice.register"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.register\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 504,
+      "expressionStart": 39492,
+      "sourceExpression": "\"Đăng nhập thành công.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đăng nhập thành công."
+      ],
+      "keys": [
+        "career.notice.login"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.login\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 505,
+      "expressionStart": 39564,
+      "sourceExpression": "\"Đã tạo mã khôi phục mới. Mã cũ hết hiệu lực; hãy lưu mã mới.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã tạo mã khôi phục mới. Mã cũ hết hiệu lực; hãy lưu mã mới."
+      ],
+      "keys": [
+        "career.notice.rotateRecovery"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.rotateRecovery\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 505,
+      "expressionStart": 39651,
+      "sourceExpression": "\"Đã đổi mật khẩu. Hãy lưu mã khôi phục mới.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã đổi mật khẩu. Hãy lưu mã khôi phục mới."
+      ],
+      "keys": [
+        "career.notice.recover"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.recover\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 505,
+      "expressionStart": 39737,
+      "sourceExpression": "\"Đã thu hồi phiên và đăng xuất.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã thu hồi phiên và đăng xuất."
+      ],
+      "keys": [
+        "career.notice.logout"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.logout\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 506,
+      "expressionStart": 39810,
+      "sourceExpression": "\"Đã bỏ khóa cũ trên máy này. Chọn KẾT NỐI HỒ SƠ để tạo hồ sơ mới, hoặc đăng nhập tài khoản.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã bỏ khóa cũ trên máy này. Chọn KẾT NỐI HỒ SƠ để tạo hồ sơ mới, hoặc đăng nhập tài khoản."
+      ],
+      "keys": [
+        "career.notice.forget"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.forget\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 507,
+      "expressionStart": 39950,
+      "sourceExpression": "\"Hành trình đã bắt đầu lại: Spark 450 nguyên vẹn, quỹ $0.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Hành trình đã bắt đầu lại: Spark 450 nguyên vẹn, quỹ $0."
+      ],
+      "keys": [
+        "career.notice.restart"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.restart\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 508,
+      "expressionStart": 40049,
+      "sourceExpression": "\"Đã nhập bản lưu được máy chủ xác nhận.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đã nhập bản lưu được máy chủ xác nhận."
+      ],
+      "keys": [
+        "career.notice.import"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.import\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 508,
+      "expressionStart": 40113,
+      "sourceExpression": "\"Bản lưu đã sẵn sàng. Chọn toàn bộ nội dung để sao chép.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bản lưu đã sẵn sàng. Chọn toàn bộ nội dung để sao chép."
+      ],
+      "keys": [
+        "career.notice.export"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.export\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "SuccessText",
+      "line": 508,
+      "expressionStart": 40188,
+      "sourceExpression": "\"Tiến trình được máy chủ xác nhận. Có thể làm mới để cập nhật.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Tiến trình được máy chủ xác nhận. Có thể làm mới để cập nhật."
+      ],
+      "keys": [
+        "career.notice.default"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.notice.default\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Reason",
+      "line": 512,
+      "expressionStart": 40380,
+      "sourceExpression": "\"Mua xe\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Mua xe"
+      ],
+      "keys": [
+        "career.ledger.reasonBuy"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.reasonBuy\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Reason",
+      "line": 512,
+      "expressionStart": 40411,
+      "sourceExpression": "\"Đổi xe\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đổi xe"
+      ],
+      "keys": [
+        "career.ledger.reasonTrade"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.reasonTrade\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Reason",
+      "line": 512,
+      "expressionStart": 40443,
+      "sourceExpression": "\"Sửa xe\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Sửa xe"
+      ],
+      "keys": [
+        "career.ledger.reasonRepair"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.reasonRepair\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Reason",
+      "line": 512,
+      "expressionStart": 40493,
+      "sourceExpression": "\"Kết quả cuộc đua\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Kết quả cuộc đua"
+      ],
+      "keys": [
+        "career.ledger.reasonRace"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.reasonRace\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Reason",
+      "line": 512,
+      "expressionStart": 40565,
+      "sourceExpression": "\"Bắt đầu lại hành trình\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bắt đầu lại hành trình"
+      ],
+      "keys": [
+        "career.ledger.reasonRestart"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.reasonRestart\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "Reason",
+      "line": 512,
+      "expressionStart": 40639,
+      "sourceExpression": "\"Quỹ khởi đầu\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Quỹ khởi đầu"
+      ],
+      "keys": [
+        "career.ledger.reasonOpening"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.ledger.reasonOpening\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "FormatTimestamp",
+      "line": 519,
+      "expressionStart": 40784,
+      "sourceExpression": "DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture,\r\n                DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out var timestamp)\r\n                ? timestamp.ToString(\"dd/MM/yyyy HH:mm 'UTC'\", CultureInfo.InvariantCulture)\r\n                : \"Thời gian chưa rõ\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Thời gian chưa rõ"
+      ],
+      "keys": [
+        "career.ledger.unknownTime"
+      ],
+      "arguments": {},
+      "replacementExpression": "DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out var timestamp) ? timestamp.ToString(\"dd/MM/yyyy HH:mm 'UTC'\", CultureInfo.InvariantCulture) : T(\"career.ledger.unknownTime\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 525,
+      "expressionStart": 41267,
+      "sourceExpression": "\"Hãy kết nối hồ sơ đã lưu hoặc đăng nhập tài khoản trước.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Hãy kết nối hồ sơ đã lưu hoặc đăng nhập tài khoản trước."
+      ],
+      "keys": [
+        "career.error.authRequired"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.authRequired\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 526,
+      "expressionStart": 41374,
+      "sourceExpression": "\"Đổi địa chỉ máy chủ sang wss:// để đăng nhập qua kết nối TLS.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Đổi địa chỉ máy chủ sang wss:// để đăng nhập qua kết nối TLS."
+      ],
+      "keys": [
+        "career.error.httpsRequired"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.httpsRequired\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 527,
+      "expressionStart": 41491,
+      "sourceExpression": "\"Không nhận được phản hồi. Kiểm tra kết nối; Thử lại giữ nguyên mã giao dịch.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Không nhận được phản hồi. Kiểm tra kết nối; Thử lại giữ nguyên mã giao dịch."
+      ],
+      "keys": [
+        "career.error.networkUnavailable"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.networkUnavailable\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 528,
+      "expressionStart": 41620,
+      "sourceExpression": "\"Tên tài khoản cần 3–24 ký tự a–z, 0–9, dấu gạch dưới hoặc gạch nối.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Tên tài khoản cần 3–24 ký tự a–z, 0–9, dấu gạch dưới hoặc gạch nối."
+      ],
+      "keys": [
+        "career.error.invalidUsername"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.invalidUsername\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 529,
+      "expressionStart": 41762,
+      "sourceExpression": "\"Mật khẩu cần 12–128 ký tự. Hãy dùng một mật khẩu dài và riêng cho tài khoản.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Mật khẩu cần 12–128 ký tự. Hãy dùng một mật khẩu dài và riêng cho tài khoản."
+      ],
+      "keys": [
+        "career.error.invalidPassword"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.invalidPassword\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 530,
+      "expressionStart": 41887,
+      "sourceExpression": "\"Hồ sơ vẫn còn xe chạy được hoặc đủ quỹ sửa xe. Làm mới garage để tiếp tục hành trình.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Hồ sơ vẫn còn xe chạy được hoặc đủ quỹ sửa xe. Làm mới garage để tiếp tục hành trình."
+      ],
+      "keys": [
+        "career.error.notBankrupt"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.notBankrupt\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 531,
+      "expressionStart": 42024,
+      "sourceExpression": "\"Xe đang chọn đã hỏng. Sửa xe trước khi đổi hoặc đua.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Xe đang chọn đã hỏng. Sửa xe trước khi đổi hoặc đua."
+      ],
+      "keys": [
+        "career.error.repairRequired"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.repairRequired\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 532,
+      "expressionStart": 42125,
+      "sourceExpression": "\"Bản lưu không hợp lệ hoặc đã bị thay đổi. Dùng bản xuất nguyên vẹn từ máy chủ.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bản lưu không hợp lệ hoặc đã bị thay đổi. Dùng bản xuất nguyên vẹn từ máy chủ."
+      ],
+      "keys": [
+        "career.error.invalidSave"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.invalidSave\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 533,
+      "expressionStart": 42252,
+      "sourceExpression": "\"Bản lưu thuộc hồ sơ hoặc máy chủ khác; không thể nhập vào hồ sơ này.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bản lưu thuộc hồ sơ hoặc máy chủ khác; không thể nhập vào hồ sơ này."
+      ],
+      "keys": [
+        "career.error.foreignSave"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.foreignSave\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 534,
+      "expressionStart": 42367,
+      "sourceExpression": "\"Bản lưu đã cũ. Xuất bản mới nhất để bảo toàn giao dịch hiện tại.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Bản lưu đã cũ. Xuất bản mới nhất để bảo toàn giao dịch hiện tại."
+      ],
+      "keys": [
+        "career.error.staleSave"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.staleSave\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 535,
+      "expressionStart": 42481,
+      "sourceExpression": "\"Xe này đã có trong garage. Làm mới để chọn xe.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Xe này đã có trong garage. Làm mới để chọn xe."
+      ],
+      "keys": [
+        "career.error.alreadyOwned"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.alreadyOwned\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 536,
+      "expressionStart": 42576,
+      "sourceExpression": "\"Thao tác quá nhanh. Đợi một lát rồi thực hiện lại.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Thao tác quá nhanh. Đợi một lát rồi thực hiện lại."
+      ],
+      "keys": [
+        "career.error.rateLimited"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.rateLimited\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 537,
+      "expressionStart": 42683,
+      "sourceExpression": "\"Quỹ chưa đủ cho giao dịch này. Hãy hoàn thành thêm chặng đua.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Quỹ chưa đủ cho giao dịch này. Hãy hoàn thành thêm chặng đua."
+      ],
+      "keys": [
+        "career.error.insufficientCredits"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.insufficientCredits\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 538,
+      "expressionStart": 42821,
+      "sourceExpression": "\"Tên tài khoản, mật khẩu hoặc mã khôi phục chưa đúng.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Tên tài khoản, mật khẩu hoặc mã khôi phục chưa đúng."
+      ],
+      "keys": [
+        "career.error.invalidCredentials"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.invalidCredentials\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 539,
+      "expressionStart": 42953,
+      "sourceExpression": "\"Tên tài khoản đã có người dùng. Hãy chọn tên khác.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Tên tài khoản đã có người dùng. Hãy chọn tên khác."
+      ],
+      "keys": [
+        "career.error.usernameUnavailable"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.usernameUnavailable\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 540,
+      "expressionStart": 43085,
+      "sourceExpression": "\"Rời phòng đua rồi thực hiện giao dịch này.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Rời phòng đua rồi thực hiện giao dịch này."
+      ],
+      "keys": [
+        "career.error.profileBusy"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.profileBusy\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 541,
+      "expressionStart": 43183,
+      "sourceExpression": "\"Máy chủ chưa lưu được dữ liệu. Thử lại sau; số dư chưa được xác nhận thay đổi.\"",
+      "composite": false,
+      "literalOccurrences": [
+        "Máy chủ chưa lưu được dữ liệu. Thử lại sau; số dư chưa được xác nhận thay đổi."
+      ],
+      "keys": [
+        "career.error.storageUnavailable"
+      ],
+      "arguments": {},
+      "replacementExpression": "T(\"career.error.storageUnavailable\")"
+    },
+    {
+      "file": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "member": "ErrorText",
+      "line": 542,
+      "expressionStart": 43298,
+      "sourceExpression": "\"Chưa thực hiện được thao tác (\" + code + \"). Làm mới hồ sơ và kiểm tra dữ liệu vừa nhập.\"",
+      "composite": true,
+      "literalOccurrences": [
+        "Chưa thực hiện được thao tác (",
+        "). Làm mới hồ sơ và kiểm tra dữ liệu vừa nhập."
+      ],
+      "keys": [
+        "career.error.unknown"
+      ],
+      "arguments": {
+        "career.error.unknown": {
+          "code": "code"
+        }
+      },
+      "replacementExpression": "F(\"career.error.unknown\", A(\"code\", code))"
+    }
+  ],
+  "untouchedData": [
+    "RACING BOIS",
+    "Spark 450",
+    "bike/character/route display names",
+    "user display names/usernames",
+    "realm codes/endpoints",
+    "CareerIntent operations and server error codes",
+    "UI element names/classes",
+    "numeric format strings and UTC timestamp format"
+  ],
+  "translationsAuthored": false
+}

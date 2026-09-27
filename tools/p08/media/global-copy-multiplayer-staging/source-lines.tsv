@@ -1,0 +1,102 @@
+0	multiplayer.level.current	CẤP {level} · HIỆN TẠI
+1	multiplayer.invite.received	Đã nhận lời mời {code}. Kết nối và chọn VÀO PHÒNG khi bạn sẵn sàng.
+2	multiplayer.level.mismatch	Hồ sơ của bạn đang ở cấp {current}. Phòng vẫn giữ cấp {room}; hãy rời phòng và tạo chặng ở cấp hiện tại.
+3	multiplayer.seat.waiting	{seat}   Đang chờ người chơi…
+4	multiplayer.room.info	{players} / {capacity} NGƯỜI · {bots} MÁY\n{course} · CẤP {level}{visibility}
+5	multiplayer.invite.code	Mã phòng: {code}
+6	multiplayer.countdown	XUẤT PHÁT SAU {seconds}
+7	multiplayer.result.finished	HẠNG {rank} · {seconds}s
+8	multiplayer.result.wallet	{reward} · QUỸ ${credits}
+9	multiplayer.room.summary	{players} / {capacity} · CẤP {level}
+10	multiplayer.validation.code	Mã phòng gồm 6 ký tự. Hãy kiểm tra lại mã bạn nhận được.
+11	multiplayer.validation.create	Chọn một tuyến đã mở và đặt tên phòng trước khi tiếp tục.
+12	multiplayer.validation.route	Tuyến này chưa sẵn sàng.
+13	multiplayer.level.guest	Phiên khách chỉ đua ở cấp 1. Rời phòng này rồi tạo hoặc vào phòng cấp 1.
+14	multiplayer.content.incomplete	Nội dung đường đua chưa tải xong.
+15	multiplayer.title.saving	ĐANG LƯU KẾT QUẢ
+16	multiplayer.title.suspended	TẠM DỪNG KẾT NỐI
+17	multiplayer.title.reconnecting	ĐANG KẾT NỐI LẠI
+18	multiplayer.title.connecting	ĐANG KẾT NỐI
+19	multiplayer.title.results	CHẶNG ĐUA KHÉP LẠI.
+20	multiplayer.title.browser	CÙNG LÊN ĐƯỜNG.
+21	multiplayer.message.saving	Máy chủ đang xác nhận lưu điểm và phần thưởng. Vui lòng giữ kết nối.
+22	multiplayer.message.reconnecting	Chỗ của bạn được giữ trong thời gian kết nối lại. Về menu để kết thúc phiên.
+23	multiplayer.message.results	Kết quả chính thức của phòng. Cùng trở về phòng chờ để bắt đầu chặng mới.
+24	multiplayer.message.browser	Tạo cuộc đua của riêng bạn hoặc nhập mã để cùng bạn bè lên đường.
+25	multiplayer.message.room	Mã phòng ở bên dưới. Mời bạn bè, chọn sẵn sàng và chờ chủ phòng xuất phát.
+26	multiplayer.member.you	 · BẠN
+27	multiplayer.member.host	 · CHỦ PHÒNG
+28	multiplayer.member.guest	KHÁCH
+29	multiplayer.member.saved	HỒ SƠ ĐÃ LƯU
+30	multiplayer.member.held	GIỮ CHỖ
+31	multiplayer.ready	SẴN SÀNG
+32	multiplayer.member.not-ready	CHƯA SẴN SÀNG
+33	multiplayer.seat.empty	CHỖ TRỐNG
+34	multiplayer.ready.cancel	HỦY SẴN SÀNG
+35	multiplayer.hint.countdown	Các tay đua đã sẵn sàng. Giữ nhịp, cuộc đua sắp bắt đầu.
+36	multiplayer.hint.not-ready	Bạn chưa sẵn sàng. Nhấn SẴN SÀNG để tham gia xuất phát.
+37	multiplayer.hint.waiting	Đã sẵn sàng. Đang chờ những tay đua còn lại.
+38	multiplayer.hint.host	Tất cả đã sẵn sàng. Bạn có thể bắt đầu cuộc đua.
+39	multiplayer.hint.members	Tất cả đã sẵn sàng. Đang chờ chủ phòng xuất phát.
+40	multiplayer.content.preparing	Đang chuẩn bị nội dung đường đua…
+41	multiplayer.rematch	VỀ PHÒNG CHỜ
+42	multiplayer.rematch.waiting	CHỜ CHỦ PHÒNG
+43	multiplayer.result.receiving	Đang nhận kết quả chính thức từ máy chủ…
+44	multiplayer.result.saved	ĐÃ LƯU KẾT QUẢ · Thưởng của phiên khách chỉ áp dụng trong phiên này.
+45	multiplayer.result.pending	ĐANG CHỜ XÁC NHẬN LƯU · Chưa xác nhận phần thưởng vào hồ sơ.
+46	multiplayer.result.busted	BỊ BẮT
+47	multiplayer.result.wrecked	HỎNG XE
+48	multiplayer.result.incomplete	KHÔNG HOÀN THÀNH
+49	multiplayer.room.racing	ĐANG ĐUA
+50	multiplayer.room.full	ĐÃ ĐỦ NGƯỜI
+51	multiplayer.join	VÀO PHÒNG
+52	multiplayer.room.public	 · CÔNG KHAI
+53	multiplayer.room.private	 · RIÊNG TƯ
+54	multiplayer.error.room-full	Phòng đã đủ người. Hãy chọn phòng khác hoặc tạo phòng mới.
+55	multiplayer.error.room-not-found	Không tìm thấy phòng. Kiểm tra lại mã hoặc làm mới danh sách.
+56	multiplayer.error.room-started	Cuộc đua đã bắt đầu. Bạn có thể vào sau khi phòng trở về trạng thái chờ.
+57	multiplayer.error.host-only	Chỉ chủ phòng có thể thực hiện thao tác này.
+58	multiplayer.error.not-ready	Tất cả tay đua cần kết nối và sẵn sàng trước khi bắt đầu.
+59	multiplayer.error.invalid-name	Tên cần có từ 1 đến 24 ký tự và không chứa ký tự điều khiển.
+60	multiplayer.error.room-settings	Kiểm tra tên phòng và số đối thủ máy.
+61	multiplayer.error.course-unavailable	Tuyến đường này đang được phát triển. Hãy chọn Canyon Run.
+62	multiplayer.error.campaign-locked	Cấp này chưa mở cho hồ sơ của bạn. Hãy chọn cấp đã mở trong hành trình.
+63	multiplayer.error.repair-required	Xe đã hỏng. Rời phòng và sửa xe trong garage trước khi xuất phát.
+64	multiplayer.error.profile-busy	Hồ sơ đang có cuộc đua chưa lưu xong. Chờ kết quả rồi thử lại.
+65	multiplayer.error.profile-revoked	Phiên hồ sơ đã hết hạn hoặc được thu hồi. Vào tài khoản để đăng nhập lại.
+66	multiplayer.error.already-in-room	Bạn đang ở một phòng. Hãy rời phòng đó trước.
+67	multiplayer.error.profile-in-room	Hồ sơ này đang giữ chỗ ở phiên khác. Dùng Khách mới để thêm một người chơi riêng.
+68	multiplayer.error.profile-unavailable	Chưa đọc được hồ sơ trên máy chủ. Hãy thử lại sau hoặc chọn Khách mới.
+69	multiplayer.error.resume-expired	Thời gian giữ chỗ đã hết. Hãy kết nối lại và vào một phòng mới.
+70	multiplayer.error.resume-owner	Phiên đã được mở ở nơi khác. Chọn Khách mới để chơi riêng.
+71	multiplayer.error.version-mismatch	Bản game và máy chủ khác phiên bản. Tải lại trang hoặc cập nhật gói LAN.
+72	multiplayer.error.server-full	Máy chủ đang đầy. Hãy thử lại sau.
+73	multiplayer.error.room-capacity	Máy chủ đã đủ phòng. Hãy vào một phòng còn chỗ.
+74	multiplayer.error.persistence-pending	Máy chủ đang chuẩn bị. Vui lòng chờ một chút.
+75	multiplayer.error.persistence-queue-full	Máy chủ đang bận lưu dữ liệu. Hãy thử lại sau.
+76	multiplayer.error.result-save-retry	Máy chủ đang thử lưu lại kết quả. Giữ phiên này để nhận xác nhận.
+77	multiplayer.error.start-cancelled	Đếm ngược đã hủy vì thành viên hoặc chủ phòng thay đổi.
+78	multiplayer.error.result-required	Cuộc đua chưa kết thúc. Vui lòng chờ kết quả chính thức.
+79	multiplayer.error.command-rate	Bạn thao tác quá nhanh. Chờ một chút rồi thử lại.
+80	multiplayer.error.not-room-member	Bạn không còn ở phòng này. Hãy làm mới danh sách và vào lại.
+81	multiplayer.error.unknown	Không thực hiện được yêu cầu này. Hãy thử lại hoặc kết nối lại máy chủ.
+82	multiplayer.heading.eyebrow	RACING BOIS / CÙNG LÊN ĐƯỜNG
+83	multiplayer.heading.initial-title	PHÒNG ĐUA
+84	multiplayer.menu.return	VỀ MENU
+85	multiplayer.browser.create-heading	TẠO PHÒNG
+86	multiplayer.browser.room-name-label	Tên phòng
+87	multiplayer.browser.bot-label	Đối thủ máy
+88	multiplayer.browser.public-toggle	Hiện trong danh sách phòng
+89	multiplayer.browser.route-label	Tuyến đường
+90	multiplayer.browser.profile-level-label	Cấp hiện tại của hồ sơ
+91	multiplayer.browser.create	TẠO PHÒNG  >
+92	multiplayer.browser.invite-heading	CÓ MÃ TỪ BẠN BÈ?
+93	multiplayer.browser.join-code-hint	Nhập 6 ký tự của phòng
+94	multiplayer.browser.room-list-heading	PHÒNG TRÊN MÁY CHỦ
+95	multiplayer.browser.refresh	LÀM MỚI
+96	multiplayer.browser.empty-rooms	Chưa có phòng. Tạo một phòng và gửi mã cho bạn bè.
+97	multiplayer.room.invite-code-label	MÃ MỜI BẠN BÈ
+98	multiplayer.invite.copy	SAO CHÉP LỜI MỜI
+99	multiplayer.invite.link-hint	Chọn và sao chép liên kết này để mời bạn bè.
+100	multiplayer.start	BẮT ĐẦU
+101	multiplayer.leave	RỜI PHÒNG

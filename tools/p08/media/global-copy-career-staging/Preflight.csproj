@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><ImplicitUsings>disable</ImplicitUsings><Nullable>disable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors><NoWarn>0436</NoWarn>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CareerView.cs" />
+    <Compile Include="../global-copy-main-staging/DisplayLanguage.cs" />
+    <Compile Include="../global-copy-main-staging/UiText.cs" />
+    <Compile Include="../global-copy-main-staging/UiText.Main.Generated.cs" />
+    <Compile Include="UiText.Career.Generated.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/UiBindingScope.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Presentation.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Protocol.dll" />
+  </ItemGroup>
+</Project>
