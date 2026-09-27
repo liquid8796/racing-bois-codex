@@ -1,0 +1,648 @@
+{
+  "schema": 1,
+  "status": "staged_for_native_comparison",
+  "visualAccepted": false,
+  "scope": "Only the original project-authored belly shell is replaced to clear unchanged R4 fairing/vent geometry. Native Unity and full concept acceptance remain open.",
+  "lockedConcept": {
+    "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+    "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819"
+  },
+  "editableSource": {
+    "path": "ArtSource/P08/Golden/Apex/R5/RB_Golden_Apex_r5_editable01.blend",
+    "sha256": "1d226c7b3e05259d70c3f38cc35cbf835dba98fe55277bb994e0f0279927ede8"
+  },
+  "assembledSource": {
+    "path": "ArtSource/P08/Golden/Apex/R5/RB_Golden_Apex_r5_assembled.blend",
+    "sha256": "7c1cc39892db1e354b44786aadff84fee360f001bfe07cbd577ad70bb31ae61f"
+  },
+  "stagedFbx": {
+    "path": "_local/p08-apex-r5-staging/RB_Golden_Apex_r5.fbx",
+    "sha256": "9fc3f8e0580b96c6cb20f44e2c6be2746a08731c98a773f98acd4da718738130"
+  },
+  "copiesForPublication": [
+    {
+      "source": {
+        "path": "_local/p08-apex-r5-staging/RB_Golden_Apex_r5.fbx",
+        "sha256": "9fc3f8e0580b96c6cb20f44e2c6be2746a08731c98a773f98acd4da718738130"
+      },
+      "destination": "Assets/RacingBois/Art/P08/Golden/Apex/R5/RB_Golden_Apex_r5.fbx"
+    }
+  ],
+  "descriptorAfterCopy": {
+    "schema": 1,
+    "assets": [
+      {
+        "id": "RB_Golden_Apex_r5",
+        "kind": "bike",
+        "concept": {
+          "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+          "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819"
+        },
+        "conceptReview": {
+          "path": "ArtSource/Concepts/P08/Golden/apex-v2-review.md",
+          "sha256": "420aa39d68616232f9f7244b8e302939ffc97748a38634dbf15319a337b00a4a"
+        },
+        "source": {
+          "path": "ArtSource/P08/Golden/Apex/R5/RB_Golden_Apex_r5_assembled.blend",
+          "sha256": "7c1cc39892db1e354b44786aadff84fee360f001bfe07cbd577ad70bb31ae61f"
+        },
+        "fbx": {
+          "path": "Assets/RacingBois/Art/P08/Golden/Apex/R5/RB_Golden_Apex_r5.fbx",
+          "sha256": "9fc3f8e0580b96c6cb20f44e2c6be2746a08731c98a773f98acd4da718738130"
+        },
+        "restPose": "file",
+        "modelRotationEuler": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "minimumSize": {
+          "x": 0.7338399696350097,
+          "y": 1.105,
+          "z": 2.039999942779541
+        },
+        "maximumSize": {
+          "x": 0.7738399696350098,
+          "y": 1.145,
+          "z": 2.079999942779541
+        },
+        "materials": [
+          {
+            "sourceName": "Apex_Glass",
+            "normalScale": 0.25,
+            "maxSize": 512,
+            "transparent": true,
+            "opacity": 0.42,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Glass_BaseColor.png",
+              "sha256": "f7fdeb0fe7bde9bb33353d7d513d22f61ac7c8e521f666083bcfb2cfd8844a39"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Glass_Normal.png",
+              "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Glass_MetallicSmoothness.png",
+              "sha256": "895439dab363fd2ba7a22fbc33fcfb58a3e39a6a41eae7e18fc4149ba088125c"
+            }
+          },
+          {
+            "sourceName": "Apex_Graphite",
+            "normalScale": 0.25,
+            "maxSize": 1024,
+            "transparent": false,
+            "opacity": 1,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Graphite_BaseColor.png",
+              "sha256": "c76b6fa05966fa58b5b4807f7a4ad288becc3ab97f9ef0c327857dd413be8eba"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Graphite_Normal.png",
+              "sha256": "3d76a722fcb596e62da23a03a11bb81b8a244a7ce96abc49a067bd6834908fbe"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Graphite_MetallicSmoothness.png",
+              "sha256": "9dd004770e51d65170a029b0ab795431c288e17eba94d67528a634ad695e7b6a"
+            }
+          },
+          {
+            "sourceName": "Apex_Lamp",
+            "normalScale": 0.25,
+            "maxSize": 512,
+            "transparent": false,
+            "opacity": 1,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_BaseColor.png",
+              "sha256": "5f75b90e05abdb730f892211d85890930b10a91ad568d47af3903022525c0824"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_Normal.png",
+              "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_MetallicSmoothness.png",
+              "sha256": "6a1c572b771590af9e99806d9c47ff50e89711eeb86714e9ba4791a38dffa09b"
+            },
+            "emission": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_Emission.png",
+              "sha256": "5f75b90e05abdb730f892211d85890930b10a91ad568d47af3903022525c0824"
+            },
+            "emissionIntensity": 2
+          },
+          {
+            "sourceName": "Apex_Lens",
+            "normalScale": 0.25,
+            "maxSize": 512,
+            "transparent": true,
+            "opacity": 0.08,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lens_BaseColor.png",
+              "sha256": "2fbb41a9cd0d2de11ee7f55805264fd5235f497aeaf8f53b46b453c744e813fa"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lens_Normal.png",
+              "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lens_MetallicSmoothness.png",
+              "sha256": "daa81de94e12bbe2228fbeb9c03823d5f19f0363a13e434486ff0af78a216e42"
+            }
+          },
+          {
+            "sourceName": "Apex_Machined",
+            "normalScale": 0.25,
+            "maxSize": 1024,
+            "transparent": false,
+            "opacity": 1,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Machined_BaseColor.png",
+              "sha256": "c5400d5740868c426ba101776b850816a0eacc0c590c30f2318f5d935e7432a2"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Machined_Normal.png",
+              "sha256": "9f434a0f8f97d5cd291c118eceb20bcaff796e8ba49034620802353fdbf77242"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Machined_MetallicSmoothness.png",
+              "sha256": "dcafa4461378d58f3c215fa78c5232f9231d998fd185397bc440771ea0d6b0a7"
+            }
+          },
+          {
+            "sourceName": "Apex_Pearl",
+            "normalScale": 0.25,
+            "maxSize": 2048,
+            "transparent": false,
+            "opacity": 1,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Pearl_BaseColor.png",
+              "sha256": "0dce0b3fce1dbb329ad0d7c0e24ec4f2d7143da494b806a19a94a2d68dafb0a9"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Pearl_Normal.png",
+              "sha256": "6490e77d3e2a4228d445feae4922a9cbff2116d810f404a310eca88f5fbca097"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Pearl_MetallicSmoothness.png",
+              "sha256": "21229595cbed26b085a77fa46d961930d5667494921c209a9891523ae0783461"
+            }
+          },
+          {
+            "sourceName": "Apex_RedLamp",
+            "normalScale": 0.25,
+            "maxSize": 512,
+            "transparent": false,
+            "opacity": 1,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_BaseColor.png",
+              "sha256": "455e3ce5fd8a38178c382e0566c9cb639fb4b1c0dd60b5d50245c0744693ec0d"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_Normal.png",
+              "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_MetallicSmoothness.png",
+              "sha256": "2e15be431b2e87cc2c44182b69fad817c2d811a0216aaac8f6fc794584cb08c1"
+            },
+            "emission": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_Emission.png",
+              "sha256": "455e3ce5fd8a38178c382e0566c9cb639fb4b1c0dd60b5d50245c0744693ec0d"
+            },
+            "emissionIntensity": 1.5
+          },
+          {
+            "sourceName": "Apex_Rubber",
+            "normalScale": 0.25,
+            "maxSize": 1024,
+            "transparent": false,
+            "opacity": 1,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Rubber_BaseColor.png",
+              "sha256": "b563556b7bfbcb7959a3eb1167397a82e9ae8ea4da3c18223fd98a4f6947b2c6"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Rubber_Normal.png",
+              "sha256": "3d76a722fcb596e62da23a03a11bb81b8a244a7ce96abc49a067bd6834908fbe"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Rubber_MetallicSmoothness.png",
+              "sha256": "493a85a804db67bd1c996a6ffc5d9fa4d2279c6b423a632d973b90a3280ef5d7"
+            }
+          },
+          {
+            "sourceName": "Apex_Titanium",
+            "normalScale": 0.25,
+            "maxSize": 1024,
+            "transparent": false,
+            "opacity": 1,
+            "doubleSided": false,
+            "baseColor": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Titanium_BaseColor.png",
+              "sha256": "0df4f05e835729d53f2d5682e0a3f93fea3e98ae189576f7c8b4a9af87e722e9"
+            },
+            "normal": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Titanium_Normal.png",
+              "sha256": "9f434a0f8f97d5cd291c118eceb20bcaff796e8ba49034620802353fdbf77242"
+            },
+            "metallicSmoothness": {
+              "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Titanium_MetallicSmoothness.png",
+              "sha256": "895e9bca06184a2a92151c2367173e6dbc67a76c755973a49d3824f3ba80fe80"
+            }
+          }
+        ],
+        "lods": [
+          {
+            "height": 0.3,
+            "rendererPaths": [
+              "Apex_L0_Body",
+              "RB_Golden_Apex_r5_Wheel_Front/Apex_L0_Front",
+              "RB_Golden_Apex_r5_Wheel_Rear/Apex_L0_Rear"
+            ]
+          },
+          {
+            "height": 0.115,
+            "rendererPaths": [
+              "Apex_L1_Body",
+              "RB_Golden_Apex_r5_Wheel_Front/Apex_L1_Front",
+              "RB_Golden_Apex_r5_Wheel_Rear/Apex_L1_Rear"
+            ]
+          },
+          {
+            "height": 0.018,
+            "rendererPaths": [
+              "Apex_L2_Body",
+              "RB_Golden_Apex_r5_Wheel_Front/Apex_L2_Front",
+              "RB_Golden_Apex_r5_Wheel_Rear/Apex_L2_Rear"
+            ]
+          }
+        ],
+        "forwardMarker": "Forward",
+        "leftMarker": "Semantic_Left",
+        "rightMarker": "Semantic_Right",
+        "groundMarkers": [
+          "Ground_Front",
+          "Ground_Rear"
+        ],
+        "wheelPivots": [
+          "RB_Golden_Apex_r5_Wheel_Front",
+          "RB_Golden_Apex_r5_Wheel_Rear"
+        ],
+        "colliders": [
+          {
+            "type": "box",
+            "center": {
+              "x": 0,
+              "y": 0.51,
+              "z": 0
+            },
+            "size": {
+              "x": 0.45,
+              "y": 1.02,
+              "z": 1.95
+            }
+          }
+        ],
+        "isStatic": false
+      }
+    ]
+  },
+  "materialPolicy": "Reuse exact published R4 texture bytes and material declarations; no new paint or shading revision.",
+  "r4IntersectingTrianglePairs": 325,
+  "r5IntersectingTrianglePairs": 0,
+  "intersectionScope": "Editable belly vs both main fairings, both lower diagonal vent walls/plenums and both upper intake returns; not a universal whole-bike intersection audit.",
+  "lodTriangles": [
+    108102,
+    54050,
+    21374
+  ],
+  "exactFbxRoundtrip": {
+    "passed": true,
+    "exactRendererCoverage": true,
+    "exactPerMeshTriangleCounts": true,
+    "triangles": 183526,
+    "physicalAreaFailures": 0,
+    "minimumWorldCrossSquared": 3.1613510299732803e-16,
+    "objects": [
+      {
+        "name": "Apex_L0_Body",
+        "sourceAndExportTriangles": 61542,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 3.1613510299732803e-16
+      },
+      {
+        "name": "Apex_L2_Rear",
+        "sourceAndExportTriangles": 4920,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 5.025569040778555e-10
+      },
+      {
+        "name": "Apex_L1_Body",
+        "sourceAndExportTriangles": 30770,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 9.209116496121263e-14
+      },
+      {
+        "name": "Apex_L2_Body",
+        "sourceAndExportTriangles": 12202,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 1.493323124662424e-11
+      },
+      {
+        "name": "Apex_L0_Front",
+        "sourceAndExportTriangles": 21952,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 2.0387056626214317e-11
+      },
+      {
+        "name": "Apex_L1_Front",
+        "sourceAndExportTriangles": 10976,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 3.427166189728936e-11
+      },
+      {
+        "name": "Apex_L2_Front",
+        "sourceAndExportTriangles": 4252,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 5.025623094762066e-10
+      },
+      {
+        "name": "Apex_L0_Rear",
+        "sourceAndExportTriangles": 24608,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 2.1207732259513525e-13
+      },
+      {
+        "name": "Apex_L1_Rear",
+        "sourceAndExportTriangles": 12304,
+        "physicalAreaFailures": 0,
+        "minimumWorldCrossSquared": 3.427075290218795e-11
+      }
+    ]
+  },
+  "preservedInputs": [
+    {
+      "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+      "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/RB_Golden_Apex_r4_assembled.blend",
+      "sha256": "155df07c342843cd59cae1176a682fd359421b9af9a425c0dc778613ef236481"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/RB_Golden_Apex_r4_assembled.blend1",
+      "sha256": "7179b70d9727b821c92a403baa9e7030874101e5fa84ff52f653777d7e1ec954"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/RB_Golden_Apex_r4_editable.blend",
+      "sha256": "96bd8a5dc362b2c9eeb3bde116188dd7ac0feab8dba9683244f824b2305ea101"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/RB_Golden_Apex_r4_editable.blend1",
+      "sha256": "38faaa0d7a1550a441d6a5c8eae6764340a50db2649924f2dc7e459830c7ab21"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/RB_Golden_Apex_r4_editable_before_cleanup.blend",
+      "sha256": "38faaa0d7a1550a441d6a5c8eae6764340a50db2649924f2dc7e459830c7ab21"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_BaseColor.png",
+      "sha256": "f7fdeb0fe7bde9bb33353d7d513d22f61ac7c8e521f666083bcfb2cfd8844a39"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_MetallicSmoothness.png",
+      "sha256": "895439dab363fd2ba7a22fbc33fcfb58a3e39a6a41eae7e18fc4149ba088125c"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_Roughness.png",
+      "sha256": "261dba073a45e4ec3e34fa1e449d2ddfd59fe17a4fecc5abbfbfc1ab7f04f61d"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_BaseColor.png",
+      "sha256": "c76b6fa05966fa58b5b4807f7a4ad288becc3ab97f9ef0c327857dd413be8eba"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_MetallicSmoothness.png",
+      "sha256": "9dd004770e51d65170a029b0ab795431c288e17eba94d67528a634ad695e7b6a"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_Normal.png",
+      "sha256": "3d76a722fcb596e62da23a03a11bb81b8a244a7ce96abc49a067bd6834908fbe"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_Roughness.png",
+      "sha256": "a52beabccbccdcda08939f28ee02feddd65127d19e28f4d4fc108eb6b21f85a8"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_BaseColor.png",
+      "sha256": "5f75b90e05abdb730f892211d85890930b10a91ad568d47af3903022525c0824"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_Emission.png",
+      "sha256": "5f75b90e05abdb730f892211d85890930b10a91ad568d47af3903022525c0824"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_MetallicSmoothness.png",
+      "sha256": "6a1c572b771590af9e99806d9c47ff50e89711eeb86714e9ba4791a38dffa09b"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_Roughness.png",
+      "sha256": "b26a1a1b805bd692cb42e80f479bbb7f3b8384c06c039a9bfcc3700a8d190c42"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_BaseColor.png",
+      "sha256": "2fbb41a9cd0d2de11ee7f55805264fd5235f497aeaf8f53b46b453c744e813fa"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_MetallicSmoothness.png",
+      "sha256": "daa81de94e12bbe2228fbeb9c03823d5f19f0363a13e434486ff0af78a216e42"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_Roughness.png",
+      "sha256": "35d0df080499f1fab4ce0b63f404793f0499ef228d957d0859f40fe9fe715483"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_BaseColor.png",
+      "sha256": "c5400d5740868c426ba101776b850816a0eacc0c590c30f2318f5d935e7432a2"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_MetallicSmoothness.png",
+      "sha256": "dcafa4461378d58f3c215fa78c5232f9231d998fd185397bc440771ea0d6b0a7"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_Normal.png",
+      "sha256": "9f434a0f8f97d5cd291c118eceb20bcaff796e8ba49034620802353fdbf77242"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_Roughness.png",
+      "sha256": "7055f4ce0c39f3932e75637d2c2bba4cdac487185112af597a09ef56d95ce435"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_BaseColor.png",
+      "sha256": "0dce0b3fce1dbb329ad0d7c0e24ec4f2d7143da494b806a19a94a2d68dafb0a9"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_MetallicSmoothness.png",
+      "sha256": "21229595cbed26b085a77fa46d961930d5667494921c209a9891523ae0783461"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_Normal.png",
+      "sha256": "6490e77d3e2a4228d445feae4922a9cbff2116d810f404a310eca88f5fbca097"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_Roughness.png",
+      "sha256": "5c5a9dd60e50f72587cfc9b5d8a5b34fe51b1a75f48a1338022e8002248e31e1"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_BaseColor.png",
+      "sha256": "455e3ce5fd8a38178c382e0566c9cb639fb4b1c0dd60b5d50245c0744693ec0d"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_Emission.png",
+      "sha256": "455e3ce5fd8a38178c382e0566c9cb639fb4b1c0dd60b5d50245c0744693ec0d"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_MetallicSmoothness.png",
+      "sha256": "2e15be431b2e87cc2c44182b69fad817c2d811a0216aaac8f6fc794584cb08c1"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_Roughness.png",
+      "sha256": "f9bd05ccae7c858107447b682371cc57e30202fdcb00fe298c5708c04643232a"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_BaseColor.png",
+      "sha256": "b563556b7bfbcb7959a3eb1167397a82e9ae8ea4da3c18223fd98a4f6947b2c6"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_MetallicSmoothness.png",
+      "sha256": "493a85a804db67bd1c996a6ffc5d9fa4d2279c6b423a632d973b90a3280ef5d7"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_Normal.png",
+      "sha256": "3d76a722fcb596e62da23a03a11bb81b8a244a7ce96abc49a067bd6834908fbe"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_Roughness.png",
+      "sha256": "4b7c1113bef3ee4659709bd27bad665673cee30aefc62b94cfe4f777d7e3817f"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_BaseColor.png",
+      "sha256": "0df4f05e835729d53f2d5682e0a3f93fea3e98ae189576f7c8b4a9af87e722e9"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_MetallicSmoothness.png",
+      "sha256": "895e9bca06184a2a92151c2367173e6dbc67a76c755973a49d3824f3ba80fe80"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_Normal.png",
+      "sha256": "9f434a0f8f97d5cd291c118eceb20bcaff796e8ba49034620802353fdbf77242"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_Roughness.png",
+      "sha256": "98598a7be3794deb1a41475fb4086af54c3fb61cb3872acb9e634f41ff4a93b9"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/surface-intent.json",
+      "sha256": "e32f647307eb40b2fd6440156572cf0a1073dc6ed8cbe8999f0bac95430a76c7"
+    },
+    {
+      "path": "ArtSource/Weapons/RB_Club.blend",
+      "sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f"
+    }
+  ],
+  "renders": [
+    {
+      "path": "docs/p08/golden/apex/r5/01-quarter.png",
+      "sha256": "d71e8a4be3b15684a80853c480d42275ba1b9d95094e6318af404e66c6f81c7d"
+    },
+    {
+      "path": "docs/p08/golden/apex/r5/01-side.png",
+      "sha256": "4f3eb07ba5035edf1f6acb737c128856665edbbd121cc3769af6415b23101cf1"
+    },
+    {
+      "path": "docs/p08/golden/apex/r5/02-lod0-quarter.png",
+      "sha256": "753838f9ca7177531c93e813b9157db4bbbf9ec8c89e719aba9be7f866de0c75"
+    },
+    {
+      "path": "docs/p08/golden/apex/r5/02-lod1-quarter.png",
+      "sha256": "37a611ed167b4b7d45569ec02b0b7de6939495b6757b1ea31b5a8c02e570075b"
+    },
+    {
+      "path": "docs/p08/golden/apex/r5/02-lod2-quarter.png",
+      "sha256": "8dd943c50acc97a9ad998443a95c37205ceab7f75a5e7d68b25988a50ec71a23"
+    }
+  ],
+  "recipes": [
+    {
+      "path": "tools/p08/golden/apex_r5_assemble.py",
+      "sha256": "bed422eb71ed3dc68310cd8359766ca94c9aa23be3693fee12a5eee9ac100b39"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_audit.py",
+      "sha256": "19a9d92597856d4fc2c620b5d4fd02a72830f09b79686d71e55a9412001d7f0f"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_diagnose.py",
+      "sha256": "cb7169c30e530b0ae3a4877bd9bddf261fc3be2bebfc361d345bfdd4cf9c142e"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_export.py",
+      "sha256": "f084f3c8a13a136469ad971423c8e1319d7511777206f5322cd6dbb5eef4eb58"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_manifest.py",
+      "sha256": "44dbbd7f7ab9e8f757e87ffa5ab32f8cdbdf1f84e70cc06c3198b0fa93c3487f"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_render_lod0.py",
+      "sha256": "a42a33b668f16a45b4963065d1510c4316fb0c51160e0d7f72f6f4035de9b1da"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_render_lod1.py",
+      "sha256": "cca1d0dfe52f85a32848c6066fed0f22792f210ef439a781f9ac90ea0ab6d731"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_render_lod2.py",
+      "sha256": "101007acf37f89500cb9e8bf8a49bb60005688f82bef0aa825de44635a860327"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_render_quarter.py",
+      "sha256": "497b043e888cd5355f3a157850f12bc8ed81125c5232c14f2e5aae90a2ebbd5c"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_render_side.py",
+      "sha256": "5cfc61fb6df80d701cd7756601424431148021e9a0073987c1fc09275e17a92d"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_roundtrip.py",
+      "sha256": "a8c6997641b2a67f38bbf869b217a3fd2c18ff7214680338352455764ebae84d"
+    },
+    {
+      "path": "tools/p08/golden/apex_r5_seam.py",
+      "sha256": "d49118515c0190dd187ccfd23d88dc4099e6085938faa07ed78eadd626055f6e"
+    }
+  ]
+}

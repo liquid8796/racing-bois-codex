@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "utc": "2026-09-27T11:43:36.3873002Z",
+  "utc": "2026-09-27T16:44:31.8583582Z",
   "passed": true,
   "scope": "Compiled PE/PDB identity and actual source checksums; not visual acceptance",
   "assemblies": [
     {
       "name": "RacingBois.Authoring.Editor",
       "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll",
-      "sha256": "d261beeb0549473d43e48f880791b756ae9fb03377a1a4b7bb69f4e391c9225e",
-      "pdbSha256": "d8678579bfce9b485209f488fa3eb33835d2788d794e3a4eb2bf2cf5c9ffadfc",
-      "mvid": "f42bf8ca-e578-4105-8eee-fb6647090842",
+      "sha256": "a5f822ea2cd685a1bd6226eca0c5da63839db6112fce15dac2f368be74981929",
+      "pdbSha256": "787ad4d7f51f3d5796e292016802b8a4f7cec00865a8d42193e33c3dcb573ded",
+      "mvid": "5fd38c3b-fa9b-4107-ba0c-cced87299c65",
       "passed": true,
       "pdbMatchesAssembly": true,
       "documents": [
@@ -29,6 +29,24 @@
           "path": "Assets/RacingBois/Editor/GaragePrototypeFixture.cs",
           "sha256": "d1f9332900763ca703bb10d9f8d1d12c02f030ecec1168027bd3e5a32d6d0230",
           "symbolChecksum": "d1f9332900763ca703bb10d9f8d1d12c02f030ecec1168027bd3e5a32d6d0230",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Editor/GoldenProductionBindings.cs",
+          "sha256": "f5219ebf0d422cd7a4d385e106d91e1d9907aa8e5b7ac8fa2d4125570301b387",
+          "symbolChecksum": "f5219ebf0d422cd7a4d385e106d91e1d9907aa8e5b7ac8fa2d4125570301b387",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Editor/GoldenProductionCapture.cs",
+          "sha256": "b2bcd8730b119b617176b0c4ea96b5bd5c03a652a55192027485d22656bd36d8",
+          "symbolChecksum": "b2bcd8730b119b617176b0c4ea96b5bd5c03a652a55192027485d22656bd36d8",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Editor/GoldenProductionGate.cs",
+          "sha256": "d12507f137c9b8f0f6ec533e2c97fcba99389263a65ba0548761097d1780d636",
+          "symbolChecksum": "d12507f137c9b8f0f6ec533e2c97fcba99389263a65ba0548761097d1780d636",
           "matches": true
         },
         {
@@ -98,6 +116,12 @@
           "matches": true
         },
         {
+          "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Promotion.cs",
+          "sha256": "55e5298c5225b241fcb7a8028345e6f7c2f93516333071d0e47c80e9a0251c7f",
+          "symbolChecksum": "55e5298c5225b241fcb7a8028345e6f7c2f93516333071d0e47c80e9a0251c7f",
+          "matches": true
+        },
+        {
           "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.RestPose.cs",
           "sha256": "8f48ce5cbceb56f7849198d138b02bb5082a360635c9cd3b2bfd4c03fa33088e",
           "symbolChecksum": "8f48ce5cbceb56f7849198d138b02bb5082a360635c9cd3b2bfd4c03fa33088e",
@@ -116,6 +140,12 @@
           "matches": true
         },
         {
+          "path": "Assets/RacingBois/Editor/GoldenUiStage/GoldenBikeThumbnails.cs",
+          "sha256": "be13d5c1c5d90f9352c092c9c0e3cc76d1d6aeae29d3b8bb16a3f4959c2af21a",
+          "symbolChecksum": "be13d5c1c5d90f9352c092c9c0e3cc76d1d6aeae29d3b8bb16a3f4959c2af21a",
+          "matches": true
+        },
+        {
           "path": "Assets/RacingBois/Editor/GoldenUiStage/GoldenUiStageCamera.cs",
           "sha256": "0293bacc7219a21a0bef79c9af6215d064a69a6724cb294aff3ea8dfba8918eb",
           "symbolChecksum": "0293bacc7219a21a0bef79c9af6215d064a69a6724cb294aff3ea8dfba8918eb",
@@ -123,14 +153,14 @@
         },
         {
           "path": "Assets/RacingBois/Editor/GoldenUiStage/GoldenUiStageConfiguration.cs",
-          "sha256": "55ca0ac7b3f3524884985bd4d526c5dab8e9a15cce17cad0ed712ddb8f225e1e",
-          "symbolChecksum": "55ca0ac7b3f3524884985bd4d526c5dab8e9a15cce17cad0ed712ddb8f225e1e",
+          "sha256": "2e86fe54a45714cf447fb28977e1d2951d0e441210e2cb9ff40033b1434a3ee0",
+          "symbolChecksum": "2e86fe54a45714cf447fb28977e1d2951d0e441210e2cb9ff40033b1434a3ee0",
           "matches": true
         },
         {
           "path": "Assets/RacingBois/Editor/GoldenUiStage/GoldenUiStageFixture.cs",
-          "sha256": "59580edc2a3287fd15339b82c6a5f2a9e9e33fc7d7d61c1079587081722de4c9",
-          "symbolChecksum": "59580edc2a3287fd15339b82c6a5f2a9e9e33fc7d7d61c1079587081722de4c9",
+          "sha256": "acc653c08c6e7736788da1f2ea35891b397d9f3b8eb611016883600253844b0e",
+          "symbolChecksum": "acc653c08c6e7736788da1f2ea35891b397d9f3b8eb611016883600253844b0e",
           "matches": true
         },
         {
@@ -213,8 +243,8 @@
         },
         {
           "path": "Assets/RacingBois/Editor/P08ContentPackBuilder.cs",
-          "sha256": "9ca204da263c4fabfc231fc1757e35aeeb4cb9433fa8b6a71a221cc4fc581561",
-          "symbolChecksum": "9ca204da263c4fabfc231fc1757e35aeeb4cb9433fa8b6a71a221cc4fc581561",
+          "sha256": "a56d70f900fa92b6781e334fef39c0dde2628ed939708b0964d115b9bbcb0a93",
+          "symbolChecksum": "a56d70f900fa92b6781e334fef39c0dde2628ed939708b0964d115b9bbcb0a93",
           "matches": true
         },
         {
@@ -250,7 +280,7 @@
         {
           "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
           "sha256": "",
-          "symbolChecksum": "f5ca2a86485309fe9b65e21cc64b7b9b5bdf441d",
+          "symbolChecksum": "a8b503b1f7faeb693defc56a7d8f5d4dfa80dc90",
           "matches": null,
           "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
         }
