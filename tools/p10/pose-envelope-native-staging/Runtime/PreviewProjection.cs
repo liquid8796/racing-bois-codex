@@ -1,4 +1,5 @@
 using RacingBois.Gameplay.Definitions;
+using RacingBois.Client.Presentation;
 using UnityEngine;
 
 namespace RacingBois.Diagnostics.PoseEnvelopePreview
@@ -12,9 +13,9 @@ namespace RacingBois.Diagnostics.PoseEnvelopePreview
     /// <summary>Source-bound reconstruction of current stage target/camera formulas, in actual Unity value types.</summary>
     public sealed class PreviewProjection
     {
-        private readonly TrackDefinition track;public Vector3 Origin{get;}
-        public PreviewProjection(PreviewEpisode episode)
-        {track=TrackDefinition.ForCourse(episode.course,episode.level);Origin=AbsolutePoint(episode.after.s,0,0);}
+        private readonly TrackDefinition track;private readonly float fallenRootOffset;public Vector3 Origin{get;}
+        public PreviewProjection(PreviewEpisode episode,float fallenRootOffset=RiderAnimationSet.DefaultFallenRootOffset)
+        {RiderAnimationSet.ValidateFallenRootOffset(fallenRootOffset);this.fallenRootOffset=fallenRootOffset;track=TrackDefinition.ForCourse(episode.course,episode.level);Origin=AbsolutePoint(episode.after.s,0,0);}
         private Vector3 AbsolutePoint(float s,float d,float h)
         {var p=track.Sample((long)(s*1000));return new Vector3(p.CenterX+p.ForwardZ*d,p.CenterY+h,p.CenterZ-p.ForwardX*d);}
         public Vector3 Point(float s,float d=0,float h=0)=>AbsolutePoint(s,d,h)-Origin;
@@ -29,7 +30,7 @@ namespace RacingBois.Diagnostics.PoseEnvelopePreview
             float fall=detached?1-mounting:0;
             var bike=Point(s,d,(detached?pose.bikeH:pose.h)+fall*.48f);
             var rider=detached?Point(pose.s,pose.d,pose.h):bike+Heading(s)*new Vector3(0,-.08f,-.32f);
-            if(mode==RiderMode.Falling||mode==RiderMode.Detached||mode==RiderMode.Wrecked)rider.y-=.55f;
+            if(mode==RiderMode.Falling||mode==RiderMode.Detached||mode==RiderMode.Wrecked)rider.y+=fallenRootOffset;
             if(mode==RiderMode.Remounting)rider=Vector3.Lerp(rider,Point(s,d)+Heading(s)*new Vector3(0,-.08f,-.32f),mounting);
             return new PreviewTargets(rider,bike,Heading(pose.s)*Quaternion.Euler(0,0,detached?0:pose.lean*.65f),Heading(s)*Quaternion.Euler(0,0,detached?76*fall:pose.lean));
         }

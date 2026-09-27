@@ -142,6 +142,9 @@ namespace RacingBois.Authoring.Editor
                 foreach (var binding in spec.materials) ValidateMaterial(spec.id, binding, materials[binding.sourceName]);
                 if (spec.kind == "rider")
                 {
+                    var animationSet = root.GetComponent<RacingBois.Client.Presentation.RiderAnimationSet>();
+                    Require(animationSet != null && animationSet.FallenRootOffset == spec.fallenRootOffset,
+                        "Rider fall-origin metadata differs from descriptor: " + spec.id);
                     var boundBones = root.GetComponentsInChildren<SkinnedMeshRenderer>(true).SelectMany(skin => skin.bones).Distinct().ToArray();
                     foreach (var path in spec.requiredBones) Require(boundBones.Contains(Find(model, path)), "Required deform bone not bound by any mesh: " + path);
                     result.sampledVertices = SampleAnimations(model.gameObject, spec, false);

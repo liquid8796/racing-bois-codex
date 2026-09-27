@@ -8,10 +8,12 @@ namespace RacingBois.Diagnostics.PoseEnvelopePreview
     internal sealed class PreviewActorRig
     {
         internal readonly Transform Rider,Bike;private readonly RiderAnimationView animation;
+        internal readonly float FallenRootOffset;
         internal PreviewActorRig(GameObject bikePrefab,GameObject riderPrefab,Transform parent)
         {
             var bike=UnityEngine.Object.Instantiate(bikePrefab,parent,false);var rider=UnityEngine.Object.Instantiate(riderPrefab,parent,false);
             Bike=bike.transform;Rider=rider.transform;bike.name="Diagnostic real Apex";rider.name="Diagnostic real Ash";
+            FallenRootOffset=RiderAnimationSet.ResolveFallenRootOffset(Rider);
             foreach(var obj in new[]{bike,rider})
             {
                 foreach(var collider in obj.GetComponentsInChildren<Collider>(true))collider.enabled=false;

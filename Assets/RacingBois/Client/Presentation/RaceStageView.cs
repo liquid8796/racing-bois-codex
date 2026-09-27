@@ -396,7 +396,7 @@ namespace RacingBois.Client.Presentation
             Quaternion bikeRotation=Road.Heading(bikeS)*Quaternion.Euler(0,0,detached?76*fallBlend:state.LeanDegrees);
             Vector3 riderPoint=detached?Road.Point(state.LongitudinalMeters,state.LateralMeters,state.HeightMeters):
                 bikePoint+Road.Heading(bikeS)*new Vector3(0,-.08f,-.32f);
-            if(state.Mode==RiderMode.Falling||state.Mode==RiderMode.Detached||state.Mode==RiderMode.Wrecked)riderPoint.y-=.55f;
+            if(state.Mode==RiderMode.Falling||state.Mode==RiderMode.Detached||state.Mode==RiderMode.Wrecked)riderPoint.y+=view.FallenRootOffset;
             if(state.Mode==RiderMode.Remounting)riderPoint=Vector3.Lerp(riderPoint,Road.Point(bikeS,bikeD)+Road.Heading(bikeS)*new Vector3(0,-.08f,-.32f),mounting);
             Quaternion riderRotation=Road.Heading(state.LongitudinalMeters)*Quaternion.Euler(0,0,detached?0:state.LeanDegrees*.65f);
             float blend=interpolated?1:1-Mathf.Exp(-dt*22);
@@ -508,6 +508,7 @@ namespace RacingBois.Client.Presentation
             public WeaponGripView Weapon;
             public RiderAnimationView Animation;
             public readonly Transform Bike,Rider;
+            public readonly float FallenRootOffset;
             // Captured before the weapon is attached, so tint never leaks onto club materials.
             public readonly Renderer[] TintRenderers;
             public bool IsPolice;
@@ -521,7 +522,7 @@ namespace RacingBois.Client.Presentation
             public bool Initialized;public float WheelAngle;
             public RiderVisual(Transform bike,Transform rider)
             {
-                Bike=bike;Rider=rider;
+                Bike=bike;Rider=rider;FallenRootOffset=RiderAnimationSet.ResolveFallenRootOffset(rider);
                 TintRenderers=rider.GetComponentsInChildren<Renderer>(true);
                 var model=rider.Find("Model");Basis=model==null?Quaternion.identity:model.localRotation;BasisInverse=Quaternion.Inverse(Basis);
                 var bikeModel=bike==null?null:bike.Find("Model");BikeBasis=bikeModel==null?Quaternion.identity:bikeModel.localRotation;BikeBasisInverse=Quaternion.Inverse(BikeBasis);

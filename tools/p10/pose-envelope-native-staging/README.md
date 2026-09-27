@@ -111,3 +111,18 @@ The independent verifier also recomputes the source fingerprint, requires exact
 before/after source snapshots and no recorded memory mutations, and matches all
 three effective/before/after settings copies to their source hashes. It does not
 trust `sourceBindingPassed` alone.
+
+## Authored fall-origin candidate
+
+`RiderAnimationSet` now declares a finite `fallenRootOffset` in meters within
+[-1, 1]. Missing metadata retains the legacy -0.55 m placement. Both the live
+stage and this diagnostic resolve the selected prefab's value once; recorded
+height/mode, simulation state, and clip data stay unchanged.
+
+`stage_fall_origin.py` stages a separate `RB_Golden_Ash_V6_GroundOrigin` prefab
+and descriptor outside Assets with offset 0. Root installs only the fresh
+metadata-only prefab, preserving the original V6 prefab and FBX importer
+material mappings. This removes a duplicate legacy offset; it does not repair
+the approximately 0.153 m penetration measured midway through the authored fall
+clip. Original native captures remain immutable baseline evidence. The candidate
+requires another bound native run and visual inspection and is not accepted art.

@@ -7,13 +7,25 @@ namespace RacingBois.Client.Presentation
     [DisallowMultipleComponent]
     public sealed class RiderAnimationSet : MonoBehaviour
     {
+        public const float DefaultFallenRootOffset = -.55f;
         private static readonly string[] Required = { "Ride", "LeanLeft", "LeanRight", "AttackLeft", "AttackRight", "KickLeft", "KickRight", "Hit", "Fall", "Run", "Remount", "Idle" };
         [SerializeField] private AnimationClip[] clips = Array.Empty<AnimationClip>();
+        [SerializeField] private float fallenRootOffset = DefaultFallenRootOffset;
 
-        public void Configure(AnimationClip[] source)
+        /// <summary>Visual root offset in meters for fallen poses; legacy rigs retain their original placement.</summary>
+        public float FallenRootOffset
+        {
+            get { ValidateFallenRootOffset(fallenRootOffset); return fallenRootOffset; }
+        }
+
+        public void Configure(AnimationClip[] source) => Configure(source, DefaultFallenRootOffset);
+
+        public void Configure(AnimationClip[] source, float fallenOffset)
         {
             Validate(source);
+            ValidateFallenRootOffset(fallenOffset);
             clips = (AnimationClip[])source.Clone();
+            fallenRootOffset = fallenOffset;
         }
 
         public static AnimationClip[] Resolve(Transform actor, AnimationClip[] fallback)
@@ -22,6 +34,18 @@ namespace RacingBois.Client.Presentation
             if (set == null) return fallback;
             Validate(set.clips);
             return set.clips;
+        }
+
+        public static float ResolveFallenRootOffset(Transform actor)
+        {
+            var set = actor.GetComponentInChildren<RiderAnimationSet>(true);
+            return set == null ? DefaultFallenRootOffset : set.FallenRootOffset;
+        }
+
+        public static void ValidateFallenRootOffset(float value)
+        {
+            if (float.IsNaN(value) || float.IsInfinity(value) || value < -1f || value > 1f)
+                throw new ArgumentOutOfRangeException(nameof(value), "Fallen visual root offset must be finite and between -1 and 1 meter.");
         }
 
         private static void Validate(AnimationClip[] source)

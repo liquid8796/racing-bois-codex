@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "originalInputs": [
+    {
+      "path": "docs/p08/golden/ash/v6/descriptor.json",
+      "sha256": "b5ab77f72d96382e3955bcc3ef265b53155f9e6d2608a2a514019037514d850d",
+      "bytes": 30571
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V6.prefab",
+      "sha256": "38c656082d8f8cf8ee0af621374f3e2742e5d8a5dc5bd4cd8104db53a972f58b",
+      "bytes": 93879
+    }
+  ],
+  "candidateDescriptor": {
+    "path": "docs/p10/pose-envelope-native-staging/fall-origin-candidate-v6/descriptor.json",
+    "sha256": "a7fbb6366499e2f4d4f213acf4429c3ff67f771e6bc6a541241b01a90da370a8",
+    "bytes": 30601
+  },
+  "candidatePrefab": {
+    "path": "docs/p10/pose-envelope-native-staging/fall-origin-candidate-v6/RB_Golden_Ash_V6_GroundOrigin.prefab",
+    "sha256": "9c7f73eb68411797da10617129d3ba3a869900ec391f43cc37fb43687699c12c",
+    "bytes": 93914
+  },
+  "targetPrefab": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V6_GroundOrigin.prefab",
+  "legacyFallenRootOffset": -0.55,
+  "candidateFallenRootOffset": 0,
+  "metadataOnly": true,
+  "installed": false,
+  "installation": "Root may copy only this prefab to its fresh target and refresh Unity. Full Golden Import with the same original FBX would remap its materials; avoid that for this metadata-only candidate.",
+  "remainingGap": "Authored clip still has about 0.153m mid-fall ground penetration at zero root; no continuous mesh baking, collision or authority changes.",
+  "visualAccepted": false
+}

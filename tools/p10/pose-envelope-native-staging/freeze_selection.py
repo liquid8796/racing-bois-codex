@@ -20,11 +20,21 @@ def refs(value):
     elif isinstance(value,list):
         for item in value:yield from refs(item)
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',default='docs/p10/pose-envelope-native-staging/selection.json');args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',default='docs/p10/pose-envelope-native-staging/selection.json')
+    parser.add_argument('--rider-descriptor',default='docs/p08/golden/ash/v6/descriptor.json')
+    parser.add_argument('--rider-prefab',default='Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V6.prefab')
+    args=parser.parse_args()
     target=(ROOT/args.output).resolve()
     if not target.is_relative_to(ROOT/'docs/p10/pose-envelope-native-staging'):raise ValueError('Selection receipt must remain in owned docs folder')
+    rider_descriptor=(ROOT/args.rider_descriptor).resolve();rider_prefab=(ROOT/args.rider_prefab).resolve()
+    if not rider_descriptor.is_relative_to(ROOT/'docs') or not rider_prefab.is_relative_to(ROOT/'Assets/RacingBois/Golden/Generated/Prefabs'):
+        raise ValueError('Selected rider descriptor/prefab must remain in their project folders')
+    rider_spec=json.loads(rider_descriptor.read_text())['assets']
+    if len(rider_spec)!=1 or rider_spec[0]['kind']!='rider' or rider_prefab.name!=rider_spec[0]['id']+'.prefab':
+        raise ValueError('Selected rider prefab must match its single descriptor asset ID')
     paths=set()
-    for descriptor in ['docs/p08/golden/apex/r4/descriptor.json','docs/p08/golden/ash/v6/descriptor.json']:
+    for descriptor in ['docs/p08/golden/apex/r4/descriptor.json',rider_descriptor.relative_to(ROOT).as_posix()]:
         paths.add(descriptor)
         for entry in refs(json.loads((ROOT/descriptor).read_text())):
             if sha(ROOT/entry['path'])!=entry['sha256']:raise ValueError('Art descriptor input changed: '+entry['path'])
@@ -38,7 +48,7 @@ def main():
                   'Assets/RacingBois/Client/Presentation/RiderAnimationView.cs','Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs',
                   'docs/p10/network/20260927T003126Z/probe.json'])
     result={'schema':1,'bike':row('Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_r4.prefab'),
-            'rider':row('Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V6.prefab'),
+            'rider':row(rider_prefab.relative_to(ROOT).as_posix()),
             'pipeline':row('Assets/RacingBois/Golden/Generated/StudioReviewPipeline.asset'),
             'fixture':row('Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Data/episodes.json'),
             'inputs':[row(path) for path in sorted(paths)],

@@ -25,6 +25,7 @@ namespace RacingBois.Authoring.Editor
             public InputFile concept, conceptReview, source, fbx;
             public Vector3 modelRotationEuler, minimumSize, maximumSize;
             public float maximumBelowGround = .04f;
+            public float fallenRootOffset = RacingBois.Client.Presentation.RiderAnimationSet.DefaultFallenRootOffset;
             public MaterialSpec[] materials;
             public LodSpec[] lods;
             public string[] wheelPivots, groundMarkers, requiredBones;
@@ -127,6 +128,7 @@ namespace RacingBois.Authoring.Editor
                 if (asset.kind == "bike") Require(asset.wheelPivots != null && asset.wheelPivots.Length == 2, "Bike requires two axle pivots.");
                 if (asset.kind == "rider")
                 {
+                    RacingBois.Client.Presentation.RiderAnimationSet.ValidateFallenRootOffset(asset.fallenRootOffset);
                     Require(!string.IsNullOrWhiteSpace(asset.rigRoot) && asset.requiredBones != null && asset.requiredBones.Length >= 15,
                         "Rider requires a declared rig and deform bone paths.");
                     Require(asset.clips != null && asset.clips.Length > 0, "Rider requires actual animation clips to sample.");

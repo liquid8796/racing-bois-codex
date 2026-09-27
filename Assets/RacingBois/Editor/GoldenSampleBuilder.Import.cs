@@ -34,8 +34,9 @@ namespace RacingBois.Authoring.Editor
                     ImportModel(spec, materials);
                     CreatePrefab(spec, materials);
                     assets.Add(ValidateAsset(spec, materials));
+                    // Save only this descriptor's generated materials; unrelated dirty assets belong to the user.
+                    foreach (var material in materials.Values) AssetDatabase.SaveAssetIfDirty(material);
                 }
-                AssetDatabase.SaveAssets();
                 receipt.sourceBindingPassed = receipt.sourceFingerprint == Fingerprint(InputSnapshot(descriptorPath, descriptor));
                 Require(receipt.sourceBindingPassed, "Golden authoring inputs changed during import.");
                 receipt.assets = assets.ToArray();
@@ -240,7 +241,7 @@ namespace RacingBois.Authoring.Editor
                 {
                     var clips = spec.clips.Select(clipSpec => AssetDatabase.LoadAllAssetsAtPath(clipSpec.path)
                         .OfType<AnimationClip>().Single(clip => clip.name == clipSpec.name)).ToArray();
-                    root.AddComponent<RacingBois.Client.Presentation.RiderAnimationSet>().Configure(clips);
+                    root.AddComponent<RacingBois.Client.Presentation.RiderAnimationSet>().Configure(clips, spec.fallenRootOffset);
                 }
                 foreach (var collider in spec.colliders ?? Array.Empty<ColliderSpec>())
                 {

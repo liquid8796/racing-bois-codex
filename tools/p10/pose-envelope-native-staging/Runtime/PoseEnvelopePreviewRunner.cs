@@ -96,7 +96,7 @@ namespace RacingBois.Diagnostics.PoseEnvelopePreview
         }
         private void BeginSegment()
         {
-            episode=fixture.episodes[episodeIndex];projection=new PreviewProjection(episode);ground?.Dispose();
+            episode=fixture.episodes[episodeIndex];projection=new PreviewProjection(episode,actor.FallenRootOffset);ground?.Dispose();
             ground=new PreviewGround(projection,episode,GroundMaterial,ReferenceMaterial,RawTargetMaterial,transform);
             rider=new PreviewEnvelopeDriver(variant);bike=new PreviewEnvelopeDriver(variant);actor.Reset();
             segmentAt=lastFrameAt=Time.realtimeSinceStartupAsDouble;nextSampleAt=segmentAt;
