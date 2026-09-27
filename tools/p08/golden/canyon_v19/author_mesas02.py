@@ -1,0 +1,250 @@
+"""Far33-44 closed terraced composition study; fixed V18-02 camera/road/near geometry."""
+import bpy,bmesh,json,math
+from array import array
+from mathutils import Vector,noise
+ROOT='D:/Project/Unity/racing-bois/'
+SOURCE=ROOT+'ArtSource/P08/Golden/Canyon/V18/RB_Golden_Canyon_V18_02.blend'
+DESTINATION=ROOT+'ArtSource/P08/Golden/Canyon/V19/RB_Golden_Canyon_V19_02.blend'
+if bpy.data.filepath.replace('\\','/')!=SOURCE:
+    raise RuntimeError('Load owned frozen V18-02 separately before authoring.')
+scene=bpy.context.scene
+material=bpy.data.materials['Canyon_Sandstone']
+target_names=['Canyon_L%d_Far_%02d'%(level,index) for index in range(33,45) for level in range(3)]
+if any(bpy.data.objects.get(name) is None or bpy.data.objects[name].data.users!=1 for name in target_names):
+    raise RuntimeError('Expected36 independently owned Far meshes.')
+def values(collection,property_name,count,type_code):
+    result=array(type_code,[0])*count
+    collection.foreach_get(property_name,result)
+    return result
+
+def identity(obj):
+    mesh=obj.data
+    return (values(mesh.vertices,'co',len(mesh.vertices)*3,'f'),
+        values(mesh.loops,'vertex_index',len(mesh.loops),'i'),
+        values(mesh.polygons,'loop_start',len(mesh.polygons),'i'),
+        values(mesh.polygons,'loop_total',len(mesh.polygons),'i'),
+        values(mesh.polygons,'material_index',len(mesh.polygons),'i'),
+        [values(layer.data,'uv',len(mesh.loops)*2,'f') for layer in mesh.uv_layers],
+        [m.name for m in mesh.materials],[list(row) for row in obj.matrix_world],obj.hide_render,obj.hide_get())
+
+def fixed_scene_state():
+    camera=scene.camera
+    lights=[]
+    for obj in scene.objects:
+        if obj.type=='LIGHT':
+            lights.append((obj.name,[list(row) for row in obj.matrix_world],obj.data.type,obj.data.energy,list(obj.data.color)))
+    nodes=[]
+    if scene.world and scene.world.use_nodes:
+        for node in scene.world.node_tree.nodes:
+            inputs=[]
+            for socket in node.inputs:
+                if socket.type in {'VALUE','INT','BOOLEAN'}:
+                    inputs.append((socket.name,float(socket.default_value)))
+                elif socket.type in {'VECTOR','RGBA'}:
+                    inputs.append((socket.name,list(socket.default_value)))
+            nodes.append((node.name,node.type,inputs,node.image.filepath if node.type=='TEX_ENVIRONMENT' and node.image else None))
+    return {'cameraMatrix':[list(row) for row in camera.matrix_world],
+        'lens':camera.data.lens,'sensorWidth':camera.data.sensor_width,'sensorFit':camera.data.sensor_fit,
+        'clipStart':camera.data.clip_start,'clipEnd':camera.data.clip_end,
+        'resolution':[scene.render.resolution_x,scene.render.resolution_y,scene.render.resolution_percentage],
+        'lights':lights,'worldNodes':nodes,'viewTransform':scene.view_settings.view_transform,
+        'look':scene.view_settings.look,'exposure':scene.view_settings.exposure,'gamma':scene.view_settings.gamma}
+
+outside={obj.name:identity(obj) for obj in scene.objects if obj.type=='MESH' and obj.name not in target_names}
+fixed_before=fixed_scene_state()
+states=[(obj,obj.hide_get(),obj.select_get()) for obj in bpy.context.view_layer.objects]
+active=bpy.context.view_layer.objects.active
+materials_before=set(bpy.data.materials);images_before=set(bpy.data.images)
+# index, upper-front X/Y, cliff length, front-normal angle, nominal summit,
+# buried base, real rear depth, horizontal segments, vertical segments.
+layout=[
+ (33,-88,275,150,0,66,-44,48,112,62),
+ (34,-72,385,155,-5,82,-48,50,112,64),
+ (35,-55,500,160,-12,90,-52,52,108,62),
+ (36,-32,625,165,-22,89,-56,54,96,58),
+ (37,-6,750,170,-35,84,-60,56,88,54),
+ (38,24,875,175,-50,75,-64,60,84,50),
+ (39,55,1000,180,-65,69,-68,64,76,46),
+ (40,92,1125,185,-80,62,-70,66,72,44),
+ (41,130,1235,190,-90,54,-72,68,68,42),
+ (42,170,1330,200,-90,48,-74,70,64,40),
+ (43,215,1440,210,-95,44,-76,72,60,38),
+ (44,275,1525,260,-110,42,-80,85,64,38)]
+
+def smooth(a,b,value):
+    t=max(0,min(1,(value-a)/(b-a)))
+    return t*t*(3-2*t)
+
+def append_butte(points,faces,center,rx,ry,bottom,top,angle,segments,vertical,seed,kind):
+    n=Vector((math.cos(angle),math.sin(angle),0));along=Vector((-n.y,n.x,0))
+    rings=[]
+    for row in range(vertical+1):
+        t=row/vertical;ring=[]
+        for column in range(segments):
+            theta=2*math.pi*column/segments
+            c,s=math.cos(theta),math.sin(theta)
+            # Angular rounded-polygon planform; every side receives the same
+            # fractured/bedded shaping, so no flat closing plane faces camera.
+            px=(1 if c>=0 else -1)*abs(c)**.72*rx
+            py=(1 if s>=0 else -1)*abs(s)**.72*ry
+            highest=top+1.15*math.sin(theta*3+seed)+.8*noise.noise(Vector((c*2.1,s*2.1,seed)))
+            z=bottom+(highest-bottom)*t
+            if kind=='base':
+                scale=1-.20*t-.055*smooth(.22,.26,t)-.055*smooth(.51,.55,t)-.04*smooth(.77,.81,t)
+            elif kind=='spur':
+                scale=1-.10*t-.065*smooth(.32+.035*math.sin(theta*2+seed),.36+.035*math.sin(theta*2+seed),t)-.075*smooth(.70,.74,t)
+            else:
+                scale=1-.045*t-.065*smooth(.29+.045*math.sin(theta*2+seed),.33+.045*math.sin(theta*2+seed),t)-.075*smooth(.64+.035*math.sin(theta*3-seed),.68+.035*math.sin(theta*3-seed),t)
+            broad=1+.04*math.sin(theta*5+seed)+.025*math.sin(theta*9-seed*.4)
+            crack=0.0
+            for joint in range(9):
+                phi=2*math.pi*joint/9+.14*math.sin(joint*2.7+seed)+.025*math.sin(z*.18+joint)
+                distance=abs(math.atan2(math.sin(theta-phi),math.cos(theta-phi)))
+                activity=1.0 if joint%3==0 else smooth(.08,.18,t)*(1-smooth(.82,.98,t))
+                crack=max(crack,activity*(1.0+.65*math.sin(joint*1.9+seed)**2)*math.exp(-(distance/.072)**2))
+            phase=z+.8*math.sin(theta*3+seed)
+            spacing=5.6+1.1*math.sin(seed)
+            distance=abs((phase+1000)%spacing-spacing*.5)
+            bedding=.55*math.exp(-(distance/.65)**2)
+            erosion=.34*noise.noise(Vector((px*.17,py*.17,z*.19+seed)))
+            radius_factor=max(.2,scale*broad-(crack+bedding+erosion)/max(12,(rx+ry)*.5))
+            point=Vector(center)+along*(px*radius_factor)+n*(py*radius_factor);point.z=z
+            ring.append(len(points));points.append(point)
+        rings.append(ring)
+    for row in range(vertical):
+        for column in range(segments):
+            nxt=(column+1)%segments
+            faces.append((rings[row][column],rings[row][nxt],rings[row+1][nxt],rings[row+1][column]))
+    bottom_center=len(points);points.append(Vector((center[0],center[1],bottom)))
+    top_center=len(points);points.append(Vector((center[0],center[1],top-.25)))
+    for column in range(segments):
+        nxt=(column+1)%segments
+        faces.append((bottom_center,rings[0][nxt],rings[0][column]))
+        faces.append((top_center,rings[-1][column],rings[-1][nxt]))
+
+def build_terraced_mass(spec,obj):
+    index,ax,ay,length,degrees,nominal,bottom,rear,columns,vertical=spec
+    seed=index*1.17;angle=math.radians(degrees)
+    n=Vector((math.cos(angle),math.sin(angle),0));along=Vector((-n.y,n.x,0));anchor=Vector((ax,ay,0))
+    points=[];faces=[]
+    segments=64 if index<=36 else 48
+    levels=26 if index<=36 else 20
+    base_center=anchor-n*20
+    append_butte(points,faces,base_center,length*.81,95 if index<=37 else 86,min(bottom,-82),nominal-31,
+                 angle+.08*math.sin(seed),segments,levels,seed,'base')
+    for offset,height_delta,height,phase in [(-.21,0,35,2.1),(.22,-10,29,4.3)]:
+        center=anchor+along*(length*offset)-n*26
+        append_butte(points,faces,center,length*.27,32 if index<=37 else 29,nominal-height_delta-height,nominal-height_delta,
+                     angle+.18*math.sin(seed+phase),segments,levels,seed+phase,'upper')
+    spur_center=base_center+n*52+along*(length*.11*math.sin(seed))
+    append_butte(points,faces,spur_center,length*.26,34,min(bottom,-65),nominal-43,
+                 angle-.21*math.sin(seed),segments,levels,seed+6.7,'spur')
+    inverse=obj.matrix_world.inverted()
+    mesh=bpy.data.meshes.new('Canyon_Far%02d_FullPerimeterMesas_V19_L0'%index)
+    mesh.from_pydata([inverse@point for point in points],[],faces);mesh.update()
+    bm=bmesh.new();bm.from_mesh(mesh)
+    bmesh.ops.triangulate(bm,faces=list(bm.faces));bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    remaining=set(bm.faces)
+    while remaining:
+        seed_face=remaining.pop();component=[seed_face];stack=[seed_face]
+        while stack:
+            face=stack.pop()
+            for edge in face.edges:
+                for linked in edge.link_faces:
+                    if linked in remaining:remaining.remove(linked);component.append(linked);stack.append(linked)
+        volume=0.0
+        for face in component:
+            a,b,c=[vertex.co for vertex in face.verts];volume+=a.dot(b.cross(c))/6
+        if volume<0:
+            for face in component:face.normal_flip()
+    bm.to_mesh(mesh);bm.free();mesh.update();mesh.materials.append(material)
+    for polygon in mesh.polygons:polygon.use_smooth=False
+    return mesh
+def map_and_audit(obj):
+    mesh=obj.data
+    mesh.calc_loop_triangles()
+    layer=mesh.uv_layers.new(name='UV0_SurfaceMetres') if not mesh.uv_layers else mesh.uv_layers[0]
+    for polygon in mesh.polygons:
+        if polygon.loop_total!=3:
+            raise RuntimeError('Expected triangulated authored surface.')
+        points=[obj.matrix_world@mesh.vertices[mesh.loops[index].vertex_index].co for index in polygon.loop_indices]
+        normal=(points[1]-points[0]).cross(points[2]-points[0])
+        axis=0 if abs(normal.x)>=abs(normal.y) and abs(normal.x)>=abs(normal.z) else 1 if abs(normal.y)>=abs(normal.z) else 2
+        for index,point in zip(polygon.loop_indices,points):
+            layer.data[index].uv=(point.y/2.4,point.z/2.4) if axis==0 else (point.x/2.4,point.z/2.4) if axis==1 else (point.x/2.4,point.y/2.4)
+    mesh.update();mesh.calc_loop_triangles()
+    bm=bmesh.new();bm.from_mesh(mesh)
+    boundary=sum(1 for edge in bm.edges if edge.is_boundary)
+    nonmanifold=sum(1 for edge in bm.edges if not edge.is_manifold)
+    volume=bm.calc_volume(signed=True);bm.free()
+    if boundary or nonmanifold or volume<=0:
+        raise RuntimeError('Authored closed-volume invariant failed: '+obj.name)
+    uv_min=None;physical_min=None;seen=set();duplicates=0
+    low=[float('inf')]*3;high=[float('-inf')]*3
+    for vertex in mesh.vertices:
+        point=obj.matrix_world@vertex.co
+        for axis in range(3):low[axis]=min(low[axis],point[axis]);high[axis]=max(high[axis],point[axis])
+    for triangle in mesh.loop_triangles:
+        key=tuple(sorted(triangle.vertices))
+        if key in seen:duplicates+=1
+        seen.add(key)
+        a,b,c=[mesh.vertices[index].co for index in triangle.vertices]
+        physical=(obj.matrix_world.to_3x3()@(b-a)).cross(obj.matrix_world.to_3x3()@(c-a)).length_squared
+        uv=[layer.data[index].uv for index in triangle.loops]
+        cross=(float(uv[1].x)-uv[0].x)*(float(uv[2].y)-uv[0].y)-(float(uv[1].y)-uv[0].y)*(float(uv[2].x)-uv[0].x)
+        if not math.isfinite(physical) or physical<=1e-16 or not math.isfinite(cross) or abs(cross)<=1e-14:
+            raise RuntimeError('Physical/primary UV triangle threshold failed: '+obj.name)
+        uv_min=abs(cross) if uv_min is None else min(uv_min,abs(cross))
+        physical_min=physical if physical_min is None else min(physical_min,physical)
+    if duplicates:raise RuntimeError('Duplicate authored triangles: '+obj.name)
+    return {'object':obj.name,'vertices':len(mesh.vertices),'triangles':len(mesh.loop_triangles),
+        'boundaryEdges':boundary,'nonManifoldEdges':nonmanifold,'signedVolumeCubicMetres':volume,
+        'minimumPrimaryUvCross':uv_min,'minimumPhysicalCrossSquaredMetres':physical_min,
+        'materials':[mat.name for mat in mesh.materials],'minimumBlender':low,'maximumBlender':high,
+        'uvPolicy':'Physical world projection per triangle at2.4m/repeat; no epsilon UV offsets.'}
+
+try:
+    old_data=[];rows=[]
+    for spec in layout:
+        index=spec[0]
+        targets=[bpy.data.objects['Canyon_L%d_Far_%02d'%(level,index)] for level in range(3)]
+        old_data.extend(obj.data for obj in targets)
+        primary=build_terraced_mass(spec,targets[0]);targets[0].data=primary
+        for level,ratio in [(1,.44),(2,.17)]:
+            obj=targets[level];mesh=primary.copy();mesh.name='Canyon_Far%02d_Terraced_V19_L%d'%(index,level)
+            transform=obj.matrix_world.inverted()@targets[0].matrix_world
+            for vertex in mesh.vertices:vertex.co=transform@vertex.co
+            obj.data=mesh
+            bpy.ops.object.select_all(action='DESELECT');obj.hide_set(False);obj.select_set(True);bpy.context.view_layer.objects.active=obj
+            reduction=obj.modifiers.new('Terraced Far LOD','DECIMATE');reduction.ratio=ratio;reduction.use_collapse_triangulate=True
+            bpy.ops.object.modifier_apply(modifier=reduction.name)
+        module_rows=[map_and_audit(obj) for obj in targets]
+        if not module_rows[0]['triangles']>module_rows[1]['triangles']>module_rows[2]['triangles']:
+            raise RuntimeError('LOD counts do not decrease.')
+        rows.extend(module_rows)
+    for obj,hidden,selected in states:obj.hide_set(hidden);obj.select_set(selected)
+    bpy.context.view_layer.objects.active=active
+    for name,before in outside.items():
+        if identity(bpy.data.objects[name])!=before:raise RuntimeError('Outside Far chain changed: '+name)
+    if fixed_scene_state()!=fixed_before or set(bpy.data.materials)!=materials_before or set(bpy.data.images)!=images_before:
+        raise RuntimeError('Frozen camera/light/material/image state changed.')
+    for mesh in old_data:
+        if mesh.users!=0:raise RuntimeError('Unexpected shared old Far mesh.')
+        bpy.data.meshes.remove(mesh)
+    totals=[0,0,0]
+    for obj in bpy.data.objects['RB_Golden_Canyon'].children_recursive:
+        if obj.type!='MESH':continue
+        for level in range(3):
+            if '_L%d_'%level in obj.name:
+                obj.data.calc_loop_triangles();totals[level]+=len(obj.data.loop_triangles)
+    scene.render.filepath=ROOT+'docs/p08/golden/canyon/v19/candidate02-gameplay.png'
+    scene['v19_scope']='Unaccepted Far33-44 full-perimeter sculpted closed mesas; fixedV18-02camera/road/nearcliff. NoAssets export.'
+    scene['v19_parent_source_sha256']='08ac16ebb9467dbe2db922fb9aa84ff49998134f830049cd9ca5caf767ad3e78'
+    bpy.ops.wm.save_as_mainfile(filepath=DESTINATION,check_existing=False)
+    print('CANYON_V19_MESAS02 '+json.dumps({'source':DESTINATION,'parentSource':SOURCE,'changedObjects':target_names,
+        'layout':layout,'audit':rows,'sceneLodTriangles':totals,'otherSceneMeshesExactlyUnchanged':len(outside),
+        'cameraAndLightingExactlyUnchanged':True,'materialAndImageMembershipUnchanged':True,
+        'fixedScene':fixed_before,'visualAccepted':False,'exportedToAssets':False}))
+except Exception:
+    bpy.ops.wm.open_mainfile(filepath=SOURCE)
+    raise

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "priorManifest": {
+    "path": "docs/p08/golden/canyon/v19/candidate05-freeze-manifest.json",
+    "sha256": "b79f3812437f018a9b2b8b279973d748588f40c8d2cbfcda235a348cc33401ef"
+  },
+  "priorAndProtectedVerified": 66,
+  "cc0AndMaterialInputs": [
+    {
+      "path": "ArtSource/P08/Golden/Canyon/SourceModels/namaqualand_cliff_01/namaqualand_cliff_01_fbx.fbx",
+      "sha256": "ee5bb2ab237f3fe8d03330324cee735c3fd07c8ff2c2c5f32e5a00868aceee9b"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v19/candidate06-cc0-patches.json",
+      "sha256": "977ff0efb8779de1c9659d8b69bd4dbbacb9cf4c2a62005fdc65ae146d10c826"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_BaseColor.png",
+      "sha256": "d876cf282cd21cb1e5dbaf42fae351798cd70d9f39648c5be1340c8e0fea4038"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_MetallicSmoothness.png",
+      "sha256": "370571295665bc3a977ed8774289222746b9ede52a4cfe26eb0cf6cdd7c7021d"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Normal.png",
+      "sha256": "e8c968bb307fb87d79fa058f36d32e7c317c7f6ac99c5fff5bc8ce9dbda4185d"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Occlusion.png",
+      "sha256": "c03dc6659c9efb20dbbd50949fe8fe38c6c7356064bdad0f415e62d952380cc6"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Roughness.png",
+      "sha256": "cf8552db6e8b54567fb81e62decc524f741fb931315daee28c98ef2473cf7df9"
+    }
+  ],
+  "safeModePreflight": true,
+  "changedScope": "Far33-44 only: bounded splitgroups and localCC0 radialdetail/UVs with existingCliff01 material; no whole-mass stretching",
+  "visualAccepted": false
+}

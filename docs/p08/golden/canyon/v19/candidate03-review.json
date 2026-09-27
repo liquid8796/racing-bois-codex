@@ -1,0 +1,264 @@
+{
+  "schema": 1,
+  "candidate": "V19-03",
+  "scope": "Far33-44 closed geometry composition study; no Assets export or acceptance",
+  "source": {
+    "path": "ArtSource/P08/Golden/Canyon/V19/RB_Golden_Canyon_V19_03.blend",
+    "bytes": 371229413,
+    "sha256": "38b640dadb313053618140c47a8c43c7559a4d4702d6f805b5fb25a12d647e8d"
+  },
+  "actualRender": {
+    "path": "docs/p08/golden/canyon/v19/candidate03-gameplay.png",
+    "bytes": 2000286,
+    "sha256": "33da87e9f27e2e68b73ef98885911216831202ce6bc6731ee93043bf7c8aa0cb"
+  },
+  "lockedReference": {
+    "path": "ArtSource/Concepts/P08/Golden/canyon-v2.png",
+    "bytes": 3438544,
+    "sha256": "83273dae6721d9f2c6f5d6bf4a6f39146322d8efeabc5cec0cb332e5a1cfa610"
+  },
+  "visualAccepted": false,
+  "observedImprovement": [
+    "Smaller visible fracture faces and irregular tops replace blank upper masses.",
+    "Lower blank cylinders become slopes."
+  ],
+  "remainingDiscrepancies": [
+    "Far chain still reads as continuous vertical corrugation.",
+    "Horizontal bedding/deep setbacks remain too weak.",
+    "Talus apron repeats too continuously.",
+    "Unchanged road/near cliff/Bend/Opposite/valley/foliage/rail/lighting differences remain."
+  ],
+  "technicalChecks": {
+    "changedMeshes": 36,
+    "unchangedOtherSceneMeshes": 616,
+    "worldVolumeConversion": [
+      {
+        "object": "Canyon_L0_Far_33",
+        "localSignedVolume": 6981886.006479798,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6981886.006479798
+      },
+      {
+        "object": "Canyon_L1_Far_33",
+        "localSignedVolume": 6982457.706053528,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6982457.706053528
+      },
+      {
+        "object": "Canyon_L2_Far_33",
+        "localSignedVolume": 6981838.509028974,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6981838.509028974
+      },
+      {
+        "object": "Canyon_L0_Far_34",
+        "localSignedVolume": 8082375.961669369,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8082375.961669369
+      },
+      {
+        "object": "Canyon_L1_Far_34",
+        "localSignedVolume": 8083065.869929322,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8083065.869929322
+      },
+      {
+        "object": "Canyon_L2_Far_34",
+        "localSignedVolume": 8082565.745018838,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8082565.745018838
+      },
+      {
+        "object": "Canyon_L0_Far_35",
+        "localSignedVolume": 8794086.9278416,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8794086.9278416
+      },
+      {
+        "object": "Canyon_L1_Far_35",
+        "localSignedVolume": 8794861.108849337,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8794861.108849337
+      },
+      {
+        "object": "Canyon_L2_Far_35",
+        "localSignedVolume": 8794156.066816695,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8794156.066816695
+      },
+      {
+        "object": "Canyon_L0_Far_36",
+        "localSignedVolume": 8958958.938636087,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8958958.938636087
+      },
+      {
+        "object": "Canyon_L1_Far_36",
+        "localSignedVolume": 8959687.330948845,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8959687.330948845
+      },
+      {
+        "object": "Canyon_L2_Far_36",
+        "localSignedVolume": 8959019.95353043,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8959019.95353043
+      },
+      {
+        "object": "Canyon_L0_Far_37",
+        "localSignedVolume": 8751560.350519154,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8751560.350519154
+      },
+      {
+        "object": "Canyon_L1_Far_37",
+        "localSignedVolume": 8752819.39198725,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8752819.39198725
+      },
+      {
+        "object": "Canyon_L2_Far_37",
+        "localSignedVolume": 8750673.276676137,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 8750673.276676137
+      },
+      {
+        "object": "Canyon_L0_Far_38",
+        "localSignedVolume": 7776324.64901451,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7776324.64901451
+      },
+      {
+        "object": "Canyon_L1_Far_38",
+        "localSignedVolume": 7777390.042343009,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7777390.042343009
+      },
+      {
+        "object": "Canyon_L2_Far_38",
+        "localSignedVolume": 7775998.502171804,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7775998.502171804
+      },
+      {
+        "object": "Canyon_L0_Far_39",
+        "localSignedVolume": 7464077.887761216,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7464077.887761216
+      },
+      {
+        "object": "Canyon_L1_Far_39",
+        "localSignedVolume": 7465157.886008186,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7465157.886008186
+      },
+      {
+        "object": "Canyon_L2_Far_39",
+        "localSignedVolume": 7463596.580945571,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7463596.580945571
+      },
+      {
+        "object": "Canyon_L0_Far_40",
+        "localSignedVolume": 7252338.303038727,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7252338.303038727
+      },
+      {
+        "object": "Canyon_L1_Far_40",
+        "localSignedVolume": 7253268.817534497,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7253268.817534497
+      },
+      {
+        "object": "Canyon_L2_Far_40",
+        "localSignedVolume": 7251672.924957542,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7251672.924957542
+      },
+      {
+        "object": "Canyon_L0_Far_41",
+        "localSignedVolume": 6801178.038479164,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6801178.038479164
+      },
+      {
+        "object": "Canyon_L1_Far_41",
+        "localSignedVolume": 6802223.873010183,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6802223.873010183
+      },
+      {
+        "object": "Canyon_L2_Far_41",
+        "localSignedVolume": 6800392.972973311,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6800392.972973311
+      },
+      {
+        "object": "Canyon_L0_Far_42",
+        "localSignedVolume": 6743416.847733908,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6743416.847733908
+      },
+      {
+        "object": "Canyon_L1_Far_42",
+        "localSignedVolume": 6744413.7286945125,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6744413.7286945125
+      },
+      {
+        "object": "Canyon_L2_Far_42",
+        "localSignedVolume": 6742918.17764941,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6742918.17764941
+      },
+      {
+        "object": "Canyon_L0_Far_43",
+        "localSignedVolume": 6603594.630713701,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6603594.630713701
+      },
+      {
+        "object": "Canyon_L1_Far_43",
+        "localSignedVolume": 6604476.08307844,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6604476.08307844
+      },
+      {
+        "object": "Canyon_L2_Far_43",
+        "localSignedVolume": 6602336.09590936,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 6602336.09590936
+      },
+      {
+        "object": "Canyon_L0_Far_44",
+        "localSignedVolume": 7396529.851692189,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7396529.851692189
+      },
+      {
+        "object": "Canyon_L1_Far_44",
+        "localSignedVolume": 7397588.424729576,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7397588.424729576
+      },
+      {
+        "object": "Canyon_L2_Far_44",
+        "localSignedVolume": 7394581.735652802,
+        "worldMatrixDeterminant": 1.0,
+        "worldVolumeCubicMetres": 7394581.735652802
+      }
+    ],
+    "sceneLodTriangles": [
+      3795244,
+      1778515,
+      705975
+    ],
+    "nativeImportTested": false,
+    "performanceAccepted": false
+  },
+  "measurementLimits": [
+    "Joint spacings are reference-plan arc intervals before per-row transforms, not verified final surface separations.",
+    "Positive volume/manifold/UV checks are technical only and do not establish visual fidelity."
+  ]
+}
