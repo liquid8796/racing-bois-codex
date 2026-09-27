@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T16:03:01.155399+00:00",
+  "passed": true,
+  "sourceStable": true,
+  "sources": {
+    "tools/p10/package_desktop_candidate.py": "224307d822e05a2ec31257f889cd798bc0209c832497ff88f8faaf4d6474f6b4",
+    "tools/p10/test_package_desktop_candidate.py": "5b9a238798345abf8533050a03c7c0a55e2e11d626406ea96cdf3ef1a1efe179",
+    "tools/p08/desktop/audit_desktop.py": "b9761e4a62939e98d8cac865804249f24b4199efad8cc51c50e1e34ef1c92380",
+    "tools/p08/desktop/test_audit_desktop.py": "3ba58725e7eb088dc75c94bff3b181a5f7a7d59c3e4a1da1b8a913ba5eef4a18",
+    "tools/p08/desktop/test_dependency_receipt.py": "8b21078089c838a498037801c7b2c03bfd81d721ae8a3feb9d616a8ec78140dd",
+    "tools/p08/content-pack/audit_publish.py": "76f59598d7f442e5a0b1e0d17749b12bfaecefd1495179c6b1ea1469dd2e6d0a"
+  },
+  "results": [
+    {
+      "name": "candidate-archives",
+      "exitCode": 0,
+      "tests": 20,
+      "log": "docs/p10/candidate-packaging/20260927T160259Z/candidate-archives.log",
+      "logSha256": "efa8105a6731ffc557eff6daa754874eb5056e951035790872a5ce7e19902f6f"
+    },
+    {
+      "name": "desktop-contracts",
+      "exitCode": 0,
+      "tests": 50,
+      "log": "docs/p10/candidate-packaging/20260927T160259Z/desktop-contracts.log",
+      "logSha256": "3bacf2f15a02974d8affeacfc873b5bd083786328cc56b24515e7bc20f225114"
+    }
+  ],
+  "testCount": 70,
+  "nativePlayerBuilt": false,
+  "realCandidateArchiveCreated": false,
+  "releaseAccepted": false,
+  "scope": "Generated archive and existing desktop contract fixtures only; no Unity/native-player build, visual acceptance, physical LAN, hardware or geographic acceptance."
+}

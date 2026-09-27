@@ -1,4 +1,13 @@
-# Desktop dependency receipt repair — staged, not installed
+# Desktop dependency receipt repair — preserved staging history
+
+Current resumption check on 2026-09-27: all three live targets now match the
+`candidateSha256` values in `candidate-manifest.json`. The repair is integrated;
+the staging files, baseline and original before hashes remain historical proof.
+The live verifier's 50 tests passed again in
+`docs/p10/candidate-packaging/20260927T160259Z/receipt.json` alongside 20 native
+candidate archive tests. This does not establish a completed P08 player build.
+Do not rerun the old generator against the integrated source. The text below
+describes the original staged proposal and its original verification.
 
 The live builder includes Unity scene/render-pipeline dependencies in its source
 snapshot. The live Python verifier allows only code plus seven fixed paths,
