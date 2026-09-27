@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "source": {
+    "path": "ArtSource/P08/Golden/Spark/V2/RB_Golden_Spark_v2_refined05.blend",
+    "sha256": "f198f708a6b1d911d1f6120af2d1be2117cae3f086ccdc366fe379d64e77d9da",
+    "bytes": 14454187
+  },
+  "nativeCompressed": true,
+  "captures": [
+    {
+      "view": "quarter",
+      "path": "docs/p08/golden/spark/v2/05-quarter.png",
+      "sha256": "0d642f95e325a5d99da9b5384a43f7407c33dd4b8b6f9ca22b6c2afd2941b5c0",
+      "bytes": 1948919
+    },
+    {
+      "view": "side",
+      "path": "docs/p08/golden/spark/v2/05-side.png",
+      "sha256": "932b9031422b8e97702c5a9c31b53dc5bf8e5330e58683678a9a5de04d568f42",
+      "bytes": 1704365
+    }
+  ],
+  "concepts": [
+    {
+      "path": "ArtSource/Concepts/P08/Golden/spark-v1-side.png",
+      "sha256": "ad5478c942350462a34d12b1ba9f9714cb00a595ff9465bc1d000cf6b5e7ad0b",
+      "bytes": 2466723
+    },
+    {
+      "path": "ArtSource/Concepts/P08/Golden/spark-v1.png",
+      "sha256": "e358ecf1a809f5373aa45ef92cbd6897ed1e1693cacc73b0f6df697d91bedce6",
+      "bytes": 2513839
+    }
+  ],
+  "originalInputCount": 64,
+  "originalInputChanges": [],
+  "mechanicalRefinement": {
+    "drivePlaneMetres": 0.245,
+    "downstreamExhaustOutboardShiftMetres": 0.075,
+    "changedInheritedMeshes": 503
+  },
+  "scopedGeometryChecks": {
+    "newMeshCount": 180,
+    "geometryIssues": [],
+    "chainObstacleCount": 225,
+    "chainIntersections": [],
+    "tankContactsWithNamedStructure": [],
+    "bounds": [
+      [
+        -0.4059999883174896,
+        -1.031999945640564,
+        0.0
+      ],
+      [
+        0.4059999883174896,
+        1.0099999904632568,
+        1.1949045658111572
+      ]
+    ],
+    "contacts": [
+      {
+        "name": "Contact_Foot_L",
+        "position": [
+          -0.27000001072883606,
+          -0.18000000715255737,
+          0.33500000834465027
+        ]
+      },
+      {
+        "name": "Contact_Foot_R",
+        "position": [
+          0.27000001072883606,
+          -0.18000000715255737,
+          0.33500000834465027
+        ]
+      },
+      {
+        "name": "Contact_Grip_L",
+        "position": [
+          -0.33000001311302185,
+          0.41999998688697815,
+          1.0199999809265137
+        ]
+      },
+      {
+        "name": "Contact_Grip_R",
+        "position": [
+          0.33000001311302185,
+          0.41999998688697815,
+          1.0199999809265137
+        ]
+      },
+      {
+        "name": "Contact_Seat",
+        "position": [
+          0.0,
+          -0.3400000035762787,
+          0.800000011920929
+        ]
+      },
+      {
+        "name": "Ground_Front",
+        "position": [
+          0.0,
+          0.6949999928474426,
+          0.0
+        ]
+      },
+      {
+        "name": "Ground_Rear",
+        "position": [
+          0.0,
+          -0.6949999928474426,
+          0.0
+        ]
+      },
+      {
+        "name": "RB_Golden_Spark_v1_Wheel_Front",
+        "position": [
+          0.0,
+          0.6949999928474426,
+          0.3149999976158142
+        ]
+      },
+      {
+        "name": "RB_Golden_Spark_v1_Wheel_Rear",
+        "position": [
+          0.0,
+          -0.6949999928474426,
+          0.3149999976158142
+        ]
+      }
+    ],
+    "visualAccepted": false,
+    "scope": "Named static mesh surface checks; mesh bounds and zero intersections do not prove swept clearance or visual fidelity."
+  },
+  "seatSurfaceZ": 0.7999999523162842,
+  "receipts": [
+    {
+      "path": "docs/p08/golden/spark/v2/addon-status-mcp.json",
+      "sha256": "8980c2768cb193aeaba1a0acb05c3b8f36b6afd315bf7c20815273859aa71189",
+      "bytes": 5127
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/refine-01-mcp.json",
+      "sha256": "23170148b61f19899fa6c6a392bed1f9170d9f460a0c419c48d9ea793f6f264a",
+      "bytes": 9733
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/mechanical-clearance-03c-mcp.json",
+      "sha256": "86fcb7fecebff9cfcb2ecf02ee5c100c3e1302e93c2d6f2191a6f4b645bfc6cf",
+      "bytes": 99725
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/tank-topology-04-mcp.json",
+      "sha256": "062e46f272a5991e4cb4fd94c2ad33c1525191cb2d4aa96d37212062ba1a1257",
+      "bytes": 4277
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/seat-contact-05-mcp.json",
+      "sha256": "5a142fa3395a514ab7364da9a57da74edf3e98f6839638de28ea45ee90555d4d",
+      "bytes": 4505
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/geometry-audit-05-mcp.json",
+      "sha256": "bd0e3c43e2b20e025852fa8bdb1bfcc19d67fcc1b13fdbf6a99b876ceea1f71b",
+      "bytes": 6213
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/joints-04-mcp.json",
+      "sha256": "b25899356d29821706bb4ea0da6c5528176887845fd0f574f4b57c2249f3e183",
+      "bytes": 6313
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/render-05-quarter-mcp.json",
+      "sha256": "721d5aa01cbde1284adef7b2a6a9219a411c80bb8fe83a91be40b3ce7cae7382",
+      "bytes": 4155
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/render-05-side-mcp.json",
+      "sha256": "9d32a996bcbc15d88ee055e9a8faa0a14c4f34c47ee55aa31437e26a1749230f",
+      "bytes": 4143
+    }
+  ],
+  "review": {
+    "path": "docs/p08/golden/spark/v2/DESIGN_REVIEW.md",
+    "sha256": "07380076b7c328dee89999afd80cd4734eb6c3f7e3d4bd6eb5d55acd2a7a5172",
+    "bytes": 7166
+  },
+  "visualAccepted": false,
+  "exported": false,
+  "unityUpdated": false,
+  "scope": "Bounded engine/tank/seat/mechanical refinement. Static named checks only; concept mismatch remains. No LOD/export/native-player/performance acceptance."
+}

@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "source": {
+    "path": "ArtSource/P08/Golden/Spark/V2/RB_Golden_Spark_v2_refined06.blend",
+    "sha256": "9cfe062db5bd4a210a4ab9f41b656a356838ac5f4ae5824e808d61710593efa4",
+    "bytes": 14586353
+  },
+  "nativeCompressed": true,
+  "beforeSource": {
+    "path": "ArtSource/P08/Golden/Spark/V2/RB_Golden_Spark_v2_refined05.blend",
+    "sha256": "f198f708a6b1d911d1f6120af2d1be2117cae3f086ccdc366fe379d64e77d9da",
+    "bytes": 14454187
+  },
+  "captures": [
+    {
+      "view": "quarter",
+      "path": "docs/p08/golden/spark/v2/06-quarter.png",
+      "sha256": "c4f3dd614f5a86acf78187c470fa71bb8045de83ab0a209464f6011131db5ec9",
+      "bytes": 1947628
+    },
+    {
+      "view": "side",
+      "path": "docs/p08/golden/spark/v2/06-side.png",
+      "sha256": "d079916f76b6f37bebfb9cf931c7ca007045c75b41b93e7b9bf4b26d5c475e12",
+      "bytes": 1698849
+    }
+  ],
+  "staticChecks": {
+    "source": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Spark/V2/RB_Golden_Spark_v2_refined06.blend",
+    "saved": true,
+    "tankVertices": 4544,
+    "tankTriangles": 9084,
+    "physicalTriangleFailures": 0,
+    "uvTriangleFailures": 0,
+    "nonmanifoldEdges": 0,
+    "contacts": [
+      {
+        "object": "Steering head",
+        "surfaceIntersections": 0
+      },
+      {
+        "object": "Upper triple clamp",
+        "surfaceIntersections": 0
+      },
+      {
+        "object": "Lower triple clamp",
+        "surfaceIntersections": 0
+      },
+      {
+        "object": "Upper black frame rail -1",
+        "surfaceIntersections": 0
+      },
+      {
+        "object": "Upper black frame rail 1",
+        "surfaceIntersections": 0
+      },
+      {
+        "object": "V2 shaped leather saddle",
+        "surfaceIntersections": 0
+      }
+    ],
+    "preservedOtherMeshCount": 951,
+    "canonicalMarkersUnchanged": true,
+    "noBooleanModifiers": true,
+    "visualAccepted": false,
+    "exported": false
+  },
+  "originalInputCount": 65,
+  "originalInputChanges": [],
+  "review": {
+    "path": "docs/p08/golden/spark/v2/TANK_REFINED06_REVIEW.md",
+    "sha256": "32e3a9b5e1fc6c1eb990e6a36cd5b96caa5f17b04d0dca49fa80c29ea33bd37c",
+    "bytes": 3521
+  },
+  "disposition": "VISUALLY_REJECTED_COMPARISON_CANDIDATE",
+  "remainingGap": "Smooth neck removes Boolean scallops but tank is visibly raised away from frame/engine, front is short/pointed, cream inset shape differs and preserved ignition lead is exposed. No concept fidelity acceptance.",
+  "visualAccepted": false,
+  "exported": false,
+  "unityUpdated": false,
+  "writesFrozen": true,
+  "receipts": [
+    {
+      "path": "docs/p08/golden/spark/v2/tank-surface-06-01-mcp.json",
+      "sha256": "48e6d8874f4b01e29698afe97fb522f7379b07be5944896e4fffd006d79e5c91",
+      "bytes": 4515
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/tank-surface-06-02-mcp.json",
+      "sha256": "ee35506d44c784d45f946357aa6a6a4de359a3aaffa5097273c957b0d3ab7ad9",
+      "bytes": 5019
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/tank-rail-probe-06-mcp.json",
+      "sha256": "852344688cac4c25feec025efa7abb6565fa1b7a0bda14d88d3e40e60dbb6f8d",
+      "bytes": 8811
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/tank-surface-06-03-mcp.json",
+      "sha256": "cf266cc34decdbb5e4b01111a9bcfa489aaa1c0cb4b01ef5ceb730d01b02e7ae",
+      "bytes": 5307
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/render-06-quarter-mcp.json",
+      "sha256": "148945f86c795de38e91adc27b6e955279ddb3937ba52205c27fa7708381f071",
+      "bytes": 4155
+    },
+    {
+      "path": "docs/p08/golden/spark/v2/render-06-side-mcp.json",
+      "sha256": "165cfc1aa2ca7584351d167fcc2167fb93ed8bfd278e5e7653ce4a34d3b160f2",
+      "bytes": 4143
+    }
+  ]
+}

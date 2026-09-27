@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: SPARK_TANK_DEGENERATES=[{\"polygon\": 476, \"vertices\": [820, 821, 818], \"points\": [[0.08207453042268753, 0.4045490026473999, 0.8790095448493958], [0.08198434114456177, 0.40471217036247253, 0.8782640099525452], [0.08182061463594437, 0.4050084054470062, 0.8769106268882751]], \"edgeLengths\": [0.0007684920888396926, 0.0013950653390459701, 0.0021635574822113806], \"crossSquared\": 6.483317973044241e-22}, {\"polygon\": 476, \"vertices\": [819, 822, 820], \"points\": [[0.08227545768022537, 0.4041855037212372, 0.8806703090667725], [0.08215700089931488, 0.4043998122215271, 0.8796911835670471], [0.08207453042268753, 0.4045490026473999, 0.8790095448493958]], \"edgeLengths\": [0.0010092803925678857, 0.0007026311294222165, 0.0017119114941150193], \"crossSquared\": 4.3427991900992636e-23}, {\"polygon\": 484, \"vertices\": [767, 765, 768], \"points\": [[-0.07798593491315842, 0.4085019528865814, 0.8600153923034668], [-0.08012326061725616, 0.40743449330329895, 0.8656511306762695], [-0.08061560243368149, 0.4071885943412781, 0.8669493794441223]], \"edgeLengths\": [0.006121207390311656, 0.001410076823200705, 0.007531284145312751], \"crossSquared\": 5.1916440183242245e-21}, {\"polygon\": 485, \"vertices\": [769, 770, 771], \"points\": [[-0.08208237588405609, 0.40454983711242676, 0.8790095448493958], [-0.08216242492198944, 0.4044009745121002, 0.879688560962677], [-0.0822778046131134, 0.4041864275932312, 0.8806672692298889]], \"edgeLengths\": [0.0006997362384909262, 0.001008569614788863, 0.0017083058653597505], \"crossSquared\": 1.5214752705932965e-22}, {\"polygon\": 500, \"vertices\": [686, 687, 688], \"points\": [[-0.04174049198627472, 0.4159870147705078, 0.8907352685928345], [-0.04121920466423035, 0.4165319800376892, 0.889767050743103], [-0.0410754419863224, 0.4166800379753113, 0.8894935846328735]], \"edgeLengths\": [0.0012272625712840847, 0.00034259680950402184, 0.001569825389015039], \"crossSquared\": 4.4882520390950384e-17}, {\"polygon\": 566, \"vertices\": [714, 715, 716], \"points\": [[-2.0143309242826035e-10, 0.4269999861717224, 0.8499557971954346], [-0.007047848775982857, 0.4270000159740448, 0.8524032235145569], [-0.009533083997666836, 0.4270000159740448, 0.8532662391662598]], \"edgeLengths\": [0.0074607016370851955, 0.0026308154615406454, 0.010091517238986708], \"crossSquared\": 6.79576119038559e-21}, {\"polygon\": 567, \"vertices\": [718, 719, 721], \"points\": [[-0.012871332466602325, 0.4270000159740448, 0.8558154106140137], [-0.017658641561865807, 0.4269999861717224, 0.8609782457351685], [-0.02139046974480152, 0.4269999861717224, 0.8650027513504028]], \"edgeLengths\": [0.007040823439208851, 0.00548845940692947, 0.01252928272275704], \"crossSquared\": 9.536443305295247e-20}, {\"polygon\": 568, \"vertices\": [721, 720, 706], \"points\": [[-0.02139046974480152, 0.4269999861717224, 0.8650027513504028], [-0.024163292720913887, 0.4269999861717224, 0.870372474193573], [-0.024354243651032448, 0.4269999861717224, 0.8707422614097595]], \"edgeLengths\": [0.006043382373243146, 0.00041617885874768045, 0.0064595611858828976], \"crossSquared\": 3.308722450212111e-24}, {\"polygon\": 593, \"vertices\": [711, 712, 713], \"points\": [[0.010970283299684525, 0.4270000159740448, 0.8537653088569641], [0.009533083997666836, 0.4270000159740448, 0.8532662391662598], [0.007047848775982857, 0.4270000159740448, 0.8524032235145569]], \"edgeLengths\": [0.0015213850182534555, 0.0026308154615406454, 0.00415220050233013], \"crossSquared\": 4.003554164756654e-22}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: SPARK_TANK_DEGENERATES=[{\"polygon\": 476, \"vertices\": [820, 821, 818], \"points\": [[0.08207453042268753, 0.4045490026473999, 0.8790095448493958], [0.08198434114456177, 0.40471217036247253, 0.8782640099525452], [0.08182061463594437, 0.4050084054470062, 0.8769106268882751]], \"edgeLengths\": [0.0007684920888396926, 0.0013950653390459701, 0.0021635574822113806], \"crossSquared\": 6.483317973044241e-22}, {\"polygon\": 476, \"vertices\": [819, 822, 820], \"points\": [[0.08227545768022537, 0.4041855037212372, 0.8806703090667725], [0.08215700089931488, 0.4043998122215271, 0.8796911835670471], [0.08207453042268753, 0.4045490026473999, 0.8790095448493958]], \"edgeLengths\": [0.0010092803925678857, 0.0007026311294222165, 0.0017119114941150193], \"crossSquared\": 4.3427991900992636e-23}, {\"polygon\": 484, \"vertices\": [767, 765, 768], \"points\": [[-0.07798593491315842, 0.4085019528865814, 0.8600153923034668], [-0.08012326061725616, 0.40743449330329895, 0.8656511306762695], [-0.08061560243368149, 0.4071885943412781, 0.8669493794441223]], \"edgeLengths\": [0.006121207390311656, 0.001410076823200705, 0.007531284145312751], \"crossSquared\": 5.1916440183242245e-21}, {\"polygon\": 485, \"vertices\": [769, 770, 771], \"points\": [[-0.08208237588405609, 0.40454983711242676, 0.8790095448493958], [-0.08216242492198944, 0.4044009745121002, 0.879688560962677], [-0.0822778046131134, 0.4041864275932312, 0.8806672692298889]], \"edgeLengths\": [0.0006997362384909262, 0.001008569614788863, 0.0017083058653597505], \"crossSquared\": 1.5214752705932965e-22}, {\"polygon\": 500, \"vertices\": [686, 687, 688], \"points\": [[-0.04174049198627472, 0.4159870147705078, 0.8907352685928345], [-0.04121920466423035, 0.4165319800376892, 0.889767050743103], [-0.0410754419863224, 0.4166800379753113, 0.8894935846328735]], \"edgeLengths\": [0.0012272625712840847, 0.00034259680950402184, 0.001569825389015039], \"crossSquared\": 4.4882520390950384e-17}, {\"polygon\": 566, \"vertices\": [714, 715, 716], \"points\": [[-2.0143309242826035e-10, 0.4269999861717224, 0.8499557971954346], [-0.007047848775982857, 0.4270000159740448, 0.8524032235145569], [-0.009533083997666836, 0.4270000159740448, 0.8532662391662598]], \"edgeLengths\": [0.0074607016370851955, 0.0026308154615406454, 0.010091517238986708], \"crossSquared\": 6.79576119038559e-21}, {\"polygon\": 567, \"vertices\": [718, 719, 721], \"points\": [[-0.012871332466602325, 0.4270000159740448, 0.8558154106140137], [-0.017658641561865807, 0.4269999861717224, 0.8609782457351685], [-0.02139046974480152, 0.4269999861717224, 0.8650027513504028]], \"edgeLengths\": [0.007040823439208851, 0.00548845940692947, 0.01252928272275704], \"crossSquared\": 9.536443305295247e-20}, {\"polygon\": 568, \"vertices\": [721, 720, 706], \"points\": [[-0.02139046974480152, 0.4269999861717224, 0.8650027513504028], [-0.024163292720913887, 0.4269999861717224, 0.870372474193573], [-0.024354243651032448, 0.4269999861717224, 0.8707422614097595]], \"edgeLengths\": [0.006043382373243146, 0.00041617885874768045, 0.0064595611858828976], \"crossSquared\": 3.308722450212111e-24}, {\"polygon\": 593, \"vertices\": [711, 712, 713], \"points\": [[0.010970283299684525, 0.4270000159740448, 0.8537653088569641], [0.009533083997666836, 0.4270000159740448, 0.8532662391662598], [0.007047848775982857, 0.4270000159740448, 0.8524032235145569]], \"edgeLengths\": [0.0015213850182534555, 0.0026308154615406454, 0.00415220050233013], \"crossSquared\": 4.003554164756654e-22}]\n"
+    },
+    "isError": false
+  }
+}

@@ -1,8 +1,28 @@
 # Continuous P08–P10 execution — 2026-09-27
 
+## Latest verified work — 2026-09-27 continuation
+
+The continuation has restored actual Git history and normal master publication. Initial source/art upload required Git LFS; the first push was rejected for newly committed capture objects, then a complete LFS upload and normal retry succeeded. Master was verified at `745fd31`, then at `117b6f0` after the Spark importer patch. The Ash patch `12e8726` was also normally pushed; local HEAD and the remote master SHA were independently equal afterward.
+
+Completed bounded engineering work:
+
+- Native preview build settings now preserve effective settings and restore original Editor state. Three fresh Windows x64 Mono/DX11 builds passed with zero errors/warnings and source binding; actual captures and independent validators are recorded in the pose-envelope directory.
+- Rider fall origin is explicit prefab metadata with legacy -0.55m compatibility. A 0m authored-rig candidate removes the duplicate shift.
+- Ash V7R1 repairs the 279 native collapsed collar-UV triangles without changing geometry/maps/animations. V7R2 changes only the Fall action and preserves the other 12 takes. Actual Unity dense clip and production-blend probes have positive minimum clearance on all three LODs (lowest 1.986mm), and the latest Windows run verified 48 captures / 1,502 observations. [Native review](p08/golden/ash/v7r2/NATIVE_REVIEW.md). The sampled flat-ground defect is fixed; this is not full terrain/contact or art acceptance.
+- Spark V1 now imports with an explicit hash/pixel-verified constant-map contract: 22 unchanged 4x4 maps, native positive/negative checks, 26 contract tests. Actual Unity renders still differ substantially from the concepts. [Review](p08/golden/spark/v1/UNITY_REVIEW.md).
+- Spark V2 is a separate compressed mechanical-refinement candidate with joined engine castings, tank/seat changes and audited chain clearances. Source and matched renders are frozen, but tank clearance scallops, paint/detail and other visible differences remain. It is deliberately unexported and unaccepted. Refined06 removes the Boolean scallops and passes named static clearances, but actual renders show a floating tank and incorrect pointed/paint-inset silhouette; it is explicitly visually rejected and must not replace05. [V2 review](p08/golden/spark/v2/DESIGN_REVIEW.md), [rejected06 comparison](p08/golden/spark/v2/TANK_REFINED06_REVIEW.md).
+- Direct Unity MCP setup is pinned and has a read-only default preflight for PowerShell5.1/current PowerShell. [Setup](SETUP.md).
+
+A fresh public OCI readiness request returned HTTP200 / protocol6 at2026-09-27 13:08:50UTC; [receipt](p09/readiness-20260927-resumed.json). This is readiness from the current client network, not geographic gameplay or capacity acceptance.
+
+The source-bound 261-group regression and completed 8-hour network soak remain scoped evidence, not a whole-game release claim. No authoritative/shared/server logic or production content mask changed in these presentation/art patches. Club retains its protected SHA256.
+
+Remaining P08–P10 work is substantial: resolve all concept mismatches before roster promotion, complete content/route/portrait coverage, validate full native gameplay/UI/audio/campaign and sustained performance, test physical two-PC offline LAN, Win10/gamepad/weaker hardware and actual clients in multiple geographic regions, then package/release. One available Windows11 laptop cannot provide those physical device/geographic proofs. Production masks remain1/1/1. Four old private failed-restore artifacts remain untouched after the earlier automatic approval review blocked deletion; see `docs/p09/cleanup-status.json`.
+
+
 User authorizes completing all three phases without repeated intermediate confirmation. No Jarvis MCP calls. UI/3D100%fidelity to finalized2D prototypes remains a required acceptance condition. Asset-generation recovery uses local/free tools only. Existing Club source is protected by rootAGENTS.md.
 
-## Current checkpoint — session resumption, 2026-09-27
+## Historical resumption checkpoint — 2026-09-27
 
 This checkpoint supersedes the current-state wording in the earlier records below. Historical failures, interrupted runs and scoped PASS results remain unchanged. The user now also authorizes validating, committing and normally pushing each completed patch to `master`; initial publication is being prepared and is not claimed complete here.
 
@@ -78,3 +98,6 @@ At that historical checkpoint, Git read-only preflight reported unborn master/al
 - Ash V7's first native import failed279collapsedUVtriangles in the new collar. Original source/FBX UVs are valid, and native welding/optimization/tangent/triangulation controls do not repair the failure. A separate UV-only R1 candidate is under controlled validation; no threshold is weakened and original source/map/animation bytes remain preserved. [Diagnosis](p08/golden/ash/v7r1/README.md).
 - Direct Unity MCP dependency now has a pinned local verify/install helper and [setup guide](SETUP.md), verified on PowerShell5.1 and the current shell. No active package or system/global setting was changed.
 - All art/roster, physical multi-PC LAN, Win10/gamepad/weakerhardware, multi-region actual gameplay and full release gates remain open. Production masks stay1/1/1. Protected Club SHA256 still matches.
+
+
+Workspace closeout note: two NotoSans SDF asset files have Editor font-cache changes in the working tree. They are preserved outside the reviewed patches. No cleanup of the protected Club source or prior policy-blocked recovery data was performed.

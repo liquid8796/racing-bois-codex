@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: SPARK_TANK_RAIL_CONTACTS=[{\"polygon\": 3671, \"min\": [0.10348097234964371, 0.34605446457862854, 0.859143078327179], \"max\": [0.1136007010936737, 0.34812477231025696, 0.8637270927429199]}, {\"polygon\": 3672, \"min\": [0.10211960971355438, 0.3455929756164551, 0.859143078327179], \"max\": [0.11159946024417877, 0.3474062383174896, 0.86920565366745]}, {\"polygon\": 3673, \"min\": [0.10096766799688339, 0.3451862335205078, 0.8659283518791199], \"max\": [0.11013127863407135, 0.3468555510044098, 0.880812406539917]}, {\"polygon\": 3733, \"min\": [0.09811903536319733, 0.34849420189857483, 0.8692710995674133], \"max\": [0.1068362295627594, 0.3494797945022583, 0.878898024559021]}, {\"polygon\": 3734, \"min\": [0.09720294177532196, 0.34812477231025696, 0.8637270927429199], \"max\": [0.10632938146591187, 0.34926342964172363, 0.8720759749412537]}, {\"polygon\": 3735, \"min\": [0.09549057483673096, 0.3474062383174896, 0.8628084659576416], \"max\": [0.10533662140369415, 0.348832368850708, 0.8670217990875244]}, {\"polygon\": 3737, \"min\": [0.09317134320735931, 0.3463737964630127, 0.86920565366745], \"max\": [0.10211960971355438, 0.3473687171936035, 0.883195161819458]}, {\"polygon\": 3797, \"min\": [0.09023218601942062, 0.34926342964172363, 0.8720759749412537], \"max\": [0.09858675301074982, 0.34957194328308105, 0.8808559775352478]}, {\"polygon\": 3801, \"min\": [0.08568218350410461, 0.34662702679634094, 0.8723089098930359], \"max\": [0.09423432499170303, 0.3473687171936035, 0.8854018449783325]}, {\"polygon\": 3861, \"min\": [0.08439113944768906, 0.3488680422306061, 0.8745995759963989], \"max\": [0.09066230058670044, 0.34957194328308105, 0.8822068572044373]}, {\"polygon\": 3864, \"min\": [0.08104993402957916, 0.3466549515724182, 0.8693900108337402], \"max\": [0.08781500160694122, 0.347924143075943, 0.877106785774231]}, {\"polygon\": 3865, \"min\": [0.08013566583395004, 0.34602731466293335, 0.8751365542411804], \"max\": [0.08665972948074341, 0.34722816944122314, 0.8869607448577881]}, {\"polygon\": 3925, \"min\": [0.07837975025177002, 0.34782734513282776, 0.876340925693512], \"max\": [0.08479341864585876, 0.34912580251693726, 0.8835336565971375]}, {\"polygon\": 3926, \"min\": [0.07764796167612076, 0.34729886054992676, 0.8720412254333496], \"max\": [0.08439113944768906, 0.3488680422306061, 0.8780471086502075]}, {\"polygon\": 3927, \"min\": [0.07628007978200912, 0.34629568457603455, 0.8715531229972839], \"max\": [0.08360321819782257, 0.3483577370643616, 0.8740476965904236]}, {\"polygon\": 3928, \"min\": [0.07527655363082886, 0.3455473482608795, 0.8715531229972839], \"max\": [0.08213042467832565, 0.34738460183143616, 0.8790380954742432]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: SPARK_TANK_RAIL_CONTACTS=[{\"polygon\": 3671, \"min\": [0.10348097234964371, 0.34605446457862854, 0.859143078327179], \"max\": [0.1136007010936737, 0.34812477231025696, 0.8637270927429199]}, {\"polygon\": 3672, \"min\": [0.10211960971355438, 0.3455929756164551, 0.859143078327179], \"max\": [0.11159946024417877, 0.3474062383174896, 0.86920565366745]}, {\"polygon\": 3673, \"min\": [0.10096766799688339, 0.3451862335205078, 0.8659283518791199], \"max\": [0.11013127863407135, 0.3468555510044098, 0.880812406539917]}, {\"polygon\": 3733, \"min\": [0.09811903536319733, 0.34849420189857483, 0.8692710995674133], \"max\": [0.1068362295627594, 0.3494797945022583, 0.878898024559021]}, {\"polygon\": 3734, \"min\": [0.09720294177532196, 0.34812477231025696, 0.8637270927429199], \"max\": [0.10632938146591187, 0.34926342964172363, 0.8720759749412537]}, {\"polygon\": 3735, \"min\": [0.09549057483673096, 0.3474062383174896, 0.8628084659576416], \"max\": [0.10533662140369415, 0.348832368850708, 0.8670217990875244]}, {\"polygon\": 3737, \"min\": [0.09317134320735931, 0.3463737964630127, 0.86920565366745], \"max\": [0.10211960971355438, 0.3473687171936035, 0.883195161819458]}, {\"polygon\": 3797, \"min\": [0.09023218601942062, 0.34926342964172363, 0.8720759749412537], \"max\": [0.09858675301074982, 0.34957194328308105, 0.8808559775352478]}, {\"polygon\": 3801, \"min\": [0.08568218350410461, 0.34662702679634094, 0.8723089098930359], \"max\": [0.09423432499170303, 0.3473687171936035, 0.8854018449783325]}, {\"polygon\": 3861, \"min\": [0.08439113944768906, 0.3488680422306061, 0.8745995759963989], \"max\": [0.09066230058670044, 0.34957194328308105, 0.8822068572044373]}, {\"polygon\": 3864, \"min\": [0.08104993402957916, 0.3466549515724182, 0.8693900108337402], \"max\": [0.08781500160694122, 0.347924143075943, 0.877106785774231]}, {\"polygon\": 3865, \"min\": [0.08013566583395004, 0.34602731466293335, 0.8751365542411804], \"max\": [0.08665972948074341, 0.34722816944122314, 0.8869607448577881]}, {\"polygon\": 3925, \"min\": [0.07837975025177002, 0.34782734513282776, 0.876340925693512], \"max\": [0.08479341864585876, 0.34912580251693726, 0.8835336565971375]}, {\"polygon\": 3926, \"min\": [0.07764796167612076, 0.34729886054992676, 0.8720412254333496], \"max\": [0.08439113944768906, 0.3488680422306061, 0.8780471086502075]}, {\"polygon\": 3927, \"min\": [0.07628007978200912, 0.34629568457603455, 0.8715531229972839], \"max\": [0.08360321819782257, 0.3483577370643616, 0.8740476965904236]}, {\"polygon\": 3928, \"min\": [0.07527655363082886, 0.3455473482608795, 0.8715531229972839], \"max\": [0.08213042467832565, 0.34738460183143616, 0.8790380954742432]}]\n"
+    },
+    "isError": false
+  }
+}

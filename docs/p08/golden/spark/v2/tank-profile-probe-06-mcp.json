@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: SPARK_TANK_PROFILE_PROBE=[{\"y\": -0.1, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.12196405977010727, \"maxX\": 0.15000516176223755, \"minZ\": 0.7562645673751831, \"maxZ\": 0.7838620543479919}]}, {\"y\": -0.05, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.11825426667928696, \"maxX\": 0.14632746577262878, \"minZ\": 0.7645073533058167, \"maxZ\": 0.7922496795654297}]}, {\"y\": 0, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.11447123438119888, \"maxX\": 0.14260807633399963, \"minZ\": 0.7728760242462158, \"maxZ\": 0.8008220195770264}]}, {\"y\": 0.05, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.10948500037193298, \"maxX\": 0.13762250542640686, \"minZ\": 0.7832838296890259, \"maxZ\": 0.8112894296646118}]}, {\"y\": 0.1, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.10449875891208649, \"maxX\": 0.13263694941997528, \"minZ\": 0.793739378452301, \"maxZ\": 0.821756899356842}]}, {\"y\": 0.15, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.0989062562584877, \"maxX\": 0.1270843744277954, \"minZ\": 0.8050839900970459, \"maxZ\": 0.8332495093345642}]}, {\"y\": 0.2, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.09325090795755386, \"maxX\": 0.12142928689718246, \"minZ\": 0.8166345953941345, \"maxZ\": 0.8448063135147095}]}, {\"y\": 0.25, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.0873730331659317, \"maxX\": 0.11556932330131531, \"minZ\": 0.8285045623779297, \"maxZ\": 0.8567406535148621}]}, {\"y\": 0.3, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.08144080638885498, \"maxX\": 0.10963714122772217, \"minZ\": 0.8405097723007202, \"maxZ\": 0.8687360882759094}]}, {\"y\": 0.35, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.07573456317186356, \"maxX\": 0.10391616821289062, \"minZ\": 0.8521856069564819, \"maxZ\": 0.8803686499595642}, {\"name\": \"Steering head\", \"minX\": -0.03340441733598709, \"maxX\": 0.03340441733598709, \"minZ\": 0.7937151193618774, \"maxZ\": 0.8822116255760193}]}, {\"y\": 0.375, \"sections\": [{\"name\": \"Steering head\", \"minX\": -0.03400000184774399, \"maxX\": 0.03400000184774399, \"minZ\": 0.7851395010948181, \"maxZ\": 0.9550929665565491}, {\"name\": \"Upper triple clamp\", \"minX\": -0.14797958731651306, \"maxX\": 0.14797958731651306, \"minZ\": 0.9360698461532593, \"maxZ\": 0.9632434844970703}]}, {\"y\": 0.4, \"sections\": [{\"name\": \"Steering head\", \"minX\": -0.03400000184774399, \"maxX\": 0.03400000184774399, \"minZ\": 0.8183985352516174, \"maxZ\": 0.9688023924827576}, {\"name\": \"Upper triple clamp\", \"minX\": -0.14900000393390656, \"maxX\": 0.14900000393390656, \"minZ\": 0.9340000152587891, \"maxZ\": 0.9639999866485596}]}, {\"y\": 0.425, \"sections\": [{\"name\": \"Steering head\", \"minX\": -0.0317256897687912, \"maxX\": 0.0317256897687912, \"minZ\": 0.8912798762321472, \"maxZ\": 0.9602267742156982}, {\"name\": \"Upper triple clamp\", \"minX\": -0.14900000393390656, \"maxX\": 0.14900000393390656, \"minZ\": 0.9340000152587891, \"maxZ\": 0.9639999866485596}]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: SPARK_TANK_PROFILE_PROBE=[{\"y\": -0.1, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.12196405977010727, \"maxX\": 0.15000516176223755, \"minZ\": 0.7562645673751831, \"maxZ\": 0.7838620543479919}]}, {\"y\": -0.05, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.11825426667928696, \"maxX\": 0.14632746577262878, \"minZ\": 0.7645073533058167, \"maxZ\": 0.7922496795654297}]}, {\"y\": 0, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.11447123438119888, \"maxX\": 0.14260807633399963, \"minZ\": 0.7728760242462158, \"maxZ\": 0.8008220195770264}]}, {\"y\": 0.05, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.10948500037193298, \"maxX\": 0.13762250542640686, \"minZ\": 0.7832838296890259, \"maxZ\": 0.8112894296646118}]}, {\"y\": 0.1, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.10449875891208649, \"maxX\": 0.13263694941997528, \"minZ\": 0.793739378452301, \"maxZ\": 0.821756899356842}]}, {\"y\": 0.15, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.0989062562584877, \"maxX\": 0.1270843744277954, \"minZ\": 0.8050839900970459, \"maxZ\": 0.8332495093345642}]}, {\"y\": 0.2, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.09325090795755386, \"maxX\": 0.12142928689718246, \"minZ\": 0.8166345953941345, \"maxZ\": 0.8448063135147095}]}, {\"y\": 0.25, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.0873730331659317, \"maxX\": 0.11556932330131531, \"minZ\": 0.8285045623779297, \"maxZ\": 0.8567406535148621}]}, {\"y\": 0.3, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.08144080638885498, \"maxX\": 0.10963714122772217, \"minZ\": 0.8405097723007202, \"maxZ\": 0.8687360882759094}]}, {\"y\": 0.35, \"sections\": [{\"name\": \"Upper black frame rail 1\", \"minX\": 0.07573456317186356, \"maxX\": 0.10391616821289062, \"minZ\": 0.8521856069564819, \"maxZ\": 0.8803686499595642}, {\"name\": \"Steering head\", \"minX\": -0.03340441733598709, \"maxX\": 0.03340441733598709, \"minZ\": 0.7937151193618774, \"maxZ\": 0.8822116255760193}]}, {\"y\": 0.375, \"sections\": [{\"name\": \"Steering head\", \"minX\": -0.03400000184774399, \"maxX\": 0.03400000184774399, \"minZ\": 0.7851395010948181, \"maxZ\": 0.9550929665565491}, {\"name\": \"Upper triple clamp\", \"minX\": -0.14797958731651306, \"maxX\": 0.14797958731651306, \"minZ\": 0.9360698461532593, \"maxZ\": 0.9632434844970703}]}, {\"y\": 0.4, \"sections\": [{\"name\": \"Steering head\", \"minX\": -0.03400000184774399, \"maxX\": 0.03400000184774399, \"minZ\": 0.8183985352516174, \"maxZ\": 0.9688023924827576}, {\"name\": \"Upper triple clamp\", \"minX\": -0.14900000393390656, \"maxX\": 0.14900000393390656, \"minZ\": 0.9340000152587891, \"maxZ\": 0.9639999866485596}]}, {\"y\": 0.425, \"sections\": [{\"name\": \"Steering head\", \"minX\": -0.0317256897687912, \"maxX\": 0.0317256897687912, \"minZ\": 0.8912798762321472, \"maxZ\": 0.9602267742156982}, {\"name\": \"Upper triple clamp\", \"minX\": -0.14900000393390656, \"maxX\": 0.14900000393390656, \"minZ\": 0.9340000152587891, \"maxZ\": 0.9639999866485596}]}]\n"
+    },
+    "isError": false
+  }
+}
