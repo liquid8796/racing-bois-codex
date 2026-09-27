@@ -40,6 +40,7 @@ namespace RacingBois.Authoring.Editor
         {
             public string sourceName;
             public InputFile baseColor, normal, metallicSmoothness, occlusion, emission;
+            public string[] constantMaps;
             public int maxSize = 2048;
             public bool transparent, doubleSided;
             public float opacity = 1f, normalScale = 1f, emissionIntensity = 1f;
@@ -105,6 +106,7 @@ namespace RacingBois.Authoring.Editor
                     VerifyInput(material.baseColor); VerifyInput(material.normal); VerifyInput(material.metallicSmoothness);
                     if (HasInput(material.occlusion)) VerifyInput(material.occlusion);
                     if (HasInput(material.emission)) VerifyInput(material.emission);
+                    ValidateConstantMapDeclarations(material);
                 }
                 Require(asset.lods != null && asset.lods.Length == 3, "Exactly three LODs are required: " + asset.id);
                 float previous = 1.01f;

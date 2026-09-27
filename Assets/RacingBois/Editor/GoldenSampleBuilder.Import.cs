@@ -64,9 +64,10 @@ namespace RacingBois.Authoring.Editor
             File.WriteAllText(ReceiptRoot + "/" + name + "-latest.json", JsonUtility.ToJson(receipt, true));
         }
 
-        private static Texture2D ImportTexture(InputFile file, int maximumSize, bool normal, bool color, bool alpha)
+        private static Texture2D ImportTexture(InputFile file, int maximumSize, bool normal, bool color, bool alpha, bool constantMap = false)
         {
             Require(file.path.StartsWith("Assets/", StringComparison.Ordinal), "Texture input must be inside Assets: " + file.path);
+            if (constantMap) ValidateConstantMapSource(file);
             var importer = AssetImporter.GetAtPath(file.path) as TextureImporter;
             Require(importer != null, "Texture importer is missing: " + file.path);
             string previousSettings = EditorJsonUtility.ToJson(importer);
@@ -85,7 +86,8 @@ namespace RacingBois.Authoring.Editor
             });
             ReimportChangedSettings(importer, previousSettings);
             var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(file.path);
-            Require(texture != null && texture.width >= 256 && texture.height >= 256, "Missing or undersized texture: " + file.path);
+            Require(texture != null && (constantMap ? texture.width == 4 && texture.height == 4 : texture.width >= 256 && texture.height >= 256),
+                "Missing texture or dimensions outside declared texture policy: " + file.path);
             return texture;
         }
 
@@ -104,11 +106,11 @@ namespace RacingBois.Authoring.Editor
             }
             material.shader = shader;
             material.SetColor("_BaseColor", new Color(1, 1, 1, spec.opacity));
-            material.SetTexture("_BaseMap", ImportTexture(spec.baseColor, spec.maxSize, false, true, spec.transparent));
-            material.SetTexture("_BumpMap", ImportTexture(spec.normal, spec.maxSize, true, false, false));
-            material.SetTexture("_MetallicGlossMap", ImportTexture(spec.metallicSmoothness, spec.maxSize, false, false, true));
-            material.SetTexture("_OcclusionMap", HasInput(spec.occlusion) ? ImportTexture(spec.occlusion, spec.maxSize, false, false, false) : null);
-            material.SetTexture("_EmissionMap", HasInput(spec.emission) ? ImportTexture(spec.emission, spec.maxSize, false, true, false) : null);
+            material.SetTexture("_BaseMap", ImportTexture(spec.baseColor, spec.maxSize, false, true, spec.transparent, IsConstantMap(spec, "baseColor")));
+            material.SetTexture("_BumpMap", ImportTexture(spec.normal, spec.maxSize, true, false, false, IsConstantMap(spec, "normal")));
+            material.SetTexture("_MetallicGlossMap", ImportTexture(spec.metallicSmoothness, spec.maxSize, false, false, true, IsConstantMap(spec, "metallicSmoothness")));
+            material.SetTexture("_OcclusionMap", HasInput(spec.occlusion) ? ImportTexture(spec.occlusion, spec.maxSize, false, false, false, IsConstantMap(spec, "occlusion")) : null);
+            material.SetTexture("_EmissionMap", HasInput(spec.emission) ? ImportTexture(spec.emission, spec.maxSize, false, true, false, IsConstantMap(spec, "emission")) : null);
             material.SetColor("_EmissionColor", HasInput(spec.emission) ? Color.white * spec.emissionIntensity : Color.black);
             material.globalIlluminationFlags = HasInput(spec.emission)
                 ? MaterialGlobalIlluminationFlags.RealtimeEmissive : MaterialGlobalIlluminationFlags.EmissiveIsBlack;

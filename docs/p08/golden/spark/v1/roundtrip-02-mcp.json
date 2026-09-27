@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: FBX version: 7400\nSPARK_FBX_ROUNDTRIP={\"schema\": 1, \"passed\": false, \"failures\": [\"Roundtrip mesh gate: Spark_L2_Body\"], \"objects\": [{\"name\": \"Spark_L2_Rear\", \"triangles\": 4210, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.4470115603941744e-12, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L0_Body\", \"triangles\": 85548, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 3.979828483856876e-14, \"maximumBidirectionalVertexDistanceMetres\": 2.4027400513659813e-07}, {\"name\": \"Spark_L0_Front\", \"triangles\": 19176, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.3761367231247437e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L1_Body\", \"triangles\": 42774, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 3.4196075261572434e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.4027400513659813e-07}, {\"name\": \"Spark_L1_Front\", \"triangles\": 13668, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 8.245384236493791e-11, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L2_Body\", \"triangles\": 18784, \"exactTriangleCount\": false, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.8283583641963796e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.4027400513659813e-07}, {\"name\": \"Spark_L2_Front\", \"triangles\": 4006, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 1.4579537577219526e-10, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L0_Rear\", \"triangles\": 20104, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.3761367231247437e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L1_Rear\", \"triangles\": 14132, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 5.87112010484031e-14, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}], \"markers\": [{\"name\": \"RB_Golden_Spark_v1\", \"positionBlender\": [0.0, 0.0, 0.0], \"deltaMetres\": 0.0}, {\"name\": \"Contact_Foot_L\", \"positionBlender\": [-0.27000001072883606, -0.1799999475479126, 0.33500003814697266], \"deltaMetres\": 6.664001874625056e-08}, {\"name\": \"Contact_Foot_R\", \"positionBlender\": [0.27000001072883606, -0.1799999475479126, 0.33500003814697266], \"deltaMetres\": 6.664001874625056e-08}, {\"name\": \"Contact_Grip_L\", \"positionBlender\": [-0.33000001311302185, 0.4200001657009125, 1.0199998617172241], \"deltaMetres\": 2.1490760299348766e-07}, {\"name\": \"Contact_Grip_R\", \"positionBlender\": [0.33000001311302185, 0.4200001657009125, 1.0199998617172241], \"deltaMetres\": 2.1490760299348766e-07}, {\"name\": \"Contact_Seat\", \"positionBlender\": [0.0, -0.33999988436698914, 0.8000000715255737], \"deltaMetres\": 1.3328003749250113e-07}, {\"name\": \"Forward\", \"positionBlender\": [0.0, 1.100000023841858, -1.7921276196375402e-07], \"deltaMetres\": 1.7921275773594036e-07}, {\"name\": \"Ground_Front\", \"positionBlender\": [0.0, 0.6949999928474426, -1.13229873477394e-07], \"deltaMetres\": 1.1322987278908148e-07}, {\"name\": \"Ground_Rear\", \"positionBlender\": [0.0, -0.6949999928474426, 1.13229873477394e-07], \"deltaMetres\": 1.1322987278908148e-07}, {\"name\": \"RB_Golden_Spark_v1_Wheel_Front\", \"positionBlender\": [0.0, 0.6950000524520874, 0.31499987840652466], \"deltaMetres\": 1.3328003749250113e-07}, {\"name\": \"RB_Golden_Spark_v1_Wheel_Rear\", \"positionBlender\": [0.0, -0.6949999332427979, 0.31500011682510376], \"deltaMetres\": 1.3328003749250113e-07}, {\"name\": \"Semantic_Left\", \"positionBlender\": [-0.5, 0.0, 0.0], \"deltaMetres\": 0.0}, {\"name\": \"Semantic_Right\", \"positionBlender\": [0.5, 0.0, 0.0], \"deltaMetres\": 0.0}], \"sourceSaved\": false, \"visualAccepted\": false, \"scope\": \"Blender FBX roundtrip only; Unity import, handedness and render remain separate gates.\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: FBX version: 7400\nSPARK_FBX_ROUNDTRIP={\"schema\": 1, \"passed\": false, \"failures\": [\"Roundtrip mesh gate: Spark_L2_Body\"], \"objects\": [{\"name\": \"Spark_L2_Rear\", \"triangles\": 4210, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.4470115603941744e-12, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L0_Body\", \"triangles\": 85548, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 3.979828483856876e-14, \"maximumBidirectionalVertexDistanceMetres\": 2.4027400513659813e-07}, {\"name\": \"Spark_L0_Front\", \"triangles\": 19176, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.3761367231247437e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L1_Body\", \"triangles\": 42774, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 3.4196075261572434e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.4027400513659813e-07}, {\"name\": \"Spark_L1_Front\", \"triangles\": 13668, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 8.245384236493791e-11, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L2_Body\", \"triangles\": 18784, \"exactTriangleCount\": false, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.8283583641963796e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.4027400513659813e-07}, {\"name\": \"Spark_L2_Front\", \"triangles\": 4006, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 1.4579537577219526e-10, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L0_Rear\", \"triangles\": 20104, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 2.3761367231247437e-13, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}, {\"name\": \"Spark_L1_Rear\", \"triangles\": 14132, \"exactTriangleCount\": true, \"exactMaterialSlots\": true, \"exactParent\": true, \"physicalFailures\": 0, \"uvFailures\": 0, \"nonFiniteValues\": 0, \"minimumWorldCrossSquared\": 5.87112010484031e-14, \"maximumBidirectionalVertexDistanceMetres\": 2.1490760104825313e-07}], \"markers\": [{\"name\": \"RB_Golden_Spark_v1\", \"positionBlender\": [0.0, 0.0, 0.0], \"deltaMetres\": 0.0}, {\"name\": \"Contact_Foot_L\", \"positionBlender\": [-0.27000001072883606, -0.1799999475479126, 0.33500003814697266], \"deltaMetres\": 6.664001874625056e-08}, {\"name\": \"Contact_Foot_R\", \"positionBlender\": [0.27000001072883606, -0.1799999475479126, 0.33500003814697266], \"deltaMetres\": 6.664001874625056e-08}, {\"name\": \"Contact_Grip_L\", \"positionBlender\": [-0.33000001311302185, 0.4200001657009125, 1.0199998617172241], \"deltaMetres\": 2.1490760299348766e-07}, {\"name\": \"Contact_Grip_R\", \"positionBlender\": [0.33000001311302185, 0.4200001657009125, 1.0199998617172241], \"deltaMetres\": 2.1490760299348766e-07}, {\"name\": \"Contact_Seat\", \"positionBlender\": [0.0, -0.33999988436698914, 0.8000000715255737], \"deltaMetres\": 1.3328003749250113e-07}, {\"name\": \"Forward\", \"positionBlender\": [0.0, 1.100000023841858, -1.7921276196375402e-07], \"deltaMetres\": 1.7921275773594036e-07}, {\"name\": \"Ground_Front\", \"positionBlender\": [0.0, 0.6949999928474426, -1.13229873477394e-07], \"deltaMetres\": 1.1322987278908148e-07}, {\"name\": \"Ground_Rear\", \"positionBlender\": [0.0, -0.6949999928474426, 1.13229873477394e-07], \"deltaMetres\": 1.1322987278908148e-07}, {\"name\": \"RB_Golden_Spark_v1_Wheel_Front\", \"positionBlender\": [0.0, 0.6950000524520874, 0.31499987840652466], \"deltaMetres\": 1.3328003749250113e-07}, {\"name\": \"RB_Golden_Spark_v1_Wheel_Rear\", \"positionBlender\": [0.0, -0.6949999332427979, 0.31500011682510376], \"deltaMetres\": 1.3328003749250113e-07}, {\"name\": \"Semantic_Left\", \"positionBlender\": [-0.5, 0.0, 0.0], \"deltaMetres\": 0.0}, {\"name\": \"Semantic_Right\", \"positionBlender\": [0.5, 0.0, 0.0], \"deltaMetres\": 0.0}], \"sourceSaved\": false, \"visualAccepted\": false, \"scope\": \"Blender FBX roundtrip only; Unity import, handedness and render remain separate gates.\"}\n"
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "one-different-pixel",
+      "rejected": true,
+      "sha256": "27128502ac0ae67f679d8500b9f306cae152afbffe8d2fee29929a1acee6278a",
+      "error": "Declared constant map contains differing pixels."
+    },
+    {
+      "test": "wrong-dimensions",
+      "rejected": true,
+      "sha256": "08f59d29725c8331521600e1b969ee867c2f1df59d53f3b109086c4d195fa400",
+      "error": "Constant-map source must be exactly 4 by 4 pixels."
+    }
+  ],
+  "scope": "Native generated test PNG controls only; no production maps edited."
+}

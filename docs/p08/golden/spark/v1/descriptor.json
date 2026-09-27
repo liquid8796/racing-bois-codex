@@ -1,0 +1,381 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "RB_Golden_Spark_v1",
+      "kind": "bike",
+      "concept": {
+        "path": "ArtSource/Concepts/P08/Golden/spark-v1.png",
+        "sha256": "e358ecf1a809f5373aa45ef92cbd6897ed1e1693cacc73b0f6df697d91bedce6"
+      },
+      "conceptReview": {
+        "path": "docs/p08/golden/spark/v1/DESIGN_REVIEW.md",
+        "sha256": "d976cc1152d62396fe5ccc6eadaf0e38882923527872c2a0b051e38e2ea2ffc7"
+      },
+      "source": {
+        "path": "ArtSource/P08/Golden/Spark/V1/RB_Golden_Spark_v1_export.blend",
+        "sha256": "2aa5b057da5f61fdd069d3d6de19cc9aca51dd22ef910d99fa61a646a2d7dbe2"
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/RB_Golden_Spark_v1.fbx",
+        "sha256": "ced882df31b6d061b8698b8d8691bf4358508aa47f7e10dcde41e972530847f1"
+      },
+      "restPose": "file",
+      "lightmapUv": "generated",
+      "modelRotationEuler": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "minimumSize": {
+        "x": 0.7919999766349792,
+        "y": 1.1749045658111572,
+        "z": 2.021999936103821
+      },
+      "maximumSize": {
+        "x": 0.8319999766349793,
+        "y": 1.2149045658111572,
+        "z": 2.061999936103821
+      },
+      "maximumBelowGround": 0.04,
+      "materials": [
+        {
+          "sourceName": "Spark_Amber",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.25,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Amber_BaseColor.png",
+            "sha256": "ab81d1539d205a7447f72bc0bf4a681e2f24810dcc1b52ad98502f879c4a09f9"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Amber_Normal.png",
+            "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Amber_MetallicSmoothness.png",
+            "sha256": "93b63808e50a1966322eb0d3860cbd4ff0fc24bb0ae8db9fdde58422d9070231"
+          },
+          "emission": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Amber_Emission.png",
+            "sha256": "ab81d1539d205a7447f72bc0bf4a681e2f24810dcc1b52ad98502f879c4a09f9"
+          },
+          "constantMaps": [
+            "baseColor",
+            "normal",
+            "metallicSmoothness",
+            "emission"
+          ]
+        },
+        {
+          "sourceName": "Spark_Copper",
+          "maxSize": 2048,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Copper_BaseColor.png",
+            "sha256": "c6ccf9d096769dba5402b6002f7a5d2dd00cab0b9494becf885dc1423a359149"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Copper_Normal.png",
+            "sha256": "c21ddbbd7198f60766d1e8c951b358f53865ae2003af807f32680ab39c4807b9"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Copper_MetallicSmoothness.png",
+            "sha256": "e89410a879563cae4619a16417c4c0579c14988f982b8916200fb455ebc453bc"
+          }
+        },
+        {
+          "sourceName": "Spark_Cream",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Cream_BaseColor.png",
+            "sha256": "629b37fd617cc6a775132647567055fbb409d1894beca77027561d013fcb5663"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Cream_Normal.png",
+            "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Cream_MetallicSmoothness.png",
+            "sha256": "4f2272f4be3e65aa5ab573e33ba028039b4abf1d296acad6a9af264fba13dcd5"
+          },
+          "constantMaps": [
+            "baseColor",
+            "normal",
+            "metallicSmoothness"
+          ]
+        },
+        {
+          "sourceName": "Spark_Graphite",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Graphite_BaseColor.png",
+            "sha256": "f45f3d36cfb8afecb0f3f36779479f3a80e297cac5330bcf94a3b4fec075a25c"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Graphite_Normal.png",
+            "sha256": "cb3caf6af6fe6529374897863901753eb067fb3c9a4ae9e5722e5418b432599c"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Graphite_MetallicSmoothness.png",
+            "sha256": "6a18f8c6dca5df267e137e8c1e4a8e2b3ee77d3ee8bd5cd5a5a16eb5b4968e0c"
+          },
+          "constantMaps": [
+            "baseColor"
+          ]
+        },
+        {
+          "sourceName": "Spark_Lamp",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.15000000596046448,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Lamp_BaseColor.png",
+            "sha256": "a5f8ef6fcbc2456d5e856c28c7084e7ba98149cf6ad4419ba454799bdc45a4f4"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Lamp_Normal.png",
+            "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Lamp_MetallicSmoothness.png",
+            "sha256": "4b104a025e049a69782984dbf0e9bfa10037c4da8ab4382e4dbc1e17ec73d4a7"
+          },
+          "emission": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Lamp_Emission.png",
+            "sha256": "a5f8ef6fcbc2456d5e856c28c7084e7ba98149cf6ad4419ba454799bdc45a4f4"
+          },
+          "constantMaps": [
+            "baseColor",
+            "normal",
+            "metallicSmoothness",
+            "emission"
+          ]
+        },
+        {
+          "sourceName": "Spark_Leather",
+          "maxSize": 1024,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Leather_BaseColor.png",
+            "sha256": "377d3a6e1e28ae0b61f759bfae57aa8c7dd59fe7091db125e16112276736d68b"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Leather_Normal.png",
+            "sha256": "10ee6f88248f8047ea93d1e03448eeae94e89353df4c612a5806fa38efd0a960"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Leather_MetallicSmoothness.png",
+            "sha256": "05902de576431315e36cb7059939752a1b5d1cbc5480312f43810065cf7b0341"
+          }
+        },
+        {
+          "sourceName": "Spark_Lens",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": true,
+          "opacity": 0.18,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Lens_BaseColor.png",
+            "sha256": "745a68fa38f0e7a28f15b7c1f2fc12f55adb27dc4f6a0cac2014f3b8c3d4b4a7"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Lens_Normal.png",
+            "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Lens_MetallicSmoothness.png",
+            "sha256": "7ec27583ca3a7d99bbf8ee4ec4eca71c3afef1f857450cc901850926f180aec2"
+          },
+          "constantMaps": [
+            "baseColor",
+            "normal",
+            "metallicSmoothness"
+          ]
+        },
+        {
+          "sourceName": "Spark_Machined",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Machined_BaseColor.png",
+            "sha256": "88aec674bb809e9fe29ba478018519a34adaf905f51b0486b320a72fdd2d289d"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Machined_Normal.png",
+            "sha256": "26a44bd0fcfce98ce41c657946b62817a54562021cd7b6312945c87921fedbd7"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Machined_MetallicSmoothness.png",
+            "sha256": "e430cf11b7da07acb4f75825b6c2af7babe2a3c97ab8341316ce7f1dc1f3b8ae"
+          },
+          "constantMaps": [
+            "baseColor"
+          ]
+        },
+        {
+          "sourceName": "Spark_RedLamp",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.25,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_RedLamp_BaseColor.png",
+            "sha256": "5cff8618a28ce85b61b29b88f8868f48f42ece6cb9080dbb47cab197fef0392c"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_RedLamp_Normal.png",
+            "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_RedLamp_MetallicSmoothness.png",
+            "sha256": "b99d0bf571f3dae8e434555d23751781d39976d95641fd574716cc33bcd72a2e"
+          },
+          "emission": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_RedLamp_Emission.png",
+            "sha256": "5cff8618a28ce85b61b29b88f8868f48f42ece6cb9080dbb47cab197fef0392c"
+          },
+          "constantMaps": [
+            "baseColor",
+            "normal",
+            "metallicSmoothness",
+            "emission"
+          ]
+        },
+        {
+          "sourceName": "Spark_Rubber",
+          "maxSize": 512,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Rubber_BaseColor.png",
+            "sha256": "ea88d1f49a481136cbc965404bc43ad275081a5c0d4be84327516867c50e2de7"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Rubber_Normal.png",
+            "sha256": "5550a2e653a7b1688870b36f7a06078220e0dee12053ae93523f00d682626a7f"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_Rubber_MetallicSmoothness.png",
+            "sha256": "7f6f8b2d9794e7b6aa709a83df4dd095318fa9c13759a8bfd2bfa21dc9f855df"
+          },
+          "constantMaps": [
+            "baseColor"
+          ]
+        },
+        {
+          "sourceName": "Spark_SatinSteel",
+          "maxSize": 1024,
+          "normalScale": 1.0,
+          "transparent": false,
+          "opacity": 1.0,
+          "doubleSided": false,
+          "emissionIntensity": 0.0,
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_SatinSteel_BaseColor.png",
+            "sha256": "49094aedd926071f88732c45905bf08de45cd969a01254a1687e5f0da7e7d727"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_SatinSteel_Normal.png",
+            "sha256": "04cf569c875281bcd2d4863aa3e01e8d24ae1f05b087e6145d9fa7f25fe2aeef"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Spark/V1/Spark_SatinSteel_MetallicSmoothness.png",
+            "sha256": "f925e60621c19339f5ce0ab6f0a0ea471ba26e8faf97c7a5dd2ac3a90dfb0e2a"
+          },
+          "constantMaps": [
+            "baseColor"
+          ]
+        }
+      ],
+      "lods": [
+        {
+          "height": 0.3,
+          "rendererPaths": [
+            "Spark_L0_Body",
+            "RB_Golden_Spark_v1_Wheel_Front/Spark_L0_Front",
+            "RB_Golden_Spark_v1_Wheel_Rear/Spark_L0_Rear"
+          ]
+        },
+        {
+          "height": 0.115,
+          "rendererPaths": [
+            "Spark_L1_Body",
+            "RB_Golden_Spark_v1_Wheel_Front/Spark_L1_Front",
+            "RB_Golden_Spark_v1_Wheel_Rear/Spark_L1_Rear"
+          ]
+        },
+        {
+          "height": 0.018,
+          "rendererPaths": [
+            "Spark_L2_Body",
+            "RB_Golden_Spark_v1_Wheel_Front/Spark_L2_Front",
+            "RB_Golden_Spark_v1_Wheel_Rear/Spark_L2_Rear"
+          ]
+        }
+      ],
+      "forwardMarker": "Forward",
+      "leftMarker": "Semantic_Left",
+      "rightMarker": "Semantic_Right",
+      "groundMarkers": [
+        "Ground_Front",
+        "Ground_Rear"
+      ],
+      "wheelPivots": [
+        "RB_Golden_Spark_v1_Wheel_Front",
+        "RB_Golden_Spark_v1_Wheel_Rear"
+      ],
+      "colliders": [
+        {
+          "type": "box",
+          "center": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0
+          },
+          "size": {
+            "x": 0.95,
+            "y": 1.2,
+            "z": 2.14
+          }
+        }
+      ],
+      "isStatic": false
+    }
+  ]
+}

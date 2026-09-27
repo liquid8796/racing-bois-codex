@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "nativeImportPassed": true,
+  "importReceipt": {
+    "path": "docs/p08/golden/unity/import-fb4faf8fbf1a4c8985c562a895640fa1.json",
+    "sha256": "4badaa48b570798ae1573af3d8f5e26a65711ed5c5b2e865192236b66889cbba"
+  },
+  "sourceAndOutputsStillMatch": true,
+  "evidence": [
+    {
+      "path": "docs/p08/golden/spark/v1/descriptor.json",
+      "sha256": "7f13174cd3ed891f8d95b844217e2824a7d96b26a386a177900278aefc20c68d"
+    },
+    {
+      "path": "docs/p08/golden/spark/v1/constant-map-declarations.json",
+      "sha256": "20c637810b6c7895ba988df1e6a442399247e36d9613936fc593564b2653d2f4"
+    },
+    {
+      "path": "docs/p08/golden/spark/v1/native-constant-map-decode.json",
+      "sha256": "eb39462f6f44e822bfe5ada1b898948c5dd5f4892c7e69e80779fa658f90aa96"
+    },
+    {
+      "path": "docs/p08/golden/spark/v1/native-constant-map-negative-controls.json",
+      "sha256": "88cda9378f4471105444ea87f5a9bc9ac2dcd17627d9d7341edb4a4ba4d6a01f"
+    },
+    {
+      "path": "docs/p08/golden/spark/v1/unity-studio-20260927-02/capture.json",
+      "sha256": "ba3ee2eeddf2a7b8619e7b8e064454c45f96fdd057834399b101ececfe99e036"
+    },
+    {
+      "path": "tools/p08/golden/capture_spark_studio.cs",
+      "sha256": "49686acc03a0a517d28f7df04c74118e1949c537bcc45abab25884a550e74e1b"
+    }
+  ],
+  "visualAccepted": false,
+  "productionPromoted": false,
+  "scope": "Exact-hash37file publication, real Unity import,22native constant-map checks and2negative controls. Editor renders do not accept visual fidelity or native player performance."
+}
