@@ -13,8 +13,9 @@ def main() -> int:
     project = ROOT / "tools/p08/golden/importer-preflight.csproj"
     inputs = sorted(
         list((ROOT / "Assets/RacingBois/Editor").glob("GoldenSampleBuilder*.cs"))
+        + list((ROOT / "Assets/RacingBois/Editor").glob("NativeBuild*.cs"))
         + list((ROOT / "Assets/RacingBois/Golden/Runtime").glob("*.cs"))
-        + [ROOT / "Assets/RacingBois/Editor/UrpProfileAuthoring.cs", ROOT / "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef",
+        + [ROOT / "Assets/RacingBois/Editor/UrpProfileAuthoring.cs", ROOT / "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs", ROOT / "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef",
            ROOT / "Assets/RacingBois/Editor/RacingBois.Authoring.Editor.asmdef", project, Path(__file__)]
     )
     before = [(path.relative_to(ROOT).as_posix(), hashlib.sha256(path.read_bytes()).hexdigest()) for path in inputs]

@@ -69,8 +69,17 @@ namespace RacingBois.Diagnostics.PoseEnvelopePreview.Editor
                 if(oldPipeline!=pipeline)scope.Change("graphics_pipeline",()=>GraphicsSettings.defaultRenderPipeline=pipeline,()=>GraphicsSettings.defaultRenderPipeline=oldPipeline);
                 if(oldQuality!=pipeline)scope.Change("quality_pipeline",()=>QualitySettings.renderPipeline=pipeline,()=>QualitySettings.renderPipeline=oldQuality);
                 if(backend!=ScriptingImplementation.Mono2x)scope.Change("scripting_backend",()=>PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone,ScriptingImplementation.Mono2x),()=>PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone,backend));
-                if(defaults)scope.Change("default_apis",()=>PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64,false),()=>PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64,defaults));
-                if(!apis.SequenceEqual(new[]{GraphicsDeviceType.Direct3D11}))scope.Change("graphics_apis",()=>PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64,new[]{GraphicsDeviceType.Direct3D11}),()=>PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64,apis));
+                if(defaults||!apis.SequenceEqual(new[]{GraphicsDeviceType.Direct3D11}))scope.Change("graphics_apis",()=>
+                {
+                    PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64,new[]{GraphicsDeviceType.Direct3D11});
+                    PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64,false);
+                },()=>
+                {
+                    PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64,apis);
+                    PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64,defaults);
+                });
+                Require(!PlayerSettings.GetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64)&&
+                    PlayerSettings.GetGraphicsAPIs(BuildTarget.StandaloneWindows64).SequenceEqual(new[]{GraphicsDeviceType.Direct3D11}),"direct3d11_graphics_settings_required");
                 if(!background)scope.Change("run_background",()=>PlayerSettings.runInBackground=true,()=>PlayerSettings.runInBackground=background);
                 if(product!="Racing Bois Pose Comparison")scope.Change("product",()=>PlayerSettings.productName="Racing Bois Pose Comparison",()=>PlayerSettings.productName=product);
                 projectSettings.UsePipelineAtEveryQuality(pipeline);

@@ -64,6 +64,10 @@
 /docs/p09/**/*.json -text whitespace=cr-at-eol
 /docs/p10/**/*.json -text whitespace=cr-at-eol
 /docs/p10/**/*.jsonl -text whitespace=cr-at-eol
+/tools/p08/**/*.json -text whitespace=cr-at-eol
+/tools/p10/**/*.json -text whitespace=cr-at-eol
 *.cs -text whitespace=cr-at-eol
 *.md -text whitespace=cr-at-eol
 *.py -text whitespace=cr-at-eol
+# Chronological native frame observations are large, immutable QA artifacts.
+/docs/p10/native-baseline/**/frames.csv filter=lfs diff=lfs merge=lfs -text

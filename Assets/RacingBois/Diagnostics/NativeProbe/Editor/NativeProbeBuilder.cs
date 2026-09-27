@@ -77,8 +77,19 @@ namespace RacingBois.Diagnostics.NativeProbe.Editor
                 if (oldProduct != "Racing Bois Native WSS Probe") scope.ChangeSetting("product_name", () => PlayerSettings.productName = "Racing Bois Native WSS Probe", () => PlayerSettings.productName = oldProduct);
                 if (!oldBackground) scope.ChangeSetting("run_in_background", () => PlayerSettings.runInBackground = true, () => PlayerSettings.runInBackground = oldBackground);
                 if (oldBackend != ScriptingImplementation.Mono2x) scope.ChangeSetting("scripting_backend", () => PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone, ScriptingImplementation.Mono2x), () => PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone, oldBackend));
-                if (oldDefaultApis) scope.ChangeSetting("default_graphics_apis", () => PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64, false), () => PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64, oldDefaultApis));
-                if (!oldApis.SequenceEqual(new[] { GraphicsDeviceType.Direct3D11 })) scope.ChangeSetting("graphics_apis", () => PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64, new[] { GraphicsDeviceType.Direct3D11 }), () => PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64, oldApis));
+                if (oldDefaultApis || !oldApis.SequenceEqual(new[] { GraphicsDeviceType.Direct3D11 })) scope.ChangeSetting("graphics_apis", () =>
+                {
+                    PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64, new[] { GraphicsDeviceType.Direct3D11 });
+                    PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64, false);
+                }, () =>
+                {
+                    PlayerSettings.SetGraphicsAPIs(BuildTarget.StandaloneWindows64, oldApis);
+                    PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64, oldDefaultApis);
+                    Require(PlayerSettings.GetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64) == oldDefaultApis &&
+                        PlayerSettings.GetGraphicsAPIs(BuildTarget.StandaloneWindows64).SequenceEqual(oldApis), "graphics_settings_restore_failed");
+                });
+                Require(!PlayerSettings.GetUseDefaultGraphicsAPIs(BuildTarget.StandaloneWindows64) &&
+                    PlayerSettings.GetGraphicsAPIs(BuildTarget.StandaloneWindows64).SequenceEqual(new[] { GraphicsDeviceType.Direct3D11 }), "direct3d11_graphics_settings_required");
                 receipt.apiCompatibility = PlayerSettings.GetApiCompatibilityLevel(NamedBuildTarget.Standalone).ToString();
                 // SaveScene above is the only explicit asset persistence. Never globally save
                 // unrelated dirty user assets for a transport specimen.

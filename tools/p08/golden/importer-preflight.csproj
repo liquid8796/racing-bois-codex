@@ -13,6 +13,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(ProjectRoot)Assets/RacingBois/Editor/GoldenSampleBuilder*.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Editor/NativeBuild*.cs" />
     <Compile Include="$(ProjectRoot)Assets/RacingBois/Editor/UrpProfileAuthoring.cs" />
     <Compile Include="$(ProjectRoot)Assets/RacingBois/Golden/Runtime/*.cs" />
     <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs" />

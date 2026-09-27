@@ -1,0 +1,33 @@
+*** Begin Patch
+*** Update File: Assets/RacingBois/Editor/NativeBuildDirtyAssetGuard.cs
+@@
+         public string[] RestoredDirtyFlags => restoredDirtyFlags.ToArray();
++
++        /// <summary>BuildPlayer can autosave unrelated authoring objects; refuse drafts before invoking it.</summary>
++        public void RejectUnsavedAuthoringAssets()
++        {
++            var rejected = Resources.FindObjectsOfTypeAll<UnityEngine.Object>()
++                .Where(value => value != null && EditorUtility.IsPersistent(value) && EditorUtility.IsDirty(value))
++                .Where(value => AssetPath(AssetDatabase.GetAssetPath(value)))
++                // Imported Shader/AssetImporter contracts remain in RejectDirtyDependencies
++                // and VerifyUnchanged. No authored Material/ScriptableObject/Font/Texture exemption.
++                .Where(value => !(value is Shader) && !(value is AssetImporter))
++                .Select(value => AssetDatabase.GetAssetPath(value) + ":" + value.GetType().FullName)
++                .Distinct().OrderBy(path => path, StringComparer.Ordinal).ToArray();
++            if (rejected.Length != 0) throw new InvalidOperationException("unsaved_authoring_assets_before_build:" + string.Join(",", rejected));
++        }
+*** Update File: Assets/RacingBois/Editor/GoldenSampleBuilder.Build.cs
+@@
+                 dirtyAssets = new NativeBuildDirtyAssetGuard(); receipt.preexistingDirtyAssets = dirtyAssets.Before;
++                dirtyAssets.RejectUnsavedAuthoringAssets();
+@@
+                 CaptureGoldenSettings(output, "before"); receipt.result = "Building"; WriteBuildReceipt(receipt);
++                dirtyAssets.RejectUnsavedAuthoringAssets();
+*** Update File: Assets/RacingBois/Diagnostics/NativeBaseline/Editor/NativeBaselineBuilder.cs
+@@
+                 var dirtyAssets = new NativeBuildDirtyAssetGuard(); result.dirtyAssetsBefore = dirtyAssets.Before;
++                dirtyAssets.RejectUnsavedAuthoringAssets();
+@@
+                 CaptureSettings(output, "before"); result.result = "Building"; Write(output, result);
++                dirtyAssets.RejectUnsavedAuthoringAssets();
+*** End Patch

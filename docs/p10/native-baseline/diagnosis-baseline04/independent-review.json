@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T17:46:21.482196+00:00",
+  "status": "DIAGNOSTIC_REVIEW_ONLY_EXPECTED_DX11_AND_MEMORY_GATES_FAILED",
+  "originalLaunchState": "FAIL",
+  "originalLaunchSha256": "7abb30aab1c348cd7bd7d775666e6cc867a6d90f06deb7af204c4ebfccc9c743",
+  "originalRuntimeReceiptSha256": "3068a67da90b8faef2d99e29ae555a5d9023a4a70c8c06d36a4d0621427bf022",
+  "sourceFingerprint": "e58730a0154fd7802083c0be2333d3346833f8d6152c92e5eee49227ec3d8398",
+  "sourceAndPlayerBeforeAfterMatchedAtRun": true,
+  "expectedGraphicsApi": "Direct3D11",
+  "observedGraphicsApi": "Direct3D12",
+  "graphicsDevice": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "frames": 443329,
+  "seconds": 600.127881,
+  "unityLoopFps": 738.7242186803182,
+  "frameMilliseconds": {
+    "samples": 443329,
+    "minimum": 0.12139999999938311,
+    "p50": 1.2659999999868887,
+    "p95": 2.095600000004083,
+    "maximum": 128.64999999999327
+  },
+  "rawChronologyViolations": [],
+  "measuredTicks": 36000,
+  "observedCycles": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "focusedTimeFraction": 1.0,
+  "effectivePolicies": [
+    [
+      "1920",
+      "1080",
+      "1",
+      "-1",
+      "0"
+    ]
+  ],
+  "nativeTimingDistinctTimestamps": 443329,
+  "nativeTimingRepeatedRows": 0,
+  "cpuMilliseconds": {
+    "samples": 443329,
+    "minimum": 0.6799,
+    "p50": 1.2676,
+    "p95": 2.0774,
+    "maximum": 14.5244
+  },
+  "gpuRawMilliseconds": {
+    "samples": 323354,
+    "minimum": 0.472064,
+    "p50": 0.607232,
+    "p95": 0.934912,
+    "maximum": 1790530388028.0544
+  },
+  "gpuSamplesExceedingEntireObservation": 2,
+  "gpuMeanAccepted": false,
+  "renderCounters": {
+    "drawCalls": {
+      "available": false,
+      "samples": 0,
+      "mean": -1.0,
+      "minimum": -1.0,
+      "maximum": -1.0
+    },
+    "batches": {
+      "available": false,
+      "samples": 0,
+      "mean": -1.0,
+      "minimum": -1.0,
+      "maximum": -1.0
+    },
+    "setPassCalls": {
+      "available": true,
+      "samples": 443328,
+      "mean": 37.293243377363936,
+      "minimum": 0.0,
+      "maximum": 110.0
+    },
+    "triangles": {
+      "available": true,
+      "samples": 443328,
+      "mean": 326138.06588349934,
+      "minimum": 0.0,
+      "maximum": 846344.0
+    },
+    "vertices": {
+      "available": true,
+      "samples": 443328,
+      "mean": 382043.18250821065,
+      "minimum": 0.0,
+      "maximum": 1113866.0
+    }
+  },
+  "memorySamples": 600,
+  "managedProcessRowsReportingZero": 600,
+  "processMemoryAccepted": false,
+  "unityAllocationBytes": {
+    "samples": 600,
+    "minimum": 136149257,
+    "p50": 136658828,
+    "p95": 136684748,
+    "maximum": 136744640
+  },
+  "managedHeapBytes": {
+    "samples": 600,
+    "minimum": 119250944,
+    "p50": 121708544,
+    "p95": 124010496,
+    "maximum": 134721536
+  },
+  "graphicsDriverMemorySamples": 0,
+  "rawFramesSha256": "2258ac5c3965d282150fa065ca493eca263dee6adff281dff192496c8a7025bb",
+  "rawMemorySha256": "c30c78105664cfcc0b23201ab085aa078a43a75fe48e483f25792bb8794ae076",
+  "p08Accepted": false,
+  "releaseAccepted": false,
+  "limitations": "Original launch FAIL is preserved. This was actual D3D12, not the required D3D11 specimen. Managed Process counters returned zero for every sample, so process memory is unmeasured. Two impossible GPU durations are retained; GPU average is invalid. Distinct native timing and geometry counters support sustained rendering activity, but Unity-loop throughput is not physical display refresh and geometry counters have zero minima. The workload omits production P08 art, full game UI/network/input and hardware matrix."
+}

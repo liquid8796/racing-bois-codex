@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": 20,
+  "failures": 0,
+  "scope": "Real staged production output selector and hash verifier against isolated file fixtures. Not native Unity import or visual evidence.",
+  "results": [
+    {
+      "name": "exact_descriptor_selected_outputs_and_importer_metadata",
+      "passed": true
+    },
+    {
+      "name": "real_file_lengths_and_sha256",
+      "passed": true
+    },
+    {
+      "name": "unchanged_selected_outputs_verify",
+      "passed": true
+    },
+    {
+      "name": "unrelated_review_floor_mutation_does_not_invalidate",
+      "passed": true
+    },
+    {
+      "name": "unrelated_pipeline_metadata_mutation_does_not_invalidate",
+      "passed": true
+    },
+    {
+      "name": "other_candidate_mutation_does_not_invalidate",
+      "passed": true
+    },
+    {
+      "name": "new_unrelated_outputs_do_not_change_selected_inventory",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/RacingBois/Golden/Generated/Prefabs/Apex.prefab",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/RacingBois/Golden/Generated/Prefabs/Apex.prefab.meta",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/RacingBois/Golden/Generated/Materials/Apex_Pearl.mat",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/RacingBois/Golden/Generated/Materials/Apex_Pearl.mat.meta",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/Selected/model.fbx.meta",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/Selected/color.png.meta",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/Selected/clip.fbx.meta",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/Selected/modules.json.meta",
+      "passed": true
+    },
+    {
+      "name": "selected_mutation_rejected:Assets/Selected/emission.png.meta",
+      "passed": true
+    },
+    {
+      "name": "missing_selected_metadata_cannot_be_silently_omitted",
+      "passed": true
+    },
+    {
+      "name": "shared_input_metadata_is_bound_once",
+      "passed": true
+    },
+    {
+      "name": "non_asset_source_metadata_is_not_an_import_output",
+      "passed": true
+    },
+    {
+      "name": "empty_descriptor_rejected",
+      "passed": true
+    }
+  ]
+}

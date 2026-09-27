@@ -1,0 +1,46 @@
+[
+  {
+    "phase": "original",
+    "apiDefault": true,
+    "serializedAutomatic": 1,
+    "apis": [
+      "Direct3D12",
+      "Direct3D11"
+    ]
+  },
+  {
+    "phase": "false_first",
+    "apiDefault": true,
+    "serializedAutomatic": 1,
+    "apis": [
+      "Direct3D12",
+      "Direct3D11"
+    ]
+  },
+  {
+    "phase": "then_apis",
+    "apiDefault": true,
+    "serializedAutomatic": 1,
+    "apis": [
+      "Direct3D12",
+      "Direct3D11"
+    ]
+  },
+  {
+    "phase": "false_again",
+    "apiDefault": false,
+    "serializedAutomatic": 0,
+    "apis": [
+      "Direct3D11"
+    ]
+  },
+  {
+    "phase": "restored",
+    "apiDefault": true,
+    "serializedAutomatic": 1,
+    "apis": [
+      "Direct3D12",
+      "Direct3D11"
+    ]
+  }
+]

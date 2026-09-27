@@ -24,6 +24,10 @@
 **/vendor/
 **/_deps/
 /_local/
+# Preserve uncommitted font bytes locally; publish only the scoped probe reports.
+/docs/p10/native-baseline/font-copy-probe-*/*.asset
+/docs/p10/native-baseline/font-copy-probe-*/*.asset.meta
+/docs/p10/native-baseline/font-copy-probe-*/*.owner-before.json
 
 # Local reference data is research-only, never production distribution.
 /docs/reverse-engineering/**
