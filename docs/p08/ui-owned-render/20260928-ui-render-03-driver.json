@@ -1,0 +1,959 @@
+﻿{
+  "schema": 1,
+  "scope": "actual-owned-Editor-UI-render-focus-and-synthetic-navigation",
+  "passed": false,
+  "finished": true,
+  "actualNetwork": false,
+  "physicalInputDeviceAcceptance": false,
+  "fullGameAccepted": false,
+  "visualConceptAccepted": false,
+  "startedUtc": "2026-09-27T22:22:59.2909469Z",
+  "compiledProofSha256": "d7fbb3210b60411e5e25ac45cf9bd1cc2118b267412805e059e7350f24d29a8a",
+  "textUnionSha256": "ab4c6c3b3ecffb435fc855ea066a85964e85e1b485398dc629b8d0e2100828b1",
+  "captures": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "locale": "ENU",
+      "scenario": "menu",
+      "image": "D:\\Project\\Unity\\racing-bois\\docs\\p08\\ui-owned-render\\20260928-ui-render-03-1920\\menu-enu.png",
+      "sha256": "8333486bfeb26eef6bcde76184501c74a84b29fc928048cdc197cb54b627ccb6",
+      "focusedElement": "local",
+      "focusedTextField": "",
+      "layoutRows": 20,
+      "elidedRows": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "locale": "ENU",
+      "scenario": "settings",
+      "image": "D:\\Project\\Unity\\racing-bois\\docs\\p08\\ui-owned-render\\20260928-ui-render-03-1920\\settings-enu.png",
+      "sha256": "a7c2ff7831d1241f64d9895eae4db32cd4621b3ad01ae25711208c6bd793a46f",
+      "focusedElement": "quality",
+      "focusedTextField": "",
+      "layoutRows": 33,
+      "elidedRows": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "locale": "ENU",
+      "scenario": "career-garage",
+      "image": "D:\\Project\\Unity\\racing-bois\\docs\\p08\\ui-owned-render\\20260928-ui-render-03-1920\\career-garage-enu.png",
+      "sha256": "280469bd8f218d2853f83ccf7088fb7dd3f85b6c0107a04c22a1cc6871379a6b",
+      "focusedElement": "career-tab-garage",
+      "focusedTextField": "",
+      "layoutRows": 37,
+      "elidedRows": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "image": "D:\\Project\\Unity\\racing-bois\\docs\\p08\\ui-owned-render\\20260928-ui-render-03-1920\\career-account-enu.png",
+      "sha256": "af70af524000b14fb27568c7d65f264989be866ddc2716c0024e3172315b63a2",
+      "focusedElement": "career-password",
+      "focusedTextField": "career-password",
+      "layoutRows": 52,
+      "elidedRows": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "independent-source-proof-passed",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "loaded-attested-assembly:RacingBois.Client.Application",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\BenchmarkReadModelProjection.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\CareerMilestoneTracker.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\CareerReadModels.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\CareerSession.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\CinematicCatalog.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\CinematicText.Generated.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\CinematicText.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\ContentManifestRules.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\DesktopRuntimeConfig.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\DisplayLanguage.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\FoundationSession.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\LocalCampaignReadModel.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\MultiplayerPorts.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\MultiplayerProjection.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\MultiplayerReadModels.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\MultiplayerSession.InputErrors.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\MultiplayerSession.Messages.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\MultiplayerSession.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\MultiplayerSnapshotReadModel.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\P08AudioRoles.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\PredictionNeighborBuilder.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\RaceSession.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\RaceSnapshotValidator.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\RaceStateProjection.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\RaceWorldReadModel.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\RemoteMotionSampler.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\UiText.Career.Generated.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\UiText.ClientMessages.Generated.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\UiText.Main.Generated.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\UiText.Multiplayer.Generated.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\UiText.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Application\\WorldReadModel.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-dll:RacingBois.Client.Application",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "loaded-attested-assembly:RacingBois.Client.Presentation",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\CareerView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\CinematicDirector.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\CinematicGalleryView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\CinematicPoseSampler.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\CinematicValidationHarness.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\ContentRegistry.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\DesktopDisplaySettings.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\FoundationScreen.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\MultiplayerCopy.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\MultiplayerLobbyView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\P08ActorContent.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\P08ContentLibrary.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\P08RouteContent.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceAudio.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceAudioBank.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceEffectsView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceScreen.Content.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceScreen.Localization.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceScreen.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceStageView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RaceVisualQuality.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RiderAnimationSet.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RiderAnimationView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\RoadStageView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\SceneScrim.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\TrackRibbonView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\UiBindingScope.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\UiViewState.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Presentation\\WeaponGripView.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-dll:RacingBois.Client.Presentation",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "loaded-attested-assembly:RacingBois.Client.Adapters",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Adapters\\BrowserSocketTransport.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Adapters\\DesktopConfiguration.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Adapters\\P08ContentLoader.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Adapters\\P08MusicDirector.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Adapters\\UnityCareerTransport.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Adapters\\UnityMultiplayerStorage.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Adapters\\UnityWireCodec.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-dll:RacingBois.Client.Adapters",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "loaded-attested-assembly:RacingBois.Client.Bootstrap",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Bootstrap\\BootstrapCinematicCoordinator.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Bootstrap\\DesktopAcceptanceConfiguration.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Bootstrap\\DesktopAcceptanceRecorder.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Bootstrap\\FoundationBootstrap.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Bootstrap\\P06BenchmarkRunner.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-source:D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Client\\Bootstrap\\RaceBootstrap.cs",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "attested-dll:RacingBois.Client.Bootstrap",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "current-six-locale-text-union-5550-slots",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 0,
+      "tick": 0
+    },
+    {
+      "name": "synthetic-in-memory-session-connected",
+      "passed": true,
+      "locale": "VI",
+      "scenario": "prepare",
+      "width": 1920,
+      "tick": 1
+    },
+    {
+      "name": "locale-preserves-data-and-choices-without-commands",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "prepare",
+      "width": 1920,
+      "tick": 7
+    },
+    {
+      "name": "native-panel-focus:local",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "menu",
+      "width": 1920,
+      "tick": 11
+    },
+    {
+      "name": "rendered-text-layout-present",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "menu",
+      "width": 1920,
+      "tick": 11
+    },
+    {
+      "name": "native-panel-focus:settings-open",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "settings",
+      "width": 1920,
+      "tick": 15
+    },
+    {
+      "name": "navigation-submit-opens-settings",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "settings",
+      "width": 1920,
+      "tick": 19
+    },
+    {
+      "name": "native-panel-focus:quality",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "settings",
+      "width": 1920,
+      "tick": 23
+    },
+    {
+      "name": "rendered-text-layout-present",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "settings",
+      "width": 1920,
+      "tick": 23
+    },
+    {
+      "name": "native-panel-focus:settings-close",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "settings",
+      "width": 1920,
+      "tick": 27
+    },
+    {
+      "name": "navigation-submit-closes-settings",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "settings",
+      "width": 1920,
+      "tick": 31
+    },
+    {
+      "name": "native-panel-focus:career-open",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-garage",
+      "width": 1920,
+      "tick": 35
+    },
+    {
+      "name": "navigation-submit-opens-career",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-garage",
+      "width": 1920,
+      "tick": 39
+    },
+    {
+      "name": "native-panel-focus:career-tab-garage",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-garage",
+      "width": 1920,
+      "tick": 43
+    },
+    {
+      "name": "rendered-text-layout-present",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-garage",
+      "width": 1920,
+      "tick": 47
+    },
+    {
+      "name": "native-panel-focus:career-tab-account",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 51
+    },
+    {
+      "name": "account-fields-built-by-real-tab-submit",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 55
+    },
+    {
+      "name": "native-panel-focus:career-password",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 59
+    },
+    {
+      "name": "password-internal-child-focus-and-draft-survive-locale-change",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 63
+    },
+    {
+      "name": "password-focus-restored-to-original-locale",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 67
+    },
+    {
+      "name": "rendered-text-layout-present",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 67
+    },
+    {
+      "name": "native-panel-focus:career-close",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 71
+    },
+    {
+      "name": "navigation-submit-closes-career",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "career-account",
+      "width": 1920,
+      "tick": 75
+    },
+    {
+      "name": "synthetic-in-memory-session-connected",
+      "passed": true,
+      "locale": "ENU",
+      "scenario": "multiplayer-browser",
+      "width": 1920,
+      "tick": 75
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "RacingBois.Client.Application",
+      "mvid": "9fbaf5f4-3ecf-404c-aa2e-e626bae534a1",
+      "sha256": "4bc155565c671af6f6fcb196f86195675949eb9b857385b353a0254a4f65b7a4"
+    },
+    {
+      "name": "RacingBois.Client.Presentation",
+      "mvid": "1d2f7c99-3032-48e2-9c1a-c70441aa2a72",
+      "sha256": "92b5c523551e3cfbcae886776650094ab3f1129205137ac118653a6a94b0db9b"
+    },
+    {
+      "name": "RacingBois.Client.Adapters",
+      "mvid": "e9a9e3be-4b8e-47d4-ab4a-7fc5d8734ee7",
+      "sha256": "2040b09fa65f7e80c96808a8a4a0fa2624ab8eb3c349d908f880e405abf644ec"
+    },
+    {
+      "name": "RacingBois.Client.Bootstrap",
+      "mvid": "07a70803-32f3-4148-af5d-59cd364e4029",
+      "sha256": "730bf9e68cbf43a9c24a83857d2af714d91b8ac67c41fd69f233c979fb47282e"
+    },
+    {
+      "name": "RacingBois.Tools.OwnedUiRenderR2",
+      "mvid": "428bfae4-520c-48b9-837e-21955722d434",
+      "sha256": "01ae18882358b08a16a2f76a9abd78abfbbdb77980d10e10b3c5f784fb84ff13"
+    },
+    {
+      "name": "RacingBois.Tools.AttachedUiDriver",
+      "mvid": "871a4a87-dbcb-4593-8664-c159c238c0a1",
+      "sha256": "c97c6d2cbf9a89acbc63a06bfc3b9c2e4f3b3430bc4ee1c28c7fc0ab3eb14774"
+    }
+  ],
+  "failure": "System.InvalidOperationException: focus_target_unavailable\r\n  at RacingBois.Tools.OwnedUi.OwnedUiRenderFixture.FocusControl (System.String name) [0x000a3] in D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\owned-ui-render-r2-staging\\OwnedUiRenderFixture.cs:182 \r\n  at RacingBois.Tools.NativeUi.AttachedUiDriver+Run+<Focus>d__47.MoveNext () [0x00020] in D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\owned-ui-driver-staging\\AttachedUiDriver.cs:151 \r\n  at RacingBois.Tools.NativeUi.AttachedUiDriver+Run.Tick () [0x000ab] in D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\owned-ui-driver-staging\\AttachedUiDriver.cs:279 ",
+  "finishedUtc": "2026-09-27T22:23:28.0345079Z",
+  "captureCount": 4,
+  "ownedPanelPumpCount": 74,
+  "globalStateUnchanged": true,
+  "ownedRenderObjectsReleased": true
+}

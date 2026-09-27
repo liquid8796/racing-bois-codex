@@ -4,6 +4,21 @@
 
 This section supersedes current-state wording in the historical checkpoints below. **P08, P09 and P10 are not complete.** The user authorizes continuous implementation, validation, commit and normal push to master after each completed patch. No Jarvis MCP, paid asset-recovery services, concept substitution or weakened visual gate is permitted. Windows 10/11 remains primary, OCI retains online authority, and offline LAN remains a separate local realm. Production route/bike/character masks are still **1/1/1**.
 
+Latest published continuation checkpoints (through `7336147`):
+
+- `c9f78df` completed the scoped NativeProbe/Pose build preservation work. The real Windows WSS specimen completed two connections, two races and reconnect/leave/logout checks; the separate pose build produced 48 validated PNGs. These are bounded native diagnostics, not full-game or performance acceptance. See [diagnostic preservation](p10/diagnostic-preservation/README.md).
+- `835b27a` added transferred LAN ZIP verification, including the actual self-contained archive and 20 rejection/validation controls. Physical two-PC WAN-disconnected play remains unverified.
+- `9a0b14d`, `cc916d9` and `7336147` deliver six-locale cinematic/global copy and authoritative career milestone triggering. The current [global UI checkpoint](p08/media/GLOBAL_UI_LOCALIZATION.md) contains 394 global plus 531 cinematic keys and 5,743 installed-Unity contract checks. Attached rendering/focus review proceeds separately. The milestone implementation has its own [native evidence](p08/media/MILESTONE_NATIVE_REVIEW.md).
+- `1e0d0e6` and `11facdd` publish Canyon V17 UV/bounds repairs and all bound review-renderer assets. Its actual native render remains [visually unaccepted](p08/golden/canyon/v17/native-20260928-01/REVIEW.md). `6337427` publishes the frozen Far33-only V18 experiment and [root render review](p08/golden/canyon/v18/ROOT_REVIEW.md); it has no Assets export or promotion. V19 is a separate ongoing composition study.
+- `6513679` fixes streaming verification and finite music lifecycle behavior, with [28 real Unity lifecycle checks](p08/media/NATIVE_MUSIC_LIFECYCLE.md), native transfer evidence and preserved failed attempts. This is not audible standalone mix acceptance. `6205427` verifies the fresh-FBX [single-reimport optimization](p08/golden/import-once/README.md) with actual native positive, negative, fallback and repeat controls.
+
+The full P08 desktop builder is now being revised to use owned scene/UI/font
+copies and scoped settings restoration. No new full-game release acceptance is
+claimed. The user deferred the foreground 600-second measurement and asked to
+continue other work; do not rerun it unattended or ask again while this direction
+stands. Original Club/Ash sources and the two pre-existing SDF font changes remain
+preserved outside these patches.
+
 Completed bounded patches in this continuation:
 
 - **`8f51069` — current OCI audit:** [15:59:49 UTC read-only evidence](p09/readiness/20260927T155938Z.json) binds all 1,986 deployed files, the executing f/protocol-6 process, private data/listener modes and the public allowlist. All 68 current backend/shared runtime sources match release f. `/ready` returned 200, eight private/legacy routes returned 404, and existing monitoring/encrypted-backup records were fresh. This did not restart/deploy/load-test the service or provide new regional gameplay evidence.
