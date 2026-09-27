@@ -1,0 +1,95 @@
+{
+  "scope": "Offline metadata inspection of installed Unity assembly via Cecil. No Editor process, Unity API getter or native method invoked.",
+  "assembly": {
+    "path": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.7f1\\Editor\\Data\\Managed\\UnityEngine\\UnityEditor.CoreModule.dll",
+    "sha256": "b818b53349d11c444902fd36eba2b55d93ea7cf5c07688295716800c8426c634",
+    "mvid": "b35a5782-b5d3-4ead-bc5d-7ed7c774d90f"
+  },
+  "metadataReader": {
+    "path": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.7f1\\Editor\\Data\\Managed\\Unity.Cecil.dll",
+    "sha256": "27a8e20b84f9b6aef707d7ea026eed9e5b93f5d93b09362d61281194dee0f2a4"
+  },
+  "properties": [
+    {
+      "name": "materialLocation",
+      "type": "UnityEditor.ModelImporterMaterialLocation",
+      "getterPublic": true,
+      "getterInternal": false
+    },
+    {
+      "name": "sourceMaterials",
+      "type": "UnityEditor.AssetImporter/SourceAssetIdentifier[]",
+      "getterPublic": false,
+      "getterInternal": true
+    },
+    {
+      "name": "materialImportMode",
+      "type": "UnityEditor.ModelImporterMaterialImportMode",
+      "getterPublic": true,
+      "getterInternal": false
+    }
+  ],
+  "publicRemapMethods": [
+    "System.Void UnityEditor.AssetImporter::SaveAndReimport()",
+    "System.Void UnityEditor.AssetImporter::AddRemap(UnityEditor.AssetImporter/SourceAssetIdentifier,UnityEngine.Object)",
+    "System.Boolean UnityEditor.AssetImporter::RemoveRemap(UnityEditor.AssetImporter/SourceAssetIdentifier)",
+    "System.Collections.Generic.Dictionary`2<UnityEditor.AssetImporter/SourceAssetIdentifier,UnityEngine.Object> UnityEditor.AssetImporter::GetExternalObjectMap()"
+  ],
+  "sourceIdentifierConstructors": [
+    {
+      "method": "System.Void UnityEditor.AssetImporter/SourceAssetIdentifier::.ctor(UnityEngine.Object)",
+      "isPublic": true,
+      "il": [
+        "IL_0000: ldarg.1",
+        "IL_0001: ldnull",
+        "IL_0002: call System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)",
+        "IL_0007: brfalse.s IL_0014",
+        "IL_0009: ldstr \"asset\"",
+        "IL_000e: newobj System.Void System.ArgumentNullException::.ctor(System.String)",
+        "IL_0013: throw",
+        "IL_0014: ldarg.0",
+        "IL_0015: ldarg.1",
+        "IL_0016: callvirt System.Type System.Object::GetType()",
+        "IL_001b: stfld System.Type UnityEditor.AssetImporter/SourceAssetIdentifier::type",
+        "IL_0020: ldarg.0",
+        "IL_0021: ldarg.1",
+        "IL_0022: callvirt System.String UnityEngine.Object::get_name()",
+        "IL_0027: stfld System.String UnityEditor.AssetImporter/SourceAssetIdentifier::name",
+        "IL_002c: ret"
+      ]
+    },
+    {
+      "method": "System.Void UnityEditor.AssetImporter/SourceAssetIdentifier::.ctor(System.Type,System.String)",
+      "isPublic": true,
+      "il": [
+        "IL_0000: ldarg.1",
+        "IL_0001: ldnull",
+        "IL_0002: call System.Boolean System.Type::op_Equality(System.Type,System.Type)",
+        "IL_0007: brfalse.s IL_0014",
+        "IL_0009: ldstr \"type\"",
+        "IL_000e: newobj System.Void System.ArgumentNullException::.ctor(System.String)",
+        "IL_0013: throw",
+        "IL_0014: ldarg.2",
+        "IL_0015: brtrue.s IL_0022",
+        "IL_0017: ldstr \"name\"",
+        "IL_001c: newobj System.Void System.ArgumentNullException::.ctor(System.String)",
+        "IL_0021: throw",
+        "IL_0022: ldarg.2",
+        "IL_0023: call System.Boolean System.String::IsNullOrEmpty(System.String)",
+        "IL_0028: brfalse.s IL_003a",
+        "IL_002a: ldstr \"The name is empty\"",
+        "IL_002f: ldstr \"name\"",
+        "IL_0034: newobj System.Void System.ArgumentException::.ctor(System.String,System.String)",
+        "IL_0039: throw",
+        "IL_003a: ldarg.0",
+        "IL_003b: ldarg.1",
+        "IL_003c: stfld System.Type UnityEditor.AssetImporter/SourceAssetIdentifier::type",
+        "IL_0041: ldarg.0",
+        "IL_0042: ldarg.2",
+        "IL_0043: stfld System.String UnityEditor.AssetImporter/SourceAssetIdentifier::name",
+        "IL_0048: ret"
+      ]
+    }
+  ],
+  "finding": "ModelImporter.sourceMaterials is internal. Public SourceAssetIdentifier(Object) copies only type and current object name. It cannot recover original source names from a remapped external material."
+}

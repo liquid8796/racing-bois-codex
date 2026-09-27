@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "sourceSha256": "9096e97e999c5a43e1ea0ddd43bc06137bf678d19732b0fc4d36e3b2a4e31e7d",
+  "controls": [
+    {
+      "control": "fresh",
+      "reimports": 1,
+      "log": "docs/p08/golden/import-once/fresh-import-engine.txt",
+      "logSha256": "1cf4fb1a310a64472b78a808bf3a565d19d1103b80cbf5bd4fe9e75ff47687c9",
+      "receipt": "docs/p08/golden/unity/import-be8a5fbc04ff498194ac5e4cc29a9e90.json",
+      "receiptSha256": "406d21650aac688063ecfccbee5bd5724df468785b8032839e7b19c3709a4229",
+      "expectedRejection": false
+    },
+    {
+      "control": "unknown",
+      "reimports": 0,
+      "log": "docs/p08/golden/import-once/unknown-import-engine.txt",
+      "logSha256": "8c20ccc3513248fe4b9e9c03c8057db85b32b01b2e6f6318eef1c9db33311262",
+      "receipt": "docs/p08/golden/unity/import-69d87819d16b4f44aea33c0ed761d0de.json",
+      "receiptSha256": "cbd6828360a6df45a83515effd7468fbacf79a01af6993aac3b95525f6ac46d5",
+      "expectedRejection": true
+    },
+    {
+      "control": "fallback",
+      "reimports": 2,
+      "log": "docs/p08/golden/import-once/fallback-import-engine.txt",
+      "logSha256": "c8f477a7f59609311d17ac9a8a77fe433751b71d1f6566242abe088b76d77652",
+      "receipt": "docs/p08/golden/unity/import-e6bf0df0a19042299413d06277e06fe7.json",
+      "receiptSha256": "9c67f0460b45ff8d6c0bcccc9704c8a94385ed277f34f942e96952e4a6900ae8",
+      "expectedRejection": false
+    },
+    {
+      "control": "repeat",
+      "reimports": 0,
+      "log": "docs/p08/golden/import-once/repeat-import-engine.txt",
+      "logSha256": "08383f68f500621c8636a4141946fcea89d2845fe84ce244ea84c4d09251a701",
+      "receipt": "docs/p08/golden/unity/import-edd65ec1d3f547188efd54b428ce25c2.json",
+      "receiptSha256": "a9cea1d8178a719179f01e7c35e636a96aa986f4c86876ee82ba9a13e5683f38",
+      "expectedRejection": false
+    }
+  ],
+  "visualAccepted": false,
+  "environmentTimingMeasured": false
+}

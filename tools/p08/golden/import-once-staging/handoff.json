@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "scope": "Staged public-only fresh embedded-material import optimization. Not installed. Native controls pending.",
+  "expectedLive": {
+    "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
+    "sha256": "3b903432e935cdda251cf87f20878954853957d6115dbc9a86754076c9300483"
+  },
+  "staged": {
+    "path": "tools/p08/golden/import-once-staging/GoldenSampleBuilder.Import.cs",
+    "sha256": "9096e97e999c5a43e1ea0ddd43bc06137bf678d19732b0fc4d36e3b2a4e31e7d"
+  },
+  "files": [
+    {
+      "path": "tools/p08/golden/import-once-staging/GoldenSampleBuilder.Import.cs",
+      "sha256": "9096e97e999c5a43e1ea0ddd43bc06137bf678d19732b0fc4d36e3b2a4e31e7d"
+    },
+    {
+      "path": "tools/p08/golden/import-once-staging/Preflight.csproj",
+      "sha256": "375671bb8e998fb3cae61275aa54225d8608d6c9474bf4ac0fe94da0435269fe"
+    },
+    {
+      "path": "tools/p08/golden/import-once-staging/Directory.Build.props",
+      "sha256": "376b9319d21fb1b72785cd24c59a6206c627539dc6e08be9de54e18124be3d37"
+    },
+    {
+      "path": "tools/p08/golden/import-once-staging/audit-installed-api.ps1",
+      "sha256": "2d5fb196027057636e3d7763f393b6ca3e758ec57b6b71142b3583afa25f9787"
+    },
+    {
+      "path": "tools/p08/golden/import-once-staging/installed-api.json",
+      "sha256": "b99b44e487aeb2e0b25acc87bc3b11fa42eb2fb84452b811f91e18863657b074"
+    },
+    {
+      "path": "tools/p08/golden/import-once-staging/preflight-build.txt",
+      "sha256": "6108d5f598606c401882499c06cce97db77d3f5566480de0b64c7a21b289e31d"
+    },
+    {
+      "path": "tools/p08/golden/import-once-staging/README.md",
+      "sha256": "1ac3045fbec8165150a702ae292ecf55794122a256050a6583d573e7580340a6"
+    }
+  ],
+  "managedCompilePassed": true,
+  "warnings": 0,
+  "errors": 0,
+  "nativeControlsPassed": false,
+  "installed": false,
+  "visualAcceptanceChanged": false,
+  "requiredNativeControls": [
+    "fresh embedded FBX one combined settings/remap reimport",
+    "unknown source name rejects before setters",
+    "existing remap strict fallback",
+    "already-correct repeat skips unchanged unwrap"
+  ]
+}

@@ -1,14 +1,14 @@
 {
     "schema": 1,
-    "attemptId": "edd65ec1d3f547188efd54b428ce25c2",
-    "utc": "2026-09-27T21:48:56.0554317Z",
+    "attemptId": "69d87819d16b4f44aea33c0ed761d0de",
+    "utc": "2026-09-27T21:46:52.3819013Z",
     "unityVersion": "6000.5.7f1",
-    "descriptor": "docs/p08/golden/import-once/fresh-descriptor.json",
-    "descriptorSha256": "f3b829af71205aaf2491825a816a97699df742309650b1f3f4f5bfde0c90781d",
-    "sourceFingerprint": "6d5d07f668036f1a9b66fc71a8a756c90f4ea24b7ffed44ef54ce7466e8321b2",
-    "failure": "",
-    "passed": true,
-    "sourceBindingPassed": true,
+    "descriptor": "docs/p08/golden/import-once/unknown-descriptor.json",
+    "descriptorSha256": "04d4ecce24afc5de35fdfc639c553258922bf87464d768af1f3e562dce409a03",
+    "sourceFingerprint": "e064fee84c36c621c518dc397990504878968873c3ca075ec709a765fcbcac39",
+    "failure": "InvalidOperationException: FBX embedded source material slots differ from descriptor: RB_ImportOnce_Unknown [Apex_Graphite, Apex_Machined, Apex_RedLamp, Apex_Glass, Apex_Lamp, Apex_Titanium, Apex_Rubber, Apex_Pearl, Apex_Lens]",
+    "passed": false,
+    "sourceBindingPassed": false,
     "inputs": [
         {
             "path": "ArtSource/Concepts/P08/Golden/apex-v2-review.md",
@@ -176,7 +176,7 @@
             "bytes": 2835
         },
         {
-            "path": "Assets/RacingBois/Diagnostics/ImportOnce/RB_ImportOnce_Fresh.fbx",
+            "path": "Assets/RacingBois/Diagnostics/ImportOnce/RB_ImportOnce_Unknown.fbx",
             "sha256": "9fc3f8e0580b96c6cb20f44e2c6be2746a08731c98a773f98acd4da718738130",
             "bytes": 5812556
         },
@@ -331,290 +331,12 @@
             "bytes": 24880
         },
         {
-            "path": "docs/p08/golden/import-once/fresh-descriptor.json",
-            "sha256": "f3b829af71205aaf2491825a816a97699df742309650b1f3f4f5bfde0c90781d",
-            "bytes": 10944
+            "path": "docs/p08/golden/import-once/unknown-descriptor.json",
+            "sha256": "04d4ecce24afc5de35fdfc639c553258922bf87464d768af1f3e562dce409a03",
+            "bytes": 10965
         }
     ],
-    "outputs": [
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Glass_BaseColor.png.meta",
-            "sha256": "761767be047b162caa4f89c1865869927200e2c7728eb5d6ee7af561c87efa85",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Glass_MetallicSmoothness.png.meta",
-            "sha256": "802a462041f2596828e7c0639c3a56817883ed4ea43ad6eae491be95c53f08f0",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Glass_Normal.png.meta",
-            "sha256": "45e5d6bc24aebb0de149a5d86b9a3c9e4f29130cfcd22a877e76611cbd84b48d",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Graphite_BaseColor.png.meta",
-            "sha256": "313300438ae235ecb7d893351d5132d2e4bc3f4e5a9a3f415743b49f00caaf80",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Graphite_MetallicSmoothness.png.meta",
-            "sha256": "b0af383c2d1a098ae3967b4c7c597bedcd00c646d687e2957855bfb59a295d09",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Graphite_Normal.png.meta",
-            "sha256": "98735b7871bc0d82a584c3ca9ca61b5730dc2bb7a60ae3cdd22b237d38e2ed62",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_BaseColor.png.meta",
-            "sha256": "89d41c26da3315039aefe117b737666f699c47b46fd5723bf24ce090d90f1be8",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_Emission.png.meta",
-            "sha256": "c3251d2bdbc5c0f247048b3cdd77fdfb4040417071cb03047f47261c443cf710",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_MetallicSmoothness.png.meta",
-            "sha256": "37fbfc855ed7c27551a282965f6c65e95ae6d520dc64155e24ac07ba7d7d3c03",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lamp_Normal.png.meta",
-            "sha256": "c1a58fa16cc52dcce1747307b6760389bba498b4526802a949b9b6faa224ff17",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lens_BaseColor.png.meta",
-            "sha256": "d7c3e884fc69a918356e8db0a4cff8f421fd87aa567278937b59731421e1826b",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lens_MetallicSmoothness.png.meta",
-            "sha256": "bb3e787f802be89cc7ce6c5500c396203113399f330f30ffc0b93a4be4ffd031",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Lens_Normal.png.meta",
-            "sha256": "6a1d37d6818d3e9b64cad9950f74ade633b0c66ee34a1e42df98f4c0b8757f8f",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Machined_BaseColor.png.meta",
-            "sha256": "c65a54d89c957137d2b7951c866e26361b9d804a4736a4dce37f1b9492f31923",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Machined_MetallicSmoothness.png.meta",
-            "sha256": "f2fbed7823ee2bf8dfcd8b584cd82de98bec360c45675060d63ec6ed93ff230e",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Machined_Normal.png.meta",
-            "sha256": "2c1ca5c2bcd75447ba67398a837035a865aa6f99660225cbb7fcbc54488726f6",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Pearl_BaseColor.png.meta",
-            "sha256": "2ea276e44bc60d5892974913613fe8d857634cd89370ed30f4b4a2a70baa0e0c",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Pearl_MetallicSmoothness.png.meta",
-            "sha256": "a25f212ff709d5c9b33498e05ddb3574b50481c8f30dc9d78731a6a335b4d150",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Pearl_Normal.png.meta",
-            "sha256": "cd3f87ab9627c2ccc7c2b73e809b9ec192346097cbc5ee224d09619bbf2d5fb6",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_BaseColor.png.meta",
-            "sha256": "c1cccfbf42439b668a9627006ea9049de84edc3ac98918cf07a03ea17483050c",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_Emission.png.meta",
-            "sha256": "c6dac69461dd686ff700dfd46265ba9249dd222a188dc633a4965bea617f2cc9",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_MetallicSmoothness.png.meta",
-            "sha256": "aa1e012445e22d5904aa85dcfadbd22ac46211bc159d830c20c79e6d456b9441",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_RedLamp_Normal.png.meta",
-            "sha256": "5fc0ed82bf3d4347c4e2cd91820ef2b92bf887df01021c49a72b8ff54cb66b95",
-            "bytes": 3006
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Rubber_BaseColor.png.meta",
-            "sha256": "32e0bab85a48cf5260250d61dadaae0ea46a1c6d07599afa0217f39fb1cd0338",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Rubber_MetallicSmoothness.png.meta",
-            "sha256": "52460f3a7eb8a9221a9c5e85e1321a2cd9833e2a3acf16235cfaee9aac361dad",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Rubber_Normal.png.meta",
-            "sha256": "03b6b3b0d87454689779deae7320fd2136224a7840cfd4c8d555fa0961ef8f92",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Titanium_BaseColor.png.meta",
-            "sha256": "f9f0d1c450db803cf64c37708efd48cac6db97120330216bac153eabaaf97116",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Titanium_MetallicSmoothness.png.meta",
-            "sha256": "bf8c7212cedff39c96d0c4f0ec9ca824c7c52b7d4ea784fd4f74965a37df6da6",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R4/Apex_Titanium_Normal.png.meta",
-            "sha256": "96733f14af0c230ec0e05aba3bd242362744b92643305a7a21f47dbc84a52bb9",
-            "bytes": 3008
-        },
-        {
-            "path": "Assets/RacingBois/Diagnostics/ImportOnce/RB_ImportOnce_Fresh.fbx.meta",
-            "sha256": "9186008a4b5992e4afdfc7edda01f30fea57e5a562358752be8c3ba12951b149",
-            "bytes": 4665
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Glass.mat",
-            "sha256": "10760ada37223f67d3945afdd6e5a31054e35447c2dc7ea59b983e21aec4427e",
-            "bytes": 4183
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Glass.mat.meta",
-            "sha256": "9f9f770fb929164f9a3d9d0864c2e3a33650631a51a515232e168208b12ad376",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Graphite.mat",
-            "sha256": "224efa080477a003a71a4d86bebaac727d5c9b1b0f0c2f77552a1b7a20c6698a",
-            "bytes": 4087
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Graphite.mat.meta",
-            "sha256": "1cd1ecec6a3f70dc4db3e32068751f18fd9caeea5116561a37a1f4939b250d58",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Lamp.mat",
-            "sha256": "ebbce23576b61a527dfe309040813e573ee04f4a40b2771f6f45592ef609a305",
-            "bytes": 4153
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Lamp.mat.meta",
-            "sha256": "daf6a9e091adc00fd78408a5acb511f4c4e5f002b2396ac6cf201e89f0a08982",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Lens.mat",
-            "sha256": "37d5a1d52830137b8533b31adc044853a57066834d0fb6628f012e2dc0767f32",
-            "bytes": 4182
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Lens.mat.meta",
-            "sha256": "f68b6ddacfabaf6e849d61ce70acfd2c42a1079f717c1ca30725ea0e9a2e0c9c",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Machined.mat",
-            "sha256": "c3679c4b65e6abee2ac365466d255171d5b29497ac013a7f601de146add4ad74",
-            "bytes": 4088
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Machined.mat.meta",
-            "sha256": "8739df5e4a004b701789e95bcfaae5e1ab0ca2fab6e2b22d3476cf4ab3e570be",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Pearl.mat",
-            "sha256": "bee6214ae3528f3f538a5b37d256328684c26ca7b709cbbec046510657d2c8b3",
-            "bytes": 4085
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Pearl.mat.meta",
-            "sha256": "1345b02b9ee9d73a3d8850d7cda011bad9d65e7d2aa9900a41e14e00889ddbc7",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_RedLamp.mat",
-            "sha256": "197857037821851647c8bcaf443806ef7779a2b541f88b8de0be91846c09888f",
-            "bytes": 4163
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_RedLamp.mat.meta",
-            "sha256": "ab5cc9f05398b8d584f6818d4ac195e3f573da48b3dcad2df308f0b5ebad7e4f",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Rubber.mat",
-            "sha256": "251fa2c12ffc8c067d9bdd62d0b5a40d4cbe9739eb070c9749f1634a37d545be",
-            "bytes": 4085
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Rubber.mat.meta",
-            "sha256": "fe5c974c88c23a748e618e06b9ae80cf807c630d906d37059199825fa1227eac",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Titanium.mat",
-            "sha256": "80c4afab0f00078ebad57db78534c97f94dd416fdf04ba190ec171d1e275712c",
-            "bytes": 4087
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_ImportOnce_Fresh_Apex_Titanium.mat.meta",
-            "sha256": "c1be2823347b7a5b93e716b9d68e719f63eea4096f3b471682b83f84037d17cb",
-            "bytes": 188
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_ImportOnce_Fresh.prefab",
-            "sha256": "ddf950b20ead54c89d9e218c49752a3af271b828e15dd95d093c6d0ea8c4968a",
-            "bytes": 7531
-        },
-        {
-            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_ImportOnce_Fresh.prefab.meta",
-            "sha256": "eec2a4c9989fbb4e5b86aee26518bd402badb8c345555be415472e0ee79a88a8",
-            "bytes": 154
-        }
-    ],
-    "assets": [
-        {
-            "id": "RB_ImportOnce_Fresh",
-            "prefab": "Assets/RacingBois/Golden/Generated/Prefabs/RB_ImportOnce_Fresh.prefab",
-            "kind": "bike",
-            "passed": true,
-            "rootIdentity": true,
-            "materialSlotsPreserved": true,
-            "missingReferencesAbsent": true,
-            "rigValid": false,
-            "handednessValid": true,
-            "materialCount": 9,
-            "colliderCount": 1,
-            "rendererCount": 9,
-            "clipsSampled": 0,
-            "sampledVertices": 0,
-            "bounds": {
-                "x": 0.7538399696350098,
-                "y": 1.124999761581421,
-                "z": 2.059999704360962
-            },
-            "lodTriangles": [
-                108102,
-                54050,
-                21374
-            ]
-        }
-    ],
+    "outputs": [],
+    "assets": [],
     "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
 }

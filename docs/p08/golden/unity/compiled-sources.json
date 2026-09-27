@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "utc": "2026-09-27T20:34:17.4665541Z",
+  "utc": "2026-09-27T21:45:00.2380734Z",
   "passed": true,
   "scope": "Compiled PE/PDB identity and actual source checksums; not visual acceptance",
   "assemblies": [
     {
       "name": "RacingBois.Authoring.Editor",
       "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll",
-      "sha256": "bfcaac4fa8af3bdafadefb3f74a58d12f8a46320de7b14b598e3ee1adc134f0e",
-      "pdbSha256": "b180361b2316d63ef16ff8b3add1e7d9ee777c390df0dc56dd338d5f5f203754",
-      "mvid": "bba86530-1d04-4dd6-b5ec-720907c7005a",
+      "sha256": "e3c2e6c9a8d97f14236f0b7fce58cb77ee3fc58fe8314a0fdbed1fd7e5ca3a06",
+      "pdbSha256": "feda4aa8542db9b60237846c8a4dd82772329a63aa4f887125e382b4ec062398",
+      "mvid": "682f9ced-7134-4683-91ba-15f0f578490a",
       "passed": true,
       "pdbMatchesAssembly": true,
       "documents": [
@@ -99,8 +99,8 @@
         },
         {
           "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
-          "sha256": "3b903432e935cdda251cf87f20878954853957d6115dbc9a86754076c9300483",
-          "symbolChecksum": "3b903432e935cdda251cf87f20878954853957d6115dbc9a86754076c9300483",
+          "sha256": "9096e97e999c5a43e1ea0ddd43bc06137bf678d19732b0fc4d36e3b2a4e31e7d",
+          "symbolChecksum": "9096e97e999c5a43e1ea0ddd43bc06137bf678d19732b0fc4d36e3b2a4e31e7d",
           "matches": true
         },
         {
@@ -319,16 +319,16 @@
     {
       "name": "RacingBois.Client.Presentation",
       "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.dll",
-      "sha256": "27889c57ee34e9bfeffb1cf5fe7da7cee1b889ea0118f60711a479fc4a4898f1",
-      "pdbSha256": "04a8b505ba06aeecd595b064cd39b09b1b2fdbed027d3424bc1cf8f7cc9d5e3f",
-      "mvid": "e20c12b3-5cee-47d4-a177-c1f01e06ae09",
+      "sha256": "92b5c523551e3cfbcae886776650094ab3f1129205137ac118653a6a94b0db9b",
+      "pdbSha256": "cdf1181aa9a4359915d74e4dd19f7f7b7297d7877cd0f9deb909084d48534fbf",
+      "mvid": "1d2f7c99-3032-48e2-9c1a-c70441aa2a72",
       "passed": true,
       "pdbMatchesAssembly": true,
       "documents": [
         {
           "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
-          "sha256": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819",
-          "symbolChecksum": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819",
+          "sha256": "47f78d8cfdfa4bcc819a522517c0fd6a3873bca2595287d82a686d3039677905",
+          "symbolChecksum": "47f78d8cfdfa4bcc819a522517c0fd6a3873bca2595287d82a686d3039677905",
           "matches": true
         },
         {
@@ -363,8 +363,8 @@
         },
         {
           "path": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
-          "sha256": "c7804c86cc32b38a0fec32aa8d5dd056383711d5663a7c13873cd062eb7376fc",
-          "symbolChecksum": "c7804c86cc32b38a0fec32aa8d5dd056383711d5663a7c13873cd062eb7376fc",
+          "sha256": "feeb794d9dc9ad2ea0964928ff40257d519d684f54320f3fde3c36597fe9fc44",
+          "symbolChecksum": "feeb794d9dc9ad2ea0964928ff40257d519d684f54320f3fde3c36597fe9fc44",
           "matches": true
         },
         {
@@ -375,14 +375,14 @@
         },
         {
           "path": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
-          "sha256": "d36d98135937a0e29f37f4c2f1953b9f1886222532c0e8ebba4c82f069f05684",
-          "symbolChecksum": "d36d98135937a0e29f37f4c2f1953b9f1886222532c0e8ebba4c82f069f05684",
+          "sha256": "c5b7758ee048776b66af5b085713b964cf390b5d079aa22888235906108125b2",
+          "symbolChecksum": "c5b7758ee048776b66af5b085713b964cf390b5d079aa22888235906108125b2",
           "matches": true
         },
         {
           "path": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
-          "sha256": "086eb98c3d361ce16ff69fe7fa0db25489090be28b898495c41adba92a8e283a",
-          "symbolChecksum": "086eb98c3d361ce16ff69fe7fa0db25489090be28b898495c41adba92a8e283a",
+          "sha256": "baac49a22aba7497c26b0d99dcc75791fbe01a4473a23e168ca1151c2e1fcb80",
+          "symbolChecksum": "baac49a22aba7497c26b0d99dcc75791fbe01a4473a23e168ca1151c2e1fcb80",
           "matches": true
         },
         {
@@ -423,14 +423,20 @@
         },
         {
           "path": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
-          "sha256": "9bc3c320bc0d95a27e544c499ade4d383c8b0568e24c6263dc6042c88c18984f",
-          "symbolChecksum": "9bc3c320bc0d95a27e544c499ade4d383c8b0568e24c6263dc6042c88c18984f",
+          "sha256": "c0d338e81ed8378305ee377e12d12e6e23a1db9b84350dce3c2ba119ce4585d4",
+          "symbolChecksum": "c0d338e81ed8378305ee377e12d12e6e23a1db9b84350dce3c2ba119ce4585d4",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceScreen.Localization.cs",
+          "sha256": "d1b38a60a59de4158da3dfbaf9dc6a7682c6f352b854858bbaed416757500a2f",
+          "symbolChecksum": "d1b38a60a59de4158da3dfbaf9dc6a7682c6f352b854858bbaed416757500a2f",
           "matches": true
         },
         {
           "path": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
-          "sha256": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9",
-          "symbolChecksum": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9",
+          "sha256": "3bf54aeb996eda4782a4f01208d379e8531db45a509eb0edffb55f7f43a23663",
+          "symbolChecksum": "3bf54aeb996eda4782a4f01208d379e8531db45a509eb0edffb55f7f43a23663",
           "matches": true
         },
         {
@@ -496,7 +502,7 @@
         {
           "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
           "sha256": "",
-          "symbolChecksum": "2eff71aa2f8e19126138afc6f1b12b5bc6534d2d",
+          "symbolChecksum": "1403a5640632cd7ded1300c8e19c251cd5a8bf53",
           "matches": null,
           "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
         }
