@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-27T02:19:11.816993+00:00",
+  "scope": "Temporary runtime material clone controls, no asset edits/acceptance",
+  "nativeProbeBinding": "All3ApexLOD0 renderers use BlendProbes and the actualCustomGarageReflection atweight1",
+  "probeSH": [
+    "0.114,0.109,0.122",
+    "0.637,0.718,0.904",
+    "0.479,0.531,0.660",
+    "0.201,0.218,0.268"
+  ],
+  "images": {
+    "baselineBeforeFailedApply": "r3-albedo-linear-control.png",
+    "overexposedRejected": "r3-albedo-linear-control-applied.png",
+    "vectorSetterAlsoRejected": "r3-albedo-vector-control.png",
+    "gammaScaledComparisonOnly": "r3-albedo-gamma-scaled-control.png"
+  },
+  "conclusion": "Probes are present; rawHDR multiplier is not an acceptable color-space correction. R4 needs explicit authoring-space maps and new native inspection.",
+  "temporaryMaterialsRemoved": 4,
+  "visualAccepted": false
+}

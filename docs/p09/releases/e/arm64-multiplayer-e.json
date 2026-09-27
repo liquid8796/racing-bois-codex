@@ -1,0 +1,137 @@
+{
+  "generatedUtc": "2026-09-26T21:40:24.9380906+00:00",
+  "passed": 32,
+  "failed": 0,
+  "durationMilliseconds": 17197.5568,
+  "tests": [
+    {
+      "name": "p07_private_rooms_are_unlisted_but_joinable_with_invite",
+      "status": "PASS"
+    },
+    {
+      "name": "p08_invalid_content_and_locked_campaign_rejected_by_authority",
+      "status": "PASS"
+    },
+    {
+      "name": "p07_account_revocation_fences_live_socket_and_resume",
+      "status": "PASS"
+    },
+    {
+      "name": "p07_one_profile_cannot_reserve_two_races_or_mutate_racing_garage",
+      "status": "PASS"
+    },
+    {
+      "name": "p07_start_rechecks_equipped_condition_after_async_reservation",
+      "status": "PASS"
+    },
+    {
+      "name": "p08_every_route_and_equipped_bike_character_reach_authoritative_checkpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "previous_multiplayer_protocols_fail_closed_without_profile_allocation",
+      "status": "PASS"
+    },
+    {
+      "name": "lobby_capacity_ready_countdown_and_late_join_policy",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate_commands_do_not_duplicate_rooms_or_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "host_leave_transfers_role_and_cancels_countdown",
+      "status": "PASS"
+    },
+    {
+      "name": "resume_preserves_slot_fences_old_connection_and_reacquires_empty_host",
+      "status": "PASS"
+    },
+    {
+      "name": "lost_initial_welcome_nonce_is_idempotent_and_bound_to_intent",
+      "status": "PASS"
+    },
+    {
+      "name": "resume_requires_bearer_and_matching_profile_owner",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid_initial_ack_cannot_allocate_profile_and_revoked_nonce_cannot_bootstrap_again",
+      "status": "PASS"
+    },
+    {
+      "name": "hello_nonce_tombstones_are_bounded_under_connection_churn",
+      "status": "PASS"
+    },
+    {
+      "name": "goodbye_ack_revokes_lease_immediately",
+      "status": "PASS"
+    },
+    {
+      "name": "exact_tick_inputs_ack_only_processed_frames_and_preserve_short_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "input_missing_holds_analog_six_ticks_without_replaying_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "disconnect_grace_expires_without_duplicate_result_and_host_continues",
+      "status": "PASS"
+    },
+    {
+      "name": "reliable_replay_is_contiguous_and_slow_reader_resets_full_state",
+      "status": "PASS"
+    },
+    {
+      "name": "realm_hashes_capability_atomic_restart_and_compacts_without_double_credit",
+      "status": "PASS"
+    },
+    {
+      "name": "realm_exclusive_writer_prevents_second_host_abandoning_live_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "countdown_cancel_disk_failure_blocks_restart_and_recovers_without_starting_race",
+      "status": "PASS"
+    },
+    {
+      "name": "result_disk_failure_withholds_success_and_retries_exactly_once",
+      "status": "PASS"
+    },
+    {
+      "name": "strict_v3_wire_rejects_duplicates_missing_and_state_claims",
+      "status": "PASS"
+    },
+    {
+      "name": "peer_mailbox_bounds_reliable_lane_and_services_latest_snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "profile_data_cannot_be_served_from_public_webroot",
+      "status": "PASS"
+    },
+    {
+      "name": "blocked_result_commit_does_not_block_second_race_ticks",
+      "status": "PASS"
+    },
+    {
+      "name": "pending_profile_write_retries_nonce_without_duplicate_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "pending_handshake_rejects_second_identity_on_same_connection",
+      "status": "PASS"
+    },
+    {
+      "name": "old_epoch_storage_completion_cannot_remove_or_fail_new_pending_request",
+      "status": "PASS"
+    },
+    {
+      "name": "fractional_tick_clock_has_no_timer_rounding_drift_and_bounds_catchup",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Real v3 room/session/timeline/realm code with a synthetic clock, actual strict host codec and mailbox. Live socket/browser/impairment reports are separate."
+}

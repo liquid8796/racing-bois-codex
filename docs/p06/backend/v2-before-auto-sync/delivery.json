@@ -1,0 +1,176 @@
+{
+  "generatedUtc": "2026-09-21T17:25:12.166649+00:00",
+  "status": "PASS_PACKAGING_ARM_NATIVE_AND_EXTERNAL_LAN_UNVERIFIED",
+  "runtimeCodeCommit": "6a8ce24",
+  "release": "0.6.0",
+  "nativeSourceUnchangedSinceP05": true,
+  "nativeSourceBaselineCommit": "94be01e",
+  "nativeSourceBaselineEvidence": "docs/p05/backend/final-verification.json",
+  "webRoot": "Build/Web-p06-v2",
+  "compression": "gzip",
+  "webBytes": 21532738,
+  "webFiles": [
+    {
+      "path": "Build/2ba8370b11067bcb254399ae6234ac68.data.gz",
+      "bytes": 10300799,
+      "sha256": "0ed9d6e3342c4e0a9687de6fe4530091f257b00efa8d0c990ca9df4a29c32ee9"
+    },
+    {
+      "path": "Build/61300405e5761dadd186b9ab6d83bf1f.loader.js",
+      "bytes": 27222,
+      "sha256": "fab7d36022b3886f6cc53c7832d7fc80017de1a5b8725f49cdf3badd00666d97"
+    },
+    {
+      "path": "Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+      "bytes": 75274,
+      "sha256": "fc09a2a606a5f686bd0e6bd9028b64d571f3395b85489777c439debc466a6186"
+    },
+    {
+      "path": "Build/e8ee6e7ac2847c01f0d75f830d6f269a.wasm.gz",
+      "bytes": 11126206,
+      "sha256": "ff6ee91f79f262f160fdaf325589fc2241ba635b54a43acc91c54c4a44e971db"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3237,
+      "sha256": "61b83d8dd52476ff91966bad1203d9641511c93f68dc9845894307906c5f92ed"
+    }
+  ],
+  "webPayloadMatchedInBothPackages": true,
+  "privateDataBundled": false,
+  "windows": {
+    "directory": "Build/LanHost/win-x64-p06-6a8ce24",
+    "selfContained": true,
+    "nativeSelfTest": {
+      "status": "PASS",
+      "architecture": "X64",
+      "framework": ".NET 10.0.9",
+      "ticks": 300,
+      "distanceMillimeters": 150500,
+      "speedMillimetersPerSecond": 60000,
+      "protocolRoundtrip": 1,
+      "raceProtocolRoundtrip": 2,
+      "raceTick": 300,
+      "raceDistanceMillimeters": 105251,
+      "multiplayerProtocolRoundtrip": 3,
+      "exactTickInputSmoke": true,
+      "scope": "No listener, database or filesystem writes; P02 golden, P03/P04 authority and P05 strict JSON/exact-tick input smoke."
+    },
+    "immutableFilesValidated": 368,
+    "archive": {
+      "path": "Build/Packages/RacingBois-P06-win-x64-6a8ce24.zip",
+      "bytes": 69528848,
+      "sha256": "aafa3d9dabddeee7eef6582a54f1a9253c6cec53243f6afc96da934fdff47e59"
+    },
+    "allArchiveFilesVerified": true,
+    "manifest": {
+      "path": "Build/LanHost/win-x64-p06-6a8ce24/package-manifest.json",
+      "bytes": 64207,
+      "sha256": "30d0d6c583aa671c3b33f3940632c988755ba1e5252d08cbe62650654448e3d4"
+    },
+    "offlineQrHelper": "Bundled Windows PowerShell + vendored MIT JavaScript"
+  },
+  "linuxArm64": {
+    "directory": "Build/LanHost/linux-arm64-p06-6a8ce24",
+    "selfContained": true,
+    "elfArchitecture": "ELF64 little-endian AArch64 (183)",
+    "nativeSelfTest": {
+      "status": "NOT_RUN",
+      "reason": "Windows x64 host; no native ARM or OCI execution performed."
+    },
+    "archive": {
+      "path": "Build/Packages/RacingBois-P06-linux-arm64-6a8ce24.tar.gz",
+      "bytes": 66268229,
+      "sha256": "dfb8216445c67ff6bdc61982808d43b6fd4094840c0028512838e2552b2c359d"
+    },
+    "allArchiveFilesVerified": true,
+    "executablePermissionsVerified": true,
+    "manifest": {
+      "path": "Build/LanHost/linux-arm64-p06-6a8ce24/package-manifest.json",
+      "bytes": 61898,
+      "sha256": "c91f30278a6f6c714a84332daddbd21b09213566cf542adb39eaa41ea98e076d"
+    },
+    "launcher": "POSIX local/LAN shell scripts with explicit persistent data path; Windows QR helper is not claimed for Linux"
+  },
+  "demo": {
+    "url": "https://localhost:7778/",
+    "multiplayerEndpoint": "wss://localhost:7778/multiplayer",
+    "pid": 27208,
+    "exe": "Build/LanHost/win-x64-p06-6a8ce24/RacingBois.Server.Host.exe",
+    "startTimeUtc": "2026-09-21T17:23:54.8705862Z",
+    "webRoot": "Build/LanHost/win-x64-p06-6a8ce24/web",
+    "privateDataRoot": "_local/p05-main-data",
+    "bind": "loopback only",
+    "health": {
+      "protocolVersion": 3,
+      "serviceTick": 4250,
+      "roomCount": 0,
+      "sessionCount": 0,
+      "realmId": "baaf3dec44f646888148fdf0fb818a25",
+      "profilePersistence": true,
+      "rejectedCommands": 0,
+      "slowTicks": 0,
+      "persistenceFailures": 0,
+      "droppedCatchupTicks": 0,
+      "maximumStepMilliseconds": 4.3564
+    }
+  },
+  "httpHeaders": [
+    {
+      "url": "http://127.0.0.1:7777/Build/2ba8370b11067bcb254399ae6234ac68.data.gz",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "contentEncoding": "gzip",
+      "contentLength": 10300799,
+      "certificateValidation": "N/A - plaintext HTTP",
+      "method": "HEAD without automatic decompression"
+    },
+    {
+      "url": "https://localhost:7778/Build/2ba8370b11067bcb254399ae6234ac68.data.gz",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "contentEncoding": "gzip",
+      "contentLength": 10300799,
+      "certificateValidation": "Normal OS trust; no bypass",
+      "method": "HEAD without automatic decompression"
+    },
+    {
+      "url": "http://127.0.0.1:7777/Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+      "status": 200,
+      "contentType": "text/javascript",
+      "contentEncoding": "gzip",
+      "contentLength": 75274,
+      "certificateValidation": "N/A - plaintext HTTP",
+      "method": "HEAD without automatic decompression"
+    },
+    {
+      "url": "https://localhost:7778/Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+      "status": 200,
+      "contentType": "text/javascript",
+      "contentEncoding": "gzip",
+      "contentLength": 75274,
+      "certificateValidation": "Normal OS trust; no bypass",
+      "method": "HEAD without automatic decompression"
+    },
+    {
+      "url": "http://127.0.0.1:7777/Build/e8ee6e7ac2847c01f0d75f830d6f269a.wasm.gz",
+      "status": 200,
+      "contentType": "application/wasm",
+      "contentEncoding": "gzip",
+      "contentLength": 11126206,
+      "certificateValidation": "N/A - plaintext HTTP",
+      "method": "HEAD without automatic decompression"
+    },
+    {
+      "url": "https://localhost:7778/Build/e8ee6e7ac2847c01f0d75f830d6f269a.wasm.gz",
+      "status": 200,
+      "contentType": "application/wasm",
+      "contentEncoding": "gzip",
+      "contentLength": 11126206,
+      "certificateValidation": "Normal OS trust; no bypass",
+      "method": "HEAD without automatic decompression"
+    }
+  ],
+  "noOciOrFirewallChanges": true,
+  "limitations": "Packaging, self-contained Windows smoke, live HTTP/HTTPS headers and normal TLS trust verified. Browser gameplay is recorded separately. Two physical LAN machines with WAN off/cold caches, different Internet networks and native ARM64 execution remain unverified."
+}

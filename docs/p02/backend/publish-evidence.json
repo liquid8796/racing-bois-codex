@@ -1,0 +1,96 @@
+{
+  "generatedUtc": "2026-09-20T20:18:11.7127331+00:00",
+  "windowsSelfTest": {
+    "status": "PASS",
+    "architecture": "X64",
+    "framework": ".NET 10.0.9",
+    "ticks": 300,
+    "distanceMillimeters": 150500,
+    "speedMillimetersPerSecond": 60000,
+    "protocolRoundtrip": 1,
+    "scope": "No listener, database or filesystem writes; native replay and JSON contract smoke only."
+  },
+  "outputs": [
+    {
+      "runtime": "win-x64",
+      "relativePath": "Build/LanHost/win-x64-9065930",
+      "files": 353,
+      "bytes": 120288651.0,
+      "executableSha256": "A87850CBB702049137AED1F00687CC9E0A291C76066FCC3E459434356B6226E6",
+      "hostDllSha256": "FBB4609BA2E0C335D3263AF4435E2E08054CB731BBF1171C69C7CE83CE916F4D",
+      "applicationDllSha256": "F80CB208DB9EF98811E0255AF6BC4CDBDB78424D8C8BEEEDEB7FCB53A79E6884",
+      "selfContained": true,
+      "includesUnityWeb": true,
+      "excludesDoNotShip": true,
+      "webFiles": [
+        {
+          "path": "Build/241e0db54c3d2236f80b5b0090ce5dce.framework.js.br",
+          "bytes": 65878,
+          "sha256": "6F9F905ADB54C734864AD0B908F708B2A73ADE653393CCF332F398262D6A0D95"
+        },
+        {
+          "path": "Build/5bac7fd5acb313d04141b565429ca884.loader.js",
+          "bytes": 27222,
+          "sha256": "C578D7CB308BE854B33EA338071160988F44AE6474F5CDD9EC8B50F9AF556AF7"
+        },
+        {
+          "path": "Build/df0eb4928968cb0546e958fe8949da0c.wasm.br",
+          "bytes": 7480594,
+          "sha256": "1F61FD16250313E3BB42D87225582408ECC6288D166391464ECBCCB45E190B5D"
+        },
+        {
+          "path": "Build/e1459954fc3c433803b129b53b7de405.data.br",
+          "bytes": 2486917,
+          "sha256": "F0708B9D4646236E4C428147FF088267C7C62C391E3DCB4EA459C5F07414338D"
+        },
+        {
+          "path": "index.html",
+          "bytes": 3218,
+          "sha256": "96EC2CE6EB16515FA75940F34F3C8E6A8E01D7586650E7219B87D15B6F085DF3"
+        }
+      ],
+      "execution": "PASS local selftest"
+    },
+    {
+      "runtime": "linux-arm64",
+      "relativePath": "Build/LanHost/linux-arm64-9065930",
+      "files": 350,
+      "bytes": 128889525.0,
+      "executableSha256": "CC900591C3672532541983584C7A3AC4E9BC15CB7814B92B71FD17ADE8ABBA77",
+      "hostDllSha256": "C232CEFF86BCA38F8463FA1FAC5C879CFE5DBFAC37647DA8168D133E309FE020",
+      "applicationDllSha256": "F80CB208DB9EF98811E0255AF6BC4CDBDB78424D8C8BEEEDEB7FCB53A79E6884",
+      "selfContained": true,
+      "includesUnityWeb": true,
+      "excludesDoNotShip": true,
+      "webFiles": [
+        {
+          "path": "Build/241e0db54c3d2236f80b5b0090ce5dce.framework.js.br",
+          "bytes": 65878,
+          "sha256": "6F9F905ADB54C734864AD0B908F708B2A73ADE653393CCF332F398262D6A0D95"
+        },
+        {
+          "path": "Build/5bac7fd5acb313d04141b565429ca884.loader.js",
+          "bytes": 27222,
+          "sha256": "C578D7CB308BE854B33EA338071160988F44AE6474F5CDD9EC8B50F9AF556AF7"
+        },
+        {
+          "path": "Build/df0eb4928968cb0546e958fe8949da0c.wasm.br",
+          "bytes": 7480594,
+          "sha256": "1F61FD16250313E3BB42D87225582408ECC6288D166391464ECBCCB45E190B5D"
+        },
+        {
+          "path": "Build/e1459954fc3c433803b129b53b7de405.data.br",
+          "bytes": 2486917,
+          "sha256": "F0708B9D4646236E4C428147FF088267C7C62C391E3DCB4EA459C5F07414338D"
+        },
+        {
+          "path": "index.html",
+          "bytes": 3218,
+          "sha256": "96EC2CE6EB16515FA75940F34F3C8E6A8E01D7586650E7219B87D15B6F085DF3"
+        }
+      ],
+      "execution": "PUBLISHED; current remote execution tracked separately by parent task"
+    }
+  ],
+  "scope": "Self-contained native runtime and deployable Unity Web payload snapshots. These hashes identify this publish; WAN-disabled two-machine LAN acceptance is still separate."
+}

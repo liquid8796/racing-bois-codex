@@ -1,0 +1,21 @@
+    def test_source_snapshot_mutation_rejected(self):
+        names = set(UNITY_DEPENDENCY_ROOTS) | SOURCE_SETTINGS | {"Assets/RacingBois/Client/Fixture.cs"}
+        rows = []
+        for name in names:
+            path = self.root / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(b'{"dependencies":{}}' if name == "Packages/packages-lock.json" else b"source fixture: " + name.encode())
+            rows.append({"path": name, "bytes": path.stat().st_size, "sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
+        rows.sort(key=lambda row: row["path"])
+        dependencies = [dict(row, assetPath=row["path"]) for row in rows if row["path"] in UNITY_DEPENDENCY_ROOTS]
+        aggregate = lambda records: hashlib.sha256("\n".join(row["path"] + " " + row["sha256"] for row in records).encode()).hexdigest()
+        receipt = {"sourceFiles": rows, "sourceFingerprint": aggregate(rows), "unityDependencySchema": 2,
+                   "unityVersion": "6000.5.7f1", "unityDependencyRoots": UNITY_DEPENDENCY_ROOTS,
+                   "unityDependencies": dependencies, "unityPackages": [], "unityBuiltInDependencies": []}
+        receipt["unityDependencyFingerprint"] = dependency_fingerprint(receipt)
+        with patch("audit_desktop.PROJECT", self.root):
+            audit_sources(receipt)
+            receipt["sourceFiles"][-1]["sha256"] = "b" * 64
+            with self.assertRaises(ValueError):
+                audit_sources(receipt)
+

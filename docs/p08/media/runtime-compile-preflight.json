@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "unityReferenceVersion": "6000.5.7f1",
+  "sourceFiles": [
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08MusicDirector.cs",
+      "sha256": "6c33b98b29de659f9ad7ba2b0b66521157455937c08e9b2f17fd0dda1d5c3646"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CinematicCatalog.cs",
+      "sha256": "e534604f6b754ac4da22906b8d6f6a72185cb982f6dfd47afc797f5296e50b5d"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/BootstrapCinematicCoordinator.cs",
+      "sha256": "577ef302e5db6de0ff27ed5fe18d1dfddd4738ea7e911872c8d36872cf39ad0a"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "sha256": "1fe326399886f4519be5f068c8eb918b399c69af4d2a2a7cc274f0dc733200c1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicDirector.cs",
+      "sha256": "abc9c84fdec3f8bbb10d15ee32679a287f504adaa12ceadc9c1afdde79bc4dc4"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicGalleryView.cs",
+      "sha256": "7fdd3554b0f2442563677aceeddcee5a9ad939c0ca220a7d63b32082be0e05e2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicPoseSampler.cs",
+      "sha256": "7870c9199b1abff11172d1bc9bd969e7ae567f12a59e873690aea2990bc98eee"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicValidationHarness.cs",
+      "sha256": "5ebf08a3dbcdc2f9da60ab5ea023ea99bae8657573bf27869c2d95924298b37c"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+      "sha256": "097cb36f0dc8052d33903a0fb06f13f81eead89bccb531a985b627781963a8ce"
+    },
+    {
+      "path": "Assets/RacingBois/Plugins/WebGL/RacingBoisMusic.jslib",
+      "sha256": "3fe26d593ea241fe5e028c90c6b2a01986df3d6037b01a9ec1cc3334860af2cf"
+    },
+    {
+      "path": "Assets/RacingBois/UI/Career.uss",
+      "sha256": "2a6b944a011343e27f1408fa481c147b7b1fc9bed856a687ad114991cf40c31b"
+    },
+    {
+      "path": "Assets/RacingBois/UI/Race.uxml",
+      "sha256": "727ac4bf179f268953baae24fe905075a69d7781a3e46a76639196a735030250"
+    }
+  ],
+  "compilations": [
+    {
+      "define": "UNITY_EDITOR",
+      "passed": true,
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  RuntimeCompile -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\RuntimeCompile\\bin\\Debug\\netstandard2.1\\RacingBois.P08.Media.Preflight.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:01.03\n"
+    },
+    {
+      "define": "UNITY_WEBGL",
+      "passed": true,
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  RuntimeCompile -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\media\\RuntimeCompile\\bin\\Debug\\netstandard2.1\\RacingBois.P08.Media.Preflight.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:01.02\n"
+    }
+  ],
+  "scope": "Roslyn preflight against installed Unity Engine modules and current project assemblies for Editor and WebGL conditional branches. This is not a Unity import, IL2CPP build, Play mode, browser or visual acceptance receipt."
+}

@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"p08-before-coast.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx'\nexport finished in 0.0156 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx'\nexport finished in 0.0178 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx'\nexport finished in 0.0096 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx'\nexport finished in 0.0127 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx'\nexport finished in 0.0079 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx'\nexport finished in 0.0085 sec.\nInfo: Saved as \"RB_P08_coast.blend\"\n{\"batch\": \"coast\", \"assets\": [{\"name\": \"RB_P08_CoastPalm\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"foliage\", \"primitiveCollider\": false, \"lods\": [{\"level\": 0, \"triangles\": 6704, \"renderers\": 1}, {\"level\": 1, \"triangles\": 3352, \"renderers\": 1}, {\"level\": 2, \"triangles\": 1032, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastSurfShack\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"scenery\", \"primitiveCollider\": true, \"lods\": [{\"level\": 0, \"triangles\": 6664, \"renderers\": 1}, {\"level\": 1, \"triangles\": 3332, \"renderers\": 1}, {\"level\": 2, \"triangles\": 1332, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBeacon\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"scenery\", \"primitiveCollider\": true, \"lods\": [{\"level\": 0, \"triangles\": 1768, \"renderers\": 1}, {\"level\": 1, \"triangles\": 884, \"renderers\": 1}, {\"level\": 2, \"triangles\": 326, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBridgePier\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"landmark\", \"primitiveCollider\": false, \"lods\": [{\"level\": 0, \"triangles\": 2256, \"renderers\": 1}, {\"level\": 1, \"triangles\": 1128, \"renderers\": 1}, {\"level\": 2, \"triangles\": 450, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBoulder\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"scenery\", \"primitiveCollider\": true, \"lods\": [{\"level\": 0, \"triangles\": 640, \"renderers\": 1}, {\"level\": 1, \"triangles\": 320, \"renderers\": 1}, {\"level\": 2, \"triangles\": 128, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBroadleafShrub\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"foliage\", \"primitiveCollider\": false, \"lods\": [{\"level\": 0, \"triangles\": 1056, \"renderers\": 1}, {\"level\": 1, \"triangles\": 528, \"renderers\": 1}, {\"level\": 2, \"triangles\": 196, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}], \"source\": \"D:/Project/Unity/racing-bois/ArtSource/P08/RB_P08_coast.blend\", \"conceptFirst\": true}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"p08-before-coast.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx'\nexport finished in 0.0156 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx'\nexport finished in 0.0178 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx'\nexport finished in 0.0096 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx'\nexport finished in 0.0127 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx'\nexport finished in 0.0079 sec.\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx'\nexport finished in 0.0085 sec.\nInfo: Saved as \"RB_P08_coast.blend\"\n{\"batch\": \"coast\", \"assets\": [{\"name\": \"RB_P08_CoastPalm\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"foliage\", \"primitiveCollider\": false, \"lods\": [{\"level\": 0, \"triangles\": 6704, \"renderers\": 1}, {\"level\": 1, \"triangles\": 3352, \"renderers\": 1}, {\"level\": 2, \"triangles\": 1032, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastSurfShack\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"scenery\", \"primitiveCollider\": true, \"lods\": [{\"level\": 0, \"triangles\": 6664, \"renderers\": 1}, {\"level\": 1, \"triangles\": 3332, \"renderers\": 1}, {\"level\": 2, \"triangles\": 1332, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBeacon\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"scenery\", \"primitiveCollider\": true, \"lods\": [{\"level\": 0, \"triangles\": 1768, \"renderers\": 1}, {\"level\": 1, \"triangles\": 884, \"renderers\": 1}, {\"level\": 2, \"triangles\": 326, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBridgePier\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"landmark\", \"primitiveCollider\": false, \"lods\": [{\"level\": 0, \"triangles\": 2256, \"renderers\": 1}, {\"level\": 1, \"triangles\": 1128, \"renderers\": 1}, {\"level\": 2, \"triangles\": 450, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBoulder\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"scenery\", \"primitiveCollider\": true, \"lods\": [{\"level\": 0, \"triangles\": 640, \"renderers\": 1}, {\"level\": 1, \"triangles\": 320, \"renderers\": 1}, {\"level\": 2, \"triangles\": 128, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}, {\"name\": \"RB_P08_CoastBroadleafShrub\", \"concept\": \"ArtSource/Concepts/P08/Environments/coastal-line-v1.png\", \"source\": \"ArtSource/P08/RB_P08_coast.blend\", \"fbx\": \"Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx\", \"surface\": \"RB_P08_Coast_Atlas\", \"kind\": \"foliage\", \"primitiveCollider\": false, \"lods\": [{\"level\": 0, \"triangles\": 1056, \"renderers\": 1}, {\"level\": 1, \"triangles\": 528, \"renderers\": 1}, {\"level\": 2, \"triangles\": 196, \"renderers\": 1}], \"uvPolicy\": \"Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.\"}], \"source\": \"D:/Project/Unity/racing-bois/ArtSource/P08/RB_P08_coast.blend\", \"conceptFirst\": true}\n"
+    },
+    "isError": false
+  }
+}

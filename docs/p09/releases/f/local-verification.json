@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "releaseId": "p09-20260927-f",
+  "archiveSha256": "3eeae66746ba7de5293a3d76b833eb0c930dc3f09bd4388d3e08da2bf9d68ca9",
+  "verifiedFiles": 1986,
+  "sourceSha256": "194d60c159d8978a8520d17df1c900cae09e2614d4b1f620c89b9a5bbcf54c24",
+  "testSourceSha256": "f6b89fb632c793ae0446d129da302f195b88780799117f7c80061853b65babd6",
+  "armEntryPoints": [
+    {
+      "path": "server/RacingBois.Server.Host",
+      "format": "ELF64 little-endian AArch64",
+      "sha256": "cc900591c3672532541983584c7a3ac4e9bc15cb7814b92b71fd17ade8abba77"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Persistence.Tests",
+      "format": "ELF64 little-endian AArch64",
+      "sha256": "00824c73d3ff781475f5c6293e6bdc712d06e675a31e318702647abf8b82d1ea"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Multiplayer.Integration.Tests",
+      "format": "ELF64 little-endian AArch64",
+      "sha256": "49fb77a5db535cf77606c1ce31d79b9bf4798cc3823770e7943e637c93a0ae39"
+    },
+    {
+      "path": "tests/gameplay/RacingBois.Gameplay.Tests",
+      "format": "ELF64 little-endian AArch64",
+      "sha256": "441b0cf21e0f1277bfed2e9457d92bbb68518d707555039bd15e9add0d10db30"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Prediction.Tests",
+      "format": "ELF64 little-endian AArch64",
+      "sha256": "19bd3865d7f521885974e62ee32232b5f125f8a271f97a29c2496e70a9a65a8c"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.PredictionProjection.Tests",
+      "format": "ELF64 little-endian AArch64",
+      "sha256": "ac4a876ace5e00a153e97138d8090294a696125c2488896e02281d6fa1334528"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.P05Client.Tests",
+      "format": "ELF64 little-endian AArch64",
+      "sha256": "8e5d0057a107fda32a3bf88eea7e6b42b0f6a3bfbbd585c921f868a5eab4adc6"
+    }
+  ],
+  "scope": "Local immutable archive/source/file hashes and ARM64 format only. No upload, remote execution or activation."
+}

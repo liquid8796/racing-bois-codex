@@ -1,0 +1,112 @@
+{
+  "generatedUtc": "2026-09-20T18:23:16.3055451+00:00",
+  "endpoint": "ws://127.0.0.1:17877/ws",
+  "status": "PASS",
+  "failure": null,
+  "scope": "Eight native ClientWebSocket synthetic peers on loopback; application-layer scheduling/drop. NOT TCP packet loss, router emulation, real WAN, Unity browser throughput, or head-of-line blocking measurement. WSS uses normal certificate validation when endpoint is wss.",
+  "tickRate": 60,
+  "inputRate": 30,
+  "snapshotRate": 20,
+  "checks": [
+    {
+      "name": "version_mismatch_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "not_owner_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "input_out_of_range_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid_sequence_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_fields_closed",
+      "status": "PASS"
+    },
+    {
+      "name": "ninth_peer_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "ninth_peer_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "ninth_peer_rejected",
+      "status": "PASS"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "loopback",
+      "syntheticPeers": 8,
+      "durationSeconds": 7,
+      "nominalApplicationRttMilliseconds": 0,
+      "applicationJitterMillisecondsPerDirection": 0,
+      "applicationMessageDropProbabilityPerDirection": 0,
+      "acceptedInputObservations": 1168,
+      "ackLatencyMilliseconds": {
+        "p50": 46.59,
+        "p95": 63.25,
+        "maximum": 64.21820000000002
+      },
+      "maximumPresentedSnapshotGapMilliseconds": 77.76279999999997,
+      "snapshotsPresented": 1180,
+      "inputsDroppedBeforeSend": 0,
+      "snapshotsDroppedAfterReceive": 0,
+      "allPeersObservedEightEntities": true,
+      "snapshotsMonotonic": true,
+      "allPeersAdvanced": true,
+      "status": "PASS"
+    },
+    {
+      "scenario": "rtt150_jitter20_drop2pct",
+      "syntheticPeers": 8,
+      "durationSeconds": 7,
+      "nominalApplicationRttMilliseconds": 150,
+      "applicationJitterMillisecondsPerDirection": 20,
+      "applicationMessageDropProbabilityPerDirection": 0.02,
+      "acceptedInputObservations": 960,
+      "ackLatencyMilliseconds": {
+        "p50": 188.66,
+        "p95": 220.66,
+        "maximum": 249.1289999999999
+      },
+      "maximumPresentedSnapshotGapMilliseconds": 124.58550000000014,
+      "snapshotsPresented": 1147,
+      "inputsDroppedBeforeSend": 30,
+      "snapshotsDroppedAfterReceive": 20,
+      "allPeersObservedEightEntities": true,
+      "snapshotsMonotonic": true,
+      "allPeersAdvanced": true,
+      "status": "PASS"
+    },
+    {
+      "scenario": "rtt250_jitter40_drop5pct",
+      "syntheticPeers": 8,
+      "durationSeconds": 7,
+      "nominalApplicationRttMilliseconds": 250,
+      "applicationJitterMillisecondsPerDirection": 40,
+      "applicationMessageDropProbabilityPerDirection": 0.05,
+      "acceptedInputObservations": 759,
+      "ackLatencyMilliseconds": {
+        "p50": 293.48,
+        "p95": 343.9,
+        "maximum": 418.8251
+      },
+      "maximumPresentedSnapshotGapMilliseconds": 189.29579999999987,
+      "snapshotsPresented": 1108,
+      "inputsDroppedBeforeSend": 71,
+      "snapshotsDroppedAfterReceive": 53,
+      "allPeersObservedEightEntities": true,
+      "snapshotsMonotonic": true,
+      "allPeersAdvanced": true,
+      "status": "PASS"
+    }
+  ]
+}

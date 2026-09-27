@@ -1,0 +1,164 @@
+{
+  "status": "PASS_BLENDER_SOURCE_GEOMETRY_UV_TEXTURE_CHECKS",
+  "inspection_transport": "MCP initialize + tools/call execute_blender_code -> Blender addon127.0.0.1:9876",
+  "blender_version": "5.2.1 LTS",
+  "protocol": "2025-11-25",
+  "meshes": [
+    {
+      "mesh": "RB_Barrier_LOD0",
+      "triangles": 252,
+      "uv_islands": 6,
+      "status": "PASS",
+      "issues": [],
+      "aabb_dimension_error_max_m": 2.384185793236071e-08
+    },
+    {
+      "mesh": "RB_Barrier_LOD1",
+      "triangles": 126,
+      "uv_islands": 6,
+      "status": "PASS",
+      "issues": [],
+      "aabb_dimension_error_max_m": 0.002654099464416526
+    },
+    {
+      "mesh": "RB_Barrier_LOD2",
+      "triangles": 50,
+      "uv_islands": 6,
+      "status": "PASS",
+      "issues": [],
+      "aabb_dimension_error_max_m": 0.006947591304779066
+    }
+  ],
+  "textures": [
+    {
+      "file": "RB_Barrier_BaseColor.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "extrema": [
+        [
+          0,
+          231
+        ],
+        [
+          0,
+          230
+        ],
+        [
+          0,
+          217
+        ]
+      ]
+    },
+    {
+      "file": "RB_Barrier_Normal.png",
+      "size": [
+        128,
+        128
+      ],
+      "mode": "RGB",
+      "extrema": [
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          255,
+          255
+        ]
+      ]
+    },
+    {
+      "file": "RB_Barrier_MetallicSmoothness.png",
+      "size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "extrema": [
+        [
+          0,
+          0
+        ],
+        [
+          255,
+          255
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          97,
+          97
+        ]
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "Assets/RacingBois/Art/Props/Barrier/RB_RoadBarrier.fbx",
+      "bytes": 34780,
+      "sha256": "8b2d31460d00d94b3e52ab6c43147092215e9a35ca2d5c439f6e90cdbd30ccc4",
+      "matches_original_file_hash": false
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Barrier/RB_Barrier_BaseColor.png",
+      "bytes": 26074,
+      "sha256": "bf3e2313341bccf8f736fa92e99123a85fbaa747ee48a7b4dee2566110e66a4f",
+      "matches_original_file_hash": false
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Barrier/RB_Barrier_Normal.png",
+      "bytes": 670,
+      "sha256": "af4c6e18b54f92df66823d6224f731e32a2bb4c05a6516dbe6ae3e9f54bd39ce",
+      "matches_original_file_hash": false
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Barrier/RB_Barrier_MetallicSmoothness.png",
+      "bytes": 710,
+      "sha256": "64a52961d0ac51450c83b3342d8e721fbcbbee669c5e16efc9054d50c1b51558",
+      "matches_original_file_hash": false
+    },
+    {
+      "path": "ArtSource/Props/RB_RoadBarrier.blend",
+      "bytes": 111739,
+      "sha256": "abcfb6accadda95567412dd7e9b872c042803e689bfb50df547c2bfebfe74934",
+      "matches_original_file_hash": false
+    },
+    {
+      "path": "ArtSource/Props/RB_Barrier_Roughness.png",
+      "bytes": 671,
+      "sha256": "df27970753306feb68c478b95b3ef195c4cc6785a48ea95ff9eac018036aeaea",
+      "matches_original_file_hash": false
+    }
+  ],
+  "failed_checks": [],
+  "provenance": {
+    "recipe": "tools/blender/create_barrier.py",
+    "recipe_sha256": "f8cc68253b128a4cc97455833d999535d9d8ba8dca07c5a1d143c7ca230b0ba6",
+    "original_import_calls_found": false,
+    "observed_generation": "Explicit profile vertices, bevel, UV Smart Project, procedural stripe bake, decimated LOD copies",
+    "hash_limit": "A different hash alone does not prove newly authored content; recipe and source inspection provide the additional evidence."
+  },
+  "screenshot_reference": "docs/p02/blender/barrier-render.png",
+  "delegated_to_unity_qa": [
+    "Y-up axis conversion and final mesh dimensions",
+    "URP shader/map assignment and texture compression",
+    "LODGroup thresholds and prefab references",
+    "Collider policy and baked-lightmap UV2 if used",
+    "Gameplay-distance/browser frame-time and memory check"
+  ],
+  "limits": [
+    "UV overlap checked within each LOD; cross-LOD atlas sharing is intentional.",
+    "Neutral normal and constant roughness/mask maps are deliberate for this foundation prop; not a claim of final art polish.",
+    "LOD1/2 slightly shrink with decimation; max AABB difference under7mm. Review LOD switching at gameplay distance in Unity.",
+    "Only UV0 is present in Blender; lightmap UV2 remains Unity import responsibility if baked lighting is used."
+  ]
+}

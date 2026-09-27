@@ -1,0 +1,52 @@
+{
+  "generatedAtUtc": "2026-09-22T05:09:15.8188708+00:00",
+  "passed": false,
+  "failures": 1,
+  "tests": 1,
+  "executedTests": 1,
+  "skippedTests": 0,
+  "requests": 0,
+  "endpoints": {
+    "offlineHttps": "https://localhost:7878/",
+    "offlineHttp": "http://127.0.0.1:7877/",
+    "onlineHttps": "https://localhost:7978/",
+    "onlineHttp": "http://127.0.0.1:7977/"
+  },
+  "tls": "Ordinary OS certificate validation; no bypass or custom trust callback.",
+  "scope": "Real HTTP and ClientWebSocket loopback interactions on generated QA profiles. Not browser, physical LAN, WAN, restart or database failure-injection evidence.",
+  "sensitiveData": "No tokens, passwords, recovery codes, save envelopes, raw bodies or private database values are written by this probe.",
+  "publicProfiles": [],
+  "sourceFiles": [
+    {
+      "path": "src/Tests/RacingBois.Career.LiveProbe/Program.cs",
+      "sha256": "6a169f556deee4140fe6fee93c6609623fc7a5c02035ca4b899705652603280b"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Host/CareerEndpoint.cs",
+      "sha256": "b5da198ebcb0a7dece1cdf96f087dea0e6f69b4d9fc04795ed89c509cf3f1b6f"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Career/CareerService.cs",
+      "sha256": "fb888fd4aa5e5132015ef55e8e7d64e3c78faad08d2fdf8488db4c5483a0aeeb"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Multiplayer/RealmStore.cs",
+      "sha256": "3d74899ed8803efe756ed6237cc79a58db2ed515e0f9cbe19318b0941356f30b"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Multiplayer/MultiplayerService.cs",
+      "sha256": "0e015e251af8d4a6c4ec3e01eb657c7a33b121ba21d2436083a7de5020eb3bd7"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/CareerMessages.cs",
+      "sha256": "28bb32a1303083181f5b4dd539e679dccb2c02bf31de1ff0a9090c662d998656"
+    }
+  ],
+  "checks": [
+    {
+      "name": "persistent_profiles_created_over_real_trusted_wss",
+      "passed": false,
+      "error": "WebSocketException:ConnectionClosedPrematurely"
+    }
+  ]
+}

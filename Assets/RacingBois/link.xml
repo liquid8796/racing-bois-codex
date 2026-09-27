@@ -1,0 +1,6 @@
+<linker>
+  <!-- CreatePrimitive(Cylinder/Capsule) attaches this native type before the visual fixture removes its collider. -->
+  <assembly fullname="UnityEngine.PhysicsModule">
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+  </assembly>
+</linker>

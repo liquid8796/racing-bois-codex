@@ -1,0 +1,108 @@
+{
+  "generatedAtUtc": "2026-09-22T05:16:40.2302208+00:00",
+  "passed": true,
+  "failures": 0,
+  "tests": 11,
+  "executedTests": 11,
+  "skippedTests": 0,
+  "requests": 46,
+  "endpoints": {
+    "offlineHttps": "https://localhost:7878/",
+    "offlineHttp": "http://127.0.0.1:7877/",
+    "onlineHttps": "https://localhost:7978/",
+    "onlineHttp": "http://127.0.0.1:7977/"
+  },
+  "tls": "Ordinary OS certificate validation; no bypass or custom trust callback.",
+  "scope": "Real HTTP and ClientWebSocket loopback interactions on generated QA profiles. Not browser, physical LAN, WAN, restart or database failure-injection evidence.",
+  "sourceBinding": "Source hashes describe the checkout at probe time. Pair this report with the host publish/session receipt; these hashes alone do not identify the running executable\u0027s build.",
+  "sensitiveData": "No tokens, passwords, recovery codes, save envelopes, raw bodies or private database values are written by this probe.",
+  "publicProfiles": [
+    {
+      "role": "alpha",
+      "profileId": "8b0002a82c1f47a88ccf33b7839f9e15",
+      "realmId": "1a3380b04a94452294c4b73ce9019acb"
+    },
+    {
+      "role": "bravo",
+      "profileId": "2209c0657f704bfb93872c3e61d43f01",
+      "realmId": "1a3380b04a94452294c4b73ce9019acb"
+    },
+    {
+      "role": "online",
+      "profileId": "b44631ae61274e209742c6fdaa2193cb",
+      "realmId": "3375eb99fea0416b9315d53966a2de48"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "src/Tests/RacingBois.Career.LiveProbe/Program.cs",
+      "sha256": "e7e3984c5906a25ef0948cecc7cc580ad4ccb0dc7a60b5e5a06adb4ce65be8ca"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Host/CareerEndpoint.cs",
+      "sha256": "b5da198ebcb0a7dece1cdf96f087dea0e6f69b4d9fc04795ed89c509cf3f1b6f"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Career/CareerService.cs",
+      "sha256": "509f9be8e77ec55f19cbdd167439aa2b3c5660f9ea6e414af83713f6aa57ad00"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Multiplayer/RealmStore.cs",
+      "sha256": "8bafed2add48069ae63600515494ebca0f3c436fe8553b94a8c37fb4b33d89a3"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Multiplayer/MultiplayerService.cs",
+      "sha256": "aa0a6adee8977d8802bd64886cd66fd97944fb3bf802a54e67fa1de598854de6"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/CareerMessages.cs",
+      "sha256": "28bb32a1303083181f5b4dd539e679dccb2c02bf31de1ff0a9090c662d998656"
+    }
+  ],
+  "checks": [
+    {
+      "name": "persistent_profiles_created_over_real_trusted_wss",
+      "passed": true
+    },
+    {
+      "name": "view_has_exact_new_profile_balance_and_starter_inventory",
+      "passed": true
+    },
+    {
+      "name": "strict_http_schema_origin_and_credential_transport_rejection",
+      "passed": true
+    },
+    {
+      "name": "insufficient_buy_and_pristine_repair_cannot_debit_wallet",
+      "passed": true
+    },
+    {
+      "name": "concurrent_trade_has_one_atomic_debit_and_replay_is_idempotent",
+      "passed": true
+    },
+    {
+      "name": "equip_ownership_and_cross_profile_object_access_are_enforced",
+      "passed": true
+    },
+    {
+      "name": "register_and_login_preserve_profile_and_do_not_regrant_currency",
+      "passed": true
+    },
+    {
+      "name": "offline_signed_save_export_import_and_tamper_rejection",
+      "passed": true
+    },
+    {
+      "name": "recovery_rotates_recovery_code_and_revokes_old_sessions",
+      "passed": true
+    },
+    {
+      "name": "revoke_blocks_http_bearer_and_live_websocket_session",
+      "passed": true
+    },
+    {
+      "name": "online_realm_rejects_offline_save_import_and_foreign_bearers",
+      "passed": true
+    }
+  ]
+}

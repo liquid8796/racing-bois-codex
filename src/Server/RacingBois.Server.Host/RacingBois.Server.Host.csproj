@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../RacingBois.Server.Application/RacingBois.Server.Application.csproj" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../RacingBois.Server.Infrastructure/RacingBois.Server.Infrastructure.csproj" /></ItemGroup>
+</Project>

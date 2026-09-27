@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: \nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_Motorcycle.fbx'\nexport finished in 0.0158 sec.\nInfo: Saved as \"RB_Motorcycle.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Characters/RB_Rider.fbx'\nexport finished in 0.0323 sec.\nInfo: Saved as \"RB_Rider.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficCoupe.fbx'\nexport finished in 0.0128 sec.\nInfo: Saved as \"RB_TrafficCoupe.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficVan.fbx'\nexport finished in 0.0161 sec.\nInfo: Saved as \"RB_TrafficVan.blend\"\n{\"authorship\": \"Original procedural hard-surface modeling, no game assets loaded\", \"iteration\": \"Concept-guided revision after initial graybox\", \"concepts\": [\"motorcycle-concept-v1.png\", \"rider-concept-v1.png\", \"coupe-concept-v1.png\", \"van-concept-v1.png\"], \"blender_version\": \"5.2.1 LTS\", \"coordinate_contract\": \"meters; exported Unity Y-up Z-forward\", \"palette_uv_policy\": \"Intentional repeated palette tile sampling between parts; uniquely packed islands within each primitive\", \"textures\": {\"base\": 256, \"police_base\": 256, \"normal\": 256, \"metallic_smoothness\": 256, \"roughness\": 256}, \"assets\": [{\"name\": \"RB_Motorcycle\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_Motorcycle.fbx\", \"lods\": [{\"name\": \"RB_Moto_LOD0\", \"mesh_count\": 3, \"triangles\": 4192}, {\"name\": \"RB_Moto_LOD1\", \"mesh_count\": 3, \"triangles\": 2176}, {\"name\": \"RB_Moto_LOD2\", \"mesh_count\": 3, \"triangles\": 1290}], \"issues\": []}, {\"name\": \"RB_Rider\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Characters/RB_Rider.fbx\", \"lods\": [{\"name\": \"RB_Rider_LOD0\", \"mesh_count\": 11, \"triangles\": 3744}, {\"name\": \"RB_Rider_LOD1\", \"mesh_count\": 11, \"triangles\": 1872}, {\"name\": \"RB_Rider_LOD2\", \"mesh_count\": 11, \"triangles\": 892}], \"issues\": []}, {\"name\": \"RB_TrafficCoupe\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficCoupe.fbx\", \"lods\": [{\"name\": \"RB_TrafficCoupe_LOD0\", \"mesh_count\": 1, \"triangles\": 5656}, {\"name\": \"RB_TrafficCoupe_LOD1\", \"mesh_count\": 1, \"triangles\": 3064}, {\"name\": \"RB_TrafficCoupe_LOD2\", \"mesh_count\": 1, \"triangles\": 1466}], \"issues\": []}, {\"name\": \"RB_TrafficVan\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficVan.fbx\", \"lods\": [{\"name\": \"RB_TrafficVan_LOD0\", \"mesh_count\": 1, \"triangles\": 7080}, {\"name\": \"RB_TrafficVan_LOD1\", \"mesh_count\": 1, \"triangles\": 3758}, {\"name\": \"RB_TrafficVan_LOD2\", \"mesh_count\": 1, \"triangles\": 1700}], \"issues\": []}]}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: \nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_Motorcycle.fbx'\nexport finished in 0.0158 sec.\nInfo: Saved as \"RB_Motorcycle.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Characters/RB_Rider.fbx'\nexport finished in 0.0323 sec.\nInfo: Saved as \"RB_Rider.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficCoupe.fbx'\nexport finished in 0.0128 sec.\nInfo: Saved as \"RB_TrafficCoupe.blend\"\n\nFBX export starting... 'D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficVan.fbx'\nexport finished in 0.0161 sec.\nInfo: Saved as \"RB_TrafficVan.blend\"\n{\"authorship\": \"Original procedural hard-surface modeling, no game assets loaded\", \"iteration\": \"Concept-guided revision after initial graybox\", \"concepts\": [\"motorcycle-concept-v1.png\", \"rider-concept-v1.png\", \"coupe-concept-v1.png\", \"van-concept-v1.png\"], \"blender_version\": \"5.2.1 LTS\", \"coordinate_contract\": \"meters; exported Unity Y-up Z-forward\", \"palette_uv_policy\": \"Intentional repeated palette tile sampling between parts; uniquely packed islands within each primitive\", \"textures\": {\"base\": 256, \"police_base\": 256, \"normal\": 256, \"metallic_smoothness\": 256, \"roughness\": 256}, \"assets\": [{\"name\": \"RB_Motorcycle\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_Motorcycle.fbx\", \"lods\": [{\"name\": \"RB_Moto_LOD0\", \"mesh_count\": 3, \"triangles\": 4192}, {\"name\": \"RB_Moto_LOD1\", \"mesh_count\": 3, \"triangles\": 2176}, {\"name\": \"RB_Moto_LOD2\", \"mesh_count\": 3, \"triangles\": 1290}], \"issues\": []}, {\"name\": \"RB_Rider\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Characters/RB_Rider.fbx\", \"lods\": [{\"name\": \"RB_Rider_LOD0\", \"mesh_count\": 11, \"triangles\": 3744}, {\"name\": \"RB_Rider_LOD1\", \"mesh_count\": 11, \"triangles\": 1872}, {\"name\": \"RB_Rider_LOD2\", \"mesh_count\": 11, \"triangles\": 892}], \"issues\": []}, {\"name\": \"RB_TrafficCoupe\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficCoupe.fbx\", \"lods\": [{\"name\": \"RB_TrafficCoupe_LOD0\", \"mesh_count\": 1, \"triangles\": 5656}, {\"name\": \"RB_TrafficCoupe_LOD1\", \"mesh_count\": 1, \"triangles\": 3064}, {\"name\": \"RB_TrafficCoupe_LOD2\", \"mesh_count\": 1, \"triangles\": 1466}], \"issues\": []}, {\"name\": \"RB_TrafficVan\", \"fbx\": \"D:/Project/Unity/racing-bois/Assets/RacingBois/Art/Vehicles/RB_TrafficVan.fbx\", \"lods\": [{\"name\": \"RB_TrafficVan_LOD0\", \"mesh_count\": 1, \"triangles\": 7080}, {\"name\": \"RB_TrafficVan_LOD1\", \"mesh_count\": 1, \"triangles\": 3758}, {\"name\": \"RB_TrafficVan_LOD2\", \"mesh_count\": 1, \"triangles\": 1700}], \"issues\": []}]}\n"
+    },
+    "isError": false
+  }
+}

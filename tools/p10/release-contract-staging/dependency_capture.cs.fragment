@@ -1,0 +1,76 @@
+        private sealed class DependencyCapture
+        {
+            public DependencyFileReceipt[] files;
+            public PackageReceipt[] packages;
+            public string[] builtIns;
+        }
+        [Serializable] private sealed class DependencyFileReceipt
+        { public string assetPath, path, sha256; public long bytes; }
+        [Serializable] private sealed class PackageReceipt
+        { public string name, version, resolvedPath; public FileReceipt manifest; }
+
+        private static FileReceipt CheckedSourceRow(string path)
+        {
+            string full = Inside(path, "."), project = Path.GetFullPath(".");
+            for (string current = full; current != null && !string.Equals(current, project, StringComparison.OrdinalIgnoreCase); current = Path.GetDirectoryName(current))
+                if ((File.GetAttributes(current) & FileAttributes.ReparsePoint) != 0)
+                    throw new InvalidDataException("Source dependencies must not traverse symlinks or junctions.");
+            return FileRow(".", full);
+        }
+        private static FileReceipt[] SourceSnapshot(out DependencyCapture capture)
+        {
+            var roots = new[] { RaceBuilder.ScenePath, UrpProfileAuthoring.DesktopPipelinePath };
+            if (roots.Any(path => !File.Exists(path))) throw new InvalidDataException("A desktop dependency root is missing.");
+            var logicalPaths = AssetDatabase.GetDependencies(roots, true).Select(path => path.Replace('\\', '/'))
+                .Distinct().OrderBy(path => path, StringComparer.Ordinal).ToArray();
+            if (roots.Any(root => !logicalPaths.Contains(root))) throw new InvalidDataException("Engine dependency roots are incomplete.");
+            var records = new List<DependencyFileReceipt>();
+            var packages = new Dictionary<string, PackageReceipt>(StringComparer.Ordinal);
+            var builtIns = new List<string>();
+            foreach (string logical in logicalPaths)
+            {
+                if (logical == "Resources/unity_builtin_extra" || logical == "Library/unity default resources")
+                { builtIns.Add(logical); continue; }
+                string physical;
+                if (logical.StartsWith("Assets/", StringComparison.Ordinal)) physical = logical;
+                else if (logical.StartsWith("Packages/", StringComparison.Ordinal))
+                {
+                    var info = UnityEditor.PackageManager.PackageInfo.FindForAssetPath(logical);
+                    string name = logical.Split('/')[1];
+                    if (info == null || info.name != name || string.IsNullOrEmpty(info.version) || string.IsNullOrEmpty(info.resolvedPath))
+                        throw new InvalidDataException("A virtual package dependency could not be resolved.");
+                    string resolved = Path.GetRelativePath(Path.GetFullPath("."), Inside(info.resolvedPath, ".")).Replace('\\', '/');
+                    string cachePrefix = "Library/PackageCache/" + name + "@";
+                    if (resolved != "Packages/" + name && !(resolved.StartsWith(cachePrefix, StringComparison.Ordinal) && resolved.Length > cachePrefix.Length && !resolved.Substring(cachePrefix.Length).Contains("/")))
+                        throw new InvalidDataException("Package resolution is outside its exact embedded/cache directory.");
+                    var package = new PackageReceipt { name = name, version = info.version, resolvedPath = resolved,
+                        manifest = CheckedSourceRow(Path.Combine(info.resolvedPath, "package.json")) };
+                    if (packages.TryGetValue(name, out var previous) && (previous.resolvedPath != resolved || previous.version != info.version || previous.manifest.sha256 != package.manifest.sha256))
+                        throw new InvalidDataException("Package identity changed during dependency capture.");
+                    packages[name] = package;
+                    physical = Path.Combine(info.resolvedPath, logical.Substring(("Packages/" + name + "/").Length));
+                    Inside(physical, info.resolvedPath);
+                }
+                else throw new InvalidDataException("Unresolved engine dependency: " + logical);
+                if (!File.Exists(physical)) throw new InvalidDataException("Engine dependency has no physical file: " + logical);
+                var file = CheckedSourceRow(physical);
+                records.Add(new DependencyFileReceipt { assetPath = logical, path = file.path, bytes = file.bytes, sha256 = file.sha256 });
+            }
+            capture = new DependencyCapture { files = records.ToArray(), packages = packages.Values.OrderBy(p => p.name, StringComparer.Ordinal).ToArray(),
+                builtIns = builtIns.OrderBy(path => path, StringComparer.Ordinal).ToArray() };
+            var files = Directory.GetFiles("Assets/RacingBois", "*", SearchOption.AllDirectories).Where(x => x.EndsWith(".cs") || x.EndsWith(".uxml") || x.EndsWith(".uss"))
+                .Concat(Directory.GetFiles("Packages/com.racingbois.foundation", "*.cs", SearchOption.AllDirectories))
+                .Concat(capture.files.Select(file => file.path)).Concat(capture.packages.Select(package => package.manifest.path))
+                .Concat(new[] { RaceBuilder.ScenePath, "ProjectSettings/ProjectSettings.asset", "ProjectSettings/GraphicsSettings.asset", "ProjectSettings/QualitySettings.asset", "ProjectSettings/EditorBuildSettings.asset", "Packages/manifest.json", "Packages/packages-lock.json" })
+                .Select(path => path.Replace('\\', '/')).Distinct().OrderBy(path => path, StringComparer.Ordinal);
+            return files.Select(CheckedSourceRow).ToArray();
+        }
+        private static string DependencyFingerprint(DependencyCapture capture)
+        {
+            var lines = new List<string> { "unity " + UnityEngine.Application.unityVersion,
+                "root " + RaceBuilder.ScenePath, "root " + UrpProfileAuthoring.DesktopPipelinePath };
+            lines.AddRange(capture.files.Select(row => "asset " + row.assetPath + " " + row.path + " " + row.sha256));
+            lines.AddRange(capture.packages.Select(row => "package " + row.name + " " + row.version + " " + row.resolvedPath + " " + row.manifest.sha256));
+            lines.AddRange(capture.builtIns.Select(path => "builtin " + path));
+            using (var sha = SHA256.Create()) return Hex(sha.ComputeHash(Encoding.UTF8.GetBytes(string.Join("\n", lines))));
+        }

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType>
+    <Nullable>annotations</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Definitions/**/*.cs" Link="Frozen/Definitions/%(Filename)%(Extension)" />
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Simulation/**/*.cs" Link="Frozen/Simulation/%(Filename)%(Extension)" />
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Protocol/**/*.cs" Link="Frozen/Protocol/%(Filename)%(Extension)" />
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/NetworkMapping/**/*.cs" Link="Frozen/NetworkMapping/%(Filename)%(Extension)" />
+    <Compile Include="../../../Assets/RacingBois/Client/Application/*.cs" Exclude="../../../Assets/RacingBois/Client/Application/MultiplayerSession.cs;../../../Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs" Link="Frozen/Application/%(Filename)%(Extension)" />
+    <Compile Include="Candidate/MultiplayerSession.cs" />
+    <Compile Include="Candidate/MultiplayerSession.Messages.cs" />
+    <Compile Include="VisualPoseEnvelope.cs" /><Compile Include="PoseGeometry.cs" />
+    <Compile Include="PresentationContinuityScope.cs" />
+    <Compile Include="ProductionSeed.cs" /><Compile Include="Program.cs" />
+  </ItemGroup>
+</Project>

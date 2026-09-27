@@ -1,0 +1,36 @@
+{
+  "scope": "Actual installed Unity Mono6.13 console runtime and unchanged production transport, real loopback WebSocket echo, simulated frame SynchronizationContext. Not the Unity player, WAN/TLS or game acceptance.",
+  "ownedServerPid": 36656,
+  "results": [
+    {
+      "mode": "none",
+      "mono": true,
+      "sent": 1199,
+      "received": 1199,
+      "opened": 1,
+      "closed": 0,
+      "wrongOrder": 0,
+      "maximumOutstanding": 2,
+      "maximumEchoSeconds": 0.03429579999999999,
+      "contextPosts": 0,
+      "maximumContextQueued": 0,
+      "closeType": "",
+      "exitCode": 0
+    },
+    {
+      "mode": "frame",
+      "mono": true,
+      "sent": 1199,
+      "received": 434,
+      "opened": 1,
+      "closed": 0,
+      "wrongOrder": 0,
+      "maximumOutstanding": 849,
+      "maximumEchoSeconds": 17.5380471,
+      "contextPosts": 1752,
+      "maximumContextQueued": 2,
+      "closeType": "",
+      "exitCode": 1
+    }
+  ]
+}

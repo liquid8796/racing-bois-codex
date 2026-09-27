@@ -1,0 +1,74 @@
+{
+  "runtimeCommit": "130fa9b",
+  "webBuild": "Build/Web-p03p04-v2",
+  "url": "https://localhost:7778/",
+  "browser": "Codex In-app Browser, desktop Windows, WebGL2",
+  "tls": "Previously user-trusted localhost certificate; no certificate bypass",
+  "result": "PASS for listed functional checks; performance baseline is sampled, not full hardware acceptance",
+  "checks": {
+    "localPracticeStartedFromVisibleUi": true,
+    "shortRightAttackKeyVisible": true,
+    "shiftLeftKickVisible": true,
+    "wssJoinVisible": true,
+    "wssShortLeftAttackVisible": true,
+    "wssAuthoritativeMovementAndAcknowledgement": true,
+    "brakeCancelsCruiseVisible": true,
+    "returnToMenu": true,
+    "restartClearsCruise": true,
+    "layout1280x720And1920x1080": true,
+    "vietnameseTextVisible": true,
+    "viewportResetAfterTest": true,
+    "sharedGameplayReplayPassed": true
+  },
+  "sharedGameplayReplay": { "ticks": 3000, "hash": "ED162155D421B3CF" },
+  "consoleErrors": [],
+  "consoleWarnings": [],
+  "samples": [
+    {
+      "tag": "v2-local-720p-stationary",
+      "at": "2026-09-21T03:54:14.891Z",
+      "mode": "Local", "width": 1280, "height": 720,
+      "tick": 9465, "ack": 9465, "inputs": 9466,
+      "riders": 7, "traffic": 11, "pedestrians": 6,
+      "speedMetersPerSecond": 0, "distanceMeters": 0,
+      "frameP50Ms": 3.000006914138794, "frameP95Ms": 4.000007152557373,
+      "cpuFrameMs": 3.480001, "unityAllocatedBytes": 107834704,
+      "managedBytes": 6287360, "wasmHeapBytes": 161087488
+    },
+    {
+      "tag": "v2-local-1080p-after-corner-and-recovery",
+      "at": "2026-09-21T03:56:26.480Z",
+      "mode": "Local", "width": 1920, "height": 1080,
+      "tick": 17379, "ack": 17379, "inputs": 17379,
+      "riders": 7, "traffic": 12, "pedestrians": 6,
+      "speedMetersPerSecond": 3.003000020980835, "distanceMeters": 522.781005859375,
+      "bikeCondition": 88, "lateralMeters": -9.300000190734863,
+      "frameP50Ms": 3, "frameP95Ms": 4,
+      "cpuFrameMs": 3.555, "unityAllocatedBytes": 108034671,
+      "managedBytes": 5599232, "wasmHeapBytes": 161087488
+    },
+    {
+      "tag": "v2-wss-720p-after-driving-and-recovery",
+      "at": "2026-09-21T04:00:23.236Z",
+      "mode": "Online", "width": 1280, "height": 720,
+      "tick": 9106, "ack": 8746, "inputs": 8747,
+      "riders": 7, "traffic": 11, "pedestrians": 6,
+      "speedMetersPerSecond": 0.4300000071525574, "distanceMeters": 461.8380126953125,
+      "bikeCondition": 20, "lateralMeters": -9.300000190734863,
+      "frameP50Ms": 3.000006914138794, "frameP95Ms": 4.000007152557373,
+      "cpuFrameMs": 3.444999, "unityAllocatedBytes": 108380886,
+      "managedBytes": 5795840, "wasmHeapBytes": 161087488
+    }
+  ],
+  "unsupportedMeasurements": ["GPU frame time", "Per-frame GC allocations in this release browser", "Per-tab resident process memory"],
+  "limits": [
+    "Frame percentiles are rolling360-frame windows at sampled times, not a continuous benchmark or guarantee for other browsers/GPUs.",
+    "Reported333fps is the uncapped in-app browser loop; do not equate this with monitor refresh rate or a locked production60fps mode.",
+    "Actor counts describe authoritative world population, not all actors simultaneously visible in the camera frustum.",
+    "Zero GPU/GC telemetry values were accompanied by unavailable flags and are not measurements of zero cost.",
+    "Unity allocated memory, managed memory and reserved WASM linear memory are distinct; none is browser RSS.",
+    "Keyboard events were short automation pulses; continuous driving used the visible cruise toggle. This is not full manual controller-feel acceptance.",
+    "Browser screenshots were inspected inline through CUA; its content-export operation is unsupported, so no browser PNG export is claimed.",
+    "No physical two-machine LAN/WAN test, global latency claim or OCI deployment is included."
+  ]
+}

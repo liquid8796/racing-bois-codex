@@ -1,0 +1,29 @@
+/* Gallery and playback use the same shared tokens as the native race UI. */
+.gallery-overlay { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(18,20,21,.42); align-items: flex-start; justify-content: center; padding: 28px 38px; }
+.gallery-panel { width: 69%; height: 100%; background-color: var(--panel); padding: 26px 30px; }
+.gallery-heading { flex-direction: row; justify-content: space-between; align-items: center; flex-shrink: 0; margin-bottom: 12px; }
+.gallery-title { font-size: 38px; -unity-font-style: bold; margin-top: 8px; }
+.gallery-filter { width: 400px; max-width: 100%; min-height: 44px; margin-top: 18px; margin-bottom: 18px; }
+.gallery-body { flex-direction: row; flex-grow: 1; min-height: 0; }
+.gallery-list-panel { width: 48%; min-height: 0; padding-right: 20px; border-right-width: 1px; border-right-color: var(--line); }
+.gallery-list { flex-grow: 1; min-height: 0; }
+.gallery-detail { flex-grow: 1; flex-basis: 0; min-width: 0; padding: 12px 0 0 26px; }
+.gallery-detail-title { font-size: 34px; -unity-font-style: bold; white-space: normal; margin-top: 18px; margin-bottom: 20px; }
+.gallery-synopsis { flex-grow: 1; }
+.gallery-entry { -unity-text-align: middle-left; white-space: normal; min-height: 62px; font-size: 16px; padding: 12px 14px; margin: 0; border-color: rgba(0,0,0,0); border-bottom-color: var(--line); background-color: rgba(0,0,0,0); }
+.gallery-entry.is-selected { border-left-width: 3px; border-left-color: var(--amber); color: var(--amber); background-color: rgba(238,174,74,.12); }
+.cinematic-playback { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.cinematic-topbar { position: absolute; left: 28px; right: 28px; top: 24px; min-height: 58px; padding: 8px 16px; background-color: var(--panel); flex-direction: row; justify-content: space-between; align-items: center; }
+.cinematic-scene-title { flex-grow: 1; flex-shrink: 1; white-space: normal; }
+#cinematic-skip { width: 186px; margin-left: 24px; margin-bottom: 0; }
+.cinematic-caption-strip { position: absolute; left: 8%; right: 8%; bottom: 30px; min-height: 96px; padding: 18px 26px; background-color: var(--panel); }
+.cinematic-caption { font-size: 22px; -unity-text-align: middle-center; white-space: normal; min-height: 32px; }
+.cinematic-time { font-size: 13px; color: var(--muted); -unity-text-align: middle-right; margin-top: 10px; }
+.cinematic-progress-track { height: 3px; background-color: var(--line); margin-top: 10px; }
+.cinematic-progress-fill { height: 3px; background-color: var(--amber); }
+.compact .gallery-overlay { padding: 20px 28px; }
+.compact .gallery-panel { width: 82%; padding: 20px 24px; }
+.compact .gallery-title { font-size: 30px; }
+.compact .gallery-detail-title { font-size: 27px; }
+.compact .gallery-entry { font-size: 15px; min-height: 56px; }
+.narrow .gallery-panel { width: 100%; }

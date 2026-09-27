@@ -1,0 +1,4143 @@
+{
+  "previousRelease": "p09-20260927-e",
+  "releaseId": "p09-20260927-f",
+  "sourceSha256": "194d60c159d8978a8520d17df1c900cae09e2614d4b1f620c89b9a5bbcf54c24",
+  "sourceChanged": [
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/MultiplayerMessages.cs",
+      "before": "c78764d6b5ae21dce40ad3e254c987c863d96256bb3e988de514ddbced2fca21",
+      "after": "def09e52cf71929553abfff38bc6b875270dc0570edc1baadd8274bda27b7c4b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/CombatResolver.cs",
+      "before": "0631b08f3399b13976a91316100e7b0953f33955716d7b2e1476b2f0785b946d",
+      "after": "2fd84df61bacbb04d6f12f8e321e211b051189fca79f72d71fb55997b0e350d2"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs",
+      "before": "c1019ca549dc17c2c9ecbb07f72e23304b14a7c7ef08514eecefe957d6cc2081",
+      "after": "dc36749d8578971e1d7548bd9409af1f7fc4cc898dbc6b7020b01925e3c7fbff"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianMotion.cs",
+      "before": null,
+      "after": "21e0bee055bbcd4e69d19e389380f83dcbf3cb3d92b7882a868a10c071caf010"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianPredictionContext.cs",
+      "before": null,
+      "after": "24631a657ec43e0a55e2c3cee8800c58a68ae2e8cb057d3457dca1e2ced27374"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianSimulation.cs",
+      "before": "f19fabac5631c657e47215cbe26b329a93687e89557a8ae9ad4b8e58b086f9f5",
+      "after": "ff738c02769fad89554c273f2cbda3d3b9fd9281cf71057d604c86b8e59fba1b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderCombatPredictionContext.cs",
+      "before": null,
+      "after": "834fff2fb80e0e786d00f89875b1e7003dad361d9d296920fc6b077a862973dc"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderModeClock.cs",
+      "before": null,
+      "after": "e49db8637584a986d8fa3766391f0c73ad7ede58027ce44455223d83f346791d"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderPrediction.cs",
+      "before": "9f6a3c6e62a763d0895ab18c028993db7326c04593eee6edc0016c37aee5f6a0",
+      "after": "43daafa3a9e832d63caeba0df4b1871e4420bfb794a56a40880f4b61f8022c1f"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Multiplayer/MultiplayerProjection.cs",
+      "before": "aa648d9b097a922d90ee724ef5a07c60b39cdaad8997a66deddf34822192668b",
+      "after": "9aee2761b88353b657d45aa50db75eb9b714b9f3502ddb5160e6fc969c519582"
+    }
+  ],
+  "testSourceChanged": [
+    {
+      "path": "Assets/RacingBois/Client/Application/BenchmarkReadModelProjection.cs",
+      "before": null,
+      "after": "b6a8bc60061a82708c9313c85e66cb009a3b1d2f7cac6beb232aedd16fddd74e"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerReadModels.cs",
+      "before": null,
+      "after": "5c9bc5530a1b2135e0cf9d6a146393eaa1cbab5d765559c5d213ad09882d5767"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerSession.cs",
+      "before": null,
+      "after": "f6a96d40524cad2309ab5e26222d4a9287a280db96cc80e13d7a9b33026996a2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CinematicCatalog.cs",
+      "before": null,
+      "after": "e534604f6b754ac4da22906b8d6f6a72185cb982f6dfd47afc797f5296e50b5d"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/ContentManifestRules.cs",
+      "before": null,
+      "after": "58df69f3801a47ed38001d74869e3a57eaecf4f38db6afdf9cb9f8a808a4a2c5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs",
+      "before": null,
+      "after": "fd88d096abcf1163f947765835b615d7467ae95660fa317c607ba0909c2c84f1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/FoundationSession.cs",
+      "before": null,
+      "after": "6a73e99870964cbab13332dd1ebec1d3b7bd5aa45f6483a3d5218ceff8f85713"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/LocalCampaignReadModel.cs",
+      "before": null,
+      "after": "c014ef97141d1cae2de48dac2eb36c8e1d5844fec823d72f250410aa22396dc4"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerPorts.cs",
+      "before": null,
+      "after": "2f8534dfdc89e1bc1bafcdab5515c2449db993374007305af69c16f2a982b6bb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerProjection.cs",
+      "before": null,
+      "after": "d6cac5842b84a8f1d670a510d9a69057870bf8d96eb006d51afb29949bd37169"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerReadModels.cs",
+      "before": null,
+      "after": "7a7a5aaf8f355754fd0c42c5e508d2a3d0670453d5c97d99ecfc790c634af1b2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "before": null,
+      "after": "075875d50bfe0c8e16f24c8b2d6ecc3ce5024b31276e1c0ac706d2ea04f128c2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "before": null,
+      "after": "23170db6405a7ba7c33c5adf7439a7ca3d54f992957d581061ef8fd058ac7a9f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSnapshotReadModel.cs",
+      "before": null,
+      "after": "b2395b0f463eee8cff1ea9bfc5c97333082dab37f7d401e9977cbdc2573d3f55"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/P08AudioRoles.cs",
+      "before": null,
+      "after": "7ebc78e140ca8211ab74d7877f1f1a93aed856a2537aaed11c463052d2130748"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs",
+      "before": null,
+      "after": "3e5fe525bbd0cd7d8b194a53fb7396587f709899da3665ea77bbf94a6c727824"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSession.cs",
+      "before": null,
+      "after": "d4413ba96fca0b45d6192b0b1e4c3eec24609da663fcaa17aa5456bc80c82682"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSnapshotValidator.cs",
+      "before": null,
+      "after": "a6aebd361faf48c2435cf2b15e8a89a6cedca7c05e6d38401806d45d19a69bbb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceStateProjection.cs",
+      "before": null,
+      "after": "9a4446e79f970770f99e5eafc3e8248604af8f1ad12794f4d182a137d63d8804"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceWorldReadModel.cs",
+      "before": null,
+      "after": "e4d1feb7cb818c921ebc3f8434e743b4708dc7ff2111b588d21758dbf4d3dcd7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RemoteMotionSampler.cs",
+      "before": null,
+      "after": "edb0a23e5054551aadf5d599765d379a5c0ef5da26600c0aeecd52b2c387fea5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/WorldReadModel.cs",
+      "before": null,
+      "after": "0fe52476bf47c5fc16a52e84d2aac5b37eba9f692c25f2bca3052a7d646a112b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/MultiplayerMessages.cs",
+      "before": "c78764d6b5ae21dce40ad3e254c987c863d96256bb3e988de514ddbced2fca21",
+      "after": "def09e52cf71929553abfff38bc6b875270dc0570edc1baadd8274bda27b7c4b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/CombatResolver.cs",
+      "before": "0631b08f3399b13976a91316100e7b0953f33955716d7b2e1476b2f0785b946d",
+      "after": "2fd84df61bacbb04d6f12f8e321e211b051189fca79f72d71fb55997b0e350d2"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs",
+      "before": "c1019ca549dc17c2c9ecbb07f72e23304b14a7c7ef08514eecefe957d6cc2081",
+      "after": "dc36749d8578971e1d7548bd9409af1f7fc4cc898dbc6b7020b01925e3c7fbff"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianMotion.cs",
+      "before": null,
+      "after": "21e0bee055bbcd4e69d19e389380f83dcbf3cb3d92b7882a868a10c071caf010"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianPredictionContext.cs",
+      "before": null,
+      "after": "24631a657ec43e0a55e2c3cee8800c58a68ae2e8cb057d3457dca1e2ced27374"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianSimulation.cs",
+      "before": "f19fabac5631c657e47215cbe26b329a93687e89557a8ae9ad4b8e58b086f9f5",
+      "after": "ff738c02769fad89554c273f2cbda3d3b9fd9281cf71057d604c86b8e59fba1b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderCombatPredictionContext.cs",
+      "before": null,
+      "after": "834fff2fb80e0e786d00f89875b1e7003dad361d9d296920fc6b077a862973dc"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderModeClock.cs",
+      "before": null,
+      "after": "e49db8637584a986d8fa3766391f0c73ad7ede58027ce44455223d83f346791d"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderPrediction.cs",
+      "before": "9f6a3c6e62a763d0895ab18c028993db7326c04593eee6edc0016c37aee5f6a0",
+      "after": "43daafa3a9e832d63caeba0df4b1871e4420bfb794a56a40880f4b61f8022c1f"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Multiplayer/MultiplayerProjection.cs",
+      "before": "aa648d9b097a922d90ee724ef5a07c60b39cdaad8997a66deddf34822192668b",
+      "after": "9aee2761b88353b657d45aa50db75eb9b714b9f3502ddb5160e6fc969c519582"
+    },
+    {
+      "path": "src/Tests/RacingBois.Multiplayer.Integration.Tests/Program.cs",
+      "before": "7b6f51a84266174067307e567ddfdc232fb61dad6d0ff196261f66ff3184951b",
+      "after": "d595dbf2c6b2886e27de3eef11390df4b97aa4158dbc1ead86ae578b821a8d52"
+    },
+    {
+      "path": "src/Tests/RacingBois.P05Client.Tests/RemoteImmunityRegression.cs",
+      "before": "1fd2dac04e2d0a44673f292c45cc74fdcc61dd0175e1489c4cbd81a501f0aea3",
+      "after": "13666ef0175744f318eb4ba96743a5bdff8100c0cfba186d67023db89ff6bbd9"
+    },
+    {
+      "path": "src/Tests/RacingBois.P08Content.Tests/Program.cs",
+      "before": "824881bf3414d00b6db11126adf5e6a3ee8b4488306f240d83e8c3fc382ae4b1",
+      "after": "f2666c03c116e61dfd6abcaf076f47886060a1d1c1174bb94a24aaef5a348829"
+    },
+    {
+      "path": "src/Tests/RacingBois.Prediction.Tests/Fixtures/maximum-correction-episode.json",
+      "before": null,
+      "after": "1546406900896eca02570ba9c2556e9fccb3681f0c2dd6032ae9bf95c0cd414d"
+    },
+    {
+      "path": "src/Tests/RacingBois.Prediction.Tests/Fixtures/pedestrian-recovery-episode.json",
+      "before": null,
+      "after": "71b3b3e0ed3250d7350f07879fe7075ec2628287e35ec998eaa945afb105cdb8"
+    },
+    {
+      "path": "src/Tests/RacingBois.Prediction.Tests/Fixtures/speculative-neighbor-episode.json",
+      "before": null,
+      "after": "224e9c4f523c0ba91b1f9494c6170f3b069ac30671a9adfdf8a757b95f65ef47"
+    },
+    {
+      "path": "src/Tests/RacingBois.Prediction.Tests/Program.cs",
+      "before": null,
+      "after": "2c9542037519935da966cc1a69b195ec52971decfcfca561aed92cec1b8d4481"
+    },
+    {
+      "path": "src/Tests/RacingBois.Prediction.Tests/ProxyBehaviorTests.cs",
+      "before": null,
+      "after": "babef30893dec7f5e01d992e744ffae0aa3b2f37c000d8a09b48267ed1d348a2"
+    },
+    {
+      "path": "src/Tests/RacingBois.Prediction.Tests/RacingBois.Prediction.Tests.csproj",
+      "before": null,
+      "after": "ed40e4f9f08c025436a43c46c4f646fe3fd18d451aa81a56354495bfcefbccc1"
+    },
+    {
+      "path": "src/Tests/RacingBois.PredictionProjection.Tests/Program.cs",
+      "before": null,
+      "after": "8c5d039df2874cd42414dc7830a41300f3b5ec3ca8e462fa59265ffdc251aa36"
+    },
+    {
+      "path": "src/Tests/RacingBois.PredictionProjection.Tests/RacingBois.PredictionProjection.Tests.csproj",
+      "before": null,
+      "after": "9d1973fbbee16d0c1bc3d00814f065308374f9323ae2e7a0d7ac2928822d9c28"
+    }
+  ],
+  "packagedFilesChanged": [
+    {
+      "path": "server/RacingBois.NetworkMapping.dll",
+      "before": "47deb81dad75b0d062a29f574b119a23eeb006079d4f35a6c3e01ce973b25da0",
+      "after": "5f8dacf10a1bbdc4cef031bc0728951d9f8fb1d7af08b3539b7aa3317a0df67f"
+    },
+    {
+      "path": "server/RacingBois.NetworkMapping.pdb",
+      "before": "924a181821fcce95b06317e41055ccd01b29c4ceb388dde1b7b38f60f2b6b9f8",
+      "after": "5041ddb38b4df160206ca92b10423ebda3c70a7c899698cb4e80dc253f8ecf49"
+    },
+    {
+      "path": "server/RacingBois.Protocol.dll",
+      "before": "d93a8f7f80434d9a21005dcbd3689fc85477627e63b8627200edb8aad96cf509",
+      "after": "e894417f775f31a1591dcbd4e86abb346f4e2ccd0fe57c1f41e704ed931b073a"
+    },
+    {
+      "path": "server/RacingBois.Protocol.pdb",
+      "before": "1982a4213e5e611dd94e4b9332141ed641b427dd96de88203e874fd91e1447f2",
+      "after": "3b6a490a0a20278eb6ddb72d0c28ddbb31e872bd8f9ece7858283301b6dfe56d"
+    },
+    {
+      "path": "server/RacingBois.Server.Application.dll",
+      "before": "d1b36810310e38051051dc2c8ff66939272bbbd5e782048c50d69f8f893d35c5",
+      "after": "d7e385da473af975c7a2a13f3f03aa2beff585c36eee31d144c972721072d30f"
+    },
+    {
+      "path": "server/RacingBois.Server.Application.pdb",
+      "before": "e42559a6ca9f237087ae033c17e508a5dafc89600a5d8bfba1b9377060d9c028",
+      "after": "813f4b53c9faa6e7a7c8632ca28aab5e8a4c77e8a6f4ab89af3c2b4ddd00559a"
+    },
+    {
+      "path": "server/RacingBois.Server.Host.dll",
+      "before": "40aabffa8b28011cfb6eff72cd7760b95b1e5f1fbbb5df85e61718516b5b4778",
+      "after": "1eed9c86d17b8462d67e5a92d6358cd27ea5d20e85129726b5154c5803dd5746"
+    },
+    {
+      "path": "server/RacingBois.Server.Host.pdb",
+      "before": "523586284e384420a52503a2cc7aea8c54ab25f07af87c5051f03eb3518ef8a7",
+      "after": "e5386920c044302abf81aa1848b787499a0585f3958865a0877ef7817f1f39c1"
+    },
+    {
+      "path": "server/RacingBois.Server.Infrastructure.dll",
+      "before": "a5e1f901868d38e12cad3a650dc77865cb3426ac8bb4e2c2069f25eb6d588e2d",
+      "after": "57f1450526452d5b623dab2a99ce41304382c7d62aafa612e6276f1dba48ed0f"
+    },
+    {
+      "path": "server/RacingBois.Server.Infrastructure.pdb",
+      "before": "c0c09b3924242be676d33bb09ba1d2fc7457627103df864cd816d5909e3b44bd",
+      "after": "2c27c21c13293c6d1b566ea9c956bed83776642d63eb6149d9ed8261d658a786"
+    },
+    {
+      "path": "server/RacingBois.Simulation.dll",
+      "before": "51d7d6a7c3f5b07b5ff4266c76f38edbd9c75bf7732b33f9f66d5117cbf869d3",
+      "after": "4c5a613a1ea7fa2a7a638aea5a12389f21aadc1312246cdf96c28c96f65867f0"
+    },
+    {
+      "path": "server/RacingBois.Simulation.pdb",
+      "before": "29f2087059e3ecb8d66b6d6924af083d87236aeb067301d50b56482c156969d7",
+      "after": "266ab150292be73877d60d4618f1e2494f423c42735640439848e13fdd572898"
+    },
+    {
+      "path": "tests/gameplay/RacingBois.Gameplay.Tests.dll",
+      "before": "20d7126ca1cd7b8a4def3104e03e16c7fd9cabf0fc2592e2bba982e23b7db787",
+      "after": "2d22f2ff7dfbf012f16ee5469c140b687cfb1fc0df438a36d9666f5adc7b64c8"
+    },
+    {
+      "path": "tests/gameplay/RacingBois.Gameplay.Tests.pdb",
+      "before": "2f5caeedfe39cfd7877f7fd7d7128c49027463611cd5ab53221e0a5691acf005",
+      "after": "e13c2a515e9e789fe3c2c6efad1bc5c3ab0363e81121a5a236e4836c112421ad"
+    },
+    {
+      "path": "tests/gameplay/RacingBois.Simulation.dll",
+      "before": "51d7d6a7c3f5b07b5ff4266c76f38edbd9c75bf7732b33f9f66d5117cbf869d3",
+      "after": "4c5a613a1ea7fa2a7a638aea5a12389f21aadc1312246cdf96c28c96f65867f0"
+    },
+    {
+      "path": "tests/gameplay/RacingBois.Simulation.pdb",
+      "before": "29f2087059e3ecb8d66b6d6924af083d87236aeb067301d50b56482c156969d7",
+      "after": "266ab150292be73877d60d4618f1e2494f423c42735640439848e13fdd572898"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Multiplayer.Integration.Tests.dll",
+      "before": "a3194b4c42ca88cc0b70962ded0e90707d70223cd206d44e2468de7168b2bfde",
+      "after": "03a3bdc3c36f024448e2a99f28673e4324b5db31e06ec2e9b3874cd6d8475c27"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Multiplayer.Integration.Tests.pdb",
+      "before": "cc71f80d44be4e0d6b5cb41973f4d14adc7cec84b972e0d6009caae994fa07b1",
+      "after": "a3bdb668f25e7552acee86c9284aad9f6d247389afc3dca3664da57600092d6d"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.NetworkMapping.dll",
+      "before": "47deb81dad75b0d062a29f574b119a23eeb006079d4f35a6c3e01ce973b25da0",
+      "after": "5f8dacf10a1bbdc4cef031bc0728951d9f8fb1d7af08b3539b7aa3317a0df67f"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.NetworkMapping.pdb",
+      "before": "924a181821fcce95b06317e41055ccd01b29c4ceb388dde1b7b38f60f2b6b9f8",
+      "after": "5041ddb38b4df160206ca92b10423ebda3c70a7c899698cb4e80dc253f8ecf49"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Protocol.dll",
+      "before": "d93a8f7f80434d9a21005dcbd3689fc85477627e63b8627200edb8aad96cf509",
+      "after": "e894417f775f31a1591dcbd4e86abb346f4e2ccd0fe57c1f41e704ed931b073a"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Protocol.pdb",
+      "before": "1982a4213e5e611dd94e4b9332141ed641b427dd96de88203e874fd91e1447f2",
+      "after": "3b6a490a0a20278eb6ddb72d0c28ddbb31e872bd8f9ece7858283301b6dfe56d"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Server.Application.dll",
+      "before": "d1b36810310e38051051dc2c8ff66939272bbbd5e782048c50d69f8f893d35c5",
+      "after": "d7e385da473af975c7a2a13f3f03aa2beff585c36eee31d144c972721072d30f"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Server.Application.pdb",
+      "before": "e42559a6ca9f237087ae033c17e508a5dafc89600a5d8bfba1b9377060d9c028",
+      "after": "813f4b53c9faa6e7a7c8632ca28aab5e8a4c77e8a6f4ab89af3c2b4ddd00559a"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Server.Infrastructure.dll",
+      "before": "a5e1f901868d38e12cad3a650dc77865cb3426ac8bb4e2c2069f25eb6d588e2d",
+      "after": "57f1450526452d5b623dab2a99ce41304382c7d62aafa612e6276f1dba48ed0f"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Server.Infrastructure.pdb",
+      "before": "c0c09b3924242be676d33bb09ba1d2fc7457627103df864cd816d5909e3b44bd",
+      "after": "2c27c21c13293c6d1b566ea9c956bed83776642d63eb6149d9ed8261d658a786"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Simulation.dll",
+      "before": "51d7d6a7c3f5b07b5ff4266c76f38edbd9c75bf7732b33f9f66d5117cbf869d3",
+      "after": "4c5a613a1ea7fa2a7a638aea5a12389f21aadc1312246cdf96c28c96f65867f0"
+    },
+    {
+      "path": "tests/multiplayer/RacingBois.Simulation.pdb",
+      "before": "29f2087059e3ecb8d66b6d6924af083d87236aeb067301d50b56482c156969d7",
+      "after": "266ab150292be73877d60d4618f1e2494f423c42735640439848e13fdd572898"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Antiforgery.dll",
+      "before": null,
+      "after": "9d2b078fc6ff64809106fbf1d674f8704264fe7dd6e71f625af238183f0877b3"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+      "before": null,
+      "after": "37e92394d1701c692a1ad6e0e3a74567abc60aa12a064b15c41b205c6b6d47aa"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authentication.BearerToken.dll",
+      "before": null,
+      "after": "fd36f050450b12a08bb5e18f4be6a202b6fd4215dde977833bd93659a46e91be"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authentication.Cookies.dll",
+      "before": null,
+      "after": "82aff09fa64b975dc1d7eb012fc8ee20f5bf604ae9eb110c05173af663381411"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authentication.Core.dll",
+      "before": null,
+      "after": "f42cd0c774bd6f69ec0a00e405cb854f7409e4da650f3e1610e6fd60bb4c3426"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authentication.OAuth.dll",
+      "before": null,
+      "after": "49839e96ce7482dbab9436c5b31235f24470f3fc31bb0f4b254b22eb9c286ae3"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authentication.dll",
+      "before": null,
+      "after": "d21b4ebeb86807d20e6ddd1870c53dd0b6eab5579f726916c9affa0e07f6eecb"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authorization.Policy.dll",
+      "before": null,
+      "after": "bdedb6862c519c914efc6289e2ee854f97ef7e7fd34983bdb2a9447aa7e4618b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Authorization.dll",
+      "before": null,
+      "after": "373471141c10fd8e391135a788d335a1fc6578c0bdb738399d8c78ab5809a4dd"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Components.Authorization.dll",
+      "before": null,
+      "after": "993dd740ef9ada23dbdbf0d71be318f8cf04133ade3de08718dc6a21be07d0c6"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Components.Endpoints.dll",
+      "before": null,
+      "after": "08577c295914c6261ebc304812ebe12a5fd2ece6b13e491cd5b967caacadc1fa"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Components.Forms.dll",
+      "before": null,
+      "after": "bd6a2a4ccdea38471894c11f1b64ac486740e865fff6784b01fc7ded839c550f"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Components.Server.dll",
+      "before": null,
+      "after": "cf1c4132e76529eb0ed91e50a743bedca3346bd18c51586659c823d134041e12"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Components.Web.dll",
+      "before": null,
+      "after": "f39eaccfb50d8d5cc3c7fff211ae6c35f095b74af22c6ed049c928b02b49fb91"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Components.dll",
+      "before": null,
+      "after": "aae7d3674bbeaaad39cd4cf04595159d5fac4b148ab9d76a2faa21276390e297"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Connections.Abstractions.dll",
+      "before": null,
+      "after": "c314dfa11a0bf1da8c28d48839755aac411d09a187fba1001b81c0773674d9d9"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.CookiePolicy.dll",
+      "before": null,
+      "after": "5e6ff8dcaa60e9dbf358c921adcf6a3b1b2b29c367a5ad543665ef36e87ae267"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Cors.dll",
+      "before": null,
+      "after": "89d389c12c4fb4da0137d2cba7184b577787d1c210a023b79a4c043ff1e16daf"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "before": null,
+      "after": "74849224232790d28ffdd0310d87bb60793c7500eeac919ba86c838433b21c81"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "before": null,
+      "after": "8452349fa03926c9ffa511d76e348221601b58d7973108b381db36ab10600f57"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+      "before": null,
+      "after": "777cd7b671c2aa0aeb232d9c2462e8394205f44e3905f688600a5dcc817a3f9e"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.DataProtection.Extensions.dll",
+      "before": null,
+      "after": "350b9295e10625cfafe6f0a54f5b26e168cf6b7d96cd50bf66f0278859ea810c"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.DataProtection.dll",
+      "before": null,
+      "after": "030bec593f267649d8adedb85a36d47065da8476d67811906e0894c2ab03c32e"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+      "before": null,
+      "after": "4ad1e310c278edb16699f89d869bfde70913a87b85bcb4fe6f722a5a30f4a03b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
+      "before": null,
+      "after": "86a1db9e9e223832c53f964df211504109fefee0086072b16dadbacf24e20ba1"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Diagnostics.dll",
+      "before": null,
+      "after": "cd22effa52edbe99e03c5d64ab23d0e28b3ae34900c567c18b3dbd02e2eb0f45"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.HostFiltering.dll",
+      "before": null,
+      "after": "41594816df59558f847b18cedf9e551e62f51dac6cb6b66af6cd7b84f9ff8bf7"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+      "before": null,
+      "after": "e02e4bd6a1e5b1a31613d4aac876d7f8bc27e25efa55efda89cf64a9e8748568"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+      "before": null,
+      "after": "48b3c8e4c89b70c4026d44469d7de5ab1d6178c04f5c267cc8787a2a3b4f37de"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Hosting.dll",
+      "before": null,
+      "after": "886c893862beefb284f663ccdbaaff86d72e95d817c043fe8918cc8f499aac19"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Html.Abstractions.dll",
+      "before": null,
+      "after": "0df07f85f16df6a3492f6d22abdfd262d0c8e032948da756c0994d6d9448a175"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Http.Abstractions.dll",
+      "before": null,
+      "after": "4eff6f19aa6b1395553d609516048a012c97700f97f39fa0e80eb352de8767b3"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Http.Connections.Common.dll",
+      "before": null,
+      "after": "dc9672c6107149615ae7b830210e924fccc157d77ad522d55872a160bdca8246"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Http.Connections.dll",
+      "before": null,
+      "after": "68c6e2a41edc1628eaaba65e1ae1f5a50fec398d2a7338bc944882e56bcc8a80"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Http.Extensions.dll",
+      "before": null,
+      "after": "17d73ddb07e4bcb9fd07fa9006b16088ef3a714cdca87ee8fa23f570d2d751ef"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Http.Features.dll",
+      "before": null,
+      "after": "a3816a9e172a2220fbd900b7d0c88e48afb335447c4a64cc09f6d95755300ba6"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Http.Results.dll",
+      "before": null,
+      "after": "9c478c5e243bfeb33d37b5a00be55bc03db7490e90ff6286c76147b37648fab6"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Http.dll",
+      "before": null,
+      "after": "7570a6ee4660847b2e9eff66c9c5035a0e807b19af64653d583f30ed23851233"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.HttpLogging.dll",
+      "before": null,
+      "after": "70f312028eaa46e2d18e683fc51335ba88c861e3725ac82f2089cdd0204198c4"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.HttpOverrides.dll",
+      "before": null,
+      "after": "2b0348c0e81607568162a83b7ea3793cd6c35fff3bc9a59894600addc3ddc002"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.HttpsPolicy.dll",
+      "before": null,
+      "after": "4b494f6c380dc4eb5eef96f138302a46b11c3152c08a3a6cf50169ea9b01b60a"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Identity.dll",
+      "before": null,
+      "after": "6e16c66d10f4c514be1d13b0c414db7ea018491bb728fb5be033a00aac45d866"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Localization.Routing.dll",
+      "before": null,
+      "after": "fa9ae73c186d487d994847ddc0aa3f394954f7ec614655d64c35d7d8d7fd60e1"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Localization.dll",
+      "before": null,
+      "after": "700c8a67906a54d56dbaa3058e522508e5a74e46688c2a175191fe2c67b4c4a8"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Metadata.dll",
+      "before": null,
+      "after": "fd9390525be12cdb98c949d12e3743c7bd0238b64c2b38085dcc3c05e4c15464"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+      "before": null,
+      "after": "612731d8152ccf8a3854095611bca2215f02bb05a20c2ead833160f37c30b8f0"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
+      "before": null,
+      "after": "803094ecd3babaefa2d1d5e57fc5d705a971398d09bbfe1544714bf5395719ef"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.Core.dll",
+      "before": null,
+      "after": "c50817728e73c2ea600dad5dc9a99a6ed10ceadb4bd9229bbafd2dc8697cd9ba"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.Cors.dll",
+      "before": null,
+      "after": "9866534fb199fd355d0303013b06ebd82a5073e962b572dc90c3af2cd52cb33a"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
+      "before": null,
+      "after": "c6be37efb886edca96ac99ec20fc0186789bbd410634561025ac8ecf787058d4"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
+      "before": null,
+      "after": "98f091b74112b0aeeb57bee8ecb131eb272b12984ab3f48c161ff240d163f9e4"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
+      "before": null,
+      "after": "b2da06ecfbce61cb8522a9ce49af3fa829d637a65acfbcf897a5522cc2342b04"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.Localization.dll",
+      "before": null,
+      "after": "931113fdd149aaa41d4c1c06938186cd714458c35af1579e6ae54746c0d702bb"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.Razor.dll",
+      "before": null,
+      "after": "cc7ece23c2fc72e5a64276e172eec6b6fae55aa934077df32f819ef9c1404a2f"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.RazorPages.dll",
+      "before": null,
+      "after": "538799f67daea91784b2de68281ac140ddd1ef2d4ffbb5511269329df26c8b20"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
+      "before": null,
+      "after": "e181b3b4467839065537cd7717016132981e47bdfe6e5887f9abd51089446723"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
+      "before": null,
+      "after": "5c47a681a0f4fc59903ca5b492f388c6672a2eb07aebc79affedc68a38d6c9ea"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Mvc.dll",
+      "before": null,
+      "after": "3c9e153936d6090460ca36d9155297d8568fe938679b1bcc0a99a4ecce4bb14a"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.OutputCaching.dll",
+      "before": null,
+      "after": "ccea263865e91bfd57fb1ef5c81a7a978bdbf244b3ddc9072b09aea8306eafbe"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.RateLimiting.dll",
+      "before": null,
+      "after": "4202a527c2770a6379d16750a0a1cef17fa0be82d8c12bc30c5a034e4fef2e9d"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Razor.Runtime.dll",
+      "before": null,
+      "after": "94cc256b24a49a93bc546a571899914718815fd44b9ff60057b0d8f0d8973f6c"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Razor.dll",
+      "before": null,
+      "after": "4c5efba497dfda446d4afc69e4074736856ba59d297645a5ff79c37d6e465ac8"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.RequestDecompression.dll",
+      "before": null,
+      "after": "5c7e34b31a39d16edc253ad09c5805fdfde92956b4c45d18841550ec8d434f18"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+      "before": null,
+      "after": "f9be4b9040fb6c8694647d5342a8689a371f0827b574baa80dd1c5476b829c38"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.ResponseCaching.dll",
+      "before": null,
+      "after": "ff6107389cbcb7d2189dd263c950c0529eaf104429db4c3713375a1c604af014"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.ResponseCompression.dll",
+      "before": null,
+      "after": "419207c6cc3fdb1b3c3df87a8dfbcfe35b79cf8f083ca40b7c126622cffcd505"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Rewrite.dll",
+      "before": null,
+      "after": "3c16a84c0fa572ec0f0aa8ddd46bc097e305963246e82dc627065567bb489e35"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Routing.Abstractions.dll",
+      "before": null,
+      "after": "ce82f178b9c1a8f1be0ca474d300f858bc5c26ed0329f2cd96e92ad6e032675c"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Routing.dll",
+      "before": null,
+      "after": "e0c9324d6ccadcd189ca7e8b02366a245461d332150d2b41e01112b2eba156a4"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.HttpSys.dll",
+      "before": null,
+      "after": "92401fac189abc5cb6898052a0db4431a73867349e79d7fc6639149aa94ace9e"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.IIS.dll",
+      "before": null,
+      "after": "da6f98fa9ff10b42fa9252713fa7643ea2745885392918986f1d933493541b3b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.IISIntegration.dll",
+      "before": null,
+      "after": "52ca16ee45bc829f537599da05e3655e7951e505592570af228ee377566eb06a"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+      "before": null,
+      "after": "91a7223a192e6fe41c42b8aaf84f598213a06f157072556947635d419dcaccf4"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll",
+      "before": null,
+      "after": "e5cd4b0f110637e27702780a3f797e1c6012bdd9f49e5bc0c9fd731db93fb8b5"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll",
+      "before": null,
+      "after": "8f7ef6b23cc42d015f5e3ad71d3d19b4200a8e584f9c087189306d5b9f2944fe"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+      "before": null,
+      "after": "5573218af9af9e195298caad910150fc6583f0b7b709035a48c7519aa0a920f9"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Server.Kestrel.dll",
+      "before": null,
+      "after": "7a96bc2201dfd08057d77e2d37089b1ae89ecdbb93256d7187075c5ec6b745b4"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.Session.dll",
+      "before": null,
+      "after": "c12dd62c7ee8cb79b5e12b406cd8ab4d9c689b47581e94faff00cc40832b9290"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.SignalR.Common.dll",
+      "before": null,
+      "after": "4349b2c1804ff64eb4be2a87b9e33c3c49dc0db3adda1e00ed1de18a76ef82c5"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.SignalR.Core.dll",
+      "before": null,
+      "after": "70500ca07ed4b55f18bdb4469600e555d0ada01c53f57721497a691b48faf416"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+      "before": null,
+      "after": "88670271d9fe029ab7542a39020464117af5aeb4a0be95a11ed462743902a93c"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.SignalR.dll",
+      "before": null,
+      "after": "e8844cb06ad4acda4e5981244e04869fc0bb0445ecd8d03424b5594b3b5e0352"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.StaticAssets.dll",
+      "before": null,
+      "after": "c9d4fef2651198699808a714b60a0960ded2436e8aeb6be07bff547a03cb14e2"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.StaticFiles.dll",
+      "before": null,
+      "after": "a488d883a991c94f711c6083091af4effd1ed36198233ce75baafa668bdb6784"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.WebSockets.dll",
+      "before": null,
+      "after": "adbed90635ae6c4eb5581096509ffcd286312be260cfd18917508fb3c3ee142b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.WebUtilities.dll",
+      "before": null,
+      "after": "9be0c386220527342b30c0787b79b3ed5f43c85769e350978e19be5ac66f9783"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.AspNetCore.dll",
+      "before": null,
+      "after": "e0911e1151c2617edc6ca6c5a47c038f199e8a80f0ebfabddb7177fc17dd7713"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.CSharp.dll",
+      "before": null,
+      "after": "b50e19c442029505f0259d6e397f464cdd4898548686d1a08794b371d1578afd"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Caching.Abstractions.dll",
+      "before": null,
+      "after": "3d7d3a4b8f26eb0cc6dcbfc7049d100d6233109c707ccbabfe34e3674e64d01b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Caching.Memory.dll",
+      "before": null,
+      "after": "ac07bc34c7542f4d2677cbd2794e7ed8ca2e95c5833cb0246afe0b597b07aded"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.Abstractions.dll",
+      "before": null,
+      "after": "5addcbf337b03690881cce23353978e1e94cf74aca116a79b336b59f0a410108"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.Binder.dll",
+      "before": null,
+      "after": "cac2ba60ca95b0ddf93a4346344c0a0277e3bc3f692d31d1db65fccf66994e11"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.CommandLine.dll",
+      "before": null,
+      "after": "ddb97c67df027529d0c53adb4d3e541ab146426eb59c710338eef324101a7beb"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+      "before": null,
+      "after": "31e81c4b50cca2340d9eebe2ced174feddcdfa1af41709356cc72e5e82d42f45"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.FileExtensions.dll",
+      "before": null,
+      "after": "07dff8f52bba13b7a5ef862353688fd09a62b16431f7db35681aef4bf932c3ea"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.Ini.dll",
+      "before": null,
+      "after": "9a0c6e57963e48d54b0bc101f9feb36f0736e36cc8eacc6e6a320e2b2bc85259"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.Json.dll",
+      "before": null,
+      "after": "d7f6c6e7bbad631cd4938e8423a0b1893718c20ff3b0d8bcc4d197a89fa749e3"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.KeyPerFile.dll",
+      "before": null,
+      "after": "f1e42414ddb0063354e430d825ca1048472e662cb14904d63b7b4bcb17a3dd14"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.UserSecrets.dll",
+      "before": null,
+      "after": "ba5c284cad2bf66e89fd86810c03506cf4c1f050f144cfcc39b6598be811aa1b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.Xml.dll",
+      "before": null,
+      "after": "adb36461be53309189a472b163c753a607f70911b150a595717a86450a03f386"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Configuration.dll",
+      "before": null,
+      "after": "6d76752891640f80c1fe55d06ecfaee7c30dbcfe7296cec2cd57c1c077235b82"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "before": null,
+      "after": "cfb22c1a1948e13204fea4cefe7dfacb7f096651e6453d1538ed7779c3baa4f6"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.DependencyInjection.dll",
+      "before": null,
+      "after": "70c387210159e1196e021d71fd6ef3e08d85e738c9cd243dcb9482e09dcb7988"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+      "before": null,
+      "after": "f9194ac1c746fe1f182e84cdd045b95ddccdacc83dc8e6ead76589f94d79b2e1"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
+      "before": null,
+      "after": "97b63e83bac87f65aa8f8efac24f65b75dceffb90d680af1bb0d919efba97436"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
+      "before": null,
+      "after": "efbf4c0be2dcca6440487b379a2ddeb32cbae5053c6dd963e53c212a510ab450"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Diagnostics.dll",
+      "before": null,
+      "after": "5dcd1d25a651ae45e4ea8860f5a2505cedccb0c3bcb0908a639a52d2e62d6a5e"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Features.dll",
+      "before": null,
+      "after": "55ac37bc47f05dfb14d8a946ff39e5bef3356a70ba177d03dff3032d34b25b0c"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.FileProviders.Abstractions.dll",
+      "before": null,
+      "after": "00585ebcfb7f40e14ee75e290d6e3df82259578aec4b90a523e0789e0d07a9b1"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.FileProviders.Composite.dll",
+      "before": null,
+      "after": "107728d93b891b3630428bf34cb8bf7fc3d564a3f26de47cea2b4dbc36f3ce6e"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.FileProviders.Embedded.dll",
+      "before": null,
+      "after": "215666ce842ea483a20a4da71e0f37f2201aa6009b5e31fee31a019703349d9c"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.FileProviders.Physical.dll",
+      "before": null,
+      "after": "3254a53f1786c8a511fc09cec0c2f325238c578f35d8e36763880c68044a2d1d"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.FileSystemGlobbing.dll",
+      "before": null,
+      "after": "b1239c551eca6b39c58c841670a6c649920b7b053470b7aa09723fa711478eaf"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Hosting.Abstractions.dll",
+      "before": null,
+      "after": "5f9084267c28b90fd6ff29670bd2748cfbfa569c5190504f823d33dcff72c99b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Hosting.dll",
+      "before": null,
+      "after": "73a326b4465b60302dda9de71b1e934cfe5fbb04c6f458e0660daf4cdf076994"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Http.dll",
+      "before": null,
+      "after": "891daf076bb9eb3adb9d4402194df3aeff649f5a6e17c2a541a8bca3072ac93e"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Identity.Core.dll",
+      "before": null,
+      "after": "d34afad6c720e9d598ef597cd6a2a6657884d222f0aaeaab1839fae11d87d1f3"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Identity.Stores.dll",
+      "before": null,
+      "after": "f6b1659614c59e4f8faa9efedd714f5f94629af4327a53c14c9f8432d99f9dc6"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Localization.Abstractions.dll",
+      "before": null,
+      "after": "fccc41f03c4d3c50eaba8fa1559325239a642d068d32c09ccc77716323742b84"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Localization.dll",
+      "before": null,
+      "after": "b6670122d97b30283bd5bf4e2cf03ee8f209e75f8880bd20919aaa97aad82e81"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.Abstractions.dll",
+      "before": null,
+      "after": "68e8f4cdc8a12c3765027a44286721858cba8116db2ce0b8b693744e099d3cff"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.Configuration.dll",
+      "before": null,
+      "after": "19fa5e31d931d68847578dc2e9c64760287f0dfd73669dd5dbcc25b9760d2dbb"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.Console.dll",
+      "before": null,
+      "after": "5bab4fff854f4c29e89c84ffb8a340911542aa69ad183300a27e650912db8368"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.Debug.dll",
+      "before": null,
+      "after": "a7945fe5dee923e29e3427a453ff18582da6b825843ce738fbe16152177f3ad8"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.EventLog.dll",
+      "before": null,
+      "after": "543f9763618ea6310cff22149177b8b5786b7ed42d640138e30407a583351245"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.EventSource.dll",
+      "before": null,
+      "after": "b3a4f8c6a97d69b09a8569312426a7c5722ccaee05bb7607f4a04db15e217d08"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.TraceSource.dll",
+      "before": null,
+      "after": "d2cf239d6fe43afeae019c7ed0b7964468f4df2d003ab7cf5f2c5a92cf4ac046"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Logging.dll",
+      "before": null,
+      "after": "97de5f525ea7d6a19e20a9b9f755edfc36779780b54e6c9dd2cfb669ff134121"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.ObjectPool.dll",
+      "before": null,
+      "after": "0a0d2b7e2e798a26dfbd31167b62bc0a9a9dd383a050d8193a38a5a88eac493e"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+      "before": null,
+      "after": "c7112304291d7a763e3c28f97024133a59827b047c7e973fe01520479e52b14b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Options.DataAnnotations.dll",
+      "before": null,
+      "after": "6da936f1ebe530231f861595eae3e9c73e5e14afc13f834727c9fa970692d8a7"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Options.dll",
+      "before": null,
+      "after": "e229c9caf8c24ff54d84a2dd36935d9ddc149deae957c189a88134afdb50d44c"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Primitives.dll",
+      "before": null,
+      "after": "e8b2d1ddd80f92d6295f89ad807009304f5ac5c52610892110e09c293efe4531"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.Validation.dll",
+      "before": null,
+      "after": "228967728c3e2085f4e5cbb11a7234aaca8eb398c58f343bc18bb8a6c8ce7b64"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Extensions.WebEncoders.dll",
+      "before": null,
+      "after": "de84dbb8b4cb7ed28a131aca9bd1510fcb982691ff039f78cb3dc1f2eab4c321"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.JSInterop.dll",
+      "before": null,
+      "after": "1c25934fb7c5eaa665f6092cc652edf62df5881eb1d4a8dbc132556534a6b780"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Net.Http.Headers.dll",
+      "before": null,
+      "after": "511fd4e58329a19a6a2aee7e6afee9871caa03fdbaf29edfa36d12b90e145a68"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.VisualBasic.Core.dll",
+      "before": null,
+      "after": "b5c613a532519a63b98615afbeefeb55f7aa59a74667d2c5223a78497f38329d"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.VisualBasic.dll",
+      "before": null,
+      "after": "3165df5d3cc8409859965ba5537dbcd8fd30c6d11e761cfb9d54235e051ea1f5"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Win32.Primitives.dll",
+      "before": null,
+      "after": "2a6cc0c98205383dc0f4c9c24c4669007a95dac535a6452b0c9a3ce1a607289b"
+    },
+    {
+      "path": "tests/p05-client/Microsoft.Win32.Registry.dll",
+      "before": null,
+      "after": "d38c2493ab44ae22b82a3977224dd508be9204eb1b0d8cb65c5ba43617171d4b"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Gameplay.Definitions.dll",
+      "before": null,
+      "after": "628c2521650856bdf3cbdd4310b4f613e48282cc5a774c903e85c2fb38aeee7a"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Gameplay.Definitions.pdb",
+      "before": null,
+      "after": "c300fc02676c02a7e1065e3975ef75fa9e537d0ee043815549226d5e3b1ac74c"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.NetworkMapping.dll",
+      "before": null,
+      "after": "5f8dacf10a1bbdc4cef031bc0728951d9f8fb1d7af08b3539b7aa3317a0df67f"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.NetworkMapping.pdb",
+      "before": null,
+      "after": "5041ddb38b4df160206ca92b10423ebda3c70a7c899698cb4e80dc253f8ecf49"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.P05Client.Tests",
+      "before": null,
+      "after": "8e5d0057a107fda32a3bf88eea7e6b42b0f6a3bfbbd585c921f868a5eab4adc6"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.P05Client.Tests.deps.json",
+      "before": null,
+      "after": "23023770d05dd157fa89ff3a6b7362c7472d7036130cfc1eaed22ed7018ea456"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.P05Client.Tests.dll",
+      "before": null,
+      "after": "c6a2fc72c59815c2a81106110f80c7bc9844c953a1273730887dd1791ab3ee0f"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.P05Client.Tests.pdb",
+      "before": null,
+      "after": "8f71f9bf8738aeaf12e61d8442cdd8b62c6ffbcde18574e373416820f295da65"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.P05Client.Tests.runtimeconfig.json",
+      "before": null,
+      "after": "a74049dbb41e21a322c83c99da76e477f355c5bd5ffb02f558622d0193bc52b5"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Protocol.dll",
+      "before": null,
+      "after": "e894417f775f31a1591dcbd4e86abb346f4e2ccd0fe57c1f41e704ed931b073a"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Protocol.pdb",
+      "before": null,
+      "after": "3b6a490a0a20278eb6ddb72d0c28ddbb31e872bd8f9ece7858283301b6dfe56d"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Server.Application.dll",
+      "before": null,
+      "after": "d7e385da473af975c7a2a13f3f03aa2beff585c36eee31d144c972721072d30f"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Server.Application.pdb",
+      "before": null,
+      "after": "813f4b53c9faa6e7a7c8632ca28aab5e8a4c77e8a6f4ab89af3c2b4ddd00559a"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Server.Domain.dll",
+      "before": null,
+      "after": "ed110f5211d0b913510ee7390a28e15de55a4f124273b21485763a87e939a749"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Server.Domain.pdb",
+      "before": null,
+      "after": "549546b31b055b3e45f063e2d680071997d08098329ca20f182f9587ff6c52c9"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Simulation.dll",
+      "before": null,
+      "after": "4c5a613a1ea7fa2a7a638aea5a12389f21aadc1312246cdf96c28c96f65867f0"
+    },
+    {
+      "path": "tests/p05-client/RacingBois.Simulation.pdb",
+      "before": null,
+      "after": "266ab150292be73877d60d4618f1e2494f423c42735640439848e13fdd572898"
+    },
+    {
+      "path": "tests/p05-client/System.AppContext.dll",
+      "before": null,
+      "after": "5a66ae12854a05cb48e9f05f33e2b17dd9cae63ae41f8bfed85f5350a2b30a0f"
+    },
+    {
+      "path": "tests/p05-client/System.Buffers.dll",
+      "before": null,
+      "after": "085df3e39e9246a7e410dff2ff845fccbaaf995c80ae5143a40c4d47584303e1"
+    },
+    {
+      "path": "tests/p05-client/System.Collections.Concurrent.dll",
+      "before": null,
+      "after": "cef3a03d7e782763dd85cbdf7424446d3998955507ff8caa95b427ac4436cc55"
+    },
+    {
+      "path": "tests/p05-client/System.Collections.Immutable.dll",
+      "before": null,
+      "after": "fd45de05f7addc9b6ea78c528b7bb1da47062615d023db98dd7f8be105d08bc3"
+    },
+    {
+      "path": "tests/p05-client/System.Collections.NonGeneric.dll",
+      "before": null,
+      "after": "3d38c0c90d05507eb8d4bf620b8b8842766fd697df6eeb0aceaf635406fde6cd"
+    },
+    {
+      "path": "tests/p05-client/System.Collections.Specialized.dll",
+      "before": null,
+      "after": "c9f0822bdc9388adc2d9e5ad2084d02e57d1f7841794035fb142864f9f93e2cf"
+    },
+    {
+      "path": "tests/p05-client/System.Collections.dll",
+      "before": null,
+      "after": "b0d620b5ca149fe630bd998b9716b6ab5c55cef80d85782801fe537bd08fad83"
+    },
+    {
+      "path": "tests/p05-client/System.ComponentModel.Annotations.dll",
+      "before": null,
+      "after": "3c1b8857260fb543bf8aef5334c89e454c3ebed9263ef33a525de3160ada9e0f"
+    },
+    {
+      "path": "tests/p05-client/System.ComponentModel.DataAnnotations.dll",
+      "before": null,
+      "after": "e2bd795c5a5e0fac6481f1b4e600e8035b1457e1c2a72caa260a3a9548b05bca"
+    },
+    {
+      "path": "tests/p05-client/System.ComponentModel.EventBasedAsync.dll",
+      "before": null,
+      "after": "2ef8079c1157069aad1b3b494bcdf7ce062614f93660c148e5ec4e8fba3cdff1"
+    },
+    {
+      "path": "tests/p05-client/System.ComponentModel.Primitives.dll",
+      "before": null,
+      "after": "6bfba90e92a264009b0547a4711a736305952507353466580e5ee35363f7ab1c"
+    },
+    {
+      "path": "tests/p05-client/System.ComponentModel.TypeConverter.dll",
+      "before": null,
+      "after": "729250992ae15a53885b2f0b26d2af8047417725904282eda6ae7e4231dfe12f"
+    },
+    {
+      "path": "tests/p05-client/System.ComponentModel.dll",
+      "before": null,
+      "after": "c00785405ee7f80ffdb0bb09e10d446adfc7c4af52532bb448659f42a43074b1"
+    },
+    {
+      "path": "tests/p05-client/System.Configuration.dll",
+      "before": null,
+      "after": "5ae291c7faac6b6750c97eb8aa9f3d5108801e81349c1842b374899460a8eb4b"
+    },
+    {
+      "path": "tests/p05-client/System.Console.dll",
+      "before": null,
+      "after": "96411592efe6fa9b1b16811ff5e6732b60e0e244a9ec8476c08d8b4fbb72507a"
+    },
+    {
+      "path": "tests/p05-client/System.Core.dll",
+      "before": null,
+      "after": "04f73296614581499547b30806946f8855ee7739551bb4ea04b2376549841d00"
+    },
+    {
+      "path": "tests/p05-client/System.Data.Common.dll",
+      "before": null,
+      "after": "0c3dee13c3094852403ce8e71eb13ec2fb8544580afe3281da27470178208007"
+    },
+    {
+      "path": "tests/p05-client/System.Data.DataSetExtensions.dll",
+      "before": null,
+      "after": "0c60e2e74cb3dfe7d718bd7fb65b7388d26b9cd7be5bba470319ecbad72104f6"
+    },
+    {
+      "path": "tests/p05-client/System.Data.dll",
+      "before": null,
+      "after": "9a3dae68506bffaa4dfd97b023d1d70585ea2caaf59307a1f03a155b47ec5f91"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.Contracts.dll",
+      "before": null,
+      "after": "a98a392438300108166262ccc0a97bd2f3f4bfc0fc8b5e27795a6d8afd4266a5"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.Debug.dll",
+      "before": null,
+      "after": "05e8907b55d72815a59f6786e69df0d31d28eeb46616685da606a39bca4ad4a8"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.DiagnosticSource.dll",
+      "before": null,
+      "after": "e56e8a1130fc3d62569e413e55c0c77e9e15982ff50eee3f85046f25d384d46a"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.EventLog.dll",
+      "before": null,
+      "after": "dbce7572f8eaf7d4f3cefa689db6cab7c6ef2fce1cd8ebd7fb8f641b549e58a6"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.FileVersionInfo.dll",
+      "before": null,
+      "after": "f0e83a653942ca5cbd210c30910872860c82afb8c647ce843c30690c80efde32"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.Process.dll",
+      "before": null,
+      "after": "163dc2cff2dd769c2cb6c4408d854e3d0465a2c38e249ce2e2247c4315e6e064"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.StackTrace.dll",
+      "before": null,
+      "after": "05256408ef6fbbc6fcc588bd00a5ecaeb60329f301fa57acaa9c02584c141bcb"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.TextWriterTraceListener.dll",
+      "before": null,
+      "after": "b55df8b0534907372804b07c0d97a51e32b2af3c75b806bb73a8efdfa81abf64"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.Tools.dll",
+      "before": null,
+      "after": "3177f9eb881762f93c166ea988c6e538395b10ec6c63a0be3767402cdeacb24f"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.TraceSource.dll",
+      "before": null,
+      "after": "1192fd3a1c119e75cc4e05d25e5a49363d928a8ebf0f211eb80a403f43481484"
+    },
+    {
+      "path": "tests/p05-client/System.Diagnostics.Tracing.dll",
+      "before": null,
+      "after": "5d9db807ff812fa2945e0e41c99e24e9e3c2f41279ad70f48fd75ed37b7d46db"
+    },
+    {
+      "path": "tests/p05-client/System.Drawing.Primitives.dll",
+      "before": null,
+      "after": "6cbd36b3b8486c8dff78ec239f36d5070b4e23afa865703b9403c8d2e9bc27e9"
+    },
+    {
+      "path": "tests/p05-client/System.Drawing.dll",
+      "before": null,
+      "after": "f56dfb751fb99d350a497836285d8a889be2c7f0bf409eb3c0e014d8b3b82c94"
+    },
+    {
+      "path": "tests/p05-client/System.Dynamic.Runtime.dll",
+      "before": null,
+      "after": "d0d275c052761f538a428e12740c7b16e473505fb04b067143c57d8c12db6faf"
+    },
+    {
+      "path": "tests/p05-client/System.Formats.Asn1.dll",
+      "before": null,
+      "after": "fd4e733e11af9f538a51c4283d51096861b0034380220deabaab3069388162ef"
+    },
+    {
+      "path": "tests/p05-client/System.Formats.Cbor.dll",
+      "before": null,
+      "after": "d1a7f39393fba5ee2fe4491aaad0b4504dbf1e46006fd9fa23d70663b20565e4"
+    },
+    {
+      "path": "tests/p05-client/System.Formats.Tar.dll",
+      "before": null,
+      "after": "9c33bd486e147135bdb35b6628f13c598bb5be56e51e25e726f9f9076fd6579c"
+    },
+    {
+      "path": "tests/p05-client/System.Globalization.Calendars.dll",
+      "before": null,
+      "after": "dd0f23f9ecb7df2d2e0a56e2bc9e7a96ba4f69aaf9836ade5f778f057d784a63"
+    },
+    {
+      "path": "tests/p05-client/System.Globalization.Extensions.dll",
+      "before": null,
+      "after": "fe4eb5fcbcac83090d92f096acaae11154a38e7ea95a7c7fb2a51d30f4a81a62"
+    },
+    {
+      "path": "tests/p05-client/System.Globalization.dll",
+      "before": null,
+      "after": "69e93f5d0bd44b05fbdca1d10dc2ad63e2f4ba5963e65a97b024dd745583f310"
+    },
+    {
+      "path": "tests/p05-client/System.IO.Compression.Brotli.dll",
+      "before": null,
+      "after": "461e645d8aff2eb62d99553e0f7c99de30b7e2d75013649be09e67991d62306b"
+    },
+    {
+      "path": "tests/p05-client/System.IO.Compression.FileSystem.dll",
+      "before": null,
+      "after": "e76f53c51a89b1c7d851ddd468a426eca1e56f4792e111cc48a72d4db3a5183f"
+    },
+    {
+      "path": "tests/p05-client/System.IO.Compression.ZipFile.dll",
+      "before": null,
+      "after": "f4184b30263550476a12719604f5fe6b57ed6b6244e8a6e7f310d337724bde42"
+    },
+    {
+      "path": "tests/p05-client/System.IO.Compression.dll",
+      "before": null,
+      "after": "487119a638cd4918c7b6c7f924c4798c07f86d004d1f1a5b758a972c1b20b818"
+    },
+    {
+      "path": "tests/p05-client/System.IO.FileSystem.AccessControl.dll",
+      "before": null,
+      "after": "01a55470025c22d1a8eb8e025a2b3c3842c8ea7b65dfcfc65ef1119a257c4bb3"
+    },
+    {
+      "path": "tests/p05-client/System.IO.FileSystem.DriveInfo.dll",
+      "before": null,
+      "after": "17f0eab4dee412d8351cd5f48e821726a017ba1cbe2db400f1aaedb9d655c12c"
+    },
+    {
+      "path": "tests/p05-client/System.IO.FileSystem.Primitives.dll",
+      "before": null,
+      "after": "6403272f3582f17b15f65c22d18225232776700cd136c3143a9bcc60a3e0e262"
+    },
+    {
+      "path": "tests/p05-client/System.IO.FileSystem.Watcher.dll",
+      "before": null,
+      "after": "7155d1252d32c2dd2186feabf2e0610420107d1a29eec4a6b92739cf294ed341"
+    },
+    {
+      "path": "tests/p05-client/System.IO.FileSystem.dll",
+      "before": null,
+      "after": "2cf5de6df261a574bc44706ad718c5ffc6d93ab87b23020be08ebf820ef3c331"
+    },
+    {
+      "path": "tests/p05-client/System.IO.IsolatedStorage.dll",
+      "before": null,
+      "after": "951b6e0e038eaec39e14404c8b6a89581d4cc725d7b2f73bdf09f54c483ce7c9"
+    },
+    {
+      "path": "tests/p05-client/System.IO.MemoryMappedFiles.dll",
+      "before": null,
+      "after": "50ad62e18cbf64de2db037a238856e3a77bd755c6913928398c29cd27bf45694"
+    },
+    {
+      "path": "tests/p05-client/System.IO.Pipelines.dll",
+      "before": null,
+      "after": "e8f4055dad5e68185e1d1cc28639d84c3519f69afac1b8719887f96214fbb04f"
+    },
+    {
+      "path": "tests/p05-client/System.IO.Pipes.AccessControl.dll",
+      "before": null,
+      "after": "69b0d5b3981a5630134e131b8e34328caffc6774ee53ea157efa00861228d960"
+    },
+    {
+      "path": "tests/p05-client/System.IO.Pipes.dll",
+      "before": null,
+      "after": "71a16e3f66ff68dadf7b807e48f953c6131673672383678937bcc0150d793f2d"
+    },
+    {
+      "path": "tests/p05-client/System.IO.UnmanagedMemoryStream.dll",
+      "before": null,
+      "after": "ea554452097ebf63131ac471a1b9c00833527b6ac2c227ad70c8f2f268c216d7"
+    },
+    {
+      "path": "tests/p05-client/System.IO.dll",
+      "before": null,
+      "after": "ab7a74589c64d4576a121bc623b73a52a3980f34dd87f13ed26c1ba495f6e405"
+    },
+    {
+      "path": "tests/p05-client/System.Linq.AsyncEnumerable.dll",
+      "before": null,
+      "after": "3fe6e43752217fe589af6975bd7c81043aaaee4c2720f907d12eeca214d5cfd1"
+    },
+    {
+      "path": "tests/p05-client/System.Linq.Expressions.dll",
+      "before": null,
+      "after": "1266d5429ad627784516af204a4d7f9aff782bb2852f3bbbea0c766a21b6fc40"
+    },
+    {
+      "path": "tests/p05-client/System.Linq.Parallel.dll",
+      "before": null,
+      "after": "f9a8592d0d785b64ed841bdc6ea10214fb1f09d4c2165f2707a078cce0cac46f"
+    },
+    {
+      "path": "tests/p05-client/System.Linq.Queryable.dll",
+      "before": null,
+      "after": "e19e41dbd61a209bf07f8186677afaeaaa29a2cdc077cf63a0834ae31dbaef01"
+    },
+    {
+      "path": "tests/p05-client/System.Linq.dll",
+      "before": null,
+      "after": "1b9cd90b7528ba0274a90a69103a92c165d4ab92f85883da12168d02f2614c97"
+    },
+    {
+      "path": "tests/p05-client/System.Memory.dll",
+      "before": null,
+      "after": "83c1786f4f9d3c098e7e8d377b519ad0417637b03be7cb5f90b43d3abde8245f"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Http.Json.dll",
+      "before": null,
+      "after": "0bd4bd1b49d9c0c85062d34588731574e21aa62feeaf9687eb6bd8e9d73f2515"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Http.dll",
+      "before": null,
+      "after": "1d738bf6af00d7ff339db6d1540af5e69b9c0c3f063a18362a255b3c2b9c6ec6"
+    },
+    {
+      "path": "tests/p05-client/System.Net.HttpListener.dll",
+      "before": null,
+      "after": "1894fd7b7f90b526eebff9f8201723b22c76fb63792124a5d91d002306fc79ba"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Mail.dll",
+      "before": null,
+      "after": "65517c0e0702a43fa4c205e8e74c63d116db257329b50b486763ab9ce5248dfd"
+    },
+    {
+      "path": "tests/p05-client/System.Net.NameResolution.dll",
+      "before": null,
+      "after": "93ebcee38aa487b591c494e8a9393f97b1130a5a13a1b962b648093b48bedd02"
+    },
+    {
+      "path": "tests/p05-client/System.Net.NetworkInformation.dll",
+      "before": null,
+      "after": "605b85950bbe16001b3851aaef5b55d89ec67d353395a58fa8ef6f2af9b01648"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Ping.dll",
+      "before": null,
+      "after": "0c9d5e9a802956a23bd848b2c4f51d1d853194bb398884964fa9e92d78e73205"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Primitives.dll",
+      "before": null,
+      "after": "cfbef07ef240db5454959e08705a8ce110b0cc227ed9608bedf14c4ad72f10a6"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Quic.dll",
+      "before": null,
+      "after": "bc5a7a90a27d8625086173d3b1de4bb9520db376c8a8bc93699ea58e2560bf6d"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Requests.dll",
+      "before": null,
+      "after": "fe4c1af439bd7c41aa6bf55b60ade7a072a289ec32cec4dabbdbbdb1f15fb5d4"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Security.dll",
+      "before": null,
+      "after": "cc253feee975bb4e22f82a74965e1d95fa1ff81c68d58dccd4b3aa71ec7f0e24"
+    },
+    {
+      "path": "tests/p05-client/System.Net.ServerSentEvents.dll",
+      "before": null,
+      "after": "fac9742b98cf401d78003b45bed02a726823bf4223f414b86a4ba914961d8d3d"
+    },
+    {
+      "path": "tests/p05-client/System.Net.ServicePoint.dll",
+      "before": null,
+      "after": "082a0aa0c2b305a0a567f5cf02426a4d86a847aece7f62effae5bf7ba07a4598"
+    },
+    {
+      "path": "tests/p05-client/System.Net.Sockets.dll",
+      "before": null,
+      "after": "63ccd0d2a5a44cfe94274f33f50e4ddeee41d9e3c6ff9252871441148fc1d727"
+    },
+    {
+      "path": "tests/p05-client/System.Net.WebClient.dll",
+      "before": null,
+      "after": "1fe1409f0b6536eaa7367a9d9d7645673efb7437b2837f594449ab140331bdae"
+    },
+    {
+      "path": "tests/p05-client/System.Net.WebHeaderCollection.dll",
+      "before": null,
+      "after": "7c0dd2503f36acead3ce2582cab69f5f4fa4bff76652b86b3af589382467509b"
+    },
+    {
+      "path": "tests/p05-client/System.Net.WebProxy.dll",
+      "before": null,
+      "after": "75e41abd0f78f8dd37b1d3a3bd603154ed0833f844a18862bf0fb7a877b2d9fa"
+    },
+    {
+      "path": "tests/p05-client/System.Net.WebSockets.Client.dll",
+      "before": null,
+      "after": "df0f1de452032a7d6a7f8927f5e3d202dea632e4becaa7903af1a9e974404911"
+    },
+    {
+      "path": "tests/p05-client/System.Net.WebSockets.dll",
+      "before": null,
+      "after": "585e5883d0f893b5cf4dd0bf18a83a5ae874ff9cfbcc51903abba6df8fe1bba7"
+    },
+    {
+      "path": "tests/p05-client/System.Net.dll",
+      "before": null,
+      "after": "2105d7a373136bf11b3b67bd94051b665228f2748c3e4fb7c975b47bd098dbce"
+    },
+    {
+      "path": "tests/p05-client/System.Numerics.Vectors.dll",
+      "before": null,
+      "after": "e80d06e8eb8b15cbdd561fd91c6d240bb68f5507d579bdeef5bd1f39e56c2f66"
+    },
+    {
+      "path": "tests/p05-client/System.Numerics.dll",
+      "before": null,
+      "after": "415301c625bb4dc3b5c237319ae5a1136a9efb18961ef80af80326f2374ede52"
+    },
+    {
+      "path": "tests/p05-client/System.ObjectModel.dll",
+      "before": null,
+      "after": "d5f4eff61f27f5d54d9d4672a04a9fc00b2b734ef18a65b2ec32508037c591f2"
+    },
+    {
+      "path": "tests/p05-client/System.Private.CoreLib.dll",
+      "before": null,
+      "after": "c0424e026a53db21ca98ca35ac5fa1a721ec2880c806ed7c6384a60d4f1c72d5"
+    },
+    {
+      "path": "tests/p05-client/System.Private.DataContractSerialization.dll",
+      "before": null,
+      "after": "67e6ee31da2aa857a309d6fb8a6e4beea58d865fdfa41a593d9bc21513c05bf7"
+    },
+    {
+      "path": "tests/p05-client/System.Private.Uri.dll",
+      "before": null,
+      "after": "02a26a7d650484e2a81ad649e109cf26c16b3e9dafe73057b3934e8c82e0513c"
+    },
+    {
+      "path": "tests/p05-client/System.Private.Xml.Linq.dll",
+      "before": null,
+      "after": "ce3a571a89d8c57c2221db36ca0ddc076df2182b9b9274e0193c294044d22ced"
+    },
+    {
+      "path": "tests/p05-client/System.Private.Xml.dll",
+      "before": null,
+      "after": "bb1d57e1dd324a450299711b26ec52dc95d12bda13a2a8ef1ad7fb1055913952"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.DispatchProxy.dll",
+      "before": null,
+      "after": "3c500a64712c1572a7df7c2d8240794e5533a72a1fc644add418dc405647b1c7"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.Emit.ILGeneration.dll",
+      "before": null,
+      "after": "753b44391926e7f8a0a138a1fbc9db604d11fede55a73cb77a50e2a001695959"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.Emit.Lightweight.dll",
+      "before": null,
+      "after": "d44c4af3290edda959fcdac1242dd5b3aad8956f934ff0d003c17c454b2c73bc"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.Emit.dll",
+      "before": null,
+      "after": "3fb21a62e308b59a2b8cddcf113d3a10672a6c7a6b5aa3b0c81b4b3fd3b43f1f"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.Extensions.dll",
+      "before": null,
+      "after": "a13d8fee66423bb3c8bc132f022c8c3d17c12da0580e1c08c1b866a2a5404ee6"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.Metadata.dll",
+      "before": null,
+      "after": "6ffc5ec7fe4376d4161a61a87663a08662c60f6867a754cfb45419e9800d9a74"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.Primitives.dll",
+      "before": null,
+      "after": "92947842dd0aadefd2b301a47ae9b7d2bb6ea2b68b8eac6c372040d815ab066e"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.TypeExtensions.dll",
+      "before": null,
+      "after": "ce6027401293496b842f6d753f3c43b80d8ae0861b15589012456b7da9af5971"
+    },
+    {
+      "path": "tests/p05-client/System.Reflection.dll",
+      "before": null,
+      "after": "f709406ade889ff0b3e688ad5dff7fe066892b7f764e20c56e3a6b6044ad7739"
+    },
+    {
+      "path": "tests/p05-client/System.Resources.Reader.dll",
+      "before": null,
+      "after": "58af33b7e6ab97c3b8456a28bd7792e24cc9e718728e977477e3d699c8a4b091"
+    },
+    {
+      "path": "tests/p05-client/System.Resources.ResourceManager.dll",
+      "before": null,
+      "after": "7f698ba43bcd2539f38b8ad7c40e9e1b744ecb4f724d8a86891a553010140905"
+    },
+    {
+      "path": "tests/p05-client/System.Resources.Writer.dll",
+      "before": null,
+      "after": "8896b9ec206dd04b640a78d57b96d37482d33cdfcb06555b39f80e1bf360cdde"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.CompilerServices.Unsafe.dll",
+      "before": null,
+      "after": "2148dd17f97709b05b8bb20e78ca27c3068fbad277443e38b075df23d843daa2"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.CompilerServices.VisualC.dll",
+      "before": null,
+      "after": "a36c754cb79d7683bc4eda9bb3a1ff3ae63d1ccc1320d76904c4cbc9568926af"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Extensions.dll",
+      "before": null,
+      "after": "d8df514fb00b17c95c7b0eb8dcfd404b0db3b7d55e7dd64c4810de3663d73a41"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Handles.dll",
+      "before": null,
+      "after": "66357f9e211bf5371150ceaf193e7fde9d17b060533093b133386702760cdee7"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.InteropServices.JavaScript.dll",
+      "before": null,
+      "after": "18800c3f1f7f854aefe6156ab301ddf1a3d6484941265918425970bf9714e664"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.InteropServices.RuntimeInformation.dll",
+      "before": null,
+      "after": "0e43d71dfdab6b1800a35ca2ba8d9886f7984de6925c43119084a3692a144d6d"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.InteropServices.dll",
+      "before": null,
+      "after": "7c5be475c75957b165940e6565fbed4c4bdf9fae7ee7113ac6880193e1760480"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Intrinsics.dll",
+      "before": null,
+      "after": "30c4e3f2c91c1d4298a4fb604f34abb4afe8e1ce2028bdd58516038b85e837a1"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Loader.dll",
+      "before": null,
+      "after": "1ff2e1441eb5d9d333b66ccc0778249fa73f1866f3558b90e5bd5accc572ae61"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Numerics.dll",
+      "before": null,
+      "after": "0d21789804062c0f3adaf9706499663fc587ea1c3d40c911dcaa5a0449c396b6"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Serialization.Formatters.dll",
+      "before": null,
+      "after": "6b8643c82d526d927566ccb7de3fbe3bca5be77aac77c15db6bf83d0b426161f"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Serialization.Json.dll",
+      "before": null,
+      "after": "ec2e288bc6cdc333f1786aa8e23f9298fc2f485f82363ef956253878fc4b8cc4"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Serialization.Primitives.dll",
+      "before": null,
+      "after": "0f226b6e3dc189f2941bae594530b2b394f869de7a5a316457afa983189625d2"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Serialization.Xml.dll",
+      "before": null,
+      "after": "c24c4b18f1dd0f71349352a1875609d417e9b1e2f991bbd0c86cc6965770cefa"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.Serialization.dll",
+      "before": null,
+      "after": "50da802f4f15ac69dc7e6d632ce0aa0c8eabbbec7a0fcc326f997a9c93ce2944"
+    },
+    {
+      "path": "tests/p05-client/System.Runtime.dll",
+      "before": null,
+      "after": "a0bb4da550e431cd1fdc9eba558701c0b02de33d3c64293f7c9544b3ae2678c5"
+    },
+    {
+      "path": "tests/p05-client/System.Security.AccessControl.dll",
+      "before": null,
+      "after": "8f62ab77fb3db8acd92ee8fad32541734de65108452fe77d1eda0a92fe42c228"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Claims.dll",
+      "before": null,
+      "after": "dc9c88b5e04cf7e3ff5b7ca441c18276f594b25ff9a9afab78437872c498bdbe"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.Algorithms.dll",
+      "before": null,
+      "after": "13d7181b1967a85faa6ba186d6c68eef0a09195da2427722ab9d0ecdad53231e"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.Cng.dll",
+      "before": null,
+      "after": "bcfcb777ec0658b5c582c33edfcf30341dcafea1d258e1278dd83c8e1742a870"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.Csp.dll",
+      "before": null,
+      "after": "3bc7e3b0536993d87e175a3a1f5266595f77eb307c655f3ce1bf08f5dea75d2f"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.Encoding.dll",
+      "before": null,
+      "after": "801f611c5c23cde0a1060e3027fb9546b778fdce35e9e9aa48d02a48540902a8"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.OpenSsl.dll",
+      "before": null,
+      "after": "90312f0ac9ee5c4a840e1f3ccd008814739df8bb2d8fe4c4f393b8a6bbe1dbe2"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.Pkcs.dll",
+      "before": null,
+      "after": "97c0d04608be0b2f7f35f60e3d5a165a95c3058db87324327d550497a351c819"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.Primitives.dll",
+      "before": null,
+      "after": "8f2c1833bbc2db51df403ffb320711662d2682020ce7b2eb599990395f67328b"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.X509Certificates.dll",
+      "before": null,
+      "after": "ed89bb7b8d12885cc77a466bc91e807ed21834c2ff9c33112c8ae4da028c511e"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.Xml.dll",
+      "before": null,
+      "after": "aa21fcd637e8e52d4aaa8b95b6d68afa09b6dd11dd2a2fbe1e8a46d6b4824dba"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Cryptography.dll",
+      "before": null,
+      "after": "567ead6f82e244c97871d67c69f214eb456424e4aa46c063e3bc70147c600ac9"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Principal.Windows.dll",
+      "before": null,
+      "after": "09b04b3fef06714575d357766760f6aa2ae683c1470d13bded00622f32dd56ce"
+    },
+    {
+      "path": "tests/p05-client/System.Security.Principal.dll",
+      "before": null,
+      "after": "9d4fd0f4281c5da796d3174018c5f75c9da71eb6162430c5f8ce4dc808ef40ee"
+    },
+    {
+      "path": "tests/p05-client/System.Security.SecureString.dll",
+      "before": null,
+      "after": "d1c0be5259e7d4086c5e9b51eced80ad13b50689d6ced0685acc1d23d1684bf8"
+    },
+    {
+      "path": "tests/p05-client/System.Security.dll",
+      "before": null,
+      "after": "59b8f0dbf5233adb5400dcb457adf0dac56f6310b43788bc158c5865c76b8619"
+    },
+    {
+      "path": "tests/p05-client/System.ServiceModel.Web.dll",
+      "before": null,
+      "after": "69bdef89cc05b3467d8efea3da3db077af4683e5650be5b1407dbb2d3647872b"
+    },
+    {
+      "path": "tests/p05-client/System.ServiceProcess.dll",
+      "before": null,
+      "after": "cf3574ac84c99fa6f56a05dee19f316d655b628ff8dae7bba0aea60dc6285177"
+    },
+    {
+      "path": "tests/p05-client/System.Text.Encoding.CodePages.dll",
+      "before": null,
+      "after": "fb23a119249259df1267dfbf2962c824937a9c038ae753241eeeabf9cd874352"
+    },
+    {
+      "path": "tests/p05-client/System.Text.Encoding.Extensions.dll",
+      "before": null,
+      "after": "02d2ec21a4b8be9f9674093711e609ec9cbca41bc63751a551701745894ed34e"
+    },
+    {
+      "path": "tests/p05-client/System.Text.Encoding.dll",
+      "before": null,
+      "after": "47cd02812200dee2ee1980119861cd3a5aeed9604974746e2eaf974e029a64e5"
+    },
+    {
+      "path": "tests/p05-client/System.Text.Encodings.Web.dll",
+      "before": null,
+      "after": "88338c129e9ad79f682515a69e79570bd8a042e112467ce7a071bbfbd39ba395"
+    },
+    {
+      "path": "tests/p05-client/System.Text.Json.dll",
+      "before": null,
+      "after": "e1cd0ae514ab1d46cd037251f2a1d09154543c03a76a79fb3fd798800c6cc320"
+    },
+    {
+      "path": "tests/p05-client/System.Text.RegularExpressions.dll",
+      "before": null,
+      "after": "a9b812fc5cdbabb1c0ee7670e43347da1730528a5e55acec3fa316674eabb33a"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.AccessControl.dll",
+      "before": null,
+      "after": "4d63017927767084cea69c4bc5da814dfbc0e1f44d8a72a9bcd2ed61108b1ae8"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Channels.dll",
+      "before": null,
+      "after": "469fdbe3ec8d2099ebf387569c5bf7cbae798d9533335de0e36848277c0be367"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Overlapped.dll",
+      "before": null,
+      "after": "4a844deee1b68aa9967e8cb440c8d26f2d9d8943bdea9bee384efac0cae6212d"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.RateLimiting.dll",
+      "before": null,
+      "after": "c4c8f781689d20e8910602cf2bf6ab3a3b7b7f4aea7499b70c0c9f171fcbb26d"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Tasks.Dataflow.dll",
+      "before": null,
+      "after": "995d4ea022199f25232f685c03c3fd9a3d5b55f6c5492791c7733a1a567be780"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Tasks.Extensions.dll",
+      "before": null,
+      "after": "8deef5ad09f55abcc2c5706cfd0b03dd8d51d06d9a1a44dbdc90b0b7b46df318"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Tasks.Parallel.dll",
+      "before": null,
+      "after": "e733830cd49d5748106ad8a081da96b1ea9eecaf70066ae5c60becd9efa9a5f9"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Tasks.dll",
+      "before": null,
+      "after": "12b899bb2ca03467ebd20f231b6c2780191b0b9030b26a9eefa75c4168f1433c"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Thread.dll",
+      "before": null,
+      "after": "acf7f74c2455d2230740064edf895540e07ae59a56fe25a2d6d67da03bc5febf"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.ThreadPool.dll",
+      "before": null,
+      "after": "9675498eb7412c4461460cc6f211e2fc2a89088d5dcdd68c71fa6f2c231b5536"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.Timer.dll",
+      "before": null,
+      "after": "3fe694ed394af4908a0db80b45983316c7830ffc10ed099b95069c6df5e4b853"
+    },
+    {
+      "path": "tests/p05-client/System.Threading.dll",
+      "before": null,
+      "after": "5b9bbbbd19b816c170e4ba1f9700c1168abd2f147fa7c7a238af229abae32537"
+    },
+    {
+      "path": "tests/p05-client/System.Transactions.Local.dll",
+      "before": null,
+      "after": "a3e872c081f3741a969c3b531bce7ee4bf83c945d072cafa28c93db789d414cb"
+    },
+    {
+      "path": "tests/p05-client/System.Transactions.dll",
+      "before": null,
+      "after": "cd2baea81f8bedc80493b78eb78670aeca9c7b67bb8db30c20164ef684c156f7"
+    },
+    {
+      "path": "tests/p05-client/System.ValueTuple.dll",
+      "before": null,
+      "after": "b5556bca1c01ed28ed925dd75f9bbf062540d3c6ae08b7446a9641d9940deda8"
+    },
+    {
+      "path": "tests/p05-client/System.Web.HttpUtility.dll",
+      "before": null,
+      "after": "cdc82d98f4258f5aa9e19a94db589d8b307f07952b2d10941c397cfd1cf248f3"
+    },
+    {
+      "path": "tests/p05-client/System.Web.dll",
+      "before": null,
+      "after": "fe1a37afe2dcc31c578e7fc524afef85e9e95bb5e0203630844bd7dd9b1470ec"
+    },
+    {
+      "path": "tests/p05-client/System.Windows.dll",
+      "before": null,
+      "after": "ea1324dced45ad991d45a57b4d43c01543a0f8c960a29b8bdba4a4f64ac7a3e9"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.Linq.dll",
+      "before": null,
+      "after": "9a5db0ca7cdaa3681b0b684ef24f5ad8f4a886b1c615f04b6474d9c48c366edb"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.ReaderWriter.dll",
+      "before": null,
+      "after": "7f9cc4bebbe7c1c1bdffff9eab4fe31343a4a064d225209196e85697fc5875d0"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.Serialization.dll",
+      "before": null,
+      "after": "d07429fc8cd8e47546b3202c447f06202523e3f92234acc402fc5e0b169d3113"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.XDocument.dll",
+      "before": null,
+      "after": "cd840840189a4496701ebf519b8a113182db42fd64dc8f158a6cbb470587cab6"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.XPath.XDocument.dll",
+      "before": null,
+      "after": "91cb44a25020b4558bed0b1dc7f850383b20cdb39c63c25e1d4dd1ee74ca3a8f"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.XPath.dll",
+      "before": null,
+      "after": "ff25ca66432b61a693e6cf4eb4979f9efa6358a36c3938982a68998922ac6be6"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.XmlDocument.dll",
+      "before": null,
+      "after": "0a6bce0dd60bd9c8477f426fd6854f34eaaf721ac861b86745cbc65441b0e5f9"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.XmlSerializer.dll",
+      "before": null,
+      "after": "f973e70eb7ff1bcdab04d7027c8c6e755a617f45d3187d2ace0a4f6fe01361a8"
+    },
+    {
+      "path": "tests/p05-client/System.Xml.dll",
+      "before": null,
+      "after": "284c9eccc2644a70616369d2f4b330b8f7b8e6db201d1cb104e72d6c32fb36fa"
+    },
+    {
+      "path": "tests/p05-client/System.dll",
+      "before": null,
+      "after": "046cfeb41cece80b77ba198d77b559843181d24b4095f47ed329a4318528e02c"
+    },
+    {
+      "path": "tests/p05-client/WindowsBase.dll",
+      "before": null,
+      "after": "4530f963df7edf31a0a189fb45c99d80e6a5d348644a2bf355372350ee4c685f"
+    },
+    {
+      "path": "tests/p05-client/createdump",
+      "before": null,
+      "after": "4121a4a5a612f643b9c43cd4d1f0883f8f35a5f002e7184376b23756fa344214"
+    },
+    {
+      "path": "tests/p05-client/libSystem.Globalization.Native.so",
+      "before": null,
+      "after": "f76540eb68ffebcbb7fe8641fb30f1e9b4db23fec663b5322a617145da17603f"
+    },
+    {
+      "path": "tests/p05-client/libSystem.IO.Compression.Native.so",
+      "before": null,
+      "after": "386d7a0b21f3225cbc4de5c41d79985d837ad1cdde67366e9c18233713f8fd10"
+    },
+    {
+      "path": "tests/p05-client/libSystem.Native.so",
+      "before": null,
+      "after": "d39eb8c5d992d94a81024790b24483acf2f8500b53b059247aec6968928b5eb2"
+    },
+    {
+      "path": "tests/p05-client/libSystem.Net.Security.Native.so",
+      "before": null,
+      "after": "f5d25177c6d484458e88fa87942c56bd467bf506d0096e36d7e3c3cba9839398"
+    },
+    {
+      "path": "tests/p05-client/libSystem.Security.Cryptography.Native.OpenSsl.so",
+      "before": null,
+      "after": "f3e34f404a19dbe94d0f25e75d18b84dce99120664819a1f95b5108fd0ce93a8"
+    },
+    {
+      "path": "tests/p05-client/libclrgc.so",
+      "before": null,
+      "after": "b36ff800c974dad07ebb062d1a915303da664b26c4b5c12c961da006467d6b0e"
+    },
+    {
+      "path": "tests/p05-client/libclrgcexp.so",
+      "before": null,
+      "after": "b60f45fc311ad6ad336687e33eb4783f88a6ae934a5e4032ff710391dd7751fe"
+    },
+    {
+      "path": "tests/p05-client/libclrjit.so",
+      "before": null,
+      "after": "0d4e48d868c61923ebacbbd2e9eaef73f3b38d949e0ea098e0dc67a124c972c2"
+    },
+    {
+      "path": "tests/p05-client/libcoreclr.so",
+      "before": null,
+      "after": "1af9c0f364b3c529266a9f55964effdf423207867f59b82dcfe582c24f02d1ce"
+    },
+    {
+      "path": "tests/p05-client/libcoreclrtraceptprovider.so",
+      "before": null,
+      "after": "77e0f1079407b86834e14c33aaafad190510b911d5b7377455fce30e23aa7fff"
+    },
+    {
+      "path": "tests/p05-client/libhostfxr.so",
+      "before": null,
+      "after": "b1bb36e4dc54521e914a610723847b984c4a8219c432e2eb715922a8a592a77b"
+    },
+    {
+      "path": "tests/p05-client/libhostpolicy.so",
+      "before": null,
+      "after": "f4255c3bd4bb1975404e9308f22c7c6c6460e1aa287c347c5afa1aa217bca555"
+    },
+    {
+      "path": "tests/p05-client/libmscordaccore.so",
+      "before": null,
+      "after": "f3f2b80e8b25f31ff85b65e110c314b2d720236264c6b04822b654c00e2816b3"
+    },
+    {
+      "path": "tests/p05-client/libmscordbi.so",
+      "before": null,
+      "after": "84788b29f0f003eb211d9c666d9429243b4f0be87a833d8c6dd91fc9fefa79dd"
+    },
+    {
+      "path": "tests/p05-client/mscorlib.dll",
+      "before": null,
+      "after": "3655f96d06e3fc251474303a8983f59be0f37c6df9620a31a7fc8cb896674410"
+    },
+    {
+      "path": "tests/p05-client/netstandard.dll",
+      "before": null,
+      "after": "373dfaf25433e530c1a991c0106a5ae3b17370362563a937f320739099930765"
+    },
+    {
+      "path": "tests/persistence/RacingBois.NetworkMapping.dll",
+      "before": "47deb81dad75b0d062a29f574b119a23eeb006079d4f35a6c3e01ce973b25da0",
+      "after": "5f8dacf10a1bbdc4cef031bc0728951d9f8fb1d7af08b3539b7aa3317a0df67f"
+    },
+    {
+      "path": "tests/persistence/RacingBois.NetworkMapping.pdb",
+      "before": "924a181821fcce95b06317e41055ccd01b29c4ceb388dde1b7b38f60f2b6b9f8",
+      "after": "5041ddb38b4df160206ca92b10423ebda3c70a7c899698cb4e80dc253f8ecf49"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Persistence.Tests.dll",
+      "before": "118e0762d734a81ef9f0d316646192fb599faf8edbf56b6ec0ad7a5889ef51b4",
+      "after": "2ccd97561a4afb2ebf203109e682baae401d4eac85cf64986ba96d67fa96eeb7"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Persistence.Tests.pdb",
+      "before": "481e799a3038ed8764bc3664623e6138ca1f8c2bc2a8be01b9bd3a2741f5d908",
+      "after": "0b5f8990569a0612e06d73e2fae6cec44ca426645dcdbbb63db76948a1403a0e"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Protocol.dll",
+      "before": "d93a8f7f80434d9a21005dcbd3689fc85477627e63b8627200edb8aad96cf509",
+      "after": "e894417f775f31a1591dcbd4e86abb346f4e2ccd0fe57c1f41e704ed931b073a"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Protocol.pdb",
+      "before": "1982a4213e5e611dd94e4b9332141ed641b427dd96de88203e874fd91e1447f2",
+      "after": "3b6a490a0a20278eb6ddb72d0c28ddbb31e872bd8f9ece7858283301b6dfe56d"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Server.Application.dll",
+      "before": "d1b36810310e38051051dc2c8ff66939272bbbd5e782048c50d69f8f893d35c5",
+      "after": "d7e385da473af975c7a2a13f3f03aa2beff585c36eee31d144c972721072d30f"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Server.Application.pdb",
+      "before": "e42559a6ca9f237087ae033c17e508a5dafc89600a5d8bfba1b9377060d9c028",
+      "after": "813f4b53c9faa6e7a7c8632ca28aab5e8a4c77e8a6f4ab89af3c2b4ddd00559a"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Server.Infrastructure.dll",
+      "before": "a5e1f901868d38e12cad3a650dc77865cb3426ac8bb4e2c2069f25eb6d588e2d",
+      "after": "57f1450526452d5b623dab2a99ce41304382c7d62aafa612e6276f1dba48ed0f"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Server.Infrastructure.pdb",
+      "before": "c0c09b3924242be676d33bb09ba1d2fc7457627103df864cd816d5909e3b44bd",
+      "after": "2c27c21c13293c6d1b566ea9c956bed83776642d63eb6149d9ed8261d658a786"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Simulation.dll",
+      "before": "51d7d6a7c3f5b07b5ff4266c76f38edbd9c75bf7732b33f9f66d5117cbf869d3",
+      "after": "4c5a613a1ea7fa2a7a638aea5a12389f21aadc1312246cdf96c28c96f65867f0"
+    },
+    {
+      "path": "tests/persistence/RacingBois.Simulation.pdb",
+      "before": "29f2087059e3ecb8d66b6d6924af083d87236aeb067301d50b56482c156969d7",
+      "after": "266ab150292be73877d60d4618f1e2494f423c42735640439848e13fdd572898"
+    },
+    {
+      "path": "tests/prediction-projection/Microsoft.CSharp.dll",
+      "before": null,
+      "after": "b50e19c442029505f0259d6e397f464cdd4898548686d1a08794b371d1578afd"
+    },
+    {
+      "path": "tests/prediction-projection/Microsoft.VisualBasic.Core.dll",
+      "before": null,
+      "after": "b5c613a532519a63b98615afbeefeb55f7aa59a74667d2c5223a78497f38329d"
+    },
+    {
+      "path": "tests/prediction-projection/Microsoft.VisualBasic.dll",
+      "before": null,
+      "after": "3165df5d3cc8409859965ba5537dbcd8fd30c6d11e761cfb9d54235e051ea1f5"
+    },
+    {
+      "path": "tests/prediction-projection/Microsoft.Win32.Primitives.dll",
+      "before": null,
+      "after": "2a6cc0c98205383dc0f4c9c24c4669007a95dac535a6452b0c9a3ce1a607289b"
+    },
+    {
+      "path": "tests/prediction-projection/Microsoft.Win32.Registry.dll",
+      "before": null,
+      "after": "d38c2493ab44ae22b82a3977224dd508be9204eb1b0d8cb65c5ba43617171d4b"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.Gameplay.Definitions.dll",
+      "before": null,
+      "after": "628c2521650856bdf3cbdd4310b4f613e48282cc5a774c903e85c2fb38aeee7a"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.Gameplay.Definitions.pdb",
+      "before": null,
+      "after": "c300fc02676c02a7e1065e3975ef75fa9e537d0ee043815549226d5e3b1ac74c"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.PredictionProjection.Tests",
+      "before": null,
+      "after": "ac4a876ace5e00a153e97138d8090294a696125c2488896e02281d6fa1334528"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.PredictionProjection.Tests.deps.json",
+      "before": null,
+      "after": "fdd059a8cc37a605ffc90806b5626ae9a410e542406915007a807550b1c52b71"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.PredictionProjection.Tests.dll",
+      "before": null,
+      "after": "3d493a281ee5b16d3df4fdc1a8f2890ffbc507d3ad4073d6fbe39076b7b33c60"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.PredictionProjection.Tests.pdb",
+      "before": null,
+      "after": "e667fb46ab9852406521d8cf58e7d28161faeccf1dd5e06caf7b82133b59543d"
+    },
+    {
+      "path": "tests/prediction-projection/RacingBois.PredictionProjection.Tests.runtimeconfig.json",
+      "before": null,
+      "after": "0a869730100437b0af93e6dd119bad57dcde6cf55ded981d7abc76bb6110aeb8"
+    },
+    {
+      "path": "tests/prediction-projection/System.AppContext.dll",
+      "before": null,
+      "after": "5a66ae12854a05cb48e9f05f33e2b17dd9cae63ae41f8bfed85f5350a2b30a0f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Buffers.dll",
+      "before": null,
+      "after": "085df3e39e9246a7e410dff2ff845fccbaaf995c80ae5143a40c4d47584303e1"
+    },
+    {
+      "path": "tests/prediction-projection/System.Collections.Concurrent.dll",
+      "before": null,
+      "after": "cef3a03d7e782763dd85cbdf7424446d3998955507ff8caa95b427ac4436cc55"
+    },
+    {
+      "path": "tests/prediction-projection/System.Collections.Immutable.dll",
+      "before": null,
+      "after": "fd45de05f7addc9b6ea78c528b7bb1da47062615d023db98dd7f8be105d08bc3"
+    },
+    {
+      "path": "tests/prediction-projection/System.Collections.NonGeneric.dll",
+      "before": null,
+      "after": "3d38c0c90d05507eb8d4bf620b8b8842766fd697df6eeb0aceaf635406fde6cd"
+    },
+    {
+      "path": "tests/prediction-projection/System.Collections.Specialized.dll",
+      "before": null,
+      "after": "c9f0822bdc9388adc2d9e5ad2084d02e57d1f7841794035fb142864f9f93e2cf"
+    },
+    {
+      "path": "tests/prediction-projection/System.Collections.dll",
+      "before": null,
+      "after": "b0d620b5ca149fe630bd998b9716b6ab5c55cef80d85782801fe537bd08fad83"
+    },
+    {
+      "path": "tests/prediction-projection/System.ComponentModel.Annotations.dll",
+      "before": null,
+      "after": "3c1b8857260fb543bf8aef5334c89e454c3ebed9263ef33a525de3160ada9e0f"
+    },
+    {
+      "path": "tests/prediction-projection/System.ComponentModel.DataAnnotations.dll",
+      "before": null,
+      "after": "e2bd795c5a5e0fac6481f1b4e600e8035b1457e1c2a72caa260a3a9548b05bca"
+    },
+    {
+      "path": "tests/prediction-projection/System.ComponentModel.EventBasedAsync.dll",
+      "before": null,
+      "after": "2ef8079c1157069aad1b3b494bcdf7ce062614f93660c148e5ec4e8fba3cdff1"
+    },
+    {
+      "path": "tests/prediction-projection/System.ComponentModel.Primitives.dll",
+      "before": null,
+      "after": "6bfba90e92a264009b0547a4711a736305952507353466580e5ee35363f7ab1c"
+    },
+    {
+      "path": "tests/prediction-projection/System.ComponentModel.TypeConverter.dll",
+      "before": null,
+      "after": "729250992ae15a53885b2f0b26d2af8047417725904282eda6ae7e4231dfe12f"
+    },
+    {
+      "path": "tests/prediction-projection/System.ComponentModel.dll",
+      "before": null,
+      "after": "c00785405ee7f80ffdb0bb09e10d446adfc7c4af52532bb448659f42a43074b1"
+    },
+    {
+      "path": "tests/prediction-projection/System.Configuration.dll",
+      "before": null,
+      "after": "5ae291c7faac6b6750c97eb8aa9f3d5108801e81349c1842b374899460a8eb4b"
+    },
+    {
+      "path": "tests/prediction-projection/System.Console.dll",
+      "before": null,
+      "after": "96411592efe6fa9b1b16811ff5e6732b60e0e244a9ec8476c08d8b4fbb72507a"
+    },
+    {
+      "path": "tests/prediction-projection/System.Core.dll",
+      "before": null,
+      "after": "04f73296614581499547b30806946f8855ee7739551bb4ea04b2376549841d00"
+    },
+    {
+      "path": "tests/prediction-projection/System.Data.Common.dll",
+      "before": null,
+      "after": "0c3dee13c3094852403ce8e71eb13ec2fb8544580afe3281da27470178208007"
+    },
+    {
+      "path": "tests/prediction-projection/System.Data.DataSetExtensions.dll",
+      "before": null,
+      "after": "0c60e2e74cb3dfe7d718bd7fb65b7388d26b9cd7be5bba470319ecbad72104f6"
+    },
+    {
+      "path": "tests/prediction-projection/System.Data.dll",
+      "before": null,
+      "after": "9a3dae68506bffaa4dfd97b023d1d70585ea2caaf59307a1f03a155b47ec5f91"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.Contracts.dll",
+      "before": null,
+      "after": "a98a392438300108166262ccc0a97bd2f3f4bfc0fc8b5e27795a6d8afd4266a5"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.Debug.dll",
+      "before": null,
+      "after": "05e8907b55d72815a59f6786e69df0d31d28eeb46616685da606a39bca4ad4a8"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.DiagnosticSource.dll",
+      "before": null,
+      "after": "e56e8a1130fc3d62569e413e55c0c77e9e15982ff50eee3f85046f25d384d46a"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.FileVersionInfo.dll",
+      "before": null,
+      "after": "f0e83a653942ca5cbd210c30910872860c82afb8c647ce843c30690c80efde32"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.Process.dll",
+      "before": null,
+      "after": "163dc2cff2dd769c2cb6c4408d854e3d0465a2c38e249ce2e2247c4315e6e064"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.StackTrace.dll",
+      "before": null,
+      "after": "05256408ef6fbbc6fcc588bd00a5ecaeb60329f301fa57acaa9c02584c141bcb"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.TextWriterTraceListener.dll",
+      "before": null,
+      "after": "b55df8b0534907372804b07c0d97a51e32b2af3c75b806bb73a8efdfa81abf64"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.Tools.dll",
+      "before": null,
+      "after": "3177f9eb881762f93c166ea988c6e538395b10ec6c63a0be3767402cdeacb24f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.TraceSource.dll",
+      "before": null,
+      "after": "1192fd3a1c119e75cc4e05d25e5a49363d928a8ebf0f211eb80a403f43481484"
+    },
+    {
+      "path": "tests/prediction-projection/System.Diagnostics.Tracing.dll",
+      "before": null,
+      "after": "5d9db807ff812fa2945e0e41c99e24e9e3c2f41279ad70f48fd75ed37b7d46db"
+    },
+    {
+      "path": "tests/prediction-projection/System.Drawing.Primitives.dll",
+      "before": null,
+      "after": "6cbd36b3b8486c8dff78ec239f36d5070b4e23afa865703b9403c8d2e9bc27e9"
+    },
+    {
+      "path": "tests/prediction-projection/System.Drawing.dll",
+      "before": null,
+      "after": "f56dfb751fb99d350a497836285d8a889be2c7f0bf409eb3c0e014d8b3b82c94"
+    },
+    {
+      "path": "tests/prediction-projection/System.Dynamic.Runtime.dll",
+      "before": null,
+      "after": "d0d275c052761f538a428e12740c7b16e473505fb04b067143c57d8c12db6faf"
+    },
+    {
+      "path": "tests/prediction-projection/System.Formats.Asn1.dll",
+      "before": null,
+      "after": "fd4e733e11af9f538a51c4283d51096861b0034380220deabaab3069388162ef"
+    },
+    {
+      "path": "tests/prediction-projection/System.Formats.Tar.dll",
+      "before": null,
+      "after": "9c33bd486e147135bdb35b6628f13c598bb5be56e51e25e726f9f9076fd6579c"
+    },
+    {
+      "path": "tests/prediction-projection/System.Globalization.Calendars.dll",
+      "before": null,
+      "after": "dd0f23f9ecb7df2d2e0a56e2bc9e7a96ba4f69aaf9836ade5f778f057d784a63"
+    },
+    {
+      "path": "tests/prediction-projection/System.Globalization.Extensions.dll",
+      "before": null,
+      "after": "fe4eb5fcbcac83090d92f096acaae11154a38e7ea95a7c7fb2a51d30f4a81a62"
+    },
+    {
+      "path": "tests/prediction-projection/System.Globalization.dll",
+      "before": null,
+      "after": "69e93f5d0bd44b05fbdca1d10dc2ad63e2f4ba5963e65a97b024dd745583f310"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.Compression.Brotli.dll",
+      "before": null,
+      "after": "461e645d8aff2eb62d99553e0f7c99de30b7e2d75013649be09e67991d62306b"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.Compression.FileSystem.dll",
+      "before": null,
+      "after": "e76f53c51a89b1c7d851ddd468a426eca1e56f4792e111cc48a72d4db3a5183f"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.Compression.ZipFile.dll",
+      "before": null,
+      "after": "f4184b30263550476a12719604f5fe6b57ed6b6244e8a6e7f310d337724bde42"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.Compression.dll",
+      "before": null,
+      "after": "487119a638cd4918c7b6c7f924c4798c07f86d004d1f1a5b758a972c1b20b818"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.FileSystem.AccessControl.dll",
+      "before": null,
+      "after": "01a55470025c22d1a8eb8e025a2b3c3842c8ea7b65dfcfc65ef1119a257c4bb3"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.FileSystem.DriveInfo.dll",
+      "before": null,
+      "after": "17f0eab4dee412d8351cd5f48e821726a017ba1cbe2db400f1aaedb9d655c12c"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.FileSystem.Primitives.dll",
+      "before": null,
+      "after": "6403272f3582f17b15f65c22d18225232776700cd136c3143a9bcc60a3e0e262"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.FileSystem.Watcher.dll",
+      "before": null,
+      "after": "7155d1252d32c2dd2186feabf2e0610420107d1a29eec4a6b92739cf294ed341"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.FileSystem.dll",
+      "before": null,
+      "after": "2cf5de6df261a574bc44706ad718c5ffc6d93ab87b23020be08ebf820ef3c331"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.IsolatedStorage.dll",
+      "before": null,
+      "after": "951b6e0e038eaec39e14404c8b6a89581d4cc725d7b2f73bdf09f54c483ce7c9"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.MemoryMappedFiles.dll",
+      "before": null,
+      "after": "50ad62e18cbf64de2db037a238856e3a77bd755c6913928398c29cd27bf45694"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.Pipelines.dll",
+      "before": null,
+      "after": "e8f4055dad5e68185e1d1cc28639d84c3519f69afac1b8719887f96214fbb04f"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.Pipes.AccessControl.dll",
+      "before": null,
+      "after": "69b0d5b3981a5630134e131b8e34328caffc6774ee53ea157efa00861228d960"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.Pipes.dll",
+      "before": null,
+      "after": "71a16e3f66ff68dadf7b807e48f953c6131673672383678937bcc0150d793f2d"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.UnmanagedMemoryStream.dll",
+      "before": null,
+      "after": "ea554452097ebf63131ac471a1b9c00833527b6ac2c227ad70c8f2f268c216d7"
+    },
+    {
+      "path": "tests/prediction-projection/System.IO.dll",
+      "before": null,
+      "after": "ab7a74589c64d4576a121bc623b73a52a3980f34dd87f13ed26c1ba495f6e405"
+    },
+    {
+      "path": "tests/prediction-projection/System.Linq.AsyncEnumerable.dll",
+      "before": null,
+      "after": "3fe6e43752217fe589af6975bd7c81043aaaee4c2720f907d12eeca214d5cfd1"
+    },
+    {
+      "path": "tests/prediction-projection/System.Linq.Expressions.dll",
+      "before": null,
+      "after": "1266d5429ad627784516af204a4d7f9aff782bb2852f3bbbea0c766a21b6fc40"
+    },
+    {
+      "path": "tests/prediction-projection/System.Linq.Parallel.dll",
+      "before": null,
+      "after": "f9a8592d0d785b64ed841bdc6ea10214fb1f09d4c2165f2707a078cce0cac46f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Linq.Queryable.dll",
+      "before": null,
+      "after": "e19e41dbd61a209bf07f8186677afaeaaa29a2cdc077cf63a0834ae31dbaef01"
+    },
+    {
+      "path": "tests/prediction-projection/System.Linq.dll",
+      "before": null,
+      "after": "1b9cd90b7528ba0274a90a69103a92c165d4ab92f85883da12168d02f2614c97"
+    },
+    {
+      "path": "tests/prediction-projection/System.Memory.dll",
+      "before": null,
+      "after": "83c1786f4f9d3c098e7e8d377b519ad0417637b03be7cb5f90b43d3abde8245f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Http.Json.dll",
+      "before": null,
+      "after": "0bd4bd1b49d9c0c85062d34588731574e21aa62feeaf9687eb6bd8e9d73f2515"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Http.dll",
+      "before": null,
+      "after": "1d738bf6af00d7ff339db6d1540af5e69b9c0c3f063a18362a255b3c2b9c6ec6"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.HttpListener.dll",
+      "before": null,
+      "after": "1894fd7b7f90b526eebff9f8201723b22c76fb63792124a5d91d002306fc79ba"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Mail.dll",
+      "before": null,
+      "after": "65517c0e0702a43fa4c205e8e74c63d116db257329b50b486763ab9ce5248dfd"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.NameResolution.dll",
+      "before": null,
+      "after": "93ebcee38aa487b591c494e8a9393f97b1130a5a13a1b962b648093b48bedd02"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.NetworkInformation.dll",
+      "before": null,
+      "after": "605b85950bbe16001b3851aaef5b55d89ec67d353395a58fa8ef6f2af9b01648"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Ping.dll",
+      "before": null,
+      "after": "0c9d5e9a802956a23bd848b2c4f51d1d853194bb398884964fa9e92d78e73205"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Primitives.dll",
+      "before": null,
+      "after": "cfbef07ef240db5454959e08705a8ce110b0cc227ed9608bedf14c4ad72f10a6"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Quic.dll",
+      "before": null,
+      "after": "bc5a7a90a27d8625086173d3b1de4bb9520db376c8a8bc93699ea58e2560bf6d"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Requests.dll",
+      "before": null,
+      "after": "fe4c1af439bd7c41aa6bf55b60ade7a072a289ec32cec4dabbdbbdb1f15fb5d4"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Security.dll",
+      "before": null,
+      "after": "cc253feee975bb4e22f82a74965e1d95fa1ff81c68d58dccd4b3aa71ec7f0e24"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.ServerSentEvents.dll",
+      "before": null,
+      "after": "fac9742b98cf401d78003b45bed02a726823bf4223f414b86a4ba914961d8d3d"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.ServicePoint.dll",
+      "before": null,
+      "after": "082a0aa0c2b305a0a567f5cf02426a4d86a847aece7f62effae5bf7ba07a4598"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.Sockets.dll",
+      "before": null,
+      "after": "63ccd0d2a5a44cfe94274f33f50e4ddeee41d9e3c6ff9252871441148fc1d727"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.WebClient.dll",
+      "before": null,
+      "after": "1fe1409f0b6536eaa7367a9d9d7645673efb7437b2837f594449ab140331bdae"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.WebHeaderCollection.dll",
+      "before": null,
+      "after": "7c0dd2503f36acead3ce2582cab69f5f4fa4bff76652b86b3af589382467509b"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.WebProxy.dll",
+      "before": null,
+      "after": "75e41abd0f78f8dd37b1d3a3bd603154ed0833f844a18862bf0fb7a877b2d9fa"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.WebSockets.Client.dll",
+      "before": null,
+      "after": "df0f1de452032a7d6a7f8927f5e3d202dea632e4becaa7903af1a9e974404911"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.WebSockets.dll",
+      "before": null,
+      "after": "585e5883d0f893b5cf4dd0bf18a83a5ae874ff9cfbcc51903abba6df8fe1bba7"
+    },
+    {
+      "path": "tests/prediction-projection/System.Net.dll",
+      "before": null,
+      "after": "2105d7a373136bf11b3b67bd94051b665228f2748c3e4fb7c975b47bd098dbce"
+    },
+    {
+      "path": "tests/prediction-projection/System.Numerics.Vectors.dll",
+      "before": null,
+      "after": "e80d06e8eb8b15cbdd561fd91c6d240bb68f5507d579bdeef5bd1f39e56c2f66"
+    },
+    {
+      "path": "tests/prediction-projection/System.Numerics.dll",
+      "before": null,
+      "after": "415301c625bb4dc3b5c237319ae5a1136a9efb18961ef80af80326f2374ede52"
+    },
+    {
+      "path": "tests/prediction-projection/System.ObjectModel.dll",
+      "before": null,
+      "after": "d5f4eff61f27f5d54d9d4672a04a9fc00b2b734ef18a65b2ec32508037c591f2"
+    },
+    {
+      "path": "tests/prediction-projection/System.Private.CoreLib.dll",
+      "before": null,
+      "after": "c0424e026a53db21ca98ca35ac5fa1a721ec2880c806ed7c6384a60d4f1c72d5"
+    },
+    {
+      "path": "tests/prediction-projection/System.Private.DataContractSerialization.dll",
+      "before": null,
+      "after": "67e6ee31da2aa857a309d6fb8a6e4beea58d865fdfa41a593d9bc21513c05bf7"
+    },
+    {
+      "path": "tests/prediction-projection/System.Private.Uri.dll",
+      "before": null,
+      "after": "02a26a7d650484e2a81ad649e109cf26c16b3e9dafe73057b3934e8c82e0513c"
+    },
+    {
+      "path": "tests/prediction-projection/System.Private.Xml.Linq.dll",
+      "before": null,
+      "after": "ce3a571a89d8c57c2221db36ca0ddc076df2182b9b9274e0193c294044d22ced"
+    },
+    {
+      "path": "tests/prediction-projection/System.Private.Xml.dll",
+      "before": null,
+      "after": "bb1d57e1dd324a450299711b26ec52dc95d12bda13a2a8ef1ad7fb1055913952"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.DispatchProxy.dll",
+      "before": null,
+      "after": "3c500a64712c1572a7df7c2d8240794e5533a72a1fc644add418dc405647b1c7"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.Emit.ILGeneration.dll",
+      "before": null,
+      "after": "753b44391926e7f8a0a138a1fbc9db604d11fede55a73cb77a50e2a001695959"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.Emit.Lightweight.dll",
+      "before": null,
+      "after": "d44c4af3290edda959fcdac1242dd5b3aad8956f934ff0d003c17c454b2c73bc"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.Emit.dll",
+      "before": null,
+      "after": "3fb21a62e308b59a2b8cddcf113d3a10672a6c7a6b5aa3b0c81b4b3fd3b43f1f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.Extensions.dll",
+      "before": null,
+      "after": "a13d8fee66423bb3c8bc132f022c8c3d17c12da0580e1c08c1b866a2a5404ee6"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.Metadata.dll",
+      "before": null,
+      "after": "6ffc5ec7fe4376d4161a61a87663a08662c60f6867a754cfb45419e9800d9a74"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.Primitives.dll",
+      "before": null,
+      "after": "92947842dd0aadefd2b301a47ae9b7d2bb6ea2b68b8eac6c372040d815ab066e"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.TypeExtensions.dll",
+      "before": null,
+      "after": "ce6027401293496b842f6d753f3c43b80d8ae0861b15589012456b7da9af5971"
+    },
+    {
+      "path": "tests/prediction-projection/System.Reflection.dll",
+      "before": null,
+      "after": "f709406ade889ff0b3e688ad5dff7fe066892b7f764e20c56e3a6b6044ad7739"
+    },
+    {
+      "path": "tests/prediction-projection/System.Resources.Reader.dll",
+      "before": null,
+      "after": "58af33b7e6ab97c3b8456a28bd7792e24cc9e718728e977477e3d699c8a4b091"
+    },
+    {
+      "path": "tests/prediction-projection/System.Resources.ResourceManager.dll",
+      "before": null,
+      "after": "7f698ba43bcd2539f38b8ad7c40e9e1b744ecb4f724d8a86891a553010140905"
+    },
+    {
+      "path": "tests/prediction-projection/System.Resources.Writer.dll",
+      "before": null,
+      "after": "8896b9ec206dd04b640a78d57b96d37482d33cdfcb06555b39f80e1bf360cdde"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.CompilerServices.Unsafe.dll",
+      "before": null,
+      "after": "2148dd17f97709b05b8bb20e78ca27c3068fbad277443e38b075df23d843daa2"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.CompilerServices.VisualC.dll",
+      "before": null,
+      "after": "a36c754cb79d7683bc4eda9bb3a1ff3ae63d1ccc1320d76904c4cbc9568926af"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Extensions.dll",
+      "before": null,
+      "after": "d8df514fb00b17c95c7b0eb8dcfd404b0db3b7d55e7dd64c4810de3663d73a41"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Handles.dll",
+      "before": null,
+      "after": "66357f9e211bf5371150ceaf193e7fde9d17b060533093b133386702760cdee7"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.InteropServices.JavaScript.dll",
+      "before": null,
+      "after": "18800c3f1f7f854aefe6156ab301ddf1a3d6484941265918425970bf9714e664"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.InteropServices.RuntimeInformation.dll",
+      "before": null,
+      "after": "0e43d71dfdab6b1800a35ca2ba8d9886f7984de6925c43119084a3692a144d6d"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.InteropServices.dll",
+      "before": null,
+      "after": "7c5be475c75957b165940e6565fbed4c4bdf9fae7ee7113ac6880193e1760480"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Intrinsics.dll",
+      "before": null,
+      "after": "30c4e3f2c91c1d4298a4fb604f34abb4afe8e1ce2028bdd58516038b85e837a1"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Loader.dll",
+      "before": null,
+      "after": "1ff2e1441eb5d9d333b66ccc0778249fa73f1866f3558b90e5bd5accc572ae61"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Numerics.dll",
+      "before": null,
+      "after": "0d21789804062c0f3adaf9706499663fc587ea1c3d40c911dcaa5a0449c396b6"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Serialization.Formatters.dll",
+      "before": null,
+      "after": "6b8643c82d526d927566ccb7de3fbe3bca5be77aac77c15db6bf83d0b426161f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Serialization.Json.dll",
+      "before": null,
+      "after": "ec2e288bc6cdc333f1786aa8e23f9298fc2f485f82363ef956253878fc4b8cc4"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Serialization.Primitives.dll",
+      "before": null,
+      "after": "0f226b6e3dc189f2941bae594530b2b394f869de7a5a316457afa983189625d2"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Serialization.Xml.dll",
+      "before": null,
+      "after": "c24c4b18f1dd0f71349352a1875609d417e9b1e2f991bbd0c86cc6965770cefa"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.Serialization.dll",
+      "before": null,
+      "after": "50da802f4f15ac69dc7e6d632ce0aa0c8eabbbec7a0fcc326f997a9c93ce2944"
+    },
+    {
+      "path": "tests/prediction-projection/System.Runtime.dll",
+      "before": null,
+      "after": "a0bb4da550e431cd1fdc9eba558701c0b02de33d3c64293f7c9544b3ae2678c5"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.AccessControl.dll",
+      "before": null,
+      "after": "8f62ab77fb3db8acd92ee8fad32541734de65108452fe77d1eda0a92fe42c228"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Claims.dll",
+      "before": null,
+      "after": "dc9c88b5e04cf7e3ff5b7ca441c18276f594b25ff9a9afab78437872c498bdbe"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.Algorithms.dll",
+      "before": null,
+      "after": "13d7181b1967a85faa6ba186d6c68eef0a09195da2427722ab9d0ecdad53231e"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.Cng.dll",
+      "before": null,
+      "after": "bcfcb777ec0658b5c582c33edfcf30341dcafea1d258e1278dd83c8e1742a870"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.Csp.dll",
+      "before": null,
+      "after": "3bc7e3b0536993d87e175a3a1f5266595f77eb307c655f3ce1bf08f5dea75d2f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.Encoding.dll",
+      "before": null,
+      "after": "801f611c5c23cde0a1060e3027fb9546b778fdce35e9e9aa48d02a48540902a8"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.OpenSsl.dll",
+      "before": null,
+      "after": "90312f0ac9ee5c4a840e1f3ccd008814739df8bb2d8fe4c4f393b8a6bbe1dbe2"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.Primitives.dll",
+      "before": null,
+      "after": "8f2c1833bbc2db51df403ffb320711662d2682020ce7b2eb599990395f67328b"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.X509Certificates.dll",
+      "before": null,
+      "after": "ed89bb7b8d12885cc77a466bc91e807ed21834c2ff9c33112c8ae4da028c511e"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Cryptography.dll",
+      "before": null,
+      "after": "567ead6f82e244c97871d67c69f214eb456424e4aa46c063e3bc70147c600ac9"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Principal.Windows.dll",
+      "before": null,
+      "after": "09b04b3fef06714575d357766760f6aa2ae683c1470d13bded00622f32dd56ce"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.Principal.dll",
+      "before": null,
+      "after": "9d4fd0f4281c5da796d3174018c5f75c9da71eb6162430c5f8ce4dc808ef40ee"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.SecureString.dll",
+      "before": null,
+      "after": "d1c0be5259e7d4086c5e9b51eced80ad13b50689d6ced0685acc1d23d1684bf8"
+    },
+    {
+      "path": "tests/prediction-projection/System.Security.dll",
+      "before": null,
+      "after": "59b8f0dbf5233adb5400dcb457adf0dac56f6310b43788bc158c5865c76b8619"
+    },
+    {
+      "path": "tests/prediction-projection/System.ServiceModel.Web.dll",
+      "before": null,
+      "after": "69bdef89cc05b3467d8efea3da3db077af4683e5650be5b1407dbb2d3647872b"
+    },
+    {
+      "path": "tests/prediction-projection/System.ServiceProcess.dll",
+      "before": null,
+      "after": "cf3574ac84c99fa6f56a05dee19f316d655b628ff8dae7bba0aea60dc6285177"
+    },
+    {
+      "path": "tests/prediction-projection/System.Text.Encoding.CodePages.dll",
+      "before": null,
+      "after": "fb23a119249259df1267dfbf2962c824937a9c038ae753241eeeabf9cd874352"
+    },
+    {
+      "path": "tests/prediction-projection/System.Text.Encoding.Extensions.dll",
+      "before": null,
+      "after": "02d2ec21a4b8be9f9674093711e609ec9cbca41bc63751a551701745894ed34e"
+    },
+    {
+      "path": "tests/prediction-projection/System.Text.Encoding.dll",
+      "before": null,
+      "after": "47cd02812200dee2ee1980119861cd3a5aeed9604974746e2eaf974e029a64e5"
+    },
+    {
+      "path": "tests/prediction-projection/System.Text.Encodings.Web.dll",
+      "before": null,
+      "after": "88338c129e9ad79f682515a69e79570bd8a042e112467ce7a071bbfbd39ba395"
+    },
+    {
+      "path": "tests/prediction-projection/System.Text.Json.dll",
+      "before": null,
+      "after": "e1cd0ae514ab1d46cd037251f2a1d09154543c03a76a79fb3fd798800c6cc320"
+    },
+    {
+      "path": "tests/prediction-projection/System.Text.RegularExpressions.dll",
+      "before": null,
+      "after": "a9b812fc5cdbabb1c0ee7670e43347da1730528a5e55acec3fa316674eabb33a"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.AccessControl.dll",
+      "before": null,
+      "after": "4d63017927767084cea69c4bc5da814dfbc0e1f44d8a72a9bcd2ed61108b1ae8"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Channels.dll",
+      "before": null,
+      "after": "469fdbe3ec8d2099ebf387569c5bf7cbae798d9533335de0e36848277c0be367"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Overlapped.dll",
+      "before": null,
+      "after": "4a844deee1b68aa9967e8cb440c8d26f2d9d8943bdea9bee384efac0cae6212d"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Tasks.Dataflow.dll",
+      "before": null,
+      "after": "995d4ea022199f25232f685c03c3fd9a3d5b55f6c5492791c7733a1a567be780"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Tasks.Extensions.dll",
+      "before": null,
+      "after": "8deef5ad09f55abcc2c5706cfd0b03dd8d51d06d9a1a44dbdc90b0b7b46df318"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Tasks.Parallel.dll",
+      "before": null,
+      "after": "e733830cd49d5748106ad8a081da96b1ea9eecaf70066ae5c60becd9efa9a5f9"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Tasks.dll",
+      "before": null,
+      "after": "12b899bb2ca03467ebd20f231b6c2780191b0b9030b26a9eefa75c4168f1433c"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Thread.dll",
+      "before": null,
+      "after": "acf7f74c2455d2230740064edf895540e07ae59a56fe25a2d6d67da03bc5febf"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.ThreadPool.dll",
+      "before": null,
+      "after": "9675498eb7412c4461460cc6f211e2fc2a89088d5dcdd68c71fa6f2c231b5536"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.Timer.dll",
+      "before": null,
+      "after": "3fe694ed394af4908a0db80b45983316c7830ffc10ed099b95069c6df5e4b853"
+    },
+    {
+      "path": "tests/prediction-projection/System.Threading.dll",
+      "before": null,
+      "after": "5b9bbbbd19b816c170e4ba1f9700c1168abd2f147fa7c7a238af229abae32537"
+    },
+    {
+      "path": "tests/prediction-projection/System.Transactions.Local.dll",
+      "before": null,
+      "after": "a3e872c081f3741a969c3b531bce7ee4bf83c945d072cafa28c93db789d414cb"
+    },
+    {
+      "path": "tests/prediction-projection/System.Transactions.dll",
+      "before": null,
+      "after": "cd2baea81f8bedc80493b78eb78670aeca9c7b67bb8db30c20164ef684c156f7"
+    },
+    {
+      "path": "tests/prediction-projection/System.ValueTuple.dll",
+      "before": null,
+      "after": "b5556bca1c01ed28ed925dd75f9bbf062540d3c6ae08b7446a9641d9940deda8"
+    },
+    {
+      "path": "tests/prediction-projection/System.Web.HttpUtility.dll",
+      "before": null,
+      "after": "cdc82d98f4258f5aa9e19a94db589d8b307f07952b2d10941c397cfd1cf248f3"
+    },
+    {
+      "path": "tests/prediction-projection/System.Web.dll",
+      "before": null,
+      "after": "fe1a37afe2dcc31c578e7fc524afef85e9e95bb5e0203630844bd7dd9b1470ec"
+    },
+    {
+      "path": "tests/prediction-projection/System.Windows.dll",
+      "before": null,
+      "after": "ea1324dced45ad991d45a57b4d43c01543a0f8c960a29b8bdba4a4f64ac7a3e9"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.Linq.dll",
+      "before": null,
+      "after": "9a5db0ca7cdaa3681b0b684ef24f5ad8f4a886b1c615f04b6474d9c48c366edb"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.ReaderWriter.dll",
+      "before": null,
+      "after": "7f9cc4bebbe7c1c1bdffff9eab4fe31343a4a064d225209196e85697fc5875d0"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.Serialization.dll",
+      "before": null,
+      "after": "d07429fc8cd8e47546b3202c447f06202523e3f92234acc402fc5e0b169d3113"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.XDocument.dll",
+      "before": null,
+      "after": "cd840840189a4496701ebf519b8a113182db42fd64dc8f158a6cbb470587cab6"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.XPath.XDocument.dll",
+      "before": null,
+      "after": "91cb44a25020b4558bed0b1dc7f850383b20cdb39c63c25e1d4dd1ee74ca3a8f"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.XPath.dll",
+      "before": null,
+      "after": "ff25ca66432b61a693e6cf4eb4979f9efa6358a36c3938982a68998922ac6be6"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.XmlDocument.dll",
+      "before": null,
+      "after": "0a6bce0dd60bd9c8477f426fd6854f34eaaf721ac861b86745cbc65441b0e5f9"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.XmlSerializer.dll",
+      "before": null,
+      "after": "f973e70eb7ff1bcdab04d7027c8c6e755a617f45d3187d2ace0a4f6fe01361a8"
+    },
+    {
+      "path": "tests/prediction-projection/System.Xml.dll",
+      "before": null,
+      "after": "284c9eccc2644a70616369d2f4b330b8f7b8e6db201d1cb104e72d6c32fb36fa"
+    },
+    {
+      "path": "tests/prediction-projection/System.dll",
+      "before": null,
+      "after": "046cfeb41cece80b77ba198d77b559843181d24b4095f47ed329a4318528e02c"
+    },
+    {
+      "path": "tests/prediction-projection/WindowsBase.dll",
+      "before": null,
+      "after": "4530f963df7edf31a0a189fb45c99d80e6a5d348644a2bf355372350ee4c685f"
+    },
+    {
+      "path": "tests/prediction-projection/createdump",
+      "before": null,
+      "after": "4121a4a5a612f643b9c43cd4d1f0883f8f35a5f002e7184376b23756fa344214"
+    },
+    {
+      "path": "tests/prediction-projection/libSystem.Globalization.Native.so",
+      "before": null,
+      "after": "f76540eb68ffebcbb7fe8641fb30f1e9b4db23fec663b5322a617145da17603f"
+    },
+    {
+      "path": "tests/prediction-projection/libSystem.IO.Compression.Native.so",
+      "before": null,
+      "after": "386d7a0b21f3225cbc4de5c41d79985d837ad1cdde67366e9c18233713f8fd10"
+    },
+    {
+      "path": "tests/prediction-projection/libSystem.Native.so",
+      "before": null,
+      "after": "d39eb8c5d992d94a81024790b24483acf2f8500b53b059247aec6968928b5eb2"
+    },
+    {
+      "path": "tests/prediction-projection/libSystem.Net.Security.Native.so",
+      "before": null,
+      "after": "f5d25177c6d484458e88fa87942c56bd467bf506d0096e36d7e3c3cba9839398"
+    },
+    {
+      "path": "tests/prediction-projection/libSystem.Security.Cryptography.Native.OpenSsl.so",
+      "before": null,
+      "after": "f3e34f404a19dbe94d0f25e75d18b84dce99120664819a1f95b5108fd0ce93a8"
+    },
+    {
+      "path": "tests/prediction-projection/libclrgc.so",
+      "before": null,
+      "after": "b36ff800c974dad07ebb062d1a915303da664b26c4b5c12c961da006467d6b0e"
+    },
+    {
+      "path": "tests/prediction-projection/libclrgcexp.so",
+      "before": null,
+      "after": "b60f45fc311ad6ad336687e33eb4783f88a6ae934a5e4032ff710391dd7751fe"
+    },
+    {
+      "path": "tests/prediction-projection/libclrjit.so",
+      "before": null,
+      "after": "0d4e48d868c61923ebacbbd2e9eaef73f3b38d949e0ea098e0dc67a124c972c2"
+    },
+    {
+      "path": "tests/prediction-projection/libcoreclr.so",
+      "before": null,
+      "after": "1af9c0f364b3c529266a9f55964effdf423207867f59b82dcfe582c24f02d1ce"
+    },
+    {
+      "path": "tests/prediction-projection/libcoreclrtraceptprovider.so",
+      "before": null,
+      "after": "77e0f1079407b86834e14c33aaafad190510b911d5b7377455fce30e23aa7fff"
+    },
+    {
+      "path": "tests/prediction-projection/libhostfxr.so",
+      "before": null,
+      "after": "b1bb36e4dc54521e914a610723847b984c4a8219c432e2eb715922a8a592a77b"
+    },
+    {
+      "path": "tests/prediction-projection/libhostpolicy.so",
+      "before": null,
+      "after": "f4255c3bd4bb1975404e9308f22c7c6c6460e1aa287c347c5afa1aa217bca555"
+    },
+    {
+      "path": "tests/prediction-projection/libmscordaccore.so",
+      "before": null,
+      "after": "f3f2b80e8b25f31ff85b65e110c314b2d720236264c6b04822b654c00e2816b3"
+    },
+    {
+      "path": "tests/prediction-projection/libmscordbi.so",
+      "before": null,
+      "after": "84788b29f0f003eb211d9c666d9429243b4f0be87a833d8c6dd91fc9fefa79dd"
+    },
+    {
+      "path": "tests/prediction-projection/mscorlib.dll",
+      "before": null,
+      "after": "3655f96d06e3fc251474303a8983f59be0f37c6df9620a31a7fc8cb896674410"
+    },
+    {
+      "path": "tests/prediction-projection/netstandard.dll",
+      "before": null,
+      "after": "373dfaf25433e530c1a991c0106a5ae3b17370362563a937f320739099930765"
+    },
+    {
+      "path": "tests/prediction/Microsoft.CSharp.dll",
+      "before": null,
+      "after": "b50e19c442029505f0259d6e397f464cdd4898548686d1a08794b371d1578afd"
+    },
+    {
+      "path": "tests/prediction/Microsoft.VisualBasic.Core.dll",
+      "before": null,
+      "after": "b5c613a532519a63b98615afbeefeb55f7aa59a74667d2c5223a78497f38329d"
+    },
+    {
+      "path": "tests/prediction/Microsoft.VisualBasic.dll",
+      "before": null,
+      "after": "3165df5d3cc8409859965ba5537dbcd8fd30c6d11e761cfb9d54235e051ea1f5"
+    },
+    {
+      "path": "tests/prediction/Microsoft.Win32.Primitives.dll",
+      "before": null,
+      "after": "2a6cc0c98205383dc0f4c9c24c4669007a95dac535a6452b0c9a3ce1a607289b"
+    },
+    {
+      "path": "tests/prediction/Microsoft.Win32.Registry.dll",
+      "before": null,
+      "after": "d38c2493ab44ae22b82a3977224dd508be9204eb1b0d8cb65c5ba43617171d4b"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Gameplay.Definitions.dll",
+      "before": null,
+      "after": "628c2521650856bdf3cbdd4310b4f613e48282cc5a774c903e85c2fb38aeee7a"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Gameplay.Definitions.pdb",
+      "before": null,
+      "after": "c300fc02676c02a7e1065e3975ef75fa9e537d0ee043815549226d5e3b1ac74c"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Prediction.Tests",
+      "before": null,
+      "after": "19bd3865d7f521885974e62ee32232b5f125f8a271f97a29c2496e70a9a65a8c"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Prediction.Tests.deps.json",
+      "before": null,
+      "after": "8802e1383b54dd071e730f4ea9472d227feee1198f0f949298ed822028331fa8"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Prediction.Tests.dll",
+      "before": null,
+      "after": "b7ab43405019c89ead91e188602d44a144fca033172406839ad3cc9b1c851f4f"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Prediction.Tests.pdb",
+      "before": null,
+      "after": "ddf636f709d8fc211c14053bac0eff01468d533a076eaff231d1365653757ed5"
+    },
+    {
+      "path": "tests/prediction/RacingBois.Prediction.Tests.runtimeconfig.json",
+      "before": null,
+      "after": "0a869730100437b0af93e6dd119bad57dcde6cf55ded981d7abc76bb6110aeb8"
+    },
+    {
+      "path": "tests/prediction/System.AppContext.dll",
+      "before": null,
+      "after": "5a66ae12854a05cb48e9f05f33e2b17dd9cae63ae41f8bfed85f5350a2b30a0f"
+    },
+    {
+      "path": "tests/prediction/System.Buffers.dll",
+      "before": null,
+      "after": "085df3e39e9246a7e410dff2ff845fccbaaf995c80ae5143a40c4d47584303e1"
+    },
+    {
+      "path": "tests/prediction/System.Collections.Concurrent.dll",
+      "before": null,
+      "after": "cef3a03d7e782763dd85cbdf7424446d3998955507ff8caa95b427ac4436cc55"
+    },
+    {
+      "path": "tests/prediction/System.Collections.Immutable.dll",
+      "before": null,
+      "after": "fd45de05f7addc9b6ea78c528b7bb1da47062615d023db98dd7f8be105d08bc3"
+    },
+    {
+      "path": "tests/prediction/System.Collections.NonGeneric.dll",
+      "before": null,
+      "after": "3d38c0c90d05507eb8d4bf620b8b8842766fd697df6eeb0aceaf635406fde6cd"
+    },
+    {
+      "path": "tests/prediction/System.Collections.Specialized.dll",
+      "before": null,
+      "after": "c9f0822bdc9388adc2d9e5ad2084d02e57d1f7841794035fb142864f9f93e2cf"
+    },
+    {
+      "path": "tests/prediction/System.Collections.dll",
+      "before": null,
+      "after": "b0d620b5ca149fe630bd998b9716b6ab5c55cef80d85782801fe537bd08fad83"
+    },
+    {
+      "path": "tests/prediction/System.ComponentModel.Annotations.dll",
+      "before": null,
+      "after": "3c1b8857260fb543bf8aef5334c89e454c3ebed9263ef33a525de3160ada9e0f"
+    },
+    {
+      "path": "tests/prediction/System.ComponentModel.DataAnnotations.dll",
+      "before": null,
+      "after": "e2bd795c5a5e0fac6481f1b4e600e8035b1457e1c2a72caa260a3a9548b05bca"
+    },
+    {
+      "path": "tests/prediction/System.ComponentModel.EventBasedAsync.dll",
+      "before": null,
+      "after": "2ef8079c1157069aad1b3b494bcdf7ce062614f93660c148e5ec4e8fba3cdff1"
+    },
+    {
+      "path": "tests/prediction/System.ComponentModel.Primitives.dll",
+      "before": null,
+      "after": "6bfba90e92a264009b0547a4711a736305952507353466580e5ee35363f7ab1c"
+    },
+    {
+      "path": "tests/prediction/System.ComponentModel.TypeConverter.dll",
+      "before": null,
+      "after": "729250992ae15a53885b2f0b26d2af8047417725904282eda6ae7e4231dfe12f"
+    },
+    {
+      "path": "tests/prediction/System.ComponentModel.dll",
+      "before": null,
+      "after": "c00785405ee7f80ffdb0bb09e10d446adfc7c4af52532bb448659f42a43074b1"
+    },
+    {
+      "path": "tests/prediction/System.Configuration.dll",
+      "before": null,
+      "after": "5ae291c7faac6b6750c97eb8aa9f3d5108801e81349c1842b374899460a8eb4b"
+    },
+    {
+      "path": "tests/prediction/System.Console.dll",
+      "before": null,
+      "after": "96411592efe6fa9b1b16811ff5e6732b60e0e244a9ec8476c08d8b4fbb72507a"
+    },
+    {
+      "path": "tests/prediction/System.Core.dll",
+      "before": null,
+      "after": "04f73296614581499547b30806946f8855ee7739551bb4ea04b2376549841d00"
+    },
+    {
+      "path": "tests/prediction/System.Data.Common.dll",
+      "before": null,
+      "after": "0c3dee13c3094852403ce8e71eb13ec2fb8544580afe3281da27470178208007"
+    },
+    {
+      "path": "tests/prediction/System.Data.DataSetExtensions.dll",
+      "before": null,
+      "after": "0c60e2e74cb3dfe7d718bd7fb65b7388d26b9cd7be5bba470319ecbad72104f6"
+    },
+    {
+      "path": "tests/prediction/System.Data.dll",
+      "before": null,
+      "after": "9a3dae68506bffaa4dfd97b023d1d70585ea2caaf59307a1f03a155b47ec5f91"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.Contracts.dll",
+      "before": null,
+      "after": "a98a392438300108166262ccc0a97bd2f3f4bfc0fc8b5e27795a6d8afd4266a5"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.Debug.dll",
+      "before": null,
+      "after": "05e8907b55d72815a59f6786e69df0d31d28eeb46616685da606a39bca4ad4a8"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.DiagnosticSource.dll",
+      "before": null,
+      "after": "e56e8a1130fc3d62569e413e55c0c77e9e15982ff50eee3f85046f25d384d46a"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.FileVersionInfo.dll",
+      "before": null,
+      "after": "f0e83a653942ca5cbd210c30910872860c82afb8c647ce843c30690c80efde32"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.Process.dll",
+      "before": null,
+      "after": "163dc2cff2dd769c2cb6c4408d854e3d0465a2c38e249ce2e2247c4315e6e064"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.StackTrace.dll",
+      "before": null,
+      "after": "05256408ef6fbbc6fcc588bd00a5ecaeb60329f301fa57acaa9c02584c141bcb"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.TextWriterTraceListener.dll",
+      "before": null,
+      "after": "b55df8b0534907372804b07c0d97a51e32b2af3c75b806bb73a8efdfa81abf64"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.Tools.dll",
+      "before": null,
+      "after": "3177f9eb881762f93c166ea988c6e538395b10ec6c63a0be3767402cdeacb24f"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.TraceSource.dll",
+      "before": null,
+      "after": "1192fd3a1c119e75cc4e05d25e5a49363d928a8ebf0f211eb80a403f43481484"
+    },
+    {
+      "path": "tests/prediction/System.Diagnostics.Tracing.dll",
+      "before": null,
+      "after": "5d9db807ff812fa2945e0e41c99e24e9e3c2f41279ad70f48fd75ed37b7d46db"
+    },
+    {
+      "path": "tests/prediction/System.Drawing.Primitives.dll",
+      "before": null,
+      "after": "6cbd36b3b8486c8dff78ec239f36d5070b4e23afa865703b9403c8d2e9bc27e9"
+    },
+    {
+      "path": "tests/prediction/System.Drawing.dll",
+      "before": null,
+      "after": "f56dfb751fb99d350a497836285d8a889be2c7f0bf409eb3c0e014d8b3b82c94"
+    },
+    {
+      "path": "tests/prediction/System.Dynamic.Runtime.dll",
+      "before": null,
+      "after": "d0d275c052761f538a428e12740c7b16e473505fb04b067143c57d8c12db6faf"
+    },
+    {
+      "path": "tests/prediction/System.Formats.Asn1.dll",
+      "before": null,
+      "after": "fd4e733e11af9f538a51c4283d51096861b0034380220deabaab3069388162ef"
+    },
+    {
+      "path": "tests/prediction/System.Formats.Tar.dll",
+      "before": null,
+      "after": "9c33bd486e147135bdb35b6628f13c598bb5be56e51e25e726f9f9076fd6579c"
+    },
+    {
+      "path": "tests/prediction/System.Globalization.Calendars.dll",
+      "before": null,
+      "after": "dd0f23f9ecb7df2d2e0a56e2bc9e7a96ba4f69aaf9836ade5f778f057d784a63"
+    },
+    {
+      "path": "tests/prediction/System.Globalization.Extensions.dll",
+      "before": null,
+      "after": "fe4eb5fcbcac83090d92f096acaae11154a38e7ea95a7c7fb2a51d30f4a81a62"
+    },
+    {
+      "path": "tests/prediction/System.Globalization.dll",
+      "before": null,
+      "after": "69e93f5d0bd44b05fbdca1d10dc2ad63e2f4ba5963e65a97b024dd745583f310"
+    },
+    {
+      "path": "tests/prediction/System.IO.Compression.Brotli.dll",
+      "before": null,
+      "after": "461e645d8aff2eb62d99553e0f7c99de30b7e2d75013649be09e67991d62306b"
+    },
+    {
+      "path": "tests/prediction/System.IO.Compression.FileSystem.dll",
+      "before": null,
+      "after": "e76f53c51a89b1c7d851ddd468a426eca1e56f4792e111cc48a72d4db3a5183f"
+    },
+    {
+      "path": "tests/prediction/System.IO.Compression.ZipFile.dll",
+      "before": null,
+      "after": "f4184b30263550476a12719604f5fe6b57ed6b6244e8a6e7f310d337724bde42"
+    },
+    {
+      "path": "tests/prediction/System.IO.Compression.dll",
+      "before": null,
+      "after": "487119a638cd4918c7b6c7f924c4798c07f86d004d1f1a5b758a972c1b20b818"
+    },
+    {
+      "path": "tests/prediction/System.IO.FileSystem.AccessControl.dll",
+      "before": null,
+      "after": "01a55470025c22d1a8eb8e025a2b3c3842c8ea7b65dfcfc65ef1119a257c4bb3"
+    },
+    {
+      "path": "tests/prediction/System.IO.FileSystem.DriveInfo.dll",
+      "before": null,
+      "after": "17f0eab4dee412d8351cd5f48e821726a017ba1cbe2db400f1aaedb9d655c12c"
+    },
+    {
+      "path": "tests/prediction/System.IO.FileSystem.Primitives.dll",
+      "before": null,
+      "after": "6403272f3582f17b15f65c22d18225232776700cd136c3143a9bcc60a3e0e262"
+    },
+    {
+      "path": "tests/prediction/System.IO.FileSystem.Watcher.dll",
+      "before": null,
+      "after": "7155d1252d32c2dd2186feabf2e0610420107d1a29eec4a6b92739cf294ed341"
+    },
+    {
+      "path": "tests/prediction/System.IO.FileSystem.dll",
+      "before": null,
+      "after": "2cf5de6df261a574bc44706ad718c5ffc6d93ab87b23020be08ebf820ef3c331"
+    },
+    {
+      "path": "tests/prediction/System.IO.IsolatedStorage.dll",
+      "before": null,
+      "after": "951b6e0e038eaec39e14404c8b6a89581d4cc725d7b2f73bdf09f54c483ce7c9"
+    },
+    {
+      "path": "tests/prediction/System.IO.MemoryMappedFiles.dll",
+      "before": null,
+      "after": "50ad62e18cbf64de2db037a238856e3a77bd755c6913928398c29cd27bf45694"
+    },
+    {
+      "path": "tests/prediction/System.IO.Pipelines.dll",
+      "before": null,
+      "after": "e8f4055dad5e68185e1d1cc28639d84c3519f69afac1b8719887f96214fbb04f"
+    },
+    {
+      "path": "tests/prediction/System.IO.Pipes.AccessControl.dll",
+      "before": null,
+      "after": "69b0d5b3981a5630134e131b8e34328caffc6774ee53ea157efa00861228d960"
+    },
+    {
+      "path": "tests/prediction/System.IO.Pipes.dll",
+      "before": null,
+      "after": "71a16e3f66ff68dadf7b807e48f953c6131673672383678937bcc0150d793f2d"
+    },
+    {
+      "path": "tests/prediction/System.IO.UnmanagedMemoryStream.dll",
+      "before": null,
+      "after": "ea554452097ebf63131ac471a1b9c00833527b6ac2c227ad70c8f2f268c216d7"
+    },
+    {
+      "path": "tests/prediction/System.IO.dll",
+      "before": null,
+      "after": "ab7a74589c64d4576a121bc623b73a52a3980f34dd87f13ed26c1ba495f6e405"
+    },
+    {
+      "path": "tests/prediction/System.Linq.AsyncEnumerable.dll",
+      "before": null,
+      "after": "3fe6e43752217fe589af6975bd7c81043aaaee4c2720f907d12eeca214d5cfd1"
+    },
+    {
+      "path": "tests/prediction/System.Linq.Expressions.dll",
+      "before": null,
+      "after": "1266d5429ad627784516af204a4d7f9aff782bb2852f3bbbea0c766a21b6fc40"
+    },
+    {
+      "path": "tests/prediction/System.Linq.Parallel.dll",
+      "before": null,
+      "after": "f9a8592d0d785b64ed841bdc6ea10214fb1f09d4c2165f2707a078cce0cac46f"
+    },
+    {
+      "path": "tests/prediction/System.Linq.Queryable.dll",
+      "before": null,
+      "after": "e19e41dbd61a209bf07f8186677afaeaaa29a2cdc077cf63a0834ae31dbaef01"
+    },
+    {
+      "path": "tests/prediction/System.Linq.dll",
+      "before": null,
+      "after": "1b9cd90b7528ba0274a90a69103a92c165d4ab92f85883da12168d02f2614c97"
+    },
+    {
+      "path": "tests/prediction/System.Memory.dll",
+      "before": null,
+      "after": "83c1786f4f9d3c098e7e8d377b519ad0417637b03be7cb5f90b43d3abde8245f"
+    },
+    {
+      "path": "tests/prediction/System.Net.Http.Json.dll",
+      "before": null,
+      "after": "0bd4bd1b49d9c0c85062d34588731574e21aa62feeaf9687eb6bd8e9d73f2515"
+    },
+    {
+      "path": "tests/prediction/System.Net.Http.dll",
+      "before": null,
+      "after": "1d738bf6af00d7ff339db6d1540af5e69b9c0c3f063a18362a255b3c2b9c6ec6"
+    },
+    {
+      "path": "tests/prediction/System.Net.HttpListener.dll",
+      "before": null,
+      "after": "1894fd7b7f90b526eebff9f8201723b22c76fb63792124a5d91d002306fc79ba"
+    },
+    {
+      "path": "tests/prediction/System.Net.Mail.dll",
+      "before": null,
+      "after": "65517c0e0702a43fa4c205e8e74c63d116db257329b50b486763ab9ce5248dfd"
+    },
+    {
+      "path": "tests/prediction/System.Net.NameResolution.dll",
+      "before": null,
+      "after": "93ebcee38aa487b591c494e8a9393f97b1130a5a13a1b962b648093b48bedd02"
+    },
+    {
+      "path": "tests/prediction/System.Net.NetworkInformation.dll",
+      "before": null,
+      "after": "605b85950bbe16001b3851aaef5b55d89ec67d353395a58fa8ef6f2af9b01648"
+    },
+    {
+      "path": "tests/prediction/System.Net.Ping.dll",
+      "before": null,
+      "after": "0c9d5e9a802956a23bd848b2c4f51d1d853194bb398884964fa9e92d78e73205"
+    },
+    {
+      "path": "tests/prediction/System.Net.Primitives.dll",
+      "before": null,
+      "after": "cfbef07ef240db5454959e08705a8ce110b0cc227ed9608bedf14c4ad72f10a6"
+    },
+    {
+      "path": "tests/prediction/System.Net.Quic.dll",
+      "before": null,
+      "after": "bc5a7a90a27d8625086173d3b1de4bb9520db376c8a8bc93699ea58e2560bf6d"
+    },
+    {
+      "path": "tests/prediction/System.Net.Requests.dll",
+      "before": null,
+      "after": "fe4c1af439bd7c41aa6bf55b60ade7a072a289ec32cec4dabbdbbdb1f15fb5d4"
+    },
+    {
+      "path": "tests/prediction/System.Net.Security.dll",
+      "before": null,
+      "after": "cc253feee975bb4e22f82a74965e1d95fa1ff81c68d58dccd4b3aa71ec7f0e24"
+    },
+    {
+      "path": "tests/prediction/System.Net.ServerSentEvents.dll",
+      "before": null,
+      "after": "fac9742b98cf401d78003b45bed02a726823bf4223f414b86a4ba914961d8d3d"
+    },
+    {
+      "path": "tests/prediction/System.Net.ServicePoint.dll",
+      "before": null,
+      "after": "082a0aa0c2b305a0a567f5cf02426a4d86a847aece7f62effae5bf7ba07a4598"
+    },
+    {
+      "path": "tests/prediction/System.Net.Sockets.dll",
+      "before": null,
+      "after": "63ccd0d2a5a44cfe94274f33f50e4ddeee41d9e3c6ff9252871441148fc1d727"
+    },
+    {
+      "path": "tests/prediction/System.Net.WebClient.dll",
+      "before": null,
+      "after": "1fe1409f0b6536eaa7367a9d9d7645673efb7437b2837f594449ab140331bdae"
+    },
+    {
+      "path": "tests/prediction/System.Net.WebHeaderCollection.dll",
+      "before": null,
+      "after": "7c0dd2503f36acead3ce2582cab69f5f4fa4bff76652b86b3af589382467509b"
+    },
+    {
+      "path": "tests/prediction/System.Net.WebProxy.dll",
+      "before": null,
+      "after": "75e41abd0f78f8dd37b1d3a3bd603154ed0833f844a18862bf0fb7a877b2d9fa"
+    },
+    {
+      "path": "tests/prediction/System.Net.WebSockets.Client.dll",
+      "before": null,
+      "after": "df0f1de452032a7d6a7f8927f5e3d202dea632e4becaa7903af1a9e974404911"
+    },
+    {
+      "path": "tests/prediction/System.Net.WebSockets.dll",
+      "before": null,
+      "after": "585e5883d0f893b5cf4dd0bf18a83a5ae874ff9cfbcc51903abba6df8fe1bba7"
+    },
+    {
+      "path": "tests/prediction/System.Net.dll",
+      "before": null,
+      "after": "2105d7a373136bf11b3b67bd94051b665228f2748c3e4fb7c975b47bd098dbce"
+    },
+    {
+      "path": "tests/prediction/System.Numerics.Vectors.dll",
+      "before": null,
+      "after": "e80d06e8eb8b15cbdd561fd91c6d240bb68f5507d579bdeef5bd1f39e56c2f66"
+    },
+    {
+      "path": "tests/prediction/System.Numerics.dll",
+      "before": null,
+      "after": "415301c625bb4dc3b5c237319ae5a1136a9efb18961ef80af80326f2374ede52"
+    },
+    {
+      "path": "tests/prediction/System.ObjectModel.dll",
+      "before": null,
+      "after": "d5f4eff61f27f5d54d9d4672a04a9fc00b2b734ef18a65b2ec32508037c591f2"
+    },
+    {
+      "path": "tests/prediction/System.Private.CoreLib.dll",
+      "before": null,
+      "after": "c0424e026a53db21ca98ca35ac5fa1a721ec2880c806ed7c6384a60d4f1c72d5"
+    },
+    {
+      "path": "tests/prediction/System.Private.DataContractSerialization.dll",
+      "before": null,
+      "after": "67e6ee31da2aa857a309d6fb8a6e4beea58d865fdfa41a593d9bc21513c05bf7"
+    },
+    {
+      "path": "tests/prediction/System.Private.Uri.dll",
+      "before": null,
+      "after": "02a26a7d650484e2a81ad649e109cf26c16b3e9dafe73057b3934e8c82e0513c"
+    },
+    {
+      "path": "tests/prediction/System.Private.Xml.Linq.dll",
+      "before": null,
+      "after": "ce3a571a89d8c57c2221db36ca0ddc076df2182b9b9274e0193c294044d22ced"
+    },
+    {
+      "path": "tests/prediction/System.Private.Xml.dll",
+      "before": null,
+      "after": "bb1d57e1dd324a450299711b26ec52dc95d12bda13a2a8ef1ad7fb1055913952"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.DispatchProxy.dll",
+      "before": null,
+      "after": "3c500a64712c1572a7df7c2d8240794e5533a72a1fc644add418dc405647b1c7"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.Emit.ILGeneration.dll",
+      "before": null,
+      "after": "753b44391926e7f8a0a138a1fbc9db604d11fede55a73cb77a50e2a001695959"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.Emit.Lightweight.dll",
+      "before": null,
+      "after": "d44c4af3290edda959fcdac1242dd5b3aad8956f934ff0d003c17c454b2c73bc"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.Emit.dll",
+      "before": null,
+      "after": "3fb21a62e308b59a2b8cddcf113d3a10672a6c7a6b5aa3b0c81b4b3fd3b43f1f"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.Extensions.dll",
+      "before": null,
+      "after": "a13d8fee66423bb3c8bc132f022c8c3d17c12da0580e1c08c1b866a2a5404ee6"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.Metadata.dll",
+      "before": null,
+      "after": "6ffc5ec7fe4376d4161a61a87663a08662c60f6867a754cfb45419e9800d9a74"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.Primitives.dll",
+      "before": null,
+      "after": "92947842dd0aadefd2b301a47ae9b7d2bb6ea2b68b8eac6c372040d815ab066e"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.TypeExtensions.dll",
+      "before": null,
+      "after": "ce6027401293496b842f6d753f3c43b80d8ae0861b15589012456b7da9af5971"
+    },
+    {
+      "path": "tests/prediction/System.Reflection.dll",
+      "before": null,
+      "after": "f709406ade889ff0b3e688ad5dff7fe066892b7f764e20c56e3a6b6044ad7739"
+    },
+    {
+      "path": "tests/prediction/System.Resources.Reader.dll",
+      "before": null,
+      "after": "58af33b7e6ab97c3b8456a28bd7792e24cc9e718728e977477e3d699c8a4b091"
+    },
+    {
+      "path": "tests/prediction/System.Resources.ResourceManager.dll",
+      "before": null,
+      "after": "7f698ba43bcd2539f38b8ad7c40e9e1b744ecb4f724d8a86891a553010140905"
+    },
+    {
+      "path": "tests/prediction/System.Resources.Writer.dll",
+      "before": null,
+      "after": "8896b9ec206dd04b640a78d57b96d37482d33cdfcb06555b39f80e1bf360cdde"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.CompilerServices.Unsafe.dll",
+      "before": null,
+      "after": "2148dd17f97709b05b8bb20e78ca27c3068fbad277443e38b075df23d843daa2"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.CompilerServices.VisualC.dll",
+      "before": null,
+      "after": "a36c754cb79d7683bc4eda9bb3a1ff3ae63d1ccc1320d76904c4cbc9568926af"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Extensions.dll",
+      "before": null,
+      "after": "d8df514fb00b17c95c7b0eb8dcfd404b0db3b7d55e7dd64c4810de3663d73a41"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Handles.dll",
+      "before": null,
+      "after": "66357f9e211bf5371150ceaf193e7fde9d17b060533093b133386702760cdee7"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.InteropServices.JavaScript.dll",
+      "before": null,
+      "after": "18800c3f1f7f854aefe6156ab301ddf1a3d6484941265918425970bf9714e664"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.InteropServices.RuntimeInformation.dll",
+      "before": null,
+      "after": "0e43d71dfdab6b1800a35ca2ba8d9886f7984de6925c43119084a3692a144d6d"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.InteropServices.dll",
+      "before": null,
+      "after": "7c5be475c75957b165940e6565fbed4c4bdf9fae7ee7113ac6880193e1760480"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Intrinsics.dll",
+      "before": null,
+      "after": "30c4e3f2c91c1d4298a4fb604f34abb4afe8e1ce2028bdd58516038b85e837a1"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Loader.dll",
+      "before": null,
+      "after": "1ff2e1441eb5d9d333b66ccc0778249fa73f1866f3558b90e5bd5accc572ae61"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Numerics.dll",
+      "before": null,
+      "after": "0d21789804062c0f3adaf9706499663fc587ea1c3d40c911dcaa5a0449c396b6"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Serialization.Formatters.dll",
+      "before": null,
+      "after": "6b8643c82d526d927566ccb7de3fbe3bca5be77aac77c15db6bf83d0b426161f"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Serialization.Json.dll",
+      "before": null,
+      "after": "ec2e288bc6cdc333f1786aa8e23f9298fc2f485f82363ef956253878fc4b8cc4"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Serialization.Primitives.dll",
+      "before": null,
+      "after": "0f226b6e3dc189f2941bae594530b2b394f869de7a5a316457afa983189625d2"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Serialization.Xml.dll",
+      "before": null,
+      "after": "c24c4b18f1dd0f71349352a1875609d417e9b1e2f991bbd0c86cc6965770cefa"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.Serialization.dll",
+      "before": null,
+      "after": "50da802f4f15ac69dc7e6d632ce0aa0c8eabbbec7a0fcc326f997a9c93ce2944"
+    },
+    {
+      "path": "tests/prediction/System.Runtime.dll",
+      "before": null,
+      "after": "a0bb4da550e431cd1fdc9eba558701c0b02de33d3c64293f7c9544b3ae2678c5"
+    },
+    {
+      "path": "tests/prediction/System.Security.AccessControl.dll",
+      "before": null,
+      "after": "8f62ab77fb3db8acd92ee8fad32541734de65108452fe77d1eda0a92fe42c228"
+    },
+    {
+      "path": "tests/prediction/System.Security.Claims.dll",
+      "before": null,
+      "after": "dc9c88b5e04cf7e3ff5b7ca441c18276f594b25ff9a9afab78437872c498bdbe"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.Algorithms.dll",
+      "before": null,
+      "after": "13d7181b1967a85faa6ba186d6c68eef0a09195da2427722ab9d0ecdad53231e"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.Cng.dll",
+      "before": null,
+      "after": "bcfcb777ec0658b5c582c33edfcf30341dcafea1d258e1278dd83c8e1742a870"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.Csp.dll",
+      "before": null,
+      "after": "3bc7e3b0536993d87e175a3a1f5266595f77eb307c655f3ce1bf08f5dea75d2f"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.Encoding.dll",
+      "before": null,
+      "after": "801f611c5c23cde0a1060e3027fb9546b778fdce35e9e9aa48d02a48540902a8"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.OpenSsl.dll",
+      "before": null,
+      "after": "90312f0ac9ee5c4a840e1f3ccd008814739df8bb2d8fe4c4f393b8a6bbe1dbe2"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.Primitives.dll",
+      "before": null,
+      "after": "8f2c1833bbc2db51df403ffb320711662d2682020ce7b2eb599990395f67328b"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.X509Certificates.dll",
+      "before": null,
+      "after": "ed89bb7b8d12885cc77a466bc91e807ed21834c2ff9c33112c8ae4da028c511e"
+    },
+    {
+      "path": "tests/prediction/System.Security.Cryptography.dll",
+      "before": null,
+      "after": "567ead6f82e244c97871d67c69f214eb456424e4aa46c063e3bc70147c600ac9"
+    },
+    {
+      "path": "tests/prediction/System.Security.Principal.Windows.dll",
+      "before": null,
+      "after": "09b04b3fef06714575d357766760f6aa2ae683c1470d13bded00622f32dd56ce"
+    },
+    {
+      "path": "tests/prediction/System.Security.Principal.dll",
+      "before": null,
+      "after": "9d4fd0f4281c5da796d3174018c5f75c9da71eb6162430c5f8ce4dc808ef40ee"
+    },
+    {
+      "path": "tests/prediction/System.Security.SecureString.dll",
+      "before": null,
+      "after": "d1c0be5259e7d4086c5e9b51eced80ad13b50689d6ced0685acc1d23d1684bf8"
+    },
+    {
+      "path": "tests/prediction/System.Security.dll",
+      "before": null,
+      "after": "59b8f0dbf5233adb5400dcb457adf0dac56f6310b43788bc158c5865c76b8619"
+    },
+    {
+      "path": "tests/prediction/System.ServiceModel.Web.dll",
+      "before": null,
+      "after": "69bdef89cc05b3467d8efea3da3db077af4683e5650be5b1407dbb2d3647872b"
+    },
+    {
+      "path": "tests/prediction/System.ServiceProcess.dll",
+      "before": null,
+      "after": "cf3574ac84c99fa6f56a05dee19f316d655b628ff8dae7bba0aea60dc6285177"
+    },
+    {
+      "path": "tests/prediction/System.Text.Encoding.CodePages.dll",
+      "before": null,
+      "after": "fb23a119249259df1267dfbf2962c824937a9c038ae753241eeeabf9cd874352"
+    },
+    {
+      "path": "tests/prediction/System.Text.Encoding.Extensions.dll",
+      "before": null,
+      "after": "02d2ec21a4b8be9f9674093711e609ec9cbca41bc63751a551701745894ed34e"
+    },
+    {
+      "path": "tests/prediction/System.Text.Encoding.dll",
+      "before": null,
+      "after": "47cd02812200dee2ee1980119861cd3a5aeed9604974746e2eaf974e029a64e5"
+    },
+    {
+      "path": "tests/prediction/System.Text.Encodings.Web.dll",
+      "before": null,
+      "after": "88338c129e9ad79f682515a69e79570bd8a042e112467ce7a071bbfbd39ba395"
+    },
+    {
+      "path": "tests/prediction/System.Text.Json.dll",
+      "before": null,
+      "after": "e1cd0ae514ab1d46cd037251f2a1d09154543c03a76a79fb3fd798800c6cc320"
+    },
+    {
+      "path": "tests/prediction/System.Text.RegularExpressions.dll",
+      "before": null,
+      "after": "a9b812fc5cdbabb1c0ee7670e43347da1730528a5e55acec3fa316674eabb33a"
+    },
+    {
+      "path": "tests/prediction/System.Threading.AccessControl.dll",
+      "before": null,
+      "after": "4d63017927767084cea69c4bc5da814dfbc0e1f44d8a72a9bcd2ed61108b1ae8"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Channels.dll",
+      "before": null,
+      "after": "469fdbe3ec8d2099ebf387569c5bf7cbae798d9533335de0e36848277c0be367"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Overlapped.dll",
+      "before": null,
+      "after": "4a844deee1b68aa9967e8cb440c8d26f2d9d8943bdea9bee384efac0cae6212d"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Tasks.Dataflow.dll",
+      "before": null,
+      "after": "995d4ea022199f25232f685c03c3fd9a3d5b55f6c5492791c7733a1a567be780"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Tasks.Extensions.dll",
+      "before": null,
+      "after": "8deef5ad09f55abcc2c5706cfd0b03dd8d51d06d9a1a44dbdc90b0b7b46df318"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Tasks.Parallel.dll",
+      "before": null,
+      "after": "e733830cd49d5748106ad8a081da96b1ea9eecaf70066ae5c60becd9efa9a5f9"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Tasks.dll",
+      "before": null,
+      "after": "12b899bb2ca03467ebd20f231b6c2780191b0b9030b26a9eefa75c4168f1433c"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Thread.dll",
+      "before": null,
+      "after": "acf7f74c2455d2230740064edf895540e07ae59a56fe25a2d6d67da03bc5febf"
+    },
+    {
+      "path": "tests/prediction/System.Threading.ThreadPool.dll",
+      "before": null,
+      "after": "9675498eb7412c4461460cc6f211e2fc2a89088d5dcdd68c71fa6f2c231b5536"
+    },
+    {
+      "path": "tests/prediction/System.Threading.Timer.dll",
+      "before": null,
+      "after": "3fe694ed394af4908a0db80b45983316c7830ffc10ed099b95069c6df5e4b853"
+    },
+    {
+      "path": "tests/prediction/System.Threading.dll",
+      "before": null,
+      "after": "5b9bbbbd19b816c170e4ba1f9700c1168abd2f147fa7c7a238af229abae32537"
+    },
+    {
+      "path": "tests/prediction/System.Transactions.Local.dll",
+      "before": null,
+      "after": "a3e872c081f3741a969c3b531bce7ee4bf83c945d072cafa28c93db789d414cb"
+    },
+    {
+      "path": "tests/prediction/System.Transactions.dll",
+      "before": null,
+      "after": "cd2baea81f8bedc80493b78eb78670aeca9c7b67bb8db30c20164ef684c156f7"
+    },
+    {
+      "path": "tests/prediction/System.ValueTuple.dll",
+      "before": null,
+      "after": "b5556bca1c01ed28ed925dd75f9bbf062540d3c6ae08b7446a9641d9940deda8"
+    },
+    {
+      "path": "tests/prediction/System.Web.HttpUtility.dll",
+      "before": null,
+      "after": "cdc82d98f4258f5aa9e19a94db589d8b307f07952b2d10941c397cfd1cf248f3"
+    },
+    {
+      "path": "tests/prediction/System.Web.dll",
+      "before": null,
+      "after": "fe1a37afe2dcc31c578e7fc524afef85e9e95bb5e0203630844bd7dd9b1470ec"
+    },
+    {
+      "path": "tests/prediction/System.Windows.dll",
+      "before": null,
+      "after": "ea1324dced45ad991d45a57b4d43c01543a0f8c960a29b8bdba4a4f64ac7a3e9"
+    },
+    {
+      "path": "tests/prediction/System.Xml.Linq.dll",
+      "before": null,
+      "after": "9a5db0ca7cdaa3681b0b684ef24f5ad8f4a886b1c615f04b6474d9c48c366edb"
+    },
+    {
+      "path": "tests/prediction/System.Xml.ReaderWriter.dll",
+      "before": null,
+      "after": "7f9cc4bebbe7c1c1bdffff9eab4fe31343a4a064d225209196e85697fc5875d0"
+    },
+    {
+      "path": "tests/prediction/System.Xml.Serialization.dll",
+      "before": null,
+      "after": "d07429fc8cd8e47546b3202c447f06202523e3f92234acc402fc5e0b169d3113"
+    },
+    {
+      "path": "tests/prediction/System.Xml.XDocument.dll",
+      "before": null,
+      "after": "cd840840189a4496701ebf519b8a113182db42fd64dc8f158a6cbb470587cab6"
+    },
+    {
+      "path": "tests/prediction/System.Xml.XPath.XDocument.dll",
+      "before": null,
+      "after": "91cb44a25020b4558bed0b1dc7f850383b20cdb39c63c25e1d4dd1ee74ca3a8f"
+    },
+    {
+      "path": "tests/prediction/System.Xml.XPath.dll",
+      "before": null,
+      "after": "ff25ca66432b61a693e6cf4eb4979f9efa6358a36c3938982a68998922ac6be6"
+    },
+    {
+      "path": "tests/prediction/System.Xml.XmlDocument.dll",
+      "before": null,
+      "after": "0a6bce0dd60bd9c8477f426fd6854f34eaaf721ac861b86745cbc65441b0e5f9"
+    },
+    {
+      "path": "tests/prediction/System.Xml.XmlSerializer.dll",
+      "before": null,
+      "after": "f973e70eb7ff1bcdab04d7027c8c6e755a617f45d3187d2ace0a4f6fe01361a8"
+    },
+    {
+      "path": "tests/prediction/System.Xml.dll",
+      "before": null,
+      "after": "284c9eccc2644a70616369d2f4b330b8f7b8e6db201d1cb104e72d6c32fb36fa"
+    },
+    {
+      "path": "tests/prediction/System.dll",
+      "before": null,
+      "after": "046cfeb41cece80b77ba198d77b559843181d24b4095f47ed329a4318528e02c"
+    },
+    {
+      "path": "tests/prediction/WindowsBase.dll",
+      "before": null,
+      "after": "4530f963df7edf31a0a189fb45c99d80e6a5d348644a2bf355372350ee4c685f"
+    },
+    {
+      "path": "tests/prediction/createdump",
+      "before": null,
+      "after": "4121a4a5a612f643b9c43cd4d1f0883f8f35a5f002e7184376b23756fa344214"
+    },
+    {
+      "path": "tests/prediction/libSystem.Globalization.Native.so",
+      "before": null,
+      "after": "f76540eb68ffebcbb7fe8641fb30f1e9b4db23fec663b5322a617145da17603f"
+    },
+    {
+      "path": "tests/prediction/libSystem.IO.Compression.Native.so",
+      "before": null,
+      "after": "386d7a0b21f3225cbc4de5c41d79985d837ad1cdde67366e9c18233713f8fd10"
+    },
+    {
+      "path": "tests/prediction/libSystem.Native.so",
+      "before": null,
+      "after": "d39eb8c5d992d94a81024790b24483acf2f8500b53b059247aec6968928b5eb2"
+    },
+    {
+      "path": "tests/prediction/libSystem.Net.Security.Native.so",
+      "before": null,
+      "after": "f5d25177c6d484458e88fa87942c56bd467bf506d0096e36d7e3c3cba9839398"
+    },
+    {
+      "path": "tests/prediction/libSystem.Security.Cryptography.Native.OpenSsl.so",
+      "before": null,
+      "after": "f3e34f404a19dbe94d0f25e75d18b84dce99120664819a1f95b5108fd0ce93a8"
+    },
+    {
+      "path": "tests/prediction/libclrgc.so",
+      "before": null,
+      "after": "b36ff800c974dad07ebb062d1a915303da664b26c4b5c12c961da006467d6b0e"
+    },
+    {
+      "path": "tests/prediction/libclrgcexp.so",
+      "before": null,
+      "after": "b60f45fc311ad6ad336687e33eb4783f88a6ae934a5e4032ff710391dd7751fe"
+    },
+    {
+      "path": "tests/prediction/libclrjit.so",
+      "before": null,
+      "after": "0d4e48d868c61923ebacbbd2e9eaef73f3b38d949e0ea098e0dc67a124c972c2"
+    },
+    {
+      "path": "tests/prediction/libcoreclr.so",
+      "before": null,
+      "after": "1af9c0f364b3c529266a9f55964effdf423207867f59b82dcfe582c24f02d1ce"
+    },
+    {
+      "path": "tests/prediction/libcoreclrtraceptprovider.so",
+      "before": null,
+      "after": "77e0f1079407b86834e14c33aaafad190510b911d5b7377455fce30e23aa7fff"
+    },
+    {
+      "path": "tests/prediction/libhostfxr.so",
+      "before": null,
+      "after": "b1bb36e4dc54521e914a610723847b984c4a8219c432e2eb715922a8a592a77b"
+    },
+    {
+      "path": "tests/prediction/libhostpolicy.so",
+      "before": null,
+      "after": "f4255c3bd4bb1975404e9308f22c7c6c6460e1aa287c347c5afa1aa217bca555"
+    },
+    {
+      "path": "tests/prediction/libmscordaccore.so",
+      "before": null,
+      "after": "f3f2b80e8b25f31ff85b65e110c314b2d720236264c6b04822b654c00e2816b3"
+    },
+    {
+      "path": "tests/prediction/libmscordbi.so",
+      "before": null,
+      "after": "84788b29f0f003eb211d9c666d9429243b4f0be87a833d8c6dd91fc9fefa79dd"
+    },
+    {
+      "path": "tests/prediction/mscorlib.dll",
+      "before": null,
+      "after": "3655f96d06e3fc251474303a8983f59be0f37c6df9620a31a7fc8cb896674410"
+    },
+    {
+      "path": "tests/prediction/netstandard.dll",
+      "before": null,
+      "after": "373dfaf25433e530c1a991c0106a5ae3b17370362563a937f320739099930765"
+    }
+  ],
+  "previousClientSourceInventoryMissing": true,
+  "testSourceNote": "e did not inventory Client.Application in its package. Newly listed App paths are added coverage, not necessarily edits from e; the separately reviewed30-file patch records actual changed sources."
+}

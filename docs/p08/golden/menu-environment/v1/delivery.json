@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "source": {
+    "path": "ArtSource/P08/Golden/MenuEnvironment/V1/RB_Golden_MenuEnvironment.blend",
+    "sha256": "a50afcdbf47b7b2619ba443db7bb3a2a52d294304dcd2bcf08e6ca32b6ae6ef7"
+  },
+  "fbx": {
+    "path": "_local/p08-menu-environment-v1-staging/RB_Golden_MenuEnvironment.fbx",
+    "sha256": "5c47c11b8ae4c64aa74de665d41adb31688969d9f28eacfa09491efadba6a837"
+  },
+  "descriptor": {
+    "path": "docs/p08/golden/menu-environment/v1/descriptor-staged.json",
+    "sha256": "b16060b091f94bb1cf467232daf41945b73016f5b7fcd3cffa6169394b453294"
+  },
+  "stagingOnly": true,
+  "visualAccepted": false,
+  "nativeImported": false,
+  "modules": 139,
+  "meshes": 417,
+  "sourceTriangles": 1938935,
+  "geometryAudit": {
+    "path": "docs/p08/golden/menu-environment/v1/geometry-audit-frontface-mcp.json",
+    "sha256": "e7d9e6778a51993e0762e2333f73fed17c6dd083b5540562fe990f3d59d779be"
+  },
+  "integration": "Root must publish to a fresh Assets path then rebind FBX + module-map and descriptor hashes. Do not import the staging-only descriptor as production.",
+  "camera": {
+    "positionUnity": {
+      "x": 2.97608256,
+      "y": 1.50701666,
+      "z": 1.88716865
+    },
+    "cameraDirectionFromHero": [
+      1.6,
+      0.32,
+      1
+    ],
+    "verticalFov": 35,
+    "aspect": 1.7777777777777777,
+    "blenderShiftX": -0.2219,
+    "blenderShiftY": 0,
+    "note": "Same fixed bike view as root fixture; Unity computes off-center projection from actual posed actors. Blender shift approximates that current framing."
+  },
+  "derivedFrom": {
+    "path": "ArtSource/P08/Golden/Canyon/V16/RB_Golden_Canyon.blend",
+    "sha256": "c7681657df4666b13d22a15adbfaa17b42fd7413b8d4294a3cada4eb485cc01c"
+  },
+  "scripts": [
+    {
+      "path": "tools/p08/golden/menu_environment_v3.py",
+      "sha256": "9c3cd0e2083939d3ac5051baaaf60c2de8cb82d8582c4693597862426dc17c10"
+    },
+    {
+      "path": "tools/p08/golden/menu_finish_v4.py",
+      "sha256": "a726c3baab4c237b2b2fed2811982f60593c345a82d5b2a7d2c340a879d3937d"
+    },
+    {
+      "path": "tools/p08/golden/menu_surface_frontfaces.py",
+      "sha256": "2770537651f1af214bb832b68a574509c2757d521b33b5a2162acd71bffc05d3"
+    },
+    {
+      "path": "tools/p08/golden/menu_geometry_audit.py",
+      "sha256": "737f10135d8123afdb64012e26a281b1101fd36693d40101f357883d45ce3387"
+    },
+    {
+      "path": "tools/p08/golden/menu_export.py",
+      "sha256": "34acf1a2b46dbb73303abaaa638a47cceadf82f99aec66062a464f23352403d6"
+    }
+  ],
+  "limits": [
+    "Actual camera comparison required in Unity with root HDR/fog calibration.",
+    "No contact colliders: passive menu display; actor root remains at origin on the pullout.",
+    "Cliff silhouette/bedding, ground-edge detail and final lighting remain visually unaccepted."
+  ]
+}

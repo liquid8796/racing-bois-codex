@@ -1,0 +1,64 @@
+{
+  "generatedUtc": "2026-09-26T17:52:00.2988505+00:00",
+  "passed": 9,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "standalone_content_resolves_installed_streaming_assets_without_page_url",
+      "passed": true
+    },
+    {
+      "name": "editor_root_is_distinct_from_installed_root",
+      "passed": true
+    },
+    {
+      "name": "default_endpoint_explicitly_identifies_local_lan_host",
+      "passed": true
+    },
+    {
+      "name": "online_endpoint_and_content_origin_are_independent_and_require_trusted_https_wss",
+      "passed": true
+    },
+    {
+      "name": "malformed_config_and_non_ws_backend_are_rejected",
+      "passed": true
+    },
+    {
+      "name": "editor_http_override_is_loopback_only_and_never_applies_to_standalone",
+      "passed": true
+    },
+    {
+      "name": "installed_music_accepts_spaces_and_rejects_outside_content_root",
+      "passed": true
+    },
+    {
+      "name": "remote_music_rejects_other_origins_sibling_paths_and_encoded_traversal",
+      "passed": true
+    },
+    {
+      "name": "native_manifest_rejects_webgl_bundles_before_loading",
+      "passed": true
+    }
+  ],
+  "source": "Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs",
+  "sha256": "fd88d096abcf1163f947765835b615d7467ae95660fa317c607ba0909c2c84f1",
+  "sources": [
+    {
+      "path": "Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs",
+      "sha256": "fd88d096abcf1163f947765835b615d7467ae95660fa317c607ba0909c2c84f1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/ContentManifestRules.cs",
+      "sha256": "58df69f3801a47ed38001d74869e3a57eaecf4f38db6afdf9cb9f8a808a4a2c5"
+    },
+    {
+      "path": "src/Tests/RacingBois.DesktopConfig.Tests/Program.cs",
+      "sha256": "35d27e56ea3cd2331887e35876c7745d4206aaab1b346f40e8d5e0c2f0abf021"
+    },
+    {
+      "path": "src/Tests/RacingBois.DesktopConfig.Tests/RacingBois.DesktopConfig.Tests.csproj",
+      "sha256": "2901a1c0b708e84560da710b2c71ddec1b94bb9789736041fd06bb406e1fe50c"
+    }
+  ],
+  "scope": "Pure native installation/config/music URL acceptance. Does not establish Unity build, audio decode, rendering, live OCI connectivity, or Windows 10/11 machine acceptance."
+}

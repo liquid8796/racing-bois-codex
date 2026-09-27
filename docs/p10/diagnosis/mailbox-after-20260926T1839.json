@@ -1,0 +1,24 @@
+{
+  "generatedUtc": "2026-09-26T18:39:59.8836042+00:00",
+  "status": "PASS",
+  "spuriousTermination": false,
+  "correctlyWaited": true,
+  "thirdDelivered": true,
+  "closeDelivered": true,
+  "latestSnapshotIsReplacement": true,
+  "scope": "Real mailbox concurrent-reader/replacing-writer interleaving. Private-gate inspection controls a legal schedule; no production state/data patched. Null is interpreted as closure by MultiplayerEndpoint sender.",
+  "sources": [
+    {
+      "path": "src/Server/RacingBois.Server.Host/Multiplayer/PeerMailbox.cs",
+      "sha256": "1e231c52e99febd2f06354ae6d9a807de41db3d9510ebe86b3498e70a2b1a16e"
+    },
+    {
+      "path": "tools/p10/MailboxRaceRepro/Program.cs",
+      "sha256": "5b9416b8eb93288db93dcb5fd450b4564c45fb8a0f601418a246cc9a85ef564f"
+    },
+    {
+      "path": "tools/p10/MailboxRaceRepro/MailboxRaceRepro.csproj",
+      "sha256": "cc29076035d54ba7f1939e9faab2909ab795cc61dd2b73c60ffedd2e83185c3f"
+    }
+  ]
+}

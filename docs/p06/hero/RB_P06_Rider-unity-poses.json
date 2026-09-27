@@ -1,0 +1,187 @@
+{
+    "passed": true,
+    "name": "RB_P06_Rider",
+    "method": "Imported Unity clips sampled at 17 phases; CPU BakeMesh linear skin; fitted bounds plus 10cm margin checked in renderer world bounds",
+    "checkedVertices": 4377636,
+    "clips": [
+        {
+            "name": "RB_AttackLeft",
+            "durationSeconds": 0.5,
+            "maxBoneRotationDegrees": 99.52175903320313,
+            "maxTemporalRotationDegrees": 88.69324493408203,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_AttackRight",
+            "durationSeconds": 0.5,
+            "maxBoneRotationDegrees": 99.52178192138672,
+            "maxTemporalRotationDegrees": 88.69326782226563,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_Fall",
+            "durationSeconds": 0.6000000238418579,
+            "maxBoneRotationDegrees": 83.1214599609375,
+            "maxTemporalRotationDegrees": 83.1214599609375,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_Hit",
+            "durationSeconds": 0.3333333432674408,
+            "maxBoneRotationDegrees": 95.39893341064453,
+            "maxTemporalRotationDegrees": 19.918193817138673,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_Idle",
+            "durationSeconds": 1.0,
+            "maxBoneRotationDegrees": 0.0,
+            "maxTemporalRotationDegrees": 0.0,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_KickLeft",
+            "durationSeconds": 0.5333333611488342,
+            "maxBoneRotationDegrees": 95.39893341064453,
+            "maxTemporalRotationDegrees": 74.9626693725586,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_KickRight",
+            "durationSeconds": 0.5333333611488342,
+            "maxBoneRotationDegrees": 95.39893341064453,
+            "maxTemporalRotationDegrees": 74.96267700195313,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_LeanLeft",
+            "durationSeconds": 1.0,
+            "maxBoneRotationDegrees": 95.39893341064453,
+            "maxTemporalRotationDegrees": 0.0,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_LeanRight",
+            "durationSeconds": 1.0,
+            "maxBoneRotationDegrees": 95.39893341064453,
+            "maxTemporalRotationDegrees": 0.0,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_Remount",
+            "durationSeconds": 0.8000000715255737,
+            "maxBoneRotationDegrees": 95.39893341064453,
+            "maxTemporalRotationDegrees": 95.39893341064453,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_Ride",
+            "durationSeconds": 1.0,
+            "maxBoneRotationDegrees": 95.39893341064453,
+            "maxTemporalRotationDegrees": 0.0,
+            "samples": 17,
+            "curveBindings": 160
+        },
+        {
+            "name": "RB_Run",
+            "durationSeconds": 0.8000000715255737,
+            "maxBoneRotationDegrees": 55.00001907348633,
+            "maxTemporalRotationDegrees": 50.92189025878906,
+            "samples": 17,
+            "curveBindings": 160
+        }
+    ],
+    "skins": [
+        {
+            "name": "RB_P06_Rider_L0_Skin",
+            "rootBone": "RB_P06_Rider_Rig",
+            "rendererLocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rendererLocalRotation": {
+                "x": 0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071067094802856
+            },
+            "localBounds": {
+                "m_Center": {
+                    "x": -0.0002440810203552246,
+                    "y": -0.08183050155639649,
+                    "z": -0.8756097555160523
+                },
+                "m_Extent": {
+                    "x": 1.0239394903182984,
+                    "y": 0.8465460538864136,
+                    "z": 1.015879511833191
+                }
+            }
+        },
+        {
+            "name": "RB_P06_Rider_L1_Skin",
+            "rootBone": "RB_P06_Rider_Rig",
+            "rendererLocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rendererLocalRotation": {
+                "x": 0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071067094802856
+            },
+            "localBounds": {
+                "m_Center": {
+                    "x": -0.0003885030746459961,
+                    "y": -0.08239459991455078,
+                    "z": -0.8754715919494629
+                },
+                "m_Extent": {
+                    "x": 1.0238053798675538,
+                    "y": 0.8464316129684448,
+                    "z": 1.0163476467132569
+                }
+            }
+        },
+        {
+            "name": "RB_P06_Rider_L2_Skin",
+            "rootBone": "RB_P06_Rider_Rig",
+            "rendererLocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rendererLocalRotation": {
+                "x": 0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071067094802856
+            },
+            "localBounds": {
+                "m_Center": {
+                    "x": -0.00037223100662231445,
+                    "y": -0.08227574825286865,
+                    "z": -0.875626802444458
+                },
+                "m_Extent": {
+                    "x": 1.023333191871643,
+                    "y": 0.8461370468139648,
+                    "z": 1.0161924362182618
+                }
+            }
+        }
+    ]
+}

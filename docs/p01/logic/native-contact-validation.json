@@ -1,0 +1,1096 @@
+{
+  "status": "PASS",
+  "source_sha256": "66ab853c5b7b73b82a7c22a0478f5ba5b1066ed27028ef96449f5fe36a6101c5",
+  "scope": "controlled native contact mutations, strict cooldown equality, weapon transfer and observed roles",
+  "damage_cases": [
+    {
+      "tick": 142,
+      "weapon_id": 0,
+      "native_damage": 7,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2472,
+        "health": 19552,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2472,
+        "health": 19552,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 177,
+      "weapon_id": 0,
+      "native_damage": 7,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2444,
+        "health": 19104,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2444,
+        "health": 19104,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 219,
+      "weapon_id": 0,
+      "native_damage": 7,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2416,
+        "health": 18656,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2416,
+        "health": 18656,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 260,
+      "weapon_id": 1,
+      "native_damage": 8,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2468,
+        "health": 19488,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2468,
+        "health": 19488,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 291,
+      "weapon_id": 1,
+      "native_damage": 8,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2436,
+        "health": 18976,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2436,
+        "health": 18976,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 322,
+      "weapon_id": 1,
+      "native_damage": 8,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2404,
+        "health": 18464,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2404,
+        "health": 18464,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 376,
+      "weapon_id": 2,
+      "native_damage": 10,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2460,
+        "health": 19360,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2460,
+        "health": 19360,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 411,
+      "weapon_id": 2,
+      "native_damage": 10,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2420,
+        "health": 18720,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2420,
+        "health": 18720,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 446,
+      "weapon_id": 2,
+      "native_damage": 10,
+      "secondary": 0,
+      "expected": {
+        "endurance": 2380,
+        "health": 18080,
+        "bikeCondition": 20000
+      },
+      "actual": {
+        "endurance": 2380,
+        "health": 18080,
+        "bikeCondition": 20000
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 495,
+      "weapon_id": 3,
+      "native_damage": 1,
+      "secondary": 1,
+      "expected": {
+        "endurance": 2496,
+        "health": 19936,
+        "bikeCondition": 19999
+      },
+      "actual": {
+        "endurance": 2496,
+        "health": 19936,
+        "bikeCondition": 19999
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 526,
+      "weapon_id": 3,
+      "native_damage": 1,
+      "secondary": 1,
+      "expected": {
+        "endurance": 2492,
+        "health": 19872,
+        "bikeCondition": 19998
+      },
+      "actual": {
+        "endurance": 2492,
+        "health": 19872,
+        "bikeCondition": 19998
+      },
+      "status": "PASS"
+    },
+    {
+      "tick": 570,
+      "weapon_id": 3,
+      "native_damage": 1,
+      "secondary": 1,
+      "expected": {
+        "endurance": 2488,
+        "health": 19808,
+        "bikeCondition": 19997
+      },
+      "actual": {
+        "endurance": 2488,
+        "health": 19808,
+        "bikeCondition": 19997
+      },
+      "status": "PASS"
+    }
+  ],
+  "strict_cooldown_equalities": [
+    {
+      "tick": 290,
+      "deadline": 290,
+      "target_animation": 4,
+      "range_accepted": true,
+      "health_before": 19488,
+      "health_after": 19488
+    },
+    {
+      "tick": 321,
+      "deadline": 321,
+      "target_animation": 4,
+      "range_accepted": true,
+      "health_before": 18976,
+      "health_after": 18976
+    },
+    {
+      "tick": 525,
+      "deadline": 525,
+      "target_animation": 8,
+      "range_accepted": true,
+      "health_before": 19936,
+      "health_after": 19936
+    },
+    {
+      "tick": 556,
+      "deadline": 556,
+      "target_animation": 8,
+      "range_accepted": true,
+      "health_before": 19872,
+      "health_after": 19872
+    }
+  ],
+  "weapon_transfers": [
+    {
+      "tick": 158,
+      "before": [
+        0,
+        2
+      ],
+      "after": [
+        2,
+        0
+      ],
+      "steal_until": 458,
+      "delta_ticks": 300,
+      "status": "PASS"
+    }
+  ],
+  "police_identity": {
+    "kind": "native_police_identity",
+    "tick": 180,
+    "pointer": "0x380dbd8",
+    "template": "0x464310",
+    "slot": 15,
+    "characterId": 9,
+    "ownership": 2,
+    "role": "police_global",
+    "state": 0,
+    "behavior": 0,
+    "intent": 2,
+    "target": "0x3810b6c",
+    "weapon": 1,
+    "attack": 1,
+    "animation": 2,
+    "animationFrame": 0,
+    "stealUntil": 0,
+    "hitUntil": 0,
+    "baseStrength": 6,
+    "maxEndurance": 2200,
+    "endurance": 2200,
+    "health": 2200,
+    "bikeCondition": 128,
+    "velocity": 0,
+    "longitudinal": 14080,
+    "lateral": 12288,
+    "height": 0
+  },
+  "first_bust": {
+    "kind": "native_outcome_request",
+    "tick": 963,
+    "request": 4,
+    "countdown": 180,
+    "result": 4,
+    "player": {
+      "pointer": "0x3810b6c",
+      "template": "0x463ba8",
+      "slot": 0,
+      "characterId": 0,
+      "ownership": 0,
+      "role": "local_player",
+      "state": 2,
+      "behavior": 8,
+      "intent": 3,
+      "target": "0x380dbd8",
+      "weapon": 0,
+      "attack": 0,
+      "animation": 38,
+      "animationFrame": 1,
+      "stealUntil": 0,
+      "hitUntil": 0,
+      "baseStrength": 7,
+      "maxEndurance": 2500,
+      "endurance": 2452,
+      "health": 2398,
+      "bikeCondition": 116,
+      "velocity": 0,
+      "longitudinal": 25452,
+      "lateral": -157804,
+      "height": 0
+    },
+    "cop": {
+      "pointer": "0x380dbd8",
+      "template": "0x464310",
+      "slot": 15,
+      "characterId": 9,
+      "ownership": 2,
+      "role": "police_global",
+      "state": 0,
+      "behavior": 4,
+      "intent": 3,
+      "target": "0x3810b6c",
+      "weapon": 1,
+      "attack": 1,
+      "animation": 2,
+      "animationFrame": 0,
+      "stealUntil": 0,
+      "hitUntil": 0,
+      "baseStrength": 6,
+      "maxEndurance": 2200,
+      "endurance": 2200,
+      "health": 2200,
+      "bikeCondition": 128,
+      "velocity": 2027,
+      "longitudinal": 25799,
+      "lateral": -3499,
+      "height": 0
+    }
+  },
+  "observed_behavior_ids_by_role": {
+    "opponent": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "police_global": [
+      1,
+      4
+    ],
+    "local_player": [
+      8,
+      9
+    ]
+  },
+  "behavior_transitions": [
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 1,
+      "slot": 1,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 7,
+      "slot": 7,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 6,
+      "slot": 6,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 5,
+      "slot": 5,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 15,
+      "slot": 14,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 8,
+      "slot": 8,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 14,
+      "slot": 13,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 13,
+      "slot": 12,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 3,
+      "slot": 3,
+      "from": 0,
+      "to": 4
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 0,
+      "to": 4
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 0,
+      "to": 4
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 4,
+      "slot": 4,
+      "from": 0,
+      "to": 4
+    },
+    {
+      "tick": 1,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 0,
+      "to": 4
+    },
+    {
+      "tick": 61,
+      "role": "opponent",
+      "character_id": 4,
+      "slot": 4,
+      "from": 4,
+      "to": 1
+    },
+    {
+      "tick": 61,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 4,
+      "to": 1
+    },
+    {
+      "tick": 66,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 67,
+      "role": "opponent",
+      "character_id": 3,
+      "slot": 3,
+      "from": 4,
+      "to": 1
+    },
+    {
+      "tick": 96,
+      "role": "opponent",
+      "character_id": 4,
+      "slot": 4,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 121,
+      "role": "opponent",
+      "character_id": 4,
+      "slot": 4,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 123,
+      "role": "opponent",
+      "character_id": 3,
+      "slot": 3,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 144,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 181,
+      "role": "police_global",
+      "character_id": 9,
+      "slot": 15,
+      "from": 0,
+      "to": 1
+    },
+    {
+      "tick": 182,
+      "role": "opponent",
+      "character_id": 3,
+      "slot": 3,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 184,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 1,
+      "to": 5
+    },
+    {
+      "tick": 192,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 5,
+      "to": 1
+    },
+    {
+      "tick": 235,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 244,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 250,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 256,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 262,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 360,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 4,
+      "to": 1
+    },
+    {
+      "tick": 398,
+      "role": "opponent",
+      "character_id": 2,
+      "slot": 2,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 419,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 4,
+      "to": 1
+    },
+    {
+      "tick": 480,
+      "role": "opponent",
+      "character_id": 13,
+      "slot": 12,
+      "from": 1,
+      "to": 5
+    },
+    {
+      "tick": 484,
+      "role": "opponent",
+      "character_id": 13,
+      "slot": 12,
+      "from": 5,
+      "to": 1
+    },
+    {
+      "tick": 537,
+      "role": "opponent",
+      "character_id": 4,
+      "slot": 4,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 540,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 552,
+      "role": "opponent",
+      "character_id": 13,
+      "slot": 12,
+      "from": 1,
+      "to": 3
+    },
+    {
+      "tick": 558,
+      "role": "local_player",
+      "character_id": 0,
+      "slot": 0,
+      "from": 0,
+      "to": 9
+    },
+    {
+      "tick": 589,
+      "role": "opponent",
+      "character_id": 13,
+      "slot": 12,
+      "from": 3,
+      "to": 1
+    },
+    {
+      "tick": 658,
+      "role": "police_global",
+      "character_id": 9,
+      "slot": 15,
+      "from": 1,
+      "to": 4
+    },
+    {
+      "tick": 659,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 660,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 662,
+      "role": "opponent",
+      "character_id": 3,
+      "slot": 3,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 665,
+      "role": "opponent",
+      "character_id": 8,
+      "slot": 8,
+      "from": 1,
+      "to": 4
+    },
+    {
+      "tick": 674,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 685,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 721,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 728,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 729,
+      "role": "opponent",
+      "character_id": 14,
+      "slot": 13,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 736,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 1,
+      "to": 5
+    },
+    {
+      "tick": 742,
+      "role": "local_player",
+      "character_id": 0,
+      "slot": 0,
+      "from": 9,
+      "to": 8
+    },
+    {
+      "tick": 759,
+      "role": "opponent",
+      "character_id": 4,
+      "slot": 4,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 760,
+      "role": "opponent",
+      "character_id": 12,
+      "slot": 11,
+      "from": 5,
+      "to": 1
+    },
+    {
+      "tick": 801,
+      "role": "opponent",
+      "character_id": 14,
+      "slot": 13,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 819,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 843,
+      "role": "opponent",
+      "character_id": 3,
+      "slot": 3,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 847,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 903,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 917,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 968,
+      "role": "opponent",
+      "character_id": 10,
+      "slot": 9,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 1009,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 1017,
+      "role": "police_global",
+      "character_id": 9,
+      "slot": 15,
+      "from": 4,
+      "to": 1
+    },
+    {
+      "tick": 1025,
+      "role": "opponent",
+      "character_id": 11,
+      "slot": 10,
+      "from": 2,
+      "to": 1
+    },
+    {
+      "tick": 1029,
+      "role": "opponent",
+      "character_id": 3,
+      "slot": 3,
+      "from": 1,
+      "to": 2
+    },
+    {
+      "tick": 1085,
+      "role": "opponent",
+      "character_id": 4,
+      "slot": 4,
+      "from": 1,
+      "to": 2
+    }
+  ],
+  "traffic_states_observed": [
+    1,
+    3
+  ],
+  "traffic_instance_count": 15,
+  "traffic_live_observations": [
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37eb00c",
+      "objectType": 32,
+      "trafficType": 6,
+      "state": 1,
+      "velocity": 0,
+      "longitudinal": 31827
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37eb474",
+      "objectType": 32,
+      "trafficType": 7,
+      "state": 1,
+      "velocity": 0,
+      "longitudinal": 30803
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37eb8dc",
+      "objectType": 32,
+      "trafficType": 0,
+      "state": 1,
+      "velocity": 0,
+      "longitudinal": 27731
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ebd44",
+      "objectType": 32,
+      "trafficType": 1,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 26195
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ec1ac",
+      "objectType": 32,
+      "trafficType": 5,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 22611
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ec614",
+      "objectType": 32,
+      "trafficType": 0,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 19027
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37eca7c",
+      "objectType": 32,
+      "trafficType": 7,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 18003
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ecee4",
+      "objectType": 32,
+      "trafficType": 1,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 13907
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ed34c",
+      "objectType": 32,
+      "trafficType": 4,
+      "state": 1,
+      "velocity": 0,
+      "longitudinal": 13568
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ed7b4",
+      "objectType": 32,
+      "trafficType": 1,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 13568
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37edc1c",
+      "objectType": 32,
+      "trafficType": 1,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 13312
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ee084",
+      "objectType": 32,
+      "trafficType": 10,
+      "state": 1,
+      "velocity": 0,
+      "longitudinal": 13139
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ee4ec",
+      "objectType": 32,
+      "trafficType": 1,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 13139
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 1,
+      "source_va": "0x440dd0",
+      "pointer": "0x37ee954",
+      "objectType": 32,
+      "trafficType": 4,
+      "state": 1,
+      "velocity": 0,
+      "longitudinal": 12800
+    },
+    {
+      "kind": "native_traffic_live_update",
+      "tick": 276,
+      "source_va": "0x440dd0",
+      "pointer": "0x37eaba4",
+      "objectType": 32,
+      "trafficType": 0,
+      "state": 3,
+      "velocity": 0,
+      "longitudinal": 35923
+    }
+  ],
+  "rejected_traffic_evidence": "Periodic snapshots in earlier police probes retained recycled constructor pointers; use only native_traffic_live_update records from0x440dd0.",
+  "result_transitions": [
+    {
+      "kind": "native_result_transition",
+      "tick": 1142,
+      "transition": 29,
+      "positionIndex": 0,
+      "cash": 0
+    }
+  ],
+  "limitations": [
+    "contact fixtures reposition player beside an existing target before hit processing",
+    "recipient pools reset to explicit test values once per weapon case",
+    "steal fixture initializes target attack using original animation-selection routine",
+    "police initial spawn invokes original routine; natural spawn eligibility not verified",
+    "unobserved AI handlers and full relationship model remain open",
+    "native contact cases are not physics or browser performance tests"
+  ]
+}

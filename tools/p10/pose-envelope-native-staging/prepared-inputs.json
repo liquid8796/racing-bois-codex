@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "productionApplied": false,
+  "unityCalled": false,
+  "namespaceCopies": [
+    {
+      "source": "tools/p10/pose-envelope-staging/VisualPoseEnvelope.cs",
+      "sourceSha256": "78eebd0a00fb814a99c9880b878c11d7ff97f38d35bbf3dc97e091c266102171",
+      "path": "tools/p10/pose-envelope-native-staging/Runtime/VisualPoseEnvelope.cs",
+      "sha256": "737ff5e6834eb2ff8b862d2f75b44313f3c7474934ef6ed80e220375c2a60e35",
+      "transform": "one literal namespace substitution only",
+      "from": "namespace RacingBois.Client.Presentation",
+      "to": "namespace RacingBois.Diagnostics.PoseEnvelopePreview"
+    },
+    {
+      "source": "tools/p10/pose-envelope-staging/UnityVisualPoseEnvelope.cs",
+      "sourceSha256": "7ccbf252957236e77707358dc9633fd8f01273c2599adad23f0f0ae124e5d13f",
+      "path": "tools/p10/pose-envelope-native-staging/Runtime/UnityVisualPoseEnvelope.cs",
+      "sha256": "14aa277b3220c1b683324ea4ab3ed335f92abd75dddba7dac58466ec5c24dff0",
+      "transform": "one literal namespace substitution only",
+      "from": "namespace RacingBois.Client.Presentation",
+      "to": "namespace RacingBois.Diagnostics.PoseEnvelopePreview"
+    },
+    {
+      "source": "tools/p10/pose-envelope-staging/PresentationContinuityScope.cs",
+      "sourceSha256": "8a7b6ac81f1d93fcb43aae380f0ec9e0c90fe3b0f9eae10b5797df551c519ab7",
+      "path": "tools/p10/pose-envelope-native-staging/Runtime/PresentationContinuityScope.cs",
+      "sha256": "cc2e6949f9b0e2c7a29a81ba280e42ae0325fb303921201b8fab10af7646905e",
+      "transform": "one literal namespace substitution only",
+      "from": "namespace RacingBois.Client.Presentation",
+      "to": "namespace RacingBois.Diagnostics.PoseEnvelopePreview"
+    }
+  ],
+  "comparisonVariant": {
+    "source": "tools/p10/pose-envelope-native-staging/Runtime/VisualPoseEnvelope.cs",
+    "sourceSha256": "737ff5e6834eb2ff8b862d2f75b44313f3c7474934ef6ed80e220375c2a60e35",
+    "path": "tools/p10/pose-envelope-native-staging/Runtime/VisualPoseEnvelope20Comparison.cs",
+    "sha256": "e4b53c4ebe5a6d81fa8ab27b62b0a948171a97e8c4268df426f97690cf7e97bc",
+    "literalChanges": {
+      "public sealed class VisualPoseEnvelope": "public sealed class VisualPoseEnvelope20Comparison",
+      "MaximumCorrectionSpeed = 40f": "MaximumCorrectionSpeed = 20f",
+      "MaximumDurationSeconds = .375": "MaximumDurationSeconds = .75",
+      "MaximumBurstSeconds = .6": "MaximumBurstSeconds = 1.2",
+      "    public enum VisualPoseResetReason { None, Initialization, ExplicitReset, ClockGap, ClockRewind, Teleport, OffsetBudget, BurstBudget, FrozenResume }\n": ""
+    },
+    "accepted": false
+  },
+  "fixture": {
+    "path": "tools/p10/pose-envelope-native-staging/Data/episodes.json",
+    "sha256": "284834790ea7192044cd2cde935ac33d709b26a88468278bea5355a034fcd092"
+  },
+  "frozenCandidateManifest": {
+    "path": "tools/p10/pose-envelope-staging/candidate-manifest.json",
+    "sha256": "7e5de173bf082ec75ba6f2ecef66ebd147e57764d1990df3319caded022e1fbe"
+  }
+}

@@ -1,0 +1,526 @@
+{
+  "setup": "Controlled two-rider combat plus oncoming traffic at110m, seed1996. Inputs only afterinitialplacement.30fps simulation/render.",
+  "capture_kind": "Deterministic Unity Editor render export; controlled initial arena and inputs",
+  "fps": 30,
+  "frame_count": 360,
+  "duration_seconds": 12,
+  "simulation_tick_rate": 60,
+  "first_sample_tick": 2,
+  "last_sample_tick": 720,
+  "timeline_sha256": "5b2cded7148e051b01b19780ac4cbfa113a9938b1249889367741bd0080ecd09",
+  "ordered_frame_sha256_manifest_digest": "8a46c01e2d4a0447afdf705527b9740a0bb66154d71478e1e1037107bf30355b",
+  "standalone_video": {
+    "path": "docs/p03p04/unity/gameplay-combat-recovery.mp4",
+    "metadata": {
+      "width": 1104,
+      "height": 506,
+      "fps": "30/1",
+      "frames": 360,
+      "duration_seconds": 12.0,
+      "sha256": "93a69d1a9cbe43ab04791e30ae4112ef9bd9f80456964a4d2235ce6d79f875c0",
+      "bytes": 1036514,
+      "audio": false
+    }
+  },
+  "transitions": [
+    {
+      "frame": 0,
+      "tick": 2,
+      "mode": "Attacking",
+      "s": 0.8379999995231628,
+      "bikeS": 0.8379999995231628,
+      "health": 4096,
+      "bike": 100,
+      "video_time_seconds": 0.0,
+      "simulation_time_seconds": 0.03333333333333333
+    },
+    {
+      "frame": 4,
+      "tick": 10,
+      "mode": "Hit",
+      "s": 4.269000053405762,
+      "bikeS": 4.269000053405762,
+      "health": 3648,
+      "bike": 100,
+      "video_time_seconds": 0.13333333333333333,
+      "simulation_time_seconds": 0.16666666666666666
+    },
+    {
+      "frame": 10,
+      "tick": 22,
+      "mode": "Riding",
+      "s": 9.63599967956543,
+      "bikeS": 9.63599967956543,
+      "health": 3648,
+      "bike": 100,
+      "video_time_seconds": 0.3333333333333333,
+      "simulation_time_seconds": 0.36666666666666664
+    },
+    {
+      "frame": 15,
+      "tick": 32,
+      "mode": "Attacking",
+      "s": 14.303999900817871,
+      "bikeS": 14.303999900817871,
+      "health": 3648,
+      "bike": 100,
+      "video_time_seconds": 0.5,
+      "simulation_time_seconds": 0.5333333333333333
+    },
+    {
+      "frame": 19,
+      "tick": 40,
+      "mode": "Hit",
+      "s": 18.163999557495117,
+      "bikeS": 18.163999557495117,
+      "health": 3264,
+      "bike": 100,
+      "video_time_seconds": 0.6333333333333333,
+      "simulation_time_seconds": 0.6666666666666666
+    },
+    {
+      "frame": 25,
+      "tick": 52,
+      "mode": "Riding",
+      "s": 24.1560001373291,
+      "bikeS": 24.1560001373291,
+      "health": 3264,
+      "bike": 100,
+      "video_time_seconds": 0.8333333333333334,
+      "simulation_time_seconds": 0.8666666666666667
+    },
+    {
+      "frame": 31,
+      "tick": 64,
+      "mode": "Attacking",
+      "s": 30.385000228881836,
+      "bikeS": 30.385000228881836,
+      "health": 3264,
+      "bike": 100,
+      "video_time_seconds": 1.0333333333333334,
+      "simulation_time_seconds": 1.0666666666666667
+    },
+    {
+      "frame": 35,
+      "tick": 72,
+      "mode": "Hit",
+      "s": 34.66600036621094,
+      "bikeS": 34.66600036621094,
+      "health": 2880,
+      "bike": 100,
+      "video_time_seconds": 1.1666666666666667,
+      "simulation_time_seconds": 1.2
+    },
+    {
+      "frame": 41,
+      "tick": 84,
+      "mode": "Riding",
+      "s": 41.27199935913086,
+      "bikeS": 41.27199935913086,
+      "health": 2880,
+      "bike": 100,
+      "video_time_seconds": 1.3666666666666667,
+      "simulation_time_seconds": 1.4
+    },
+    {
+      "frame": 46,
+      "tick": 94,
+      "mode": "Attacking",
+      "s": 46.94300079345703,
+      "bikeS": 46.94300079345703,
+      "health": 2880,
+      "bike": 100,
+      "video_time_seconds": 1.5333333333333334,
+      "simulation_time_seconds": 1.5666666666666667
+    },
+    {
+      "frame": 50,
+      "tick": 102,
+      "mode": "Hit",
+      "s": 51.584999084472656,
+      "bikeS": 51.584999084472656,
+      "health": 2496,
+      "bike": 100,
+      "video_time_seconds": 1.6666666666666667,
+      "simulation_time_seconds": 1.7
+    },
+    {
+      "frame": 56,
+      "tick": 114,
+      "mode": "Riding",
+      "s": 58.720001220703125,
+      "bikeS": 58.720001220703125,
+      "health": 2496,
+      "bike": 100,
+      "video_time_seconds": 1.8666666666666667,
+      "simulation_time_seconds": 1.9
+    },
+    {
+      "frame": 62,
+      "tick": 126,
+      "mode": "Attacking",
+      "s": 66.05400085449219,
+      "bikeS": 66.05400085449219,
+      "health": 2496,
+      "bike": 100,
+      "video_time_seconds": 2.066666666666667,
+      "simulation_time_seconds": 2.1
+    },
+    {
+      "frame": 66,
+      "tick": 134,
+      "mode": "Hit",
+      "s": 71.0510025024414,
+      "bikeS": 71.0510025024414,
+      "health": 2112,
+      "bike": 100,
+      "video_time_seconds": 2.2,
+      "simulation_time_seconds": 2.2333333333333334
+    },
+    {
+      "frame": 72,
+      "tick": 146,
+      "mode": "Falling",
+      "s": 77.96800231933594,
+      "bikeS": 78.23600006103516,
+      "health": 1412,
+      "bike": 69,
+      "video_time_seconds": 2.4,
+      "simulation_time_seconds": 2.433333333333333
+    },
+    {
+      "frame": 93,
+      "tick": 188,
+      "mode": "Detached",
+      "s": 80.61000061035156,
+      "bikeS": 87.9530029296875,
+      "health": 1412,
+      "bike": 69,
+      "video_time_seconds": 3.1,
+      "simulation_time_seconds": 3.1333333333333333
+    },
+    {
+      "frame": 102,
+      "tick": 206,
+      "mode": "Running",
+      "s": 80.6760025024414,
+      "bikeS": 87.9530029296875,
+      "health": 1412,
+      "bike": 69,
+      "video_time_seconds": 3.4,
+      "simulation_time_seconds": 3.433333333333333
+    },
+    {
+      "frame": 157,
+      "tick": 316,
+      "mode": "Remounting",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 1412,
+      "bike": 69,
+      "video_time_seconds": 5.233333333333333,
+      "simulation_time_seconds": 5.266666666666667
+    },
+    {
+      "frame": 187,
+      "tick": 376,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 6.233333333333333,
+      "simulation_time_seconds": 6.266666666666667
+    },
+    {
+      "frame": 199,
+      "tick": 400,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 6.633333333333334,
+      "simulation_time_seconds": 6.666666666666667
+    },
+    {
+      "frame": 202,
+      "tick": 406,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 6.733333333333333,
+      "simulation_time_seconds": 6.766666666666667
+    },
+    {
+      "frame": 214,
+      "tick": 430,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 7.133333333333334,
+      "simulation_time_seconds": 7.166666666666667
+    },
+    {
+      "frame": 218,
+      "tick": 438,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 7.266666666666667,
+      "simulation_time_seconds": 7.3
+    },
+    {
+      "frame": 230,
+      "tick": 462,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 7.666666666666667,
+      "simulation_time_seconds": 7.7
+    },
+    {
+      "frame": 233,
+      "tick": 468,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 7.766666666666667,
+      "simulation_time_seconds": 7.8
+    },
+    {
+      "frame": 245,
+      "tick": 492,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 8.166666666666666,
+      "simulation_time_seconds": 8.2
+    },
+    {
+      "frame": 249,
+      "tick": 500,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 8.3,
+      "simulation_time_seconds": 8.333333333333334
+    },
+    {
+      "frame": 261,
+      "tick": 524,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 8.7,
+      "simulation_time_seconds": 8.733333333333333
+    },
+    {
+      "frame": 264,
+      "tick": 530,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 8.8,
+      "simulation_time_seconds": 8.833333333333334
+    },
+    {
+      "frame": 276,
+      "tick": 554,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 9.2,
+      "simulation_time_seconds": 9.233333333333333
+    },
+    {
+      "frame": 280,
+      "tick": 562,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 9.333333333333334,
+      "simulation_time_seconds": 9.366666666666667
+    },
+    {
+      "frame": 292,
+      "tick": 586,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 9.733333333333333,
+      "simulation_time_seconds": 9.766666666666667
+    },
+    {
+      "frame": 295,
+      "tick": 592,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 9.833333333333334,
+      "simulation_time_seconds": 9.866666666666667
+    },
+    {
+      "frame": 307,
+      "tick": 616,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 10.233333333333333,
+      "simulation_time_seconds": 10.266666666666667
+    },
+    {
+      "frame": 311,
+      "tick": 624,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 10.366666666666667,
+      "simulation_time_seconds": 10.4
+    },
+    {
+      "frame": 323,
+      "tick": 648,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 10.766666666666667,
+      "simulation_time_seconds": 10.8
+    },
+    {
+      "frame": 326,
+      "tick": 654,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 10.866666666666667,
+      "simulation_time_seconds": 10.9
+    },
+    {
+      "frame": 338,
+      "tick": 678,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 11.266666666666667,
+      "simulation_time_seconds": 11.3
+    },
+    {
+      "frame": 342,
+      "tick": 686,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 11.4,
+      "simulation_time_seconds": 11.433333333333334
+    },
+    {
+      "frame": 354,
+      "tick": 710,
+      "mode": "Riding",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 11.8,
+      "simulation_time_seconds": 11.833333333333334
+    },
+    {
+      "frame": 357,
+      "tick": 716,
+      "mode": "Attacking",
+      "s": 87.9530029296875,
+      "bikeS": 87.9530029296875,
+      "health": 4096,
+      "bike": 69,
+      "video_time_seconds": 11.9,
+      "simulation_time_seconds": 11.933333333333334
+    }
+  ],
+  "sampled_recovery": {
+    "first_falling_frame": 72,
+    "first_resumed_driving_frame": 187,
+    "duration_seconds": 3.8333333333333335,
+    "sampling_interval_seconds": 0.03333333333333333,
+    "maximum_rider_bike_longitudinal_separation_m": 7.3430023193359375
+  },
+  "comparisons": [
+    {
+      "path": "docs/p03p04/reference/side-by-side-recovery.mp4",
+      "original_clip_offset_seconds": 0,
+      "original_source_range": "30:58.0 - 31:10.0",
+      "controlled_capture_offset_seconds": 0,
+      "metadata": {
+        "width": 1280,
+        "height": 612,
+        "fps": "30/1",
+        "frames": 360,
+        "duration_seconds": 12.0,
+        "sha256": "bf3bd70e46d4c9e7ee86bdf923eabb6071f8f510b1d0d6d82db5b3e582352b5d",
+        "bytes": 2909066,
+        "audio": false
+      }
+    },
+    {
+      "path": "docs/p03p04/reference/side-by-side-combat.mp4",
+      "original_clip_offset_seconds": 4.5,
+      "original_source_range": "34:59.5 - 35:01.9",
+      "controlled_capture_offset_seconds": 0,
+      "metadata": {
+        "width": 1280,
+        "height": 612,
+        "fps": "30/1",
+        "frames": 72,
+        "duration_seconds": 2.4,
+        "sha256": "74be3d6f77449d97fbffd1ba14a1e3cac6a0be007c56fbdb5629a9ad4ac9973e",
+        "bytes": 683485,
+        "audio": false
+      }
+    }
+  ],
+  "limits": [
+    "Exported30fps is not measured real-time FPS or browser performance.",
+    "No audio exists in the PNG capture or comparison encodes.",
+    "Original scene, speed, impact and separation differ; duration difference does not certify parity.",
+    "Sampled frames bound state-transition timing to1/30s; simulation runs60Hz.",
+    "Source original clips remain research-only/gitignored and are never game assets."
+  ]
+}

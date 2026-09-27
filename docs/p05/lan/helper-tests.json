@@ -1,0 +1,111 @@
+﻿{
+    "passed":  true,
+    "tests":  24,
+    "cases":  [
+                  {
+                      "name":  "private 10.0.0.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "private 172.16.0.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "private 172.31.255.254",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "private 192.168.1.13",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 127.0.0.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 169.254.1.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 172.15.1.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 172.32.1.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 192.169.1.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 8.8.8.8",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 0.0.0.0",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded ::1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 10.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded 010.0.0.1",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "excluded localhost",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "physical active candidates only",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "gateway candidate first",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "explicit package data root",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "host arguments retain DataRoot",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "public DataRoot blocked web",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "public DataRoot blocked web/profiles",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "web prefix sibling remains private",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "adapter labels cannot close JSON script",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "vendored QR exact upstream bytes",
+                      "passed":  true
+                  }
+              ],
+    "realEligibleAddresses":  [
+                                  {
+                                      "address":  "192.168.1.13",
+                                      "adapter":  "Wi-Fi",
+                                      "url":  "http://192.168.1.13:7777/"
+                                  }
+                              ],
+    "fixture":  "D:\\Project\\Unity\\racing-bois\\_local\\p05-lan-helper-fixture",
+    "networkSettingsChanged":  false
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T00:40:26.994107+00:00",
+  "passed": true,
+  "sourceBindingPassed": true,
+  "exitCode": 0,
+  "unityReferenceVersion": "6000.5.7f1",
+  "scope": "Managed compiler against installed Unity assemblies only; no Unity import, scene, visual, build or player acceptance.",
+  "inputs": [
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Build.cs",
+      "sha256": "ebdb9798155481e234d3c01d87d1ca61a95fa3df3a484fabdf2da04949acfeeb"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Compilation.cs",
+      "sha256": "428050012ed2f958c61f6a8fedb61120993fc284241a8a4b008896e21f817676"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Contract.cs",
+      "sha256": "ef0f144a2d16e1fd31447f54fd339042017e07abf27581cac2c49e5aed0e094c"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Environment.cs",
+      "sha256": "9287dc0622752379dd87003122aa6918cc3ebbdfe9b2eee5d53856014f3c363b"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Garage.cs",
+      "sha256": "e9f71d75a5ccfa67d6c5b85e3c579ff3f3e3a9e32ed0eaa62dec29e99898f6ab"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.GeometryProbe.cs",
+      "sha256": "abbde56353604fd61123cc0975bef488c723569b4d4d5509c0ef0e1f544c5782"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
+      "sha256": "1fe3ec129d70feeb124deb67fd6fcdcea0819b768f436fc6d6af36d41dc5b977"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Lighting.cs",
+      "sha256": "5d3fe0851a74c47ac6fff81ed8f007dcfcfba0f120a5273adbddb31eb56bac68"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Modules.cs",
+      "sha256": "f85bc31422303e74714b902310115743f89cee800fae33c593a3f6f02c9b9d0b"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.RestPose.cs",
+      "sha256": "8f48ce5cbceb56f7849198d138b02bb5082a360635c9cd3b2bfd4c03fa33088e"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Scene.cs",
+      "sha256": "18dbcb06b4a6058b16a81a02fa18a39eee3dd5a486ae40cf10c0b7b02ed8c071"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs",
+      "sha256": "1e39e63710116634fe3552e477d45221ec2c8bf61b627be55839bdb16a854a58"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/RacingBois.Authoring.Editor.asmdef",
+      "sha256": "05852f1be165987cbc90668c5fea344febd5848d9dd9cd3ac1a1b799d4d60aa7"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/UrpProfileAuthoring.cs",
+      "sha256": "a0c743af55dfe8c8491e8872290a6749ce63bbb823af53b3e2fab594d69e70b2"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Runtime/GoldenCaptureRunner.cs",
+      "sha256": "1cc5c5ffe0fbbc27cf1ac8d834795aa4ca79f61ec117d98b5bdb69eda8092ca9"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewController.cs",
+      "sha256": "f84197f80b529ca5b9ccaf20ca1de5b432aadb213b425dd6493b984b32776eb1"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewPipelineScope.cs",
+      "sha256": "9566dafc6b1e13e78d7fac6654e1ebb0b5116845a9b76438b7798d1dea423799"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Runtime/GoldenSkinBounds.cs",
+      "sha256": "daad4616ee4f2a9016edc3f3b2b66c68d038a3b0255af2424bef08d0e624951c"
+    },
+    {
+      "path": "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef",
+      "sha256": "105f1f8bd7f90e023b18fde0cbff574b4f4f1b991a181780d63a220c5cb044bf"
+    },
+    {
+      "path": "tools/p08/golden/importer-preflight.csproj",
+      "sha256": "5666c833d74346a498cc1e88d0274e480a1f86041b00e7cdb5ed94bf414b881e"
+    },
+    {
+      "path": "tools/p08/golden/importer_preflight.py",
+      "sha256": "1e58ddf87369bc08589af4023e04cd1c5f0a9dac0f6441f6a5035d800bdd954e"
+    }
+  ],
+  "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  importer-preflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\golden\\bin\\Debug\\netstandard2.1\\RacingBois.Golden.ImporterPreflight.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:03.54\n"
+}

@@ -1,0 +1,155 @@
+using System;
+using RacingBois.Gameplay.Definitions;
+
+namespace RacingBois.Protocol
+{
+    public static class MultiplayerProtocol
+    {
+        public const int Version = 6, TickRate = 60, SnapshotRate = 20, MaxPlayers = 8, MaxRooms = 8;
+        public const int MaxPeers = 64, CountdownTicks = 180, ResumeGraceTicks = 1800, FutureInputTicks = 18;
+        public const int InputQueueCapacity = 32, AnalogHoldTicks = 6, MaxMessageBytes = 4096, MaxSnapshotBytes = 32768;
+        /// <summary>Maximum remaining contact protection emitted by current authoritative driving rules.</summary>
+        public const int MaximumCollisionProtectionTicks = 90;
+        public const int RulesVersion = GameplayRules.Version;
+        public static readonly string ContentHash = GameplayRules.ContentHash;
+    }
+    public enum MultiplayerRoomState { Lobby, Countdown, Racing, Results, Closing }
+    public enum MultiplayerOutcome { Racing, Finished, Wrecked, Busted, Dnf }
+
+    [Serializable] public sealed class NumericRow { public int[] values = new int[0]; }
+    // Rider rows: id,kind,mode,weapon,attackWeapon,s(cm),d(cm),speed(cm/s),height(cm),lean(0.1deg),
+    // bikeS(cm),bikeD(cm),bikeHeight(cm),health,bike,strength,rank,finishTick,reward,qualified,attackSide,attackAge,modeAge,gear,bikeCatalogIndex,characterCatalogIndex,collisionProtectionTicksRemaining(0..90),
+    // endurance(500..1000),attackResolved(0/1),hitProtectionTicksRemaining(0..90),stealProtectionTicksRemaining(0..300).
+    // Traffic rows: id,kind,s(cm),d(cm),speed(cm/s),halfLength(cm),halfWidth(cm),height(cm).
+    // Pedestrian rows: id,s(cm),d(cm),height(cm),speed(cm/s),mode,stateTicks,facingSide,isCrossing,
+    // chosenWaitTicks(60..359),desiredWalkingSpeed(mm/s,1200..1600),motionRemainder(-59..59).
+    [Serializable] public sealed class InputValues
+    { public int throttlePermille, brakePermille, steerPermille, attackSide; public bool kick; }
+    [Serializable] public sealed class OwnPredictionState
+    {
+        public long tick;
+        public RaceEntitySnapshot rider = new RaceEntitySnapshot();
+        public int endurance, distanceRemainder, lateralRemainder, speedRemainder, verticalRemainder;
+        public int verticalSpeed, steeringPermille, bikeSpeed, recoveryTicks, policeContactTicks;
+        public long lastInputTick, nextAttackTick, collisionUntilTick, hitUntilTick, stealUntilTick;
+        public bool attackResolved;
+        public InputValues appliedInput = new InputValues();
+    }
+    [Serializable] public sealed class MpHello
+    {
+        public string kind = "mpHello";
+        public int protocolVersion = MultiplayerProtocol.Version, simulationRulesVersion = MultiplayerProtocol.RulesVersion;
+        public string contentHash = MultiplayerProtocol.ContentHash;
+        public string requestNonce = "", displayName = "", profileToken = "", resumeToken = "";
+        public bool freshGuest;
+        public long lastReliableSequence;
+    }
+    [Serializable] public sealed class MpWelcome
+    {
+        public string kind = "mpWelcome";
+        public int protocolVersion = MultiplayerProtocol.Version, simulationRulesVersion = MultiplayerProtocol.RulesVersion;
+        public string contentHash = MultiplayerProtocol.ContentHash;
+        public string requestNonce = "", sessionId = "", resumeToken = "", profileToken = "", profileId = "", displayName = "", realmId = "";
+        public int sessionEpoch, tickRate = 60, snapshotRate = 20, maxPlayers = 8, resumeGraceTicks = 1800, credits;
+        public long serverServiceTick, reliableSequence;
+        public bool resumed, guest, reliableReset;
+    }
+    [Serializable] public abstract class MpCommand
+    { public string kind = ""; public int protocolVersion = MultiplayerProtocol.Version, sessionEpoch, requestId; }
+    [Serializable] public sealed class MpCreateRoom : MpCommand
+    { public string name = ""; public int botCount = 5, courseIndex, levelIndex; public bool publicRoom = true; public MpCreateRoom() { kind = "mpCreate"; } }
+    [Serializable] public sealed class MpJoinRoom : MpCommand
+    { public string code = ""; public MpJoinRoom() { kind = "mpJoin"; } }
+    [Serializable] public sealed class MpSetReady : MpCommand
+    { public string roomId = ""; public bool ready; public MpSetReady() { kind = "mpReady"; } }
+    [Serializable] public sealed class MpStartRace : MpCommand
+    { public string roomId = ""; public MpStartRace() { kind = "mpStart"; } }
+    [Serializable] public sealed class MpLeaveRoom : MpCommand
+    { public string roomId = ""; public MpLeaveRoom() { kind = "mpLeave"; } }
+    [Serializable] public sealed class MpReturnToLobby : MpCommand
+    { public string roomId = ""; public MpReturnToLobby() { kind = "mpBack"; } }
+    [Serializable] public sealed class MpListRooms : MpCommand
+    { public MpListRooms() { kind = "mpList"; } }
+    [Serializable] public sealed class MpGoodbye : MpCommand
+    { public MpGoodbye() { kind = "mpGoodbye"; } }
+    [Serializable] public sealed class MpInput
+    {
+        public string kind = "mpInput", roomId = "";
+        public int protocolVersion = MultiplayerProtocol.Version, sessionEpoch, raceEpoch, sequence;
+        public long targetTick, reliableAck;
+        public int throttlePermille, brakePermille, steerPermille, attackSide;
+        public bool kick;
+    }
+    [Serializable] public sealed class MpPing
+    {
+        public string kind = "mpPing", nonce = "";
+        public int protocolVersion = MultiplayerProtocol.Version, sessionEpoch;
+        public long clientMicroseconds, reliableAck;
+    }
+    [Serializable] public sealed class MpAck
+    { public string kind = "mpAck"; public int protocolVersion = MultiplayerProtocol.Version, sessionEpoch; public long reliableSequence; }
+    [Serializable] public sealed class MpPong
+    {
+        public string kind = "mpPong", nonce = "";
+        public int sessionEpoch, raceEpoch;
+        public long clientMicroseconds, serverServiceTick, roomTick;
+    }
+    [Serializable] public sealed class MpMember
+    {
+        public string sessionId = "", displayName = "";
+        public int riderId, joinOrder;
+        public bool ready, connected, guest;
+    }
+    [Serializable] public sealed class MpLobby
+    {
+        public string kind = "mpLobby", roomId = "", code = "", name = "", hostSessionId = "", matchId = "";
+        public int state, revision, raceEpoch, botCount, maxPlayers = 8;
+        public int courseIndex, levelIndex;
+        public bool publicRoom = true;
+        public long reliableSequence, serverServiceTick, startServiceTick;
+        public MpMember[] members = new MpMember[0];
+    }
+    [Serializable] public sealed class MpRoomSummary
+    { public string code = "", name = ""; public int players, maxPlayers = 8, state, courseIndex, levelIndex; public bool publicRoom = true; }
+    [Serializable] public sealed class MpRoomList
+    { public string kind = "mpRooms"; public int requestId; public long reliableSequence; public MpRoomSummary[] rooms = new MpRoomSummary[0]; }
+    [Serializable] public sealed class MpSnapshot
+    {
+        public string kind = "mpSnapshot", roomId = "", matchId = "";
+        public int protocolVersion = MultiplayerProtocol.Version, sessionEpoch, raceEpoch, roomState, riderId, level, courseIndex, lastProcessedSequence;
+        public long tick, serverServiceTick, startServiceTick, resolvedThroughTick, lastAppliedInputTick;
+        public long trackLengthMillimeters;
+        public OwnPredictionState own = new OwnPredictionState();
+        public InputValues heldAnalog = new InputValues();
+        public NumericRow[] riders = new NumericRow[0], traffic = new NumericRow[0], pedestrians = new NumericRow[0];
+        public NumericRow[] standings = new NumericRow[0]; // id,rank,outcome,distance(cm)
+        public int lateInputs, futureInputs, missingInputs;
+        public bool resultsPending;
+    }
+    [Serializable] public sealed class MpEventBatch
+    {
+        public string kind = "mpEvents", roomId = "", matchId = "";
+        public int raceEpoch;
+        public long reliableSequence;
+        public RaceEventSnapshot[] events = new RaceEventSnapshot[0];
+    }
+    [Serializable] public sealed class MpResultEntry
+    { public string sessionId = "", displayName = ""; public int riderId, outcome, rank, reward, credits; public long finishTick; }
+    [Serializable] public sealed class MpResult
+    {
+        public string kind = "mpResult", roomId = "", matchId = "", resultId = "";
+        public int raceEpoch;
+        public long reliableSequence;
+        public bool persisted;
+        public MpResultEntry[] entries = new MpResultEntry[0];
+    }
+    [Serializable] public sealed class MpError
+    {
+        public string kind = "mpError", code = "", message = "";
+        public int requestId, sequence, sessionEpoch;
+        public long reliableSequence, serverServiceTick;
+        public bool terminal;
+    }
+    [Serializable] public sealed class MpCommandAccepted
+    { public string kind = "mpAccepted", roomId = ""; public int requestId, sessionEpoch; public long reliableSequence; }
+}

@@ -1,0 +1,80 @@
+{
+  "status": "staged-anatomical-base-not-final-ash",
+  "upstream": "https://github.com/makehumancommunity/mpfb2",
+  "commit": "3edf9df0551765be43563d047888cf7877eb89b4",
+  "asset_license": "CC0-1.0",
+  "addon_executed": false,
+  "upstream_base_sha256": "bea00279464133e86b634220cd2774ebf3b470de280d11222a6b2269e4a8d950",
+  "concept": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+  "concept_sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+  "target_datasets": [
+    {
+      "path": "macrodetails/caucasian-male-young.target.gz",
+      "sha256": "ffe69537e53148edff2776204ba48cf3bf1f3cbc72966592c8a562ab80b07333",
+      "weight": 1.0
+    },
+    {
+      "path": "macrodetails/universal-male-young-averagemuscle-averageweight.target.gz",
+      "sha256": "e814651195c53971503d9823d6841216718a561951ef064f81d132297f4fa494",
+      "weight": 0.72
+    },
+    {
+      "path": "macrodetails/universal-male-young-maxmuscle-averageweight.target.gz",
+      "sha256": "833caafc302bd9306de494f32ee1bc51d3a2e6641183329b031ac06ef0f4277e",
+      "weight": 0.28
+    },
+    {
+      "path": "head/head-square.target.gz",
+      "sha256": "94b484ae145970e5368706d4f42711f50e18fcbf7d9f1ee800572c3fa69f855a",
+      "weight": 0.14
+    },
+    {
+      "path": "chin/chin-width-incr.target.gz",
+      "sha256": "68764b6ec7c923597beaaf643f71c41f00c93639d9bb522c169c279db2ad299e",
+      "weight": 0.23
+    },
+    {
+      "path": "chin/chin-prominent-incr.target.gz",
+      "sha256": "e0d5ec5e213b88719def0f43ddaa7107796fc02f7447e2b2f140d9fe513a6ac8",
+      "weight": 0.13
+    },
+    {
+      "path": "chin/chin-bones-incr.target.gz",
+      "sha256": "72c76aeb7956fb083aaf0d5efa00b2cdfa0f328eefc01d5e28f4610719de50c3",
+      "weight": 0.12
+    },
+    {
+      "path": "nose/nose-hump-incr.target.gz",
+      "sha256": "ca6649d78752cca02fdb37f10804e021713b4fbfe2f85136e12b5787cc654aa6",
+      "weight": 0.08
+    },
+    {
+      "path": "nose/nose-scale-depth-incr.target.gz",
+      "sha256": "49f63b72f04f637ed38061acce579c0948d29175d949bf21e6bfed354c0a10bf",
+      "weight": 0.13
+    },
+    {
+      "path": "nose/nose-point-width-decr.target.gz",
+      "sha256": "920cd53d57b8797414af73b59e54d34547ef2e1c79fa0a19ca55dbddc0aa7365",
+      "weight": 0.08
+    },
+    {
+      "path": "eyebrows/eyebrows-trans-down.target.gz",
+      "sha256": "9f5bbb848e40d3a320492dd08ef8d1a926b50c7fd1ca279cf8f573e0f0cdd589",
+      "weight": 0.06
+    },
+    {
+      "path": "cheek/l-cheek-bones-incr.target.gz",
+      "sha256": "ea5aa60abcc2926e61cdabf5d40701c2b23b3f8027f949cea0b80bcbc55df301",
+      "weight": 0.1
+    },
+    {
+      "path": "cheek/r-cheek-bones-incr.target.gz",
+      "sha256": "c608528b9e5e1c670179cfb502dab3d9478a77bb942f7c8186cd072a7369e9b9",
+      "weight": 0.1
+    }
+  ],
+  "height_m": 1.78,
+  "obj_sha256": "3f97e427a2394d7a784b6cc7df6279466eab9eebeda6fb9e01a8eabbb0ae6e2f",
+  "note": "Numeric data conversion only. Garment, face likeness, materials, rigging and fidelity acceptance remain unfinished."
+}

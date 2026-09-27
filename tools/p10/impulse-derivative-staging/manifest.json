@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "scope": "Client-only staged derivative guard; no protocol/server/simulation changes or production writes.",
+  "changes": [
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "before": "23170db6405a7ba7c33c5adf7439a7ca3d54f992957d581061ef8fd058ac7a9f",
+      "staged": "tools/p10/impulse-derivative-staging/Application/MultiplayerSession.cs",
+      "after": "ba2957dd1a5257ca5b212cf78169532917a6f4fb5f3cd7550f110c3e1fc13619"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "before": "075875d50bfe0c8e16f24c8b2d6ecc3ce5024b31276e1c0ac706d2ea04f128c2",
+      "staged": "tools/p10/impulse-derivative-staging/Application/MultiplayerSession.Messages.cs",
+      "after": "23866af0b4fb7c9f184bb78a9aca687d5f22c0dd68301c387393c1982e41c023"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs",
+      "before": "3e5fe525bbd0cd7d8b194a53fb7396587f709899da3665ea77bbf94a6c727824",
+      "staged": "tools/p10/impulse-derivative-staging/Application/PredictionNeighborBuilder.cs",
+      "after": "9c529b0d085491a5e8bf4bfe326db51b318bffbdf29de0e9aa2575a23cdcc25b"
+    }
+  ]
+}

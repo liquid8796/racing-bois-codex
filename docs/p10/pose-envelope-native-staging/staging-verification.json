@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T07:45:05.647002+00:00",
+  "passed": true,
+  "namespaceOnlyCopies": [
+    {
+      "source": "tools/p10/pose-envelope-staging/VisualPoseEnvelope.cs",
+      "path": "tools/p10/pose-envelope-native-staging/Runtime/VisualPoseEnvelope.cs",
+      "namespaceOnly": true
+    },
+    {
+      "source": "tools/p10/pose-envelope-staging/UnityVisualPoseEnvelope.cs",
+      "path": "tools/p10/pose-envelope-native-staging/Runtime/UnityVisualPoseEnvelope.cs",
+      "namespaceOnly": true
+    },
+    {
+      "source": "tools/p10/pose-envelope-staging/PresentationContinuityScope.cs",
+      "path": "tools/p10/pose-envelope-native-staging/Runtime/PresentationContinuityScope.cs",
+      "namespaceOnly": true
+    }
+  ],
+  "stagedInputs": {
+    "tools/p10/pose-envelope-native-staging/EditorCompile.csproj": "1d602027578b6cacf469b2dd1fc55e6625b1a2708744be3e7a13a574daaf3b37",
+    "tools/p10/pose-envelope-native-staging/freeze_selection.py": "981364b07e1a69142170be4b69c9905053a471b684f8daa35e0f4ee781cd184d",
+    "tools/p10/pose-envelope-native-staging/install.py": "20a13b7d5cd9ab3603bb533d9bd7bfb0260a0d4d657d4e95d67db9a268810df1",
+    "tools/p10/pose-envelope-native-staging/prepare.py": "f79476a38e2cc2f2227e76647caa6045f63133ed5fd3916614d6c5d062921be0",
+    "tools/p10/pose-envelope-native-staging/prepared-inputs.json": "ac6d532dd8080c4c5e0f4dafdf05e26b13376ce7b438a02e7859651588c4f5cc",
+    "tools/p10/pose-envelope-native-staging/RuntimeCompile.csproj": "1c59c0e5dd13196a5d2e3ed9a211c5a3abc3fcfd7a2c418c7a442d43b6e1c75b",
+    "tools/p10/pose-envelope-native-staging/test_verifier.py": "5e0d1c6834779388aa9e1d55ed3ff72277b9b081f6931a64c9ab449ae0441eb4",
+    "tools/p10/pose-envelope-native-staging/verify_run.py": "d5a079a5d9a7ca9959cc6cd66b05e33c33d5a5303c6691edd5e196652159da09",
+    "tools/p10/pose-envelope-native-staging/verify_staging.py": "9208504d80c776736796bd140252ef7bb2d96f8b809d5bcf573fae9f08e255ba",
+    "tools/p10/pose-envelope-native-staging/CompileAudit/CompileAudit.csproj": "29e70ba6c5dffa11e5aec8afc9d1a04419d0fae26427f44d44341ba29da9cb68",
+    "tools/p10/pose-envelope-native-staging/CompileAudit/Program.cs": "81b9696cc8e9938a92125364f1575a92dd238b11cb95293a4209f05f54dbc326",
+    "tools/p10/pose-envelope-native-staging/Data/episodes.json": "284834790ea7192044cd2cde935ac33d709b26a88468278bea5355a034fcd092",
+    "tools/p10/pose-envelope-native-staging/Editor/PosePreviewBuilder.cs": "b93d55b3b3395538229ae0bf9976a1288a612a6b7441f57a32e8c14aada6e960",
+    "tools/p10/pose-envelope-native-staging/Editor/PosePreviewLaunch.cs": "a58edd509dd100167e4dc61f45164ec79cc16cb5bcd480d8d339644aa8815ce9",
+    "tools/p10/pose-envelope-native-staging/Editor/PreviewBuildInputs.cs": "0657c44de46f03110707515898162b8108c80aa8c2cb0b0118f6215457a365ff",
+    "tools/p10/pose-envelope-native-staging/Editor/PreviewBuildScope.cs": "49ffec3d5f99b05ea47937ebcc7292c9b7272636561ead3c1c579fdc37a9970c",
+    "tools/p10/pose-envelope-native-staging/Editor/RacingBois.Diagnostics.PoseEnvelopePreview.Editor.asmdef": "9bcc3b317fe4a3d91dffc135f281ff4e63d0e45e56a9b9e51df4b8654ac252b2",
+    "tools/p10/pose-envelope-native-staging/Runtime/PoseEnvelopePreviewRunner.cs": "1e98ca63d98a1b0d0eafffc90cdfe53cacf821560830664f8d0cd7e04b3c774c",
+    "tools/p10/pose-envelope-native-staging/Runtime/PresentationContinuityScope.cs": "cc2e6949f9b0e2c7a29a81ba280e42ae0325fb303921201b8fab10af7646905e",
+    "tools/p10/pose-envelope-native-staging/Runtime/PreviewActorRig.cs": "0ab3fae70ece079e1e8914055e4db0128bbb26cf8e3abe496b9778f88784cfec",
+    "tools/p10/pose-envelope-native-staging/Runtime/PreviewCaptureRecorder.cs": "ee022a75a54d86e77364383db6ffeae85f754ed5537749d7eebc4bb908db6933",
+    "tools/p10/pose-envelope-native-staging/Runtime/PreviewConfiguration.cs": "30316ebc43eff91d96f972054798f01187edc7dc31a009cef20f6085502c4fe8",
+    "tools/p10/pose-envelope-native-staging/Runtime/PreviewContracts.cs": "69b1e403730fb481a212b5116d3667477f390968fcfaabcf10a76550065ee161",
+    "tools/p10/pose-envelope-native-staging/Runtime/PreviewEnvelopeDriver.cs": "01ce4c966bcd60da5a5277303e4d421e28331f6fae5bc4204cfca7bec1ad047c",
+    "tools/p10/pose-envelope-native-staging/Runtime/PreviewGround.cs": "64af7d7c5e82dc1e6ef133e494701d1313f04be6f1ea0c4fdebb33c05c7384ff",
+    "tools/p10/pose-envelope-native-staging/Runtime/PreviewProjection.cs": "66510e89cd5b111a413053143e8636754886751c0ee00190ad230c47f0e107ed",
+    "tools/p10/pose-envelope-native-staging/Runtime/RacingBois.Diagnostics.PoseEnvelopePreview.asmdef": "bace9af8577a2ce1c11f8f76f9e5663949008191b98cc243e57ec7ff4032605a",
+    "tools/p10/pose-envelope-native-staging/Runtime/UnityVisualPoseEnvelope.cs": "14aa277b3220c1b683324ea4ab3ed335f92abd75dddba7dac58466ec5c24dff0",
+    "tools/p10/pose-envelope-native-staging/Runtime/VisualPoseEnvelope.cs": "737ff5e6834eb2ff8b862d2f75b44313f3c7474934ef6ed80e220375c2a60e35",
+    "tools/p10/pose-envelope-native-staging/Runtime/VisualPoseEnvelope20Comparison.cs": "e4b53c4ebe5a6d81fa8ab27b62b0a948171a97e8c4268df426f97690cf7e97bc",
+    "tools/p10/pose-envelope-native-staging/Tests/Program.cs": "07d172de14690dfd464c5d2d1be7d827f65e34d42ec2a597a4d9e05790513180",
+    "tools/p10/pose-envelope-native-staging/Tests/Tests.csproj": "ae94a4997eaedbb0fee2ad73b9e5b91e6986864bcc3e4375cfb15340368b643f"
+  },
+  "stagedStable": true,
+  "frozenSourceCount": 163,
+  "frozenSourceChanges": [],
+  "results": [
+    {
+      "name": "unity-api-compile",
+      "exitCode": 0,
+      "log": "docs/p10/pose-envelope-native-staging/unity-api-compile.log",
+      "sha256": "98a17079d432d2b1fca89a98abcb1872df2b796565bd5d23a2c42a79828160d6"
+    },
+    {
+      "name": "contracts",
+      "exitCode": 0,
+      "log": "docs/p10/pose-envelope-native-staging/contracts.log",
+      "sha256": "8340c2d498566dcedfe8774e7dc2ca7ef39399960828ae35e6357d6ed0d44076"
+    },
+    {
+      "name": "independent-png-verifier",
+      "exitCode": 0,
+      "log": "docs/p10/pose-envelope-native-staging/independent-png-verifier.log",
+      "sha256": "24a67a5755cea659c9c646fa68aa9f27cecf9729a81629a1dd636b1b454ae6f6"
+    },
+    {
+      "name": "install-dry-run",
+      "exitCode": 0,
+      "log": "docs/p10/pose-envelope-native-staging/install-dry-run.log",
+      "sha256": "9abcd98648e950f87b576df66a2885dfd9df3d400a5d845c7ab6ef793fac7b1b"
+    }
+  ],
+  "requiredSelectedPrefabs": {
+    "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_r4.prefab": true,
+    "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V6.prefab": true
+  },
+  "installedByThisTask": false,
+  "nativeBuilt": false,
+  "nativeRendered": false,
+  "visualAccepted": false,
+  "scope": "Staging compile/configuration/journal/numerical/PNG-codec controls only. Root still owns installation, actual Editor state restoration, build, native run and image review."
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "source": {
+    "path": "ArtSource/P08/Golden/Garage/V7/RB_Golden_Garage.blend",
+    "sha256": "890cb3dbade5c8c332123443386cf072becb312a576510479a5334f76dbcdc2f",
+    "bytes": 61968198
+  },
+  "fbx": {
+    "path": "_local/p08-garage-v7-staging/RB_Golden_Garage.fbx",
+    "sha256": "9fc6bc1367859259a5cd4a0c58ac9f7442c44d2021b4b5138e89bb48ef404eca",
+    "bytes": 5978460
+  },
+  "preservedV5": {
+    "path": "ArtSource/P08/Golden/Garage/V5/RB_Golden_Garage.blend",
+    "sha256": "b7eddebc4be6808262cee601f6737a949c8535b6b98abd7f81b0ab2b1fa0eb79",
+    "bytes": 60274856
+  },
+  "protectedClubUnchanged": true,
+  "stagingOnly": true,
+  "assetsWritten": false,
+  "nativeImportedByThisTask": false,
+  "visualAccepted": false,
+  "integration": "Root owns native Unity probe. Copy to a fresh V7 Assets path, preserve FBX SHA256, and bind a new descriptor/module-map. Existing V5 and V6 remain historical evidence.",
+  "sourcePreservation": {
+    "meshCount": 180,
+    "triangles": 165812,
+    "positionsUvMaterialsTransformsExact": true,
+    "triangleStream": "Exact V5 mesh.loop_triangles order, made explicit before export",
+    "normalsBitExact": false,
+    "meshesWithNormalEncodingDeviation": 142,
+    "maximumNormalComponentDeviation": 0.0005549043416976929,
+    "maximumNormalAngularDeviationDegrees": 0.034690722284054724
+  },
+  "fbxRoundtrip": {
+    "passed": true,
+    "meshes": 180,
+    "triangles": 165812,
+    "allTriangleOrdersPreserved": true,
+    "allCornerUvBitsExact": true,
+    "maxWorldPositionDeviationMetres": 1.1920928955078125e-06,
+    "maxUvComponentDeviation": 0,
+    "maxWorldNormalAngularDeviationDegreesFromV7": 0.03900545064031119,
+    "physicalFailures": 0,
+    "uvFailures": 0,
+    "visualAccepted": false
+  },
+  "uvContract": {
+    "UV0_MetricTile": "Unchanged repeating metric projection; intentional overlap and coordinates outside 0..1",
+    "LightmapUV": "Exact authored per-corner values on all 60 LOD0 meshes; absent on lower LODs as before",
+    "threshold": "UV absolute 2D cross >1e-14; physical world-metre squared cross >1e-16"
+  },
+  "materials": "Unchanged V5 baseline materials and textures. Not the separate coat-comparison source.",
+  "proofs": [
+    {
+      "path": "docs/p08/golden/garage/v7/source-preservation.json",
+      "sha256": "7a0ff3f7bfce61126e513fe13ceb99c02eeacff494fca4f79c0a4b54d019c37a",
+      "bytes": 146141
+    },
+    {
+      "path": "docs/p08/golden/garage/v7/roundtrip.json",
+      "sha256": "ded9cdcffbfde033f51d1faf6a8db06c8c021b9946c3bd23717f9a452ff1f085",
+      "bytes": 102382
+    },
+    {
+      "path": "docs/p08/golden/garage/v7/exact-source-retry-mcp.json",
+      "sha256": "702531f8e5cacd19e889205eb52da462fead16122ccec80554d829f8be98c628",
+      "bytes": 243667
+    },
+    {
+      "path": "docs/p08/golden/garage/v7/export-mcp.json",
+      "sha256": "51937532c15d70803ed819daab2c3421b2051464103148e4346f93cf932afc4a",
+      "bytes": 4369
+    },
+    {
+      "path": "docs/p08/golden/garage/v7/roundtrip-mcp.json",
+      "sha256": "08265e92a4635beebaa2df0f6f4f9bd54d9ff4f669184ce74f4fbc33fbc5de22",
+      "bytes": 171677
+    }
+  ],
+  "scripts": [
+    {
+      "path": "tools/p08/golden/garage_exact_triangles_v7.py",
+      "sha256": "346f207c879674ae3ac9a28ad03501f345ff6a6475edebe5e5ef104646de3c54",
+      "bytes": 5432
+    },
+    {
+      "path": "tools/p08/golden/garage_export_v7.py",
+      "sha256": "72017b6d0aa7155813f03acb6e48d6a2ee6b59e9cf4a25241d47a4621ad447f3",
+      "bytes": 1205
+    },
+    {
+      "path": "tools/p08/golden/garage_roundtrip_v7.py",
+      "sha256": "c7361cb051b6a28abe757f20aa658eafaeb9888a303f1e83ab23a0d58db06a80",
+      "bytes": 5118
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "passed": true,
+  "failed": 0,
+  "tests": 11,
+  "results": [
+    {
+      "name": "new_active_contact_interval_does_not_extrapolate_impulse",
+      "passed": true
+    },
+    {
+      "name": "genuine_braking_without_new_contact_keeps_negative_derivative",
+      "passed": true
+    },
+    {
+      "name": "unchanged_active_immunity_keeps_motion_estimation",
+      "passed": true
+    },
+    {
+      "name": "expired_until_clamped_to_current_tick_is_not_a_new_grant",
+      "passed": true
+    },
+    {
+      "name": "first_observation_and_missing_history_never_invent_derivatives",
+      "passed": true
+    },
+    {
+      "name": "previous_snapshot_metadata_is_immutable",
+      "passed": true
+    },
+    {
+      "name": "session_clears_previous_metadata_on_room_epoch_reset",
+      "passed": true
+    },
+    {
+      "name": "unchanged_near_combat_gate_0",
+      "passed": true
+    },
+    {
+      "name": "unchanged_near_combat_gate_150",
+      "passed": true
+    },
+    {
+      "name": "unchanged_near_combat_gate_250",
+      "passed": true
+    },
+    {
+      "name": "recorded_impulse_counterfactual_matches_full_later_checkpoint",
+      "passed": true
+    }
+  ],
+  "details": [
+    {
+      "kind": "latency",
+      "delay": 0,
+      "maximumRelativeResidualMeters": 0.029999971
+    },
+    {
+      "kind": "latency",
+      "delay": 150,
+      "maximumRelativeResidualMeters": 0.23000002
+    },
+    {
+      "kind": "latency",
+      "delay": 250,
+      "maximumRelativeResidualMeters": 0.505
+    },
+    {
+      "kind": "recordedReplay",
+      "old": {
+        "Tick": 1924,
+        "DistanceMillimeters": 800992,
+        "BikeDistanceMillimeters": 801299,
+        "FinishTick": -1,
+        "Id": 8,
+        "BikeCatalogIndex": 0,
+        "CharacterCatalogIndex": 0,
+        "Kind": 0,
+        "Mode": 4,
+        "Weapon": 0,
+        "AttackWeapon": 0,
+        "LateralMillimeters": 1800,
+        "BikeLateralMillimeters": 1825,
+        "HeightMillimeters": 0,
+        "BikeHeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 14238,
+        "LeanMillidegrees": 75000,
+        "Health": 3596,
+        "BikeCondition": 61,
+        "Strength": 7,
+        "Endurance": 1000,
+        "Rank": 8,
+        "Reward": 0,
+        "AttackSide": 0,
+        "AttackAgeTicks": 0,
+        "ModeAgeTicks": 1,
+        "Gear": 5,
+        "Qualified": false,
+        "AttackResolved": false,
+        "HitUntilTick": 1077,
+        "StealUntilTick": -1,
+        "LastInputTick": 1923,
+        "NextAttackTick": 0,
+        "CollisionUntilTick": 1714,
+        "DistanceRemainder": 17,
+        "LateralRemainder": 14,
+        "SpeedRemainder": 32,
+        "VerticalRemainder": 0,
+        "VerticalSpeed": -7052,
+        "SteeringPermille": -371,
+        "BikeSpeed": 32462,
+        "RecoveryTicks": 1,
+        "PoliceContactTicks": 0,
+        "Input": {
+          "ThrottlePermille": 1000,
+          "BrakePermille": 0,
+          "SteerPermille": -290,
+          "AttackSide": 0,
+          "Kick": false
+        }
+      },
+      "fixedPrediction": {
+        "Tick": 1924,
+        "DistanceMillimeters": 802202,
+        "BikeDistanceMillimeters": 802202,
+        "FinishTick": -1,
+        "Id": 8,
+        "BikeCatalogIndex": 0,
+        "CharacterCatalogIndex": 0,
+        "Kind": 0,
+        "Mode": 0,
+        "Weapon": 0,
+        "AttackWeapon": 0,
+        "LateralMillimeters": 1721,
+        "BikeLateralMillimeters": 1721,
+        "HeightMillimeters": 0,
+        "BikeHeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 43083,
+        "LeanMillidegrees": -3380,
+        "Health": 4096,
+        "BikeCondition": 77,
+        "Strength": 7,
+        "Endurance": 1000,
+        "Rank": 8,
+        "Reward": 0,
+        "AttackSide": 0,
+        "AttackAgeTicks": 0,
+        "ModeAgeTicks": 937,
+        "Gear": 5,
+        "Qualified": false,
+        "AttackResolved": false,
+        "HitUntilTick": 1077,
+        "StealUntilTick": -1,
+        "LastInputTick": 1923,
+        "NextAttackTick": 0,
+        "CollisionUntilTick": 1935,
+        "DistanceRemainder": 20,
+        "LateralRemainder": 25,
+        "SpeedRemainder": 21,
+        "VerticalRemainder": 0,
+        "VerticalSpeed": -6888,
+        "SteeringPermille": -290,
+        "BikeSpeed": 0,
+        "RecoveryTicks": 269,
+        "PoliceContactTicks": 0,
+        "Input": {
+          "ThrottlePermille": 1000,
+          "BrakePermille": 0,
+          "SteerPermille": -290,
+          "AttackSide": 0,
+          "Kick": false
+        }
+      },
+      "expected": {
+        "Tick": 1924,
+        "DistanceMillimeters": 802202,
+        "BikeDistanceMillimeters": 802202,
+        "FinishTick": -1,
+        "Id": 8,
+        "BikeCatalogIndex": 0,
+        "CharacterCatalogIndex": 0,
+        "Kind": 0,
+        "Mode": 0,
+        "Weapon": 0,
+        "AttackWeapon": 0,
+        "LateralMillimeters": 1721,
+        "BikeLateralMillimeters": 1721,
+        "HeightMillimeters": 0,
+        "BikeHeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 43083,
+        "LeanMillidegrees": -3380,
+        "Health": 4096,
+        "BikeCondition": 77,
+        "Strength": 7,
+        "Endurance": 1000,
+        "Rank": 8,
+        "Reward": 0,
+        "AttackSide": 0,
+        "AttackAgeTicks": 0,
+        "ModeAgeTicks": 937,
+        "Gear": 5,
+        "Qualified": false,
+        "AttackResolved": false,
+        "HitUntilTick": 1077,
+        "StealUntilTick": -1,
+        "LastInputTick": 1923,
+        "NextAttackTick": 0,
+        "CollisionUntilTick": 1935,
+        "DistanceRemainder": 20,
+        "LateralRemainder": 25,
+        "SpeedRemainder": 21,
+        "VerticalRemainder": 0,
+        "VerticalSpeed": -6888,
+        "SteeringPermille": -290,
+        "BikeSpeed": 0,
+        "RecoveryTicks": 269,
+        "PoliceContactTicks": 0,
+        "Input": {
+          "ThrottlePermille": 1000,
+          "BrakePermille": 0,
+          "SteerPermille": -290,
+          "AttackSide": 0,
+          "Kick": false
+        }
+      },
+      "scope": "Captured current/pending states are exact. Zeroing only riders4/6 acceleration is a counterfactual, justified by separately tested new-interval guard; the trace did not retain the immediately previous private interval snapshot."
+    }
+  ],
+  "productionUnchanged": true,
+  "scope": "Staged client-only metadata-history/derivative guard. No production, server, protocol, physics or running-process mutation."
+}

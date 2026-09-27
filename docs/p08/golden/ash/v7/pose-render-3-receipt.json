@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ASH_V7_FULLBODY_REVIEW {\"actualRenders\": 5, \"poses\": [{\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/13-fall-start.png\", \"clip\": \"RB_Fall\", \"normalizedTime\": 0, \"bodyBoundsMin\": [-0.34032779932022095, -0.21931202709674835, 0.019277578219771385], \"bodyBoundsMax\": [0.34205198287963867, 0.12097369134426117, 1.8539998531341553]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/14-fall-mid.png\", \"clip\": \"RB_Fall\", \"normalizedTime\": 0.5, \"bodyBoundsMin\": [-0.659871518611908, -0.19699408113956451, -0.1528199315071106], \"bodyBoundsMax\": [0.7328180074691772, 0.15283620357513428, 1.377050757408142]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/15-fall-end.png\", \"clip\": \"RB_Fall\", \"normalizedTime\": 1, \"bodyBoundsMin\": [-0.7647081017494202, -0.17332257330417633, 0.03497272729873657], \"bodyBoundsMax\": [1.104093313217163, 0.18504709005355835, 0.7869910597801208]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/16-run.png\", \"clip\": \"RB_Run\", \"normalizedTime\": 0.25, \"bodyBoundsMin\": [-0.30403244495391846, -0.4092334508895874, 0.04465567320585251], \"bodyBoundsMax\": [0.31537482142448425, 0.3013772666454315, 1.8472118377685547]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/17-remount.png\", \"clip\": \"RB_Remount\", \"normalizedTime\": 0.5, \"bodyBoundsMin\": [-0.39480388164520264, -0.5481976866722107, 0.20599329471588135], \"bodyBoundsMax\": [0.39480060338974, 0.12737122178077698, 1.7363015413284302]}], \"visualAccepted\": false}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: ASH_V7_FULLBODY_REVIEW {\"actualRenders\": 5, \"poses\": [{\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/13-fall-start.png\", \"clip\": \"RB_Fall\", \"normalizedTime\": 0, \"bodyBoundsMin\": [-0.34032779932022095, -0.21931202709674835, 0.019277578219771385], \"bodyBoundsMax\": [0.34205198287963867, 0.12097369134426117, 1.8539998531341553]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/14-fall-mid.png\", \"clip\": \"RB_Fall\", \"normalizedTime\": 0.5, \"bodyBoundsMin\": [-0.659871518611908, -0.19699408113956451, -0.1528199315071106], \"bodyBoundsMax\": [0.7328180074691772, 0.15283620357513428, 1.377050757408142]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/15-fall-end.png\", \"clip\": \"RB_Fall\", \"normalizedTime\": 1, \"bodyBoundsMin\": [-0.7647081017494202, -0.17332257330417633, 0.03497272729873657], \"bodyBoundsMax\": [1.104093313217163, 0.18504709005355835, 0.7869910597801208]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/16-run.png\", \"clip\": \"RB_Run\", \"normalizedTime\": 0.25, \"bodyBoundsMin\": [-0.30403244495391846, -0.4092334508895874, 0.04465567320585251], \"bodyBoundsMax\": [0.31537482142448425, 0.3013772666454315, 1.8472118377685547]}, {\"image\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7/poses/17-remount.png\", \"clip\": \"RB_Remount\", \"normalizedTime\": 0.5, \"bodyBoundsMin\": [-0.39480388164520264, -0.5481976866722107, 0.20599329471588135], \"bodyBoundsMax\": [0.39480060338974, 0.12737122178077698, 1.7363015413284302]}], \"visualAccepted\": false}\n"
+    },
+    "isError": false
+  }
+}

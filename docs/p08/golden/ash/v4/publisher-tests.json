@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "tests": 7,
+  "results": [
+    {
+      "name": "first_publish_and_exact_idempotent_retry",
+      "passed": true
+    },
+    {
+      "name": "read_only_preflight",
+      "passed": true
+    },
+    {
+      "name": "destination_conflict_before_mutation",
+      "passed": true
+    },
+    {
+      "name": "last_input_tamper_before_any_copy",
+      "passed": true
+    },
+    {
+      "name": "pinned_metadata_tamper",
+      "passed": true
+    },
+    {
+      "name": "source_changed_during_copy_not_published",
+      "passed": true
+    },
+    {
+      "name": "descriptor_conflict_before_any_copy",
+      "passed": true
+    }
+  ],
+  "fixtureDirectory": "_local/p08-ash-v4-publisher-tests/ff1a14f3f15248188fea9dae6ec664c4",
+  "scope": "Isolated real file IO; no Unity or image/render claims."
+}

@@ -1,0 +1,33 @@
+# Temporary DNS service name; replace with an owned domain for a branded release.
+racing-bois.158.180.59.36.sslip.io {
+    encode zstd gzip
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy no-referrer
+        -Server
+    }
+    # Operational metrics and obsolete prototype endpoints stay private.
+    @private path /health /multiplayer/health /metrics /ws
+    handle @private {
+        respond 404
+    }
+    @content path /content/*
+    handle @content {
+        root * /srv/racing-bois/assets
+        @immutable path_regexp immutable ^/content/[a-f0-9]{64}/.*$
+        header @immutable Cache-Control "public, max-age=31536000, immutable"
+        file_server
+    }
+    @backend path /ready /api/career /multiplayer
+    handle @backend {
+        reverse_proxy 127.0.0.1:18080 {
+            # Never trust client-supplied forwarding headers at the public boundary.
+            header_up X-Forwarded-For {remote_host}
+            header_up X-Forwarded-Proto {scheme}
+            header_up -X-Forwarded-Host
+        }
+    }
+    handle {
+        respond 404
+    }
+}

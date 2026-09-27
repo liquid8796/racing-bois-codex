@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "passed": true,
+  "file_count": 11,
+  "total_events": 104386,
+  "all_note_event_fingerprints_distinct": true,
+  "pairs": [
+    {
+      "a": "GRUNGE1",
+      "b": "SBKGRNG1",
+      "exact_note_event_match": false,
+      "exact_onset_pitch_match": false,
+      "interpretation": "Different event streams do not prove different underlying compositions; arrangement equivalence remains unproven."
+    },
+    {
+      "a": "GRUNGE2",
+      "b": "SBKGRNG2",
+      "exact_note_event_match": false,
+      "exact_onset_pitch_match": false,
+      "interpretation": "Different event streams do not prove different underlying compositions; arrangement equivalence remains unproven."
+    },
+    {
+      "a": "GRUNGE3",
+      "b": "SBKGRNG3",
+      "exact_note_event_match": false,
+      "exact_onset_pitch_match": false,
+      "interpretation": "Different event streams do not prove different underlying compositions; arrangement equivalence remains unproven."
+    },
+    {
+      "a": "GRUNGE4",
+      "b": "SBKGRNG4",
+      "exact_note_event_match": false,
+      "exact_onset_pitch_match": false,
+      "interpretation": "Different event streams do not prove different underlying compositions; arrangement equivalence remains unproven."
+    },
+    {
+      "a": "GRUNGE5",
+      "b": "SBKGRNG5",
+      "exact_note_event_match": false,
+      "exact_onset_pitch_match": false,
+      "interpretation": "Different event streams do not prove different underlying compositions; arrangement equivalence remains unproven."
+    }
+  ],
+  "files": [
+    {
+      "id": "GRUNGE1",
+      "research_json": "docs/p01/assets/media/midi/GRUNGE1.json",
+      "research_json_sha256": "8d77b8b368eb6bc7e5e4725bc4c86e21decce482671d331a9c5e687eea73a281",
+      "division": 480,
+      "event_count": 10372,
+      "note_events": 10310,
+      "positive_note_ons": 5155,
+      "duration_seconds": 141.33319199999607,
+      "active_channels": 7,
+      "program_assignments": 7,
+      "note_event_fingerprint": "139db389a90e0dbc18c9aa974b958f97486f4c03d1bdc8bc12a075dd78639110",
+      "onset_pitch_fingerprint": "62d67bb971ea7fac1b54e0514c2df61310996340bb96f211b9947127ea3a6db5"
+    },
+    {
+      "id": "GRUNGE2",
+      "research_json": "docs/p01/assets/media/midi/GRUNGE2.json",
+      "research_json_sha256": "8093c29ebe0990bd7daa34a2ed96a68650bffc351dbacaf7605cac0ea1aa0f19",
+      "division": 480,
+      "event_count": 13811,
+      "note_events": 13664,
+      "positive_note_ons": 6832,
+      "duration_seconds": 146.0869200000036,
+      "active_channels": 5,
+      "program_assignments": 5,
+      "note_event_fingerprint": "9a2f923eb5c3dea91bf53375849819569bcaa1d591bf6f013fe901888639e2fa",
+      "onset_pitch_fingerprint": "0a61344d612bd378023391289bcc7ee1a87640e624af018f92adbb453a8e150c"
+    },
+    {
+      "id": "GRUNGE3",
+      "research_json": "docs/p01/assets/media/midi/GRUNGE3.json",
+      "research_json_sha256": "3bf2e09ff2322aba0221a27f9d43b96f2d59733cf28a7680602df60ec4f1fc06",
+      "division": 240,
+      "event_count": 12417,
+      "note_events": 12306,
+      "positive_note_ons": 6153,
+      "duration_seconds": 221.98841437500442,
+      "active_channels": 6,
+      "program_assignments": 5,
+      "note_event_fingerprint": "6f0ead0941f99144baf64539a4695e3baf1d9344aa70e13c93550b887c072ac9",
+      "onset_pitch_fingerprint": "818a86008b628258f6888ba52a1861378a047c651e6e225be949c9ba20645cfa"
+    },
+    {
+      "id": "GRUNGE4",
+      "research_json": "docs/p01/assets/media/midi/GRUNGE4.json",
+      "research_json_sha256": "36f11098f7d083399a3556a99792491c27af4befd9f0103fba2d67388f96235b",
+      "division": 480,
+      "event_count": 11715,
+      "note_events": 11472,
+      "positive_note_ons": 5736,
+      "duration_seconds": 170.4349360000014,
+      "active_channels": 7,
+      "program_assignments": 6,
+      "note_event_fingerprint": "f52f65915cbe1764f780c421f69f7e71676d267832628b0483ad73c3ad1b5937",
+      "onset_pitch_fingerprint": "356ac00b4e8a75b73954d5e60e61911ff6b156038e166a04407cb06bbd580d72"
+    },
+    {
+      "id": "GRUNGE5",
+      "research_json": "docs/p01/assets/media/midi/GRUNGE5.json",
+      "research_json_sha256": "794004ac1793ea6f9378a7bb1f7e6f587797f05c9a6f3b7730935b4f6f35ed21",
+      "division": 480,
+      "event_count": 9658,
+      "note_events": 9138,
+      "positive_note_ons": 4569,
+      "duration_seconds": 123.4284480000044,
+      "active_channels": 7,
+      "program_assignments": 7,
+      "note_event_fingerprint": "4dd52753dfb21b6a8a7bdc6fd19b5a4170d0670129250d4984ac7ec22261e6e3",
+      "onset_pitch_fingerprint": "4818cf41f45457afb4727b1f79434c259bc3b76a361172dd451f494ee9a1df2b"
+    },
+    {
+      "id": "KLOWN",
+      "research_json": "docs/p01/assets/media/midi/KLOWN.json",
+      "research_json_sha256": "656de6662d4787f71146fdd5e6b6aac0f9c74f3872945292c3d244c0f0318ec5",
+      "division": 120,
+      "event_count": 9377,
+      "note_events": 9094,
+      "positive_note_ons": 4547,
+      "duration_seconds": 212.9035814666613,
+      "active_channels": 7,
+      "program_assignments": 6,
+      "note_event_fingerprint": "9b7983d0556df6e8fcd7f39ab6bad3f61ee597aa1614e69ec560aa2a23ce3243",
+      "onset_pitch_fingerprint": "13450f32d68dc500fbc5484f08352d344f8d17a47a32f861661b18ee6b1134ad"
+    },
+    {
+      "id": "SBKGRNG1",
+      "research_json": "docs/p01/assets/media/midi/SBKGRNG1.json",
+      "research_json_sha256": "96edcfa92a620eaf8b2ed1f4ed88cb3601ae655c1acacf69afa7fbd593ab556c",
+      "division": 480,
+      "event_count": 6294,
+      "note_events": 5838,
+      "positive_note_ons": 2919,
+      "duration_seconds": 141.3331919999997,
+      "active_channels": 5,
+      "program_assignments": 5,
+      "note_event_fingerprint": "8bd64af2c8f8d2aead5953fd2066baeb5f4aa1d4e68797e6ae2b6aa0825451a2",
+      "onset_pitch_fingerprint": "a910179d2042e5e87b5875156fe01003af9ca4ef24cbdcd8e2371e16afd378e4"
+    },
+    {
+      "id": "SBKGRNG2",
+      "research_json": "docs/p01/assets/media/midi/SBKGRNG2.json",
+      "research_json_sha256": "41dff04153f3e911b6df008e3c6c7557509f7f68ac7eb5bcc1c8d3b4d335fe61",
+      "division": 480,
+      "event_count": 6187,
+      "note_events": 6080,
+      "positive_note_ons": 3040,
+      "duration_seconds": 152.72739999999774,
+      "active_channels": 3,
+      "program_assignments": 3,
+      "note_event_fingerprint": "25896f111b0bf7908200987feb214dd0ecc4324e7a904c69a81d95901689b9d5",
+      "onset_pitch_fingerprint": "693978058aec135d604f070786c70d9eed62e544fa016d495a18b22d417ab032"
+    },
+    {
+      "id": "SBKGRNG3",
+      "research_json": "docs/p01/assets/media/midi/SBKGRNG3.json",
+      "research_json_sha256": "c72190e0dd768d401a7886a1eb8cc86f25ba6192b82483d33d4cdce141b5afd7",
+      "division": 240,
+      "event_count": 9239,
+      "note_events": 9152,
+      "positive_note_ons": 4576,
+      "duration_seconds": 221.98841437500403,
+      "active_channels": 5,
+      "program_assignments": 6,
+      "note_event_fingerprint": "4ec4ef0ede7aa9dc28d1b5f73291963d5c600f4713910c5764fd9906e30463e8",
+      "onset_pitch_fingerprint": "e2d68772d7be9f620b63de75b84cfad69c76a06ff55e8e44891737230d1bf0b2"
+    },
+    {
+      "id": "SBKGRNG4",
+      "research_json": "docs/p01/assets/media/midi/SBKGRNG4.json",
+      "research_json_sha256": "494cdf058f6e90d4b3129c2fce7bad28d8b9156a69754a86c572b16923b2b80d",
+      "division": 480,
+      "event_count": 6949,
+      "note_events": 6706,
+      "positive_note_ons": 3353,
+      "duration_seconds": 170.43493600000207,
+      "active_channels": 7,
+      "program_assignments": 7,
+      "note_event_fingerprint": "11cfcf07f6dc3aa467654c88a624a0fd87a63ccdce40b8f53342c2f5aca30271",
+      "onset_pitch_fingerprint": "f39ee955e8d12ec1b3d5738c8d40bde887cc6e4e1239b6cf1f8548e028d60c39"
+    },
+    {
+      "id": "SBKGRNG5",
+      "research_json": "docs/p01/assets/media/midi/SBKGRNG5.json",
+      "research_json_sha256": "03cd6a437dc40ea3ed050db7de61359e2afe7e015af118e48018c55fd06ede5c",
+      "division": 480,
+      "event_count": 8367,
+      "note_events": 7586,
+      "positive_note_ons": 3793,
+      "duration_seconds": 123.42844800000337,
+      "active_channels": 7,
+      "program_assignments": 8,
+      "note_event_fingerprint": "1b9f5c3945d5e9677e03d2e184751fffcc68fed5020aa0ed5ab720fe60c09ae0",
+      "onset_pitch_fingerprint": "d52ea60dfa4cced468283850f79eaf95c9af7a89b24dd534528078544748f93f"
+    }
+  ],
+  "composition_equivalence": "UNPROVEN",
+  "production_decision": "Author 11 additional distinct original short scores; none uses source note events, melodies, instruments or samples.",
+  "limits": "Metadata and exact event comparison only. SoundFont playback and perceptual/melodic arrangement equivalence are not inferred."
+}

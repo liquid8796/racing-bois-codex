@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "tests": 16,
+  "failures": 0,
+  "results": [
+    {
+      "name": "disabled_has_no_output_side_effect",
+      "passed": true
+    },
+    {
+      "name": "valid_bounded_preview",
+      "passed": true
+    },
+    {
+      "name": "20m_comparison_is_explicit",
+      "passed": true
+    },
+    {
+      "name": "options_without_optin_rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate_option_rejected",
+      "passed": true
+    },
+    {
+      "name": "unknown_option_rejected",
+      "passed": true
+    },
+    {
+      "name": "relative_output_rejected",
+      "passed": true
+    },
+    {
+      "name": "existing_output_rejected",
+      "passed": true
+    },
+    {
+      "name": "nonhex_fingerprint_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_value_rejected",
+      "passed": true
+    },
+    {
+      "name": "empty_journal_performs_no_setters",
+      "passed": true
+    },
+    {
+      "name": "journal_arms_before_throwing_setter",
+      "passed": true
+    },
+    {
+      "name": "journal_failure_does_not_skip_other_cleanup",
+      "passed": true
+    },
+    {
+      "name": "journal_restore_is_idempotent",
+      "passed": true
+    },
+    {
+      "name": "journal_rejects_mutation_after_restore",
+      "passed": true
+    },
+    {
+      "name": "20m_variant_has_explicit_speed_duration_tradeoff",
+      "passed": true
+    }
+  ],
+  "scope": "Configuration/restoration journal and isolated20/40m numerical comparison only; no native Unity run.",
+  "nativeRendered": false
+}

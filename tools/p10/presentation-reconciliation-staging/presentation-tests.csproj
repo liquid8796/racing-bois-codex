@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType>
+    <Nullable>annotations</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Shared/RacingBois.NetworkMapping/RacingBois.NetworkMapping.csproj" />
+    <Compile Include="VisualTransformReconciler.cs" /><Compile Include="TimedVisualTransformReconciler.cs" /><Compile Include="TimedTests.cs" /><Compile Include="Program.cs" /><Compile Include="PresentationSeed.cs" />
+    <Compile Include="../../../Assets/RacingBois/Client/Application/*.cs" Link="UnchangedApplication/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

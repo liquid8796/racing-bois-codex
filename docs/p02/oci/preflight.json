@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-09-21T01:18:53.779332+07:00",
+  "read_only": true,
+  "hostname": "jarvis01",
+  "architecture": "aarch64",
+  "logical_cpus": 4,
+  "memory": {
+    "MemTotal": "24550252 kB",
+    "MemAvailable": "22626612 kB",
+    "SwapTotal": "0 kB",
+    "SwapFree": "0 kB"
+  },
+  "root_disk_bytes": {
+    "total": 102888095744,
+    "used": 22418087936,
+    "free": 80453230592
+  },
+  "listening_tcp": {
+    "exit_code": 0,
+    "stdout": "State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nLISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          \nLISTEN 0      4096       127.0.0.1:27017      0.0.0.0:*          \nLISTEN 0      200        127.0.0.1:5432       0.0.0.0:*          \nLISTEN 0      512        127.0.0.1:18765      0.0.0.0:*          \nLISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          \nLISTEN 0      4096       127.0.0.1:2019       0.0.0.0:*          \nLISTEN 0      4096         0.0.0.0:111        0.0.0.0:*          \nLISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          \nLISTEN 0      511                *:3000             *:*          \nLISTEN 0      511                *:3001             *:*          \nLISTEN 0      511                *:3002             *:*          \nLISTEN 0      4096            [::]:111           [::]:*          \nLISTEN 0      4096               *:80               *:*          \nLISTEN 0      4096            [::]:22            [::]:*          \nLISTEN 0      4096               *:443              *:*",
+    "stderr": ""
+  },
+  "runtime_paths": {
+    "dotnet": null,
+    "docker": null,
+    "nginx": null,
+    "caddy": "/usr/bin/caddy",
+    "python3": "/usr/bin/python3"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "frozenUtc": "2026-09-26T21:35:08.310422+00:00",
+  "multiplayerProtocolVersion": 5,
+  "physicsRulesVersion": 3,
+  "sourceFiles": {
+    "Assets/RacingBois/Client/Application/MultiplayerProjection.cs": "ad28d22f07497b11a4846a02c9ed045ad8206887a7a92a88d86fa0cadd01bc0f",
+    "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs": "797bccd3cd235c91241f94f0663c27873b18cd4b1fc460cf5575c37f06fe6ef7",
+    "Assets/RacingBois/Client/Application/MultiplayerSnapshotReadModel.cs": "4ee7430db63abdac944c5e167b946251211d04d4c59ed1755ad6fce858e51895",
+    "Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs": "12e1d8942ab836e634d802b5ca808edbfed706a206e54b5e6e82583a24b38bb9",
+    "Packages/com.racingbois.foundation/Runtime/Protocol/MultiplayerMessages.cs": "c78764d6b5ae21dce40ad3e254c987c863d96256bb3e988de514ddbced2fca21",
+    "src/Server/RacingBois.Server.Application/Multiplayer/MultiplayerProjection.cs": "aa648d9b097a922d90ee724ef5a07c60b39cdaad8997a66deddf34822192668b",
+    "src/Tests/RacingBois.Multiplayer.Integration.Tests/Program.cs": "7b6f51a84266174067307e567ddfdc232fb61dad6d0ff196261f66ff3184951b",
+    "src/Tests/RacingBois.P05Client.Tests/Fixtures/remote-immunity-observed.json": "2e7642a201367a573dc8aeec8079354c713f39b0efc8413928d7a416a0b87c53",
+    "src/Tests/RacingBois.P05Client.Tests/Program.cs": "73878fa3ed8e7426a4999f6e2ca7c393a3c8b7c9cbc27264be922247d91c3438",
+    "src/Tests/RacingBois.P05Client.Tests/RemoteImmunityRegression.cs": "1fd2dac04e2d0a44673f292c45cc74fdcc61dd0175e1489c4cbd81a501f0aea3",
+    "src/Tests/RacingBois.P08Content.Tests/Program.cs": "824881bf3414d00b6db11126adf5e6a3ee8b4488306f240d83e8c3fc382ae4b1",
+    "tools/p10/ProtocolSoakNext/ProbeTransport.cs": "68936260b7f17987ccd2a9655bb63bf32b197355f5a157124a9a1adfea9f8b80",
+    "tools/p10/ProtocolSoakNext/Program.cs": "bfc523a275725a2f18aa84862341e759f212a22f71f5a14f10bd5eabe7d498ba",
+    "tools/p10/ProtocolSoakNext/ProtocolSoakNext.csproj": "300d58000f30abec1db63e5c9d33b954c044674298fb3f819ad61ea6f9829299",
+    "tools/p10/correction-audit/CorrectionTrace.cs": "5eb9d55bf47249219e6d9834a1962591ca0e0b11e0b6d53b760f72c52108ca4b",
+    "tools/p10/correction-audit/MultiplayerSession.CorrectionAudit.cs": "4a1767bfbf71681bc9ff7b53c16d83c8ab5223c61ba51c9ebed1d624f53e0fc3",
+    "tools/p10/run-network-diagnostic.py": "c29f45b5c8b3097dc06fa0f895a8e0af61c5e53847874398901a77fe19bddd37"
+  },
+  "eightHourRun": "docs/p10/network/20260926T213110Z/run.json",
+  "scope": "Owned immunity patch/tests/probe source freeze; not final release or visual acceptance"
+}

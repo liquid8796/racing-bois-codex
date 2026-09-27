@@ -1,0 +1,1951 @@
+{
+    "schema": 1,
+    "attemptId": "9346d39df4d84e47ac1c4eba87707cf5",
+    "utc": "2026-09-26T21:17:46.7173851Z",
+    "unityVersion": "6000.5.7f1",
+    "descriptor": "docs/p08/golden/unity/actors-v3-review.json",
+    "descriptorSha256": "9a87d6b4d3dc99726bdd196d2bf75e71b9c103f88823ca49d00131d8f0e629ca",
+    "sourceFingerprint": "cb6af4c6ff514348bf3642f6689487473c8d46094d141c810494978612c1b1a9",
+    "failure": "",
+    "passed": true,
+    "sourceBindingPassed": true,
+    "inputs": [
+        {
+            "path": "ArtSource/Concepts/P08/Golden/apex-v2-review.md",
+            "sha256": "420aa39d68616232f9f7244b8e302939ffc97748a38634dbf15319a337b00a4a",
+            "bytes": 1437
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+            "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819",
+            "bytes": 2410957
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/ash-v2-review.md",
+            "sha256": "85f43e75c0338e3159daeee146a5ccbecd523e792a51bf6d061a4da42012b48f",
+            "bytes": 1499
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+            "sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+            "bytes": 2385932
+        },
+        {
+            "path": "ArtSource/P08/Golden/Apex/V8/R2/RB_Golden_Apex_v8_r2.blend",
+            "sha256": "7d103484f52abf329821169d3af9e8d12cee4891caf23f420285aa46dd4c03aa",
+            "bytes": 31769541
+        },
+        {
+            "path": "ArtSource/P08/Golden/Ash/V3/RB_Golden_Ash_V3.blend",
+            "sha256": "e03297751d46e2c09143518be4fb054425eb6d0b036006da6e9070c3b8fefe26",
+            "bytes": 121971627
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_BaseColor.png",
+            "sha256": "5db9fdc1fac9bb3dc2aa4e8ab07a79b326d95c59eeb71908207669c0ada5a1e1",
+            "bytes": 80695
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_MetallicSmoothness.png",
+            "sha256": "9c955a5bf9b6bb16f83c2eaa560740df1b45d83db11416769891c16e8ff25214",
+            "bytes": 175000
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_Normal.png",
+            "sha256": "90c7eb5840b0bfd3b72460e87d822dfd4c6d81e588feea46610d066841579310",
+            "bytes": 143004
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_BaseColor.png",
+            "sha256": "52a22a04cbca7877203669201940dca39e91d59ae36bbec1b9d17fbda1e8de84",
+            "bytes": 842931
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_MetallicSmoothness.png",
+            "sha256": "5db62bd154ffec0156b8afc8a27bf3a713b4f1617891d208f5bc7d01c1444b95",
+            "bytes": 941319
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_Normal.png",
+            "sha256": "be666ff59f5d1d9a4c2477013eec08d6f336d749be0af69baf97ef2fdb2d57b5",
+            "bytes": 1731811
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_BaseColor.png",
+            "sha256": "ef67cce4e11efd0d7e6e9807acd316d6d7e178536fe54776826b7e3e457c18bd",
+            "bytes": 120257
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Emission.png",
+            "sha256": "fb6716b26a2821b723fb3d60f69c3a061e28ac14736ddf2bf6f764f166c2a158",
+            "bytes": 1881
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_MetallicSmoothness.png",
+            "sha256": "d42f44c2467f9a5884c49a94e003cbd5e9c0d6a4ae0e126bcd34917b800f1bce",
+            "bytes": 175220
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Normal.png",
+            "sha256": "7bde6db4894261674ed7617f96fd54a8f05d10dd649c5729a502804f59d0e4c3",
+            "bytes": 1962
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_BaseColor.png",
+            "sha256": "ab91d71101348fca6760371e8ecffc3c90410cbdad13e2078d45d3b1cb265ac3",
+            "bytes": 1881
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_MetallicSmoothness.png",
+            "sha256": "08e9ef0c0ccc4821bdec2c3490b721db9c851340ca31e837aa006015d47faf98",
+            "bytes": 173351
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_Normal.png",
+            "sha256": "90c7eb5840b0bfd3b72460e87d822dfd4c6d81e588feea46610d066841579310",
+            "bytes": 143004
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_BaseColor.png",
+            "sha256": "0e88edeb7ae50e679cd19e8641712bc357e1c13e5ab6a41cdc8408283988d11f",
+            "bytes": 875896
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_MetallicSmoothness.png",
+            "sha256": "3dc09f5a9824365c2a8c6dcd8e88f415da3c97f1e8c8a9a930bde298ba1ed954",
+            "bytes": 697878
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_Normal.png",
+            "sha256": "3af96a36caec2ccca5fcadd06e85d1fbf2c00a7b5db4ac17a2e62269f93ce710",
+            "bytes": 1378375
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_BaseColor.png",
+            "sha256": "ba6c1385d3215fdacc7a5c4d01f4a66250bdae091972634ccbdfbfaf1cbfa800",
+            "bytes": 2956854
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_MetallicSmoothness.png",
+            "sha256": "51bf81714d028f3eb117dbcc4c740325d72fe8a0579e2c2baccc10c9ad0788ab",
+            "bytes": 2772349
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_Normal.png",
+            "sha256": "0eedc476c6600669178560fb5cc76596056b85191288897cfb0745e956a84e96",
+            "bytes": 2260186
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_BaseColor.png",
+            "sha256": "c39c7a90aae3ad1a40ae3fd2c0f5d0b437cc31d96f8fca851d0d0c3352d5a5e3",
+            "bytes": 1875
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Emission.png",
+            "sha256": "c39c7a90aae3ad1a40ae3fd2c0f5d0b437cc31d96f8fca851d0d0c3352d5a5e3",
+            "bytes": 1875
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_MetallicSmoothness.png",
+            "sha256": "1f307df6a6f0a1ca3220019865c8af73735e6f6a245f7234aca9125424f8ba09",
+            "bytes": 175389
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Normal.png",
+            "sha256": "7bde6db4894261674ed7617f96fd54a8f05d10dd649c5729a502804f59d0e4c3",
+            "bytes": 1962
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_BaseColor.png",
+            "sha256": "63abdd686e8068c3836cb091095d41c2281795e7303fa5386de733b2932932cb",
+            "bytes": 883463
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_MetallicSmoothness.png",
+            "sha256": "afcd228fff5ec8dbaba8234a7311ddd635ade2f0e2d69449e944fabe078d0e74",
+            "bytes": 938481
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_Normal.png",
+            "sha256": "546898da05b1852536173abf31c6eada98cfd3ff8b054edd30abaf4a8b4c64f3",
+            "bytes": 1944868
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_BaseColor.png",
+            "sha256": "30b2e997b1c9c614bf64c76ec29cb5f6f7573910c373e4f36e379d3598999300",
+            "bytes": 933195
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_MetallicSmoothness.png",
+            "sha256": "773a3df82f044bf8914b90fba873a794da86be320c106afed90f1928b5d387ac",
+            "bytes": 697668
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_Normal.png",
+            "sha256": "3af96a36caec2ccca5fcadd06e85d1fbf2c00a7b5db4ac17a2e62269f93ce710",
+            "bytes": 1378375
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/RB_Golden_Apex_v8_r2.fbx",
+            "sha256": "1d3be6c2a49735b6751f8e93fb65648a915ae7047ff246255f012e570782f639",
+            "bytes": 4361500
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_BaseColor.png",
+            "sha256": "69bb4073e685624840fc9db0a300e42da535671bca7a5eb126bbd3dfd7bbe100",
+            "bytes": 121429
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_MetallicSmoothness.png",
+            "sha256": "3097c1ea67553a65af36bdae529b927be81a2d1a12e011bc7447c6c680409c26",
+            "bytes": 66283
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Normal.png",
+            "sha256": "35d4375d3a35685e1693d1b4857cb4d1b8637174bc3661736883bd62e47db5bf",
+            "bytes": 280515
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Occlusion.png",
+            "sha256": "9108cefa224d03828fb95ad9135c413a3c427fd98af5f66080eb55c8a9eda53b",
+            "bytes": 67458
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_BaseColor.png",
+            "sha256": "9292b15587ac9d34a01199cb7c6a79424bd22a461634363ed289153297ad2fa9",
+            "bytes": 4685
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_MetallicSmoothness.png",
+            "sha256": "8d8e46a4ce7070e3fd5910d7a03a659a7eb527bc38b8978f983ffc496a40a809",
+            "bytes": 63773
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Normal.png",
+            "sha256": "a06c6eada32fe9c85d68c67ae9c3777e2e87a5a659ef2c71ca0bdc2550153fd5",
+            "bytes": 2199
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Occlusion.png",
+            "sha256": "3490f43f6b8634dd33f1dbf5f12646f724971ee1049bd49a5ab0e9d8d734c5db",
+            "bytes": 55593
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_BaseColor.png",
+            "sha256": "5d4c48411b014d4411b8e028c1151f2377ff0f843746a2ee056eaf39ea73784d",
+            "bytes": 302842
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_MetallicSmoothness.png",
+            "sha256": "e1bbe6bb70d137894b4f988f36093b65eb246c40ce227cb500fe89fa8a97deb6",
+            "bytes": 301013
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Normal.png",
+            "sha256": "e245650455cc63432e6e7bfd29999185247c7c062fac34da08f98c262a3f5507",
+            "bytes": 10290
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Occlusion.png",
+            "sha256": "a0ab66970541814db61810f434913469f8b933df2cfc176cf93b4bd57e4155c8",
+            "bytes": 309507
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_BaseColor.png",
+            "sha256": "3f682a920feb3c96421c1935016b919f0c2655d24fc43da155a345780849d3b0",
+            "bytes": 12904
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_MetallicSmoothness.png",
+            "sha256": "f06b0f5daa8cd7190e7c1411c7f296d7018f54401682058a331298025432d013",
+            "bytes": 259887
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_Normal.png",
+            "sha256": "fa0169aec162ac5faf60bf7008ab34199ab7a14a93ceac055d2829f0f645b762",
+            "bytes": 1739817
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_Occlusion.png",
+            "sha256": "dcf324f740186e3f42a9bf7ebbb5084de2515aaf05099f3c9c96e38ed72e767d",
+            "bytes": 267024
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_BaseColor.png",
+            "sha256": "8220acc1f9786c7e63d0127226793d5349ea9ba508c392d2ff03e040e329a3e4",
+            "bytes": 155959
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_MetallicSmoothness.png",
+            "sha256": "013c6bc810c2169b0df4f2cb80c72b4f87a2b8f8a15172b1d3244131f958d436",
+            "bytes": 5674
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Normal.png",
+            "sha256": "6c4f21eafbf99271d922b4cf1140587f8d2724344debddaf26e3ff4df72f89bc",
+            "bytes": 2352
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Occlusion.png",
+            "sha256": "05268d1f59550a43215fb1ef7717d54a5fd5233e81179e20daaf2ff0446bfdec",
+            "bytes": 3530
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_BaseColor.png",
+            "sha256": "33cf473635e01b83e588e00d2d294f2c05bc9e9c2ece631d8ce2ce85d0fc86bc",
+            "bytes": 7428
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_MetallicSmoothness.png",
+            "sha256": "8d72e611024ad425a03fc918a3bdff7311067f8f827fdb50539fafe92d0f4673",
+            "bytes": 11027
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Normal.png",
+            "sha256": "7e04f4e9de897ef53944925736c85b46447f059b361d419fb3c0bd2702d689be",
+            "bytes": 292016
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Occlusion.png",
+            "sha256": "de2e25c4d6e7f4ac9921d6f2a70af6c77bb5ee5c8bcea00c58dc362bdc9dc13d",
+            "bytes": 7087
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_BaseColor.png",
+            "sha256": "2e667645adea4351af79de02fd89ab8fcbf2ad03e44ba5120d91425d64754507",
+            "bytes": 747498
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_MetallicSmoothness.png",
+            "sha256": "497dec4e814983d77292f474a3fc69037c48f10fa5a0463e549faf2bebcb5287",
+            "bytes": 72150
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Normal.png",
+            "sha256": "6703c3c07baaf5ee313c88bbfffc3e595d952508103a7d589bd18796ccbbeb94",
+            "bytes": 359063
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Occlusion.png",
+            "sha256": "3145c50a0a42de91e010dec257591c01df6ea02f0db37e4f84f70167e0a5391a",
+            "bytes": 66947
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_BaseColor.png",
+            "sha256": "1013a6a2a022217f91621b45fdcfb600d82863a8b6bf8d5c28747489b5dae008",
+            "bytes": 17008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_MetallicSmoothness.png",
+            "sha256": "cf841c3f1c35eb96d17a6cbc1656418c4c9784a01df3da679401a55e9340406a",
+            "bytes": 326494
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_Normal.png",
+            "sha256": "522d4fdbf807f15f876f2dfa85e7cdb4a672503675aec22f1a7ac63d88e4e9c2",
+            "bytes": 10390
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_Occlusion.png",
+            "sha256": "098340bf3aaa1ba86408d9e39839223095a4f2c352f622c4d56a98f23d28fb64",
+            "bytes": 321673
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_BaseColor.png",
+            "sha256": "d644ca432898e82ff177acc5665feba9662860dc811ee84182cc0d8ce9fd987d",
+            "bytes": 4799
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_MetallicSmoothness.png",
+            "sha256": "418c6bac3384a43bbd585d8b817d973d9b44a8d6095da8ee5fe99ed9fc69074e",
+            "bytes": 107907
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Normal.png",
+            "sha256": "55ea4ca8447fe6850d738f599a9167152f248beffd93ab1c5c91a95add13f42a",
+            "bytes": 53279
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Occlusion.png",
+            "sha256": "e55022721bff940b28d5e5f1b3dac883d2c04da038e2a1f23eee7cfffee2331c",
+            "bytes": 111133
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_BaseColor.png",
+            "sha256": "3b857a96dab1341129122d2449b7d2e8981921a5ff01a48961a4702ccdaf1dad",
+            "bytes": 1396133
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_MetallicSmoothness.png",
+            "sha256": "f5d86a3688bc4abf6cb1bafe90edcd09847d3ab0a15df19afeba65ae59d17ccd",
+            "bytes": 1001189
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_Normal.png",
+            "sha256": "f3be3089fb8d907f6f961170e9255a322815ccb98250396c25d1914c12b79b72",
+            "bytes": 985537
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_Occlusion.png",
+            "sha256": "191125a76bb4d32fdc4db6613c011f79de5969bce28da1ea103912ccf5d4543b",
+            "bytes": 267169
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_BaseColor.png",
+            "sha256": "ca2b8e661360d2c3b74c442deaa6ea1875dd29dc53c9e76eceea77e725129954",
+            "bytes": 830817
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_MetallicSmoothness.png",
+            "sha256": "7e96620de59e22c516814a7639805315383f6ce0d3c072990c16e608e0b622bb",
+            "bytes": 1930521
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_Normal.png",
+            "sha256": "aff897b95337ca7f0bc549d30468868b9bd625a54e6ba3f70ea30035dd2ef82d",
+            "bytes": 4190028
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_Occlusion.png",
+            "sha256": "19a0954147a0cf98d95430651cac919fc47f838f8731d7806e05efbabf3bea4b",
+            "bytes": 673375
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/RB_Golden_Ash_V3.fbx",
+            "sha256": "4ce1c6d32ccc46a3d9a8773a74f9db4b2aa163f13ef49ad81b4238e01267ca74",
+            "bytes": 14079596
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_BaseColor.png",
+            "sha256": "93859172f09205060b01fb4e70d800f9985a8c62e6ca39ae7fc6e05a83bcb027",
+            "bytes": 732767
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_MetallicSmoothness.png",
+            "sha256": "bee0298f26bd280b077c9a9c8c0e4bb56b5d22348430ed2955974e89326b0e7d",
+            "bytes": 523516
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Normal.png",
+            "sha256": "bf64987012627de645ec8de85060fa4816ac8c6c6a90c2d4078b0da761e3e9ba",
+            "bytes": 413294
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Occlusion.png",
+            "sha256": "747cdf9c77bbf52fba9d7204d1eb2b9377495fa8b9a4c86d9e8c5f34caae0a71",
+            "bytes": 539368
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_BaseColor.png",
+            "sha256": "fee6334d4708bfb64f76217ca807820acc9ed205e2e851debf2505ed626f784b",
+            "bytes": 59963
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_MetallicSmoothness.png",
+            "sha256": "16da8068e7b6ed5e40529d79996091f37ba45ef2196ba71aff91b0c4256c82a9",
+            "bytes": 174420
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Normal.png",
+            "sha256": "47ef637ba38bb776f5682026d351adc8a1bc5b9d9a26ba3b104a5e1529791bb7",
+            "bytes": 202184
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Occlusion.png",
+            "sha256": "10c8329ea1780e9ed82d869b4150f289ebc61a8fbd326875c03e2eb7d3b83f11",
+            "bytes": 214905
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs",
+            "sha256": "09d50c71de78798cdf7060a2da3c35334ea05607b1ee10cdbe57699b571f9ecd",
+            "bytes": 1634
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Build.cs",
+            "sha256": "ab520e1ddd19235c4819e03f51599ccfad5a76b582bee7e830e74b45cea90696",
+            "bytes": 9197
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Compilation.cs",
+            "sha256": "428050012ed2f958c61f6a8fedb61120993fc284241a8a4b008896e21f817676",
+            "bytes": 3247
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Contract.cs",
+            "sha256": "0d43ea57de66cb7a9b6c4491b9e15c4a4f408c28410f2a0034b0bb3d202cdc0a",
+            "bytes": 14160
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Environment.cs",
+            "sha256": "9287dc0622752379dd87003122aa6918cc3ebbdfe9b2eee5d53856014f3c363b",
+            "bytes": 10357
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.GeometryProbe.cs",
+            "sha256": "abbde56353604fd61123cc0975bef488c723569b4d4d5509c0ef0e1f544c5782",
+            "bytes": 3876
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
+            "sha256": "c39e45ce360a6a4ad121f8907a90da4c672fb1f912df9bcf0899d80f0023bc69",
+            "bytes": 18573
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Lighting.cs",
+            "sha256": "2c4b0319696edae01bdae7b3b84122852aa8208414441bc095642a6da1a3702e",
+            "bytes": 2461
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Modules.cs",
+            "sha256": "f85bc31422303e74714b902310115743f89cee800fae33c593a3f6f02c9b9d0b",
+            "bytes": 21449
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.RestPose.cs",
+            "sha256": "8f48ce5cbceb56f7849198d138b02bb5082a360635c9cd3b2bfd4c03fa33088e",
+            "bytes": 3584
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Scene.cs",
+            "sha256": "18dbcb06b4a6058b16a81a02fa18a39eee3dd5a486ae40cf10c0b7b02ed8c071",
+            "bytes": 7145
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs",
+            "sha256": "b02970b1920e994b7637e29a15453064c8ec8b0c9eeec86021d41402a8232676",
+            "bytes": 21691
+        },
+        {
+            "path": "Assets/RacingBois/Editor/RacingBois.Authoring.Editor.asmdef",
+            "sha256": "05852f1be165987cbc90668c5fea344febd5848d9dd9cd3ac1a1b799d4d60aa7",
+            "bytes": 459
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenCaptureRunner.cs",
+            "sha256": "634bdbe132a1fe47bc03334db6f3ad27ed559ae03b2a8b135640c83ea0336c5c",
+            "bytes": 5607
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewController.cs",
+            "sha256": "f84197f80b529ca5b9ccaf20ca1de5b432aadb213b425dd6493b984b32776eb1",
+            "bytes": 8762
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewPipelineScope.cs",
+            "sha256": "9566dafc6b1e13e78d7fac6654e1ebb0b5116845a9b76438b7798d1dea423799",
+            "bytes": 864
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenSkinBounds.cs",
+            "sha256": "daad4616ee4f2a9016edc3f3b2b66c68d038a3b0255af2424bef08d0e624951c",
+            "bytes": 637
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef",
+            "sha256": "069314c8cbbf450b7375d216089cb3cd80168cde8e125c5837f8827927f8270d",
+            "bytes": 140
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll",
+            "sha256": "0c37bdf96a889d4960e2af1210c3754d1243813e61ef449ecd21000401649f77",
+            "bytes": 228864
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.pdb",
+            "sha256": "095cd3747bfdcc40f6a20aa31234deba6b8ffc901f5b9146c1eb8523c114f6fe",
+            "bytes": 73932
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.dll",
+            "sha256": "b7ceafb32b74b42f5e5a5fa4fd36a114ae661b29a44bf274fd67af06e455873c",
+            "bytes": 202240
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.pdb",
+            "sha256": "57bc04f7d8f3d191635310ea75d1c9b7b007f82b5e5287b654f861d26938e951",
+            "bytes": 75308
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.dll",
+            "sha256": "6a6463da8f7420cef000d553a5401058f4523feb759bc6673183c7211323425b",
+            "bytes": 14336
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.pdb",
+            "sha256": "7107c8df1e587f7d3431975e9e629dd76acf6c21595bb651a110dd22a613ac48",
+            "bytes": 24380
+        },
+        {
+            "path": "docs/p08/golden/unity/actors-v3-review.json",
+            "sha256": "9a87d6b4d3dc99726bdd196d2bf75e71b9c103f88823ca49d00131d8f0e629ca",
+            "bytes": 40417
+        }
+    ],
+    "outputs": [
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_BaseColor.png.meta",
+            "sha256": "df767a69029db6b13319f735c9ddde25674303ac99ed17559bd29869e4f39686",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_MetallicSmoothness.png.meta",
+            "sha256": "5558588a9af7f3357107920196c5d3ff453f7fa2efd6824e59f0fe6356fa8154",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_Normal.png.meta",
+            "sha256": "42996fab32c669742f1705479fd025ddc9a83c02c2c160683a7fb2a98532e024",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_BaseColor.png.meta",
+            "sha256": "e4d7bffd9725e499bafc935ffffd6ac6e8a3d468db1079faaca023c01099d999",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_MetallicSmoothness.png.meta",
+            "sha256": "a21f03c6095822fab79cd7b892ca2616244096f7b68a178f09248962ca91d7be",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_Normal.png.meta",
+            "sha256": "2af04767a72c40a358e7893bf2746132c12400e04fc5cc513c0c5e157861ab02",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_BaseColor.png.meta",
+            "sha256": "5911b71ec21bf44bd6ad2e06e8fefcee25ef67fed913a670f82a71f14bc68e31",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Emission.png.meta",
+            "sha256": "f4461d87529aaef623bc12961cc401c20630f8c23fcd7fc727b9521fa992f502",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_MetallicSmoothness.png.meta",
+            "sha256": "3dcb21388c3f3b2678733f62d0e8db149b3ff8a70fa9a6a8b0ac9d56f8be6b96",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Normal.png.meta",
+            "sha256": "92ab66a17c3d3fb406082f80cc168f10e25fdc336c0df94cfd30941899bf9e72",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_BaseColor.png.meta",
+            "sha256": "d8121625d1d6c7003904cafa12f87788e95fab98d24f2194e5b1008a629a55d5",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_MetallicSmoothness.png.meta",
+            "sha256": "0f08e2f185bd05cf6fd9a8b165ef38b653458ebaf74aaf2f19259f45b1aff52b",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_Normal.png.meta",
+            "sha256": "db3bdc08b7da483b20b298e92ff387ec2e621cecc97872ee01759db3c89bba78",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_BaseColor.png.meta",
+            "sha256": "d6102c76ea3a998200292489cdb46f1de385af0c097abbdbd4e6c229d603fd8b",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_MetallicSmoothness.png.meta",
+            "sha256": "5db7e5b17196a34f5819f4eca426c4f85acbb4a5e0ab3076a0387e0071f566c0",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_Normal.png.meta",
+            "sha256": "5ab21ad8e6c2dab507d2034e6704f95ffe257c5c0c5d4fec5a711de2840fb75e",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_BaseColor.png.meta",
+            "sha256": "93149241732407723faaa1945ed64e2245015ab9610ca445c2029a223d267d49",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_MetallicSmoothness.png.meta",
+            "sha256": "52b7e37e1383233bb9a47ada235a594298bdd76596f69072add3007859313daa",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_Normal.png.meta",
+            "sha256": "5bea256e0fb700a13b8f04728f724befb2ea9e23f72c46baaca2f7a3e07df1b0",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_BaseColor.png.meta",
+            "sha256": "e267dc5e7733c822fd15fbc7f1491d3b9e6a38cb25696c29a8e96c5c88ef277f",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Emission.png.meta",
+            "sha256": "9aaa3cc44e1a1929026409a636f25937465392d7c48c61af0c2b9343075f9c7d",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_MetallicSmoothness.png.meta",
+            "sha256": "38912758eed42bfb7564b34dddfbf37aa9ef8b025b96c1a65f42ba29c6ed82c5",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Normal.png.meta",
+            "sha256": "064fb2c01545ca1716b422ec078ffb7a84e8ecdee660d34b4983a4f414f98fb9",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_BaseColor.png.meta",
+            "sha256": "ddc69b37519a06eb3e4bf5403d36638706dcc288d865b9d51273903a52851c8d",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_MetallicSmoothness.png.meta",
+            "sha256": "b32e7049bf778001e256a87603b54fa16dc001f034be64ab22e918ef58814dfe",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_Normal.png.meta",
+            "sha256": "742f70e6f1041a5fc3e9ad2ed0d6c55e273189c9e0d02fa9c168a266927f5749",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_BaseColor.png.meta",
+            "sha256": "7d83a4a731e83858db1faea094f321a31685494d82af9ed4680819b3ca043fb1",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_MetallicSmoothness.png.meta",
+            "sha256": "b75e143955a5237789528913c2ea7e9d03da759cb37d73ea44b86684aae74117",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_Normal.png.meta",
+            "sha256": "09decb9362cd343dc10db2f34cb15db8c3ba1019d3003cda2584483230d51882",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/RB_Golden_Apex_v8_r2.fbx.meta",
+            "sha256": "8c0fc8d5b9d28d4835b7575b43fd7ee8cae432855afcf3fd6b4244a8946677e5",
+            "bytes": 4665
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_BaseColor.png.meta",
+            "sha256": "a9a3356e8a57e6e33f6c7086ff67d14eb759b008ce83512f0b9d28c68e499580",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_MetallicSmoothness.png.meta",
+            "sha256": "a43146d6634a4bc49fb616c0e8a90fddc3a6799c27cb9d2f0664337bec7d7b0a",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Normal.png.meta",
+            "sha256": "11e5124caf7254e03712174e47748f392e3073f3b0c7eb4fc3ed2820539a7b40",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Occlusion.png.meta",
+            "sha256": "bc973c5692a84feca11a97ce3e665b292c86e0e3cadf0ba804cab146634f9760",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_BaseColor.png.meta",
+            "sha256": "ee413a375c44036c20fd83e080822aa3a41690d23a5c89ce6193d83da0f3c238",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_MetallicSmoothness.png.meta",
+            "sha256": "bfff14f056ac295767b74b69d906e2129d203ec8fa3ccece9acd49cfc823f53d",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Normal.png.meta",
+            "sha256": "19b2489dfe17ce2ef3f10728c43c7d9116ecad111b72510a963bce3d75d76794",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Occlusion.png.meta",
+            "sha256": "35bed482593f4b8b6df4ca955059ed69cf36e483fd4337f671843794916af363",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_BaseColor.png.meta",
+            "sha256": "a2147ea40defbc745ad38c03a3549b669d18fd598b4ace495aaa57c373f62f35",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_MetallicSmoothness.png.meta",
+            "sha256": "77d6271389073a3525216b41e2689fffd3ec8cc61251901b387179d593c1bb95",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Normal.png.meta",
+            "sha256": "88f03e449d868ea59751b1f95500614173df49cc42a94dc258ae47c5ecf8947e",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Occlusion.png.meta",
+            "sha256": "61ed5a16f0b0b82a88ed1db30a30a63c032bd54d4f5b52880006850eddab340b",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_BaseColor.png.meta",
+            "sha256": "3cb32a3a10f9f547554b487a25910a456cb2949df7bf2540ca0ff5bbd5806c85",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_MetallicSmoothness.png.meta",
+            "sha256": "2d8b55cef31bcaa9862c424af7ca942c6ddaec5641457ed550d2cc44c5f2c6fd",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_Normal.png.meta",
+            "sha256": "10297b691ab753183778766301bb5dd3349bf01da6e0fabffb7214a861fa64af",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_Occlusion.png.meta",
+            "sha256": "26333afa6687de33985738b2a06fbeddb2670ed2bed92cb54f50fc59ae131396",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_BaseColor.png.meta",
+            "sha256": "75290b071efbb7da8c6cec7b41c685b826dd0f83f65447f03fbd0b50f0497c57",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_MetallicSmoothness.png.meta",
+            "sha256": "d41526dbba0f50bc23ea1a3972cc1a762c06a573cf193c3ea6653f69f2218b23",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Normal.png.meta",
+            "sha256": "39230033b25bd58b82939bc418f14047e7d58fe2775fe4322cd485d85c3fdee9",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Occlusion.png.meta",
+            "sha256": "b707572225a00c177c0072e3132aa49956388e62b884b174e37f23a857dce09d",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_BaseColor.png.meta",
+            "sha256": "72226767e3538450c95659bd5122d1783a02c112136a7b5f9ee933c6cfc8820a",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_MetallicSmoothness.png.meta",
+            "sha256": "65c6c4dd39fa5f72a05969cc14bdcaea45f58f1f16b6f32223c5fe1f01f03c68",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Normal.png.meta",
+            "sha256": "2751d8bbc1ac27cea93b9123311d0657efb1513c2c66510a0468bc26b86d6b5b",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Occlusion.png.meta",
+            "sha256": "1504cf76488908a4c7015b357fc55a9ad8b50be710f791e7c87b7e53e3c27f72",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_BaseColor.png.meta",
+            "sha256": "f6473c641363e6653dd15d4a931ad4302aaa7019edeb8b8c5436b41c6304043d",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_MetallicSmoothness.png.meta",
+            "sha256": "a21e79f4d99a980781a87dde64e493ffa60a3cedc18a63e277e07c738a3f12d2",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Normal.png.meta",
+            "sha256": "9041826ee55c62408a06a21856bc5eb13cd1baccadf466f8e2e2efb850879565",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Occlusion.png.meta",
+            "sha256": "ccd5bcd65aa8b295392569bc15e9af50a698c53aeb5ae41d94e59464ccd11018",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_BaseColor.png.meta",
+            "sha256": "29ca09f8980cad814d08297924986b8408782ad18069abcaf46bf1deca159b3d",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_MetallicSmoothness.png.meta",
+            "sha256": "188a3d6ea2c63f5c4c8461c8ff7d2f315e853f2067025bc9e1c54d575c206e79",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_Normal.png.meta",
+            "sha256": "10dc5cabb79218404aa7b6e0c8392d2b3e6943d696febe83b547b76c17ae8320",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_Occlusion.png.meta",
+            "sha256": "c261abe4a63aecfcc010a77bc2c2b0700b72992f81d37a3f47cecb6a773b8019",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_BaseColor.png.meta",
+            "sha256": "519fb5da33ae40d59ee4021d819405da7754989c739ff1ba7815084fdb0f4784",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_MetallicSmoothness.png.meta",
+            "sha256": "5adeff1feb84f7ce87759d7ad20bf2f21b198b915e6722f4ad3b1a080f3e7639",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Normal.png.meta",
+            "sha256": "21e5747d5f1c348226328083ffdbabfca5567a40f797fa544001f7e2f0819234",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Occlusion.png.meta",
+            "sha256": "ef97b9a6fe06c46b4693003477a86e1c7b95713ba4ff61e866b45bdb615b0f8d",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_BaseColor.png.meta",
+            "sha256": "8da0c34c85080d1567e0d344f087d0cbdfe435bd0fd04cd0e5fc93b83f0c1250",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_MetallicSmoothness.png.meta",
+            "sha256": "44d16729b9c92ec70c549d2643a28ed330ccb32f93c7488155cfb9d807597413",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_Normal.png.meta",
+            "sha256": "e919019d225657bb7e7b85afeba6a75c9bd46f5e90ae987c65642b7b71d082c6",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_Occlusion.png.meta",
+            "sha256": "88fd2b48daef9d8aa1328ef99921e960e29120c95024547c262263de45c8a327",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_BaseColor.png.meta",
+            "sha256": "d93c95d595b3698743b09fa4001e7381c80d2921da95f370fadf62f78d002eec",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_MetallicSmoothness.png.meta",
+            "sha256": "f7446ae4d4beab406322bef71b6fb191de05acb467b02485c50a2e8726392326",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_Normal.png.meta",
+            "sha256": "2255699fc6a499248e615ed7ca0901f90d269da4a7df595a512c4121e34dc7d7",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_Occlusion.png.meta",
+            "sha256": "136fde10ff7a1146cb1419b82ab9cdcab9ff138b9f9ef1655eaccc3a2dd798dc",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/RB_Golden_Ash_V3.fbx.meta",
+            "sha256": "b90d75904214e31785f866cfdc61872d9e7031ac3739c3301205ea4ca1552b14",
+            "bytes": 5536
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_BaseColor.png.meta",
+            "sha256": "f61c68a5fe020bfae5aca4c40382d625c996838036e5376b2d1cf09ab486129a",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_MetallicSmoothness.png.meta",
+            "sha256": "b0aa15b2597fcf369335825caf2f12bdbe9789e0768a60f14400cf4425ccf09e",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Normal.png.meta",
+            "sha256": "ee413b26faab94386d00b74ef0b3bb36aa25b647e28bd4338e28977350f1cc08",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Occlusion.png.meta",
+            "sha256": "44a4a16c793f1ae45f45cbcb86c40c677c5f32021ed7fbafd0d25f6b294ffa58",
+            "bytes": 3008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_BaseColor.png.meta",
+            "sha256": "7d33d9625a6de4f15cba3d0590002960cbce8246bb59eaf972bfb9637c669769",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_MetallicSmoothness.png.meta",
+            "sha256": "9ef7c670cc21dd42de34c0bf87e087cab87b8c7456989408563e3f7fd833386c",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Normal.png.meta",
+            "sha256": "a6da128adef61e5237f785ae49e23ffa4e8632d29433d13b3660b6e0e883311d",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Occlusion.png.meta",
+            "sha256": "d3813ee54529f2c7007a75357ff893f5586fdf2d0e8f01953f574806f30ebbe8",
+            "bytes": 3006
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/EnvironmentReviewPipeline.asset.meta",
+            "sha256": "03c49e9a0b8401ba15920925698ef012e1acb8abe15d8ef3baa3c6c8331962cc",
+            "bytes": 189
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/GoldenReview.unity.meta",
+            "sha256": "f9445eda617de8265fa63f56559c2abdece7b0c19bc8b18a4d3e0fa11c029cc8",
+            "bytes": 155
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials.meta",
+            "sha256": "d5b362cd019eef27a3b731894e607b55ead166756c437c94bb97a66063e88862",
+            "bytes": 172
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/GoldenEnvironmentSky.mat",
+            "sha256": "21e8e4b6cb1ed2b19b248a2e6f94544490030b6f2511aa2c1287a3c7c3153c0c",
+            "bytes": 1113
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/GoldenEnvironmentSky.mat.meta",
+            "sha256": "aef641cfe4f2d3f030f958c262d3404b7c9396354e597907121cbe77b86dd37d",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/GoldenInspectionFloor.mat",
+            "sha256": "eb8d5db5e816f3cc5e63d4db83635600cef66f957f696cf64e98713d786f32f7",
+            "bytes": 3852
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/GoldenInspectionFloor.mat.meta",
+            "sha256": "fb01b6f88e09abe657d0eb69ef9caf2d9ad47ca2e6eb39b1dc87ca5d81f00bc3",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Glass.mat",
+            "sha256": "536e67ef61c3bdc6496f034074fbf1167637eaa50687618981fafeb3e090b8cd",
+            "bytes": 4153
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Glass.mat.meta",
+            "sha256": "a2580f17e6879f70ff4e402cc113eabd4552edff90c4b25fdb12de0ba694f654",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Graphite.mat",
+            "sha256": "45495ab595a1bbff78ef9054b3d69a953b31fe1595ce886c62201419e59d386d",
+            "bytes": 4083
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Graphite.mat.meta",
+            "sha256": "675af9b769ea12d5696d623c2f67679f92c6be9b8275a4b0dfdb2331c709dcc2",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Lamp.mat",
+            "sha256": "0e2afa74036c2ecaccfe4af5d54a9560b5a15815b2a6071617742297b383bc63",
+            "bytes": 4155
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Lamp.mat.meta",
+            "sha256": "08b54d5454963ec3700cbc3ebaadce3738b6f5fa854a31019daeb520d46df54e",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Machined.mat",
+            "sha256": "6ebb80a6c63ac37d5202ac019130e877f840846a20e99aca220b253a197dc5be",
+            "bytes": 4082
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Machined.mat.meta",
+            "sha256": "2d2433da12e943447b1aef6c9b5d468394bf15550076484652c408a7b3bd488c",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Pearl.mat",
+            "sha256": "31d4196714e5576575c6d43f13c0207a9da73db0112965ec66965c89574aac88",
+            "bytes": 4080
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Pearl.mat.meta",
+            "sha256": "a4a3deb13f23a588314c5d95eedb47be31a57f31ffcd095d6943896233fcc374",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_RedLamp.mat",
+            "sha256": "f5a63b31110690005a2613693beeb5597b9e1d9e742fe24511dbd11a01c41729",
+            "bytes": 4158
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_RedLamp.mat.meta",
+            "sha256": "e6adffc7fb95a478ca54cb2dc9a9adde93c4aeea2984c15ac234f1d4855cc79f",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Rubber.mat",
+            "sha256": "7be742acbc3553c103ed6ba4d76834f317bbd06667593628db344646e3afb401",
+            "bytes": 4080
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Rubber.mat.meta",
+            "sha256": "7556bc34ef8bb6ffd135efc3d13287e23a550295ac79271916117b68222773a5",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Titanium.mat",
+            "sha256": "00accd1c91d2041407de21d30aa17f8204d47eff0f34a2f26fd72e17d5bbc5d5",
+            "bytes": 4081
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_Apex_Titanium.mat.meta",
+            "sha256": "32ab8e86b19a267532e4fcbb5002df0b7bcef0d199607c80f0691a18fd0ef3c3",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Glass.mat",
+            "sha256": "2f83202affb9d67fdfdabc29ebe1b7f959e980a072c0ba679a1fb8f9d613b645",
+            "bytes": 4084
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Glass.mat.meta",
+            "sha256": "b15fdbe4e849208c48e737f89d851bf112b73af22ea2f2c979b490be19bdd69c",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Graphite.mat",
+            "sha256": "e889b2d7f2af57f86eb2e6627bf86fa5d537644536c6eb667b6855e8f8f92517",
+            "bytes": 4031
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Graphite.mat.meta",
+            "sha256": "5fb32915b02601a3fc1eed6472dbbc5adab61fe60f465fd55b835aec36c50309",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Lamp.mat",
+            "sha256": "b363b3b5fa4eb73385877581937173a2fa43d15a254b6989e1f635edf9bbfb79",
+            "bytes": 4103
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Lamp.mat.meta",
+            "sha256": "4bb2c4c67655a670aaaa0151eb392fd3ced97a932a7c1f851ffe82e645a7cf8d",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Lens.mat",
+            "sha256": "1a5b39f84b9828383b2e9ea085ee90a4d466d7597b6943f2078f3d1dc798f70f",
+            "bytes": 4081
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Lens.mat.meta",
+            "sha256": "5c62810d3ded997dfa4f7dea861400f62194ea7f38984673d7030846e9beb634",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Machined.mat",
+            "sha256": "affe12bc9efa6b16ee2d4e54633a5d809846a9cdc412d1758bc75f416a3eacc0",
+            "bytes": 4030
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Machined.mat.meta",
+            "sha256": "17f3f602fc1e6156f7648dad9f1d959b6e27490d3501b1cf91a11e2eabe6906c",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Pearl.mat",
+            "sha256": "12390b8d2766fb7362c00f66d7e492938fb90c4f4e7ca5506b450fcfb4a31b65",
+            "bytes": 4028
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Pearl.mat.meta",
+            "sha256": "4900a63b8fa3def41776ebf333372eb740526730f15accfc546dea01604c43c3",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_RedLamp.mat",
+            "sha256": "b404c2de3e8a1be7490db7b1f07d0d9c852fe647fa0b02a544d1a8e2e96dc531",
+            "bytes": 4107
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_RedLamp.mat.meta",
+            "sha256": "da7130dcd4f883319c1d5156bfae1c8374090c2f7d67e070ae5b6a657d42e1f0",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Rubber.mat",
+            "sha256": "372c6697bfbb5ab0578391882fbc361024b8f9c8f022ab93af591ae70f95d4e9",
+            "bytes": 4028
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Rubber.mat.meta",
+            "sha256": "53cb8acb86357a2671f438e5d7e14ac379253142dab03f9ed8ec42d8fcd350e0",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Titanium.mat",
+            "sha256": "88e2809ea9fbaac3fc100919e18913b59f996b683bee5cffdcdcd2712fe7d897",
+            "bytes": 4030
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_Apex_Titanium.mat.meta",
+            "sha256": "0a60b7aa6a67235553be02a9f19dda0db7c14ec9b25f03d62a8766fb56f1b844",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Glass.mat",
+            "sha256": "abd0c8dcd73fe23a97c7aedc7043230e4c50281baf42ccf32371a5ce4e7934a5",
+            "bytes": 4184
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Glass.mat.meta",
+            "sha256": "17ba9cbc40eb31d2ee701e20bc10f1266731a90e9f187b7a575bdc6c8c6b1a7c",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Graphite.mat",
+            "sha256": "fa3a626b8ad72363df71a454ea97afe15551171f393d9fe8006bd82971155f0d",
+            "bytes": 4088
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Graphite.mat.meta",
+            "sha256": "62da3fab6f5290e76a3c37405203f5c304608e2fb100214f469480e56dae1a64",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Lamp.mat",
+            "sha256": "c6b1f45b109f19080a256312ecffe81b243a6c5f577aa2eaf4ba35f2708f7429",
+            "bytes": 4148
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Lamp.mat.meta",
+            "sha256": "2f0aa54c43f320a31a1b76436f366bc0ded58e9f87fa6c71dbfbf904eb622bd2",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Lens.mat",
+            "sha256": "f02af79073d4e4c3ffc6f0513b3c45fabb781fa5daa1406e4cb8900d33d0937a",
+            "bytes": 4181
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Lens.mat.meta",
+            "sha256": "26fb65aa4fba0457abcc1e0c67594165729b37aadfc16e484dc9aa71e7650287",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Machined.mat",
+            "sha256": "2adddb44ca082f04859e97ad2c8dfdece569c341f1eefe85c3e9b34883d495b1",
+            "bytes": 4089
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Machined.mat.meta",
+            "sha256": "5ad4c0e6e8808580769ad99c5ea6104899ea3c9ed0c482b5c1599a19c73cfb96",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Pearl.mat",
+            "sha256": "183a7567a27447c338503196444d6f7620276f2653ce7113c9daff8a88c06b2e",
+            "bytes": 4086
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Pearl.mat.meta",
+            "sha256": "db5ce914230f03c8ef92894a41085a4d71b3aa4a6d57da4c3f0d291ef48ba7b9",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_RedLamp.mat",
+            "sha256": "b2c010f9e4c8589ecafe718a32c442cc0ea8deba0f4a5a39b4d27ef9b973e92d",
+            "bytes": 4151
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_RedLamp.mat.meta",
+            "sha256": "1e7fb7a809cd5d3a01a93a14ff10933e1d6465311ae14ca677c2e03c26d5dbc8",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Rubber.mat",
+            "sha256": "3df67289093523b84aa7bd44037b36ad93f1109c72472b8369b21893970712e6",
+            "bytes": 4086
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Rubber.mat.meta",
+            "sha256": "7da721eb42a5f5bc0c8709a650eb69aa0c5550fe1704bc286f64af258f70638a",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Titanium.mat",
+            "sha256": "9c5470a81ae6041302a66ba7ca9476e6e025081402dfdce568406995917633e2",
+            "bytes": 4089
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Titanium.mat.meta",
+            "sha256": "4fc0f2e78bb6a8fae1e669b9ad6118348d3683885ab1130f080be00289d7e19e",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_AgedBrass_Baked.mat",
+            "sha256": "7d1fd0e3f517f15fb819b3bc67fc6ea8dc030a6d3a63e50651dd26d79510a74c",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_AgedBrass_Baked.mat.meta",
+            "sha256": "90ead5da42c41f381cf7df590c11a58bfc1da008dda9e915d218d4db7e9a789d",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_AmberLens_Baked.mat",
+            "sha256": "8282ce1235172a40e19eb2b8e59850a55a4e4fef40d4aaf317fdbf70437d7292",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_AmberLens_Baked.mat.meta",
+            "sha256": "da2bb4838d07b06c67bfa4d81233f6a65e486046f38c3c5eb584a77e2431a5eb",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_BootLeather_Baked.mat",
+            "sha256": "165764fe8b95d7558cdfcbf56a18e8bae2bb5888b7cbdcc86bd22edfe0ecf3f5",
+            "bytes": 4165
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_BootLeather_Baked.mat.meta",
+            "sha256": "5ab497910d70bd03ec64d606a6faa1a79ecfd2a51ca1d5407d840522d526158f",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Brows_Baked.mat",
+            "sha256": "98168671f822b3a1e9ae07eddfafa913564b15d97d63f72460742591427992a7",
+            "bytes": 4252
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Brows_Baked.mat.meta",
+            "sha256": "1f9024bdae39017c1fae9a74f1d2ba4d50753957aa6380b8083b597891736379",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_CharcoalLeather_Baked.mat",
+            "sha256": "2c8553c7413c2c35a70a00eb2995a71880bd954bc38dff9a3d0303e82aafda54",
+            "bytes": 4169
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_CharcoalLeather_Baked.mat.meta",
+            "sha256": "21165f0d2819263e59b196d01354e2f8662e78a3c7666b6da4113f847384e602",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Eyes_Baked.mat",
+            "sha256": "e6ca3de3ac9742b5657968390de9efe6b8cdc30c6b6cbeba29760572e68e41fd",
+            "bytes": 4158
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Eyes_Baked.mat.meta",
+            "sha256": "14077f8f4900e066e3a4b809a9d548aac9c6f18eed791f4674d5a8f8b2810aa9",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_HairFibers_Baked.mat",
+            "sha256": "7446238c48cdd1fdd887bf6f993e065d1c17b3903a54ca0e54d85541ae59a0bf",
+            "bytes": 4164
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_HairFibers_Baked.mat.meta",
+            "sha256": "619e7f132eaa3e5caa5bb96fdf0a908647d19d694879aba5c45620f25fe6f1c2",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Hair_Baked.mat",
+            "sha256": "6df1b18c3ac08027642a76755aa58198838198a10c5106bb2b996e65a9df07bd",
+            "bytes": 4251
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Hair_Baked.mat.meta",
+            "sha256": "fabdd788f45568d4bca78b0a9f31ae86deb04cdc62061c06e069d13f0d394515",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_IvoryEnamel_Baked.mat",
+            "sha256": "a4370278090bd28c9eae347b33b4b5a71e5139345d988ec2164015cd4e0a2733",
+            "bytes": 4164
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_IvoryEnamel_Baked.mat.meta",
+            "sha256": "1345af63f4d0f75e6d49f734742b3404499c75799ce8f33fa01b538c6c64cd0f",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_OchreThread_Baked.mat",
+            "sha256": "0364d2104e1bab1faaa118be409517601b8132ffc8180c70f8275c5ce025b636",
+            "bytes": 4164
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_OchreThread_Baked.mat.meta",
+            "sha256": "ac0fe9b794b2a2d186593ed92dd0e7fee9e0e9ac1f0a08d8204390d07cb2c3b7",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Rubber_Baked.mat",
+            "sha256": "4ff3ae108358f04e290ed896f5ed644d248e2ca7e70b08e625b48978ef480c6c",
+            "bytes": 4159
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Rubber_Baked.mat.meta",
+            "sha256": "5a5ec8369c8d02c954f253ccb167e514272d82fb36731dac85362048ef06d705",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Skin_Baked.mat",
+            "sha256": "82fa3d95bc9839b833ee7a90cbdc21fad1081a5b49c38617a009bdc515262b75",
+            "bytes": 4157
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_Skin_Baked.mat.meta",
+            "sha256": "7e61d448012d35b8eb9bea014533bf684b424ba7102f24f9512c8d4dc479b402",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_TailoredClothing_Baked.mat",
+            "sha256": "1d1bffbb6425dda16ff43019ad8c0c0d22426616f5e549902356e303d04ffc74",
+            "bytes": 4170
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V2_AshV2_TailoredClothing_Baked.mat.meta",
+            "sha256": "af24ce300e15ca3f034f0e01d61e3bd274ae619e36ed4d44a16a3e4f50308233",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_AgedBrass_Baked.mat",
+            "sha256": "4057215efccd645da3dde06ccd280ded03b51d40b18f1d97337d86238250f1e3",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_AgedBrass_Baked.mat.meta",
+            "sha256": "33dafaf52ccd12fcdf8ebaba1aaea82b82901de8eb20f511717b63f4a961c7c5",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_AmberLens_Baked.mat",
+            "sha256": "a5e582ce53ac40dc66edce98dd0ef2d2d633cf17f982f4ee922418ae01302707",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_AmberLens_Baked.mat.meta",
+            "sha256": "9631eeae27570992ab58f5f3f91d085554fbc578f1257134e1e70b65fdcce510",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Brows_Baked.mat",
+            "sha256": "3dde95bf90360bb3ebdaf27e475c82a05984f717ec58c8fd45cfb2de1954cb9f",
+            "bytes": 4251
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Brows_Baked.mat.meta",
+            "sha256": "f302744853a83426c484e67737cfeedf4b3df6c9df72a762c3e1b8ee07096cea",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_CharcoalLeather_Baked.mat",
+            "sha256": "c7d4ea516de63401b368ac78001d20cffb7a7e1d035ce612e1be466463e1ef09",
+            "bytes": 4169
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_CharcoalLeather_Baked.mat.meta",
+            "sha256": "475c779a2a676c0353a3763f91807c2195fbaf24eb003f5e6f8d6e37babfcdb3",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Eyes_Baked.mat",
+            "sha256": "d70e3d5e4a1da739674d335691c82a0c373c404c6a3cfd9cc5826ba190da5065",
+            "bytes": 4158
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Eyes_Baked.mat.meta",
+            "sha256": "f89a42dba944d6a0935000e89e0fb0e4a273eae6fdaeed227dd5e49049b79096",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_HairFibers_Baked.mat",
+            "sha256": "34e847c4bc76bec04e2cfcf17d932241537b17747d29138f091c7bf3e02826d8",
+            "bytes": 4163
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_HairFibers_Baked.mat.meta",
+            "sha256": "21c3c577ad65de310abd18313a5cbaa8219be95b1a23bcf566efec406ef223ec",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Hair_Baked.mat",
+            "sha256": "e8c9fb1f254382583e24781a4e488d7d37eb8c49f039ebab2cd42d920684c8db",
+            "bytes": 4251
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Hair_Baked.mat.meta",
+            "sha256": "61d06e94bfb6b329c3202a7f595a733df19ccccf18d2d072afa4cdaee335d357",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_IvoryEnamel_Baked.mat",
+            "sha256": "279b80d0c83bda5fa720e141d0c4e2a2309af1731ef3972e002e90adf9e861ad",
+            "bytes": 4164
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_IvoryEnamel_Baked.mat.meta",
+            "sha256": "0514e6e4e4be298810a13964d4eb23c4ef43638e47d2e722e753848bad7c0dbc",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_OchreThread_Baked.mat",
+            "sha256": "a46572edd20cb5f29ebf749658f170062b9d960c70f8687147ee0dfb47885ea3",
+            "bytes": 4165
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_OchreThread_Baked.mat.meta",
+            "sha256": "8f1fccbb063f465acc1c62c26f3480e46971bc246d70fd19f488218b85386ec0",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Skin_Baked.mat",
+            "sha256": "7bc4acbe2ff4896237d1d6f8935606e463140c0b332c2bc3f70f171d7721d798",
+            "bytes": 4157
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Skin_Baked.mat.meta",
+            "sha256": "ff46f9a2ec7edcb132c9394963d38d523a790513fbca1dc7bc368fd3325fa7a3",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_TailoredClothing_Baked.mat",
+            "sha256": "0bdba85d9bc5af30ec6d4e78a8b82cca0b3f946272f79ef74027e4814dda00c7",
+            "bytes": 4168
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_TailoredClothing_Baked.mat.meta",
+            "sha256": "d66750a9b5df504b89fbf3a9b5d802c41cf3833fad001a59023c4c9c48af330d",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV3_BootLeather_Baked.mat",
+            "sha256": "6a621e7ca0c2ea5f274475e79181aef212df31b893ed1ff0e0b19897db57d662",
+            "bytes": 4164
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV3_BootLeather_Baked.mat.meta",
+            "sha256": "af158799c25ce039e16dd2b93a0e8a5bb1837fc966ca344866bb61148fb60def",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV3_Rubber_Baked.mat",
+            "sha256": "877ef6f31809f590dc3fdda4fc36b53e82851cf3a6e4c1fb61aab363ed97b408",
+            "bytes": 4159
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV3_Rubber_Baked.mat.meta",
+            "sha256": "6ed85387bf9709cc3bf201b745f321d390c7753d00c61b0e666297048ecabcb7",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Asphalt.mat",
+            "sha256": "6fc774d1114fefd35270573b0ac244b6982f39129fa7fef5c1c17f3498b3f2a2",
+            "bytes": 4106
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Asphalt.mat.meta",
+            "sha256": "bbbae13372d0c0f18abc5ad716686f4f223367c1d55770bbaeade26789710a90",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Cliff01.mat",
+            "sha256": "af8994aabfb95babd78cd703bd14e1f542b6763b11be6004e40d24fafbc1d30d",
+            "bytes": 4106
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Cliff01.mat.meta",
+            "sha256": "d294dc17bfe2453aee79f2afc51a22e0dc4086bfad62f73731a04ea60ecb296e",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Cliff02.mat",
+            "sha256": "c96973eebb0694d5569931c91cfc0017df8496a8bd8f060a3715863c644060fc",
+            "bytes": 4106
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Cliff02.mat.meta",
+            "sha256": "c3073133b475c8ae424f12ee1212dae530ce9c94a603e4b14bced05b1363346f",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Cliff03.mat",
+            "sha256": "a54ac19ed2621d57ff25ce6a069fbc5d4641d647b957ec0e8065a2149f59d120",
+            "bytes": 4106
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Cliff03.mat.meta",
+            "sha256": "d65f8ec8f1bd9f52b1ccd2aa0c1ffdd0afc19332030c5bb835ab8bd567f0a191",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_DryGrass.mat",
+            "sha256": "fef6006d2d93793d6e288d784c615f3957274e9c533afea8f57b3840524f6364",
+            "bytes": 4034
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_DryGrass.mat.meta",
+            "sha256": "1ac8c52d5cb29cf11739f2c83b99bce1531adc0532582b42239fcd4b88ddfcfd",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Galvanized.mat",
+            "sha256": "109fec21524e70f0ec71585ca2b4bab2481e6425344b92544f59366f643f4c27",
+            "bytes": 4037
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Galvanized.mat.meta",
+            "sha256": "2ad9e30e1736b877922d67fa0baf55b894401d443c466a48b875506d420b1926",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Gravel.mat",
+            "sha256": "fd3156ffadc0e516afd6dd2d6696e79b51495e656bb6e180c10b1fce5f6faa4b",
+            "bytes": 4105
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Gravel.mat.meta",
+            "sha256": "b1bab58c8ec3d608516a19b6b896f741cf4ca3c8d05c03ff66bb6bf3a64b4135",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Reflector.mat",
+            "sha256": "9441d13cb6727ef386d245d1fc3ab3dbbd941a49050f9c9d9d43735bea3e0d50",
+            "bytes": 4035
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Reflector.mat.meta",
+            "sha256": "81c142227258093e1e8e17f28d977812eef7c72360babc4b99820151f6255fde",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Sage.mat",
+            "sha256": "6813102e9d308e63c5fcb5dc4483da7212b93da196a93f1e4904f077badacab6",
+            "bytes": 4031
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Sage.mat.meta",
+            "sha256": "517911e075a2318a80effed78625b8b14b91f0c388d931b0eff06b510bd321d6",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Sandstone.mat",
+            "sha256": "1371c295ac61b80ed923a334d3e6245f15c03dca2bb15626fbdc81c087e7e374",
+            "bytes": 4109
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Sandstone.mat.meta",
+            "sha256": "5cd854568bb6fe54e08e1bd5e4c02a664c33b37b761f8a4fcf127eac5d17b807",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_WhitePaint.mat",
+            "sha256": "9af8e317683377fc79da3fcdaf4c6642d579249bc4359008faa068f09ca53796",
+            "bytes": 4037
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_WhitePaint.mat.meta",
+            "sha256": "b048905428df272bd77eda3e35901d5ca8f4258596f85b9e3b612cc6c3922221",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Wood.mat",
+            "sha256": "8de02ef10c040373d41b40d86d4912f628e46b30f00fc09b5a577a6682273feb",
+            "bytes": 4030
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_Wood.mat.meta",
+            "sha256": "a37a31cadd012524c92de36ce9d693463587b11004299002f3ab5a671be92dad",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_YellowPaint.mat",
+            "sha256": "3a870ef518342c27050b4fa13cc2db37ee1d2a7ed333840919ef602a5d04e52a",
+            "bytes": 4038
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v13_Canyon_YellowPaint.mat.meta",
+            "sha256": "4b75e4f71ba253d029a01046ef0d595c8bccc99588a05edbf5d769f4a277ca5e",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Asphalt.mat",
+            "sha256": "6d04377c49569811701f4175c293eaf6f1bb92c298c1ccf056ae7f33a5247724",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Asphalt.mat.meta",
+            "sha256": "9ece38ddeb5feb990cd007632ec6ad253668c8a4c62e76aec99299096eb39de9",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Cliff01.mat",
+            "sha256": "08c7580357a4321ed8236ae525a458da2c475b1cec38b73d35dad921a1bdefba",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Cliff01.mat.meta",
+            "sha256": "30032f4af76d2aba295a54e1b72d092215d9cdd605447556b0098216d6c6dd12",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Cliff02.mat",
+            "sha256": "a22585a3a582bed1ad8f25e0bea663fd2e2a01ce63d7e3bda8607a21dae99fb6",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Cliff02.mat.meta",
+            "sha256": "160c0c4ea513b9b2187e0c91354556fabe837970ba75c5649c229ab5a8eac823",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Cliff03.mat",
+            "sha256": "ac3ef469d6be6bc37930ca37b7373b0424d001645c012fc26e99d896e6b8d605",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Cliff03.mat.meta",
+            "sha256": "17755298ec5c6d991393e07500ed1d8286790b341db043d5c3d3621e20288195",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_DryGrass.mat",
+            "sha256": "c8d65d7630ab4fd4a3e10d44b77e8f1ff58e23f16b0811711e848444c867f387",
+            "bytes": 4089
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_DryGrass.mat.meta",
+            "sha256": "a132af33c13077e0ded1b0458c16af6cf8f67fd20be7855c39bfdf7578490bd0",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Galvanized.mat",
+            "sha256": "f13c57c15af913c8cacf8cb411fd17fb644306791f3b298656a26a394fd673a4",
+            "bytes": 4092
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Galvanized.mat.meta",
+            "sha256": "2c3c492d040356f7ecfbe5efd725833175da69f13aa7ffa6ca3d1b94f9e240af",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Gravel.mat",
+            "sha256": "650f008ee7f3ea00fc4695f6a8d466be46fcfe0587e123bdd3764bb1e4ede5e0",
+            "bytes": 4160
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Gravel.mat.meta",
+            "sha256": "0e69158a4c9f5f48c5f002e88478979a4d857d8f07b13aa5694d01f83dd275de",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Reflector.mat",
+            "sha256": "570d7483f531ade97984b85a4abbdbdff5798248fc2c17d45c4ac765584cc2c1",
+            "bytes": 4091
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Reflector.mat.meta",
+            "sha256": "f65967551622d3ac8451231e177e8d46a60f1aec64cda5a6461aeb4d0af85497",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Sage.mat",
+            "sha256": "cc16d6142f5ddc9fbe0dc8f35a34cd4034313cf005b7f8c331d94bcc059011c6",
+            "bytes": 4086
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Sage.mat.meta",
+            "sha256": "0ba1a8c7ddfe4d56826ea23df7bc25b455e038d2ddff40995b5cee1bda9f3c50",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Sandstone.mat",
+            "sha256": "693dec049e4ec074c45397188aeaf232a7036e221b20529d643414d3f1bc37de",
+            "bytes": 4165
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Sandstone.mat.meta",
+            "sha256": "0ac0f9596c24e4819264edf90e8ffa144d76efd3b7031c2632a0a619bf4382de",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_WhitePaint.mat",
+            "sha256": "96945a8525485ab9da54b22acd77b0a8d3d0783cf4bb61cea45e40175de35b4f",
+            "bytes": 4092
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_WhitePaint.mat.meta",
+            "sha256": "8da56ae5e223927d21242118d2f321c5a84547b6c39489271952602cc6c85ae0",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Wood.mat",
+            "sha256": "0e60b343a56299c5e037e9f9f26df22a5bf80c744b6a4596256ae29d28af45d6",
+            "bytes": 4086
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_Wood.mat.meta",
+            "sha256": "ad4f4caf9d5dfd0f4b160ed9c58ff112d5beaf30ab6726f15768a0e943694918",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_YellowPaint.mat",
+            "sha256": "aa14c52783ed9c37308853bf0f0ee26836f63590fcb5fab8770c7abeae0423a4",
+            "bytes": 4093
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Canyon_v14_Canyon_YellowPaint.mat.meta",
+            "sha256": "59b582a9963b926c2462db227a4a872bb2cf387b294600adfd57272494d6cdb6",
+            "bytes": 188
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs.meta",
+            "sha256": "bca9ff36c0f034d4b8aa89670f5c2c114ba40b6c9ed666344f4c8ee1e9c2d809",
+            "bytes": 172
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex.prefab",
+            "sha256": "2133b7457852f93ff67975256e54e59f476c77207ff0e7ac4a3d1666fb90a7a9",
+            "bytes": 7558
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex.prefab.meta",
+            "sha256": "3243047fb6825e2b92b6e46ba661e11f66e7ea21e571f475856774dae34704f6",
+            "bytes": 154
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8.prefab",
+            "sha256": "1245d541dee70802ed1af0cda70207b7e39cb10ced66bd89494c07c5fb4f410a",
+            "bytes": 7531
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8.prefab.meta",
+            "sha256": "8b53db5f54c2a9cdda0ba1e8c809f09d97863452ea2ed41435be7675150941d1",
+            "bytes": 154
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8_r2.prefab",
+            "sha256": "7554d52df6416ef7e854c536d418cc5607d23399093a524df697c3aca5712df7",
+            "bytes": 7531
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8_r2.prefab.meta",
+            "sha256": "cb433cc2e2940f96915233568c0ca19416a2fd92654f25f3845656926563656b",
+            "bytes": 154
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V2.prefab",
+            "sha256": "366f74ae04f3876bfabb1155f608581c1b8107a0bf4a636a9f4f1fb5223ebe83",
+            "bytes": 92048
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V2.prefab.meta",
+            "sha256": "bdbd1f24d8b07e0026196c97bdd02c14854072f96dbbc4109357311e245b0398",
+            "bytes": 154
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V3.prefab",
+            "sha256": "8c2b9f664628d1f6085ac48e15154dd8531d56876436fc23a75bd4e5ca45d98b",
+            "bytes": 93880
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V3.prefab.meta",
+            "sha256": "24955071f8d582691a49cee220ffc8bde66e5af0871196af49bd530415e5690d",
+            "bytes": 154
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v13.prefab",
+            "sha256": "35d6fdee08ff52f01edee6cd064c36e18f0b67fa4e008fb6406ec3c36e57e50e",
+            "bytes": 313574
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v13.prefab.meta",
+            "sha256": "36efe1523c36f0a5c63397f317b6f307243c0bcd9a7edadb3fd57788d5fc24a3",
+            "bytes": 154
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v14.prefab",
+            "sha256": "61c1bca4630f5dfb093adb4d2fea0fd5caed1de1aa5a87de5087043a47f21744",
+            "bytes": 2156596
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Canyon_v14.prefab.meta",
+            "sha256": "997367d4b4389e9391514293c035e198cb53a55b36e3051d3c99249c2bbf966a",
+            "bytes": 154
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/StudioReviewPipeline.asset.meta",
+            "sha256": "5ebef84c9b72ecefef9bba07b2625f17a4d49d5fe76462b7e985f12e45f777a5",
+            "bytes": 189
+        }
+    ],
+    "assets": [
+        {
+            "id": "RB_Golden_Apex_v8_r2",
+            "prefab": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8_r2.prefab",
+            "kind": "bike",
+            "passed": true,
+            "rootIdentity": true,
+            "materialSlotsPreserved": true,
+            "missingReferencesAbsent": true,
+            "rigValid": false,
+            "handednessValid": true,
+            "materialCount": 9,
+            "colliderCount": 1,
+            "rendererCount": 9,
+            "clipsSampled": 0,
+            "sampledVertices": 0,
+            "bounds": {
+                "x": 0.8240000009536743,
+                "y": 1.1776982545852662,
+                "z": 2.0633902549743654
+            },
+            "lodTriangles": [
+                79492,
+                34974,
+                11126
+            ]
+        },
+        {
+            "id": "RB_Golden_Ash_V3",
+            "prefab": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V3.prefab",
+            "kind": "rider",
+            "passed": true,
+            "rootIdentity": true,
+            "materialSlotsPreserved": true,
+            "missingReferencesAbsent": true,
+            "rigValid": true,
+            "handednessValid": true,
+            "materialCount": 13,
+            "colliderCount": 1,
+            "rendererCount": 3,
+            "clipsSampled": 12,
+            "sampledVertices": 27713400,
+            "bounds": {
+                "x": 1.1626403331756592,
+                "y": 1.8341854810714722,
+                "z": 0.5075989365577698
+            },
+            "lodTriangles": [
+                99339,
+                42124,
+                12706
+            ]
+        }
+    ],
+    "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
+}

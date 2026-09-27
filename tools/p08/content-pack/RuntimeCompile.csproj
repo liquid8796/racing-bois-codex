@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion>
+    <Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors><NoWarn>0436</NoWarn>
+    <DefineConstants>UNITY_EDITOR;UNITY_6000_0_OR_NEWER</DefineConstants>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../</ProjectRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Editor/P08ContentPackBuilder.cs" Link="P08ContentPackBuilder.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Editor/P08ArtBuilder.cs" Link="P08ArtBuilder.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/P08*.cs" Link="%(Filename).cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceAudioBank.cs" Link="RaceAudioBank.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/ContentRegistry.cs" Link="ContentRegistry.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/P08ContentLoader.cs" Link="P08ContentLoader.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/ContentManifestRules.cs" Link="ContentManifestRules.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/P08AudioRoles.cs" Link="P08AudioRoles.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+    <Reference Include="$(UnityManaged)/UnityEditor/*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Presentation.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll" />
+  </ItemGroup>
+</Project>

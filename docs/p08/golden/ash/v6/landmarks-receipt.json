@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V6.blend\"\nASH_V6_FACE_LANDMARKS {\"fields\": [{\"feature\": \"nasal-root\", \"center\": [0, -0.1584, 1.695], \"support\": [0.013, 0.022, 0.015], \"peakDelta\": [0, -0.0036, 0]}, {\"feature\": \"nasal-dorsum\", \"center\": [0, -0.172, 1.678], \"support\": [0.011, 0.024, 0.019], \"peakDelta\": [0, -0.0035, 0.0005]}, {\"feature\": \"nasal-tip\", \"center\": [0, -0.184, 1.653], \"support\": [0.013, 0.016, 0.012], \"peakDelta\": [0, -0.001, 0.0013]}, {\"feature\": \"chin-projection\", \"center\": [0, -0.157, 1.591], \"support\": [0.029, 0.024, 0.014], \"peakDelta\": [0, -0.0033, -0.0035]}, {\"feature\": \"lower-lip\", \"center\": [0, -0.165, 1.62], \"support\": [0.026, 0.016, 0.006], \"peakDelta\": [0, 0.001, 0.001]}, {\"feature\": \"philtrum\", \"center\": [0, -0.164, 1.634], \"support\": [0.01, 0.015, 0.007], \"peakDelta\": [0, -0.0012, 0]}, {\"feature\": \"malar-apex\", \"center\": [-0.052, -0.135, 1.674], \"support\": [0.016, 0.03, 0.014], \"peakDelta\": [-0.0012, -0.001, 0.0003]}, {\"feature\": \"submalar-hollow\", \"center\": [-0.049, -0.119, 1.642], \"support\": [0.017, 0.035, 0.02], \"peakDelta\": [0.002, 0.0033, 0]}, {\"feature\": \"mandibular-angle\", \"center\": [-0.062, -0.07, 1.611], \"support\": [0.02, 0.027, 0.019], \"peakDelta\": [-0.0023, 0.0008, -0.003]}, {\"feature\": \"chin-corner\", \"center\": [-0.023, -0.143, 1.592], \"support\": [0.011, 0.025, 0.012], \"peakDelta\": [-0.001, -0.0022, -0.0018]}, {\"feature\": \"alar-side\", \"center\": [-0.017, -0.159, 1.65], \"support\": [0.009, 0.018, 0.01], \"peakDelta\": [0.0013, 0, 0.0004]}, {\"feature\": \"medial-brow\", \"center\": [-0.022, -0.157, 1.708], \"support\": [0.012, 0.021, 0.008], \"peakDelta\": [0, -0.0012, -0.0008]}, {\"feature\": \"upper-eyelid\", \"center\": [-0.034, -0.146, 1.701], \"support\": [0.014, 0.014, 0.0035], \"peakDelta\": [0, -0.0006, -0.0002]}, {\"feature\": \"mouth-corner\", \"center\": [-0.026, -0.15, 1.621], \"support\": [0.009, 0.018, 0.007], \"peakDelta\": [0, 0.0004, 0.0007]}, {\"feature\": \"malar-apex\", \"center\": [0.052, -0.135, 1.674], \"support\": [0.016, 0.03, 0.014], \"peakDelta\": [0.0012, -0.001, 0.0003]}, {\"feature\": \"submalar-hollow\", \"center\": [0.049, -0.119, 1.642], \"support\": [0.017, 0.035, 0.02], \"peakDelta\": [-0.002, 0.0033, 0]}, {\"feature\": \"mandibular-angle\", \"center\": [0.062, -0.07, 1.611], \"support\": [0.02, 0.027, 0.019], \"peakDelta\": [0.0023, 0.0008, -0.003]}, {\"feature\": \"chin-corner\", \"center\": [0.023, -0.143, 1.592], \"support\": [0.011, 0.025, 0.012], \"peakDelta\": [0.001, -0.0022, -0.0018]}, {\"feature\": \"alar-side\", \"center\": [0.017, -0.159, 1.65], \"support\": [0.009, 0.018, 0.01], \"peakDelta\": [-0.0013, 0, 0.0004]}, {\"feature\": \"medial-brow\", \"center\": [0.022, -0.157, 1.708], \"support\": [0.012, 0.021, 0.008], \"peakDelta\": [0, -0.0012, -0.0008]}, {\"feature\": \"upper-eyelid\", \"center\": [0.034, -0.146, 1.701], \"support\": [0.014, 0.014, 0.0035], \"peakDelta\": [0, -0.0006, -0.0002]}, {\"feature\": \"mouth-corner\", \"center\": [0.026, -0.15, 1.621], \"support\": [0.009, 0.018, 0.007], \"peakDelta\": [0, 0.0004, 0.0007]}], \"lods\": [{\"lod\": 0, \"modifiedFaceVertices\": 7832, \"maximumDeltaMetres\": 0.005237751124080203}, {\"lod\": 1, \"modifiedFaceVertices\": 2567, \"maximumDeltaMetres\": 0.005094092486616435}, {\"lod\": 2, \"modifiedFaceVertices\": 341, \"maximumDeltaMetres\": 0.005014354679363427}], \"rigOrActionEdits\": false, \"visualAccepted\": false}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V6.blend\"\nASH_V6_FACE_LANDMARKS {\"fields\": [{\"feature\": \"nasal-root\", \"center\": [0, -0.1584, 1.695], \"support\": [0.013, 0.022, 0.015], \"peakDelta\": [0, -0.0036, 0]}, {\"feature\": \"nasal-dorsum\", \"center\": [0, -0.172, 1.678], \"support\": [0.011, 0.024, 0.019], \"peakDelta\": [0, -0.0035, 0.0005]}, {\"feature\": \"nasal-tip\", \"center\": [0, -0.184, 1.653], \"support\": [0.013, 0.016, 0.012], \"peakDelta\": [0, -0.001, 0.0013]}, {\"feature\": \"chin-projection\", \"center\": [0, -0.157, 1.591], \"support\": [0.029, 0.024, 0.014], \"peakDelta\": [0, -0.0033, -0.0035]}, {\"feature\": \"lower-lip\", \"center\": [0, -0.165, 1.62], \"support\": [0.026, 0.016, 0.006], \"peakDelta\": [0, 0.001, 0.001]}, {\"feature\": \"philtrum\", \"center\": [0, -0.164, 1.634], \"support\": [0.01, 0.015, 0.007], \"peakDelta\": [0, -0.0012, 0]}, {\"feature\": \"malar-apex\", \"center\": [-0.052, -0.135, 1.674], \"support\": [0.016, 0.03, 0.014], \"peakDelta\": [-0.0012, -0.001, 0.0003]}, {\"feature\": \"submalar-hollow\", \"center\": [-0.049, -0.119, 1.642], \"support\": [0.017, 0.035, 0.02], \"peakDelta\": [0.002, 0.0033, 0]}, {\"feature\": \"mandibular-angle\", \"center\": [-0.062, -0.07, 1.611], \"support\": [0.02, 0.027, 0.019], \"peakDelta\": [-0.0023, 0.0008, -0.003]}, {\"feature\": \"chin-corner\", \"center\": [-0.023, -0.143, 1.592], \"support\": [0.011, 0.025, 0.012], \"peakDelta\": [-0.001, -0.0022, -0.0018]}, {\"feature\": \"alar-side\", \"center\": [-0.017, -0.159, 1.65], \"support\": [0.009, 0.018, 0.01], \"peakDelta\": [0.0013, 0, 0.0004]}, {\"feature\": \"medial-brow\", \"center\": [-0.022, -0.157, 1.708], \"support\": [0.012, 0.021, 0.008], \"peakDelta\": [0, -0.0012, -0.0008]}, {\"feature\": \"upper-eyelid\", \"center\": [-0.034, -0.146, 1.701], \"support\": [0.014, 0.014, 0.0035], \"peakDelta\": [0, -0.0006, -0.0002]}, {\"feature\": \"mouth-corner\", \"center\": [-0.026, -0.15, 1.621], \"support\": [0.009, 0.018, 0.007], \"peakDelta\": [0, 0.0004, 0.0007]}, {\"feature\": \"malar-apex\", \"center\": [0.052, -0.135, 1.674], \"support\": [0.016, 0.03, 0.014], \"peakDelta\": [0.0012, -0.001, 0.0003]}, {\"feature\": \"submalar-hollow\", \"center\": [0.049, -0.119, 1.642], \"support\": [0.017, 0.035, 0.02], \"peakDelta\": [-0.002, 0.0033, 0]}, {\"feature\": \"mandibular-angle\", \"center\": [0.062, -0.07, 1.611], \"support\": [0.02, 0.027, 0.019], \"peakDelta\": [0.0023, 0.0008, -0.003]}, {\"feature\": \"chin-corner\", \"center\": [0.023, -0.143, 1.592], \"support\": [0.011, 0.025, 0.012], \"peakDelta\": [0.001, -0.0022, -0.0018]}, {\"feature\": \"alar-side\", \"center\": [0.017, -0.159, 1.65], \"support\": [0.009, 0.018, 0.01], \"peakDelta\": [-0.0013, 0, 0.0004]}, {\"feature\": \"medial-brow\", \"center\": [0.022, -0.157, 1.708], \"support\": [0.012, 0.021, 0.008], \"peakDelta\": [0, -0.0012, -0.0008]}, {\"feature\": \"upper-eyelid\", \"center\": [0.034, -0.146, 1.701], \"support\": [0.014, 0.014, 0.0035], \"peakDelta\": [0, -0.0006, -0.0002]}, {\"feature\": \"mouth-corner\", \"center\": [0.026, -0.15, 1.621], \"support\": [0.009, 0.018, 0.007], \"peakDelta\": [0, 0.0004, 0.0007]}], \"lods\": [{\"lod\": 0, \"modifiedFaceVertices\": 7832, \"maximumDeltaMetres\": 0.005237751124080203}, {\"lod\": 1, \"modifiedFaceVertices\": 2567, \"maximumDeltaMetres\": 0.005094092486616435}, {\"lod\": 2, \"modifiedFaceVertices\": 341, \"maximumDeltaMetres\": 0.005014354679363427}], \"rigOrActionEdits\": false, \"visualAccepted\": false}\n"
+    },
+    "isError": false
+  }
+}

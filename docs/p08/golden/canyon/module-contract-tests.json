@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "scope": "Strict schema/hash/coverage parsing only; native Unity hierarchy, mesh and culling checks require ProbeModuleLods.",
+  "utc": "2026-09-26T20:21:30.6046327Z",
+  "count": 22,
+  "results": [
+    {
+      "name": "valid",
+      "passed": true,
+      "accepted": true,
+      "moduleCount": 2,
+      "rejection": null
+    },
+    {
+      "name": "unknown-root-field",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "unknown-root-type-metadata",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "unknown-source-type-metadata",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "duplicate-root-field",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "escaped-duplicate-field",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "unknown-source-field",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "unknown-lod-field",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "wrong-source",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "wrong-asset",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "empty-modules",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "duplicate-module-case",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "reserved-module-id",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "missing-coverage",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "duplicated-renderer",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "wrong-logical-lod",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "unsafe-renderer-path",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "increasing-height",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "string-height",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "overflow-height",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "string-schema",
+      "passed": true,
+      "accepted": false,
+      "moduleCount": 0,
+      "rejection": "InvalidOperationException"
+    },
+    {
+      "name": "actual-canyon-217-modules",
+      "passed": true,
+      "accepted": true,
+      "moduleCount": 217,
+      "rejection": null
+    }
+  ],
+  "implementationSha256": "f85bc31422303e74714b902310115743f89cee800fae33c593a3f6f02c9b9d0b"
+}

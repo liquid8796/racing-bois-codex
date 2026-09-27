@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion>
+    <Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors><NoWarn>0436</NoWarn>
+    <DefineConstants Condition="'$(DefineConstants)'==''">UNITY_STANDALONE_WIN</DefineConstants>
+    <AssemblyName>RacingBois.P08.UI.Preflight</AssemblyName>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../</ProjectRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceConfiguration.cs" Link="DesktopAcceptanceConfiguration.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceRecorder.cs" Link="DesktopAcceptanceRecorder.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/SceneScrim.cs" Link="SceneScrim.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs" Link="RiderAnimationSet.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs" Link="DesktopRuntimeConfig.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/ContentManifestRules.cs" Link="ContentManifestRules.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/DesktopConfiguration.cs" Link="DesktopConfiguration.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/P08ContentLoader.cs" Link="P08ContentLoader.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/P08MusicDirector.cs" Link="P08MusicDirector.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs" Link="BrowserSocketTransport.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs" Link="RaceBootstrap.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/BootstrapCinematicCoordinator.cs" Link="BootstrapCinematicCoordinator.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs" Link="RaceScreen.Content.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceScreen.cs" Link="RaceScreen.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/UiViewState.cs" Link="UiViewState.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/UiBindingScope.cs" Link="UiBindingScope.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/CareerView.cs" Link="CareerView.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs" Link="DesktopDisplaySettings.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/CinematicGalleryView.cs" Link="CinematicGalleryView.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/CinematicDirector.cs" Link="CinematicDirector.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/CinematicPoseSampler.cs" Link="CinematicPoseSampler.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/RaceStageView.cs" Link="RaceStageView.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs" Link="MultiplayerCopy.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs" Link="MultiplayerLobbyView.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Simulation.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Protocol.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.NetworkMapping.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.InputSystem.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.*.dll" />
+  </ItemGroup>
+</Project>

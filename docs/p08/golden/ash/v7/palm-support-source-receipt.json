@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V7_MenuPalmSource.blend\"\nInfo: Saved as \"RB_Golden_Ash_V7.blend\"\nASH_V7_PALM_SUPPORT_SOURCE {\"targets\": {\"L\": {\"surface\": [-0.18000000715255737, -0.2800000011920929, 1.0174285173416138], \"normal\": [0.24216701090335846, 0.10996441543102264, 0.963982880115509], \"wrist\": [-0.11374779790639877, -0.23790058493614197, 1.0277881622314453], \"palmSupportOffset\": -0.029460046207532287, \"palmVertices\": 487}, \"R\": {\"surface\": [-0.23000000417232513, 0.5099999904632568, 1.0057402849197388], \"normal\": [0.11115417629480362, -0.2868672311306, 0.9514998197555542], \"wrist\": [-0.1653452217578888, 0.4659981429576874, 1.0165095329284668], \"palmSupportOffset\": -0.028856264427304268, \"palmVertices\": 485}}, \"frames\": 17, \"scope\": \"MenuHero upper-arm/forearm/hand/finger quaternion curves only\", \"preservedRestMeshesAndGameplay\": true, \"visualAccepted\": false}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V7_MenuPalmSource.blend\"\nInfo: Saved as \"RB_Golden_Ash_V7.blend\"\nASH_V7_PALM_SUPPORT_SOURCE {\"targets\": {\"L\": {\"surface\": [-0.18000000715255737, -0.2800000011920929, 1.0174285173416138], \"normal\": [0.24216701090335846, 0.10996441543102264, 0.963982880115509], \"wrist\": [-0.11374779790639877, -0.23790058493614197, 1.0277881622314453], \"palmSupportOffset\": -0.029460046207532287, \"palmVertices\": 487}, \"R\": {\"surface\": [-0.23000000417232513, 0.5099999904632568, 1.0057402849197388], \"normal\": [0.11115417629480362, -0.2868672311306, 0.9514998197555542], \"wrist\": [-0.1653452217578888, 0.4659981429576874, 1.0165095329284668], \"palmSupportOffset\": -0.028856264427304268, \"palmVertices\": 485}}, \"frames\": 17, \"scope\": \"MenuHero upper-arm/forearm/hand/finger quaternion curves only\", \"preservedRestMeshesAndGameplay\": true, \"visualAccepted\": false}\n"
+    },
+    "isError": false
+  }
+}

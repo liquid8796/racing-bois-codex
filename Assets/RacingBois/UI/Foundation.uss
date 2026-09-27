@@ -1,0 +1,32 @@
+.surface { flex-grow: 1; color: rgb(239, 238, 230); -unity-font-style: normal; }
+.surface, .surface .unity-text-element { -unity-font-definition: url("Fonts/NotoSans-Regular SDF.asset"); }
+.topbar { position: absolute; top: 32px; left: 48px; right: 48px; height: 48px; flex-direction: row; justify-content: space-between; align-items: center; }
+.brand { font-size: 19px; -unity-font-style: bold; letter-spacing: 2px; }
+.topright { flex-direction: row; align-items: center; }
+.eyebrow { font-size: 12px; letter-spacing: 2px; color: rgb(167, 178, 188); }
+.accent { color: rgb(255, 149, 70); }
+.status { margin-left: 26px; font-size: 11px; -unity-font-style: bold; color: rgb(240, 184, 105); border-left-width: 2px; border-left-color: rgb(240, 184, 105); padding-left: 12px; }
+.menu { position: absolute; left: 70px; top: 112px; width: 450px; padding: 26px; background-color: rgba(9, 17, 23, 0.92); border-left-width: 2px; border-left-color: rgba(255, 149, 70, 0.5); }
+.title { font-size: 80px; -unity-font-style: bold; letter-spacing: -2px; margin-top: 10px; margin-bottom: 8px; white-space: normal; }
+.subtitle { font-size: 28px; margin-bottom: 12px; }
+.description { font-size: 16px; color: rgb(171, 184, 195); white-space: normal; }
+.divider { height: 1px; background-color: rgba(150, 166, 175, 0.25); margin-top: 18px; margin-bottom: 14px; }
+.endpoint { height: 43px; margin-top: 9px; margin-bottom: 13px; font-size: 16px; }
+.endpoint .unity-base-text-field__input { background-color: rgb(24, 36, 45); color: rgb(231, 235, 236); border-width: 1px; border-color: rgb(59, 77, 90); padding-left: 12px; }
+.primary { height: 57px; background-color: rgb(255, 145, 63); color: rgb(20, 24, 27); border-width: 0; border-radius: 3px; font-size: 16px; -unity-font-style: bold; letter-spacing: 1px; margin-left: 0; margin-right: 0; transition-property: background-color, scale; transition-duration: 0.12s; }
+.primary:hover { background-color: rgb(255, 181, 119); scale: 1.015 1.015; }
+.primary:active { background-color: rgb(229, 116, 36); scale: 0.99 0.99; }
+.primary:focus, .secondary:focus { border-width: 2px; border-color: rgb(255, 241, 211); }
+.primary:disabled { background-color: rgb(83, 88, 89); color: rgb(191, 199, 201); }
+.hint { font-size: 13px; color: rgb(175, 189, 198); margin-top: 12px; white-space: normal; }
+.motion { margin-top: 12px; font-size: 13px; color: rgb(175, 189, 198); }
+.bottomline { position: absolute; bottom: 26px; left: 48px; right: 48px; flex-direction: row; justify-content: space-between; }
+.controls { font-size: 12px; color: rgb(208, 215, 216); letter-spacing: 1px; }
+.hud { position: absolute; left: 55px; right: 55px; bottom: 94px; flex-direction: row; justify-content: space-between; display: none; }
+.speed-block { background-color: rgba(9, 17, 23, .88); padding: 20px; min-width: 184px; border-left-width: 3px; border-left-color: rgb(255, 145, 63); }
+.speed { font-size: 80px; -unity-font-style: bold; }
+.race-info { align-items: flex-end; padding: 18px; background-color: rgba(9, 17, 23, .86); }
+.distance { font-size: 29px; margin-top: 8px; }
+.secondary { height: 40px; margin-top: 17px; padding-left: 18px; padding-right: 18px; background-color: rgb(29, 45, 57); border-width: 1px; border-color: rgb(70, 91, 106); color: rgb(229, 233, 234); font-size: 12px; }
+.reduced-motion .primary { transition-duration: 0s; }
+.reduced-motion .primary:hover { scale: 1 1; }

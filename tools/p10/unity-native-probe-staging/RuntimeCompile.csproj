@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9.0</LangVersion><Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>UNITY_STANDALONE_WIN;ENABLE_MONO</DefineConstants>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../</ProjectRoot>
+    <AssemblyName>RacingBois.NativeProbe.RuntimePreflight</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../../src/Shared/RacingBois.NetworkMapping/RacingBois.NetworkMapping.csproj" /></ItemGroup>
+  <ItemGroup>
+    <Compile Include="Runtime/*.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/*.cs" Link="Application/%(Filename)%(Extension)" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs" Link="Adapters/BrowserSocketTransport.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/UnityWireCodec.cs" Link="Adapters/UnityWireCodec.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/UnityMultiplayerStorage.cs" Link="Adapters/UnityMultiplayerStorage.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+  </ItemGroup>
+</Project>

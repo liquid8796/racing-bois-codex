@@ -1,0 +1,596 @@
+{
+  "generated_utc": "2026-09-21T07:22:21.725879+00:00",
+  "phase": "P03/P04 concept-guided gameplay art",
+  "authorship": "Newly authored procedural geometry and palette textures; no reference-game art copied",
+  "concept_model": "Unspecified by exposed image-generation provider; not a verified GPT Image 2.5 identity",
+  "sequence": "Initial graybox archived; concept PNGs generated and visually inspected; geometry revised from concepts; Blender MCP export and independent geometry audit; Unity import validation separately recorded",
+  "coordinate_contract": {
+    "meters": true,
+    "unity_root": "position0 rotationidentity scale1",
+    "authoring_helper": "Unity-intended (x,y,z) -> Blender (-x,-z,y)",
+    "fbx": "axis_forward=-Z, axis_up=Y, apply_unit_scale=True, FBX_SCALE_ALL, bake_space_transform=False",
+    "unity": "identity prefab root; Model child preserves imported rotation then premultiplies Y180; imported child scale1",
+    "animation": "Conjugate desired Unity rotation through Model local rotation; do not overwrite the conversion basis"
+  },
+  "material_budget": {
+    "distinct_materials": 4,
+    "race_and_police_maps": 256,
+    "pedestrian_maps": 128,
+    "canyon_base": 128,
+    "canyon_surface_maps": 32
+  },
+  "qa": {
+    "mesh_count": 87,
+    "audits": [
+      {
+        "path": "docs/p03/assets/independent-mesh-audit.json",
+        "bytes": 49701,
+        "sha256": "9cf43ee45c17b47acb1d1e02256683ea7a76d76fd9fbae9900362f3f22ddcaf4",
+        "passed": true,
+        "mesh_count": 48,
+        "bounds": [
+          {
+            "asset": "RB_Motorcycle",
+            "unity_axis_min": [
+              -0.47499996423721313,
+              0.0,
+              -1.0700000524520874
+            ],
+            "unity_axis_max": [
+              0.4750000238418579,
+              1.1959999799728394,
+              1.0500000715255737
+            ],
+            "size_m": [
+              0.949999988079071,
+              1.1959999799728394,
+              2.120000123977661
+            ],
+            "center_m": [
+              2.9802322387695312e-08,
+              0.5979999899864197,
+              -0.009999990463256836
+            ]
+          },
+          {
+            "asset": "RB_Rider",
+            "unity_axis_min": [
+              -0.4350000023841858,
+              0.004999995231628418,
+              -0.18000000715255737
+            ],
+            "unity_axis_max": [
+              0.4350000023841858,
+              1.818261742591858,
+              0.24500001966953278
+            ],
+            "size_m": [
+              0.8700000047683716,
+              1.8132617473602295,
+              0.42500002682209015
+            ],
+            "center_m": [
+              0.0,
+              0.9116308689117432,
+              0.0325000062584877
+            ]
+          },
+          {
+            "asset": "RB_TrafficCoupe",
+            "unity_axis_min": [
+              -1.0800000429153442,
+              0.0,
+              -2.2699999809265137
+            ],
+            "unity_axis_max": [
+              1.0800000429153442,
+              1.3600000143051147,
+              2.2699999809265137
+            ],
+            "size_m": [
+              2.1600000858306885,
+              1.3600000143051147,
+              4.539999961853027
+            ],
+            "center_m": [
+              0.0,
+              0.6800000071525574,
+              0.0
+            ]
+          },
+          {
+            "asset": "RB_TrafficVan",
+            "unity_axis_min": [
+              -1.15500009059906,
+              0.0,
+              -2.320000171661377
+            ],
+            "unity_axis_max": [
+              1.15500009059906,
+              2.2900002002716064,
+              2.320000171661377
+            ],
+            "size_m": [
+              2.31000018119812,
+              2.2900002002716064,
+              4.640000343322754
+            ],
+            "center_m": [
+              0.0,
+              1.1450001001358032,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/p03/assets/independent-pedestrian-audit.json",
+        "bytes": 34185,
+        "sha256": "297e28140ba4d06a74b6392e2751dea69f77019781b412f223f51080f0961deb",
+        "passed": true,
+        "mesh_count": 33,
+        "bounds": [
+          {
+            "asset": "RB_Pedestrian",
+            "unity_axis_min": [
+              -0.38924112915992737,
+              0.007499992847442627,
+              -0.15049999952316284
+            ],
+            "unity_axis_max": [
+              0.38924112915992737,
+              1.7780001163482666,
+              0.2214999943971634
+            ],
+            "size_m": [
+              0.7784822583198547,
+              1.770500123500824,
+              0.37199999392032623
+            ],
+            "center_m": [
+              0.0,
+              0.8927500545978546,
+              0.035499997437000275
+            ]
+          }
+        ]
+      },
+      {
+        "path": "docs/p03/assets/independent-canyon-audit.json",
+        "bytes": 10589,
+        "sha256": "826c1556e4e8319e9e84d0811663060e8fd8f762895438416bec579cce2d7c4d",
+        "passed": true,
+        "mesh_count": 6,
+        "bounds": [
+          {
+            "asset": "RB_Sandstone",
+            "unity_axis_min": [
+              -0.7861304879188538,
+              0.0,
+              -0.6526124477386475
+            ],
+            "unity_axis_max": [
+              0.8199999928474426,
+              1.089749813079834,
+              0.6340532302856445
+            ],
+            "size_m": [
+              1.6061304807662964,
+              1.089749813079834,
+              1.286665678024292
+            ],
+            "center_m": [
+              0.016934752464294434,
+              0.544874906539917,
+              -0.009279608726501465
+            ]
+          },
+          {
+            "asset": "RB_SageScrub",
+            "unity_axis_min": [
+              -0.3249554932117462,
+              0.029999999329447746,
+              -0.22413849830627441
+            ],
+            "unity_axis_max": [
+              0.2710273563861847,
+              0.6800000071525574,
+              0.2840091288089752
+            ],
+            "size_m": [
+              0.5959828495979309,
+              0.6500000078231096,
+              0.5081476271152496
+            ],
+            "center_m": [
+              -0.02696406841278076,
+              0.35500000324100256,
+              0.029935315251350403
+            ]
+          }
+        ]
+      }
+    ],
+    "unity": {
+      "path": "docs/p03/assets/unity-validation.json",
+      "bytes": 5405,
+      "sha256": "92b8ae0982058d1c418733755e626b326f8c2d08b52e41f5c5a11f3a0d0194d8",
+      "passed": true,
+      "prefabs": 8,
+      "version": "6000.5.7f1"
+    }
+  },
+  "limitations": [
+    "Gameplay art, not photoreal concept-render parity or complete P06 art acceptance",
+    "Rigid articulated character parts, not final deforming Humanoid rig/cleaned animation clips",
+    "Flat authored palette maps intentionally share UV tiles; no unique detail texture atlas claimed",
+    "Geometry audit does not prove final browser frame-rate, memory or action-silhouette acceptance"
+  ],
+  "files": [
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_Motorcycle.fbx",
+      "bytes": 244572,
+      "sha256": "68b6c3561270e1f5ac173c1b65e76202ee00e1c1972decfbc5390dedb94bbaf2"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_TrafficCoupe.fbx",
+      "bytes": 265548,
+      "sha256": "a2f3a789342f9199dd972830c931f43d96e5b60ffa83b863f8d6c029a4cd195e"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_TrafficVan.fbx",
+      "bytes": 312492,
+      "sha256": "96f5f2846a5caeb8421e60cca279b97d67fad31c2420d5b22a681ebc7d7dab08"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_PolicePalette_BaseColor.png",
+      "bytes": 2115,
+      "sha256": "8af3e4ff990db6706e29808b3b1c4cee95c9677fd470948f9ab2b5dca8d6cfd4"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_BaseColor.png",
+      "bytes": 2115,
+      "sha256": "6456a431f8dccad93b86cffa3b47eb905753e35e8626deabfe2e632eb03a29fe"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_MetallicSmoothness.png",
+      "bytes": 2108,
+      "sha256": "86ebb80929feddadefbc944529c076eca5cd08ffc7468c0a8735ca1c23f06ec6"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_Normal.png",
+      "bytes": 1852,
+      "sha256": "4404e0b1772ae7b79c2de72b7b5295980a32531099f7ab41c887b8c20533eb2e"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_Roughness.png",
+      "bytes": 2090,
+      "sha256": "db400d7cc9b68164743954082acff79655ac3569c99fd73a6cab298bf006eccd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_Motorcycle.fbx.meta",
+      "bytes": 2993,
+      "sha256": "ce138e1e68a528f8d50fd7cf1f41c3a2842d24bf40ce110694d3efe1e49ca120"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_PolicePalette_BaseColor.png.meta",
+      "bytes": 3005,
+      "sha256": "a1a8bc8fee0a8b106a8a56999fb20545308b5a288ffb828b3cd57b7bebffaa01"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_BaseColor.png.meta",
+      "bytes": 3005,
+      "sha256": "f6ab6d8c37d2fe9b9f5ae40d506fb66e19464a9e0e44a9436b8dcc6269b75053"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_MetallicSmoothness.png.meta",
+      "bytes": 3005,
+      "sha256": "c86eb05f5324481b57b6b665511f84fae740c73f40a80951f05e58d9e86d2e66"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_Normal.png.meta",
+      "bytes": 3005,
+      "sha256": "26950fd1769409933098a52465903289de6cb933ee51add568971b7402a9e236"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_RacePalette_Roughness.png.meta",
+      "bytes": 3005,
+      "sha256": "ae49e83a2cdb743d72397d77812912fdecdb69bd77ebde817c4cff6dc170c2d5"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_TrafficCoupe.fbx.meta",
+      "bytes": 2993,
+      "sha256": "85db6702779526cb99a3285de253a5b6a1c4341eaab5006b672c85449d64d3ab"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Vehicles/RB_TrafficVan.fbx.meta",
+      "bytes": 2993,
+      "sha256": "9708521d4df2ff06a92f56db39d53c5e45bd6720bb10f8e3d9c2bfcb86473add"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian.fbx",
+      "bytes": 200060,
+      "sha256": "51094dd55a4915f0fae0c3c8ae9546ef6f8ab67c5ccae66a4c07be674d69acc0"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Rider.fbx",
+      "bytes": 301932,
+      "sha256": "5e6060b313cdd6ac0e61081ba69d9042c438c104ff39eee88a4f3c11b4ddd4fe"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_BaseColor.png",
+      "bytes": 897,
+      "sha256": "98c097f4bf5c21ed83808b5ff40b518070be3b4dd5725287a732dde4472e2907"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_MetallicSmoothness.png",
+      "bytes": 710,
+      "sha256": "21b4d377a9edafd6b6df89ba377c28202ce7612ed79ff9bf1bb98dd9d2bfd253"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_Normal.png",
+      "bytes": 709,
+      "sha256": "6934fbce5cbb50f2de8bd1abc53a8c7160ea50eb0ae2b9ab5003632a2c66ada5"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_Roughness.png",
+      "bytes": 710,
+      "sha256": "7b3f49afd483e457caa0ab66126c88fc8c0ac06ab8829de3468d8c382cf377bb"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian.fbx.meta",
+      "bytes": 2993,
+      "sha256": "a36f7b2c53e9c3a1bd8f8358be05bd3c0d211a4549bdf41e38f29ecb56eccc55"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_BaseColor.png.meta",
+      "bytes": 3005,
+      "sha256": "6091b1d472a21db7c7b90b6902033f184ba4c552aecd460ca4331221c1d33663"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_MetallicSmoothness.png.meta",
+      "bytes": 3005,
+      "sha256": "24864b71de03768731d7a02adea3efa5c5596ef1916fc3f92e93b7f44441dd9f"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_Normal.png.meta",
+      "bytes": 3005,
+      "sha256": "c9c25d87a52425afac821ab5d14e4c85e592daa59f0194a752e65038ac4fe9ba"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_Roughness.png.meta",
+      "bytes": 3005,
+      "sha256": "1640ecd1e24cf54bd2bf78ed2d1334801894fed63fc4c511754489ca73bf986f"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Characters/RB_Rider.fbx.meta",
+      "bytes": 2993,
+      "sha256": "2c8fa863af493d7d67fc30652eda42e096fe5ab05976d1200aa42fdb0dc728af"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_SageScrub.fbx",
+      "bytes": 31164,
+      "sha256": "7ba89c3798b438221caa4e96edf1a78457d54736a3b516447cd096c2bc27f9ed"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Sandstone.fbx",
+      "bytes": 30540,
+      "sha256": "c6296b0db2a6a39db87d3a9f577ca4053752bf032a84b9a8030696df80ee20b9"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_BaseColor.png",
+      "bytes": 734,
+      "sha256": "f507e3def2050adc04c658387b0c23b341c3856973288ca969ba493e37f142b9"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_MetallicSmoothness.png",
+      "bytes": 291,
+      "sha256": "9f875fce04546c6fdbeadc98513dc613e1c2aab84b0a04f5c7cf6a3230a7e840"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_Normal.png",
+      "bytes": 289,
+      "sha256": "deceba8dca02547d6552ecd03476699d785f905fe8b7dd14f091579b4b3dab74"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_Roughness.png",
+      "bytes": 291,
+      "sha256": "597423279e77ec4a4a64ecb716ed826c605d87b4229dd1c4a4b64c0347bb27f2"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_BaseColor.png.meta",
+      "bytes": 3005,
+      "sha256": "5abe29209f7ca4c133b3502846cceb9e7df0b4a72c24c6c209dd0f6b61e510eb"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_MetallicSmoothness.png.meta",
+      "bytes": 3003,
+      "sha256": "a312d25820fd9faf262e5942fe2ec199ef8a2ffc6c383769aecaac84a9cf4d98"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_Normal.png.meta",
+      "bytes": 3003,
+      "sha256": "353339ca03de2acc3ee099c4944c4ea2864cb86acbd4befb030f3dedc949aaca"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Canyon_Roughness.png.meta",
+      "bytes": 3003,
+      "sha256": "9af7b4ca9a1d2d0e4082b1e445a79d4a1e1e0c2fcb52453f64c91afb5e335caa"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_SageScrub.fbx.meta",
+      "bytes": 2993,
+      "sha256": "7aaa9597161fe6937e74b1460e9fba9fcfbd25423c782218969c9ceffbb0e715"
+    },
+    {
+      "path": "Assets/RacingBois/Art/Props/Canyon/RB_Sandstone.fbx.meta",
+      "bytes": 2993,
+      "sha256": "3fb6082d152250e351263626cb275c9e8ca811e6db528cb63c0a14ddc49e371b"
+    },
+    {
+      "path": "ArtSource/Vehicles/RB_Motorcycle.blend",
+      "bytes": 771412,
+      "sha256": "443b9c9ccb06bb05b598efbce8a6c3a04ddaabd9a213458f5174c934a3673727"
+    },
+    {
+      "path": "ArtSource/Vehicles/RB_TrafficCoupe.blend",
+      "bytes": 771435,
+      "sha256": "c5cd1ba18a564a20f9a23429e2461023b1529a6eb46559d8615706019e2f3594"
+    },
+    {
+      "path": "ArtSource/Vehicles/RB_TrafficVan.blend",
+      "bytes": 771420,
+      "sha256": "69b7d7684ba181445eeee2d110e24d66067a211bdc21635fefe0bf681a53c93f"
+    },
+    {
+      "path": "ArtSource/Characters/RB_Pedestrian.blend",
+      "bytes": 184069,
+      "sha256": "2de6dadd9c678ddd3156a097e20a9ddbbe11d6ae9dbf87ea48f1792fc79bc605"
+    },
+    {
+      "path": "ArtSource/Characters/RB_Rider.blend",
+      "bytes": 771433,
+      "sha256": "0283ae823a16d046f059a22dbaac92f8a5efae46dbf20d83be416aaba9841ad7"
+    },
+    {
+      "path": "ArtSource/Props/Canyon/RB_CanyonPack.blend",
+      "bytes": 136172,
+      "sha256": "8bfffe1b689a5292afd61990154f5c31985e58af4849c74d702de3b2ece91287"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/canyon-concept-v1.png",
+      "bytes": 2569415,
+      "sha256": "e9be4fc1c2c38787226671c99b4921a0dc0d470c5f2824a8f4728315f7f23b28"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/club-concept-v1.png",
+      "bytes": 1485851,
+      "sha256": "d6e0c6f0563d4cf9d57773e0e112452c940f11dc5eab55cdd6de478ceed52957"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/coupe-concept-v1.png",
+      "bytes": 1779231,
+      "sha256": "c2644d82bade1a5e6c4d278d0b4b98699ff0072431243825470a2eebb015d8be"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/motorcycle-concept-v1.png",
+      "bytes": 2518764,
+      "sha256": "35e3a45bae43194686fd21f419e12ad400fd7d9b3fe86893ec2d0c65350f53ab"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/pedestrian-concept-v1.png",
+      "bytes": 1889393,
+      "sha256": "cf1fb82768d108453b8a8a034370f4c43e912e0744aa570601a814cd647478d4"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/rider-concept-v1.png",
+      "bytes": 2112354,
+      "sha256": "e6ce6307e58c3b0f46fb77faa81c948f5576e2021d50a4570ad07bbe9741fa33"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/van-concept-v1.png",
+      "bytes": 1810187,
+      "sha256": "35ca5eb116a5332848a797e662f247b0d1f5bad73087ac8530509aeea1614a54"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/PROMPTS.md",
+      "bytes": 8405,
+      "sha256": "003551a6365c946f8d962799c15f5ca8fe776a950ab43caba1ffff2e7b3e9d6c"
+    },
+    {
+      "path": "tools/p03/assets/create_canyon.py",
+      "bytes": 7264,
+      "sha256": "0a78a44ff4ecd958ddd02919997b95e16dddb1061782a5b99bacb8ec532a9ce3"
+    },
+    {
+      "path": "tools/p03/assets/create_pack.py",
+      "bytes": 27760,
+      "sha256": "8372f46c91d25403be5dd5e231ec020d95bda4514ad61d555ac2fbff3674e179"
+    },
+    {
+      "path": "tools/p03/assets/create_pedestrian.py",
+      "bytes": 9879,
+      "sha256": "340371f71d5e6c1a3ef7f7b392ec5736b1ece87eb0f19b93edb31fe3583dc66c"
+    },
+    {
+      "path": "tools/p03/assets/export_unity_hierarchy.py",
+      "bytes": 1098,
+      "sha256": "cfa85a642940abeb6b3c48b919ca847c30d994fd39e269280296cf0761bf91ed"
+    },
+    {
+      "path": "tools/p03/assets/inspect_pack.py",
+      "bytes": 5003,
+      "sha256": "27b1dcbd73083a2f1633f8e8092681287a33f5c21e2678a44f2fd36f4a343c69"
+    },
+    {
+      "path": "tools/p03/assets/write_manifest.py",
+      "bytes": 5086,
+      "sha256": "0c24f706a1b5289a0139c5acb7f841fbd69abd0419f4a6f28314afd251286c17"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_Motorcycle.prefab",
+      "bytes": 11451,
+      "sha256": "458a3e41e0eb07a4a4c17e3bf6511ddd1dc15e128f7610d7c0e733b43a21bc0e"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_PoliceMotorcycle.prefab",
+      "bytes": 11457,
+      "sha256": "ee6dc7ddcc51922cd76649d4be16b1f72d08920d7e7d14fcf13788cc98377180"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_Rider.prefab",
+      "bytes": 28757,
+      "sha256": "17c4f49a6da03017edc23f0409cdd23d5956a7c5b22f27cec1b343a7c20b8fd8"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_TrafficCoupe.prefab",
+      "bytes": 7095,
+      "sha256": "0a32aba576369eea50710d9c7c26292f3baedff655ed6f2f9a63d5008a3aeca3"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_TrafficVan.prefab",
+      "bytes": 7112,
+      "sha256": "4de7d6fcf679d0f8ed1a549f464afb823eb286fb006653f2440af18685513791"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_Pedestrian.prefab",
+      "bytes": 28744,
+      "sha256": "a8129f72497eaa6186c604b29accaa8a3b5d6e8e4465239c2eb61bf7f8dbc0f0"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_Sandstone.prefab",
+      "bytes": 7934,
+      "sha256": "78f0e95e413cebe180180394e1abf96f38059f9e948ffeb3fc417cf4ae2eac3d"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/RB_SageScrub.prefab",
+      "bytes": 7944,
+      "sha256": "1de1d784e95796b2cbaf9af2bdb5fe2db9b340b2ed42ab83532629d8a47c0857"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/RB_RacePalette.mat",
+      "bytes": 4063,
+      "sha256": "860524bb0412cfa82c978ef85aedead1bce30f9d665f6fd7a09e6c5a5abcce93"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/RB_PolicePalette.mat",
+      "bytes": 4065,
+      "sha256": "609217cc823a342eb348fc3aa04e7f6b3fc1e0883737d17a3722601e6105c07f"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/RB_PedestrianPalette.mat",
+      "bytes": 4069,
+      "sha256": "8f72ced04d698f36b42415210315903fe87ad899be72b3766f40f4262573b97a"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/RB_CanyonPalette.mat",
+      "bytes": 4066,
+      "sha256": "c1053341cbf5673b1fce82ec600361ce64c5ec0a607f4050cc18ff0974fd900e"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/RaceAssetBuilder.cs",
+      "bytes": 15692,
+      "sha256": "39dae49044e8924df3b834fa31423f3973144dae59a7dd41fcb0ce4ce339b2f9"
+    }
+  ]
+}

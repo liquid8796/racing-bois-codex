@@ -1,0 +1,64 @@
+--- a/Assets/RacingBois/Client/Application/MultiplayerSession.cs
++++ b/Assets/RacingBois/Client/Application/MultiplayerSession.cs
+@@ -25,6 +25,7 @@
+         private ProfileCredential credential;
+         private ResumeReceipt receipt;
+         private RiderPredictor predictor;
++        private MultiplayerSnapshotReadModel latestPredictionSnapshot;
+         private RiderCheckpoint authoritative;
+         private RaceInput heldAnalog;
+         private bool hasCheckpoint, disposed, closingTransport, freshGuest, waitingWelcome;
+@@ -343,7 +344,7 @@
+             Array.Clear(predictedHistory, 0, predictedHistory.Length);
+             hasCheckpoint = false; predictor = null; authoritative = default; heldAnalog = default; lastAppliedInputTick = -1;
+             sequence = processedSequence = 0; lastTargetTick = 0; RiderId = 0; raceEpoch = 0;
+-            LatestAuthoritativeWorld = null; LocalRider = default; LastCorrectionMeters = 0;
++            LatestAuthoritativeWorld = null; latestPredictionSnapshot = null; LocalRider = default; LastCorrectionMeters = 0;
+             MaximumCorrectionMeters = 0;
+             ResultsPending = false; SteadyResidualSamples = ContactResidualSamples = 0; MaximumSteadyResidualMeters = MaximumContactResidualMeters = 0;
+             PresentationFrozen = false; predictionNeighbors.RiderCount = predictionNeighbors.TrafficCount = predictionNeighbors.PedestrianCount = 0;
+--- a/Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs
++++ b/Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs
+@@ -93,8 +93,8 @@
+             // All validation and allocation completed before committing any authoritative session state.
+             float oldS = predictedRider.LongitudinalMeters, oldD = predictedRider.LateralMeters;
+             var oldMode = predictedRider.Mode; long predictedTick = predictor == null ? -1 : predictor.Checkpoint.Tick;
+-            PredictionNeighborBuilder.Fill(predictionNeighbors, candidate, LatestAuthoritativeWorld, m.riderId, projected.CollisionUntilByRider, projected.PedestrianContexts, projected.RiderCombatContexts);
+-            RiderId = m.riderId; MeasureRenderResidual(candidate); LatestAuthoritativeWorld = candidate; Standings = standingRows.AsReadOnly();
++            PredictionNeighborBuilder.Fill(predictionNeighbors, projected, latestPredictionSnapshot, m.riderId);
++            RiderId = m.riderId; MeasureRenderResidual(candidate); LatestAuthoritativeWorld = candidate; latestPredictionSnapshot = projected; Standings = standingRows.AsReadOnly();
+             authoritative = checkpoint; snapshotRevision++; heldAnalog = new RaceInput(analog.ThrottlePermille, analog.BrakePermille, analog.SteerPermille);
+             lastAppliedInputTick = m.lastAppliedInputTick; processedSequence = m.lastProcessedSequence; raceEpoch = m.raceEpoch;
+             lastSnapshotAt = clock.NowSeconds; LateInputs = m.lateInputs; FutureInputs = m.futureInputs; MissingInputs = m.missingInputs;
+--- a/Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs
++++ b/Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs
+@@ -8,7 +8,14 @@
+ {
+     internal static class PredictionNeighborBuilder
+     {
+-        public static void Fill(PredictionNeighbors target, RaceWorldReadModel current, RaceWorldReadModel previous, int ownId, IReadOnlyDictionary<int, long> collisionUntilByRider, IReadOnlyDictionary<int, PedestrianPredictionContext> pedestrianContexts, IReadOnlyDictionary<int, RiderCombatPredictionContext> riderCombatContexts)
++        public static void Fill(PredictionNeighbors target, MultiplayerSnapshotReadModel current, MultiplayerSnapshotReadModel previous, int ownId)
++        {
++            if (current == null) throw new ArgumentNullException(nameof(current));
++            Fill(target, current.World, previous == null ? null : previous.World, ownId,
++                current.CollisionUntilByRider, current.PedestrianContexts, current.RiderCombatContexts,
++                previous == null ? null : previous.CollisionUntilByRider);
++        }
++        public static void Fill(PredictionNeighbors target, RaceWorldReadModel current, RaceWorldReadModel previous, int ownId, IReadOnlyDictionary<int, long> collisionUntilByRider, IReadOnlyDictionary<int, PedestrianPredictionContext> pedestrianContexts, IReadOnlyDictionary<int, RiderCombatPredictionContext> riderCombatContexts, IReadOnlyDictionary<int, long> previousCollisionUntilByRider = null)
+         {
+             if (collisionUntilByRider == null) throw new ArgumentNullException(nameof(collisionUntilByRider));
+             foreach (var rider in current.Riders)
+@@ -44,6 +51,13 @@
+                 if (gap <= 0) continue;
+                 var before = RemoteMotionSampler.Find(previous.Riders, r.Id);
+                 if (before.Id != r.Id || before.Mode != r.Mode) continue;
++                // A newly granted protection interval marks an instantaneous
++                // contact impulse. Its snapshot delta is not continuous motion.
++                // Expired protection is encoded as the current tick, so require
++                // a genuinely active interval before detecting a new grant.
++                if (previousCollisionUntilByRider == null || !previousCollisionUntilByRider.TryGetValue(r.Id, out long previousUntil)) continue;
++                long currentUntil = collisionUntilByRider[r.Id];
++                if (currentUntil > current.Tick && currentUntil > previousUntil) continue;
+                 target.LateralVelocity[index] = Clamp(Mm(r.LateralMeters - before.LateralMeters) * 60 / (int)gap, -12000, 12000);
+                 target.VerticalVelocity[index] = Clamp(Mm(r.HeightMeters - before.HeightMeters) * 60 / (int)gap, -20000, 20000);
+                 target.Acceleration[index] = Clamp(Mm(r.SpeedMetersPerSecond - before.SpeedMetersPerSecond) * 60 / (int)gap, -30000, 15000);

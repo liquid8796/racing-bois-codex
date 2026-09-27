@@ -1,0 +1,14 @@
+{
+  "checkedUtc": "2026-09-22T06:13:21.800729+00:00",
+  "status": "PASS",
+  "runtimeCommit": "3cac900effe46a0eec8cd75f4251083f94cdb44c",
+  "receipt": "delivery.json",
+  "receiptSha256": "d35a77569e17602a271b455c48eabc2f10bb493d81d3c9be3980376fb154ddf7",
+  "listedSourceFiles": 206,
+  "gitBlobsRead": 206,
+  "exactByteMatches": 206,
+  "missingInCommit": [],
+  "mismatches": [],
+  "method": "For every delivery.sourceFiles entry, compare SHA-256 of raw git show <runtimeCommit>:<path> stdout bytes and current worktree bytes to the recorded SHA-256. No newline, encoding or whitespace normalization. Independent closeout audit; not a claim that the packaging recipe performs this raw Git-blob comparison.",
+  "scope": "Only the 206 listed runtime/build source inputs; package binaries/Web payloads and broader visual assets have their separate delivery/build manifests."
+}

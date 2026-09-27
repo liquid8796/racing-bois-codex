@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V2.blend\"\nASH_BAKE_PREP {\"materials\": [{\"sourceName\": \"AshV2_Skin\", \"bakeMaterial\": \"RB_Bake_AshV2_Skin.001\", \"size\": 2048, \"alpha\": false}, {\"sourceName\": \"AshV2_AmberLens\", \"bakeMaterial\": \"RB_Bake_AshV2_AmberLens.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_CharcoalLeather\", \"bakeMaterial\": \"RB_Bake_AshV2_CharcoalLeather.001\", \"size\": 1024, \"alpha\": false}, {\"sourceName\": \"AshV2_AgedBrass\", \"bakeMaterial\": \"RB_Bake_AshV2_AgedBrass.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_BootLeather\", \"bakeMaterial\": \"RB_Bake_AshV2_BootLeather.001\", \"size\": 1024, \"alpha\": false}, {\"sourceName\": \"AshV2_Brows\", \"bakeMaterial\": \"RB_Bake_AshV2_Brows.001\", \"size\": 1024, \"alpha\": true}, {\"sourceName\": \"AshV2_Rubber\", \"bakeMaterial\": \"RB_Bake_AshV2_Rubber.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_TailoredClothing\", \"bakeMaterial\": \"RB_Bake_AshV2_TailoredClothing.001\", \"size\": 2048, \"alpha\": false}, {\"sourceName\": \"AshV2_OchreThread\", \"bakeMaterial\": \"RB_Bake_AshV2_OchreThread.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_Eyes\", \"bakeMaterial\": \"RB_Bake_AshV2_Eyes.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_HairFibers\", \"bakeMaterial\": \"RB_Bake_AshV2_HairFibers.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_Hair\", \"bakeMaterial\": \"RB_Bake_AshV2_Hair.001\", \"size\": 1024, \"alpha\": true}, {\"sourceName\": \"AshV2_IvoryEnamel\", \"bakeMaterial\": \"RB_Bake_AshV2_IvoryEnamel.001\", \"size\": 1024, \"alpha\": false}], \"uvBoundsBefore\": [[0.012125506065785885, 0.012486325576901436, 0.9928106665611267, 0.9738560914993286], [0.000904546061065048, 0.0009054890251718462, 0.9300000071525574, 0.9990946054458618], [0.0006963473279029131, -0.0017836051993072033, 0.9748114943504333, 1.0015259981155396], [-1.862645149230957e-07, 0.0, 1.0, 1.275774598121643], [0.0, 0.0, 1.0, 1.0], [0.02710000053048134, 0.2402999997138977, 0.9628000259399414, 0.6823999881744385], [0.0, -2.8207597324581e-07, 1.0, 2.4625403881073], [0.0052000004798173904, 0.06970001012086868, 0.9864001274108887, 0.9849001169204712], [0.0, 0.0, 0.9961416721343994, 2.4823808670043945], [0.02759999968111515, 0.03269999846816063, 0.964900016784668, 0.9715999960899353], [0.001081328373402357, 0.0010419342434033751, 0.7548415064811707, 0.9989559650421143], [0.06469999998807907, 0.012199999764561653, 0.9246000051498413, 0.968999981880188], [0.0, 0.013000000268220901, 1.0, 1.0]], \"uvPadding\": 0.025, \"sourceUVPreserved\": true}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V2.blend\"\nASH_BAKE_PREP {\"materials\": [{\"sourceName\": \"AshV2_Skin\", \"bakeMaterial\": \"RB_Bake_AshV2_Skin.001\", \"size\": 2048, \"alpha\": false}, {\"sourceName\": \"AshV2_AmberLens\", \"bakeMaterial\": \"RB_Bake_AshV2_AmberLens.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_CharcoalLeather\", \"bakeMaterial\": \"RB_Bake_AshV2_CharcoalLeather.001\", \"size\": 1024, \"alpha\": false}, {\"sourceName\": \"AshV2_AgedBrass\", \"bakeMaterial\": \"RB_Bake_AshV2_AgedBrass.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_BootLeather\", \"bakeMaterial\": \"RB_Bake_AshV2_BootLeather.001\", \"size\": 1024, \"alpha\": false}, {\"sourceName\": \"AshV2_Brows\", \"bakeMaterial\": \"RB_Bake_AshV2_Brows.001\", \"size\": 1024, \"alpha\": true}, {\"sourceName\": \"AshV2_Rubber\", \"bakeMaterial\": \"RB_Bake_AshV2_Rubber.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_TailoredClothing\", \"bakeMaterial\": \"RB_Bake_AshV2_TailoredClothing.001\", \"size\": 2048, \"alpha\": false}, {\"sourceName\": \"AshV2_OchreThread\", \"bakeMaterial\": \"RB_Bake_AshV2_OchreThread.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_Eyes\", \"bakeMaterial\": \"RB_Bake_AshV2_Eyes.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_HairFibers\", \"bakeMaterial\": \"RB_Bake_AshV2_HairFibers.001\", \"size\": 512, \"alpha\": false}, {\"sourceName\": \"AshV2_Hair\", \"bakeMaterial\": \"RB_Bake_AshV2_Hair.001\", \"size\": 1024, \"alpha\": true}, {\"sourceName\": \"AshV2_IvoryEnamel\", \"bakeMaterial\": \"RB_Bake_AshV2_IvoryEnamel.001\", \"size\": 1024, \"alpha\": false}], \"uvBoundsBefore\": [[0.012125506065785885, 0.012486325576901436, 0.9928106665611267, 0.9738560914993286], [0.000904546061065048, 0.0009054890251718462, 0.9300000071525574, 0.9990946054458618], [0.0006963473279029131, -0.0017836051993072033, 0.9748114943504333, 1.0015259981155396], [-1.862645149230957e-07, 0.0, 1.0, 1.275774598121643], [0.0, 0.0, 1.0, 1.0], [0.02710000053048134, 0.2402999997138977, 0.9628000259399414, 0.6823999881744385], [0.0, -2.8207597324581e-07, 1.0, 2.4625403881073], [0.0052000004798173904, 0.06970001012086868, 0.9864001274108887, 0.9849001169204712], [0.0, 0.0, 0.9961416721343994, 2.4823808670043945], [0.02759999968111515, 0.03269999846816063, 0.964900016784668, 0.9715999960899353], [0.001081328373402357, 0.0010419342434033751, 0.7548415064811707, 0.9989559650421143], [0.06469999998807907, 0.012199999764561653, 0.9246000051498413, 0.968999981880188], [0.0, 0.013000000268220901, 1.0, 1.0]], \"uvPadding\": 0.025, \"sourceUVPreserved\": true}\n"
+    },
+    "isError": false
+  }
+}

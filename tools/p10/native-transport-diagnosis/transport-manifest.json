@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "scope": "Native async context only. No protocol, timeout, queue limit, game simulation or main-thread callback semantics change.",
+  "changes": [
+    {
+      "path": "Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs",
+      "before": "bc1a48d7d54ddae9a16dea47f70a79dc6e58e3a8bd24cbd971de98cbc92a1c26",
+      "staged": "tools/p10/native-transport-diagnosis/Transport/BrowserSocketTransport.cs",
+      "after": "4b8f17692a03fa510e3faa19527f3b9702590e42443ca3c92595d30a9b304974"
+    }
+  ]
+}

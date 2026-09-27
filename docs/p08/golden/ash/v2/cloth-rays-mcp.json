@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: {\"ray_profile\": [{\"z\": 0.473, \"hits\": [[0.12, -0.0421], [0.13, -0.0681], [0.14, -0.0776], [0.15, -0.0805], [0.16, -0.0803], [0.17, -0.0778], [0.18, -0.0726], [0.19, -0.0645], [0.2, -0.0524], [0.21, -0.0341]], \"mesh_x_range\": [0.1132727637887001, 0.2165365219116211]}, {\"z\": 0.5, \"hits\": [[0.12, -0.0607], [0.13, -0.0749], [0.14, -0.0821], [0.15, -0.0832], [0.16, -0.0821], [0.17, -0.0793], [0.18, -0.0741], [0.19, -0.0653], [0.2, -0.0524], [0.21, -0.0262]], \"mesh_x_range\": [0.11234137415885925, 0.21566535532474518]}, {\"z\": 0.54, \"hits\": [[0.11, -0.0669], [0.12, -0.0821], [0.13, -0.09], [0.14, -0.0918], [0.15, -0.0909], [0.16, -0.0885], [0.17, -0.084], [0.18, -0.0768], [0.19, -0.0696], [0.2, -0.0529]], \"mesh_x_range\": [0.09908552467823029, 0.21029621362686157]}, {\"z\": 0.6, \"hits\": [[0.09, -0.0628], [0.1, -0.0825], [0.11, -0.0947], [0.12, -0.1025], [0.13, -0.106], [0.14, -0.1066], [0.15, -0.1049], [0.16, -0.1011], [0.17, -0.0956], [0.18, -0.0883], [0.19, -0.0782], [0.2, -0.0624]], \"mesh_x_range\": [0.08487538248300552, 0.20562848448753357]}, {\"z\": 0.67, \"hits\": [[0.08, -0.078], [0.09, -0.0939], [0.1, -0.1035], [0.11, -0.1101], [0.12, -0.1142], [0.13, -0.1162], [0.14, -0.116], [0.15, -0.1141], [0.16, -0.1104], [0.17, -0.1047], [0.18, -0.0967], [0.19, -0.0846], [0.2, -0.0571]], \"mesh_x_range\": [0.07170026004314423, 0.20146381855010986]}], \"modifiers\": [\"Ash anatomical Generic deformation\"]}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: {\"ray_profile\": [{\"z\": 0.473, \"hits\": [[0.12, -0.0421], [0.13, -0.0681], [0.14, -0.0776], [0.15, -0.0805], [0.16, -0.0803], [0.17, -0.0778], [0.18, -0.0726], [0.19, -0.0645], [0.2, -0.0524], [0.21, -0.0341]], \"mesh_x_range\": [0.1132727637887001, 0.2165365219116211]}, {\"z\": 0.5, \"hits\": [[0.12, -0.0607], [0.13, -0.0749], [0.14, -0.0821], [0.15, -0.0832], [0.16, -0.0821], [0.17, -0.0793], [0.18, -0.0741], [0.19, -0.0653], [0.2, -0.0524], [0.21, -0.0262]], \"mesh_x_range\": [0.11234137415885925, 0.21566535532474518]}, {\"z\": 0.54, \"hits\": [[0.11, -0.0669], [0.12, -0.0821], [0.13, -0.09], [0.14, -0.0918], [0.15, -0.0909], [0.16, -0.0885], [0.17, -0.084], [0.18, -0.0768], [0.19, -0.0696], [0.2, -0.0529]], \"mesh_x_range\": [0.09908552467823029, 0.21029621362686157]}, {\"z\": 0.6, \"hits\": [[0.09, -0.0628], [0.1, -0.0825], [0.11, -0.0947], [0.12, -0.1025], [0.13, -0.106], [0.14, -0.1066], [0.15, -0.1049], [0.16, -0.1011], [0.17, -0.0956], [0.18, -0.0883], [0.19, -0.0782], [0.2, -0.0624]], \"mesh_x_range\": [0.08487538248300552, 0.20562848448753357]}, {\"z\": 0.67, \"hits\": [[0.08, -0.078], [0.09, -0.0939], [0.1, -0.1035], [0.11, -0.1101], [0.12, -0.1142], [0.13, -0.1162], [0.14, -0.116], [0.15, -0.1141], [0.16, -0.1104], [0.17, -0.1047], [0.18, -0.0967], [0.19, -0.0846], [0.2, -0.0571]], \"mesh_x_range\": [0.07170026004314423, 0.20146381855010986]}], \"modifiers\": [\"Ash anatomical Generic deformation\"]}\n"
+    },
+    "isError": false
+  }
+}

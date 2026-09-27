@@ -1,0 +1,84 @@
+using RacingBois.Gameplay.Definitions;
+using RacingBois.NetworkMapping;
+using RacingBois.Protocol;
+using RacingBois.Simulation;
+
+namespace RacingBois.Server.Application.Multiplayer;
+
+internal static class MultiplayerProjection
+{
+    public static MpLobby Lobby(GameRoom room, long serviceTick, long reliableSequence) => new()
+    {
+        roomId = room.Id, code = room.Code, name = room.Name, hostSessionId = room.HostSessionId, matchId = room.MatchId,
+        state = (int)room.State, revision = room.Revision, raceEpoch = room.RaceEpoch, botCount = room.BotCount,
+        courseIndex = room.CourseIndex, levelIndex = room.LevelIndex, publicRoom = room.PublicRoom,
+        reliableSequence = reliableSequence, serverServiceTick = serviceTick, startServiceTick = room.StartServiceTick,
+        members = room.Members.OrderBy(member => member.JoinOrder).Select(member => new MpMember
+        { sessionId = member.Session.Id, displayName = member.Session.Name, riderId = member.RiderId, joinOrder = member.JoinOrder,
+            ready = member.Ready, connected = member.Session.Connected, guest = member.Session.Guest }).ToArray()
+    };
+    public static MpSnapshot? Snapshot(GameRoom room, RoomMember member, long serviceTick)
+    {
+        var world = room.World; if (world == null) return null;
+        var own = RaceSimulation.FindRider(world, member.RiderId); if (own == null) return null;
+        long origin = own.DistanceMillimeters;
+        bool Near(long position, int behind, int ahead) => position >= origin - behind && position <= origin + ahead;
+        var riders = new List<NumericRow>(); var traffic = new List<NumericRow>(); var pedestrians = new List<NumericRow>();
+        var standings = new List<NumericRow>();
+        for (int i = 0; i < world.RiderCount; i++)
+        {
+            var rider = world.Riders[i];
+            var participant = room.Participants.FirstOrDefault(item => item.Member.RiderId == rider.Id);
+            standings.Add(Row(rider.Id, rider.Rank, participant == null ? Outcome(rider) : (int)participant.Outcome, Cm(rider.DistanceMillimeters)));
+            if (rider.Id == own.Id || !Near(rider.DistanceMillimeters, 120000, 320000)) continue;
+            riders.Add(Row(rider.Id, (int)rider.Kind, (int)rider.Mode, (int)rider.Weapon, (int)rider.AttackWeapon,
+                Cm(rider.DistanceMillimeters), Cm(rider.LateralMillimeters), Cm(rider.SpeedMillimetersPerSecond), Cm(rider.HeightMillimeters), rider.LeanMillidegrees / 100,
+                Cm(rider.BikeDistanceMillimeters), Cm(rider.BikeLateralMillimeters), Cm(rider.BikeHeightMillimeters), rider.Health, rider.BikeCondition, rider.Strength,
+                rider.Rank, (int)rider.FinishTick, rider.Reward, rider.Qualified ? 1 : 0, rider.AttackSide, rider.AttackAgeTicks, rider.ModeAgeTicks, rider.Gear, rider.BikeCatalogIndex, rider.CharacterCatalogIndex, CollisionProtectionRemaining(rider.CollisionUntilTick, world.Tick)));
+        }
+        foreach (var participant in room.Participants)
+            if (participant.Outcome == MultiplayerOutcome.Dnf && !standings.Any(row => row.values[0] == participant.Member.RiderId))
+                standings.Add(Row(participant.Member.RiderId, 0, (int)MultiplayerOutcome.Dnf, 0));
+        for (int i = 0; i < world.TrafficCount; i++)
+        {
+            var item = world.Traffic[i]; if (!Near(item.DistanceMillimeters, 80000, 260000)) continue;
+            traffic.Add(Row(item.Id, item.Oncoming ? 1 : 0, Cm(item.DistanceMillimeters), Cm(item.LateralMillimeters), Cm(item.SpeedMillimetersPerSecond),
+                item.LengthMillimeters / 20, item.WidthMillimeters / 20, Cm(item.HeightMillimeters)));
+        }
+        for (int i = 0; i < world.PedestrianCount; i++)
+        {
+            var item = world.Pedestrians[i]; if (!Near(item.DistanceMillimeters, 80000, 260000)) continue;
+            pedestrians.Add(Row(item.Id, Cm(item.DistanceMillimeters), Cm(item.LateralMillimeters), Cm(item.HeightMillimeters),
+                Cm(item.WalkingSpeedMillimetersPerSecond), (int)item.Mode, item.ModeAgeTicks, item.FacingSide, item.IsCrossing ? 1 : 0));
+        }
+        var held = member.Timeline.HeldAnalog;
+        return new MpSnapshot
+        {
+            roomId = room.Id, matchId = room.MatchId, sessionEpoch = member.Session.Epoch, raceEpoch = room.RaceEpoch,
+            roomState = (int)room.State, riderId = member.RiderId, level = world.Level, courseIndex = world.CourseIndex, tick = world.Tick, serverServiceTick = serviceTick,
+            startServiceTick = room.StartServiceTick, resolvedThroughTick = world.Tick, lastProcessedSequence = member.Timeline.LastProcessedSequence,
+            lastAppliedInputTick = member.Timeline.LastAppliedInputTick, heldAnalog = new InputValues { throttlePermille = held.ThrottlePermille, brakePermille = held.BrakePermille, steerPermille = held.SteerPermille },
+            trackLengthMillimeters = world.Track.LengthMillimeters, own = CheckpointMapper.CaptureDto(own, world.Tick),
+            riders = riders.ToArray(), traffic = traffic.ToArray(), pedestrians = pedestrians.ToArray(), standings = standings.ToArray(),
+            lateInputs = member.Timeline.LateInputs, futureInputs = member.Timeline.FutureInputs, missingInputs = member.Timeline.MissingInputs,
+            resultsPending = room.Complete && room.Result == null
+        };
+    }
+    public static MpResult Result(GameRoom room, long reliableSequence) => new()
+    {
+        roomId = room.Id, matchId = room.MatchId, resultId = room.MatchId, raceEpoch = room.RaceEpoch, reliableSequence = reliableSequence, persisted = true,
+        entries = (room.Result?.Grants ?? []).Select(grant => new MpResultEntry { sessionId = grant.SessionId, displayName = grant.Name, riderId = grant.RiderId,
+            outcome = grant.Outcome, rank = grant.Rank, reward = grant.Reward, credits = grant.Credits, finishTick = grant.FinishTick }).ToArray()
+    };
+    private static int Outcome(RaceRider rider) => (int)(rider.Mode == RiderMode.Finished ? MultiplayerOutcome.Finished : rider.Mode == RiderMode.Busted ? MultiplayerOutcome.Busted :
+        rider.Mode == RiderMode.Wrecked ? MultiplayerOutcome.Wrecked : MultiplayerOutcome.Racing);
+    private static int CollisionProtectionRemaining(long until, long tick)
+    {
+        long remaining = until <= tick ? 0 : until - tick;
+        if (remaining > MultiplayerProtocol.MaximumCollisionProtectionTicks)
+            throw new InvalidOperationException("Authoritative collision protection exceeds protocol bounds.");
+        return (int)remaining;
+    }
+    private static int Cm(long value) => checked((int)(value / 10));
+    private static NumericRow Row(params int[] values) => new() { values = values };
+}

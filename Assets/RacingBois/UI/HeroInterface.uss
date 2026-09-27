@@ -1,0 +1,54 @@
+/* Measured main-v2 layout target; real scene and session selections supply content. */
+.surface .title, .surface .menu-selection-row .subtitle, .surface .menu Button, .surface .brand-lockup .brand { -unity-font-definition: url("Fonts/NotoSans-ExtraBold SDF.asset"); -unity-font-style: normal; }
+.surface .brand-lockup .brand { -unity-font-style: italic; scale: 1.32 1; transform-origin: 0% 50%; }
+.topbar { top: 14px; left: 46px; right: 46px; height: 58px; }
+.brand-lockup .brand { font-size: 34px; letter-spacing: 4px; -unity-font-style: bold-and-italic; }
+.topbar-actions .small-button { background-color: rgba(0,0,0,0); border-color: rgba(0,0,0,0); font-size: 19px; -unity-font-style: normal; padding: 10px 16px; margin-left: 18px; }
+.topbar-actions .small-button:hover { background-color: rgba(18,20,21,.6); }
+.topbar-actions .small-button:focus { border-color: var(--amber); }
+.connection { display: none; }
+.connection-warning, .race-active .connection { display: flex; }
+.menu { left: 74px; top: 20%; bottom: 96px; width: 610px; padding: 0; background-color: rgba(0,0,0,0); }
+.menu-kicker { height: 25px; margin-bottom: 0; }
+.menu-kicker .eyebrow { font-size: 22px; color: rgb(247,241,225); -unity-font-style: bold; letter-spacing: 2px; }
+.menu .title { font-size: 76px; height: 90px; white-space: nowrap; margin: 0 0 4px 0; padding: 0; }
+.menu-selection-row { flex-direction: row; align-items: center; margin-bottom: 32px; }
+.menu-selection-row .subtitle { font-size: 34px; -unity-font-style: bold; margin: 0 10px 0 0; }
+.menu-level { color: rgb(247,241,225); }
+.menu Button { width: 490px; min-height: 60px; margin-bottom: 16px; font-size: 26px; border-radius: 2px; padding: 10px 16px; }
+.menu #local { font-size: 32px; min-height: 64px; height: 64px; padding-top: 6px; padding-bottom: 6px; }
+.menu #practice-open { margin-left: 0; margin-right: 0; margin-bottom: 16px; }
+.menu .secondary, .menu #practice-open { border-color: rgb(185,182,171); background-color: rgba(10,12,13,.25); }
+.menu #message { width: 500px; font-size: 18px; margin-top: 2px; }
+.bottomline { left: 46px; right: 46px; bottom: 36px; }
+.controls { flex-direction: row; flex-wrap: wrap; align-items: center; font-size: 16px; background-color: rgba(0,0,0,0); padding: 0; }
+.control-pair { flex-direction: row; align-items: center; margin-right: 26px; }
+.keycap { font-size: 16px; -unity-font-style: bold; border-width: 1px; border-color: rgb(185,182,171); border-radius: 2px; padding: 3px 8px; background-color: rgba(10,12,13,.55); }
+.control-action { font-size: 16px; margin-left: 8px; color: rgb(247,241,225); }
+.menu.network-open { top: 112px; bottom: 94px; }
+.menu.network-open .title { font-size: 38px; height: auto; }
+.menu.network-open .menu-selection-row { display: none; }
+.menu.network-open Button { min-height: 48px; font-size: 20px; margin-bottom: 10px; }
+.menu.network-open #local, .menu.network-open #practice-open { display: none; }
+.menu .network-panel { width: 490px; }
+.menu .network-panel .profile-actions Button { width: 48%; font-size: 15px; }
+.compact .menu { top: 17%; left: 64px; bottom: 100px; width: 625px; padding: 0; }
+.compact .menu .title { font-size: 76px; }
+.compact .menu #message { font-size: 20px; }
+.compact .menu .subtitle { font-size: 34px; }
+.compact .topbar { left: 36px; right: 36px; }
+.compact .hint, .compact .description { font-size: 20px; }
+.compact .menu.network-open { top: 108px; }
+.compact .menu.network-open .title { font-size: 34px; }
+.narrow .topbar-actions .small-button { font-size: 18px; margin-left: 8px; padding: 8px; }
+.narrow .brand-lockup .brand { font-size: 30px; }
+.narrow .menu { width: 610px; }
+/* Reuse the native widget structure while replacing its default white chrome. */
+.unity-scroller--vertical { width: 10px; min-width: 10px; margin-left: 8px; background-color: rgba(18,20,21,.4); }
+.unity-scroller .unity-repeat-button { display: none; }
+.unity-scroller .unity-base-slider__tracker { background-color: rgb(42,43,41); border-width: 0; }
+.unity-scroller .unity-base-slider__dragger { background-color: rgb(150,141,121); border-width: 0; border-radius: 1px; min-width: 6px; }
+.unity-scroller .unity-base-slider__dragger:hover { background-color: var(--amber); }
+.gallery-filter .unity-base-popup-field__input { background-color: rgb(32,34,34); color: rgb(247,241,225); border-color: var(--line); border-width: 1px; padding: 6px 10px; }
+.gallery-filter .unity-base-field__label { color: rgb(197,196,188); min-width: 100px; }
+#content-progress .unity-progress-bar__background { background-color: rgb(42,43,41); border-width: 0; }

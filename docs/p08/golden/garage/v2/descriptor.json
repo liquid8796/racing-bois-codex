@@ -1,0 +1,752 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "RB_Golden_Garage_v2",
+      "kind": "environment",
+      "concept": {
+        "path": "ArtSource/Concepts/P08/Golden/garage-environment-v1.png",
+        "sha256": "ce8cb09ba3eec565f36ff764f9b7dfe32ef7b33abaf4d0634ce3c8d20181d386"
+      },
+      "conceptReview": {
+        "path": "ArtSource/Concepts/P08/Golden/garage-environment-v1-review.md",
+        "sha256": "6c6aeb3029bd0f2739e12811412b09fcbdb30a04f8727e507a8a0f6652c10c08"
+      },
+      "source": {
+        "path": "ArtSource/P08/Golden/Garage/V2/RB_Golden_Garage.blend",
+        "sha256": "b57f26d6e03ae2b9f15e41fd613c2e03a75fcaf88a615e77fa5e3d00fdcee77c"
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/RB_Golden_Garage.fbx",
+        "sha256": "76b960292653165f6a101657a59fe032dd767d2da92d6ec37f3c002a6da3997c"
+      },
+      "modelRotationEuler": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "restPose": "file",
+      "minimumSize": {
+        "x": 11.975,
+        "y": 3.4549999594688416,
+        "z": 11.973000144958496
+      },
+      "maximumSize": {
+        "x": 12.025,
+        "y": 3.5049999594688415,
+        "z": 12.023000144958496
+      },
+      "maximumBelowGround": 0.19,
+      "materials": [
+        {
+          "sourceName": "Garage_Amber",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Amber_BaseColor.png",
+            "sha256": "460a523c82b09480d8a329f80dd38ed5e28f69738c8b9720a4859c3409c0040a"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Amber_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Amber_MetallicSmoothness.png",
+            "sha256": "f524c38ae52d6b298e6366a1784de4179274c6c22c4ba3f5d404b88153abe470"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_Cable",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Cable_BaseColor.png",
+            "sha256": "b50d24536691fa07fc23a2767089c6b5b4bce979745d9899af22b384d6750cc2"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Cable_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Cable_MetallicSmoothness.png",
+            "sha256": "06676b43ff263ac02d999c2c9e69d0f082c6d19fdf19bc6fbb83bf6cc5506173"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_Cardboard",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Cardboard_BaseColor.png",
+            "sha256": "20c10372629207f85e91c7e145599f86c119296f3b3572f6c1d366e348894249"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Cardboard_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Cardboard_MetallicSmoothness.png",
+            "sha256": "cbba412842879dab22dc3aa5e3b9465b79a36f83e5eccd3ed7e376e47016f600"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_Concrete",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Concrete_BaseColor.png",
+            "sha256": "364d6df7c03aa7008c366eac833ec12c3ce608da5a96a79287641d4309a49c4b"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Concrete_Normal.png",
+            "sha256": "ed7e68258f23e5303067916f99c6f5e6c50ecbb9dc736b6ed2b78ddc213e89ae"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Concrete_MetallicSmoothness.png",
+            "sha256": "a8c2746fb004e86ee477d11117f8a85c8af4c30e12f599f8cf01b63fc5754617"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.6,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Concrete_Occlusion.png",
+            "sha256": "c5e35175dba0125c2cbc1b84d50745e0e4b4ce579efda27ae55dbe0508177708"
+          }
+        },
+        {
+          "sourceName": "Garage_Floor",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Floor_BaseColor.png",
+            "sha256": "b52afa926d17c9517bace7a0f415390b8902dfa014089b397b0ab9fbc3236643"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Floor_Normal.png",
+            "sha256": "63bfa88b4b36683da0125d6aaaeb0dd0a5434da33bac6f9ae2dab203d59f37bc"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Floor_MetallicSmoothness.png",
+            "sha256": "1ca5e9f1d0ad0359471e6f0ffc06f635feeea0158d0ceb0cc829049341c4051c"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.55,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Floor_Occlusion.png",
+            "sha256": "8868285d1362777877ebf06b20c7569821a6ec9f5d0739386d088c5690b6d2d1"
+          }
+        },
+        {
+          "sourceName": "Garage_HelmetShell",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_HelmetShell_BaseColor.png",
+            "sha256": "94226eae80ada0a9b723da7eb0cef23117a810bf0f4c51a3958aee49c46bd1c6"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_HelmetShell_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_HelmetShell_MetallicSmoothness.png",
+            "sha256": "ef7ac18568f601a69b9ee90da21017bfc5a5636d754d754e2801bf3f15482d71"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_Lamp",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Lamp_BaseColor.png",
+            "sha256": "752d7c6ae87fe59394f45477dc89eda633d45970a414ac3c569e7543cacf75fc"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Lamp_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Lamp_MetallicSmoothness.png",
+            "sha256": "5c207020c757ed8cc3c8dc16f9b87fb34989bf338e3ce85e7e2dfff847905d6e"
+          },
+          "maxSize": 512,
+          "normalScale": 1,
+          "emission": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Lamp_Emission.png",
+            "sha256": "99a237a15efeb822aab87c3afe910addf9c48e468ab0ec8d701a06cca3bac839"
+          },
+          "emissionIntensity": 6
+        },
+        {
+          "sourceName": "Garage_NearConcrete",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_NearConcrete_BaseColor.png",
+            "sha256": "6a98b79260ff4b4a454724d13b25d659e763c2a8a902fd199badc94d3127c6d6"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_NearConcrete_Normal.png",
+            "sha256": "ed7e68258f23e5303067916f99c6f5e6c50ecbb9dc736b6ed2b78ddc213e89ae"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_NearConcrete_MetallicSmoothness.png",
+            "sha256": "a8c2746fb004e86ee477d11117f8a85c8af4c30e12f599f8cf01b63fc5754617"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.6,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_NearConcrete_Occlusion.png",
+            "sha256": "c5e35175dba0125c2cbc1b84d50745e0e4b4ce579efda27ae55dbe0508177708"
+          }
+        },
+        {
+          "sourceName": "Garage_PowderSteel",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_PowderSteel_BaseColor.png",
+            "sha256": "46f9d1770907ed671ae774b0e08aa73974d14527d6f7f25d90d6e53642e28a81"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_PowderSteel_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_PowderSteel_MetallicSmoothness.png",
+            "sha256": "65d35a4cf3624a217a8f1ff116e9a79064d2227041b2cb3fa946e6340985db1c"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_Rubber",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Rubber_BaseColor.png",
+            "sha256": "4a34bce6b5ffdf58db95eac8b0f70afabe26b4bf1b51f154d22a6563835f2e37"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Rubber_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Rubber_MetallicSmoothness.png",
+            "sha256": "bfbcc66b74540dba98ddc39548fbe422d35edb401d699b3040e7f00a91132fed"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_ToolSteel",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_ToolSteel_BaseColor.png",
+            "sha256": "614625c906e6d7b47c2ceb63973ee1dec3d03a97c8b2c4091fba6d3c0e44d2c0"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_ToolSteel_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_ToolSteel_MetallicSmoothness.png",
+            "sha256": "e30030a9f91c294edadb1ce753f94fe0b7b9e4e43e624691895099785ad775ca"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_Visor",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Visor_BaseColor.png",
+            "sha256": "3d094fdb0296344cd69ae0c2208999ec0020d77f39ea78b0e44028fdafbd41e5"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Visor_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Visor_MetallicSmoothness.png",
+            "sha256": "3c30c0e14c2f4ef1e8f0546960b7e7d51b5e871d62417da51a770e44dc330412"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        },
+        {
+          "sourceName": "Garage_Wood",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Wood_BaseColor.png",
+            "sha256": "9dc2a2791cc356b13187fee879a225bf52a7745c2d89df2f8c26e360de6e5c42"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Wood_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Garage/V2/Textures/Garage_Wood_MetallicSmoothness.png",
+            "sha256": "8d62ff80f0afc7c2c68b2e7c715dfcfeabd960e4895a05281f5dbae0ffe5cd5b"
+          },
+          "maxSize": 512,
+          "normalScale": 1
+        }
+      ],
+      "lods": [
+        {
+          "height": 0.35,
+          "rendererPaths": [
+            "Garage_L0_BackPanel_0_0",
+            "Garage_L0_BackPanel_0_1",
+            "Garage_L0_BackPanel_1_0",
+            "Garage_L0_BackPanel_1_1",
+            "Garage_L0_BackPanel_2_0",
+            "Garage_L0_BackPanel_2_1",
+            "Garage_L0_BackPanel_3_0",
+            "Garage_L0_BackPanel_3_1",
+            "Garage_L0_BackPanel_4_0",
+            "Garage_L0_BackPanel_4_1",
+            "Garage_L0_BackPanel_5_0",
+            "Garage_L0_BackPanel_5_1",
+            "Garage_L0_BackPanel_6_0",
+            "Garage_L0_BackPanel_6_1",
+            "Garage_L0_BackPanel_7_0",
+            "Garage_L0_BackPanel_7_1",
+            "Garage_L0_BenchContainers",
+            "Garage_L0_BenchLeftPedestal",
+            "Garage_L0_BenchRightPedestal",
+            "Garage_L0_Ceiling",
+            "Garage_L0_ConcretePier",
+            "Garage_L0_Conduit_0",
+            "Garage_L0_Conduit_1",
+            "Garage_L0_Conduit_2",
+            "Garage_L0_Conduit_3",
+            "Garage_L0_DisplayHelmet",
+            "Garage_L0_Floor_0_0",
+            "Garage_L0_Floor_0_1",
+            "Garage_L0_Floor_0_2",
+            "Garage_L0_Floor_1_0",
+            "Garage_L0_Floor_1_1",
+            "Garage_L0_Floor_1_2",
+            "Garage_L0_Floor_2_0",
+            "Garage_L0_Floor_2_1",
+            "Garage_L0_Floor_2_2",
+            "Garage_L0_LeftRollingChest",
+            "Garage_L0_MachinistVice",
+            "Garage_L0_NearLeftPanel_0",
+            "Garage_L0_NearLeftPanel_1",
+            "Garage_L0_NearLeftPanel_2",
+            "Garage_L0_RackStorage",
+            "Garage_L0_RightChestTools",
+            "Garage_L0_RightRollingChest",
+            "Garage_L0_RoofCrossBeam_0",
+            "Garage_L0_RoofCrossBeam_1",
+            "Garage_L0_RoofCrossBeam_2",
+            "Garage_L0_SteelColumn_0",
+            "Garage_L0_SteelColumn_1",
+            "Garage_L0_SteelColumn_2",
+            "Garage_L0_SteelColumn_3",
+            "Garage_L0_SteelColumn_4",
+            "Garage_L0_StorageRack",
+            "Garage_L0_ToolboardAndWrenches",
+            "Garage_L0_WarmStrip_0",
+            "Garage_L0_WarmStrip_1",
+            "Garage_L0_WarmStrip_2",
+            "Garage_L0_WarmStrip_3",
+            "Garage_L0_WarmStrip_4",
+            "Garage_L0_WarmStrip_5",
+            "Garage_L0_Workbench"
+          ]
+        },
+        {
+          "height": 0.1,
+          "rendererPaths": [
+            "Garage_L1_BackPanel_0_0",
+            "Garage_L1_BackPanel_0_1",
+            "Garage_L1_BackPanel_1_0",
+            "Garage_L1_BackPanel_1_1",
+            "Garage_L1_BackPanel_2_0",
+            "Garage_L1_BackPanel_2_1",
+            "Garage_L1_BackPanel_3_0",
+            "Garage_L1_BackPanel_3_1",
+            "Garage_L1_BackPanel_4_0",
+            "Garage_L1_BackPanel_4_1",
+            "Garage_L1_BackPanel_5_0",
+            "Garage_L1_BackPanel_5_1",
+            "Garage_L1_BackPanel_6_0",
+            "Garage_L1_BackPanel_6_1",
+            "Garage_L1_BackPanel_7_0",
+            "Garage_L1_BackPanel_7_1",
+            "Garage_L1_BenchContainers",
+            "Garage_L1_BenchLeftPedestal",
+            "Garage_L1_BenchRightPedestal",
+            "Garage_L1_Ceiling",
+            "Garage_L1_ConcretePier",
+            "Garage_L1_Conduit_0",
+            "Garage_L1_Conduit_1",
+            "Garage_L1_Conduit_2",
+            "Garage_L1_Conduit_3",
+            "Garage_L1_DisplayHelmet",
+            "Garage_L1_Floor_0_0",
+            "Garage_L1_Floor_0_1",
+            "Garage_L1_Floor_0_2",
+            "Garage_L1_Floor_1_0",
+            "Garage_L1_Floor_1_1",
+            "Garage_L1_Floor_1_2",
+            "Garage_L1_Floor_2_0",
+            "Garage_L1_Floor_2_1",
+            "Garage_L1_Floor_2_2",
+            "Garage_L1_LeftRollingChest",
+            "Garage_L1_MachinistVice",
+            "Garage_L1_NearLeftPanel_0",
+            "Garage_L1_NearLeftPanel_1",
+            "Garage_L1_NearLeftPanel_2",
+            "Garage_L1_RackStorage",
+            "Garage_L1_RightChestTools",
+            "Garage_L1_RightRollingChest",
+            "Garage_L1_RoofCrossBeam_0",
+            "Garage_L1_RoofCrossBeam_1",
+            "Garage_L1_RoofCrossBeam_2",
+            "Garage_L1_SteelColumn_0",
+            "Garage_L1_SteelColumn_1",
+            "Garage_L1_SteelColumn_2",
+            "Garage_L1_SteelColumn_3",
+            "Garage_L1_SteelColumn_4",
+            "Garage_L1_StorageRack",
+            "Garage_L1_ToolboardAndWrenches",
+            "Garage_L1_WarmStrip_0",
+            "Garage_L1_WarmStrip_1",
+            "Garage_L1_WarmStrip_2",
+            "Garage_L1_WarmStrip_3",
+            "Garage_L1_WarmStrip_4",
+            "Garage_L1_WarmStrip_5",
+            "Garage_L1_Workbench"
+          ]
+        },
+        {
+          "height": 0.015,
+          "rendererPaths": [
+            "Garage_L2_BackPanel_0_0",
+            "Garage_L2_BackPanel_0_1",
+            "Garage_L2_BackPanel_1_0",
+            "Garage_L2_BackPanel_1_1",
+            "Garage_L2_BackPanel_2_0",
+            "Garage_L2_BackPanel_2_1",
+            "Garage_L2_BackPanel_3_0",
+            "Garage_L2_BackPanel_3_1",
+            "Garage_L2_BackPanel_4_0",
+            "Garage_L2_BackPanel_4_1",
+            "Garage_L2_BackPanel_5_0",
+            "Garage_L2_BackPanel_5_1",
+            "Garage_L2_BackPanel_6_0",
+            "Garage_L2_BackPanel_6_1",
+            "Garage_L2_BackPanel_7_0",
+            "Garage_L2_BackPanel_7_1",
+            "Garage_L2_BenchContainers",
+            "Garage_L2_BenchLeftPedestal",
+            "Garage_L2_BenchRightPedestal",
+            "Garage_L2_Ceiling",
+            "Garage_L2_ConcretePier",
+            "Garage_L2_Conduit_0",
+            "Garage_L2_Conduit_1",
+            "Garage_L2_Conduit_2",
+            "Garage_L2_Conduit_3",
+            "Garage_L2_DisplayHelmet",
+            "Garage_L2_Floor_0_0",
+            "Garage_L2_Floor_0_1",
+            "Garage_L2_Floor_0_2",
+            "Garage_L2_Floor_1_0",
+            "Garage_L2_Floor_1_1",
+            "Garage_L2_Floor_1_2",
+            "Garage_L2_Floor_2_0",
+            "Garage_L2_Floor_2_1",
+            "Garage_L2_Floor_2_2",
+            "Garage_L2_LeftRollingChest",
+            "Garage_L2_MachinistVice",
+            "Garage_L2_NearLeftPanel_0",
+            "Garage_L2_NearLeftPanel_1",
+            "Garage_L2_NearLeftPanel_2",
+            "Garage_L2_RackStorage",
+            "Garage_L2_RightChestTools",
+            "Garage_L2_RightRollingChest",
+            "Garage_L2_RoofCrossBeam_0",
+            "Garage_L2_RoofCrossBeam_1",
+            "Garage_L2_RoofCrossBeam_2",
+            "Garage_L2_SteelColumn_0",
+            "Garage_L2_SteelColumn_1",
+            "Garage_L2_SteelColumn_2",
+            "Garage_L2_SteelColumn_3",
+            "Garage_L2_SteelColumn_4",
+            "Garage_L2_StorageRack",
+            "Garage_L2_ToolboardAndWrenches",
+            "Garage_L2_WarmStrip_0",
+            "Garage_L2_WarmStrip_1",
+            "Garage_L2_WarmStrip_2",
+            "Garage_L2_WarmStrip_3",
+            "Garage_L2_WarmStrip_4",
+            "Garage_L2_WarmStrip_5",
+            "Garage_L2_Workbench"
+          ]
+        }
+      ],
+      "forwardMarker": "Forward",
+      "leftMarker": "LeftRoadMarker",
+      "rightMarker": "RightRoadMarker",
+      "groundMarkers": [
+        "Ground_Origin"
+      ],
+      "colliders": [
+        {
+          "type": "box",
+          "center": {
+            "x": 0,
+            "y": -0.09,
+            "z": 0
+          },
+          "size": {
+            "x": 12,
+            "y": 0.18,
+            "z": 11.998
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 0,
+            "y": 1.6,
+            "z": 4.53
+          },
+          "size": {
+            "x": 12,
+            "y": 3.2,
+            "z": 0.18
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": -4.15,
+            "y": 1.65,
+            "z": 3.5
+          },
+          "size": {
+            "x": 3.597,
+            "y": 3.3,
+            "z": 0.3
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 0.82,
+            "y": 1.65,
+            "z": 4.24
+          },
+          "size": {
+            "x": 0.44,
+            "y": 3.3,
+            "z": 0.46
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 0,
+            "y": 3.12,
+            "z": 0.6
+          },
+          "size": {
+            "x": 12,
+            "y": 0.18,
+            "z": 7.8
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": -1.83,
+            "y": 0.455,
+            "z": 3.94
+          },
+          "size": {
+            "x": 0.51,
+            "y": 0.91,
+            "z": 0.46
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": -1.27,
+            "y": 0.45,
+            "z": 4.04
+          },
+          "size": {
+            "x": 0.3,
+            "y": 0.9,
+            "z": 0.46
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": -0.16,
+            "y": 0.45,
+            "z": 4.04
+          },
+          "size": {
+            "x": 0.3,
+            "y": 0.9,
+            "z": 0.46
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 2.86,
+            "y": 0.435,
+            "z": 4.03
+          },
+          "size": {
+            "x": 1.3,
+            "y": 0.87,
+            "z": 0.46
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": -1.04,
+            "y": 0.957,
+            "z": 4.02
+          },
+          "size": {
+            "x": 2.18,
+            "y": 0.046,
+            "z": 0.54
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": -0.72,
+            "y": 0.19,
+            "z": 4.07
+          },
+          "size": {
+            "x": 0.75,
+            "y": 0.026,
+            "z": 0.4
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": -0.72,
+            "y": 0.5,
+            "z": 4.07
+          },
+          "size": {
+            "x": 0.75,
+            "y": 0.026,
+            "z": 0.4
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 4.7,
+            "y": 1.08,
+            "z": 3.86
+          },
+          "size": {
+            "x": 0.035,
+            "y": 2.16,
+            "z": 0.035
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 4.7,
+            "y": 1.08,
+            "z": 4.38
+          },
+          "size": {
+            "x": 0.035,
+            "y": 2.16,
+            "z": 0.035
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 5.68,
+            "y": 1.08,
+            "z": 3.86
+          },
+          "size": {
+            "x": 0.035,
+            "y": 2.16,
+            "z": 0.035
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 5.68,
+            "y": 1.08,
+            "z": 4.38
+          },
+          "size": {
+            "x": 0.035,
+            "y": 2.16,
+            "z": 0.035
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 5.19,
+            "y": 0.13,
+            "z": 4.12
+          },
+          "size": {
+            "x": 1.04,
+            "y": 0.035,
+            "z": 0.58
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 5.19,
+            "y": 0.69,
+            "z": 4.12
+          },
+          "size": {
+            "x": 1.04,
+            "y": 0.035,
+            "z": 0.58
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 5.19,
+            "y": 1.25,
+            "z": 4.12
+          },
+          "size": {
+            "x": 1.04,
+            "y": 0.035,
+            "z": 0.58
+          }
+        },
+        {
+          "type": "box",
+          "center": {
+            "x": 5.19,
+            "y": 1.85,
+            "z": 4.12
+          },
+          "size": {
+            "x": 1.04,
+            "y": 0.035,
+            "z": 0.58
+          }
+        }
+      ],
+      "isStatic": true,
+      "moduleLodMap": {
+        "path": "docs/p08/golden/garage/v2/module-lod-mapping.json",
+        "sha256": "f9f0eacf42df5bd9fbea887fcf29f955960d48eb7379a6bc01eb950f653afb68"
+      }
+    }
+  ]
+}

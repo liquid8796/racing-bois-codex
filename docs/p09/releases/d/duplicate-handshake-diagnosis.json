@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "generatedUtc": "2026-09-26T18:59:35.6570821+00:00",
+  "scenario": "duplicate_kind_handshake_rejection",
+  "deadlineSeconds": 12,
+  "certificateValidation": "ordinary operating system trust",
+  "observations": [
+    {
+      "trial": 0,
+      "passed": true,
+      "phase": "receive",
+      "connectedMs": 762.5591,
+      "sentMs": 764.0989,
+      "totalMs": 989.6531,
+      "outcome": "Close"
+    },
+    {
+      "trial": 1,
+      "passed": true,
+      "phase": "receive",
+      "connectedMs": 715.0761,
+      "sentMs": 715.2069,
+      "totalMs": 953.3947,
+      "outcome": "Close"
+    },
+    {
+      "trial": 2,
+      "passed": true,
+      "phase": "receive",
+      "connectedMs": 659.926,
+      "sentMs": 660.016,
+      "totalMs": 877.9677,
+      "outcome": "Close"
+    }
+  ]
+}

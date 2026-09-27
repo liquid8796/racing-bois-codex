@@ -1,0 +1,636 @@
+{
+  "schema": 2,
+  "passed": true,
+  "generatedUtc": "2026-09-21T16:38:07.181023+00:00",
+  "unityVersion": "6000.5.7f1",
+  "geometryExports": 5,
+  "prefabVariants": 6,
+  "policy": "Concepts precede 3D authoring; newly authored geometry and maps; patrol variants declare geometry reuse.",
+  "files": [
+    {
+      "path": "ArtSource/Concepts/P03P04/coupe-concept-v1.png",
+      "bytes": 1779231,
+      "sha256": "c2644d82bade1a5e6c4d278d0b4b98699ff0072431243825470a2eebb015d8be"
+    },
+    {
+      "path": "ArtSource/Concepts/P03P04/van-concept-v1.png",
+      "bytes": 1810187,
+      "sha256": "35ca5eb116a5332848a797e662f247b0d1f5bad73087ac8530509aeea1614a54"
+    },
+    {
+      "path": "ArtSource/Concepts/P06/motorcycle-v1.png",
+      "bytes": 2713939,
+      "sha256": "0304a71c990a7149c9b43a01192155ebdfbec67643b909e2b7bc86f855c40c87"
+    },
+    {
+      "path": "ArtSource/Concepts/P06/patrol-v1.png",
+      "bytes": 2217270,
+      "sha256": "c01c34930b26efd408b721b08e4f90354f097a1af744e70d52999b0d0fb4ca9b"
+    },
+    {
+      "path": "ArtSource/Concepts/P06/PROMPTS.md",
+      "bytes": 5341,
+      "sha256": "936bdb00731d0be1c67b4dfa65bbfdb69de9132ddb5af35f07ebc2b1d1ec45aa"
+    },
+    {
+      "path": "ArtSource/Concepts/P06/rider-v1.png",
+      "bytes": 2334654,
+      "sha256": "8cd8bde4c607a9284b9ce6d88eb6088a9c10703487f890de7a2418f337d1f197"
+    },
+    {
+      "path": "ArtSource/P06/Hero/RB_P06_Motorcycle.blend",
+      "bytes": 10409214,
+      "sha256": "c3d0eb637083c03d631eb093eb8dd1ed78825b5a1c71b4bbb8d95f2e2f640c69"
+    },
+    {
+      "path": "ArtSource/P06/Hero/RB_P06_PoliceMotorcycle.blend",
+      "bytes": 46582775,
+      "sha256": "d7df6bd2b98b2292e4b935b27c5b028b4efe2af3b1b7e22c8a2f12b41b9eb971"
+    },
+    {
+      "path": "ArtSource/P06/Hero/RB_P06_Rider.blend",
+      "bytes": 40705215,
+      "sha256": "44e39962659ac127cb70712d05224aa444a655bc5341606aad0522b517cc90a5"
+    },
+    {
+      "path": "ArtSource/P06/Hero/RB_P06_TrafficCoupe.blend",
+      "bytes": 39080470,
+      "sha256": "4adada4410b1338831e589ae8790c525e5b60ed75275c8d5ff848b66afdc76d1"
+    },
+    {
+      "path": "ArtSource/P06/Hero/RB_P06_TrafficVan.blend",
+      "bytes": 39948185,
+      "sha256": "a29f63959fff87d6e1da40c2fa28399dc76c8b05399a73e765202213c4994786"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle.fbx",
+      "bytes": 852668,
+      "sha256": "4632a0516fb258427e16e6737617ee3bb20ff154bddd49e99bc3c95432a2e2bd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle.fbx.meta",
+      "bytes": 2993,
+      "sha256": "867ce692f22238c2692914e674faaa4add317bb0614c145cb2f54b87d812bb84"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_BaseColor.png",
+      "bytes": 898836,
+      "sha256": "554a5df0ba8599522571476ee417ae754b64f7a560b7c7c95917df9c857d1201"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_BaseColor.png.meta",
+      "bytes": 3007,
+      "sha256": "a9e0ea68aa55036c0a24660f587788de219cf02b666898fc72dab28728e1a5eb"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_MetallicSmoothness.png",
+      "bytes": 157614,
+      "sha256": "58dfed111d582c83996550352a312c7fd09e5b719caab2aa707efd44edf5424a"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_MetallicSmoothness.png.meta",
+      "bytes": 3005,
+      "sha256": "f6b0e8e043dc201ddc879f58befbe609a6424230ec9908bacf0cef9d92d688f4"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_Normal.png",
+      "bytes": 192161,
+      "sha256": "02a80d90acfd0f536a72e91581cb7cb8027a680c71cdd64a1ad796a8e9d78394"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_Normal.png.meta",
+      "bytes": 3005,
+      "sha256": "1dac94fef8de7f87fb09824b14ac89da135df23e1fa335938fc751cc23483228"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_Roughness.png",
+      "bytes": 156024,
+      "sha256": "d1648d87af7df5fd8440adc22aaa82b38595e243087235f30fdab699da8c75fa"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_Roughness.png.meta",
+      "bytes": 3005,
+      "sha256": "11bca4d7f524cb1874e9a7af31d22655a7d01e05e8134e7a27ecc4d8f5fba369"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle.fbx",
+      "bytes": 929468,
+      "sha256": "6982e2e84442338e8b4c558395de15e65518d29b7939548dc8b84d651131f75e"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle.fbx.meta",
+      "bytes": 2993,
+      "sha256": "ba050cfc73851cadf3c9328a9b40999d149865c8814287f26d2731d7e58f910e"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_BaseColor.png",
+      "bytes": 902990,
+      "sha256": "43487e4167c7540b1ed8866ff2aa6eb81b8c9421f0aaa6dfc4d136626623ba75"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_BaseColor.png.meta",
+      "bytes": 3007,
+      "sha256": "5665a38b6cc7e3ed89fc85a33650ee96bbfeee741b3b9486458d89b6245fcd47"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_MetallicSmoothness.png",
+      "bytes": 156529,
+      "sha256": "42f17808b353a2937436d221647f49a84802a2c30c5bf7b35e13c8e919775087"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_MetallicSmoothness.png.meta",
+      "bytes": 3005,
+      "sha256": "f590f55e1b25f01e76d62938eb4e1c2f536bcb665d745c2fe38c5d200a1c18e9"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_Normal.png",
+      "bytes": 195428,
+      "sha256": "dba8ff82468bb2650f0fafa2cd1140d12abe31671916cb798e2e69bccdb23e20"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_Normal.png.meta",
+      "bytes": 3005,
+      "sha256": "acd0e2f13ce4944513a2ea3fba1e7b613af41d266fa31231e50e3f5e66e6d442"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_Roughness.png",
+      "bytes": 155072,
+      "sha256": "865216a8148cadc3670155fc6de0acb0ca1f5e54b21f24daa06f394b80b7dac1"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_Roughness.png.meta",
+      "bytes": 3005,
+      "sha256": "f4c3de042e7f4e75856a2a25b7e6289053f08ee1d50291fce1787e2e6a53bf49"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceRider_BaseColor.png",
+      "bytes": 1319080,
+      "sha256": "2026fd0e791bffbe96490969df86bd90706a34e48985c161f5e59e227f297a7f"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceRider_BaseColor.png.meta",
+      "bytes": 3007,
+      "sha256": "d8f14cc00731ccec20790c63bafcad4cde9c2db6cc93d2347ea2f9859b5341c6"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx",
+      "bytes": 2021740,
+      "sha256": "d12abec227b04b0ce02f7adfdac87ff32dabe96f2bd2f020beae4245dc22eda4"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx.meta",
+      "bytes": 12953,
+      "sha256": "df2489978e27cd80fed39eb00e0b98f24498d19f074418082f0cdd5d3fcf3840"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_BaseColor.png",
+      "bytes": 1303755,
+      "sha256": "62fc018157c638ddf8b187ca1e07962da5592e2ff9a99a3f46644280553c95cf"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_BaseColor.png.meta",
+      "bytes": 3007,
+      "sha256": "0aced21367c209c0d586a2053535187d1d21ddb23475d2dcb70e18b129b8b67a"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_MetallicSmoothness.png",
+      "bytes": 218621,
+      "sha256": "b0b0fd6a186eda97e0be649857e28c8908c777634f5a24ffa794f99f9c6f7169"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_MetallicSmoothness.png.meta",
+      "bytes": 3005,
+      "sha256": "6b8c5d14aacd11151845b8f406f150394036669ae610dd7873fa79e05cdcfab5"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_Normal.png",
+      "bytes": 235663,
+      "sha256": "0f958fba40c01c337e153895b7fee06679549ace4ecc3da111414c7e332b2426"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_Normal.png.meta",
+      "bytes": 3005,
+      "sha256": "07ce1c9cc9efc76b8b71414415877021842aee1b33099cae7e879aab8aa8bfba"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_Roughness.png",
+      "bytes": 216999,
+      "sha256": "3f8f0f515ccc534c6810a3f9ff90fa797d2019bedad2fd4eb4bc4e3f53d7c0d9"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_Roughness.png.meta",
+      "bytes": 3005,
+      "sha256": "c1d4a454e274f181abbe0ea090982eaa33d673acaec52bbed0937728058024bc"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_BaseColor.png",
+      "bytes": 903026,
+      "sha256": "a9b22f10203c1f1fdd49b12d7d5de7e46120d60526fbf104dd2d1e82655c3a4c"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_BaseColor.png.meta",
+      "bytes": 3007,
+      "sha256": "019abebbbc9af78ff8286fe40827b58a37252ac3d39f40c526e85f70bcffef30"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_MetallicSmoothness.png",
+      "bytes": 141965,
+      "sha256": "112046e94874a0f332e2ade4bc6e4b159cb518664bd387016a32bf26ee01223b"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_MetallicSmoothness.png.meta",
+      "bytes": 3005,
+      "sha256": "ce2df12f4e598b37a22f95aeb7c58cf3ef173a4ae8f75375348151f3ce4e4a72"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_Normal.png",
+      "bytes": 191607,
+      "sha256": "10a8cc85e5236c0107a92ca2328378299d944dff6e7ab39ca35e0723e816ea73"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_Normal.png.meta",
+      "bytes": 3005,
+      "sha256": "1da151b8f0aa8c48b025948fc748124c2bb910919f7e3e8441c629358b4da6ca"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_Roughness.png",
+      "bytes": 140375,
+      "sha256": "0b76f54670d8f21767940e30da8b3481ec9a33dff3df2dce7b2b55701ce6355a"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_Roughness.png.meta",
+      "bytes": 3005,
+      "sha256": "037a12c0f2d9c089bfdd7abad5a309e75810c221ee8ec9bfb566ba2db6b45df3"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficCoupe.fbx",
+      "bytes": 357724,
+      "sha256": "271c7ad1fd5490d86f3bf923d032e6ede7851c20ccd79125bd19971423121720"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficCoupe.fbx.meta",
+      "bytes": 2993,
+      "sha256": "bd7991f2cda09eef31b2cab449fc8d9b2e0f011a619d639f837a7e726c17bb3d"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficVan.fbx",
+      "bytes": 369180,
+      "sha256": "4ca5f8d4dfe974d827ec3188cbcab9361e4d8b57f6468d948847cc27c7bb8fa8"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficVan.fbx.meta",
+      "bytes": 2993,
+      "sha256": "493db97575a0e11b9fa3b1c8e447d98a3279536ee2c9972bfbde9bc72381d6ca"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P06HeroAssetBuilder.cs",
+      "bytes": 27538,
+      "sha256": "f73e2f7608eaf03c4f4e5374afc0379bef916778a1589c96e5f237a870407b7d"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P06HeroAssetBuilder.cs.meta",
+      "bytes": 59,
+      "sha256": "060502e5f858c5b2c5e616ade1119fccecc934694c93f433eca06d09d9d05342"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Motorcycle.mat",
+      "bytes": 4070,
+      "sha256": "10c9abdec599c77d7650c173cb95d790ea14346e46e1660395f893a4c8bec5a4"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Motorcycle.mat.meta",
+      "bytes": 188,
+      "sha256": "55c3b76abc92ee030efcb6bd5ae07e5f612a3c7d3db20a7a1d15260367ba0ea2"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_PoliceMotorcycle.mat",
+      "bytes": 4076,
+      "sha256": "09bb4eebbed245979ff0f52b8969e08dce7091b0a3b63acdf42dde281d4d71bd"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_PoliceMotorcycle.mat.meta",
+      "bytes": 188,
+      "sha256": "f3b8def507209ffda83f13ed3a0ee92bb365624ce08dfd66dffc98454edd555a"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_PoliceRider.mat",
+      "bytes": 4070,
+      "sha256": "71d36c9241301c3cbc70884749d35a911e2198bd792346128a1ebf603f71a36b"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_PoliceRider.mat.meta",
+      "bytes": 188,
+      "sha256": "78c75d6d35ee5483f6e351a25607a1418ce2c1a8663d481d8671da1b020eaf9b"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Rider.mat",
+      "bytes": 4064,
+      "sha256": "37eec7672c341da7524ec7b6534545a5361b0c9edd0352d5cfa3453685d22d1f"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Rider.mat.meta",
+      "bytes": 188,
+      "sha256": "aa767f0da32a1bfe99886601c9ff245a91075bf0da6323cff00ba76c23309cbd"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Traffic.mat",
+      "bytes": 4067,
+      "sha256": "87a4ce53ce16cf73d8bb8bc37a040ea1c725744c884bc2bb1237d0f6a7b8689c"
+    },
+    {
+      "path": "Assets/RacingBois/Materials/P06/RB_P06_Traffic.mat.meta",
+      "bytes": 188,
+      "sha256": "38a66a7e577a8f243148486c57d8536b9f7e5f0b25d9bd1f2da77e03a511d619"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Motorcycle.prefab",
+      "bytes": 11446,
+      "sha256": "65b224290b278e29079dd7aa7d26271b948bb826f31651cbacb6c9f7faeaf7d3"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Motorcycle.prefab.meta",
+      "bytes": 154,
+      "sha256": "534edb784251b284974978864c9073f329c872ed6ff9edfa42d7ea9ce6aedb86"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceMotorcycle.prefab",
+      "bytes": 11452,
+      "sha256": "c9069590474b5c71e65028c0c7f34638d8ce00ba736dc14aad95c9e027cfdf95"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceMotorcycle.prefab.meta",
+      "bytes": 154,
+      "sha256": "39dc8c1720d60524d7f994b82f5244f3cd6bc7722e16adbaa644a195d1777f76"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceRider.prefab",
+      "bytes": 18193,
+      "sha256": "2f1927c02960c74b073a98c67ebf59db447a70076cf98a4a5ae1534c68b683ba"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceRider.prefab.meta",
+      "bytes": 154,
+      "sha256": "2500a7ee5f0d8b3624a4a99cfa7ff489b7f9c275f36cbb118c1280430ce892b9"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Rider.prefab",
+      "bytes": 18187,
+      "sha256": "0209fb1046727fd5ddac88cee169cd499296f021e6d07241ebb0d46e8b781f3e"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Rider.prefab.meta",
+      "bytes": 154,
+      "sha256": "17abf86614863279a0d116342219936b001d75f7a60c3a2f6da875cbaf4c2e87"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficCoupe.prefab",
+      "bytes": 7107,
+      "sha256": "3e308d535e847860439e7693a8bf8b40fab66eab1170c9e29784374712741134"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficCoupe.prefab.meta",
+      "bytes": 154,
+      "sha256": "d0bc79eec208232d2309f30b44add6a62d10c064097c869a4cbfb575b671a19a"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficVan.prefab",
+      "bytes": 7126,
+      "sha256": "c2faee19bee0173fd257e5d1badc652892154a71aba27b0f4779cbb2e3c571ed"
+    },
+    {
+      "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficVan.prefab.meta",
+      "bytes": 154,
+      "sha256": "ffd47825028f66f5f96d89d778e16ce2cee61e9268fa4a9f6b88dad0d88f3ad4"
+    },
+    {
+      "path": "docs/p06/hero/ASSETS.md",
+      "bytes": 8986,
+      "sha256": "b994fa1d4cfc2f592ff0bd3b49a7846c7a688daf52f52b94b477ea3be9f61763"
+    },
+    {
+      "path": "docs/p06/hero/blender-preflight-live.json",
+      "bytes": 4491,
+      "sha256": "e4f8635e2cf653f7433de5485885b234437e7f3bd236d5d318f33e95feaad184"
+    },
+    {
+      "path": "docs/p06/hero/blender-preflight.json",
+      "bytes": 3603,
+      "sha256": "3437f728c17024ef61e7675a013d1b64e077e9c91ee1a84da51648e3948d597a"
+    },
+    {
+      "path": "docs/p06/hero/finish-addon-status.json",
+      "bytes": 5127,
+      "sha256": "8980c2768cb193aeaba1a0acb05c3b8f36b6afd315bf7c20815273859aa71189"
+    },
+    {
+      "path": "docs/p06/hero/finish-scene-info.json",
+      "bytes": 6977,
+      "sha256": "1e9e3d48d569600a39aa38e722079bc6b1ffb23de448751654aa289d1b109676"
+    },
+    {
+      "path": "docs/p06/hero/marker-fix-addon.json",
+      "bytes": 5127,
+      "sha256": "8980c2768cb193aeaba1a0acb05c3b8f36b6afd315bf7c20815273859aa71189"
+    },
+    {
+      "path": "docs/p06/hero/marker-fix-scene-before.json",
+      "bytes": 6735,
+      "sha256": "91ed71dad3a1226ba74b94d8f9ecc457db4d79109759e85ca01b23ce74649d0b"
+    },
+    {
+      "path": "docs/p06/hero/motorcycle-audit-mcp.json",
+      "bytes": 8949,
+      "sha256": "716005d6127f72f8c8a78287db06749bfb4f626a37fce213f799779c07ddadde"
+    },
+    {
+      "path": "docs/p06/hero/motorcycle-mcp.json",
+      "bytes": 5099,
+      "sha256": "fbb766353766977fe8059a4152d24781d419558c5b14935e1975c8072957add7"
+    },
+    {
+      "path": "docs/p06/hero/patrol-mcp.json",
+      "bytes": 5769,
+      "sha256": "6dbf748364d2bdf86c105c81cb856a0bd4815d3557aa02a3569372323fe420c6"
+    },
+    {
+      "path": "docs/p06/hero/pose-review-mcp.json",
+      "bytes": 8557,
+      "sha256": "c786196ade9d4d96f9c63ab4528b58de0d15fab0ecb2004e7a00a6c7b24f8bbe"
+    },
+    {
+      "path": "docs/p06/hero/RB_AttackRight-pose.png",
+      "bytes": 375177,
+      "sha256": "b29ea41e593b70fb26502a2d2722dcc31a8ca4d959a385cbc72291e9bfdb0268"
+    },
+    {
+      "path": "docs/p06/hero/RB_Fall-pose.png",
+      "bytes": 342717,
+      "sha256": "4501b08f7a1722179e843cfc99a7947642e48c6c1e4b482d95ec3159d94f0b72"
+    },
+    {
+      "path": "docs/p06/hero/RB_KickLeft-pose.png",
+      "bytes": 354499,
+      "sha256": "99b4e54a145512f588696165844d004087a406a51ceb95377eaaee815ea09437"
+    },
+    {
+      "path": "docs/p06/hero/RB_P06_Motorcycle-render.png",
+      "bytes": 783538,
+      "sha256": "cf39709ba90717d1f82dbb9f32135dc94f73e6ec9e554007f938dbe0fe4738cf"
+    },
+    {
+      "path": "docs/p06/hero/RB_P06_PoliceMotorcycle-render.png",
+      "bytes": 792493,
+      "sha256": "690605df62259696a5b64e4b45901612ad3bb5957312157131a297dd168e6d17"
+    },
+    {
+      "path": "docs/p06/hero/RB_P06_PoliceRider-unity-poses.json",
+      "bytes": 6046,
+      "sha256": "ad23efd1ab74fb4fb7dcd7b5940c755fae757024eaca34470e1ff3e6c03564b5"
+    },
+    {
+      "path": "docs/p06/hero/RB_P06_Rider-render.png",
+      "bytes": 634288,
+      "sha256": "2314a794ac2732e82c318bc6ad93b38fb285c8de6dece1b8d8259f0b7cec8ea5"
+    },
+    {
+      "path": "docs/p06/hero/RB_P06_Rider-unity-poses.json",
+      "bytes": 6040,
+      "sha256": "42448bd859a17d5793a5ebc86521c21d81519f712a05e62584ec2bec2a091d59"
+    },
+    {
+      "path": "docs/p06/hero/RB_P06_TrafficCoupe-render.png",
+      "bytes": 711530,
+      "sha256": "48d0aaed552eb7f50c83dc5aa2cd2687eeddf28b39c68d3e346432a94e0623de"
+    },
+    {
+      "path": "docs/p06/hero/RB_P06_TrafficVan-render.png",
+      "bytes": 1004767,
+      "sha256": "5f393d97473aa50de24b3a0906aff9bdbc1131fc080667a1ffacb600bb57a939"
+    },
+    {
+      "path": "docs/p06/hero/RB_Ride-pose.png",
+      "bytes": 360325,
+      "sha256": "d5ac55c1ad5c41742e3a52cd6c0af165602eff1be27f38640e68d825d4caa109"
+    },
+    {
+      "path": "docs/p06/hero/RB_Run-pose.png",
+      "bytes": 368727,
+      "sha256": "b9d7a2862c478ac8067413a9eca741fb74d7a23e3b3f3b7c6b5a8a087c68586c"
+    },
+    {
+      "path": "docs/p06/hero/rider-audit-mcp.json",
+      "bytes": 5947,
+      "sha256": "872e3358d28a498b2b4d216656b41f8cc241838bb61f8a7c7cd21e8942b8a3ae"
+    },
+    {
+      "path": "docs/p06/hero/rider-mcp.json",
+      "bytes": 8167,
+      "sha256": "207d8e58c089d42c0b1c1b06b59ed7be46788ca7e4c13d1dbbc459841ace6fca"
+    },
+    {
+      "path": "docs/p06/hero/saved-sources-audit-mcp.json",
+      "bytes": 22555,
+      "sha256": "4226c5c675745284e24cce1e022a3d4f9f2acdf0a57687926f12df12179a5d69"
+    },
+    {
+      "path": "docs/p06/hero/source-audit-summary.json",
+      "bytes": 12565,
+      "sha256": "b08dfd3368e80a2a1f10fcbe27546c4cfc33751efd9dbf027a2cadbacfb8e76a"
+    },
+    {
+      "path": "docs/p06/hero/traffic-audit-before-arch-fix.json",
+      "bytes": 7977,
+      "sha256": "2e5dde273ded11bb87d20ae7a9589e381c906181eff54dc481aac772ba8228f1"
+    },
+    {
+      "path": "docs/p06/hero/traffic-audit-mcp.json",
+      "bytes": 7939,
+      "sha256": "1f43ca2a757e0a17e34179e5a62be9427eca2fddd790cf0eaa5176d2e37084d1"
+    },
+    {
+      "path": "docs/p06/hero/traffic-diagnostic-mcp.json",
+      "bytes": 10333,
+      "sha256": "40b692c1a352cbb05cb0b494619e1f12a7f54444bce7307aafd8c2f4d4192495"
+    },
+    {
+      "path": "docs/p06/hero/traffic-marker-fix-context-failed.json",
+      "bytes": 6967,
+      "sha256": "456c59b1276289ec1edfd2601e8ac2af112638f68b5be6def9ee12ec384f076e"
+    },
+    {
+      "path": "docs/p06/hero/traffic-marker-fix-mcp.json",
+      "bytes": 6169,
+      "sha256": "6d625309d30b5f057f8e3a1d5221b8d3d20101f99110ae4fca4e8c46c843a8bd"
+    },
+    {
+      "path": "docs/p06/hero/traffic-mcp.json",
+      "bytes": 5895,
+      "sha256": "f3d8deafaf8bcb32ed2abc85d7a352a31fcfacea2f3f86a34d4dcc286a385fef"
+    },
+    {
+      "path": "docs/p06/hero/unity-validation.json",
+      "bytes": 3356,
+      "sha256": "1aefd2111570197dc7a675b798152502187dec4d88e5ebce97e667980801080b"
+    },
+    {
+      "path": "tools/p06/hero/audit.py",
+      "bytes": 4195,
+      "sha256": "3ddf4df3eced6451c1a7bb5c1fcb76ac49da6d62cf15d7139119fb040a8eb02c"
+    },
+    {
+      "path": "tools/p06/hero/common.py",
+      "bytes": 13870,
+      "sha256": "b3a92f94f1ece2f030c6be90807468c5ce6346c92a65b39aa1ed1a162a1fb8c8"
+    },
+    {
+      "path": "tools/p06/hero/compose.py",
+      "bytes": 617,
+      "sha256": "d740119892c1c19efb37b909e1fb5dd936f754e30bed3602c8c8412ba74e4474"
+    },
+    {
+      "path": "tools/p06/hero/compose_audit.py",
+      "bytes": 954,
+      "sha256": "3e60c977ebf0ce766c19e1547aed40c4ac08bc0c724707bc725efdd8d6a2e21b"
+    },
+    {
+      "path": "tools/p06/hero/compose_saved_audit.py",
+      "bytes": 1036,
+      "sha256": "735559593acc2bf3ac779a8f6e34608a8d7e22b0e6d9220e6bfd0828862d9372"
+    },
+    {
+      "path": "tools/p06/hero/create_motorcycle.py",
+      "bytes": 9605,
+      "sha256": "fa9b21a3676e58b8a42906b8e6542b37c30335b0c261eb522b78515123ed86fb"
+    },
+    {
+      "path": "tools/p06/hero/create_patrol.py",
+      "bytes": 11842,
+      "sha256": "294a102fb8efb8917d14fcd3c546ca5e4b837226f9b73d500b80a08dd39abe94"
+    },
+    {
+      "path": "tools/p06/hero/create_rider.py",
+      "bytes": 14312,
+      "sha256": "5cd12cc8c9096f64b96c23054eb41e1b646dbbe7914f9e8614ade9dea92fc5ff"
+    },
+    {
+      "path": "tools/p06/hero/create_traffic.py",
+      "bytes": 9338,
+      "sha256": "c7ebf7aca34d5db295b0100b64619bd0a6c91277fd07be09be25f2714ce795a2"
+    },
+    {
+      "path": "tools/p06/hero/fix_traffic_markers.py",
+      "bytes": 2803,
+      "sha256": "ebb42a970c5e88b896e6416c67d7e211c51df94f49b2e5a2cb58c920882d13ec"
+    },
+    {
+      "path": "tools/p06/hero/pose_review.py",
+      "bytes": 1241,
+      "sha256": "3a5c77b955371d4b6b872000304ba1853cd01727fbf9b3c068b4b00ee952f76c"
+    },
+    {
+      "path": "tools/p06/hero/write_manifest.py",
+      "bytes": 5889,
+      "sha256": "bd79917ae66ac58f05421e161cb83466f803a50e8349ea003b9ec78debe42541"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "generatedAtUtc": "2026-09-22T05:18:44.3728153+00:00",
+  "passed": true,
+  "tests": 19,
+  "failed": 0,
+  "sources": [
+    {
+      "path": "Assets/RacingBois/Client/Application/BenchmarkReadModelProjection.cs",
+      "sha256": "b6a8bc60061a82708c9313c85e66cb009a3b1d2f7cac6beb232aedd16fddd74e"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerReadModels.cs",
+      "sha256": "02606c8b983eb6c6a34e26a8cdfc9b56a71ec99513fb39e5014067e94857a1a7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerSession.cs",
+      "sha256": "4e6dfe324903d054fd24dc35a3cf08aef5b7f2e9337608aaab3c9efe87d512d2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/FoundationSession.cs",
+      "sha256": "6a73e99870964cbab13332dd1ebec1d3b7bd5aa45f6483a3d5218ceff8f85713"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/LocalCampaignReadModel.cs",
+      "sha256": "c014ef97141d1cae2de48dac2eb36c8e1d5844fec823d72f250410aa22396dc4"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerPorts.cs",
+      "sha256": "2f8534dfdc89e1bc1bafcdab5515c2449db993374007305af69c16f2a982b6bb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerProjection.cs",
+      "sha256": "93b048e8c300f689f41d54684688695f2ccbcc7278f6494a7892140607b4c157"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerReadModels.cs",
+      "sha256": "7a7a5aaf8f355754fd0c42c5e508d2a3d0670453d5c97d99ecfc790c634af1b2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "sha256": "90607a28e0e21c462673d064a9e8884b076e40855af5bceb51aa4eea8dc905e7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "sha256": "c17a2be647945c2a35a11c37b6a9adc1b56ce37c44d94d9b45e811613ca1ce06"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs",
+      "sha256": "99143aca414bcb1683a210b23eab7aab875fc4c48919fb0aa7acf6f833170728"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSession.cs",
+      "sha256": "2768d4266f650e527110bde14bb30bd2fdf28f24f8aa997ac060453e5bb8ed2c"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSnapshotValidator.cs",
+      "sha256": "3c7a43ca2017742c6384aa8fa45dd1dd2811f36cb87a7aa5c836b946adaa7608"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceStateProjection.cs",
+      "sha256": "0648041e566df00755825e08f025ef40be219feafd9d04bd4150a331240923d8"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceWorldReadModel.cs",
+      "sha256": "f8adfa025031ec4fa97b22799cb3534b770414780f37f727a58a0383f5bbb783"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RemoteMotionSampler.cs",
+      "sha256": "a0d48dcf5d00484fce61791b28ad4d6ca7e8d091e69eb337923256c0701a9d3f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/WorldReadModel.cs",
+      "sha256": "0fe52476bf47c5fc16a52e84d2aac5b37eba9f692c25f2bca3052a7d646a112b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/CareerMessages.cs",
+      "sha256": "28bb32a1303083181f5b4dd539e679dccb2c02bf31de1ff0a9090c662d998656"
+    },
+    {
+      "path": "src/Tests/RacingBois.P07Client.Tests/Program.cs",
+      "sha256": "d295bf3cc5e0c936d6fb7693fedb0778f37b1fb028767fcf9549129bcbaddc78"
+    }
+  ],
+  "results": [
+    {
+      "name": "api_endpoint_preserves_authority_and_uses_tls",
+      "passed": true
+    },
+    {
+      "name": "invite_only_prefills_six_ascii_letters_or_digits",
+      "passed": true
+    },
+    {
+      "name": "no_profile_means_no_financial_request",
+      "passed": true
+    },
+    {
+      "name": "uncertain_purchase_retries_same_intent_without_optimistic_funds",
+      "passed": true
+    },
+    {
+      "name": "duplicate_submit_during_flight_is_ignored",
+      "passed": true
+    },
+    {
+      "name": "definitive_rejection_does_not_offer_automatic_retry",
+      "passed": true
+    },
+    {
+      "name": "new_intent_has_new_transaction_id",
+      "passed": true
+    },
+    {
+      "name": "account_ops_require_https_even_offline_lan",
+      "passed": true
+    },
+    {
+      "name": "login_does_not_require_prior_capability_and_rotates_lease",
+      "passed": true
+    },
+    {
+      "name": "credential_failures_require_reentry_and_never_retain_retry",
+      "passed": true
+    },
+    {
+      "name": "endpoint_switch_rejects_stale_response_and_keeps_realms_separate",
+      "passed": true
+    },
+    {
+      "name": "logout_only_clears_after_server_acknowledges_revocation",
+      "passed": true
+    },
+    {
+      "name": "secret_outputs_are_ephemeral_and_not_in_credential_storage",
+      "passed": true
+    },
+    {
+      "name": "offline_export_import_remain_server_intents",
+      "passed": true
+    },
+    {
+      "name": "room_options_preserve_private_campaign_selection",
+      "passed": true
+    },
+    {
+      "name": "authoritative_projection_is_detached_from_mutable_wire_data",
+      "passed": true
+    },
+    {
+      "name": "malformed_garage_snapshot_does_not_replace_last_authority",
+      "passed": true
+    },
+    {
+      "name": "forget_expired_credential_is_local_and_scoped_to_endpoint",
+      "passed": true
+    },
+    {
+      "name": "gameover_restart_waits_for_authority_and_retries_same_transaction",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "http://127.0.0.1:7777/Build/21f19dff49b124047ba3562e1aabc146.data.gz",
+    "status": 200,
+    "contentType": "application/octet-stream",
+    "contentEncoding": "gzip",
+    "contentLength": 4073117,
+    "certificateValidation": "N/A - plaintext HTTP",
+    "method": "curl HEAD without automatic decompression"
+  },
+  {
+    "url": "https://localhost:7778/Build/21f19dff49b124047ba3562e1aabc146.data.gz",
+    "status": 200,
+    "contentType": "application/octet-stream",
+    "contentEncoding": "gzip",
+    "contentLength": 4073117,
+    "certificateValidation": "Normal OS trust; no bypass",
+    "method": "curl HEAD without automatic decompression"
+  },
+  {
+    "url": "http://127.0.0.1:7777/Build/421039193cbdae92f76f418ed070b56e.wasm.gz",
+    "status": 200,
+    "contentType": "application/wasm",
+    "contentEncoding": "gzip",
+    "contentLength": 10891096,
+    "certificateValidation": "N/A - plaintext HTTP",
+    "method": "curl HEAD without automatic decompression"
+  },
+  {
+    "url": "https://localhost:7778/Build/421039193cbdae92f76f418ed070b56e.wasm.gz",
+    "status": 200,
+    "contentType": "application/wasm",
+    "contentEncoding": "gzip",
+    "contentLength": 10891096,
+    "certificateValidation": "Normal OS trust; no bypass",
+    "method": "curl HEAD without automatic decompression"
+  },
+  {
+    "url": "http://127.0.0.1:7777/Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+    "status": 200,
+    "contentType": "text/javascript",
+    "contentEncoding": "gzip",
+    "contentLength": 75274,
+    "certificateValidation": "N/A - plaintext HTTP",
+    "method": "curl HEAD without automatic decompression"
+  },
+  {
+    "url": "https://localhost:7778/Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+    "status": 200,
+    "contentType": "text/javascript",
+    "contentEncoding": "gzip",
+    "contentLength": 75274,
+    "certificateValidation": "Normal OS trust; no bypass",
+    "method": "curl HEAD without automatic decompression"
+  }
+]

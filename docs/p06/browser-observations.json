@@ -1,0 +1,102 @@
+{
+  "runtimeCommit": "efce749",
+  "webRoot": "Build/Web-p06-v4",
+  "buildVersion": "0.6.0",
+  "startedUtc": "2026-09-22T02:10:55.600Z",
+  "completedUtc": "2026-09-22T02:32:01.996Z",
+  "physicalMachines": 1,
+  "browser": "Codex In-app Browser",
+  "sampleSource": "Selected fields from read-only DOM #network-status data-snapshot; screenshots inspected inline. Not a continuous benchmark.",
+  "golden": { "passed": true, "hash": "ED162155D421B3CF", "ticks": 3000 },
+  "observedUiChecks": {
+    "joinByEnterWithoutClickingJoin": true,
+    "fullInviteCodeVisible": true,
+    "unicodeRoomName": "Đua thử P06",
+    "bothReadyAndHostStart": true,
+    "countdownVisible": true,
+    "rightKickPoseVisible": true,
+    "expiredResumeMessageObserved": true,
+    "localWreckedResultsAndRetry": true
+  },
+  "alphaRace": {
+    "state": "Connected", "mode": "Online", "player": 1,
+    "sessionId": "2fed6edcee1d4c3bb71ce3ff4ad440b3",
+    "room": "W3TAUF", "roomPhase": "Racing",
+    "tick": 1042, "inputs": 1039, "ack": 1032,
+    "health": 4096, "bike": 100, "width": 1280, "height": 690,
+    "rttMs": 10.741245305542213, "pendingInputs": 7,
+    "lateInputs": 0, "futureInputs": 0, "missingInputs": 3, "staleRemotes": 0,
+    "unityAllocatedBytes": 119566420, "managedBytes": 5840896, "wasmHeapBytes": 193331200
+  },
+  "bravoRace": {
+    "state": "Connected", "mode": "Online", "player": 2,
+    "sessionId": "afacda78fef74e4bafcc1a1392757574",
+    "room": "W3TAUF", "roomPhase": "Racing",
+    "tick": 1035, "inputs": 1032, "ack": 1026,
+    "health": 4096, "bike": 100, "width": 1280, "height": 690,
+    "rttMs": 10.418745417859073, "pendingInputs": 6,
+    "lateInputs": 0, "futureInputs": 0, "missingInputs": 3, "staleRemotes": 0,
+    "unityAllocatedBytes": 119636524, "managedBytes": 6004736, "wasmHeapBytes": 193331200
+  },
+  "bravoAfterKickHealth": 4096,
+  "pvpDamageProvenByThisBrowserRun": false,
+  "alphaMovement": {
+    "state": "Connected", "mode": "Online", "player": 1,
+    "room": "W3TAUF", "roomPhase": "Racing",
+    "tick": 5662, "inputs": 5659, "ack": 5652,
+    "speed": 0.3919999897480011, "distance": 484.84698486328125,
+    "health": 4096, "bike": 88, "rttMs": 11.96800783111621,
+    "audioEvents": 3, "impactEffects": 1
+  },
+  "lobbyReloadResume": {
+    "elapsedUiMs": 3419,
+    "before": {
+      "state": "Connected", "mode": "Online", "player": 1,
+      "sessionId": "5e2f11d6383a42188fadb3ad280e9fbb",
+      "room": "VEAD68", "roomPhase": "Lobby", "rttMs": 10.302874711362877
+    },
+    "after": {
+      "state": "Connected", "mode": "Online", "player": 1,
+      "sessionId": "5e2f11d6383a42188fadb3ad280e9fbb",
+      "room": "VEAD68", "roomPhase": "Lobby", "rttMs": 15.175926281856603
+    },
+    "sameSessionAndRoom": true,
+    "scope": "Successful lobby resume. Two earlier race reload attempts exceeded the 30-second lease; those showed expired-seat feedback and do not establish race resume."
+  },
+  "httpConnected": {
+    "url": "http://127.0.0.1:7777/",
+    "endpoint": "ws://127.0.0.1:7777/multiplayer",
+    "state": "Connected", "mode": "Online",
+    "sessionId": "da2e69b4efd34e5cbbf7707b1bec5d69",
+    "room": "", "roomPhase": "", "rttMs": 7.165603110226794,
+    "scope": "Guest lobby connection and logout, not an HTTP race"
+  },
+  "local1080Moving": {
+    "state": "Connected", "mode": "Local", "riderState": "Riding",
+    "tick": 450, "inputs": 450, "ack": 450,
+    "speed": 46.30699920654297, "distance": 201.96499633789062,
+    "health": 4096, "bike": 100, "width": 1920, "height": 1080,
+    "graphicsQuality": 1, "frameP50Ms": 3, "frameP95Ms": 4,
+    "gpuTimingAvailable": false, "allocationCounterAvailable": false,
+    "unityAllocatedBytes": 120764538, "managedBytes": 5431296, "wasmHeapBytes": 193331200,
+    "audioUnlocked": true, "audioMuted": false, "audioBankReady": true,
+    "audioEvents": 14, "impactEffects": 10
+  },
+  "local1080Result": {
+    "state": "Connected", "mode": "Local", "riderState": "Wrecked",
+    "tick": 19899, "distance": 2160.797119140625,
+    "health": 2884, "bike": 0, "width": 1920, "height": 1080
+  },
+  "capturedWarningErrorLogs": { "alpha": [], "bravo": [], "http": [] },
+  "cleanup": {
+    "secondaryClientsLoggedOutAndClosed": true,
+    "viewportReset": true,
+    "mainTabMenuKept": true
+  },
+  "limitations": [
+    "One physical PC and loopback server; no physical LAN with WAN off or cross-network Internet acceptance.",
+    "Point telemetry and a rendered canvas do not prove monitor FPS, a 10-minute benchmark, GPU timing or zero allocations.",
+    "No physical gamepad, iGPU, novice-user usability or subjective final art/audio approval.",
+    "Screenshots were inspected inline; no persistent browser image export is claimed. Unity capture files remain labeled Unity."
+  ]
+}

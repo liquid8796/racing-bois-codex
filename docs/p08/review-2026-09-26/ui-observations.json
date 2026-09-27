@@ -1,0 +1,91 @@
+{
+  "scope": "Unity Editor play-mode presentation review; synthetic content states only; no native player or network acceptance",
+  "unity": "6000.5.7f1",
+  "target": "StandaloneWindows64",
+  "viewport": {
+    "width": 1105,
+    "height": 506,
+    "referenceWidth": 1600,
+    "referenceHeight": 900,
+    "logicalWidth": 1965.41492,
+    "logicalHeight": 899.999939
+  },
+  "observations": {
+    "contentError": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "blocks": true,
+          "focus": "content-retry",
+          "busy": true
+        },
+        "compiler": "codedom"
+      }
+    },
+    "settings": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "settings": true,
+          "focus": "settings-close",
+          "blocks": true
+        },
+        "compiler": "codedom"
+      }
+    },
+    "contentOverSettingsInitial": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "settings": true,
+          "content": true,
+          "blocks": true,
+          "localEnabled": false,
+          "focus": "content-loading"
+        },
+        "compiler": "codedom"
+      }
+    },
+    "contentOverSettingsSettled": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "settings": true,
+          "content": true,
+          "focus": "RacingBoisNetwork-container"
+        },
+        "compiler": "codedom"
+      }
+    },
+    "gallery": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "gallery": true,
+          "content": false
+        },
+        "compiler": "codedom"
+      }
+    },
+    "careerDisconnected": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "career": true
+        },
+        "compiler": "codedom"
+      }
+    }
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0,
+    "scope": "error/warning entries returned at end of this play-mode smoke; excludes earlier external MCP compiler warning"
+  }
+}

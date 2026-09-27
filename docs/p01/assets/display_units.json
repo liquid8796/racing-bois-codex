@@ -1,0 +1,308 @@
+{
+  "status": "NATIVE_DISPLAY_MATH_AND_TABLE_MAPPING_PASS",
+  "source_exe_sha256": "66ab853c5b7b73b82a7c22a0478f5ba5b1066ed27028ef96449f5fe36a6101c5",
+  "fixture_count": 1086,
+  "fixture_groups": {
+    "HUD_SPEED": 936,
+    "HUD_DISTANCE": 100,
+    "COURSE_MENU_LENGTH": 50
+  },
+  "source_functions": {
+    "speed": "0x4468e0",
+    "distance": "0x446a40",
+    "metric_setting": "0x42f490",
+    "course_display": "0x420810",
+    "course_selection": "0x4160c0",
+    "filename_loader": "0x441940"
+  },
+  "digital_speed_examples": [
+    {
+      "raw_velocity": 0,
+      "mph": 0,
+      "kph": 0
+    },
+    {
+      "raw_velocity": 1000,
+      "mph": 8,
+      "kph": 12
+    },
+    {
+      "raw_velocity": 4000,
+      "mph": 38,
+      "kph": 60
+    },
+    {
+      "raw_velocity": 8000,
+      "mph": 78,
+      "kph": 124
+    },
+    {
+      "raw_velocity": 10000,
+      "mph": 99,
+      "kph": 158
+    },
+    {
+      "raw_velocity": 12000,
+      "mph": 118,
+      "kph": 188
+    },
+    {
+      "raw_velocity": 16000,
+      "mph": 159,
+      "kph": 254
+    },
+    {
+      "raw_velocity": 20000,
+      "mph": 199,
+      "kph": 318
+    }
+  ],
+  "course_menu_metric_factor": 1.609,
+  "course_menu_lengths": [
+    {
+      "selection_id_1based": 1,
+      "loader_index_0based": 0,
+      "menu_entry_va": "0x4691a0",
+      "title_string_id": 16,
+      "display_name": "The City",
+      "course_source": "DATA/COURSES/CITY.CRS",
+      "length_table_va": "0x468f58",
+      "levels": [
+        {
+          "level_display": 1,
+          "imperial_tenths": 53,
+          "miles_display": "5.3",
+          "metric_tenths": 85,
+          "kilometers_display": "8.5"
+        },
+        {
+          "level_display": 2,
+          "imperial_tenths": 84,
+          "miles_display": "8.4",
+          "metric_tenths": 135,
+          "kilometers_display": "13.5"
+        },
+        {
+          "level_display": 3,
+          "imperial_tenths": 115,
+          "miles_display": "11.5",
+          "metric_tenths": 185,
+          "kilometers_display": "18.5"
+        },
+        {
+          "level_display": 4,
+          "imperial_tenths": 135,
+          "miles_display": "13.5",
+          "metric_tenths": 217,
+          "kilometers_display": "21.7"
+        },
+        {
+          "level_display": 5,
+          "imperial_tenths": 163,
+          "miles_display": "16.3",
+          "metric_tenths": 262,
+          "kilometers_display": "26.2"
+        }
+      ]
+    },
+    {
+      "selection_id_1based": 2,
+      "loader_index_0based": 1,
+      "menu_entry_va": "0x4691d8",
+      "title_string_id": 17,
+      "display_name": "Sierra Nevada",
+      "course_source": "DATA/COURSES/HIWAY.CRS",
+      "length_table_va": "0x468f6c",
+      "levels": [
+        {
+          "level_display": 1,
+          "imperial_tenths": 53,
+          "miles_display": "5.3",
+          "metric_tenths": 85,
+          "kilometers_display": "8.5"
+        },
+        {
+          "level_display": 2,
+          "imperial_tenths": 79,
+          "miles_display": "7.9",
+          "metric_tenths": 127,
+          "kilometers_display": "12.7"
+        },
+        {
+          "level_display": 3,
+          "imperial_tenths": 98,
+          "miles_display": "9.8",
+          "metric_tenths": 157,
+          "kilometers_display": "15.7"
+        },
+        {
+          "level_display": 4,
+          "imperial_tenths": 129,
+          "miles_display": "12.9",
+          "metric_tenths": 207,
+          "kilometers_display": "20.7"
+        },
+        {
+          "level_display": 5,
+          "imperial_tenths": 171,
+          "miles_display": "17.1",
+          "metric_tenths": 275,
+          "kilometers_display": "27.5"
+        }
+      ]
+    },
+    {
+      "selection_id_1based": 3,
+      "loader_index_0based": 2,
+      "menu_entry_va": "0x469210",
+      "title_string_id": 18,
+      "display_name": "The Peninsula",
+      "course_source": "DATA/COURSES/MEDLY.CRS",
+      "length_table_va": "0x468f80",
+      "levels": [
+        {
+          "level_display": 1,
+          "imperial_tenths": 53,
+          "miles_display": "5.3",
+          "metric_tenths": 85,
+          "kilometers_display": "8.5"
+        },
+        {
+          "level_display": 2,
+          "imperial_tenths": 80,
+          "miles_display": "8.0",
+          "metric_tenths": 128,
+          "kilometers_display": "12.8"
+        },
+        {
+          "level_display": 3,
+          "imperial_tenths": 110,
+          "miles_display": "11.0",
+          "metric_tenths": 176,
+          "kilometers_display": "17.6"
+        },
+        {
+          "level_display": 4,
+          "imperial_tenths": 150,
+          "miles_display": "15.0",
+          "metric_tenths": 241,
+          "kilometers_display": "24.1"
+        },
+        {
+          "level_display": 5,
+          "imperial_tenths": 168,
+          "miles_display": "16.8",
+          "metric_tenths": 270,
+          "kilometers_display": "27.0"
+        }
+      ]
+    },
+    {
+      "selection_id_1based": 4,
+      "loader_index_0based": 3,
+      "menu_entry_va": "0x469248",
+      "title_string_id": 19,
+      "display_name": "Napa Valley",
+      "course_source": "DATA/COURSES/NAPA.CRS",
+      "length_table_va": "0x468f94",
+      "levels": [
+        {
+          "level_display": 1,
+          "imperial_tenths": 50,
+          "miles_display": "5.0",
+          "metric_tenths": 80,
+          "kilometers_display": "8.0"
+        },
+        {
+          "level_display": 2,
+          "imperial_tenths": 76,
+          "miles_display": "7.6",
+          "metric_tenths": 122,
+          "kilometers_display": "12.2"
+        },
+        {
+          "level_display": 3,
+          "imperial_tenths": 106,
+          "miles_display": "10.6",
+          "metric_tenths": 170,
+          "kilometers_display": "17.0"
+        },
+        {
+          "level_display": 4,
+          "imperial_tenths": 128,
+          "miles_display": "12.8",
+          "metric_tenths": 205,
+          "kilometers_display": "20.5"
+        },
+        {
+          "level_display": 5,
+          "imperial_tenths": 185,
+          "miles_display": "18.5",
+          "metric_tenths": 297,
+          "kilometers_display": "29.7"
+        }
+      ]
+    },
+    {
+      "selection_id_1based": 5,
+      "loader_index_0based": 4,
+      "menu_entry_va": "0x469280",
+      "title_string_id": 20,
+      "display_name": "Pacific Highway",
+      "course_source": "DATA/COURSES/CANYN.CRS",
+      "length_table_va": "0x468fa8",
+      "levels": [
+        {
+          "level_display": 1,
+          "imperial_tenths": 55,
+          "miles_display": "5.5",
+          "metric_tenths": 88,
+          "kilometers_display": "8.8"
+        },
+        {
+          "level_display": 2,
+          "imperial_tenths": 81,
+          "miles_display": "8.1",
+          "metric_tenths": 130,
+          "kilometers_display": "13.0"
+        },
+        {
+          "level_display": 3,
+          "imperial_tenths": 110,
+          "miles_display": "11.0",
+          "metric_tenths": 176,
+          "kilometers_display": "17.6"
+        },
+        {
+          "level_display": 4,
+          "imperial_tenths": 126,
+          "miles_display": "12.6",
+          "metric_tenths": 202,
+          "kilometers_display": "20.2"
+        },
+        {
+          "level_display": 5,
+          "imperial_tenths": 161,
+          "miles_display": "16.1",
+          "metric_tenths": 259,
+          "kilometers_display": "25.9"
+        }
+      ]
+    }
+  ],
+  "display_calibration": {
+    "raw_longitudinal_q8_per_sample": 256,
+    "start_offset_samples": 50,
+    "imperial_samples_per_displayed_tenth_mile": 33,
+    "imperial_raw_position_per_displayed_mile": 84480,
+    "metric_raw_position_per_displayed_tenth_km": 5280,
+    "proof_scope": "HUD quantization only; physical Unity meters, exact route distance and integrated speed consistency are not claimed"
+  },
+  "behavioral_notes": [
+    "Speed negatives clamp to0 in digital modes.",
+    "HUD distance stores low8bits without clamp; out-of-range/negative inputs can wrap.",
+    "HUD display arithmetic approximates metric/imperial ratio1.6, while course menu uses1.609 and truncates tenths.",
+    "Menu lengths are declared display metadata, not measurements of every fork or level finish predicate."
+  ],
+  "platform_reference": "https://learn.microsoft.com/en-us/windows/win32/intl/locale-imeasure"
+}

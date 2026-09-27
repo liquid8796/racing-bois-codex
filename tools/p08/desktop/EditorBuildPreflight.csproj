@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion>
+    <Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors><NoWarn>0436</NoWarn>
+    <DefineConstants>UNITY_EDITOR;UNITY_STANDALONE_WIN;UNITY_6000_0_OR_NEWER</DefineConstants>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../</ProjectRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Editor/P08DesktopBuilder.cs" Link="P08DesktopBuilder.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Editor/P08ContentPackBuilder.cs" Link="P08ContentPackBuilder.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/ContentManifestRules.cs" Link="ContentManifestRules.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs" Link="DesktopRuntimeConfig.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+    <Reference Include="$(UnityManaged)/UnityEditor/*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Presentation.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "tests": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "no_flag_no_connection_configuration",
+      "passed": true
+    },
+    {
+      "name": "explicit_wss_defaults_and_hash",
+      "passed": true
+    },
+    {
+      "name": "ws_and_wrong_routes_rejected",
+      "passed": true
+    },
+    {
+      "name": "custom_options_require_opt_in",
+      "passed": true
+    },
+    {
+      "name": "duplicate_and_unknown_options_rejected",
+      "passed": true
+    },
+    {
+      "name": "duration_boundaries",
+      "passed": true
+    },
+    {
+      "name": "absolute_report_and_fingerprint_required",
+      "passed": true
+    },
+    {
+      "name": "unity_flags_do_not_enable_or_change_probe",
+      "passed": true
+    }
+  ],
+  "scope": "Pure argument policy only; no Unity lifecycle/network execution."
+}

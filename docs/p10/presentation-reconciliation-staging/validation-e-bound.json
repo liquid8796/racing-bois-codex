@@ -1,0 +1,604 @@
+{
+  "passed": true,
+  "failures": 0,
+  "tests": 35,
+  "results": [
+    {
+      "name": "maximum-correction-episode_unchanged_production_replay_and_actual_sample",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_unchanged_production_replay_and_actual_sample",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_20fps",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_30fps",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_60fps",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_120fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_20fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_30fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_60fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_120fps",
+      "passed": true
+    },
+    {
+      "name": "ordinary_motion_is_exact_without_extra_input_lag",
+      "passed": true
+    },
+    {
+      "name": "event_cap_large_reverse_step_is_continuous_and_converges",
+      "passed": true
+    },
+    {
+      "name": "repeat_correction_freeze_resume_and_reset_lifecycle",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_20fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_20fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_30fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_30fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_60fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_60fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_120fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_maximum-correction-episode_120fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_20fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_20fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_30fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_30fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_60fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_60fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_120fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_speculative-neighbor-episode_120fps_controlled_motion",
+      "passed": true
+    },
+    {
+      "name": "timed_same-clock-event-cap_20fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_same-clock-event-cap_30fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_same-clock-event-cap_60fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_same-clock-event-cap_120fps_hold",
+      "passed": true
+    },
+    {
+      "name": "timed_normal_motion_freeze_reset_and_repeat_continuity",
+      "passed": true
+    },
+    {
+      "name": "production_sources_unchanged",
+      "passed": true
+    }
+  ],
+  "details": [
+    {
+      "fixture": "maximum-correction-episode",
+      "productionRawS": 2146.83,
+      "productionEventCappedS": 2125.688,
+      "reproducedSameClockEventCapDisplacementMeters": 21.14209,
+      "gameplayDigestUnchanged": true,
+      "rawEqualTargetCorrectionMeters": 16.258056521474785,
+      "recordedPresentedPairDeltaMeters": 4.99609375,
+      "scope": "Actual unchanged SamplePresentation with exact full-checkpoint replay. Event IDs are synthetic monotonic IDs; no wire/handshake validation is claimed. Reproduced cap step is not a captured previous Unity frame."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "productionRawS": 98.43727,
+      "productionEventCappedS": 98.43727,
+      "reproducedSameClockEventCapDisplacementMeters": 0,
+      "gameplayDigestUnchanged": true,
+      "rawEqualTargetCorrectionMeters": 9.81515447587321,
+      "recordedPresentedPairDeltaMeters": 10.3960049805521,
+      "scope": "Actual unchanged SamplePresentation with exact full-checkpoint replay. Event IDs are synthetic monotonic IDs; no wire/handshake validation is claimed. Reproduced cap step is not a captured previous Unity frame."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 20,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 1.0000633,
+      "maximumBikeCorrectionStepMeters": 1.0000403,
+      "settleSeconds": 1.4,
+      "controlledCameraMinimumRiderDepthMeters": 6.691762,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 30,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.6666699,
+      "maximumBikeCorrectionStepMeters": 0.666697,
+      "settleSeconds": 1.4000001,
+      "controlledCameraMinimumRiderDepthMeters": 6.691762,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 60,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.33339718,
+      "maximumBikeCorrectionStepMeters": 0.33334854,
+      "settleSeconds": 1.4000001,
+      "controlledCameraMinimumRiderDepthMeters": 6.6763973,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 120,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.16675891,
+      "maximumBikeCorrectionStepMeters": 0.16673438,
+      "settleSeconds": 1.4000001,
+      "controlledCameraMinimumRiderDepthMeters": 6.518491,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 20,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 1.0000008,
+      "maximumBikeCorrectionStepMeters": 1.0000055,
+      "settleSeconds": 1.25,
+      "controlledCameraMinimumRiderDepthMeters": 6.3422203,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 30,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.66667235,
+      "maximumBikeCorrectionStepMeters": 0.6666704,
+      "settleSeconds": 1.2666668,
+      "controlledCameraMinimumRiderDepthMeters": 6.342228,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 60,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.33333617,
+      "maximumBikeCorrectionStepMeters": 0.3333352,
+      "settleSeconds": 1.2500001,
+      "controlledCameraMinimumRiderDepthMeters": 6.3422356,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 120,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.16667189,
+      "maximumBikeCorrectionStepMeters": 0.1666714,
+      "settleSeconds": 1.2416667,
+      "controlledCameraMinimumRiderDepthMeters": 6.3422737,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "same-clock-event-cap",
+      "rawDisplacementMeters": 21.142,
+      "firstCandidateStep": 0,
+      "maximumStepMeters": 0.3334961,
+      "settledSeconds": 1.8,
+      "limitation": "Requires visible positional error for over one second at this cap; this is not invisibility or immediate authority-position fidelity."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 20,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 2.8139184,
+      "maximumBikeStepMeters": 4.440988,
+      "maximumCameraStepMeters": 2.7619004,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 56.278366,
+      "settledSeconds": 0.25,
+      "minimumControlledRiderDepthMeters": 6.4449615,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 20,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 3.1268332,
+      "maximumBikeStepMeters": 4.7545056,
+      "maximumCameraStepMeters": 2.9193335,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 56.278366,
+      "settledSeconds": 0.25,
+      "minimumControlledRiderDepthMeters": 6.4449615,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 30,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 1.83436,
+      "maximumBikeStepMeters": 3.060126,
+      "maximumCameraStepMeters": 1.797688,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 55.030796,
+      "settledSeconds": 0.23333335,
+      "minimumControlledRiderDepthMeters": 6.4144154,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 30,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 2.042565,
+      "maximumBikeStepMeters": 3.2688515,
+      "maximumCameraStepMeters": 1.9026948,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 55.030796,
+      "settledSeconds": 0.23333335,
+      "minimumControlledRiderDepthMeters": 6.4144154,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 60,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 0.97956324,
+      "maximumBikeStepMeters": 1.5541791,
+      "maximumCameraStepMeters": 0.9577907,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 58.773792,
+      "settledSeconds": 0.21666668,
+      "minimumControlledRiderDepthMeters": 6.380101,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 60,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 1.0842681,
+      "maximumBikeStepMeters": 1.6589752,
+      "maximumCameraStepMeters": 1.0038537,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 58.773792,
+      "settledSeconds": 0.21666668,
+      "minimumControlledRiderDepthMeters": 6.380101,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 120,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 0.49768263,
+      "maximumBikeStepMeters": 0.77838707,
+      "maximumCameraStepMeters": 0.4857356,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 59.721912,
+      "settledSeconds": 0.21666668,
+      "minimumControlledRiderDepthMeters": 6.3613963,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "maximum-correction-episode",
+      "fps": 120,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 0.5505277,
+      "maximumBikeStepMeters": 0.8313341,
+      "maximumCameraStepMeters": 0.5069897,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 59.721912,
+      "settledSeconds": 0.21666668,
+      "minimumControlledRiderDepthMeters": 6.3613963,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 20,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 3.9543219,
+      "maximumBikeStepMeters": 2.3357284,
+      "maximumCameraStepMeters": 3.9986181,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 79.08643,
+      "settledSeconds": 0.2,
+      "minimumControlledRiderDepthMeters": 6.34244,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 20,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 5.6939974,
+      "maximumBikeStepMeters": 4.0696516,
+      "maximumCameraStepMeters": 4.8745456,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 79.08643,
+      "settledSeconds": 0.2,
+      "minimumControlledRiderDepthMeters": 6.5886807,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 30,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 2.7397144,
+      "maximumBikeStepMeters": 1.6231544,
+      "maximumCameraStepMeters": 2.7709327,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 82.19143,
+      "settledSeconds": 0.20000002,
+      "minimumControlledRiderDepthMeters": 6.342471,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 30,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 3.8998208,
+      "maximumBikeStepMeters": 2.7793522,
+      "maximumCameraStepMeters": 3.354905,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 82.19143,
+      "settledSeconds": 0.20000002,
+      "minimumControlledRiderDepthMeters": 6.6191745,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 60,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 1.39004,
+      "maximumBikeStepMeters": 0.8267413,
+      "maximumCameraStepMeters": 1.4065745,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 83.4024,
+      "settledSeconds": 0.20000002,
+      "minimumControlledRiderDepthMeters": 6.3424907,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 60,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 1.9695917,
+      "maximumBikeStepMeters": 1.4043232,
+      "maximumCameraStepMeters": 1.6985542,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 83.4024,
+      "settledSeconds": 0.20000002,
+      "minimumControlledRiderDepthMeters": 6.653445,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 120,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 0.69589454,
+      "maximumBikeStepMeters": 0.41381633,
+      "maximumCameraStepMeters": 0.7049233,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 83.50734,
+      "settledSeconds": 0.19166668,
+      "minimumControlledRiderDepthMeters": 6.342513,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "speculative-neighbor-episode",
+      "fps": 120,
+      "movingTarget": true,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 0.9856703,
+      "maximumBikeStepMeters": 0.70260674,
+      "maximumCameraStepMeters": 0.8486498,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 83.50734,
+      "settledSeconds": 0.19166668,
+      "minimumControlledRiderDepthMeters": 6.672138,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "same-clock-event-cap",
+      "fps": 20,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 21.14197,
+      "rawBikeRootStepMeters": 21.14197,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 5.277801,
+      "maximumBikeStepMeters": 5.277801,
+      "maximumCameraStepMeters": 5.277801,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 105.55602,
+      "settledSeconds": 0.3,
+      "minimumControlledRiderDepthMeters": 6.3416066,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "same-clock-event-cap",
+      "fps": 30,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 21.14197,
+      "rawBikeRootStepMeters": 21.14197,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 3.608561,
+      "maximumBikeStepMeters": 3.608561,
+      "maximumCameraStepMeters": 3.608561,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 108.25683,
+      "settledSeconds": 0.3,
+      "minimumControlledRiderDepthMeters": 6.3416066,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "same-clock-event-cap",
+      "fps": 60,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 21.14197,
+      "rawBikeRootStepMeters": 21.14197,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 1.8103728,
+      "maximumBikeStepMeters": 1.8103728,
+      "maximumCameraStepMeters": 1.8103728,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 108.62237,
+      "settledSeconds": 0.3,
+      "minimumControlledRiderDepthMeters": 6.3416066,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    },
+    {
+      "variant": "finite-duration-camera-rebase",
+      "fixture": "same-clock-event-cap",
+      "fps": 120,
+      "movingTarget": false,
+      "rawRiderRootStepMeters": 21.14197,
+      "rawBikeRootStepMeters": 21.14197,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderStepMeters": 0.9066002,
+      "maximumBikeStepMeters": 0.9066002,
+      "maximumCameraStepMeters": 0.9066002,
+      "maximumAdditionalCorrectionSpeedMetersPerSecond": 108.792015,
+      "settledSeconds": 0.2916667,
+      "minimumControlledRiderDepthMeters": 6.3416038,
+      "scope": "Controlled road/transform reconstruction using the actual stage camera position Lerp7Hz and rotation Slerp7Hz formulas plus camera coordinate rebase. Initial camera assumes it had reached the old target; no captured Unity frame/camera state exists. Fast world motion and temporary relative errors remain visible risks."
+    }
+  ],
+  "sources": {
+    "Assets/RacingBois/Client/Application/MultiplayerSession.cs": "90607a28e0e21c462673d064a9e8884b076e40855af5bceb51aa4eea8dc905e7",
+    "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs": "797bccd3cd235c91241f94f0663c27873b18cd4b1fc460cf5575c37f06fe6ef7",
+    "Assets/RacingBois/Client/Application/RemoteMotionSampler.cs": "342dcc0ca6302e7b60080366cc688de0096c97bdde332252ba9c258b0a365095",
+    "Assets/RacingBois/Client/Presentation/RaceStageView.cs": "ddca51da1a4246882dc46b8d6ab5ac4d28be82cfad163ab3161b41e4acd84b91",
+    "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs": "d97f157aa2958b7517c46bf0fc294e55c9364c1207efe8a64584d2b4e8b3bb5b"
+  },
+  "candidate": "Two isolated renderer-only variants. Speed-capped variant exposes1.25\u20131.8s offset; finite-duration variant limits uninterrupted offset to300ms and rebases the camera filter coordinate before applying the same display offset. Neither is visually accepted.",
+  "nativeUnityRendered": false,
+  "productionApplied": false,
+  "scope": "Isolated sample-path and render-transform mathematics. Inputs, authority and prediction remain unchanged. Native frame capture, terrain/occlusion, VFX alignment, animation and human comfort remain separate gates."
+}

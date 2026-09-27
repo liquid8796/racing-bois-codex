@@ -1,0 +1,39 @@
+{
+  "generatedUtc": "2026-09-21T09:30:44.263Z",
+  "passed": true,
+  "tests": 8,
+  "results": [
+    {
+      "name": "persistent_profile_and_tab_receipt_are_separate",
+      "passed": true
+    },
+    {
+      "name": "unicode_roundtrip_and_allocations_released",
+      "passed": true
+    },
+    {
+      "name": "oversized_storage_record_is_not_deserialized",
+      "passed": true
+    },
+    {
+      "name": "denied_storage_reports_failure_instead_of_empty_success",
+      "passed": true
+    },
+    {
+      "name": "visibility_callback_uses_latest_receiver_once",
+      "passed": true
+    },
+    {
+      "name": "server_session_replaced_close_reason_is_preserved",
+      "passed": true
+    },
+    {
+      "name": "oversize_frame_stops_before_unity_message_bridge",
+      "passed": true
+    },
+    {
+      "name": "stale_socket_callbacks_cannot_close_replacement",
+      "passed": true
+    }
+  ]
+}

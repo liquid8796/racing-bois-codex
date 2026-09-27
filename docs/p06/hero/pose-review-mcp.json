@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: {\"poses\": [{\"clip\": \"RB_Ride\", \"frame\": 1, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.0, 1.3394691944122314, 0.2236948311328888], \"Hand_L\": [-0.3395390212535858, 1.1464715003967285, 0.7084670066833496], \"Hand_R\": [0.3395389914512634, 1.146471381187439, 0.7084670066833496], \"Foot_L\": [-0.1795930117368698, 0.3942931890487671, 0.15946832299232483], \"Foot_R\": [0.1795930117368698, 0.3942931890487671, 0.15946832299232483]}}, {\"clip\": \"RB_AttackRight\", \"frame\": 8, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [0.034092482179403305, 1.401477575302124, 0.07357016950845718], \"Hand_L\": [-0.05465032160282135, 1.4132376909255981, 0.6896264553070068], \"Hand_R\": [0.8045346736907959, 1.412954568862915, 0.0056748054921627045], \"Foot_L\": [-0.1795930117368698, 0.3942931890487671, 0.15946832299232483], \"Foot_R\": [0.1795930117368698, 0.3942931890487671, 0.15946832299232483]}}, {\"clip\": \"RB_KickLeft\", \"frame\": 9, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.0, 1.3394691944122314, 0.2236948311328888], \"Hand_L\": [-0.3395390212535858, 1.1464715003967285, 0.7084670066833496], \"Hand_R\": [0.3395389914512634, 1.146471381187439, 0.7084670066833496], \"Foot_L\": [-0.6853786706924438, 0.7478375434875488, 0.44495776295661926], \"Foot_R\": [0.1795930117368698, 0.3942931890487671, 0.15946832299232483]}}, {\"clip\": \"RB_Run\", \"frame\": 7, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.0, 1.4062044620513916, 0.05427749082446098], \"Hand_L\": [-0.2807438373565674, 1.0958164930343628, 0.43950754404067993], \"Hand_R\": [0.31631696224212646, 0.9106320142745972, -0.06155086308717728], \"Foot_L\": [-0.11749999970197678, 0.24920549988746643, -0.43896669149398804], \"Foot_R\": [0.11749999970197678, 0.21234479546546936, 0.10494738817214966]}}, {\"clip\": \"RB_Fall\", \"frame\": 19, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.5046855211257935, 0.9609290957450867, -0.034076280891895294], \"Hand_L\": [-0.451591432094574, 0.4536072313785553, 0.4567766785621643], \"Hand_R\": [-0.09271404147148132, 1.5053867101669312, 0.2789289653301239], \"Foot_L\": [0.5736700892448425, 0.444405734539032, -0.19908860325813293], \"Foot_R\": [0.5473548769950867, 1.1056458950042725, -0.5338917970657349]}}], \"method\": \"Authored actions evaluated against real Armature modifier; renders from Blender Cycles.\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: {\"poses\": [{\"clip\": \"RB_Ride\", \"frame\": 1, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.0, 1.3394691944122314, 0.2236948311328888], \"Hand_L\": [-0.3395390212535858, 1.1464715003967285, 0.7084670066833496], \"Hand_R\": [0.3395389914512634, 1.146471381187439, 0.7084670066833496], \"Foot_L\": [-0.1795930117368698, 0.3942931890487671, 0.15946832299232483], \"Foot_R\": [0.1795930117368698, 0.3942931890487671, 0.15946832299232483]}}, {\"clip\": \"RB_AttackRight\", \"frame\": 8, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [0.034092482179403305, 1.401477575302124, 0.07357016950845718], \"Hand_L\": [-0.05465032160282135, 1.4132376909255981, 0.6896264553070068], \"Hand_R\": [0.8045346736907959, 1.412954568862915, 0.0056748054921627045], \"Foot_L\": [-0.1795930117368698, 0.3942931890487671, 0.15946832299232483], \"Foot_R\": [0.1795930117368698, 0.3942931890487671, 0.15946832299232483]}}, {\"clip\": \"RB_KickLeft\", \"frame\": 9, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.0, 1.3394691944122314, 0.2236948311328888], \"Hand_L\": [-0.3395390212535858, 1.1464715003967285, 0.7084670066833496], \"Hand_R\": [0.3395389914512634, 1.146471381187439, 0.7084670066833496], \"Foot_L\": [-0.6853786706924438, 0.7478375434875488, 0.44495776295661926], \"Foot_R\": [0.1795930117368698, 0.3942931890487671, 0.15946832299232483]}}, {\"clip\": \"RB_Run\", \"frame\": 7, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.0, 1.4062044620513916, 0.05427749082446098], \"Hand_L\": [-0.2807438373565674, 1.0958164930343628, 0.43950754404067993], \"Hand_R\": [0.31631696224212646, 0.9106320142745972, -0.06155086308717728], \"Foot_L\": [-0.11749999970197678, 0.24920549988746643, -0.43896669149398804], \"Foot_R\": [0.11749999970197678, 0.21234479546546936, 0.10494738817214966]}}, {\"clip\": \"RB_Fall\", \"frame\": 19, \"jointPositionsUnityMeters\": {\"Hip\": [-0.0, 0.8899999856948853, -0.0], \"Head\": [-0.5046855211257935, 0.9609290957450867, -0.034076280891895294], \"Hand_L\": [-0.451591432094574, 0.4536072313785553, 0.4567766785621643], \"Hand_R\": [-0.09271404147148132, 1.5053867101669312, 0.2789289653301239], \"Foot_L\": [0.5736700892448425, 0.444405734539032, -0.19908860325813293], \"Foot_R\": [0.5473548769950867, 1.1056458950042725, -0.5338917970657349]}}], \"method\": \"Authored actions evaluated against real Armature modifier; renders from Blender Cycles.\"}\n"
+    },
+    "isError": false
+  }
+}

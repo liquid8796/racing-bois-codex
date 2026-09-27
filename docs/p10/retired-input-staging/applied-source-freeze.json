@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "appliedUtc": "2026-09-27T00:21:44.2218551Z",
+  "verifiedUtc": "2026-09-27T00:22:20.5113573Z",
+  "manifestSha256": "d1181ae1e32b987f96e13dd6a4f7cb9da103d102ce090d9a08fd647c8f559d49",
+  "passed": true,
+  "files": [
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "sha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1",
+      "matchesReviewed": true
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "sha256": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688",
+      "matchesReviewed": true
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.InputErrors.cs",
+      "sha256": "fc850f5930026fceb66ece042480e5c82ad989079b1473579610a33ab72b589d",
+      "matchesReviewed": true
+    },
+    {
+      "path": "src/Tests/RacingBois.RetiredInput.Tests/Program.cs",
+      "sha256": "9493b44cd4547b30a49961a3f76e388ab41f6a7c79f4e80598d0566d5fa152b0",
+      "matchesReviewed": true
+    },
+    {
+      "path": "src/Tests/RacingBois.RetiredInput.Tests/RacingBois.RetiredInput.Tests.csproj",
+      "sha256": "74f1c091317835496c4d751e2e026746389e4743dc21d55eefce5e60acb01375",
+      "matchesReviewed": true
+    },
+    {
+      "path": "tools/p10/run-regression.py",
+      "sha256": "38f50dd8ad3d8638ac0b8bc2b91f45ce75c8c980d48e2474c32cd987e944bf5b",
+      "matchesReviewed": true
+    }
+  ],
+  "scope": "Only known retired input rejection UI handling and tests. Server/wire/policy and raw observer counts unchanged."
+}

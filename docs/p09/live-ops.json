@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "startedUtc": "2026-09-26T18:30:17.945516+00:00",
+  "finishedUtc": "2026-09-26T18:31:08.937679+00:00",
+  "releaseId": "p09-20260927-c",
+  "sourceSha256": "fbd8d0b623d9faabd097b23824b33bfead07399c1a2f1097a8ffd29453dea7dc",
+  "endpoint": "https://racing-bois.158.180.59.36.sslip.io",
+  "requests": 20,
+  "tls": {
+    "validatedByOperatingSystem": true,
+    "version": "TLSv1.3",
+    "peerCertificateSha256": "d0d8b12c6f0693eb9ef475c6b96cff5337b6d33a65e9520aa4d6bb7e3a23af00",
+    "subject": [
+      [
+        [
+          "commonName",
+          "racing-bois.158.180.59.36.sslip.io"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YE2"
+        ]
+      ]
+    ],
+    "notBefore": "Sep 26 16:49:21 2026 GMT",
+    "notAfter": "Dec 25 16:49:20 2026 GMT",
+    "subjectAltName": [
+      [
+        "DNS",
+        "racing-bois.158.180.59.36.sslip.io"
+      ]
+    ]
+  },
+  "ready": {
+    "status": "ready",
+    "protocolVersion": 4,
+    "contentHash": "p08-C655ECB89DF77CFD"
+  },
+  "restartSeconds": 3.7543230000010226,
+  "backup": {
+    "status": "passed",
+    "createdUtc": "2026-09-26T18:30:41.698992+00:00",
+    "archive": "racing-bois-20260926T183041698992Z.tar.gpg",
+    "archiveSha256": "b4d780f78f3db6095297f8eccf90e92a02ca3d820de3f8fd2f267d60e66cf558",
+    "archiveBytes": 225363,
+    "realmId": "5fa398d06a354a64b09ce60848ef9b20",
+    "realmKind": "online",
+    "revision": 66,
+    "stateSha256": "34be2801106b73f7bde32edfdc171f175a2a812567c40e1e0ad7b85fb86e9180",
+    "profileCount": 4,
+    "creditsTotal": 992,
+    "ledgerCount": 8,
+    "receiptCount": 4
+  },
+  "restore": {
+    "status": "passed",
+    "scope": "GPG integrity, SQLite integrity/FKs, exact realm, state, balance, ledger and receipt comparison; server startup is tested separately.",
+    "archive": "racing-bois-20260926T183041698992Z.tar.gpg",
+    "archiveSha256": "b4d780f78f3db6095297f8eccf90e92a02ca3d820de3f8fd2f267d60e66cf558",
+    "restoredDirectory": "/var/lib/racing-bois-staging/restore-drills/d42a2ab969df496d8bb307bed84f0da7",
+    "realmId": "5fa398d06a354a64b09ce60848ef9b20",
+    "realmKind": "online",
+    "revision": 66,
+    "stateSha256": "34be2801106b73f7bde32edfdc171f175a2a812567c40e1e0ad7b85fb86e9180",
+    "profileCount": 4,
+    "creditsTotal": 992,
+    "ledgerCount": 8,
+    "receiptCount": 4
+  },
+  "healthAfter": {
+    "status": "ok",
+    "phase": "P03/P04 gameplay authority",
+    "tick": 1922,
+    "players": 0,
+    "protocolVersion": 3,
+    "simulationRulesVersion": 3,
+    "legacyProtocolVersion": 1,
+    "rejectedCommands": 0,
+    "slowTicks": 0,
+    "maximumStepMilliseconds": 2.9389,
+    "multiplayer": {
+      "protocolVersion": 4,
+      "serviceTick": 1922,
+      "roomCount": 0,
+      "sessionCount": 0,
+      "realmId": "5fa398d06a354a64b09ce60848ef9b20",
+      "realmKind": "online",
+      "profilePersistence": true,
+      "rejectedCommands": 0,
+      "slowTicks": 0,
+      "persistenceFailures": 0,
+      "droppedCatchupTicks": 0,
+      "maximumStepMilliseconds": 6.6947,
+      "tickDurationHistogram": {
+        "samples": 1922,
+        "p50UpperBoundMilliseconds": 0.05,
+        "p95UpperBoundMilliseconds": 0.05,
+        "p99UpperBoundMilliseconds": 0.05,
+        "overflowSamples": 0,
+        "bucketUpperBoundsMilliseconds": [
+          0.05,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16.667,
+          25,
+          50,
+          100,
+          250,
+          null
+        ],
+        "bucketCounts": [
+          1918,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "trusted_public_https_ready",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/health",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/health/",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/multiplayer/health",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/multiplayer/health/",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/HEALTH",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/metrics",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/ws",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/realm.sqlite3",
+      "passed": true
+    },
+    {
+      "name": "private_path_blocked:/content/../realm.sqlite3",
+      "passed": true
+    },
+    {
+      "name": "register_online_account_over_trusted_https",
+      "passed": true
+    },
+    {
+      "name": "server_authoritative_trade_balance",
+      "passed": true
+    },
+    {
+      "name": "idempotent_transaction_over_internet",
+      "passed": true
+    },
+    {
+      "name": "transaction_intent_conflict_rejected",
+      "passed": true
+    },
+    {
+      "name": "online_realm_rejects_offline_export",
+      "passed": true
+    },
+    {
+      "name": "cross_origin_request_rejected",
+      "passed": true
+    },
+    {
+      "name": "client_wallet_field_rejected",
+      "passed": true
+    },
+    {
+      "name": "restart_preserves_account_identity_balance",
+      "passed": true
+    },
+    {
+      "name": "restart_preserves_idempotent_receipt",
+      "passed": true
+    },
+    {
+      "name": "online_backup_and_isolated_restore_exact_state",
+      "passed": true
+    },
+    {
+      "name": "restored_server_projection_validation_and_account_login",
+      "passed": true
+    }
+  ],
+  "scope": "One Windows Internet origin to Frankfurt staging; this is not multi-region or Unity desktop acceptance."
+}

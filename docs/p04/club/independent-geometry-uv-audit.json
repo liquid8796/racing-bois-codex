@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: {\"passed\": true, \"mode\": \"read-only independent mesh and exact triangle UV intersection audit\", \"blender_version\": \"5.2.1 LTS\", \"root_identity\": true, \"lods\": [{\"lod\": 0, \"triangles\": 1080, \"vertices\": 546, \"nonmanifold_edges\": 0, \"inconsistent_winding_edges\": 0, \"degenerate_faces\": 0, \"loose_vertices\": 0, \"duplicate_vertices_within_components\": 0, \"components\": [{\"vertices\": 302, \"signed_volume\": 0.0011842311574857462}, {\"vertices\": 162, \"signed_volume\": 6.678410623687612e-05}, {\"vertices\": 82, \"signed_volume\": 7.96671327899881e-06}], \"uv_out_of_bounds\": 0, \"uv_degenerate_triangles\": 0, \"uv_positive_area_overlap_pairs\": 0, \"max_overlap_area\": 0, \"unity_min\": [-0.04500000178813934, -0.07500000298023224, -0.04500000178813934], \"unity_max\": [0.04500000178813934, 0.4749999940395355, 0.04500000178813934], \"passed\": true}, {\"lod\": 1, \"triangles\": 384, \"vertices\": 198, \"nonmanifold_edges\": 0, \"inconsistent_winding_edges\": 0, \"degenerate_faces\": 0, \"loose_vertices\": 0, \"duplicate_vertices_within_components\": 0, \"components\": [{\"vertices\": 110, \"signed_volume\": 0.0011474008994127888}, {\"vertices\": 38, \"signed_volume\": 6.405140511607972e-05}, {\"vertices\": 50, \"signed_volume\": 7.734248091158712e-06}], \"uv_out_of_bounds\": 0, \"uv_degenerate_triangles\": 0, \"uv_positive_area_overlap_pairs\": 0, \"max_overlap_area\": 0, \"unity_min\": [-0.04399999976158142, -0.07500000298023224, -0.04399999976158142], \"unity_max\": [0.04399999976158142, 0.4749999940395355, 0.04399999976158142], \"passed\": true}, {\"lod\": 2, \"triangles\": 160, \"vertices\": 86, \"nonmanifold_edges\": 0, \"inconsistent_winding_edges\": 0, \"degenerate_faces\": 0, \"loose_vertices\": 0, \"duplicate_vertices_within_components\": 0, \"components\": [{\"vertices\": 50, \"signed_volume\": 0.0010138471091067905}, {\"vertices\": 18, \"signed_volume\": 6.203627602493117e-05}, {\"vertices\": 18, \"signed_volume\": 6.416995271744474e-06}], \"uv_out_of_bounds\": 0, \"uv_degenerate_triangles\": 0, \"uv_positive_area_overlap_pairs\": 0, \"max_overlap_area\": 0, \"unity_min\": [-0.041999999433755875, -0.07500000298023224, -0.041999999433755875], \"unity_max\": [0.041999999433755875, 0.4749999940395355, 0.041999999433755875], \"passed\": true}], \"uv_reuse\": \"Same atlas reused between LODs only; no intra-LOD surface overlap\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: {\"passed\": true, \"mode\": \"read-only independent mesh and exact triangle UV intersection audit\", \"blender_version\": \"5.2.1 LTS\", \"root_identity\": true, \"lods\": [{\"lod\": 0, \"triangles\": 1080, \"vertices\": 546, \"nonmanifold_edges\": 0, \"inconsistent_winding_edges\": 0, \"degenerate_faces\": 0, \"loose_vertices\": 0, \"duplicate_vertices_within_components\": 0, \"components\": [{\"vertices\": 302, \"signed_volume\": 0.0011842311574857462}, {\"vertices\": 162, \"signed_volume\": 6.678410623687612e-05}, {\"vertices\": 82, \"signed_volume\": 7.96671327899881e-06}], \"uv_out_of_bounds\": 0, \"uv_degenerate_triangles\": 0, \"uv_positive_area_overlap_pairs\": 0, \"max_overlap_area\": 0, \"unity_min\": [-0.04500000178813934, -0.07500000298023224, -0.04500000178813934], \"unity_max\": [0.04500000178813934, 0.4749999940395355, 0.04500000178813934], \"passed\": true}, {\"lod\": 1, \"triangles\": 384, \"vertices\": 198, \"nonmanifold_edges\": 0, \"inconsistent_winding_edges\": 0, \"degenerate_faces\": 0, \"loose_vertices\": 0, \"duplicate_vertices_within_components\": 0, \"components\": [{\"vertices\": 110, \"signed_volume\": 0.0011474008994127888}, {\"vertices\": 38, \"signed_volume\": 6.405140511607972e-05}, {\"vertices\": 50, \"signed_volume\": 7.734248091158712e-06}], \"uv_out_of_bounds\": 0, \"uv_degenerate_triangles\": 0, \"uv_positive_area_overlap_pairs\": 0, \"max_overlap_area\": 0, \"unity_min\": [-0.04399999976158142, -0.07500000298023224, -0.04399999976158142], \"unity_max\": [0.04399999976158142, 0.4749999940395355, 0.04399999976158142], \"passed\": true}, {\"lod\": 2, \"triangles\": 160, \"vertices\": 86, \"nonmanifold_edges\": 0, \"inconsistent_winding_edges\": 0, \"degenerate_faces\": 0, \"loose_vertices\": 0, \"duplicate_vertices_within_components\": 0, \"components\": [{\"vertices\": 50, \"signed_volume\": 0.0010138471091067905}, {\"vertices\": 18, \"signed_volume\": 6.203627602493117e-05}, {\"vertices\": 18, \"signed_volume\": 6.416995271744474e-06}], \"uv_out_of_bounds\": 0, \"uv_degenerate_triangles\": 0, \"uv_positive_area_overlap_pairs\": 0, \"max_overlap_area\": 0, \"unity_min\": [-0.041999999433755875, -0.07500000298023224, -0.041999999433755875], \"unity_max\": [0.041999999433755875, 0.4749999940395355, 0.041999999433755875], \"passed\": true}], \"uv_reuse\": \"Same atlas reused between LODs only; no intra-LOD surface overlap\"}\n"
+    },
+    "isError": false
+  }
+}

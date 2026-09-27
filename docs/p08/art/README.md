@@ -1,0 +1,22 @@
+# P08 original production art
+
+Every new design follows a generated and visually inspected P08 concept image before Blender geometry authoring. The source-game art is never loaded by these recipes. Existing Racing Bois P06 authoring helpers are original project code and provide the manufacturing primitives, axis convention, UV projection, final topology repair and FBX export.
+
+Authoring uses the real pinned Blender MCP stdio protocol with safe mode enabled, connected to a hidden task-owned Blender 5.2.1 instance on loopback port 9876. `mcp-scene-live-before.json` confirms the initial factory scene. The first unavailable-bridge receipt is retained separately; it is not reported as a successful authoring operation.
+
+The recipe for each batch is assembled as literal Python by `tools/p08/art/compose.py`. No runtime `exec`, remote generation service, marketplace download or original-game extraction participates in the 3D pipeline. Recipes save the prior dedicated Blender scene before clearing it. The unrelated preexisting `ArtSource/Weapons/RB_Club.blend` remains untouched.
+
+Each exported prop contains three decreasing LODs, a metre-scale ground pivot, original procedural PBR atlases and normalized Unity prefab roots. Atlases intentionally share surface tiles across disconnected construction components and repeated LODs. Exact triangle intersection checks reject overlap within an individual connected surface. Sources use dynamic lighting; a secondary lightmap UV is not required for the current rendering path.
+
+`collect.py` accepts only actual successful creation receipts. `compose_audit.py` independently opens the saved authoring files and checks all final LOD meshes for closed positive-volume components, manifold edges, winding, degenerate/loose vertices, UV bounds and unintended overlap. `P08ArtBuilder.Setup()` imports textures/FBX, creates URP Lit shared materials and primitive collider prefabs, then verifies renderer counts, channels, LOD reduction, references and root transforms. `finalize.py` rejects stale bytes or incomplete Unity coverage before producing the final source manifest.
+
+Counts are semantic production exports. Materials shared by one biome are not counted as separate designs. The Spark alias reuses original P06 geometry. Character identities may reuse the original P06 rig and twelve clips; those clips are counted once, with separate per-mesh skin and animation validation.
+
+The contact images show authoring geometry under a neutral studio light and are not gameplay screenshots. Windows 10/11 desktop is now the primary target. P08 imported atlas textures use Standalone BC7 for base colour and masks and BC5 for normals; WebGL DXT fallback remains for the later web target. Final gameplay-distance readability, loading and performance are tested in Unity and the native desktop player by the main P08 integration workflow.
+
+
+The resumed desktop authoring session uses task-owned Blender PID 23056 after read-only status and factory-scene checks (`mcp-desktop-resume-status.json`, `mcp-desktop-scene-before.json`). Successful refinement receipts supersede older exports of the same semantic ID; `collect.py` keeps the receipt history and binds the selected final bytes. An updated bike or tree never increases the semantic asset count.
+
+Visual review rejected detached rectangular sport lamps, disconnected screens and rounded rock-like fir foliage. Final motorcycle recipes use attached curved windscreens, connected nose shells, recessed Boolean intake openings, flush lamp inserts, authored directional tyre cues and annular brake rotors. Endurance, sharp sport and flowing sport designs have separate shell profiles. Ridge fir foliage uses original pointed needle sprays and three complete component-preserving LOD constructions.
+
+Character models share the original Racing Bois fifteen-bone P06 rig and twelve animation clips. Each character is rebuilt from its individually reviewed P08 concept, including clothing construction, visible facial planes, ears, eyes, nose, mouth and hair. Neutral, happy and focused portrait images are rendered from these same production models; the expression variants are blendshape deformations and head poses, not unrelated generated faces. Twenty-four portrait files represent eight identities in three states, and are not counted as twenty-four models. Unity validation samples all shared clips and checks nonzero happy/focused deformation on each character LOD.

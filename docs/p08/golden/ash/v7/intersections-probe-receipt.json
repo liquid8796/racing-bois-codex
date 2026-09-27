@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ASH_V7_COLLAR_INTERSECTIONS {\"pairs\": 65, \"uniqueFaces\": [{\"face\": 38132, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38418, 38417], \"restCenter\": [-0.07172160595655441, -0.057363271713256836, 1.5468723773956299], \"centroidSignedDistance\": -0.0006350992825900903, \"area\": 4.6889814257156104e-05}, {\"face\": 38133, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38368, 38419, 38418], \"restCenter\": [-0.06524600833654404, -0.06191055104136467, 1.5448918342590332], \"centroidSignedDistance\": 0.0011661675948744232, \"area\": 4.4184766011312604e-05}, {\"face\": 38260, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38608, 38551, 38550], \"restCenter\": [0.04927096888422966, 0.03989097476005554, 1.5436558723449707], \"centroidSignedDistance\": 0.00023725349547021324, \"area\": 6.225085962796584e-05}, {\"face\": 38286, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38576, 38629, 38577], \"restCenter\": [-0.07549112290143967, -0.05397495627403259, 1.5464236736297607], \"centroidSignedDistance\": -0.0013511836768884677, \"area\": 9.025244798976928e-05}, {\"face\": 38287, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38577, 38630, 38578], \"restCenter\": [-0.06939955055713654, -0.06041936203837395, 1.5423020124435425], \"centroidSignedDistance\": 0.0005965910534087016, \"area\": 3.729857417056337e-05}, {\"face\": 38339, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38630, 38681, 38631], \"restCenter\": [-0.06328293681144714, -0.05793784558773041, 1.5517897605895996], \"centroidSignedDistance\": -0.0003014856986283121, \"area\": 4.4558109948411584e-05}, {\"face\": 38444, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38576, 38577], \"restCenter\": [-0.07651640474796295, -0.05751024931669235, 1.5418938398361206], \"centroidSignedDistance\": -0.0016130397752931458, \"area\": 7.859769539209083e-06}, {\"face\": 77660, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38366, 38367, 38417], \"restCenter\": [-0.07657057046890259, -0.05522212013602257, 1.545801043510437], \"centroidSignedDistance\": -0.0010619187305564992, \"area\": 7.532910967711359e-05}, {\"face\": 77661, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38368, 38418], \"restCenter\": [-0.06932426244020462, -0.06127668544650078, 1.5419931411743164], \"centroidSignedDistance\": 0.0014439051037697936, \"area\": 6.561037298524752e-05}, {\"face\": 77789, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38608, 38609, 38551], \"restCenter\": [0.04392900690436363, 0.038616303354501724, 1.5468804836273193], \"centroidSignedDistance\": 0.00019842482106469106, \"area\": 5.548456829274073e-05}, {\"face\": 77810, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38577, 38629, 38630], \"restCenter\": [-0.07051888108253479, -0.05654460936784744, 1.5474399328231812], \"centroidSignedDistance\": -0.001186895569844637, \"area\": 6.58847056911327e-05}, {\"face\": 77811, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38578, 38630, 38631], \"restCenter\": [-0.06526773422956467, -0.061094604432582855, 1.544938564300537], \"centroidSignedDistance\": 0.0003657736140212364, \"area\": 5.089435580885038e-05}, {\"face\": 77860, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38631, 38681, 38682], \"restCenter\": [-0.05883029103279114, -0.059756748378276825, 1.5536850690841675], \"centroidSignedDistance\": 0.00019122746357425058, \"area\": 8.136720134643838e-05}, {\"face\": 77965, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38366, 38576], \"restCenter\": [-0.07974088937044144, -0.05464125797152519, 1.5445938110351562], \"centroidSignedDistance\": -0.0012962630207766779, \"area\": 9.69714528764598e-06}]}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: ASH_V7_COLLAR_INTERSECTIONS {\"pairs\": 65, \"uniqueFaces\": [{\"face\": 38132, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38418, 38417], \"restCenter\": [-0.07172160595655441, -0.057363271713256836, 1.5468723773956299], \"centroidSignedDistance\": -0.0006350992825900903, \"area\": 4.6889814257156104e-05}, {\"face\": 38133, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38368, 38419, 38418], \"restCenter\": [-0.06524600833654404, -0.06191055104136467, 1.5448918342590332], \"centroidSignedDistance\": 0.0011661675948744232, \"area\": 4.4184766011312604e-05}, {\"face\": 38260, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38608, 38551, 38550], \"restCenter\": [0.04927096888422966, 0.03989097476005554, 1.5436558723449707], \"centroidSignedDistance\": 0.00023725349547021324, \"area\": 6.225085962796584e-05}, {\"face\": 38286, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38576, 38629, 38577], \"restCenter\": [-0.07549112290143967, -0.05397495627403259, 1.5464236736297607], \"centroidSignedDistance\": -0.0013511836768884677, \"area\": 9.025244798976928e-05}, {\"face\": 38287, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38577, 38630, 38578], \"restCenter\": [-0.06939955055713654, -0.06041936203837395, 1.5423020124435425], \"centroidSignedDistance\": 0.0005965910534087016, \"area\": 3.729857417056337e-05}, {\"face\": 38339, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38630, 38681, 38631], \"restCenter\": [-0.06328293681144714, -0.05793784558773041, 1.5517897605895996], \"centroidSignedDistance\": -0.0003014856986283121, \"area\": 4.4558109948411584e-05}, {\"face\": 38444, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38576, 38577], \"restCenter\": [-0.07651640474796295, -0.05751024931669235, 1.5418938398361206], \"centroidSignedDistance\": -0.0016130397752931458, \"area\": 7.859769539209083e-06}, {\"face\": 77660, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38366, 38367, 38417], \"restCenter\": [-0.07657057046890259, -0.05522212013602257, 1.545801043510437], \"centroidSignedDistance\": -0.0010619187305564992, \"area\": 7.532910967711359e-05}, {\"face\": 77661, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38368, 38418], \"restCenter\": [-0.06932426244020462, -0.06127668544650078, 1.5419931411743164], \"centroidSignedDistance\": 0.0014439051037697936, \"area\": 6.561037298524752e-05}, {\"face\": 77789, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38608, 38609, 38551], \"restCenter\": [0.04392900690436363, 0.038616303354501724, 1.5468804836273193], \"centroidSignedDistance\": 0.00019842482106469106, \"area\": 5.548456829274073e-05}, {\"face\": 77810, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38577, 38629, 38630], \"restCenter\": [-0.07051888108253479, -0.05654460936784744, 1.5474399328231812], \"centroidSignedDistance\": -0.001186895569844637, \"area\": 6.58847056911327e-05}, {\"face\": 77811, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38578, 38630, 38631], \"restCenter\": [-0.06526773422956467, -0.061094604432582855, 1.544938564300537], \"centroidSignedDistance\": 0.0003657736140212364, \"area\": 5.089435580885038e-05}, {\"face\": 77860, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38631, 38681, 38682], \"restCenter\": [-0.05883029103279114, -0.059756748378276825, 1.5536850690841675], \"centroidSignedDistance\": 0.00019122746357425058, \"area\": 8.136720134643838e-05}, {\"face\": 77965, \"role\": \"AshV4_LeatherDetails_Baked\", \"vertices\": [38367, 38366, 38576], \"restCenter\": [-0.07974088937044144, -0.05464125797152519, 1.5445938110351562], \"centroidSignedDistance\": -0.0012962630207766779, \"area\": 9.69714528764598e-06}]}\n"
+    },
+    "isError": false
+  }
+}

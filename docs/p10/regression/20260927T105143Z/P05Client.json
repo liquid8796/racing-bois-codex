@@ -1,0 +1,400 @@
+{
+  "generatedAtUtc": "2026-09-27T10:52:19.7546735+00:00",
+  "passed": true,
+  "tests": 36,
+  "failed": 0,
+  "sources": [
+    {
+      "path": "Assets/RacingBois/Client/Application/BenchmarkReadModelProjection.cs",
+      "sha256": "b6a8bc60061a82708c9313c85e66cb009a3b1d2f7cac6beb232aedd16fddd74e"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerReadModels.cs",
+      "sha256": "5c9bc5530a1b2135e0cf9d6a146393eaa1cbab5d765559c5d213ad09882d5767"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CareerSession.cs",
+      "sha256": "f6a96d40524cad2309ab5e26222d4a9287a280db96cc80e13d7a9b33026996a2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/CinematicCatalog.cs",
+      "sha256": "e534604f6b754ac4da22906b8d6f6a72185cb982f6dfd47afc797f5296e50b5d"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/ContentManifestRules.cs",
+      "sha256": "58df69f3801a47ed38001d74869e3a57eaecf4f38db6afdf9cb9f8a808a4a2c5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs",
+      "sha256": "fd88d096abcf1163f947765835b615d7467ae95660fa317c607ba0909c2c84f1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/FoundationSession.cs",
+      "sha256": "6a73e99870964cbab13332dd1ebec1d3b7bd5aa45f6483a3d5218ceff8f85713"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/LocalCampaignReadModel.cs",
+      "sha256": "c014ef97141d1cae2de48dac2eb36c8e1d5844fec823d72f250410aa22396dc4"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerPorts.cs",
+      "sha256": "2f8534dfdc89e1bc1bafcdab5515c2449db993374007305af69c16f2a982b6bb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerProjection.cs",
+      "sha256": "d6cac5842b84a8f1d670a510d9a69057870bf8d96eb006d51afb29949bd37169"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerReadModels.cs",
+      "sha256": "7a7a5aaf8f355754fd0c42c5e508d2a3d0670453d5c97d99ecfc790c634af1b2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.InputErrors.cs",
+      "sha256": "fc850f5930026fceb66ece042480e5c82ad989079b1473579610a33ab72b589d"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "sha256": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "sha256": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSnapshotReadModel.cs",
+      "sha256": "b2395b0f463eee8cff1ea9bfc5c97333082dab37f7d401e9977cbdc2573d3f55"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/P08AudioRoles.cs",
+      "sha256": "7ebc78e140ca8211ab74d7877f1f1a93aed856a2537aaed11c463052d2130748"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs",
+      "sha256": "9c529b0d085491a5e8bf4bfe326db51b318bffbdf29de0e9aa2575a23cdcc25b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSession.cs",
+      "sha256": "d4413ba96fca0b45d6192b0b1e4c3eec24609da663fcaa17aa5456bc80c82682"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSnapshotValidator.cs",
+      "sha256": "a6aebd361faf48c2435cf2b15e8a89a6cedca7c05e6d38401806d45d19a69bbb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceStateProjection.cs",
+      "sha256": "9a4446e79f970770f99e5eafc3e8248604af8f1ad12794f4d182a137d63d8804"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceWorldReadModel.cs",
+      "sha256": "e4d1feb7cb818c921ebc3f8434e743b4708dc7ff2111b588d21758dbf4d3dcd7"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RemoteMotionSampler.cs",
+      "sha256": "edb0a23e5054551aadf5d599765d379a5c0ef5da26600c0aeecd52b2c387fea5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/WorldReadModel.cs",
+      "sha256": "0fe52476bf47c5fc16a52e84d2aac5b37eba9f692c25f2bca3052a7d646a112b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/NetworkMapping/CheckpointMapper.cs",
+      "sha256": "da84ae518ffc911368332332642fd74d99096f20ced3ee0c255affc4dbc8348e"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/MultiplayerMessages.cs",
+      "sha256": "def09e52cf71929553abfff38bc6b875270dc0570edc1baadd8274bda27b7c4b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/CombatResolver.cs",
+      "sha256": "2fd84df61bacbb04d6f12f8e321e211b051189fca79f72d71fb55997b0e350d2"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs",
+      "sha256": "dc36749d8578971e1d7548bd9409af1f7fc4cc898dbc6b7020b01925e3c7fbff"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PredictionNeighbors.cs",
+      "sha256": "7492d78ad653e93a6418464044fa7443e3a648200a332f274b5240dc217a0e9c"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderPrediction.cs",
+      "sha256": "43daafa3a9e832d63caeba0df4b1871e4420bfb794a56a40880f4b61f8022c1f"
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/Multiplayer/MultiplayerProjection.cs",
+      "sha256": "9aee2761b88353b657d45aa50db75eb9b714b9f3502ddb5160e6fc969c519582"
+    },
+    {
+      "path": "src/Tests/RacingBois.P05Client.Tests/Fixtures/remote-immunity-observed.json",
+      "sha256": "2e7642a201367a573dc8aeec8079354c713f39b0efc8413928d7a416a0b87c53"
+    },
+    {
+      "path": "src/Tests/RacingBois.P05Client.Tests/NetworkHarness.cs",
+      "sha256": "a1d0f547327fc2911393ab46e236e34a1fb7b0dc73b0ab2718e578fb1ecb9e01"
+    },
+    {
+      "path": "src/Tests/RacingBois.P05Client.Tests/Program.cs",
+      "sha256": "73878fa3ed8e7426a4999f6e2ca7c393a3c8b7c9cbc27264be922247d91c3438"
+    },
+    {
+      "path": "src/Tests/RacingBois.P05Client.Tests/RemoteImmunityRegression.cs",
+      "sha256": "13666ef0175744f318eb4ba96743a5bdff8100c0cfba186d67023db89ff6bbd9"
+    }
+  ],
+  "latency": [
+    {
+      "configuredRttMs": 0,
+      "measuredRttMs": 8.333878163165645,
+      "NearCombatResidualSamples": 160,
+      "maxRelativePositionResidualMeters": 0.029999971,
+      "latestResidualMeters": 0.020996094,
+      "SteadyResidualSamples": 91,
+      "MaximumSteadyResidualMeters": 0.029999971,
+      "ContactResidualSamples": 69,
+      "MaximumContactResidualMeters": 0.022499084,
+      "LastCorrectionMeters": 0,
+      "MaximumCorrectionMeters": 0,
+      "LateInputs": 0,
+      "MissingInputs": 0,
+      "RemoteExtrapolationMs": 83.33333333333333,
+      "authorityHealth": 0,
+      "note": "Synthetic ordered transport using real server/client application; not an external WAN browser test."
+    },
+    {
+      "configuredRttMs": 150,
+      "measuredRttMs": 150.0003465929325,
+      "NearCombatResidualSamples": 156,
+      "maxRelativePositionResidualMeters": 0.23000002,
+      "latestResidualMeters": 0.08999634,
+      "SteadyResidualSamples": 40,
+      "MaximumSteadyResidualMeters": 0.1400001,
+      "ContactResidualSamples": 116,
+      "MaximumContactResidualMeters": 0.23000002,
+      "LastCorrectionMeters": 0,
+      "MaximumCorrectionMeters": 2.3740082,
+      "LateInputs": 0,
+      "MissingInputs": 0,
+      "RemoteExtrapolationMs": 216.66666666666666,
+      "authorityHealth": 128,
+      "note": "Synthetic ordered transport using real server/client application; not an external WAN browser test."
+    },
+    {
+      "configuredRttMs": 250,
+      "measuredRttMs": 250.00050272496145,
+      "NearCombatResidualSamples": 153,
+      "maxRelativePositionResidualMeters": 0.505,
+      "latestResidualMeters": 0.20700073,
+      "SteadyResidualSamples": 39,
+      "MaximumSteadyResidualMeters": 0.25000048,
+      "ContactResidualSamples": 114,
+      "MaximumContactResidualMeters": 0.505,
+      "LastCorrectionMeters": 0,
+      "MaximumCorrectionMeters": 0,
+      "LateInputs": 0,
+      "MissingInputs": 0,
+      "RemoteExtrapolationMs": 316.6666666666667,
+      "authorityHealth": 128,
+      "note": "Synthetic ordered transport using real server/client application; not an external WAN browser test."
+    }
+  ],
+  "arrivalBudgets": [
+    {
+      "nominalRttMs": 150,
+      "jitterMsPerDirection": 20,
+      "clientFps": 20,
+      "SentInputs": 816,
+      "LateInputs": 0,
+      "FutureInputs": 0,
+      "MissingInputs": 2,
+      "InputLeadTicks": 9,
+      "lateFraction": 0,
+      "Connections": 1,
+      "measuredRttMs": 192.7130652579893
+    },
+    {
+      "nominalRttMs": 150,
+      "jitterMsPerDirection": 20,
+      "clientFps": 20,
+      "SentInputs": 813,
+      "LateInputs": 0,
+      "FutureInputs": 0,
+      "MissingInputs": 5,
+      "InputLeadTicks": 9,
+      "lateFraction": 0,
+      "Connections": 1,
+      "measuredRttMs": 178.98339980428145
+    },
+    {
+      "nominalRttMs": 250,
+      "jitterMsPerDirection": 50,
+      "clientFps": 20,
+      "SentInputs": 749,
+      "LateInputs": 0,
+      "FutureInputs": 0,
+      "MissingInputs": 71,
+      "InputLeadTicks": 14,
+      "lateFraction": 0,
+      "Connections": 1,
+      "measuredRttMs": 319.7413091520728
+    },
+    {
+      "nominalRttMs": 250,
+      "jitterMsPerDirection": 50,
+      "clientFps": 20,
+      "SentInputs": 787,
+      "LateInputs": 0,
+      "FutureInputs": 0,
+      "MissingInputs": 31,
+      "InputLeadTicks": 13,
+      "lateFraction": 0,
+      "Connections": 1,
+      "measuredRttMs": 275.59778906178065
+    }
+  ],
+  "results": [
+    {
+      "name": "disconnect_before_connect_does_not_access_empty_endpoint_store",
+      "passed": true
+    },
+    {
+      "name": "checkpoint_roundtrip_driving_airborne_recovery_and_own_attack",
+      "passed": true
+    },
+    {
+      "name": "checkpoint_is_immutable_and_rejects_hostile_internal_fields",
+      "passed": true
+    },
+    {
+      "name": "v2_busted_negative_fine_regression",
+      "passed": true
+    },
+    {
+      "name": "real_service_create_join_ready_countdown_exact_inputs",
+      "passed": true
+    },
+    {
+      "name": "presentation_cache_reuses_readmodel_and_invalidates_on_event_and_snapshot",
+      "passed": true
+    },
+    {
+      "name": "remote_interpolation_state_boundaries_interest_topology_and_stale_cap",
+      "passed": true
+    },
+    {
+      "name": "prediction_never_projects_speculative_health_reward_or_inventory",
+      "passed": true
+    },
+    {
+      "name": "early_authority_contact_event_caps_remote_until_fresh_snapshot",
+      "passed": true
+    },
+    {
+      "name": "event_arrival_invalidates_cached_world_once_without_duplicate_effect",
+      "passed": true
+    },
+    {
+      "name": "malformed_snapshot_rejected_without_partial_commit",
+      "passed": true
+    },
+    {
+      "name": "lost_initial_welcome_reuses_lease_and_persistent_profile",
+      "passed": true
+    },
+    {
+      "name": "resume_preserves_rider_and_suppresses_stale_epoch",
+      "passed": true
+    },
+    {
+      "name": "suspended_tab_resumes_fresh_without_input_fast_forward",
+      "passed": true
+    },
+    {
+      "name": "explicit_logout_waits_for_ack_and_transfers_host",
+      "passed": true
+    },
+    {
+      "name": "leave_lobby_fences_input_while_waiting_for_ack",
+      "passed": true
+    },
+    {
+      "name": "fresh_guest_does_not_overwrite_saved_profile_capability",
+      "passed": true
+    },
+    {
+      "name": "expired_resume_fails_closed_without_new_guest_or_profile",
+      "passed": true
+    },
+    {
+      "name": "authoritative_results_are_absolute_and_return_to_lobby_clears_race",
+      "passed": true
+    },
+    {
+      "name": "bounded_uplink_stall_neutralizes_and_recovers_without_history_growth",
+      "passed": true
+    },
+    {
+      "name": "twenty_hz_ui_batch_and_six_hundred_ms_stall_do_not_loop_reconnect",
+      "passed": true
+    },
+    {
+      "name": "arrival_deadline_with_twenty_hz_polling_rtt_150",
+      "passed": true
+    },
+    {
+      "name": "arrival_deadline_with_twenty_hz_polling_rtt_250",
+      "passed": true
+    },
+    {
+      "name": "old_epoch_reliable_control_replay_advances_cursor_without_action",
+      "passed": true
+    },
+    {
+      "name": "result_storage_pending_keeps_connection_and_freezes_input",
+      "passed": true
+    },
+    {
+      "name": "replaced_session_stops_automatic_takeover_fight",
+      "passed": true
+    },
+    {
+      "name": "neighbor_contact_prediction_reduces_future_vehicle_overshoot",
+      "passed": true
+    },
+    {
+      "name": "wrong_predicted_contact_is_reversible_and_airborne_clearance_matches",
+      "passed": true
+    },
+    {
+      "name": "fixed_proxy_capacity_and_replay_allocate_no_per_tick_objects",
+      "passed": true
+    },
+    {
+      "name": "remote_immunity_observed_8_512m_phantom_wreck_regression",
+      "passed": true
+    },
+    {
+      "name": "remote_immunity_wire_bounds_version_shape_and_atomic_rejection",
+      "passed": true
+    },
+    {
+      "name": "remote_immunity_expiry_is_inclusive_then_collision_returns",
+      "passed": true
+    },
+    {
+      "name": "real_server_projection_preserves_remote_remount_protection",
+      "passed": true
+    },
+    {
+      "name": "near_combat_alignment_rtt_0",
+      "passed": true
+    },
+    {
+      "name": "near_combat_alignment_rtt_150",
+      "passed": true
+    },
+    {
+      "name": "near_combat_alignment_rtt_250",
+      "passed": true
+    }
+  ]
+}

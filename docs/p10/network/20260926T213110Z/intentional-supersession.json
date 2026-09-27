@@ -1,0 +1,26 @@
+﻿{
+    "schema":  1,
+    "status":  "INTENTIONALLY_SUPERSEDED",
+    "recordedUtc":  "2026-09-26T22:59:04.3973119Z",
+    "runId":  "20260926T213110Z",
+    "reason":  "Protocol5 trace proved omitted deterministic pedestrian recovery/waiting context, wrong proxy contact order and missing already-active combat forecast. Root approved protocol6 candidate after isolated regression/fuzz; an incomplete run with known defects cannot be final acceptance.",
+    "approvedCandidateManifestSha256":  "294f5c105f6be2f939234c2b9c88fc746f330f63c4ac0763e464751c78e3b41b",
+    "exactOwnedProbeVerified":  true,
+    "stoppedProbePid":  15344,
+    "supervisorOwnsServerPid":  20968,
+    "requestedSeconds":  28800,
+    "elapsedSeconds":  5263.0822518,
+    "cycles":  64,
+    "reconnects":  43,
+    "storms":  8,
+    "oldSourceSha256":  "4721dbba6be56e4619cf1a7e1056205d62750903ad749fbd3318c3c86e788f81",
+    "sourceStableNow":  true,
+    "changedSourcesNow":  [
+
+                          ],
+    "eightHourGate":  false,
+    "rawProbeSha256":  "023c04551554b3237122204ddd812f3c5fc88ba309b060c63d5b6c453f998a58",
+    "scope":  "Only the exact verified task-owned probe is stopped. Its supervisor owns server cleanup. Raw running/interrupted/FAIL reports are preserved, never relabelled PASS.",
+    "ownedProbeStopped":  true,
+    "supervisorServerCleanupObserved":  true
+}

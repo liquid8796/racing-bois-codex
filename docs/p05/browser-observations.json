@@ -1,0 +1,202 @@
+{
+  "date": "2026-09-21",
+  "firstSavedSampleUtc": "2026-09-21T10:14:08.604Z",
+  "runtimeCommit": "9873732",
+  "buildVersion": "0.5.0",
+  "webRoot": "Build/Web-p05-v1",
+  "binding": "Exact served files and SHA256 are in backend/delivery.json; build receipt is unity/build.json",
+  "scope": "Selected observed DOM telemetry from actual browser UI actions on one PC; no gameplay state injection",
+  "https": {
+    "origin": "https://localhost:7778/",
+    "room": "XC3MT8",
+    "alphaSessionId": "58e82748b7c34fc7806b0cb0db5bb0ac",
+    "bravoSessionId": "ce6a4a32ac894e1383ded1a5466fc192",
+    "sessionIdNote": "Public correlation IDs, not authentication or resume capabilities",
+    "alphaInitial": {
+      "state": "Connected",
+      "roomPhase": "Racing",
+      "player": 1,
+      "tick": 1482,
+      "inputs": 1476,
+      "ack": 1466,
+      "pendingInputs": 10,
+      "rttMs": 10.45079973098904,
+      "lateInputs": 0,
+      "futureInputs": 0,
+      "missingInputs": 6,
+      "frameP50Ms": 4,
+      "frameP95Ms": 5
+    },
+    "bravoInitial": {
+      "state": "Connected",
+      "roomPhase": "Racing",
+      "player": 2,
+      "tick": 1500,
+      "inputs": 1495,
+      "ack": 1485,
+      "pendingInputs": 10,
+      "rttMs": 8.974471110998815,
+      "lateInputs": 0,
+      "futureInputs": 0,
+      "missingInputs": 5,
+      "frameP50Ms": 4,
+      "frameP95Ms": 5
+    },
+    "alphaBeforeReload": {
+      "player": 1,
+      "riderState": "Falling",
+      "tick": 2506,
+      "inputs": 2500,
+      "ack": 2489,
+      "distance": 177.91896057128906,
+      "bike": 92,
+      "health": 3746,
+      "lateInputs": 0,
+      "missingInputs": 6
+    },
+    "alphaAfterReload": {
+      "state": "Connected",
+      "roomPhase": "Racing",
+      "player": 1,
+      "riderState": "Riding",
+      "tick": 4654,
+      "inputs": 462,
+      "ack": 451,
+      "distance": 187.38699340820312,
+      "bike": 92,
+      "health": 4096,
+      "lateInputs": 2,
+      "futureInputs": 0,
+      "missingInputs": 20
+    },
+    "resumeSameSessionRoomAndRider": true,
+    "bravoAfterHostLeft": {
+      "state": "Connected",
+      "roomPhase": "Racing",
+      "player": 2,
+      "tick": 6776,
+      "inputs": 6771,
+      "ack": 6762,
+      "lateInputs": 0,
+      "futureInputs": 0,
+      "missingInputs": 5
+    },
+    "alphaLogout": {
+      "state": "Offline",
+      "mode": "None",
+      "room": "",
+      "sessionId": "",
+      "pendingInputs": 0
+    },
+    "capturedWarningErrorLogs": {
+      "alpha": [],
+      "bravo": []
+    }
+  },
+  "http": {
+    "origin": "http://127.0.0.1:7777/",
+    "room": "7MXMZ4",
+    "sessionId": "7f0c59f3f2bb4990870c9715bec52098",
+    "profileLabelObserved": "HO SO MAY CHU",
+    "canvasWidth": 1920,
+    "canvasHeight": 1080,
+    "initial": {
+      "state": "Connected",
+      "roomPhase": "Racing",
+      "tick": 2041,
+      "inputs": 2037,
+      "ack": 2029,
+      "lateInputs": 0,
+      "futureInputs": 0,
+      "missingInputs": 4,
+      "frameP50Ms": 4,
+      "frameP95Ms": 5
+    },
+    "driving": {
+      "tick": 6391,
+      "inputs": 6204,
+      "ack": 6196,
+      "distance": 471.9209899902344,
+      "rttMs": 12.011554847561607,
+      "lateInputs": 0,
+      "futureInputs": 0,
+      "missingInputs": 187,
+      "frameP50Ms": 3,
+      "frameP95Ms": 4,
+      "unityAllocatedBytes": 109480496,
+      "managedBytes": 7192576,
+      "wasmHeapBytes": 161087488
+    },
+    "results": {
+      "state": "Connected",
+      "roomPhase": "Results",
+      "riderState": "Wrecked",
+      "tick": 14046,
+      "inputs": 13868,
+      "ack": 13859,
+      "distance": 1410.2440185546875,
+      "bike": 0,
+      "health": 3396,
+      "pendingInputs": 0,
+      "lateInputs": 0,
+      "futureInputs": 0,
+      "missingInputs": 187,
+      "correctionMeters": 0.0040283203125
+    },
+    "resultUi": {
+      "savedConfirmation": true,
+      "reward": 0,
+      "fund": 0
+    },
+    "returned": {
+      "state": "Connected",
+      "roomPhase": "Lobby",
+      "room": "7MXMZ4",
+      "tick": 0,
+      "inputs": 0,
+      "pendingInputs": 0
+    },
+    "logout": {
+      "state": "Offline",
+      "mode": "None",
+      "room": "",
+      "sessionId": "",
+      "pendingInputs": 0
+    },
+    "capturedWarningErrorLogs": []
+  },
+  "sharedGameplay": {
+    "passed": true,
+    "ticks": 3000,
+    "hash": "ED162155D421B3CF"
+  },
+  "unavailableCounters": [
+    "gpuTiming",
+    "perFrameAllocation",
+    "browserResidentMemory"
+  ],
+  "limitations": [
+    "One physical PC only",
+    "HTTP input gap increased by 183 during mixed UI/resize/driving; cause not isolated",
+    "Not WAN-off or independent cold-cache proof",
+    "Not a controlled continuous frame-pacing benchmark",
+    "Remote collision presentation quality remains open"
+  ],
+  "temporaryViewportReset": true,
+  "extraBrowserTabsClosed": true,
+  "httpsDemoTabKept": true,
+  "artifactReceipts": [
+    {
+      "path": "docs/p05/backend/delivery.json",
+      "sha256": "efc143742efc1edcde865a01ed9b61afe20b7e64a8888d9457968138b4900858"
+    },
+    {
+      "path": "docs/p05/unity/build.json",
+      "sha256": "cdbb2f817c18b7de6f2293fd20024d90135b07dd55f750e5c7a7e0dca5456741"
+    },
+    {
+      "path": "docs/p05/backend/final-verification.json",
+      "sha256": "33228fb8717429ebdbc120efef3b3943a47c96cd86dcc621e5ad2d943db7517f"
+    }
+  ]
+}

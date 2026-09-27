@@ -1,0 +1,194 @@
+[
+  {
+    "name": "course_resource_bindings",
+    "start_va": "0x441940",
+    "end_va_exclusive": "0x441a1d",
+    "description": "CRS resource loading and native post-processing",
+    "instructions": 73,
+    "path": "evidence/course_resource_bindings.tsv"
+  },
+  {
+    "name": "nod_relocate",
+    "start_va": "0x447b80",
+    "end_va_exclusive": "0x447bfd",
+    "description": "type0 links8/12; type1/2 links8/12/16; types3/4 terminal",
+    "instructions": 45,
+    "path": "evidence/nod_relocate.tsv"
+  },
+  {
+    "name": "nod_segment_binding",
+    "start_va": "0x447db0",
+    "end_va_exclusive": "0x447e2e",
+    "description": "bind type0 segment index to SGS stride52 record",
+    "instructions": 50,
+    "path": "evidence/nod_segment_binding.tsv"
+  },
+  {
+    "name": "sgs_relocate",
+    "start_va": "0x447e50",
+    "end_va_exclusive": "0x447ee9",
+    "description": "SGS count at8, records at16, stride52, pointer slots1..12",
+    "instructions": 60,
+    "path": "evidence/sgs_relocate.tsv"
+  },
+  {
+    "name": "course_bind",
+    "start_va": "0x448030",
+    "end_va_exclusive": "0x44807c",
+    "description": "NOD and SGS global bindings 0x475334 and 0x475330",
+    "instructions": 18,
+    "path": "evidence/course_bind.tsv"
+  },
+  {
+    "name": "path_reader",
+    "start_va": "0x451970",
+    "end_va_exclusive": "0x451a80",
+    "description": "signed16 start/end; signed8 pairs; accumulate second byte per256 units",
+    "instructions": 123,
+    "path": "evidence/path_reader.tsv"
+  },
+  {
+    "name": "object_bitfields",
+    "start_va": "0x451a90",
+    "end_va_exclusive": "0x451b55",
+    "description": "RROB packed32 field extraction and spacing expression",
+    "instructions": 76,
+    "path": "evidence/object_bitfields.tsv"
+  },
+  {
+    "name": "segment_consumer_bind",
+    "start_va": "0x452cb0",
+    "end_va_exclusive": "0x452d68",
+    "description": "native consumers for every used SGS slot",
+    "instructions": 66,
+    "path": "evidence/segment_consumer_bind.tsv"
+  },
+  {
+    "name": "family_resource_lookup",
+    "start_va": "0x415ad0",
+    "end_va_exclusive": "0x415afb",
+    "description": "resource lookup explicitly selects FAM FourCC",
+    "instructions": 20,
+    "path": "evidence/family_resource_lookup.tsv"
+  },
+  {
+    "name": "course_family_preload",
+    "start_va": "0x44b170",
+    "end_va_exclusive": "0x44b1d5",
+    "description": "RRSM state1 +8 FAM id and+5 slot",
+    "instructions": 43,
+    "path": "evidence/course_family_preload.tsv"
+  },
+  {
+    "name": "course_family_stream",
+    "start_va": "0x452310",
+    "end_va_exclusive": "0x452560",
+    "description": "stream event longitudinal activation and state transitions",
+    "instructions": 219,
+    "path": "evidence/course_family_stream.tsv"
+  },
+  {
+    "name": "mountain_layout",
+    "start_va": "0x45112d",
+    "end_va_exclusive": "0x4511d4",
+    "description": "two16-byte banks and sample stream pointer",
+    "instructions": 63,
+    "path": "evidence/mountain_layout.tsv"
+  },
+  {
+    "name": "segment_traversal",
+    "start_va": "0x452e10",
+    "end_va_exclusive": "0x452f50",
+    "description": "node lengths shifted8, type0 chain and branch1/2 handling",
+    "instructions": 133,
+    "path": "evidence/segment_traversal.tsv"
+  },
+  {
+    "name": "cans_sequence_lookup",
+    "start_va": "0x40b5a0",
+    "end_va_exclusive": "0x40b5e7",
+    "description": "version header and16+28*frame count sequence stride",
+    "instructions": 32,
+    "path": "evidence/cans_sequence_lookup.tsv"
+  },
+  {
+    "name": "cans_frame_lookup",
+    "start_va": "0x40b6f0",
+    "end_va_exclusive": "0x40b7a3",
+    "description": "one-based frame index at frame+2; RRFD stride28",
+    "instructions": 80,
+    "path": "evidence/cans_frame_lookup.tsv"
+  },
+  {
+    "name": "cans_rate_conversion",
+    "start_va": "0x40b567",
+    "end_va_exclusive": "0x40b59c",
+    "description": "sequence timing field at+8 divided by20 into runtimebyte12",
+    "instructions": 20,
+    "path": "evidence/cans_rate_conversion.tsv"
+  },
+  {
+    "name": "rran_loader",
+    "start_va": "0x44a200",
+    "end_va_exclusive": "0x44a349",
+    "description": "RRFD relocation,dimensions low16,native threeframe LOD aliases",
+    "instructions": 121,
+    "path": "evidence/rran_loader.tsv"
+  },
+  {
+    "name": "mip_relocation",
+    "start_va": "0x40b7b0",
+    "end_va_exclusive": "0x40b800",
+    "description": "PC mip relative pointers and RRFD dimension masking",
+    "instructions": 39,
+    "path": "evidence/mip_relocation.tsv"
+  },
+  {
+    "name": "family_leaf_dispatch",
+    "start_va": "0x44aa80",
+    "end_va_exclusive": "0x44ab7c",
+    "description": "CLGP,FORM,CANS,RRAN runtime type handling",
+    "instructions": 115,
+    "path": "evidence/family_leaf_dispatch.tsv"
+  },
+  {
+    "name": "dat_load_calls",
+    "start_va": "0x443610",
+    "end_va_exclusive": "0x44369d",
+    "description": "326 rider/shadow and45 cop/shadow frame table loaders",
+    "instructions": 47,
+    "path": "evidence/dat_load_calls.tsv"
+  },
+  {
+    "name": "dat_loader",
+    "start_va": "0x4436a0",
+    "end_va_exclusive": "0x4437a0",
+    "description": "DAT width/height bytes, pixel pointer and empty-slot handling",
+    "instructions": 95,
+    "path": "evidence/dat_loader.tsv"
+  },
+  {
+    "name": "root4_primary_variant_selection",
+    "start_va": "0x44b706",
+    "end_va_exclusive": "0x44b78b",
+    "description": "root4 renderer explicitly selects secondary-index0 and frame2; native PC path",
+    "instructions": 43,
+    "path": "evidence/root4_primary_variant_selection.tsv"
+  },
+  {
+    "name": "family_two_level_selector",
+    "start_va": "0x44acd0",
+    "end_va_exclusive": "0x44ad9e",
+    "description": "family root indexEDX and child selection from stack argument",
+    "instructions": 87,
+    "path": "evidence/family_two_level_selector.tsv"
+  },
+  {
+    "name": "animation_60hz_updater",
+    "start_va": "0x43ae90",
+    "end_va_exclusive": "0x43afd0",
+    "description": "signed descriptor duration byte plus60Hz clock; exact deadline/frame advance",
+    "instructions": 119,
+    "path": "evidence/animation_60hz_updater.tsv"
+  }
+]

@@ -1,0 +1,325 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T02:10:18.864838+00:00",
+  "releaseAccepted": false,
+  "scope": "Targeted content/build handoff review. No semantic acceptance inferred from row counts, hashes or technical import.",
+  "ledger": {
+    "rows": 491,
+    "states": {
+      "partial": 192,
+      "pending": 299
+    },
+    "boundPaths": 297,
+    "staleBindings": [
+      {
+        "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+        "expected": "1fe326399886f4519be5f068c8eb918b399c69af4d2a2a7cc274f0dc733200c1",
+        "actual": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819"
+      },
+      {
+        "path": "Assets/RacingBois/Client/Presentation/CinematicGalleryView.cs",
+        "expected": "7fdd3554b0f2442563677aceeddcee5a9ad939c0ca220a7d63b32082be0e05e2",
+        "actual": "b3fe01716fb951f8db4f5bf500e1bacd532de338d154118484f27724f28752b0"
+      },
+      {
+        "path": "Assets/RacingBois/Client/Presentation/CinematicPoseSampler.cs",
+        "expected": "7870c9199b1abff11172d1bc9bd969e7ae567f12a59e873690aea2990bc98eee",
+        "actual": "1e4204fc4a16677be7c53054be47b7b15f7a9b9b3601b5cf87915d8c76ed087b"
+      },
+      {
+        "path": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+        "expected": "097cb36f0dc8052d33903a0fb06f13f81eead89bccb531a985b627781963a8ce",
+        "actual": "086eb98c3d361ce16ff69fe7fa0db25489090be28b898495c41adba92a8e283a"
+      },
+      {
+        "path": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+        "expected": "76bf7c89f2ad1a330171cb63d3646cede60268cc1c7d0890cbca41c86ceb7e30",
+        "actual": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9"
+      },
+      {
+        "path": "Assets/RacingBois/UI/Career.uss",
+        "expected": "2a6b944a011343e27f1408fa481c147b7b1fc9bed856a687ad114991cf40c31b",
+        "actual": "9cb6057aa667f730368539f866b570774cc8bdad44de18a0c335c477ba1e56ee"
+      },
+      {
+        "path": "Assets/RacingBois/UI/Fonts/PROVENANCE.md",
+        "expected": "b18ade5a15d9bcb71b481c273cb760184bd01d393d420361583d87aa1b1a84fc",
+        "actual": "36adcfa6789e49cb4ef32cdd40f021a25d6a9465e3447b83bba6d8c5a91c004a"
+      },
+      {
+        "path": "Assets/RacingBois/UI/Race.uss",
+        "expected": "548d57b848771a9e1f31baedc83fd4c629e418b3c807acbd90a02d857ddd0443",
+        "actual": "d05fd9e2260c460e9621a5dbf14b01ccabb62b398b3d871e7e9ca0dad7b5bfd4"
+      },
+      {
+        "path": "Assets/RacingBois/UI/Race.uxml",
+        "expected": "727ac4bf179f268953baae24fe905075a69d7781a3e46a76639196a735030250",
+        "actual": "97c37af118d428db1871247aec9e219431d009399067cfc9c3ff0037025cca44"
+      }
+    ],
+    "allRequiredAcceptedDeclared": false
+  },
+  "audio": {
+    "clips": 97,
+    "categories": {
+      "music": 25,
+      "sfx": 72
+    },
+    "oggHashMismatches": [],
+    "deliveryReceiptMismatches": [],
+    "listeningAccepted": 0,
+    "runtimeMixAccepted": 0
+  },
+  "builderInputs": {
+    "legacyBikePrefabsMissing": [
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_06.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_07.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_08.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_09.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_10.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_11.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_12.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_13.prefab",
+      "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_14.prefab"
+    ],
+    "portraitPathsMissing": [
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_02.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_02.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_02.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_02.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_02.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_02.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_02.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_00.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_01.png",
+      "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_02.png"
+    ],
+    "note": "Required fixed paths from the current builder; does not count every missing semantic role or authorize placeholder substitutions."
+  },
+  "deliveryLocations": {
+    "Assets/RacingBois/Content/P08": false,
+    "Assets/StreamingAssets/Content": false,
+    "Build/Content-editor": false,
+    "Build/Content-desktop": false,
+    "Build/Desktop-P08": false,
+    "docs/p08/desktop/build.json": false
+  },
+  "masks": {
+    "current": {
+      "AvailableRouteMask": 1,
+      "AvailableBikeArtMask": 1,
+      "AvailableCharacterArtMask": 1
+    },
+    "fullCatalogWouldRequire": {
+      "AvailableRouteMask": 31,
+      "AvailableBikeArtMask": 32767,
+      "AvailableCharacterArtMask": 255
+    },
+    "promoted": false
+  },
+  "garageV7": {
+    "meshes": 180,
+    "triangles": 165812,
+    "nativeUv0Degenerate": 0,
+    "visualAccepted": false
+  },
+  "operations": {
+    "latestRecordedDeployment": {
+      "status": "passed",
+      "generatedUtc": "2026-09-27T01:01:45.258733+00:00",
+      "releaseId": "p09-20260927-f",
+      "sourceSha256": "194d60c159d8978a8520d17df1c900cae09e2614d4b1f620c89b9a5bbcf54c24",
+      "verifiedFiles": 1986
+    },
+    "wan30Minutes": {
+      "runStatus": "PASS",
+      "sourceStable": true,
+      "status": "PASS",
+      "elapsedSeconds": 1800.2693222,
+      "peers": 8,
+      "cycles": 21,
+      "reconnects": 14,
+      "storms": 2,
+      "gameplayContentHash": "p08-C655ECB89DF77CFD"
+    },
+    "nativeWssSpecimen": {
+      "status": "PASS",
+      "finishedUtc": "2026-09-27T00:26:58.7185392Z",
+      "platform": "WindowsPlayer",
+      "backend": "Mono2x",
+      "completedRaces": 2,
+      "elapsedSeconds": 96.5940184,
+      "maximumCorrectionMeters": 0.006988525390625
+    },
+    "limits": "Recorded deployment and single-workstation network specimens only; not live revalidation, full game acceptance, multiregion player proof or physical offline LAN."
+  },
+  "eightHourSourceFreeze": {
+    "run": "docs/p10/network/20260927T003037Z/run.json",
+    "recordedStatus": "RUNNING",
+    "sourcePaths": 163,
+    "currentMismatchToFrozenRun": [],
+    "changedDuringThisReadOnlySnapshot": [],
+    "finalPassNotInferred": true
+  },
+  "evidence": [
+    {
+      "path": "docs/PHASE_PLAN.md",
+      "exists": true,
+      "sha256": "ce4c0513ff410a31dc3bdee30020b017036dc4e066466f6b54a4068eb4f7acfb",
+      "bytes": 22515
+    },
+    {
+      "path": "docs/p08/parity-audit-20260927/REPORT.md",
+      "exists": true,
+      "sha256": "4eb05d6af5479ba9cd024f9e59e525f6f6b38197dd38f17d4c4444d93ca5ccca",
+      "bytes": 16725
+    },
+    {
+      "path": "docs/p08/content/ContentParityLedger.json",
+      "exists": true,
+      "sha256": "4f00e901fd130b31ede908c0f630c98130637eed7494fc83cda7be8a9ffc89bb",
+      "bytes": 1192344
+    },
+    {
+      "path": "docs/p08/content/production-mappings.json",
+      "exists": true,
+      "sha256": "22d7948a83cd323a1b607409772de3dd54ff5b7da5aab4c716365977e87426a4",
+      "bytes": 354239
+    },
+    {
+      "path": "docs/p08/media/audio-delivery.json",
+      "exists": true,
+      "sha256": "51855a645ebc041ba3f05ea1ed8d6b050ff80d399446d70bd9d0ae03e82e99aa",
+      "bytes": 96835
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P08ContentPackBuilder.cs",
+      "exists": true,
+      "sha256": "9ca204da263c4fabfc231fc1757e35aeeb4cb9433fa8b6a71a221cc4fc581561",
+      "bytes": 17034
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P08DesktopBuilder.cs",
+      "exists": true,
+      "sha256": "0a3496a5f0b55a2b2fe13a47f8bcd3ea4056edc4f082637d0587213b8a4ca519",
+      "bytes": 23337
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08ActorContent.cs",
+      "exists": true,
+      "sha256": "e9482306c535343b01c103ba9985afe99ba6b08509883fd1a409a8432feaf5ec",
+      "bytes": 2366
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08RouteContent.cs",
+      "exists": true,
+      "sha256": "844473982af994d3c08aa1867fe7a61838f7b1578e23b05b0e84e5b9d8dcfe0f",
+      "bytes": 2050
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/ContentManifestRules.cs",
+      "exists": true,
+      "sha256": "58df69f3801a47ed38001d74869e3a57eaecf4f38db6afdf9cb9f8a808a4a2c5",
+      "bytes": 4514
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "exists": true,
+      "sha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525",
+      "bytes": 10704
+    },
+    {
+      "path": "tools/p08/desktop/audit_desktop.py",
+      "exists": true,
+      "sha256": "c6bf9b5fb526c4f048aba2fe99f8786838bec1bb30298111a31b2d8d1c0280ec",
+      "bytes": 11245
+    },
+    {
+      "path": "tools/p05/publish-lan.ps1",
+      "exists": true,
+      "sha256": "1a071044381375b14f9390d6c1eb2bd1fabef0a8dd001a9efcd73746c4ab64d6",
+      "bytes": 1979
+    },
+    {
+      "path": "tools/foundation/publish-lan.ps1",
+      "exists": true,
+      "sha256": "2609bafebb31594a0530551038c35585d243d6ea35d3d4e6db48aed83a31a666",
+      "bytes": 4910
+    },
+    {
+      "path": "tools/p07/package-release.py",
+      "exists": true,
+      "sha256": "e45a30e5a383b50b73be3d0b2eeb7c67eb605a2f38b4a40baaa47308c3707b8f",
+      "bytes": 20692
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/ProductionContent.cs",
+      "exists": true,
+      "sha256": "d8853b358760afe6a93772a41c1d1b83cf4383c7477d4b014a43f8e9c81598c9",
+      "bytes": 770
+    },
+    {
+      "path": "docs/p08/golden/garage/v7/native-primary-uv.csv",
+      "exists": true,
+      "sha256": "6d5aed0a04d1e3f0da169ae0805d42d02f2b56c4eec3f9b2420f6230a6bf3c67",
+      "bytes": 5466
+    },
+    {
+      "path": "docs/p08/golden/garage/v7/descriptor.json",
+      "exists": true,
+      "sha256": "b2dd742679e8ad183c4e5e9ddf802ca6df78c413c59694f55375c6a03f588b98",
+      "bytes": 26293
+    },
+    {
+      "path": "docs/p09/releases/f/deployment-after-soak.json",
+      "exists": true,
+      "sha256": "aa03ebf3e66dd390b839f9a937429bc997932a7b61432e87882e541c05776d42",
+      "bytes": 2921
+    },
+    {
+      "path": "docs/p10/network/20260927T003126Z/run.json",
+      "exists": true,
+      "sha256": "e113d6783f270bcaedaffc23f75c5ecb37d3bed3f6aad8b3a2208dbabb642173",
+      "bytes": 25558
+    },
+    {
+      "path": "docs/p10/network/20260927T003126Z/probe.json",
+      "exists": true,
+      "sha256": "08fd47772cdaf99af1af2b9d0823a1cf4b8aff26d7cf7cb8174e7983c851bba4",
+      "bytes": 5590091
+    },
+    {
+      "path": "docs/p10/native-wss/turnover-20260927-0727.json",
+      "exists": true,
+      "sha256": "05fb30c4ca4a67b4afa2fc2db8f6637f2889319dbfc0d02a2524743693256f45",
+      "bytes": 63963
+    },
+    {
+      "path": "tools/p10/release-contract-staging/candidate-manifest.json",
+      "exists": true,
+      "sha256": "13e8859bb1b6030b3af29a1708f4bfa8eb15e6e716db4f872e9803e827faddb3",
+      "bytes": 970
+    },
+    {
+      "path": "docs/p08/release-readiness-20260927/staged-verification.json",
+      "exists": true,
+      "sha256": "462bf9ca7070e685e270eb120eea86ebe53df41a1c715841685ca983a376139f",
+      "bytes": 2405
+    }
+  ],
+  "globalCompletionPercentage": null
+}

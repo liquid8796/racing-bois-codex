@@ -1,0 +1,3955 @@
+{
+  "kind": "isolated original-code component bench",
+  "full_game_runtime": false,
+  "source_sha256": "66ab853c5b7b73b82a7c22a0478f5ba5b1066ed27028ef96449f5fe36a6101c5",
+  "spec_source_sha256": "8a1fca1e55929ad4bbb59efc4938e5acfc0757440f68995302313cf7531e25e7",
+  "nominal_hz": 60,
+  "initialization_rider_parameter": 75,
+  "sequence": [
+    "throttle_or_brake(0x40acd0)",
+    "forward_velocity(0x4390c0)",
+    "gear_step(0x4391d0)"
+  ],
+  "not_measured": [
+    "real key-to-speed latency",
+    "meters/miles units",
+    "actual full-update ordering",
+    "slope",
+    "traction coupling",
+    "nitro",
+    "collision",
+    "top-speed under all conditions"
+  ],
+  "records": [
+    {
+      "spec_id": 1,
+      "spec_sha256": "910576c00f80cd9845e4e4c57994e97c409fefcd0c180efc20a2280faadf06f3",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 3000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 246,
+          "up_threshold": 5000,
+          "down_threshold": 2500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 238,
+          "up_threshold": 7000,
+          "down_threshold": 4500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 226,
+          "up_threshold": 8500,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 216,
+          "up_threshold": 21504,
+          "down_threshold": 8000
+        },
+        {
+          "slot": 5,
+          "torque_q8": 208,
+          "up_threshold": 16777215,
+          "down_threshold": 17152
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1662,
+          "gear_slot": 0,
+          "drive_term": 38
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3190,
+          "gear_slot": 1,
+          "drive_term": 36
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 4451,
+          "gear_slot": 1,
+          "drive_term": 36
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 5544,
+          "gear_slot": 2,
+          "drive_term": 35
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 6488,
+          "gear_slot": 2,
+          "drive_term": 35
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 7282,
+          "gear_slot": 3,
+          "drive_term": 33
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 7919,
+          "gear_slot": 3,
+          "drive_term": 33
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 8487,
+          "gear_slot": 3,
+          "drive_term": 33
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 8936,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 9336,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 9696,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 10002,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 10290,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 10530,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 10766,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 10946,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 11126,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 11292,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 11412,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 11532,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 11652,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 11772,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 11834,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 11894,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 11954,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 12014,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 12074,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 12134,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 12194,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 12254,
+          "gear_slot": 4,
+          "drive_term": 32
+        }
+      ],
+      "brake_start_velocity_internal": 12254,
+      "brake_ticks_to_zero": 162
+    },
+    {
+      "spec_id": 2,
+      "spec_sha256": "3ebf8b6b729394faeb7dfa958d42fe793e8a0d0c67d896cfa9daf447577a54de",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 248,
+          "up_threshold": 3000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 240,
+          "up_threshold": 5000,
+          "down_threshold": 2500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 232,
+          "up_threshold": 7000,
+          "down_threshold": 4500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 220,
+          "up_threshold": 8500,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 214,
+          "up_threshold": 21504,
+          "down_threshold": 8000
+        },
+        {
+          "slot": 5,
+          "torque_q8": 204,
+          "up_threshold": 16777215,
+          "down_threshold": 17152
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1455,
+          "gear_slot": 0,
+          "drive_term": 34
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 2794,
+          "gear_slot": 0,
+          "drive_term": 34
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 3939,
+          "gear_slot": 1,
+          "drive_term": 33
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 4947,
+          "gear_slot": 1,
+          "drive_term": 33
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 5791,
+          "gear_slot": 2,
+          "drive_term": 32
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 6539,
+          "gear_slot": 2,
+          "drive_term": 32
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 7173,
+          "gear_slot": 3,
+          "drive_term": 30
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 7653,
+          "gear_slot": 3,
+          "drive_term": 30
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 8077,
+          "gear_slot": 3,
+          "drive_term": 30
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 8454,
+          "gear_slot": 3,
+          "drive_term": 30
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 8796,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 9096,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 9360,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 9600,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 9812,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 9992,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 10172,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 10315,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 10435,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 10555,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 10675,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 10774,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 10834,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 10894,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 10954,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 11014,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 11074,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 11134,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 11194,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 11254,
+          "gear_slot": 4,
+          "drive_term": 30
+        }
+      ],
+      "brake_start_velocity_internal": 11254,
+      "brake_ticks_to_zero": 150
+    },
+    {
+      "spec_id": 3,
+      "spec_sha256": "9f76e94fafb2b502e351edbcf93fe090ee992230ff478a4ec7026b58f6632d21",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 4000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 6000,
+          "down_threshold": 3500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 7000,
+          "down_threshold": 5500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 232,
+          "up_threshold": 8000,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 9000,
+          "down_threshold": 7500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 212,
+          "up_threshold": 16777215,
+          "down_threshold": 8500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1610,
+          "gear_slot": 0,
+          "drive_term": 37
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3104,
+          "gear_slot": 0,
+          "drive_term": 37
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 4390,
+          "gear_slot": 1,
+          "drive_term": 35
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 5462,
+          "gear_slot": 1,
+          "drive_term": 35
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 6389,
+          "gear_slot": 2,
+          "drive_term": 34
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 7175,
+          "gear_slot": 3,
+          "drive_term": 33
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 7821,
+          "gear_slot": 3,
+          "drive_term": 33
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 8359,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 8823,
+          "gear_slot": 4,
+          "drive_term": 32
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 9175,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 9424,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 9664,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 9860,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 10040,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 10220,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 10347,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 10467,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 10587,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 10707,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 10790,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 10850,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 10910,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 10970,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 11030,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 11090,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 11150,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 11210,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 11264,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 11264,
+          "gear_slot": 5,
+          "drive_term": 30
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 11264,
+          "gear_slot": 5,
+          "drive_term": 30
+        }
+      ],
+      "brake_start_velocity_internal": 11264,
+      "brake_ticks_to_zero": 120
+    },
+    {
+      "spec_id": 4,
+      "spec_sha256": "b2f37a572405cffa92bc50cd6c7bdc11fa53fe60848c5654f312e7869a5d8da2",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 3000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 5000,
+          "down_threshold": 2500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 7000,
+          "down_threshold": 4500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 236,
+          "up_threshold": 8500,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 9500,
+          "down_threshold": 8000
+        },
+        {
+          "slot": 5,
+          "torque_q8": 214,
+          "up_threshold": 16777215,
+          "down_threshold": 9000
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1770,
+          "gear_slot": 0,
+          "drive_term": 40
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3385,
+          "gear_slot": 1,
+          "drive_term": 38
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 4739,
+          "gear_slot": 1,
+          "drive_term": 38
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 5897,
+          "gear_slot": 2,
+          "drive_term": 37
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 6915,
+          "gear_slot": 2,
+          "drive_term": 37
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 7771,
+          "gear_slot": 3,
+          "drive_term": 36
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 8523,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 9140,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 9648,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 10020,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 10357,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 10657,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 10916,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 11156,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 11363,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 11543,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 11723,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 11861,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 11981,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 12101,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 12221,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 12315,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 12375,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 12435,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 12495,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 12555,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 12615,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 12675,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 12735,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 12795,
+          "gear_slot": 5,
+          "drive_term": 33
+        }
+      ],
+      "brake_start_velocity_internal": 12795,
+      "brake_ticks_to_zero": 168
+    },
+    {
+      "spec_id": 5,
+      "spec_sha256": "c5a4b83cece4a63a4f0c122b324be781b0947dbdf7ea04f384e4503134d74c35",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 4000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 6000,
+          "down_threshold": 3500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 7000,
+          "down_threshold": 5500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 232,
+          "up_threshold": 8000,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 9000,
+          "down_threshold": 7500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 211,
+          "up_threshold": 16777215,
+          "down_threshold": 8500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1507,
+          "gear_slot": 0,
+          "drive_term": 35
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 2897,
+          "gear_slot": 0,
+          "drive_term": 35
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 4125,
+          "gear_slot": 1,
+          "drive_term": 33
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 5114,
+          "gear_slot": 1,
+          "drive_term": 33
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 5990,
+          "gear_slot": 1,
+          "drive_term": 33
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 6718,
+          "gear_slot": 2,
+          "drive_term": 32
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 7327,
+          "gear_slot": 3,
+          "drive_term": 31
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 7847,
+          "gear_slot": 3,
+          "drive_term": 31
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 8274,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 8634,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 8946,
+          "gear_slot": 4,
+          "drive_term": 30
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 9148,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 9291,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 9411,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 9531,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 9651,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 9750,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 9810,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 9870,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 9930,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 9990,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 10050,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 10110,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 10170,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 10230,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 10240,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 10240,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 10240,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 10240,
+          "gear_slot": 5,
+          "drive_term": 28
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 10240,
+          "gear_slot": 5,
+          "drive_term": 28
+        }
+      ],
+      "brake_start_velocity_internal": 10240,
+      "brake_ticks_to_zero": 78
+    },
+    {
+      "spec_id": 6,
+      "spec_sha256": "db2f78df7144b8b7b59a532bdcab499ff9f07a87d9173deec1d377d3f0bf5df3",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 3500,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 256,
+          "up_threshold": 6000,
+          "down_threshold": 3000
+        },
+        {
+          "slot": 2,
+          "torque_q8": 256,
+          "up_threshold": 9000,
+          "down_threshold": 5500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 248,
+          "up_threshold": 12000,
+          "down_threshold": 8500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 244,
+          "up_threshold": 14000,
+          "down_threshold": 11500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 240,
+          "up_threshold": 16777215,
+          "down_threshold": 13500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1871,
+          "gear_slot": 0,
+          "drive_term": 42
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3620,
+          "gear_slot": 1,
+          "drive_term": 42
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 5174,
+          "gear_slot": 1,
+          "drive_term": 42
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 6556,
+          "gear_slot": 2,
+          "drive_term": 42
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 7785,
+          "gear_slot": 2,
+          "drive_term": 42
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 8877,
+          "gear_slot": 2,
+          "drive_term": 42
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 9754,
+          "gear_slot": 3,
+          "drive_term": 40
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 10512,
+          "gear_slot": 3,
+          "drive_term": 40
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 11192,
+          "gear_slot": 3,
+          "drive_term": 40
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 11797,
+          "gear_slot": 3,
+          "drive_term": 40
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 12332,
+          "gear_slot": 4,
+          "drive_term": 40
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 12811,
+          "gear_slot": 4,
+          "drive_term": 40
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 13231,
+          "gear_slot": 4,
+          "drive_term": 40
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 13603,
+          "gear_slot": 4,
+          "drive_term": 40
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 13940,
+          "gear_slot": 4,
+          "drive_term": 40
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 14193,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 14409,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 14589,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 14769,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 14916,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 15036,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 15156,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 15276,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 15378,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 15438,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 15498,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 15558,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 15618,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 15678,
+          "gear_slot": 5,
+          "drive_term": 39
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 15738,
+          "gear_slot": 5,
+          "drive_term": 39
+        }
+      ],
+      "brake_start_velocity_internal": 15738,
+      "brake_ticks_to_zero": 115
+    },
+    {
+      "spec_id": 7,
+      "spec_sha256": "8d2c49adafb7ed3608c263d413bc0bab0c85f65aa9617fc87d76fde40770961f",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 4000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 6000,
+          "down_threshold": 2500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 8000,
+          "down_threshold": 5500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 232,
+          "up_threshold": 10000,
+          "down_threshold": 7500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 12000,
+          "down_threshold": 9500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 218,
+          "up_threshold": 16777215,
+          "down_threshold": 11500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1976,
+          "gear_slot": 0,
+          "drive_term": 44
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3825,
+          "gear_slot": 0,
+          "drive_term": 44
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 5369,
+          "gear_slot": 1,
+          "drive_term": 42
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 6699,
+          "gear_slot": 2,
+          "drive_term": 41
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 7854,
+          "gear_slot": 2,
+          "drive_term": 41
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 8787,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 9598,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 10296,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 10882,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 11405,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 11872,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 12251,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 12558,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 12847,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 13087,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 13324,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 13504,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 13684,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 13851,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 13971,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 14091,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 14211,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 14331,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 14394,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 14454,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 14514,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 14574,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 14634,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 14694,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 14754,
+          "gear_slot": 5,
+          "drive_term": 37
+        }
+      ],
+      "brake_start_velocity_internal": 14754,
+      "brake_ticks_to_zero": 138
+    },
+    {
+      "spec_id": 8,
+      "spec_sha256": "f470257211b3e34dd8722e0b286f31f80b7c4b4b67d691f8994f1446f3a8db77",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 3584,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 7168,
+          "down_threshold": 2816
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 10752,
+          "down_threshold": 6400
+        },
+        {
+          "slot": 3,
+          "torque_q8": 232,
+          "up_threshold": 14336,
+          "down_threshold": 9984
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 17920,
+          "down_threshold": 13568
+        },
+        {
+          "slot": 5,
+          "torque_q8": 214,
+          "up_threshold": 16777215,
+          "down_threshold": 17152
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 2187,
+          "gear_slot": 0,
+          "drive_term": 48
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 4203,
+          "gear_slot": 1,
+          "drive_term": 46
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 5919,
+          "gear_slot": 1,
+          "drive_term": 46
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 7434,
+          "gear_slot": 2,
+          "drive_term": 45
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 8738,
+          "gear_slot": 2,
+          "drive_term": 45
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 9893,
+          "gear_slot": 2,
+          "drive_term": 45
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 10903,
+          "gear_slot": 3,
+          "drive_term": 43
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 11709,
+          "gear_slot": 3,
+          "drive_term": 43
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 12423,
+          "gear_slot": 3,
+          "drive_term": 43
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 13058,
+          "gear_slot": 3,
+          "drive_term": 43
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 13624,
+          "gear_slot": 3,
+          "drive_term": 43
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 14127,
+          "gear_slot": 3,
+          "drive_term": 43
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 14541,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 14893,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 15193,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 15467,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 15707,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 15929,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 16109,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 16289,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 16441,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 16561,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 16661,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 16721,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 16781,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 16841,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 16901,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 16961,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 17021,
+          "gear_slot": 4,
+          "drive_term": 42
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 17081,
+          "gear_slot": 4,
+          "drive_term": 42
+        }
+      ],
+      "brake_start_velocity_internal": 17081,
+      "brake_ticks_to_zero": 123
+    },
+    {
+      "spec_id": 9,
+      "spec_sha256": "c94a727b055fe705242f83f074c7d76dff72b1704748b00d0e6f0df2738dd838",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 4000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 240,
+          "up_threshold": 5500,
+          "down_threshold": 3500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 232,
+          "up_threshold": 8000,
+          "down_threshold": 5000
+        },
+        {
+          "slot": 3,
+          "torque_q8": 224,
+          "up_threshold": 10000,
+          "down_threshold": 7500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 218,
+          "up_threshold": 12000,
+          "down_threshold": 9500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 212,
+          "up_threshold": 16777215,
+          "down_threshold": 11500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 2033,
+          "gear_slot": 0,
+          "drive_term": 45
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3931,
+          "gear_slot": 0,
+          "drive_term": 45
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 5458,
+          "gear_slot": 1,
+          "drive_term": 42
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 6701,
+          "gear_slot": 2,
+          "drive_term": 40
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 7799,
+          "gear_slot": 2,
+          "drive_term": 40
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 8733,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 9548,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 10258,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 10848,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 11375,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 11846,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 12229,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 12539,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 12832,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 13072,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 13312,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 13492,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 13672,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 13843,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 13963,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 14083,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 14203,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 14323,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 14390,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 14450,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 14510,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 14570,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 14630,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 14690,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 14750,
+          "gear_slot": 5,
+          "drive_term": 37
+        }
+      ],
+      "brake_start_velocity_internal": 14750,
+      "brake_ticks_to_zero": 138
+    },
+    {
+      "spec_id": 10,
+      "spec_sha256": "6bc2434103d8ddc3b471790a64f562973c6b1c84062773939e09a6f480d8fb51",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 4000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 250,
+          "up_threshold": 6000,
+          "down_threshold": 3500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 8500,
+          "down_threshold": 5500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 230,
+          "up_threshold": 11000,
+          "down_threshold": 7500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 13500,
+          "down_threshold": 10500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 220,
+          "up_threshold": 16777215,
+          "down_threshold": 13000
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 2136,
+          "gear_slot": 0,
+          "drive_term": 47
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 4131,
+          "gear_slot": 1,
+          "drive_term": 45
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 5797,
+          "gear_slot": 1,
+          "drive_term": 45
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 7232,
+          "gear_slot": 2,
+          "drive_term": 44
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 8498,
+          "gear_slot": 2,
+          "drive_term": 44
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 9514,
+          "gear_slot": 3,
+          "drive_term": 42
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 10416,
+          "gear_slot": 3,
+          "drive_term": 42
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 11204,
+          "gear_slot": 4,
+          "drive_term": 41
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 11861,
+          "gear_slot": 4,
+          "drive_term": 41
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 12444,
+          "gear_slot": 4,
+          "drive_term": 41
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 12964,
+          "gear_slot": 4,
+          "drive_term": 41
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 13428,
+          "gear_slot": 4,
+          "drive_term": 41
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 13799,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 14104,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 14391,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 14631,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 14866,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 15046,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 15226,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 15391,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 15511,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 15631,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 15751,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 15871,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 15932,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 15992,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 16052,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 16112,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 16172,
+          "gear_slot": 5,
+          "drive_term": 40
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 16232,
+          "gear_slot": 5,
+          "drive_term": 40
+        }
+      ],
+      "brake_start_velocity_internal": 16232,
+      "brake_ticks_to_zero": 138
+    },
+    {
+      "spec_id": 11,
+      "spec_sha256": "c69ce3e74e2147d1d0ac20a1523d18d5c9d48fb445a1920fc1b7a876e072dfd4",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 3000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 5000,
+          "down_threshold": 2500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 7000,
+          "down_threshold": 4500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 236,
+          "up_threshold": 9000,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 11000,
+          "down_threshold": 8500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 213,
+          "up_threshold": 16777215,
+          "down_threshold": 10500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1924,
+          "gear_slot": 0,
+          "drive_term": 43
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3676,
+          "gear_slot": 1,
+          "drive_term": 41
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 5162,
+          "gear_slot": 2,
+          "drive_term": 40
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 6430,
+          "gear_slot": 2,
+          "drive_term": 40
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 7531,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 8481,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 9284,
+          "gear_slot": 4,
+          "drive_term": 37
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 9925,
+          "gear_slot": 4,
+          "drive_term": 37
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 10497,
+          "gear_slot": 4,
+          "drive_term": 37
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 11006,
+          "gear_slot": 5,
+          "drive_term": 37
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 11349,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 11649,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 11915,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 12155,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 12369,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 12549,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 12729,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 12873,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 12993,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 13113,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 13233,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 13333,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 13393,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 13453,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 13513,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 13573,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 13633,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 13693,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 13753,
+          "gear_slot": 5,
+          "drive_term": 35
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 13813,
+          "gear_slot": 5,
+          "drive_term": 35
+        }
+      ],
+      "brake_start_velocity_internal": 13813,
+      "brake_ticks_to_zero": 130
+    },
+    {
+      "spec_id": 12,
+      "spec_sha256": "7e1bc9edbdf061d1e8ca50e7a7837697f64106495e40c86af78c435c31c3d1ca",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 240,
+          "up_threshold": 4000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 240,
+          "up_threshold": 6000,
+          "down_threshold": 3500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 8000,
+          "down_threshold": 5500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 232,
+          "up_threshold": 10000,
+          "down_threshold": 7500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 12000,
+          "down_threshold": 9500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 212,
+          "up_threshold": 16777215,
+          "down_threshold": 11500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1821,
+          "gear_slot": 0,
+          "drive_term": 41
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3519,
+          "gear_slot": 0,
+          "drive_term": 41
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 5028,
+          "gear_slot": 1,
+          "drive_term": 41
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 6369,
+          "gear_slot": 2,
+          "drive_term": 41
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 7563,
+          "gear_slot": 2,
+          "drive_term": 41
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 8554,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 9391,
+          "gear_slot": 3,
+          "drive_term": 39
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 10126,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 10737,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 11278,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 11758,
+          "gear_slot": 4,
+          "drive_term": 38
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 12131,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 12403,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 12643,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 12863,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 13043,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 13223,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 13373,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 13493,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 13613,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 13733,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 13839,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 13899,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 13959,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 14019,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 14079,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 14139,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 14199,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 14259,
+          "gear_slot": 5,
+          "drive_term": 36
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 14319,
+          "gear_slot": 5,
+          "drive_term": 36
+        }
+      ],
+      "brake_start_velocity_internal": 14319,
+      "brake_ticks_to_zero": 247
+    },
+    {
+      "spec_id": 13,
+      "spec_sha256": "3f3adee2a082d58e3b01c8f5a12f64996166d78f9938e7849e452382554e7bdf",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 248,
+          "up_threshold": 3000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 240,
+          "up_threshold": 5000,
+          "down_threshold": 2500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 232,
+          "up_threshold": 7000,
+          "down_threshold": 4500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 224,
+          "up_threshold": 9000,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 216,
+          "up_threshold": 11000,
+          "down_threshold": 8500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 208,
+          "up_threshold": 16777215,
+          "down_threshold": 10500
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1770,
+          "gear_slot": 0,
+          "drive_term": 40
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3400,
+          "gear_slot": 1,
+          "drive_term": 39
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 4808,
+          "gear_slot": 1,
+          "drive_term": 39
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 6012,
+          "gear_slot": 2,
+          "drive_term": 38
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 7067,
+          "gear_slot": 3,
+          "drive_term": 36
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 7898,
+          "gear_slot": 3,
+          "drive_term": 36
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 8641,
+          "gear_slot": 3,
+          "drive_term": 36
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 9274,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 9805,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 10280,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 10700,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 11057,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 11339,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 11579,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 11809,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 11989,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 12169,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 12329,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 12449,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 12569,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 12689,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 12805,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 12865,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 12925,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 12985,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 13045,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 13105,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 13165,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 13225,
+          "gear_slot": 5,
+          "drive_term": 34
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 13285,
+          "gear_slot": 5,
+          "drive_term": 34
+        }
+      ],
+      "brake_start_velocity_internal": 13285,
+      "brake_ticks_to_zero": 173
+    },
+    {
+      "spec_id": 14,
+      "spec_sha256": "035116c2df9e7febc838ee9dbc20cc2551be071357a94e7bd4f36f8ab1b8df13",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 4000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 6000,
+          "down_threshold": 3500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 244,
+          "up_threshold": 7500,
+          "down_threshold": 5500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 240,
+          "up_threshold": 9000,
+          "down_threshold": 7000
+        },
+        {
+          "slot": 4,
+          "torque_q8": 232,
+          "up_threshold": 10500,
+          "down_threshold": 8500
+        },
+        {
+          "slot": 5,
+          "torque_q8": 209,
+          "up_threshold": 16777215,
+          "down_threshold": 10000
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1819,
+          "gear_slot": 0,
+          "drive_term": 41
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3517,
+          "gear_slot": 0,
+          "drive_term": 41
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 4946,
+          "gear_slot": 1,
+          "drive_term": 39
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 6185,
+          "gear_slot": 2,
+          "drive_term": 39
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 7284,
+          "gear_slot": 2,
+          "drive_term": 39
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 8220,
+          "gear_slot": 3,
+          "drive_term": 38
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 9033,
+          "gear_slot": 4,
+          "drive_term": 37
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 9709,
+          "gear_slot": 4,
+          "drive_term": 37
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 10304,
+          "gear_slot": 4,
+          "drive_term": 37
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 10692,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 10944,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 11184,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 11384,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 11564,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 11744,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 11875,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 11995,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 12115,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 12235,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 12322,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 12382,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 12442,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 12502,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 12562,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 12622,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 12682,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 12742,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 12800,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 12800,
+          "gear_slot": 5,
+          "drive_term": 33
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 12800,
+          "gear_slot": 5,
+          "drive_term": 33
+        }
+      ],
+      "brake_start_velocity_internal": 12800,
+      "brake_ticks_to_zero": 112
+    },
+    {
+      "spec_id": 15,
+      "spec_sha256": "f7314ac1de5f268114826ca9ef05c5115e8f1a59c1e735eb839bad442a3b8b60",
+      "gears": [
+        {
+          "slot": 0,
+          "torque_q8": 256,
+          "up_threshold": 3000,
+          "down_threshold": -999
+        },
+        {
+          "slot": 1,
+          "torque_q8": 248,
+          "up_threshold": 5000,
+          "down_threshold": 2500
+        },
+        {
+          "slot": 2,
+          "torque_q8": 240,
+          "up_threshold": 7000,
+          "down_threshold": 4500
+        },
+        {
+          "slot": 3,
+          "torque_q8": 236,
+          "up_threshold": 8500,
+          "down_threshold": 6500
+        },
+        {
+          "slot": 4,
+          "torque_q8": 224,
+          "up_threshold": 9500,
+          "down_threshold": 8000
+        },
+        {
+          "slot": 5,
+          "torque_q8": 211,
+          "up_threshold": 16777215,
+          "down_threshold": 9000
+        },
+        {
+          "slot": 6,
+          "torque_q8": 0,
+          "up_threshold": 0,
+          "down_threshold": 0
+        }
+      ],
+      "samples": [
+        {
+          "tick": 60,
+          "nominal_seconds": 1.0,
+          "velocity_internal": 1770,
+          "gear_slot": 0,
+          "drive_term": 40
+        },
+        {
+          "tick": 120,
+          "nominal_seconds": 2.0,
+          "velocity_internal": 3385,
+          "gear_slot": 1,
+          "drive_term": 38
+        },
+        {
+          "tick": 180,
+          "nominal_seconds": 3.0,
+          "velocity_internal": 4739,
+          "gear_slot": 1,
+          "drive_term": 38
+        },
+        {
+          "tick": 240,
+          "nominal_seconds": 4.0,
+          "velocity_internal": 5897,
+          "gear_slot": 2,
+          "drive_term": 37
+        },
+        {
+          "tick": 300,
+          "nominal_seconds": 5.0,
+          "velocity_internal": 6915,
+          "gear_slot": 2,
+          "drive_term": 37
+        },
+        {
+          "tick": 360,
+          "nominal_seconds": 6.0,
+          "velocity_internal": 7771,
+          "gear_slot": 3,
+          "drive_term": 36
+        },
+        {
+          "tick": 420,
+          "nominal_seconds": 7.0,
+          "velocity_internal": 8523,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 480,
+          "nominal_seconds": 8.0,
+          "velocity_internal": 9140,
+          "gear_slot": 4,
+          "drive_term": 35
+        },
+        {
+          "tick": 540,
+          "nominal_seconds": 9.0,
+          "velocity_internal": 9628,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 600,
+          "nominal_seconds": 10.0,
+          "velocity_internal": 9945,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 660,
+          "nominal_seconds": 11.0,
+          "velocity_internal": 10244,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 720,
+          "nominal_seconds": 12.0,
+          "velocity_internal": 10484,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 780,
+          "nominal_seconds": 13.0,
+          "velocity_internal": 10724,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 840,
+          "nominal_seconds": 14.0,
+          "velocity_internal": 10911,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 900,
+          "nominal_seconds": 15.0,
+          "velocity_internal": 11091,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 960,
+          "nominal_seconds": 16.0,
+          "velocity_internal": 11269,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1020,
+          "nominal_seconds": 17.0,
+          "velocity_internal": 11389,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1080,
+          "nominal_seconds": 18.0,
+          "velocity_internal": 11509,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1140,
+          "nominal_seconds": 19.0,
+          "velocity_internal": 11629,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1200,
+          "nominal_seconds": 20.0,
+          "velocity_internal": 11749,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1260,
+          "nominal_seconds": 21.0,
+          "velocity_internal": 11823,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1320,
+          "nominal_seconds": 22.0,
+          "velocity_internal": 11883,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1380,
+          "nominal_seconds": 23.0,
+          "velocity_internal": 11943,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1440,
+          "nominal_seconds": 24.0,
+          "velocity_internal": 12003,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1500,
+          "nominal_seconds": 25.0,
+          "velocity_internal": 12063,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1560,
+          "nominal_seconds": 26.0,
+          "velocity_internal": 12123,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1620,
+          "nominal_seconds": 27.0,
+          "velocity_internal": 12183,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1680,
+          "nominal_seconds": 28.0,
+          "velocity_internal": 12243,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1740,
+          "nominal_seconds": 29.0,
+          "velocity_internal": 12288,
+          "gear_slot": 5,
+          "drive_term": 32
+        },
+        {
+          "tick": 1800,
+          "nominal_seconds": 30.0,
+          "velocity_internal": 12288,
+          "gear_slot": 5,
+          "drive_term": 32
+        }
+      ],
+      "brake_start_velocity_internal": 12288,
+      "brake_ticks_to_zero": 129
+    }
+  ]
+}

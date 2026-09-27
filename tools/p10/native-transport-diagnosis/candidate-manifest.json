@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "Native async context only. No protocol, timeout, queue limit, game simulation or main-thread callback semantics change.",
+  "changes": [
+    {
+      "path": "Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs",
+      "before": "bc1a48d7d54ddae9a16dea47f70a79dc6e58e3a8bd24cbd971de98cbc92a1c26",
+      "staged": "tools/p10/native-transport-diagnosis/Transport/BrowserSocketTransport.cs",
+      "after": "4b8f17692a03fa510e3faa19527f3b9702590e42443ca3c92595d30a9b304974"
+    },
+    {
+      "path": "src/Tests/RacingBois.NativeTransport.Tests/Program.cs",
+      "before": "aec0785d5ba50c389650a50adebf14c7be1df62b932c876d05496435242c9f5c",
+      "staged": "tools/p10/native-transport-diagnosis/Transport/NativeTransportTestProgram.cs",
+      "after": "2be06edd46cf7820064626689dfddd006e98d1d096d9006838ec722d03c1b0a2"
+    }
+  ]
+}

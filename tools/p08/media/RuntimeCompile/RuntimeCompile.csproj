@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>0436</NoWarn>
+    <AssemblyName>RacingBois.P08.Media.Preflight</AssemblyName>
+    <UnityManaged Condition="'$(UnityManaged)'==''">C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/CinematicCatalog.cs" Link="CinematicCatalog.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/P08MusicDirector.cs" Link="P08MusicDirector.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/Cinematic*.cs" Link="%(Filename).cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/CareerView.cs" Link="CareerView.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs" Link="MultiplayerLobbyView.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/UiViewState.cs" Link="UiViewState.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs" Link="MultiplayerCopy.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Bootstrap/BootstrapCinematicCoordinator.cs" Link="BootstrapCinematicCoordinator.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Presentation.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll" />
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll" />
+  </ItemGroup>
+</Project>

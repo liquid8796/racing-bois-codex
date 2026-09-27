@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "tests": 8,
+  "results": [
+    {
+      "name": "only_one_planned_resume_passes",
+      "passed": true
+    },
+    {
+      "name": "spontaneous_reconnect_after_resume_fails",
+      "passed": true
+    },
+    {
+      "name": "spontaneous_reconnect_before_planned_resume_fails",
+      "passed": true
+    },
+    {
+      "name": "repeated_state_notification_does_not_double_count",
+      "passed": true
+    },
+    {
+      "name": "allowlist_scrubs_unknown_data",
+      "passed": true
+    },
+    {
+      "name": "actual_close_and_input_codes_remain_distinct",
+      "passed": true
+    },
+    {
+      "name": "bounded_lifecycle_and_previous_pending",
+      "passed": true
+    },
+    {
+      "name": "exact_error_literals_no_fuzzy_matching",
+      "passed": true
+    }
+  ]
+}

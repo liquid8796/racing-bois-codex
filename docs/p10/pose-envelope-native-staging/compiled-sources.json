@@ -1,0 +1,464 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T09:42:31.0051337Z",
+  "passed": true,
+  "scope": "Compiled PE/PDB identity and actual source checksums; not visual acceptance",
+  "assemblies": [
+    {
+      "name": "RacingBois.Diagnostics.PoseEnvelopePreview",
+      "path": "Library/ScriptAssemblies/RacingBois.Diagnostics.PoseEnvelopePreview.dll",
+      "sha256": "d8fc56233642ab4a4fbbb99093f6f769b9411704e20d1fbf38bb5b9e0cb00f2a",
+      "pdbSha256": "1c37799667885cd92e54750bda170c597f35ca814bce0215b38f017088149530",
+      "mvid": "a2d398df-20cd-4c73-ab1d-986c7835f23f",
+      "passed": true,
+      "pdbMatchesAssembly": true,
+      "documents": [
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PoseEnvelopePreviewRunner.cs",
+          "sha256": "1e98ca63d98a1b0d0eafffc90cdfe53cacf821560830664f8d0cd7e04b3c774c",
+          "symbolChecksum": "1e98ca63d98a1b0d0eafffc90cdfe53cacf821560830664f8d0cd7e04b3c774c",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PresentationContinuityScope.cs",
+          "sha256": "cc2e6949f9b0e2c7a29a81ba280e42ae0325fb303921201b8fab10af7646905e",
+          "symbolChecksum": "cc2e6949f9b0e2c7a29a81ba280e42ae0325fb303921201b8fab10af7646905e",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PreviewActorRig.cs",
+          "sha256": "0ab3fae70ece079e1e8914055e4db0128bbb26cf8e3abe496b9778f88784cfec",
+          "symbolChecksum": "0ab3fae70ece079e1e8914055e4db0128bbb26cf8e3abe496b9778f88784cfec",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PreviewCaptureRecorder.cs",
+          "sha256": "ee022a75a54d86e77364383db6ffeae85f754ed5537749d7eebc4bb908db6933",
+          "symbolChecksum": "ee022a75a54d86e77364383db6ffeae85f754ed5537749d7eebc4bb908db6933",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PreviewConfiguration.cs",
+          "sha256": "30316ebc43eff91d96f972054798f01187edc7dc31a009cef20f6085502c4fe8",
+          "symbolChecksum": "30316ebc43eff91d96f972054798f01187edc7dc31a009cef20f6085502c4fe8",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PreviewContracts.cs",
+          "sha256": "69b1e403730fb481a212b5116d3667477f390968fcfaabcf10a76550065ee161",
+          "symbolChecksum": "69b1e403730fb481a212b5116d3667477f390968fcfaabcf10a76550065ee161",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PreviewEnvelopeDriver.cs",
+          "sha256": "01ce4c966bcd60da5a5277303e4d421e28331f6fae5bc4204cfca7bec1ad047c",
+          "symbolChecksum": "01ce4c966bcd60da5a5277303e4d421e28331f6fae5bc4204cfca7bec1ad047c",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PreviewGround.cs",
+          "sha256": "64af7d7c5e82dc1e6ef133e494701d1313f04be6f1ea0c4fdebb33c05c7384ff",
+          "symbolChecksum": "64af7d7c5e82dc1e6ef133e494701d1313f04be6f1ea0c4fdebb33c05c7384ff",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/PreviewProjection.cs",
+          "sha256": "66510e89cd5b111a413053143e8636754886751c0ee00190ad230c47f0e107ed",
+          "symbolChecksum": "66510e89cd5b111a413053143e8636754886751c0ee00190ad230c47f0e107ed",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/UnityVisualPoseEnvelope.cs",
+          "sha256": "14aa277b3220c1b683324ea4ab3ed335f92abd75dddba7dac58466ec5c24dff0",
+          "symbolChecksum": "14aa277b3220c1b683324ea4ab3ed335f92abd75dddba7dac58466ec5c24dff0",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/VisualPoseEnvelope.cs",
+          "sha256": "737ff5e6834eb2ff8b862d2f75b44313f3c7474934ef6ed80e220375c2a60e35",
+          "symbolChecksum": "737ff5e6834eb2ff8b862d2f75b44313f3c7474934ef6ed80e220375c2a60e35",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Runtime/VisualPoseEnvelope20Comparison.cs",
+          "sha256": "e4b53c4ebe5a6d81fa8ab27b62b0a948171a97e8c4268df426f97690cf7e97bc",
+          "symbolChecksum": "e4b53c4ebe5a6d81fa8ab27b62b0a948171a97e8c4268df426f97690cf7e97bc",
+          "matches": true
+        },
+        {
+          "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
+          "sha256": "",
+          "symbolChecksum": "7f03ba9c1f9ddae2cb9c9f3a1b25a1507e2ba10a",
+          "matches": null,
+          "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
+        }
+      ]
+    },
+    {
+      "name": "RacingBois.Diagnostics.PoseEnvelopePreview.Editor",
+      "path": "Library/ScriptAssemblies/RacingBois.Diagnostics.PoseEnvelopePreview.Editor.dll",
+      "sha256": "22dfc68233aa5326a759222faee5d1b0a98021e01d4e39a227619b3051a34605",
+      "pdbSha256": "1c78749082e1ef3ce3baa14c70b61906ea76edf0e92a3fead702961cd3c7b3f4",
+      "mvid": "d1fb9119-08f2-463e-ae90-c0cddd692ee9",
+      "passed": true,
+      "pdbMatchesAssembly": true,
+      "documents": [
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/PosePreviewBuilder.cs",
+          "sha256": "0a8fbdc6c3e48d24dd4f251be853ceab1b2365b7ca508f591f3374c8a7a7a5f5",
+          "symbolChecksum": "0a8fbdc6c3e48d24dd4f251be853ceab1b2365b7ca508f591f3374c8a7a7a5f5",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/PosePreviewLaunch.cs",
+          "sha256": "a58edd509dd100167e4dc61f45164ec79cc16cb5bcd480d8d339644aa8815ce9",
+          "symbolChecksum": "a58edd509dd100167e4dc61f45164ec79cc16cb5bcd480d8d339644aa8815ce9",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/PreviewBuildInputs.cs",
+          "sha256": "1fa48955705f25edda22c9881ee9bf1f00b64a82d97928a82a8619588ba196e1",
+          "symbolChecksum": "1fa48955705f25edda22c9881ee9bf1f00b64a82d97928a82a8619588ba196e1",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/PreviewBuildScope.cs",
+          "sha256": "49ffec3d5f99b05ea47937ebcc7292c9b7272636561ead3c1c579fdc37a9970c",
+          "symbolChecksum": "49ffec3d5f99b05ea47937ebcc7292c9b7272636561ead3c1c579fdc37a9970c",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Diagnostics/PoseEnvelopePreview/Editor/PreviewProjectSettingsScope.cs",
+          "sha256": "bcd5e149ceb6c22a804feaa16bc9540f03785f05d0d5170e9cc01f924c299490",
+          "symbolChecksum": "bcd5e149ceb6c22a804feaa16bc9540f03785f05d0d5170e9cc01f924c299490",
+          "matches": true
+        },
+        {
+          "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
+          "sha256": "",
+          "symbolChecksum": "ecfe35bdf7307a20af97cf1ed6dc42b98ff90125",
+          "matches": null,
+          "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
+        }
+      ]
+    },
+    {
+      "name": "RacingBois.Client.Presentation",
+      "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.dll",
+      "sha256": "0438065e5ba92ae77336308da3dc3d7e91035044c7586b1b579e9b614f9541f8",
+      "pdbSha256": "ae8835821c07f50d3ce080f97dc7145c3f3bc6a61cf4e9e95a6723a85ca3d662",
+      "mvid": "846cdd02-4077-451a-ad7d-563a4d0feb54",
+      "passed": true,
+      "pdbMatchesAssembly": true,
+      "documents": [
+        {
+          "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+          "sha256": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819",
+          "symbolChecksum": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/CinematicDirector.cs",
+          "sha256": "abc9c84fdec3f8bbb10d15ee32679a287f504adaa12ceadc9c1afdde79bc4dc4",
+          "symbolChecksum": "abc9c84fdec3f8bbb10d15ee32679a287f504adaa12ceadc9c1afdde79bc4dc4",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/CinematicGalleryView.cs",
+          "sha256": "b3fe01716fb951f8db4f5bf500e1bacd532de338d154118484f27724f28752b0",
+          "symbolChecksum": "b3fe01716fb951f8db4f5bf500e1bacd532de338d154118484f27724f28752b0",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/CinematicPoseSampler.cs",
+          "sha256": "1e4204fc4a16677be7c53054be47b7b15f7a9b9b3601b5cf87915d8c76ed087b",
+          "symbolChecksum": "1e4204fc4a16677be7c53054be47b7b15f7a9b9b3601b5cf87915d8c76ed087b",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/CinematicValidationHarness.cs",
+          "sha256": "5ebf08a3dbcdc2f9da60ab5ea023ea99bae8657573bf27869c2d95924298b37c",
+          "symbolChecksum": "5ebf08a3dbcdc2f9da60ab5ea023ea99bae8657573bf27869c2d95924298b37c",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/ContentRegistry.cs",
+          "sha256": "2006b59bdea7f1d2c0e3738af48e51ee06393fb7b7b7a414202ad2942fd63477",
+          "symbolChecksum": "2006b59bdea7f1d2c0e3738af48e51ee06393fb7b7b7a414202ad2942fd63477",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+          "sha256": "c7804c86cc32b38a0fec32aa8d5dd056383711d5663a7c13873cd062eb7376fc",
+          "symbolChecksum": "c7804c86cc32b38a0fec32aa8d5dd056383711d5663a7c13873cd062eb7376fc",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/FoundationScreen.cs",
+          "sha256": "639d0455469d3e72a24317d5ff6ce7e7cadacfa2813af903fbeb5a5175b49496",
+          "symbolChecksum": "639d0455469d3e72a24317d5ff6ce7e7cadacfa2813af903fbeb5a5175b49496",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+          "sha256": "d36d98135937a0e29f37f4c2f1953b9f1886222532c0e8ebba4c82f069f05684",
+          "symbolChecksum": "d36d98135937a0e29f37f4c2f1953b9f1886222532c0e8ebba4c82f069f05684",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+          "sha256": "086eb98c3d361ce16ff69fe7fa0db25489090be28b898495c41adba92a8e283a",
+          "symbolChecksum": "086eb98c3d361ce16ff69fe7fa0db25489090be28b898495c41adba92a8e283a",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/P08ActorContent.cs",
+          "sha256": "e9482306c535343b01c103ba9985afe99ba6b08509883fd1a409a8432feaf5ec",
+          "symbolChecksum": "e9482306c535343b01c103ba9985afe99ba6b08509883fd1a409a8432feaf5ec",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/P08ContentLibrary.cs",
+          "sha256": "12549ab7f1cfbb5cff46bf4429ccda98bcaa33bf37d43f7757300297c92c8ddb",
+          "symbolChecksum": "12549ab7f1cfbb5cff46bf4429ccda98bcaa33bf37d43f7757300297c92c8ddb",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/P08RouteContent.cs",
+          "sha256": "844473982af994d3c08aa1867fe7a61838f7b1578e23b05b0e84e5b9d8dcfe0f",
+          "symbolChecksum": "844473982af994d3c08aa1867fe7a61838f7b1578e23b05b0e84e5b9d8dcfe0f",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceAudio.cs",
+          "sha256": "6c6188e5ab647d71ddb7a655d956a5b0c012bc99d597dfdbc93b85a1d8cdeb89",
+          "symbolChecksum": "6c6188e5ab647d71ddb7a655d956a5b0c012bc99d597dfdbc93b85a1d8cdeb89",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceAudioBank.cs",
+          "sha256": "bafbd365485df9e0fe869871ace5696969985739edafa5830c8e64df67eeb961",
+          "symbolChecksum": "bafbd365485df9e0fe869871ace5696969985739edafa5830c8e64df67eeb961",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceEffectsView.cs",
+          "sha256": "2d689ec6b3c7e65084eaac3d946fd6d80d03a151ef69756be68a9b11ce21a1a2",
+          "symbolChecksum": "2d689ec6b3c7e65084eaac3d946fd6d80d03a151ef69756be68a9b11ce21a1a2",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+          "sha256": "9bc3c320bc0d95a27e544c499ade4d383c8b0568e24c6263dc6042c88c18984f",
+          "symbolChecksum": "9bc3c320bc0d95a27e544c499ade4d383c8b0568e24c6263dc6042c88c18984f",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+          "sha256": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9",
+          "symbolChecksum": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceStageView.cs",
+          "sha256": "ddca51da1a4246882dc46b8d6ab5ac4d28be82cfad163ab3161b41e4acd84b91",
+          "symbolChecksum": "ddca51da1a4246882dc46b8d6ab5ac4d28be82cfad163ab3161b41e4acd84b91",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RaceVisualQuality.cs",
+          "sha256": "238661a51b36ccdd2c48775d18c78303c43e71729301e7ead06d4ead40e2eeb3",
+          "symbolChecksum": "238661a51b36ccdd2c48775d18c78303c43e71729301e7ead06d4ead40e2eeb3",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs",
+          "sha256": "09d50c71de78798cdf7060a2da3c35334ea05607b1ee10cdbe57699b571f9ecd",
+          "symbolChecksum": "09d50c71de78798cdf7060a2da3c35334ea05607b1ee10cdbe57699b571f9ecd",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RiderAnimationView.cs",
+          "sha256": "e78eea1c0d5547ab8e88d588b99396d470fa2efb01132f3cb3668e9bea97deb2",
+          "symbolChecksum": "e78eea1c0d5547ab8e88d588b99396d470fa2efb01132f3cb3668e9bea97deb2",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/RoadStageView.cs",
+          "sha256": "f6cafb65f9860cb4e25a8d151bf25462482270fd89ea8b49ea265b34898cb7c7",
+          "symbolChecksum": "f6cafb65f9860cb4e25a8d151bf25462482270fd89ea8b49ea265b34898cb7c7",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/SceneScrim.cs",
+          "sha256": "47e35a20960826d5d1475453863089c32655cdbf01516fce37e5cf6156e29711",
+          "symbolChecksum": "47e35a20960826d5d1475453863089c32655cdbf01516fce37e5cf6156e29711",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/TrackRibbonView.cs",
+          "sha256": "2507f9284ec5a7eb05d673e1ec60c364322879e6755134364817f49d523517c7",
+          "symbolChecksum": "2507f9284ec5a7eb05d673e1ec60c364322879e6755134364817f49d523517c7",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/UiBindingScope.cs",
+          "sha256": "3672631e9e545832a0b425ddac09de1f58e104feb38deefed82a43d78e961135",
+          "symbolChecksum": "3672631e9e545832a0b425ddac09de1f58e104feb38deefed82a43d78e961135",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/UiViewState.cs",
+          "sha256": "e3a0bab64590d20e9042153c694297862084ace08fcec0e2807dfcd9a4ac66eb",
+          "symbolChecksum": "e3a0bab64590d20e9042153c694297862084ace08fcec0e2807dfcd9a4ac66eb",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Client/Presentation/WeaponGripView.cs",
+          "sha256": "575ef392d45085f22f1d3a427bb6f63df10254509ec56afdd6b1767d41df5363",
+          "symbolChecksum": "575ef392d45085f22f1d3a427bb6f63df10254509ec56afdd6b1767d41df5363",
+          "matches": true
+        },
+        {
+          "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
+          "sha256": "",
+          "symbolChecksum": "2eff71aa2f8e19126138afc6f1b12b5bc6534d2d",
+          "matches": null,
+          "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
+        }
+      ]
+    },
+    {
+      "name": "RacingBois.Gameplay.Definitions",
+      "path": "Library/ScriptAssemblies/RacingBois.Gameplay.Definitions.dll",
+      "sha256": "4b001a7a0bf88f39e99dd12b361cdb5aef97206a02df685167086edfa0706b2f",
+      "pdbSha256": "3e9c7fc0589422a0f965b0d844ed3e89bc9b9452d3a62b2ce5b4f01820904920",
+      "mvid": "9b1313e2-2b08-4fb2-bebd-359e7a7f784f",
+      "passed": true,
+      "pdbMatchesAssembly": true,
+      "documents": [
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/BikeCatalog.cs",
+          "sha256": "c498d3946c66c2643446e8d67e57ad53b61820bb3a957d1521c8d59951e2b60c",
+          "symbolChecksum": "c498d3946c66c2643446e8d67e57ad53b61820bb3a957d1521c8d59951e2b60c",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/BikeHandlingCatalog.cs",
+          "sha256": "a498434d743bda307939e2bfbbe426ff91b4c0bbaa14b747ca36e5ba1f6e6d8d",
+          "symbolChecksum": "a498434d743bda307939e2bfbbe426ff91b4c0bbaa14b747ca36e5ba1f6e6d8d",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CampaignCatalog.cs",
+          "sha256": "1d16d05c332cef2faa97acae0c75622a37b24dc24b20a3953937f6f5c65cabe3",
+          "symbolChecksum": "1d16d05c332cef2faa97acae0c75622a37b24dc24b20a3953937f6f5c65cabe3",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CampaignRules.cs",
+          "sha256": "4679cd3f35a3c3153a923f65b81b1c72497cad3a6bc1bf021faef3b4ec44812c",
+          "symbolChecksum": "4679cd3f35a3c3153a923f65b81b1c72497cad3a6bc1bf021faef3b4ec44812c",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CharacterCatalog.cs",
+          "sha256": "8d033a0389dc878317986524fc31e16e6dcb56b09491859c73bd77ddee22f97d",
+          "symbolChecksum": "8d033a0389dc878317986524fc31e16e6dcb56b09491859c73bd77ddee22f97d",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/ContentFingerprint.cs",
+          "sha256": "6d22fd73f39a086ba07d7847fbe07aa0edb554b1dbbcc130c2f8bd791640a498",
+          "symbolChecksum": "6d22fd73f39a086ba07d7847fbe07aa0edb554b1dbbcc130c2f8bd791640a498",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/EconomyRules.cs",
+          "sha256": "85c3be9e1da195c3031b62d92d0a2dfe70d4c7de88d1610cbfacf18bb6bdd05a",
+          "symbolChecksum": "85c3be9e1da195c3031b62d92d0a2dfe70d4c7de88d1610cbfacf18bb6bdd05a",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/GameplayRules.cs",
+          "sha256": "67e09f04aaf06f13fb762c8a7c413c42270ae6c86a257454b45d9727b8f52575",
+          "symbolChecksum": "67e09f04aaf06f13fb762c8a7c413c42270ae6c86a257454b45d9727b8f52575",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/ProductionContent.cs",
+          "sha256": "d8853b358760afe6a93772a41c1d1b83cf4383c7477d4b014a43f8e9c81598c9",
+          "symbolChecksum": "d8853b358760afe6a93772a41c1d1b83cf4383c7477d4b014a43f8e9c81598c9",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/PrototypeRules.cs",
+          "sha256": "600838990db2e125a3d09a12c482ec439660a3e38741b7437fd661c078e6bc0f",
+          "symbolChecksum": "600838990db2e125a3d09a12c482ec439660a3e38741b7437fd661c078e6bc0f",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/TrackDefinition.cs",
+          "sha256": "1c2faaf25e030a4c1ab724d46142591f38f52631e86a3540998932efb1b376fb",
+          "symbolChecksum": "1c2faaf25e030a4c1ab724d46142591f38f52631e86a3540998932efb1b376fb",
+          "matches": true
+        },
+        {
+          "path": "Packages/com.racingbois.foundation/Runtime/Definitions/VehicleDimensions.cs",
+          "sha256": "566cd7d7b774d42a9c42d7cad6d39b2d2ab24df3564ce4789f8d06f2b8b28b63",
+          "symbolChecksum": "566cd7d7b774d42a9c42d7cad6d39b2d2ab24df3564ce4789f8d06f2b8b28b63",
+          "matches": true
+        },
+        {
+          "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
+          "sha256": "",
+          "symbolChecksum": "97de3416534a332df411327a3333709b8c9c7388",
+          "matches": null,
+          "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
+        }
+      ]
+    },
+    {
+      "name": "RacingBois.Golden",
+      "path": "Library/ScriptAssemblies/RacingBois.Golden.dll",
+      "sha256": "d0d4a570ed5ade72d2dda0e62991c0a282e295c89f9ed16392956d010a9225ed",
+      "pdbSha256": "8ccbfedafbe9e928d1d0d6fd1b7995c83ade89ad83baa52368586edc88033f4c",
+      "mvid": "e9f9e90d-b7ef-476e-9295-6a520c44e5c0",
+      "passed": true,
+      "pdbMatchesAssembly": true,
+      "documents": [
+        {
+          "path": "Assets/RacingBois/Golden/Runtime/GoldenCaptureRunner.cs",
+          "sha256": "1cc5c5ffe0fbbc27cf1ac8d834795aa4ca79f61ec117d98b5bdb69eda8092ca9",
+          "symbolChecksum": "1cc5c5ffe0fbbc27cf1ac8d834795aa4ca79f61ec117d98b5bdb69eda8092ca9",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewController.cs",
+          "sha256": "f84197f80b529ca5b9ccaf20ca1de5b432aadb213b425dd6493b984b32776eb1",
+          "symbolChecksum": "f84197f80b529ca5b9ccaf20ca1de5b432aadb213b425dd6493b984b32776eb1",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewPipelineScope.cs",
+          "sha256": "9566dafc6b1e13e78d7fac6654e1ebb0b5116845a9b76438b7798d1dea423799",
+          "symbolChecksum": "9566dafc6b1e13e78d7fac6654e1ebb0b5116845a9b76438b7798d1dea423799",
+          "matches": true
+        },
+        {
+          "path": "Assets/RacingBois/Golden/Runtime/GoldenSkinBounds.cs",
+          "sha256": "daad4616ee4f2a9016edc3f3b2b66c68d038a3b0255af2424bef08d0e624951c",
+          "symbolChecksum": "daad4616ee4f2a9016edc3f3b2b66c68d038a3b0255af2424bef08d0e624951c",
+          "matches": true
+        },
+        {
+          "path": "Library/Bee/artifacts/1900b0aE.dag/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs",
+          "sha256": "",
+          "symbolChecksum": "32c8c085324adc41899fef542a78259e40e85b6a",
+          "matches": null,
+          "scope": "Unity-generated virtual document; PE/PDB identity bound, no physical project source claimed"
+        }
+      ]
+    }
+  ]
+}

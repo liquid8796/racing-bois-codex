@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="Foundation.uss" />
+  <ui:VisualElement name="surface" class="surface">
+    <ui:VisualElement class="topbar">
+      <ui:Label text="RB / RACING BOIS" class="brand" />
+      <ui:VisualElement class="topright">
+        <ui:Label text="FOUNDATION / 02" class="eyebrow" />
+        <ui:Label name="connection" text="CHƯA KẾT NỐI" class="status" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="menu" class="menu">
+      <ui:Label text="THE ROAD IS OURS." class="eyebrow accent" />
+      <ui:Label text="RACING\nBOIS." class="title" />
+      <ui:Label text="Cùng lên đường." class="subtitle" />
+      <ui:Label text="Đường thử nền tảng: kết nối máy chủ, điều khiển xe và kiểm tra cảm giác chuyển động." class="description" />
+      <ui:VisualElement class="divider" />
+      <ui:Label text="MÁY CHỦ" class="eyebrow" />
+      <ui:TextField name="endpoint" value="ws://127.0.0.1:7777/ws" class="endpoint" />
+      <ui:Button name="connect" text="VÀO ĐƯỜNG THỬ  >" class="primary" />
+      <ui:Label name="message" text="Tối đa 8 người · PC / Laptop" class="hint" />
+      <ui:Toggle name="reduced-motion" text="Giảm chuyển động giao diện" class="motion" />
+    </ui:VisualElement>
+    <ui:VisualElement name="hud" class="hud">
+      <ui:VisualElement class="speed-block">
+        <ui:Label text="TỐC ĐỘ" class="eyebrow" />
+        <ui:Label name="speed" text="000" class="speed" />
+        <ui:Label text="KM/H" class="eyebrow accent" />
+      </ui:VisualElement>
+      <ui:VisualElement class="race-info">
+        <ui:Label name="rider" text="RIDER" class="brand" />
+        <ui:Label name="distance" text="0.00 KM" class="distance" />
+        <ui:Label name="peers" text="1 / 8 TAY ĐUA" class="hint" />
+        <ui:Button name="leave" text="RỜI ĐƯỜNG THỬ" class="secondary" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="bottomline">
+      <ui:Label text="W: TĂNG TỐC     S: PHANH     A / D: LÁI" class="controls" />
+      <ui:Label text="P02 · BẢN THỬ NỀN TẢNG" class="eyebrow" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

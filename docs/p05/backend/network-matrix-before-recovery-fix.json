@@ -1,0 +1,1053 @@
+{
+  "generatedUtc": "2026-09-21T08:47:02.6172496+00:00",
+  "status": "FAIL",
+  "endpoint": "ws://127.0.0.1:17950/multiplayer",
+  "scenarios": [
+    {
+      "scenario": "loopback8",
+      "status": "PASS",
+      "humanPeers": 8,
+      "configured": {
+        "nominalRoundTripDelayMs": 0,
+        "jitterMillisecondsPerDirection": 0,
+        "orderedByteStreamStallMs": 0,
+        "stallDirection": "downstream",
+        "packetLossEmulated": false
+      },
+      "checks": [
+        {
+          "name": "unique_room_slots",
+          "passed": true
+        },
+        {
+          "name": "all_snapshots_validated",
+          "passed": true
+        },
+        {
+          "name": "membership_not_duplicated",
+          "passed": true
+        },
+        {
+          "name": "all_clients_progress",
+          "passed": true
+        },
+        {
+          "name": "memory_and_extrapolation_bounded",
+          "passed": true
+        },
+        {
+          "name": "near_combat_error_has_real_samples",
+          "passed": true
+        },
+        {
+          "name": "logout_acknowledged_before_close",
+          "passed": true
+        }
+      ],
+      "clients": [
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 28.00921172229117,
+            "p95": 30.33575900916065,
+            "maximum": 30.33575900916065
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 0
+          },
+          "maximumCorrectionMeters": 0,
+          "nearCombatResidualSamples": 222,
+          "maximumNearCombatResidualMeters": 3.152008056640625,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 776376,
+          "sentPayloadBytes": 187433,
+          "downloadBytesPerSecondDuringRace": 50987.333333333336,
+          "uploadBytesPerSecondDuringRace": 15279,
+          "maximumMessageBytes": 2554,
+          "finalTick": 751,
+          "finalDistanceMeters": 477.128
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 27.83349431726094,
+            "p95": 30.236978841879694,
+            "maximum": 30.236978841879694
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 3.154998779296875
+          },
+          "maximumCorrectionMeters": 3.154998779296875,
+          "nearCombatResidualSamples": 239,
+          "maximumNearCombatResidualMeters": 3.162994384765625,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 773222,
+          "sentPayloadBytes": 187091,
+          "downloadBytesPerSecondDuringRace": 50762.083333333336,
+          "uploadBytesPerSecondDuringRace": 15274.416666666666,
+          "maximumMessageBytes": 2554,
+          "finalTick": 751,
+          "finalDistanceMeters": 414.836
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 25.657908007321254,
+            "p95": 29.49711273583932,
+            "maximum": 29.49711273583932
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 2.214996337890625
+          },
+          "maximumCorrectionMeters": 2.214996337890625,
+          "nearCombatResidualSamples": 240,
+          "maximumNearCombatResidualMeters": 3.21099853515625,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 773025,
+          "sentPayloadBytes": 186994,
+          "downloadBytesPerSecondDuringRace": 51006.333333333336,
+          "uploadBytesPerSecondDuringRace": 15291.333333333334,
+          "maximumMessageBytes": 2548,
+          "finalTick": 751,
+          "finalDistanceMeters": 418.356
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 25.660303567872003,
+            "p95": 29.460239473120186,
+            "maximum": 29.460239473120186
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 1.878997802734375
+          },
+          "maximumCorrectionMeters": 1.878997802734375,
+          "nearCombatResidualSamples": 240,
+          "maximumNearCombatResidualMeters": 3.21099853515625,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 795612,
+          "sentPayloadBytes": 187112,
+          "downloadBytesPerSecondDuringRace": 52667.583333333336,
+          "uploadBytesPerSecondDuringRace": 15282.416666666666,
+          "maximumMessageBytes": 2554,
+          "finalTick": 751,
+          "finalDistanceMeters": 230.484
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 23.141922765107342,
+            "p95": 28.60048886767023,
+            "maximum": 28.60048886767023
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 3.177001953125
+          },
+          "maximumCorrectionMeters": 3.177001953125,
+          "nearCombatResidualSamples": 240,
+          "maximumNearCombatResidualMeters": 2.404022216796875,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 771623,
+          "sentPayloadBytes": 186928,
+          "downloadBytesPerSecondDuringRace": 50730.25,
+          "uploadBytesPerSecondDuringRace": 15273.333333333334,
+          "maximumMessageBytes": 2553,
+          "finalTick": 751,
+          "finalDistanceMeters": 416.642
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 23.145494611097657,
+            "p95": 28.5550298821644,
+            "maximum": 28.5550298821644
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 3.2350006103515625
+          },
+          "maximumCorrectionMeters": 3.2350006103515625,
+          "nearCombatResidualSamples": 240,
+          "maximumNearCombatResidualMeters": 3.2540130615234375,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 791632,
+          "sentPayloadBytes": 186956,
+          "downloadBytesPerSecondDuringRace": 52471.333333333336,
+          "uploadBytesPerSecondDuringRace": 15281.916666666666,
+          "maximumMessageBytes": 2556,
+          "finalTick": 751,
+          "finalDistanceMeters": 229.258
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 21.208089885491315,
+            "p95": 27.890460749677747,
+            "maximum": 27.890460749677747
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 2.910003662109375
+          },
+          "maximumCorrectionMeters": 2.910003662109375,
+          "nearCombatResidualSamples": 240,
+          "maximumNearCombatResidualMeters": 2.92401123046875,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 790359,
+          "sentPayloadBytes": 186799,
+          "downloadBytesPerSecondDuringRace": 52548.333333333336,
+          "uploadBytesPerSecondDuringRace": 15281.333333333334,
+          "maximumMessageBytes": 2556,
+          "finalTick": 751,
+          "finalDistanceMeters": 228.092
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 21.22159260011498,
+            "p95": 27.855640711205496,
+            "maximum": 27.855640711205496
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 3.847991943359375
+          },
+          "maximumCorrectionMeters": 3.847991943359375,
+          "nearCombatResidualSamples": 240,
+          "maximumNearCombatResidualMeters": 3.719024658203125,
+          "maximumPendingInputs": 6,
+          "maximumRemoteExtrapolationMs": 116.66666666666667,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 30,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 772051,
+          "sentPayloadBytes": 186847,
+          "downloadBytesPerSecondDuringRace": 51132.083333333336,
+          "uploadBytesPerSecondDuringRace": 15291.583333333334,
+          "maximumMessageBytes": 2548,
+          "finalTick": 751,
+          "finalDistanceMeters": 420.493
+        }
+      ],
+      "error": null
+    },
+    {
+      "scenario": "rtt80",
+      "status": "PASS",
+      "humanPeers": 2,
+      "configured": {
+        "nominalRoundTripDelayMs": 80,
+        "jitterMillisecondsPerDirection": 0,
+        "orderedByteStreamStallMs": 0,
+        "stallDirection": "downstream",
+        "packetLossEmulated": false
+      },
+      "checks": [
+        {
+          "name": "unique_room_slots",
+          "passed": true
+        },
+        {
+          "name": "all_snapshots_validated",
+          "passed": true
+        },
+        {
+          "name": "membership_not_duplicated",
+          "passed": true
+        },
+        {
+          "name": "all_clients_progress",
+          "passed": true
+        },
+        {
+          "name": "memory_and_extrapolation_bounded",
+          "passed": true
+        },
+        {
+          "name": "rtt_measurement_reflects_applied_latency",
+          "passed": true
+        },
+        {
+          "name": "near_combat_error_has_real_samples",
+          "passed": true
+        },
+        {
+          "name": "logout_acknowledged_before_close",
+          "passed": true
+        }
+      ],
+      "clients": [
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 122.64268688730441,
+            "p95": 123.49451560787494,
+            "maximum": 123.74799248630018
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 0
+          },
+          "maximumCorrectionMeters": 0,
+          "nearCombatResidualSamples": 223,
+          "maximumNearCombatResidualMeters": 4.5679931640625,
+          "maximumPendingInputs": 10,
+          "maximumRemoteExtrapolationMs": 200,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 31,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 568782,
+          "sentPayloadBytes": 187260,
+          "downloadBytesPerSecondDuringRace": 38250.25,
+          "uploadBytesPerSecondDuringRace": 15237,
+          "maximumMessageBytes": 1897,
+          "finalTick": 752,
+          "finalDistanceMeters": 481.797
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 121.77364515795558,
+            "p95": 122.96431392,
+            "maximum": 123.3173903208732
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 5.938018798828125
+          },
+          "maximumCorrectionMeters": 5.938018798828125,
+          "nearCombatResidualSamples": 225,
+          "maximumNearCombatResidualMeters": 4.614990234375,
+          "maximumPendingInputs": 11,
+          "maximumRemoteExtrapolationMs": 216.66666666666666,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 31,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 569142,
+          "sentPayloadBytes": 186913,
+          "downloadBytesPerSecondDuringRace": 38317.666666666664,
+          "uploadBytesPerSecondDuringRace": 15232.916666666666,
+          "maximumMessageBytes": 1897,
+          "finalTick": 752,
+          "finalDistanceMeters": 415.696
+        }
+      ],
+      "error": null
+    },
+    {
+      "scenario": "rtt150_jitter20_each_direction",
+      "status": "PASS",
+      "humanPeers": 2,
+      "configured": {
+        "nominalRoundTripDelayMs": 150,
+        "jitterMillisecondsPerDirection": 20,
+        "orderedByteStreamStallMs": 0,
+        "stallDirection": "downstream",
+        "packetLossEmulated": false
+      },
+      "checks": [
+        {
+          "name": "unique_room_slots",
+          "passed": true
+        },
+        {
+          "name": "all_snapshots_validated",
+          "passed": true
+        },
+        {
+          "name": "membership_not_duplicated",
+          "passed": true
+        },
+        {
+          "name": "all_clients_progress",
+          "passed": true
+        },
+        {
+          "name": "memory_and_extrapolation_bounded",
+          "passed": true
+        },
+        {
+          "name": "rtt_measurement_reflects_applied_latency",
+          "passed": true
+        },
+        {
+          "name": "near_combat_error_has_real_samples",
+          "passed": true
+        },
+        {
+          "name": "logout_acknowledged_before_close",
+          "passed": true
+        }
+      ],
+      "clients": [
+        {
+          "snapshots": 221,
+          "rttMs": {
+            "samples": 221,
+            "p50": 200.75761873571832,
+            "p95": 204.21467679268795,
+            "maximum": 204.21467679268795
+          },
+          "correctionMeters": {
+            "samples": 221,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 0
+          },
+          "maximumCorrectionMeters": 0,
+          "nearCombatResidualSamples": 216,
+          "maximumNearCombatResidualMeters": 9.927520751953125,
+          "maximumPendingInputs": 18,
+          "maximumRemoteExtrapolationMs": 300,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 48,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 570796,
+          "sentPayloadBytes": 183834,
+          "downloadBytesPerSecondDuringRace": 38418.083333333336,
+          "uploadBytesPerSecondDuringRace": 14827.5,
+          "maximumMessageBytes": 1897,
+          "finalTick": 749,
+          "finalDistanceMeters": 483.668
+        },
+        {
+          "snapshots": 220,
+          "rttMs": {
+            "samples": 220,
+            "p50": 189.41048244147177,
+            "p95": 194.84958595317752,
+            "maximum": 194.84958595317752
+          },
+          "correctionMeters": {
+            "samples": 220,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 12.17901611328125
+          },
+          "maximumCorrectionMeters": 12.17901611328125,
+          "nearCombatResidualSamples": 220,
+          "maximumNearCombatResidualMeters": 12.2430419921875,
+          "maximumPendingInputs": 17,
+          "maximumRemoteExtrapolationMs": 300,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 42,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 571132,
+          "sentPayloadBytes": 184921,
+          "downloadBytesPerSecondDuringRace": 38483.5,
+          "uploadBytesPerSecondDuringRace": 14984.333333333334,
+          "maximumMessageBytes": 1899,
+          "finalTick": 749,
+          "finalDistanceMeters": 415.466
+        }
+      ],
+      "error": null
+    },
+    {
+      "scenario": "rtt250_jitter50_each_direction",
+      "status": "PASS",
+      "humanPeers": 2,
+      "configured": {
+        "nominalRoundTripDelayMs": 250,
+        "jitterMillisecondsPerDirection": 50,
+        "orderedByteStreamStallMs": 0,
+        "stallDirection": "downstream",
+        "packetLossEmulated": false
+      },
+      "checks": [
+        {
+          "name": "unique_room_slots",
+          "passed": true
+        },
+        {
+          "name": "all_snapshots_validated",
+          "passed": true
+        },
+        {
+          "name": "membership_not_duplicated",
+          "passed": true
+        },
+        {
+          "name": "all_clients_progress",
+          "passed": true
+        },
+        {
+          "name": "memory_and_extrapolation_bounded",
+          "passed": true
+        },
+        {
+          "name": "rtt_measurement_reflects_applied_latency",
+          "passed": true
+        },
+        {
+          "name": "near_combat_error_has_real_samples",
+          "passed": true
+        },
+        {
+          "name": "logout_acknowledged_before_close",
+          "passed": true
+        }
+      ],
+      "clients": [
+        {
+          "snapshots": 175,
+          "rttMs": {
+            "samples": 175,
+            "p50": 296.4172887235843,
+            "p95": 305.0091879488001,
+            "maximum": 305.0091879488001
+          },
+          "correctionMeters": {
+            "samples": 175,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 0
+          },
+          "maximumCorrectionMeters": 0.13499999046325684,
+          "nearCombatResidualSamples": 211,
+          "maximumNearCombatResidualMeters": 8.618011474609375,
+          "maximumPendingInputs": 24,
+          "maximumRemoteExtrapolationMs": 300,
+          "lateInputs": 16,
+          "futureInputs": 0,
+          "missingInputs": 87,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 579700,
+          "sentPayloadBytes": 181345,
+          "downloadBytesPerSecondDuringRace": 39113,
+          "uploadBytesPerSecondDuringRace": 14492.416666666666,
+          "maximumMessageBytes": 1900,
+          "finalTick": 754,
+          "finalDistanceMeters": 493.043
+        },
+        {
+          "snapshots": 179,
+          "rttMs": {
+            "samples": 179,
+            "p50": 317.1419958747651,
+            "p95": 322.4397466304,
+            "maximum": 322.4397466304
+          },
+          "correctionMeters": {
+            "samples": 179,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 16.839996337890625
+          },
+          "maximumCorrectionMeters": 16.839996337890625,
+          "nearCombatResidualSamples": 181,
+          "maximumNearCombatResidualMeters": 21.593994140625,
+          "maximumPendingInputs": 26,
+          "maximumRemoteExtrapolationMs": 300,
+          "lateInputs": 2,
+          "futureInputs": 0,
+          "missingInputs": 71,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 578366,
+          "sentPayloadBytes": 181296,
+          "downloadBytesPerSecondDuringRace": 39067.083333333336,
+          "uploadBytesPerSecondDuringRace": 14464.5,
+          "maximumMessageBytes": 1899,
+          "finalTick": 757,
+          "finalDistanceMeters": 416.516
+        }
+      ],
+      "error": null
+    },
+    {
+      "scenario": "upstream_stall900",
+      "status": "PASS",
+      "humanPeers": 2,
+      "configured": {
+        "nominalRoundTripDelayMs": 80,
+        "jitterMillisecondsPerDirection": 10,
+        "orderedByteStreamStallMs": 900,
+        "stallDirection": "upstream",
+        "packetLossEmulated": false
+      },
+      "checks": [
+        {
+          "name": "unique_room_slots",
+          "passed": true
+        },
+        {
+          "name": "all_snapshots_validated",
+          "passed": true
+        },
+        {
+          "name": "membership_not_duplicated",
+          "passed": true
+        },
+        {
+          "name": "all_clients_progress",
+          "passed": true
+        },
+        {
+          "name": "memory_and_extrapolation_bounded",
+          "passed": true
+        },
+        {
+          "name": "rtt_measurement_reflects_applied_latency",
+          "passed": true
+        },
+        {
+          "name": "near_combat_error_has_real_samples",
+          "passed": true
+        },
+        {
+          "name": "logout_acknowledged_before_close",
+          "passed": true
+        }
+      ],
+      "clients": [
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 134.02167660721744,
+            "p95": 153.033495456,
+            "maximum": 153.033495456
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0.08500003814697266,
+            "maximum": 0.10000038146972656
+          },
+          "maximumCorrectionMeters": 0.10000038146972656,
+          "nearCombatResidualSamples": 233,
+          "maximumNearCombatResidualMeters": 5.57000732421875,
+          "maximumPendingInputs": 15,
+          "maximumRemoteExtrapolationMs": 266.6666666666667,
+          "lateInputs": 48,
+          "futureInputs": 0,
+          "missingInputs": 86,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 577818,
+          "sentPayloadBytes": 188789,
+          "downloadBytesPerSecondDuringRace": 39131.916666666664,
+          "uploadBytesPerSecondDuringRace": 15343.75,
+          "maximumMessageBytes": 1900,
+          "finalTick": 748,
+          "finalDistanceMeters": 446.403
+        },
+        {
+          "snapshots": 228,
+          "rttMs": {
+            "samples": 228,
+            "p50": 131.65335041920005,
+            "p95": 148.61164127999993,
+            "maximum": 148.61164127999993
+          },
+          "correctionMeters": {
+            "samples": 228,
+            "p50": 0,
+            "p95": 0.08500003814697266,
+            "maximum": 9.08099365234375
+          },
+          "maximumCorrectionMeters": 9.08099365234375,
+          "nearCombatResidualSamples": 240,
+          "maximumNearCombatResidualMeters": 5.628997802734375,
+          "maximumPendingInputs": 13,
+          "maximumRemoteExtrapolationMs": 250,
+          "lateInputs": 49,
+          "futureInputs": 0,
+          "missingInputs": 82,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 577525,
+          "sentPayloadBytes": 190062,
+          "downloadBytesPerSecondDuringRace": 39145.166666666664,
+          "uploadBytesPerSecondDuringRace": 15454.25,
+          "maximumMessageBytes": 1900,
+          "finalTick": 748,
+          "finalDistanceMeters": 432.083
+        }
+      ],
+      "error": null
+    },
+    {
+      "scenario": "downstream_stall2600",
+      "status": "PASS",
+      "humanPeers": 2,
+      "configured": {
+        "nominalRoundTripDelayMs": 80,
+        "jitterMillisecondsPerDirection": 10,
+        "orderedByteStreamStallMs": 2600,
+        "stallDirection": "downstream",
+        "packetLossEmulated": false
+      },
+      "checks": [
+        {
+          "name": "unique_room_slots",
+          "passed": true
+        },
+        {
+          "name": "all_snapshots_validated",
+          "passed": true
+        },
+        {
+          "name": "membership_not_duplicated",
+          "passed": true
+        },
+        {
+          "name": "all_clients_progress",
+          "passed": true
+        },
+        {
+          "name": "memory_and_extrapolation_bounded",
+          "passed": true
+        },
+        {
+          "name": "resume_preserves_identity_and_slot",
+          "passed": true
+        },
+        {
+          "name": "rtt_measurement_reflects_applied_latency",
+          "passed": true
+        },
+        {
+          "name": "near_combat_error_has_real_samples",
+          "passed": true
+        },
+        {
+          "name": "logout_acknowledged_before_close",
+          "passed": true
+        }
+      ],
+      "clients": [
+        {
+          "snapshots": 86,
+          "rttMs": {
+            "samples": 86,
+            "p50": 124.33760489727972,
+            "p95": 128.6826814400001,
+            "maximum": 128.6826814400001
+          },
+          "correctionMeters": {
+            "samples": 86,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 5.660004138946533
+          },
+          "maximumCorrectionMeters": 5.660004138946533,
+          "nearCombatResidualSamples": 65,
+          "maximumNearCombatResidualMeters": 5.221985340118408,
+          "maximumPendingInputs": 23,
+          "maximumRemoteExtrapolationMs": 300,
+          "lateInputs": 31,
+          "futureInputs": 0,
+          "missingInputs": 104,
+          "connectAttempts": 8,
+          "receivedPayloadBytes": 419851,
+          "sentPayloadBytes": 109130,
+          "downloadBytesPerSecondDuringRace": 25827.916666666668,
+          "uploadBytesPerSecondDuringRace": 8684.833333333334,
+          "maximumMessageBytes": 1928,
+          "finalTick": 752,
+          "finalDistanceMeters": 265.786
+        },
+        {
+          "snapshots": 86,
+          "rttMs": {
+            "samples": 86,
+            "p50": 122.79687336320018,
+            "p95": 130.16841670400024,
+            "maximum": 130.16841670400024
+          },
+          "correctionMeters": {
+            "samples": 86,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 0
+          },
+          "maximumCorrectionMeters": 0,
+          "nearCombatResidualSamples": 63,
+          "maximumNearCombatResidualMeters": 5.0419921875,
+          "maximumPendingInputs": 23,
+          "maximumRemoteExtrapolationMs": 300,
+          "lateInputs": 34,
+          "futureInputs": 0,
+          "missingInputs": 108,
+          "connectAttempts": 8,
+          "receivedPayloadBytes": 422625,
+          "sentPayloadBytes": 108159,
+          "downloadBytesPerSecondDuringRace": 26096.583333333332,
+          "uploadBytesPerSecondDuringRace": 8649.333333333334,
+          "maximumMessageBytes": 1931,
+          "finalTick": 752,
+          "finalDistanceMeters": 304.102
+        }
+      ],
+      "error": null
+    },
+    {
+      "scenario": "connection_break_resume",
+      "status": "FAIL",
+      "humanPeers": 2,
+      "configured": {
+        "nominalRoundTripDelayMs": 80,
+        "jitterMillisecondsPerDirection": 10,
+        "orderedByteStreamStallMs": 0,
+        "stallDirection": "downstream",
+        "packetLossEmulated": false
+      },
+      "checks": [],
+      "clients": [
+        {
+          "snapshots": 0,
+          "rttMs": {
+            "samples": 0,
+            "p50": null,
+            "p95": null,
+            "maximum": null
+          },
+          "correctionMeters": {
+            "samples": 0,
+            "p50": null,
+            "p95": null,
+            "maximum": null
+          },
+          "maximumCorrectionMeters": 0,
+          "nearCombatResidualSamples": 0,
+          "maximumNearCombatResidualMeters": 0,
+          "maximumPendingInputs": 0,
+          "maximumRemoteExtrapolationMs": 0,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 0,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 8358,
+          "sentPayloadBytes": 2916,
+          "downloadBytesPerSecondDuringRace": 696.5,
+          "uploadBytesPerSecondDuringRace": 243,
+          "maximumMessageBytes": 1681,
+          "finalTick": 0,
+          "finalDistanceMeters": 0
+        },
+        {
+          "snapshots": 0,
+          "rttMs": {
+            "samples": 0,
+            "p50": null,
+            "p95": null,
+            "maximum": null
+          },
+          "correctionMeters": {
+            "samples": 0,
+            "p50": null,
+            "p95": null,
+            "maximum": null
+          },
+          "maximumCorrectionMeters": 0,
+          "nearCombatResidualSamples": 0,
+          "maximumNearCombatResidualMeters": 0,
+          "maximumPendingInputs": 0,
+          "maximumRemoteExtrapolationMs": 0,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 0,
+          "connectAttempts": 2,
+          "receivedPayloadBytes": 8642,
+          "sentPayloadBytes": 3066,
+          "downloadBytesPerSecondDuringRace": 720.1666666666666,
+          "uploadBytesPerSecondDuringRace": 255.5,
+          "maximumMessageBytes": 1683,
+          "finalTick": 0,
+          "finalDistanceMeters": 0
+        }
+      ],
+      "error": "Lifecycle condition timed out: Connected/Lobby/ | Connected/Lobby/"
+    },
+    {
+      "scenario": "visibility_suspend_resume",
+      "status": "PASS",
+      "humanPeers": 2,
+      "configured": {
+        "nominalRoundTripDelayMs": 80,
+        "jitterMillisecondsPerDirection": 10,
+        "orderedByteStreamStallMs": 0,
+        "stallDirection": "downstream",
+        "packetLossEmulated": false
+      },
+      "checks": [
+        {
+          "name": "unique_room_slots",
+          "passed": true
+        },
+        {
+          "name": "all_snapshots_validated",
+          "passed": true
+        },
+        {
+          "name": "membership_not_duplicated",
+          "passed": true
+        },
+        {
+          "name": "all_clients_progress",
+          "passed": true
+        },
+        {
+          "name": "memory_and_extrapolation_bounded",
+          "passed": true
+        },
+        {
+          "name": "resume_preserves_identity_and_slot",
+          "passed": true
+        },
+        {
+          "name": "rtt_measurement_reflects_applied_latency",
+          "passed": true
+        },
+        {
+          "name": "near_combat_error_has_real_samples",
+          "passed": true
+        },
+        {
+          "name": "logout_acknowledged_before_close",
+          "passed": true
+        }
+      ],
+      "clients": [
+        {
+          "snapshots": 202,
+          "rttMs": {
+            "samples": 202,
+            "p50": 122.80460949499277,
+            "p95": 126.8560484800001,
+            "maximum": 131.56039046143587
+          },
+          "correctionMeters": {
+            "samples": 202,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 0
+          },
+          "maximumCorrectionMeters": 0,
+          "nearCombatResidualSamples": 56,
+          "maximumNearCombatResidualMeters": 0.49090775847435,
+          "maximumPendingInputs": 12,
+          "maximumRemoteExtrapolationMs": 233.33333333333334,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 37,
+          "connectAttempts": 2,
+          "receivedPayloadBytes": 522421,
+          "sentPayloadBytes": 166338,
+          "downloadBytesPerSecondDuringRace": 34502.333333333336,
+          "uploadBytesPerSecondDuringRace": 13452.166666666666,
+          "maximumMessageBytes": 1897,
+          "finalTick": 751,
+          "finalDistanceMeters": 433.991
+        },
+        {
+          "snapshots": 230,
+          "rttMs": {
+            "samples": 230,
+            "p50": 123.57525852799992,
+            "p95": 131.30964815999988,
+            "maximum": 131.30964815999988
+          },
+          "correctionMeters": {
+            "samples": 230,
+            "p50": 0,
+            "p95": 0,
+            "maximum": 6.4530029296875
+          },
+          "maximumCorrectionMeters": 6.4530029296875,
+          "nearCombatResidualSamples": 101,
+          "maximumNearCombatResidualMeters": 0.32000017166137695,
+          "maximumPendingInputs": 12,
+          "maximumRemoteExtrapolationMs": 233.33333333333334,
+          "lateInputs": 0,
+          "futureInputs": 0,
+          "missingInputs": 32,
+          "connectAttempts": 1,
+          "receivedPayloadBytes": 570133,
+          "sentPayloadBytes": 186565,
+          "downloadBytesPerSecondDuringRace": 38516,
+          "uploadBytesPerSecondDuringRace": 15162.666666666666,
+          "maximumMessageBytes": 1896,
+          "finalTick": 751,
+          "finalDistanceMeters": 415.186
+        }
+      ],
+      "error": null
+    }
+  ],
+  "limitations": "One Windows PC, actual ClientWebSocket plus linked production MultiplayerSession and bounded ordered TCP-delay proxy. No IP packet-loss emulation, second physical LAN client, disconnected WAN or public Internet deployment. These external gates remain unverified."
+}

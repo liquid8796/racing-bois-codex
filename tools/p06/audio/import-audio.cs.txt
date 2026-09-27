@@ -1,0 +1,53 @@
+// Execute via Unity MCP execute_code after scripts compile. Root owns Editor operations.
+// Re-run safely; imported asset GUIDs and existing bank reference remain stable.
+const string folder = "Assets/RacingBois/Audio/P06/";
+UnityEditor.AssetDatabase.Refresh();
+string[] names = { "engine_low", "engine_high", "tire", "gravel", "wind", "ambient_canyon", "music_canyon_drive", "impact_body", "impact_crash", "weapon_club", "weapon_fist", "weapon_chain", "weapon_swing", "shift", "ui_confirm", "ui_back", "finish" };
+foreach (string name in names)
+{
+    string path = folder + "RB_" + name + ".wav";
+    var importer = (UnityEditor.AudioImporter)UnityEditor.AssetImporter.GetAtPath(path);
+    if (importer == null) throw new System.InvalidOperationException("Missing authored audio: " + path);
+    bool music = name == "music_canyon_drive";
+    bool loop = name == "engine_low" || name == "engine_high" || name == "tire" || name == "gravel" || name == "wind" || name == "ambient_canyon" || music;
+    importer.forceToMono = !music;
+    importer.loadInBackground = false;
+    var settings = importer.defaultSampleSettings;
+    settings.preloadAudioData = true;
+    settings.loadType = UnityEngine.AudioClipLoadType.DecompressOnLoad;
+    settings.compressionFormat = loop && !music ? UnityEngine.AudioCompressionFormat.PCM : UnityEngine.AudioCompressionFormat.Vorbis;
+    settings.quality = music ? .65f : .85f;
+    settings.sampleRateSetting = UnityEditor.AudioSampleRateSetting.OverrideSampleRate;
+    settings.sampleRateOverride = 32000;
+    importer.defaultSampleSettings = settings;
+    importer.SetOverrideSampleSettings("WebGL", settings);
+    importer.SaveAndReimport();
+}
+const string bankPath = folder + "RB_P06_AudioBank.asset";
+var bank = UnityEditor.AssetDatabase.LoadAssetAtPath<RacingBois.Client.Presentation.RaceAudioBank>(bankPath);
+if (bank == null)
+{
+    bank = UnityEngine.ScriptableObject.CreateInstance<RacingBois.Client.Presentation.RaceAudioBank>();
+    UnityEditor.AssetDatabase.CreateAsset(bank, bankPath);
+}
+bank.EngineLow = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_engine_low.wav");
+bank.EngineHigh = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_engine_high.wav");
+bank.Tire = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_tire.wav");
+bank.Gravel = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_gravel.wav");
+bank.Wind = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_wind.wav");
+bank.Ambient = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_ambient_canyon.wav");
+bank.Music = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_music_canyon_drive.wav");
+bank.Impact = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_impact_body.wav");
+bank.Crash = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_impact_crash.wav");
+bank.WeaponClub = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_weapon_club.wav");
+bank.WeaponFist = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_weapon_fist.wav");
+bank.WeaponChain = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_weapon_chain.wav");
+bank.WeaponSwing = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_weapon_swing.wav");
+bank.Shift = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_shift.wav");
+bank.UiConfirm = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_ui_confirm.wav");
+bank.UiBack = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_ui_back.wav");
+bank.Finish = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.AudioClip>(folder + "RB_finish.wav");
+if (!bank.IsComplete) throw new System.InvalidOperationException("P06 audio bank is incomplete.");
+UnityEditor.EditorUtility.SetDirty(bank);
+UnityEditor.AssetDatabase.SaveAssets();
+return "P06 audio bank: 17 original clips imported; complete=True";

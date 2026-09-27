@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: APEX_R3_GEOMETRY_AUDIT {\"meshes\": [{\"name\": \"Apex_L0_Body\", \"triangles\": 48776, \"vertices\": 25104, \"nonManifoldEdges\": 8, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 5.399415810376833e-15, \"materials\": [\"Apex_Graphite\", \"Apex_Machined\", \"Apex_RedLamp\", \"Apex_Glass\", \"Apex_Lamp\", \"Apex_Titanium\", \"Apex_Rubber\", \"Apex_Pearl\", \"Apex_Lens\"], \"parent\": \"RB_Golden_Apex_r3\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L1_Body\", \"triangles\": 24388, \"vertices\": 12909, \"nonManifoldEdges\": 6, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 1.2995417188101793e-12, \"materials\": [\"Apex_Graphite\", \"Apex_Machined\", \"Apex_RedLamp\", \"Apex_Glass\", \"Apex_Lamp\", \"Apex_Titanium\", \"Apex_Rubber\", \"Apex_Pearl\", \"Apex_Lens\"], \"parent\": \"RB_Golden_Apex_r3\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L2_Body\", \"triangles\": 9699, \"vertices\": 5592, \"nonManifoldEdges\": 171, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 5.841362609544307e-11, \"materials\": [\"Apex_Graphite\", \"Apex_Machined\", \"Apex_RedLamp\", \"Apex_Glass\", \"Apex_Lamp\", \"Apex_Titanium\", \"Apex_Rubber\", \"Apex_Pearl\", \"Apex_Lens\"], \"parent\": \"RB_Golden_Apex_r3\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L0_Front\", \"triangles\": 15472, \"vertices\": 8116, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 9.60229665666372e-13, \"materials\": [\"Apex_Rubber\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Front\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L1_Front\", \"triangles\": 7736, \"vertices\": 4248, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 8.103811548472819e-13, \"materials\": [\"Apex_Rubber\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Front\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L2_Front\", \"triangles\": 2998, \"vertices\": 1927, \"nonManifoldEdges\": 288, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 3.2370906389439513e-10, \"materials\": [\"Apex_Rubber\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Front\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L0_Rear\", \"triangles\": 18128, \"vertices\": 9402, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 2.1207732259513525e-13, \"materials\": [\"Apex_Rubber\", \"Apex_Titanium\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Rear\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L1_Rear\", \"triangles\": 9064, \"vertices\": 4870, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 3.427166189728936e-11, \"materials\": [\"Apex_Rubber\", \"Apex_Titanium\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Rear\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L2_Rear\", \"triangles\": 3576, \"vertices\": 2150, \"nonManifoldEdges\": 144, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 3.5831991887502745e-10, \"materials\": [\"Apex_Rubber\", \"Apex_Titanium\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Rear\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}], \"blenderBoundsMin\": [-0.3831599950790405, -1.0316970348358154, -0.0016984343528747559], \"blenderBoundsMax\": [0.3831599950790405, 1.0316935777664185, 1.128000020980835], \"unityIntendedSize\": [0.766319990158081, 1.1296984553337097, 2.063390612602234], \"markersIntendedUnitySemantic\": {\"Contact_Foot_L\": [-0.28600001335144043, 0.34200000762939453, -0.24899999797344208], \"Contact_Foot_R\": [0.28600001335144043, 0.34200000762939453, -0.24899999797344208], \"Contact_Grip_L\": [-0.2939999997615814, 0.9269999861717224, 0.3889999985694885], \"Contact_Grip_R\": [0.2939999997615814, 0.9269999861717224, 0.3889999985694885], \"Contact_Seat\": [0.0, 0.8240000009536743, -0.3700000047683716], \"Forward\": [0.0, 0.0, 1.100000023841858], \"Ground_Front\": [0.0, 0.0, 0.7149999737739563], \"Ground_Rear\": [0.0, 0.0, -0.7149999737739563], \"RB_Golden_Apex_r3_Wheel_Front\": [0.0, 0.3149999976158142, 0.7149999737739563], \"RB_Golden_Apex_r3_Wheel_Rear\": [0.0, 0.3149999976158142, -0.7149999737739563], \"Semantic_Left\": [-0.5, 0.0, 0.0], \"Semantic_Right\": [0.5, 0.0, 0.0]}, \"coordinateRecipe\": \"Blender=(semanticX,semanticForward,semanticUp); FBX -Z forward/Y up; root must prove Unity +Z, left -X, right +X together.\", \"acceptance\": \"Not accepted; structural observations never prove 100 percent visual fidelity.\", \"uvPolicy\": \"Purposeful full-field finish textures share component UV charts intentionally; unique decal unwrap not claimed.\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: APEX_R3_GEOMETRY_AUDIT {\"meshes\": [{\"name\": \"Apex_L0_Body\", \"triangles\": 48776, \"vertices\": 25104, \"nonManifoldEdges\": 8, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 5.399415810376833e-15, \"materials\": [\"Apex_Graphite\", \"Apex_Machined\", \"Apex_RedLamp\", \"Apex_Glass\", \"Apex_Lamp\", \"Apex_Titanium\", \"Apex_Rubber\", \"Apex_Pearl\", \"Apex_Lens\"], \"parent\": \"RB_Golden_Apex_r3\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L1_Body\", \"triangles\": 24388, \"vertices\": 12909, \"nonManifoldEdges\": 6, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 1.2995417188101793e-12, \"materials\": [\"Apex_Graphite\", \"Apex_Machined\", \"Apex_RedLamp\", \"Apex_Glass\", \"Apex_Lamp\", \"Apex_Titanium\", \"Apex_Rubber\", \"Apex_Pearl\", \"Apex_Lens\"], \"parent\": \"RB_Golden_Apex_r3\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L2_Body\", \"triangles\": 9699, \"vertices\": 5592, \"nonManifoldEdges\": 171, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 5.841362609544307e-11, \"materials\": [\"Apex_Graphite\", \"Apex_Machined\", \"Apex_RedLamp\", \"Apex_Glass\", \"Apex_Lamp\", \"Apex_Titanium\", \"Apex_Rubber\", \"Apex_Pearl\", \"Apex_Lens\"], \"parent\": \"RB_Golden_Apex_r3\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L0_Front\", \"triangles\": 15472, \"vertices\": 8116, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 9.60229665666372e-13, \"materials\": [\"Apex_Rubber\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Front\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L1_Front\", \"triangles\": 7736, \"vertices\": 4248, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 8.103811548472819e-13, \"materials\": [\"Apex_Rubber\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Front\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L2_Front\", \"triangles\": 2998, \"vertices\": 1927, \"nonManifoldEdges\": 288, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 3.2370906389439513e-10, \"materials\": [\"Apex_Rubber\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Front\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L0_Rear\", \"triangles\": 18128, \"vertices\": 9402, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 2.1207732259513525e-13, \"materials\": [\"Apex_Rubber\", \"Apex_Titanium\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Rear\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L1_Rear\", \"triangles\": 9064, \"vertices\": 4870, \"nonManifoldEdges\": 0, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 3.427166189728936e-11, \"materials\": [\"Apex_Rubber\", \"Apex_Titanium\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Rear\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}, {\"name\": \"Apex_L2_Rear\", \"triangles\": 3576, \"vertices\": 2150, \"nonManifoldEdges\": 144, \"zeroAreaTriangles\": 0, \"zeroAreaUVTriangles\": 0, \"unityDegenerateTriangles\": 0, \"minimumCrossSq\": 3.5831991887502745e-10, \"materials\": [\"Apex_Rubber\", \"Apex_Titanium\", \"Apex_Machined\", \"Apex_Graphite\"], \"parent\": \"RB_Golden_Apex_r3_Wheel_Rear\", \"localPosition\": [0.0, 0.0, 0.0], \"localScale\": [1.0, 1.0, 1.0]}], \"blenderBoundsMin\": [-0.3831599950790405, -1.0316970348358154, -0.0016984343528747559], \"blenderBoundsMax\": [0.3831599950790405, 1.0316935777664185, 1.128000020980835], \"unityIntendedSize\": [0.766319990158081, 1.1296984553337097, 2.063390612602234], \"markersIntendedUnitySemantic\": {\"Contact_Foot_L\": [-0.28600001335144043, 0.34200000762939453, -0.24899999797344208], \"Contact_Foot_R\": [0.28600001335144043, 0.34200000762939453, -0.24899999797344208], \"Contact_Grip_L\": [-0.2939999997615814, 0.9269999861717224, 0.3889999985694885], \"Contact_Grip_R\": [0.2939999997615814, 0.9269999861717224, 0.3889999985694885], \"Contact_Seat\": [0.0, 0.8240000009536743, -0.3700000047683716], \"Forward\": [0.0, 0.0, 1.100000023841858], \"Ground_Front\": [0.0, 0.0, 0.7149999737739563], \"Ground_Rear\": [0.0, 0.0, -0.7149999737739563], \"RB_Golden_Apex_r3_Wheel_Front\": [0.0, 0.3149999976158142, 0.7149999737739563], \"RB_Golden_Apex_r3_Wheel_Rear\": [0.0, 0.3149999976158142, -0.7149999737739563], \"Semantic_Left\": [-0.5, 0.0, 0.0], \"Semantic_Right\": [0.5, 0.0, 0.0]}, \"coordinateRecipe\": \"Blender=(semanticX,semanticForward,semanticUp); FBX -Z forward/Y up; root must prove Unity +Z, left -X, right +X together.\", \"acceptance\": \"Not accepted; structural observations never prove 100 percent visual fidelity.\", \"uvPolicy\": \"Purposeful full-field finish textures share component UV charts intentionally; unique decal unwrap not claimed.\"}\n"
+    },
+    "isError": false
+  }
+}

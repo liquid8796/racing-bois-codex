@@ -1,0 +1,39 @@
+{
+  "scope": "Actual installed Unity Mono6.13 console runtime and source-bound transport, real loopback WebSocket echo, simulated frame SynchronizationContext. Not the Unity player, WAN/TLS or game acceptance.",
+  "candidate": true,
+  "transportPath": "tools/p10/native-transport-diagnosis/Transport/BrowserSocketTransport.cs",
+  "transportSha256": "4b8f17692a03fa510e3faa19527f3b9702590e42443ca3c92595d30a9b304974",
+  "ownedServerPid": 8896,
+  "results": [
+    {
+      "mode": "none",
+      "mono": true,
+      "sent": 1200,
+      "received": 1200,
+      "opened": 1,
+      "closed": 0,
+      "wrongOrder": 0,
+      "maximumOutstanding": 2,
+      "maximumEchoSeconds": 0.03481309999999915,
+      "contextPosts": 0,
+      "maximumContextQueued": 0,
+      "closeType": "",
+      "exitCode": 0
+    },
+    {
+      "mode": "frame",
+      "mono": true,
+      "sent": 1200,
+      "received": 1200,
+      "opened": 1,
+      "closed": 0,
+      "wrongOrder": 0,
+      "maximumOutstanding": 2,
+      "maximumEchoSeconds": 0.036190399999999984,
+      "contextPosts": 0,
+      "maximumContextQueued": 0,
+      "closeType": "",
+      "exitCode": 0
+    }
+  ]
+}

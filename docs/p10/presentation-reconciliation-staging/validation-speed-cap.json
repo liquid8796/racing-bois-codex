@@ -1,0 +1,200 @@
+{
+  "passed": true,
+  "failures": 0,
+  "tests": 14,
+  "results": [
+    {
+      "name": "maximum-correction-episode_unchanged_production_replay_and_actual_sample",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_unchanged_production_replay_and_actual_sample",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_20fps",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_30fps",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_60fps",
+      "passed": true
+    },
+    {
+      "name": "maximum-correction-episode_root_continuity_and_bounded_settle_120fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_20fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_30fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_60fps",
+      "passed": true
+    },
+    {
+      "name": "speculative-neighbor-episode_root_continuity_and_bounded_settle_120fps",
+      "passed": true
+    },
+    {
+      "name": "ordinary_motion_is_exact_without_extra_input_lag",
+      "passed": true
+    },
+    {
+      "name": "event_cap_large_reverse_step_is_continuous_and_converges",
+      "passed": true
+    },
+    {
+      "name": "repeat_correction_freeze_resume_and_reset_lifecycle",
+      "passed": true
+    },
+    {
+      "name": "production_sources_unchanged",
+      "passed": true
+    }
+  ],
+  "details": [
+    {
+      "fixture": "maximum-correction-episode",
+      "productionRawS": 2146.83,
+      "productionEventCappedS": 2125.688,
+      "reproducedSameClockEventCapDisplacementMeters": 21.14209,
+      "gameplayDigestUnchanged": true,
+      "rawEqualTargetCorrectionMeters": 16.258056521474785,
+      "recordedPresentedPairDeltaMeters": 4.99609375,
+      "scope": "Actual unchanged SamplePresentation with exact full-checkpoint replay. Event IDs are synthetic monotonic IDs; no wire/handshake validation is claimed. Reproduced cap step is not a captured previous Unity frame."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "productionRawS": 98.43727,
+      "productionEventCappedS": 98.43727,
+      "reproducedSameClockEventCapDisplacementMeters": 0,
+      "gameplayDigestUnchanged": true,
+      "rawEqualTargetCorrectionMeters": 9.81515447587321,
+      "recordedPresentedPairDeltaMeters": 10.3960049805521,
+      "scope": "Actual unchanged SamplePresentation with exact full-checkpoint replay. Event IDs are synthetic monotonic IDs; no wire/handshake validation is claimed. Reproduced cap step is not a captured previous Unity frame."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 20,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 1.0000633,
+      "maximumBikeCorrectionStepMeters": 1.0000403,
+      "settleSeconds": 1.4,
+      "controlledCameraMinimumRiderDepthMeters": 6.691762,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 30,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.6666699,
+      "maximumBikeCorrectionStepMeters": 0.666697,
+      "settleSeconds": 1.4000001,
+      "controlledCameraMinimumRiderDepthMeters": 6.691762,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 60,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.33339718,
+      "maximumBikeCorrectionStepMeters": 0.33334854,
+      "settleSeconds": 1.4000001,
+      "controlledCameraMinimumRiderDepthMeters": 6.6763973,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "maximum-correction-episode",
+      "fps": 120,
+      "rawRiderRootStepMeters": 5.336806,
+      "rawBikeRootStepMeters": 13.2343235,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.16675891,
+      "maximumBikeCorrectionStepMeters": 0.16673438,
+      "settleSeconds": 1.4000001,
+      "controlledCameraMinimumRiderDepthMeters": 6.518491,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 20,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 1.0000008,
+      "maximumBikeCorrectionStepMeters": 1.0000055,
+      "settleSeconds": 1.25,
+      "controlledCameraMinimumRiderDepthMeters": 6.3422203,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 30,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.66667235,
+      "maximumBikeCorrectionStepMeters": 0.6666704,
+      "settleSeconds": 1.2666668,
+      "controlledCameraMinimumRiderDepthMeters": 6.342228,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 60,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.33333617,
+      "maximumBikeCorrectionStepMeters": 0.3333352,
+      "settleSeconds": 1.2500001,
+      "controlledCameraMinimumRiderDepthMeters": 6.3422356,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "speculative-neighbor-episode",
+      "fps": 120,
+      "rawRiderRootStepMeters": 10.087095,
+      "rawBikeRootStepMeters": 6.1536503,
+      "firstCandidateRootStepMeters": 0,
+      "maximumRiderCorrectionStepMeters": 0.16667189,
+      "maximumBikeCorrectionStepMeters": 0.1666714,
+      "settleSeconds": 1.2416667,
+      "controlledCameraMinimumRiderDepthMeters": 6.3422737,
+      "scope": "Retained before/after poses mapped through current TrackDefinition and stage translation formulas, followed by a stationary-target step response. Camera initialization/look blend are controlled assumptions, not captured Unity camera history or native visual acceptance."
+    },
+    {
+      "fixture": "same-clock-event-cap",
+      "rawDisplacementMeters": 21.142,
+      "firstCandidateStep": 0,
+      "maximumStepMeters": 0.3334961,
+      "settledSeconds": 1.8,
+      "limitation": "Requires visible positional error for over one second at this cap; this is not invisibility or immediate authority-position fidelity."
+    }
+  ],
+  "sources": {
+    "Assets/RacingBois/Client/Application/MultiplayerSession.cs": "90607a28e0e21c462673d064a9e8884b076e40855af5bceb51aa4eea8dc905e7",
+    "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs": "797bccd3cd235c91241f94f0663c27873b18cd4b1fc460cf5575c37f06fe6ef7",
+    "Assets/RacingBois/Client/Application/RemoteMotionSampler.cs": "342dcc0ca6302e7b60080366cc688de0096c97bdde332252ba9c258b0a365095",
+    "Assets/RacingBois/Client/Presentation/RaceStageView.cs": "ddca51da1a4246882dc46b8d6ab5ac4d28be82cfad163ab3161b41e4acd84b91",
+    "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs": "d97f157aa2958b7517c46bf0fc294e55c9364c1207efe8a64584d2b4e8b3bb5b"
+  },
+  "candidate": "Renderer-only transform offset; ordinary motion unchanged; correction consumption capped at20m/s and decays over.12s, orientation capped720deg/s and decays over.07s.",
+  "nativeUnityRendered": false,
+  "productionApplied": false,
+  "scope": "Isolated sample-path and render-transform mathematics. Inputs, authority and prediction remain unchanged. Native frame capture, terrain/occlusion, VFX alignment, animation and human comfort remain separate gates."
+}

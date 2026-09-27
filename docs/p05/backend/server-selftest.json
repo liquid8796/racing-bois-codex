@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "architecture": "X64",
+  "framework": ".NET 10.0.9",
+  "ticks": 300,
+  "distanceMillimeters": 150500,
+  "speedMillimetersPerSecond": 60000,
+  "protocolRoundtrip": 1,
+  "raceProtocolRoundtrip": 2,
+  "raceTick": 300,
+  "raceDistanceMillimeters": 105251,
+  "multiplayerProtocolRoundtrip": 3,
+  "exactTickInputSmoke": true,
+  "scope": "No listener, database or filesystem writes; P02 golden, P03/P04 authority and P05 strict JSON/exact-tick input smoke.",
+  "runtimeSourceHash": "ca338e6b1be5977bc1d4cd8f6cc48e31dccec15a87b5c193218486aaca72b838",
+  "runtimeSourceManifest": "docs/p05/backend/source-manifest-final.json"
+}

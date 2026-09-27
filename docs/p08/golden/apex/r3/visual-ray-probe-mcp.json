@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: APEX_R3_VISUAL_RAYS [{\"pixel\": [395, 408], \"object\": \"R3 Unified curved front cowl -1\", \"location\": [-0.1359386444091797, 0.7946498394012451, 0.8502880930900574], \"material\": \"Apex_Pearl\"}, {\"pixel\": [408, 425], \"object\": \"R3 Curved main fairing with through intake 1\", \"location\": [0.2346639633178711, 0.49861574172973633, 0.7559087872505188], \"material\": \"Apex_Pearl\"}, {\"pixel\": [420, 443], \"object\": \"Inverted fork upper.001\", \"location\": [0.09491825103759766, 0.5756444931030273, 0.7460257411003113], \"material\": \"Apex_Titanium\"}, {\"pixel\": [435, 459], \"object\": \"Inverted fork upper.001\", \"location\": [0.09087800979614258, 0.5467522144317627, 0.7152407765388489], \"material\": \"Apex_Titanium\"}, {\"pixel\": [454, 435], \"object\": \"R3 Curved main fairing with through intake -1\", \"location\": [-0.2117328643798828, 0.7335655689239502, 0.8082287907600403], \"material\": \"Apex_Pearl\"}, {\"pixel\": [389, 435], \"object\": \"R3 Curved main fairing with through intake 1\", \"location\": [0.23160815238952637, 0.5431227684020996, 0.7423808574676514], \"material\": \"Apex_Pearl\"}, {\"pixel\": [430, 394], \"object\": \"R3 Compound curved protective lens -1\", \"location\": [-0.19661283493041992, 0.7690343856811523, 0.8766629099845886], \"material\": \"Apex_Lens\"}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: APEX_R3_VISUAL_RAYS [{\"pixel\": [395, 408], \"object\": \"R3 Unified curved front cowl -1\", \"location\": [-0.1359386444091797, 0.7946498394012451, 0.8502880930900574], \"material\": \"Apex_Pearl\"}, {\"pixel\": [408, 425], \"object\": \"R3 Curved main fairing with through intake 1\", \"location\": [0.2346639633178711, 0.49861574172973633, 0.7559087872505188], \"material\": \"Apex_Pearl\"}, {\"pixel\": [420, 443], \"object\": \"Inverted fork upper.001\", \"location\": [0.09491825103759766, 0.5756444931030273, 0.7460257411003113], \"material\": \"Apex_Titanium\"}, {\"pixel\": [435, 459], \"object\": \"Inverted fork upper.001\", \"location\": [0.09087800979614258, 0.5467522144317627, 0.7152407765388489], \"material\": \"Apex_Titanium\"}, {\"pixel\": [454, 435], \"object\": \"R3 Curved main fairing with through intake -1\", \"location\": [-0.2117328643798828, 0.7335655689239502, 0.8082287907600403], \"material\": \"Apex_Pearl\"}, {\"pixel\": [389, 435], \"object\": \"R3 Curved main fairing with through intake 1\", \"location\": [0.23160815238952637, 0.5431227684020996, 0.7423808574676514], \"material\": \"Apex_Pearl\"}, {\"pixel\": [430, 394], \"object\": \"R3 Compound curved protective lens -1\", \"location\": [-0.19661283493041992, 0.7690343856811523, 0.8766629099845886], \"material\": \"Apex_Lens\"}]\n"
+    },
+    "isError": false
+  }
+}

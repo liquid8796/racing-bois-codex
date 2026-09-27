@@ -1,0 +1,194 @@
+{
+  "generatedUtc": "2026-09-21T09:51:22.7113615Z",
+  "status": "PASS_LOCAL_VALIDATION_EXTERNAL_GATES_UNVERIFIED",
+  "runtimeSourceHash": "ca338e6b1be5977bc1d4cd8f6cc48e31dccec15a87b5c193218486aaca72b838",
+  "runtimeAndHarnessSourcesUnchanged": true,
+  "sourceHashBefore": "d2e00082dfbe2597976ccb9d4a179cd103c79a99b27d1bfb710b34b8831ff8ff",
+  "sourceHashAfter": "1a3232ae49c92470c1f684d3e7a100c8293e12e6437c322b7d39949e2a61306d",
+  "nonRuntimeChangesDuringValidation": [
+    "tools/p05/audit-web.ps1"
+  ],
+  "sourceManifest": "docs/p05/backend/source-manifest-final.json",
+  "tests": {
+    "serverDomain": 25,
+    "clientApplication": 32,
+    "foundationRegression": 18,
+    "raceRegression": 14,
+    "matrixScenarios": 8,
+    "websocketChecks": 9,
+    "secureWebsocketChecks": 9
+  },
+  "pvp": {
+    "playerConnections": 8,
+    "bots": 5,
+    "eventId": 4,
+    "targetHealthBefore": 4096,
+    "targetHealthAfter": 3648
+  },
+  "healthyLateInputs": {
+    "loopback": 0,
+    "rtt80": 0,
+    "rtt150Jitter20": 0,
+    "rtt250Jitter50": [
+      1,
+      0
+    ]
+  },
+  "healthyFutureInputs": 0,
+  "hostHealth": {
+    "protocolVersion": 3,
+    "serviceTick": 23324,
+    "roomCount": 0,
+    "sessionCount": 0,
+    "realmId": "b35cb02bd4fc488b8b67422e461eee00",
+    "profilePersistence": true,
+    "rejectedCommands": 0,
+    "slowTicks": 0,
+    "persistenceFailures": 0,
+    "droppedCatchupTicks": 0,
+    "maximumStepMilliseconds": 12.4108
+  },
+  "tlsValidation": "System trust, no bypass",
+  "qualityLimits": {
+    "maximumObservedContactRelativeErrorMeters": 15.89697265625,
+    "maximumSteadyRelativeErrorMeters": 1.17500019073486,
+    "defaultRosterDownloadPayloadMaximumBytesPerSecond": 63315.75,
+    "defaultRosterUploadPayloadMaximumBytesPerSecond": 15344,
+    "note": "Contact-transition uncertainty remains visible before an authoritative event/snapshot arrives. Initial60KB/s down and15KB/s up budgets are slightly exceeded for default8human+5bot roster. These are reported, not replaced with steady-state zero."
+  },
+  "probePorts": [
+    17950,
+    17951
+  ],
+  "probeListenersClosed": true,
+  "editorProbeKept": {
+    "pid": 19648,
+    "ports": [
+      17855,
+      17856
+    ]
+  },
+  "receipts": [
+    {
+      "path": "docs/p05/backend/domain-validation.json",
+      "sha256": "3658b3a46b62594e0e98aba446bcc89ba3128b957743014c4ef857e44a7daa38"
+    },
+    {
+      "path": "docs/p05/client-validation.json",
+      "sha256": "b074a97b4651e0641cf7bcc08783b4802dcf5b98070f5e61d763061e247cacc9"
+    },
+    {
+      "path": "docs/p05/backend/foundation-regression.json",
+      "sha256": "40d2cbdf9320a1ed0488ccf982874a5883518a3993653dfda5c23474ebd82198"
+    },
+    {
+      "path": "docs/p05/backend/race-regression.json",
+      "sha256": "e96fe384392d5ba5d8c706fa607d5352a88cbe4aa0dceb09e378efe3397bd611"
+    },
+    {
+      "path": "docs/p05/backend/server-selftest.json",
+      "sha256": "b5d3663e89e378c65f08418aab2b960368fd79cf2092974f896c2bec955d31cf"
+    },
+    {
+      "path": "docs/p05/backend/network-matrix.json",
+      "sha256": "6c3963d927eedc13490d62f66078117fffc27f622f853a7010c547728ac3c4e2"
+    },
+    {
+      "path": "docs/p05/backend/live-ws.json",
+      "sha256": "ed72aa0aa3704663d4017745273ceb6938d469b34fb3b2416614e2a9a239c7bd"
+    },
+    {
+      "path": "docs/p05/backend/live-wss.json",
+      "sha256": "d6823d0b8ce01e3c3496ff7b09a12320e69873ada323f20e57a5dc8d7997c259"
+    }
+  ],
+  "nativeArtifacts": [
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Gameplay.Definitions.dll",
+      "bytes": 10240,
+      "sha256": "e96de829e77005a311251b85c9b14e4c5cee9d2b49082349035bbb314b5867b5"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Gameplay.Definitions.pdb",
+      "bytes": 9980,
+      "sha256": "19b9be3588f7366355f3a75ce1aef759ceb53276661e562c9a4698a6de825d9a"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.NetworkMapping.dll",
+      "bytes": 9728,
+      "sha256": "353f0f1265b70791e357db5e651e320145211a97660362994326223e4ccd512d"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.NetworkMapping.pdb",
+      "bytes": 9216,
+      "sha256": "ebf8c31e13717a1324c3fefec7a966418fccf336f3a8e1f85c321a022c1663c5"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Protocol.dll",
+      "bytes": 12800,
+      "sha256": "fc11fa779e0defe870e03ddbab1b9a14920cd5abfece9d4edc6c4aa66dcb1aae"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Protocol.pdb",
+      "bytes": 10540,
+      "sha256": "9d695e4d58954d051cc6d50c5c8d1afa3c1556d1070d03ca8e46d9e91a906c3b"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Application.dll",
+      "bytes": 68096,
+      "sha256": "4249083a72fda6910db7490133ba5f611106ce921ef2fc105833aa7433357341"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Application.pdb",
+      "bytes": 29068,
+      "sha256": "8234386dd50c99ab78e6b1aa9335e6b1536c41144c60b3f168c2d911e5947e28"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Host.deps.json",
+      "bytes": 2798,
+      "sha256": "54760a367b719188a3802be2f7f1f32dd3f84e5f7d2f12c0e3d7bced52ae082a"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Host.dll",
+      "bytes": 67072,
+      "sha256": "f79ccd9ee02cb38d888c4e7b4edab683c10cdd9ccf40636f0612366ce4006a30"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Host.exe",
+      "bytes": 162816,
+      "sha256": "5e4e3a48ce544a90d1d6407c619e54df30bcb85056da1e621e4e19910f282d78"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Host.pdb",
+      "bytes": 32644,
+      "sha256": "c8612d8e7cee5bde6809a0febf327a74930105f549f25e408739b881d06d37aa"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Host.runtimeconfig.json",
+      "bytes": 491,
+      "sha256": "41442586a8262bc96a1c80f82f4d9384c03bfd465d221cbf01fb3563170f9e65"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Server.Host.staticwebassets.endpoints.json",
+      "bytes": 53,
+      "sha256": "c1686417e8d5c31bba969f12b6f3d2b35e6609adb5ca42f212261a3a02771aac"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Simulation.dll",
+      "bytes": 29696,
+      "sha256": "d8f4ff869ffffca9a64b326261570084828c2aaba7ad45fc073016736536fc19"
+    },
+    {
+      "path": "_local/p05-probe-host-v4/RacingBois.Simulation.pdb",
+      "bytes": 20708,
+      "sha256": "b157046232ba4b4827d22abe85d4fcd33c52501ca4a9198b1870f207f841d9cf"
+    }
+  ],
+  "externalGates": {
+    "twoPhysicalLanMachinesWanOffColdCache": "UNVERIFIED",
+    "twoDifferentInternetNetworks": "UNVERIFIED",
+    "ipPacketLossMatrix": "NOT_EMULATED",
+    "ociDeployment": "NOT_PERFORMED",
+    "linuxArm64NativeExecution": "NOT_PERFORMED"
+  }
+}

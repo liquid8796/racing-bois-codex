@@ -1,0 +1,211 @@
+{
+  "generatedUtc": "2026-09-20T19:04:19.711286+00:00",
+  "status": "PASS",
+  "error": null,
+  "scope": "Scoped native WSS validation and raw TCP byte-stream forwarding delay/stalls on loopback. This is not IP packet-loss/retransmission, real WAN, browser TLS acceptance, or complete bandwidth/backpressure profiling. Test PASS means measurements/assertions completed; observed disconnects are explicitly reported as open production gates.",
+  "certificateTrust": "Only the supplied public certificate is a custom trust anchor; SHA256 pin, real TLS hostname verification, validity and server-auth chain checks are required. No OS trust mutation/private key export/insecure bypass.",
+  "tlsChecks": [
+    {
+      "name": "scoped_public_certificate_chain_hostname_pin",
+      "hostname": "localhost",
+      "expectedConnection": true,
+      "connected": true,
+      "authoritativeAckObserved": true,
+      "publicCertificateSha256": "67BB71FE191BAB057847CAF90F6D4527B87793C6FCC8CAEA1BEA86D1A4AE06B2",
+      "status": "PASS",
+      "observedError": null
+    },
+    {
+      "name": "wrong_fingerprint_rejected",
+      "hostname": "localhost",
+      "expectedConnection": false,
+      "connected": false,
+      "authoritativeAckObserved": false,
+      "publicCertificateSha256": "98BB71FE191BAB057847CAF90F6D4527B87793C6FCC8CAEA1BEA86D1A4AE06B2",
+      "status": "PASS",
+      "observedError": "WebSocketException"
+    },
+    {
+      "name": "wrong_hostname_rejected",
+      "hostname": "mismatch.invalid",
+      "expectedConnection": false,
+      "connected": false,
+      "authoritativeAckObserved": false,
+      "publicCertificateSha256": "67BB71FE191BAB057847CAF90F6D4527B87793C6FCC8CAEA1BEA86D1A4AE06B2",
+      "status": "PASS",
+      "observedError": "WebSocketException"
+    },
+    {
+      "name": "os_untrusted_certificate_rejected",
+      "hostname": "localhost",
+      "expectedConnection": false,
+      "connected": false,
+      "authoritativeAckObserved": false,
+      "publicCertificateSha256": "67BB71FE191BAB057847CAF90F6D4527B87793C6FCC8CAEA1BEA86D1A4AE06B2",
+      "status": "PASS",
+      "observedError": "WebSocketException"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "stream_rtt150",
+      "loopbackProxyPort": 17981,
+      "client": "native ClientWebSocket",
+      "inputRate": 30,
+      "delayPerDirectionPerStreamReadMilliseconds": 75,
+      "streamReadBufferBytes": 8192,
+      "streamStall": {
+        "direction": "client_to_server",
+        "startMilliseconds": 0,
+        "durationMilliseconds": 0
+      },
+      "sentInputs": 186,
+      "snapshots": 125,
+      "snapshotsMonotonic": true,
+      "maximumObservedSnapshotGapMilliseconds": 79.95,
+      "maximumSnapshotSilenceIncludingEndMilliseconds": 86.97,
+      "ackAgeMilliseconds": {
+        "samples": 76,
+        "p95": 310.59,
+        "maximum": 329.3656
+      },
+      "authorityCoastingDuringUpstreamStall": false,
+      "serverClosedConnection": false,
+      "clientFailedAtMilliseconds": 0,
+      "clientFailure": null,
+      "maximumPendingInputs": 0,
+      "serverReleasedSlotBeforeProbeEnd": false,
+      "proxyUpstreamBytes": 19549,
+      "proxyDownstreamBytes": 22591,
+      "interpretation": "Ordered stream delay/stall observed; no packet loss or WAN emulation is claimed."
+    },
+    {
+      "name": "stream_rtt250",
+      "loopbackProxyPort": 17982,
+      "client": "native ClientWebSocket",
+      "inputRate": 30,
+      "delayPerDirectionPerStreamReadMilliseconds": 125,
+      "streamReadBufferBytes": 8192,
+      "streamStall": {
+        "direction": "client_to_server",
+        "startMilliseconds": 0,
+        "durationMilliseconds": 0
+      },
+      "sentInputs": 186,
+      "snapshots": 125,
+      "snapshotsMonotonic": true,
+      "maximumObservedSnapshotGapMilliseconds": 185.87,
+      "maximumSnapshotSilenceIncludingEndMilliseconds": 185.87,
+      "ackAgeMilliseconds": {
+        "samples": 45,
+        "p95": 467.58,
+        "maximum": 469.36799999999994
+      },
+      "authorityCoastingDuringUpstreamStall": false,
+      "serverClosedConnection": false,
+      "clientFailedAtMilliseconds": 0,
+      "clientFailure": null,
+      "maximumPendingInputs": 0,
+      "serverReleasedSlotBeforeProbeEnd": false,
+      "proxyUpstreamBytes": 19549,
+      "proxyDownstreamBytes": 22350,
+      "interpretation": "Ordered stream delay/stall observed; no packet loss or WAN emulation is claimed."
+    },
+    {
+      "name": "upstream900ms_stall_30hz",
+      "loopbackProxyPort": 17983,
+      "client": "native ClientWebSocket",
+      "inputRate": 30,
+      "delayPerDirectionPerStreamReadMilliseconds": 0,
+      "streamReadBufferBytes": 8192,
+      "streamStall": {
+        "direction": "client_to_server",
+        "startMilliseconds": 1500,
+        "durationMilliseconds": 900
+      },
+      "sentInputs": 186,
+      "snapshots": 129,
+      "snapshotsMonotonic": true,
+      "maximumObservedSnapshotGapMilliseconds": 63.3,
+      "maximumSnapshotSilenceIncludingEndMilliseconds": 63.3,
+      "ackAgeMilliseconds": {
+        "samples": 110,
+        "p95": 62.56,
+        "maximum": 63.594699999999875
+      },
+      "authorityCoastingDuringUpstreamStall": true,
+      "serverClosedConnection": false,
+      "clientFailedAtMilliseconds": 0,
+      "clientFailure": null,
+      "maximumPendingInputs": 0,
+      "serverReleasedSlotBeforeProbeEnd": false,
+      "proxyUpstreamBytes": 19867,
+      "proxyDownstreamBytes": 23409,
+      "interpretation": "Ordered stream delay/stall observed; no packet loss or WAN emulation is claimed."
+    },
+    {
+      "name": "upstream900ms_stall_60hz",
+      "loopbackProxyPort": 17984,
+      "client": "native ClientWebSocket",
+      "inputRate": 60,
+      "delayPerDirectionPerStreamReadMilliseconds": 0,
+      "streamReadBufferBytes": 8192,
+      "streamStall": {
+        "direction": "client_to_server",
+        "startMilliseconds": 1500,
+        "durationMilliseconds": 900
+      },
+      "sentInputs": 181,
+      "snapshots": 63,
+      "snapshotsMonotonic": true,
+      "maximumObservedSnapshotGapMilliseconds": 62.89,
+      "maximumSnapshotSilenceIncludingEndMilliseconds": 3179.47,
+      "ackAgeMilliseconds": {
+        "samples": 45,
+        "p95": 46.5,
+        "maximum": 47.13790000000006
+      },
+      "authorityCoastingDuringUpstreamStall": true,
+      "serverClosedConnection": true,
+      "clientFailedAtMilliseconds": 0,
+      "clientFailure": null,
+      "maximumPendingInputs": 0,
+      "serverReleasedSlotBeforeProbeEnd": true,
+      "proxyUpstreamBytes": 19337,
+      "proxyDownstreamBytes": 11575,
+      "interpretation": "Transport backlog can trigger ingress burst protection for an otherwise valid fixed-rate input source; this is a P05 gate, not acceptable production recovery."
+    },
+    {
+      "name": "downstream2600ms_stall_actual_client",
+      "loopbackProxyPort": 17985,
+      "client": "actual FoundationSession with native test adapter",
+      "inputRate": 60,
+      "delayPerDirectionPerStreamReadMilliseconds": 0,
+      "streamReadBufferBytes": 8192,
+      "streamStall": {
+        "direction": "server_to_client",
+        "startMilliseconds": 1500,
+        "durationMilliseconds": 2600
+      },
+      "sentInputs": 208,
+      "snapshots": 32,
+      "snapshotsMonotonic": true,
+      "maximumObservedSnapshotGapMilliseconds": 63.23,
+      "maximumSnapshotSilenceIncludingEndMilliseconds": 4725.29,
+      "ackAgeMilliseconds": {
+        "samples": 0,
+        "p95": 0,
+        "maximum": 0
+      },
+      "authorityCoastingDuringUpstreamStall": false,
+      "serverClosedConnection": false,
+      "clientFailedAtMilliseconds": 3487.65,
+      "clientFailure": "M\u00E1y ch\u1EE7 kh\u00F4ng ph\u1EA3n h\u1ED3i. H\u00E3y k\u1EBFt n\u1ED1i l\u1EA1i.",
+      "maximumPendingInputs": 120,
+      "serverReleasedSlotBeforeProbeEnd": true,
+      "proxyUpstreamBytes": 22407,
+      "proxyDownstreamBytes": 6127,
+      "interpretation": "An ordered downstream stall exhausts the real application pending-input bound; fails closed and releases its slot."
+    }
+  ]
+}

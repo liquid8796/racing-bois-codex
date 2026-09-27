@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "passed": true,
+  "utc": "2026-09-26T10:26:13.6856841Z",
+  "managedCompile": {
+    "target": "netstandard2.1",
+    "unityManagedVersion": "6000.5.7f1",
+    "define": "UNITY_EDITOR;UNITY_6000_0_OR_NEWER",
+    "errors": 0,
+    "warnings": 0,
+    "scope": "Compile preflight only; no Unity bundle or runtime acceptance implied"
+  },
+  "distributionTests": {
+    "passed": 7,
+    "failed": 0,
+    "syntheticFixtures": true,
+    "scope": "Exact distribution, same-length corruption, truncation, cross-version, traversal, duplicate identity and route mismatch"
+  },
+  "sourceFiles": [
+    {
+      "path": "Assets/RacingBois/Editor/P08ContentPackBuilder.cs",
+      "sha256": "87202b23e423bad99000dca46077d4aa9e125731c4656881d2beb54bd5390998"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "sha256": "7feabad372ba491c0d0f66c0d4714fe551b058dedbb32522f2da55c7a220f107"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08MusicDirector.cs",
+      "sha256": "a2713792b6b088d30b1d8f2f0eae62ed66980250d21329df8d49e5c7caa25c66"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/P08ActorContent.cs",
+      "sha256": "e9482306c535343b01c103ba9985afe99ba6b08509883fd1a409a8432feaf5ec"
+    },
+    {
+      "path": "tools/p08/content-pack/audit_publish.py",
+      "sha256": "76f59598d7f442e5a0b1e0d17749b12bfaecefd1495179c6b1ea1469dd2e6d0a"
+    },
+    {
+      "path": "tools/p08/content-pack/test_audit.py",
+      "sha256": "00e8ee46f183a22893d87ca0d0da217a65ebdf421f282401256582008932eccb"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "status": "PASS_FOR_LISTED_EVIDENCE_CHECKS",
+  "checks": [
+    {
+      "id": "COURSE-CANYN-NOD",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-CANYN-SGS",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-CITY-NOD",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-CITY-SGS",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-HIWAY-NOD",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-HIWAY-SGS",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-MEDLY-NOD",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-MEDLY-SGS",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-NAPA-NOD",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "COURSE-NAPA-SGS",
+      "status": "PASS",
+      "valid_and_corrupt_inputs_checked": true
+    },
+    {
+      "id": "CANS-RRAN-REFERENCES",
+      "status": "PASS",
+      "cans_records": 197,
+      "frame_references": 6161
+    },
+    {
+      "id": "MIDI-INDEPENDENT-READER",
+      "status": "PASS",
+      "files": 11,
+      "events": 104386
+    },
+    {
+      "id": "MIP-IMAGE-ROUNDTRIP",
+      "status": "PASS",
+      "unique_buffers": 2303
+    },
+    {
+      "id": "RPTH-NATIVE-BIDIRECTIONAL",
+      "status": "PASS",
+      "paths": 109,
+      "native_value_assertions": 171466,
+      "seed_discrepancies_explained_as_independent_initialization": 13
+    },
+    {
+      "id": "LEGACY-RRFD-CLASSIFICATION",
+      "status": "PASS",
+      "counts": {
+        "SECONDARY_ROOT4_VARIANT_UNSELECTED_BY_KNOWN_PC_CALLS": 255,
+        "UNREFERENCED_BY_COMPLETE_CANS_SEQUENCE_TABLE": 176,
+        "ROOT7_SECONDARY_VARIANT_NO_STATIC_SELECTION_FOUND": 6,
+        "GLOBAL_DAT_STORAGE": 742
+      },
+      "scope": "CANS complete sequence reachability and known direct PC family-getter calls; not global dynamic coverage"
+    },
+    {
+      "id": "CANS-NOMINAL-60HZ-DURATION",
+      "status": "PASS",
+      "sequences": 2340,
+      "min_ticks": 1,
+      "max_ticks": 120,
+      "execution_evidence": "docs/p01/logic/parity-fixtures.json animation cases at0x43ae90"
+    },
+    {
+      "id": "DISPLAY-UNITS-NATIVE",
+      "status": "PASS",
+      "fixtures": 1086,
+      "course_level_values": 25,
+      "scope": "Exact HUD and menu display arithmetic; physical meters and true branch-dependent race length are not asserted"
+    },
+    {
+      "id": "SOURCE-INTEGRITY",
+      "status": "PASS",
+      "files": 374,
+      "sha256_unchanged": true
+    }
+  ],
+  "does_not_certify": "Full reverse completeness, all rendering semantics, or production quality",
+  "open_gates": [
+    "Course physical units and full branch behavior",
+    "Full-program reachability beyond known PC getters and palette/render behavior",
+    "Animation attachment/anchors and hit windows",
+    "Media event branches and SoundFont playback",
+    "Cloud loader dimensions"
+  ]
+}

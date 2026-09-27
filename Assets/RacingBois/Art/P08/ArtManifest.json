@@ -1,0 +1,1291 @@
+{
+  "schema": 1,
+  "passed": false,
+  "state": "exported-awaiting-independent-source-and-Unity-QA",
+  "assets": [
+    {
+      "name": "RB_P08_Bike_01",
+      "concept": "ArtSource/Concepts/P08/Bikes/01-kestrel-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_01.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_01.fbx",
+      "surface": "RB_P08_BikesA_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 21752,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9496,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3216,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Kestrel",
+      "catalogIndex": 1,
+      "conceptSha256": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+      "sourceSha256": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b",
+      "fbxSha256": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_02",
+      "concept": "ArtSource/Concepts/P08/Bikes/02-rift-250-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_02.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_02.fbx",
+      "surface": "RB_P08_BikesA_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 21152,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9244,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3116,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Rift 250",
+      "catalogIndex": 2,
+      "conceptSha256": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+      "sourceSha256": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41",
+      "fbxSha256": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_03",
+      "concept": "ArtSource/Concepts/P08/Bikes/03-jackal-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_03.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_03.fbx",
+      "surface": "RB_P08_BikesA_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 21752,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9496,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3202,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Jackal",
+      "catalogIndex": 3,
+      "conceptSha256": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+      "sourceSha256": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03",
+      "fbxSha256": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_04",
+      "concept": "ArtSource/Concepts/P08/Bikes/04-ember-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_04.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_04.fbx",
+      "surface": "RB_P08_BikesA_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 21832,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9534,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3226,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Ember",
+      "catalogIndex": 4,
+      "conceptSha256": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+      "sourceSha256": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569",
+      "fbxSha256": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_05",
+      "concept": "ArtSource/Concepts/P08/Bikes/05-apex-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_05.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_05.fbx",
+      "surface": "RB_P08_BikesA_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 22296,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9728,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3262,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Apex",
+      "catalogIndex": 5,
+      "conceptSha256": "baba735ce7f94d64a514ea1e87f9fc3ecdcaee865fd219e8794ec118d1f222f8",
+      "sourceSha256": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162",
+      "fbxSha256": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bike-05-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_06",
+      "concept": "ArtSource/Concepts/P08/Bikes/06-corvus-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_06.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_06.fbx",
+      "surface": "RB_P08_BikesB_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 21232,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9280,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3142,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Corvus",
+      "catalogIndex": 6,
+      "conceptSha256": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+      "sourceSha256": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b",
+      "fbxSha256": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_07",
+      "concept": "ArtSource/Concepts/P08/Bikes/07-viper-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_07.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_07.fbx",
+      "surface": "RB_P08_BikesB_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 22336,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9746,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3276,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Viper",
+      "catalogIndex": 7,
+      "conceptSha256": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+      "sourceSha256": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7",
+      "fbxSha256": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_08",
+      "concept": "ArtSource/Concepts/P08/Bikes/08-rift-750-n-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_08.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_08.fbx",
+      "surface": "RB_P08_BikesB_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 21272,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9296,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3146,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Rift 750 N",
+      "catalogIndex": 8,
+      "conceptSha256": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+      "sourceSha256": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26",
+      "fbxSha256": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_09",
+      "concept": "ArtSource/Concepts/P08/Bikes/09-specter-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_09.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_09.fbx",
+      "surface": "RB_P08_BikesB_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 22256,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9710,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3264,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Specter",
+      "catalogIndex": 9,
+      "conceptSha256": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+      "sourceSha256": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea",
+      "fbxSha256": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bike-09-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_10",
+      "concept": "ArtSource/Concepts/P08/Bikes/10-nightjar-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_10.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_10.fbx",
+      "surface": "RB_P08_BikesB_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 21232,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9280,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3110,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Nightjar",
+      "catalogIndex": 10,
+      "conceptSha256": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+      "sourceSha256": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb",
+      "fbxSha256": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_11",
+      "concept": "ArtSource/Concepts/P08/Bikes/11-cinder-10-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_11.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_11.fbx",
+      "surface": "RB_P08_BikesC_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 22296,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9718,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3252,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Cinder 10",
+      "catalogIndex": 11,
+      "conceptSha256": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+      "sourceSha256": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259",
+      "fbxSha256": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-11-12-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_12",
+      "concept": "ArtSource/Concepts/P08/Bikes/12-rift-750-v1.png",
+      "source": "ArtSource/P08/RB_P08_Bike_12.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_Bike_12.fbx",
+      "surface": "RB_P08_BikesC_Atlas",
+      "kind": "bike",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 22256,
+          "renderers": 3
+        },
+        {
+          "level": 1,
+          "triangles": 9710,
+          "renderers": 3
+        },
+        {
+          "level": 2,
+          "triangles": 3254,
+          "renderers": 3
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "displayName": "Rift 750",
+      "catalogIndex": 12,
+      "conceptSha256": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+      "sourceSha256": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb",
+      "fbxSha256": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/bikes-11-12-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CityBusShelter",
+      "concept": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+      "source": "ArtSource/P08/RB_P08_neon.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CityBusShelter.fbx",
+      "surface": "RB_P08_Neon_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 2168,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 1084,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 432,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+      "sourceSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+      "fbxSha256": "c299d11023a7ad9a0cc526bbb2bdf7faf17149431882b31933a1c68d10cd9271",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/neon-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CityCornerShop",
+      "concept": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+      "source": "ArtSource/P08/RB_P08_neon.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CityCornerShop.fbx",
+      "surface": "RB_P08_Neon_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 5268,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 2634,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 1052,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+      "sourceSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+      "fbxSha256": "bab4682e01904d0431f9ea0604d21a7850eab57771e6cfce652daaaad4736132",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/neon-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CityLoadingGantry",
+      "concept": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+      "source": "ArtSource/P08/RB_P08_neon.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CityLoadingGantry.fbx",
+      "surface": "RB_P08_Neon_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 2972,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 1486,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 594,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+      "sourceSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+      "fbxSha256": "c6cc9318824586d088ad2fb077fd2e484e046411dd64c5d1202792228aa7d0b6",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/neon-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CityStreetlamp",
+      "concept": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+      "source": "ArtSource/P08/RB_P08_neon.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CityStreetlamp.fbx",
+      "surface": "RB_P08_Neon_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 928,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 464,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 184,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+      "sourceSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+      "fbxSha256": "24a3a8251cf47f8574b12c0d03c104607418e98a1ae14dbc578e26a579512b0c",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/neon-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CityWarehouse",
+      "concept": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+      "source": "ArtSource/P08/RB_P08_neon.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CityWarehouse.fbx",
+      "surface": "RB_P08_Neon_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 8572,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 4286,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 1714,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+      "sourceSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+      "fbxSha256": "1362d12bf93c24b4895980dac3dcbe04200a606fc21c48ba0be6f002d5624875",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/neon-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CityWaterTank",
+      "concept": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+      "source": "ArtSource/P08/RB_P08_neon.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CityWaterTank.fbx",
+      "surface": "RB_P08_Neon_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 2792,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 1396,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 524,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+      "sourceSha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+      "fbxSha256": "0dddc76cab04106d257ff9cc5f81baa35e495d18509557bb37d257d474642901",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/neon-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CoastBeacon",
+      "concept": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+      "source": "ArtSource/P08/RB_P08_coast.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx",
+      "surface": "RB_P08_Coast_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 1768,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 884,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 326,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+      "sourceSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+      "fbxSha256": "940d8efe0481447621ae5b35f14dd006581ac387e743d67e871b7f73cd828ae2",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/coast-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CoastBoulder",
+      "concept": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+      "source": "ArtSource/P08/RB_P08_coast.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx",
+      "surface": "RB_P08_Coast_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 640,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 320,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 128,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+      "sourceSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+      "fbxSha256": "d8ca5ea95ce2507de00bb5ed27210642494e957b0c380d96f074bbafbf7b8213",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/coast-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CoastBridgePier",
+      "concept": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+      "source": "ArtSource/P08/RB_P08_coast.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx",
+      "surface": "RB_P08_Coast_Atlas",
+      "kind": "landmark",
+      "primitiveCollider": false,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 2256,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 1128,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 450,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+      "sourceSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+      "fbxSha256": "0e404eed77758b4dd56eee73e274cf267a88056d6396157a9564ad373ba94b09",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/coast-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CoastBroadleafShrub",
+      "concept": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+      "source": "ArtSource/P08/RB_P08_coast.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx",
+      "surface": "RB_P08_Coast_Atlas",
+      "kind": "foliage",
+      "primitiveCollider": false,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 1056,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 528,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 196,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+      "sourceSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+      "fbxSha256": "6e0bb08db0d515bcde3c1ec6336a105b12b40e197abed28b1a0966c8e20b43d3",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/coast-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CoastPalm",
+      "concept": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+      "source": "ArtSource/P08/RB_P08_coast.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx",
+      "surface": "RB_P08_Coast_Atlas",
+      "kind": "foliage",
+      "primitiveCollider": false,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 6704,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 3352,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 1032,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+      "sourceSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+      "fbxSha256": "f79fbf463e7dbb9e89081f2f16959ee94807b8fc22283f61c1202367dc8204ba",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/coast-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_CoastSurfShack",
+      "concept": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+      "source": "ArtSource/P08/RB_P08_coast.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx",
+      "surface": "RB_P08_Coast_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 6664,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 3332,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 1332,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+      "sourceSha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+      "fbxSha256": "25923ff4a7d3c03480cbd558c127b7ddbeea4be8b113ff0cab6c1cf2c81b2ce5",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/coast-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_OrchardAppleTree",
+      "concept": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+      "source": "ArtSource/P08/RB_P08_orchard.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_OrchardAppleTree.fbx",
+      "surface": "RB_P08_Orchard_Atlas",
+      "kind": "foliage",
+      "primitiveCollider": false,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 2886,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 1442,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 536,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+      "sourceSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+      "fbxSha256": "24b701c3f1cb5ae39f28ddd22d19c0bcafe45e92021def786df55cb59583f57b",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/orchard-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_OrchardBarn",
+      "concept": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+      "source": "ArtSource/P08/RB_P08_orchard.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_OrchardBarn.fbx",
+      "surface": "RB_P08_Orchard_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 6544,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 3272,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 1308,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+      "sourceSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+      "fbxSha256": "d44af8613fba3ca0ed74704bb67849e8b5c0919d3a3424de5f1c7afdc7ecc742",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/orchard-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_OrchardFence",
+      "concept": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+      "source": "ArtSource/P08/RB_P08_orchard.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_OrchardFence.fbx",
+      "surface": "RB_P08_Orchard_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 864,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 432,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 172,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+      "sourceSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+      "fbxSha256": "32b9c37ef277672ceb8f8f962a4a959c20b12a4740edad77a9f83f56fe7bd6bd",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/orchard-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_OrchardHayBale",
+      "concept": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+      "source": "ArtSource/P08/RB_P08_orchard.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_OrchardHayBale.fbx",
+      "surface": "RB_P08_Orchard_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 2684,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 1342,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 580,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+      "sourceSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+      "fbxSha256": "761bc59f380178a1a06fd4d54d203546b60130d48d93b6c1bad16f9fe8512398",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/orchard-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_OrchardProduceKiosk",
+      "concept": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+      "source": "ArtSource/P08/RB_P08_orchard.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_OrchardProduceKiosk.fbx",
+      "surface": "RB_P08_Orchard_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 4864,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 2432,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 972,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+      "sourceSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+      "fbxSha256": "e3239b85e3f38562ff775e83f133574cb59834cdf9b74d2aa3a4b90bc7f47105",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/orchard-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_OrchardSilo",
+      "concept": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+      "source": "ArtSource/P08/RB_P08_orchard.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_OrchardSilo.fbx",
+      "surface": "RB_P08_Orchard_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 7728,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 3864,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 1490,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+      "sourceSha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+      "fbxSha256": "7b45624c6bcfd7e00b719b4dd2294120bf5258644d42a331efe78d76f802f1ab",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/orchard-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_RidgeFir",
+      "concept": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+      "source": "ArtSource/P08/RB_P08_ridge.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_RidgeFir.fbx",
+      "surface": "RB_P08_Ridge_Atlas",
+      "kind": "foliage",
+      "primitiveCollider": false,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 4202,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 2082,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 756,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+      "sourceSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+      "fbxSha256": "79aee4f97f9a0fbf62a78fa61e660a1a2918b52058f7ae9a79002edb22e7d5db",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/ridge-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_RidgeGalleryArch",
+      "concept": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+      "source": "ArtSource/P08/RB_P08_ridge.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_RidgeGalleryArch.fbx",
+      "surface": "RB_P08_Ridge_Atlas",
+      "kind": "landmark",
+      "primitiveCollider": false,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 2632,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 1316,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 526,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+      "sourceSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+      "fbxSha256": "c454333c4efac915ae5bf62671101a0bd4d9b5e5db77d5933699dbf44ffdaea5",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/ridge-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_RidgeGranite",
+      "concept": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+      "source": "ArtSource/P08/RB_P08_ridge.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_RidgeGranite.fbx",
+      "surface": "RB_P08_Ridge_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 960,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 480,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 192,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+      "sourceSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+      "fbxSha256": "6ef8170cb18713f6695a3e5c027c7b6f33fb864a35362feb98d939ea2db6efd5",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/ridge-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_RidgeSnowPole",
+      "concept": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+      "source": "ArtSource/P08/RB_P08_ridge.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_RidgeSnowPole.fbx",
+      "surface": "RB_P08_Ridge_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 340,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 170,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 68,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+      "sourceSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+      "fbxSha256": "e15087b9b33a155d650da8beea1fd745691216a548f2e7061b8cf325347f2c67",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/ridge-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_RidgeStoneWall",
+      "concept": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+      "source": "ArtSource/P08/RB_P08_ridge.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_RidgeStoneWall.fbx",
+      "surface": "RB_P08_Ridge_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 7144,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 3572,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 1428,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+      "sourceSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+      "fbxSha256": "a629ae4addb71e0bba0e25336e444fcf0c72da3d5eb3659ae6550f40dabf235f",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/ridge-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_RidgeTimberHut",
+      "concept": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+      "source": "ArtSource/P08/RB_P08_ridge.blend",
+      "fbx": "Assets/RacingBois/Art/P08/RB_P08_RidgeTimberHut.fbx",
+      "surface": "RB_P08_Ridge_Atlas",
+      "kind": "scenery",
+      "primitiveCollider": true,
+      "lods": [
+        {
+          "level": 0,
+          "triangles": 4448,
+          "renderers": 1
+        },
+        {
+          "level": 1,
+          "triangles": 2224,
+          "renderers": 1
+        },
+        {
+          "level": 2,
+          "triangles": 888,
+          "renderers": 1
+        }
+      ],
+      "uvPolicy": "Material tiles intentionally shared across disconnected manufactured components; audited within each connected component.",
+      "conceptSha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+      "sourceSha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+      "fbxSha256": "274ac9c04cdff0acaf3d3c837ba04b5949c3530bbc2b13a56ecb876fcf26579b",
+      "conceptInspectedBeforeGeometry": true,
+      "creationReceipt": "docs/p08/art/ridge-creation-mcp.json"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "docs/p08/art/ridge-creation-mcp.json",
+      "sha256": "6130c4a28307f9a82e5008f53c85b2226b798af0ea995fe115295c3d1d45c8ba"
+    },
+    {
+      "path": "docs/p08/art/neon-creation-mcp.json",
+      "sha256": "dcb9aca475426df91d688dcf56fc09dfe80a0f0bfbea7ad9578ef594a4a98263"
+    },
+    {
+      "path": "docs/p08/art/coast-creation-mcp.json",
+      "sha256": "7368eb5ee3749869f76a26e3237a78eb25a0c3a088bdbfb705e71c23fa58908d"
+    },
+    {
+      "path": "docs/p08/art/orchard-creation-mcp.json",
+      "sha256": "3e9d8e1aac9f745464dd80d4989eb552c7ba68eb19973c8e9fbc3ae99a107ad8"
+    },
+    {
+      "path": "docs/p08/art/bikes-02-05-creation-mcp.json",
+      "sha256": "34e0ee69378bc5b5fd48ef0b3eddfa3f4095a5d0d801f8e44b6cbe7aa99c7413"
+    },
+    {
+      "path": "docs/p08/art/bike-01-creation-mcp.json",
+      "sha256": "a3156af6f14e979ff6936f862602822b424cb07b499e1a3c7fa2f4a54bff7c8a"
+    },
+    {
+      "path": "docs/p08/art/bikes-06-10-creation-mcp.json",
+      "sha256": "ad897339b638755eccb86abad5b9f55885496bf32f2db127f1cf8b5e900a3957"
+    },
+    {
+      "path": "docs/p08/art/bikes-01-04-refined-creation-mcp.json",
+      "sha256": "bfe4f424ea241769271c6d57359b06edca742156b1cb7470a31ba3231511f4cf"
+    },
+    {
+      "path": "docs/p08/art/bikes-06-10-refined-creation-mcp.json",
+      "sha256": "3cd94912293a78883e119a5a785d67d5691871e2eac361c39e1b22fde407b49a"
+    },
+    {
+      "path": "docs/p08/art/bike-05-refined-creation-mcp.json",
+      "sha256": "dfb9315c3cb75fca06f191e3591c1ed2b3181df2ffdb20bfe99e6c9882f8c21c"
+    },
+    {
+      "path": "docs/p08/art/bike-09-refined-creation-mcp.json",
+      "sha256": "1bdc6a9f6a113d8b4f29ff43260eff55253364d87d14e17c6d43ee44c8401bac"
+    },
+    {
+      "path": "docs/p08/art/bikes-11-12-creation-mcp.json",
+      "sha256": "2364055b5468dd4c3f87bb5e082c505904b8c8d2596ecfd79fce613cc4631101"
+    }
+  ],
+  "supersededReceipts": [
+    {
+      "name": "RB_P08_Bike_01",
+      "receipt": "docs/p08/art/bike-01-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_02",
+      "receipt": "docs/p08/art/bikes-02-05-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_03",
+      "receipt": "docs/p08/art/bikes-02-05-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_04",
+      "receipt": "docs/p08/art/bikes-02-05-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-01-04-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_06",
+      "receipt": "docs/p08/art/bikes-06-10-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_07",
+      "receipt": "docs/p08/art/bikes-06-10-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_08",
+      "receipt": "docs/p08/art/bikes-06-10-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_09",
+      "receipt": "docs/p08/art/bikes-06-10-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_10",
+      "receipt": "docs/p08/art/bikes-06-10-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_05",
+      "receipt": "docs/p08/art/bikes-02-05-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bike-05-refined-creation-mcp.json"
+    },
+    {
+      "name": "RB_P08_Bike_09",
+      "receipt": "docs/p08/art/bikes-06-10-refined-creation-mcp.json",
+      "replacementReceipt": "docs/p08/art/bike-09-refined-creation-mcp.json"
+    }
+  ],
+  "policy": "Only successfully exported originals count. Reused P06 meshes, rigs, clips and atlas materials are declared separately; no source-game content."
+}

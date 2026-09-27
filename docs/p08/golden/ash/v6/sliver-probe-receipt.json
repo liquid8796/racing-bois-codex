@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ASH_V6_SLIVERS [{\"triangle\": 2224, \"polygon\": 1130, \"points\": [[-0.07035112380981445, -0.10509123653173447, 1.7928715944290161], [-0.07280135154724121, -0.10400568693876266, 1.790149211883545], [-0.07482992112636566, -0.10310694575309753, 1.7878954410552979], [-0.07187600433826447, -0.10255376994609833, 1.792085886001587]], \"indices\": [1122, 1123, 1147, 1146], \"uv\": [[0.5463398694992065, 0.1751566082239151], [0.5440343022346497, 0.1765245497226715], [0.5421255826950073, 0.1776570975780487], [0.5443432927131653, 0.174290731549263]], \"quadAlternateCrossSquared\": [4.2791409738535124e-11, 6.243127586083586e-11]}, {\"triangle\": 2232, \"polygon\": 1134, \"points\": [[-0.07184066623449326, -0.1199737936258316, 1.773054599761963], [-0.07223466783761978, -0.1204100102186203, 1.7715166807174683], [-0.07367492467164993, -0.12200458347797394, 1.7658945322036743], [-0.07358673959970474, -0.12017250806093216, 1.7678407430648804]], \"indices\": [1126, 1127, 1151, 1150], \"uv\": [[0.5428657531738281, 0.19677358865737915], [0.542166531085968, 0.19804604351520538], [0.5396103858947754, 0.20269760489463806], [0.5397266149520874, 0.20035231113433838]], \"quadAlternateCrossSquared\": [6.335791266631752e-11, 4.741255727868515e-12]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: ASH_V6_SLIVERS [{\"triangle\": 2224, \"polygon\": 1130, \"points\": [[-0.07035112380981445, -0.10509123653173447, 1.7928715944290161], [-0.07280135154724121, -0.10400568693876266, 1.790149211883545], [-0.07482992112636566, -0.10310694575309753, 1.7878954410552979], [-0.07187600433826447, -0.10255376994609833, 1.792085886001587]], \"indices\": [1122, 1123, 1147, 1146], \"uv\": [[0.5463398694992065, 0.1751566082239151], [0.5440343022346497, 0.1765245497226715], [0.5421255826950073, 0.1776570975780487], [0.5443432927131653, 0.174290731549263]], \"quadAlternateCrossSquared\": [4.2791409738535124e-11, 6.243127586083586e-11]}, {\"triangle\": 2232, \"polygon\": 1134, \"points\": [[-0.07184066623449326, -0.1199737936258316, 1.773054599761963], [-0.07223466783761978, -0.1204100102186203, 1.7715166807174683], [-0.07367492467164993, -0.12200458347797394, 1.7658945322036743], [-0.07358673959970474, -0.12017250806093216, 1.7678407430648804]], \"indices\": [1126, 1127, 1151, 1150], \"uv\": [[0.5428657531738281, 0.19677358865737915], [0.542166531085968, 0.19804604351520538], [0.5396103858947754, 0.20269760489463806], [0.5397266149520874, 0.20035231113433838]], \"quadAlternateCrossSquared\": [6.335791266631752e-11, 4.741255727868515e-12]}]\n"
+    },
+    "isError": false
+  }
+}

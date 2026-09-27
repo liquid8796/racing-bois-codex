@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "one-owned-media-element",
+      "passed": true
+    },
+    {
+      "name": "play-defers-without-user-activation",
+      "passed": true
+    },
+    {
+      "name": "untrusted-event-does-not-unlock",
+      "passed": true
+    },
+    {
+      "name": "trusted-gesture-unlocks-pending-song",
+      "passed": true
+    },
+    {
+      "name": "different-origin-or-unsafe-url-rejected",
+      "passed": true
+    },
+    {
+      "name": "identifier-contract-enforced",
+      "passed": true
+    },
+    {
+      "name": "replacement-reuses-and-releases-single-element",
+      "passed": true
+    },
+    {
+      "name": "mix-and-mute-bounded",
+      "passed": true
+    },
+    {
+      "name": "pause-resume-is-explicit",
+      "passed": true
+    },
+    {
+      "name": "hidden-page-suspends-and-visible-page-resumes",
+      "passed": true
+    },
+    {
+      "name": "seek-clamps-to-declared-duration",
+      "passed": true
+    },
+    {
+      "name": "autoplay-rejection-stays-cosmetic",
+      "passed": true
+    },
+    {
+      "name": "stop-releases-url-and-pending-state",
+      "passed": true
+    },
+    {
+      "name": "dispose-removes-document-handlers",
+      "passed": true
+    }
+  ],
+  "checkCount": 14,
+  "source": "Assets/RacingBois/Plugins/WebGL/RacingBoisMusic.jslib",
+  "sourceSha256": "3fe26d593ea241fe5e028c90c6b2a01986df3d6037b01a9ec1cc3334860af2cf",
+  "liveBrowserPlaybackVerified": false,
+  "scope": "Node VM contract test with media/document stubs; no browser/audio/network acceptance is claimed."
+}

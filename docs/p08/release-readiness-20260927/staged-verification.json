@@ -1,0 +1,36 @@
+{
+  "utc": "2026-09-27T02:10:16.338923+00:00",
+  "passed": true,
+  "scope": "Staged desktop receipt contract fixtures and managed Unity API compile only; no real player build/native dependency capture.",
+  "sourceStable": true,
+  "stagedFiles": {
+    "tools/p10/release-contract-staging/audit_desktop.py": "b9761e4a62939e98d8cac865804249f24b4199efad8cc51c50e1e34ef1c92380",
+    "tools/p10/release-contract-staging/baseline_audit_desktop.py": "c6bf9b5fb526c4f048aba2fe99f8786838bec1bb30298111a31b2d8d1c0280ec",
+    "tools/p10/release-contract-staging/dependency_capture.cs.fragment": "aefe5277ba2f28f6c3ce135ecc243453792d91fd470392802488a441f453b793",
+    "tools/p10/release-contract-staging/dependency_validation.py.fragment": "e8358720407aefcd222e1574a36a958630c493ffe110139d6b4cd52fbaa0d9e7",
+    "tools/p10/release-contract-staging/EditorCompile.csproj": "589795932fa9c5cd7a2e7969bb2455bbf8489de8cb76193793980b68c6f564fe",
+    "tools/p10/release-contract-staging/legacy_source_test.py.fragment": "4ff5ca952732167157bb3e0bc0735004b2baf51055150eb150662f35d7fe3094",
+    "tools/p10/release-contract-staging/P08DesktopBuilder.cs": "59532c262c659475195bcb0584c8f3a49091ccd49212b73028bad610506182e2",
+    "tools/p10/release-contract-staging/readiness_snapshot.py": "32203654125386196548d6f462a4c35f011a54c47c739a549dcce6a559fd3728",
+    "tools/p10/release-contract-staging/stage_fix.py": "c8018870f8d77903fde5df39433588d6a48ea39ca877816a5ff8773c5751da2c",
+    "tools/p10/release-contract-staging/test_audit_desktop.py": "3ba58725e7eb088dc75c94bff3b181a5f7a7d59c3e4a1da1b8a913ba5eef4a18",
+    "tools/p10/release-contract-staging/test_dependency_receipt.py": "b23599b919797ed879a3b20c957fbd12f2193b4da99cf605b71f8590ec94b25d",
+    "tools/p10/release-contract-staging/verify.py": "0fc31a1dacd163865ad4738dc738ef371170aa170fbb360593483d7f7989dd45"
+  },
+  "results": [
+    {
+      "name": "contract-tests",
+      "exitCode": 0,
+      "log": "docs/p08/release-readiness-20260927/contract-tests.log",
+      "logSha256": "aa008b050c97af249eaae6951bf8fd17295c0b6cf423b7d6e4bd096d89a7042a"
+    },
+    {
+      "name": "managed-compile",
+      "exitCode": 0,
+      "log": "docs/p08/release-readiness-20260927/managed-compile.log",
+      "logSha256": "c7692a46955f42a1a3b39657ec60c00b67b75781d55fe5206fdbbbe63e10ec22"
+    }
+  ],
+  "nativeAccepted": false,
+  "releaseAccepted": false
+}

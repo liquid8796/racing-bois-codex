@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "source": {
+    "path": "ArtSource/P08/Golden/Garage/V4/RB_Golden_Garage.blend",
+    "sha256": "a676eeab8e63fb4b53d8a277267bee07bc7f206468793395dd537a68d50a1594"
+  },
+  "descriptor": {
+    "path": "docs/p08/golden/garage/v4/descriptor.json",
+    "sha256": "b48502ff9d56690d53213495ddd83ba3bc6610cd8db3292ea0d830b1b96621b3"
+  },
+  "lockedUi": {
+    "path": "ArtSource/Concepts/P08/Golden/UI/garage-v2.png",
+    "sha256": "65b237da2f4a13b554de13d5a70ec2c3aed995e9cba5c95af6601ca7d0201ef5"
+  },
+  "cameraPositionUnity": [
+    0,
+    0.97,
+    -7
+  ],
+  "cameraTargetUnity": [
+    0,
+    0.13,
+    4.2
+  ],
+  "cameraFocalLengthMm": 40,
+  "sensorWidthMm": 36,
+  "aspect": 1.7777777777777777,
+  "blenderExposure": 0.3,
+  "blenderViewTransform": "AgX - Medium High Contrast",
+  "unitsWarning": "Authored Blender watts and colors are measured source inputs, not a claim of numerically identical Unity light intensity. Native lightmap and reflection response require calibration.",
+  "areaLights": [
+    {
+      "name": "Practical_0",
+      "positionUnity": [
+        -1.6,
+        2.14,
+        4.09
+      ],
+      "targetUnity": [
+        -1.6,
+        0.3,
+        3.59
+      ],
+      "widthMetres": 0.73,
+      "heightMetres": 0.04,
+      "colorLinear": [
+        1,
+        0.66,
+        0.34
+      ],
+      "blenderWatts": 30,
+      "unityIntensity": 44.0
+    },
+    {
+      "name": "Practical_1",
+      "positionUnity": [
+        -0.45,
+        2.02,
+        4.09
+      ],
+      "targetUnity": [
+        -0.45,
+        0.3,
+        3.59
+      ],
+      "widthMetres": 0.36,
+      "heightMetres": 0.04,
+      "colorLinear": [
+        1,
+        0.66,
+        0.34
+      ],
+      "blenderWatts": 18,
+      "unityIntensity": 26.0
+    },
+    {
+      "name": "Practical_2",
+      "positionUnity": [
+        1.51,
+        1.87,
+        4.14
+      ],
+      "targetUnity": [
+        1.51,
+        0.3,
+        3.6399999999999997
+      ],
+      "widthMetres": 0.25,
+      "heightMetres": 0.04,
+      "colorLinear": [
+        1,
+        0.66,
+        0.34
+      ],
+      "blenderWatts": 13,
+      "unityIntensity": 16.0
+    },
+    {
+      "name": "Practical_3",
+      "positionUnity": [
+        3.27,
+        2.19,
+        4.09
+      ],
+      "targetUnity": [
+        3.27,
+        0.3,
+        3.59
+      ],
+      "widthMetres": 0.76,
+      "heightMetres": 0.04,
+      "colorLinear": [
+        1,
+        0.66,
+        0.34
+      ],
+      "blenderWatts": 33,
+      "unityIntensity": 48.0
+    },
+    {
+      "name": "Practical_4",
+      "positionUnity": [
+        5.16,
+        2.02,
+        3.76
+      ],
+      "targetUnity": [
+        5.16,
+        0.3,
+        3.26
+      ],
+      "widthMetres": 0.54,
+      "heightMetres": 0.04,
+      "colorLinear": [
+        1,
+        0.66,
+        0.34
+      ],
+      "blenderWatts": 20,
+      "unityIntensity": 30.0
+    },
+    {
+      "name": "Practical_5",
+      "positionUnity": [
+        -1.1,
+        2.92,
+        3.96
+      ],
+      "targetUnity": [
+        -1.1,
+        0.3,
+        3.46
+      ],
+      "widthMetres": 0.42,
+      "heightMetres": 0.04,
+      "colorLinear": [
+        1,
+        0.66,
+        0.34
+      ],
+      "blenderWatts": 22,
+      "unityIntensity": 34.0
+    },
+    {
+      "name": "DoorSoftAmbient",
+      "positionUnity": [
+        0.2,
+        2.9,
+        -2.8
+      ],
+      "targetUnity": [
+        0.2,
+        0.7,
+        3.7
+      ],
+      "widthMetres": 5,
+      "heightMetres": 3,
+      "colorLinear": [
+        0.85,
+        0.9,
+        1
+      ],
+      "blenderWatts": 360,
+      "unityIntensity": 10.5
+    }
+  ],
+  "ambientColorLinear": [
+    0.1,
+    0.12,
+    0.16
+  ],
+  "ambientStrength": 0.1,
+  "reviewOnly": true,
+  "visualAccepted": false,
+  "reflectionProbe": {
+    "positionUnity": [
+      0,
+      1,
+      0
+    ],
+    "sizeMetres": [
+      12,
+      3.8,
+      12
+    ],
+    "boxProjection": true,
+    "near": 0.05,
+    "far": 30,
+    "suggestedResolution": 256
+  },
+  "unityCalibrationStatus": "second-measured-iteration-after-underexposed-native-render",
+  "unityLightmapTexelsPerMetre": 24,
+  "unityLightmapMaxSize": 2048,
+  "unityDirectSamples": 64,
+  "unityIndirectSamples": 256,
+  "diagnosticFillIntensity": 0,
+  "revision": "native-calibration-03-post-resources",
+  "postExposure": 1.4,
+  "bloomIntensity": 0.35,
+  "toneMappingAces": true
+}

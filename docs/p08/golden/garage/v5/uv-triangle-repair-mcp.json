@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"RB_Golden_Garage.blend\"\nGARAGE_V5_TRIANGLE_REPAIR {\"objects\": [{\"name\": \"Garage_L0_BackPanel_0_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2173301797702152e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_1_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2164413192294887e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_2_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.216363216371974e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_3_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2170502259323257e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_4_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2169348337920383e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_5_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2164732083874696e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_6_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2165501459548977e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_7_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2174828327715659e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BenchLeftPedestal\", \"additionalFacesReprojected\": 116, \"minimumRepairedUvCross\": 4.857066926433617e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BenchRightPedestal\", \"additionalFacesReprojected\": 76, \"minimumRepairedUvCross\": 3.807536040767445e-05, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_DisplayHelmet\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 2.821290763677098e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_LeftRollingChest\", \"additionalFacesReprojected\": 118, \"minimumRepairedUvCross\": 4.854635449191846e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_RightRollingChest\", \"additionalFacesReprojected\": 118, \"minimumRepairedUvCross\": 4.85588770970935e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_StorageRack\", \"additionalFacesReprojected\": 1, \"minimumRepairedUvCross\": 4.4797877762903227e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_ToolboardAndWrenches\", \"additionalFacesReprojected\": 96, \"minimumRepairedUvCross\": 3.8412034655266325e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_BenchLeftPedestal\", \"additionalFacesReprojected\": 24, \"minimumRepairedUvCross\": 3.6972045904803963e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_BenchRightPedestal\", \"additionalFacesReprojected\": 20, \"minimumRepairedUvCross\": 9.415380106503335e-05, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_DisplayHelmet\", \"additionalFacesReprojected\": 3, \"minimumRepairedUvCross\": 5.78259914618684e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_LeftRollingChest\", \"additionalFacesReprojected\": 76, \"minimumRepairedUvCross\": 9.415218279684723e-05, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_RightRollingChest\", \"additionalFacesReprojected\": 50, \"minimumRepairedUvCross\": 3.6976611568206863e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_ToolboardAndWrenches\", \"additionalFacesReprojected\": 100, \"minimumRepairedUvCross\": 7.871413686189044e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L2_DisplayHelmet\", \"additionalFacesReprojected\": 4, \"minimumRepairedUvCross\": 7.792651928184569e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L2_LeftRollingChest\", \"additionalFacesReprojected\": 4, \"minimumRepairedUvCross\": 0.0011855895525059168, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L2_RightRollingChest\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 0.0011855731224841293, \"normalsVerticesLightmapExact\": true}], \"additionalFaces\": 886, \"geometryModified\": false}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"RB_Golden_Garage.blend\"\nGARAGE_V5_TRIANGLE_REPAIR {\"objects\": [{\"name\": \"Garage_L0_BackPanel_0_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2173301797702152e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_1_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2164413192294887e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_2_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.216363216371974e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_3_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2170502259323257e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_4_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2169348337920383e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_5_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2164732083874696e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_6_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2165501459548977e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BackPanel_7_0\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 1.2174828327715659e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BenchLeftPedestal\", \"additionalFacesReprojected\": 116, \"minimumRepairedUvCross\": 4.857066926433617e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_BenchRightPedestal\", \"additionalFacesReprojected\": 76, \"minimumRepairedUvCross\": 3.807536040767445e-05, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_DisplayHelmet\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 2.821290763677098e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_LeftRollingChest\", \"additionalFacesReprojected\": 118, \"minimumRepairedUvCross\": 4.854635449191846e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_RightRollingChest\", \"additionalFacesReprojected\": 118, \"minimumRepairedUvCross\": 4.85588770970935e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_StorageRack\", \"additionalFacesReprojected\": 1, \"minimumRepairedUvCross\": 4.4797877762903227e-07, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L0_ToolboardAndWrenches\", \"additionalFacesReprojected\": 96, \"minimumRepairedUvCross\": 3.8412034655266325e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_BenchLeftPedestal\", \"additionalFacesReprojected\": 24, \"minimumRepairedUvCross\": 3.6972045904803963e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_BenchRightPedestal\", \"additionalFacesReprojected\": 20, \"minimumRepairedUvCross\": 9.415380106503335e-05, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_DisplayHelmet\", \"additionalFacesReprojected\": 3, \"minimumRepairedUvCross\": 5.78259914618684e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_LeftRollingChest\", \"additionalFacesReprojected\": 76, \"minimumRepairedUvCross\": 9.415218279684723e-05, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_RightRollingChest\", \"additionalFacesReprojected\": 50, \"minimumRepairedUvCross\": 3.6976611568206863e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L1_ToolboardAndWrenches\", \"additionalFacesReprojected\": 100, \"minimumRepairedUvCross\": 7.871413686189044e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L2_DisplayHelmet\", \"additionalFacesReprojected\": 4, \"minimumRepairedUvCross\": 7.792651928184569e-06, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L2_LeftRollingChest\", \"additionalFacesReprojected\": 4, \"minimumRepairedUvCross\": 0.0011855895525059168, \"normalsVerticesLightmapExact\": true}, {\"name\": \"Garage_L2_RightRollingChest\", \"additionalFacesReprojected\": 8, \"minimumRepairedUvCross\": 0.0011855731224841293, \"normalsVerticesLightmapExact\": true}], \"additionalFaces\": 886, \"geometryModified\": false}\n"
+    },
+    "isError": false
+  }
+}

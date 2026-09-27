@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "tests": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "unarmed_preflight_failure_performs_no_restoration_mutations",
+      "passed": true
+    },
+    {
+      "name": "setter_partial_failure_is_rolled_back",
+      "passed": true
+    },
+    {
+      "name": "only_registered_owned_state_restores_in_reverse_order",
+      "passed": true
+    },
+    {
+      "name": "one_restore_failure_does_not_abandon_later_cleanup",
+      "passed": true
+    },
+    {
+      "name": "scene_only_scope_does_not_claim_setting_changes",
+      "passed": true
+    },
+    {
+      "name": "restore_is_idempotent_and_closed_scope_rejects_writes",
+      "passed": true
+    }
+  ],
+  "scope": "Actual pure rollback-journal behavior. No Unity Editor lifecycle or asset save was invoked."
+}

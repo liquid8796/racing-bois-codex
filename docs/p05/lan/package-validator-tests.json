@@ -1,0 +1,80 @@
+﻿{
+    "passed":  true,
+    "cases":  [
+                  {
+                      "name":  "native Brotli entrypoint refused for HTTP LAN",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "real gzip fixture and bundled native self-test",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "external CDN loader refused",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "additional Brotli script refused for HTTP LAN",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "renamed non-gzip bytes refused",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "corrupt gzip trailer refused",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "payload tamper refused",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "external runtime dependency refused",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "generated address page and private data do not invalidate immutable hashes",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "publishing player data refused",
+                      "passed":  true
+                  },
+                  {
+                      "name":  "publisher never overwrites existing output",
+                      "passed":  true
+                  }
+              ],
+    "fixture":  "D:\\Project\\Unity\\racing-bois\\_local\\p05-package-validation-20260921094219093",
+    "sourcePackage":  "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\win-x64-p03p04-4c12566",
+    "gzipConversion":  {
+                           "scope":  "Copied previous-phase test fixture transcoded to actual gzip; not a P05 build or browser acceptance",
+                           "web":  "D:\\Project\\Unity\\racing-bois\\_local\\p05-package-validation-20260921094219093\\web",
+                           "files":  [
+                                         {
+                                             "source":  "Build/54f3a115cb1dea61e73d0ce1476d2df0.data.br",
+                                             "fixture":  "Build/54f3a115cb1dea61e73d0ce1476d2df0.data.gz",
+                                             "decodedBytes":  10182679,
+                                             "decodedSha256":  "c563bb29924c661536d8fd71a9a24c262bf048052162bc7cfa01898954c27dc0",
+                                             "gzipSha256":  "2a2f977edf9feb283c0892ca341f170bc3112e2bee0627d282aa10262448c13f"
+                                         },
+                                         {
+                                             "source":  "Build/40ab938151b6f1675c6f8980c8c9abbe.framework.js.br",
+                                             "fixture":  "Build/40ab938151b6f1675c6f8980c8c9abbe.framework.js.gz",
+                                             "decodedBytes":  330871,
+                                             "decodedSha256":  "7b30cb99ea13809cc2964dab61cc3f68b96b7cea98e4ad47cee517b76e422caf",
+                                             "gzipSha256":  "b9d3fab4d7b785acef9dc171e5f806125706f44e2f11954dc64e78df51fcdcfb"
+                                         },
+                                         {
+                                             "source":  "Build/29a9628f7a90c8346da4b9867fd2499c.wasm.br",
+                                             "fixture":  "Build/29a9628f7a90c8346da4b9867fd2499c.wasm.gz",
+                                             "decodedBytes":  43051017,
+                                             "decodedSha256":  "754364f15cfbed9d6ee3ec40865dc6b5b623bf1594158fa44aafb13552b2b499",
+                                             "gzipSha256":  "cd32c7feef3c172369fb7ea75241479bf122743d9c8782821789c7f57e0790a2"
+                                         }
+                                     ]
+                       },
+    "actualP05PackagePublished":  false,
+    "scope":  "P05 packaging failure gates using a copied previous-phase runtime and its actual Brotli payloads transcoded to gzip. This is not final P05 native/browser acceptance or a production compression conversion."
+}

@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "packageRoot": "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\win-x64-p06-efce749",
+  "bundledRuntime": true,
+  "immutableFileCount": 368,
+  "nativeSelfTest": {
+    "status": "PASS",
+    "architecture": "X64",
+    "framework": ".NET 10.0.9",
+    "ticks": 300,
+    "distanceMillimeters": 150500,
+    "speedMillimetersPerSecond": 60000,
+    "protocolRoundtrip": 1,
+    "raceProtocolRoundtrip": 2,
+    "raceTick": 300,
+    "raceDistanceMillimeters": 105251,
+    "multiplayerProtocolRoundtrip": 3,
+    "exactTickInputSmoke": true,
+    "scope": "No listener, database or filesystem writes; P02 golden, P03/P04 authority and P05 strict JSON/exact-tick input smoke."
+  },
+  "web": {
+    "passed": true,
+    "webRoot": "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\win-x64-p06-efce749\\web",
+    "entrypointDependenciesLocal": true,
+    "externalCssFonts": 0,
+    "verifiedDependencies": [
+      {
+        "path": "Build/e13b9f6e8e04257f0db4aa5fdb6a7964.data.gz",
+        "bytes": 10301343,
+        "sha256": "bc6882dadd68d94b45820fc6803fc1166ebcc7b716f181b662ba73141e708895"
+      },
+      {
+        "path": "Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+        "bytes": 75274,
+        "sha256": "e557714aa246b54d894bf50e04c26e79c2673b15ab2ebeecb70f3db36b21b9b2"
+      },
+      {
+        "path": "Build/1daafd5f103bc222492e98e8a2c34a9d.wasm.gz",
+        "bytes": 11123102,
+        "sha256": "cace006c2f1fbac6ab7b5e2e44ca3ab753367a05fe923ba5eaac75ce8bee9aad"
+      },
+      {
+        "path": "Build/1624d6daac4df9ca5e5e9050e2102dbf.loader.js",
+        "bytes": 27222,
+        "sha256": "c51052d44e7561345a3abe5d66ff59ca553983207e2bc4dc31237e6d16ddbc2b"
+      }
+    ],
+    "httpCompatibilityRequired": true,
+    "httpCompressionCompatible": true,
+    "compression": [
+      {
+        "path": "Build/e13b9f6e8e04257f0db4aa5fdb6a7964.data.gz",
+        "format": "gzip",
+        "httpCompatible": true,
+        "gzipDecodedBytes": 17524404
+      },
+      {
+        "path": "Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+        "format": "gzip",
+        "httpCompatible": true,
+        "gzipDecodedBytes": 332079
+      },
+      {
+        "path": "Build/1daafd5f103bc222492e98e8a2c34a9d.wasm.gz",
+        "format": "gzip",
+        "httpCompatible": true,
+        "gzipDecodedBytes": 44134132
+      },
+      {
+        "path": "Build/1624d6daac4df9ca5e5e9050e2102dbf.loader.js",
+        "format": "uncompressed",
+        "httpCompatible": true,
+        "gzipDecodedBytes": null
+      }
+    ],
+    "compressionReference": "https://docs.unity3d.com/6000.0/Documentation/Manual/webgl-deploying.html",
+    "scope": "Static entrypoint/CSS dependencies, compression-format compatibility and exact bundled file hashes. Gzip bytes are decoded locally. This does not validate live HTTP Content-Encoding headers, two-machine cold-cache offline browser execution or every runtime network request inside Unity code."
+  },
+  "offlineQr": "Vendored MIT JavaScript; generated address page and SVG are local, without CDN or runtime downloads.",
+  "acceptance": "Packaging/static dependency/native smoke only. No global network/firewall changes were made; independent two-machine LAN cold-cache acceptance remains unverified."
+}

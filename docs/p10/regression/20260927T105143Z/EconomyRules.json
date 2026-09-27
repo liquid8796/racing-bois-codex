@@ -1,0 +1,84 @@
+{
+  "generatedAtUtc": "2026-09-27T10:52:23.5324104+00:00",
+  "passed": true,
+  "tests": 11,
+  "failures": 0,
+  "scope": "Pure shared catalog/quote/campaign rules only; not database transaction, Unity/browser, or original full-campaign runtime proof.",
+  "runtime": ".NET 10.0.9",
+  "sourceFiles": [
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/BikeCatalog.cs",
+      "sha256": "c498d3946c66c2643446e8d67e57ad53b61820bb3a957d1521c8d59951e2b60c"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/EconomyRules.cs",
+      "sha256": "85c3be9e1da195c3031b62d92d0a2dfe70d4c7de88d1610cbfacf18bb6bdd05a"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CampaignCatalog.cs",
+      "sha256": "1d16d05c332cef2faa97acae0c75622a37b24dc24b20a3953937f6f5c65cabe3"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CampaignRules.cs",
+      "sha256": "4679cd3f35a3c3153a923f65b81b1c72497cad3a6bc1bf021faef3b4ec44812c"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/GameplayRules.cs",
+      "sha256": "67e09f04aaf06f13fb762c8a7c413c42270ae6c86a257454b45d9727b8f52575"
+    },
+    {
+      "path": "docs/reverse-engineering/logic/economy_tables.json",
+      "sha256": "1fdb4ad6f525643b04a9c47ff0d32abebe784ec4c2ba42a247ebc0c205563d6d"
+    },
+    {
+      "path": "src/Tests/RacingBois.EconomyRules.Tests/Program.cs",
+      "sha256": "a7fe3998ea375dd06af065abf64418708b9f6016e3c66baf9122efd195cf9aeb"
+    }
+  ],
+  "results": [
+    {
+      "name": "reference_price_trade_and_repair_tables_match_all_15_extracted_rows",
+      "passed": true
+    },
+    {
+      "name": "stable_unique_case_sensitive_ids_and_unknown_ids_do_not_fall_back",
+      "passed": true
+    },
+    {
+      "name": "catalog_collections_cannot_be_mutated_through_collection_interfaces",
+      "passed": true
+    },
+    {
+      "name": "p08_catalog_maps_stable_prices_to_authored_handling_and_art_gate",
+      "passed": true
+    },
+    {
+      "name": "integer_quotes_round_down_and_handle_maximum_valid_int",
+      "passed": true
+    },
+    {
+      "name": "reference_reward_schedule_matches_all_70_level_position_combinations",
+      "passed": true
+    },
+    {
+      "name": "invalid_reward_inputs_fail_instead_of_clamping_to_a_payable_result",
+      "passed": true
+    },
+    {
+      "name": "logical_25_slot_campaign_advances_only_after_five_distinct_qualified_courses",
+      "passed": true
+    },
+    {
+      "name": "qualification_top_three_boundary_is_independent_of_prize_eligibility",
+      "passed": true
+    },
+    {
+      "name": "invalid_or_unsettled_progress_is_rejected_without_mask_normalization",
+      "passed": true
+    },
+    {
+      "name": "authored_routes_require_matching_production_availability_gate",
+      "passed": true
+    }
+  ]
+}

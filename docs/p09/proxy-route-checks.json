@@ -1,0 +1,32 @@
+[
+  {
+    "passed": true,
+    "status": 200,
+    "path": "/ready"
+  },
+  {
+    "passed": true,
+    "status": 404,
+    "path": "/health"
+  },
+  {
+    "passed": true,
+    "status": 404,
+    "path": "/health/"
+  },
+  {
+    "passed": true,
+    "status": 404,
+    "path": "/multiplayer/health/"
+  },
+  {
+    "passed": true,
+    "status": 404,
+    "path": "/HEALTH"
+  },
+  {
+    "passed": true,
+    "status": 404,
+    "path": "/realm.sqlite3"
+  }
+]

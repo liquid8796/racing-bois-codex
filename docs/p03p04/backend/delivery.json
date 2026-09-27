@@ -1,0 +1,107 @@
+{
+  "generatedUtc": "2026-09-21T03:51:32.430566+00:00",
+  "status": "PASS_WITH_ARM_RUNTIME_NOT_RUN",
+  "runtimeCodeCommit": "130fa9b",
+  "backendSourceHash": "5a04e712b80300518a9e35053ae2a066bedefe2dc467a841c29044c44b6147aa",
+  "webRoot": "Build/Web-p03p04-v2",
+  "webPayloadMatchedInBothPackages": true,
+  "webFiles": [
+    {
+      "path": "Build/40ab938151b6f1675c6f8980c8c9abbe.framework.js.br",
+      "bytes": 66069,
+      "sha256": "c105ad63b0049cee5ca1ad9d67d402708ebf5bbc47f10f4c278700e2be30e61b"
+    },
+    {
+      "path": "Build/4e4c07fca77febccc2c4b62394799079.data.br",
+      "bytes": 3177900,
+      "sha256": "46afc7b3feeaf4a7d375de85736f0002727860d109571265888fad390ae7a62c"
+    },
+    {
+      "path": "Build/80657cb809615575c7e66113562da74d.loader.js",
+      "bytes": 27222,
+      "sha256": "24b8099455e4cf92506423b819d8e4a936bc5dd05cbc53c790398b35bf828934"
+    },
+    {
+      "path": "Build/eeb3dc944563bb4063ca0f680a811787.wasm.br",
+      "bytes": 7763204,
+      "sha256": "0c6d1e3d4ac3efd46aea042e5841a1b03da5b15e437806ae79ed15e9050eed54"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3237,
+      "sha256": "09355149f2e393577e6882573935d9b1a679e7c1544bb47446a4342c8a10e36e"
+    }
+  ],
+  "windows": {
+    "directory": "Build/LanHost/win-x64-p03p04-130fa9b",
+    "selfContained": true,
+    "selfTest": {
+      "status": "PASS",
+      "architecture": "X64",
+      "framework": ".NET 10.0.9",
+      "ticks": 300,
+      "distanceMillimeters": 150500,
+      "speedMillimetersPerSecond": 60000,
+      "protocolRoundtrip": 1,
+      "raceProtocolRoundtrip": 2,
+      "raceTick": 300,
+      "raceDistanceMillimeters": 105251,
+      "scope": "No listener, database or filesystem writes; P02 golden and P03/P04 authority/JSON contract smoke only."
+    },
+    "archive": {
+      "path": "Build/Packages/RacingBois-P03P04-win-x64-130fa9b.zip",
+      "bytes": 60840837,
+      "sha256": "17b9690f84ee42e0bcd4a6ada354edef954a125138d4013870400ad4d19638d2"
+    },
+    "archiveEveryFileVerified": true,
+    "host": {
+      "path": "Build/LanHost/win-x64-p03p04-130fa9b/RacingBois.Server.Host.exe",
+      "bytes": 162816,
+      "sha256": "43afe1662f7e57a335a1839c90d2524a2657db73d813dca7011a4b3df8b3c4b7"
+    }
+  },
+  "linuxArm64": {
+    "directory": "Build/LanHost/linux-arm64-p03p04-130fa9b",
+    "selfContained": true,
+    "elfMachine": "AArch64 (183)",
+    "staticChecksPassed": true,
+    "selfTest": {
+      "status": "NOT_RUN",
+      "reason": "Current host is Windows x64. No ARM64 runtime execution or OCI writes were performed."
+    },
+    "archive": {
+      "path": "Build/Packages/RacingBois-P03P04-linux-arm64-130fa9b.tar.gz",
+      "bytes": 55946686,
+      "sha256": "f4400bc08beae085e7bdd874fbb817d24f0630c2c413f1de8f130cd39c09a29a"
+    },
+    "archiveEveryFileVerified": true,
+    "executablePermissionsVerified": true,
+    "host": {
+      "path": "Build/LanHost/linux-arm64-p03p04-130fa9b/RacingBois.Server.Host",
+      "bytes": 77512,
+      "sha256": "cc900591c3672532541983584c7a3ac4e9bc15cb7814b92b71fd17ade8abba77"
+    }
+  },
+  "demo": {
+    "url": "https://localhost:7778/",
+    "pid": 5292,
+    "exe": "Build/LanHost/win-x64-p03p04-130fa9b/RacingBois.Server.Host.exe",
+    "startTimeUtc": "2026-09-21T03:50:41.7272849Z",
+    "webRoot": "Build/LanHost/win-x64-p03p04-130fa9b/web",
+    "health": {
+      "status": "ok",
+      "phase": "P03/P04 gameplay authority",
+      "tick": 3026,
+      "players": 0,
+      "protocolVersion": 2,
+      "simulationRulesVersion": 2,
+      "legacyProtocolVersion": 1,
+      "rejectedCommands": 0,
+      "slowTicks": 0,
+      "maximumStepMilliseconds": 2.084
+    },
+    "httpIndexStatus": 200,
+    "certificateValidation": "System trust, no bypass"
+  },
+  "limitations": "Browser gameplay acceptance is recorded separately. The Linux ARM64 package has only compile/static/archive validation here; run --SelfTest on ARM64 before deployment."
+}

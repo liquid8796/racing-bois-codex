@@ -1,0 +1,363 @@
+{
+  "materials": [
+    {
+      "name": "Garage_Floor",
+      "coatWeight": 0.75,
+      "coatRoughness": 0.18,
+      "coatIor": 1.5,
+      "baseNormalStrength": 0.3,
+      "baseRoughnessAndMetallicTextureUnchanged": true,
+      "unityShader": "Universal Render Pipeline/Complex Lit",
+      "unityClearCoatMask": 0.75,
+      "unityClearCoatSmoothness": 0.8200000000000001,
+      "unityNormalScale": 0.3
+    },
+    {
+      "name": "Garage_PowderSteel",
+      "coatWeight": 0.1,
+      "coatRoughness": 0.28,
+      "coatIor": 1.5,
+      "baseNormalStrength": 1.0,
+      "baseRoughnessAndMetallicTextureUnchanged": true,
+      "unityShader": "Universal Render Pipeline/Complex Lit",
+      "unityClearCoatMask": 0.1,
+      "unityClearCoatSmoothness": 0.72,
+      "unityNormalScale": 1.0
+    },
+    {
+      "name": "Garage_HelmetShell",
+      "coatWeight": 0.8,
+      "coatRoughness": 0.1,
+      "coatIor": 1.5,
+      "baseNormalStrength": 1.0,
+      "baseRoughnessAndMetallicTextureUnchanged": true,
+      "unityShader": "Universal Render Pipeline/Complex Lit",
+      "unityClearCoatMask": 0.8,
+      "unityClearCoatSmoothness": 0.9,
+      "unityNormalScale": 1.0
+    }
+  ],
+  "packedImages": [
+    {
+      "name": "Garage_Concrete_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Concrete_Roughness.png",
+      "bytes": 2481595,
+      "packedFnv1a64": "3cef666219b15754"
+    },
+    {
+      "name": "Garage_Cardboard_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cardboard_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_Wood_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Wood_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_HelmetShell_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_HelmetShell_BaseColor.png",
+      "bytes": 150056,
+      "packedFnv1a64": "c2530f34eb66319d"
+    },
+    {
+      "name": "Garage_NearConcrete_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_NearConcrete_MetallicSmoothness.png",
+      "bytes": 3417561,
+      "packedFnv1a64": "d465e71dc2f86e06"
+    },
+    {
+      "name": "Garage_Lamp_Emission.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Lamp_Emission.png",
+      "bytes": 1880,
+      "packedFnv1a64": "e12f4fe4c5b60050"
+    },
+    {
+      "name": "Garage_PowderSteel_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_PowderSteel_BaseColor.png",
+      "bytes": 149827,
+      "packedFnv1a64": "19978e9260dc104d"
+    },
+    {
+      "name": "Garage_PowderSteel_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_PowderSteel_Roughness.png",
+      "bytes": 147826,
+      "packedFnv1a64": "0453918293d990c0"
+    },
+    {
+      "name": "Garage_ToolSteel_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_ToolSteel_BaseColor.png",
+      "bytes": 149902,
+      "packedFnv1a64": "0bf4934df0d884e7"
+    },
+    {
+      "name": "Garage_Amber_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Amber_BaseColor.png",
+      "bytes": 150110,
+      "packedFnv1a64": "46bd6583c35d1dd7"
+    },
+    {
+      "name": "Garage_Rubber_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Rubber_MetallicSmoothness.png",
+      "bytes": 204204,
+      "packedFnv1a64": "ef647b6270ef4c5c"
+    },
+    {
+      "name": "Garage_Cable_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cable_MetallicSmoothness.png",
+      "bytes": 204344,
+      "packedFnv1a64": "b235d149b73e53da"
+    },
+    {
+      "name": "Garage_HelmetShell_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_HelmetShell_Roughness.png",
+      "bytes": 147906,
+      "packedFnv1a64": "534a5b413ce56ffd"
+    },
+    {
+      "name": "Garage_Visor_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Visor_MetallicSmoothness.png",
+      "bytes": 203273,
+      "packedFnv1a64": "ef23d60aa94cb970"
+    },
+    {
+      "name": "Garage_Floor_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Floor_Normal.png",
+      "bytes": 6980802,
+      "packedFnv1a64": "337bc4d04d6c681e"
+    },
+    {
+      "name": "Garage_NearConcrete_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_NearConcrete_Normal.png",
+      "bytes": 5857432,
+      "packedFnv1a64": "600137e99338309d"
+    },
+    {
+      "name": "Garage_Concrete_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Concrete_MetallicSmoothness.png",
+      "bytes": 3417561,
+      "packedFnv1a64": "d465e71dc2f86e06"
+    },
+    {
+      "name": "Garage_ToolSteel_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_ToolSteel_Roughness.png",
+      "bytes": 147740,
+      "packedFnv1a64": "37ba9a2fc0738f29"
+    },
+    {
+      "name": "Garage_Cardboard_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cardboard_BaseColor.png",
+      "bytes": 149935,
+      "packedFnv1a64": "42a9b13572c399b5"
+    },
+    {
+      "name": "Garage_Amber_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Amber_Roughness.png",
+      "bytes": 147940,
+      "packedFnv1a64": "b8f5b96fe8a82f90"
+    },
+    {
+      "name": "Garage_Wood_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Wood_BaseColor.png",
+      "bytes": 149918,
+      "packedFnv1a64": "4b0b2072f264df4b"
+    },
+    {
+      "name": "Garage_Rubber_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Rubber_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_Cardboard_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cardboard_Roughness.png",
+      "bytes": 147580,
+      "packedFnv1a64": "1ccef76ce379bc8d"
+    },
+    {
+      "name": "Garage_Wood_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Wood_Roughness.png",
+      "bytes": 148246,
+      "packedFnv1a64": "658b347a8fedface"
+    },
+    {
+      "name": "Garage_Cable_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cable_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_HelmetShell_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_HelmetShell_MetallicSmoothness.png",
+      "bytes": 204037,
+      "packedFnv1a64": "9fe7dae995c58007"
+    },
+    {
+      "name": "Garage_Visor_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Visor_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_Floor_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Floor_BaseColor.png",
+      "bytes": 7382981,
+      "packedFnv1a64": "4bb880964d70ff29"
+    },
+    {
+      "name": "Garage_Lamp_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Lamp_MetallicSmoothness.png",
+      "bytes": 204160,
+      "packedFnv1a64": "52699d88e5d5b227"
+    },
+    {
+      "name": "Garage_Lamp_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Lamp_Roughness.png",
+      "bytes": 147804,
+      "packedFnv1a64": "523e18a223ffeee9"
+    },
+    {
+      "name": "Garage_Concrete_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Concrete_Normal.png",
+      "bytes": 5857432,
+      "packedFnv1a64": "600137e99338309d"
+    },
+    {
+      "name": "Garage_PowderSteel_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_PowderSteel_MetallicSmoothness.png",
+      "bytes": 204484,
+      "packedFnv1a64": "d470b34a46f1d756"
+    },
+    {
+      "name": "Garage_Floor_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Floor_Roughness.png",
+      "bytes": 1264915,
+      "packedFnv1a64": "4f994a0eec8df2c8"
+    },
+    {
+      "name": "Garage_NearConcrete_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_NearConcrete_BaseColor.png",
+      "bytes": 5172065,
+      "packedFnv1a64": "38139053b2febfd4"
+    },
+    {
+      "name": "Garage_Lamp_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Lamp_BaseColor.png",
+      "bytes": 149516,
+      "packedFnv1a64": "35f93bb2e7d162de"
+    },
+    {
+      "name": "Garage_ToolSteel_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_ToolSteel_MetallicSmoothness.png",
+      "bytes": 204049,
+      "packedFnv1a64": "ad9598d5281ecf11"
+    },
+    {
+      "name": "Garage_Amber_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Amber_MetallicSmoothness.png",
+      "bytes": 204563,
+      "packedFnv1a64": "d341dae5b155f3c0"
+    },
+    {
+      "name": "Garage_Rubber_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Rubber_BaseColor.png",
+      "bytes": 149010,
+      "packedFnv1a64": "f42c5d8fc1779658"
+    },
+    {
+      "name": "Garage_HelmetShell_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_HelmetShell_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_NearConcrete_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_NearConcrete_Roughness.png",
+      "bytes": 2481595,
+      "packedFnv1a64": "3cef666219b15754"
+    },
+    {
+      "name": "Garage_Lamp_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Lamp_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_PowderSteel_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_PowderSteel_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_Cardboard_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cardboard_MetallicSmoothness.png",
+      "bytes": 203392,
+      "packedFnv1a64": "b55bec40190f8964"
+    },
+    {
+      "name": "Garage_Wood_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Wood_MetallicSmoothness.png",
+      "bytes": 203213,
+      "packedFnv1a64": "ba8f8467fbaba420"
+    },
+    {
+      "name": "Garage_Rubber_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Rubber_Roughness.png",
+      "bytes": 147874,
+      "packedFnv1a64": "3737c965026e5bfa"
+    },
+    {
+      "name": "Garage_Cable_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cable_BaseColor.png",
+      "bytes": 149379,
+      "packedFnv1a64": "4d0ecb6a983f3aa2"
+    },
+    {
+      "name": "Garage_Visor_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Visor_BaseColor.png",
+      "bytes": 148683,
+      "packedFnv1a64": "8c4f9a78cf1bb9ca"
+    },
+    {
+      "name": "Garage_Concrete_BaseColor.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Concrete_BaseColor.png",
+      "bytes": 6467227,
+      "packedFnv1a64": "50fd4aaeb767eb0c"
+    },
+    {
+      "name": "Garage_ToolSteel_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_ToolSteel_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_Amber_Normal.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Amber_Normal.png",
+      "bytes": 1879,
+      "packedFnv1a64": "792e134f284971c9"
+    },
+    {
+      "name": "Garage_Cable_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Cable_Roughness.png",
+      "bytes": 147996,
+      "packedFnv1a64": "edb99caa78f5a108"
+    },
+    {
+      "name": "Garage_Visor_Roughness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Visor_Roughness.png",
+      "bytes": 147580,
+      "packedFnv1a64": "0d881ca6a23827fb"
+    },
+    {
+      "name": "Garage_Floor_MetallicSmoothness.png",
+      "filepath": "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Garage\\V2\\Textures\\Garage_Floor_MetallicSmoothness.png",
+      "bytes": 1773620,
+      "packedFnv1a64": "945737d9a3e97768"
+    }
+  ],
+  "texturesEdited": false,
+  "geometryEdited": false,
+  "visualAccepted": false
+}

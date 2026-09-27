@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "source": {
+    "path": "ArtSource/P08/Golden/Garage/V5/RB_Golden_Garage.blend",
+    "sha256": "b7eddebc4be6808262cee601f6737a949c8535b6b98abd7f81b0ab2b1fa0eb79"
+  },
+  "fbx": {
+    "path": "_local/p08-garage-v5-staging/RB_Golden_Garage.fbx",
+    "sha256": "b881bd2b44bc2de1bbb293e9e1e18689f005a7e3b0f00b297c5116baea6a5ee2"
+  },
+  "stagingOnly": true,
+  "assetsWritten": false,
+  "nativeImported": false,
+  "visualAccepted": false,
+  "integration": "Root must copy the FBX to a fresh Assets/RacingBois/Art/P08/Golden/Garage/V5 path, preserve SHA256, and rebind descriptor/mapping FBX paths + mapping hash before Golden importer. Do not import staged descriptor as-is.",
+  "uvContract": {
+    "uv0": "UV0_MetricTile: intentional repeated metric texture projection/overlap; finite nondegenerate triangles",
+    "uv1": "LightmapUV on60LOD0 meshes only; exact V4 data retained, preserve authored UVs",
+    "lowerLods": "One primary UV channel; use actual baked light probes"
+  },
+  "triangles": {
+    "lod0": 132592,
+    "lod1": 28712,
+    "lod2": 4508
+  },
+  "defaultUnityMaterials": {
+    "shader": "Universal Render Pipeline/Lit",
+    "textures": "Identical hash-bound V2 PNGs from reused descriptor; no new textures",
+    "metallicWorkflow": 1,
+    "smoothnessMultiplier": 1,
+    "metallicMultiplier": 1,
+    "smoothnessChannel": "metallic map alpha",
+    "floorNormalScale": 0.55,
+    "clearCoat": 0,
+    "normalConvention": "OpenGL, imported NormalMap",
+    "specularHighlights": true,
+    "environmentReflections": true,
+    "wrapMode": "Repeat for primary metric tiling"
+  },
+  "coatComparison": {
+    "source": {
+      "path": "ArtSource/P08/Golden/Garage/V5/RB_Golden_Garage_CoatComparison.blend",
+      "sha256": "e233262ae6afe94a397e8f16f6ff7ed64aebb27b719d21e734fa15dd3acdae3c"
+    },
+    "render": {
+      "path": "docs/p08/golden/garage/v5/coated-floor.png",
+      "sha256": "b5726d3f00eead0d5a739bcd6c5433053c562e74260626ed15e09109ae661f12"
+    },
+    "accepted": false,
+    "reason": "Visually over-smooth/specular compared with the textured locked floor; retained as comparison only. Do not substitute it to compensate for missing native area-light specular.",
+    "shaderIfReproducingComparisonOnly": "Universal Render Pipeline/Complex Lit",
+    "clearCoatKeyword": "_CLEARCOAT (no clearcoat texture)",
+    "settings": "material-comparison-settings.json"
+  },
+  "lockedConcepts": [
+    {
+      "path": "ArtSource/Concepts/P08/Golden/garage-environment-v1.png",
+      "sha256": "ce8cb09ba3eec565f36ff764f9b7dfe32ef7b33abaf4d0634ce3c8d20181d386"
+    },
+    {
+      "path": "ArtSource/Concepts/P08/Golden/UI/garage-v2.png",
+      "sha256": "65b237da2f4a13b554de13d5a70ec2c3aed995e9cba5c95af6601ca7d0201ef5"
+    }
+  ],
+  "preservedInputs": [
+    {
+      "path": "ArtSource/P08/Golden/Garage/V3/RB_Golden_Garage.blend",
+      "sha256": "7455c5b8a27371de50b72388dd2668edfdeaaa83664e590cae1f426485c293ea"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Garage/V4/RB_Golden_Garage.blend",
+      "sha256": "a676eeab8e63fb4b53d8a277267bee07bc7f206468793395dd537a68d50a1594"
+    },
+    {
+      "path": "ArtSource/Weapons/RB_Club.blend",
+      "sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f"
+    }
+  ],
+  "readme": "docs/p08/golden/garage/v5/README.md",
+  "finalSourceRender": {
+    "path": "docs/p08/golden/garage/v5/uv-final-original-materials.png",
+    "sha256": "cf8cbd1e10e29471d76835a5a9300b0822269c720e5044787852b126cd1f22ac"
+  }
+}

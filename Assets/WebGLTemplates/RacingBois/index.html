@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b141b">
+  <title>Racing Bois · Canyon Run</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#0b141b;color:#e8ebe9;font:13px system-ui,sans-serif;overflow:hidden}
+    main{position:relative;width:100vw;height:calc(100vh - 30px)}canvas{display:block;width:100%;height:100%;outline:none}
+    #loading{position:absolute;inset:0;display:grid;place-content:center;gap:24px;background:#0b141b;text-align:center}
+    h1{font-size:54px;letter-spacing:3px;margin:0;font-weight:850}small{color:#a2b0ba;letter-spacing:3px}
+    progress{width:310px;height:5px;accent-color:#ff9140}#warning{position:absolute;top:20px;left:20px;right:20px;color:#ffc887;white-space:pre-wrap;pointer-events:none}
+    footer{height:30px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font-size:11px;color:#9caebc;background:#071016}
+    button{border:0;background:none;color:#e7b27e;font:inherit;cursor:pointer}button:focus-visible{outline:2px solid #ff9140}
+  </style>
+</head>
+<body>
+  <main>
+    <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} tabindex="0" aria-label="Racing Bois. W tăng tốc, S phanh, A D lái, Q E đánh, Shift Q E đá."></canvas>
+    <div id="loading"><small>RACING BOIS / CANYON RUN</small><h1>GET READY.</h1><progress id="progress" max="1" value="0"></progress><span id="loading-label">Đang chuẩn bị đường đua…</span></div>
+    <div id="warning" role="alert"></div>
+  </main>
+  <footer><span id="network-status" role="status">Đang tải Unity…</span><button id="fullscreen" type="button">Toàn màn hình ↗</button></footer>
+  <script>
+    const canvas = document.getElementById('unity-canvas');
+    const config = {
+      autoSyncPersistentDataPath: true,
+      dataUrl: 'Build/{{{ DATA_FILENAME }}}', frameworkUrl: 'Build/{{{ FRAMEWORK_FILENAME }}}',
+      codeUrl: 'Build/{{{ CODE_FILENAME }}}', streamingAssetsUrl: 'StreamingAssets',
+      companyName: {{{ JSON.stringify(COMPANY_NAME) }}}, productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+      productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}}, devicePixelRatio: Math.min(window.devicePixelRatio, 1.5),
+      showBanner: function(message,type) { if(type==='error') document.getElementById('warning').textContent=message; else console.warn(message); }
+    };
+    const loader = document.createElement('script'); loader.src='Build/{{{ LOADER_FILENAME }}}';
+    loader.onload = () => createUnityInstance(canvas,config,value => { document.getElementById('progress').value=value; })
+      .then(instance => {
+        document.getElementById('loading').style.display='none'; canvas.focus();
+        document.getElementById('fullscreen').onclick=()=>instance.SetFullscreen(1);
+      }).catch(error => { document.getElementById('loading-label').textContent='Không tải được game. Hãy tải lại trang.'; document.getElementById('warning').textContent=String(error); });
+    loader.onerror=()=>document.getElementById('loading-label').textContent='Không tìm thấy bản game. Hãy kiểm tra máy chủ.';
+    document.body.appendChild(loader);
+  </script>
+</body>
+</html>

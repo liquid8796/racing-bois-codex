@@ -1,0 +1,107 @@
+/* Racing Bois desktop direction: open scene, precise rails, ivory / graphite / amber. */
+.surface { flex-grow: 1; color: rgb(247,241,225); --amber: rgb(238,174,74); --muted: rgb(197,196,188); --panel: rgba(18,20,21,.94); --ink: rgb(18,20,21); --line: rgb(78,79,76); --danger: rgb(255,151,133); --success: rgb(157,218,183); }
+.surface, .surface .unity-text-element { -unity-font-definition: url("Fonts/NotoSans-Regular SDF.asset"); }
+.topbar { position: absolute; top: 24px; left: 38px; right: 38px; height: 64px; flex-direction: row; justify-content: space-between; align-items: center; }
+.brand-lockup, .topbar-actions, .menu-kicker { flex-direction: row; align-items: center; }
+.brand-monogram { color: rgb(247,241,225); font-size: 35px; -unity-font-style: bold; width: 70px; height: 52px; -unity-text-align: middle-left; margin-right: 14px; }
+.brand { font-size: 18px; -unity-font-style: bold; letter-spacing: 2px; }
+.brand-caption { font-size: 11px; color: var(--muted); letter-spacing: 1px; margin-top: 4px; }
+.eyebrow { font-size: 13px; letter-spacing: 1px; color: var(--muted); white-space: normal; }
+.amber { color: var(--amber); }
+.connection { font-size: 13px; color: var(--amber); background-color: var(--panel); padding: 12px; }
+.connection-warning { color: var(--danger); }
+.menu { position: absolute; left: 38px; top: 19%; bottom: 94px; width: 430px; padding: 28px; background-color: rgba(18,20,21,.88); }
+.route-number { font-size: 30px; color: var(--amber); margin-right: 16px; -unity-font-style: bold; }
+.title { font-size: 52px; -unity-font-style: bold; letter-spacing: -1px; white-space: normal; margin-top: 16px; margin-bottom: 8px; }
+.subtitle { font-size: 18px; color: var(--amber); margin-bottom: 22px; white-space: normal; }
+.description { font-size: 16px; color: var(--muted); white-space: normal; margin-bottom: 22px; }
+.menu-footnote { margin-top: 16px; padding-top: 14px; border-top-width: 1px; border-top-color: var(--line); font-size: 12px; color: var(--muted); white-space: normal; }
+Button { min-height: 48px; border-width: 1px; border-radius: 0; -unity-font-style: bold; font-size: 16px; margin: 0 0 10px 0; padding: 10px 16px; transition-property: background-color, border-color; transition-duration: .12s; }
+.primary { color: rgb(22,22,20); background-color: var(--amber); border-color: var(--amber); }
+.primary:hover { background-color: rgb(252,194,105); border-color: rgb(252,194,105); }
+.primary:active { background-color: rgb(205,142,48); }
+.secondary { background-color: rgba(18,20,21,.7); border-color: var(--line); color: rgb(247,241,225); }
+.secondary:hover, .small-button:hover { background-color: rgb(57,57,52); }
+.secondary:active, .small-button:active { background-color: rgb(78,72,59); }
+Button:focus { border-width: 2px; border-color: rgb(255,247,218); }
+Button:disabled { opacity: .5; }
+.network-panel { display: none; margin-bottom: 8px; }
+.network-open { top: 112px; bottom: 86px; }
+.network-open .title { font-size: 26px; margin-top: 8px; }
+.network-open .description, .network-open .subtitle, .network-open .menu-footnote, .network-open .menu-kicker { display: none; }
+.endpoint { min-height: 44px; height: 44px; margin: 6px 0 12px 0; font-size: 16px; }
+.endpoint .unity-base-text-field__input, .endpoint .unity-base-popup-field__input { background-color: rgb(32,34,34); color: rgb(247,241,225); border-color: var(--line); border-width: 1px; padding: 6px 10px; }
+.endpoint:focus .unity-base-text-field__input, .endpoint:focus .unity-base-popup-field__input, .endpoint .unity-base-text-field__input:focus { border-color: var(--amber); border-width: 2px; }
+.hint { font-size: 15px; color: var(--muted); white-space: normal; }
+.error-text { color: var(--danger); }
+.hud { display: none; position: absolute; top: 100px; left: 38px; right: 38px; bottom: 76px; }
+.position-block { position: absolute; top: 0; left: 0; padding: 16px 18px; min-width: 224px; background-color: rgba(18,20,21,.83); transform-origin: left top; }
+.rank { font-size: 48px; -unity-font-style: bold; }
+.progress-track { position: absolute; top: 151px; left: 18px; width: 208px; height: 4px; background-color: rgb(92,92,85); }
+.progress { height: 4px; width: 0; background-color: var(--amber); }
+.vitals { position: absolute; bottom: 0; left: 0; width: 282px; padding: 16px 18px; background-color: rgba(18,20,21,.83); transform-origin: left bottom; }
+.vitals-danger .health, .vitals-danger .condition { background-color: var(--danger); }
+.vital-row { flex-direction: row; align-items: center; margin-top: 12px; }
+.vital-label { width: 86px; font-size: 13px; color: rgb(247,241,225); }
+.bar-track { height: 6px; flex-grow: 1; background-color: rgb(92,92,85); }
+.bar { height: 6px; width: 100%; }
+.health { background-color: rgb(247,241,225); }
+.condition { background-color: var(--amber); }
+.vitals .hint { margin-top: 14px; font-size: 13px; }
+.speed-block { position: absolute; right: 0; bottom: 0; min-width: 206px; padding: 8px 20px; align-items: flex-end; background-color: rgba(18,20,21,.83); transform-origin: right bottom; }
+.speed { font-size: 88px; -unity-font-style: bold; letter-spacing: -2px; }
+.race-actions { position: absolute; top: 0; right: 0; flex-direction: row; }
+.small-button { min-height: 44px; font-size: 13px; padding: 8px 14px; margin-left: 10px; color: rgb(247,241,225); background-color: var(--panel); border-color: var(--line); }
+.topbar-actions .small-button { margin-bottom: 0; }
+.recovery { position: absolute; top: 25%; left: 27%; right: 27%; align-items: center; padding: 18px 24px; background-color: var(--panel); border-bottom-width: 2px; border-bottom-color: var(--amber); display: none; }
+.recovery-title { font-size: 27px; -unity-font-style: bold; margin-bottom: 6px; white-space: normal; }
+.recovery .hint { -unity-text-align: middle-center; }
+.event { position: absolute; top: 136px; right: 0; max-width: 360px; color: var(--amber); font-size: 20px; -unity-font-style: bold; background-color: var(--panel); padding: 14px 20px; display: none; }
+.results { position: absolute; top: 18%; bottom: 18%; left: 27%; right: 27%; padding: 34px; background-color: var(--ink); border-top-width: 3px; border-top-color: var(--amber); display: none; }
+.result-title { font-size: 40px; -unity-font-style: bold; margin-top: 14px; margin-bottom: 14px; white-space: normal; }
+.bottomline { position: absolute; bottom: 22px; left: 38px; right: 38px; flex-direction: row; justify-content: space-between; }
+.controls { font-size: 12px; color: rgb(247,241,225); background-color: var(--panel); padding: 10px 14px; }
+.phase { font-size: 11px; color: var(--muted); align-self: center; }
+.profile-actions { flex-direction: row; }
+.profile-actions Button { flex-grow: 1; width: 48%; font-size: 13px; }
+.profile-actions #connect { margin-right: 8px; }
+.settings-overlay { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; align-items: center; justify-content: center; background-color: rgba(8,9,10,.88); }
+.settings-card { width: 660px; max-width: 88%; max-height: 88%; padding: 28px 32px; background-color: var(--ink); border-top-width: 3px; border-top-color: var(--amber); }
+.settings-card .unity-scroll-view__content-container { padding-right: 12px; }
+.settings-heading { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.settings-title { font-size: 36px; -unity-font-style: bold; margin-top: 6px; }
+.settings-divider { height: 1px; background-color: var(--line); margin-top: 20px; margin-bottom: 12px; }
+.settings-toggle { font-size: 17px; min-height: 44px; margin: 4px 0; color: rgb(247,241,225); }
+.settings-toggle .unity-toggle__input { border-width: 2px; border-color: rgba(0,0,0,0); padding: 7px; }
+.settings-toggle:focus .unity-toggle__input { border-color: var(--amber); }
+.settings-toggle .unity-toggle__checkmark { width: 22px; height: 22px; background-color: rgb(32,34,34); border-width: 1px; border-color: var(--muted); margin-right: 12px; }
+.settings-toggle:checked .unity-toggle__checkmark { background-color: var(--amber); }
+.settings-scale-label { margin-top: 18px; }
+.hud-scale { height: 38px; margin-top: 8px; margin-bottom: 4px; padding: 8px 4px; border-width: 2px; border-color: rgba(0,0,0,0); }
+.hud-scale:focus { border-color: var(--amber); }
+.hud-scale .unity-base-slider__dragger { background-color: var(--amber); border-width: 0; width: 17px; height: 17px; }
+.hud-scale .unity-base-slider__tracker { background-color: var(--line); }
+.settings-help { margin-top: 24px; color: var(--muted); font-size: 13px; white-space: normal; }
+.desktop-display-settings { margin-top: 20px; padding-top: 16px; border-top-width: 1px; border-top-color: var(--line); }
+.menu, .mp-panel, .results, .settings-overlay, .recovery, .event { opacity: 1; translate: 0 0; transition-property: opacity, translate; transition-duration: .16s; }
+.panel-enter { opacity: 0; translate: 0 6px; }
+.reduced-motion Button, .reduced-motion .menu, .reduced-motion .mp-panel, .reduced-motion .results, .reduced-motion .settings-overlay, .reduced-motion .recovery, .reduced-motion .event { transition-duration: 0s; }
+.reduced-motion .panel-enter { opacity: 1; translate: 0 0; }
+.race-active #gallery-open { display: none; }
+.compact .menu { top: 112px; bottom: 82px; left: 28px; width: 400px; padding: 20px 24px; }
+.compact .title { font-size: 38px; }
+.compact .subtitle { font-size: 16px; margin-bottom: 14px; }
+.compact .menu .description { font-size: 15px; margin-bottom: 16px; }
+.compact .menu-footnote { margin-top: 8px; padding-top: 10px; }
+.compact .network-open .title { font-size: 24px; }
+.compact .topbar { top: 16px; left: 28px; right: 28px; }
+.compact .brand-caption { display: none; }
+.compact .settings-card { padding: 20px 24px; }
+.compact .settings-help { margin-top: 16px; }
+.compact .results { left: 22%; right: 22%; top: 15%; bottom: 15%; padding: 24px; }
+.narrow .connection, .narrow .phase, .narrow .brand-caption { display: none; }
+.narrow .topbar-actions .small-button { margin-left: 5px; font-size: 12px; padding: 8px; }
+.narrow .menu { left: 24px; width: 370px; }
+
+.menu .unity-scroll-view__content-container { padding-right: 6px; }
+.menu .unity-scroll-view__content-container > * { flex-shrink: 0; }

@@ -1,0 +1,748 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "RB_Golden_MenuEnvironment_v1",
+      "kind": "environment",
+      "concept": {
+        "path": "ArtSource/Concepts/P08/Golden/UI/main-v2.png",
+        "sha256": "9b7ad175234636c591846552178f2d25a279434763ce5d0f252af738c6c8e95e"
+      },
+      "conceptReview": {
+        "path": "ArtSource/Concepts/P08/Golden/UI/main-v2-review.md",
+        "sha256": "a48948ce7d49278f19e933d7d0974f7f032fdfdf6e030bc6a890712f4515c70d"
+      },
+      "source": {
+        "path": "ArtSource/P08/Golden/MenuEnvironment/V1/RB_Golden_MenuEnvironment.blend",
+        "sha256": "a50afcdbf47b7b2619ba443db7bb3a2a52d294304dcd2bcf08e6ca32b6ae6ef7"
+      },
+      "fbx": {
+        "path": "_local/p08-menu-environment-v1-staging/RB_Golden_MenuEnvironment.fbx",
+        "sha256": "5c47c11b8ae4c64aa74de665d41adb31688969d9f28eacfa09491efadba6a837"
+      },
+      "modelRotationEuler": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "restPose": "file",
+      "materials": [
+        {
+          "sourceName": "Canyon_Asphalt",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_BaseColor.png",
+            "sha256": "77d9e4dbf8fe32973bb0b10655005c3747d4d48ee0610bd264cc30e4db41a53a"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Normal.png",
+            "sha256": "489b1dfc31172f48bb6eb938ce2cf89e2c1d42667f9e2ce0000e3955b194da7f"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_MetallicSmoothness.png",
+            "sha256": "0ec2c711582f7934432c1a364961568070453d7ab4c800b562a4a1fa8514cce2"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Occlusion.png",
+            "sha256": "e33cceaac2f53dad5c8dc1a6d36f1cb3c2520509e15bb1123d92240391d16f7a"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Cliff01",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_BaseColor.png",
+            "sha256": "d876cf282cd21cb1e5dbaf42fae351798cd70d9f39648c5be1340c8e0fea4038"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Normal.png",
+            "sha256": "e8c968bb307fb87d79fa058f36d32e7c317c7f6ac99c5fff5bc8ce9dbda4185d"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_MetallicSmoothness.png",
+            "sha256": "370571295665bc3a977ed8774289222746b9ede52a4cfe26eb0cf6cdd7c7021d"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Occlusion.png",
+            "sha256": "c03dc6659c9efb20dbbd50949fe8fe38c6c7356064bdad0f415e62d952380cc6"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Cliff02",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_BaseColor.png",
+            "sha256": "d10bd8113a24908ff16d66fdc672e0182b808f960f4fa3f1517d7c831149d802"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Normal.png",
+            "sha256": "9c6c88f2982b048b0d69b5aecc09698e5a403997c6e2dbc747ef073a10c69816"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_MetallicSmoothness.png",
+            "sha256": "857003a4faf8895ccaad344025129de98536e8452b283df4cbc1873fe3d4d9c0"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Occlusion.png",
+            "sha256": "3d47a79df9f9c1e3d70132e516654ed02df924d9fb218ba713fd9ba4c57d4325"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Cliff03",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_BaseColor.png",
+            "sha256": "c245627abea1c5b7098b004fcebeeb0e35519f3bac27ab2a6ace7d65db64b49b"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Normal.png",
+            "sha256": "d73c8db8baf16fdb5954b29a1ab79d8920537d6fd4809c0b75a575232e77f58b"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_MetallicSmoothness.png",
+            "sha256": "6d60c21ad23ccdb47db87b31ab684d0c030c02a0fe62998d07fbf9b887bec095"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Occlusion.png",
+            "sha256": "19b14c27599dd153281875d2b460ec0fac58988a57825abc747f8e088096edc9"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_DryGrass",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_BaseColor.png",
+            "sha256": "e9f16bb7a8116d1b6cd40a4f267e914dc4bf9a6b37c915df6050f7d476a6cbab"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_MetallicSmoothness.png",
+            "sha256": "796f6bac6e7828c8198b6acd290b5603dc6cde05f1457b558dc4caf946085cef"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": true
+        },
+        {
+          "sourceName": "Canyon_Galvanized",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_BaseColor.png",
+            "sha256": "cfdc58150b2620d8d83073085da3d75ab805047ae382b7af3e64fc9fa74730ec"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_MetallicSmoothness.png",
+            "sha256": "cc9be5062061b15871c7041949f1a2beab5402ddb87c2a79e0e1fb7d4eac89dd"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Gravel",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_BaseColor.png",
+            "sha256": "00413033f6f6745db8d0b74674f68e4d77073db6014f2635f87ba33603b4b8c7"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Normal.png",
+            "sha256": "88a6dd6cb7570f570b249f54b4e371ae261a4499ec37e00bc3cb0ec62590bd20"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_MetallicSmoothness.png",
+            "sha256": "2931af83e0bf38831c8eaf9ea3632832892e7fd317f4ee09a3d37eed9dec5c0c"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Occlusion.png",
+            "sha256": "604656a8b299576a2137c1b428072a988d0b778166c7ca0096ee7a8280ecda83"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Reflector",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_BaseColor.png",
+            "sha256": "075736075b97df6d36ee1e4cda609d0d0b7b67aefcf172f17969c0f0cb45fb9f"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_MetallicSmoothness.png",
+            "sha256": "829e7507514fca8f5bf28ecefd8a00d0829ec0bf420f8694a58d41cfa70e6437"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Sage",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_BaseColor.png",
+            "sha256": "03cc4088f54b4d0d477acf3bee620b981a65f1aaca48c6418180066b0fb8e48d"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_MetallicSmoothness.png",
+            "sha256": "0c53b887d7148b06b0482164c6fc9ef9b14c5529c20977923e57aacd54cc6d2a"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": true
+        },
+        {
+          "sourceName": "Canyon_Sandstone",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_BaseColor.png",
+            "sha256": "47d4a8540d68c30199d0ddcd8adf1c1b079812e3f906b6db9480696f13bc64aa"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Normal.png",
+            "sha256": "d478ef3d1ff505435d9965548044e7535b7560883af4ababa075036c7caa1597"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_MetallicSmoothness.png",
+            "sha256": "1025f7ceb8f29dfefc2594667ed38bd0c3953a6742c8aa3a4ca37d0cdcf5a6ba"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.72,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Occlusion.png",
+            "sha256": "69ca56d1856ea64ee5396b7a8069ea56f448f574a7122f6b0e40666604fa5042"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_WhitePaint",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Textures/Canyon_WhitePaint_BaseColor.png",
+            "sha256": "79b2a941d9f14815cb3be72e2a2ac87f65cba224af49f242405c64da9c5ad7fb"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_MetallicSmoothness.png",
+            "sha256": "1171d15f9c7c7f1a03e5e7395cc8e9c0ab591cffff8ce5995db8da2c535db252"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Wood",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_BaseColor.png",
+            "sha256": "de740ce933aa59daf0fdc888f58295166f7a3d7b6865f1507d80ade13abf5131"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_MetallicSmoothness.png",
+            "sha256": "15c0762a5cd6efe1cb2ba23895101e12c399e1ccf16bfedd02a7d39d232f8abe"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_YellowPaint",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Textures/Canyon_YellowPaint_BaseColor.png",
+            "sha256": "b9ed6296ebb10865833668c788a0dc56fee7cbfb0ee7c35c823293fa8a4accb3"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_MetallicSmoothness.png",
+            "sha256": "8fc0c5ab5b9259748b22992f5b0f3169c99e81ad53b1978a06ec9a7e78acd03c"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        }
+      ],
+      "forwardMarker": "Forward",
+      "leftMarker": "LeftRoadMarker",
+      "rightMarker": "RightRoadMarker",
+      "groundMarkers": [
+        "Ground_Origin"
+      ],
+      "colliders": [],
+      "isStatic": true,
+      "maximumBelowGround": 42.01111389160156,
+      "minimumSize": {
+        "x": 1068.2158576965332,
+        "y": 74.95111389160157,
+        "z": 996.3480407714844
+      },
+      "maximumSize": {
+        "x": 1068.3158576965332,
+        "y": 75.05111389160156,
+        "z": 996.4480407714843
+      },
+      "lods": [
+        {
+          "height": 0.5,
+          "rendererPaths": [
+            "Menu_L0_EdgeGrass_00",
+            "Menu_L0_EdgeGrass_01",
+            "Menu_L0_EdgeGrass_02",
+            "Menu_L0_EdgeGrass_03",
+            "Menu_L0_EdgeGravel",
+            "Menu_L0_EdgeStone_00",
+            "Menu_L0_EdgeStone_01",
+            "Menu_L0_EdgeStone_02",
+            "Menu_L0_EdgeStone_03",
+            "Menu_L0_EdgeStone_04",
+            "Menu_L0_EdgeStone_05",
+            "Menu_L0_EdgeStone_06",
+            "Menu_L0_EdgeStone_07",
+            "Menu_L0_EdgeStone_08",
+            "Menu_L0_EdgeStone_09",
+            "Menu_L0_EdgeStone_10",
+            "Menu_L0_EdgeStone_11",
+            "Menu_L0_EdgeStone_12",
+            "Menu_L0_EdgeStone_13",
+            "Menu_L0_EdgeStone_14",
+            "Menu_L0_EdgeStone_15",
+            "Menu_L0_EdgeStone_16",
+            "Menu_L0_EdgeStone_17",
+            "Menu_L0_EdgeStone_18",
+            "Menu_L0_EdgeStone_19",
+            "Menu_L0_EdgeStone_20",
+            "Menu_L0_EdgeStone_21",
+            "Menu_L0_EdgeStone_22",
+            "Menu_L0_EdgeStone_23",
+            "Menu_L0_EdgeStone_24",
+            "Menu_L0_EdgeStone_25",
+            "Menu_L0_FarCenter",
+            "Menu_L0_FarHorizon",
+            "Menu_L0_FarLeft",
+            "Menu_L0_FarRight",
+            "Menu_L0_FarValley",
+            "Menu_L0_LeftLowLedge",
+            "Menu_L0_LeftMiddle",
+            "Menu_L0_LeftNear",
+            "Menu_L0_MiddleRecess",
+            "Menu_L0_MiddleRidge",
+            "Menu_L0_NearValley",
+            "Menu_L0_Pullout",
+            "Menu_L0_RightLowLedge",
+            "Menu_L0_RightOverlookStone_00",
+            "Menu_L0_RightOverlookStone_01",
+            "Menu_L0_RightOverlookStone_02",
+            "Menu_L0_RightOverlookStone_03",
+            "Menu_L0_RightOverlookStone_04",
+            "Menu_L0_RightRidge",
+            "Menu_L0_Valley_Branches_Tile00",
+            "Menu_L0_Valley_Branches_Tile01",
+            "Menu_L0_Valley_Branches_Tile02",
+            "Menu_L0_Valley_Branches_Tile03",
+            "Menu_L0_Valley_Branches_Tile04",
+            "Menu_L0_Valley_Branches_Tile05",
+            "Menu_L0_Valley_Branches_Tile06",
+            "Menu_L0_Valley_Branches_Tile07",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile00",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile01",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile02",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile03",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile04",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile05",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile06",
+            "Menu_L0_Valley_Canyon_WhitePaint_Tile07",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile00",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile01",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile02",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile03",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile04",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile05",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile06",
+            "Menu_L0_Valley_Canyon_YellowPaint_Tile07",
+            "Menu_L0_Valley_Grass_Tile00",
+            "Menu_L0_Valley_Grass_Tile01",
+            "Menu_L0_Valley_Grass_Tile02",
+            "Menu_L0_Valley_Grass_Tile03",
+            "Menu_L0_Valley_Grass_Tile04",
+            "Menu_L0_Valley_Grass_Tile05",
+            "Menu_L0_Valley_Grass_Tile06",
+            "Menu_L0_Valley_Grass_Tile07",
+            "Menu_L0_Valley_Guardrail_Beam_Tile00",
+            "Menu_L0_Valley_Guardrail_Beam_Tile01",
+            "Menu_L0_Valley_Guardrail_Beam_Tile02",
+            "Menu_L0_Valley_Guardrail_Beam_Tile03",
+            "Menu_L0_Valley_Guardrail_Beam_Tile04",
+            "Menu_L0_Valley_Guardrail_Beam_Tile05",
+            "Menu_L0_Valley_Guardrail_Beam_Tile06",
+            "Menu_L0_Valley_Guardrail_Beam_Tile07",
+            "Menu_L0_Valley_Guardrail_Posts_Tile00",
+            "Menu_L0_Valley_Guardrail_Posts_Tile01",
+            "Menu_L0_Valley_Guardrail_Posts_Tile02",
+            "Menu_L0_Valley_Guardrail_Posts_Tile03",
+            "Menu_L0_Valley_Guardrail_Posts_Tile04",
+            "Menu_L0_Valley_Guardrail_Posts_Tile05",
+            "Menu_L0_Valley_Guardrail_Posts_Tile06",
+            "Menu_L0_Valley_Guardrail_Posts_Tile07",
+            "Menu_L0_Valley_Reflectors_Tile00",
+            "Menu_L0_Valley_Reflectors_Tile01",
+            "Menu_L0_Valley_Reflectors_Tile02",
+            "Menu_L0_Valley_Reflectors_Tile03",
+            "Menu_L0_Valley_Reflectors_Tile04",
+            "Menu_L0_Valley_Reflectors_Tile05",
+            "Menu_L0_Valley_Reflectors_Tile06",
+            "Menu_L0_Valley_Reflectors_Tile07",
+            "Menu_L0_Valley_Road_00",
+            "Menu_L0_Valley_Road_01",
+            "Menu_L0_Valley_Road_02",
+            "Menu_L0_Valley_Road_03",
+            "Menu_L0_Valley_Road_04",
+            "Menu_L0_Valley_Road_05",
+            "Menu_L0_Valley_Road_06",
+            "Menu_L0_Valley_Road_07",
+            "Menu_L0_Valley_Sage_Tile00",
+            "Menu_L0_Valley_Sage_Tile01",
+            "Menu_L0_Valley_Sage_Tile02",
+            "Menu_L0_Valley_Sage_Tile03",
+            "Menu_L0_Valley_Sage_Tile04",
+            "Menu_L0_Valley_Sage_Tile05",
+            "Menu_L0_Valley_Sage_Tile06",
+            "Menu_L0_Valley_Sage_Tile07",
+            "Menu_L0_Valley_Shoulder_-1_Tile00",
+            "Menu_L0_Valley_Shoulder_-1_Tile01",
+            "Menu_L0_Valley_Shoulder_-1_Tile02",
+            "Menu_L0_Valley_Shoulder_-1_Tile03",
+            "Menu_L0_Valley_Shoulder_-1_Tile04",
+            "Menu_L0_Valley_Shoulder_-1_Tile05",
+            "Menu_L0_Valley_Shoulder_-1_Tile06",
+            "Menu_L0_Valley_Shoulder_-1_Tile07",
+            "Menu_L0_Valley_Shoulder_1_Tile00",
+            "Menu_L0_Valley_Shoulder_1_Tile01",
+            "Menu_L0_Valley_Shoulder_1_Tile02",
+            "Menu_L0_Valley_Shoulder_1_Tile03",
+            "Menu_L0_Valley_Shoulder_1_Tile04",
+            "Menu_L0_Valley_Shoulder_1_Tile05",
+            "Menu_L0_Valley_Shoulder_1_Tile06",
+            "Menu_L0_Valley_Shoulder_1_Tile07",
+            "Menu_L0_ValleyTerrace"
+          ]
+        },
+        {
+          "height": 0.15,
+          "rendererPaths": [
+            "Menu_L1_EdgeGrass_00",
+            "Menu_L1_EdgeGrass_01",
+            "Menu_L1_EdgeGrass_02",
+            "Menu_L1_EdgeGrass_03",
+            "Menu_L1_EdgeGravel",
+            "Menu_L1_EdgeStone_00",
+            "Menu_L1_EdgeStone_01",
+            "Menu_L1_EdgeStone_02",
+            "Menu_L1_EdgeStone_03",
+            "Menu_L1_EdgeStone_04",
+            "Menu_L1_EdgeStone_05",
+            "Menu_L1_EdgeStone_06",
+            "Menu_L1_EdgeStone_07",
+            "Menu_L1_EdgeStone_08",
+            "Menu_L1_EdgeStone_09",
+            "Menu_L1_EdgeStone_10",
+            "Menu_L1_EdgeStone_11",
+            "Menu_L1_EdgeStone_12",
+            "Menu_L1_EdgeStone_13",
+            "Menu_L1_EdgeStone_14",
+            "Menu_L1_EdgeStone_15",
+            "Menu_L1_EdgeStone_16",
+            "Menu_L1_EdgeStone_17",
+            "Menu_L1_EdgeStone_18",
+            "Menu_L1_EdgeStone_19",
+            "Menu_L1_EdgeStone_20",
+            "Menu_L1_EdgeStone_21",
+            "Menu_L1_EdgeStone_22",
+            "Menu_L1_EdgeStone_23",
+            "Menu_L1_EdgeStone_24",
+            "Menu_L1_EdgeStone_25",
+            "Menu_L1_FarCenter",
+            "Menu_L1_FarHorizon",
+            "Menu_L1_FarLeft",
+            "Menu_L1_FarRight",
+            "Menu_L1_FarValley",
+            "Menu_L1_LeftLowLedge",
+            "Menu_L1_LeftMiddle",
+            "Menu_L1_LeftNear",
+            "Menu_L1_MiddleRecess",
+            "Menu_L1_MiddleRidge",
+            "Menu_L1_NearValley",
+            "Menu_L1_Pullout",
+            "Menu_L1_RightLowLedge",
+            "Menu_L1_RightOverlookStone_00",
+            "Menu_L1_RightOverlookStone_01",
+            "Menu_L1_RightOverlookStone_02",
+            "Menu_L1_RightOverlookStone_03",
+            "Menu_L1_RightOverlookStone_04",
+            "Menu_L1_RightRidge",
+            "Menu_L1_Valley_Branches_Tile00",
+            "Menu_L1_Valley_Branches_Tile01",
+            "Menu_L1_Valley_Branches_Tile02",
+            "Menu_L1_Valley_Branches_Tile03",
+            "Menu_L1_Valley_Branches_Tile04",
+            "Menu_L1_Valley_Branches_Tile05",
+            "Menu_L1_Valley_Branches_Tile06",
+            "Menu_L1_Valley_Branches_Tile07",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile00",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile01",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile02",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile03",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile04",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile05",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile06",
+            "Menu_L1_Valley_Canyon_WhitePaint_Tile07",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile00",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile01",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile02",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile03",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile04",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile05",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile06",
+            "Menu_L1_Valley_Canyon_YellowPaint_Tile07",
+            "Menu_L1_Valley_Grass_Tile00",
+            "Menu_L1_Valley_Grass_Tile01",
+            "Menu_L1_Valley_Grass_Tile02",
+            "Menu_L1_Valley_Grass_Tile03",
+            "Menu_L1_Valley_Grass_Tile04",
+            "Menu_L1_Valley_Grass_Tile05",
+            "Menu_L1_Valley_Grass_Tile06",
+            "Menu_L1_Valley_Grass_Tile07",
+            "Menu_L1_Valley_Guardrail_Beam_Tile00",
+            "Menu_L1_Valley_Guardrail_Beam_Tile01",
+            "Menu_L1_Valley_Guardrail_Beam_Tile02",
+            "Menu_L1_Valley_Guardrail_Beam_Tile03",
+            "Menu_L1_Valley_Guardrail_Beam_Tile04",
+            "Menu_L1_Valley_Guardrail_Beam_Tile05",
+            "Menu_L1_Valley_Guardrail_Beam_Tile06",
+            "Menu_L1_Valley_Guardrail_Beam_Tile07",
+            "Menu_L1_Valley_Guardrail_Posts_Tile00",
+            "Menu_L1_Valley_Guardrail_Posts_Tile01",
+            "Menu_L1_Valley_Guardrail_Posts_Tile02",
+            "Menu_L1_Valley_Guardrail_Posts_Tile03",
+            "Menu_L1_Valley_Guardrail_Posts_Tile04",
+            "Menu_L1_Valley_Guardrail_Posts_Tile05",
+            "Menu_L1_Valley_Guardrail_Posts_Tile06",
+            "Menu_L1_Valley_Guardrail_Posts_Tile07",
+            "Menu_L1_Valley_Reflectors_Tile00",
+            "Menu_L1_Valley_Reflectors_Tile01",
+            "Menu_L1_Valley_Reflectors_Tile02",
+            "Menu_L1_Valley_Reflectors_Tile03",
+            "Menu_L1_Valley_Reflectors_Tile04",
+            "Menu_L1_Valley_Reflectors_Tile05",
+            "Menu_L1_Valley_Reflectors_Tile06",
+            "Menu_L1_Valley_Reflectors_Tile07",
+            "Menu_L1_Valley_Road_00",
+            "Menu_L1_Valley_Road_01",
+            "Menu_L1_Valley_Road_02",
+            "Menu_L1_Valley_Road_03",
+            "Menu_L1_Valley_Road_04",
+            "Menu_L1_Valley_Road_05",
+            "Menu_L1_Valley_Road_06",
+            "Menu_L1_Valley_Road_07",
+            "Menu_L1_Valley_Sage_Tile00",
+            "Menu_L1_Valley_Sage_Tile01",
+            "Menu_L1_Valley_Sage_Tile02",
+            "Menu_L1_Valley_Sage_Tile03",
+            "Menu_L1_Valley_Sage_Tile04",
+            "Menu_L1_Valley_Sage_Tile05",
+            "Menu_L1_Valley_Sage_Tile06",
+            "Menu_L1_Valley_Sage_Tile07",
+            "Menu_L1_Valley_Shoulder_-1_Tile00",
+            "Menu_L1_Valley_Shoulder_-1_Tile01",
+            "Menu_L1_Valley_Shoulder_-1_Tile02",
+            "Menu_L1_Valley_Shoulder_-1_Tile03",
+            "Menu_L1_Valley_Shoulder_-1_Tile04",
+            "Menu_L1_Valley_Shoulder_-1_Tile05",
+            "Menu_L1_Valley_Shoulder_-1_Tile06",
+            "Menu_L1_Valley_Shoulder_-1_Tile07",
+            "Menu_L1_Valley_Shoulder_1_Tile00",
+            "Menu_L1_Valley_Shoulder_1_Tile01",
+            "Menu_L1_Valley_Shoulder_1_Tile02",
+            "Menu_L1_Valley_Shoulder_1_Tile03",
+            "Menu_L1_Valley_Shoulder_1_Tile04",
+            "Menu_L1_Valley_Shoulder_1_Tile05",
+            "Menu_L1_Valley_Shoulder_1_Tile06",
+            "Menu_L1_Valley_Shoulder_1_Tile07",
+            "Menu_L1_ValleyTerrace"
+          ]
+        },
+        {
+          "height": 0.025,
+          "rendererPaths": [
+            "Menu_L2_EdgeGrass_00",
+            "Menu_L2_EdgeGrass_01",
+            "Menu_L2_EdgeGrass_02",
+            "Menu_L2_EdgeGrass_03",
+            "Menu_L2_EdgeGravel",
+            "Menu_L2_EdgeStone_00",
+            "Menu_L2_EdgeStone_01",
+            "Menu_L2_EdgeStone_02",
+            "Menu_L2_EdgeStone_03",
+            "Menu_L2_EdgeStone_04",
+            "Menu_L2_EdgeStone_05",
+            "Menu_L2_EdgeStone_06",
+            "Menu_L2_EdgeStone_07",
+            "Menu_L2_EdgeStone_08",
+            "Menu_L2_EdgeStone_09",
+            "Menu_L2_EdgeStone_10",
+            "Menu_L2_EdgeStone_11",
+            "Menu_L2_EdgeStone_12",
+            "Menu_L2_EdgeStone_13",
+            "Menu_L2_EdgeStone_14",
+            "Menu_L2_EdgeStone_15",
+            "Menu_L2_EdgeStone_16",
+            "Menu_L2_EdgeStone_17",
+            "Menu_L2_EdgeStone_18",
+            "Menu_L2_EdgeStone_19",
+            "Menu_L2_EdgeStone_20",
+            "Menu_L2_EdgeStone_21",
+            "Menu_L2_EdgeStone_22",
+            "Menu_L2_EdgeStone_23",
+            "Menu_L2_EdgeStone_24",
+            "Menu_L2_EdgeStone_25",
+            "Menu_L2_FarCenter",
+            "Menu_L2_FarHorizon",
+            "Menu_L2_FarLeft",
+            "Menu_L2_FarRight",
+            "Menu_L2_FarValley",
+            "Menu_L2_LeftLowLedge",
+            "Menu_L2_LeftMiddle",
+            "Menu_L2_LeftNear",
+            "Menu_L2_MiddleRecess",
+            "Menu_L2_MiddleRidge",
+            "Menu_L2_NearValley",
+            "Menu_L2_Pullout",
+            "Menu_L2_RightLowLedge",
+            "Menu_L2_RightOverlookStone_00",
+            "Menu_L2_RightOverlookStone_01",
+            "Menu_L2_RightOverlookStone_02",
+            "Menu_L2_RightOverlookStone_03",
+            "Menu_L2_RightOverlookStone_04",
+            "Menu_L2_RightRidge",
+            "Menu_L2_Valley_Branches_Tile00",
+            "Menu_L2_Valley_Branches_Tile01",
+            "Menu_L2_Valley_Branches_Tile02",
+            "Menu_L2_Valley_Branches_Tile03",
+            "Menu_L2_Valley_Branches_Tile04",
+            "Menu_L2_Valley_Branches_Tile05",
+            "Menu_L2_Valley_Branches_Tile06",
+            "Menu_L2_Valley_Branches_Tile07",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile00",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile01",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile02",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile03",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile04",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile05",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile06",
+            "Menu_L2_Valley_Canyon_WhitePaint_Tile07",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile00",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile01",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile02",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile03",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile04",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile05",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile06",
+            "Menu_L2_Valley_Canyon_YellowPaint_Tile07",
+            "Menu_L2_Valley_Grass_Tile00",
+            "Menu_L2_Valley_Grass_Tile01",
+            "Menu_L2_Valley_Grass_Tile02",
+            "Menu_L2_Valley_Grass_Tile03",
+            "Menu_L2_Valley_Grass_Tile04",
+            "Menu_L2_Valley_Grass_Tile05",
+            "Menu_L2_Valley_Grass_Tile06",
+            "Menu_L2_Valley_Grass_Tile07",
+            "Menu_L2_Valley_Guardrail_Beam_Tile00",
+            "Menu_L2_Valley_Guardrail_Beam_Tile01",
+            "Menu_L2_Valley_Guardrail_Beam_Tile02",
+            "Menu_L2_Valley_Guardrail_Beam_Tile03",
+            "Menu_L2_Valley_Guardrail_Beam_Tile04",
+            "Menu_L2_Valley_Guardrail_Beam_Tile05",
+            "Menu_L2_Valley_Guardrail_Beam_Tile06",
+            "Menu_L2_Valley_Guardrail_Beam_Tile07",
+            "Menu_L2_Valley_Guardrail_Posts_Tile00",
+            "Menu_L2_Valley_Guardrail_Posts_Tile01",
+            "Menu_L2_Valley_Guardrail_Posts_Tile02",
+            "Menu_L2_Valley_Guardrail_Posts_Tile03",
+            "Menu_L2_Valley_Guardrail_Posts_Tile04",
+            "Menu_L2_Valley_Guardrail_Posts_Tile05",
+            "Menu_L2_Valley_Guardrail_Posts_Tile06",
+            "Menu_L2_Valley_Guardrail_Posts_Tile07",
+            "Menu_L2_Valley_Reflectors_Tile00",
+            "Menu_L2_Valley_Reflectors_Tile01",
+            "Menu_L2_Valley_Reflectors_Tile02",
+            "Menu_L2_Valley_Reflectors_Tile03",
+            "Menu_L2_Valley_Reflectors_Tile04",
+            "Menu_L2_Valley_Reflectors_Tile05",
+            "Menu_L2_Valley_Reflectors_Tile06",
+            "Menu_L2_Valley_Reflectors_Tile07",
+            "Menu_L2_Valley_Road_00",
+            "Menu_L2_Valley_Road_01",
+            "Menu_L2_Valley_Road_02",
+            "Menu_L2_Valley_Road_03",
+            "Menu_L2_Valley_Road_04",
+            "Menu_L2_Valley_Road_05",
+            "Menu_L2_Valley_Road_06",
+            "Menu_L2_Valley_Road_07",
+            "Menu_L2_Valley_Sage_Tile00",
+            "Menu_L2_Valley_Sage_Tile01",
+            "Menu_L2_Valley_Sage_Tile02",
+            "Menu_L2_Valley_Sage_Tile03",
+            "Menu_L2_Valley_Sage_Tile04",
+            "Menu_L2_Valley_Sage_Tile05",
+            "Menu_L2_Valley_Sage_Tile06",
+            "Menu_L2_Valley_Sage_Tile07",
+            "Menu_L2_Valley_Shoulder_-1_Tile00",
+            "Menu_L2_Valley_Shoulder_-1_Tile01",
+            "Menu_L2_Valley_Shoulder_-1_Tile02",
+            "Menu_L2_Valley_Shoulder_-1_Tile03",
+            "Menu_L2_Valley_Shoulder_-1_Tile04",
+            "Menu_L2_Valley_Shoulder_-1_Tile05",
+            "Menu_L2_Valley_Shoulder_-1_Tile06",
+            "Menu_L2_Valley_Shoulder_-1_Tile07",
+            "Menu_L2_Valley_Shoulder_1_Tile00",
+            "Menu_L2_Valley_Shoulder_1_Tile01",
+            "Menu_L2_Valley_Shoulder_1_Tile02",
+            "Menu_L2_Valley_Shoulder_1_Tile03",
+            "Menu_L2_Valley_Shoulder_1_Tile04",
+            "Menu_L2_Valley_Shoulder_1_Tile05",
+            "Menu_L2_Valley_Shoulder_1_Tile06",
+            "Menu_L2_Valley_Shoulder_1_Tile07",
+            "Menu_L2_ValleyTerrace"
+          ]
+        }
+      ],
+      "moduleLodMap": {
+        "path": "docs/p08/golden/menu-environment/v1/module-lod-mapping-staged.json",
+        "sha256": "6d20a90e1e0deab34aab24f14f39f339d5024f5dd18c290226344137e0deacce"
+      }
+    }
+  ]
+}

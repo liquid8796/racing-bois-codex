@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "deployed_and_verified_for_measured_staging_scope",
+  "releaseId": "p09-20260927-e",
+  "sourceSha256": "90f38b173fcd7edac01a138d5aee5da1f4a773112f9ddf827e7ab1e045c54544",
+  "multiplayerProtocol": 5,
+  "armCases": {
+    "multiplayer": 32,
+    "gameplay": 31,
+    "persistence": 26
+  },
+  "liveOpsChecks": 21,
+  "activationPreservedEntireRealmState": true,
+  "wanStatus": "PASS",
+  "wanElapsedSeconds": 1800.2823679,
+  "wanPeers": 8,
+  "wanRaceCycles": 21,
+  "wanReconnects": 14,
+  "wanStorms": 2,
+  "wanInvalidSnapshots": 0,
+  "persistenceFailuresDelta": 0,
+  "automaticRestartsDelta": 0,
+  "p99TickUpperBoundMilliseconds": 1,
+  "maximumCorrectionMeters": 16.258056521474785,
+  "predictionSmoothnessAccepted": false,
+  "fullPhaseComplete": false,
+  "sharedHostEvidence": {
+    "scope": "Caddy/site/services compared to pre-deployment baseline; firewall structural hashes compared only from the later diagnosis to final soak end. Missing earlier normalized baseline is retained as unknown.",
+    "caddyHashesUnchangedSincePreDeployment": true,
+    "existingSiteHttpStatus": 200,
+    "priorUnrelatedServicesStillRunning": true,
+    "firewallRulesUnchangedSincePreDeployment": null,
+    "firewallRulesUnchangedAcrossPostDeploymentSoakWindow": true,
+    "originalCounterSensitiveFailureRetained": true
+  },
+  "noFurtherDeploymentPerformed": true
+}

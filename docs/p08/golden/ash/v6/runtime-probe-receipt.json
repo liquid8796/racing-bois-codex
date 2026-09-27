@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ASH_V6_RUNTIME_PROBE [{\"lod\": 0, \"triangles\": 142881, \"physical\": [{\"t\": 93905, \"p\": 86441, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 93906, \"p\": 86441, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94055, \"p\": 86516, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94056, \"p\": 86516, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94447, \"p\": 86712, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94448, \"p\": 86712, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94647, \"p\": 86812, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94648, \"p\": 86812, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94789, \"p\": 86883, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94790, \"p\": 86883, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95013, \"p\": 86995, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95014, \"p\": 86995, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95147, \"p\": 87062, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95148, \"p\": 87062, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95295, \"p\": 87136, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95296, \"p\": 87136, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95369, \"p\": 87173, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95370, \"p\": 87173, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95591, \"p\": 87284, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95592, \"p\": 87284, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95739, \"p\": 87358, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95740, \"p\": 87358, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95879, \"p\": 87428, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95880, \"p\": 87428, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96101, \"p\": 87539, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96102, \"p\": 87539, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96241, \"p\": 87609, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96242, \"p\": 87609, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96307, \"p\": 87642, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96308, \"p\": 87642, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96529, \"p\": 87753, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96530, \"p\": 87753, \"role\": \"AshV4_Forelocks_Baked\"}], \"uvLayers\": {\"UV0\": {\"failures\": 0, \"first\": []}, \"UVSource\": {\"failures\": 63774, \"first\": [79107, 79108, 79109, 79110, 79111, 79112, 79113, 79114, 79115, 79116]}}, \"materials\": [\"AshV6_Skin_Baked\", \"AshV4_LeatherDetails_Baked\", \"AshV2_AgedBrass_Baked\", \"AshV3_BootLeather_Baked\", \"AshV2_Brows_Baked\", \"AshV3_Rubber_Baked\", \"AshV4_TailoredLeather_Baked\", \"AshV2_OchreThread_Baked\", \"AshV2_Eyes_Baked\", \"AshV2_Hair_Baked\", \"AshV4_Forelocks_Baked\", \"AshV6_EquipmentL0_Baked\"]}, {\"lod\": 1, \"triangles\": 70114, \"physical\": [{\"t\": 48224, \"p\": 40935, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48225, \"p\": 40935, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48266, \"p\": 40956, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48267, \"p\": 40956, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48466, \"p\": 41056, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48467, \"p\": 41056, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48508, \"p\": 41077, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48509, \"p\": 41077, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48624, \"p\": 41135, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48625, \"p\": 41135, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48698, \"p\": 41172, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48699, \"p\": 41172, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48772, \"p\": 41209, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48773, \"p\": 41209, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48986, \"p\": 41316, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48987, \"p\": 41316, \"role\": \"AshV4_Forelocks_Baked\"}], \"uvLayers\": {\"UV0\": {\"failures\": 0, \"first\": []}, \"UVSource\": {\"failures\": 36338, \"first\": [33776, 33777, 33778, 33779, 33780, 33781, 33782, 33783, 33784, 33785]}}, \"materials\": [\"AshV6_Skin_Baked\", \"AshV4_LeatherDetails_Baked\", \"AshV2_AgedBrass_Baked\", \"AshV3_BootLeather_Baked\", \"AshV2_Brows_Baked\", \"AshV3_Rubber_Baked\", \"AshV4_TailoredLeather_Baked\", \"AshV2_OchreThread_Baked\", \"AshV2_Eyes_Baked\", \"AshV2_Hair_Baked\", \"AshV4_Forelocks_Baked\", \"AshV6_EquipmentL1_Baked\"]}, {\"lod\": 2, \"triangles\": 20799, \"physical\": [], \"uvLayers\": {\"UV0\": {\"failures\": 0, \"first\": []}, \"UVSource\": {\"failures\": 10504, \"first\": [10295, 10296, 10297, 10298, 10299, 10300, 10301, 10302, 10303, 10304]}}, \"materials\": [\"AshV6_Skin_Baked\", \"AshV4_LeatherDetails_Baked\", \"AshV2_AgedBrass_Baked\", \"AshV3_BootLeather_Baked\", \"AshV2_Brows_Baked\", \"AshV3_Rubber_Baked\", \"AshV4_TailoredLeather_Baked\", \"AshV2_OchreThread_Baked\", \"AshV2_Eyes_Baked\", \"AshV2_Hair_Baked\", \"AshV6_EquipmentL2_Baked\"]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: ASH_V6_RUNTIME_PROBE [{\"lod\": 0, \"triangles\": 142881, \"physical\": [{\"t\": 93905, \"p\": 86441, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 93906, \"p\": 86441, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94055, \"p\": 86516, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94056, \"p\": 86516, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94447, \"p\": 86712, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94448, \"p\": 86712, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94647, \"p\": 86812, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94648, \"p\": 86812, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94789, \"p\": 86883, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 94790, \"p\": 86883, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95013, \"p\": 86995, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95014, \"p\": 86995, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95147, \"p\": 87062, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95148, \"p\": 87062, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95295, \"p\": 87136, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95296, \"p\": 87136, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95369, \"p\": 87173, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95370, \"p\": 87173, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95591, \"p\": 87284, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95592, \"p\": 87284, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95739, \"p\": 87358, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95740, \"p\": 87358, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95879, \"p\": 87428, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 95880, \"p\": 87428, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96101, \"p\": 87539, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96102, \"p\": 87539, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96241, \"p\": 87609, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96242, \"p\": 87609, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96307, \"p\": 87642, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96308, \"p\": 87642, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96529, \"p\": 87753, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 96530, \"p\": 87753, \"role\": \"AshV4_Forelocks_Baked\"}], \"uvLayers\": {\"UV0\": {\"failures\": 0, \"first\": []}, \"UVSource\": {\"failures\": 63774, \"first\": [79107, 79108, 79109, 79110, 79111, 79112, 79113, 79114, 79115, 79116]}}, \"materials\": [\"AshV6_Skin_Baked\", \"AshV4_LeatherDetails_Baked\", \"AshV2_AgedBrass_Baked\", \"AshV3_BootLeather_Baked\", \"AshV2_Brows_Baked\", \"AshV3_Rubber_Baked\", \"AshV4_TailoredLeather_Baked\", \"AshV2_OchreThread_Baked\", \"AshV2_Eyes_Baked\", \"AshV2_Hair_Baked\", \"AshV4_Forelocks_Baked\", \"AshV6_EquipmentL0_Baked\"]}, {\"lod\": 1, \"triangles\": 70114, \"physical\": [{\"t\": 48224, \"p\": 40935, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48225, \"p\": 40935, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48266, \"p\": 40956, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48267, \"p\": 40956, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48466, \"p\": 41056, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48467, \"p\": 41056, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48508, \"p\": 41077, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48509, \"p\": 41077, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48624, \"p\": 41135, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48625, \"p\": 41135, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48698, \"p\": 41172, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48699, \"p\": 41172, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48772, \"p\": 41209, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48773, \"p\": 41209, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48986, \"p\": 41316, \"role\": \"AshV4_Forelocks_Baked\"}, {\"t\": 48987, \"p\": 41316, \"role\": \"AshV4_Forelocks_Baked\"}], \"uvLayers\": {\"UV0\": {\"failures\": 0, \"first\": []}, \"UVSource\": {\"failures\": 36338, \"first\": [33776, 33777, 33778, 33779, 33780, 33781, 33782, 33783, 33784, 33785]}}, \"materials\": [\"AshV6_Skin_Baked\", \"AshV4_LeatherDetails_Baked\", \"AshV2_AgedBrass_Baked\", \"AshV3_BootLeather_Baked\", \"AshV2_Brows_Baked\", \"AshV3_Rubber_Baked\", \"AshV4_TailoredLeather_Baked\", \"AshV2_OchreThread_Baked\", \"AshV2_Eyes_Baked\", \"AshV2_Hair_Baked\", \"AshV4_Forelocks_Baked\", \"AshV6_EquipmentL1_Baked\"]}, {\"lod\": 2, \"triangles\": 20799, \"physical\": [], \"uvLayers\": {\"UV0\": {\"failures\": 0, \"first\": []}, \"UVSource\": {\"failures\": 10504, \"first\": [10295, 10296, 10297, 10298, 10299, 10300, 10301, 10302, 10303, 10304]}}, \"materials\": [\"AshV6_Skin_Baked\", \"AshV4_LeatherDetails_Baked\", \"AshV2_AgedBrass_Baked\", \"AshV3_BootLeather_Baked\", \"AshV2_Brows_Baked\", \"AshV3_Rubber_Baked\", \"AshV4_TailoredLeather_Baked\", \"AshV2_OchreThread_Baked\", \"AshV2_Eyes_Baked\", \"AshV2_Hair_Baked\", \"AshV6_EquipmentL2_Baked\"]}]\n"
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,112 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <ui:Style src="Race.uss" />
+  <ui:Style src="Multiplayer.uss" />
+  <ui:Style src="Career.uss" />
+  <ui:Style src="Content.uss" />
+  <ui:Style src="Gallery.uss" />
+  <ui:Style src="HeroInterface.uss" />
+  <ui:VisualElement name="surface" class="surface">
+    <ui:VisualElement class="topbar">
+      <ui:VisualElement class="brand-lockup"><ui:Label text="RACING BOIS" class="brand" /></ui:VisualElement>
+      <ui:VisualElement class="topbar-actions"><ui:Label name="connection" text="SẴN SÀNG LÊN ĐƯỜNG" class="connection" /><ui:Button name="career-open" text="GARAGE / HỒ SƠ" class="small-button" /><ui:Button name="gallery-open" text="CÂU CHUYỆN" class="small-button" /><ui:Button name="settings-open" text="CÀI ĐẶT" class="small-button" /></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:ScrollView name="menu" class="menu" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+      <ui:VisualElement class="menu-kicker"><ui:Label text="LUYỆN TẬP OFFLINE" class="eyebrow" /></ui:VisualElement>
+      <ui:Label name="title" text="CANYON RUN" class="title" />
+      <ui:VisualElement class="menu-selection-row"><ui:Label name="menu-level" text="CẤP 1 /" class="subtitle menu-level" /><ui:Label name="menu-selection" text="SPARK 450" class="subtitle" /></ui:VisualElement>
+      <ui:Button name="local" text="VÀO CUỘC ĐUA" class="primary" />
+      <ui:Button name="practice-open" text="CHỌN TUYẾN / XE" class="small-button" />
+      <ui:Button name="network-toggle" text="ONLINE / LAN" class="secondary" />
+      <ui:VisualElement name="network-panel" class="network-panel">
+        <ui:Label text="TÊN TAY ĐUA" class="eyebrow" />
+        <ui:TextField name="player-name" value="Tay đua" max-length="24" class="endpoint" />
+        <ui:Label text="ĐỊA CHỈ MÁY CHỦ ONLINE / LAN" class="eyebrow" />
+        <ui:TextField name="endpoint" class="endpoint" />
+        <ui:VisualElement class="profile-actions"><ui:Button name="connect" text="HỒ SƠ ĐÃ LƯU" class="secondary" /><ui:Button name="connect-guest" text="KHÁCH MỚI" class="secondary" /></ui:VisualElement>
+      </ui:VisualElement>
+      <ui:Label name="message" text="Kết quả luyện tập không cộng vào hồ sơ máy chủ." class="hint" />
+    </ui:ScrollView>
+    <ui:VisualElement name="hud" class="hud">
+      <ui:VisualElement name="position-block" class="position-block">
+        <ui:Label text="VỊ TRÍ" class="eyebrow" />
+        <ui:Label name="rank" text="01 / 06" class="rank" />
+        <ui:Label name="distance" text="0.00 / 2.40 KM" class="hint" />
+      </ui:VisualElement>
+      <ui:VisualElement class="progress-track"><ui:VisualElement name="progress" class="progress" /></ui:VisualElement>
+      <ui:VisualElement name="vitals-block" class="vitals">
+        <ui:Label name="weapon" text="TAY KHÔNG" class="brand" />
+        <ui:VisualElement class="vital-row"><ui:Label text="TAY ĐUA" class="vital-label" /><ui:VisualElement class="bar-track"><ui:VisualElement name="health" class="bar health" /></ui:VisualElement></ui:VisualElement>
+        <ui:VisualElement class="vital-row"><ui:Label text="XE" class="vital-label" /><ui:VisualElement class="bar-track"><ui:VisualElement name="condition" class="bar condition" /></ui:VisualElement></ui:VisualElement>
+        <ui:Label name="state" text="ĐANG ĐUA" class="hint" />
+      </ui:VisualElement>
+      <ui:VisualElement name="speed-block" class="speed-block"><ui:Label name="speed" text="000" class="speed" /><ui:Label text="KM/H" class="eyebrow amber" /></ui:VisualElement>
+      <ui:VisualElement class="race-actions"><ui:Button name="cruise" text="GIỮ GA: TẮT" class="small-button" /><ui:Button name="leave" text="RỜI CUỘC ĐUA" class="small-button" /></ui:VisualElement>
+      <ui:VisualElement name="recovery" class="recovery"><ui:Label name="recovery-title" class="recovery-title" /><ui:Label name="recovery-hint" class="hint" /></ui:VisualElement>
+      <ui:Label name="event" text="" class="event" />
+    </ui:VisualElement>
+    <ui:VisualElement name="results" class="results">
+      <ui:Label text="KẾT QUẢ / LUYỆN TẬP" class="eyebrow amber" />
+      <ui:Label name="result-title" text="VỀ ĐÍCH." class="result-title" />
+      <ui:Label name="result-detail" text="" class="description" />
+      <ui:Button name="restart" text="ĐUA LẠI  >" class="primary" />
+      <ui:Button name="home" text="VỀ MENU" class="secondary" />
+    </ui:VisualElement>
+    <ui:VisualElement name="multiplayer" class="mp-panel">
+      <ui:VisualElement class="mp-heading"><ui:VisualElement><ui:Label text="RACING BOIS / CÙNG LÊN ĐƯỜNG" class="eyebrow amber" /><ui:Label name="mp-title" text="PHÒNG ĐUA" class="mp-title" /></ui:VisualElement><ui:Button name="mp-disconnect" text="VỀ MENU" class="small-button" /></ui:VisualElement>
+      <ui:Label name="mp-message" class="mp-message" />
+      <ui:VisualElement name="mp-browser" class="mp-columns">
+        <ui:ScrollView class="mp-create-column"><ui:Label text="TẠO PHÒNG" class="brand" /><ui:Label text="Tên phòng" class="hint" /><ui:TextField name="mp-room-name" value="Cùng lên đường" max-length="40" class="endpoint" /><ui:Label text="Đối thủ máy" class="hint" /><ui:DropdownField name="mp-bots" class="endpoint" /><ui:Toggle name="mp-public" text="Hiện trong danh sách phòng" value="true" class="settings-toggle" /><ui:Label text="Tuyến đường" class="hint" /><ui:DropdownField name="mp-course" class="endpoint" /><ui:Label text="Cấp hiện tại của hồ sơ" class="hint" /><ui:DropdownField name="mp-level" class="endpoint" /><ui:Button name="mp-create" text="TẠO PHÒNG  >" class="primary" /><ui:Label text="CÓ MÃ TỪ BẠN BÈ?" class="brand" /><ui:Label text="Nhập 6 ký tự của phòng" class="hint" /><ui:TextField name="mp-join-code" max-length="6" class="endpoint" /><ui:Button name="mp-join" text="VÀO PHÒNG" class="secondary" /></ui:ScrollView>
+        <ui:VisualElement class="mp-list-column"><ui:VisualElement class="mp-list-heading"><ui:Label text="PHÒNG TRÊN MÁY CHỦ" class="brand" /><ui:Button name="mp-refresh" text="LÀM MỚI" class="small-button" /></ui:VisualElement><ui:ScrollView name="mp-room-list" class="mp-list" /><ui:Label name="mp-empty" text="Chưa có phòng. Tạo một phòng và gửi mã cho bạn bè." class="hint" /></ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="mp-room" class="mp-room">
+        <ui:VisualElement class="mp-room-body">
+        <ui:ScrollView name="mp-members" class="mp-members" />
+          <ui:VisualElement class="mp-room-aside">
+        <ui:VisualElement class="mp-code-row"><ui:VisualElement><ui:Label text="MÃ MỜI BẠN BÈ" class="eyebrow" /><ui:TextField name="mp-code" is-read-only="true" class="mp-code" /></ui:VisualElement><ui:Label name="mp-room-info" class="hint" /><ui:Button name="mp-copy-invite" text="SAO CHÉP LỜI MỜI" class="small-button" /></ui:VisualElement>
+        <ui:TextField name="mp-invite-link" is-read-only="true" class="endpoint" tooltip="Chọn và sao chép liên kết này để mời bạn bè." />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="mp-countdown" class="mp-countdown" />
+        <ui:Label name="mp-ready-hint" class="hint mp-ready-hint" />
+        <ui:VisualElement class="mp-actions"><ui:Button name="mp-ready" text="SẴN SÀNG" class="primary" /><ui:Button name="mp-start" text="BẮT ĐẦU" class="primary" /><ui:Button name="mp-leave" text="RỜI PHÒNG" class="secondary" /></ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="mp-results" class="mp-results"><ui:Label name="mp-result-note" class="hint" /><ui:ScrollView name="mp-result-list" class="mp-list" /><ui:VisualElement class="mp-actions"><ui:Button name="mp-rematch" text="VỀ PHÒNG CHỜ" class="primary" /><ui:Button name="mp-result-leave" text="RỜI PHÒNG" class="secondary" /></ui:VisualElement></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="bottomline"><ui:VisualElement name="controls" class="controls" /></ui:VisualElement>
+    <ui:VisualElement name="settings" class="settings-overlay">
+      <ui:ScrollView class="settings-card">
+        <ui:VisualElement class="settings-heading"><ui:VisualElement><ui:Label text="THEO NHỊP CỦA BẠN" class="eyebrow amber" /><ui:Label text="CÀI ĐẶT." class="settings-title" /></ui:VisualElement><ui:Button name="settings-close" text="XONG" class="small-button" /></ui:VisualElement>
+        <ui:Label name="settings-context" class="description" />
+        <ui:Label text="CHẤT LƯỢNG HÌNH ẢNH" class="eyebrow" /><ui:DropdownField name="quality" class="endpoint" />
+        <ui:Label text="Mức Vừa dành cho trải nghiệm cân bằng. Giảm chất lượng nếu nhịp hình chưa ổn định." class="hint" />
+        <ui:VisualElement class="settings-divider" />
+        <ui:Toggle name="reduced-motion" text="Giảm chuyển động" class="settings-toggle" />
+        <ui:Label text="Giảm rung camera và chuyển cảnh; tín hiệu chiến đấu vẫn hiển thị." class="hint" />
+        <ui:Toggle name="audio" text="Bật âm thanh" value="true" class="settings-toggle" />
+        <ui:Label name="hud-scale-label" text="KÍCH THƯỚC HUD · 100%" class="eyebrow settings-scale-label" />
+        <ui:Slider name="hud-scale" low-value="0.85" high-value="1.15" value="1" class="hud-scale" />
+        <ui:Label text="85% — gọn hơn                         115% — dễ đọc hơn" class="hint" />
+        <ui:Label text="TAB / PHÍM MŨI TÊN hoặc D-PAD để chọn · ENTER / A để xác nhận" class="settings-help" />
+      </ui:ScrollView>
+    </ui:VisualElement>
+  </ui:VisualElement>
+  <ui:VisualElement name="practice-panel" class="content-modal">
+    <ui:VisualElement class="content-card">
+      <ui:VisualElement class="content-heading"><ui:Label text="CHỌN HÀNH TRÌNH." class="content-title" /><ui:Button name="practice-close" text="XONG" class="small-button" /></ui:VisualElement>
+      <ui:Label text="Luyện tập tự do với mọi xe và tay đua đã có. Kết quả không cộng vào hồ sơ máy chủ." class="description" />
+      <ui:DropdownField name="practice-course" label="TUYẾN ĐƯỜNG" class="content-choice" />
+      <ui:DropdownField name="practice-level" label="CẤP ĐỘ" class="content-choice" />
+      <ui:DropdownField name="practice-bike" label="MÔ TÔ" class="content-choice" />
+      <ui:DropdownField name="practice-character" label="TAY ĐUA" class="content-choice" />
+      <ui:Button name="practice-start" text="LÊN ĐƯỜNG  >" class="primary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+  <ui:VisualElement name="content-loading" class="content-modal" focusable="true">
+    <ui:VisualElement class="content-card">
+      <ui:Label text="CHUẨN BỊ HÀNH TRÌNH." class="content-title" />
+      <ui:Label name="content-status" text="Đang tải nội dung cần dùng…" class="description" />
+      <ui:ProgressBar name="content-progress" low-value="0" high-value="100" title="0%" />
+      <ui:Button name="content-retry" text="THỬ LẠI" class="primary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

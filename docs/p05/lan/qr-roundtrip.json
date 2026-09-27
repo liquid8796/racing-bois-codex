@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "cases": 16,
+  "encoder": "Vendored Nayuki browser JavaScript",
+  "decoder": "zxing-cpp 2.3.0 independent C++ implementation",
+  "playerRuntimeNeedsDecoder": false,
+  "results": [
+    {
+      "url": "http://192.168.1.13:7777/",
+      "scale": 4,
+      "rotation": 0,
+      "decoded": "http://192.168.1.13:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://192.168.1.13:7777/",
+      "scale": 4,
+      "rotation": 90,
+      "decoded": "http://192.168.1.13:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://192.168.1.13:7777/",
+      "scale": 6,
+      "rotation": 0,
+      "decoded": "http://192.168.1.13:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://192.168.1.13:7777/",
+      "scale": 6,
+      "rotation": 90,
+      "decoded": "http://192.168.1.13:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://10.0.0.2:7777/",
+      "scale": 4,
+      "rotation": 0,
+      "decoded": "http://10.0.0.2:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://10.0.0.2:7777/",
+      "scale": 4,
+      "rotation": 90,
+      "decoded": "http://10.0.0.2:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://10.0.0.2:7777/",
+      "scale": 6,
+      "rotation": 0,
+      "decoded": "http://10.0.0.2:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://10.0.0.2:7777/",
+      "scale": 6,
+      "rotation": 90,
+      "decoded": "http://10.0.0.2:7777/",
+      "passed": true
+    },
+    {
+      "url": "http://172.16.4.8:7787/",
+      "scale": 4,
+      "rotation": 0,
+      "decoded": "http://172.16.4.8:7787/",
+      "passed": true
+    },
+    {
+      "url": "http://172.16.4.8:7787/",
+      "scale": 4,
+      "rotation": 90,
+      "decoded": "http://172.16.4.8:7787/",
+      "passed": true
+    },
+    {
+      "url": "http://172.16.4.8:7787/",
+      "scale": 6,
+      "rotation": 0,
+      "decoded": "http://172.16.4.8:7787/",
+      "passed": true
+    },
+    {
+      "url": "http://172.16.4.8:7787/",
+      "scale": 6,
+      "rotation": 90,
+      "decoded": "http://172.16.4.8:7787/",
+      "passed": true
+    },
+    {
+      "url": "http://192.168.255.254:65535/",
+      "scale": 4,
+      "rotation": 0,
+      "decoded": "http://192.168.255.254:65535/",
+      "passed": true
+    },
+    {
+      "url": "http://192.168.255.254:65535/",
+      "scale": 4,
+      "rotation": 90,
+      "decoded": "http://192.168.255.254:65535/",
+      "passed": true
+    },
+    {
+      "url": "http://192.168.255.254:65535/",
+      "scale": 6,
+      "rotation": 0,
+      "decoded": "http://192.168.255.254:65535/",
+      "passed": true
+    },
+    {
+      "url": "http://192.168.255.254:65535/",
+      "scale": 6,
+      "rotation": 90,
+      "decoded": "http://192.168.255.254:65535/",
+      "passed": true
+    }
+  ]
+}

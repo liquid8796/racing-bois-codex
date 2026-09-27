@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "releaseId": "p09-20260927-e",
+  "sourceSha256": "90f38b173fcd7edac01a138d5aee5da1f4a773112f9ddf827e7ab1e045c54544",
+  "testSourceSha256": "8232052fd8d18b1c13ad2800560211ec6102c83acddabafd438becc259ef64db",
+  "runtime": "linux-arm64",
+  "suites": [
+    {
+      "suite": "multiplayer",
+      "report": "arm64-multiplayer-e.json",
+      "passed": 32,
+      "tests": 32,
+      "failed": 0
+    },
+    {
+      "suite": "gameplay",
+      "report": "arm64-gameplay-e.json",
+      "passed": true,
+      "tests": 31,
+      "failed": 0
+    },
+    {
+      "suite": "persistence",
+      "report": "arm64-persistence-e.json",
+      "passed": 26,
+      "tests": 26,
+      "failed": 0
+    }
+  ],
+  "gameplayReceiptSourceFilesVerified": 25
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "from": "p09-20260927-c",
+  "to": "p09-20260927-d",
+  "sourceChanges": [
+    {
+      "path": "src/Server/RacingBois.Server.Host/Multiplayer/PeerMailbox.cs",
+      "before": "414e372ccd6f6c76ce143fe06c79477c53830f33515f4e85f05a1084f4763fb1",
+      "after": "1e231c52e99febd2f06354ae6d9a807de41db3d9510ebe86b3498e70a2b1a16e"
+    }
+  ],
+  "binaryChanges": [
+    "server/RacingBois.Server.Host.dll",
+    "server/RacingBois.Server.Host.pdb",
+    "tests/multiplayer/RacingBois.Multiplayer.Integration.Tests.dll",
+    "tests/multiplayer/RacingBois.Multiplayer.Integration.Tests.pdb"
+  ],
+  "unchangedBinaryFiles": 1249,
+  "fromSourceSha256": "fbd8d0b623d9faabd097b23824b33bfead07399c1a2f1097a8ffd29453dea7dc",
+  "toSourceSha256": "16787112e2104972c9f46c2b74c50504b0a26c2c4d8b1e5ebd97faa6e99da823"
+}

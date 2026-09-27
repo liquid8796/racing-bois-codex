@@ -1,0 +1,205 @@
+--- Assets/RacingBois/Client/Presentation/RaceStageView.cs
++++ tools/p10/pose-envelope-staging/Candidate/RaceStageView.cs
+@@ -56,6 +56,15 @@
+         private long lastEventId,lastTick=-1;
+         private bool wasActive, cameraInitialized;
+         private float impactShake;
++        private PresentationContinuityScope previousContinuityScope;
++        private bool usedNetworkContinuity, cameraUsedVisualOffset, localVisualRebased, localVisualReset;
++        private Vector3 localVisualOffset, localBikeVisualOffset, localVisualShift, previousCameraVisualOffset;
++        public float LocalVisualCorrectionMeters => localVisualOffset.magnitude;
++        public float LocalBikeVisualCorrectionMeters => localBikeVisualOffset.magnitude;
++        public double LocalVisualCorrectionRemainingSeconds { get; private set; }
++        public VisualPoseResetReason LocalVisualResetReason { get; private set; }
++        public int LocalVisualHardResetCount { get; private set; }
++        public int LocalVisualReconciliationCount { get; private set; }
+         private int riderPoolSize, trafficPoolSize, pedestrianPoolSize;
+         public int PoolCreated { get; private set; }
+         public int PoolReused { get; private set; }
+@@ -219,15 +228,21 @@
+             foreach(var view in pedestrians.Values)view.Initialized=false;
+             foreach(var view in traffic.Values)view.Initialized=false;
+         }
+-        public void RenderFrame(RaceWorldReadModel world,RaceRiderReadModel local,bool active,float dt,bool reducedMotion,bool actorsAlreadyInterpolated=false)
++        public void RenderFrame(RaceWorldReadModel world,RaceRiderReadModel local,bool active,float dt,bool reducedMotion,bool actorsAlreadyInterpolated=false,PresentationContinuityScope continuity=default)
+         {
+             if(renderSuspended)return;
++            localVisualOffset=localBikeVisualOffset=localVisualShift=Vector3.zero;
++            localVisualRebased=localVisualReset=false;LocalVisualResetReason=VisualPoseResetReason.None;LocalVisualCorrectionRemainingSeconds=0;
++            bool useContinuity=actorsAlreadyInterpolated&&continuity.IsValid;
++            double visualNow=Time.realtimeSinceStartupAsDouble;
+             if(active&&world!=null&&actorContent!=null&&(Road.CourseIndex!=world.CourseIndex||Road.LevelIndex!=world.Level))
+             {
+                 if(!ContentRegistry.ReadyFor(world.CourseIndex))throw new InvalidOperationException("Race content is not loaded.");
+                 Road.ApplyContent(ContentRegistry.Route,world.Level);ResetInterpolation();
+             }
+-            bool reset=active!=wasActive||(world!=null&&world.Tick<lastTick);
++            bool reset=active!=wasActive||(world!=null&&world.Tick<lastTick)||useContinuity!=usedNetworkContinuity||
++                (useContinuity&&!continuity.SameIdentity(previousContinuityScope));
++            previousContinuityScope=continuity;usedNetworkContinuity=useContinuity;
+             if(reset){cameraInitialized=false;lastEventId=0;impactShake=0;}
+             wasActive=active;
+             if(menuRider!=null){menuRider.Bike.gameObject.SetActive(!active);menuRider.Rider.gameObject.SetActive(!active&&menuPreviewShowRider);}
+@@ -257,7 +272,7 @@
+                         view=AcquireRider(item.Id,police,item.BikeCatalogIndex,item.CharacterCatalogIndex);if(view==null)continue;
+                         riders.Add(item.Id,view);
+                     }
+-                    RenderRider(view,item,dt,reset,actorsAlreadyInterpolated);
++                    RenderRider(view,item,dt,reset,actorsAlreadyInterpolated,useContinuity&&item.Id==local.Id,continuity,visualNow);
+                 }
+                 for(int trafficIndex=0;trafficIndex<trafficCount;trafficIndex++)
+                 {
+@@ -319,7 +334,7 @@
+                     else Rotate(view,"UpperArm_R",0,0,130+Mathf.Sin(item.StateTicks*.06f)*12);
+                 }
+             }
+-            UpdateCamera(local,active,dt,reducedMotion);
++            UpdateCamera(local,active,dt,reducedMotion,useContinuity,continuity.Frozen);
+         }
+         public void BeforeContentUnload()
+         {
+@@ -378,7 +393,7 @@
+             }
+             retired.Clear();
+         }
+-        private void RenderRider(RiderVisual view,RaceRiderReadModel state,float dt,bool reset,bool interpolated)
++        private void RenderRider(RiderVisual view,RaceRiderReadModel state,float dt,bool reset,bool interpolated,bool localContinuity,PresentationContinuityScope continuity,double now)
+         {
+             if(reset)
+             {
+@@ -400,12 +415,34 @@
+             if(state.Mode==RiderMode.Remounting)riderPoint=Vector3.Lerp(riderPoint,Road.Point(bikeS,bikeD)+Road.Heading(bikeS)*new Vector3(0,-.08f,-.32f),mounting);
+             Quaternion riderRotation=Road.Heading(state.LongitudinalMeters)*Quaternion.Euler(0,0,detached?0:state.LeanDegrees*.65f);
+             float blend=interpolated?1:1-Mathf.Exp(-dt*22);
+-            if(!view.Initialized||reset){view.Bike.position=bikePoint;view.Bike.rotation=bikeRotation;view.Rider.position=riderPoint;view.Rider.rotation=riderRotation;view.Initialized=true;}
++            if(localContinuity)
++            {
++                bool initialize=!view.Initialized||reset||!view.UsedVisualContinuity;
++                bool poseChanged=view.VisualDetached!=detached||(!initialize&&continuity.DetachedCorrectionSince(view.VisualCorrectionRevision,detached));
++                float riderSpeedBound=Mathf.Clamp(Mathf.Max(Mathf.Abs(view.PreviousVisualSpeed),Mathf.Abs(state.SpeedMetersPerSecond))+10,10,100);
++                view.BikeEnvelope.Sample(bikePoint,bikeRotation,now,100,poseChanged,continuity.Frozen,initialize,out var shownBike,out var shownBikeRotation);
++                view.RiderEnvelope.Sample(riderPoint,riderRotation,now,riderSpeedBound,poseChanged,continuity.Frozen,initialize,out var shownRider,out var shownRiderRotation);
++                view.Bike.SetPositionAndRotation(shownBike,shownBikeRotation);view.Rider.SetPositionAndRotation(shownRider,shownRiderRotation);
++                localVisualOffset=view.RiderEnvelope.Offset;localBikeVisualOffset=view.BikeEnvelope.Offset;
++                localVisualShift=view.RiderEnvelope.RawTargetShift;localVisualRebased=view.RiderEnvelope.BeganReconciliation;
++                localVisualReset=view.RiderEnvelope.ResetThisSample;
++                LocalVisualResetReason=view.RiderEnvelope.ResetReason;
++                LocalVisualHardResetCount=view.RiderEnvelope.HardResetCount+view.BikeEnvelope.HardResetCount;
++                LocalVisualCorrectionRemainingSeconds=Math.Max(view.RiderEnvelope.RemainingSeconds,view.BikeEnvelope.RemainingSeconds);
++                if(localVisualRebased)LocalVisualReconciliationCount++;
++                view.UsedVisualContinuity=true;view.Initialized=true;
++            }
+             else
+             {
+-                view.Bike.position=Vector3.Lerp(view.Bike.position,bikePoint,blend);view.Bike.rotation=Quaternion.Slerp(view.Bike.rotation,bikeRotation,blend);
+-                view.Rider.position=Vector3.Lerp(view.Rider.position,riderPoint,blend);view.Rider.rotation=Quaternion.Slerp(view.Rider.rotation,riderRotation,blend);
+-            }
++                view.UsedVisualContinuity=false;
++                if(!view.Initialized||reset){view.Bike.position=bikePoint;view.Bike.rotation=bikeRotation;view.Rider.position=riderPoint;view.Rider.rotation=riderRotation;view.Initialized=true;}
++                else
++                {
++                    view.Bike.position=Vector3.Lerp(view.Bike.position,bikePoint,blend);view.Bike.rotation=Quaternion.Slerp(view.Bike.rotation,bikeRotation,blend);
++                    view.Rider.position=Vector3.Lerp(view.Rider.position,riderPoint,blend);view.Rider.rotation=Quaternion.Slerp(view.Rider.rotation,riderRotation,blend);
++                }
++            }
++            view.VisualDetached=detached;view.PreviousVisualSpeed=state.SpeedMetersPerSecond;view.VisualCorrectionRevision=continuity.CorrectionRevision;
+             view.WheelAngle=Mathf.Repeat(view.WheelAngle+state.SpeedMetersPerSecond*dt/2.0f*360,360);
+             foreach(var wheel in view.Wheels)wheel.localRotation=view.WheelRest[wheel]*view.BikeBasisInverse*Quaternion.Euler(view.WheelAngle,0,0)*view.BikeBasis;
+             Pose(view,state.Mode,state.AttackSide,state.AttackAgeTicks,state.ModeAgeTicks,state.SpeedMetersPerSecond,state.AttackWeapon==WeaponKind.Kick,state.LeanDegrees);
+@@ -461,8 +498,10 @@
+             Quaternion pose=view.BasisInverse*Quaternion.Euler(x,y,z)*view.Basis;
+             foreach(var bone in joints)bone.localRotation=view.Rest[bone.name]*pose;
+         }
+-        private void UpdateCamera(RaceRiderReadModel local,bool active,float dt,bool reduced)
+-        {
++        private void UpdateCamera(RaceRiderReadModel local,bool active,float dt,bool reduced,bool online,bool frozen)
++        {
++            if(active&&online&&frozen&&cameraInitialized)return;
++            if(localVisualReset)cameraInitialized=false;
+             float s=active?local.LongitudinalMeters:7;
+             var heading=Road.Heading(s);
+             Vector3 anchor=active?Road.Point(s,local.LateralMeters,Mathf.Min(1.5f,local.HeightMeters)):Road.Point(7,2.4f);
+@@ -482,8 +521,18 @@
+             impactShake=Mathf.MoveTowards(impactShake,0,dt*.55f);
+             if(!reduced&&active)position+=ViewCamera.transform.right*(Mathf.Sin(Time.unscaledTime*71)*impactShake);
+             Quaternion rotation=Quaternion.LookRotation(look-position,Vector3.up);
++            bool useOffset=active&&online;
++            if(useOffset!=cameraUsedVisualOffset){cameraInitialized=false;previousCameraVisualOffset=Vector3.zero;}
++            Vector3 previous=ViewCamera.transform.position;
++            if(cameraInitialized&&useOffset)
++            {
++                previous-=previousCameraVisualOffset;
++                if(localVisualRebased)previous+=localVisualShift;
++            }
+             float blend=cameraInitialized?1-Mathf.Exp(-dt*7):1;
+-            ViewCamera.transform.SetPositionAndRotation(Vector3.Lerp(ViewCamera.transform.position,position,blend),Quaternion.Slerp(ViewCamera.transform.rotation,rotation,blend));
++            Vector3 shown=Vector3.Lerp(previous,position,blend)+(useOffset?localVisualOffset:Vector3.zero);
++            ViewCamera.transform.SetPositionAndRotation(shown,Quaternion.Slerp(ViewCamera.transform.rotation,rotation,blend));
++            previousCameraVisualOffset=useOffset?localVisualOffset:Vector3.zero;cameraUsedVisualOffset=useOffset;
+             ViewCamera.fieldOfView=Mathf.Lerp(ViewCamera.fieldOfView,active?(reduced?58:60+Mathf.Clamp01(local.SpeedMetersPerSecond/58)*8):menuPreviewFraming?40:46,1-Mathf.Exp(-dt*3));
+             cameraInitialized=true;
+         }
+@@ -505,6 +554,10 @@
+         }
+         private sealed class RiderVisual
+         {
++            public readonly UnityVisualPoseEnvelope RiderEnvelope=new UnityVisualPoseEnvelope(),BikeEnvelope=new UnityVisualPoseEnvelope();
++            public bool UsedVisualContinuity,VisualDetached;
++            public long VisualCorrectionRevision;
++            public float PreviousVisualSpeed;
+             public WeaponGripView Weapon;
+             public RiderAnimationView Animation;
+             public readonly Transform Bike,Rider;
+--- Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs
++++ tools/p10/pose-envelope-staging/Candidate/RaceBootstrap.cs
+@@ -497,7 +497,10 @@
+             {
+                 bool renderingRace=showRace&&(!careerPreviewVisible||active);
+                 UpdateMenuPreview(renderingRace);
+-                Stage.RenderFrame(world,local,renderingRace,dt,screen.ReducedMotion,useMultiplayer);
++                var continuity=useMultiplayer&&multiplayer.Room!=null?
++                    new PresentationContinuityScope(multiplayer.PresentationSessionEpoch,multiplayer.Room.RaceEpoch,multiplayer.Room.RoomId,multiplayer.RiderId,
++                        multiplayer.PresentationFrozen||multiplayer.IsReconnecting||multiplayer.IsSuspended,multiplayer.PresentationCorrectionRevision,multiplayer.LastCorrectionMeters):default;
++                Stage.RenderFrame(world,local,renderingRace,dt,screen.ReducedMotion,useMultiplayer,continuity);
+             }
+             audioView.Render(world,local,active&&!cinematicPlaying,screen.AudioEnabled,dt);
+             musicDirector.SetMix(screen.AudioEnabled,active&&!cinematicPlaying?.82f:1f);
+--- Assets/RacingBois/Client/Application/MultiplayerSession.cs
++++ tools/p10/pose-envelope-staging/Candidate/MultiplayerSession.cs
+@@ -46,6 +46,8 @@
+         public string Error { get; private set; } = "";
+         public string PlayerId { get; private set; } = "";
+         public string SessionId => PlayerId;
++        /// <summary>Lease identity for resetting renderer-only continuity; grants no authority.</summary>
++        public int PresentationSessionEpoch => sessionEpoch;
+         public int RiderId { get; private set; }
+         public int CurrentCredits { get; private set; }
+         public bool IsGuest { get; private set; }
+@@ -68,6 +70,8 @@
+         public int SentInputs => sequence;
+         public long LastResolvedTick => hasCheckpoint ? authoritative.Tick : 0;
+         public float LastCorrectionMeters { get; private set; }
++        /// <summary>Changes only for a measured equal-target prediction correction, not ordinary snapshots.</summary>
++        public long PresentationCorrectionRevision { get; private set; }
+         public float MaximumCorrectionMeters { get; private set; }
+         public double RttMs => rtt * 1000;
+         public double RttMilliseconds => RttMs;
+@@ -346,7 +350,7 @@
+             hasCheckpoint = false; predictor = null; authoritative = default; heldAnalog = default; lastAppliedInputTick = -1;
+             sequence = processedSequence = 0; lastTargetTick = 0; RiderId = 0; raceEpoch = 0;
+             LatestAuthoritativeWorld = null; latestPredictionSnapshot = null; LocalRider = default; LastCorrectionMeters = 0;
+-            MaximumCorrectionMeters = 0;
++            MaximumCorrectionMeters = 0; PresentationCorrectionRevision = 0;
+             ResultsPending = false; SteadyResidualSamples = ContactResidualSamples = 0; MaximumSteadyResidualMeters = MaximumContactResidualMeters = 0;
+             PresentationFrozen = false; predictionNeighbors.RiderCount = predictionNeighbors.TrafficCount = predictionNeighbors.PedestrianCount = 0;
+             Standings = Array.AsReadOnly(new MultiplayerStandingReadModel[0]);
+--- Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs
++++ tools/p10/pose-envelope-staging/Candidate/MultiplayerSession.Messages.cs
+@@ -108,6 +108,7 @@
+                 float s = oldS - predictedRider.LongitudinalMeters, d = oldD - predictedRider.LateralMeters;
+                 LastCorrectionMeters = (float)Math.Sqrt(s * s + d * d);
+                 MaximumCorrectionMeters = Math.Max(MaximumCorrectionMeters, LastCorrectionMeters);
++                PresentationCorrectionRevision++;
+                 if (oldMode == predictedRider.Mode && LastCorrectionMeters < 4)
+                 {
+                     float remaining = Math.Max(0, 1 - (float)((clock.NowSeconds - correctionAt) / .12));

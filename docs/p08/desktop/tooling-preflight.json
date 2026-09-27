@@ -1,0 +1,60 @@
+{
+  "installedWindowsMonoPlayer": true,
+  "passed": true,
+  "unityVersion": "6000.5.7f1",
+  "verifierTests": {
+    "exitCode": 0,
+    "command": "python -m unittest discover -s tools/p08/desktop -p test_audit_desktop.py -v",
+    "tests": 14,
+    "output": "test_actual_receipt_and_all_player_bytes_bound (test_audit_desktop.DesktopDistributionTests.test_actual_receipt_and_all_player_bytes_bound) ... ok\ntest_complete_offline_catalog (test_audit_desktop.DesktopDistributionTests.test_complete_offline_catalog) ... ok\ntest_corrupt_or_truncated_content_rejected (test_audit_desktop.DesktopDistributionTests.test_corrupt_or_truncated_content_rejected) ... ok\ntest_missing_music_rejected (test_audit_desktop.DesktopDistributionTests.test_missing_music_rejected) ... ok\ntest_online_requires_wss (test_audit_desktop.DesktopDistributionTests.test_online_requires_wss) ... ok\ntest_path_escape_rejected (test_audit_desktop.DesktopDistributionTests.test_path_escape_rejected) ... ok\ntest_pe_x86_rejected (test_audit_desktop.DesktopDistributionTests.test_pe_x86_rejected) ... ok\ntest_private_config_field_rejected (test_audit_desktop.DesktopDistributionTests.test_private_config_field_rejected) ... ok\ntest_source_snapshot_mutation_rejected (test_audit_desktop.DesktopDistributionTests.test_source_snapshot_mutation_rejected) ... ok\ntest_truncated_pe_rejected (test_audit_desktop.DesktopDistributionTests.test_truncated_pe_rejected) ... ok\ntest_unregistered_master_rejected (test_audit_desktop.DesktopDistributionTests.test_unregistered_master_rejected) ... ok\ntest_userinfo_and_nonpublic_content_rejected (test_audit_desktop.DesktopDistributionTests.test_userinfo_and_nonpublic_content_rejected) ... ok\ntest_wrong_gameplay_version_rejected (test_audit_desktop.DesktopDistributionTests.test_wrong_gameplay_version_rejected) ... ok\ntest_wrong_platform_rejected (test_audit_desktop.DesktopDistributionTests.test_wrong_platform_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.353s\n\nOK"
+  },
+  "scope": "Installed-module, editor API compilation and verifier fixture evidence only. No Unity player build, launch, performance, native CRC or physical LAN/WAN acceptance inferred.",
+  "schema": 1,
+  "files": [
+    {
+      "path": "Assets/RacingBois/Editor/P08DesktopBuilder.cs",
+      "sha256": "1008321ce4da24ee6678c5fbbfca7bd2cd8d4dc7dfb6174cb7a0dbe8d870eff6",
+      "bytes": 22909
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P08ContentPackBuilder.cs",
+      "sha256": "9ca204da263c4fabfc231fc1757e35aeeb4cb9433fa8b6a71a221cc4fc581561",
+      "bytes": 17034
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/ContentManifestRules.cs",
+      "sha256": "58df69f3801a47ed38001d74869e3a57eaecf4f38db6afdf9cb9f8a808a4a2c5",
+      "bytes": 4514
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs",
+      "sha256": "fd88d096abcf1163f947765835b615d7467ae95660fa317c607ba0909c2c84f1",
+      "bytes": 5387
+    },
+    {
+      "path": "tools/p08/desktop/audit_desktop.py",
+      "sha256": "c6bf9b5fb526c4f048aba2fe99f8786838bec1bb30298111a31b2d8d1c0280ec",
+      "bytes": 11245
+    },
+    {
+      "path": "tools/p08/desktop/test_audit_desktop.py",
+      "sha256": "5ace548a27c76c8ac8a15799710dfec21fa387214fc213930f4b473bb9dbddbb",
+      "bytes": 8407
+    },
+    {
+      "path": "tools/p08/desktop/EditorBuildPreflight.csproj",
+      "sha256": "0846a9d28ea4e990b4b1e26fa5e6bb849062b5c421eb5333dc8deaaa354acca2",
+      "bytes": 1633
+    }
+  ],
+  "startedUtc": "2026-09-26T11:31:38.5953671Z",
+  "installedWindowsIl2CppPlayer": false,
+  "compiler": {
+    "exitCode": 0,
+    "command": "dotnet build tools/p08/desktop/EditorBuildPreflight.csproj -v minimal",
+    "output": "  Determining projects to restore...\n  Restored D:\\Project\\Unity\\racing-bois\\tools\\p08\\desktop\\EditorBuildPreflight.csproj (in 63 ms).\n  EditorBuildPreflight -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\desktop\\bin\\Debug\\netstandard2.1\\EditorBuildPreflight.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:01.09",
+    "warnings": 0,
+    "errors": 0
+  },
+  "completedUtc": "2026-09-26T11:31:40.4547985Z"
+}

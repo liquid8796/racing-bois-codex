@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><Nullable>annotations</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../../src/Shared/RacingBois.NetworkMapping/RacingBois.NetworkMapping.csproj" /></ItemGroup>
+  <ItemGroup>
+    <Compile Include="../../../Assets/RacingBois/Client/Application/*.cs" Link="Application/%(Filename)%(Extension)" />
+    <Compile Include="../ProtocolSoakNext/DiagnosticJournal.cs" Link="Baseline/DiagnosticJournal.cs" />
+  </ItemGroup>
+</Project>

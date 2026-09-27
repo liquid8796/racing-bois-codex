@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><EnableDefaultCompileItems>false</EnableDefaultCompileItems><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Shared/RacingBois.Gameplay.Definitions/RacingBois.Gameplay.Definitions.csproj" />
+    <Compile Include="IntegrationProgram.cs" />
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Simulation/**/*.cs" Exclude="../../../Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianSimulation.cs;../../../Packages/com.racingbois.foundation/Runtime/Simulation/RiderPrediction.cs;../../../Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs;../../../Packages/com.racingbois.foundation/Runtime/Simulation/CombatResolver.cs" />
+    <Compile Include="StageSimulation/*.cs" />
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Protocol/**/*.cs" Exclude="../../../Packages/com.racingbois.foundation/Runtime/Protocol/MultiplayerMessages.cs" />
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/NetworkMapping/**/*.cs" />
+    <Compile Include="../../../Assets/RacingBois/Client/Application/*.cs" Exclude="../../../Assets/RacingBois/Client/Application/MultiplayerProjection.cs;../../../Assets/RacingBois/Client/Application/MultiplayerSnapshotReadModel.cs;../../../Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs;../../../Assets/RacingBois/Client/Application/PredictionNeighborBuilder.cs;../../../Assets/RacingBois/Client/Application/MultiplayerSession.cs;../../../Assets/RacingBois/Client/Application/RemoteMotionSampler.cs" />
+    <Compile Include="StageIntegration/MultiplayerMessages.cs" />
+    <Compile Include="StageIntegration/Client-*.cs" />
+  </ItemGroup>
+</Project>

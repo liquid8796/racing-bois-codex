@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><Nullable>disable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <ItemGroup><Compile Include="../../../Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs" Link="DesktopRuntimeConfig.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="../../../Assets/RacingBois/Client/Application/ContentManifestRules.cs" Link="ContentManifestRules.cs" /></ItemGroup>
+</Project>

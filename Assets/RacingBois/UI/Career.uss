@@ -1,0 +1,122 @@
+/* Flat vehicle index with genuine 3D stage occupying the open right side. */
+.career-overlay { display: none; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: var(--ink); padding: 0; overflow: hidden; }
+.career-preview-mode { background-color: rgba(18,20,21,.12); }
+.career-is-open > .topbar, .career-is-open > .menu, .career-is-open > .bottomline, .career-is-open > .hud, .career-is-open > .results, .career-is-open > .mp-panel { visibility: hidden; }
+.career-heading, .career-tabs, .career-actions, .career-footer, .career-bike-row, .career-ledger-row, .career-campaign-row, .career-showroom { flex-direction: row; align-items: center; }
+.career-heading, .career-summary, .career-endpoint, .career-tabs, .career-footer, .career-confirmation { flex-shrink: 0; }
+.career-heading { height: 80px; justify-content: space-between; background-color: rgba(18,20,21,.8); padding: 0 46px; border-bottom-width: 1px; border-bottom-color: rgb(81,79,72); }
+.surface .career-wordmark { -unity-font-definition: url("Fonts/NotoSans-ExtraBold SDF.asset"); -unity-font-style: italic; font-size: 36px; letter-spacing: 4px; width: 26%; flex-shrink: 0; scale: 1.24 1; transform-origin: 0% 50%; }
+.career-close { min-width: 144px; margin: 0 0 0 44px; padding: 0 0 0 36px; min-height: 36px; color: rgb(225,224,218); background-color: rgba(0,0,0,0); border-width: 0; border-left-width: 1px; border-left-color: rgb(128,125,118); font-size: 23px; -unity-font-style: normal; }
+.career-close:hover { color: rgb(255,195,66); }
+.career-close:focus { border-width: 1px; border-color: rgb(255,195,66); }
+.career-heading .eyebrow, .career-title { flex-shrink: 0; }
+.career-title { font-size: 30px; -unity-font-style: bold; margin-top: 5px; }
+.career-summary { font-size: 17px; color: var(--amber); padding: 18px 56px 6px; background-color: var(--panel); white-space: normal; }
+.career-endpoint { font-size: 12px; color: var(--muted); padding: 4px 56px 12px; background-color: var(--panel); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.career-tabs { flex-grow: 1; flex-shrink: 1; flex-basis: 0; justify-content: space-between; align-self: stretch; }
+.career-tab { background-color: rgba(0,0,0,0); color: rgb(210,208,201); border-color: rgba(0,0,0,0); border-width: 0; border-bottom-width: 4px; margin: 18px 0; padding: 8px 20px; min-height: 54px; white-space: nowrap; font-size: 23px; -unity-font-style: normal; }
+.career-tab.is-selected { color: rgb(255,190,48); border-bottom-color: rgb(255,190,48); -unity-font-style: bold; }
+.career-tab:hover { color: rgb(255,195,66); background-color: rgba(255,190,48,.05); }
+.career-tab:focus { border-color: rgb(255,247,218); }
+.career-body { flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-height: 0; overflow: hidden; margin: 24px 56px 0; }
+.career-preview-mode .career-body { width: 46%; background-color: var(--panel); padding: 14px 18px; }
+.career-section-title { font-size: 25px; -unity-font-style: bold; margin-top: 4px; margin-bottom: 12px; }
+.career-body > .career-section-title, .career-body > .hint, .career-body > Button { flex-shrink: 0; }
+.career-body > .hint { margin-bottom: 14px; }
+.career-scroll { flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-height: 0; }
+.career-scroll .unity-scroll-view__content-and-vertical-scroll-container, .career-scroll .unity-scroll-view__content-viewport { flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-height: 0; }
+.career-scroll .unity-scroll-view__content-container { flex-shrink: 0; padding-right: 12px; }
+.career-scroll .unity-scroll-view__content-container > * { flex-shrink: 0; }
+.career-bike-row, .career-ledger-row { min-height: 80px; padding: 14px 0; margin-bottom: 0; background-color: rgba(0,0,0,0); border-bottom-width: 1px; border-bottom-color: var(--line); }
+.career-bike-name { font-size: 19px; -unity-font-style: bold; margin-bottom: 7px; }
+.career-grow { flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 100px; }
+.career-actions { flex-shrink: 0; flex-wrap: wrap; margin-top: 6px; margin-bottom: 6px; }
+.career-actions Button { margin: 4px 10px 4px 0; min-width: 110px; padding: 10px 12px; }
+.career-actions Button:disabled { opacity: .5; }
+.career-footer { justify-content: space-between; margin: 14px 56px 20px; border-top-width: 1px; border-top-color: var(--line); padding: 12px 16px 0; background-color: var(--panel); }
+.career-status { font-size: 15px; color: var(--muted); flex-grow: 1; flex-shrink: 1; white-space: normal; margin-right: 12px; }
+.career-status.error-text { color: var(--danger); }
+.career-confirmation { background-color: var(--ink); padding: 18px; border-top-width: 3px; border-top-color: var(--amber); margin-top: 10px; }
+.career-confirmation .description { flex-shrink: 0; margin-bottom: 8px; color: rgb(247,241,225); }
+.career-confirmation .career-actions { justify-content: flex-end; }
+.career-amount { font-size: 20px; min-width: 130px; margin-right: 20px; -unity-text-align: middle-right; }
+.career-campaign-row { min-height: 90px; margin-bottom: 10px; flex-wrap: wrap; }
+.career-level { width: 84px; font-size: 18px; color: var(--amber); }
+.career-route { flex-grow: 1; flex-basis: 0; min-width: 140px; min-height: 78px; margin-right: 10px; margin-bottom: 8px; background-color: rgba(0,0,0,0); border-color: var(--line); color: rgb(247,241,225); white-space: normal; font-size: 14px; }
+.career-route.qualified { border-bottom-width: 3px; border-bottom-color: var(--success); }
+.career-route:focus { border-color: rgb(255,247,218); }
+.career-save-text { height: 150px; min-height: 100px; }
+.career-scroll .career-actions { margin-top: 10px; margin-bottom: 16px; }
+.career-bike-stats { color: rgb(247,241,225); font-size: 16px; white-space: normal; margin-top: 18px; margin-bottom: 20px; }
+.career-showroom { flex-grow: 1; flex-shrink: 1; min-height: 0; align-items: stretch; flex-direction: column; }
+.career-bike-list { flex-grow: 0; flex-basis: auto; height: 40%; min-height: 80px; border-bottom-width: 1px; border-bottom-color: var(--line); }
+.career-bike-select { min-height: 66px; white-space: normal; -unity-text-align: middle-left; background-color: rgba(0,0,0,0); color: rgb(247,241,225); border-color: rgba(0,0,0,0); border-bottom-color: var(--line); font-size: 16px; margin: 0; padding: 12px 16px; }
+.career-bike-select.is-selected { background-color: rgba(238,174,74,.14); border-left-width: 3px; border-left-color: var(--amber); color: var(--amber); }
+.career-bike-detail { flex-grow: 1; flex-shrink: 1; min-height: 0; padding-top: 18px; }
+.career-showroom-title { font-size: 32px; -unity-font-style: bold; white-space: normal; margin-bottom: 14px; }
+.career-bike-detail Button { min-height: 46px; }
+.career-character-grid { flex-direction: row; flex-wrap: wrap; align-items: stretch; }
+.career-character-card { width: 46%; min-width: 174px; flex-grow: 1; margin-right: 12px; margin-bottom: 18px; padding: 0 0 12px; background-color: rgba(0,0,0,0); border-bottom-width: 1px; border-bottom-color: var(--line); }
+.career-character-card.is-selected { border-bottom-color: var(--amber); }
+.career-character-portrait { width: 100%; height: 176px; margin-bottom: 12px; background-color: rgb(24,26,27); }
+.career-character-fallback { -unity-text-align: middle-center; font-size: 26px; color: var(--amber); }
+.career-character-card > .hint { min-height: 32px; font-size: 12px; }
+.career-character-card Button { margin-top: 8px; margin-bottom: 0; min-height: 44px; font-size: 13px; }
+.career-portrait-state { max-width: 100%; min-height: 44px; flex-shrink: 0; margin-bottom: 12px; }
+.compact .career-overlay { top: 0; bottom: 0; left: 0; right: 0; padding: 0; }
+.compact .career-heading { padding: 0 42px; }
+.compact .career-title { font-size: 24px; }
+.compact .career-summary { padding-top: 6px; font-size: 15px; }
+.compact .career-endpoint { padding-bottom: 8px; }
+.compact .career-tab { padding: 8px 14px; font-size: 21px; }
+.compact .career-preview-mode .career-body { width: 49%; padding: 10px 14px; }
+.compact .career-section-title { font-size: 22px; }
+.compact .career-showroom-title { font-size: 26px; }
+.compact .career-bike-stats { font-size: 15px; margin-top: 12px; margin-bottom: 16px; }
+.compact .career-character-portrait { height: 146px; }
+.narrow .career-preview-mode .career-body { width: 58%; }
+.narrow .career-heading { padding-left: 28px; padding-right: 28px; }
+.narrow .career-wordmark { font-size: 29px; letter-spacing: 3px; width: 25%; }
+.narrow .career-tab { font-size: 18px; padding-left: 10px; padding-right: 10px; }
+.narrow .career-close { min-width: 108px; margin-left: 22px; padding-left: 22px; font-size: 20px; }
+.narrow .career-character-card { min-width: 144px; }
+
+/* garage-v2: the prototype's inventory and action rails over a genuine live scene.
+   Deliberately scoped to garage so account/shop/campaign keep their own flows. */
+.career-garage-mode { background-color: rgba(0,0,0,0); }
+.compact .career-garage-mode .career-body, .narrow .career-garage-mode .career-body { width: auto; padding: 0; }
+.career-garage-mode .career-summary, .career-garage-mode .career-endpoint { display: none; }
+.career-garage-mode .career-body { position: absolute; top: 13.1%; bottom: 7.6%; left: 2.9%; right: 2.9%; width: auto; margin: 0; padding: 0; background-color: rgba(0,0,0,0); }
+.career-garage { flex-grow: 1; }
+.career-garage-rail { width: 25%; flex-grow: 0; }
+.surface .career-garage-heading { -unity-font-definition: url("Fonts/NotoSans-ExtraBold SDF.asset"); font-size: 34px; -unity-font-style: normal; margin: 0 0 13px; padding: 0; }
+.career-garage-inventory { flex-grow: 0; flex-shrink: 1; max-height: 260px; min-height: 100px; }
+.career-garage-inventory .unity-scroll-view__content-container { padding: 0; }
+.career-garage-inventory .unity-scroll-view__content-viewport { min-height: 0; }
+.career-garage-bike { flex-direction: row; align-items: center; min-height: 81px; height: 81px; flex-shrink: 0; margin: 0 0 10px; padding: 5px 18px; background-color: rgba(23,23,21,.35); border-width: 2px; border-color: rgb(91,91,86); border-radius: 3px; color: rgb(245,244,239); }
+.career-garage-bike:hover { background-color: rgba(81,67,42,.5); border-color: rgb(204,178,128); }
+.career-garage-bike.is-selected { background-color: rgba(129,88,27,.25); border-color: rgb(255,191,45); }
+.career-garage-bike:focus { border-color: rgb(255,241,204); }
+.career-garage-thumbnail { width: 110px; height: 68px; flex-shrink: 0; margin: 0 16px 0 0; }
+.career-garage-bike-label { flex-grow: 1; flex-shrink: 1; }
+.career-garage-bike-name { font-size: 22px; -unity-font-style: bold; -unity-text-align: middle-left; margin: 0 0 2px; padding: 0; }
+.career-garage-bike-state { font-size: 18px; -unity-font-style: normal; -unity-text-align: middle-left; color: rgb(187,186,180); margin: 0; padding: 0; }
+.career-garage-bike.is-selected .career-garage-bike-state { color: rgb(246,243,231); }
+#career-garage-divider { height: 1px; flex-shrink: 0; background-color: rgb(141,140,128); margin-top: 26px; margin-bottom: 30px; }
+.surface .career-garage-title { -unity-font-definition: url("Fonts/NotoSans-ExtraBold SDF.asset"); -unity-font-style: normal; font-size: 70px; white-space: normal; margin: 0 0 16px; padding: 0; }
+.career-garage-condition-label { flex-direction: row; justify-content: space-between; align-items: center; margin: 0 6px 9px 0; }
+.career-garage-condition-name, .career-garage-condition-value { font-size: 22px; padding: 0; margin: 0; }
+.career-garage-condition-value { font-size: 25px; -unity-font-style: bold; }
+#career-garage-condition-track { height: 20px; flex-shrink: 0; background-color: rgb(73,67,53); border-radius: 3px; margin-right: 9px; overflow: hidden; }
+#career-garage-condition-fill { height: 100%; background-color: rgb(255,191,47); border-radius: 3px; }
+.career-garage-help { font-size: 18px; color: rgb(188,185,174); white-space: normal; margin: 46px 0 0; padding: 0; }
+.career-garage-rail > .hint { margin-top: 16px; }
+.career-garage-actions { position: absolute; right: 0; bottom: 0; width: 38.7%; flex-direction: row; align-items: center; }
+.career-garage-action { flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-height: 64px; margin: 0; padding: 12px 10px; color: rgb(245,242,231); background-color: rgba(26,26,25,.6); border-width: 1px; border-color: rgb(186,181,168); border-radius: 2px; font-size: 22px; -unity-font-style: bold; }
+.career-garage-action:hover { background-color: rgba(129,88,27,.55); border-color: rgb(255,191,45); }
+.career-garage-action:disabled { opacity: 1; color: rgb(131,128,120); background-color: rgba(33,33,32,.56); border-color: rgb(145,140,128); }
+.career-garage-action:focus { border-width: 2px; border-color: rgb(255,241,204); }
+.career-garage-action-divider { width: 1px; height: 64px; margin: 0 24px; background-color: rgb(146,143,132); }
+.career-garage-mode .career-footer { display: none; }
+.career-garage-mode .career-footer-feedback { display: flex; position: absolute; left: 2.9%; bottom: 1.8%; max-width: 52%; margin: 0; padding: 10px 14px; border-width: 0; }
+.career-garage-mode .career-confirmation { position: absolute; right: 2.9%; bottom: 17%; width: 560px; margin: 0; }

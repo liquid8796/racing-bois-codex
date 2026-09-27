@@ -1,0 +1,245 @@
+{
+  "id": "2UXJCTLPRfAalqQs900021CwT",
+  "type": "http",
+  "status": "finished",
+  "createdAt": "2026-09-26T17:53:08.162Z",
+  "updatedAt": "2026-09-26T17:53:09.109Z",
+  "target": "racing-bois.158.180.59.36.sslip.io",
+  "probesCount": 3,
+  "locations": [
+    {
+      "country": "SG"
+    },
+    {
+      "country": "DE"
+    },
+    {
+      "country": "US"
+    }
+  ],
+  "measurementOptions": {
+    "port": 443,
+    "request": {
+      "path": "/ready",
+      "method": "GET"
+    }
+  },
+  "results": [
+    {
+      "probe": {
+        "continent": "AS",
+        "region": "South-eastern Asia",
+        "country": "SG",
+        "state": null,
+        "city": "Singapore",
+        "asn": 8888,
+        "longitude": 103.85,
+        "latitude": 1.29,
+        "network": "xTom",
+        "tags": [
+          "datacenter-network",
+          "u-kukuhpe",
+          "u-kukuhpe:ayo-edebiri"
+        ],
+        "resolvers": [
+          "private",
+          "private"
+        ]
+      },
+      "result": {
+        "status": "finished",
+        "resolvedAddress": "158.180.59.36",
+        "headers": {
+          "alt-svc": "h3=\":443\"; ma=2592000",
+          "content-type": "application/json; charset=utf-8",
+          "cross-origin-embedder-policy": "require-corp",
+          "cross-origin-opener-policy": "same-origin",
+          "date": "Sat, 26 Sep 2026 17:53:08 GMT",
+          "referrer-policy": "no-referrer",
+          "via": "1.1 Caddy",
+          "x-content-type-options": "nosniff",
+          "connection": "close",
+          "transfer-encoding": "chunked"
+        },
+        "rawHeaders": "Alt-Svc: h3=\":443\"; ma=2592000\nContent-Type: application/json; charset=utf-8\nCross-Origin-Embedder-Policy: require-corp\nCross-Origin-Opener-Policy: same-origin\nDate: Sat, 26 Sep 2026 17:53:08 GMT\nReferrer-Policy: no-referrer\nVia: 1.1 Caddy\nX-Content-Type-Options: nosniff\nConnection: close\nTransfer-Encoding: chunked",
+        "rawBody": "{\"status\":\"ready\",\"protocolVersion\":4,\"contentHash\":\"p08-C655ECB89DF77CFD\"}",
+        "rawOutput": "HTTP/1.1 200\nAlt-Svc: h3=\":443\"; ma=2592000\nContent-Type: application/json; charset=utf-8\nCross-Origin-Embedder-Policy: require-corp\nCross-Origin-Opener-Policy: same-origin\nDate: Sat, 26 Sep 2026 17:53:08 GMT\nReferrer-Policy: no-referrer\nVia: 1.1 Caddy\nX-Content-Type-Options: nosniff\nConnection: close\nTransfer-Encoding: chunked\n\n{\"status\":\"ready\",\"protocolVersion\":4,\"contentHash\":\"p08-C655ECB89DF77CFD\"}",
+        "truncated": false,
+        "statusCode": 200,
+        "statusCodeName": "OK",
+        "timings": {
+          "total": 470,
+          "dns": 9,
+          "tcp": 150,
+          "tls": 158,
+          "firstByte": 152,
+          "download": 1
+        },
+        "tls": {
+          "authorized": true,
+          "protocol": "TLSv1.3",
+          "cipherName": "TLS_AES_128_GCM_SHA256",
+          "createdAt": "2026-09-26T16:49:21Z",
+          "expiresAt": "2026-12-25T16:49:20Z",
+          "issuer": {
+            "C": "US",
+            "O": "Let's Encrypt",
+            "CN": "YE2"
+          },
+          "subject": {
+            "CN": "racing-bois.158.180.59.36.sslip.io",
+            "alt": "DNS:racing-bois.158.180.59.36.sslip.io"
+          },
+          "keyType": "EC",
+          "keyBits": 256,
+          "serialNumber": "05:89:99:98:7C:7B:82:4F:E1:1C:15:54:1E:4A:FF:13:1E:57",
+          "fingerprint256": "D0:D8:B1:2C:6F:06:93:EB:9E:F4:75:C6:B9:6C:FF:53:37:B6:D3:3A:65:E9:52:0A:A4:D6:BB:7E:3A:23:AF:00",
+          "publicKey": "04:DD:80:CF:AA:AC:F9:72:9F:75:51:8C:F7:43:0B:4A:76:A9:F8:36:23:E1:27:AD:1F:A9:05:4C:04:C6:92:38:AB:47:E1:B8:AA:A9:CD:5C:FA:3F:2B:22:4C:C7:83:99:76:C6:B5:97:23:5E:58:B5:3E:DD:81:9F:C7:00:F3:0A:F8"
+        }
+      }
+    },
+    {
+      "probe": {
+        "continent": "EU",
+        "region": "Western Europe",
+        "country": "DE",
+        "state": null,
+        "city": "Falkenstein",
+        "asn": 24940,
+        "longitude": 12.37,
+        "latitude": 50.48,
+        "network": "Hetzner Online",
+        "tags": [
+          "datacenter-network"
+        ],
+        "resolvers": [
+          "private"
+        ]
+      },
+      "result": {
+        "status": "finished",
+        "resolvedAddress": "158.180.59.36",
+        "headers": {
+          "alt-svc": "h3=\":443\"; ma=2592000",
+          "content-type": "application/json; charset=utf-8",
+          "cross-origin-embedder-policy": "require-corp",
+          "cross-origin-opener-policy": "same-origin",
+          "date": "Sat, 26 Sep 2026 17:53:08 GMT",
+          "referrer-policy": "no-referrer",
+          "via": "1.1 Caddy",
+          "x-content-type-options": "nosniff",
+          "connection": "close",
+          "transfer-encoding": "chunked"
+        },
+        "rawHeaders": "Alt-Svc: h3=\":443\"; ma=2592000\nContent-Type: application/json; charset=utf-8\nCross-Origin-Embedder-Policy: require-corp\nCross-Origin-Opener-Policy: same-origin\nDate: Sat, 26 Sep 2026 17:53:08 GMT\nReferrer-Policy: no-referrer\nVia: 1.1 Caddy\nX-Content-Type-Options: nosniff\nConnection: close\nTransfer-Encoding: chunked",
+        "rawBody": "{\"status\":\"ready\",\"protocolVersion\":4,\"contentHash\":\"p08-C655ECB89DF77CFD\"}",
+        "rawOutput": "HTTP/1.1 200\nAlt-Svc: h3=\":443\"; ma=2592000\nContent-Type: application/json; charset=utf-8\nCross-Origin-Embedder-Policy: require-corp\nCross-Origin-Opener-Policy: same-origin\nDate: Sat, 26 Sep 2026 17:53:08 GMT\nReferrer-Policy: no-referrer\nVia: 1.1 Caddy\nX-Content-Type-Options: nosniff\nConnection: close\nTransfer-Encoding: chunked\n\n{\"status\":\"ready\",\"protocolVersion\":4,\"contentHash\":\"p08-C655ECB89DF77CFD\"}",
+        "truncated": false,
+        "statusCode": 200,
+        "statusCodeName": "OK",
+        "timings": {
+          "total": 930,
+          "dns": 906,
+          "tcp": 6,
+          "tls": 11,
+          "firstByte": 7,
+          "download": 0
+        },
+        "tls": {
+          "authorized": true,
+          "protocol": "TLSv1.3",
+          "cipherName": "TLS_AES_128_GCM_SHA256",
+          "createdAt": "2026-09-26T16:49:21Z",
+          "expiresAt": "2026-12-25T16:49:20Z",
+          "issuer": {
+            "C": "US",
+            "O": "Let's Encrypt",
+            "CN": "YE2"
+          },
+          "subject": {
+            "CN": "racing-bois.158.180.59.36.sslip.io",
+            "alt": "DNS:racing-bois.158.180.59.36.sslip.io"
+          },
+          "keyType": "EC",
+          "keyBits": 256,
+          "serialNumber": "05:89:99:98:7C:7B:82:4F:E1:1C:15:54:1E:4A:FF:13:1E:57",
+          "fingerprint256": "D0:D8:B1:2C:6F:06:93:EB:9E:F4:75:C6:B9:6C:FF:53:37:B6:D3:3A:65:E9:52:0A:A4:D6:BB:7E:3A:23:AF:00",
+          "publicKey": "04:DD:80:CF:AA:AC:F9:72:9F:75:51:8C:F7:43:0B:4A:76:A9:F8:36:23:E1:27:AD:1F:A9:05:4C:04:C6:92:38:AB:47:E1:B8:AA:A9:CD:5C:FA:3F:2B:22:4C:C7:83:99:76:C6:B5:97:23:5E:58:B5:3E:DD:81:9F:C7:00:F3:0A:F8"
+        }
+      }
+    },
+    {
+      "probe": {
+        "continent": "NA",
+        "region": "Northern America",
+        "country": "US",
+        "state": "NY",
+        "city": "Buffalo",
+        "asn": 36352,
+        "longitude": -78.88,
+        "latitude": 42.89,
+        "network": "HostPapa",
+        "tags": [
+          "datacenter-network"
+        ],
+        "resolvers": [
+          "8.8.8.8",
+          "8.8.4.4",
+          "2001:4860:4860::8888",
+          "2001:4860:4860::8844"
+        ]
+      },
+      "result": {
+        "status": "finished",
+        "resolvedAddress": "158.180.59.36",
+        "headers": {
+          "alt-svc": "h3=\":443\"; ma=2592000",
+          "content-type": "application/json; charset=utf-8",
+          "cross-origin-embedder-policy": "require-corp",
+          "cross-origin-opener-policy": "same-origin",
+          "date": "Sat, 26 Sep 2026 17:53:08 GMT",
+          "referrer-policy": "no-referrer",
+          "via": "1.1 Caddy",
+          "x-content-type-options": "nosniff",
+          "connection": "close",
+          "transfer-encoding": "chunked"
+        },
+        "rawHeaders": "Alt-Svc: h3=\":443\"; ma=2592000\nContent-Type: application/json; charset=utf-8\nCross-Origin-Embedder-Policy: require-corp\nCross-Origin-Opener-Policy: same-origin\nDate: Sat, 26 Sep 2026 17:53:08 GMT\nReferrer-Policy: no-referrer\nVia: 1.1 Caddy\nX-Content-Type-Options: nosniff\nConnection: close\nTransfer-Encoding: chunked",
+        "rawBody": "{\"status\":\"ready\",\"protocolVersion\":4,\"contentHash\":\"p08-C655ECB89DF77CFD\"}",
+        "rawOutput": "HTTP/1.1 200\nAlt-Svc: h3=\":443\"; ma=2592000\nContent-Type: application/json; charset=utf-8\nCross-Origin-Embedder-Policy: require-corp\nCross-Origin-Opener-Policy: same-origin\nDate: Sat, 26 Sep 2026 17:53:08 GMT\nReferrer-Policy: no-referrer\nVia: 1.1 Caddy\nX-Content-Type-Options: nosniff\nConnection: close\nTransfer-Encoding: chunked\n\n{\"status\":\"ready\",\"protocolVersion\":4,\"contentHash\":\"p08-C655ECB89DF77CFD\"}",
+        "truncated": false,
+        "statusCode": 200,
+        "statusCodeName": "OK",
+        "timings": {
+          "total": 381,
+          "dns": 80,
+          "tcp": 92,
+          "tls": 112,
+          "firstByte": 96,
+          "download": 1
+        },
+        "tls": {
+          "authorized": true,
+          "protocol": "TLSv1.3",
+          "cipherName": "TLS_AES_128_GCM_SHA256",
+          "createdAt": "2026-09-26T16:49:21Z",
+          "expiresAt": "2026-12-25T16:49:20Z",
+          "issuer": {
+            "C": "US",
+            "O": "Let's Encrypt",
+            "CN": "YE2"
+          },
+          "subject": {
+            "CN": "racing-bois.158.180.59.36.sslip.io",
+            "alt": "DNS:racing-bois.158.180.59.36.sslip.io"
+          },
+          "keyType": "EC",
+          "keyBits": 256,
+          "serialNumber": "05:89:99:98:7C:7B:82:4F:E1:1C:15:54:1E:4A:FF:13:1E:57",
+          "fingerprint256": "D0:D8:B1:2C:6F:06:93:EB:9E:F4:75:C6:B9:6C:FF:53:37:B6:D3:3A:65:E9:52:0A:A4:D6:BB:7E:3A:23:AF:00",
+          "publicKey": "04:DD:80:CF:AA:AC:F9:72:9F:75:51:8C:F7:43:0B:4A:76:A9:F8:36:23:E1:27:AD:1F:A9:05:4C:04:C6:92:38:AB:47:E1:B8:AA:A9:CD:5C:FA:3F:2B:22:4C:C7:83:99:76:C6:B5:97:23:5E:58:B5:3E:DD:81:9F:C7:00:F3:0A:F8"
+        }
+      }
+    }
+  ]
+}

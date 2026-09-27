@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "scope": "Read-only numeric checks of actual Blender PNG bakes and mask packing, not visual fidelity. Base/normal/AO copies are byte-identical to bake outputs.",
+  "materials": [
+    {
+      "role": "Skin",
+      "size": [
+        2048,
+        2048
+      ],
+      "coverage": 1.0,
+      "normalLengthP01": 1.0000153785822494,
+      "normalLengthP99": 1.0002614037425384,
+      "maximumAoChannelError8bit": 0,
+      "maximumInvertedRoughnessError8bit": 0,
+      "files": {
+        "BaseColor": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Skin_BaseColor.png",
+          "sha256": "f0f335b8346ec3cbf6ed172b2f361f69c82ff45a62512949a5071eb09ed9859b",
+          "bytes": 1460297
+        },
+        "Normal": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Skin_Normal.png",
+          "sha256": "4dc60777423178a0d76a8093ef9a53d910fd20c348f3e8345a456d7266970d3c",
+          "bytes": 1336305
+        },
+        "MetallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Skin_MetallicSmoothness.png",
+          "sha256": "c206f93c1a325b5d04c42ad6478b5ecf49c27596276c9282b6baf8269a188996",
+          "bytes": 545062
+        },
+        "Occlusion": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Skin_Occlusion.png",
+          "sha256": "680758366f74a9f4a8b1e2f37ff8e8941af955382419c1ca0e368479a48029e7",
+          "bytes": 511588
+        }
+      }
+    },
+    {
+      "role": "LeatherDetails",
+      "size": [
+        1024,
+        1024
+      ],
+      "coverage": 1.0,
+      "normalLengthP01": 0.9962559668865695,
+      "normalLengthP99": 1.0037607101520292,
+      "maximumAoChannelError8bit": 0,
+      "maximumInvertedRoughnessError8bit": 0,
+      "files": {
+        "BaseColor": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_BaseColor.png",
+          "sha256": "7df83c0eebf760f74ecc8969ae77aaf36ec879b8218960255266bd66fa429397",
+          "bytes": 188715
+        },
+        "Normal": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_Normal.png",
+          "sha256": "52cf6bfedac17bf20936a5610ca6e55accb74bb659d0e1c6542461004b6a6df8",
+          "bytes": 890679
+        },
+        "MetallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_MetallicSmoothness.png",
+          "sha256": "11ef8c9530b67477c271ca51c9353b7eea93d55459df661815bf6ac62192d7df",
+          "bytes": 746768
+        },
+        "Occlusion": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_Occlusion.png",
+          "sha256": "38d458e1ea10682153e95fe675cc62a3a3dc240123bc33d34fca09a6dddc82b3",
+          "bytes": 581215
+        }
+      }
+    },
+    {
+      "role": "TailoredLeather",
+      "size": [
+        2048,
+        2048
+      ],
+      "coverage": 1.0,
+      "normalLengthP01": 1.0000153785822494,
+      "normalLengthP99": 1.0030250285994484,
+      "maximumAoChannelError8bit": 0,
+      "maximumInvertedRoughnessError8bit": 0,
+      "files": {
+        "BaseColor": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_BaseColor.png",
+          "sha256": "bb9591a0f9b4290faf3abda2827c6de4a88abc975516aa648e91a8646ff32d9a",
+          "bytes": 2905558
+        },
+        "Normal": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_Normal.png",
+          "sha256": "de4660cecde9c8310b3585781f6f7dbdb6f411075f16c7902fd0644a2f360aa3",
+          "bytes": 4318858
+        },
+        "MetallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_MetallicSmoothness.png",
+          "sha256": "9c13f931f841a69e9ce0fbf429d3f73b55477b5482ae2bca4a3b52db3fc2cde0",
+          "bytes": 2085169
+        },
+        "Occlusion": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_Occlusion.png",
+          "sha256": "f941935543e52eda05310bef0e8cc3fb0cd362fd3f5b92fa7dee894b7d3e22b4",
+          "bytes": 937156
+        }
+      }
+    },
+    {
+      "role": "HelmetEnamel",
+      "size": [
+        1024,
+        1024
+      ],
+      "coverage": 1.0,
+      "normalLengthP01": 1.0000153785822494,
+      "normalLengthP99": 1.0000153785822494,
+      "maximumAoChannelError8bit": 0,
+      "maximumInvertedRoughnessError8bit": 0,
+      "files": {
+        "BaseColor": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_BaseColor.png",
+          "sha256": "0319a00fe0cc408f9e825d8f0ba40059c7283c6d4220608e099efe334d7d5950",
+          "bytes": 33451
+        },
+        "Normal": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_Normal.png",
+          "sha256": "59313f931cd7586853a986c64ec745962c014825d726cfe33fdae8f47481d874",
+          "bytes": 28518
+        },
+        "MetallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_MetallicSmoothness.png",
+          "sha256": "11f3b76170b6ff2ea1a5a6f4ad5c3b58fa14880f9c00aedece8065241e7896d8",
+          "bytes": 336565
+        },
+        "Occlusion": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_Occlusion.png",
+          "sha256": "b3a427c0534580084681874c6cc1125c1a97591954c0d69f1fab018c3c2322b8",
+          "bytes": 299011
+        }
+      }
+    },
+    {
+      "role": "Forelocks",
+      "size": [
+        512,
+        512
+      ],
+      "coverage": 1.0,
+      "normalLengthP01": 1.0000153785822494,
+      "normalLengthP99": 1.0000153785822494,
+      "maximumAoChannelError8bit": 0,
+      "maximumInvertedRoughnessError8bit": 0,
+      "files": {
+        "BaseColor": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_BaseColor.png",
+          "sha256": "cc28b4cbb4ad1d4a67bac5717f7facf73cd855734552613b014ecf81fa040ca0",
+          "bytes": 7707
+        },
+        "Normal": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_Normal.png",
+          "sha256": "02b88dbad749a9824293f6a05b6d46724b04db2c9614838405da13a7fdb41587",
+          "bytes": 5805
+        },
+        "MetallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_MetallicSmoothness.png",
+          "sha256": "b028287e92a309131d42dcc8bf2ccac8a1ff2ffa8564c2591693ab401fbc30be",
+          "bytes": 140540
+        },
+        "Occlusion": {
+          "path": "ArtSource/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_Occlusion.png",
+          "sha256": "872b1b3ab40af8b5a7168e76f677e4ef74b6d92220f99035f473f685b502d361",
+          "bytes": 123810
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "generatedUtc": "2026-09-26T22:52:08.3633602+00:00",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "direct_lan_does_not_trust_forwarded_headers",
+      "passed": true
+    },
+    {
+      "name": "proxy_mode_rejects_public_listener",
+      "passed": true
+    },
+    {
+      "name": "trusted_loopback_preserves_https_and_client_ip",
+      "passed": true
+    },
+    {
+      "name": "forwarded_host_cannot_override_actual_host",
+      "passed": true
+    },
+    {
+      "name": "unknown_proxy_cannot_spoof_https_or_ip",
+      "passed": true
+    },
+    {
+      "name": "only_nearest_trusted_proxy_hop_applied",
+      "passed": true
+    },
+    {
+      "name": "asymmetric_headers_rejected",
+      "passed": true
+    },
+    {
+      "name": "bounded_histogram_counts_and_percentile_upper_bound",
+      "passed": true
+    }
+  ]
+}

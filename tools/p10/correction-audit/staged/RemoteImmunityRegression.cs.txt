@@ -1,0 +1,135 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+using RacingBois.Client.Application;
+using RacingBois.Gameplay.Definitions;
+using RacingBois.NetworkMapping;
+using RacingBois.Protocol;
+using RacingBois.Simulation;
+
+internal static class RemoteImmunityRegression
+{
+    private static readonly JsonSerializerOptions Json = new JsonSerializerOptions { IncludeFields = true };
+    internal static void Register(Action<string, Action> test, Action<bool, string> check)
+    {
+        test("remote_immunity_observed_8_512m_phantom_wreck_regression", () =>
+        {
+            using var doc = JsonDocument.Parse(File.ReadAllText("src/Tests/RacingBois.P05Client.Tests/Fixtures/remote-immunity-observed.json"));
+            var episode = doc.RootElement.GetProperty("episode"); var before = episode.GetProperty("Before");
+            var wire = Wire(episode); var projected = MultiplayerProjection.World(wire, 0, 0, Array.Empty<RaceEventReadModel>());
+            check(projected.CollisionUntilByRider[4] == 3787 && wire.tick == 3755, "Observed immunity epoch was lost.");
+            var good = Replay(before, projected);
+            var expected = Checkpoint(episode.GetProperty("After").GetProperty("Predicted"));
+            check(JsonSerializer.Serialize(CheckpointMapper.ToDto(good), Json) == JsonSerializer.Serialize(CheckpointMapper.ToDto(new RiderCheckpoint(expected)), Json), "Observed immunity did not reproduce the exact later checkpoint.");
+            check(good.Data.Mode == RiderMode.Riding && good.Data.BikeCondition == 3, "Protected neighbor still caused a speculative wreck.");
+            wire.riders.Single(row => row.values[0] == 4).values[26] = 0;
+            var unprotected = MultiplayerProjection.World(wire, 0, 0, Array.Empty<RaceEventReadModel>());
+            var bad = Replay(before, unprotected);
+            check(bad.Data.Mode == RiderMode.Wrecked && bad.Data.BikeCondition == 0, "Negative control did not reproduce the original defect.");
+            var authority = projected.World.Riders.Single(r => r.Id == wire.riderId);
+            var presentation = RemoteMotionSampler.WithMotion(authority, bad);
+            check(presentation.Mode == RiderMode.Falling && presentation.Health == authority.Health && presentation.BikeCondition == 3 && presentation.Reward == authority.Reward,
+                "Speculative state leaked authoritative damage/outcome into presentation.");
+            check(projected.CollisionUntilByRider[4] == 3787, "Wire mutation changed immutable prediction context.");
+        });
+        test("remote_immunity_wire_bounds_version_shape_and_atomic_rejection", () =>
+        {
+            using var doc = JsonDocument.Parse(File.ReadAllText("src/Tests/RacingBois.P05Client.Tests/Fixtures/remote-immunity-observed.json"));
+            var episode = doc.RootElement.GetProperty("episode");
+            foreach (int remaining in new[] { 0, 1, 90 })
+            {
+                var wire = Wire(episode); wire.riders[0].values[26] = remaining;
+                var projected = MultiplayerProjection.World(wire, 0, 0, Array.Empty<RaceEventReadModel>());
+                check(projected.CollisionUntilByRider[wire.riders[0].values[0]] == wire.tick + remaining, "Boundary expiry changed units.");
+            }
+            foreach (int invalid in new[] { -1, 91, int.MaxValue })
+            { var wire = Wire(episode); wire.riders[0].values[26] = invalid; Reject(() => MultiplayerProjection.World(wire, 0, 0, Array.Empty<RaceEventReadModel>()), check); }
+            foreach (int count in new[] { 26, 28 })
+            { var wire = Wire(episode); Array.Resize(ref wire.riders[0].values, count); Reject(() => MultiplayerProjection.World(wire, 0, 0, Array.Empty<RaceEventReadModel>()), check); }
+            var oldVersion = Wire(episode); oldVersion.protocolVersion = 4;
+            Reject(() => MultiplayerProjection.World(oldVersion, 0, 0, Array.Empty<RaceEventReadModel>()), check);
+            var overflow = Wire(episode); overflow.tick = overflow.resolvedThroughTick = overflow.own.tick = long.MaxValue; overflow.riders[0].values[26] = 1;
+            Reject(() => MultiplayerProjection.World(overflow, 0, 0, Array.Empty<RaceEventReadModel>()), check);
+            var valid = MultiplayerProjection.World(Wire(episode), 0, 0, Array.Empty<RaceEventReadModel>());
+            var target = new PredictionNeighbors { RiderCount = 1 };
+            Reject(() => PredictionNeighborBuilder.Fill(target, valid.World, null, 8, new Dictionary<int, long>()), check);
+            check(target.RiderCount == 1, "Invalid metadata partially mutated prediction proxies.");
+            var net = new TestNetwork(); var a = net.Add("Immunity host"); var b = net.Add("Immunity peer"); net.PrepareRace(a, b);
+            var latest = a.Session.LatestAuthoritativeWorld; var malformed = net.Codec.Decode<MpSnapshot>(a.LastSnapshot);
+            malformed.riders[0].values[26] = -1; a.Inject(malformed);
+            check(a.Session.Status == SessionStatus.Failed && ReferenceEquals(latest, a.Session.LatestAuthoritativeWorld), "Rejected protection partially committed session state.");
+        });
+        test("remote_immunity_expiry_is_inclusive_then_collision_returns", () =>
+        {
+            var world = RaceSimulation.CreateDefault(1996, 0); var owner = RaceSimulation.AddPlayer(world, 1); owner.SpeedMillimetersPerSecond = 55000;
+            owner.DistanceMillimeters = owner.BikeDistanceMillimeters = 0; owner.LateralMillimeters = owner.BikeLateralMillimeters = 0;
+            var checkpoint = RiderCheckpoints.Capture(owner, 100);
+            var neighbors = new PredictionNeighbors { RiderCount = 1 }; var other = neighbors.Riders[0];
+            other.Id = 2; other.Kind = RiderKind.Player; other.Mode = RiderMode.Riding; other.Health = 4096; other.BikeCondition = 100;
+            other.DistanceMillimeters = other.BikeDistanceMillimeters = 1000; other.SpeedMillimetersPerSecond = 1000; other.CollisionUntilTick = 101;
+            var predictor = new RiderPredictor(0); predictor.SetNeighbors(neighbors); predictor.Restore(checkpoint);
+            check(predictor.Advance(101, default).Data.Mode == RiderMode.Riding, "Protection did not include its expiry tick.");
+            check(predictor.Advance(102, default).Data.Mode == RiderMode.Falling, "Expired protection suppressed a real collision.");
+            other.CollisionUntilTick = 100; predictor.Restore(checkpoint);
+            check(predictor.Advance(101, default).Data.Mode == RiderMode.Falling, "Expired-at-checkpoint protection lingered.");
+        });
+        test("real_server_projection_preserves_remote_remount_protection", () =>
+        {
+            var net = new TestNetwork(); var a = net.Add("Recovering"); var b = net.Add("Observer"); net.PrepareRace(a, b);
+            a.Throttle = 1; a.Steer = 1; bool crashed = false, observed = false;
+            for (int i = 0; i < 1800 && !observed; i++)
+            {
+                net.Run(1); var own = net.Codec.Decode<MpSnapshot>(a.LastSnapshot); var remote = net.Codec.Decode<MpSnapshot>(b.LastSnapshot);
+                if (!GameplayRules.CanDrive((RiderMode)own.own.rider.mode)) { crashed = true; a.Throttle = a.Steer = 0; }
+                if (!crashed || own.own.collisionUntilTick - own.tick < 30 || own.tick != remote.tick) continue;
+                var row = remote.riders.Single(r => r.values[0] == own.riderId);
+                check(row.values.Length == 27 && row.values[26] == own.own.collisionUntilTick - own.tick, "Server did not encode its actual remaining protection.");
+                var projection = MultiplayerProjection.World(remote, b.Session.SentInputs, 0, Array.Empty<RaceEventReadModel>());
+                var neighbors = new PredictionNeighbors(); PredictionNeighborBuilder.Fill(neighbors, projection.World, null, remote.riderId, projection.CollisionUntilByRider);
+                check(neighbors.Riders.Take(neighbors.RiderCount).Single(r => r.Id == own.riderId).CollisionUntilTick == own.own.collisionUntilTick, "Validated server protection did not reach the predictor.");
+                observed = true;
+            }
+            check(crashed && observed, "Test did not exercise real crash/remount protection.");
+        });
+    }
+    private static void Reject(Action action, Action<bool,string> check)
+    { bool rejected = false; try { action(); } catch (ArgumentException) { rejected = true; } check(rejected, "Hostile protection metadata was accepted."); }
+    private static RiderCheckpointData Checkpoint(JsonElement row)
+    { var d = row.Deserialize<RiderCheckpointData>(Json); d.Input = Input(row.GetProperty("Input")); return d; }
+    private static RaceInput Input(JsonElement v) => new RaceInput(v.GetProperty("ThrottlePermille").GetInt32(), v.GetProperty("BrakePermille").GetInt32(), v.GetProperty("SteerPermille").GetInt32(), v.GetProperty("AttackSide").GetInt32(), v.GetProperty("Kick").GetBoolean());
+    private static MpSnapshot Wire(JsonElement episode)
+    {
+        var before = episode.GetProperty("Before"); var own = Checkpoint(before.GetProperty("Authority"));
+        var observed = episode.GetProperty("PeerAuthorities").EnumerateArray().Select(p => Checkpoint(p.GetProperty("State"))).ToDictionary(p => p.Id);
+        var rows = new List<NumericRow>();
+        foreach (var r in before.GetProperty("Riders").EnumerateArray())
+        {
+            var d = Checkpoint(r.GetProperty("State")); long until = observed.TryGetValue(d.Id, out var a) ? a.CollisionUntilTick : 0;
+            rows.Add(new NumericRow { values = new[] { d.Id,(int)d.Kind,(int)d.Mode,(int)d.Weapon,(int)d.AttackWeapon,(int)(d.DistanceMillimeters/10),d.LateralMillimeters/10,d.SpeedMillimetersPerSecond/10,d.HeightMillimeters/10,d.LeanMillidegrees/100,
+                (int)(d.BikeDistanceMillimeters/10),d.BikeLateralMillimeters/10,d.BikeHeightMillimeters/10,d.Health,d.BikeCondition,d.Strength,d.Rank,(int)d.FinishTick,d.Reward,d.Qualified?1:0,d.AttackSide,d.AttackAgeTicks,d.ModeAgeTicks,d.Gear,d.BikeCatalogIndex,d.CharacterCatalogIndex,(int)Math.Max(0,until-own.Tick) } });
+        }
+        var analog = Input(before.GetProperty("HeldAnalog")); int course = before.GetProperty("Course").GetInt32(), level = before.GetProperty("Level").GetInt32();
+        return new MpSnapshot { tick = own.Tick, resolvedThroughTick = own.Tick, riderId = own.Id, own = CheckpointMapper.ToDto(new RiderCheckpoint(own)), courseIndex = course, level = level,
+            trackLengthMillimeters = TrackDefinition.ForCourse(course,level).LengthMillimeters, lastAppliedInputTick = before.GetProperty("LastAppliedTick").GetInt64(), serverServiceTick = own.Tick + 180,
+            heldAnalog = new InputValues { throttlePermille = analog.ThrottlePermille, brakePermille = analog.BrakePermille, steerPermille = analog.SteerPermille }, riders = rows.ToArray() };
+    }
+    private static RiderCheckpoint Replay(JsonElement before, MultiplayerSnapshotReadModel snapshot)
+    {
+        var own = Checkpoint(before.GetProperty("Authority")); var neighbors = new PredictionNeighbors();
+        PredictionNeighborBuilder.Fill(neighbors, snapshot.World, null, own.Id, snapshot.CollisionUntilByRider);
+        var predictor = new RiderPredictor(before.GetProperty("Level").GetInt32(),before.GetProperty("Course").GetInt32()); predictor.SetNeighbors(neighbors); predictor.Restore(new RiderCheckpoint(own));
+        var pending = before.GetProperty("Pending").EnumerateArray().ToArray(); var held = Input(before.GetProperty("HeldAnalog")); long applied = before.GetProperty("LastAppliedTick").GetInt64(); int index = 0;
+        long target = before.GetProperty("Predicted").GetProperty("Tick").GetInt64();
+        for (long tick = own.Tick + 1; tick <= target; tick++)
+        {
+            RaceInput input;
+            if (index < pending.Length && pending[index].GetProperty("Tick").GetInt64() == tick)
+            { input = Input(pending[index++].GetProperty("Input")); held = new RaceInput(input.ThrottlePermille,input.BrakePermille,input.SteerPermille); applied = tick; }
+            else input = applied >= 0 && tick-applied <= MultiplayerProtocol.AnalogHoldTicks ? held : default;
+            predictor.Advance(tick,input);
+        }
+        return predictor.Checkpoint;
+    }
+}

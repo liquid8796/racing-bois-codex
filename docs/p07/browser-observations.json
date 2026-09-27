@@ -1,0 +1,75 @@
+{
+  "runtimeCommit": "3cac900",
+  "webRoot": "Build/Web-p07-v4",
+  "url": "https://localhost:7888/",
+  "physicalMachines": 1,
+  "startedUtc": "2026-09-22T05:55:05.533Z",
+  "completedUtc": "2026-09-22T06:05:48.772Z",
+  "observationMethod": "Browser UI via CUA, inline screenshots and selected read-only DOM telemetry; no browser storage or credentials inspected.",
+  "golden": { "version": "0.7.0", "passed": true, "hash": "ED162155D421B3CF", "ticks": 3000 },
+  "trade": { "before": 1000, "after": 248, "delta": -752, "bike": "Ember", "ledgerEntries": 2, "negativeGlyphReadable": true, "utcDateReadable": true },
+  "reloadPreserved": { "credits": 248, "bike": "Ember", "condition": 100 },
+  "privateLobby": {
+    "code": "22R84L", "name": "Canyon Run · Cấp 1",
+    "link": "https://localhost:7888/?room=22R84L",
+    "privateLabelVisible": true, "hiddenFromPublicList": true,
+    "linkPrefilledCode": true, "joinByEnter": true
+  },
+  "inviteOpenedOffline": true,
+  "hostRace": {
+    "state": "Connected", "mode": "Online", "player": 1,
+    "sessionId": "25d025182e0e406cb755421269ed8d5a", "room": "22R84L", "roomPhase": "Racing",
+    "tick": 714, "inputs": 713, "ack": 709, "distance": 0, "speed": 0, "bike": 100,
+    "width": 1280, "height": 690, "rttMs": 9.502659877424467,
+    "missingInputs": 1, "lateInputs": 0, "futureInputs": 0, "staleRemotes": 0,
+    "wasmHeapBytes": 193331200, "audioUnlocked": true,
+    "gpuTimingAvailable": false, "allocationCounterAvailable": false
+  },
+  "guestRace": {
+    "state": "Connected", "mode": "Online", "player": 2,
+    "sessionId": "677c6a3da40f42bb8e0bc5274b5b87c2", "room": "22R84L", "roomPhase": "Racing",
+    "tick": 715, "inputs": 712, "ack": 707, "distance": 0, "speed": 0, "bike": 100,
+    "width": 1280, "height": 690, "rttMs": 14.014182726529597,
+    "missingInputs": 3, "lateInputs": 0, "futureInputs": 0, "staleRemotes": 0,
+    "wasmHeapBytes": 193331200, "audioUnlocked": true,
+    "gpuTimingAvailable": false, "allocationCounterAvailable": false
+  },
+  "hostMovement": {
+    "state": "Connected", "mode": "Online", "player": 1,
+    "sessionId": "25d025182e0e406cb755421269ed8d5a", "room": "22R84L", "roomPhase": "Racing",
+    "tick": 2828, "inputs": 2827, "ack": 2821,
+    "distance": 460.6449890136719, "speed": 0, "bike": 49,
+    "width": 1280, "height": 690, "rttMs": 9.804191037102084,
+    "missingInputs": 1, "lateInputs": 0, "futureInputs": 0, "staleRemotes": 0,
+    "wasmHeapBytes": 193331200, "audioUnlocked": true,
+    "gpuTimingAvailable": false, "allocationCounterAvailable": false
+  },
+  "guest1080": {
+    "state": "Connected", "mode": "Online", "player": 2,
+    "sessionId": "677c6a3da40f42bb8e0bc5274b5b87c2", "room": "22R84L", "roomPhase": "Racing",
+    "tick": 8899, "inputs": 8896, "ack": 8891, "distance": 0, "speed": 0, "bike": 100,
+    "width": 1920, "height": 1080, "rttMs": 7.510619412784909,
+    "missingInputs": 3, "lateInputs": 0, "futureInputs": 0, "staleRemotes": 0,
+    "wasmHeapBytes": 193331200, "audioUnlocked": true,
+    "gpuTimingAvailable": false, "allocationCounterAvailable": false
+  },
+  "damageSettlement": {
+    "bike": "Ember", "conditionBefore": 100, "conditionAfter": 49, "creditsAfter": 248,
+    "repairCost": 299, "repairDisabledForInsufficientCredits": true
+  },
+  "warningErrorLogs": { "host": [], "guest": [] },
+  "cleanup": { "guestClosed": true, "hostAtMenu": true, "viewportReset": true },
+  "earlierCandidate": {
+    "source": "2890f29", "web": "Build/Web-p07-v3", "onePhysicalPC": true,
+    "viewport": "1280x720 with 1280x690 game canvas",
+    "trade": { "before": 1000, "after": 248, "delta": -752, "bike": "Ember" },
+    "layout": { "longShopHeaderStable": true, "confirmationAboveFooter": true, "accountScrollReadable": true, "campaignGridReadable": true },
+    "checkpointExportObserved": true, "checkpointImportObserved": true
+  },
+  "limitations": [
+    "One physical PC, two browser clients and loopback host; not physical LAN, global Internet or production capacity acceptance.",
+    "Mixed UI/race functional session, not an uninterrupted performance benchmark. Point telemetry does not establish monitor FPS, GPU cost or zero allocations.",
+    "Credential entry/recovery were tested through the real native HTTP/WSS probe; browser account forms were inspected without entering passwords.",
+    "Inline screenshots inspected; no persistent browser screenshot export is claimed."
+  ]
+}

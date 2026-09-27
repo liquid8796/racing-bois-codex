@@ -1,0 +1,82 @@
+--- a/Assets/RacingBois/Client/Application/MultiplayerSession.cs
++++ b/Assets/RacingBois/Client/Application/MultiplayerSession.cs
+@@ -338,8 +338,9 @@
+             reconnectAt = clock.NowSeconds + .5 * (1 << (reconnectAttempt - 1)); Changed?.Invoke();
+         }
+         private void CloseTransport() { closingTransport = true; try { transport.Close(); } finally { closingTransport = false; } }
+-        private void ClearRace()
+-        {
++        private void ClearRace(bool preserveRetiredInput = false)
++        {
++            if (!preserveRetiredInput) retiredInputRange = default;
+             pending.Clear(); events.Clear(); remotes.Clear(); Array.Clear(probes, 0, probes.Length);
+             Array.Clear(predictedHistory, 0, predictedHistory.Length);
+             hasCheckpoint = false; predictor = null; authoritative = default; heldAnalog = default; lastAppliedInputTick = -1;
+--- a/Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs
++++ b/Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs
+@@ -130,9 +130,15 @@
+                 bool belongs = false; foreach (var member in candidate.Members) if (member.PlayerId == PlayerId) belongs = true;
+                 Require(belongs, "Local participant missing");
+                 if (Room != null && Room.RoomId == candidate.RoomId && candidate.Revision < Room.Revision) return;
++                if (Room != null && candidate.RoomId == Room.RoomId && candidate.RaceEpoch == Room.RaceEpoch && candidate.Phase == LobbyPhase.Results)
++                    RetireRaceInputs();
++                bool preserveRetired = Room != null && candidate.RoomId == Room.RoomId &&
++                    ((Room.Phase == LobbyPhase.Results && candidate.Phase == LobbyPhase.Lobby && candidate.RaceEpoch == Room.RaceEpoch) ||
++                     (Room.Phase == LobbyPhase.Lobby && candidate.Phase == LobbyPhase.Countdown && candidate.RaceEpoch == Room.RaceEpoch + 1));
+                 if (Room == null || candidate.RoomId != Room.RoomId || candidate.RaceEpoch != Room.RaceEpoch ||
+                     (candidate.Phase == LobbyPhase.Lobby && Room.Phase != LobbyPhase.Lobby))
+-                { ClearRace(); Result = null; }
++                { ClearRace(preserveRetired); Result = null; }
++                if (candidate.Phase == LobbyPhase.Racing) retiredInputRange = default;
+                 Room = candidate; raceEpoch = candidate.RaceEpoch; AnchorClock(m.serverServiceTick, false);
+                 if (candidate.Phase == LobbyPhase.Results)
+                 { pending.Clear(); correctionS = correctionD = 0; if (hasCheckpoint) predictor?.Restore(authoritative); cachedPresentation = null; }
+@@ -218,6 +224,10 @@
+             Action apply = () =>
+             {
+                 if (m.sessionEpoch != 0 && m.sessionEpoch != sessionEpoch) return;
++                // A confirmed completed race may still have input frames in
++                // flight. Consume/ack their reliable rejection without turning
++                // expected turnover into a persistent user-facing error.
++                if (IsRetiredInputError(m)) return;
+                 string code = m.code ?? "unknown";
+                 if (code.Length > 64) code = "unknown";
+                 foreach (char c in code) if (!(char.IsLetterOrDigit(c) || c == '_')) { code = "unknown"; break; }
+--- a/Assets/RacingBois/Client/Application/MultiplayerSession.InputErrors.cs
++++ b/Assets/RacingBois/Client/Application/MultiplayerSession.InputErrors.cs
+@@ -0,0 +1,35 @@
++using RacingBois.Protocol;
++
++namespace RacingBois.Client.Application
++{
++    public sealed partial class MultiplayerSession
++    {
++        // A single completed race's unacknowledged input range. Its value-only
++        // context survives only the confirmed same-room turnover sequence.
++        private readonly struct RetiredInputRange
++        {
++            public readonly string RoomId;
++            public readonly int SessionEpoch, RaceEpoch, First, Last;
++            public RetiredInputRange(string roomId, int sessionEpoch, int raceEpoch, int first, int last)
++            { RoomId = roomId; SessionEpoch = sessionEpoch; RaceEpoch = raceEpoch; First = first; Last = last; }
++            public bool Contains(int sequence) => First > 0 && sequence >= First && sequence <= Last;
++        }
++        private RetiredInputRange retiredInputRange;
++        private void RetireRaceInputs()
++        {
++            if (Room == null || raceEpoch <= 0 || processedSequence >= sequence) return;
++            retiredInputRange = new RetiredInputRange(Room.RoomId, sessionEpoch, raceEpoch, processedSequence + 1, sequence);
++        }
++        private bool IsRetiredInputError(MpError error)
++        {
++            if (error.terminal || error.code != "race_epoch" || error.requestId != 0 || error.sessionEpoch != sessionEpoch ||
++                retiredInputRange.SessionEpoch != sessionEpoch || !retiredInputRange.Contains(error.sequence) || Room == null ||
++                Room.RoomId != retiredInputRange.RoomId) return false;
++            if (Room.Phase != LobbyPhase.Results && Room.Phase != LobbyPhase.Lobby && Room.Phase != LobbyPhase.Countdown) return false;
++            if (Room.RaceEpoch == retiredInputRange.RaceEpoch) return true;
++            // Sequence numbers restart each race and the rejection has no race
++            // epoch. Once any new input is sent, preserve every ambiguous error.
++            return Room.RaceEpoch == retiredInputRange.RaceEpoch + 1 && sequence == 0;
++        }
++    }
++}

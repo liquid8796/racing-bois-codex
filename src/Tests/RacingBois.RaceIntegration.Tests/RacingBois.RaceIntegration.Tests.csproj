@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><Nullable>annotations</Nullable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../Server/RacingBois.Server.Application/RacingBois.Server.Application.csproj" /></ItemGroup>
+  <ItemGroup><Compile Include="../../../Assets/RacingBois/Client/Application/*.cs" Link="ClientApplication/%(Filename)%(Extension)" /></ItemGroup>
+  <ItemGroup><Compile Include="../../Server/RacingBois.Server.Host/WireJson.cs" Link="WireJson.cs" /></ItemGroup>
+</Project>

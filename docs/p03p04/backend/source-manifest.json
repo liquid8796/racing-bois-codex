@@ -1,0 +1,253 @@
+{
+  "generatedUtc": "2026-09-21T03:48:23.6988972Z",
+  "sourceHash": "5a04e712b80300518a9e35053ae2a066bedefe2dc467a841c29044c44b6147aa",
+  "hashRecipe": "SHA256 of UTF8(no BOM): ordinal path-order entries as path + TAB + lowercase file SHA256 + LF",
+  "scope": "Shared gameplay/protocol, actual Unity Application sources, native server, integration/regression harnesses, project properties and package publishing helper. Presentation/art and compiled binaries are separate evidence.",
+  "files": [
+    {
+      "path": "Assets/RacingBois/Client/Application/FoundationSession.cs",
+      "sha256": "6a73e99870964cbab13332dd1ebec1d3b7bd5aa45f6483a3d5218ceff8f85713",
+      "bytes": 9864
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/LocalCampaignReadModel.cs",
+      "sha256": "c014ef97141d1cae2de48dac2eb36c8e1d5844fec823d72f250410aa22396dc4",
+      "bytes": 687
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSession.cs",
+      "sha256": "2768d4266f650e527110bde14bb30bd2fdf28f24f8aa997ac060453e5bb8ed2c",
+      "bytes": 10877
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceSnapshotValidator.cs",
+      "sha256": "e0e565d3f991e8b1e64402cd7580c3f55cc501fde663d825980b17862dff9adc",
+      "bytes": 5588
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceStateProjection.cs",
+      "sha256": "0648041e566df00755825e08f025ef40be219feafd9d04bd4150a331240923d8",
+      "bytes": 5359
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RaceWorldReadModel.cs",
+      "sha256": "f8adfa025031ec4fa97b22799cb3534b770414780f37f727a58a0383f5bbb783",
+      "bytes": 6809
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/RacingBois.Client.Application.asmdef",
+      "sha256": "dcd96fb7313bc2ae1e613726c74c415f00be7347ba32695a3695376be160972e",
+      "bytes": 229
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/WorldReadModel.cs",
+      "sha256": "0fe52476bf47c5fc16a52e84d2aac5b37eba9f692c25f2bca3052a7d646a112b",
+      "bytes": 1447
+    },
+    {
+      "path": "global.json",
+      "sha256": "c147a0e32b3ef10705a9a2f689ac056c3c42f103f4fffc306ae90cc5d47b6e6f",
+      "bytes": 69
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/GameplayRules.cs",
+      "sha256": "f57986f1e079c86e06006cf322753c077cc8cdd24827cca5de0f7d0ed641c9eb",
+      "bytes": 2184
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/PrototypeRules.cs",
+      "sha256": "600838990db2e125a3d09a12c482ec439660a3e38741b7437fd661c078e6bc0f",
+      "bytes": 895
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/RacingBois.Gameplay.Definitions.asmdef",
+      "sha256": "2469de6e8fb605bfa9f0fbfc880e7cc67a56e9219919850910da46a723dd7e3f",
+      "bytes": 157
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/TrackDefinition.cs",
+      "sha256": "30caa40d096b59877b7da4c1948851f76d2990cd2d25b76e525271db758f7862",
+      "bytes": 4077
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/VehicleDimensions.cs",
+      "sha256": "566cd7d7b774d42a9c42d7cad6d39b2d2ab24df3564ce4789f8d06f2b8b28b63",
+      "bytes": 836
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/RaceMessages.cs",
+      "sha256": "63db608f6fb18d19b45f39aff9c891a8abe91f7897374de828bc4cd8807b79c3",
+      "bytes": 3861
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/RacingBois.Protocol.asmdef",
+      "sha256": "99186d3d835ab0080cadeae04548e1a8331f579137041c64eec862407d60c1e3",
+      "bytes": 166
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Protocol/WireMessages.cs",
+      "sha256": "02a6ed932f991935bd4ccafbf006114190182eb6313202dacbfbf380473608d7",
+      "bytes": 2217
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/CombatResolver.cs",
+      "sha256": "4fc78337114582921979a7e05e1555f0956b0a2b833965f3981d86f6714fa19f",
+      "bytes": 6137
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs",
+      "sha256": "8c0e3c662903e7ffa38f7a43a4d652b2418043df43237fb1c74e3fc5bcd2f86a",
+      "bytes": 19003
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/GameplayVerification.cs",
+      "sha256": "2bd72056c7fc86dbc321224af795d3bcca6d48f9e68798eb8e2d1ccfa0a27030",
+      "bytes": 5338
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/GameplayWorld.cs",
+      "sha256": "5f711a072a3e0b6474801e5152c1ed062db4fb2b67c9950a0c59c9226dc0a100",
+      "bytes": 5072
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/LocalCampaignProgress.cs",
+      "sha256": "ddefd4aad2e7dec6ccbfdcad98c0ebec498d520f8b4f955622d51a56d956aa79",
+      "bytes": 1427
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianSimulation.cs",
+      "sha256": "f19fabac5631c657e47215cbe26b329a93687e89557a8ae9ad4b8e58b086f9f5",
+      "bytes": 6200
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RaceBrains.cs",
+      "sha256": "5468d028979bcd916a626d26c05fa6fd0d8317fbe7583c7b4a6aa89f9df3fd7b",
+      "bytes": 10435
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RaceSimulation.cs",
+      "sha256": "3e50836ecea40efefb0940ce978b3dae413de8276e0818c46dc798548a0ac4cf",
+      "bytes": 8255
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RacingBois.Simulation.asmdef",
+      "sha256": "ff65670a9d83f6c8ea03a7efd383c5f7376d2ca876a4547220f3aa523ad9f983",
+      "bytes": 170
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderState.cs",
+      "sha256": "311be1cee91a9013327029effebaafea9f13242c49732696d6aae937ca667c2e",
+      "bytes": 1030
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RoadSpaceSimulation.cs",
+      "sha256": "08744f30c6c717730ecd685d4e42797225bd5757cf829445aa43d42c838a1797",
+      "bytes": 2570
+    },
+    {
+      "path": "src/Directory.Build.props",
+      "sha256": "f2b70ee7c746112d345d279d2b21c149e35124eeb7ea6f88b5fd0ab39810cdbf",
+      "bytes": 230
+    },
+    {
+      "path": "src/global.json",
+      "sha256": "afa5631554ff93e1485fd1480873d4f2c1ff012b1eb09e1af9ad68aaaa5ac38b",
+      "bytes": 59
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/AuthoritativeMatch.cs",
+      "sha256": "121462ed0064dee4f71ece4464f5f0c6c0e47ef6186ab12c3821006cb697b211",
+      "bytes": 3112
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/AuthoritativeRace.cs",
+      "sha256": "864fac077cc93793a590aa6d12c5d7ad2c1d9fa9be563d260be242c4034dfe38",
+      "bytes": 7655
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/InputRateBudget.cs",
+      "sha256": "32fd74139a6929b0ae0528807adcf9b7fa41730cec782bb9ec48fdabb3d160d4",
+      "bytes": 921
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Application/RacingBois.Server.Application.csproj",
+      "sha256": "f5e8c9b95e61eead3233985f115156abe3b4fad2a338c9a87cff9b128f73f252",
+      "bytes": 331
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Host/MatchWorker.cs",
+      "sha256": "17a24fea6a59168b93d46565725043e19230628f4df60e79ce4b675abd3fa244",
+      "bytes": 5536
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Host/Program.cs",
+      "sha256": "5c04f98ffc75c1a979d1a3e3aa060682156cd9ed81124f3b2e6c6a7dfb42e150",
+      "bytes": 10627
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Host/RacingBois.Server.Host.csproj",
+      "sha256": "37ade7ff7736d10b1f41eed4ace02d720d0d00039bd1aa0672f0c59c9e4b2c70",
+      "bytes": 251
+    },
+    {
+      "path": "src/Server/RacingBois.Server.Host/WireJson.cs",
+      "sha256": "8daaefc2e2744848e4c1363bc35bc89cc3beae7034fb055d9e3a3d36f429efeb",
+      "bytes": 2023
+    },
+    {
+      "path": "src/Shared/RacingBois.Gameplay.Definitions/RacingBois.Gameplay.Definitions.csproj",
+      "sha256": "da57333239e4be733e0ed995bddc2fe6d0a5dba5e66a8082e329641c239522ed",
+      "bytes": 376
+    },
+    {
+      "path": "src/Shared/RacingBois.Protocol/RacingBois.Protocol.csproj",
+      "sha256": "dbc0cae8612c1769f9aa72a9880832565cf109fb781a28412a9cde25bd054afc",
+      "bytes": 477
+    },
+    {
+      "path": "src/Shared/RacingBois.Simulation/RacingBois.Simulation.csproj",
+      "sha256": "2be2c991079189055caf3a18c8b7e7634291decd84a2393d9f713219c872e0f1",
+      "bytes": 479
+    },
+    {
+      "path": "src/Tests/RacingBois.Foundation.Tests/ClientSessionTests.cs",
+      "sha256": "3776d90236cd1dcf22ab9586c77c2387a0501c24f0d37f44529c5829693b9b09",
+      "bytes": 12503
+    },
+    {
+      "path": "src/Tests/RacingBois.Foundation.Tests/Program.cs",
+      "sha256": "79eb040fce458ba4a87a23cd1190d7c29b81bdcc3e8d5d46791233dacf615092",
+      "bytes": 7085
+    },
+    {
+      "path": "src/Tests/RacingBois.Foundation.Tests/RacingBois.Foundation.Tests.csproj",
+      "sha256": "f5be86cb383de9eebec17b46b6ca5f97796d700c5685bef85fb2877efc27e517",
+      "bytes": 627
+    },
+    {
+      "path": "src/Tests/RacingBois.RaceIntegration.Tests/LiveRaceProbe.cs",
+      "sha256": "027eb3f1552a4330b2c3a22d7f5d34678aaffb521c828943fdd1724946ff45a5",
+      "bytes": 12176
+    },
+    {
+      "path": "src/Tests/RacingBois.RaceIntegration.Tests/Program.cs",
+      "sha256": "ae835923465f9802c3be590b6072f5c341c72d9c0a267818a0dbd549372ac8d8",
+      "bytes": 24636
+    },
+    {
+      "path": "src/Tests/RacingBois.RaceIntegration.Tests/RacingBois.RaceIntegration.Tests.csproj",
+      "sha256": "cb046acb896e1dcff0496d22625568f6f06026f72ae23c0515111ce2120ad596",
+      "bytes": 578
+    },
+    {
+      "path": "tools/foundation/publish-lan.ps1",
+      "sha256": "2609bafebb31594a0530551038c35585d243d6ea35d3d4e6db48aed83a31a666",
+      "bytes": 4910
+    },
+    {
+      "path": "tools/p03p04/capture-backend-source.ps1",
+      "sha256": "1855941319c4ccc8a2535a5e46d260d4149d6b9bec14eacb702d17571d05a60b",
+      "bytes": 2537
+    }
+  ]
+}

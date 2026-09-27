@@ -1,0 +1,132 @@
+{
+  "generatedUtc": "2026-09-26T18:20:05.705802+00:00",
+  "passed": true,
+  "unityReferenceVersion": "6000.5.7f1",
+  "compilations": [
+    {
+      "define": "UNITY_STANDALONE_WIN",
+      "passed": true,
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  RuntimeCompile -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\desktop\\bin\\Debug\\netstandard2.1\\RacingBois.P08.Desktop.Preflight.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:01.60\n"
+    },
+    {
+      "define": "UNITY_EDITOR",
+      "passed": true,
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  RuntimeCompile -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\desktop\\bin\\Debug\\netstandard2.1\\RacingBois.P08.Desktop.Preflight.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:01.47\n"
+    },
+    {
+      "define": "UNITY_WEBGL",
+      "passed": true,
+      "exitCode": 0,
+      "output": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  RuntimeCompile -> D:\\Project\\Unity\\racing-bois\\tools\\p08\\desktop\\bin\\Debug\\netstandard2.1\\RacingBois.P08.Desktop.Preflight.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:01.46\n"
+    }
+  ],
+  "sources": [
+    {
+      "path": "Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs",
+      "sha256": "fd88d096abcf1163f947765835b615d7467ae95660fa317c607ba0909c2c84f1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/ContentManifestRules.cs",
+      "sha256": "58df69f3801a47ed38001d74869e3a57eaecf4f38db6afdf9cb9f8a808a4a2c5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/DesktopConfiguration.cs",
+      "sha256": "cf10c745096a49c5d5b19cce7304a4dcd157242d88fef005ca1b777720d0f9d2"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08ContentLoader.cs",
+      "sha256": "ebacbb6d86677233c0dac8638d9911751c85fd95ebea6851131384aa0aa46525"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/P08MusicDirector.cs",
+      "sha256": "cdd8b9bcbede475f594d672adee7e55130ab71eea2e88744d66d009abf2c2db5"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs",
+      "sha256": "bc1a48d7d54ddae9a16dea47f70a79dc6e58e3a8bd24cbd971de98cbc92a1c26"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs",
+      "sha256": "d97f157aa2958b7517c46bf0fc294e55c9364c1207efe8a64584d2b4e8b3bb5b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceConfiguration.cs",
+      "sha256": "ac300c3889e4d03e980120b831d2b328ae99d47614c623b3d9b04bd34019c3b3"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceRecorder.cs",
+      "sha256": "1a8b01628431e6baf4373ee4da34093541491c590c06c32b2797834c69ddca5f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/BootstrapCinematicCoordinator.cs",
+      "sha256": "577ef302e5db6de0ff27ed5fe18d1dfddd4738ea7e911872c8d36872cf39ad0a"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceStageView.cs",
+      "sha256": "ddca51da1a4246882dc46b8d6ab5ac4d28be82cfad163ab3161b41e4acd84b91"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+      "sha256": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/SceneScrim.cs",
+      "sha256": "334e143c5eadb29edbca5850b8bdbd79693fe38910aca0e465147499625be679"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs",
+      "sha256": "09d50c71de78798cdf7060a2da3c35334ea05607b1ee10cdbe57699b571f9ecd"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.Content.cs",
+      "sha256": "9bc3c320bc0d95a27e544c499ade4d383c8b0568e24c6263dc6042c88c18984f"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/UiViewState.cs",
+      "sha256": "e3a0bab64590d20e9042153c694297862084ace08fcec0e2807dfcd9a4ac66eb"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/MultiplayerCopy.cs",
+      "sha256": "d36d98135937a0e29f37f4c2f1953b9f1886222532c0e8ebba4c82f069f05684"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "sha256": "4b8ea3eb275ddc56c77d955306f11d52196e01bf1f2e4718103a32068aeee109"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/UiBindingScope.cs",
+      "sha256": "3672631e9e545832a0b425ddac09de1f58e104feb38deefed82a43d78e961135"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/DesktopDisplaySettings.cs",
+      "sha256": "c7804c86cc32b38a0fec32aa8d5dd056383711d5663a7c13873cd062eb7376fc"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicGalleryView.cs",
+      "sha256": "b3fe01716fb951f8db4f5bf500e1bacd532de338d154118484f27724f28752b0"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicDirector.cs",
+      "sha256": "abc9c84fdec3f8bbb10d15ee32679a287f504adaa12ceadc9c1afdde79bc4dc4"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicPoseSampler.cs",
+      "sha256": "1e4204fc4a16677be7c53054be47b7b15f7a9b9b3601b5cf87915d8c76ed087b"
+    },
+    {
+      "path": "tools/p08/desktop/RuntimeCompile.csproj",
+      "sha256": "29d61e008a0a98cf7ccefc89415401fed65c6d260657ac7fb1fc16c5c02de221"
+    },
+    {
+      "path": "tools/p08/desktop/RacingBois.runtime.json",
+      "sha256": "395d919331cf437fe238528d3643a37da3645d9941909defcda08aae302a65cf"
+    },
+    {
+      "path": "src/Tests/RacingBois.DesktopConfig.Tests/Program.cs",
+      "sha256": "35d27e56ea3cd2331887e35876c7745d4206aaab1b346f40e8d5e0c2f0abf021"
+    }
+  ],
+  "scope": "Roslyn against installed Unity engine/runtime project assemblies including UNITY_STANDALONE_WIN. Not a Unity import, player build, scene, render, audio-decode or live network acceptance."
+}

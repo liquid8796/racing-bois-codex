@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "passed": false,
+  "failed": 1,
+  "tests": 1,
+  "results": [
+    {
+      "name": "real_delayed_inputs_follow_confirmed_results_without_persistent_user_error",
+      "passed": false,
+      "error": "Expected retired inputs polluted persistent Session.Error."
+    }
+  ],
+  "details": [
+    {
+      "kind": "actualServerTurnover",
+      "errors": 15,
+      "order": true,
+      "evidence": [
+        {
+          "at": 38.64999999999845,
+          "sequence": 1993,
+          "reliableSequence": 33,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.666666666665115,
+          "sequence": 1994,
+          "reliableSequence": 34,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.68333333333178,
+          "sequence": 1995,
+          "reliableSequence": 35,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.69999999999845,
+          "sequence": 1996,
+          "reliableSequence": 36,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.71666666666511,
+          "sequence": 1997,
+          "reliableSequence": 37,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.73333333333178,
+          "sequence": 1998,
+          "reliableSequence": 38,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.749999999998444,
+          "sequence": 1999,
+          "reliableSequence": 39,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.76666666666511,
+          "sequence": 2000,
+          "reliableSequence": 40,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.783333333331775,
+          "sequence": 2001,
+          "reliableSequence": 41,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.79999999999844,
+          "sequence": 2002,
+          "reliableSequence": 42,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.81666666666511,
+          "sequence": 2003,
+          "reliableSequence": 43,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.83333333333177,
+          "sequence": 2004,
+          "reliableSequence": 44,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.84999999999844,
+          "sequence": 2005,
+          "reliableSequence": 45,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.866666666665104,
+          "sequence": 2006,
+          "reliableSequence": 46,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        },
+        {
+          "at": 38.88333333333177,
+          "sequence": 2007,
+          "reliableSequence": 47,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": true
+        }
+      ],
+      "finalPhase": "Lobby",
+      "userError": "present"
+    }
+  ],
+  "scope": "Isolated staged client plus actual server application and ordered latency fixture; raw errors remain observed. No live source/wire/server-policy changes."
+}

@@ -1,0 +1,46 @@
+{
+  "generatedUtc": "2026-09-26T21:14:58.5309145+00:00",
+  "passed": 5,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "actual_native_branch_reassembles_fragmented_utf8_and_serializes_outgoing_messages",
+      "passed": true
+    },
+    {
+      "name": "reconnect_discards_unpolled_callbacks_from_old_socket_generation",
+      "passed": true
+    },
+    {
+      "name": "receive_backlog_fails_closed_at_bounded_budget_without_unbounded_dispatch",
+      "passed": true
+    },
+    {
+      "name": "native_transport_rejects_binary_frames_for_the_text_only_protocol",
+      "passed": true
+    },
+    {
+      "name": "remote_close_and_dispose_cancel_without_late_callbacks",
+      "passed": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs",
+      "sha256": "bc1a48d7d54ddae9a16dea47f70a79dc6e58e3a8bd24cbd971de98cbc92a1c26"
+    },
+    {
+      "path": "src/Tests/RacingBois.NativeTransport.Tests/Program.cs",
+      "sha256": "aec0785d5ba50c389650a50adebf14c7be1df62b932c876d05496435242c9f5c"
+    },
+    {
+      "path": "src/Tests/RacingBois.NativeTransport.Tests/UnityShell.cs",
+      "sha256": "06e59c17f7429c9d61cab751caf0990b07e7ea517b8c5b8f11c89a413101d8de"
+    },
+    {
+      "path": "src/Tests/RacingBois.NativeTransport.Tests/RacingBois.NativeTransport.Tests.csproj",
+      "sha256": "55326ccb33036af42123c94e1d6c9c66f9d09cdf057286eeb77f660936f1713d"
+    }
+  ],
+  "scope": "Actual linked native BrowserSocketTransport / ClientWebSocket branch in .NET 10, with an empty test-only MonoBehaviour shell and in-process ephemeral loopback Kestrel fixture. Not Unity lifecycle, Unity Mono/IL2CPP, packaged player, trusted TLS, OCI, physical LAN/WAN or rendering acceptance."
+}

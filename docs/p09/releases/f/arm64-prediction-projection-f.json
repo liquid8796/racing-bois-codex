@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "passed": true,
+  "failed": 0,
+  "tests": 10,
+  "results": [
+    {
+      "name": "protocol6_context_reaches_predictor_without_speed_quantization_loss",
+      "passed": true
+    },
+    {
+      "name": "cm_visual_velocity_and_exact_desired_velocity_have_consistent_units",
+      "passed": true
+    },
+    {
+      "name": "hostile_or_incoherent_pedestrian_metadata_rejected",
+      "passed": true
+    },
+    {
+      "name": "old_protocol_and_pedestrian_row_shapes_fail_closed",
+      "passed": true
+    },
+    {
+      "name": "missing_prediction_context_is_atomic",
+      "passed": true
+    },
+    {
+      "name": "authority_private_context_capture_is_validated_and_value_only",
+      "passed": true
+    },
+    {
+      "name": "remote_combat_metadata_is_immutable_bounded_and_reaches_predictor",
+      "passed": true
+    },
+    {
+      "name": "hostile_combat_metadata_and_legacy_shapes_fail_closed",
+      "passed": true
+    },
+    {
+      "name": "predicted_fatal_pose_keeps_authority_health_inventory_and_outcome",
+      "passed": true
+    },
+    {
+      "name": "same_tick_remote_forecast_motion_preserves_authority_and_clears_on_restore",
+      "passed": true
+    }
+  ],
+  "scope": "Actual protocol/client/foundation sources compiled together for value projection, hostile metadata and pose boundary tests; no live network, server or Unity acceptance."
+}

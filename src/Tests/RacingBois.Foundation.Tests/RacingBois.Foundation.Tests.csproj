@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><Nullable>disable</Nullable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../Server/RacingBois.Server.Application/RacingBois.Server.Application.csproj" /></ItemGroup>
+  <ItemGroup><Compile Include="../../../Assets/RacingBois/Client/Application/FoundationSession.cs" Link="ClientApplication/FoundationSession.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="../../../Assets/RacingBois/Client/Application/WorldReadModel.cs" Link="ClientApplication/WorldReadModel.cs" /></ItemGroup>
+</Project>

@@ -1,0 +1,292 @@
+{
+  "scope": "Isolated diagnostic contact-order counterfactual, not a production patch: same captured inputs, checkpoints and proxy motion; all contacts resolved in sorted actor ID order only in experimental variant. Actual physics source untouched.",
+  "authority": {
+    "Tick": 292,
+    "Mode": "Riding",
+    "ModeAgeTicks": 292,
+    "DistanceMillimeters": 96101,
+    "LateralMillimeters": -1736,
+    "SpeedMillimetersPerSecond": 35309,
+    "Health": 4096,
+    "BikeCondition": 100,
+    "CollisionUntilTick": 292
+  },
+  "expected": {
+    "Tick": 313,
+    "Mode": "Riding",
+    "ModeAgeTicks": 313,
+    "DistanceMillimeters": 108253,
+    "LateralMillimeters": -1682,
+    "SpeedMillimetersPerSecond": 34728,
+    "Health": 4096,
+    "BikeCondition": 100,
+    "CollisionUntilTick": 318
+  },
+  "legacy": {
+    "sortedAll": false,
+    "excludeTraffic": 0,
+    "timeline": [
+      {
+        "Tick": 293,
+        "Mode": "Falling",
+        "ModeAgeTicks": 0,
+        "DistanceMillimeters": 96101,
+        "LateralMillimeters": -1738,
+        "SpeedMillimetersPerSecond": 11798,
+        "Health": 3396,
+        "BikeCondition": 66,
+        "CollisionUntilTick": 292
+      },
+      {
+        "Tick": 294,
+        "Mode": "Falling",
+        "ModeAgeTicks": 1,
+        "DistanceMillimeters": 96297,
+        "LateralMillimeters": -1738,
+        "SpeedMillimetersPerSecond": 11298,
+        "Health": 3396,
+        "BikeCondition": 66,
+        "CollisionUntilTick": 292
+      },
+      {
+        "Tick": 295,
+        "Mode": "Falling",
+        "ModeAgeTicks": 2,
+        "DistanceMillimeters": 96485,
+        "LateralMillimeters": -1738,
+        "SpeedMillimetersPerSecond": 10798,
+        "Health": 3396,
+        "BikeCondition": 66,
+        "CollisionUntilTick": 292
+      }
+    ],
+    "final": {
+      "Tick": 313,
+      "Mode": "Falling",
+      "ModeAgeTicks": 20,
+      "DistanceMillimeters": 98438,
+      "LateralMillimeters": -1738,
+      "SpeedMillimetersPerSecond": 1798,
+      "Health": 3396,
+      "BikeCondition": 66,
+      "CollisionUntilTick": 292
+    },
+    "positionResidualMeters": 9.81515975417619,
+    "fullCheckpointMatches": false,
+    "differences": [
+      {
+        "field": "DistanceMillimeters",
+        "actual": 98438,
+        "expected": 108253
+      },
+      {
+        "field": "BikeDistanceMillimeters",
+        "actual": 102724,
+        "expected": 108253
+      },
+      {
+        "field": "Mode",
+        "actual": 4,
+        "expected": 0
+      },
+      {
+        "field": "LateralMillimeters",
+        "actual": -1738,
+        "expected": -1682
+      },
+      {
+        "field": "BikeLateralMillimeters",
+        "actual": -2238,
+        "expected": -1682
+      },
+      {
+        "field": "SpeedMillimetersPerSecond",
+        "actual": 1798,
+        "expected": 34728
+      },
+      {
+        "field": "LeanMillidegrees",
+        "actual": 75000,
+        "expected": 2964
+      },
+      {
+        "field": "Health",
+        "actual": 3396,
+        "expected": 4096
+      },
+      {
+        "field": "BikeCondition",
+        "actual": 66,
+        "expected": 100
+      },
+      {
+        "field": "Rank",
+        "actual": 8,
+        "expected": 7
+      },
+      {
+        "field": "ModeAgeTicks",
+        "actual": 20,
+        "expected": 313
+      },
+      {
+        "field": "CollisionUntilTick",
+        "actual": 292,
+        "expected": 318
+      },
+      {
+        "field": "DistanceRemainder",
+        "actual": 45,
+        "expected": 38
+      },
+      {
+        "field": "LateralRemainder",
+        "actual": -49,
+        "expected": -29
+      },
+      {
+        "field": "SpeedRemainder",
+        "actual": 43,
+        "expected": 26
+      },
+      {
+        "field": "VerticalSpeed",
+        "actual": -3280,
+        "expected": 0
+      },
+      {
+        "field": "SteeringPermille",
+        "actual": -18,
+        "expected": -78
+      },
+      {
+        "field": "BikeSpeed",
+        "actual": 12545,
+        "expected": 0
+      },
+      {
+        "field": "RecoveryTicks",
+        "actual": 20,
+        "expected": 0
+      }
+    ]
+  },
+  "withoutTraffic3001": {
+    "sortedAll": false,
+    "excludeTraffic": 3001,
+    "timeline": [
+      {
+        "Tick": 293,
+        "Mode": "Riding",
+        "ModeAgeTicks": 293,
+        "DistanceMillimeters": 96691,
+        "LateralMillimeters": -1648,
+        "SpeedMillimetersPerSecond": 34194,
+        "Health": 4096,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 305
+      },
+      {
+        "Tick": 294,
+        "Mode": "Riding",
+        "ModeAgeTicks": 294,
+        "DistanceMillimeters": 97263,
+        "LateralMillimeters": -1652,
+        "SpeedMillimetersPerSecond": 34282,
+        "Health": 4096,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 305
+      },
+      {
+        "Tick": 295,
+        "Mode": "Riding",
+        "ModeAgeTicks": 295,
+        "DistanceMillimeters": 97835,
+        "LateralMillimeters": -1656,
+        "SpeedMillimetersPerSecond": 34370,
+        "Health": 4096,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 305
+      }
+    ],
+    "final": {
+      "Tick": 313,
+      "Mode": "Riding",
+      "ModeAgeTicks": 313,
+      "DistanceMillimeters": 108253,
+      "LateralMillimeters": -1682,
+      "SpeedMillimetersPerSecond": 34728,
+      "Health": 4096,
+      "BikeCondition": 100,
+      "CollisionUntilTick": 318
+    },
+    "positionResidualMeters": 0,
+    "fullCheckpointMatches": false,
+    "differences": [
+      {
+        "field": "Rank",
+        "actual": 8,
+        "expected": 7
+      }
+    ]
+  },
+  "authorityOrder": {
+    "sortedAll": true,
+    "excludeTraffic": 0,
+    "timeline": [
+      {
+        "Tick": 293,
+        "Mode": "Riding",
+        "ModeAgeTicks": 293,
+        "DistanceMillimeters": 96691,
+        "LateralMillimeters": -1648,
+        "SpeedMillimetersPerSecond": 34194,
+        "Health": 4096,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 305
+      },
+      {
+        "Tick": 294,
+        "Mode": "Riding",
+        "ModeAgeTicks": 294,
+        "DistanceMillimeters": 97263,
+        "LateralMillimeters": -1652,
+        "SpeedMillimetersPerSecond": 34282,
+        "Health": 4096,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 305
+      },
+      {
+        "Tick": 295,
+        "Mode": "Riding",
+        "ModeAgeTicks": 295,
+        "DistanceMillimeters": 97835,
+        "LateralMillimeters": -1656,
+        "SpeedMillimetersPerSecond": 34370,
+        "Health": 4096,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 305
+      }
+    ],
+    "final": {
+      "Tick": 313,
+      "Mode": "Riding",
+      "ModeAgeTicks": 313,
+      "DistanceMillimeters": 108253,
+      "LateralMillimeters": -1682,
+      "SpeedMillimetersPerSecond": 34728,
+      "Health": 4096,
+      "BikeCondition": 100,
+      "CollisionUntilTick": 318
+    },
+    "positionResidualMeters": 0,
+    "fullCheckpointMatches": false,
+    "differences": [
+      {
+        "field": "Rank",
+        "actual": 8,
+        "expected": 7
+      }
+    ]
+  }
+}

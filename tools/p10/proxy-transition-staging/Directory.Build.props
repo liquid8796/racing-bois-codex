@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <Candidate Condition="'$(Candidate)'==''">true</Candidate>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)obj/$(MSBuildProjectName)/$(Candidate)/</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(MSBuildThisFileDirectory)obj/$(MSBuildProjectName)/$(Candidate)/</MSBuildProjectExtensionsPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)bin/$(MSBuildProjectName)/$(Candidate)/</BaseOutputPath>
+  </PropertyGroup>
+</Project>

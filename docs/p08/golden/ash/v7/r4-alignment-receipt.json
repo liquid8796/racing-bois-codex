@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V7.blend\"\nASH_V7_R4_ALIGNMENT {\"bikeUnityRoot\": [0, 0, 0], \"actorUnityRoot\": [-0.3, 0, -0.25], \"actorRootYaw\": 0, \"actorModelYaw\": 180, \"ashBlenderToUnity\": \"(-.30-x,z,-.25-y)\", \"bikeInAshAuthorSpace\": \"Translation(-.30,-.25,0) * Rz(180deg)\", \"markers\": [{\"name\": \"Contact_Foot_L.001\", \"inAshBlender\": [-0.013999968767166138, -0.001000046730041504, 0.34200000762939453], \"reconstructedUnityWorld\": [-0.2860000431537628, 0.34200000762939453, -0.2489999532699585]}, {\"name\": \"Contact_Foot_R.001\", \"inAshBlender\": [-0.5859999656677246, -0.0009999573230743408, 0.34200000762939453], \"reconstructedUnityWorld\": [0.28599995374679565, 0.34200000762939453, -0.24900004267692566]}, {\"name\": \"Contact_Grip_L.001\", \"inAshBlender\": [-0.00600007176399231, -0.6390000581741333, 0.9269999861717224], \"reconstructedUnityWorld\": [-0.29399994015693665, 0.9269999861717224, 0.3890000581741333]}, {\"name\": \"Contact_Grip_R.001\", \"inAshBlender\": [-0.5940001010894775, -0.6389999389648438, 0.9269999861717224], \"reconstructedUnityWorld\": [0.2940000891685486, 0.9269999861717224, 0.38899993896484375]}, {\"name\": \"Contact_Seat.001\", \"inAshBlender\": [-0.2999999523162842, 0.12000000476837158, 0.8240000009536743], \"reconstructedUnityWorld\": [-4.7683716530855236e-08, 0.8240000009536743, -0.3700000047683716]}, {\"name\": \"Forward.002\", \"inAshBlender\": [-0.3000001907348633, -1.350000023841858, 0.0], \"reconstructedUnityWorld\": [1.9073486612342094e-07, 0.0, 1.100000023841858]}, {\"name\": \"Ground_Front.001\", \"inAshBlender\": [-0.3000001311302185, -0.9649999737739563, 0.0], \"reconstructedUnityWorld\": [1.3113022134803032e-07, 0.0, 0.7149999737739563]}, {\"name\": \"Ground_Rear.001\", \"inAshBlender\": [-0.2999998927116394, 0.4649999737739563, 0.0], \"reconstructedUnityWorld\": [-1.0728835775353218e-07, 0.0, -0.7149999737739563]}, {\"name\": \"RB_Golden_Apex_r4_Wheel_Front\", \"inAshBlender\": [-0.3000001311302185, -0.9649999737739563, 0.3149999976158142], \"reconstructedUnityWorld\": [1.3113022134803032e-07, 0.3149999976158142, 0.7149999737739563]}, {\"name\": \"RB_Golden_Apex_r4_Wheel_Rear\", \"inAshBlender\": [-0.2999998927116394, 0.4649999737739563, 0.3149999976158142], \"reconstructedUnityWorld\": [-1.0728835775353218e-07, 0.3149999976158142, -0.7149999737739563]}, {\"name\": \"Semantic_Left.001\", \"inAshBlender\": [0.19999998807907104, -0.25000008940696716, 0.0], \"reconstructedUnityWorld\": [-0.5, 0.0, 8.940696716308594e-08]}, {\"name\": \"Semantic_Right.001\", \"inAshBlender\": [-0.800000011920929, -0.24999992549419403, 0.0], \"reconstructedUnityWorld\": [0.5, 0.0, -7.450580596923828e-08]}]}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"RB_Golden_Ash_V7.blend\"\nASH_V7_R4_ALIGNMENT {\"bikeUnityRoot\": [0, 0, 0], \"actorUnityRoot\": [-0.3, 0, -0.25], \"actorRootYaw\": 0, \"actorModelYaw\": 180, \"ashBlenderToUnity\": \"(-.30-x,z,-.25-y)\", \"bikeInAshAuthorSpace\": \"Translation(-.30,-.25,0) * Rz(180deg)\", \"markers\": [{\"name\": \"Contact_Foot_L.001\", \"inAshBlender\": [-0.013999968767166138, -0.001000046730041504, 0.34200000762939453], \"reconstructedUnityWorld\": [-0.2860000431537628, 0.34200000762939453, -0.2489999532699585]}, {\"name\": \"Contact_Foot_R.001\", \"inAshBlender\": [-0.5859999656677246, -0.0009999573230743408, 0.34200000762939453], \"reconstructedUnityWorld\": [0.28599995374679565, 0.34200000762939453, -0.24900004267692566]}, {\"name\": \"Contact_Grip_L.001\", \"inAshBlender\": [-0.00600007176399231, -0.6390000581741333, 0.9269999861717224], \"reconstructedUnityWorld\": [-0.29399994015693665, 0.9269999861717224, 0.3890000581741333]}, {\"name\": \"Contact_Grip_R.001\", \"inAshBlender\": [-0.5940001010894775, -0.6389999389648438, 0.9269999861717224], \"reconstructedUnityWorld\": [0.2940000891685486, 0.9269999861717224, 0.38899993896484375]}, {\"name\": \"Contact_Seat.001\", \"inAshBlender\": [-0.2999999523162842, 0.12000000476837158, 0.8240000009536743], \"reconstructedUnityWorld\": [-4.7683716530855236e-08, 0.8240000009536743, -0.3700000047683716]}, {\"name\": \"Forward.002\", \"inAshBlender\": [-0.3000001907348633, -1.350000023841858, 0.0], \"reconstructedUnityWorld\": [1.9073486612342094e-07, 0.0, 1.100000023841858]}, {\"name\": \"Ground_Front.001\", \"inAshBlender\": [-0.3000001311302185, -0.9649999737739563, 0.0], \"reconstructedUnityWorld\": [1.3113022134803032e-07, 0.0, 0.7149999737739563]}, {\"name\": \"Ground_Rear.001\", \"inAshBlender\": [-0.2999998927116394, 0.4649999737739563, 0.0], \"reconstructedUnityWorld\": [-1.0728835775353218e-07, 0.0, -0.7149999737739563]}, {\"name\": \"RB_Golden_Apex_r4_Wheel_Front\", \"inAshBlender\": [-0.3000001311302185, -0.9649999737739563, 0.3149999976158142], \"reconstructedUnityWorld\": [1.3113022134803032e-07, 0.3149999976158142, 0.7149999737739563]}, {\"name\": \"RB_Golden_Apex_r4_Wheel_Rear\", \"inAshBlender\": [-0.2999998927116394, 0.4649999737739563, 0.3149999976158142], \"reconstructedUnityWorld\": [-1.0728835775353218e-07, 0.3149999976158142, -0.7149999737739563]}, {\"name\": \"Semantic_Left.001\", \"inAshBlender\": [0.19999998807907104, -0.25000008940696716, 0.0], \"reconstructedUnityWorld\": [-0.5, 0.0, 8.940696716308594e-08]}, {\"name\": \"Semantic_Right.001\", \"inAshBlender\": [-0.800000011920929, -0.24999992549419403, 0.0], \"reconstructedUnityWorld\": [0.5, 0.0, -7.450580596923828e-08]}]}\n"
+    },
+    "isError": false
+  }
+}

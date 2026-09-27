@@ -1,0 +1,382 @@
+{
+  "inspection": "READ_ONLY_NO_SCENE_SAVE",
+  "blend_path": "D:\\Project\\Unity\\racing-bois\\ArtSource\\Props\\RB_RoadBarrier.blend",
+  "blender_version": "5.2.1 LTS",
+  "unit_system": "METRIC",
+  "unit_scale": 1.0,
+  "root": {
+    "name": "RB_RoadBarrier",
+    "type": "EMPTY",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_radians": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "meshes": [
+    {
+      "name": "RB_Barrier_LOD0",
+      "mesh_name": "RB_Barrier_LOD0_Mesh",
+      "vertices": 128,
+      "edges": 252,
+      "polygons": 126,
+      "triangles": 252,
+      "dimensions_m": [
+        2.0,
+        0.6399999856948853,
+        0.8999999761581421
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "RB_RoadBarrier",
+      "local_bounds_min": [
+        -1.0,
+        -0.3199999928474426,
+        0.0
+      ],
+      "local_bounds_max": [
+        1.0,
+        0.3199999928474426,
+        0.8999999761581421
+      ],
+      "transform_determinant": 1.0,
+      "nonmanifold_edges": [],
+      "inconsistent_winding_edges": [],
+      "loose_vertices": [],
+      "duplicate_vertex_position_pairs": [],
+      "zero_area_faces": [],
+      "zero_area_triangles": [],
+      "connected_components_vertices": [
+        128
+      ],
+      "signed_volume_m3": 0.7235282888605575,
+      "uv_layers": [
+        "UV0"
+      ],
+      "uv_islands": 6,
+      "uv_total_triangle_area": 0.6828316518657338,
+      "uv_out_of_bounds_triangles": [],
+      "uv_degenerate_triangles": [],
+      "uv_positive_area_overlap_pairs": [],
+      "materials": [
+        "RB_Barrier_PaintedConcrete"
+      ],
+      "material_indices_used": [
+        0
+      ],
+      "unapplied_modifiers": [],
+      "smooth_faces": 0,
+      "authored_from_scratch_property": true,
+      "source_recipe_property": "tools/blender/create_barrier.py"
+    },
+    {
+      "name": "RB_Barrier_LOD1",
+      "mesh_name": "RB_Barrier_LOD0_Mesh.001",
+      "vertices": 65,
+      "edges": 143,
+      "polygons": 80,
+      "triangles": 126,
+      "dimensions_m": [
+        1.997542142868042,
+        0.6376316547393799,
+        0.8973459005355835
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "RB_RoadBarrier",
+      "local_bounds_min": [
+        -0.9988327026367188,
+        -0.31881582736968994,
+        0.0014072285266593099
+      ],
+      "local_bounds_max": [
+        0.9987093806266785,
+        0.31881582736968994,
+        0.8987531065940857
+      ],
+      "transform_determinant": 1.0,
+      "nonmanifold_edges": [],
+      "inconsistent_winding_edges": [],
+      "loose_vertices": [],
+      "duplicate_vertex_position_pairs": [],
+      "zero_area_faces": [],
+      "zero_area_triangles": [],
+      "connected_components_vertices": [
+        65
+      ],
+      "signed_volume_m3": 0.7140973153651022,
+      "uv_layers": [
+        "UV0"
+      ],
+      "uv_islands": 6,
+      "uv_total_triangle_area": 0.6774399995796838,
+      "uv_out_of_bounds_triangles": [],
+      "uv_degenerate_triangles": [],
+      "uv_positive_area_overlap_pairs": [],
+      "materials": [
+        "RB_Barrier_PaintedConcrete"
+      ],
+      "material_indices_used": [
+        0
+      ],
+      "unapplied_modifiers": [],
+      "smooth_faces": 0,
+      "authored_from_scratch_property": true,
+      "source_recipe_property": "tools/blender/create_barrier.py"
+    },
+    {
+      "name": "RB_Barrier_LOD2",
+      "mesh_name": "RB_Barrier_LOD0_Mesh.002",
+      "vertices": 27,
+      "edges": 52,
+      "polygons": 27,
+      "triangles": 50,
+      "dimensions_m": [
+        1.9948610067367554,
+        0.633052408695221,
+        0.8937385082244873
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent": "RB_RoadBarrier",
+      "local_bounds_min": [
+        -0.9974395632743835,
+        -0.3176892101764679,
+        0.002195933600887656
+      ],
+      "local_bounds_max": [
+        0.9974214434623718,
+        0.31536319851875305,
+        0.8959344625473022
+      ],
+      "transform_determinant": 1.0,
+      "nonmanifold_edges": [],
+      "inconsistent_winding_edges": [],
+      "loose_vertices": [],
+      "duplicate_vertex_position_pairs": [],
+      "zero_area_faces": [],
+      "zero_area_triangles": [],
+      "connected_components_vertices": [
+        27
+      ],
+      "signed_volume_m3": 0.6922132802115843,
+      "uv_layers": [
+        "UV0"
+      ],
+      "uv_islands": 6,
+      "uv_total_triangle_area": 0.6697884138351715,
+      "uv_out_of_bounds_triangles": [],
+      "uv_degenerate_triangles": [],
+      "uv_positive_area_overlap_pairs": [],
+      "materials": [
+        "RB_Barrier_PaintedConcrete"
+      ],
+      "material_indices_used": [
+        0
+      ],
+      "unapplied_modifiers": [],
+      "smooth_faces": 0,
+      "authored_from_scratch_property": true,
+      "source_recipe_property": "tools/blender/create_barrier.py"
+    }
+  ],
+  "images": [
+    {
+      "name": "RB_Barrier_BaseColor",
+      "dimensions": [
+        512,
+        512
+      ],
+      "filepath": "//..\\..\\Assets\\RacingBois\\Art\\Props\\Barrier\\RB_Barrier_BaseColor.png",
+      "colorspace": "sRGB",
+      "channels": 4,
+      "pixel_channel_stats": [
+        {
+          "min": 0.0,
+          "max": 0.9058824181556702,
+          "mean": 0.6879317990149332
+        },
+        {
+          "min": 0.0,
+          "max": 0.9019608497619629,
+          "mean": 0.4917142978019058
+        },
+        {
+          "min": 0.0,
+          "max": 0.8509804606437683,
+          "mean": 0.398529351732833
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "mean": 1.0
+        }
+      ],
+      "source": "FILE",
+      "is_dirty": false
+    },
+    {
+      "name": "RB_Barrier_MetallicSmoothness",
+      "dimensions": [
+        128,
+        128
+      ],
+      "filepath": "//..\\..\\Assets\\RacingBois\\Art\\Props\\Barrier\\RB_Barrier_MetallicSmoothness.png",
+      "colorspace": "Non-Color",
+      "channels": 4,
+      "pixel_channel_stats": [
+        {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "mean": 1.0
+        },
+        {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0
+        },
+        {
+          "min": 0.3803921937942505,
+          "max": 0.3803921937942505,
+          "mean": 0.3803921937942505
+        }
+      ],
+      "source": "FILE",
+      "is_dirty": false
+    },
+    {
+      "name": "RB_Barrier_Normal",
+      "dimensions": [
+        128,
+        128
+      ],
+      "filepath": "//..\\..\\Assets\\RacingBois\\Art\\Props\\Barrier\\RB_Barrier_Normal.png",
+      "colorspace": "Non-Color",
+      "channels": 4,
+      "pixel_channel_stats": [
+        {
+          "min": 0.501960813999176,
+          "max": 0.501960813999176,
+          "mean": 0.501960813999176
+        },
+        {
+          "min": 0.501960813999176,
+          "max": 0.501960813999176,
+          "mean": 0.501960813999176
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "mean": 1.0
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "mean": 1.0
+        }
+      ],
+      "source": "FILE",
+      "is_dirty": false
+    },
+    {
+      "name": "RB_Barrier_Roughness",
+      "dimensions": [
+        128,
+        128
+      ],
+      "filepath": "//RB_Barrier_Roughness.png",
+      "colorspace": "Non-Color",
+      "channels": 4,
+      "pixel_channel_stats": [
+        {
+          "min": 0.6196078658103943,
+          "max": 0.6196078658103943,
+          "mean": 0.6196078658103943
+        },
+        {
+          "min": 0.6196078658103943,
+          "max": 0.6196078658103943,
+          "mean": 0.6196078658103943
+        },
+        {
+          "min": 0.6196078658103943,
+          "max": 0.6196078658103943,
+          "mean": 0.6196078658103943
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "mean": 1.0
+        }
+      ],
+      "source": "FILE",
+      "is_dirty": false
+    }
+  ],
+  "image_nodes": [
+    {
+      "node": "Image Texture",
+      "image": "RB_Barrier_BaseColor"
+    }
+  ],
+  "material_assignments_shared": true,
+  "mesh_objects_in_scene": [
+    "RB_Barrier_LOD0",
+    "RB_Barrier_LOD1",
+    "RB_Barrier_LOD2"
+  ]
+}

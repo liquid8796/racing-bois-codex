@@ -1,0 +1,33 @@
+"""Export the current final runtime meshes without changing material/image data."""
+import bpy,json
+from mathutils import Matrix
+ROOT='D:/Project/Unity/racing-bois/'
+rig=bpy.data.objects['RB_P06_Rider_Rig'];root=bpy.data.objects['RB_Golden_Ash_V2'];scene=bpy.context.scene
+rig.animation_data.action=None
+for bone in rig.pose.bones:bone.matrix_basis=Matrix.Identity(4)
+for level in range(3):
+    for key in bpy.data.objects['AshV2_L'+str(level)+'_Skin'].data.shape_keys.key_blocks:key.value=0
+bpy.context.view_layer.update()
+bpy.ops.object.select_all(action='DESELECT')
+selection=[root,rig]+[bpy.data.objects['AshV2_L'+str(level)+'_Skin'] for level in range(3)]+[bpy.data.objects[name] for name in ['Forward','Ground_L','Ground_R']]
+for obj in selection:obj.select_set(True)
+bpy.context.view_layer.objects.active=root
+path=ROOT+'Assets/RacingBois/Art/P08/Golden/Ash/V2/RB_Golden_Ash_V2.fbx'
+bpy.ops.export_scene.fbx(filepath=path,use_selection=True,object_types={'MESH','ARMATURE','EMPTY'},axis_forward='-Z',axis_up='Y',apply_unit_scale=True,apply_scale_options='FBX_SCALE_ALL',use_mesh_modifiers=False,
+                        add_leaf_bones=False,bake_anim=True,bake_anim_use_all_bones=True,bake_anim_use_nla_strips=False,bake_anim_use_all_actions=True,bake_anim_force_startend_keying=True,
+                        bake_anim_step=1,bake_anim_simplify_factor=0,path_mode='AUTO')
+def bone_path(bone):
+    chain=[]
+    while bone:
+        chain.append(bone.name);bone=bone.parent
+    return rig.name+'/'+'/'.join(reversed(chain))
+data={'fbx':path,'bonePaths':[bone_path(b) for b in rig.data.bones],
+      'leftMarker':bone_path(rig.data.bones['RB_P06_Rider_L0_Hand_L']),
+      'rightMarker':bone_path(rig.data.bones['RB_P06_Rider_L0_Hand_R']),
+      'forwardMarker':'Forward','groundMarkers':['Ground_L','Ground_R'],
+      'modelRotationEuler':{'x':0,'y':180,'z':0},
+      'clips':[action.name for action in bpy.data.actions if action.name.startswith('RB_')],
+      'materials':[m.name for m in bpy.data.objects['AshV2_L0_Skin'].data.materials]}
+rig.animation_data.action=bpy.data.actions['RB_Idle'];scene.frame_set(1);bpy.context.view_layer.update()
+bpy.ops.wm.save_as_mainfile(filepath=ROOT+'ArtSource/P08/Golden/Ash/V2/RB_Golden_Ash_V2.blend',compress=False)
+print('ASH_EXPORTED_RUNTIME '+json.dumps(data))

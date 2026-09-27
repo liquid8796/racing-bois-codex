@@ -1,0 +1,27 @@
+{
+  "scope": "Measured normalized-canvas UV foreground mask drift only; not a 3D fidelity or artistic similarity score.",
+  "originalSize": [
+    2048,
+    2048
+  ],
+  "candidateSize": [
+    1254,
+    1254
+  ],
+  "originalSha256": "ca2b8e661360d2c3b74c442deaa6ea1875dd29dc53c9e76eceea77e725129954",
+  "candidateSha256": "8e218c14d7f221aa2ca46b09eabdf36d2459b7104856e8eba61a3ca71c2b2233",
+  "foregroundThresholdRgbMax": 12,
+  "intersectionOverUnion": 0.9769178480942671,
+  "missingForegroundPixels": 3170,
+  "extraForegroundPixels": 18121,
+  "symmetricBoundaryDistanceCandidatePixels": {
+    "metric": "Chebyshev on pixel grid",
+    "median": 1.0,
+    "p95": 3.0,
+    "max": 9.0
+  },
+  "majorForegroundComponentCountOriginal": 5,
+  "majorForegroundComponentCountCandidate": 4,
+  "visualFinding": "Broad pale marbling and directional-looking fold shading are excessive for a neutral albedo; colored boundary fringe is visible. Candidate remains unaccepted.",
+  "imagesModified": false
+}

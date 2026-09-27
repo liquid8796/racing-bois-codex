@@ -1,0 +1,69 @@
+{
+  "generatedUtc": "2026-09-26T17:38:29.2255398+00:00",
+  "passed": 14,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "local_session_uses_same_core_for_1800_ticks",
+      "status": "PASS"
+    },
+    {
+      "name": "local_readmodel_publishes_20hz_and_retained_snapshots_are_immutable",
+      "status": "PASS"
+    },
+    {
+      "name": "authority_rejects_foreign_attack_replay_nonfinite_and_bad_side",
+      "status": "PASS"
+    },
+    {
+      "name": "authoritative_attack_intent_resolves_damage_and_replicates_event",
+      "status": "PASS"
+    },
+    {
+      "name": "attack_press_release_before_one_tick_preserves_one_kick_and_latest_movement",
+      "status": "PASS"
+    },
+    {
+      "name": "latched_attack_keeps_most_recent_press_and_respects_side_and_range",
+      "status": "PASS"
+    },
+    {
+      "name": "held_attack_repeats_with_cooldown_but_timeout_and_disconnect_clear_intent",
+      "status": "PASS"
+    },
+    {
+      "name": "authority_slots_timeout_and_recent_event_bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "strict_wire_parser_rejects_damage_injection_duplicate_missing_and_nonfinite",
+      "status": "PASS"
+    },
+    {
+      "name": "whole_race_authority_snapshots_stay_inside_client_contract",
+      "status": "PASS"
+    },
+    {
+      "name": "pedestrian_snapshot_mapping_bounds_and_immutable_publication",
+      "status": "PASS"
+    },
+    {
+      "name": "maximum_contract_snapshot_fits_native_and_browser_receive_budget",
+      "status": "PASS"
+    },
+    {
+      "name": "online_session_validates_authority_snapshot_atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "online_no_ack_disconnect_late_events_and_version_mismatch",
+      "status": "PASS"
+    }
+  ],
+  "payloadBudget": {
+    "maximumSnapshotBytes": 28795,
+    "receiveLimitBytes": 32768,
+    "headroomBytes": 3973
+  },
+  "scope": "Actual shared-core authority and linked Unity Application source; no Unity rendering or live network in this suite."
+}

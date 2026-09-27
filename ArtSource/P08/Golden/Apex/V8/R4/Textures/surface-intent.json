@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "colorStorage": "sRGB encoded BaseColor and Emission; all other textures unencoded linear data",
+  "scalarDepth": "8-bit PNG; no implicit 16-bit normalization or color transform",
+  "reference": "Locked apex-v2 concept; original authored finish maps, no licensed pixels",
+  "calibration": {
+    "linear18PercentEncoded": 0.46135612950044164,
+    "expected8Bit": 118
+  },
+  "visualAccepted": false,
+  "materials": [
+    {
+      "material": "Apex_Pearl",
+      "size": 2048,
+      "baseReflectanceLinear": [
+        0.7,
+        0.72,
+        0.735
+      ],
+      "baseEncodedSrgb": [
+        0.85430583154494,
+        0.8650420277517009,
+        0.8729805012730967
+      ],
+      "metallicLinear": 0,
+      "roughnessLinear": 0.25,
+      "finish": "paint",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_BaseColor.png",
+          "sha256": "0dce0b3fce1dbb329ad0d7c0e24ec4f2d7143da494b806a19a94a2d68dafb0a9"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_Normal.png",
+          "sha256": "6490e77d3e2a4228d445feae4922a9cbff2116d810f404a310eca88f5fbca097"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_MetallicSmoothness.png",
+          "sha256": "21229595cbed26b085a77fa46d961930d5667494921c209a9891523ae0783461"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Pearl_Roughness.png",
+          "sha256": "5c5a9dd60e50f72587cfc9b5d8a5b34fe51b1a75f48a1338022e8002248e31e1"
+        }
+      }
+    },
+    {
+      "material": "Apex_Graphite",
+      "size": 1024,
+      "baseReflectanceLinear": [
+        0.04,
+        0.044,
+        0.05
+      ],
+      "baseEncodedSrgb": [
+        0.22091636254849623,
+        0.23209419298460426,
+        0.24780052799263164
+      ],
+      "metallicLinear": 0,
+      "roughnessLinear": 0.4,
+      "finish": "powdercoat",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_BaseColor.png",
+          "sha256": "c76b6fa05966fa58b5b4807f7a4ad288becc3ab97f9ef0c327857dd413be8eba"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_Normal.png",
+          "sha256": "3d76a722fcb596e62da23a03a11bb81b8a244a7ce96abc49a067bd6834908fbe"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_MetallicSmoothness.png",
+          "sha256": "9dd004770e51d65170a029b0ab795431c288e17eba94d67528a634ad695e7b6a"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Graphite_Roughness.png",
+          "sha256": "a52beabccbccdcda08939f28ee02feddd65127d19e28f4d4fc108eb6b21f85a8"
+        }
+      }
+    },
+    {
+      "material": "Apex_Machined",
+      "size": 1024,
+      "baseReflectanceLinear": [
+        0.55,
+        0.57,
+        0.6
+      ],
+      "baseEncodedSrgb": [
+        0.7673756580558262,
+        0.7797062195032237,
+        0.7977377330312598
+      ],
+      "metallicLinear": 0.96,
+      "roughnessLinear": 0.28,
+      "finish": "metal",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_BaseColor.png",
+          "sha256": "c5400d5740868c426ba101776b850816a0eacc0c590c30f2318f5d935e7432a2"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_Normal.png",
+          "sha256": "9f434a0f8f97d5cd291c118eceb20bcaff796e8ba49034620802353fdbf77242"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_MetallicSmoothness.png",
+          "sha256": "dcafa4461378d58f3c215fa78c5232f9231d998fd185397bc440771ea0d6b0a7"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Machined_Roughness.png",
+          "sha256": "7055f4ce0c39f3932e75637d2c2bba4cdac487185112af597a09ef56d95ce435"
+        }
+      }
+    },
+    {
+      "material": "Apex_Rubber",
+      "size": 1024,
+      "baseReflectanceLinear": [
+        0.012,
+        0.014,
+        0.016
+      ],
+      "baseEncodedSrgb": [
+        0.11207493935437163,
+        0.1231581965652013,
+        0.13335151555736616
+      ],
+      "metallicLinear": 0,
+      "roughnessLinear": 0.64,
+      "finish": "rubber",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_BaseColor.png",
+          "sha256": "b563556b7bfbcb7959a3eb1167397a82e9ae8ea4da3c18223fd98a4f6947b2c6"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_Normal.png",
+          "sha256": "3d76a722fcb596e62da23a03a11bb81b8a244a7ce96abc49a067bd6834908fbe"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_MetallicSmoothness.png",
+          "sha256": "493a85a804db67bd1c996a6ffc5d9fa4d2279c6b423a632d973b90a3280ef5d7"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Rubber_Roughness.png",
+          "sha256": "4b7c1113bef3ee4659709bd27bad665673cee30aefc62b94cfe4f777d7e3817f"
+        }
+      }
+    },
+    {
+      "material": "Apex_Titanium",
+      "size": 1024,
+      "baseReflectanceLinear": [
+        0.34,
+        0.31,
+        0.255
+      ],
+      "baseEncodedSrgb": [
+        0.6180314235705168,
+        0.5926193733390556,
+        0.5420044039405814
+      ],
+      "metallicLinear": 0.95,
+      "roughnessLinear": 0.32,
+      "finish": "metal",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_BaseColor.png",
+          "sha256": "0df4f05e835729d53f2d5682e0a3f93fea3e98ae189576f7c8b4a9af87e722e9"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_Normal.png",
+          "sha256": "9f434a0f8f97d5cd291c118eceb20bcaff796e8ba49034620802353fdbf77242"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_MetallicSmoothness.png",
+          "sha256": "895e9bca06184a2a92151c2367173e6dbc67a76c755973a49d3824f3ba80fe80"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Titanium_Roughness.png",
+          "sha256": "98598a7be3794deb1a41475fb4086af54c3fb61cb3872acb9e634f41ff4a93b9"
+        }
+      }
+    },
+    {
+      "material": "Apex_Glass",
+      "size": 512,
+      "baseReflectanceLinear": [
+        0.055,
+        0.062,
+        0.07
+      ],
+      "baseEncodedSrgb": [
+        0.26006748065395024,
+        0.27619390076261824,
+        0.2933720544040729
+      ],
+      "metallicLinear": 0,
+      "roughnessLinear": 0.085,
+      "finish": "glass",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_BaseColor.png",
+          "sha256": "f7fdeb0fe7bde9bb33353d7d513d22f61ac7c8e521f666083bcfb2cfd8844a39"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_Normal.png",
+          "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_MetallicSmoothness.png",
+          "sha256": "895439dab363fd2ba7a22fbc33fcfb58a3e39a6a41eae7e18fc4149ba088125c"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Glass_Roughness.png",
+          "sha256": "261dba073a45e4ec3e34fa1e449d2ddfd59fe17a4fecc5abbfbfc1ab7f04f61d"
+        }
+      }
+    },
+    {
+      "material": "Apex_Lamp",
+      "size": 512,
+      "baseReflectanceLinear": [
+        0.7,
+        0.78,
+        0.88
+      ],
+      "baseEncodedSrgb": [
+        0.85430583154494,
+        0.8962438838245138,
+        0.9452769004621017
+      ],
+      "metallicLinear": 0,
+      "roughnessLinear": 0.15,
+      "finish": "lamp",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_BaseColor.png",
+          "sha256": "5f75b90e05abdb730f892211d85890930b10a91ad568d47af3903022525c0824"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_Normal.png",
+          "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_MetallicSmoothness.png",
+          "sha256": "6a1c572b771590af9e99806d9c47ff50e89711eeb86714e9ba4791a38dffa09b"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_Roughness.png",
+          "sha256": "b26a1a1b805bd692cb42e80f479bbb7f3b8384c06c039a9bfcc3700a8d190c42"
+        },
+        "emission": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lamp_Emission.png",
+          "sha256": "5f75b90e05abdb730f892211d85890930b10a91ad568d47af3903022525c0824"
+        }
+      }
+    },
+    {
+      "material": "Apex_Lens",
+      "size": 512,
+      "baseReflectanceLinear": [
+        0.9,
+        0.94,
+        0.97
+      ],
+      "baseEncodedSrgb": [
+        0.9546871718858662,
+        0.9731482294519326,
+        0.9866952461793562
+      ],
+      "metallicLinear": 0,
+      "roughnessLinear": 0.025,
+      "finish": "glass",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_BaseColor.png",
+          "sha256": "2fbb41a9cd0d2de11ee7f55805264fd5235f497aeaf8f53b46b453c744e813fa"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_Normal.png",
+          "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_MetallicSmoothness.png",
+          "sha256": "daa81de94e12bbe2228fbeb9c03823d5f19f0363a13e434486ff0af78a216e42"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_Lens_Roughness.png",
+          "sha256": "35d0df080499f1fab4ce0b63f404793f0499ef228d957d0859f40fe9fe715483"
+        }
+      }
+    },
+    {
+      "material": "Apex_RedLamp",
+      "size": 512,
+      "baseReflectanceLinear": [
+        0.38,
+        0.006,
+        0.012
+      ],
+      "baseEncodedSrgb": [
+        0.649956455014496,
+        0.0701647820016987,
+        0.11207493935437163
+      ],
+      "metallicLinear": 0,
+      "roughnessLinear": 0.2,
+      "finish": "lamp",
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_BaseColor.png",
+          "sha256": "455e3ce5fd8a38178c382e0566c9cb639fb4b1c0dd60b5d50245c0744693ec0d"
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_Normal.png",
+          "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_MetallicSmoothness.png",
+          "sha256": "2e15be431b2e87cc2c44182b69fad817c2d811a0216aaac8f6fc794584cb08c1"
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_Roughness.png",
+          "sha256": "f9bd05ccae7c858107447b682371cc57e30202fdcb00fe298c5708c04643232a"
+        },
+        "emission": {
+          "path": "ArtSource/P08/Golden/Apex/V8/R4/Textures/Apex_RedLamp_Emission.png",
+          "sha256": "455e3ce5fd8a38178c382e0566c9cb639fb4b1c0dd60b5d50245c0744693ec0d"
+        }
+      }
+    }
+  ]
+}

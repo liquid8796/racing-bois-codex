@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "RB_Golden_Apex_v8_r2",
+      "kind": "bike",
+      "concept": {
+        "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+        "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819"
+      },
+      "conceptReview": {
+        "path": "ArtSource/Concepts/P08/Golden/apex-v2-review.md",
+        "sha256": "420aa39d68616232f9f7244b8e302939ffc97748a38634dbf15319a337b00a4a"
+      },
+      "source": {
+        "path": "ArtSource/P08/Golden/Apex/V8/R2/RB_Golden_Apex_v8_r2.blend",
+        "sha256": "7d103484f52abf329821169d3af9e8d12cee4891caf23f420285aa46dd4c03aa"
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/RB_Golden_Apex_v8_r2.fbx",
+        "sha256": "1d3be6c2a49735b6751f8e93fb65648a915ae7047ff246255f012e570782f639"
+      },
+      "modelRotationEuler": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "minimumSize": {
+        "x": 0.79,
+        "y": 1.14,
+        "z": 2.02
+      },
+      "maximumSize": {
+        "x": 0.88,
+        "y": 1.23,
+        "z": 2.12
+      },
+      "materials": [
+        {
+          "sourceName": "Apex_Glass",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_BaseColor.png",
+            "sha256": "5db9fdc1fac9bb3dc2aa4e8ab07a79b326d95c59eeb71908207669c0ada5a1e1"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_Normal.png",
+            "sha256": "90c7eb5840b0bfd3b72460e87d822dfd4c6d81e588feea46610d066841579310"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_MetallicSmoothness.png",
+            "sha256": "9c955a5bf9b6bb16f83c2eaa560740df1b45d83db11416769891c16e8ff25214"
+          },
+          "normalScale": 0.38,
+          "maxSize": 512,
+          "transparent": true,
+          "opacity": 0.68,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Apex_Graphite",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_BaseColor.png",
+            "sha256": "52a22a04cbca7877203669201940dca39e91d59ae36bbec1b9d17fbda1e8de84"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_Normal.png",
+            "sha256": "be666ff59f5d1d9a4c2477013eec08d6f336d749be0af69baf97ef2fdb2d57b5"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_MetallicSmoothness.png",
+            "sha256": "5db62bd154ffec0156b8afc8a27bf3a713b4f1617891d208f5bc7d01c1444b95"
+          },
+          "normalScale": 0.38,
+          "maxSize": 1024,
+          "transparent": false,
+          "opacity": 1,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Apex_Lamp",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_BaseColor.png",
+            "sha256": "ef67cce4e11efd0d7e6e9807acd316d6d7e178536fe54776826b7e3e457c18bd"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Normal.png",
+            "sha256": "7bde6db4894261674ed7617f96fd54a8f05d10dd649c5729a502804f59d0e4c3"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_MetallicSmoothness.png",
+            "sha256": "d42f44c2467f9a5884c49a94e003cbd5e9c0d6a4ae0e126bcd34917b800f1bce"
+          },
+          "normalScale": 0.38,
+          "maxSize": 512,
+          "transparent": false,
+          "opacity": 1,
+          "doubleSided": false,
+          "emission": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Emission.png",
+            "sha256": "fb6716b26a2821b723fb3d60f69c3a061e28ac14736ddf2bf6f764f166c2a158"
+          },
+          "emissionIntensity": 0.8
+        },
+        {
+          "sourceName": "Apex_Lens",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_BaseColor.png",
+            "sha256": "ab91d71101348fca6760371e8ecffc3c90410cbdad13e2078d45d3b1cb265ac3"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_Normal.png",
+            "sha256": "90c7eb5840b0bfd3b72460e87d822dfd4c6d81e588feea46610d066841579310"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_MetallicSmoothness.png",
+            "sha256": "08e9ef0c0ccc4821bdec2c3490b721db9c851340ca31e837aa006015d47faf98"
+          },
+          "normalScale": 0.38,
+          "maxSize": 512,
+          "transparent": true,
+          "opacity": 0.2,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Apex_Machined",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_BaseColor.png",
+            "sha256": "0e88edeb7ae50e679cd19e8641712bc357e1c13e5ab6a41cdc8408283988d11f"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_Normal.png",
+            "sha256": "3af96a36caec2ccca5fcadd06e85d1fbf2c00a7b5db4ac17a2e62269f93ce710"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_MetallicSmoothness.png",
+            "sha256": "3dc09f5a9824365c2a8c6dcd8e88f415da3c97f1e8c8a9a930bde298ba1ed954"
+          },
+          "normalScale": 0.38,
+          "maxSize": 1024,
+          "transparent": false,
+          "opacity": 1,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Apex_Pearl",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_BaseColor.png",
+            "sha256": "ba6c1385d3215fdacc7a5c4d01f4a66250bdae091972634ccbdfbfaf1cbfa800"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_Normal.png",
+            "sha256": "0eedc476c6600669178560fb5cc76596056b85191288897cfb0745e956a84e96"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_MetallicSmoothness.png",
+            "sha256": "51bf81714d028f3eb117dbcc4c740325d72fe8a0579e2c2baccc10c9ad0788ab"
+          },
+          "normalScale": 0.38,
+          "maxSize": 2048,
+          "transparent": false,
+          "opacity": 1,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Apex_RedLamp",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_BaseColor.png",
+            "sha256": "c39c7a90aae3ad1a40ae3fd2c0f5d0b437cc31d96f8fca851d0d0c3352d5a5e3"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Normal.png",
+            "sha256": "7bde6db4894261674ed7617f96fd54a8f05d10dd649c5729a502804f59d0e4c3"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_MetallicSmoothness.png",
+            "sha256": "1f307df6a6f0a1ca3220019865c8af73735e6f6a245f7234aca9125424f8ba09"
+          },
+          "normalScale": 0.38,
+          "maxSize": 512,
+          "transparent": false,
+          "opacity": 1,
+          "doubleSided": false,
+          "emission": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Emission.png",
+            "sha256": "c39c7a90aae3ad1a40ae3fd2c0f5d0b437cc31d96f8fca851d0d0c3352d5a5e3"
+          },
+          "emissionIntensity": 1.5
+        },
+        {
+          "sourceName": "Apex_Rubber",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_BaseColor.png",
+            "sha256": "63abdd686e8068c3836cb091095d41c2281795e7303fa5386de733b2932932cb"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_Normal.png",
+            "sha256": "546898da05b1852536173abf31c6eada98cfd3ff8b054edd30abaf4a8b4c64f3"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_MetallicSmoothness.png",
+            "sha256": "afcd228fff5ec8dbaba8234a7311ddd635ade2f0e2d69449e944fabe078d0e74"
+          },
+          "normalScale": 0.38,
+          "maxSize": 1024,
+          "transparent": false,
+          "opacity": 1,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Apex_Titanium",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_BaseColor.png",
+            "sha256": "30b2e997b1c9c614bf64c76ec29cb5f6f7573910c373e4f36e379d3598999300"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_Normal.png",
+            "sha256": "3af96a36caec2ccca5fcadd06e85d1fbf2c00a7b5db4ac17a2e62269f93ce710"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_MetallicSmoothness.png",
+            "sha256": "773a3df82f044bf8914b90fba873a794da86be320c106afed90f1928b5d387ac"
+          },
+          "normalScale": 0.38,
+          "maxSize": 1024,
+          "transparent": false,
+          "opacity": 1,
+          "doubleSided": false
+        }
+      ],
+      "lods": [
+        {
+          "height": 0.3,
+          "rendererPaths": [
+            "Apex_L0_Body",
+            "RB_Golden_Apex_v8_r2_Wheel_Front/Apex_L0_Front",
+            "RB_Golden_Apex_v8_r2_Wheel_Rear/Apex_L0_Rear"
+          ]
+        },
+        {
+          "height": 0.115,
+          "rendererPaths": [
+            "Apex_L1_Body",
+            "RB_Golden_Apex_v8_r2_Wheel_Front/Apex_L1_Front",
+            "RB_Golden_Apex_v8_r2_Wheel_Rear/Apex_L1_Rear"
+          ]
+        },
+        {
+          "height": 0.018,
+          "rendererPaths": [
+            "Apex_L2_Body",
+            "RB_Golden_Apex_v8_r2_Wheel_Front/Apex_L2_Front",
+            "RB_Golden_Apex_v8_r2_Wheel_Rear/Apex_L2_Rear"
+          ]
+        }
+      ],
+      "forwardMarker": "Forward",
+      "leftMarker": "Semantic_Left",
+      "rightMarker": "Semantic_Right",
+      "groundMarkers": [
+        "Ground_Front",
+        "Ground_Rear"
+      ],
+      "wheelPivots": [
+        "RB_Golden_Apex_v8_r2_Wheel_Front",
+        "RB_Golden_Apex_v8_r2_Wheel_Rear"
+      ],
+      "colliders": [
+        {
+          "type": "box",
+          "center": {
+            "x": 0,
+            "y": 0.51,
+            "z": 0
+          },
+          "size": {
+            "x": 0.45,
+            "y": 1.02,
+            "z": 1.95
+          }
+        }
+      ],
+      "isStatic": false
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ASH_V5_GEOMETRY_PROBE [{\"name\": \"AshV5_L0_HelmetShell\", \"physicalBad\": 62, \"uvBad\": 0, \"minimum\": 7.832775163607646e-19, \"physicalFaces\": [1512, 3025], \"uvFaces\": []}, {\"name\": \"AshV5_L0_RolledHelmetGasket\", \"physicalBad\": 0, \"uvBad\": 12, \"minimum\": 2.2293591773933077e-11, \"physicalFaces\": [], \"uvFaces\": [576, 577]}, {\"name\": \"AshV5_L0_LayeredCheekPad\", \"physicalBad\": 0, \"uvBad\": 16, \"minimum\": 1.5001028576874104e-12, \"physicalFaces\": [], \"uvFaces\": [190, 191]}, {\"name\": \"AshV5_L0_LayeredCheekPad.001\", \"physicalBad\": 0, \"uvBad\": 16, \"minimum\": 1.7678173107240486e-12, \"physicalFaces\": [], \"uvFaces\": [190, 191]}, {\"name\": \"AshV5_L0_ShellFittedGoggleBand\", \"physicalBad\": 0, \"uvBad\": 388, \"minimum\": 7.597697644634582e-11, \"physicalFaces\": [], \"uvFaces\": [380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395]}, {\"name\": \"AshV5_L0_CurvedAmberOptic\", \"physicalBad\": 0, \"uvBad\": 128, \"minimum\": 7.583867886983009e-12, \"physicalFaces\": [], \"uvFaces\": [768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783]}, {\"name\": \"AshV5_L0_CurvedAmberOptic.001\", \"physicalBad\": 0, \"uvBad\": 128, \"minimum\": 7.583874825876913e-12, \"physicalFaces\": [], \"uvFaces\": [768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783]}, {\"name\": \"AshV5_L1_HelmetShell\", \"physicalBad\": 7, \"uvBad\": 188, \"minimum\": 2.199471778190312e-18, \"physicalFaces\": [672, 1345], \"uvFaces\": [672, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1352, 1353, 1354, 1355, 1356, 1357, 1358, 1359]}, {\"name\": \"AshV5_L1_RolledHelmetGasket\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 9.746775299834462e-11, \"physicalFaces\": [], \"uvFaces\": [288, 289]}, {\"name\": \"AshV5_L1_LayeredCheekPad\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.474724118863402e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L1_LayeredCheekPad.001\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.6463515546374019e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L1_ShellFittedGoggleBand\", \"physicalBad\": 0, \"uvBad\": 228, \"minimum\": 2.2372475313309215e-10, \"physicalFaces\": [], \"uvFaces\": [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235]}, {\"name\": \"AshV5_L1_CurvedAmberOptic\", \"physicalBad\": 0, \"uvBad\": 80, \"minimum\": 4.859860278962069e-11, \"physicalFaces\": [], \"uvFaces\": [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335]}, {\"name\": \"AshV5_L1_CurvedAmberOptic.001\", \"physicalBad\": 0, \"uvBad\": 80, \"minimum\": 4.859862902731327e-11, \"physicalFaces\": [], \"uvFaces\": [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335]}, {\"name\": \"AshV5_L2_HelmetShell\", \"physicalBad\": 0, \"uvBad\": 92, \"minimum\": 2.228209741073019e-16, \"physicalFaces\": [], \"uvFaces\": [216, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447]}, {\"name\": \"AshV5_L2_RolledHelmetGasket\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 9.746417865483248e-11, \"physicalFaces\": [], \"uvFaces\": [144, 145]}, {\"name\": \"AshV5_L2_LayeredCheekPad\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.474724118863402e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L2_LayeredCheekPad.001\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.6463515546374019e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L2_ShellFittedGoggleBand\", \"physicalBad\": 0, \"uvBad\": 132, \"minimum\": 2.806313423795706e-10, \"physicalFaces\": [], \"uvFaces\": [124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139]}, {\"name\": \"AshV5_L2_CurvedAmberOptic\", \"physicalBad\": 0, \"uvBad\": 48, \"minimum\": 1.3395218253700733e-10, \"physicalFaces\": [], \"uvFaces\": [144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]}, {\"name\": \"AshV5_L2_CurvedAmberOptic.001\", \"physicalBad\": 0, \"uvBad\": 48, \"minimum\": 1.3395493240575367e-10, \"physicalFaces\": [], \"uvFaces\": [144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: ASH_V5_GEOMETRY_PROBE [{\"name\": \"AshV5_L0_HelmetShell\", \"physicalBad\": 62, \"uvBad\": 0, \"minimum\": 7.832775163607646e-19, \"physicalFaces\": [1512, 3025], \"uvFaces\": []}, {\"name\": \"AshV5_L0_RolledHelmetGasket\", \"physicalBad\": 0, \"uvBad\": 12, \"minimum\": 2.2293591773933077e-11, \"physicalFaces\": [], \"uvFaces\": [576, 577]}, {\"name\": \"AshV5_L0_LayeredCheekPad\", \"physicalBad\": 0, \"uvBad\": 16, \"minimum\": 1.5001028576874104e-12, \"physicalFaces\": [], \"uvFaces\": [190, 191]}, {\"name\": \"AshV5_L0_LayeredCheekPad.001\", \"physicalBad\": 0, \"uvBad\": 16, \"minimum\": 1.7678173107240486e-12, \"physicalFaces\": [], \"uvFaces\": [190, 191]}, {\"name\": \"AshV5_L0_ShellFittedGoggleBand\", \"physicalBad\": 0, \"uvBad\": 388, \"minimum\": 7.597697644634582e-11, \"physicalFaces\": [], \"uvFaces\": [380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395]}, {\"name\": \"AshV5_L0_CurvedAmberOptic\", \"physicalBad\": 0, \"uvBad\": 128, \"minimum\": 7.583867886983009e-12, \"physicalFaces\": [], \"uvFaces\": [768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783]}, {\"name\": \"AshV5_L0_CurvedAmberOptic.001\", \"physicalBad\": 0, \"uvBad\": 128, \"minimum\": 7.583874825876913e-12, \"physicalFaces\": [], \"uvFaces\": [768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783]}, {\"name\": \"AshV5_L1_HelmetShell\", \"physicalBad\": 7, \"uvBad\": 188, \"minimum\": 2.199471778190312e-18, \"physicalFaces\": [672, 1345], \"uvFaces\": [672, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1352, 1353, 1354, 1355, 1356, 1357, 1358, 1359]}, {\"name\": \"AshV5_L1_RolledHelmetGasket\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 9.746775299834462e-11, \"physicalFaces\": [], \"uvFaces\": [288, 289]}, {\"name\": \"AshV5_L1_LayeredCheekPad\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.474724118863402e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L1_LayeredCheekPad.001\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.6463515546374019e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L1_ShellFittedGoggleBand\", \"physicalBad\": 0, \"uvBad\": 228, \"minimum\": 2.2372475313309215e-10, \"physicalFaces\": [], \"uvFaces\": [220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235]}, {\"name\": \"AshV5_L1_CurvedAmberOptic\", \"physicalBad\": 0, \"uvBad\": 80, \"minimum\": 4.859860278962069e-11, \"physicalFaces\": [], \"uvFaces\": [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335]}, {\"name\": \"AshV5_L1_CurvedAmberOptic.001\", \"physicalBad\": 0, \"uvBad\": 80, \"minimum\": 4.859862902731327e-11, \"physicalFaces\": [], \"uvFaces\": [320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335]}, {\"name\": \"AshV5_L2_HelmetShell\", \"physicalBad\": 0, \"uvBad\": 92, \"minimum\": 2.228209741073019e-16, \"physicalFaces\": [], \"uvFaces\": [216, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447]}, {\"name\": \"AshV5_L2_RolledHelmetGasket\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 9.746417865483248e-11, \"physicalFaces\": [], \"uvFaces\": [144, 145]}, {\"name\": \"AshV5_L2_LayeredCheekPad\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.474724118863402e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L2_LayeredCheekPad.001\", \"physicalBad\": 0, \"uvBad\": 8, \"minimum\": 1.6463515546374019e-10, \"physicalFaces\": [], \"uvFaces\": [66, 67]}, {\"name\": \"AshV5_L2_ShellFittedGoggleBand\", \"physicalBad\": 0, \"uvBad\": 132, \"minimum\": 2.806313423795706e-10, \"physicalFaces\": [], \"uvFaces\": [124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139]}, {\"name\": \"AshV5_L2_CurvedAmberOptic\", \"physicalBad\": 0, \"uvBad\": 48, \"minimum\": 1.3395218253700733e-10, \"physicalFaces\": [], \"uvFaces\": [144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]}, {\"name\": \"AshV5_L2_CurvedAmberOptic.001\", \"physicalBad\": 0, \"uvBad\": 48, \"minimum\": 1.3395493240575367e-10, \"physicalFaces\": [], \"uvFaces\": [144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]}]\n"
+    },
+    "isError": false
+  }
+}

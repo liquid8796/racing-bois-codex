@@ -1,0 +1,10 @@
+[Unit]
+Description=Check Racing Bois staging every five minutes
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=5min
+RandomizedDelaySec=15
+
+[Install]
+WantedBy=timers.target

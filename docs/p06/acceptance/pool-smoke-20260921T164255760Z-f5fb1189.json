@@ -1,0 +1,566 @@
+{
+    "status": "passed",
+    "startedUtc": "2026-09-21T16:42:54.5172097Z",
+    "completedUtc": "2026-09-21T16:42:55.3063150Z",
+    "scope": "Actual Unity Play Mode; deterministic authoring fixture projected through production immutable read models; synchronous functional checks, not performance or network acceptance",
+    "runtimeSourceRevision": "P06 0.6.0 integration; source hashes embedded",
+    "scene": "Assets/RacingBois/Scenes/StressBenchmark.unity",
+    "unityVersion": "6000.5.7f1",
+    "generations": 24,
+    "riders": 16,
+    "traffic": 12,
+    "pedestrians": 6,
+    "poolCreatedAfterFirstFill": 34,
+    "poolCreatedAtEnd": 34,
+    "poolReusedDuringRun": 1598,
+    "poolRebalanced": 0,
+    "warningsAndErrorsDuringInvocation": 0,
+    "checks": [
+        "bounded pool",
+        "same-kind ID churn",
+        "retire before replacement",
+        "menu retirement",
+        "left club visible",
+        "fist hides club",
+        "reacquired club resets to right hand",
+        "finite transforms"
+    ],
+    "sourceFiles": [
+        {
+            "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian.fbx",
+            "sha256": "51094dd55a4915f0fae0c3c8ae9546ef6f8ab67c5ccae66a4c07be674d69acc0"
+        },
+        {
+            "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_BaseColor.png",
+            "sha256": "98c097f4bf5c21ed83808b5ff40b518070be3b4dd5725287a732dde4472e2907"
+        },
+        {
+            "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_MetallicSmoothness.png",
+            "sha256": "21b4d377a9edafd6b6df89ba377c28202ce7612ed79ff9bf1bb98dd9d2bfd253"
+        },
+        {
+            "path": "Assets/RacingBois/Art/Characters/RB_Pedestrian_Normal.png",
+            "sha256": "6934fbce5cbb50f2de8bd1abc53a8c7160ea50eb0ae2b9ab5003632a2c66ada5"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Asphalt_BaseColor.png",
+            "sha256": "7d2b4c2d9ff994505385123602feab3402f39f917d166b7c4b4eacb9e725490a"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Asphalt_MetallicSmoothness.png",
+            "sha256": "9299562fc5f0056b3c4417f496f661c6fc802eb74d5c7166a0b09db3ebfe210c"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Asphalt_Normal.png",
+            "sha256": "b4ccae656b8af3fdde89dfe9a7bd5b61ed49cf6025ce5c3c868b633a20438429"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Chevron.fbx",
+            "sha256": "dde86cbe7d5946fbb1613c8858d16d1ab65959bfbf3927489011c7bfcc0fddf9"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_DryGrass.fbx",
+            "sha256": "67e505a7377610d463d8d5d13a94281b650566096606daf3061620b4cd99cf73"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Foliage_BaseColor.png",
+            "sha256": "833b50d4dfceafabdb43e316fb892d2c0b92ce6f35fc117512220de361d6361d"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Foliage_MetallicSmoothness.png",
+            "sha256": "63ec28d4fe20efb041bca711dba38cdf38fe37a6c7fc69af39efefd727604718"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Foliage_Normal.png",
+            "sha256": "1d48c70f9eff4779bdc0955a11c731cdd833e8f558d19273d51b05835271e7c0"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Gravel_BaseColor.png",
+            "sha256": "ec96aae58b9f89a20fefaef445ae31289aee860ba883340b84aba8a18c82ab80"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Gravel_MetallicSmoothness.png",
+            "sha256": "9cdeed1de6f79b66c81173df124c1c143541e552b8d9c1bcdbaf875cf4ba13f5"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Gravel_Normal.png",
+            "sha256": "b8847c6196239230a18bad10f63d36b9d6b40a26aa3f9fbf3ec829144ebcf804"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Guardrail.fbx",
+            "sha256": "716501cdae6636201824385e5144c77799bf9584a69218a76d2aef3411c5930b"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Roadside_BaseColor.png",
+            "sha256": "744cd5bcb00e4f375d14532971d9eadb0a3d49e2bd1d82b194f2baccdf02cbf4"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Roadside_MetallicSmoothness.png",
+            "sha256": "c4c539a345b3eaf50c358a4002d9b547cdd5f927279390c7adbfb893feec9978"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Roadside_Normal.png",
+            "sha256": "4a1763e8b0d44685e47cbf018e3c622e2ddcc74d39c4111b4c02106d28ab8b29"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_RockA.fbx",
+            "sha256": "857cea3dc71fcdacddab2b3bc1a8ab2913f01f367b4d2b48815ed5bfaa62e2ba"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_RockB.fbx",
+            "sha256": "af4f38efb589ba2603a012bfdf54f489f311687876171527de843b92b6605180"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Sage.fbx",
+            "sha256": "b8cff2e5c22360d3905b2e8a8689c9abcf430ecb0cf41b8b3978952752534953"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Sandstone_BaseColor.png",
+            "sha256": "bc3e5f42fd19a1ae8d5960b03bcdefea0b4f512828ab41a94df98b0b00f1dfc3"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Sandstone_MetallicSmoothness.png",
+            "sha256": "ae4de75a0c5cc7b182c29f7175bb8b9fe7b381ea47c325485ddbf837af278bea"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_Sandstone_Normal.png",
+            "sha256": "4256f67485355d92bb33501613580e6969ba92154043371142ba7e1ab637d5d6"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Environment/RB_P06_UtilityPole.fbx",
+            "sha256": "f49762374cb686036cda86af4dfbdd623c70a73f5e830a7fcb3420d262ef6e66"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle.fbx",
+            "sha256": "4632a0516fb258427e16e6737617ee3bb20ff154bddd49e99bc3c95432a2e2bd"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_BaseColor.png",
+            "sha256": "554a5df0ba8599522571476ee417ae754b64f7a560b7c7c95917df9c857d1201"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_MetallicSmoothness.png",
+            "sha256": "58dfed111d582c83996550352a312c7fd09e5b719caab2aa707efd44edf5424a"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle_Normal.png",
+            "sha256": "02a80d90acfd0f536a72e91581cb7cb8027a680c71cdd64a1ad796a8e9d78394"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle.fbx",
+            "sha256": "6982e2e84442338e8b4c558395de15e65518d29b7939548dc8b84d651131f75e"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_BaseColor.png",
+            "sha256": "43487e4167c7540b1ed8866ff2aa6eb81b8c9421f0aaa6dfc4d136626623ba75"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_MetallicSmoothness.png",
+            "sha256": "42f17808b353a2937436d221647f49a84802a2c30c5bf7b35e13c8e919775087"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle_Normal.png",
+            "sha256": "dba8ff82468bb2650f0fafa2cd1140d12abe31671916cb798e2e69bccdb23e20"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceRider_BaseColor.png",
+            "sha256": "2026fd0e791bffbe96490969df86bd90706a34e48985c161f5e59e227f297a7f"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx",
+            "sha256": "d12abec227b04b0ce02f7adfdac87ff32dabe96f2bd2f020beae4245dc22eda4"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_BaseColor.png",
+            "sha256": "62fc018157c638ddf8b187ca1e07962da5592e2ff9a99a3f46644280553c95cf"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_MetallicSmoothness.png",
+            "sha256": "b0b0fd6a186eda97e0be649857e28c8908c777634f5a24ffa794f99f9c6f7169"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider_Normal.png",
+            "sha256": "0f958fba40c01c337e153895b7fee06679549ace4ecc3da111414c7e332b2426"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficCoupe.fbx",
+            "sha256": "271c7ad1fd5490d86f3bf923d032e6ede7851c20ccd79125bd19971423121720"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficVan.fbx",
+            "sha256": "4ca5f8d4dfe974d827ec3188cbcab9361e4d8b57f6468d948847cc27c7bb8fa8"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_BaseColor.png",
+            "sha256": "a9b22f10203c1f1fdd49b12d7d5de7e46120d60526fbf104dd2d1e82655c3a4c"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_MetallicSmoothness.png",
+            "sha256": "112046e94874a0f332e2ade4bc6e4b159cb518664bd387016a32bf26ee01223b"
+        },
+        {
+            "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Traffic_Normal.png",
+            "sha256": "10a8cc85e5236c0107a92ca2328378299d944dff6e7ab39ca35e0723e816ea73"
+        },
+        {
+            "path": "Assets/RacingBois/Art/Weapons/Club/RB_Club.fbx",
+            "sha256": "a20ff9df9edd387b08ff535c52a9faf9bef918bbca584321c33778f0dec41056"
+        },
+        {
+            "path": "Assets/RacingBois/Art/Weapons/Club/RB_Club_BaseColor.png",
+            "sha256": "4cff93c809176f37da7b5e4b327e0071518c9a28348414b89041caa935e5facf"
+        },
+        {
+            "path": "Assets/RacingBois/Art/Weapons/Club/RB_Club_MetallicSmoothness.png",
+            "sha256": "62857d48610f8e50b2e8394de923dd21e1c89ce3657ee0f52f27e78ac20eee6a"
+        },
+        {
+            "path": "Assets/RacingBois/Art/Weapons/Club/RB_Club_Normal.png",
+            "sha256": "4cfa0a829612b566f2f5bf5b5e4d76fbfac7c5180d54ff9536283d6c720f36e9"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_P06_AudioBank.asset",
+            "sha256": "3c77a298c405c3d6f9f909d2a3eb8fc08bea5883a5ecf5bd969a22f49516eed0"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_ambient_canyon.wav",
+            "sha256": "e28e3de8e77cc3168d455cedfc2087e34d1b3b3e44bbde859d44df37f4ce0bd4"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_engine_high.wav",
+            "sha256": "0c0d17562184686fff4ed73214bb031d3f78e1991ca6179bc4c7db508962472f"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_engine_low.wav",
+            "sha256": "b0321600ffb527152e03b2c163ed84a55433547e06f3687db0370d02e841a34b"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_finish.wav",
+            "sha256": "139170287a68d21efbbed0d920fd68134e356e5e2118cde36f09fe2d1dbe7a69"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_gravel.wav",
+            "sha256": "8baf8b866fe80913f8aa2cdf9162b385491d05cd377af054d6c4d78273d6242c"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_impact_body.wav",
+            "sha256": "c642aa9fb81266c6d559efc68d540c65dc05097fe9b6919288ea96bc94122b5a"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_impact_crash.wav",
+            "sha256": "679f5399f019dea484e6bfa4a571f065eb7721ea7b7ea7eb8823b3678a8a114b"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_music_canyon_drive.wav",
+            "sha256": "dd7fe6153047c962b39aede8d88a2cdbf272860d7263e917fcc30a6b7d753e55"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_shift.wav",
+            "sha256": "cb27bc739583db0047d0c07aef9bdcf5b96e33bdf37fa79a80f9fcf720a59c85"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_tire.wav",
+            "sha256": "aeed6aaf7a470ecf5d10c34280d95251b27ff1eeb641311dfc28ed0adc5d5467"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_ui_back.wav",
+            "sha256": "6b0a8a6b93ad781ddcc9be7ff36e23a0a836f81bf0e8f67a9e3ec6807910a15b"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_ui_confirm.wav",
+            "sha256": "14cf58ae77747d8bac7f40c8d3ccf2cb15ceb5ebbc0f6d1025060c1ab8ffd5fd"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_weapon_chain.wav",
+            "sha256": "1845947c52e3bcd777ce0e48270ee77dee7bd5f2aa77155f5c54f331f5359ae3"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_weapon_club.wav",
+            "sha256": "1bd05f575839216f49cf43a5e7e4f08527c0ded82db12c5bff63ba6e0ffd2d0e"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_weapon_fist.wav",
+            "sha256": "6b8f06ee89e57a34217d30bef1a005ccaa80198dd9908e5e5497bdbfa4340957"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_weapon_swing.wav",
+            "sha256": "9d81412df40af0b8df0b63fd53821b2fb24856e3ea4fa94b98f18a5194e5dceb"
+        },
+        {
+            "path": "Assets/RacingBois/Audio/P06/RB_wind.wav",
+            "sha256": "55c74003a9f061373550a8376da84ac188f16b8482d1adc589599139ad73b204"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Application/BenchmarkReadModelProjection.cs",
+            "sha256": "b6a8bc60061a82708c9313c85e66cb009a3b1d2f7cac6beb232aedd16fddd74e"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Bootstrap/P06BenchmarkRunner.cs",
+            "sha256": "840c5a13a6e96ed313844bb2b6b737e175d3c0c4cbc5dc1c15269ff2aec4fdd9"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs",
+            "sha256": "888132d60ae8ec707063ac9644a25a1af1afd04cad6e35f1de8caca04f630dfe"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/RaceAudioBank.cs",
+            "sha256": "74a22b05615154d1a6a466bdc75362855c893ee456eff4baa795d48560d9f1ac"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/RaceStageView.cs",
+            "sha256": "9289ecabb5c83f71eb67caf3a060ab3f5bf845e8e029aa5434508543867e4cb6"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/RaceVisualQuality.cs",
+            "sha256": "238661a51b36ccdd2c48775d18c78303c43e71729301e7ead06d4ead40e2eeb3"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/TrackRibbonView.cs",
+            "sha256": "44d4a65e436fefabf91c60e895bead7e116d8ec8bcf5b357c47db17358139b18"
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/WeaponGripView.cs",
+            "sha256": "575ef392d45085f22f1d3a427bb6f63df10254509ec56afdd6b1767d41df5363"
+        },
+        {
+            "path": "Assets/RacingBois/Editor/P06AcceptanceHarness.cs",
+            "sha256": "4d5cc63d72df1e9e6b5365ec97d17deb8084120cafccf954a1a8108932071ab8"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Asphalt.mat",
+            "sha256": "6f78865adb536fd3772095da882d89f0204dee4078a6f680890f9bc16f94abf8"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Dust.mat",
+            "sha256": "22a4132bd7ff0e0464a3acf3136777d8b4ccb742271ce4ec2418b5dd5ecec1f2"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Foliage.mat",
+            "sha256": "ebaddb2ff54641df6a630260c0182c7feea917eff69ce7a1f1fb780b3e19d820"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Gravel.mat",
+            "sha256": "56013c7c58ee0b9132d98d1904453baa1986c3c9a2bc07223d342e6c7af0397c"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Motorcycle.mat",
+            "sha256": "10c9abdec599c77d7650c173cb95d790ea14346e46e1660395f893a4c8bec5a4"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_PoliceMotorcycle.mat",
+            "sha256": "09bb4eebbed245979ff0f52b8969e08dce7091b0a3b63acdf42dde281d4d71bd"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_PoliceRider.mat",
+            "sha256": "71d36c9241301c3cbc70884749d35a911e2198bd792346128a1ebf603f71a36b"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Rider.mat",
+            "sha256": "37eec7672c341da7524ec7b6534545a5361b0c9edd0352d5cfa3453685d22d1f"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Roadside.mat",
+            "sha256": "1a76f08291b12170fac142083e68ce6beaba048c9c6ca81f549456052846707e"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Sandstone.mat",
+            "sha256": "732e9634cb7bbbb28e9407042bf0516434ce005bb33e40cf6726e789750f9b38"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Skid.mat",
+            "sha256": "e3849139aa8b7a758cf6cf380699004500499ffc3cfcf0814a9d22e6ec79d545"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Sky.mat",
+            "sha256": "6750f70c07dd0278b1380282137009ea156741612f41b96bcf84bbbb884bc6aa"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Sparks.mat",
+            "sha256": "fb826e4cf63bbbac5164c6f84224d401e98d513ab69b030a7030cc7c469fcf40"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/P06/RB_P06_Traffic.mat",
+            "sha256": "87a4ce53ce16cf73d8bb8bc37a040ea1c725744c884bc2bb1237d0f6a7b8689c"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/RB_Club.mat",
+            "sha256": "b9c63d902d30d71fd0901502dfb7853084b5e2d04de7086fbefdd3fe704b2f87"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/RB_PedestrianPalette.mat",
+            "sha256": "8f72ced04d698f36b42415210315903fe87ad899be72b3766f40f4262573b97a"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/RacePaint.mat",
+            "sha256": "b928e6cb2d2aa1b884e723471c1fc44e5c1c8bb07727cac5b7b61768eb85fb28"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/RaceSpark.mat",
+            "sha256": "f5f538eee5135be3b788f8727a92ac901f6d3efdf8d52cb4275d0410c83e7fcd"
+        },
+        {
+            "path": "Assets/RacingBois/Materials/RaceYellow.mat",
+            "sha256": "751aec97c4bae98f3edcf3da71f5b8180fcd374d55366cbe6aa02538ba579fe1"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Chevron.prefab",
+            "sha256": "6cbd250951d44dddcf218c842f2809bc57c0df5e2071914b785a218c64b82d83"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_DryGrass.prefab",
+            "sha256": "bb5a1ca0eec324518ffd7067f7b37339b4021bf57e1135ac6ee8394749a80de9"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Guardrail.prefab",
+            "sha256": "af043c8a138f7ca0e6e9bfd03861af89a299e136143ab85003efa99f6216111c"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Motorcycle.prefab",
+            "sha256": "65b224290b278e29079dd7aa7d26271b948bb826f31651cbacb6c9f7faeaf7d3"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceMotorcycle.prefab",
+            "sha256": "c9069590474b5c71e65028c0c7f34638d8ce00ba736dc14aad95c9e027cfdf95"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceRider.prefab",
+            "sha256": "2f1927c02960c74b073a98c67ebf59db447a70076cf98a4a5ae1534c68b683ba"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Rider.prefab",
+            "sha256": "0209fb1046727fd5ddac88cee169cd499296f021e6d07241ebb0d46e8b781f3e"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_RockA.prefab",
+            "sha256": "8f5e39be5ad951b7da09b4c5320133ba4a0106f9aa3cfdf00f3ad1c3486a233f"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_RockB.prefab",
+            "sha256": "a49e1398f92bd165ec5177dca12abafee3707ec9b868d9710e6a7e31eb066cd2"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Sage.prefab",
+            "sha256": "10584f16d4333fdb164cd87524164e1d18825827b99006751ccd441a1b901bf9"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficCoupe.prefab",
+            "sha256": "3e308d535e847860439e7693a8bf8b40fab66eab1170c9e29784374712741134"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficVan.prefab",
+            "sha256": "c2faee19bee0173fd257e5d1badc652892154a71aba27b0f4779cbb2e3c571ed"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/P06/RB_P06_UtilityPole.prefab",
+            "sha256": "52764d0578e2e5b669b7d7a4640eb1c4a70816876cf6c16243517a1305280368"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/RB_Club.prefab",
+            "sha256": "fce16a9a40db1d71b29d651302b0a0a007340bbbb79f3a007cc7c06dc18df6bf"
+        },
+        {
+            "path": "Assets/RacingBois/Prefabs/RB_Pedestrian.prefab",
+            "sha256": "a8129f72497eaa6186c604b29accaa8a3b5d6e8e4465239c2eb61bf7f8dbc0f0"
+        },
+        {
+            "path": "Assets/RacingBois/Scenes/StressBenchmark.unity",
+            "sha256": "de94f63c1376b839ba3870a44a5368435b329b0b4eb936d70e7cac8bfbd14b4c"
+        },
+        {
+            "path": "Assets/RacingBois/Settings/MainPanel.asset",
+            "sha256": "c868627960d0b9f2238080e505df2b300e88b039e7141f6ee7af455d2a7aa0a4"
+        },
+        {
+            "path": "Assets/RacingBois/Settings/P06/CanyonReflection.asset",
+            "sha256": "df72b86e2a0f5aeaab054e536ee11d14a44a914c70151d177cb44c5afb031c24"
+        },
+        {
+            "path": "Assets/RacingBois/Settings/P06/ColorAndAtmosphere.asset",
+            "sha256": "b2ef847024d594215848ae2d508ce69568b2819ce93ee8041d7898b71627dced"
+        },
+        {
+            "path": "Assets/RacingBois/Settings/P06/ParticleRadial.asset",
+            "sha256": "aef66379b0515a3f7c31f59918c0388ce1fb5d5b724dabf77039628bfe9d48fe"
+        },
+        {
+            "path": "Assets/RacingBois/Shaders/CanyonSky.shader",
+            "sha256": "854f93bb0428c88604682e188fc83a0f4efc995d8161c42195ab00e58d098562"
+        },
+        {
+            "path": "Assets/RacingBois/Shaders/RaceParticle.shader",
+            "sha256": "363ca39a523a4f5e0a40a60963767b33ed8eb33f0def211f1c92be4c8373f4cb"
+        },
+        {
+            "path": "Assets/RacingBois/UI/Fonts/NotoSans-Regular SDF.asset",
+            "sha256": "eb70d6a3b2fb55e4da2b90d666f2982f422df7443f98c2bbe9d6f5c47b6b17f4"
+        },
+        {
+            "path": "Assets/RacingBois/UI/Fonts/NotoSans-Regular.ttf",
+            "sha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5"
+        },
+        {
+            "path": "Assets/RacingBois/UI/Multiplayer.uss",
+            "sha256": "451df44aa77dcfcc41cfdb8d555027b6be408c7e273aee1fa2fc59c839b76045"
+        },
+        {
+            "path": "Assets/RacingBois/UI/Race.uss",
+            "sha256": "548d57b848771a9e1f31baedc83fd4c629e418b3c807acbd90a02d857ddd0443"
+        },
+        {
+            "path": "Assets/RacingBois/UI/Race.uxml",
+            "sha256": "0ae38487441e85ab643cac9d2fe2600913643a0148a499abb163c8be4a7646db"
+        },
+        {
+            "path": "Assets/RacingBois/UI/RacingBoisTheme.tss",
+            "sha256": "682e2b1c6cc1d6e332c15f56c840f7d8282cb1e5bc627eb6664580352a752fda"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.core/Editor/Icons/Processed/d_Volume Icon.asset",
+            "sha256": "bfbcc16ce00df1dd2d5f272428f8fde3bb741cfd760f5bd0ab6b30d274704dd9"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.core/Runtime/Volume/Volume.cs",
+            "sha256": "a58c9f8cf59582159c081c6f545784fbe2fc78b662771817447f85099571cf59"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.core/Runtime/Volume/VolumeProfile.cs",
+            "sha256": "d163fd2cd62551c27b536d112c4affd10d96fdaae463f9cb7fb1b35fee146fbb"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Editor/AssetVersion.cs",
+            "sha256": "96ed27e15286cda1fdada6923e804887b6447a905b38360e0f5561f79cd0344c"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat",
+            "sha256": "a79f6ee52f6c31fc482abf73b04f915ea3dff0cbfe8ee7351e4f5a57aa94e8f1"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/Overrides/Bloom.cs",
+            "sha256": "4d45dc36ebf78a1d3eeed5816f8102eae2d2dec4e3b5b275aee4abe82218c691"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/Overrides/ColorAdjustments.cs",
+            "sha256": "b5da8a3a675346639dc00808eb91f268ae1e7a29b8c76a0fcec0045ffcd697c6"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/Overrides/Tonemapping.cs",
+            "sha256": "7f51fdaa79c76cde68454c5c418f52ecee569b8640848ab9976b11da5339bdd8"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/Overrides/Vignette.cs",
+            "sha256": "b176d394565da1821492613c2930a54a1fdbee51ea89bb70b76f7ba5c726b33e"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalCameraData.cs",
+            "sha256": "fc345cf946f3242a24e1c0adfbbbf3fb3cb12b861b93a107a4fa3146dc915e5b"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalLightData.cs",
+            "sha256": "153b5dc903b054643546309597a84f3a24bad3bbda728394004df06b127b352d"
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+            "sha256": "d012fadd60a3e5c19a57d501a3e010ad0ee6067465fee135a421afea08b4da45"
+        }
+    ]
+}

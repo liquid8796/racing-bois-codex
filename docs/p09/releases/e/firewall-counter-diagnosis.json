@@ -1,0 +1,54 @@
+{
+  "utc": "2026-09-26T21:46:05.751429+00:00",
+  "status": "passed_read_only_counter_diagnosis",
+  "before": {
+    "iptables-save": {
+      "rawHash": "c894e8a3e31999e2485d10c0f9fb15290d21732384072bf39922e49972f88db6",
+      "counterNormalizedHash": "7bbdc939ebee51ab15f053eb091ddc7aee2f92fbcdb2376d640049f07f2ed8be",
+      "chainCounters": [
+        "[0:0]",
+        "[0:0]",
+        "[435420858:374750372267]",
+        "[0:0]"
+      ],
+      "ruleLines": 24
+    },
+    "ip6tables-save": {
+      "rawHash": "9f73a34ffa1324dedda6cac375560dc6452f83ee6015de1c38e00ba0ed3c023d",
+      "counterNormalizedHash": "fb6d50ffab045f30c5b5422d2758cd186b5902a10fae2bc81373cdd3fd5dcf4d",
+      "chainCounters": [
+        "[3439:12455006]",
+        "[0:0]",
+        "[4486:12513638]"
+      ],
+      "ruleLines": 0
+    }
+  },
+  "after": {
+    "iptables-save": {
+      "rawHash": "57257d8e3845b1c4e1426a7b13573ee98b2c5e4b3ec443e2720e4eea2ab28844",
+      "counterNormalizedHash": "7bbdc939ebee51ab15f053eb091ddc7aee2f92fbcdb2376d640049f07f2ed8be",
+      "chainCounters": [
+        "[0:0]",
+        "[0:0]",
+        "[435423801:374753503822]",
+        "[0:0]"
+      ],
+      "ruleLines": 24
+    },
+    "ip6tables-save": {
+      "rawHash": "9f73a34ffa1324dedda6cac375560dc6452f83ee6015de1c38e00ba0ed3c023d",
+      "counterNormalizedHash": "fb6d50ffab045f30c5b5422d2758cd186b5902a10fae2bc81373cdd3fd5dcf4d",
+      "chainCounters": [
+        "[3439:12455006]",
+        "[0:0]",
+        "[4486:12513638]"
+      ],
+      "ruleLines": 0
+    }
+  },
+  "httpsStatus": 200,
+  "normalizedRulesIdenticalAcrossTheseReads": true,
+  "preDeploymentNormalizedDigestRecorded": false,
+  "scope": "Two post-deployment read-only snapshots around an ordinary HTTPS request. Establishes counter sensitivity, not an unavailable pre-deployment structural digest."
+}

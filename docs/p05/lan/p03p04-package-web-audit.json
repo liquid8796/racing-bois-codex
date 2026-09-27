@@ -1,0 +1,58 @@
+﻿{
+    "passed":  true,
+    "webRoot":  "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\win-x64-p03p04-4c12566\\web",
+    "entrypointDependenciesLocal":  true,
+    "externalCssFonts":  0,
+    "verifiedDependencies":  [
+                                 {
+                                     "path":  "Build/54f3a115cb1dea61e73d0ce1476d2df0.data.br",
+                                     "bytes":  3165018,
+                                     "sha256":  "deb03c954ce98ef7d0aff874033ffc6bef552a1dbdebb4b2a7f7e01ecc826b75"
+                                 },
+                                 {
+                                     "path":  "Build/40ab938151b6f1675c6f8980c8c9abbe.framework.js.br",
+                                     "bytes":  66069,
+                                     "sha256":  "c105ad63b0049cee5ca1ad9d67d402708ebf5bbc47f10f4c278700e2be30e61b"
+                                 },
+                                 {
+                                     "path":  "Build/29a9628f7a90c8346da4b9867fd2499c.wasm.br",
+                                     "bytes":  7760441,
+                                     "sha256":  "55b2f2695871e37da34d6ee8c0cdc7e261e0aef8bce44426a56e79107b755020"
+                                 },
+                                 {
+                                     "path":  "Build/1b4180d66bfc17d02e2bd331ff90790c.loader.js",
+                                     "bytes":  27222,
+                                     "sha256":  "36271e9fda50f35242513e97c855e1d4ad6020bd4d5eff8d87beb2320aa97c8f"
+                                 }
+                             ],
+    "httpCompatibilityRequired":  false,
+    "httpCompressionCompatible":  false,
+    "compression":  [
+                        {
+                            "path":  "Build/54f3a115cb1dea61e73d0ce1476d2df0.data.br",
+                            "format":  "brotli-native",
+                            "httpCompatible":  false,
+                            "gzipDecodedBytes":  null
+                        },
+                        {
+                            "path":  "Build/40ab938151b6f1675c6f8980c8c9abbe.framework.js.br",
+                            "format":  "brotli-native",
+                            "httpCompatible":  false,
+                            "gzipDecodedBytes":  null
+                        },
+                        {
+                            "path":  "Build/29a9628f7a90c8346da4b9867fd2499c.wasm.br",
+                            "format":  "brotli-native",
+                            "httpCompatible":  false,
+                            "gzipDecodedBytes":  null
+                        },
+                        {
+                            "path":  "Build/1b4180d66bfc17d02e2bd331ff90790c.loader.js",
+                            "format":  "uncompressed",
+                            "httpCompatible":  true,
+                            "gzipDecodedBytes":  null
+                        }
+                    ],
+    "compressionReference":  "https://docs.unity3d.com/6000.0/Documentation/Manual/webgl-deploying.html",
+    "scope":  "Static entrypoint/CSS dependencies, compression-format compatibility and exact bundled file hashes. Gzip bytes are decoded locally. This does not validate live HTTP Content-Encoding headers, two-machine cold-cache offline browser execution or every runtime network request inside Unity code."
+}

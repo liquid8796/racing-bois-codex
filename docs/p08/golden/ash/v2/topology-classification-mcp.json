@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: {\"AshV2_BootLeather\": {\"boundary\": 0, \"shared_nonmanifold\": 54, \"samples\": [[[0.22398747503757477, -0.03863116353750229, 0.27071526646614075], [0.22563078999519348, -0.0363859161734581, 0.27071526646614075]], [[0.23054200410842896, -0.028666086494922638, 0.27068591117858887], [0.23160138726234436, -0.02593299373984337, 0.27068591117858887]], [[0.23160138726234436, -0.02593299373984337, 0.27068591117858887], [0.23269808292388916, -0.02310393750667572, 0.27068591117858887]]]}, \"AshV2_Brows\": {\"boundary\": 52, \"shared_nonmanifold\": 0, \"samples\": [[[0.01760629191994667, -0.1583513766527176, 1.7092136144638062], [0.013066163286566734, -0.15877839922904968, 1.7084791660308838]], [[0.019432786852121353, -0.1541997641324997, 1.7025185823440552], [0.023692935705184937, -0.15352751314640045, 1.7037019729614258]], [[0.023692935705184937, -0.15352751314640045, 1.7037019729614258], [0.030325399711728096, -0.15300360321998596, 1.70449960231781]]]}, \"AshV2_TailoredClothing\": {\"boundary\": 10, \"shared_nonmanifold\": 5, \"samples\": [[[-0.2324609011411667, 0.02015727199614048, 0.2246013581752777], [-0.23439466953277588, 0.019395839422941208, 0.19690988957881927]], [[0.2407502382993698, -0.006967115215957165, 0.19813035428524017], [0.23751609027385712, 0.0070099662989377975, 0.19664804637432098]], [[-0.23853062093257904, 0.005747098941355944, 0.19779573380947113], [-0.23439466953277588, 0.019395839422941208, 0.19690988957881927]]]}, \"AshV2_Hair\": {\"boundary\": 159, \"shared_nonmanifold\": 0, \"samples\": [[[0.0764111876487732, -0.03448937460780144, 1.686611294746399], [0.07508398592472076, -0.033872053027153015, 1.681599736213684]], [[0.04964853450655937, -0.14430765807628632, 1.7207356691360474], [0.045853402465581894, -0.1483938992023468, 1.7204838991165161]], [[-0.0007841120241209865, -0.15877680480480194, 1.7296464443206787], [0.004919370170682669, -0.15888676047325134, 1.7294656038284302]]]}}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: {\"AshV2_BootLeather\": {\"boundary\": 0, \"shared_nonmanifold\": 54, \"samples\": [[[0.22398747503757477, -0.03863116353750229, 0.27071526646614075], [0.22563078999519348, -0.0363859161734581, 0.27071526646614075]], [[0.23054200410842896, -0.028666086494922638, 0.27068591117858887], [0.23160138726234436, -0.02593299373984337, 0.27068591117858887]], [[0.23160138726234436, -0.02593299373984337, 0.27068591117858887], [0.23269808292388916, -0.02310393750667572, 0.27068591117858887]]]}, \"AshV2_Brows\": {\"boundary\": 52, \"shared_nonmanifold\": 0, \"samples\": [[[0.01760629191994667, -0.1583513766527176, 1.7092136144638062], [0.013066163286566734, -0.15877839922904968, 1.7084791660308838]], [[0.019432786852121353, -0.1541997641324997, 1.7025185823440552], [0.023692935705184937, -0.15352751314640045, 1.7037019729614258]], [[0.023692935705184937, -0.15352751314640045, 1.7037019729614258], [0.030325399711728096, -0.15300360321998596, 1.70449960231781]]]}, \"AshV2_TailoredClothing\": {\"boundary\": 10, \"shared_nonmanifold\": 5, \"samples\": [[[-0.2324609011411667, 0.02015727199614048, 0.2246013581752777], [-0.23439466953277588, 0.019395839422941208, 0.19690988957881927]], [[0.2407502382993698, -0.006967115215957165, 0.19813035428524017], [0.23751609027385712, 0.0070099662989377975, 0.19664804637432098]], [[-0.23853062093257904, 0.005747098941355944, 0.19779573380947113], [-0.23439466953277588, 0.019395839422941208, 0.19690988957881927]]]}, \"AshV2_Hair\": {\"boundary\": 159, \"shared_nonmanifold\": 0, \"samples\": [[[0.0764111876487732, -0.03448937460780144, 1.686611294746399], [0.07508398592472076, -0.033872053027153015, 1.681599736213684]], [[0.04964853450655937, -0.14430765807628632, 1.7207356691360474], [0.045853402465581894, -0.1483938992023468, 1.7204838991165161]], [[-0.0007841120241209865, -0.15877680480480194, 1.7296464443206787], [0.004919370170682669, -0.15888676047325134, 1.7294656038284302]]]}}\n"
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,688 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "RB_Golden_Canyon",
+      "kind": "environment",
+      "concept": {
+        "path": "ArtSource/Concepts/P08/Golden/canyon-v2.png",
+        "sha256": "83273dae6721d9f2c6f5d6bf4a6f39146322d8efeabc5cec0cb332e5a1cfa610"
+      },
+      "conceptReview": {
+        "path": "ArtSource/Concepts/P08/Golden/canyon-v2-review.md",
+        "sha256": "31bbe15f79d48dd412054ee16bcc23c9fab1abc1c960e0b1cb4cfa21bd2d5ebc"
+      },
+      "source": {
+        "path": "ArtSource/P08/Golden/Canyon/RB_Golden_Canyon.blend",
+        "sha256": "139b74fcbb2a44987220012dbdc6c20d592489169b39bf025233fab2e9b5005d"
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/Golden/Canyon/RB_Golden_Canyon.fbx",
+        "sha256": "b1416172c8a358d42ed30bdc4f6f2e846cbe18a3a437715782fa24a688bd08c5"
+      },
+      "modelRotationEuler": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "minimumSize": {
+        "x": 436.8524658203125,
+        "y": 53.232777786254886,
+        "z": 393.04347534179686
+      },
+      "maximumSize": {
+        "x": 436.9524658203125,
+        "y": 53.33277778625488,
+        "z": 393.1434753417969
+      },
+      "materials": [
+        {
+          "sourceName": "Canyon_Asphalt",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_BaseColor.png",
+            "sha256": "77d9e4dbf8fe32973bb0b10655005c3747d4d48ee0610bd264cc30e4db41a53a"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Normal.png",
+            "sha256": "489b1dfc31172f48bb6eb938ce2cf89e2c1d42667f9e2ce0000e3955b194da7f"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_MetallicSmoothness.png",
+            "sha256": "0ec2c711582f7934432c1a364961568070453d7ab4c800b562a4a1fa8514cce2"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Occlusion.png",
+            "sha256": "e33cceaac2f53dad5c8dc1a6d36f1cb3c2520509e15bb1123d92240391d16f7a"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Cliff01",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_BaseColor.png",
+            "sha256": "d876cf282cd21cb1e5dbaf42fae351798cd70d9f39648c5be1340c8e0fea4038"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Normal.png",
+            "sha256": "e8c968bb307fb87d79fa058f36d32e7c317c7f6ac99c5fff5bc8ce9dbda4185d"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_MetallicSmoothness.png",
+            "sha256": "370571295665bc3a977ed8774289222746b9ede52a4cfe26eb0cf6cdd7c7021d"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Occlusion.png",
+            "sha256": "c03dc6659c9efb20dbbd50949fe8fe38c6c7356064bdad0f415e62d952380cc6"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Cliff02",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_BaseColor.png",
+            "sha256": "d10bd8113a24908ff16d66fdc672e0182b808f960f4fa3f1517d7c831149d802"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Normal.png",
+            "sha256": "9c6c88f2982b048b0d69b5aecc09698e5a403997c6e2dbc747ef073a10c69816"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_MetallicSmoothness.png",
+            "sha256": "857003a4faf8895ccaad344025129de98536e8452b283df4cbc1873fe3d4d9c0"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Occlusion.png",
+            "sha256": "3d47a79df9f9c1e3d70132e516654ed02df924d9fb218ba713fd9ba4c57d4325"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Cliff03",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_BaseColor.png",
+            "sha256": "c245627abea1c5b7098b004fcebeeb0e35519f3bac27ab2a6ace7d65db64b49b"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Normal.png",
+            "sha256": "d73c8db8baf16fdb5954b29a1ab79d8920537d6fd4809c0b75a575232e77f58b"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_MetallicSmoothness.png",
+            "sha256": "6d60c21ad23ccdb47db87b31ab684d0c030c02a0fe62998d07fbf9b887bec095"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Occlusion.png",
+            "sha256": "19b14c27599dd153281875d2b460ec0fac58988a57825abc747f8e088096edc9"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_DryGrass",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_BaseColor.png",
+            "sha256": "e9f16bb7a8116d1b6cd40a4f267e914dc4bf9a6b37c915df6050f7d476a6cbab"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_MetallicSmoothness.png",
+            "sha256": "796f6bac6e7828c8198b6acd290b5603dc6cde05f1457b558dc4caf946085cef"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": true
+        },
+        {
+          "sourceName": "Canyon_Galvanized",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_BaseColor.png",
+            "sha256": "cfdc58150b2620d8d83073085da3d75ab805047ae382b7af3e64fc9fa74730ec"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_MetallicSmoothness.png",
+            "sha256": "cc9be5062061b15871c7041949f1a2beab5402ddb87c2a79e0e1fb7d4eac89dd"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Gravel",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_BaseColor.png",
+            "sha256": "00413033f6f6745db8d0b74674f68e4d77073db6014f2635f87ba33603b4b8c7"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Normal.png",
+            "sha256": "88a6dd6cb7570f570b249f54b4e371ae261a4499ec37e00bc3cb0ec62590bd20"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_MetallicSmoothness.png",
+            "sha256": "2931af83e0bf38831c8eaf9ea3632832892e7fd317f4ee09a3d37eed9dec5c0c"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.5,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Occlusion.png",
+            "sha256": "604656a8b299576a2137c1b428072a988d0b778166c7ca0096ee7a8280ecda83"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Reflector",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_BaseColor.png",
+            "sha256": "075736075b97df6d36ee1e4cda609d0d0b7b67aefcf172f17969c0f0cb45fb9f"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_MetallicSmoothness.png",
+            "sha256": "829e7507514fca8f5bf28ecefd8a00d0829ec0bf420f8694a58d41cfa70e6437"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Sage",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_BaseColor.png",
+            "sha256": "03cc4088f54b4d0d477acf3bee620b981a65f1aaca48c6418180066b0fb8e48d"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_MetallicSmoothness.png",
+            "sha256": "0c53b887d7148b06b0482164c6fc9ef9b14c5529c20977923e57aacd54cc6d2a"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": true
+        },
+        {
+          "sourceName": "Canyon_Sandstone",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_BaseColor.png",
+            "sha256": "47d4a8540d68c30199d0ddcd8adf1c1b079812e3f906b6db9480696f13bc64aa"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Normal.png",
+            "sha256": "d478ef3d1ff505435d9965548044e7535b7560883af4ababa075036c7caa1597"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_MetallicSmoothness.png",
+            "sha256": "1025f7ceb8f29dfefc2594667ed38bd0c3953a6742c8aa3a4ca37d0cdcf5a6ba"
+          },
+          "maxSize": 2048,
+          "normalScale": 0.72,
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Occlusion.png",
+            "sha256": "69ca56d1856ea64ee5396b7a8069ea56f448f574a7122f6b0e40666604fa5042"
+          },
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_WhitePaint",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_BaseColor.png",
+            "sha256": "8d82991765e81fc34ef4e425df46a80ad535f23152e7e58c9be2673e5fe66300"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_MetallicSmoothness.png",
+            "sha256": "1171d15f9c7c7f1a03e5e7395cc8e9c0ab591cffff8ce5995db8da2c535db252"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_Wood",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_BaseColor.png",
+            "sha256": "de740ce933aa59daf0fdc888f58295166f7a3d7b6865f1507d80ade13abf5131"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_MetallicSmoothness.png",
+            "sha256": "15c0762a5cd6efe1cb2ba23895101e12c399e1ccf16bfedd02a7d39d232f8abe"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "Canyon_YellowPaint",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_BaseColor.png",
+            "sha256": "9c9a6af5468b3fe76ed7f83ebb89074952e86da25e6071b101095e172d22c1b0"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_MetallicSmoothness.png",
+            "sha256": "8fc0c5ab5b9259748b22992f5b0f3169c99e81ad53b1978a06ec9a7e78acd03c"
+          },
+          "maxSize": 512,
+          "normalScale": 0.5,
+          "doubleSided": false
+        }
+      ],
+      "lods": [
+        {
+          "height": 0.5,
+          "rendererPaths": [
+            "Canyon_L0_Boulder_00",
+            "Canyon_L0_Boulder_01",
+            "Canyon_L0_Boulder_02",
+            "Canyon_L0_Boulder_03",
+            "Canyon_L0_Boulder_04",
+            "Canyon_L0_Boulder_05",
+            "Canyon_L0_Boulder_06",
+            "Canyon_L0_Boulder_07",
+            "Canyon_L0_Boulder_08",
+            "Canyon_L0_Boulder_09",
+            "Canyon_L0_Boulder_10",
+            "Canyon_L0_Boulder_11",
+            "Canyon_L0_Boulder_12",
+            "Canyon_L0_Boulder_13",
+            "Canyon_L0_Boulder_14",
+            "Canyon_L0_Boulder_15",
+            "Canyon_L0_Boulder_16",
+            "Canyon_L0_Boulder_17",
+            "Canyon_L0_Boulder_18",
+            "Canyon_L0_Boulder_19",
+            "Canyon_L0_Boulder_20",
+            "Canyon_L0_Boulder_21",
+            "Canyon_L0_Boulder_22",
+            "Canyon_L0_Boulder_23",
+            "Canyon_L0_Boulder_24",
+            "Canyon_L0_Boulder_25",
+            "Canyon_L0_Boulder_26",
+            "Canyon_L0_Boulder_27",
+            "Canyon_L0_Boulder_28",
+            "Canyon_L0_Boulder_29",
+            "Canyon_L0_Boulder_30",
+            "Canyon_L0_Boulder_31",
+            "Canyon_L0_Boulder_32",
+            "Canyon_L0_Boulder_33",
+            "Canyon_L0_Boulder_34",
+            "Canyon_L0_Boulder_35",
+            "Canyon_L0_Boulder_36",
+            "Canyon_L0_Boulder_37",
+            "Canyon_L0_Boulder_38",
+            "Canyon_L0_Boulder_39",
+            "Canyon_L0_Boulder_40",
+            "Canyon_L0_Boulder_41",
+            "Canyon_L0_Boulder_42",
+            "Canyon_L0_Boulder_43",
+            "Canyon_L0_Boulder_44",
+            "Canyon_L0_Boulder_45",
+            "Canyon_L0_Boulder_46",
+            "Canyon_L0_Boulder_47",
+            "Canyon_L0_Boulder_48",
+            "Canyon_L0_Boulder_49",
+            "Canyon_L0_Boulder_50",
+            "Canyon_L0_Boulder_51",
+            "Canyon_L0_Boulder_52",
+            "Canyon_L0_Boulder_53",
+            "Canyon_L0_Boulder_54",
+            "Canyon_L0_Boulder_55",
+            "Canyon_L0_Boulder_56",
+            "Canyon_L0_Boulder_57",
+            "Canyon_L0_Boulder_58",
+            "Canyon_L0_Boulder_59",
+            "Canyon_L0_Boulder_60",
+            "Canyon_L0_Boulder_61",
+            "Canyon_L0_Boulder_62",
+            "Canyon_L0_Boulder_63",
+            "Canyon_L0_Boulder_64",
+            "Canyon_L0_Boulder_65",
+            "Canyon_L0_Boulder_66",
+            "Canyon_L0_Boulder_67",
+            "Canyon_L0_Boulder_68",
+            "Canyon_L0_Boulder_69",
+            "Canyon_L0_Boulder_70",
+            "Canyon_L0_Boulder_71",
+            "Canyon_L0_Boulder_72",
+            "Canyon_L0_Boulder_73",
+            "Canyon_L0_Boulder_74",
+            "Canyon_L0_Branches",
+            "Canyon_L0_Canyon_WhitePaint",
+            "Canyon_L0_Canyon_YellowPaint",
+            "Canyon_L0_Cliff_00",
+            "Canyon_L0_Cliff_01",
+            "Canyon_L0_Cliff_02",
+            "Canyon_L0_Cliff_03",
+            "Canyon_L0_Cliff_04",
+            "Canyon_L0_Cliff_05",
+            "Canyon_L0_Cliff_06",
+            "Canyon_L0_DistantGround",
+            "Canyon_L0_Grass",
+            "Canyon_L0_Guardrail",
+            "Canyon_L0_Mesa_00",
+            "Canyon_L0_Mesa_01",
+            "Canyon_L0_Mesa_02",
+            "Canyon_L0_Mesa_03",
+            "Canyon_L0_Mesa_04",
+            "Canyon_L0_Mesa_05",
+            "Canyon_L0_Mesa_06",
+            "Canyon_L0_Mesa_07",
+            "Canyon_L0_Mesa_08",
+            "Canyon_L0_Mesa_09",
+            "Canyon_L0_Mesa_10",
+            "Canyon_L0_Mesa_11",
+            "Canyon_L0_Mesa_12",
+            "Canyon_L0_Mesa_13",
+            "Canyon_L0_Mesa_14",
+            "Canyon_L0_Mesa_15",
+            "Canyon_L0_Mesa_16",
+            "Canyon_L0_Mesa_17",
+            "Canyon_L0_Mesa_18",
+            "Canyon_L0_Mesa_19",
+            "Canyon_L0_Reflectors",
+            "Canyon_L0_Road_00",
+            "Canyon_L0_Road_01",
+            "Canyon_L0_Road_02",
+            "Canyon_L0_Road_03",
+            "Canyon_L0_Road_04",
+            "Canyon_L0_Road_05",
+            "Canyon_L0_Road_06",
+            "Canyon_L0_Road_07",
+            "Canyon_L0_Sage",
+            "Canyon_L0_Shoulder_-1",
+            "Canyon_L0_Shoulder_1",
+            "Canyon_L0_Talus"
+          ]
+        },
+        {
+          "height": 0.15,
+          "rendererPaths": [
+            "Canyon_L1_Boulder_00",
+            "Canyon_L1_Boulder_01",
+            "Canyon_L1_Boulder_02",
+            "Canyon_L1_Boulder_03",
+            "Canyon_L1_Boulder_04",
+            "Canyon_L1_Boulder_05",
+            "Canyon_L1_Boulder_06",
+            "Canyon_L1_Boulder_07",
+            "Canyon_L1_Boulder_08",
+            "Canyon_L1_Boulder_09",
+            "Canyon_L1_Boulder_10",
+            "Canyon_L1_Boulder_11",
+            "Canyon_L1_Boulder_12",
+            "Canyon_L1_Boulder_13",
+            "Canyon_L1_Boulder_14",
+            "Canyon_L1_Boulder_15",
+            "Canyon_L1_Boulder_16",
+            "Canyon_L1_Boulder_17",
+            "Canyon_L1_Boulder_18",
+            "Canyon_L1_Boulder_19",
+            "Canyon_L1_Boulder_20",
+            "Canyon_L1_Boulder_21",
+            "Canyon_L1_Boulder_22",
+            "Canyon_L1_Boulder_23",
+            "Canyon_L1_Boulder_24",
+            "Canyon_L1_Boulder_25",
+            "Canyon_L1_Boulder_26",
+            "Canyon_L1_Boulder_27",
+            "Canyon_L1_Boulder_28",
+            "Canyon_L1_Boulder_29",
+            "Canyon_L1_Boulder_30",
+            "Canyon_L1_Boulder_31",
+            "Canyon_L1_Boulder_32",
+            "Canyon_L1_Boulder_33",
+            "Canyon_L1_Boulder_34",
+            "Canyon_L1_Boulder_35",
+            "Canyon_L1_Boulder_36",
+            "Canyon_L1_Boulder_37",
+            "Canyon_L1_Boulder_38",
+            "Canyon_L1_Boulder_39",
+            "Canyon_L1_Boulder_40",
+            "Canyon_L1_Boulder_41",
+            "Canyon_L1_Boulder_42",
+            "Canyon_L1_Boulder_43",
+            "Canyon_L1_Boulder_44",
+            "Canyon_L1_Boulder_45",
+            "Canyon_L1_Boulder_46",
+            "Canyon_L1_Boulder_47",
+            "Canyon_L1_Boulder_48",
+            "Canyon_L1_Boulder_49",
+            "Canyon_L1_Boulder_50",
+            "Canyon_L1_Boulder_51",
+            "Canyon_L1_Boulder_52",
+            "Canyon_L1_Boulder_53",
+            "Canyon_L1_Boulder_54",
+            "Canyon_L1_Boulder_55",
+            "Canyon_L1_Boulder_56",
+            "Canyon_L1_Boulder_57",
+            "Canyon_L1_Boulder_58",
+            "Canyon_L1_Boulder_59",
+            "Canyon_L1_Boulder_60",
+            "Canyon_L1_Boulder_61",
+            "Canyon_L1_Boulder_62",
+            "Canyon_L1_Boulder_63",
+            "Canyon_L1_Boulder_64",
+            "Canyon_L1_Boulder_65",
+            "Canyon_L1_Boulder_66",
+            "Canyon_L1_Boulder_67",
+            "Canyon_L1_Boulder_68",
+            "Canyon_L1_Boulder_69",
+            "Canyon_L1_Boulder_70",
+            "Canyon_L1_Boulder_71",
+            "Canyon_L1_Boulder_72",
+            "Canyon_L1_Boulder_73",
+            "Canyon_L1_Boulder_74",
+            "Canyon_L1_Branches",
+            "Canyon_L1_Canyon_WhitePaint",
+            "Canyon_L1_Canyon_YellowPaint",
+            "Canyon_L1_Cliff_00",
+            "Canyon_L1_Cliff_01",
+            "Canyon_L1_Cliff_02",
+            "Canyon_L1_Cliff_03",
+            "Canyon_L1_Cliff_04",
+            "Canyon_L1_Cliff_05",
+            "Canyon_L1_Cliff_06",
+            "Canyon_L1_DistantGround",
+            "Canyon_L1_Grass",
+            "Canyon_L1_Guardrail",
+            "Canyon_L1_Mesa_00",
+            "Canyon_L1_Mesa_01",
+            "Canyon_L1_Mesa_02",
+            "Canyon_L1_Mesa_03",
+            "Canyon_L1_Mesa_04",
+            "Canyon_L1_Mesa_05",
+            "Canyon_L1_Mesa_06",
+            "Canyon_L1_Mesa_07",
+            "Canyon_L1_Mesa_08",
+            "Canyon_L1_Mesa_09",
+            "Canyon_L1_Mesa_10",
+            "Canyon_L1_Mesa_11",
+            "Canyon_L1_Mesa_12",
+            "Canyon_L1_Mesa_13",
+            "Canyon_L1_Mesa_14",
+            "Canyon_L1_Mesa_15",
+            "Canyon_L1_Mesa_16",
+            "Canyon_L1_Mesa_17",
+            "Canyon_L1_Mesa_18",
+            "Canyon_L1_Mesa_19",
+            "Canyon_L1_Reflectors",
+            "Canyon_L1_Road_00",
+            "Canyon_L1_Road_01",
+            "Canyon_L1_Road_02",
+            "Canyon_L1_Road_03",
+            "Canyon_L1_Road_04",
+            "Canyon_L1_Road_05",
+            "Canyon_L1_Road_06",
+            "Canyon_L1_Road_07",
+            "Canyon_L1_Sage",
+            "Canyon_L1_Shoulder_-1",
+            "Canyon_L1_Shoulder_1",
+            "Canyon_L1_Talus"
+          ]
+        },
+        {
+          "height": 0.025,
+          "rendererPaths": [
+            "Canyon_L2_Boulder_00",
+            "Canyon_L2_Boulder_01",
+            "Canyon_L2_Boulder_02",
+            "Canyon_L2_Boulder_03",
+            "Canyon_L2_Boulder_04",
+            "Canyon_L2_Boulder_05",
+            "Canyon_L2_Boulder_06",
+            "Canyon_L2_Boulder_07",
+            "Canyon_L2_Boulder_08",
+            "Canyon_L2_Boulder_09",
+            "Canyon_L2_Boulder_10",
+            "Canyon_L2_Boulder_11",
+            "Canyon_L2_Boulder_12",
+            "Canyon_L2_Boulder_13",
+            "Canyon_L2_Boulder_14",
+            "Canyon_L2_Boulder_15",
+            "Canyon_L2_Boulder_16",
+            "Canyon_L2_Boulder_17",
+            "Canyon_L2_Boulder_18",
+            "Canyon_L2_Boulder_19",
+            "Canyon_L2_Boulder_20",
+            "Canyon_L2_Boulder_21",
+            "Canyon_L2_Boulder_22",
+            "Canyon_L2_Boulder_23",
+            "Canyon_L2_Boulder_24",
+            "Canyon_L2_Boulder_25",
+            "Canyon_L2_Boulder_26",
+            "Canyon_L2_Boulder_27",
+            "Canyon_L2_Boulder_28",
+            "Canyon_L2_Boulder_29",
+            "Canyon_L2_Boulder_30",
+            "Canyon_L2_Boulder_31",
+            "Canyon_L2_Boulder_32",
+            "Canyon_L2_Boulder_33",
+            "Canyon_L2_Boulder_34",
+            "Canyon_L2_Boulder_35",
+            "Canyon_L2_Boulder_36",
+            "Canyon_L2_Boulder_37",
+            "Canyon_L2_Boulder_38",
+            "Canyon_L2_Boulder_39",
+            "Canyon_L2_Boulder_40",
+            "Canyon_L2_Boulder_41",
+            "Canyon_L2_Boulder_42",
+            "Canyon_L2_Boulder_43",
+            "Canyon_L2_Boulder_44",
+            "Canyon_L2_Boulder_45",
+            "Canyon_L2_Boulder_46",
+            "Canyon_L2_Boulder_47",
+            "Canyon_L2_Boulder_48",
+            "Canyon_L2_Boulder_49",
+            "Canyon_L2_Boulder_50",
+            "Canyon_L2_Boulder_51",
+            "Canyon_L2_Boulder_52",
+            "Canyon_L2_Boulder_53",
+            "Canyon_L2_Boulder_54",
+            "Canyon_L2_Boulder_55",
+            "Canyon_L2_Boulder_56",
+            "Canyon_L2_Boulder_57",
+            "Canyon_L2_Boulder_58",
+            "Canyon_L2_Boulder_59",
+            "Canyon_L2_Boulder_60",
+            "Canyon_L2_Boulder_61",
+            "Canyon_L2_Boulder_62",
+            "Canyon_L2_Boulder_63",
+            "Canyon_L2_Boulder_64",
+            "Canyon_L2_Boulder_65",
+            "Canyon_L2_Boulder_66",
+            "Canyon_L2_Boulder_67",
+            "Canyon_L2_Boulder_68",
+            "Canyon_L2_Boulder_69",
+            "Canyon_L2_Boulder_70",
+            "Canyon_L2_Boulder_71",
+            "Canyon_L2_Boulder_72",
+            "Canyon_L2_Boulder_73",
+            "Canyon_L2_Boulder_74",
+            "Canyon_L2_Branches",
+            "Canyon_L2_Canyon_WhitePaint",
+            "Canyon_L2_Canyon_YellowPaint",
+            "Canyon_L2_Cliff_00",
+            "Canyon_L2_Cliff_01",
+            "Canyon_L2_Cliff_02",
+            "Canyon_L2_Cliff_03",
+            "Canyon_L2_Cliff_04",
+            "Canyon_L2_Cliff_05",
+            "Canyon_L2_Cliff_06",
+            "Canyon_L2_DistantGround",
+            "Canyon_L2_Grass",
+            "Canyon_L2_Guardrail",
+            "Canyon_L2_Mesa_00",
+            "Canyon_L2_Mesa_01",
+            "Canyon_L2_Mesa_02",
+            "Canyon_L2_Mesa_03",
+            "Canyon_L2_Mesa_04",
+            "Canyon_L2_Mesa_05",
+            "Canyon_L2_Mesa_06",
+            "Canyon_L2_Mesa_07",
+            "Canyon_L2_Mesa_08",
+            "Canyon_L2_Mesa_09",
+            "Canyon_L2_Mesa_10",
+            "Canyon_L2_Mesa_11",
+            "Canyon_L2_Mesa_12",
+            "Canyon_L2_Mesa_13",
+            "Canyon_L2_Mesa_14",
+            "Canyon_L2_Mesa_15",
+            "Canyon_L2_Mesa_16",
+            "Canyon_L2_Mesa_17",
+            "Canyon_L2_Mesa_18",
+            "Canyon_L2_Mesa_19",
+            "Canyon_L2_Reflectors",
+            "Canyon_L2_Road_00",
+            "Canyon_L2_Road_01",
+            "Canyon_L2_Road_02",
+            "Canyon_L2_Road_03",
+            "Canyon_L2_Road_04",
+            "Canyon_L2_Road_05",
+            "Canyon_L2_Road_06",
+            "Canyon_L2_Road_07",
+            "Canyon_L2_Sage",
+            "Canyon_L2_Shoulder_-1",
+            "Canyon_L2_Shoulder_1",
+            "Canyon_L2_Talus"
+          ]
+        }
+      ],
+      "forwardMarker": "Forward",
+      "leftMarker": "LeftRoadMarker",
+      "rightMarker": "RightRoadMarker",
+      "groundMarkers": [
+        "Ground_Origin"
+      ],
+      "colliders": [],
+      "isStatic": true
+    }
+  ]
+}

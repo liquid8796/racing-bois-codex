@@ -1,0 +1,1790 @@
+{
+    "schema": 1,
+    "attemptId": "2bb6f6dffc3d492a88f059a7633aac07",
+    "utc": "2026-09-26T22:00:09.0464906Z",
+    "unityVersion": "6000.5.7f1",
+    "target": "StandaloneWindows64",
+    "backend": "Mono2x",
+    "graphicsApi": "Direct3D11",
+    "descriptor": "docs/p08/golden/unity/actors-v3-review.json",
+    "output": "Build/Golden/actors-20260927-0456",
+    "sourceFingerprint": "c14d61bf94ef9e7727f93410d0ba46e578f51c91e1d9b44ce38b733eb2e89115",
+    "result": "Succeeded",
+    "failure": "",
+    "passed": true,
+    "sourceBindingPassed": true,
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 153407483,
+    "seconds": 28.9001511,
+    "inputs": [
+        {
+            "path": "ArtSource/Concepts/P08/Golden/apex-v2-review.md",
+            "sha256": "420aa39d68616232f9f7244b8e302939ffc97748a38634dbf15319a337b00a4a",
+            "bytes": 1437
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+            "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819",
+            "bytes": 2410957
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/ash-v2-review.md",
+            "sha256": "85f43e75c0338e3159daeee146a5ccbecd523e792a51bf6d061a4da42012b48f",
+            "bytes": 1499
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+            "sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+            "bytes": 2385932
+        },
+        {
+            "path": "ArtSource/P08/Golden/Apex/V8/R2/RB_Golden_Apex_v8_r2.blend",
+            "sha256": "7d103484f52abf329821169d3af9e8d12cee4891caf23f420285aa46dd4c03aa",
+            "bytes": 31769541
+        },
+        {
+            "path": "ArtSource/P08/Golden/Ash/V3/RB_Golden_Ash_V3.blend",
+            "sha256": "e03297751d46e2c09143518be4fb054425eb6d0b036006da6e9070c3b8fefe26",
+            "bytes": 121971627
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_BaseColor.png",
+            "sha256": "5db9fdc1fac9bb3dc2aa4e8ab07a79b326d95c59eeb71908207669c0ada5a1e1",
+            "bytes": 80695
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_MetallicSmoothness.png",
+            "sha256": "9c955a5bf9b6bb16f83c2eaa560740df1b45d83db11416769891c16e8ff25214",
+            "bytes": 175000
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Glass_Normal.png",
+            "sha256": "90c7eb5840b0bfd3b72460e87d822dfd4c6d81e588feea46610d066841579310",
+            "bytes": 143004
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_BaseColor.png",
+            "sha256": "52a22a04cbca7877203669201940dca39e91d59ae36bbec1b9d17fbda1e8de84",
+            "bytes": 842931
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_MetallicSmoothness.png",
+            "sha256": "5db62bd154ffec0156b8afc8a27bf3a713b4f1617891d208f5bc7d01c1444b95",
+            "bytes": 941319
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Graphite_Normal.png",
+            "sha256": "be666ff59f5d1d9a4c2477013eec08d6f336d749be0af69baf97ef2fdb2d57b5",
+            "bytes": 1731811
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_BaseColor.png",
+            "sha256": "ef67cce4e11efd0d7e6e9807acd316d6d7e178536fe54776826b7e3e457c18bd",
+            "bytes": 120257
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Emission.png",
+            "sha256": "fb6716b26a2821b723fb3d60f69c3a061e28ac14736ddf2bf6f764f166c2a158",
+            "bytes": 1881
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_MetallicSmoothness.png",
+            "sha256": "d42f44c2467f9a5884c49a94e003cbd5e9c0d6a4ae0e126bcd34917b800f1bce",
+            "bytes": 175220
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lamp_Normal.png",
+            "sha256": "7bde6db4894261674ed7617f96fd54a8f05d10dd649c5729a502804f59d0e4c3",
+            "bytes": 1962
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_BaseColor.png",
+            "sha256": "ab91d71101348fca6760371e8ecffc3c90410cbdad13e2078d45d3b1cb265ac3",
+            "bytes": 1881
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_MetallicSmoothness.png",
+            "sha256": "08e9ef0c0ccc4821bdec2c3490b721db9c851340ca31e837aa006015d47faf98",
+            "bytes": 173351
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Lens_Normal.png",
+            "sha256": "90c7eb5840b0bfd3b72460e87d822dfd4c6d81e588feea46610d066841579310",
+            "bytes": 143004
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_BaseColor.png",
+            "sha256": "0e88edeb7ae50e679cd19e8641712bc357e1c13e5ab6a41cdc8408283988d11f",
+            "bytes": 875896
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_MetallicSmoothness.png",
+            "sha256": "3dc09f5a9824365c2a8c6dcd8e88f415da3c97f1e8c8a9a930bde298ba1ed954",
+            "bytes": 697878
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Machined_Normal.png",
+            "sha256": "3af96a36caec2ccca5fcadd06e85d1fbf2c00a7b5db4ac17a2e62269f93ce710",
+            "bytes": 1378375
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_BaseColor.png",
+            "sha256": "ba6c1385d3215fdacc7a5c4d01f4a66250bdae091972634ccbdfbfaf1cbfa800",
+            "bytes": 2956854
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_MetallicSmoothness.png",
+            "sha256": "51bf81714d028f3eb117dbcc4c740325d72fe8a0579e2c2baccc10c9ad0788ab",
+            "bytes": 2772349
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Pearl_Normal.png",
+            "sha256": "0eedc476c6600669178560fb5cc76596056b85191288897cfb0745e956a84e96",
+            "bytes": 2260186
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_BaseColor.png",
+            "sha256": "c39c7a90aae3ad1a40ae3fd2c0f5d0b437cc31d96f8fca851d0d0c3352d5a5e3",
+            "bytes": 1875
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Emission.png",
+            "sha256": "c39c7a90aae3ad1a40ae3fd2c0f5d0b437cc31d96f8fca851d0d0c3352d5a5e3",
+            "bytes": 1875
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_MetallicSmoothness.png",
+            "sha256": "1f307df6a6f0a1ca3220019865c8af73735e6f6a245f7234aca9125424f8ba09",
+            "bytes": 175389
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_RedLamp_Normal.png",
+            "sha256": "7bde6db4894261674ed7617f96fd54a8f05d10dd649c5729a502804f59d0e4c3",
+            "bytes": 1962
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_BaseColor.png",
+            "sha256": "63abdd686e8068c3836cb091095d41c2281795e7303fa5386de733b2932932cb",
+            "bytes": 883463
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_MetallicSmoothness.png",
+            "sha256": "afcd228fff5ec8dbaba8234a7311ddd635ade2f0e2d69449e944fabe078d0e74",
+            "bytes": 938481
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Rubber_Normal.png",
+            "sha256": "546898da05b1852536173abf31c6eada98cfd3ff8b054edd30abaf4a8b4c64f3",
+            "bytes": 1944868
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_BaseColor.png",
+            "sha256": "30b2e997b1c9c614bf64c76ec29cb5f6f7573910c373e4f36e379d3598999300",
+            "bytes": 933195
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_MetallicSmoothness.png",
+            "sha256": "773a3df82f044bf8914b90fba873a794da86be320c106afed90f1928b5d387ac",
+            "bytes": 697668
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/Apex_Titanium_Normal.png",
+            "sha256": "3af96a36caec2ccca5fcadd06e85d1fbf2c00a7b5db4ac17a2e62269f93ce710",
+            "bytes": 1378375
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Apex/V8/R2/RB_Golden_Apex_v8_r2.fbx",
+            "sha256": "1d3be6c2a49735b6751f8e93fb65648a915ae7047ff246255f012e570782f639",
+            "bytes": 4361500
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_BaseColor.png",
+            "sha256": "69bb4073e685624840fc9db0a300e42da535671bca7a5eb126bbd3dfd7bbe100",
+            "bytes": 121429
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_MetallicSmoothness.png",
+            "sha256": "3097c1ea67553a65af36bdae529b927be81a2d1a12e011bc7447c6c680409c26",
+            "bytes": 66283
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Normal.png",
+            "sha256": "35d4375d3a35685e1693d1b4857cb4d1b8637174bc3661736883bd62e47db5bf",
+            "bytes": 280515
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Occlusion.png",
+            "sha256": "9108cefa224d03828fb95ad9135c413a3c427fd98af5f66080eb55c8a9eda53b",
+            "bytes": 67458
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_BaseColor.png",
+            "sha256": "9292b15587ac9d34a01199cb7c6a79424bd22a461634363ed289153297ad2fa9",
+            "bytes": 4685
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_MetallicSmoothness.png",
+            "sha256": "8d8e46a4ce7070e3fd5910d7a03a659a7eb527bc38b8978f983ffc496a40a809",
+            "bytes": 63773
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Normal.png",
+            "sha256": "a06c6eada32fe9c85d68c67ae9c3777e2e87a5a659ef2c71ca0bdc2550153fd5",
+            "bytes": 2199
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Occlusion.png",
+            "sha256": "3490f43f6b8634dd33f1dbf5f12646f724971ee1049bd49a5ab0e9d8d734c5db",
+            "bytes": 55593
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_BaseColor.png",
+            "sha256": "5d4c48411b014d4411b8e028c1151f2377ff0f843746a2ee056eaf39ea73784d",
+            "bytes": 302842
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_MetallicSmoothness.png",
+            "sha256": "e1bbe6bb70d137894b4f988f36093b65eb246c40ce227cb500fe89fa8a97deb6",
+            "bytes": 301013
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Normal.png",
+            "sha256": "e245650455cc63432e6e7bfd29999185247c7c062fac34da08f98c262a3f5507",
+            "bytes": 10290
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Occlusion.png",
+            "sha256": "a0ab66970541814db61810f434913469f8b933df2cfc176cf93b4bd57e4155c8",
+            "bytes": 309507
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_BaseColor.png",
+            "sha256": "3f682a920feb3c96421c1935016b919f0c2655d24fc43da155a345780849d3b0",
+            "bytes": 12904
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_MetallicSmoothness.png",
+            "sha256": "f06b0f5daa8cd7190e7c1411c7f296d7018f54401682058a331298025432d013",
+            "bytes": 259887
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_Normal.png",
+            "sha256": "fa0169aec162ac5faf60bf7008ab34199ab7a14a93ceac055d2829f0f645b762",
+            "bytes": 1739817
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_CharcoalLeather_Occlusion.png",
+            "sha256": "dcf324f740186e3f42a9bf7ebbb5084de2515aaf05099f3c9c96e38ed72e767d",
+            "bytes": 267024
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_BaseColor.png",
+            "sha256": "8220acc1f9786c7e63d0127226793d5349ea9ba508c392d2ff03e040e329a3e4",
+            "bytes": 155959
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_MetallicSmoothness.png",
+            "sha256": "013c6bc810c2169b0df4f2cb80c72b4f87a2b8f8a15172b1d3244131f958d436",
+            "bytes": 5674
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Normal.png",
+            "sha256": "6c4f21eafbf99271d922b4cf1140587f8d2724344debddaf26e3ff4df72f89bc",
+            "bytes": 2352
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Occlusion.png",
+            "sha256": "05268d1f59550a43215fb1ef7717d54a5fd5233e81179e20daaf2ff0446bfdec",
+            "bytes": 3530
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_BaseColor.png",
+            "sha256": "33cf473635e01b83e588e00d2d294f2c05bc9e9c2ece631d8ce2ce85d0fc86bc",
+            "bytes": 7428
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_MetallicSmoothness.png",
+            "sha256": "8d72e611024ad425a03fc918a3bdff7311067f8f827fdb50539fafe92d0f4673",
+            "bytes": 11027
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Normal.png",
+            "sha256": "7e04f4e9de897ef53944925736c85b46447f059b361d419fb3c0bd2702d689be",
+            "bytes": 292016
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Occlusion.png",
+            "sha256": "de2e25c4d6e7f4ac9921d6f2a70af6c77bb5ee5c8bcea00c58dc362bdc9dc13d",
+            "bytes": 7087
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_BaseColor.png",
+            "sha256": "2e667645adea4351af79de02fd89ab8fcbf2ad03e44ba5120d91425d64754507",
+            "bytes": 747498
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_MetallicSmoothness.png",
+            "sha256": "497dec4e814983d77292f474a3fc69037c48f10fa5a0463e549faf2bebcb5287",
+            "bytes": 72150
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Normal.png",
+            "sha256": "6703c3c07baaf5ee313c88bbfffc3e595d952508103a7d589bd18796ccbbeb94",
+            "bytes": 359063
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Occlusion.png",
+            "sha256": "3145c50a0a42de91e010dec257591c01df6ea02f0db37e4f84f70167e0a5391a",
+            "bytes": 66947
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_BaseColor.png",
+            "sha256": "1013a6a2a022217f91621b45fdcfb600d82863a8b6bf8d5c28747489b5dae008",
+            "bytes": 17008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_MetallicSmoothness.png",
+            "sha256": "cf841c3f1c35eb96d17a6cbc1656418c4c9784a01df3da679401a55e9340406a",
+            "bytes": 326494
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_Normal.png",
+            "sha256": "522d4fdbf807f15f876f2dfa85e7cdb4a672503675aec22f1a7ac63d88e4e9c2",
+            "bytes": 10390
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_IvoryEnamel_Occlusion.png",
+            "sha256": "098340bf3aaa1ba86408d9e39839223095a4f2c352f622c4d56a98f23d28fb64",
+            "bytes": 321673
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_BaseColor.png",
+            "sha256": "d644ca432898e82ff177acc5665feba9662860dc811ee84182cc0d8ce9fd987d",
+            "bytes": 4799
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_MetallicSmoothness.png",
+            "sha256": "418c6bac3384a43bbd585d8b817d973d9b44a8d6095da8ee5fe99ed9fc69074e",
+            "bytes": 107907
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Normal.png",
+            "sha256": "55ea4ca8447fe6850d738f599a9167152f248beffd93ab1c5c91a95add13f42a",
+            "bytes": 53279
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Occlusion.png",
+            "sha256": "e55022721bff940b28d5e5f1b3dac883d2c04da038e2a1f23eee7cfffee2331c",
+            "bytes": 111133
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_BaseColor.png",
+            "sha256": "3b857a96dab1341129122d2449b7d2e8981921a5ff01a48961a4702ccdaf1dad",
+            "bytes": 1396133
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_MetallicSmoothness.png",
+            "sha256": "f5d86a3688bc4abf6cb1bafe90edcd09847d3ab0a15df19afeba65ae59d17ccd",
+            "bytes": 1001189
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_Normal.png",
+            "sha256": "f3be3089fb8d907f6f961170e9255a322815ccb98250396c25d1914c12b79b72",
+            "bytes": 985537
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Skin_Occlusion.png",
+            "sha256": "191125a76bb4d32fdc4db6613c011f79de5969bce28da1ea103912ccf5d4543b",
+            "bytes": 267169
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_BaseColor.png",
+            "sha256": "ca2b8e661360d2c3b74c442deaa6ea1875dd29dc53c9e76eceea77e725129954",
+            "bytes": 830817
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_MetallicSmoothness.png",
+            "sha256": "7e96620de59e22c516814a7639805315383f6ce0d3c072990c16e608e0b622bb",
+            "bytes": 1930521
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_Normal.png",
+            "sha256": "aff897b95337ca7f0bc549d30468868b9bd625a54e6ba3f70ea30035dd2ef82d",
+            "bytes": 4190028
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_TailoredClothing_Occlusion.png",
+            "sha256": "19a0954147a0cf98d95430651cac919fc47f838f8731d7806e05efbabf3bea4b",
+            "bytes": 673375
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/RB_Golden_Ash_V3.fbx",
+            "sha256": "4ce1c6d32ccc46a3d9a8773a74f9db4b2aa163f13ef49ad81b4238e01267ca74",
+            "bytes": 14079596
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_BaseColor.png",
+            "sha256": "93859172f09205060b01fb4e70d800f9985a8c62e6ca39ae7fc6e05a83bcb027",
+            "bytes": 732767
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_MetallicSmoothness.png",
+            "sha256": "bee0298f26bd280b077c9a9c8c0e4bb56b5d22348430ed2955974e89326b0e7d",
+            "bytes": 523516
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Normal.png",
+            "sha256": "bf64987012627de645ec8de85060fa4816ac8c6c6a90c2d4078b0da761e3e9ba",
+            "bytes": 413294
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Occlusion.png",
+            "sha256": "747cdf9c77bbf52fba9d7204d1eb2b9377495fa8b9a4c86d9e8c5f34caae0a71",
+            "bytes": 539368
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_BaseColor.png",
+            "sha256": "fee6334d4708bfb64f76217ca807820acc9ed205e2e851debf2505ed626f784b",
+            "bytes": 59963
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_MetallicSmoothness.png",
+            "sha256": "16da8068e7b6ed5e40529d79996091f37ba45ef2196ba71aff91b0c4256c82a9",
+            "bytes": 174420
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Normal.png",
+            "sha256": "47ef637ba38bb776f5682026d351adc8a1bc5b9d9a26ba3b104a5e1529791bb7",
+            "bytes": 202184
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Occlusion.png",
+            "sha256": "10c8329ea1780e9ed82d869b4150f289ebc61a8fbd326875c03e2eb7d3b83f11",
+            "bytes": 214905
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs",
+            "sha256": "09d50c71de78798cdf7060a2da3c35334ea05607b1ee10cdbe57699b571f9ecd",
+            "bytes": 1634
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Build.cs",
+            "sha256": "ab520e1ddd19235c4819e03f51599ccfad5a76b582bee7e830e74b45cea90696",
+            "bytes": 9197
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Build.cs.meta",
+            "sha256": "cc64ab1c5c195c3e417c8fd6528493049a39f3408bc5ecccbb294990728b29f7",
+            "bytes": 60
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Compilation.cs",
+            "sha256": "428050012ed2f958c61f6a8fedb61120993fc284241a8a4b008896e21f817676",
+            "bytes": 3247
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Compilation.cs.meta",
+            "sha256": "5a9192a61a9c334e32ff8bb2a713edae64e9a58edd22593a7b6c4e756cd3aae3",
+            "bytes": 62
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Contract.cs",
+            "sha256": "0d43ea57de66cb7a9b6c4491b9e15c4a4f408c28410f2a0034b0bb3d202cdc0a",
+            "bytes": 14160
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Contract.cs.meta",
+            "sha256": "e83b437c5e6c09522b627b1e503917741c0bdc46cd6d8aae69a79a917ef5a12c",
+            "bytes": 60
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Environment.cs",
+            "sha256": "9287dc0622752379dd87003122aa6918cc3ebbdfe9b2eee5d53856014f3c363b",
+            "bytes": 10357
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Environment.cs.meta",
+            "sha256": "19bd552853f2c7640ff615ad29e43bad332344c82474a677533ff8188544f230",
+            "bytes": 251
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.GeometryProbe.cs",
+            "sha256": "abbde56353604fd61123cc0975bef488c723569b4d4d5509c0ef0e1f544c5782",
+            "bytes": 3876
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.GeometryProbe.cs.meta",
+            "sha256": "5692ee5fb7c144abd268cff7dfbaecb4b1dced4830cd0b9b80117ca38d00e7e6",
+            "bytes": 59
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
+            "sha256": "c39e45ce360a6a4ad121f8907a90da4c672fb1f912df9bcf0899d80f0023bc69",
+            "bytes": 18573
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs.meta",
+            "sha256": "c2fe3229f4e604971389fdbe30ba1659d774140bf4856907ade23d6e11b90f85",
+            "bytes": 60
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Lighting.cs",
+            "sha256": "2c4b0319696edae01bdae7b3b84122852aa8208414441bc095642a6da1a3702e",
+            "bytes": 2461
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Lighting.cs.meta",
+            "sha256": "ec3ad0d87569a9ac748c6244633d8c7d8bf14cecdbb71efd9d096553d1ebb54c",
+            "bytes": 251
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Modules.cs",
+            "sha256": "f85bc31422303e74714b902310115743f89cee800fae33c593a3f6f02c9b9d0b",
+            "bytes": 21449
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Modules.cs.meta",
+            "sha256": "0a130767226f5f7cf0174a8f5293d4db6810bb192a4e4f391acded98ca4eddb9",
+            "bytes": 251
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.RestPose.cs",
+            "sha256": "8f48ce5cbceb56f7849198d138b02bb5082a360635c9cd3b2bfd4c03fa33088e",
+            "bytes": 3584
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.RestPose.cs.meta",
+            "sha256": "10c7da475aba48df4d920d927de8469775ab9d1e07e7fd1f443f65b8be4c361e",
+            "bytes": 251
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Scene.cs",
+            "sha256": "18dbcb06b4a6058b16a81a02fa18a39eee3dd5a486ae40cf10c0b7b02ed8c071",
+            "bytes": 7145
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Scene.cs.meta",
+            "sha256": "89ceb3403b8f31797fbcc2036c03bdf44b28f0192cfc2cead15a3bea1bd9a352",
+            "bytes": 60
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs",
+            "sha256": "b02970b1920e994b7637e29a15453064c8ec8b0c9eeec86021d41402a8232676",
+            "bytes": 21691
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs.meta",
+            "sha256": "aa04f729ecaf89991fe0f919db710b8261478b1c4155ffd6772c7dc2e5582e16",
+            "bytes": 60
+        },
+        {
+            "path": "Assets/RacingBois/Editor/RacingBois.Authoring.Editor.asmdef",
+            "sha256": "05852f1be165987cbc90668c5fea344febd5848d9dd9cd3ac1a1b799d4d60aa7",
+            "bytes": 459
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/GoldenReview.unity",
+            "sha256": "cdb637da2a97d6440f023a0d5347a0cda9a1cb03cfdd52bd838681dd53da3b0f",
+            "bytes": 26191
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/GoldenInspectionFloor.mat",
+            "sha256": "eb8d5db5e816f3cc5e63d4db83635600cef66f957f696cf64e98713d786f32f7",
+            "bytes": 3852
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Glass.mat",
+            "sha256": "abd0c8dcd73fe23a97c7aedc7043230e4c50281baf42ccf32371a5ce4e7934a5",
+            "bytes": 4184
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Graphite.mat",
+            "sha256": "fa3a626b8ad72363df71a454ea97afe15551171f393d9fe8006bd82971155f0d",
+            "bytes": 4088
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Lamp.mat",
+            "sha256": "c6b1f45b109f19080a256312ecffe81b243a6c5f577aa2eaf4ba35f2708f7429",
+            "bytes": 4148
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Lens.mat",
+            "sha256": "f02af79073d4e4c3ffc6f0513b3c45fabb781fa5daa1406e4cb8900d33d0937a",
+            "bytes": 4181
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Machined.mat",
+            "sha256": "2adddb44ca082f04859e97ad2c8dfdece569c341f1eefe85c3e9b34883d495b1",
+            "bytes": 4089
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Pearl.mat",
+            "sha256": "183a7567a27447c338503196444d6f7620276f2653ce7113c9daff8a88c06b2e",
+            "bytes": 4086
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_RedLamp.mat",
+            "sha256": "b2c010f9e4c8589ecafe718a32c442cc0ea8deba0f4a5a39b4d27ef9b973e92d",
+            "bytes": 4151
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Rubber.mat",
+            "sha256": "3df67289093523b84aa7bd44037b36ad93f1109c72472b8369b21893970712e6",
+            "bytes": 4086
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Apex_v8_r2_Apex_Titanium.mat",
+            "sha256": "9c5470a81ae6041302a66ba7ca9476e6e025081402dfdce568406995917633e2",
+            "bytes": 4089
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_AgedBrass_Baked.mat",
+            "sha256": "4057215efccd645da3dde06ccd280ded03b51d40b18f1d97337d86238250f1e3",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_AmberLens_Baked.mat",
+            "sha256": "a5e582ce53ac40dc66edce98dd0ef2d2d633cf17f982f4ee922418ae01302707",
+            "bytes": 4162
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Brows_Baked.mat",
+            "sha256": "3dde95bf90360bb3ebdaf27e475c82a05984f717ec58c8fd45cfb2de1954cb9f",
+            "bytes": 4251
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_CharcoalLeather_Baked.mat",
+            "sha256": "c7d4ea516de63401b368ac78001d20cffb7a7e1d035ce612e1be466463e1ef09",
+            "bytes": 4169
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Eyes_Baked.mat",
+            "sha256": "d70e3d5e4a1da739674d335691c82a0c373c404c6a3cfd9cc5826ba190da5065",
+            "bytes": 4158
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_HairFibers_Baked.mat",
+            "sha256": "34e847c4bc76bec04e2cfcf17d932241537b17747d29138f091c7bf3e02826d8",
+            "bytes": 4163
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Hair_Baked.mat",
+            "sha256": "e8c9fb1f254382583e24781a4e488d7d37eb8c49f039ebab2cd42d920684c8db",
+            "bytes": 4251
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_IvoryEnamel_Baked.mat",
+            "sha256": "279b80d0c83bda5fa720e141d0c4e2a2309af1731ef3972e002e90adf9e861ad",
+            "bytes": 4164
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_OchreThread_Baked.mat",
+            "sha256": "a46572edd20cb5f29ebf749658f170062b9d960c70f8687147ee0dfb47885ea3",
+            "bytes": 4165
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_Skin_Baked.mat",
+            "sha256": "7bc4acbe2ff4896237d1d6f8935606e463140c0b332c2bc3f70f171d7721d798",
+            "bytes": 4157
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV2_TailoredClothing_Baked.mat",
+            "sha256": "0bdba85d9bc5af30ec6d4e78a8b82cca0b3f946272f79ef74027e4814dda00c7",
+            "bytes": 4168
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV3_BootLeather_Baked.mat",
+            "sha256": "6a621e7ca0c2ea5f274475e79181aef212df31b893ed1ff0e0b19897db57d662",
+            "bytes": 4164
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Materials/RB_Golden_Ash_V3_AshV3_Rubber_Baked.mat",
+            "sha256": "877ef6f31809f590dc3fdda4fc36b53e82851cf3a6e4c1fb61aab363ed97b408",
+            "bytes": 4159
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_v8_r2.prefab",
+            "sha256": "7554d52df6416ef7e854c536d418cc5607d23399093a524df697c3aca5712df7",
+            "bytes": 7531
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V3.prefab",
+            "sha256": "8c2b9f664628d1f6085ac48e15154dd8531d56876436fc23a75bd4e5ca45d98b",
+            "bytes": 93880
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Generated/StudioReviewPipeline.asset",
+            "sha256": "6bed70f852f4c264fb6ad90295b4ad8d47b9ba4ab4644994ac090cc65bb75b15",
+            "bytes": 4727
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenCaptureRunner.cs",
+            "sha256": "1cc5c5ffe0fbbc27cf1ac8d834795aa4ca79f61ec117d98b5bdb69eda8092ca9",
+            "bytes": 7411
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenCaptureRunner.cs.meta",
+            "sha256": "cef771e7f7ed80c7ea98fdb78c80d63e5a6d9874b29c021035ad826140d2d284",
+            "bytes": 251
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewController.cs",
+            "sha256": "f84197f80b529ca5b9ccaf20ca1de5b432aadb213b425dd6493b984b32776eb1",
+            "bytes": 8762
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewController.cs.meta",
+            "sha256": "89d80a7690e29f0cb1348826654747c020868f7b8b5c9fa5850e5d5ba7a6c17f",
+            "bytes": 60
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewPipelineScope.cs",
+            "sha256": "9566dafc6b1e13e78d7fac6654e1ebb0b5116845a9b76438b7798d1dea423799",
+            "bytes": 864
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewPipelineScope.cs.meta",
+            "sha256": "89adab3e41a16921c0def35994a24d5ab2640db3347ebb10b0c68f2192d4a4be",
+            "bytes": 251
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenSkinBounds.cs",
+            "sha256": "daad4616ee4f2a9016edc3f3b2b66c68d038a3b0255af2424bef08d0e624951c",
+            "bytes": 637
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenSkinBounds.cs.meta",
+            "sha256": "04fea840f080f27358ba1535ba3ddfcab7185d1fce662137efc1d87367a1fae1",
+            "bytes": 62
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef",
+            "sha256": "105f1f8bd7f90e023b18fde0cbff574b4f4f1b991a181780d63a220c5cb044bf",
+            "bytes": 221
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef.meta",
+            "sha256": "6f849bfc7a64677725c69d91e2c0705e23bc3deed733244ea40c699dd9653cc0",
+            "bytes": 60
+        },
+        {
+            "path": "Assets/RacingBois/Settings/WebRenderer.asset",
+            "sha256": "e9d45e222492c593404b18aaac41f625a5f61a7a9cd5a43bfd42b7bbe80c82b3",
+            "bytes": 1881
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll",
+            "sha256": "5f88c1afb138858262b7321296e82fbd7f0f0e699b939aefb0fdfbc771807c0f",
+            "bytes": 252928
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.pdb",
+            "sha256": "10ca7d9d8779d12996c49fe945e04cac6a9e3208f49e94fb8530eeb4da4acb2b",
+            "bytes": 80292
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.dll",
+            "sha256": "b7ceafb32b74b42f5e5a5fa4fd36a114ae661b29a44bf274fd67af06e455873c",
+            "bytes": 202240
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.pdb",
+            "sha256": "57bc04f7d8f3d191635310ea75d1c9b7b007f82b5e5287b654f861d26938e951",
+            "bytes": 75308
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.dll",
+            "sha256": "d0d4a570ed5ade72d2dda0e62991c0a282e295c89f9ed16392956d010a9225ed",
+            "bytes": 15872
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.pdb",
+            "sha256": "8ccbfedafbe9e928d1d0d6fd1b7995c83ade89ad83baa52368586edc88033f4c",
+            "bytes": 24880
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Editor/AssetVersion.cs",
+            "sha256": "96ed27e15286cda1fdada6923e804887b6447a905b38360e0f5561f79cd0344c",
+            "bytes": 148
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs",
+            "sha256": "b576b02906f7142f98763fbac862392c35fa296ba7c535f73d99be07c49f8708",
+            "bytes": 81785
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Runtime/UniversalRendererData.cs",
+            "sha256": "f9bb6be2b889124328a77e77fc574bc5e463d78d83d69962bde3ad0a05d86a45",
+            "bytes": 16727
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Shaders/Debug/DebugReplacement.shader",
+            "sha256": "87aa9907968957814bd7fea5c0954afe73e3b5be5a9883b670f0f2cf89753ff3",
+            "bytes": 4769
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Shaders/Debug/HDRDebugView.shader",
+            "sha256": "b6bf1c24c3522ca660981312bbf6184d0ca7269d0e4f36988c294b124cecf696",
+            "bytes": 9004
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Shaders/Debug/ProbeVolumeSamplingDebugPositionNormal.compute",
+            "sha256": "c455ee184c5bf02ad07f4e214cc17f4bae9ab43559efd687fd8af8ffb5ce2f6c",
+            "bytes": 1174
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+            "sha256": "d012fadd60a3e5c19a57d501a3e010ad0ee6067465fee135a421afea08b4da45",
+            "bytes": 23236
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Textures/BayerMatrix.png",
+            "sha256": "ab857985cb2fbbda35a23b55d0da84e26684cf8979ae777341e9dd9b952d940c",
+            "bytes": 597
+        },
+        {
+            "path": "Packages/com.unity.render-pipelines.universal/Textures/BlueNoise64/L/LDR_LLL1_0.png",
+            "sha256": "140c55bd97c21b9b22008d7054b492333fec67fbfc1a1b266e5b0209b647eed4",
+            "bytes": 7115
+        },
+        {
+            "path": "Packages/manifest.json",
+            "sha256": "5515f817d3495b9e74f062f198599123b3b2f7f0d09dfe5c6e384fc44c7e64f3",
+            "bytes": 1797
+        },
+        {
+            "path": "Packages/packages-lock.json",
+            "sha256": "ce0cb4475c566f22d370f7e1b6eb62a1fb5fc2e6ffca11e427ce55e33b9ffb84",
+            "bytes": 11589
+        },
+        {
+            "path": "ProjectSettings/GraphicsSettings.asset",
+            "sha256": "1aacd156f239b170f9e2255913c1c1b2d1f994d4ebac637834fd78e31a479e9c",
+            "bytes": 2957
+        },
+        {
+            "path": "ProjectSettings/ProjectSettings.asset",
+            "sha256": "e40ce5c85f0003d82c9f458d7af7bc58b6f8da54ad8b57f33325b95d3bc7407d",
+            "bytes": 20847
+        },
+        {
+            "path": "ProjectSettings/ProjectVersion.txt",
+            "sha256": "4b72a68f7b9e250d7f392f9964a8ce91959fa26628a05117ab911edfec912313",
+            "bytes": 83
+        },
+        {
+            "path": "ProjectSettings/QualitySettings.asset",
+            "sha256": "406619dc9fa396bd504f1e06e9422f620e8b66562e1c23c1588e1dcd7131a684",
+            "bytes": 9858
+        },
+        {
+            "path": "docs/p08/golden/unity/actors-v3-review.json",
+            "sha256": "9a87d6b4d3dc99726bdd196d2bf75e71b9c103f88823ca49d00131d8f0e629ca",
+            "bytes": 40417
+        }
+    ],
+    "playerFiles": [
+        {
+            "path": "ART_REVIEW.txt",
+            "sha256": "518728f0203ab029fbb79fa76814fcf7dda61e286bfe8faee766af8b3f98f269",
+            "bytes": 247
+        },
+        {
+            "path": "D3D12/D3D12Core.dll",
+            "sha256": "625bd40005b1c3708695d5256ecf230d278e6b8edba5a88af70f3d91324f3052",
+            "bytes": 4725304
+        },
+        {
+            "path": "MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
+            "sha256": "5782facf743ee29f270fc625b7633860aedb1c8290d2e7307e60dc4925fd94dc",
+            "bytes": 611240
+        },
+        {
+            "path": "MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
+            "sha256": "02cec9fdb34a2606dad35174cac85d733f1d04dcb18a40ab80012e7d5638f48a",
+            "bytes": 7831472
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
+            "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741",
+            "bytes": 1605
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+            "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a",
+            "bytes": 60575
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/2.0/machine.config",
+            "sha256": "e91782a27fa39fc6c1d6ee8b08529f5d35052310d0006034b878eb04b8f2af30",
+            "bytes": 29066
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/2.0/settings.map",
+            "sha256": "49c6160f9d54af4270a3b4e997fc4a8301f79b9e2070118fa46ddbcbbc44f9a2",
+            "bytes": 2622
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/2.0/web.config",
+            "sha256": "cf2b54339e069b9e42f7d6795eecbf562c50c1011f4ca8f65f578fe52d97ff92",
+            "bytes": 11635
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
+            "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741",
+            "bytes": 1605
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
+            "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a",
+            "bytes": 60575
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.0/machine.config",
+            "sha256": "e60aec2c5115d65b3acb3c55ea21576dbd770f579166c017125571e46ae560ed",
+            "bytes": 33598
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.0/settings.map",
+            "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8",
+            "bytes": 2622
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.0/web.config",
+            "sha256": "e38bb8cc68fe5b4edecdfd288d094b9e8ced7629039b2a347682aba0d8bd7492",
+            "bytes": 18802
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
+            "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741",
+            "bytes": 1605
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
+            "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a",
+            "bytes": 60575
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.5/machine.config",
+            "sha256": "ee950004b576fb28dc85f4b0435ed04bf96612de2e8b53be84d07afe85a0de6c",
+            "bytes": 34056
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.5/settings.map",
+            "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8",
+            "bytes": 2622
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/4.5/web.config",
+            "sha256": "c4cbddd4fd9347b58cc5a72b36dc4ba1ad2bb699e65869d05cd3fb9865f0d824",
+            "bytes": 18811
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/browscap.ini",
+            "sha256": "4ddd50f31fb968f30bedefc253a46dc3f2890192d05cdaa9e0a64a056eee807e",
+            "bytes": 311984
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/config",
+            "sha256": "5776169973a26a387b8b3e5c0f2301a7ab9a6dd7c7d3efa22a96abc47fbf8662",
+            "bytes": 3815
+        },
+        {
+            "path": "MonoBleedingEdge/etc/mono/mconfig/config.xml",
+            "sha256": "0c56e34c69124510fa8c19e7b4c2ca6c1c4ff460ae19f798dd0ca035809e396d",
+            "bytes": 25817
+        },
+        {
+            "path": "Racing Bois_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt",
+            "sha256": "72b7c9f36e573bf8623402b2c8ddb66fc294823e809effe0ef799fab82e8a3d8",
+            "bytes": 208108
+        },
+        {
+            "path": "RacingBoisGoldenReview.exe",
+            "sha256": "d05c5848f7cc2eb32ff6016f54762ee3c666a69b862be297df2390830c1ea8cf",
+            "bytes": 667648
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/MCPForUnity.Runtime.dll",
+            "sha256": "fb7719c76b5c491858cb8e9e3a4572637073b68d953f0fd2d732c99c192cdb9f",
+            "bytes": 29184
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Mono.Security.dll",
+            "sha256": "1849437c1d2fe7698c0fde2a9a6aad9a864372a373b7c1d887da902a36965b36",
+            "bytes": 241152
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Newtonsoft.Json.dll",
+            "sha256": "a56146202232958f46bd6a28b5a7da166aea123ee0d646735a46e5c341dfbf1f",
+            "bytes": 691712
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Client.Adapters.dll",
+            "sha256": "a3cbe04d36c4ac2b25e9e9c7f2285d3cccdad0ae6bbbc24450ffb2581f2b808e",
+            "bytes": 39936
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Client.Application.dll",
+            "sha256": "74f5e578318d61f7be49ebce847f27b2ee3b97bbccd0ed3d9a30f1a89659cbca",
+            "bytes": 250368
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Client.Bootstrap.dll",
+            "sha256": "bdb3fefe9ed87024a7acf057b69e450b1e0bf424cb82d130090b033ecc37654b",
+            "bytes": 81408
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Client.Presentation.dll",
+            "sha256": "cf7d32f7f6c60a2d44d8e0e1b963de5012fa0a80f4f59b45c01052364576ac94",
+            "bytes": 199168
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Gameplay.Definitions.dll",
+            "sha256": "532c26fd0eaf10d89a4ee2e25f1bd614fe9e010c4ef18d6ff13ebb6fe4034040",
+            "bytes": 22528
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Golden.dll",
+            "sha256": "8c09f53922acb7e6b84f1977c74993ec50ff73fae1cf0524f2fdc29099595727",
+            "bytes": 17408
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.NetworkMapping.dll",
+            "sha256": "bb431a90f3db1a6cd8eec64ea22abf5fc4fa5a9b56d047a2743ec93f7cd1d996",
+            "bytes": 8704
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Protocol.dll",
+            "sha256": "97678c0561040911089af25b48b8b61e874002f2c22613d270305de8086a21e9",
+            "bytes": 13312
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/RacingBois.Simulation.dll",
+            "sha256": "b817a42d6819d6a3a2f290ab41e60ec569db9b79a8f601a88aa1a54258f88cef",
+            "bytes": 29696
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Buffers.dll",
+            "sha256": "762f8fdbe975e05b76be5fe996c53ce7c75e4a2830f2f50b02a5948ef6ba0aeb",
+            "bytes": 4608
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Collections.Immutable.dll",
+            "sha256": "5b1b1c83ba3d135c2fdfe425842fbe9c7432878b7e468623acb554c69b4c130f",
+            "bytes": 252680
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.ComponentModel.Composition.dll",
+            "sha256": "335d76d10ae5b80d1faae4833937b9166551ccc9e79ee8262d2da4d58843f79d",
+            "bytes": 257024
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Configuration.dll",
+            "sha256": "d7139dd6b622233d316aac733b392b9c1a545375804f62685f57f9d36f1c7ac2",
+            "bytes": 124928
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Core.dll",
+            "sha256": "a4637c44a11ea827d686313cfca3f5191225d2a96f7eaf0f10aa32de446380d2",
+            "bytes": 1113088
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Data.DataSetExtensions.dll",
+            "sha256": "80432a96154f8d2935b2f1c9e61b2ee6109fd6234e281327b3b297451c8931ba",
+            "bytes": 29696
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Data.dll",
+            "sha256": "ab47d362cff6f6e665cadbc8c6c81f9fa3612f23483a44d08b339347ac99f116",
+            "bytes": 2125312
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Drawing.dll",
+            "sha256": "3c3586ba170c1788a8d3a4e419eb1f50f092070f4d81e90238b2fe6c5405cf2c",
+            "bytes": 489984
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.EnterpriseServices.dll",
+            "sha256": "00595c8eea345fe0e47da702100e460aaaf8f14d27a24950b71d926cbf1201c4",
+            "bytes": 44544
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.IO.Compression.FileSystem.dll",
+            "sha256": "f45ca89827639a880dcbeab1917af99a5bd18aec4433fbcb2d7774ccf9fe7121",
+            "bytes": 18432
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.IO.Compression.dll",
+            "sha256": "a2803c059bd49c7fe520673f7e2b06657bb0419b253a5267e3f1da14b357dd5a",
+            "bytes": 114688
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Memory.dll",
+            "sha256": "c4f030a2cba7da7cdcf493257c24560e203d355904aee490d645a935842f834a",
+            "bytes": 4608
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Net.Http.dll",
+            "sha256": "128b31fec424c70356952314abff2f6b1408f64b7613d2ae4bde5e84c2f8ac03",
+            "bytes": 122880
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Numerics.dll",
+            "sha256": "b968dc8852985029fd5dd08a1a9c3a6b8750ea4470cd677a5051c33fc5a08639",
+            "bytes": 119296
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Reflection.Metadata.dll",
+            "sha256": "afcfd6c166fe0d59f45cc6363082806f6a7ea8ceed9dc6c75eec9fd79ccb5717",
+            "bytes": 487584
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Runtime.CompilerServices.Unsafe.dll",
+            "sha256": "fd67abc4c4af10affbcd42fd68a2a7bc361b26714afe6965d4d0d139459d8297",
+            "bytes": 19256
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Runtime.Serialization.dll",
+            "sha256": "685123acdbb6ac313e503e89f4831fed096be838ccb000b85b33ee903562807f",
+            "bytes": 934400
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Runtime.dll",
+            "sha256": "e0a7334b7ba419aaab6bd3bb6992d693e689341a9178172c9bf99c2aa6a085bd",
+            "bytes": 12288
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Security.dll",
+            "sha256": "02d51b98dc8c877124fea386c9fbf7264790aae381ab15577eb0e2d082d1bcc4",
+            "bytes": 320000
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.ServiceModel.Internals.dll",
+            "sha256": "077333adc8bf20eb40e94d1909db2d07a16925a9192b69064f34eaf128804c8b",
+            "bytes": 215040
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Transactions.dll",
+            "sha256": "6557e5029469211193ccec80dd4d3ad090f5eb87d80f5d5341d77a6d3506b64b",
+            "bytes": 35328
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Xml.Linq.dll",
+            "sha256": "fd300e794b9ccd85d95bbab54e282da1333faa20a9209457944e831c27452b00",
+            "bytes": 136704
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.Xml.dll",
+            "sha256": "32129a7d847a5efeacee6bd4b0d6bbffc8923551c5446a8c216d8ef1191b1de1",
+            "bytes": 3160064
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/System.dll",
+            "sha256": "d26cada0fc3dcae061f0fa421df15a082cb35ccf81ccaeebc8b0e2d2e6877099",
+            "bytes": 2641920
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.Burst.Unsafe.dll",
+            "sha256": "9d9c1ff52411decbee5d9f0d1cd61ebeaa222077aa77a52101ea3debafae98e2",
+            "bytes": 5632
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.Burst.dll",
+            "sha256": "aee58a8677e133d633b1093dfa24927ea08a260be90afed1c1c7feadb5a0cac1",
+            "bytes": 296960
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
+            "sha256": "ff50383f807f9692e4913b97e47d86fefcb8faa33d6d48cd3e3fd6fc7ffb448d",
+            "bytes": 5120
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.Collections.dll",
+            "sha256": "4e0523d03f02b9af8d9f773b604048dcae3b4b3204a7019645a13d7508d57409",
+            "bytes": 439808
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.InputSystem.ForUI.dll",
+            "sha256": "348c122952048371eb5e4a6ebb20dd131bfb2bdf0ded14e6e457aa35e312eb02",
+            "bytes": 15360
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.InputSystem.dll",
+            "sha256": "d279a291f96adaae92ee1fb2bba794a7ae70c1edf4dcd3cee49ebfe47fc13b61",
+            "bytes": 1040384
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared.dll",
+            "sha256": "b4ab6ad087c1703eb4863ec1a4219024c98911d6bd98b9d706bdd93cf0943700",
+            "bytes": 3584
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.Mathematics.dll",
+            "sha256": "5528a1478005262bf4cfd01765a03150098dc0c1d6712d9d8ba0d649b1d18471",
+            "bytes": 5632
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.Multiplayer.Center.Common.dll",
+            "sha256": "04427fd140b0f61441cc440e6d4bd832d9ce793e6be8fc10693b82fd1b31b62c",
+            "bytes": 8704
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.PathTracing.Runtime.dll",
+            "sha256": "a9a4280cf7d41ede8b2a8b01210bdbc1b97995d326cb5c2453fa8e641d7be460",
+            "bytes": 142848
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+            "sha256": "eaed2348517557ec9fe89d27461fe6d89549a4047c32514c113934367bdf2121",
+            "bytes": 7680
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll",
+            "sha256": "ee53ba90bde5b20432aad12f2d10843a612a6da1786349a55e25fff3ce0f2602",
+            "bytes": 11264
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
+            "sha256": "6250117399e3f37fd1b3584b5b414137c02d5c60ac16a2175fb0ed61d5c6545b",
+            "bytes": 1092096
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll",
+            "sha256": "a682259e482296a690c0ba07f996506a80b1b046ce200a727b6c7537ad1a5397",
+            "bytes": 3584
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll",
+            "sha256": "98894c31c144510b6f80e90ace19077eb783c4111c037ae962d0e74bb0f02785",
+            "bytes": 263168
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+            "sha256": "a6f0b358af1d9149aae21707425ae6fb0d61f505a38480cb99e806bde0a9ff4b",
+            "bytes": 3584
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll",
+            "sha256": "ed5a9a3e60830bc17dfa36a24ea3fcd72ba8d465d212854434fb6c60a45f93e1",
+            "bytes": 198656
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll",
+            "sha256": "955975574a90b09daafa0f8accf7d85bd14b0f792a578e7ad2d6217bdd8522c3",
+            "bytes": 4096
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
+            "sha256": "8636da1530a6b6718a0eb08a39ceb95f88d3df67033595a694360efa941a01a5",
+            "bytes": 722432
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll",
+            "sha256": "bbd6fc28a4f3396c6c7cd53a3c2eba33b667eb45339f875b4248814b67e4e474",
+            "bytes": 3584
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.Scripting.dll",
+            "sha256": "f0b65d6ebcb0d2ff9e5ccbdd4bdabad87b92bfa612f019fc2df3f953f0fd748d",
+            "bytes": 68520
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.SurfaceCache.Runtime.dll",
+            "sha256": "beb99f0a481b19def929ba98ac32f1f1f1580fd9738d60e2dac0f02516b1fcc9",
+            "bytes": 3584
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/Unity.UnifiedRayTracing.Runtime.dll",
+            "sha256": "63f2ce3867f6c13b4533048756d8222cbbb23b6b0a87f6667b3ae3823f4e0575",
+            "bytes": 91648
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AIModule.dll",
+            "sha256": "ca817a2ad1f0ae3d905d54067505f4d7c96fec8b2b66f565c1c768a4f8166cff",
+            "bytes": 86448
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AMDModule.dll",
+            "sha256": "35971db89105c67b6c15128215b887d767e80ae475ed325160ab8e57cd9341a7",
+            "bytes": 21928
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ARModule.dll",
+            "sha256": "ea82748ee0bf694bee764cbbbffd4f02728d13f5e81de7ad2de72db906a9b3c0",
+            "bytes": 27048
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AccessibilityModule.dll",
+            "sha256": "6db9d37dbc9adef60d2f6b849d2446dc0550148673aa5a0d81546f1a79532226",
+            "bytes": 49072
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AdaptivePerformanceModule.dll",
+            "sha256": "37a15858c624e2b6b45081a58a8e53abfd68bd1553fb37b0e67c0e0f7d8c4b8d",
+            "bytes": 117672
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AndroidJNIModule.dll",
+            "sha256": "88f9c79339341ba5d8a900edf5c4a96fda96da7b4478be4b8452a229b98d9313",
+            "bytes": 120744
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AnimationModule.dll",
+            "sha256": "663a387eb4361c369003b41fe45dba95c1f3d56be7e63d2df4b155be8f42d1ce",
+            "bytes": 218536
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AssetBundleModule.dll",
+            "sha256": "80b2696f8cd7b8cd501d0e7ac001a9978ca0af32ab7d971b3418031d0addc746",
+            "bytes": 42408
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.AudioModule.dll",
+            "sha256": "fa41b1a4c4f35d381c50b88ff89d7a3b58f600e889af34f028fc10f17e40221d",
+            "bytes": 142760
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ClothModule.dll",
+            "sha256": "60aba21af9ae6ee8b459bf0e0b2608bf6e7ad75c76cd023a8767a36703d1ac06",
+            "bytes": 37296
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ClusterInputModule.dll",
+            "sha256": "d97fd97c4092655d7c452d86e31e0793f31f273ad3b5e83653b76d2ab28717cd",
+            "bytes": 29096
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ClusterRendererModule.dll",
+            "sha256": "584758f26d1c4f037fa90c2518606125663017fc9df4e55ca5d15f4501649879",
+            "bytes": 28080
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ContentLoadModule.dll",
+            "sha256": "78d400afca6d471e464fae69996c6fa575b42e88e629b2e849a558e29747c87b",
+            "bytes": 46504
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.CoreModule.dll",
+            "sha256": "2a18300d7351fa1649c18891d460c1c4c218e97036dd3a953231eea4b90f7157",
+            "bytes": 1974192
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.CrashReportingModule.dll",
+            "sha256": "db74902471f13cef2aef5118f86d255be1e3e926790373234eef4bf40cab501a",
+            "bytes": 28080
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.DSPGraphModule.dll",
+            "sha256": "e9718601eb9e5579323ec08db7dae1e37c25ade827da87df6d5ef12992f23c2c",
+            "bytes": 32680
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.DirectorModule.dll",
+            "sha256": "5417bde7146733dc30c39aae48ac16b191313bc330a0439d6ba269cfaa3ae39b",
+            "bytes": 41896
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.GIModule.dll",
+            "sha256": "25fd5feee13ffb25a9e85c3be914b42c7a11c10f75cea60b0f00578e4744df2b",
+            "bytes": 25512
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.GameCenterModule.dll",
+            "sha256": "e52662101ae401f1c671b4486e0c811c2fa381c1e9ca6e4a8983abbefde08d58",
+            "bytes": 45480
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+            "sha256": "8e6edcdf791dbe2e0e39f860770c219d8d3632d920bef539e08b9a6bf1476fb3",
+            "bytes": 14256
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.GridModule.dll",
+            "sha256": "a5f0ad1ded5b832409b8aaac944b24049dad8559586143eb47e283a792ac5c19",
+            "bytes": 32168
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
+            "sha256": "4b3925c7ab1ebcd20180d16adb7ea2bfeb0ba6dc251db731f5b0d5ad0e6f4e3f",
+            "bytes": 105392
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.HierarchyModule.dll",
+            "sha256": "df777449233a9a38cac23be146a2a6f24babcc00ba3cce93f97427585ca3e9fc",
+            "bytes": 100272
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.HotReloadModule.dll",
+            "sha256": "627da8b9aec2e4a6aefefd0a45a640b7fd32b9807579de9c311778a3432e20e6",
+            "bytes": 25512
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.IMGUIModule.dll",
+            "sha256": "fdc1abddcecf5786c7c51b129c5aea498654ab9d215c9f511783c6d5fd053ecd",
+            "bytes": 188848
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.IdentifiersModule.dll",
+            "sha256": "80c05efcf0d3806a36240e18ebe99037714bce107dcddfa5ceb5509e4a222366",
+            "bytes": 16816
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ImageConversionModule.dll",
+            "sha256": "3d196414c1a058f927a097d5fe7d979042ffb1bf32b25da34db61d903adfe3b2",
+            "bytes": 33712
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.InputForUIModule.dll",
+            "sha256": "31c9a134102e24cf994bc6bf46871a9ee6dd065f21b9feadcdd9010cd0f7f419",
+            "bytes": 55720
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.InputLegacyModule.dll",
+            "sha256": "b5e0a4e992599c49cb336e0696f691875f984d571ceb59cf45f981265e093844",
+            "bytes": 41904
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.InputModule.dll",
+            "sha256": "f011868f24a0df3d5984212b07ba9427f834e7e81aa93307748fb0a05af2a181",
+            "bytes": 30640
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.InsightsModule.dll",
+            "sha256": "e069f2cb540d21f7f040590c85b5d07c68c21ca03d89fc8529f697b4e146e5fd",
+            "bytes": 15784
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.JSONSerializeModule.dll",
+            "sha256": "9a26f28d619756ea077557c2d946f64ddd3763e243270090684fd00beb84f4d4",
+            "bytes": 28080
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.LocalizationModule.dll",
+            "sha256": "a19f9bbed9f6c229648297f50e3e7d2a8a79958f761a7e4ec4ca0abe92396c48",
+            "bytes": 28072
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.MarshallingModule.dll",
+            "sha256": "634dbb08adcef689fd1af7b189fe3f1b9f7ca410b654fc67eb459d855b77417e",
+            "bytes": 97200
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.MathematicsModule.dll",
+            "sha256": "574f922abd1741d772e2be8693bffdad844c1a622cc906a4fdc96aea283375b9",
+            "bytes": 740784
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.MultiplayerModule.dll",
+            "sha256": "a22002b95b79e5c236e48abde24049c19ce4b238c482f30cc32627c329d77480",
+            "bytes": 17840
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.NVIDIAModule.dll",
+            "sha256": "7df935b972c0c48df0e64a499ec46c99972bc6c4956211cbb9a2ac0701f2d9f9",
+            "bytes": 40360
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ParticleSystemModule.dll",
+            "sha256": "6b3f64a09fc1aff08163ae41831d0af0fc8e204eda726604290749c3c5849972",
+            "bytes": 168872
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
+            "sha256": "17afc72ec2e69cd57f7feda73322036de8ed70fb19ae2be9abb146493021a14e",
+            "bytes": 26544
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.Physics2DModule.dll",
+            "sha256": "1ce5aa769093ea2f7e105eca4173be1f57893a083e063227d55fcf4682b56669",
+            "bytes": 222128
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.PhysicsBackendPhysXModule.dll",
+            "sha256": "e58013f9d5b4c98234e8081c721f72bd9788af872bcd83f1bb1b7292f5bff90c",
+            "bytes": 14256
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.PhysicsCore2DModule.dll",
+            "sha256": "8a6328e94b1415a5fdbb24dc80bc27c3136234b535203ab526d88a6117a02361",
+            "bytes": 450472
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.PhysicsModule.dll",
+            "sha256": "8304935e5e691012705d0803dc5f9af50ce776346b362584fa87b4e9560538ea",
+            "bytes": 180144
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.PropertiesModule.dll",
+            "sha256": "7ae0e78f7d23edbc66b9ad19aec3f8cbff676916b5ff67a3f83d5f98553f1378",
+            "bytes": 124840
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.RenderAs2DModule.dll",
+            "sha256": "b9a214f0d83ddd310b9d2f95c828b4a8b304ab50595c2a490a907958a861938c",
+            "bytes": 27056
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+            "sha256": "5ccb1f68fe4640f00f5504fa26684136bb3d4a640dd9871c9c1bc6bfc718071d",
+            "bytes": 25512
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+            "sha256": "8a9619a5356b29d9218677f48fceddf9ecc64e1a76ff9c5a57642bd516123306",
+            "bytes": 27560
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ScriptingModule.dll",
+            "sha256": "b0a4e96536e9955d9017f380bfe0761dd039f0bfa2e31a192f52c935e665b4bd",
+            "bytes": 27568
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+            "sha256": "f45df0e38cb43212d36c04ca5dbcfc1d9b06ed40b9919d61ecb13c09de8a731a",
+            "bytes": 25520
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.SharedInternalsModule.dll",
+            "sha256": "28fc15015127543e0de81e393de8e348fb8b264233b06fe9bd2e45306805f5c4",
+            "bytes": 36776
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.SpriteMaskModule.dll",
+            "sha256": "d6ff7fa2655b89e58d7c72ba54199b189246047d9a692f0ebea7453064f19839",
+            "bytes": 29616
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.SpriteShapeModule.dll",
+            "sha256": "76ef045acd9052c5073fbd5154de26308dcd8de81ef1592c1df56af87ca0ef82",
+            "bytes": 33712
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.StreamingModule.dll",
+            "sha256": "b6ad31cf283f8c90a73bc34eb6e797de344970b8387eec16e2b9a11de031cae5",
+            "bytes": 27048
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.SubstanceModule.dll",
+            "sha256": "653095446f89249f09331c6fd384b5aab8b748707107ed7e317188c5baadf187",
+            "bytes": 30632
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.SubsystemsModule.dll",
+            "sha256": "8179be3b63b43b0fa379c975cfd5571097b78eba8dba1cadfb9527ecc2c3d253",
+            "bytes": 42408
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.TLSModule.dll",
+            "sha256": "50b5250f6c340905d1a3a439a9bc20b7353e08c8238e635bed2aa12867bb218c",
+            "bytes": 33200
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.TerrainModule.dll",
+            "sha256": "47758974e742a3e7789b496254975ec044f3ffc2744aedabefce0b9bee11b408",
+            "bytes": 131496
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
+            "sha256": "f4c3432c938fa1219b8e6aa8b4017aa2409a78a0f86ee1ddd5032729ef8eb1af",
+            "bytes": 27048
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+            "sha256": "c6bb188ece49244f4663e64074cbd5fea0862adab17765607f1716f637f8c9ed",
+            "bytes": 77744
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+            "sha256": "025c03413fe74d9ee62668a2d75133052c69d305026b99a4da2b01add3894075",
+            "bytes": 331184
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.TextRenderingModule.dll",
+            "sha256": "fd18e3e23cdec8c9f878a521a46fecbb0f4c1573cb9ee31061268f58e0bf4371",
+            "bytes": 38824
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.TilemapModule.dll",
+            "sha256": "cf9c8135c9d26b28158057d7e394d66b26b05dfdceaa1164c1ea43ffca1f2314",
+            "bytes": 75176
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.U2DRuntimeModule.dll",
+            "sha256": "4ad2f38b14a3cb47538468855f6791eeed77c3642d9437f75f4e3c26ba7d156f",
+            "bytes": 26544
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UIElementsModule.dll",
+            "sha256": "ab4a31aaa1daed918ac9cda5731a1a024ee51dfd4b127489aa4b3b92928fe1a3",
+            "bytes": 2349488
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UIModule.dll",
+            "sha256": "a65ae332e37dc180c2169c775704850979bf366a0d30798cf247ab0b75021548",
+            "bytes": 54192
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UmbraModule.dll",
+            "sha256": "8a0a6aa45bbf59fff02abb7d51cb6b4bf5e622c7df1a687e16762498937433bc",
+            "bytes": 25512
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+            "sha256": "16c2f70f26a564f856b0cea1915972abcee9b91db6b7092056901b16c7cc2ee5",
+            "bytes": 35752
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+            "sha256": "9c037986706671d3b93b445d532686675cb2d207ca751c9769137447d8afd622",
+            "bytes": 60336
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityConnectModule.dll",
+            "sha256": "46aa366b054aa340b97347f7fad493e8c66aeea922c2786b98e38da1c33de0f1",
+            "bytes": 29096
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityConsentModule.dll",
+            "sha256": "12c30c7de2bfb3c798b464cb3ae3884142bb258d869fda95f2b24a39b358dd76",
+            "bytes": 16304
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityCurlModule.dll",
+            "sha256": "2e236d4f52b1a94073f3a4ad4e69927773597b2bed84b59cd0eed695ef73e09d",
+            "bytes": 27568
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+            "sha256": "6a49dea9f163bd6d400ba8aa68737036caa1a89ac9d98f4d585b7607ad1dd1c7",
+            "bytes": 30128
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+            "sha256": "1119783850292b2bacd7d501495b93430948b0d90cd3067e3909b57a11837c1b",
+            "bytes": 29608
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+            "sha256": "524f87e1464c9de6a60ab1a11a4790c69f461f63b58baf51cba146a3c586c9ab",
+            "bytes": 79280
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+            "sha256": "4d21cf72272ac76834bfa076199a388c5d5de1912df41729781cef9fc83429af",
+            "bytes": 28584
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+            "sha256": "ad1eb834a4eff342af7fd417437bf8b14fdf055bf89d8a3f49b8f9a3b5f950a1",
+            "bytes": 36776
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.VFXModule.dll",
+            "sha256": "29e15a474b39084111fbc41b657e376cf5fe8ce67b89d0fb4c4c021ee927e08e",
+            "bytes": 81832
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.VectorGraphicsModule.dll",
+            "sha256": "634ee65cbb312cd0ad4c2408cd1e40a16bb5db00f313263bf4506e85078da940",
+            "bytes": 227760
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.VehiclesModule.dll",
+            "sha256": "0c283fb8103bd704c12366082e95afb1d6ba3a54412e61fd002c74cc9396cf37",
+            "bytes": 32688
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.VideoModule.dll",
+            "sha256": "25ff35882211d44aad5a94ed306b9e2c1ad1bbff134cb8b182f859ee5fd4551e",
+            "bytes": 48560
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
+            "sha256": "603dfad3c554cc381a0a8f6ee8df86b63eaa6a19a4cfde193c7782bfa0b07ced",
+            "bytes": 43432
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.WindModule.dll",
+            "sha256": "66dcde7129c4f807b7917eb6071302a7d159f7b061f29d6ef22d9476daff02ed",
+            "bytes": 28080
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.XRModule.dll",
+            "sha256": "82f3423628ccfc083a3c9016f1232102bb9f94caf64f2604d67942b1643990ef",
+            "bytes": 95656
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/UnityEngine.dll",
+            "sha256": "3ed4763a9ca378e0445c0a440d8cd3447071b2615903b0e24f657def316f9502",
+            "bytes": 210344
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/mscorlib.dll",
+            "sha256": "f7698bd46af58d3ee9dac59a286cfedfd28e51f71c0fe3940671a3ccc7af5711",
+            "bytes": 4632064
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Managed/netstandard.dll",
+            "sha256": "6ae62e082dc494a2433984177f60ca4db5fae69b1f360a8b33754172b310b8c5",
+            "bytes": 90112
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Plugins/x86_64/lib_burst_generated.dll",
+            "sha256": "58f2a19f844acbe7276c6dc950e2a0868efccbc406693eb098a16b64081a9ad3",
+            "bytes": 446976
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/Resources/unity default resources",
+            "sha256": "1fbaff511bdec6cf276529de02215fee9fdcf7298ea9d7c49dc6b984ee73a7f5",
+            "bytes": 5881648
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/RuntimeInitializeOnLoads.json",
+            "sha256": "9864bff7304c0379e6a0705a23f1a44d35714835681b14f30e0095667050f980",
+            "bytes": 2887
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/ScriptingAssemblies.json",
+            "sha256": "35ab8f339330d0f289a20b2cec616969ed523861484f572eabbd76063d1db155",
+            "bytes": 4566
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/app.info",
+            "sha256": "00014c26f674329f083a48c4066235579e6e421a0b8aa51100dc574909a6b7df",
+            "bytes": 23
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/boot.config",
+            "sha256": "ce11bb4ca65a6b4bc85ae00107e814835456e1932a92dd8adf9a7ba43e55f1e4",
+            "bytes": 156
+        },
+        {
+            "path": "RacingBoisGoldenReview_Data/data.unity3d",
+            "sha256": "4573c7993fdda720ffd636809c604c4ae906e5a50ce25bb42270dfac9d43aa02",
+            "bytes": 57708725
+        },
+        {
+            "path": "UnityCrashHandler64.exe",
+            "sha256": "8bfbc94f0e2199e8aab47a7467012ba45dec1009d30598995ec7607b446ee8b1",
+            "bytes": 1736624
+        },
+        {
+            "path": "UnityPlayer.dll",
+            "sha256": "7f9c4c1b4a42d763422f1f792c0da193f0d6541048aaa84f0b3efd1e4ee90206",
+            "bytes": 37287856
+        },
+        {
+            "path": "dstorage.dll",
+            "sha256": "cae65787f61514bec6f012f44546e68b19e39d8854a9ab52af813370d44b272a",
+            "bytes": 206904
+        },
+        {
+            "path": "dstoragecore.dll",
+            "sha256": "cf85b19a92a8276f8baca0db9bbcd60735bad50768deb303d310e84d5f4fdd11",
+            "bytes": 1482784
+        }
+    ],
+    "scope": "Isolated native art-review player build. Not a Racing Bois release, gameplay acceptance, visual approval or performance certification."
+}

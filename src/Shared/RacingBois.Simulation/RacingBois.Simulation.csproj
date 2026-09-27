@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><LangVersion>9.0</LangVersion><ImplicitUsings>disable</ImplicitUsings><Nullable>disable</Nullable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../RacingBois.Gameplay.Definitions/RacingBois.Gameplay.Definitions.csproj" /><Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Simulation/**/*.cs" Link="%(Filename)%(Extension)" /></ItemGroup>
+</Project>

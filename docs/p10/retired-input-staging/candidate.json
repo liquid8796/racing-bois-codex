@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "passed": true,
+  "failed": 0,
+  "tests": 8,
+  "results": [
+    {
+      "name": "real_delayed_inputs_follow_confirmed_results_without_persistent_user_error",
+      "passed": true
+    },
+    {
+      "name": "retired_input_ack_cursor_advances_without_erasing_unrelated_error",
+      "passed": true
+    },
+    {
+      "name": "running_race_mismatch_remains_visible",
+      "passed": true
+    },
+    {
+      "name": "unknown_or_acknowledged_input_sequences_remain_visible",
+      "passed": true
+    },
+    {
+      "name": "control_terminal_and_other_error_codes_keep_original_behavior",
+      "passed": true
+    },
+    {
+      "name": "countdown_sequence_overlap_and_any_new_input_remain_visible",
+      "passed": true
+    },
+    {
+      "name": "different_room_or_current_session_cannot_borrow_retired_range",
+      "passed": true
+    },
+    {
+      "name": "ordinary_race_reset_discards_retired_context",
+      "passed": true
+    }
+  ],
+  "details": [
+    {
+      "kind": "actualServerTurnover",
+      "errors": 15,
+      "order": true,
+      "evidence": [
+        {
+          "at": 38.64999999999845,
+          "sequence": 1993,
+          "reliableSequence": 33,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.666666666665115,
+          "sequence": 1994,
+          "reliableSequence": 34,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.68333333333178,
+          "sequence": 1995,
+          "reliableSequence": 35,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.69999999999845,
+          "sequence": 1996,
+          "reliableSequence": 36,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.71666666666511,
+          "sequence": 1997,
+          "reliableSequence": 37,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.73333333333178,
+          "sequence": 1998,
+          "reliableSequence": 38,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.749999999998444,
+          "sequence": 1999,
+          "reliableSequence": 39,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.76666666666511,
+          "sequence": 2000,
+          "reliableSequence": 40,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.783333333331775,
+          "sequence": 2001,
+          "reliableSequence": 41,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.79999999999844,
+          "sequence": 2002,
+          "reliableSequence": 42,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.81666666666511,
+          "sequence": 2003,
+          "reliableSequence": 43,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.83333333333177,
+          "sequence": 2004,
+          "reliableSequence": 44,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.84999999999844,
+          "sequence": 2005,
+          "reliableSequence": 45,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.866666666665104,
+          "sequence": 2006,
+          "reliableSequence": 46,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        },
+        {
+          "at": 38.88333333333177,
+          "sequence": 2007,
+          "reliableSequence": 47,
+          "resultLobbySequence": 31,
+          "phase": "Results",
+          "userErrorPresent": false
+        }
+      ],
+      "finalPhase": "Lobby",
+      "userError": "none"
+    }
+  ],
+  "scope": "Isolated staged client plus actual server application and ordered latency fixture; raw errors remain observed. No live source/wire/server-policy changes."
+}

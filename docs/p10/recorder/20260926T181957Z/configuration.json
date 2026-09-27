@@ -1,0 +1,58 @@
+{
+  "generatedUtc": "2026-09-26T18:19:59.8312072+00:00",
+  "passed": 9,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "explicit_fresh_external_run_and_full_build_identities_accepted",
+      "passed": true
+    },
+    {
+      "name": "installed_root_and_descendant_cannot_receive_qa_output",
+      "passed": true
+    },
+    {
+      "name": "dot_dot_path_cannot_bypass_immutable_install_boundary",
+      "passed": true
+    },
+    {
+      "name": "sibling_with_installation_name_prefix_is_independent",
+      "passed": true
+    },
+    {
+      "name": "existing_output_and_file_preserved",
+      "passed": true
+    },
+    {
+      "name": "relative_output_or_receipt_cannot_depend_on_working_directory",
+      "passed": true
+    },
+    {
+      "name": "shortened_duration_or_unbounded_wait_cannot_claim_ten_minutes",
+      "passed": true
+    },
+    {
+      "name": "missing_or_oversized_build_receipt_rejected",
+      "passed": true
+    },
+    {
+      "name": "partial_invalid_or_missing_sha_and_invalid_run_identity_rejected",
+      "passed": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceConfiguration.cs",
+      "sha256": "ac300c3889e4d03e980120b831d2b328ae99d47614c623b3d9b04bd34019c3b3"
+    },
+    {
+      "path": "tools/p10/RecorderConfigTests/Program.cs",
+      "sha256": "c486d8ea9585f857b91c63f9d0d8b7bf7a8c90dcee5c5882c4f30d537cf51627"
+    },
+    {
+      "path": "tools/p10/RecorderConfigTests/RecorderConfigTests.csproj",
+      "sha256": "e8f9a308fd22b8e29478fd99b5bcd1662bdc4f065d0ef16587e9476263049ae5"
+    }
+  ],
+  "scope": "Pure opt-in recorder configuration and filesystem-boundary tests; no Unity execution, player performance, visual or input acceptance."
+}

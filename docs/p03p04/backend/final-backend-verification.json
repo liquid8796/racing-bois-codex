@@ -1,0 +1,124 @@
+{
+  "generatedUtc": "2026-09-21T03:49:54.8499898Z",
+  "status": "PASS",
+  "sourceHash": "5a04e712b80300518a9e35053ae2a066bedefe2dc467a841c29044c44b6147aa",
+  "sourceFiles": 49,
+  "sourceUnchangedAcrossRun": true,
+  "nativeIntegrationPassed": 14,
+  "foundationRegressionPassed": 18,
+  "liveWsChecksPassed": 8,
+  "liveWssChecksPassed": 8,
+  "liveHumanPeers": 8,
+  "sameCombatHitEventId": 4,
+  "targetHealthAfterFist": 3648,
+  "pedestriansSeenByEveryPeer": true,
+  "attackPulseRegression": "Press then neutral before one authority tick preserves exactly one action; latest movement, cooldown, side/range, timeout and disconnect verified",
+  "liveCombatSetup": "Steer based on observed authority separation; client send counts are not treated as simulation ticks",
+  "tlsValidation": "System certificate validation, no callback or bypass",
+  "probePorts": [
+    17920,
+    17921
+  ],
+  "probeListenersClosed": true,
+  "sourceManifest": "docs/p03p04/backend/source-manifest.json",
+  "receipts": [
+    {
+      "path": "docs/p03p04/backend/application-integration.json",
+      "sha256": "dae5a4a9ac84249ec6e46741381bee0cdae1cae2dc834b05e043a52fc619e778",
+      "status": "PASS"
+    },
+    {
+      "path": "docs/p03p04/backend/foundation-regression.json",
+      "sha256": "e070f94b7c069fa7dd9054a5595a63cca0e460cfba01e74fba45dc63e7be27e2",
+      "status": "PASS"
+    },
+    {
+      "path": "docs/p03p04/backend/server-selftest.json",
+      "sha256": "6d3290fb4d9c02e7a29b89931fef81a079154613346fe66a17207e31f9df56da",
+      "status": "PASS"
+    },
+    {
+      "path": "docs/p03p04/backend/live-ws.json",
+      "sha256": "d5066879e92b788223b864c875309a263206b74bac7d6db8c733ccf4dbdf56fe",
+      "status": "PASS"
+    },
+    {
+      "path": "docs/p03p04/backend/live-wss.json",
+      "sha256": "bfce864441be57e3761fea42b09f853c5ec23958ee4ca01b32d6e83a865ced98",
+      "status": "PASS"
+    }
+  ],
+  "nativeArtifacts": [
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Gameplay.Definitions.dll",
+      "sha256": "1ca73e66be949b381cc292429f4084d3b1cefd19dd949da24a3feb855a148656",
+      "bytes": 10240
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Gameplay.Definitions.pdb",
+      "sha256": "278bfab7e31fd949e4ced23b015099a87bace9aaea012f7fea9474bc9bacfbad",
+      "bytes": 9984
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Protocol.dll",
+      "sha256": "6dbff44ff0edc75404dcdc3ca31c27a6545103707c63b6799259a9cde0070fcc",
+      "bytes": 7168
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Protocol.pdb",
+      "sha256": "9e4d21e66f659a3cf42513db0aca2f915b492f9b1a659b3337368e3fa72b5bae",
+      "bytes": 9284
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Application.dll",
+      "sha256": "df85ccc63d323733dab50fa5b5504aa983c759928004e11e9c2d32495f7dde81",
+      "bytes": 14336
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Application.pdb",
+      "sha256": "5d8638a83e3f68f6c05f182178cedbffd8f37bb0520d6bb07d1da60abb745d80",
+      "bytes": 13912
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Host.deps.json",
+      "sha256": "222ca4ceab6bb4eaec9a3809233372efc69bab5502559b9113791732f476bc55",
+      "bytes": 2271
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Host.dll",
+      "sha256": "e985dc53546ca83544b421794fda5d55844e2cf11409c4151613e51e471ccf7b",
+      "bytes": 42496
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Host.exe",
+      "sha256": "96f7d2e8e06c1681d03c5070e12ee2a1689b2e174f1ae644482390fb7be8f802",
+      "bytes": 162816
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Host.pdb",
+      "sha256": "a5227b11325023c1fc9d4f2193c1add0ce9bda547d0323a1dc1c3e41f783f4ec",
+      "bytes": 27220
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Host.runtimeconfig.json",
+      "sha256": "41442586a8262bc96a1c80f82f4d9384c03bfd465d221cbf01fb3563170f9e65",
+      "bytes": 491
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Server.Host.staticwebassets.endpoints.json",
+      "sha256": "c1686417e8d5c31bba969f12b6f3d2b35e6609adb5ca42f212261a3a02771aac",
+      "bytes": 53
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Simulation.dll",
+      "sha256": "989b4c0bdc34e0ba87e061644d6ae2f256678f9411aaff1ba30c4c205ec41056",
+      "bytes": 24576
+    },
+    {
+      "path": "_local/p03p04-attack-probe/RacingBois.Simulation.pdb",
+      "sha256": "29cdb710a254526c6e0735dcb61d267e7dcac1f5f0df6c0628acf46200d7a6a2",
+      "bytes": 18784
+    }
+  ],
+  "scope": "Native shared gameplay, actual Unity Application source and loopback WS/WSS. Browser rendering and final Web build have separate receipts."
+}

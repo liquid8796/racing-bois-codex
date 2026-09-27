@@ -1,0 +1,3581 @@
+{
+  "schema": 1,
+  "passed": true,
+  "trace": "D:\\Project\\Unity\\racing-bois\\docs\\p10\\correction-audit\\20260926T204559Z\\probe.json",
+  "traceSha256": "be388233402000f34497554cfe409feb6ee644fcebca49267c227f242212759b",
+  "scope": "Deterministic replay of recorded state with unchanged production RiderPredictor. Exclusion/synthetic-immunity variants are diagnostics only; observed-immunity variant uses other controlled peers\u0027 actual server checkpoints within6ticks. No production behavior was changed.",
+  "episodes": [
+    {
+      "Peer": 3,
+      "At": 65.9998739,
+      "Delta": 8.512001092437444,
+      "BeforeTick": 3755,
+      "AfterTick": 3758,
+      "TargetTick": 3772,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 3772,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 16,
+        "DistanceMillimeters": 1326967,
+        "LateralMillimeters": 1294,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 3717,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 3772,
+        "Mode": "Riding",
+        "ModeAgeTicks": 263,
+        "DistanceMillimeters": 1335459,
+        "LateralMillimeters": 1878,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 30627,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3717,
+        "RecoveryTicks": 275
+      },
+      "variants": [
+        {
+          "RiderId": 1,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 3,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 4,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Riding",
+            "ModeAgeTicks": 263,
+            "DistanceMillimeters": 1335459,
+            "LateralMillimeters": 1878,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 30627,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 275
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Riding",
+            "ModeAgeTicks": 263,
+            "DistanceMillimeters": 1335459,
+            "LateralMillimeters": 1878,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 30627,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 275
+          },
+          "ExclusionEqualsAfter": true,
+          "SyntheticImmunityEqualsAfter": true
+        },
+        {
+          "RiderId": 5,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 7,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3772,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 16,
+            "DistanceMillimeters": 1326967,
+            "LateralMillimeters": 1294,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 3758,
+          "CollisionUntilTick": 2610,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1147,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 3758,
+          "CollisionUntilTick": 2552,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1171,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 3758,
+          "CollisionUntilTick": 3759,
+          "Mode": "Riding",
+          "ModeAgeTicks": 89,
+          "RecoveryTicks": 262
+        },
+        {
+          "Id": 8,
+          "Tick": 3758,
+          "CollisionUntilTick": 3717,
+          "Mode": "Riding",
+          "ModeAgeTicks": 249,
+          "RecoveryTicks": 275
+        },
+        {
+          "Id": 3,
+          "Tick": 3755,
+          "CollisionUntilTick": 2854,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 900,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 3755,
+          "CollisionUntilTick": 3717,
+          "Mode": "Riding",
+          "ModeAgeTicks": 141,
+          "RecoveryTicks": 274
+        },
+        {
+          "Id": 7,
+          "Tick": 3755,
+          "CollisionUntilTick": 2844,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 910,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 3755,
+          "CollisionUntilTick": 3787,
+          "Mode": "Riding",
+          "ModeAgeTicks": 58,
+          "RecoveryTicks": 271
+        }
+      ],
+      "ObservedImmunityOverrideCount": 2,
+      "WithObservedImmunity": {
+        "Tick": 3772,
+        "Mode": "Riding",
+        "ModeAgeTicks": 263,
+        "DistanceMillimeters": 1335459,
+        "LateralMillimeters": 1878,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 30627,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3717,
+        "RecoveryTicks": 275
+      },
+      "ObservedImmunityEqualsAfter": true
+    },
+    {
+      "Peer": 3,
+      "At": 65.6877667,
+      "Delta": 7.338302864717848,
+      "BeforeTick": 3737,
+      "AfterTick": 3740,
+      "TargetTick": 3753,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 3753,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 15,
+        "DistanceMillimeters": 1318439,
+        "LateralMillimeters": 1769,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 3717,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 3753,
+        "Mode": "Riding",
+        "ModeAgeTicks": 244,
+        "DistanceMillimeters": 1325759,
+        "LateralMillimeters": 1252,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 27871,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3753,
+        "RecoveryTicks": 275
+      },
+      "variants": [
+        {
+          "RiderId": 1,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 7,
+            "DistanceMillimeters": 1322195,
+            "LateralMillimeters": 1534,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 7,
+            "DistanceMillimeters": 1322195,
+            "LateralMillimeters": 1534,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 3,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 4,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 5,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 7,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3753,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 15,
+            "DistanceMillimeters": 1318439,
+            "LateralMillimeters": 1769,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3717,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 3740,
+          "CollisionUntilTick": 2610,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1129,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 3740,
+          "CollisionUntilTick": 2552,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1153,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 3740,
+          "CollisionUntilTick": 3759,
+          "Mode": "Riding",
+          "ModeAgeTicks": 71,
+          "RecoveryTicks": 262
+        },
+        {
+          "Id": 8,
+          "Tick": 3740,
+          "CollisionUntilTick": 3717,
+          "Mode": "Riding",
+          "ModeAgeTicks": 231,
+          "RecoveryTicks": 275
+        },
+        {
+          "Id": 3,
+          "Tick": 3737,
+          "CollisionUntilTick": 2854,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 882,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 3737,
+          "CollisionUntilTick": 3717,
+          "Mode": "Riding",
+          "ModeAgeTicks": 123,
+          "RecoveryTicks": 274
+        },
+        {
+          "Id": 7,
+          "Tick": 3737,
+          "CollisionUntilTick": 2844,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 892,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 3737,
+          "CollisionUntilTick": 3787,
+          "Mode": "Riding",
+          "ModeAgeTicks": 40,
+          "RecoveryTicks": 271
+        }
+      ],
+      "ObservedImmunityOverrideCount": 2,
+      "WithObservedImmunity": {
+        "Tick": 3753,
+        "Mode": "Riding",
+        "ModeAgeTicks": 244,
+        "DistanceMillimeters": 1325995,
+        "LateralMillimeters": 1327,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 29033,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3717,
+        "RecoveryTicks": 275
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 5,
+      "At": 66.9422615,
+      "Delta": 5.727388122078661,
+      "BeforeTick": 3812,
+      "AfterTick": 3815,
+      "TargetTick": 3828,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 3828,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 14,
+        "DistanceMillimeters": 1338341,
+        "LateralMillimeters": 1511,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 3828,
+        "Mode": "Riding",
+        "ModeAgeTicks": 214,
+        "DistanceMillimeters": 1344065,
+        "LateralMillimeters": 1708,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 24222,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 274
+      },
+      "variants": [
+        {
+          "RiderId": 1,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 3,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 4,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 5,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 7,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 8,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 14,
+            "DistanceMillimeters": 1338341,
+            "LateralMillimeters": 1511,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 3828,
+            "Mode": "Riding",
+            "ModeAgeTicks": 214,
+            "DistanceMillimeters": 1343771,
+            "LateralMillimeters": 1527,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 21871,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3839,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3828,
+            "Mode": "Riding",
+            "ModeAgeTicks": 214,
+            "DistanceMillimeters": 1343771,
+            "LateralMillimeters": 1527,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 21871,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3839,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 3815,
+          "CollisionUntilTick": 2610,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1204,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 3815,
+          "CollisionUntilTick": 2552,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1228,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 3815,
+          "CollisionUntilTick": 3826,
+          "Mode": "Riding",
+          "ModeAgeTicks": 146,
+          "RecoveryTicks": 262
+        },
+        {
+          "Id": 8,
+          "Tick": 3815,
+          "CollisionUntilTick": 3717,
+          "Mode": "Riding",
+          "ModeAgeTicks": 306,
+          "RecoveryTicks": 275
+        },
+        {
+          "Id": 3,
+          "Tick": 3815,
+          "CollisionUntilTick": 2854,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 960,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 3815,
+          "CollisionUntilTick": 3826,
+          "Mode": "Riding",
+          "ModeAgeTicks": 201,
+          "RecoveryTicks": 274
+        },
+        {
+          "Id": 7,
+          "Tick": 3812,
+          "CollisionUntilTick": 2844,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 967,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 3812,
+          "CollisionUntilTick": 3813,
+          "Mode": "Riding",
+          "ModeAgeTicks": 115,
+          "RecoveryTicks": 271
+        }
+      ],
+      "ObservedImmunityOverrideCount": 3,
+      "WithObservedImmunity": {
+        "Tick": 3828,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 14,
+        "DistanceMillimeters": 1338505,
+        "LateralMillimeters": 1601,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 0
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 7,
+      "At": 154.7951711,
+      "Delta": 5.069944959112252,
+      "BeforeTick": 4323,
+      "AfterTick": 4326,
+      "TargetTick": 4336,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 4336,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 12,
+        "DistanceMillimeters": 1529200,
+        "LateralMillimeters": 1699,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 4269,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 4336,
+        "Mode": "Riding",
+        "ModeAgeTicks": 157,
+        "DistanceMillimeters": 1534269,
+        "LateralMillimeters": 1606,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 24150,
+        "Health": 4096,
+        "BikeCondition": 2,
+        "CollisionUntilTick": 4269,
+        "RecoveryTicks": 280
+      },
+      "variants": [
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 4336,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1529200,
+            "LateralMillimeters": 1699,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4336,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1529200,
+            "LateralMillimeters": 1699,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 4336,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1529200,
+            "LateralMillimeters": 1699,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4336,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1529200,
+            "LateralMillimeters": 1699,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 4336,
+            "Mode": "Riding",
+            "ModeAgeTicks": 157,
+            "DistanceMillimeters": 1534269,
+            "LateralMillimeters": 1606,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 24150,
+            "Health": 4096,
+            "BikeCondition": 2,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 280
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4336,
+            "Mode": "Riding",
+            "ModeAgeTicks": 157,
+            "DistanceMillimeters": 1534269,
+            "LateralMillimeters": 1606,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 24150,
+            "Health": 4096,
+            "BikeCondition": 2,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 280
+          },
+          "ExclusionEqualsAfter": true,
+          "SyntheticImmunityEqualsAfter": true
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 4326,
+          "CollisionUntilTick": 1542,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2270,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 4326,
+          "CollisionUntilTick": 1541,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2276,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 4326,
+          "CollisionUntilTick": 4007,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 99,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 8,
+          "Tick": 4326,
+          "CollisionUntilTick": 2312,
+          "Mode": "Busted",
+          "ModeAgeTicks": 1489,
+          "RecoveryTicks": 249
+        },
+        {
+          "Id": 3,
+          "Tick": 4326,
+          "CollisionUntilTick": 1937,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2264,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 4326,
+          "CollisionUntilTick": 4007,
+          "Mode": "Running",
+          "ModeAgeTicks": 106,
+          "RecoveryTicks": 166
+        },
+        {
+          "Id": 7,
+          "Tick": 4326,
+          "CollisionUntilTick": 1535,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2282,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 4326,
+          "CollisionUntilTick": 4269,
+          "Mode": "Riding",
+          "ModeAgeTicks": 147,
+          "RecoveryTicks": 280
+        }
+      ],
+      "ObservedImmunityOverrideCount": 0,
+      "WithObservedImmunity": {
+        "Tick": 4336,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 12,
+        "DistanceMillimeters": 1529200,
+        "LateralMillimeters": 1699,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 4269,
+        "RecoveryTicks": 0
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 1,
+      "At": 94.2979184,
+      "Delta": 3.2863188329592723,
+      "BeforeTick": 696,
+      "AfterTick": 699,
+      "TargetTick": 705,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 705,
+        "Mode": "Riding",
+        "ModeAgeTicks": 332,
+        "DistanceMillimeters": 361695,
+        "LateralMillimeters": -1643,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 38511,
+        "Health": 3456,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 709,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 705,
+        "Mode": "Falling",
+        "ModeAgeTicks": 7,
+        "DistanceMillimeters": 358409,
+        "LateralMillimeters": -1688,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 9570,
+        "Health": 2756,
+        "BikeCondition": 66,
+        "CollisionUntilTick": 696,
+        "RecoveryTicks": 7
+      },
+      "variants": [
+        {
+          "RiderId": 1,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Falling",
+            "ModeAgeTicks": 7,
+            "DistanceMillimeters": 358404,
+            "LateralMillimeters": -1688,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 9570,
+            "Health": 2756,
+            "BikeCondition": 66,
+            "CollisionUntilTick": 696,
+            "RecoveryTicks": 7
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Falling",
+            "ModeAgeTicks": 7,
+            "DistanceMillimeters": 358404,
+            "LateralMillimeters": -1688,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 9570,
+            "Health": 2756,
+            "BikeCondition": 66,
+            "CollisionUntilTick": 696,
+            "RecoveryTicks": 7
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 3,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 4,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 7,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 8,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 1001,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 1002,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 1003,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 1004,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 1005,
+          "WithoutThatRider": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 705,
+            "Mode": "Riding",
+            "ModeAgeTicks": 332,
+            "DistanceMillimeters": 361695,
+            "LateralMillimeters": -1643,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 38511,
+            "Health": 3456,
+            "BikeCondition": 100,
+            "CollisionUntilTick": 709,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 699,
+          "CollisionUntilTick": 696,
+          "Mode": "Falling",
+          "ModeAgeTicks": 2,
+          "RecoveryTicks": 2
+        },
+        {
+          "Id": 5,
+          "Tick": 699,
+          "CollisionUntilTick": 696,
+          "Mode": "Falling",
+          "ModeAgeTicks": 1,
+          "RecoveryTicks": 1
+        },
+        {
+          "Id": 2,
+          "Tick": 696,
+          "CollisionUntilTick": 0,
+          "Mode": "Falling",
+          "ModeAgeTicks": 0,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 8,
+          "Tick": 696,
+          "CollisionUntilTick": 708,
+          "Mode": "Riding",
+          "ModeAgeTicks": 132,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 3,
+          "Tick": 696,
+          "CollisionUntilTick": 696,
+          "Mode": "Riding",
+          "ModeAgeTicks": 134,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 696,
+          "CollisionUntilTick": 708,
+          "Mode": "Riding",
+          "ModeAgeTicks": 252,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 7,
+          "Tick": 696,
+          "CollisionUntilTick": 497,
+          "Mode": "Falling",
+          "ModeAgeTicks": 14,
+          "RecoveryTicks": 14
+        },
+        {
+          "Id": 4,
+          "Tick": 696,
+          "CollisionUntilTick": 0,
+          "Mode": "Riding",
+          "ModeAgeTicks": 696,
+          "RecoveryTicks": 0
+        }
+      ],
+      "ObservedImmunityOverrideCount": 2,
+      "WithObservedImmunity": {
+        "Tick": 705,
+        "Mode": "Riding",
+        "ModeAgeTicks": 332,
+        "DistanceMillimeters": 361695,
+        "LateralMillimeters": -1643,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 38511,
+        "Health": 3456,
+        "BikeCondition": 100,
+        "CollisionUntilTick": 709,
+        "RecoveryTicks": 0
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 7,
+      "At": 142.4407485,
+      "Delta": 2.5396258389486173,
+      "BeforeTick": 3582,
+      "AfterTick": 3585,
+      "TargetTick": 3595,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 3595,
+        "Mode": "Falling",
+        "ModeAgeTicks": 4,
+        "DistanceMillimeters": 1252623,
+        "LateralMillimeters": 1746,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 12797,
+        "Health": 3234,
+        "BikeCondition": 19,
+        "CollisionUntilTick": 3269,
+        "RecoveryTicks": 4
+      },
+      "After": {
+        "Tick": 3595,
+        "Mode": "Riding",
+        "ModeAgeTicks": 272,
+        "DistanceMillimeters": 1255162,
+        "LateralMillimeters": 1805,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 43405,
+        "Health": 3584,
+        "BikeCondition": 27,
+        "CollisionUntilTick": 3597,
+        "RecoveryTicks": 222
+      },
+      "variants": [
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 3595,
+            "Mode": "Falling",
+            "ModeAgeTicks": 4,
+            "DistanceMillimeters": 1252623,
+            "LateralMillimeters": 1746,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 12797,
+            "Health": 3234,
+            "BikeCondition": 19,
+            "CollisionUntilTick": 3269,
+            "RecoveryTicks": 4
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3595,
+            "Mode": "Falling",
+            "ModeAgeTicks": 4,
+            "DistanceMillimeters": 1252623,
+            "LateralMillimeters": 1746,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 12797,
+            "Health": 3234,
+            "BikeCondition": 19,
+            "CollisionUntilTick": 3269,
+            "RecoveryTicks": 4
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 3595,
+            "Mode": "Falling",
+            "ModeAgeTicks": 4,
+            "DistanceMillimeters": 1252623,
+            "LateralMillimeters": 1746,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 12797,
+            "Health": 3234,
+            "BikeCondition": 19,
+            "CollisionUntilTick": 3269,
+            "RecoveryTicks": 4
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3595,
+            "Mode": "Falling",
+            "ModeAgeTicks": 4,
+            "DistanceMillimeters": 1252623,
+            "LateralMillimeters": 1746,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 12797,
+            "Health": 3234,
+            "BikeCondition": 19,
+            "CollisionUntilTick": 3269,
+            "RecoveryTicks": 4
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 3595,
+            "Mode": "Falling",
+            "ModeAgeTicks": 4,
+            "DistanceMillimeters": 1252623,
+            "LateralMillimeters": 1746,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 12797,
+            "Health": 3234,
+            "BikeCondition": 19,
+            "CollisionUntilTick": 3269,
+            "RecoveryTicks": 4
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3595,
+            "Mode": "Falling",
+            "ModeAgeTicks": 4,
+            "DistanceMillimeters": 1252623,
+            "LateralMillimeters": 1746,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 12797,
+            "Health": 3234,
+            "BikeCondition": 19,
+            "CollisionUntilTick": 3269,
+            "RecoveryTicks": 4
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 3585,
+          "CollisionUntilTick": 1542,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1529,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 3585,
+          "CollisionUntilTick": 1541,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1535,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 3585,
+          "CollisionUntilTick": 3086,
+          "Mode": "Running",
+          "ModeAgeTicks": 81,
+          "RecoveryTicks": 141
+        },
+        {
+          "Id": 8,
+          "Tick": 3585,
+          "CollisionUntilTick": 2312,
+          "Mode": "Busted",
+          "ModeAgeTicks": 748,
+          "RecoveryTicks": 249
+        },
+        {
+          "Id": 3,
+          "Tick": 3585,
+          "CollisionUntilTick": 1937,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1523,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 3585,
+          "CollisionUntilTick": 3086,
+          "Mode": "Remounting",
+          "ModeAgeTicks": 38,
+          "RecoveryTicks": 234
+        },
+        {
+          "Id": 7,
+          "Tick": 3585,
+          "CollisionUntilTick": 1535,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1541,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 3585,
+          "CollisionUntilTick": 3597,
+          "Mode": "Riding",
+          "ModeAgeTicks": 262,
+          "RecoveryTicks": 222
+        }
+      ],
+      "ObservedImmunityOverrideCount": 1,
+      "WithObservedImmunity": {
+        "Tick": 3595,
+        "Mode": "Falling",
+        "ModeAgeTicks": 4,
+        "DistanceMillimeters": 1252623,
+        "LateralMillimeters": 1746,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 12797,
+        "Health": 3234,
+        "BikeCondition": 19,
+        "CollisionUntilTick": 3269,
+        "RecoveryTicks": 4
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 7,
+      "At": 118.8984589,
+      "Delta": 2.5312023393829954,
+      "BeforeTick": 2172,
+      "AfterTick": 2175,
+      "TargetTick": 2182,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 2182,
+        "Mode": "Falling",
+        "ModeAgeTicks": 8,
+        "DistanceMillimeters": 816975,
+        "LateralMillimeters": 1490,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 2804,
+        "Health": 3596,
+        "BikeCondition": 35,
+        "CollisionUntilTick": 2186,
+        "RecoveryTicks": 8
+      },
+      "After": {
+        "Tick": 2182,
+        "Mode": "Riding",
+        "ModeAgeTicks": 213,
+        "DistanceMillimeters": 819481,
+        "LateralMillimeters": 1846,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 22633,
+        "Health": 4096,
+        "BikeCondition": 51,
+        "CollisionUntilTick": 2186,
+        "RecoveryTicks": 255
+      },
+      "variants": [
+        {
+          "RiderId": 1,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 817201,
+            "LateralMillimeters": 1580,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 3204,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 817201,
+            "LateralMillimeters": 1580,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 3204,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 3,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 5,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 817201,
+            "LateralMillimeters": 1580,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 3204,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 817201,
+            "LateralMillimeters": 1580,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 3204,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 7,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 8,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 1003,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Falling",
+            "ModeAgeTicks": 8,
+            "DistanceMillimeters": 816975,
+            "LateralMillimeters": 1490,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 2804,
+            "Health": 3596,
+            "BikeCondition": 35,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 8
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 2182,
+            "Mode": "Riding",
+            "ModeAgeTicks": 213,
+            "DistanceMillimeters": 819323,
+            "LateralMillimeters": 1742,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 21459,
+            "Health": 4096,
+            "BikeCondition": 51,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 255
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 2182,
+            "Mode": "Riding",
+            "ModeAgeTicks": 213,
+            "DistanceMillimeters": 819323,
+            "LateralMillimeters": 1742,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 21459,
+            "Health": 4096,
+            "BikeCondition": 51,
+            "CollisionUntilTick": 2186,
+            "RecoveryTicks": 255
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 2175,
+          "CollisionUntilTick": 1542,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 119,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 2175,
+          "CollisionUntilTick": 1541,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 125,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 2175,
+          "CollisionUntilTick": 2186,
+          "Mode": "Riding",
+          "ModeAgeTicks": 106,
+          "RecoveryTicks": 243
+        },
+        {
+          "Id": 8,
+          "Tick": 2175,
+          "CollisionUntilTick": 2182,
+          "Mode": "Riding",
+          "ModeAgeTicks": 157,
+          "RecoveryTicks": 252
+        },
+        {
+          "Id": 3,
+          "Tick": 2175,
+          "CollisionUntilTick": 1937,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 113,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 2175,
+          "CollisionUntilTick": 2182,
+          "Mode": "Riding",
+          "ModeAgeTicks": 132,
+          "RecoveryTicks": 246
+        },
+        {
+          "Id": 7,
+          "Tick": 2175,
+          "CollisionUntilTick": 1535,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 131,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 2175,
+          "CollisionUntilTick": 2186,
+          "Mode": "Riding",
+          "ModeAgeTicks": 206,
+          "RecoveryTicks": 255
+        }
+      ],
+      "ObservedImmunityOverrideCount": 4,
+      "WithObservedImmunity": {
+        "Tick": 2182,
+        "Mode": "Riding",
+        "ModeAgeTicks": 213,
+        "DistanceMillimeters": 819639,
+        "LateralMillimeters": 1949,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 23807,
+        "Health": 4096,
+        "BikeCondition": 51,
+        "CollisionUntilTick": 2173,
+        "RecoveryTicks": 255
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 5,
+      "At": 66.7879733,
+      "Delta": 2.058645866646387,
+      "BeforeTick": 3803,
+      "AfterTick": 3806,
+      "TargetTick": 3819,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 3819,
+        "Mode": "Riding",
+        "ModeAgeTicks": 205,
+        "DistanceMillimeters": 1340394,
+        "LateralMillimeters": 1662,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 22115,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 274
+      },
+      "After": {
+        "Tick": 3819,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 5,
+        "DistanceMillimeters": 1338341,
+        "LateralMillimeters": 1511,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 0
+      },
+      "variants": [
+        {
+          "RiderId": 1,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340493,
+            "LateralMillimeters": 1749,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 23299,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340493,
+            "LateralMillimeters": 1749,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 23299,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 3,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 4,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 5,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 5,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 5,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 7,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 8,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3819,
+            "Mode": "Riding",
+            "ModeAgeTicks": 205,
+            "DistanceMillimeters": 1340394,
+            "LateralMillimeters": 1662,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22115,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 3806,
+          "CollisionUntilTick": 2610,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1195,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 3806,
+          "CollisionUntilTick": 2552,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1219,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 3806,
+          "CollisionUntilTick": 3813,
+          "Mode": "Riding",
+          "ModeAgeTicks": 137,
+          "RecoveryTicks": 262
+        },
+        {
+          "Id": 8,
+          "Tick": 3806,
+          "CollisionUntilTick": 3717,
+          "Mode": "Riding",
+          "ModeAgeTicks": 297,
+          "RecoveryTicks": 275
+        },
+        {
+          "Id": 3,
+          "Tick": 3806,
+          "CollisionUntilTick": 2854,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 951,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 3806,
+          "CollisionUntilTick": 3813,
+          "Mode": "Riding",
+          "ModeAgeTicks": 192,
+          "RecoveryTicks": 274
+        },
+        {
+          "Id": 7,
+          "Tick": 3803,
+          "CollisionUntilTick": 2844,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 958,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 3803,
+          "CollisionUntilTick": 3813,
+          "Mode": "Riding",
+          "ModeAgeTicks": 106,
+          "RecoveryTicks": 271
+        }
+      ],
+      "ObservedImmunityOverrideCount": 3,
+      "WithObservedImmunity": {
+        "Tick": 3819,
+        "Mode": "Riding",
+        "ModeAgeTicks": 205,
+        "DistanceMillimeters": 1340394,
+        "LateralMillimeters": 1662,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 22115,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 274
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 2,
+      "At": 152.0476349,
+      "Delta": 1.486140837129447,
+      "BeforeTick": 4158,
+      "AfterTick": 4161,
+      "TargetTick": 4171,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 4171,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 1,
+        "DistanceMillimeters": 1525549,
+        "LateralMillimeters": 1800,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 4007,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 4171,
+        "Mode": "Riding",
+        "ModeAgeTicks": 455,
+        "DistanceMillimeters": 1527035,
+        "LateralMillimeters": 1787,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 44747,
+        "Health": 4096,
+        "BikeCondition": 4,
+        "CollisionUntilTick": 4007,
+        "RecoveryTicks": 272
+      },
+      "variants": [
+        {
+          "RiderId": 4,
+          "WithoutThatRider": {
+            "Tick": 4171,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 1,
+            "DistanceMillimeters": 1525549,
+            "LateralMillimeters": 1800,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4007,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4171,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 1,
+            "DistanceMillimeters": 1525549,
+            "LateralMillimeters": 1800,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4007,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 4171,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 1,
+            "DistanceMillimeters": 1525549,
+            "LateralMillimeters": 1800,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4007,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4171,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 1,
+            "DistanceMillimeters": 1525549,
+            "LateralMillimeters": 1800,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4007,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 4171,
+            "Mode": "Riding",
+            "ModeAgeTicks": 455,
+            "DistanceMillimeters": 1527035,
+            "LateralMillimeters": 1787,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 44747,
+            "Health": 4096,
+            "BikeCondition": 4,
+            "CollisionUntilTick": 4007,
+            "RecoveryTicks": 272
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4171,
+            "Mode": "Riding",
+            "ModeAgeTicks": 455,
+            "DistanceMillimeters": 1527035,
+            "LateralMillimeters": 1787,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 44747,
+            "Health": 4096,
+            "BikeCondition": 4,
+            "CollisionUntilTick": 4007,
+            "RecoveryTicks": 272
+          },
+          "ExclusionEqualsAfter": true,
+          "SyntheticImmunityEqualsAfter": true
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 4161,
+          "CollisionUntilTick": 1542,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2105,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 4161,
+          "CollisionUntilTick": 1541,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2111,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 4161,
+          "CollisionUntilTick": 4007,
+          "Mode": "Riding",
+          "ModeAgeTicks": 445,
+          "RecoveryTicks": 272
+        },
+        {
+          "Id": 8,
+          "Tick": 4158,
+          "CollisionUntilTick": 2312,
+          "Mode": "Busted",
+          "ModeAgeTicks": 1321,
+          "RecoveryTicks": 249
+        },
+        {
+          "Id": 3,
+          "Tick": 4158,
+          "CollisionUntilTick": 1937,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2096,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 4158,
+          "CollisionUntilTick": 4007,
+          "Mode": "Riding",
+          "ModeAgeTicks": 122,
+          "RecoveryTicks": 256
+        },
+        {
+          "Id": 7,
+          "Tick": 4158,
+          "CollisionUntilTick": 1535,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2114,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 4158,
+          "CollisionUntilTick": 3654,
+          "Mode": "Remounting",
+          "ModeAgeTicks": 39,
+          "RecoveryTicks": 259
+        }
+      ],
+      "ObservedImmunityOverrideCount": 0,
+      "WithObservedImmunity": {
+        "Tick": 4171,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 1,
+        "DistanceMillimeters": 1525549,
+        "LateralMillimeters": 1800,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 4007,
+        "RecoveryTicks": 0
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 5,
+      "At": 66.7402799,
+      "Delta": 1.3811738385913113,
+      "BeforeTick": 3800,
+      "AfterTick": 3803,
+      "TargetTick": 3816,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 3816,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 2,
+        "DistanceMillimeters": 1337934,
+        "LateralMillimeters": 1426,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 3816,
+        "Mode": "Riding",
+        "ModeAgeTicks": 202,
+        "DistanceMillimeters": 1339294,
+        "LateralMillimeters": 1667,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 21788,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 274
+      },
+      "variants": [
+        {
+          "RiderId": 1,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Riding",
+            "ModeAgeTicks": 202,
+            "DistanceMillimeters": 1339334,
+            "LateralMillimeters": 1935,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22982,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Riding",
+            "ModeAgeTicks": 202,
+            "DistanceMillimeters": 1339334,
+            "LateralMillimeters": 1935,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 22982,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 3,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 4,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1338505,
+            "LateralMillimeters": 1601,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 5,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 7,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 8,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 2,
+            "DistanceMillimeters": 1337934,
+            "LateralMillimeters": 1426,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 3816,
+            "Mode": "Riding",
+            "ModeAgeTicks": 202,
+            "DistanceMillimeters": 1339000,
+            "LateralMillimeters": 1404,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 20637,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 3816,
+            "Mode": "Riding",
+            "ModeAgeTicks": 202,
+            "DistanceMillimeters": 1339000,
+            "LateralMillimeters": 1404,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 20637,
+            "Health": 4096,
+            "BikeCondition": 3,
+            "CollisionUntilTick": 3826,
+            "RecoveryTicks": 274
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 3803,
+          "CollisionUntilTick": 2610,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1192,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 3803,
+          "CollisionUntilTick": 2552,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 1216,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 3803,
+          "CollisionUntilTick": 3813,
+          "Mode": "Riding",
+          "ModeAgeTicks": 134,
+          "RecoveryTicks": 262
+        },
+        {
+          "Id": 8,
+          "Tick": 3803,
+          "CollisionUntilTick": 3717,
+          "Mode": "Riding",
+          "ModeAgeTicks": 294,
+          "RecoveryTicks": 275
+        },
+        {
+          "Id": 3,
+          "Tick": 3803,
+          "CollisionUntilTick": 2854,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 948,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 3803,
+          "CollisionUntilTick": 3813,
+          "Mode": "Riding",
+          "ModeAgeTicks": 189,
+          "RecoveryTicks": 274
+        },
+        {
+          "Id": 7,
+          "Tick": 3800,
+          "CollisionUntilTick": 2844,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 955,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 3800,
+          "CollisionUntilTick": 3800,
+          "Mode": "Riding",
+          "ModeAgeTicks": 103,
+          "RecoveryTicks": 271
+        }
+      ],
+      "ObservedImmunityOverrideCount": 2,
+      "WithObservedImmunity": {
+        "Tick": 3816,
+        "Mode": "Riding",
+        "ModeAgeTicks": 202,
+        "DistanceMillimeters": 1339294,
+        "LateralMillimeters": 2027,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 21788,
+        "Health": 4096,
+        "BikeCondition": 3,
+        "CollisionUntilTick": 3826,
+        "RecoveryTicks": 274
+      },
+      "ObservedImmunityEqualsAfter": false
+    },
+    {
+      "Peer": 7,
+      "At": 154.639959,
+      "Delta": 1.0805520644100204,
+      "BeforeTick": 4314,
+      "AfterTick": 4317,
+      "TargetTick": 4327,
+      "OldReplayVerified": true,
+      "NewReplayVerified": true,
+      "Before": {
+        "Tick": 4327,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 12,
+        "DistanceMillimeters": 1525903,
+        "LateralMillimeters": 1797,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 4269,
+        "RecoveryTicks": 0
+      },
+      "After": {
+        "Tick": 4327,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 9,
+        "DistanceMillimeters": 1526983,
+        "LateralMillimeters": 1765,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 4269,
+        "RecoveryTicks": 0
+      },
+      "variants": [
+        {
+          "RiderId": 2,
+          "WithoutThatRider": {
+            "Tick": 4327,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1525903,
+            "LateralMillimeters": 1797,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4327,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1525903,
+            "LateralMillimeters": 1797,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 6,
+          "WithoutThatRider": {
+            "Tick": 4327,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1525903,
+            "LateralMillimeters": 1797,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4327,
+            "Mode": "Wrecked",
+            "ModeAgeTicks": 12,
+            "DistanceMillimeters": 1525903,
+            "LateralMillimeters": 1797,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 0,
+            "Health": 3596,
+            "BikeCondition": 0,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 0
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        },
+        {
+          "RiderId": 2001,
+          "WithoutThatRider": {
+            "Tick": 4327,
+            "Mode": "Riding",
+            "ModeAgeTicks": 148,
+            "DistanceMillimeters": 1530722,
+            "LateralMillimeters": 1666,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 23016,
+            "Health": 4096,
+            "BikeCondition": 2,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 280
+          },
+          "WithSyntheticImmunity": {
+            "Tick": 4327,
+            "Mode": "Riding",
+            "ModeAgeTicks": 148,
+            "DistanceMillimeters": 1530722,
+            "LateralMillimeters": 1666,
+            "HeightMillimeters": 0,
+            "SpeedMillimetersPerSecond": 23016,
+            "Health": 4096,
+            "BikeCondition": 2,
+            "CollisionUntilTick": 4269,
+            "RecoveryTicks": 280
+          },
+          "ExclusionEqualsAfter": false,
+          "SyntheticImmunityEqualsAfter": false
+        }
+      ],
+      "ObservedPeerAuthorities": [
+        {
+          "Id": 1,
+          "Tick": 4317,
+          "CollisionUntilTick": 1542,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2261,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 5,
+          "Tick": 4317,
+          "CollisionUntilTick": 1541,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2267,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 2,
+          "Tick": 4317,
+          "CollisionUntilTick": 4007,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 90,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 8,
+          "Tick": 4317,
+          "CollisionUntilTick": 2312,
+          "Mode": "Busted",
+          "ModeAgeTicks": 1480,
+          "RecoveryTicks": 249
+        },
+        {
+          "Id": 3,
+          "Tick": 4317,
+          "CollisionUntilTick": 1937,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2255,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 6,
+          "Tick": 4317,
+          "CollisionUntilTick": 4007,
+          "Mode": "Running",
+          "ModeAgeTicks": 97,
+          "RecoveryTicks": 157
+        },
+        {
+          "Id": 7,
+          "Tick": 4317,
+          "CollisionUntilTick": 1535,
+          "Mode": "Wrecked",
+          "ModeAgeTicks": 2273,
+          "RecoveryTicks": 0
+        },
+        {
+          "Id": 4,
+          "Tick": 4317,
+          "CollisionUntilTick": 4269,
+          "Mode": "Riding",
+          "ModeAgeTicks": 138,
+          "RecoveryTicks": 280
+        }
+      ],
+      "ObservedImmunityOverrideCount": 0,
+      "WithObservedImmunity": {
+        "Tick": 4327,
+        "Mode": "Wrecked",
+        "ModeAgeTicks": 12,
+        "DistanceMillimeters": 1525903,
+        "LateralMillimeters": 1797,
+        "HeightMillimeters": 0,
+        "SpeedMillimetersPerSecond": 0,
+        "Health": 3596,
+        "BikeCondition": 0,
+        "CollisionUntilTick": 4269,
+        "RecoveryTicks": 0
+      },
+      "ObservedImmunityEqualsAfter": false
+    }
+  ]
+}

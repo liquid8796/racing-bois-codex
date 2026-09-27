@@ -1,0 +1,86 @@
+{
+  "generatedUtc": "2026-09-26T17:51:12.126201+00:00",
+  "framework": ".NET 10.0.9",
+  "passed": 18,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "integer_replay_golden_300_ticks",
+      "status": "PASS"
+    },
+    {
+      "name": "brake_stops_without_reverse_and_road_is_bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "authority_rejects_ownership_replay_jump_and_nonfinite",
+      "status": "PASS"
+    },
+    {
+      "name": "eight_rider_capacity_leave_join_and_stable_snapshot_order",
+      "status": "PASS"
+    },
+    {
+      "name": "snapshot_monotonic_and_input_timeout_coasts",
+      "status": "PASS"
+    },
+    {
+      "name": "protocol_public_fields_golden_roundtrip",
+      "status": "PASS"
+    },
+    {
+      "name": "shared_assemblies_have_no_unity_or_server_dependency",
+      "status": "PASS"
+    },
+    {
+      "name": "ingress_token_budget_allows_buffered_60hz_but_bounds_flood",
+      "status": "PASS"
+    },
+    {
+      "name": "client_handshake_sends_versions_and_rejects_mismatch",
+      "status": "PASS"
+    },
+    {
+      "name": "client_ignores_stale_and_foreign_snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "client_ack_clears_only_confirmed_inputs_and_replays_pending",
+      "status": "PASS"
+    },
+    {
+      "name": "client_no_ack_queue_is_bounded_and_reconnect_resets_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "client_disconnect_ignores_late_welcome_and_snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "client_dispose_stops_input_and_cannot_reconnect",
+      "status": "PASS"
+    },
+    {
+      "name": "client_invalid_snapshot_cannot_poison_tick_or_pending_ack",
+      "status": "PASS"
+    },
+    {
+      "name": "client_welcome_requires_connection_and_nonempty_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "client_quantization_matches_authority_at_half_permille",
+      "status": "PASS"
+    },
+    {
+      "name": "client_readmodel_is_immutable_and_detached_from_validated_wire_state",
+      "status": "PASS"
+    }
+  ],
+  "golden": {
+    "ticks": 300,
+    "distanceMillimeters": 150500,
+    "speedMillimetersPerSecond": 60000
+  },
+  "limitations": "Native replay and pure client application fixtures only. Unity Web must run the same golden test before cross-build determinism is accepted; native/JS transport lifetime needs browser integration verification."
+}

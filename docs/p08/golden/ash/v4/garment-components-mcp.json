@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ASH_GARMENT_COMPONENTS [{\"lod\": 0, \"components\": [{\"vertices\": 5351, \"min\": [-0.23791712522506714, -0.14402171969413757, 0.23599867522716522], \"max\": [0.23975788056850433, 0.10537693649530411, 1.064320683479309]}, {\"vertices\": 7631, \"min\": [-0.5346452593803406, -0.2504660487174988, 0.9459171891212463], \"max\": [0.5346450805664062, 0.12097369879484177, 1.5686479806900024]}]}, {\"lod\": 1, \"components\": [{\"vertices\": 2826, \"min\": [-0.23836466670036316, -0.14414317905902863, 0.23599830269813538], \"max\": [0.23976029455661774, 0.10557294636964798, 1.0643519163131714]}, {\"vertices\": 3259, \"min\": [-0.5342817306518555, -0.25067389011383057, 0.9459051489830017], \"max\": [0.5343261957168579, 0.12090359628200531, 1.5686733722686768]}]}, {\"lod\": 2, \"components\": [{\"vertices\": 1075, \"min\": [-0.23733697831630707, -0.14458908140659332, 0.23598739504814148], \"max\": [0.23858559131622314, 0.10592907667160034, 1.0647289752960205]}, {\"vertices\": 1050, \"min\": [-0.5337360501289368, -0.25081369280815125, 0.9460910558700562], \"max\": [0.533776044845581, 0.11919941008090973, 1.5690758228302002]}]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: ASH_GARMENT_COMPONENTS [{\"lod\": 0, \"components\": [{\"vertices\": 5351, \"min\": [-0.23791712522506714, -0.14402171969413757, 0.23599867522716522], \"max\": [0.23975788056850433, 0.10537693649530411, 1.064320683479309]}, {\"vertices\": 7631, \"min\": [-0.5346452593803406, -0.2504660487174988, 0.9459171891212463], \"max\": [0.5346450805664062, 0.12097369879484177, 1.5686479806900024]}]}, {\"lod\": 1, \"components\": [{\"vertices\": 2826, \"min\": [-0.23836466670036316, -0.14414317905902863, 0.23599830269813538], \"max\": [0.23976029455661774, 0.10557294636964798, 1.0643519163131714]}, {\"vertices\": 3259, \"min\": [-0.5342817306518555, -0.25067389011383057, 0.9459051489830017], \"max\": [0.5343261957168579, 0.12090359628200531, 1.5686733722686768]}]}, {\"lod\": 2, \"components\": [{\"vertices\": 1075, \"min\": [-0.23733697831630707, -0.14458908140659332, 0.23598739504814148], \"max\": [0.23858559131622314, 0.10592907667160034, 1.0647289752960205]}, {\"vertices\": 1050, \"min\": [-0.5337360501289368, -0.25081369280815125, 0.9460910558700562], \"max\": [0.533776044845581, 0.11919941008090973, 1.5690758228302002]}]}]\n"
+    },
+    "isError": false
+  }
+}

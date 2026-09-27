@@ -1,0 +1,55 @@
+{
+    "utc": "2026-09-26T21:05:14.7281175Z",
+    "validatorSha256": "b02970b1920e994b7637e29a15453064c8ec8b0c9eeec86021d41402a8232676",
+    "passed": true,
+    "cases": [
+        {
+            "name": "metre-encoded-centimetre-triangle",
+            "expectedAccepted": true,
+            "actualAccepted": true,
+            "passed": true
+        },
+        {
+            "name": "same-physical-triangle-scale100",
+            "expectedAccepted": true,
+            "actualAccepted": true,
+            "passed": true
+        },
+        {
+            "name": "same-physical-triangle-scale001",
+            "expectedAccepted": true,
+            "actualAccepted": true,
+            "passed": true
+        },
+        {
+            "name": "tiny-physical-triangle-rejected",
+            "expectedAccepted": false,
+            "actualAccepted": false,
+            "passed": true
+        },
+        {
+            "name": "collinear-triangle-rejected",
+            "expectedAccepted": false,
+            "actualAccepted": false,
+            "passed": true
+        },
+        {
+            "name": "nonuniform-valid-transform",
+            "expectedAccepted": true,
+            "actualAccepted": true,
+            "passed": true
+        },
+        {
+            "name": "collapsed-transform-rejected",
+            "expectedAccepted": false,
+            "actualAccepted": false,
+            "passed": true
+        },
+        {
+            "name": "large-translation-does-not-change-area",
+            "expectedAccepted": true,
+            "actualAccepted": true,
+            "passed": true
+        }
+    ]
+}

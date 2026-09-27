@@ -1,0 +1,1316 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T00:50:55.221864+00:00",
+  "scope": "Read-only audit snapshot. Original research retained outside production. No editor/DCC/server call or running-probe source mutation. Report is not asset acceptance.",
+  "ledgerSha256": "4f00e901fd130b31ede908c0f630c98130637eed7494fc83cda7be8a9ffc89bb",
+  "ledgerRows": 491,
+  "ledgerCategoryCounts": {
+    "courses": 5,
+    "bikes": 15,
+    "characters": 8,
+    "animation": 2,
+    "equipment": 4,
+    "world_roles": 4,
+    "render_support": 1,
+    "family_catalog": 163,
+    "horizons": 5,
+    "ui_dashboard": 3,
+    "presentation": 3,
+    "image_catalog": 119,
+    "audio_effect": 72,
+    "music_pcm": 14,
+    "music_mids": 11,
+    "cinematic": 59,
+    "music_support": 1,
+    "typography": 1,
+    "localization": 1
+  },
+  "ledgerStates": {
+    "partial": 192,
+    "pending": 299
+  },
+  "ledgerBoundFilesChecked": 297,
+  "ledgerBindingMismatches": [
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CareerView.cs",
+      "expected": "1fe326399886f4519be5f068c8eb918b399c69af4d2a2a7cc274f0dc733200c1",
+      "actual": "51ee1179cf071ddc973a671321d5325d4bf57353a84262368a0d6803b500b819"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicGalleryView.cs",
+      "expected": "7fdd3554b0f2442563677aceeddcee5a9ad939c0ca220a7d63b32082be0e05e2",
+      "actual": "b3fe01716fb951f8db4f5bf500e1bacd532de338d154118484f27724f28752b0"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/CinematicPoseSampler.cs",
+      "expected": "7870c9199b1abff11172d1bc9bd969e7ae567f12a59e873690aea2990bc98eee",
+      "actual": "1e4204fc4a16677be7c53054be47b7b15f7a9b9b3601b5cf87915d8c76ed087b"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/MultiplayerLobbyView.cs",
+      "expected": "097cb36f0dc8052d33903a0fb06f13f81eead89bccb531a985b627781963a8ce",
+      "actual": "086eb98c3d361ce16ff69fe7fa0db25489090be28b898495c41adba92a8e283a"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Presentation/RaceScreen.cs",
+      "expected": "76bf7c89f2ad1a330171cb63d3646cede60268cc1c7d0890cbca41c86ceb7e30",
+      "actual": "756317a551b60178c2dca3bcb3b8462a82c7184f1f5d74cf66e3eebb2adf43d9"
+    },
+    {
+      "path": "Assets/RacingBois/UI/Career.uss",
+      "expected": "2a6b944a011343e27f1408fa481c147b7b1fc9bed856a687ad114991cf40c31b",
+      "actual": "9cb6057aa667f730368539f866b570774cc8bdad44de18a0c335c477ba1e56ee"
+    },
+    {
+      "path": "Assets/RacingBois/UI/Fonts/PROVENANCE.md",
+      "expected": "b18ade5a15d9bcb71b481c273cb760184bd01d393d420361583d87aa1b1a84fc",
+      "actual": "36adcfa6789e49cb4ef32cdd40f021a25d6a9465e3447b83bba6d8c5a91c004a"
+    },
+    {
+      "path": "Assets/RacingBois/UI/Race.uss",
+      "expected": "548d57b848771a9e1f31baedc83fd4c629e418b3c807acbd90a02d857ddd0443",
+      "actual": "d05fd9e2260c460e9621a5dbf14b01ccabb62b398b3d871e7e9ca0dad7b5bfd4"
+    },
+    {
+      "path": "Assets/RacingBois/UI/Race.uxml",
+      "expected": "727ac4bf179f268953baae24fe905075a69d7781a3e46a76639196a735030250",
+      "actual": "97c37af118d428db1871247aec9e219431d009399067cfc9c3ff0037025cca44"
+    }
+  ],
+  "originalFiles": 374,
+  "originalBytes": 503081481,
+  "originalHashMismatches": [],
+  "originalUniqueFileHashes": 365,
+  "familyAccounting": {
+    "containerEntries": 269,
+    "nonemptyCompounds": 163,
+    "nonemptyUniqueRawHashes": 163,
+    "rrsmEventRecords": 600,
+    "rrsmReferencedFamilyUnion": [
+      1,
+      3,
+      7,
+      10,
+      11,
+      12,
+      15,
+      17,
+      18,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      35,
+      36,
+      37,
+      38,
+      39,
+      41,
+      42,
+      52,
+      54,
+      57,
+      61,
+      62,
+      63,
+      65,
+      66,
+      68,
+      69,
+      77,
+      81,
+      85,
+      86,
+      87,
+      92,
+      94,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      110,
+      111,
+      112,
+      113,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      127,
+      128,
+      131,
+      132,
+      134,
+      135,
+      138,
+      139,
+      144,
+      145,
+      148,
+      149,
+      150,
+      151,
+      153,
+      154,
+      156,
+      158,
+      159,
+      160,
+      161,
+      164,
+      165,
+      166,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      179,
+      180,
+      181,
+      182,
+      183,
+      185,
+      186,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      220,
+      221,
+      223,
+      224,
+      225,
+      226,
+      228,
+      230,
+      231,
+      234,
+      235,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      264,
+      265,
+      266,
+      267,
+      268
+    ],
+    "rrsmReferencedUniqueCount": 162,
+    "courseMembershipCount": {
+      "CITY": 51,
+      "CANYN": 36,
+      "NAPA": 23,
+      "MEDLY": 38,
+      "HIWAY": 21
+    },
+    "noCourseReference": [
+      "FAM-269"
+    ],
+    "semanticIndependence": "Unresolved: unique compound bytes do not imply unique visual families; repeated component/LOD/frame representations must be mapped."
+  },
+  "imageAccounting": {
+    "referenceRows": 119,
+    "groups": {
+      "": 1,
+      "IMAGES/BIKES/RAT": 5,
+      "IMAGES/BIKES/SPORT": 5,
+      "IMAGES/BIKES/SUPER": 5,
+      "IMAGES/CHARS": 25,
+      "IMAGES": 7,
+      "IMAGES/POSTCARD": 15,
+      "IMAGES/RESTROOM": 6,
+      "IMAGES/RESULTS": 29,
+      "IMAGES/SHOWROOM/RAT": 6,
+      "IMAGES/SHOWROOM/SPORT": 6,
+      "IMAGES/SHOWROOM/SUPER": 6,
+      "IMAGES/STREET": 3
+    },
+    "note": "Bike/portrait/showroom images overlap other functional rows. Do not add119image rows to15SKU/8identity totals."
+  },
+  "legacyExports": {
+    "declared": 36,
+    "kindCounts": {
+      "bike": 12,
+      "scenery": 18,
+      "landmark": 2,
+      "foliage": 4
+    },
+    "hashChecks": [
+      {
+        "id": "RB_P08_Bike_01",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_01.blend",
+        "expected": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b",
+        "actual": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_01",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_01.fbx",
+        "expected": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4",
+        "actual": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_01",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/01-kestrel-v1.png",
+        "expected": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+        "actual": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_02",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_02.blend",
+        "expected": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41",
+        "actual": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_02",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_02.fbx",
+        "expected": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999",
+        "actual": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_02",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/02-rift-250-v1.png",
+        "expected": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+        "actual": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_03",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_03.blend",
+        "expected": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03",
+        "actual": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_03",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_03.fbx",
+        "expected": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3",
+        "actual": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_03",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/03-jackal-v1.png",
+        "expected": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+        "actual": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_04",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_04.blend",
+        "expected": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569",
+        "actual": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_04",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_04.fbx",
+        "expected": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5",
+        "actual": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_04",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/04-ember-v1.png",
+        "expected": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+        "actual": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_05",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_05.blend",
+        "expected": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162",
+        "actual": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_05",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_05.fbx",
+        "expected": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262",
+        "actual": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_05",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/05-apex-v1.png",
+        "expected": "baba735ce7f94d64a514ea1e87f9fc3ecdcaee865fd219e8794ec118d1f222f8",
+        "actual": "baba735ce7f94d64a514ea1e87f9fc3ecdcaee865fd219e8794ec118d1f222f8",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_06",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_06.blend",
+        "expected": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b",
+        "actual": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_06",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_06.fbx",
+        "expected": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685",
+        "actual": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_06",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/06-corvus-v1.png",
+        "expected": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+        "actual": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_07",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_07.blend",
+        "expected": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7",
+        "actual": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_07",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_07.fbx",
+        "expected": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def",
+        "actual": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_07",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/07-viper-v1.png",
+        "expected": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+        "actual": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_08",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_08.blend",
+        "expected": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26",
+        "actual": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_08",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_08.fbx",
+        "expected": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae",
+        "actual": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_08",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/08-rift-750-n-v1.png",
+        "expected": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+        "actual": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_09",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_09.blend",
+        "expected": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea",
+        "actual": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_09",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_09.fbx",
+        "expected": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a",
+        "actual": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_09",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/09-specter-v1.png",
+        "expected": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+        "actual": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_10",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_10.blend",
+        "expected": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb",
+        "actual": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_10",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_10.fbx",
+        "expected": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be",
+        "actual": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_10",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/10-nightjar-v1.png",
+        "expected": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+        "actual": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_11",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_11.blend",
+        "expected": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259",
+        "actual": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_11",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_11.fbx",
+        "expected": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed",
+        "actual": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_11",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/11-cinder-10-v1.png",
+        "expected": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+        "actual": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_12",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_Bike_12.blend",
+        "expected": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb",
+        "actual": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_12",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_12.fbx",
+        "expected": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19",
+        "actual": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_Bike_12",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Bikes/12-rift-750-v1.png",
+        "expected": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+        "actual": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityBusShelter",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "expected": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "actual": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityBusShelter",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityBusShelter.fbx",
+        "expected": "c299d11023a7ad9a0cc526bbb2bdf7faf17149431882b31933a1c68d10cd9271",
+        "actual": "c299d11023a7ad9a0cc526bbb2bdf7faf17149431882b31933a1c68d10cd9271",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityBusShelter",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "expected": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "actual": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityCornerShop",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "expected": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "actual": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityCornerShop",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityCornerShop.fbx",
+        "expected": "bab4682e01904d0431f9ea0604d21a7850eab57771e6cfce652daaaad4736132",
+        "actual": "bab4682e01904d0431f9ea0604d21a7850eab57771e6cfce652daaaad4736132",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityCornerShop",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "expected": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "actual": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityLoadingGantry",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "expected": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "actual": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityLoadingGantry",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityLoadingGantry.fbx",
+        "expected": "c6cc9318824586d088ad2fb077fd2e484e046411dd64c5d1202792228aa7d0b6",
+        "actual": "c6cc9318824586d088ad2fb077fd2e484e046411dd64c5d1202792228aa7d0b6",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityLoadingGantry",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "expected": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "actual": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityStreetlamp",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "expected": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "actual": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityStreetlamp",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityStreetlamp.fbx",
+        "expected": "24a3a8251cf47f8574b12c0d03c104607418e98a1ae14dbc578e26a579512b0c",
+        "actual": "24a3a8251cf47f8574b12c0d03c104607418e98a1ae14dbc578e26a579512b0c",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityStreetlamp",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "expected": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "actual": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityWarehouse",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "expected": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "actual": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityWarehouse",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityWarehouse.fbx",
+        "expected": "1362d12bf93c24b4895980dac3dcbe04200a606fc21c48ba0be6f002d5624875",
+        "actual": "1362d12bf93c24b4895980dac3dcbe04200a606fc21c48ba0be6f002d5624875",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityWarehouse",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "expected": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "actual": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityWaterTank",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "expected": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "actual": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityWaterTank",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityWaterTank.fbx",
+        "expected": "0dddc76cab04106d257ff9cc5f81baa35e495d18509557bb37d257d474642901",
+        "actual": "0dddc76cab04106d257ff9cc5f81baa35e495d18509557bb37d257d474642901",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CityWaterTank",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "expected": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "actual": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBeacon",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "expected": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "actual": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBeacon",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx",
+        "expected": "940d8efe0481447621ae5b35f14dd006581ac387e743d67e871b7f73cd828ae2",
+        "actual": "940d8efe0481447621ae5b35f14dd006581ac387e743d67e871b7f73cd828ae2",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBeacon",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "expected": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "actual": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBoulder",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "expected": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "actual": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBoulder",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx",
+        "expected": "d8ca5ea95ce2507de00bb5ed27210642494e957b0c380d96f074bbafbf7b8213",
+        "actual": "d8ca5ea95ce2507de00bb5ed27210642494e957b0c380d96f074bbafbf7b8213",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBoulder",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "expected": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "actual": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBridgePier",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "expected": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "actual": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBridgePier",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx",
+        "expected": "0e404eed77758b4dd56eee73e274cf267a88056d6396157a9564ad373ba94b09",
+        "actual": "0e404eed77758b4dd56eee73e274cf267a88056d6396157a9564ad373ba94b09",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBridgePier",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "expected": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "actual": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBroadleafShrub",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "expected": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "actual": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBroadleafShrub",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx",
+        "expected": "6e0bb08db0d515bcde3c1ec6336a105b12b40e197abed28b1a0966c8e20b43d3",
+        "actual": "6e0bb08db0d515bcde3c1ec6336a105b12b40e197abed28b1a0966c8e20b43d3",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastBroadleafShrub",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "expected": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "actual": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastPalm",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "expected": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "actual": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastPalm",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx",
+        "expected": "f79fbf463e7dbb9e89081f2f16959ee94807b8fc22283f61c1202367dc8204ba",
+        "actual": "f79fbf463e7dbb9e89081f2f16959ee94807b8fc22283f61c1202367dc8204ba",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastPalm",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "expected": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "actual": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastSurfShack",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "expected": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "actual": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastSurfShack",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx",
+        "expected": "25923ff4a7d3c03480cbd558c127b7ddbeea4be8b113ff0cab6c1cf2c81b2ce5",
+        "actual": "25923ff4a7d3c03480cbd558c127b7ddbeea4be8b113ff0cab6c1cf2c81b2ce5",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_CoastSurfShack",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "expected": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "actual": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardAppleTree",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "expected": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "actual": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardAppleTree",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardAppleTree.fbx",
+        "expected": "24b701c3f1cb5ae39f28ddd22d19c0bcafe45e92021def786df55cb59583f57b",
+        "actual": "24b701c3f1cb5ae39f28ddd22d19c0bcafe45e92021def786df55cb59583f57b",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardAppleTree",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "expected": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "actual": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardBarn",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "expected": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "actual": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardBarn",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardBarn.fbx",
+        "expected": "d44af8613fba3ca0ed74704bb67849e8b5c0919d3a3424de5f1c7afdc7ecc742",
+        "actual": "d44af8613fba3ca0ed74704bb67849e8b5c0919d3a3424de5f1c7afdc7ecc742",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardBarn",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "expected": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "actual": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardFence",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "expected": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "actual": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardFence",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardFence.fbx",
+        "expected": "32b9c37ef277672ceb8f8f962a4a959c20b12a4740edad77a9f83f56fe7bd6bd",
+        "actual": "32b9c37ef277672ceb8f8f962a4a959c20b12a4740edad77a9f83f56fe7bd6bd",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardFence",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "expected": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "actual": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardHayBale",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "expected": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "actual": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardHayBale",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardHayBale.fbx",
+        "expected": "761bc59f380178a1a06fd4d54d203546b60130d48d93b6c1bad16f9fe8512398",
+        "actual": "761bc59f380178a1a06fd4d54d203546b60130d48d93b6c1bad16f9fe8512398",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardHayBale",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "expected": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "actual": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardProduceKiosk",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "expected": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "actual": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardProduceKiosk",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardProduceKiosk.fbx",
+        "expected": "e3239b85e3f38562ff775e83f133574cb59834cdf9b74d2aa3a4b90bc7f47105",
+        "actual": "e3239b85e3f38562ff775e83f133574cb59834cdf9b74d2aa3a4b90bc7f47105",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardProduceKiosk",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "expected": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "actual": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardSilo",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "expected": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "actual": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardSilo",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardSilo.fbx",
+        "expected": "7b45624c6bcfd7e00b719b4dd2294120bf5258644d42a331efe78d76f802f1ab",
+        "actual": "7b45624c6bcfd7e00b719b4dd2294120bf5258644d42a331efe78d76f802f1ab",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_OrchardSilo",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "expected": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "actual": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_RidgeFir",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "expected": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "actual": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeFir",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeFir.fbx",
+        "expected": "79aee4f97f9a0fbf62a78fa61e660a1a2918b52058f7ae9a79002edb22e7d5db",
+        "actual": "684e3b248a149a80e9bf4c8456c61a5455199510fb20afb6b728b7858f35a373",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeFir",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "expected": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "actual": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_RidgeGalleryArch",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "expected": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "actual": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeGalleryArch",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeGalleryArch.fbx",
+        "expected": "c454333c4efac915ae5bf62671101a0bd4d9b5e5db77d5933699dbf44ffdaea5",
+        "actual": "f5ee6144b1472e26c8ed65dd021f6043b4cdc61c8b8aa80cb43a51d12a309d3b",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeGalleryArch",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "expected": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "actual": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_RidgeGranite",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "expected": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "actual": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeGranite",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeGranite.fbx",
+        "expected": "6ef8170cb18713f6695a3e5c027c7b6f33fb864a35362feb98d939ea2db6efd5",
+        "actual": "bb07add43fa3f16e59e3e3ff88d7429b3f203864fc505542fe1920a7e37673b2",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeGranite",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "expected": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "actual": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_RidgeSnowPole",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "expected": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "actual": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeSnowPole",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeSnowPole.fbx",
+        "expected": "e15087b9b33a155d650da8beea1fd745691216a548f2e7061b8cf325347f2c67",
+        "actual": "18e14ea8fb3c23a0f242c2dc0394243b3cae80e49fd37b2513d9c2073581c8cf",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeSnowPole",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "expected": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "actual": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_RidgeStoneWall",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "expected": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "actual": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeStoneWall",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeStoneWall.fbx",
+        "expected": "a629ae4addb71e0bba0e25336e444fcf0c72da3d5eb3659ae6550f40dabf235f",
+        "actual": "86ff88b3f0dd55d0da06862c5dfdabfe99dd4da342a1414bb40ed84f78ad62a2",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeStoneWall",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "expected": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "actual": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matches": true
+      },
+      {
+        "id": "RB_P08_RidgeTimberHut",
+        "kind": "source",
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "expected": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "actual": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeTimberHut",
+        "kind": "fbx",
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeTimberHut.fbx",
+        "expected": "274ac9c04cdff0acaf3d3c837ba04b5949c3530bbc2b13a56ecb876fcf26579b",
+        "actual": "6e2eb1ab1257b71714e3c2e6e7c8acef0f195a5853e8d2dff159d4857db3f1c8",
+        "matches": false
+      },
+      {
+        "id": "RB_P08_RidgeTimberHut",
+        "kind": "concept",
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "expected": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "actual": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "matches": true
+      }
+    ],
+    "mismatchingRows": 12,
+    "uniqueMismatchingPaths": [
+      "ArtSource/P08/RB_P08_ridge.blend",
+      "Assets/RacingBois/Art/P08/RB_P08_RidgeFir.fbx",
+      "Assets/RacingBois/Art/P08/RB_P08_RidgeGalleryArch.fbx",
+      "Assets/RacingBois/Art/P08/RB_P08_RidgeGranite.fbx",
+      "Assets/RacingBois/Art/P08/RB_P08_RidgeSnowPole.fbx",
+      "Assets/RacingBois/Art/P08/RB_P08_RidgeStoneWall.fbx",
+      "Assets/RacingBois/Art/P08/RB_P08_RidgeTimberHut.fbx"
+    ],
+    "bikeFbxIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bikePrefabIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "riderFbxIndices": [],
+    "portraitPngCount": 0
+  },
+  "goldenCandidates": [
+    {
+      "descriptor": "docs/p08/golden/apex/v8/r2/descriptor.json",
+      "descriptorSha256": "a2b7c3e2223a3e375942b970ad095904b42166e92330cf1f0350b61b66524328",
+      "ids": [
+        "RB_Golden_Apex_v8_r2"
+      ],
+      "inputs": 33,
+      "inputMismatches": [],
+      "latestMatchingImport": {
+        "path": "docs/p08/golden/unity/import-bce90c9f9b3e4fe68c160eba02dba27f.json",
+        "descriptor": "docs/p08/golden/unity/actors-v3-review.json",
+        "exactAssetEntryMatches": true,
+        "utc": "2026-09-26T21:58:35.9882399Z",
+        "passed": true,
+        "sourceBindingPassed": true,
+        "sourceFingerprint": "7eb40d2badd0141d378f6d420b790737a0a03eef431af856fa8727098616be0c",
+        "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
+      },
+      "visualAcceptance": "not accepted; see corresponding version README and matched-view review, technical receipts alone are insufficient"
+    },
+    {
+      "descriptor": "docs/p08/golden/apex/r3/descriptor.json",
+      "descriptorSha256": "f05c53f4de92f5c0a1cd71b66d0214e594c4c028a23c4bbbce9645351e29af69",
+      "ids": [
+        "RB_Golden_Apex_r3"
+      ],
+      "inputs": 33,
+      "inputMismatches": [],
+      "latestMatchingImport": null,
+      "visualAcceptance": "not accepted; see corresponding version README and matched-view review, technical receipts alone are insufficient"
+    },
+    {
+      "descriptor": "docs/p08/golden/ash/v3/descriptor-bind.json",
+      "descriptorSha256": "2d891776f22e67e2a2451794497e1547aab2abbb10c689a76a59c4ee18b4d171",
+      "ids": [
+        "RB_Golden_Ash_V3"
+      ],
+      "inputs": 56,
+      "inputMismatches": [],
+      "latestMatchingImport": {
+        "path": "docs/p08/golden/unity/import-bce90c9f9b3e4fe68c160eba02dba27f.json",
+        "descriptor": "docs/p08/golden/unity/actors-v3-review.json",
+        "exactAssetEntryMatches": true,
+        "utc": "2026-09-26T21:58:35.9882399Z",
+        "passed": true,
+        "sourceBindingPassed": true,
+        "sourceFingerprint": "7eb40d2badd0141d378f6d420b790737a0a03eef431af856fa8727098616be0c",
+        "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
+      },
+      "visualAcceptance": "not accepted; see corresponding version README and matched-view review, technical receipts alone are insufficient"
+    },
+    {
+      "descriptor": "docs/p08/golden/canyon/v16/descriptor.json",
+      "descriptorSha256": "44eb173dad45ce9e6d46e2245498d2cd44e17614bbaf0085535663222b23d097",
+      "ids": [
+        "RB_Golden_Canyon_v16"
+      ],
+      "inputs": 50,
+      "inputMismatches": [],
+      "latestMatchingImport": {
+        "path": "docs/p08/golden/unity/import-7356c54b08054b2f95aed6772d565300.json",
+        "descriptor": "docs/p08/golden/canyon/v16/descriptor.json",
+        "exactAssetEntryMatches": true,
+        "utc": "2026-09-26T22:19:43.7492601Z",
+        "passed": true,
+        "sourceBindingPassed": true,
+        "sourceFingerprint": "fe66aa9f25cf0cef29677747d8526677d88988fcd16eac10670cbcd6ebb1dde7",
+        "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
+      },
+      "visualAcceptance": "not accepted; see corresponding version README and matched-view review, technical receipts alone are insufficient"
+    },
+    {
+      "descriptor": "docs/p08/golden/garage/v5/descriptor.json",
+      "descriptorSha256": "d18ecb1071eafed61226c475585b90e4aa268b83cfca5e103f10d9d5de68a802",
+      "ids": [
+        "RB_Golden_Garage_v5"
+      ],
+      "inputs": 48,
+      "inputMismatches": [],
+      "latestMatchingImport": {
+        "path": "docs/p08/golden/unity/import-e3929e24692049a398027f060c715858.json",
+        "descriptor": "docs/p08/golden/garage/v5/descriptor.json",
+        "exactAssetEntryMatches": true,
+        "utc": "2026-09-27T00:47:18.6688838Z",
+        "passed": true,
+        "sourceBindingPassed": true,
+        "sourceFingerprint": "603fffdbbbab0ceaec9f97cb17cd8bee30689f363a50d804a45794ff1479a7bc",
+        "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
+      },
+      "visualAcceptance": "not accepted; see corresponding version README and matched-view review, technical receipts alone are insufficient"
+    }
+  ],
+  "concepts": {
+    "p08Bike": 14,
+    "p08Rider": 8,
+    "p08Environment": 4,
+    "p08UiV1": 5
+  },
+  "media": {
+    "runtimeOggFiles": 97,
+    "declaredClips": 97,
+    "clipCategoryCounts": {
+      "music": 25,
+      "sfx": 72
+    }
+  },
+  "productionPackLocations": {
+    "Assets/RacingBois/Content/P08": false,
+    "Assets/StreamingAssets/Content": false,
+    "Build/Content-editor": false,
+    "Build/Content-desktop": false,
+    "Build/Content": false,
+    "Build/Desktop-P08": false
+  },
+  "availabilityMasks": {
+    "AvailableRouteMask": "1",
+    "AvailableBikeArtMask": "1",
+    "AvailableCharacterArtMask": "1"
+  },
+  "protectedClubSha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f",
+  "globalCompletionPercentage": null
+}

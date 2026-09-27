@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "utc": "2026-09-27T03:53:33.658788+00:00",
+  "passed": true,
+  "tests": 405,
+  "realEpisodes": 39,
+  "controlledScenarios": 312,
+  "maximumRawCorrectionMeters": 7.850992089043688,
+  "maximumTemporaryVisualOffsetMeters": 7.210405,
+  "maximumFirstRiderStepMeters": 0,
+  "maximumFirstBikeStepMeters": 0,
+  "maximumAdditionalCorrectionSpeedMps": 39.985798,
+  "maximumControlledSettlingSeconds": 0.30000000000000004,
+  "minimumControlledCameraRiderDepthMeters": 6.3239055,
+  "frozenSourceCount": 163,
+  "frozenSourceChanges": [],
+  "stagedSourcesStable": true,
+  "stagedFiles": {
+    "tools/p10/pose-envelope-staging/candidate-manifest.json": "7e5de173bf082ec75ba6f2ecef66ebd147e57764d1990df3319caded022e1fbe",
+    "tools/p10/pose-envelope-staging/EnvelopeTests.csproj": "03cf60065ea0bfb86e303494eff049d00d3a46bcab078be7e6ff745d3a9ede00",
+    "tools/p10/pose-envelope-staging/PoseGeometry.cs": "fa757b063893c3d8f6c831127c866d0a2144ecbc670e3e6ff7d2a6347508d8f9",
+    "tools/p10/pose-envelope-staging/prepare_integration.py": "305a0a0a96b9cc2f7f3ba3160658b57200be66230a4c82947da0533adea86bdb",
+    "tools/p10/pose-envelope-staging/PresentationContinuityScope.cs": "8a7b6ac81f1d93fcb43aae380f0ec9e0c90fe3b0f9eae10b5797df551c519ab7",
+    "tools/p10/pose-envelope-staging/production-before.json": "2495802ecc0979c2935f5cabd83ab46309c6daebd6136187a86571c287efefdf",
+    "tools/p10/pose-envelope-staging/ProductionSeed.cs": "01b56f59867fd732fec44f4a1809d1d4313ab1837d17b65671264784700354cf",
+    "tools/p10/pose-envelope-staging/Program.cs": "2f36e25de58c1ca35c07d44d606b474ece0de2df01b991c6075062a8a0c87835",
+    "tools/p10/pose-envelope-staging/review.diff": "d423fe49ad7953220472e3dc156810aacebb2d409be4982f76b8c20c708eba9a",
+    "tools/p10/pose-envelope-staging/UnityCompile.csproj": "1a9d8b79a9afa1d249525b85843dd2ab86db76c35a33cb63dad29aef579ab529",
+    "tools/p10/pose-envelope-staging/UnityVisualPoseEnvelope.cs": "7ccbf252957236e77707358dc9633fd8f01273c2599adad23f0f0ae124e5d13f",
+    "tools/p10/pose-envelope-staging/verify.py": "854ac1cc0502f9b0aaba6b02bbbeb482e8d67402d41f78656447ee7b59d089f9",
+    "tools/p10/pose-envelope-staging/VisualPoseEnvelope.cs": "78eebd0a00fb814a99c9880b878c11d7ff97f38d35bbf3dc97e091c266102171",
+    "tools/p10/pose-envelope-staging/Candidate/MultiplayerSession.cs": "745ab39ba231bd25e6e91958a290ba302b049014246d21b61f5c7fdb851e4fff",
+    "tools/p10/pose-envelope-staging/Candidate/MultiplayerSession.Messages.cs": "c1650a4c0c2556594cc0ed59aff25effe699ae4e2ff35cd064de3f52fb117240",
+    "tools/p10/pose-envelope-staging/Candidate/RaceBootstrap.cs": "4b801d70b5de5c29335a1c599622a20b62ccfad7eeae49312e9ab66431fcfe13",
+    "tools/p10/pose-envelope-staging/Candidate/RaceStageView.cs": "de812c99c8f12f369010ddecca49a8865a6bf27160038630e25596a24e27e81f"
+  },
+  "commands": [
+    {
+      "name": "replay-and-envelope",
+      "exitCode": 0,
+      "log": "docs/p10/pose-envelope-staging/replay-and-envelope.log",
+      "logSha256": "48fa1f21fb99f9a53bd64f13a0ae59c58fe0b74a54615fa9d17aebc75d868ea2"
+    },
+    {
+      "name": "unity-client-compile",
+      "exitCode": 0,
+      "log": "docs/p10/pose-envelope-staging/unity-client-compile.log",
+      "logSha256": "f97bc9830a76c8e131355def26f91569df39755e827f40492242da70f0c355bb"
+    }
+  ],
+  "validationSha256": "98a6b66a02c2ba2bf4b3d267e88517e0a56de9e26281efb5c06904ce4280ac09",
+  "productionApplied": false,
+  "nativeUnityRendered": false,
+  "visualAccepted": false,
+  "scope": "Actual39 source-bound retained episode pairs,78 exact before/after prediction replays, controlled continuations and pure policy controls. Unity API compilation is not native visual/runtime acceptance."
+}

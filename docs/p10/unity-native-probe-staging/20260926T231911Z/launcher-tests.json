@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "tests": 7,
+  "results": [
+    {
+      "name": "unchanged_before_after_native_evidence_can_pass",
+      "passed": true
+    },
+    {
+      "name": "source_mutation_after_launch_fails",
+      "passed": true
+    },
+    {
+      "name": "player_mutation_after_launch_fails",
+      "passed": true
+    },
+    {
+      "name": "receipt_mutation_after_launch_fails",
+      "passed": true
+    },
+    {
+      "name": "wrong_protocol_runtime_or_endpoint_fails",
+      "passed": true
+    },
+    {
+      "name": "empty_duplicate_traversal_manifests_rejected",
+      "passed": true
+    },
+    {
+      "name": "cleanup_controls_only_the_owned_live_handle",
+      "passed": true
+    }
+  ],
+  "scope": "Pure launcher helpers with private fake files/owned fake process handles. No network, native player, source edit or real process termination."
+}

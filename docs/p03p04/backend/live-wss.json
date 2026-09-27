@@ -1,0 +1,135 @@
+{
+  "generatedUtc": "2026-09-21T10:48:53.9234304+07:00",
+  "status": "PASS",
+  "endpoint": "wss://localhost:17921/ws",
+  "humanPeers": 8,
+  "protocolVersion": 2,
+  "simulationRulesVersion": 2,
+  "contentHash": "p03p04-ribbon-v1",
+  "checks": [
+    {
+      "name": "eight_unique_human_riders",
+      "passed": true
+    },
+    {
+      "name": "ninth_race_peer_rejected",
+      "passed": true
+    },
+    {
+      "name": "eight_peers_receive_monotonic_authority_snapshots",
+      "passed": true
+    },
+    {
+      "name": "all_peers_observe_authoritative_pedestrians",
+      "passed": true
+    },
+    {
+      "name": "movement_and_ack_from_actual_client_application",
+      "passed": true
+    },
+    {
+      "name": "same_authoritative_hit_event_reaches_both_humans",
+      "passed": true
+    },
+    {
+      "name": "remote_target_receives_fist_damage",
+      "passed": true
+    },
+    {
+      "name": "wire_damage_injection_closes_connection",
+      "passed": true
+    }
+  ],
+  "observations": [
+    {
+      "Snapshots": 125,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 4096,
+      "distinctHitEventIds": [
+        4
+      ]
+    },
+    {
+      "Snapshots": 125,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 3648,
+      "distinctHitEventIds": [
+        4
+      ]
+    },
+    {
+      "Snapshots": 125,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 3396,
+      "distinctHitEventIds": [
+        4
+      ]
+    },
+    {
+      "Snapshots": 125,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 4096,
+      "distinctHitEventIds": [
+        4
+      ]
+    },
+    {
+      "Snapshots": 125,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 3396,
+      "distinctHitEventIds": [
+        4
+      ]
+    },
+    {
+      "Snapshots": 125,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 4096,
+      "distinctHitEventIds": [
+        4
+      ]
+    },
+    {
+      "Snapshots": 125,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 3396,
+      "distinctHitEventIds": [
+        4
+      ]
+    },
+    {
+      "Snapshots": 124,
+      "SawEight": true,
+      "SawPedestrians": true,
+      "Monotonic": true,
+      "MinimumOwnHealth": 4096,
+      "distinctHitEventIds": [
+        4
+      ]
+    }
+  ],
+  "combatSetup": {
+    "firstAttackClientStep": 26,
+    "attackLateralSeparationMeters": 1.527,
+    "attackLongitudinalSeparationMeters": 0,
+    "control": "Steer from validated authority observations, then attack within strict reach."
+  },
+  "error": null,
+  "scope": "Real loopback WebSocket and actual RaceSession source. This is not browser rendering, WAN latency or separate LAN machines.",
+  "sourceHash": "5a04e712b80300518a9e35053ae2a066bedefe2dc467a841c29044c44b6147aa",
+  "sourceManifest": "docs/p03p04/backend/source-manifest.json"
+}

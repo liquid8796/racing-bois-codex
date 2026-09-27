@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "correctRelease": true,
+    "correctRuntimeSource": true,
+    "protocol6": true,
+    "entireLogicalRealmStatePreserved": true,
+    "caddyFilesUnchanged": true,
+    "normalizedFirewallUnchanged": true,
+    "priorUnrelatedServicesStillRunning": true,
+    "unrelatedSiteStatusPreserved": true
+  },
+  "scope": "Backend staging activation only. Raw prediction/presentation outliers remain unaccepted; this is not visual, full Unity or eight-hour acceptance."
+}

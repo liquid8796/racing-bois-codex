@@ -1,0 +1,527 @@
+{
+  "schema": 1,
+  "purpose": "Isolated Ash V4 technical review. Art bytes published with verified hashes; native/visual/performance acceptance remains open. MenuHero is separate from the12 gameplay clips.",
+  "assets": [
+    {
+      "id": "RB_Golden_Ash_V4",
+      "kind": "rider",
+      "concept": {
+        "path": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+        "sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6"
+      },
+      "conceptReview": {
+        "path": "ArtSource/Concepts/P08/Golden/ash-v2-review.md",
+        "sha256": "85f43e75c0338e3159daeee146a5ccbecd523e792a51bf6d061a4da42012b48f"
+      },
+      "source": {
+        "path": "ArtSource/P08/Golden/Ash/V4/RB_Golden_Ash_V4.blend",
+        "sha256": "a42a84a423fb158eb84995bbe2d842d7925c23a872fe36902f5566570cf64a30"
+      },
+      "fbx": {
+        "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+        "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2"
+      },
+      "modelRotationEuler": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "minimumSize": {
+        "x": 0.5,
+        "y": 1.68,
+        "z": 0.22
+      },
+      "maximumSize": {
+        "x": 1.3,
+        "y": 1.95,
+        "z": 0.75
+      },
+      "maximumBelowGround": 0.025,
+      "materials": [
+        {
+          "sourceName": "AshV4_Skin_Baked",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Skin_BaseColor.png",
+            "sha256": "f0f335b8346ec3cbf6ed172b2f361f69c82ff45a62512949a5071eb09ed9859b"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Skin_Normal.png",
+            "sha256": "4dc60777423178a0d76a8093ef9a53d910fd20c348f3e8345a456d7266970d3c"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Skin_MetallicSmoothness.png",
+            "sha256": "c206f93c1a325b5d04c42ad6478b5ecf49c27596276c9282b6baf8269a188996"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Skin_Occlusion.png",
+            "sha256": "680758366f74a9f4a8b1e2f37ff8e8941af955382419c1ca0e368479a48029e7"
+          },
+          "maxSize": 2048,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_BaseColor.png",
+            "sha256": "9292b15587ac9d34a01199cb7c6a79424bd22a461634363ed289153297ad2fa9"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Normal.png",
+            "sha256": "a06c6eada32fe9c85d68c67ae9c3777e2e87a5a659ef2c71ca0bdc2550153fd5"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_MetallicSmoothness.png",
+            "sha256": "8d8e46a4ce7070e3fd5910d7a03a659a7eb527bc38b8978f983ffc496a40a809"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AmberLens_Occlusion.png",
+            "sha256": "3490f43f6b8634dd33f1dbf5f12646f724971ee1049bd49a5ab0e9d8d734c5db"
+          },
+          "sourceName": "AshV2_AmberLens_Baked",
+          "maxSize": 512,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false,
+          "opacity": 1
+        },
+        {
+          "sourceName": "AshV4_LeatherDetails_Baked",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_BaseColor.png",
+            "sha256": "7df83c0eebf760f74ecc8969ae77aaf36ec879b8218960255266bd66fa429397"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_Normal.png",
+            "sha256": "52cf6bfedac17bf20936a5610ca6e55accb74bb659d0e1c6542461004b6a6df8"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_MetallicSmoothness.png",
+            "sha256": "11ef8c9530b67477c271ca51c9353b7eea93d55459df661815bf6ac62192d7df"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_Occlusion.png",
+            "sha256": "38d458e1ea10682153e95fe675cc62a3a3dc240123bc33d34fca09a6dddc82b3"
+          },
+          "maxSize": 1024,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_BaseColor.png",
+            "sha256": "69bb4073e685624840fc9db0a300e42da535671bca7a5eb126bbd3dfd7bbe100"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Normal.png",
+            "sha256": "35d4375d3a35685e1693d1b4857cb4d1b8637174bc3661736883bd62e47db5bf"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_MetallicSmoothness.png",
+            "sha256": "3097c1ea67553a65af36bdae529b927be81a2d1a12e011bc7447c6c680409c26"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Occlusion.png",
+            "sha256": "9108cefa224d03828fb95ad9135c413a3c427fd98af5f66080eb55c8a9eda53b"
+          },
+          "sourceName": "AshV2_AgedBrass_Baked",
+          "maxSize": 512,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false,
+          "opacity": 1
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_BaseColor.png",
+            "sha256": "93859172f09205060b01fb4e70d800f9985a8c62e6ca39ae7fc6e05a83bcb027"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Normal.png",
+            "sha256": "bf64987012627de645ec8de85060fa4816ac8c6c6a90c2d4078b0da761e3e9ba"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_MetallicSmoothness.png",
+            "sha256": "bee0298f26bd280b077c9a9c8c0e4bb56b5d22348430ed2955974e89326b0e7d"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Occlusion.png",
+            "sha256": "747cdf9c77bbf52fba9d7204d1eb2b9377495fa8b9a4c86d9e8c5f34caae0a71"
+          },
+          "sourceName": "AshV3_BootLeather_Baked",
+          "maxSize": 1024,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false,
+          "opacity": 1
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_BaseColor.png",
+            "sha256": "5d4c48411b014d4411b8e028c1151f2377ff0f843746a2ee056eaf39ea73784d"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Normal.png",
+            "sha256": "e245650455cc63432e6e7bfd29999185247c7c062fac34da08f98c262a3f5507"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_MetallicSmoothness.png",
+            "sha256": "e1bbe6bb70d137894b4f988f36093b65eb246c40ce227cb500fe89fa8a97deb6"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Occlusion.png",
+            "sha256": "a0ab66970541814db61810f434913469f8b933df2cfc176cf93b4bd57e4155c8"
+          },
+          "sourceName": "AshV2_Brows_Baked",
+          "maxSize": 1024,
+          "normalScale": 1,
+          "transparent": true,
+          "doubleSided": true,
+          "opacity": 1
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_BaseColor.png",
+            "sha256": "fee6334d4708bfb64f76217ca807820acc9ed205e2e851debf2505ed626f784b"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Normal.png",
+            "sha256": "47ef637ba38bb776f5682026d351adc8a1bc5b9d9a26ba3b104a5e1529791bb7"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_MetallicSmoothness.png",
+            "sha256": "16da8068e7b6ed5e40529d79996091f37ba45ef2196ba71aff91b0c4256c82a9"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Occlusion.png",
+            "sha256": "10c8329ea1780e9ed82d869b4150f289ebc61a8fbd326875c03e2eb7d3b83f11"
+          },
+          "sourceName": "AshV3_Rubber_Baked",
+          "maxSize": 512,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false,
+          "opacity": 1
+        },
+        {
+          "sourceName": "AshV4_TailoredLeather_Baked",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_BaseColor.png",
+            "sha256": "bb9591a0f9b4290faf3abda2827c6de4a88abc975516aa648e91a8646ff32d9a"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_Normal.png",
+            "sha256": "de4660cecde9c8310b3585781f6f7dbdb6f411075f16c7902fd0644a2f360aa3"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_MetallicSmoothness.png",
+            "sha256": "9c13f931f841a69e9ce0fbf429d3f73b55477b5482ae2bca4a3b52db3fc2cde0"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_Occlusion.png",
+            "sha256": "f941935543e52eda05310bef0e8cc3fb0cd362fd3f5b92fa7dee894b7d3e22b4"
+          },
+          "maxSize": 2048,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_BaseColor.png",
+            "sha256": "d644ca432898e82ff177acc5665feba9662860dc811ee84182cc0d8ce9fd987d"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Normal.png",
+            "sha256": "55ea4ca8447fe6850d738f599a9167152f248beffd93ab1c5c91a95add13f42a"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_MetallicSmoothness.png",
+            "sha256": "418c6bac3384a43bbd585d8b817d973d9b44a8d6095da8ee5fe99ed9fc69074e"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Occlusion.png",
+            "sha256": "e55022721bff940b28d5e5f1b3dac883d2c04da038e2a1f23eee7cfffee2331c"
+          },
+          "sourceName": "AshV2_OchreThread_Baked",
+          "maxSize": 512,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false,
+          "opacity": 1
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_BaseColor.png",
+            "sha256": "8220acc1f9786c7e63d0127226793d5349ea9ba508c392d2ff03e040e329a3e4"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Normal.png",
+            "sha256": "6c4f21eafbf99271d922b4cf1140587f8d2724344debddaf26e3ff4df72f89bc"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_MetallicSmoothness.png",
+            "sha256": "013c6bc810c2169b0df4f2cb80c72b4f87a2b8f8a15172b1d3244131f958d436"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Occlusion.png",
+            "sha256": "05268d1f59550a43215fb1ef7717d54a5fd5233e81179e20daaf2ff0446bfdec"
+          },
+          "sourceName": "AshV2_Eyes_Baked",
+          "maxSize": 512,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false,
+          "opacity": 1
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_BaseColor.png",
+            "sha256": "33cf473635e01b83e588e00d2d294f2c05bc9e9c2ece631d8ce2ce85d0fc86bc"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Normal.png",
+            "sha256": "7e04f4e9de897ef53944925736c85b46447f059b361d419fb3c0bd2702d689be"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_MetallicSmoothness.png",
+            "sha256": "8d72e611024ad425a03fc918a3bdff7311067f8f827fdb50539fafe92d0f4673"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_HairFibers_Occlusion.png",
+            "sha256": "de2e25c4d6e7f4ac9921d6f2a70af6c77bb5ee5c8bcea00c58dc362bdc9dc13d"
+          },
+          "sourceName": "AshV2_HairFibers_Baked",
+          "maxSize": 512,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false,
+          "opacity": 1
+        },
+        {
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_BaseColor.png",
+            "sha256": "2e667645adea4351af79de02fd89ab8fcbf2ad03e44ba5120d91425d64754507"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Normal.png",
+            "sha256": "6703c3c07baaf5ee313c88bbfffc3e595d952508103a7d589bd18796ccbbeb94"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_MetallicSmoothness.png",
+            "sha256": "497dec4e814983d77292f474a3fc69037c48f10fa5a0463e549faf2bebcb5287"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Occlusion.png",
+            "sha256": "3145c50a0a42de91e010dec257591c01df6ea02f0db37e4f84f70167e0a5391a"
+          },
+          "sourceName": "AshV2_Hair_Baked",
+          "maxSize": 1024,
+          "normalScale": 1,
+          "transparent": true,
+          "doubleSided": true,
+          "opacity": 1
+        },
+        {
+          "sourceName": "AshV4_HelmetEnamel_Baked",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_BaseColor.png",
+            "sha256": "0319a00fe0cc408f9e825d8f0ba40059c7283c6d4220608e099efe334d7d5950"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_Normal.png",
+            "sha256": "59313f931cd7586853a986c64ec745962c014825d726cfe33fdae8f47481d874"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_MetallicSmoothness.png",
+            "sha256": "11f3b76170b6ff2ea1a5a6f4ad5c3b58fa14880f9c00aedece8065241e7896d8"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_HelmetEnamel_Occlusion.png",
+            "sha256": "b3a427c0534580084681874c6cc1125c1a97591954c0d69f1fab018c3c2322b8"
+          },
+          "maxSize": 1024,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false
+        },
+        {
+          "sourceName": "AshV4_Forelocks_Baked",
+          "baseColor": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_BaseColor.png",
+            "sha256": "cc28b4cbb4ad1d4a67bac5717f7facf73cd855734552613b014ecf81fa040ca0"
+          },
+          "normal": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_Normal.png",
+            "sha256": "02b88dbad749a9824293f6a05b6d46724b04db2c9614838405da13a7fdb41587"
+          },
+          "metallicSmoothness": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_MetallicSmoothness.png",
+            "sha256": "b028287e92a309131d42dcc8bf2ccac8a1ff2ffa8564c2591693ab401fbc30be"
+          },
+          "occlusion": {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_Occlusion.png",
+            "sha256": "872b1b3ab40af8b5a7168e76f677e4ef74b6d92220f99035f473f685b502d361"
+          },
+          "maxSize": 512,
+          "normalScale": 1,
+          "transparent": false,
+          "doubleSided": false
+        }
+      ],
+      "lods": [
+        {
+          "height": 0.34,
+          "rendererPaths": [
+            "AshV4_L0_Skin"
+          ]
+        },
+        {
+          "height": 0.14,
+          "rendererPaths": [
+            "AshV4_L1_Skin"
+          ]
+        },
+        {
+          "height": 0.025,
+          "rendererPaths": [
+            "AshV4_L2_Skin"
+          ]
+        }
+      ],
+      "forwardMarker": "RB_Golden_Ash_V4/Forward",
+      "groundMarkers": [
+        "RB_Golden_Ash_V4/Ground_L",
+        "RB_Golden_Ash_V4/Ground_R"
+      ],
+      "leftMarker": "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L",
+      "rightMarker": "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R",
+      "rigRoot": "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip",
+      "requiredBones": [
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_Head",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Thumb_1_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Thumb_1_L/RB_P06_Rider_L0_Finger_Thumb_2_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Thumb_1_L/RB_P06_Rider_L0_Finger_Thumb_2_L/RB_P06_Rider_L0_Finger_Thumb_3_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Index_1_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Index_1_L/RB_P06_Rider_L0_Finger_Index_2_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Index_1_L/RB_P06_Rider_L0_Finger_Index_2_L/RB_P06_Rider_L0_Finger_Index_3_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Middle_1_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Middle_1_L/RB_P06_Rider_L0_Finger_Middle_2_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Middle_1_L/RB_P06_Rider_L0_Finger_Middle_2_L/RB_P06_Rider_L0_Finger_Middle_3_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Ring_1_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Ring_1_L/RB_P06_Rider_L0_Finger_Ring_2_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Ring_1_L/RB_P06_Rider_L0_Finger_Ring_2_L/RB_P06_Rider_L0_Finger_Ring_3_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Pinky_1_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Pinky_1_L/RB_P06_Rider_L0_Finger_Pinky_2_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_L/RB_P06_Rider_L0_Forearm_L/RB_P06_Rider_L0_Hand_L/RB_P06_Rider_L0_Finger_Pinky_1_L/RB_P06_Rider_L0_Finger_Pinky_2_L/RB_P06_Rider_L0_Finger_Pinky_3_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Thumb_1_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Thumb_1_R/RB_P06_Rider_L0_Finger_Thumb_2_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Thumb_1_R/RB_P06_Rider_L0_Finger_Thumb_2_R/RB_P06_Rider_L0_Finger_Thumb_3_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Index_1_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Index_1_R/RB_P06_Rider_L0_Finger_Index_2_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Index_1_R/RB_P06_Rider_L0_Finger_Index_2_R/RB_P06_Rider_L0_Finger_Index_3_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Middle_1_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Middle_1_R/RB_P06_Rider_L0_Finger_Middle_2_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Middle_1_R/RB_P06_Rider_L0_Finger_Middle_2_R/RB_P06_Rider_L0_Finger_Middle_3_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Ring_1_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Ring_1_R/RB_P06_Rider_L0_Finger_Ring_2_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Ring_1_R/RB_P06_Rider_L0_Finger_Ring_2_R/RB_P06_Rider_L0_Finger_Ring_3_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Pinky_1_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Pinky_1_R/RB_P06_Rider_L0_Finger_Pinky_2_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Torso/RB_P06_Rider_L0_UpperArm_R/RB_P06_Rider_L0_Forearm_R/RB_P06_Rider_L0_Hand_R/RB_P06_Rider_L0_Finger_Pinky_1_R/RB_P06_Rider_L0_Finger_Pinky_2_R/RB_P06_Rider_L0_Finger_Pinky_3_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Thigh_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Thigh_L/RB_P06_Rider_L0_Shin_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Thigh_L/RB_P06_Rider_L0_Shin_L/RB_P06_Rider_L0_Foot_L",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Thigh_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Thigh_R/RB_P06_Rider_L0_Shin_R",
+        "RB_Golden_Ash_V4/RB_P06_Rider_Rig/RB_P06_Rider_L0_Hip/RB_P06_Rider_L0_Thigh_R/RB_P06_Rider_L0_Shin_R/RB_P06_Rider_L0_Foot_R"
+      ],
+      "clips": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_Ride"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_LeanLeft"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_LeanRight"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_AttackLeft"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_AttackRight"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_KickLeft"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_KickRight"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_Hit"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_Fall"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_Run"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_Remount"
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx",
+          "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2",
+          "name": "RB_P06_Rider_Rig|RB_Idle"
+        }
+      ],
+      "colliders": [
+        {
+          "type": "capsule",
+          "center": {
+            "x": 0,
+            "y": 0.925,
+            "z": 0
+          },
+          "radius": 0.275,
+          "height": 1.85,
+          "direction": 1
+        }
+      ],
+      "isStatic": false,
+      "restPose": "bind"
+    }
+  ]
+}

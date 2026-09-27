@@ -1,0 +1,3614 @@
+{
+  "schemaVersion": 1,
+  "asset": "Spark 450 V1 finishes, one bike",
+  "visualAccepted": false,
+  "originalProceduralPixels": true,
+  "conceptPixelsCopied": false,
+  "borrowedTexturesOrMeshes": false,
+  "sceneOrRuntimeModified": false,
+  "primaryReference": "ArtSource/Concepts/P08/Golden/spark-v1.png",
+  "sideReferenceIsUncalibrated": true,
+  "lockedReferences": {
+    "ArtSource/Concepts/P08/Golden/spark-v1.png": "e358ecf1a809f5373aa45ef92cbd6897ed1e1693cacc73b0f6df697d91bedce6",
+    "ArtSource/Concepts/P08/Golden/spark-v1-side.png": "ad5478c942350462a34d12b1ba9f9714cb00a595ff9465bc1d000cf6b5e7ad0b"
+  },
+  "authoringScript": {
+    "path": "tools/p08/golden/spark_v1_finish_textures.py",
+    "sha256": "8ec623839c2a4a8b22b1539d2a9272c74c84d0df77aa679f30e3df6f72a60b92"
+  },
+  "colorIntent": "Base/emission PNG RGB is explicit IEC sRGB encoding of linear shader reflectance. Do not gamma-decode normal, packed metallic/smoothness or roughness.",
+  "normalConvention": "Tangent-space OpenGL +Y, normalized before RGB8 encoding; image top corresponds to UV V=1; renormalize after filtering.",
+  "packedChannelSemantics": {
+    "R": "metallic, linear UNORM8",
+    "G": "unused zero",
+    "B": "unused zero",
+    "A": "smoothness = 1 - roughness, linear UNORM8; NOT opacity"
+  },
+  "importIntent": {
+    "baseAndEmission": "sRGB enabled; RGB, no transparency",
+    "normal": "Normal map importer, tangent +Y, non-colour; generate normal-aware mips",
+    "metallicSmoothness": "sRGB disabled; preserve alpha; alphaIsTransparency false; never premultiply",
+    "roughness": "Single-channel linear data for Blender; Unity uses mask alpha",
+    "wrap": "Repeat",
+    "filter": "Trilinear in game, mipmaps enabled",
+    "desktopCompression": "BC5 normal and BC7 colour/packed where available; inspect compressed result before acceptance. No Unity importer is changed by this tool."
+  },
+  "ownership": {
+    "copperAndGeometry": "parent; untouched",
+    "runtime": "frozen; untouched"
+  },
+  "knownLimits": [
+    "Procedural finish candidates are not captured or measured material BRDFs; matching actual renderer, lighting, scale and concept remains unverified.",
+    "Original projected UV0 overlaps intentionally for repeated material response. Island orientation and visible projection seams need mesh/renderer inspection, especially directional metals.",
+    "One shared Graphite response spans cast cases, frame tubes and fenders. Material splitting may be needed if their target gloss differs visibly.",
+    "Shared Machined response cannot simultaneously provide physically correct circular brake machining, straight fork polishing and optical mirrors. Author object-specific UVs or separate finishes if comparison requires it.",
+    "Glass transmission, headlamp flutes, amber reflector prisms, stitching, seat ribs, rubber tread and exhaust heat bands are not supplied by these generic finish maps.",
+    "No Unity import, Blender render, LOD appearance, texture-compression inspection or final concept-fidelity acceptance is claimed."
+  ],
+  "finishes": [
+    {
+      "material": "Spark_Cream",
+      "intent": "Warm ivory opaque coating; uniform pigment and smooth clearcoat. Tank stripe remains parent-owned Copper atlas.",
+      "baseReflectanceLinear": [
+        0.66,
+        0.595,
+        0.475
+      ],
+      "metallicNominal": 0,
+      "uvScale": 1,
+      "emissionStrengthBlender": 0,
+      "surfaceResponse": {
+        "pattern": "constant",
+        "heightPeakToPeakMicrometres": 0.0,
+        "tileMetresAtOriginalUV0": 0.5,
+        "roughnessNominal": 0.27,
+        "roughnessActualMeanBeforeQuantization": 0.27
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Cream_BaseColor.png",
+          "sha256": "629b37fd617cc6a775132647567055fbb409d1894beca77027561d013fcb5663",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.65837482,
+            0.59720179,
+            0.4735315
+          ],
+          "decodedMaximum": [
+            0.65837482,
+            0.59720179,
+            0.4735315
+          ],
+          "decodedMean": [
+            0.65837482,
+            0.59720179,
+            0.4735315
+          ],
+          "maxDecodedQuantizationError": 0.0022017883637633906,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                212,
+                203,
+                183
+              ],
+              "decodedLinear": [
+                0.65837482,
+                0.59720179,
+                0.4735315
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                212,
+                203,
+                183
+              ],
+              "decodedLinear": [
+                0.65837482,
+                0.59720179,
+                0.4735315
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                212,
+                203,
+                183
+              ],
+              "decodedLinear": [
+                0.65837482,
+                0.59720179,
+                0.4735315
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Cream_Normal.png",
+          "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMean": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.0019607843137254832,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Cream_MetallicSmoothness.png",
+          "sha256": "4f2272f4be3e65aa5ab573e33ba028039b4abf1d296acad6a9af264fba13dcd5",
+          "byteLength": 78,
+          "mode": "RGBA",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.0,
+            0.0,
+            0.0,
+            0.72941176
+          ],
+          "decodedMaximum": [
+            0.0,
+            0.0,
+            0.0,
+            0.72941176
+          ],
+          "decodedMean": [
+            0.0,
+            0.0,
+            0.0,
+            0.72941176
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                186
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.72941176
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                186
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.72941176
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                186
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.72941176
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Cream_Roughness.png",
+          "sha256": "3e2a33a1169bb34d75d4095b43995909cb3d24d2cc84dafdf726ebb19318395e",
+          "byteLength": 73,
+          "mode": "L",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.27058824
+          ],
+          "decodedMaximum": [
+            0.27058824
+          ],
+          "decodedMean": [
+            0.27058824
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                69
+              ],
+              "decodedLinear": [
+                0.27058824
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                69
+              ],
+              "decodedLinear": [
+                0.27058824
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                69
+              ],
+              "decodedLinear": [
+                0.27058824
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 1.5378582249425676e-05
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_Graphite",
+      "intent": "Neutral dark cast/powder-coated frame and cases; low-amplitude isotropic micro-relief, no painted highlights or dirt.",
+      "baseReflectanceLinear": [
+        0.028,
+        0.03,
+        0.033
+      ],
+      "metallicNominal": 0.08,
+      "uvScale": 2,
+      "emissionStrengthBlender": 0,
+      "surfaceResponse": {
+        "pattern": "isotropic band-limited manufacturing microtexture",
+        "heightPeakToPeakMicrometres": 15.396628402869004,
+        "tileMetresAtOriginalUV0": 0.25,
+        "roughnessNominal": 0.39,
+        "roughnessActualMeanBeforeQuantization": 0.39
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Graphite_BaseColor.png",
+          "sha256": "f45f3d36cfb8afecb0f3f36779479f3a80e297cac5330bcf94a3b4fec075a25c",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.02842604,
+            0.02955683,
+            0.03310477
+          ],
+          "decodedMaximum": [
+            0.02842604,
+            0.02955683,
+            0.03310477
+          ],
+          "decodedMean": [
+            0.02842604,
+            0.02955683,
+            0.03310477
+          ],
+          "maxDecodedQuantizationError": 0.0004431655621911987,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                47,
+                48,
+                51
+              ],
+              "decodedLinear": [
+                0.02842604,
+                0.02955683,
+                0.03310477
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                47,
+                48,
+                51
+              ],
+              "decodedLinear": [
+                0.02842604,
+                0.02955683,
+                0.03310477
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                47,
+                48,
+                51
+              ],
+              "decodedLinear": [
+                0.02842604,
+                0.02955683,
+                0.03310477
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Graphite_Normal.png",
+          "sha256": "cb3caf6af6fe6529374897863901753eb067fb3c9a4ae9e5722e5418b432599c",
+          "byteLength": 108532,
+          "mode": "RGB",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.49411765,
+            0.49411765,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50588235,
+            0.50588235,
+            1.0
+          ],
+          "decodedMean": [
+            0.5000022,
+            0.49999822,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.0019607828354458734,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                128,
+                127,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.49803922,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Graphite_MetallicSmoothness.png",
+          "sha256": "6a18f8c6dca5df267e137e8c1e4a8e2b3ee77d3ee8bd5cd5a5a16eb5b4968e0c",
+          "byteLength": 89661,
+          "mode": "RGBA",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.07843137,
+            0.0,
+            0.0,
+            0.59215686
+          ],
+          "decodedMaximum": [
+            0.07843137,
+            0.0,
+            0.0,
+            0.62745098
+          ],
+          "decodedMean": [
+            0.07843137,
+            0.0,
+            0.0,
+            0.61000086
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                20,
+                0,
+                0,
+                157
+              ],
+              "decodedLinear": [
+                0.07843137,
+                0.0,
+                0.0,
+                0.61568627
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                20,
+                0,
+                0,
+                155
+              ],
+              "decodedLinear": [
+                0.07843137,
+                0.0,
+                0.0,
+                0.60784314
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                20,
+                0,
+                0,
+                156
+              ],
+              "decodedLinear": [
+                0.07843137,
+                0.0,
+                0.0,
+                0.61176471
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Graphite_Roughness.png",
+          "sha256": "7f3ff59f70d1233ae4a6090169211f2bc6d585b92672e71beabba2aa5dacfb79",
+          "byteLength": 70395,
+          "mode": "L",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.37254902
+          ],
+          "decodedMaximum": [
+            0.40784314
+          ],
+          "decodedMean": [
+            0.38999914
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                98
+              ],
+              "decodedLinear": [
+                0.38431373
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                100
+              ],
+              "decodedLinear": [
+                0.39215686
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                99
+              ],
+              "decodedLinear": [
+                0.38823529
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 7.689054642101567e-05
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_Machined",
+      "intent": "Neutral polished machined steel; fine directional tool response in roughness/normal, constant conductor reflectance.",
+      "baseReflectanceLinear": [
+        0.55,
+        0.565,
+        0.59
+      ],
+      "metallicNominal": 0.97,
+      "uvScale": 8,
+      "emissionStrengthBlender": 0,
+      "surfaceResponse": {
+        "pattern": "parallel U-directed tool marks; roughness and shallow tangent-normal response",
+        "heightPeakToPeakMicrometres": 2.599999999999993,
+        "orientationRequirement": "UV U must follow the intended brushing direction; projection seams are not solved by these maps.",
+        "tileMetresAtOriginalUV0": 0.0625,
+        "roughnessNominal": 0.27,
+        "roughnessActualMeanBeforeQuantization": 0.27
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Machined_BaseColor.png",
+          "sha256": "88aec674bb809e9fe29ba478018519a34adaf905f51b0486b320a72fdd2d289d",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.5520114,
+            0.56471151,
+            0.59061884
+          ],
+          "decodedMaximum": [
+            0.5520114,
+            0.56471151,
+            0.59061884
+          ],
+          "decodedMean": [
+            0.5520114,
+            0.56471151,
+            0.59061884
+          ],
+          "maxDecodedQuantizationError": 0.0020114015120000772,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                196,
+                198,
+                202
+              ],
+              "decodedLinear": [
+                0.5520114,
+                0.56471151,
+                0.59061884
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                196,
+                198,
+                202
+              ],
+              "decodedLinear": [
+                0.5520114,
+                0.56471151,
+                0.59061884
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                196,
+                198,
+                202
+              ],
+              "decodedLinear": [
+                0.5520114,
+                0.56471151,
+                0.59061884
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Machined_Normal.png",
+          "sha256": "26a44bd0fcfce98ce41c657946b62817a54562021cd7b6312945c87921fedbd7",
+          "byteLength": 8591,
+          "mode": "RGB",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.49803922,
+            0.49411765,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50196078,
+            0.50588235,
+            1.0
+          ],
+          "decodedMean": [
+            0.5,
+            0.5,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.001960784293175144,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                127,
+                127,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.49803922,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                127,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                127,
+                127,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.49803922,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Machined_MetallicSmoothness.png",
+          "sha256": "e430cf11b7da07acb4f75825b6c2af7babe2a3c97ab8341316ce7f1dc1f3b8ae",
+          "byteLength": 5183,
+          "mode": "RGBA",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.96862745,
+            0.0,
+            0.0,
+            0.71372549
+          ],
+          "decodedMaximum": [
+            0.96862745,
+            0.0,
+            0.0,
+            0.74901961
+          ],
+          "decodedMean": [
+            0.96862745,
+            0.0,
+            0.0,
+            0.72998252
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                247,
+                0,
+                0,
+                186
+              ],
+              "decodedLinear": [
+                0.96862745,
+                0.0,
+                0.0,
+                0.72941176
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                247,
+                0,
+                0,
+                186
+              ],
+              "decodedLinear": [
+                0.96862745,
+                0.0,
+                0.0,
+                0.72941176
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                247,
+                0,
+                0,
+                185
+              ],
+              "decodedLinear": [
+                0.96862745,
+                0.0,
+                0.0,
+                0.7254902
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Machined_Roughness.png",
+          "sha256": "c29cbbe679464bbe23492988ac32ca06bf119eccc571ab84af462b6703e70be4",
+          "byteLength": 3701,
+          "mode": "L",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.25098039
+          ],
+          "decodedMaximum": [
+            0.28627451
+          ],
+          "decodedMean": [
+            0.27001748
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                69
+              ],
+              "decodedLinear": [
+                0.27058824
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                69
+              ],
+              "decodedLinear": [
+                0.27058824
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                70
+              ],
+              "decodedLinear": [
+                0.2745098
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 7.689054642101567e-05
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_SatinSteel",
+      "intent": "Slightly warm satin exhaust steel; denser parallel finishing marks, no baked illumination, rust or heat bands.",
+      "baseReflectanceLinear": [
+        0.43,
+        0.405,
+        0.355
+      ],
+      "metallicNominal": 0.97,
+      "uvScale": 4,
+      "emissionStrengthBlender": 0,
+      "surfaceResponse": {
+        "pattern": "parallel U-directed tool marks; roughness and shallow tangent-normal response",
+        "heightPeakToPeakMicrometres": 3.9999999999999973,
+        "orientationRequirement": "UV U must follow the intended brushing direction; projection seams are not solved by these maps.",
+        "tileMetresAtOriginalUV0": 0.125,
+        "roughnessNominal": 0.34,
+        "roughnessActualMeanBeforeQuantization": 0.34
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_SatinSteel_BaseColor.png",
+          "sha256": "49094aedd926071f88732c45905bf08de45cd969a01254a1687e5f0da7e7d727",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.4286905,
+            0.40724021,
+            0.35640014
+          ],
+          "decodedMaximum": [
+            0.4286905,
+            0.40724021,
+            0.35640014
+          ],
+          "decodedMean": [
+            0.4286905,
+            0.40724021,
+            0.35640014
+          ],
+          "maxDecodedQuantizationError": 0.0022402119017366773,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                175,
+                171,
+                161
+              ],
+              "decodedLinear": [
+                0.4286905,
+                0.40724021,
+                0.35640014
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                175,
+                171,
+                161
+              ],
+              "decodedLinear": [
+                0.4286905,
+                0.40724021,
+                0.35640014
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                175,
+                171,
+                161
+              ],
+              "decodedLinear": [
+                0.4286905,
+                0.40724021,
+                0.35640014
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_SatinSteel_Normal.png",
+          "sha256": "04cf569c875281bcd2d4863aa3e01e8d24ae1f05b087e6145d9fa7f25fe2aeef",
+          "byteLength": 19556,
+          "mode": "RGB",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.49803922,
+            0.49411765,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50196078,
+            0.50588235,
+            1.0
+          ],
+          "decodedMean": [
+            0.5,
+            0.5,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.001960784303152774,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                127,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                512,
+                512
+              ],
+              "storedBytes": [
+                127,
+                126,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.49411765,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                1023,
+                1023
+              ],
+              "storedBytes": [
+                127,
+                129,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.50588235,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_SatinSteel_MetallicSmoothness.png",
+          "sha256": "f925e60621c19339f5ce0ab6f0a0ea471ba26e8faf97c7a5dd2ac3a90dfb0e2a",
+          "byteLength": 13906,
+          "mode": "RGBA",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.96862745,
+            0.0,
+            0.0,
+            0.63529412
+          ],
+          "decodedMaximum": [
+            0.96862745,
+            0.0,
+            0.0,
+            0.68627451
+          ],
+          "decodedMean": [
+            0.96862745,
+            0.0,
+            0.0,
+            0.66000774
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                247,
+                0,
+                0,
+                166
+              ],
+              "decodedLinear": [
+                0.96862745,
+                0.0,
+                0.0,
+                0.65098039
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                512,
+                512
+              ],
+              "storedBytes": [
+                247,
+                0,
+                0,
+                170
+              ],
+              "decodedLinear": [
+                0.96862745,
+                0.0,
+                0.0,
+                0.66666667
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                1023,
+                1023
+              ],
+              "storedBytes": [
+                247,
+                0,
+                0,
+                170
+              ],
+              "decodedLinear": [
+                0.96862745,
+                0.0,
+                0.0,
+                0.66666667
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_SatinSteel_Roughness.png",
+          "sha256": "b89a3b10cbc4f2c1017fede75c4fd4bf2e4e181fb644798b8a75aec37ecb7697",
+          "byteLength": 9228,
+          "mode": "L",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.31372549
+          ],
+          "decodedMaximum": [
+            0.36470588
+          ],
+          "decodedMean": [
+            0.33999226
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                89
+              ],
+              "decodedLinear": [
+                0.34901961
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                512,
+                512
+              ],
+              "storedBytes": [
+                85
+              ],
+              "decodedLinear": [
+                0.33333333
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                1023,
+                1023
+              ],
+              "storedBytes": [
+                85
+              ],
+              "decodedLinear": [
+                0.33333333
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 7.689054642101567e-05
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_Rubber",
+      "intent": "Matte near-black vulcanized rubber; fine isotropic mould texture only. Tread and grip ribs must be real geometry or object-specific maps.",
+      "baseReflectanceLinear": [
+        0.012,
+        0.014,
+        0.016
+      ],
+      "metallicNominal": 0,
+      "uvScale": 2,
+      "emissionStrengthBlender": 0,
+      "surfaceResponse": {
+        "pattern": "isotropic band-limited manufacturing microtexture",
+        "heightPeakToPeakMicrometres": 17.279593897526077,
+        "tileMetresAtOriginalUV0": 0.25,
+        "roughnessNominal": 0.7,
+        "roughnessActualMeanBeforeQuantization": 0.7
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Rubber_BaseColor.png",
+          "sha256": "ea88d1f49a481136cbc965404bc43ad275081a5c0d4be84327516867c50e2de7",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.01228649,
+            0.01370208,
+            0.01599629
+          ],
+          "decodedMaximum": [
+            0.01228649,
+            0.01370208,
+            0.01599629
+          ],
+          "decodedMean": [
+            0.01228649,
+            0.01370208,
+            0.01599629
+          ],
+          "maxDecodedQuantizationError": 0.0002979169527103139,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                29,
+                31,
+                34
+              ],
+              "decodedLinear": [
+                0.01228649,
+                0.01370208,
+                0.01599629
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                29,
+                31,
+                34
+              ],
+              "decodedLinear": [
+                0.01228649,
+                0.01370208,
+                0.01599629
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                29,
+                31,
+                34
+              ],
+              "decodedLinear": [
+                0.01228649,
+                0.01370208,
+                0.01599629
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Rubber_Normal.png",
+          "sha256": "5550a2e653a7b1688870b36f7a06078220e0dee12053ae93523f00d682626a7f",
+          "byteLength": 112703,
+          "mode": "RGB",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.49411765,
+            0.49411765,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50588235,
+            0.50588235,
+            1.0
+          ],
+          "decodedMean": [
+            0.49999788,
+            0.49999918,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.0019607823774317468,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                127,
+                127,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.49803922,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                127,
+                127,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.49803922,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                127,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Rubber_MetallicSmoothness.png",
+          "sha256": "7f6f8b2d9794e7b6aa709a83df4dd095318fa9c13759a8bfd2bfa21dc9f855df",
+          "byteLength": 92915,
+          "mode": "RGBA",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.0,
+            0.0,
+            0.0,
+            0.27843137
+          ],
+          "decodedMaximum": [
+            0.0,
+            0.0,
+            0.0,
+            0.32156863
+          ],
+          "decodedMean": [
+            0.0,
+            0.0,
+            0.0,
+            0.30000383
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                75
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.29411765
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                76
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.29803922
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                75
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.29411765
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Rubber_Roughness.png",
+          "sha256": "4bdbf645c5d758fdc92d56441cda89d985cdec1ab971eb9796117e0077499497",
+          "byteLength": 79861,
+          "mode": "L",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.67843137
+          ],
+          "decodedMaximum": [
+            0.72156863
+          ],
+          "decodedMean": [
+            0.69999617
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                180
+              ],
+              "decodedLinear": [
+                0.70588235
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                179
+              ],
+              "decodedLinear": [
+                0.70196078
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                180
+              ],
+              "decodedLinear": [
+                0.70588235
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 0.0001383987273944065
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_Leather",
+      "intent": "Dark warm-brown saddle leather; shallow rounded grain with restrained crease pigment. Saddle ribs, strap, piping and stitching are separate geometry/detail work.",
+      "baseReflectanceLinear": [
+        0.05,
+        0.024,
+        0.013
+      ],
+      "metallicNominal": 0,
+      "uvScale": 1,
+      "emissionStrengthBlender": 0,
+      "surfaceResponse": {
+        "pattern": "rounded 1.95 mm leather grain with fine pores; 2.2 percent maximum pigment modulation",
+        "heightPeakToPeakMicrometres": 53.21562537041282,
+        "tileMetresAtOriginalUV0": 0.5,
+        "roughnessNominal": 0.57,
+        "roughnessActualMeanBeforeQuantization": 0.5700000000000001
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Leather_BaseColor.png",
+          "sha256": "377d3a6e1e28ae0b61f759bfae57aa8c7dd59fe7091db125e16112276736d68b",
+          "byteLength": 1505,
+          "mode": "RGB",
+          "resolution": [
+            512,
+            512
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.04970657,
+            0.02315337,
+            0.01298303
+          ],
+          "decodedMaximum": [
+            0.04970657,
+            0.02415763,
+            0.01298303
+          ],
+          "decodedMean": [
+            0.04970657,
+            0.02415762,
+            0.01298303
+          ],
+          "maxDecodedQuantizationError": 0.0006272187921957453,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                63,
+                43,
+                30
+              ],
+              "decodedLinear": [
+                0.04970657,
+                0.02415763,
+                0.01298303
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                256,
+                256
+              ],
+              "storedBytes": [
+                63,
+                43,
+                30
+              ],
+              "decodedLinear": [
+                0.04970657,
+                0.02415763,
+                0.01298303
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                511,
+                511
+              ],
+              "storedBytes": [
+                63,
+                43,
+                30
+              ],
+              "decodedLinear": [
+                0.04970657,
+                0.02415763,
+                0.01298303
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Leather_Normal.png",
+          "sha256": "10ee6f88248f8047ea93d1e03448eeae94e89353df4c612a5806fa38efd0a960",
+          "byteLength": 1173286,
+          "mode": "RGB",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.4745098,
+            0.4745098,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.5254902,
+            0.5254902,
+            1.0
+          ],
+          "decodedMean": [
+            0.50000016,
+            0.50000126,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.001960784167857499,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                128,
+                129,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50588235,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                512,
+                512
+              ],
+              "storedBytes": [
+                127,
+                132,
+                255
+              ],
+              "decodedLinear": [
+                0.49803922,
+                0.51764706,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                1023,
+                1023
+              ],
+              "storedBytes": [
+                133,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.52156863,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Leather_MetallicSmoothness.png",
+          "sha256": "05902de576431315e36cb7059939752a1b5d1cbc5480312f43810065cf7b0341",
+          "byteLength": 499201,
+          "mode": "RGBA",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.0,
+            0.0,
+            0.0,
+            0.40784314
+          ],
+          "decodedMaximum": [
+            0.0,
+            0.0,
+            0.0,
+            0.43529412
+          ],
+          "decodedMean": [
+            0.0,
+            0.0,
+            0.0,
+            0.43042825
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                108
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.42352941
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                512,
+                512
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                111
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.43529412
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                1023,
+                1023
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                111
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.43529412
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Leather_Roughness.png",
+          "sha256": "65e9cedaa09e0495e897cf93bbee585ecee33dece937a0e725513232d4f0bddd",
+          "byteLength": 378716,
+          "mode": "L",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.56470588
+          ],
+          "decodedMaximum": [
+            0.59215686
+          ],
+          "decodedMean": [
+            0.56957175
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                147
+              ],
+              "decodedLinear": [
+                0.57647059
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                512,
+                512
+              ],
+              "storedBytes": [
+                144
+              ],
+              "decodedLinear": [
+                0.56470588
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                1023,
+                1023
+              ],
+              "storedBytes": [
+                144
+              ],
+              "decodedLinear": [
+                0.56470588
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 0.0025956317324222766
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_Lens",
+      "intent": "Nearly clear slightly cool glass, flat tangent normal; optical ribs and lens shape are geometry-specific, not invented tiling detail.",
+      "baseReflectanceLinear": [
+        0.91,
+        0.94,
+        0.98
+      ],
+      "metallicNominal": 0,
+      "uvScale": 1,
+      "emissionStrengthBlender": 0,
+      "surfaceResponse": {
+        "pattern": "constant",
+        "heightPeakToPeakMicrometres": 0.0,
+        "tileMetresAtOriginalUV0": 0.5,
+        "roughnessNominal": 0.035,
+        "roughnessActualMeanBeforeQuantization": 0.035
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lens_BaseColor.png",
+          "sha256": "745a68fa38f0e7a28f15b7c1f2fc12f55adb27dc4f6a0cac2014f3b8c3d4b4a7",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.91309865,
+            0.93868573,
+            0.98225055
+          ],
+          "decodedMaximum": [
+            0.91309865,
+            0.93868573,
+            0.98225055
+          ],
+          "decodedMean": [
+            0.91309865,
+            0.93868573,
+            0.98225055
+          ],
+          "maxDecodedQuantizationError": 0.0030986517934191715,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                245,
+                248,
+                253
+              ],
+              "decodedLinear": [
+                0.91309865,
+                0.93868573,
+                0.98225055
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                245,
+                248,
+                253
+              ],
+              "decodedLinear": [
+                0.91309865,
+                0.93868573,
+                0.98225055
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                245,
+                248,
+                253
+              ],
+              "decodedLinear": [
+                0.91309865,
+                0.93868573,
+                0.98225055
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lens_Normal.png",
+          "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMean": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.0019607843137254832,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lens_MetallicSmoothness.png",
+          "sha256": "7ec27583ca3a7d99bbf8ee4ec4eca71c3afef1f857450cc901850926f180aec2",
+          "byteLength": 78,
+          "mode": "RGBA",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.0,
+            0.0,
+            0.0,
+            0.96470588
+          ],
+          "decodedMaximum": [
+            0.0,
+            0.0,
+            0.0,
+            0.96470588
+          ],
+          "decodedMean": [
+            0.0,
+            0.0,
+            0.0,
+            0.96470588
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                246
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.96470588
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                246
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.96470588
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                0,
+                0,
+                0,
+                246
+              ],
+              "decodedLinear": [
+                0.0,
+                0.0,
+                0.0,
+                0.96470588
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lens_Roughness.png",
+          "sha256": "06980483556882729de46bed8f248eacd4938eedd4a3057ae5c986b1b8f7d49b",
+          "byteLength": 73,
+          "mode": "L",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.03529412
+          ],
+          "decodedMaximum": [
+            0.03529412
+          ],
+          "decodedMean": [
+            0.03529412
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                9
+              ],
+              "decodedLinear": [
+                0.03529412
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                9
+              ],
+              "decodedLinear": [
+                0.03529412
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                9
+              ],
+              "decodedLinear": [
+                0.03529412
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 1.5378582249425676e-05
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_Lamp",
+      "intent": "Neutral warm white bulb; constant emission color separated from emissive intensity.",
+      "baseReflectanceLinear": [
+        0.85,
+        0.85,
+        0.82
+      ],
+      "metallicNominal": 0.08,
+      "uvScale": 1,
+      "emissionStrengthBlender": 0.15,
+      "surfaceResponse": {
+        "pattern": "constant",
+        "heightPeakToPeakMicrometres": 0.0,
+        "tileMetresAtOriginalUV0": 0.5,
+        "roughnessNominal": 0.19,
+        "roughnessActualMeanBeforeQuantization": 0.19
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lamp_BaseColor.png",
+          "sha256": "a5f8ef6fcbc2456d5e856c28c7084e7ba98149cf6ad4419ba454799bdc45a4f4",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.84687323,
+            0.84687323,
+            0.82278575
+          ],
+          "decodedMaximum": [
+            0.84687323,
+            0.84687323,
+            0.82278575
+          ],
+          "decodedMean": [
+            0.84687323,
+            0.84687323,
+            0.82278575
+          ],
+          "maxDecodedQuantizationError": 0.003126768490141929,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                237,
+                237,
+                234
+              ],
+              "decodedLinear": [
+                0.84687323,
+                0.84687323,
+                0.82278575
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                237,
+                237,
+                234
+              ],
+              "decodedLinear": [
+                0.84687323,
+                0.84687323,
+                0.82278575
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                237,
+                237,
+                234
+              ],
+              "decodedLinear": [
+                0.84687323,
+                0.84687323,
+                0.82278575
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lamp_Normal.png",
+          "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMean": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.0019607843137254832,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lamp_MetallicSmoothness.png",
+          "sha256": "4b104a025e049a69782984dbf0e9bfa10037c4da8ab4382e4dbc1e17ec73d4a7",
+          "byteLength": 78,
+          "mode": "RGBA",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.07843137,
+            0.0,
+            0.0,
+            0.81176471
+          ],
+          "decodedMaximum": [
+            0.07843137,
+            0.0,
+            0.0,
+            0.81176471
+          ],
+          "decodedMean": [
+            0.07843137,
+            0.0,
+            0.0,
+            0.81176471
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                20,
+                0,
+                0,
+                207
+              ],
+              "decodedLinear": [
+                0.07843137,
+                0.0,
+                0.0,
+                0.81176471
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                20,
+                0,
+                0,
+                207
+              ],
+              "decodedLinear": [
+                0.07843137,
+                0.0,
+                0.0,
+                0.81176471
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                20,
+                0,
+                0,
+                207
+              ],
+              "decodedLinear": [
+                0.07843137,
+                0.0,
+                0.0,
+                0.81176471
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lamp_Roughness.png",
+          "sha256": "0ce6f117918d70c2416946df6ce23153717a57384462380f621d06ee3e9fbc75",
+          "byteLength": 73,
+          "mode": "L",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.18823529
+          ],
+          "decodedMaximum": [
+            0.18823529
+          ],
+          "decodedMean": [
+            0.18823529
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                48
+              ],
+              "decodedLinear": [
+                0.18823529
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                48
+              ],
+              "decodedLinear": [
+                0.18823529
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                48
+              ],
+              "decodedLinear": [
+                0.18823529
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "emission": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Lamp_Emission.png",
+          "sha256": "a5f8ef6fcbc2456d5e856c28c7084e7ba98149cf6ad4419ba454799bdc45a4f4",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.84687323,
+            0.84687323,
+            0.82278575
+          ],
+          "decodedMaximum": [
+            0.84687323,
+            0.84687323,
+            0.82278575
+          ],
+          "decodedMean": [
+            0.84687323,
+            0.84687323,
+            0.82278575
+          ],
+          "maxDecodedQuantizationError": 0.003126768490141929,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                237,
+                237,
+                234
+              ],
+              "decodedLinear": [
+                0.84687323,
+                0.84687323,
+                0.82278575
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                237,
+                237,
+                234
+              ],
+              "decodedLinear": [
+                0.84687323,
+                0.84687323,
+                0.82278575
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                237,
+                237,
+                234
+              ],
+              "decodedLinear": [
+                0.84687323,
+                0.84687323,
+                0.82278575
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 1.5378582249425676e-05
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_Amber",
+      "intent": "Saturated amber lens pigment and emission color; signal timing/intensity remain runtime responsibilities.",
+      "baseReflectanceLinear": [
+        0.52,
+        0.13,
+        0.012
+      ],
+      "metallicNominal": 0.04,
+      "uvScale": 1,
+      "emissionStrengthBlender": 0.25,
+      "surfaceResponse": {
+        "pattern": "constant",
+        "heightPeakToPeakMicrometres": 0.0,
+        "tileMetresAtOriginalUV0": 0.5,
+        "roughnessNominal": 0.25,
+        "roughnessActualMeanBeforeQuantization": 0.25
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Amber_BaseColor.png",
+          "sha256": "ab81d1539d205a7447f72bc0bf4a681e2f24810dcc1b52ad98502f879c4a09f9",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.52099557,
+            0.13013648,
+            0.01228649
+          ],
+          "decodedMaximum": [
+            0.52099557,
+            0.13013648,
+            0.01228649
+          ],
+          "decodedMean": [
+            0.52099557,
+            0.13013648,
+            0.01228649
+          ],
+          "maxDecodedQuantizationError": 0.000995573204354283,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                191,
+                101,
+                29
+              ],
+              "decodedLinear": [
+                0.52099557,
+                0.13013648,
+                0.01228649
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                191,
+                101,
+                29
+              ],
+              "decodedLinear": [
+                0.52099557,
+                0.13013648,
+                0.01228649
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                191,
+                101,
+                29
+              ],
+              "decodedLinear": [
+                0.52099557,
+                0.13013648,
+                0.01228649
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Amber_Normal.png",
+          "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMean": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.0019607843137254832,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Amber_MetallicSmoothness.png",
+          "sha256": "93b63808e50a1966322eb0d3860cbd4ff0fc24bb0ae8db9fdde58422d9070231",
+          "byteLength": 78,
+          "mode": "RGBA",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.03921569,
+            0.0,
+            0.0,
+            0.74901961
+          ],
+          "decodedMaximum": [
+            0.03921569,
+            0.0,
+            0.0,
+            0.74901961
+          ],
+          "decodedMean": [
+            0.03921569,
+            0.0,
+            0.0,
+            0.74901961
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                10,
+                0,
+                0,
+                191
+              ],
+              "decodedLinear": [
+                0.03921569,
+                0.0,
+                0.0,
+                0.74901961
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                10,
+                0,
+                0,
+                191
+              ],
+              "decodedLinear": [
+                0.03921569,
+                0.0,
+                0.0,
+                0.74901961
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                10,
+                0,
+                0,
+                191
+              ],
+              "decodedLinear": [
+                0.03921569,
+                0.0,
+                0.0,
+                0.74901961
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Amber_Roughness.png",
+          "sha256": "0d89f820592f42acf14ec6f9c63574116fb958d915c8da4ddd543b3ed8b3d7ac",
+          "byteLength": 73,
+          "mode": "L",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.25098039
+          ],
+          "decodedMaximum": [
+            0.25098039
+          ],
+          "decodedMean": [
+            0.25098039
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                64
+              ],
+              "decodedLinear": [
+                0.25098039
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                64
+              ],
+              "decodedLinear": [
+                0.25098039
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                64
+              ],
+              "decodedLinear": [
+                0.25098039
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "emission": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_Amber_Emission.png",
+          "sha256": "ab81d1539d205a7447f72bc0bf4a681e2f24810dcc1b52ad98502f879c4a09f9",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.52099557,
+            0.13013648,
+            0.01228649
+          ],
+          "decodedMaximum": [
+            0.52099557,
+            0.13013648,
+            0.01228649
+          ],
+          "decodedMean": [
+            0.52099557,
+            0.13013648,
+            0.01228649
+          ],
+          "maxDecodedQuantizationError": 0.000995573204354283,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                191,
+                101,
+                29
+              ],
+              "decodedLinear": [
+                0.52099557,
+                0.13013648,
+                0.01228649
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                191,
+                101,
+                29
+              ],
+              "decodedLinear": [
+                0.52099557,
+                0.13013648,
+                0.01228649
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                191,
+                101,
+                29
+              ],
+              "decodedLinear": [
+                0.52099557,
+                0.13013648,
+                0.01228649
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 1.5378582249425676e-05
+      },
+      "visualAccepted": false
+    },
+    {
+      "material": "Spark_RedLamp",
+      "intent": "Deep red rear lens pigment and emission color; brake/tail intensity remains a runtime responsibility.",
+      "baseReflectanceLinear": [
+        0.38,
+        0.005,
+        0.009
+      ],
+      "metallicNominal": 0.04,
+      "uvScale": 1,
+      "emissionStrengthBlender": 0.25,
+      "surfaceResponse": {
+        "pattern": "constant",
+        "heightPeakToPeakMicrometres": 0.0,
+        "tileMetresAtOriginalUV0": 0.5,
+        "roughnessNominal": 0.24,
+        "roughnessActualMeanBeforeQuantization": 0.24
+      },
+      "maps": {
+        "baseColor": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_RedLamp_BaseColor.png",
+          "sha256": "5cff8618a28ce85b61b29b88f8868f48f42ece6cb9080dbb47cab197fef0392c",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.38132601,
+            0.00518152,
+            0.00913406
+          ],
+          "decodedMaximum": [
+            0.38132601,
+            0.00518152,
+            0.00913406
+          ],
+          "decodedMean": [
+            0.38132601,
+            0.00518152,
+            0.00913406
+          ],
+          "maxDecodedQuantizationError": 0.0013260114325301386,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                166,
+                16,
+                24
+              ],
+              "decodedLinear": [
+                0.38132601,
+                0.00518152,
+                0.00913406
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                166,
+                16,
+                24
+              ],
+              "decodedLinear": [
+                0.38132601,
+                0.00518152,
+                0.00913406
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                166,
+                16,
+                24
+              ],
+              "decodedLinear": [
+                0.38132601,
+                0.00518152,
+                0.00913406
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "normal": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_RedLamp_Normal.png",
+          "sha256": "b8e871ad80427c679edeb3e0d690a38638bd2ea14a215edc97123505255014e4",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMaximum": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "decodedMean": [
+            0.50196078,
+            0.50196078,
+            1.0
+          ],
+          "maxDecodedQuantizationError": 0.0019607843137254832,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                128,
+                128,
+                255
+              ],
+              "decodedLinear": [
+                0.50196078,
+                0.50196078,
+                1.0
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "metallicSmoothness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_RedLamp_MetallicSmoothness.png",
+          "sha256": "b99d0bf571f3dae8e434555d23751781d39976d95641fd574716cc33bcd72a2e",
+          "byteLength": 78,
+          "mode": "RGBA",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.03921569,
+            0.0,
+            0.0,
+            0.76078431
+          ],
+          "decodedMaximum": [
+            0.03921569,
+            0.0,
+            0.0,
+            0.76078431
+          ],
+          "decodedMean": [
+            0.03921569,
+            0.0,
+            0.0,
+            0.76078431
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                10,
+                0,
+                0,
+                194
+              ],
+              "decodedLinear": [
+                0.03921569,
+                0.0,
+                0.0,
+                0.76078431
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                10,
+                0,
+                0,
+                194
+              ],
+              "decodedLinear": [
+                0.03921569,
+                0.0,
+                0.0,
+                0.76078431
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                10,
+                0,
+                0,
+                194
+              ],
+              "decodedLinear": [
+                0.03921569,
+                0.0,
+                0.0,
+                0.76078431
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "roughness": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_RedLamp_Roughness.png",
+          "sha256": "dc4bacf1fd0895f6aa2ee7e6a923ee1b54fc82d155cf1cba25d0f4c0f9fa78e7",
+          "byteLength": 73,
+          "mode": "L",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "linear-data",
+          "decodedMinimum": [
+            0.23921569
+          ],
+          "decodedMaximum": [
+            0.23921569
+          ],
+          "decodedMean": [
+            0.23921569
+          ],
+          "maxDecodedQuantizationError": 0.0,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                61
+              ],
+              "decodedLinear": [
+                0.23921569
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                61
+              ],
+              "decodedLinear": [
+                0.23921569
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                61
+              ],
+              "decodedLinear": [
+                0.23921569
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        },
+        "emission": {
+          "path": "ArtSource/P08/Golden/Spark/V1/Textures/Spark_RedLamp_Emission.png",
+          "sha256": "5cff8618a28ce85b61b29b88f8868f48f42ece6cb9080dbb47cab197fef0392c",
+          "byteLength": 77,
+          "mode": "RGB",
+          "resolution": [
+            4,
+            4
+          ],
+          "encoding": "sRGB",
+          "decodedMinimum": [
+            0.38132601,
+            0.00518152,
+            0.00913406
+          ],
+          "decodedMaximum": [
+            0.38132601,
+            0.00518152,
+            0.00913406
+          ],
+          "decodedMean": [
+            0.38132601,
+            0.00518152,
+            0.00913406
+          ],
+          "maxDecodedQuantizationError": 0.0013260114325301386,
+          "samples": [
+            {
+              "xyFromTopLeft": [
+                0,
+                0
+              ],
+              "storedBytes": [
+                166,
+                16,
+                24
+              ],
+              "decodedLinear": [
+                0.38132601,
+                0.00518152,
+                0.00913406
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                2,
+                2
+              ],
+              "storedBytes": [
+                166,
+                16,
+                24
+              ],
+              "decodedLinear": [
+                0.38132601,
+                0.00518152,
+                0.00913406
+              ]
+            },
+            {
+              "xyFromTopLeft": [
+                3,
+                3
+              ],
+              "storedBytes": [
+                166,
+                16,
+                24
+              ],
+              "decodedLinear": [
+                0.38132601,
+                0.00518152,
+                0.00913406
+              ]
+            }
+          ],
+          "pngRoundtripExact": true
+        }
+      },
+      "artifactChecks": {
+        "packedRedIsMetallic": true,
+        "packedGreenBlueAreZero": true,
+        "packedAlphaPlusRoughnessEquals255": true,
+        "normalPositiveZ": true,
+        "decodedNormalMaximumUnitLengthError": 1.5378582249425676e-05
+      },
+      "visualAccepted": false
+    }
+  ],
+  "pngCount": 43,
+  "totalPngBytes": 2669004,
+  "bindingSnippet": {
+    "path": "ArtSource/P08/Golden/Spark/V1/Textures/finish-material-binding.py",
+    "sha256": "cca49bf004b6f14b9f2a3fc64dbfb72394f78dd11af3ed6c43fe5e9583748b46",
+    "executed": false,
+    "syntaxCompiledOnly": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: PART_REPORT=[{\"name\": \"Object_18\", \"parent\": \"carroseria.003_3\", \"bounds\": [[-0.04864640533924103, 0.11087505519390106, 0.9007698893547058], [0.05349433049559593, 0.21423125267028809, 0.9460057616233826]], \"materials\": [\"polish_matle.001\"]}, {\"name\": \"Object_183\", \"parent\": \" CAUCHO DE ADELANTE.005_83\", \"bounds\": [[-0.03177683427929878, 0.5681702494621277, 0.12715980410575867], [0.03177700191736221, 0.8649478554725647, 0.4239370822906494]], \"materials\": [\"polish_matle\"]}, {\"name\": \"Object_185\", \"parent\": \"CAUCHO DE ATRAS .007_84\", \"bounds\": [[-0.053002066910266876, 0.4495362341403961, 0.0037797591648995876], [0.05300223454833031, 0.9916720986366272, 0.5459156632423401]], \"materials\": [\"rubber_tyre\"]}, {\"name\": \"Object_192\", \"parent\": \"CAUCHO DE ATRAS .002_88\", \"bounds\": [[-0.09719834476709366, -0.9866832494735718, 2.0954757928848267e-08], [0.09719953685998917, -0.36338862776756287, 0.6232948303222656]], \"materials\": [\"rubber_tyre\"]}, {\"name\": \"Object_196\", \"parent\": \"CAUCHO DE ATRAS .004_90\", \"bounds\": [[-0.1230141669511795, -0.7701592445373535, 0.2167288064956665], [-0.11925344914197922, -0.5851505398750305, 0.4017375409603119]], \"materials\": [\"heavy_mattle\"]}, {\"name\": \"Object_198\", \"parent\": \"CAUCHO DE ATRAS .005_91\", \"bounds\": [[-0.14515018463134766, -0.7439955472946167, 0.24277810752391815], [-0.11568199098110199, -0.6084471940994263, 0.37721216678619385]], \"materials\": [\"heavy_mattle\"]}, {\"name\": \"Object_206\", \"parent\": \"C\\ufffd\\ufffdrculo.003_95\", \"bounds\": [[-0.002069888636469841, -0.7770082950592041, 0.21445626020431519], [0.0026169512420892715, -0.583783745765686, 0.407680869102478]], \"materials\": [\"polish_matle\"]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: PART_REPORT=[{\"name\": \"Object_18\", \"parent\": \"carroseria.003_3\", \"bounds\": [[-0.04864640533924103, 0.11087505519390106, 0.9007698893547058], [0.05349433049559593, 0.21423125267028809, 0.9460057616233826]], \"materials\": [\"polish_matle.001\"]}, {\"name\": \"Object_183\", \"parent\": \" CAUCHO DE ADELANTE.005_83\", \"bounds\": [[-0.03177683427929878, 0.5681702494621277, 0.12715980410575867], [0.03177700191736221, 0.8649478554725647, 0.4239370822906494]], \"materials\": [\"polish_matle\"]}, {\"name\": \"Object_185\", \"parent\": \"CAUCHO DE ATRAS .007_84\", \"bounds\": [[-0.053002066910266876, 0.4495362341403961, 0.0037797591648995876], [0.05300223454833031, 0.9916720986366272, 0.5459156632423401]], \"materials\": [\"rubber_tyre\"]}, {\"name\": \"Object_192\", \"parent\": \"CAUCHO DE ATRAS .002_88\", \"bounds\": [[-0.09719834476709366, -0.9866832494735718, 2.0954757928848267e-08], [0.09719953685998917, -0.36338862776756287, 0.6232948303222656]], \"materials\": [\"rubber_tyre\"]}, {\"name\": \"Object_196\", \"parent\": \"CAUCHO DE ATRAS .004_90\", \"bounds\": [[-0.1230141669511795, -0.7701592445373535, 0.2167288064956665], [-0.11925344914197922, -0.5851505398750305, 0.4017375409603119]], \"materials\": [\"heavy_mattle\"]}, {\"name\": \"Object_198\", \"parent\": \"CAUCHO DE ATRAS .005_91\", \"bounds\": [[-0.14515018463134766, -0.7439955472946167, 0.24277810752391815], [-0.11568199098110199, -0.6084471940994263, 0.37721216678619385]], \"materials\": [\"heavy_mattle\"]}, {\"name\": \"Object_206\", \"parent\": \"C\\ufffd\\ufffdrculo.003_95\", \"bounds\": [[-0.002069888636469841, -0.7770082950592041, 0.21445626020431519], [0.0026169512420892715, -0.583783745765686, 0.407680869102478]], \"materials\": [\"polish_matle\"]}]\n"
+    },
+    "isError": false
+  }
+}

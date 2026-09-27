@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "activeReleaseStillE": true,
+    "activeSourceUnchanged": true,
+    "realmStatePreserved": true,
+    "caddyFilesUnchanged": true,
+    "normalizedFirewallUnchanged": true,
+    "unrelatedServicesStillRunning": true,
+    "unrelatedSiteStatusPreserved": true
+  },
+  "scope": "Preparation/ARMQA only; e still active. No activation, Caddy/firewall edit or unrelated service restart."
+}

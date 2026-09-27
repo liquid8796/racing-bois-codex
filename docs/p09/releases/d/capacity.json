@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "generatedUtc": "2026-09-26T19:33:13.751531+00:00",
+  "status": "passed_for_measured_staging_scope",
+  "releaseId": "p09-20260927-d",
+  "sourceSha256": "16787112e2104972c9f46c2b74c50504b0a26c2c4d8b1e5ebd97faa6e99da823",
+  "sourceStillMatches": true,
+  "networkRun": "20260926T190256Z",
+  "elapsedSeconds": 1800.3044612,
+  "peers": 8,
+  "raceCycles": 22,
+  "intentionalReconnects": 14,
+  "reconnectStorms": 2,
+  "clients": [
+    {
+      "index": 0,
+      "meanRttMilliseconds": 227.4860792114535,
+      "maximumRttMilliseconds": 398.16101444379296,
+      "averageUploadBytesPerSecondWholeRun": 7079.546418223362,
+      "averageDownloadBytesPerSecondWholeRun": 53317.621029511225,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 16.279516220092773
+    },
+    {
+      "index": 1,
+      "meanRttMilliseconds": 229.62107176582023,
+      "maximumRttMilliseconds": 383.50352750705196,
+      "averageUploadBytesPerSecondWholeRun": 7321.487161796074,
+      "averageDownloadBytesPerSecondWholeRun": 53393.90201584421,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 16.552989959716797
+    },
+    {
+      "index": 2,
+      "meanRttMilliseconds": 235.59894759440508,
+      "maximumRttMilliseconds": 443.9248724819678,
+      "averageUploadBytesPerSecondWholeRun": 14027.32401338783,
+      "averageDownloadBytesPerSecondWholeRun": 57393.60048640199,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 14.464767456054688
+    },
+    {
+      "index": 3,
+      "meanRttMilliseconds": 232.36187367524144,
+      "maximumRttMilliseconds": 293.2292663352025,
+      "averageUploadBytesPerSecondWholeRun": 13683.775456280027,
+      "averageDownloadBytesPerSecondWholeRun": 57288.97707182996,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 15.653952598571777
+    },
+    {
+      "index": 4,
+      "meanRttMilliseconds": 235.7648477406615,
+      "maximumRttMilliseconds": 331.9295225585111,
+      "averageUploadBytesPerSecondWholeRun": 7593.307295860407,
+      "averageDownloadBytesPerSecondWholeRun": 53738.156009186474,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 9.352815628051758
+    },
+    {
+      "index": 5,
+      "meanRttMilliseconds": 231.09765452928653,
+      "maximumRttMilliseconds": 338.0808966978971,
+      "averageUploadBytesPerSecondWholeRun": 7152.470750095811,
+      "averageDownloadBytesPerSecondWholeRun": 53570.29051392543,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 11.634521484375
+    },
+    {
+      "index": 6,
+      "meanRttMilliseconds": 232.90648352381461,
+      "maximumRttMilliseconds": 444.0751955658378,
+      "averageUploadBytesPerSecondWholeRun": 13552.16049608487,
+      "averageDownloadBytesPerSecondWholeRun": 57200.41149670845,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 12.602745056152344
+    },
+    {
+      "index": 7,
+      "meanRttMilliseconds": 233.33427526483837,
+      "maximumRttMilliseconds": 321.4398471226786,
+      "averageUploadBytesPerSecondWholeRun": 14183.068781032913,
+      "averageDownloadBytesPerSecondWholeRun": 57580.292241737625,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 14.619650840759277
+    }
+  ],
+  "serverWorkload": {
+    "tickSamples": 108828,
+    "p50UpperBoundMilliseconds": 0.05,
+    "p95UpperBoundMilliseconds": 0.5,
+    "p99UpperBoundMilliseconds": 1,
+    "slowTicksDelta": 0,
+    "droppedCatchupTicksDelta": 0,
+    "persistenceFailuresDelta": 0,
+    "lifetimeMaximumStepMilliseconds": 15.9798
+  },
+  "resourceObservation": {
+    "firstUtc": "2026-09-26T19:03:01.339137+00:00",
+    "lastUtc": "2026-09-26T19:33:07.562627+00:00",
+    "observedSeconds": 1806.22349,
+    "samples": 56,
+    "averageCpuCores": 0.1532614770722531,
+    "maximumObservedCgroupMemoryBytes": 87367680,
+    "firstCgroupMemoryBytes": 65150976,
+    "lastCgroupMemoryBytes": 86482944,
+    "serviceAutomaticRestartsDelta": 0
+  },
+  "maintenanceEvent": null,
+  "limits": "One eight-client room from one Windows Internet origin to Frankfurt. Includes planned reconnects. Any maintenance during the run is recorded separately. No claim for 16 players, eight simultaneous rooms, large account population, Unity client visuals/FPS, eight-hour duration or global player feel.",
+  "fullP09PhaseComplete": false,
+  "openGates": [
+    "Rendered Unity Windows client against OCI",
+    "Real multiplayer clients in multiple regions",
+    "Final approved P08 assets published",
+    "Production domain/notification/key-escrow decisions"
+  ]
+}

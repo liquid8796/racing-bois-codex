@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "generatedUtc": "2026-09-26T18:29:41.542454+00:00",
+  "status": "passed_for_measured_staging_scope",
+  "releaseId": "p09-20260927-c",
+  "sourceSha256": "fbd8d0b623d9faabd097b23824b33bfead07399c1a2f1097a8ffd29453dea7dc",
+  "sourceStillMatches": true,
+  "networkRun": "20260926T175901Z",
+  "elapsedSeconds": 1800.2575195,
+  "peers": 8,
+  "raceCycles": 21,
+  "intentionalReconnects": 14,
+  "reconnectStorms": 2,
+  "clients": [
+    {
+      "index": 0,
+      "meanRttMilliseconds": 225.77708067179927,
+      "maximumRttMilliseconds": 264.795790570849,
+      "averageUploadBytesPerSecondWholeRun": 6940.712572871439,
+      "averageDownloadBytesPerSecondWholeRun": 53049.01657987492,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 3.09525990486145
+    },
+    {
+      "index": 1,
+      "meanRttMilliseconds": 228.7761566969507,
+      "maximumRttMilliseconds": 272.2653324815284,
+      "averageUploadBytesPerSecondWholeRun": 13960.643256738249,
+      "averageDownloadBytesPerSecondWholeRun": 56339.6041407286,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 14.589577674865723
+    },
+    {
+      "index": 2,
+      "meanRttMilliseconds": 230.96142325961054,
+      "maximumRttMilliseconds": 273.07176227285083,
+      "averageUploadBytesPerSecondWholeRun": 6872.916716624219,
+      "averageDownloadBytesPerSecondWholeRun": 52704.15980617711,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 7.84097957611084
+    },
+    {
+      "index": 3,
+      "meanRttMilliseconds": 228.44909364460275,
+      "maximumRttMilliseconds": 276.86264149485277,
+      "averageUploadBytesPerSecondWholeRun": 13510.4982129197,
+      "averageDownloadBytesPerSecondWholeRun": 56256.4571473798,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 14.986156463623047
+    },
+    {
+      "index": 4,
+      "meanRttMilliseconds": 227.6439697240919,
+      "maximumRttMilliseconds": 270.48002409320463,
+      "averageUploadBytesPerSecondWholeRun": 13047.11395207701,
+      "averageDownloadBytesPerSecondWholeRun": 56019.91543299314,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 12.72530746459961
+    },
+    {
+      "index": 5,
+      "meanRttMilliseconds": 226.38309326224208,
+      "maximumRttMilliseconds": 283.7630107865962,
+      "averageUploadBytesPerSecondWholeRun": 6952.974151984927,
+      "averageDownloadBytesPerSecondWholeRun": 52777.962025337896,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 9.50046443939209
+    },
+    {
+      "index": 6,
+      "meanRttMilliseconds": 230.94806433784885,
+      "maximumRttMilliseconds": 276.0653792774237,
+      "averageUploadBytesPerSecondWholeRun": 12845.832748651936,
+      "averageDownloadBytesPerSecondWholeRun": 56096.52836114706,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 12.038273811340332
+    },
+    {
+      "index": 7,
+      "meanRttMilliseconds": 229.55968349475907,
+      "maximumRttMilliseconds": 280.81449317765794,
+      "averageUploadBytesPerSecondWholeRun": 6728.8217762114455,
+      "averageDownloadBytesPerSecondWholeRun": 52480.21517845964,
+      "invalidSnapshots": 0,
+      "maximumCorrectionMeters": 14.905017852783203
+    }
+  ],
+  "serverWorkload": {
+    "tickSamples": 109853,
+    "p50UpperBoundMilliseconds": 0.05,
+    "p95UpperBoundMilliseconds": 0.5,
+    "p99UpperBoundMilliseconds": 1,
+    "slowTicksDelta": 0,
+    "droppedCatchupTicksDelta": 0,
+    "persistenceFailuresDelta": 0,
+    "lifetimeMaximumStepMilliseconds": 19.8793
+  },
+  "resourceObservation": {
+    "firstUtc": "2026-09-26T18:06:31.819551+00:00",
+    "lastUtc": "2026-09-26T18:29:29.010752+00:00",
+    "observedSeconds": 1377.191201,
+    "samples": 43,
+    "averageCpuCores": 0.1517056998681768,
+    "maximumObservedCgroupMemoryBytes": 82313216,
+    "firstCgroupMemoryBytes": 70156288,
+    "lastCgroupMemoryBytes": 81928192,
+    "serviceAutomaticRestartsDelta": 0
+  },
+  "maintenanceEvent": "soak-maintenance-event.json",
+  "limits": "One eight-client room from one Windows Internet origin to Frankfurt. Caddy route hardening was reloaded during this soak; see timestamped event. Includes planned reconnects. No claim for 16 players, eight simultaneous rooms, large account population, Unity client visuals/FPS, eight-hour duration or global player feel.",
+  "fullP09PhaseComplete": false,
+  "openGates": [
+    "Rendered Unity Windows client against OCI",
+    "Real multiplayer clients in multiple regions",
+    "Final approved P08 assets published",
+    "Production domain/notification/key-escrow decisions"
+  ]
+}

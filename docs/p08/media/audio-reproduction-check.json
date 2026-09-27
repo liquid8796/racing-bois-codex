@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "sampledClips": 5,
+  "checks": [
+    {
+      "id": "ash-alert",
+      "pcmExactReproduction": true,
+      "pcmSha256": "6fca98cc996d3743a4ac01c420b9dab4e9364e5b24f04130faec8837f638a358"
+    },
+    {
+      "id": "chain-link-contact",
+      "pcmExactReproduction": true,
+      "pcmSha256": "845548629bcd18042e094da074e097c9fca6c9cc7e362bcbc8774024d9d412fa"
+    },
+    {
+      "id": "patrol-long-call",
+      "pcmExactReproduction": true,
+      "pcmSha256": "49bfbd39550ac9155af2d71af997dbf52f0ceb86e1bba7509dcdf198d2298da5"
+    },
+    {
+      "id": "amber-apex",
+      "pcmExactReproduction": true,
+      "pcmSha256": "534ac38f25b33d8d786b1530de48778d84a33a6fb0cf068c31ca9c608db50e74"
+    },
+    {
+      "id": "safe-passage",
+      "pcmExactReproduction": true,
+      "pcmSha256": "1c8ccdb3b6e073a259878d92bc26831a8a61c874cb06e34f45bc168e7d08eaca"
+    }
+  ],
+  "scope": "Five representative source WAV PCM regenerations; not a whole-library second pass or codec-container reproducibility claim."
+}

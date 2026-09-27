@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "webRoot": "D:\\Project\\Unity\\racing-bois\\Build\\LanHost\\linux-arm64-p06-9c76d9d\\web",
+  "entrypointDependenciesLocal": true,
+  "externalCssFonts": 0,
+  "verifiedDependencies": [
+    {
+      "path": "Build/2ba8370b11067bcb254399ae6234ac68.data.gz",
+      "bytes": 10300799,
+      "sha256": "0ed9d6e3342c4e0a9687de6fe4530091f257b00efa8d0c990ca9df4a29c32ee9"
+    },
+    {
+      "path": "Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+      "bytes": 75274,
+      "sha256": "fc09a2a606a5f686bd0e6bd9028b64d571f3395b85489777c439debc466a6186"
+    },
+    {
+      "path": "Build/e8ee6e7ac2847c01f0d75f830d6f269a.wasm.gz",
+      "bytes": 11126206,
+      "sha256": "ff6ee91f79f262f160fdaf325589fc2241ba635b54a43acc91c54c4a44e971db"
+    },
+    {
+      "path": "Build/61300405e5761dadd186b9ab6d83bf1f.loader.js",
+      "bytes": 27222,
+      "sha256": "fab7d36022b3886f6cc53c7832d7fc80017de1a5b8725f49cdf3badd00666d97"
+    }
+  ],
+  "httpCompatibilityRequired": true,
+  "httpCompressionCompatible": true,
+  "compression": [
+    {
+      "path": "Build/2ba8370b11067bcb254399ae6234ac68.data.gz",
+      "format": "gzip",
+      "httpCompatible": true,
+      "gzipDecodedBytes": 17524127
+    },
+    {
+      "path": "Build/aa4e33499b25df7179612514e9899c70.framework.js.gz",
+      "format": "gzip",
+      "httpCompatible": true,
+      "gzipDecodedBytes": 332079
+    },
+    {
+      "path": "Build/e8ee6e7ac2847c01f0d75f830d6f269a.wasm.gz",
+      "format": "gzip",
+      "httpCompatible": true,
+      "gzipDecodedBytes": 44133107
+    },
+    {
+      "path": "Build/61300405e5761dadd186b9ab6d83bf1f.loader.js",
+      "format": "uncompressed",
+      "httpCompatible": true,
+      "gzipDecodedBytes": null
+    }
+  ],
+  "compressionReference": "https://docs.unity3d.com/6000.0/Documentation/Manual/webgl-deploying.html",
+  "scope": "Static entrypoint/CSS dependencies, compression-format compatibility and exact bundled file hashes. Gzip bytes are decoded locally. This does not validate live HTTP Content-Encoding headers, two-machine cold-cache offline browser execution or every runtime network request inside Unity code."
+}

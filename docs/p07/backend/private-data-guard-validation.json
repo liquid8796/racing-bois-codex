@@ -1,0 +1,120 @@
+{
+  "generatedAtUtc": "2026-09-22T05:55:31.860381+00:00",
+  "passed": true,
+  "tests": 18,
+  "source": {
+    "path": "tools/p07/package-release.py",
+    "sha256": "e45a30e5a383b50b73be3d0b2eeb7c67eb605a2f38b4a40baaa47308c3707b8f"
+  },
+  "scope": "Synthetic filename/path guard tests only; actual package contents are separately inspected during archive verification.",
+  "cases": [
+    {
+      "path": "Microsoft.Data.Sqlite.dll",
+      "expectedRejected": false,
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "path": "SQLitePCLRaw.provider.e_sqlite3.dll",
+      "expectedRejected": false,
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "path": "e_sqlite3.dll",
+      "expectedRejected": false,
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "path": "libe_sqlite3.so",
+      "expectedRejected": false,
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "path": "realm.sqlite3",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "realm.sqlite3-wal",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "realm.sqlite3-shm",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "realm.sqlite3.backup-20260922",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "other.db",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "other.db-wal",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "other.db-shm",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "other.db-journal",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "other.db.bak",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "other.sqlite",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "other.sqlite3.backup",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "private.pem",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "data/profile.json",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "path": "realm.json.original",
+      "expectedRejected": true,
+      "rejected": true,
+      "passed": true
+    }
+  ]
+}

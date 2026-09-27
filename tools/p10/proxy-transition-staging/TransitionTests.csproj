@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><EnableDefaultCompileItems>false</EnableDefaultCompileItems><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <PropertyGroup Condition="'$(Candidate)'=='true'"><DefineConstants>CANDIDATE</DefineConstants></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../../src/Shared/RacingBois.Gameplay.Definitions/RacingBois.Gameplay.Definitions.csproj" /><Compile Include="Program.cs" /></ItemGroup>
+  <ItemGroup Condition="'$(Candidate)'!='true'"><Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Simulation/**/*.cs" /></ItemGroup>
+  <ItemGroup Condition="'$(Candidate)'=='true'">
+    <Compile Include="ProxyBehaviorTests.cs" />
+    <Compile Include="../../../Packages/com.racingbois.foundation/Runtime/Simulation/**/*.cs" Exclude="../../../Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianSimulation.cs;../../../Packages/com.racingbois.foundation/Runtime/Simulation/RiderPrediction.cs;../../../Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs;../../../Packages/com.racingbois.foundation/Runtime/Simulation/CombatResolver.cs" />
+    <Compile Include="StageSimulation/*.cs" />
+  </ItemGroup>
+</Project>

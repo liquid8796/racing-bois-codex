@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "scope": "Contextual client presentation of retired input rejection only. No server/wire/policy change.",
+  "changes": [
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.cs",
+      "before": "ba2957dd1a5257ca5b212cf78169532917a6f4fb5f3cd7550f110c3e1fc13619",
+      "staged": "tools/p10/retired-input-staging/Application/MultiplayerSession.cs",
+      "after": "e20479466dcf8c72449e9c803213c04758508717e0cf89abc277baa7b5cd87a1"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.Messages.cs",
+      "before": "23866af0b4fb7c9f184bb78a9aca687d5f22c0dd68301c387393c1982e41c023",
+      "staged": "tools/p10/retired-input-staging/Application/MultiplayerSession.Messages.cs",
+      "after": "9ee79e252d2ff08abd40f061d06d53abadcadcaf4187c674a7709f92ca1f5688"
+    },
+    {
+      "path": "Assets/RacingBois/Client/Application/MultiplayerSession.InputErrors.cs",
+      "before": null,
+      "staged": "tools/p10/retired-input-staging/Application/MultiplayerSession.InputErrors.cs",
+      "after": "fc850f5930026fceb66ece042480e5c82ad989079b1473579610a33ab72b589d"
+    }
+  ]
+}

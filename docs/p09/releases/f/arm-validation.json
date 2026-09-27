@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "releaseId": "p09-20260927-f",
+  "sourceSha256": "194d60c159d8978a8520d17df1c900cae09e2614d4b1f620c89b9a5bbcf54c24",
+  "testSourceSha256": "f6b89fb632c793ae0446d129da302f195b88780799117f7c80061853b65babd6",
+  "runtime": "linux-arm64",
+  "totalGroups": 148,
+  "suites": [
+    {
+      "suite": "multiplayer",
+      "report": "arm64-multiplayer-f.json",
+      "passed": true,
+      "tests": 32,
+      "failed": 0
+    },
+    {
+      "suite": "gameplay",
+      "report": "arm64-gameplay-f.json",
+      "passed": true,
+      "tests": 31,
+      "failed": 0
+    },
+    {
+      "suite": "persistence",
+      "report": "arm64-persistence-f.json",
+      "passed": true,
+      "tests": 26,
+      "failed": 0
+    },
+    {
+      "suite": "prediction",
+      "report": "arm64-prediction-f.json",
+      "passed": true,
+      "tests": 13,
+      "failed": 0
+    },
+    {
+      "suite": "prediction-projection",
+      "report": "arm64-prediction-projection-f.json",
+      "passed": true,
+      "tests": 10,
+      "failed": 0
+    },
+    {
+      "suite": "p05-client",
+      "report": "arm64-p05-client-f.json",
+      "passed": true,
+      "tests": 36,
+      "failed": 0
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "generatedUtc": "2026-09-26T21:47:29.978928+00:00",
+  "releaseId": "p09-20260927-e",
+  "vm": {
+    "hostname": "jarvis01",
+    "architecture": "aarch64",
+    "logicalCpus": 4,
+    "region": "eu-frankfurt-1",
+    "shape": "VM.Standard.A1.Flex",
+    "memoryBytes": {
+      "MemTotal": 25139458048,
+      "MemAvailable": 23072292864
+    }
+  },
+  "sourceSha256": "90f38b173fcd7edac01a138d5aee5da1f4a773112f9ddf827e7ab1e045c54544",
+  "testSourceSha256": "8232052fd8d18b1c13ad2800560211ec6102c83acddabafd438becc259ef64db",
+  "verifiedFiles": 1253,
+  "privateModes": {
+    "/var/lib/racing-bois-staging": "0o700",
+    "/var/lib/racing-bois-staging/realm": "0o700",
+    "/var/lib/racing-bois-staging/realm/realm.sqlite3": "0o600",
+    "/var/lib/racing-bois-staging/backup-key": "0o600",
+    "/srv/racing-bois/backups": "0o700"
+  },
+  "services": {
+    "racing-bois-staging": "active",
+    "racing-bois-backup.timer": "active",
+    "racing-bois-monitor.timer": "active",
+    "caddy": "active"
+  },
+  "loopbackOnly": true,
+  "runningExecutableMatchesRelease": true,
+  "resourceLimits": {
+    "MainPID": "1360415",
+    "NRestarts": "0",
+    "CPUQuotaPerSecUSec": "1.500000s",
+    "MemoryHigh": "1073741824",
+    "MemoryMax": "1610612736",
+    "TasksMax": "128"
+  },
+  "health": {
+    "status": "ok",
+    "phase": "P03/P04 gameplay authority",
+    "tick": 17688,
+    "players": 0,
+    "protocolVersion": 3,
+    "simulationRulesVersion": 3,
+    "legacyProtocolVersion": 1,
+    "rejectedCommands": 0,
+    "slowTicks": 0,
+    "maximumStepMilliseconds": 3.0878,
+    "multiplayer": {
+      "protocolVersion": 5,
+      "serviceTick": 17688,
+      "roomCount": 1,
+      "sessionCount": 8,
+      "realmId": "5fa398d06a354a64b09ce60848ef9b20",
+      "realmKind": "online",
+      "profilePersistence": true,
+      "rejectedCommands": 0,
+      "slowTicks": 1,
+      "persistenceFailures": 0,
+      "droppedCatchupTicks": 0,
+      "maximumStepMilliseconds": 17.426,
+      "tickDurationHistogram": {
+        "samples": 17688,
+        "p50UpperBoundMilliseconds": 0.05,
+        "p95UpperBoundMilliseconds": 0.5,
+        "p99UpperBoundMilliseconds": 0.5,
+        "overflowSamples": 0,
+        "bucketUpperBoundsMilliseconds": [
+          0.05,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16.667,
+          25,
+          50,
+          100,
+          250,
+          null
+        ],
+        "bucketCounts": [
+          14102,
+          865,
+          1476,
+          1091,
+          88,
+          53,
+          6,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+}

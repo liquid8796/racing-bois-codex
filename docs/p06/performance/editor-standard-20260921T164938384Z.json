@@ -1,0 +1,177 @@
+{
+    "runId": "20260921T164938384Z",
+    "profile": "standard",
+    "status": "completed",
+    "runtimeSourceRevision": "P06 0.6.0 frozen integration before Web build",
+    "scope": "Unity Editor Game View; global Editor counters",
+    "startedUtc": "2026-09-21T16:49:46.3976188Z",
+    "completedUtc": "2026-09-21T16:50:46.4183705Z",
+    "unityVersion": "6000.5.7f1",
+    "productVersion": "0.6.0",
+    "operatingSystem": "Windows 11  (10.0.26200)",
+    "processor": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+    "graphicsDevice": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "graphicsApi": "Direct3D12",
+    "qualityLevel": "Ultra",
+    "workload": "1 scripted player + 6 AI + police; normal gameplay traffic and pedestrian spawn flow",
+    "limits": "This is not a browser, networking, full UI, or 16-online-player benchmark. Counters can include Editor/Scene View overhead. Fixture recycle costs are included. No unavailable counter is reported as zero.",
+    "editor": true,
+    "reducedMotion": false,
+    "lowEffectsQuality": false,
+    "audioEnabled": true,
+    "frameP95WithinBudget": false,
+    "measurementCoverageValid": true,
+    "sampleCapacityExceeded": false,
+    "requiredDensityPresentEverySample": true,
+    "resolutionChangedDuringSample": false,
+    "qualityChangedDuringSample": false,
+    "graphicsQualityIndex": 1,
+    "renderScale": 1.0,
+    "seed": 6061996,
+    "targetFrameRate": 60,
+    "vSyncCount": 1,
+    "width": 1920,
+    "height": 1080,
+    "deviceMemoryMiB": 65237,
+    "graphicsMemoryMiB": 8020,
+    "expectedRiders": 8,
+    "expectedTraffic": -1,
+    "expectedPedestrians": -1,
+    "frames": 3510,
+    "measuredAttacks": 86,
+    "measuredHits": 39,
+    "measuredCrashes": 9,
+    "worldRestarts": 1,
+    "measuredFixtureRecycles": 0,
+    "stageMeshRendererComponents": 180,
+    "roadMeshRendererComponents": 437,
+    "distinctStageAndRoadMeshes": 494,
+    "legacyStageParticleSystems": 0,
+    "legacyStagePlayingParticleSystems": 0,
+    "effectsParticleSystems": 22,
+    "effectsTrailRenderers": 16,
+    "effectsParticleHardLimit": 720,
+    "audioSourceCount": 15,
+    "verticesAcrossDistinctStageAndRoadMeshes": 2764940,
+    "startTick": 429,
+    "endTick": 1578,
+    "measuredSimulationTicks": 3515,
+    "droppedSimulationTicks": 86,
+    "warmupSeconds": 8.0,
+    "requestedSampleSeconds": 60.0,
+    "frameP50Ms": 16.66629981994629,
+    "frameP95Ms": 17.252399444580079,
+    "frameMaxMs": 1528.2098388671875,
+    "measuredSeconds": 60.015952700003257,
+    "meanFps": 58.484450251837959,
+    "frameBudgetMs": 16.666666666666669,
+    "simulationCoverage": 0.9761293572422146,
+    "gcCollectionsStart": [
+        1144,
+        1144,
+        1144
+    ],
+    "gcCollectionsDuringSample": [
+        8,
+        8,
+        8
+    ],
+    "riders": {
+        "available": true,
+        "samples": 3510,
+        "mean": 8.0,
+        "minimum": 8.0,
+        "maximum": 8.0
+    },
+    "traffic": {
+        "available": true,
+        "samples": 3510,
+        "mean": 2.3680911680911684,
+        "minimum": 0.0,
+        "maximum": 4.0
+    },
+    "pedestrians": {
+        "available": true,
+        "samples": 3510,
+        "mean": 1.7404558404558406,
+        "minimum": 0.0,
+        "maximum": 3.0
+    },
+    "gcAllocatedBytesPerFrame": {
+        "available": true,
+        "samples": 3510,
+        "mean": 178768.25384615386,
+        "minimum": 9825.0,
+        "maximum": 49327387.0
+    },
+    "drawCalls": {
+        "available": false,
+        "samples": 0,
+        "mean": -1.0,
+        "minimum": -1.0,
+        "maximum": -1.0
+    },
+    "batches": {
+        "available": false,
+        "samples": 0,
+        "mean": -1.0,
+        "minimum": -1.0,
+        "maximum": -1.0
+    },
+    "setPassCalls": {
+        "available": true,
+        "samples": 3510,
+        "mean": 19.852421652421655,
+        "minimum": 0.0,
+        "maximum": 50.0
+    },
+    "triangles": {
+        "available": true,
+        "samples": 3510,
+        "mean": 304141.4643874644,
+        "minimum": 0.0,
+        "maximum": 799914.0
+    },
+    "vertices": {
+        "available": true,
+        "samples": 3510,
+        "mean": 373786.05185185189,
+        "minimum": 0.0,
+        "maximum": 1045076.0
+    },
+    "unityAllocatedBytes": {
+        "available": true,
+        "samples": 117,
+        "mean": 962181970.3504274,
+        "minimum": 953510413.0,
+        "maximum": 969591660.0
+    },
+    "managedBytes": {
+        "available": true,
+        "samples": 117,
+        "mean": 618886345.2991454,
+        "minimum": 585871360.0,
+        "maximum": 661905408.0
+    },
+    "cpuFrameMs": {
+        "available": true,
+        "samples": 3510,
+        "mean": 17.09932757834757,
+        "minimum": 3.3717,
+        "maximum": 1527.4255
+    },
+    "gpuFrameMs": {
+        "available": true,
+        "samples": 3506,
+        "mean": 2.1836846731317709,
+        "minimum": 0.041984,
+        "maximum": 13.288448
+    },
+    "benchmarkUpdateMs": {
+        "available": true,
+        "samples": 3510,
+        "mean": 0.5214206267688377,
+        "minimum": 0.3305000027467031,
+        "maximum": 1.4359999986481853
+    }
+}

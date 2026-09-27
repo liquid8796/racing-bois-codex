@@ -1,0 +1,65 @@
+{
+  "clip": "RB_P06_Rider_Rig|RB_MenuHero",
+  "frames": [
+    1,
+    61
+  ],
+  "loop": true,
+  "rootMotion": false,
+  "standingActorOffsetFromBikeUnity": [
+    -0.3,
+    0,
+    -0.25
+  ],
+  "previewBikeRootInActorBlender": [
+    -0.3,
+    -0.25,
+    0
+  ],
+  "contacts": {
+    "L": {
+      "surface": [
+        -0.18000000715255737,
+        -0.2800000011920929,
+        1.0553861856460571
+      ],
+      "normal": [
+        0.18605606257915497,
+        0.1821162849664688,
+        0.9655137062072754
+      ],
+      "wrist": [
+        -0.11765769869089127,
+        -0.24031350016593933,
+        1.0493513345718384
+      ],
+      "armReachMetres": 0.4023173237311665
+    },
+    "R": {
+      "surface": [
+        -0.23000000417232513,
+        0.5099999904632568,
+        1.0666803121566772
+      ],
+      "normal": [
+        0.16566245257854462,
+        -0.5235530138015747,
+        0.8357321619987488
+      ],
+      "wrist": [
+        -0.16573438048362732,
+        0.477455198764801,
+        1.0491085052490234
+      ],
+      "armReachMetres": 0.4783089697549417
+    }
+  },
+  "gameplayActionCountPreserved": 12,
+  "canonicalR2ReferenceOnly": true,
+  "R3ContactsStillRequired": true,
+  "visualAccepted": false,
+  "fbx": {
+    "path": "_local/p08-ash-v4-staging/RB_Golden_Ash_V4.fbx",
+    "sha256": "b2bd4e1a7cb966c857acff268a342fab7b78db3af1f6d27e94187d41bf6997e2"
+  }
+}

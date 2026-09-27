@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "appliedUtc": "2026-09-27T00:00:10.8899682Z",
+  "verifiedUtc": "2026-09-27T00:00:54.5466869Z",
+  "manifestSha256": "f8850f4fe1290cc23e12ace5a34bacf97e8fd4ff95782ce118c6c8d06c6b565a",
+  "passed": true,
+  "files": [
+    {
+      "path": "Assets/RacingBois/Client/Adapters/BrowserSocketTransport.cs",
+      "sha256": "4b8f17692a03fa510e3faa19527f3b9702590e42443ca3c92595d30a9b304974",
+      "matchesReviewed": true
+    },
+    {
+      "path": "src/Tests/RacingBois.NativeTransport.Tests/Program.cs",
+      "sha256": "2be06edd46cf7820064626689dfddd006e98d1d096d9006838ec722d03c1b0a2",
+      "matchesReviewed": true
+    }
+  ],
+  "scope": "Four native I/O awaits avoid frame context; callbacks remain Poll-only. Server/protocol/timeouts unchanged. Actual Unity WSS rerun pending."
+}

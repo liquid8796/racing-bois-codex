@@ -1,0 +1,48 @@
+{
+  "scope": "Editor1080pMedium; 60second samples not browser or 10minute acceptance",
+  "runs": [
+    {
+      "runId": "20260921T164938384Z",
+      "profile": "standard",
+      "meanFps": 58.484450251837956,
+      "frameP95Ms": 17.252399444580078,
+      "frameMaxMs": 1528.2098388671875,
+      "droppedSimulationTicks": 86,
+      "measurementCoverageValid": true,
+      "requiredDensityPresentEverySample": true,
+      "graphicsQualityIndex": 1,
+      "renderScale": 1.0,
+      "frameP95WithinBudget": false
+    },
+    {
+      "runId": "20260921T165505136Z",
+      "profile": "standard",
+      "meanFps": 59.99360468174025,
+      "frameP95Ms": 17.267799377441406,
+      "frameMaxMs": 35.02579879760742,
+      "droppedSimulationTicks": 0,
+      "measurementCoverageValid": true,
+      "requiredDensityPresentEverySample": true,
+      "graphicsQualityIndex": 1,
+      "renderScale": 1.0,
+      "frameP95WithinBudget": false
+    },
+    {
+      "runId": "20260921T165209850Z",
+      "profile": "stress",
+      "meanFps": 59.99988460022363,
+      "frameP95Ms": 17.236400604248047,
+      "frameMaxMs": 35.043701171875,
+      "droppedSimulationTicks": 0,
+      "measurementCoverageValid": true,
+      "requiredDensityPresentEverySample": true,
+      "graphicsQualityIndex": 1,
+      "renderScale": 1.0,
+      "frameP95WithinBudget": false
+    }
+  ],
+  "note": "First standard run includes an in-sample MCP call and retained its 1528ms max. Later standard/stress were sampled without MCP intrusion. Strict16.667ms p95 flag remains false; observed p95about17.24ms is below architecture20ms proposal.",
+  "measuredRuntimeCommit": "c1762b8",
+  "finalRuntimeCommit": "efce749",
+  "postMeasurementRuntimeChange": "After the measured c1762b8 source, later changes rotate existing right-turn chevrons by 180 degrees, enable the autoSyncPersistentDataPath HTML flag, handle Enter-to-join, and adjust invite-field sizing to avoid glyph clipping. Meshes, simulation, material counts and quality tier are unchanged. The final efce749 runtime was not rebenchmarked in the Editor; final browser validation is separate."
+}

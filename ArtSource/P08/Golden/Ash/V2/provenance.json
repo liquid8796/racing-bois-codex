@@ -1,0 +1,246 @@
+{
+  "status": "unaccepted-complete-candidate-in-progress",
+  "concept_sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+  "upstream_commit": "3edf9df0551765be43563d047888cf7877eb89b4",
+  "system_archive_sha256": "b542127a8e25547c7c29c19f2d1d2adb9a664c80396ecd694095dbc8028a0107",
+  "asset_license": "CC0-1.0",
+  "addon_code_executed": false,
+  "source_topology": "MakeHuman anatomical and selected clothing base data; custom Ash modeling follows.",
+  "inputs": [
+    {
+      "target": "macrodetails/caucasian-male-young.target.gz",
+      "weight": 1.0,
+      "sha256": "ffe69537e53148edff2776204ba48cf3bf1f3cbc72966592c8a562ab80b07333"
+    },
+    {
+      "target": "macrodetails/universal-male-young-averagemuscle-averageweight.target.gz",
+      "weight": 0.72,
+      "sha256": "e814651195c53971503d9823d6841216718a561951ef064f81d132297f4fa494"
+    },
+    {
+      "target": "macrodetails/universal-male-young-maxmuscle-averageweight.target.gz",
+      "weight": 0.28,
+      "sha256": "833caafc302bd9306de494f32ee1bc51d3a2e6641183329b031ac06ef0f4277e"
+    },
+    {
+      "target": "head/head-square.target.gz",
+      "weight": 0.19,
+      "sha256": "94b484ae145970e5368706d4f42711f50e18fcbf7d9f1ee800572c3fa69f855a"
+    },
+    {
+      "target": "chin/chin-width-incr.target.gz",
+      "weight": 0.29,
+      "sha256": "68764b6ec7c923597beaaf643f71c41f00c93639d9bb522c169c279db2ad299e"
+    },
+    {
+      "target": "chin/chin-prominent-incr.target.gz",
+      "weight": 0.18,
+      "sha256": "e0d5ec5e213b88719def0f43ddaa7107796fc02f7447e2b2f140d9fe513a6ac8"
+    },
+    {
+      "target": "chin/chin-bones-incr.target.gz",
+      "weight": 0.31,
+      "sha256": "72c76aeb7956fb083aaf0d5efa00b2cdfa0f328eefc01d5e28f4610719de50c3"
+    },
+    {
+      "target": "nose/nose-hump-incr.target.gz",
+      "weight": 0.08,
+      "sha256": "ca6649d78752cca02fdb37f10804e021713b4fbfe2f85136e12b5787cc654aa6"
+    },
+    {
+      "target": "nose/nose-scale-depth-incr.target.gz",
+      "weight": 0.23,
+      "sha256": "49f63b72f04f637ed38061acce579c0948d29175d949bf21e6bfed354c0a10bf"
+    },
+    {
+      "target": "nose/nose-point-width-decr.target.gz",
+      "weight": 0.08,
+      "sha256": "920cd53d57b8797414af73b59e54d34547ef2e1c79fa0a19ca55dbddc0aa7365"
+    },
+    {
+      "target": "eyebrows/eyebrows-trans-down.target.gz",
+      "weight": 0.13,
+      "sha256": "9f5bbb848e40d3a320492dd08ef8d1a926b50c7fd1ca279cf8f573e0f0cdd589"
+    },
+    {
+      "target": "cheek/l-cheek-bones-incr.target.gz",
+      "weight": 0.29,
+      "sha256": "ea5aa60abcc2926e61cdabf5d40701c2b23b3f8027f949cea0b80bcbc55df301"
+    },
+    {
+      "target": "cheek/r-cheek-bones-incr.target.gz",
+      "weight": 0.29,
+      "sha256": "c608528b9e5e1c670179cfb502dab3d9478a77bb942f7c8186cd072a7369e9b9"
+    },
+    {
+      "target": "head/head-rectangular.target.gz",
+      "weight": 0.1,
+      "sha256": "a4ff15dbcda4164e823c7a6f00c234cc62cb136b1c568198c7980bf9f2d358f2"
+    },
+    {
+      "target": "nose/nose-scale-vert-incr.target.gz",
+      "weight": 0.08,
+      "sha256": "63d297c237e7054a1ea700b83454ef508bf5f42ba8f2eb6bc1eb747ad261f34b"
+    },
+    {
+      "target": "nose/nose-point-down.target.gz",
+      "weight": 0.1,
+      "sha256": "58498fbb0b77572e90bf4fd50ca30f4cb6c402a5720b0161b26a8497f897ded6"
+    },
+    {
+      "target": "cheek/l-cheek-volume-decr.target.gz",
+      "weight": 0.12,
+      "sha256": "202ff036e39abea154e0896ad34641184c5e8b77610dca9e1e8e4ce4a5db1bc4"
+    },
+    {
+      "target": "cheek/r-cheek-volume-decr.target.gz",
+      "weight": 0.12,
+      "sha256": "ea12455c7a85e7b3b5e6e4882b4b68823a00bcaef4ea048cc49be452a139c1bc"
+    },
+    {
+      "staged": "Inputs/Body.obj",
+      "sha256": "79b6598cda7fd68c6e2e969769f006fe42a81749b3df6d508b6532adaa2e86e0",
+      "vertices": 19158
+    },
+    {
+      "staged": "Inputs/Eyes.obj",
+      "sha256": "8b96d759b03918b07a56cbc08cd41eb8fb0935781a188809e4185bf8ef9158ee",
+      "vertices": 96
+    },
+    {
+      "archive_path": "eyes/low-poly/low-poly.obj",
+      "sha256": "783fe1e6331162c876520b4c2bed7a8ca06354ca15497e8ebd68bb1b59f4d3de",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "eyes/low-poly/low-poly.mhclo",
+      "sha256": "68582e28e9176cba7cfcf35208f671b6201b8d1bc95c32decff61a3160ec34d8",
+      "license": "CC0-1.0"
+    },
+    {
+      "staged": "Inputs/Brows.obj",
+      "sha256": "2c5d7607e108fe1c5892979ea618c5cd5ff6771a0dcc2f2a18717c575dd1edd9",
+      "vertices": 124
+    },
+    {
+      "archive_path": "eyebrows/eyebrow001/eyebrow001.obj",
+      "sha256": "88b13146395133f3901715e11706cdfd293e5d6087ad7c5e01efe1485a26b513",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "eyebrows/eyebrow001/eyebrow001.mhclo",
+      "sha256": "54c8892c2ba577f4152d779ce1f20f7cd323beb8cbd9cb701796165c221b4f5b",
+      "license": "CC0-1.0"
+    },
+    {
+      "staged": "Inputs/Hair.obj",
+      "sha256": "ce3c2dc623d7283c79f23ababfc33d0e75dba6d041222a50a648d53e984dced0",
+      "vertices": 1755
+    },
+    {
+      "archive_path": "hair/short02/short02.obj",
+      "sha256": "48f979114adfa712165a69cc55c45a70831af1fb3cba8e2a89120f0c87407b64",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "hair/short02/short02.mhclo",
+      "sha256": "625736cdb73e6d094df6e5a2df18f371781f1d2cd37b0ae15795c5d7051c3ec2",
+      "license": "CC0-1.0"
+    },
+    {
+      "staged": "Inputs/Clothes.obj",
+      "sha256": "2231f697190b4d6e631c3a7bba99ebfbc33e57f1983687fd06d3abd886556b8a",
+      "vertices": 2136
+    },
+    {
+      "archive_path": "clothes/male_casualsuit02/male_casualsuit02.obj",
+      "sha256": "e07cbd1a43d21bd700e6598f01f74341a9dd66eac4e035c8be8de2650eac380f",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "clothes/male_casualsuit02/male_casualsuit02.mhclo",
+      "sha256": "f9e6821704a1508a02d5e416b2360785b705cfe5a130c359021a4b4570dcc43a",
+      "license": "CC0-1.0"
+    },
+    {
+      "staged": "Inputs/Shoes.obj",
+      "sha256": "0cf9968e4ba188eafab1afe7ef31d8f8fb87222bfb177c6ff8818fd37b84878f",
+      "vertices": 1722
+    },
+    {
+      "archive_path": "clothes/shoes01/shoes01.obj",
+      "sha256": "eac355a842a8eb8ae2f09fac8dd18a877a24ef2521ed2d6bf38559b42ce4b49a",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "clothes/shoes01/shoes01.mhclo",
+      "sha256": "7994e38f7cdcee0bd5f55101660badcce0162fcdfc7f432218dd1eb301626252",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "skins/young_caucasian_male/young_lightskinned_male_diffuse.png",
+      "staged": "Inputs/young_lightskinned_male_diffuse.png",
+      "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "eyes/materials/brown_eye.png",
+      "staged": "Inputs/brown_eye.png",
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "eyebrows/eyebrow001/eyebrow001.png",
+      "staged": "Inputs/eyebrow001.png",
+      "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "hair/short02/short02_diffuse.png",
+      "staged": "Inputs/short02_diffuse.png",
+      "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "hair/short02/short02_normal.png",
+      "staged": "Inputs/short02_normal.png",
+      "sha256": "2cfac7619f8eec77dd90df979d912415058f4f0fc16940cba40a8eb1ae6d74b5",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "clothes/male_casualsuit02/male_casualsuit02_normal.png",
+      "staged": "Inputs/male_casualsuit02_normal.png",
+      "sha256": "1c31a7a5fbbef1ee40176114295038703f370d163a3cf040f55b60c85369d12c",
+      "license": "CC0-1.0"
+    },
+    {
+      "archive_path": "clothes/shoes01/shoes01_normal.png",
+      "staged": "Inputs/shoes01_normal.png",
+      "sha256": "a9bfd7223e98b8f93100e89596135e3a94e6044f9db11b4d23cec625c37a4599",
+      "license": "CC0-1.0"
+    },
+    {
+      "expression_target": "mouth-corner-puller",
+      "sha256": "d881bb8feda2637bdaef2c7d7c6bed12f0be5914949e5a2cb9b06a583af412c0",
+      "weight": 0.5
+    },
+    {
+      "expression_target": "eyebrows-left-down",
+      "sha256": "f0cabdd8a225779806b8faabb1afcc4ee830a3eb3c6b1abe045d797328cff323",
+      "weight": 0.55
+    },
+    {
+      "expression_target": "eyebrows-right-down",
+      "sha256": "ac4ad201d160f1eb7dc076e012bccd41e191d2886fc1b327c8409d8b77d63082",
+      "weight": 0.55
+    }
+  ],
+  "object_vertex_counts": {
+    "Body": 13380,
+    "Eyes": 96,
+    "Brows": 124,
+    "Hair": 1755,
+    "Clothes": 2136,
+    "Shoes": 1722
+  }
+}

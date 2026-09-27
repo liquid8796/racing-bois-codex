@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Runtime/PreviewConfiguration.cs" Link="PreviewConfiguration.cs" />
+    <Compile Include="../Runtime/VisualPoseEnvelope.cs" Link="VisualPoseEnvelope.cs" />
+    <Compile Include="../Runtime/VisualPoseEnvelope20Comparison.cs" Link="VisualPoseEnvelope20Comparison.cs" />
+    <Compile Include="../Editor/PreviewBuildScope.cs" Link="PreviewBuildScope.cs" />
+  </ItemGroup>
+</Project>

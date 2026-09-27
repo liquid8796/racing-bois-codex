@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "published": true,
+  "nativeUnityVerified": false,
+  "visualAccepted": false,
+  "sourceV1Preserved": true,
+  "source": {
+    "path": "ArtSource/P08/Golden/MenuEnvironment/V2/RB_Golden_MenuEnvironment.blend",
+    "sha256": "61fd98bf5b16c9352e2d8b85f5229f6431852ae7c298b1c1486829342fb5e34f"
+  },
+  "fbx": {
+    "path": "Assets/RacingBois/Art/P08/Golden/MenuEnvironment/V2/RB_Golden_MenuEnvironment.fbx",
+    "sha256": "b30cf843326d6bb31b384ac4baccd915e6c712351164f7943567af11430bbc93"
+  },
+  "descriptor": {
+    "path": "docs/p08/golden/menu-environment/v2/descriptor.json",
+    "sha256": "f0d8139e6b9508009ab440a62d91007add11cfddf49024d7b98a2e13bb739f41"
+  },
+  "moduleLodMap": {
+    "path": "docs/p08/golden/menu-environment/v2/module-lod-mapping.json",
+    "sha256": "adcc778ff36860f444f2792e69dc4953cb4af52ca9d2a4fcd676e10b3172dbe1"
+  },
+  "meshes": 419,
+  "modules": 139,
+  "triangles": 1938935,
+  "proofs": [
+    {
+      "path": "docs/p08/golden/menu-environment/v2/raw-fbx-materials.json",
+      "sha256": "b00905af0830c6498718d0902f33f5bf2015d08fb4153ff1b6a99c4d90a3097b"
+    },
+    {
+      "path": "docs/p08/golden/menu-environment/v2/material-repair-mcp.json",
+      "sha256": "1391aae1be5a2b4fe669e73f0dd6988483e349a12597587d7e2aefefeddaba9f"
+    },
+    {
+      "path": "docs/p08/golden/menu-environment/v2/geometry-audit-mcp.json",
+      "sha256": "210340bdce8fbabe2717e34e46c6a535d24f245a5ae898f74c49357311937bc8"
+    },
+    {
+      "path": "docs/p08/golden/menu-environment/v2/material-roundtrip-mcp.json",
+      "sha256": "dbca75d6d32f1c414f0c7642f7972381514f26f37f636a2e0fae02dd1bcfb92c"
+    }
+  ],
+  "lightingPolicy": "Realtime menu; no baked GI is requested. Root is independently testing whether Unity secondary-UV generation caused the V1 failure. No invalid UV0 or missing-material gate is waived.",
+  "scope": "TwoLOD0 stones split into explicit existing-material renderers. V1 Blender assignments/rawFBX connections were valid; this compatibility variant is not proof of the Unity failure cause."
+}

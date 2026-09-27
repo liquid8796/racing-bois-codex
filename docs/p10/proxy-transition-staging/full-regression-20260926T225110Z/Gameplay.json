@@ -1,0 +1,381 @@
+{
+  "generatedAtUtc": "2026-09-26T22:51:16.8937546+00:00",
+  "passed": true,
+  "tests": 31,
+  "runtime": ".NET 10.0.9",
+  "sourceFiles": [
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/BikeCatalog.cs",
+      "sha256": "c498d3946c66c2643446e8d67e57ad53b61820bb3a957d1521c8d59951e2b60c"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/BikeHandlingCatalog.cs",
+      "sha256": "a498434d743bda307939e2bfbbe426ff91b4c0bbaa14b747ca36e5ba1f6e6d8d"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CampaignCatalog.cs",
+      "sha256": "1d16d05c332cef2faa97acae0c75622a37b24dc24b20a3953937f6f5c65cabe3"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CampaignRules.cs",
+      "sha256": "4679cd3f35a3c3153a923f65b81b1c72497cad3a6bc1bf021faef3b4ec44812c"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/CharacterCatalog.cs",
+      "sha256": "8d033a0389dc878317986524fc31e16e6dcb56b09491859c73bd77ddee22f97d"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/ContentFingerprint.cs",
+      "sha256": "6d22fd73f39a086ba07d7847fbe07aa0edb554b1dbbcc130c2f8bd791640a498"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/EconomyRules.cs",
+      "sha256": "85c3be9e1da195c3031b62d92d0a2dfe70d4c7de88d1610cbfacf18bb6bdd05a"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/GameplayRules.cs",
+      "sha256": "67e09f04aaf06f13fb762c8a7c413c42270ae6c86a257454b45d9727b8f52575"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/ProductionContent.cs",
+      "sha256": "d8853b358760afe6a93772a41c1d1b83cf4383c7477d4b014a43f8e9c81598c9"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/PrototypeRules.cs",
+      "sha256": "600838990db2e125a3d09a12c482ec439660a3e38741b7437fd661c078e6bc0f"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/TrackDefinition.cs",
+      "sha256": "1c2faaf25e030a4c1ab724d46142591f38f52631e86a3540998932efb1b376fb"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Definitions/VehicleDimensions.cs",
+      "sha256": "566cd7d7b774d42a9c42d7cad6d39b2d2ab24df3564ce4789f8d06f2b8b28b63"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/CombatResolver.cs",
+      "sha256": "2fd84df61bacbb04d6f12f8e321e211b051189fca79f72d71fb55997b0e350d2"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs",
+      "sha256": "dc36749d8578971e1d7548bd9409af1f7fc4cc898dbc6b7020b01925e3c7fbff"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/GameplayVerification.cs",
+      "sha256": "ac09bcd013573bf4b267aaf68dfd9b38171ff4934df77b1f91a7ba05bec2e8a7"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/GameplayWorld.cs",
+      "sha256": "033d4ccfbd1e57217e7de01eb7a9207bc5a4b92c747dde9b9e78eb328f8fb123"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/LocalCampaignProgress.cs",
+      "sha256": "ddefd4aad2e7dec6ccbfdcad98c0ebec498d520f8b4f955622d51a56d956aa79"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianMotion.cs",
+      "sha256": "21e0bee055bbcd4e69d19e389380f83dcbf3cb3d92b7882a868a10c071caf010"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianPredictionContext.cs",
+      "sha256": "24631a657ec43e0a55e2c3cee8800c58a68ae2e8cb057d3457dca1e2ced27374"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianSimulation.cs",
+      "sha256": "ff738c02769fad89554c273f2cbda3d3b9fd9281cf71057d604c86b8e59fba1b"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/PredictionNeighbors.cs",
+      "sha256": "7492d78ad653e93a6418464044fa7443e3a648200a332f274b5240dc217a0e9c"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RaceBrains.cs",
+      "sha256": "4de0e875409dd79ea9389556f9f69b75d65cd27216bc2e4d431b638fcdc1c42a"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RaceSimulation.cs",
+      "sha256": "7ebe5ad12a3ccde5fc4939b6f1cfa81920d687bd395fd11eeca7c04de4975806"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderCombatPredictionContext.cs",
+      "sha256": "834fff2fb80e0e786d00f89875b1e7003dad361d9d296920fc6b077a862973dc"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderModeClock.cs",
+      "sha256": "e49db8637584a986d8fa3766391f0c73ad7ede58027ce44455223d83f346791d"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderPrediction.cs",
+      "sha256": "43daafa3a9e832d63caeba0df4b1871e4420bfb794a56a40880f4b61f8022c1f"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RiderState.cs",
+      "sha256": "311be1cee91a9013327029effebaafea9f13242c49732696d6aae937ca667c2e"
+    },
+    {
+      "path": "Packages/com.racingbois.foundation/Runtime/Simulation/RoadSpaceSimulation.cs",
+      "sha256": "08744f30c6c717730ecd685d4e42797225bd5757cf829445aa43d42c838a1797"
+    },
+    {
+      "path": "src/Tests/RacingBois.Gameplay.Tests/Program.cs",
+      "sha256": "a46c5e6f930e3fde528eed445cab6eca1c092c607bacca4b95963773e6d5ea66"
+    }
+  ],
+  "failures": 0,
+  "replayTicks": 20000,
+  "replayHash": "BA1786522D59B2D7",
+  "replayOutcomes": [
+    {
+      "Id": 1,
+      "mode": "Finished",
+      "Rank": 5,
+      "FinishTick": 3973,
+      "DistanceMillimeters": 2372732,
+      "Health": 4096,
+      "BikeCondition": 39
+    },
+    {
+      "Id": 1001,
+      "mode": "Finished",
+      "Rank": 2,
+      "FinishTick": 2405,
+      "DistanceMillimeters": 2372684,
+      "Health": 3072,
+      "BikeCondition": 100
+    },
+    {
+      "Id": 1002,
+      "mode": "Finished",
+      "Rank": 1,
+      "FinishTick": 2310,
+      "DistanceMillimeters": 2372902,
+      "Health": 3072,
+      "BikeCondition": 100
+    },
+    {
+      "Id": 1003,
+      "mode": "Finished",
+      "Rank": 3,
+      "FinishTick": 2540,
+      "DistanceMillimeters": 2372907,
+      "Health": 3200,
+      "BikeCondition": 100
+    },
+    {
+      "Id": 1004,
+      "mode": "Finished",
+      "Rank": 4,
+      "FinishTick": 2574,
+      "DistanceMillimeters": 2373058,
+      "Health": 3008,
+      "BikeCondition": 100
+    },
+    {
+      "Id": 1005,
+      "mode": "Wrecked",
+      "Rank": 6,
+      "FinishTick": -1,
+      "DistanceMillimeters": 1755565,
+      "Health": 3396,
+      "BikeCondition": 0
+    },
+    {
+      "Id": 2001,
+      "mode": "Riding",
+      "Rank": 0,
+      "FinishTick": -1,
+      "DistanceMillimeters": 2423989,
+      "Health": 4096,
+      "BikeCondition": 100
+    }
+  ],
+  "peakTraffic": 7,
+  "routeCompletion": {
+    "ticks": 2548,
+    "seconds": 42.46666666666667,
+    "Rank": 3,
+    "Health": 3008,
+    "BikeCondition": 100,
+    "allRiderCrashEvents": 2,
+    "allRiderLandingEvents": 13,
+    "note": "Controller fixture compensates curves and stays center. Not a human playtest or original game timing parity."
+  },
+  "authoredVelocityCurve": [
+    {
+      "tick": 0,
+      "speedMmPerSecond": 0,
+      "distanceMm": 0
+    },
+    {
+      "tick": 60,
+      "speedMmPerSecond": 9908,
+      "distanceMm": 5159
+    },
+    {
+      "tick": 120,
+      "speedMmPerSecond": 18417,
+      "distanceMm": 19503
+    },
+    {
+      "tick": 180,
+      "speedMmPerSecond": 25689,
+      "distanceMm": 41713
+    },
+    {
+      "tick": 240,
+      "speedMmPerSecond": 31878,
+      "distanceMm": 70633
+    },
+    {
+      "tick": 300,
+      "speedMmPerSecond": 37126,
+      "distanceMm": 105251
+    },
+    {
+      "tick": 360,
+      "speedMmPerSecond": 41563,
+      "distanceMm": 144695
+    }
+  ],
+  "fullBrake": {
+    "stoppingTicks": 107,
+    "stoppingDistanceMm": 36258
+  },
+  "startupVerification": {
+    "Passed": true,
+    "Hash": "FD320D8BD0D9435E",
+    "ExpectedHash": "FD320D8BD0D9435E",
+    "Ticks": 3000
+  },
+  "performance": {
+    "microsecondsPerTick": 7.967958333333334,
+    "managedAllocatedBytes": 0,
+    "note": "Native .NET release/host-specific core time, not browser frame time or GPU acceptance."
+  },
+  "results": [
+    {
+      "name": "track_geometry_continuity_and_sections",
+      "passed": true
+    },
+    {
+      "name": "throttle_curve_braking_and_input_timeout",
+      "passed": true
+    },
+    {
+      "name": "lane_change_offroad_drag_and_lean",
+      "passed": true
+    },
+    {
+      "name": "crest_launch_landing_and_no_vertical_teleport",
+      "passed": true
+    },
+    {
+      "name": "relative_sweep_stops_oncoming_tunneling",
+      "passed": true
+    },
+    {
+      "name": "van_and_coupe_proxy_match_art_height_and_width",
+      "passed": true
+    },
+    {
+      "name": "airborne_crash_falls_to_ground_without_height_snap",
+      "passed": true
+    },
+    {
+      "name": "recovery_separation_running_remount_without_snap",
+      "passed": true
+    },
+    {
+      "name": "wreck_cannot_remount_and_timeout_never_teleports",
+      "passed": true
+    },
+    {
+      "name": "legacy_q8_damage_four_weapons",
+      "passed": true
+    },
+    {
+      "name": "wrong_side_range_height_and_fallen_miss",
+      "passed": true
+    },
+    {
+      "name": "live_hit_pool_cooldown_equality_and_kick_condition",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_fatal_hits_both_apply_before_finish",
+      "passed": true
+    },
+    {
+      "name": "held_attack_matches_strict_cooldown_without_alternate_misses",
+      "passed": true
+    },
+    {
+      "name": "natural_police_pursuit_reaches_and_busts_stopped_player",
+      "passed": true
+    },
+    {
+      "name": "weapon_steal_deterministic_gate_and_protection",
+      "passed": true
+    },
+    {
+      "name": "finish_tie_ranks_rewards_and_idempotence",
+      "passed": true
+    },
+    {
+      "name": "police_three_second_contact_bust_and_fine",
+      "passed": true
+    },
+    {
+      "name": "human_capacity_ownership_and_slot_removal",
+      "passed": true
+    },
+    {
+      "name": "local_campaign_five_courses_five_levels_no_double_reward",
+      "passed": true
+    },
+    {
+      "name": "pedestrian_pool_spawns_ahead_and_retains_roadside_lane",
+      "passed": true
+    },
+    {
+      "name": "pedestrian_crosswalk_is_continuous_and_waits_at_shoulder",
+      "passed": true
+    },
+    {
+      "name": "pedestrian_swept_crash_and_non_graphic_recovery",
+      "passed": true
+    },
+    {
+      "name": "pedestrian_low_speed_bump_stops_bike_without_crash",
+      "passed": true
+    },
+    {
+      "name": "pedestrian_on_shoulder_uses_same_collision_rules",
+      "passed": true
+    },
+    {
+      "name": "long_session_actor_ids_wrap_without_namespace_or_active_alias",
+      "passed": true
+    },
+    {
+      "name": "twenty_thousand_tick_seeded_replay_and_ai_budget",
+      "passed": true
+    },
+    {
+      "name": "player_can_finish_authored_route_with_curve_compensation",
+      "passed": true
+    },
+    {
+      "name": "record_authored_straight_velocity_and_brake_curve",
+      "passed": true
+    },
+    {
+      "name": "fixed_capacity_tick_no_managed_allocations",
+      "passed": true
+    },
+    {
+      "name": "bounded_cross_runtime_startup_golden",
+      "passed": true
+    }
+  ]
+}

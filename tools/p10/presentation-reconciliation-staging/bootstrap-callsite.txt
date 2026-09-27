@@ -1,0 +1,4 @@
+Replace only this presentation call after review:
+Stage.RenderFrame(world,local,renderingRace,dt,screen.ReducedMotion,useMultiplayer);
+With:
+Stage.RenderFrame(world,local,renderingRace,dt,screen.ReducedMotion,useMultiplayer,useMultiplayer&&multiplayer.PresentationFrozen);

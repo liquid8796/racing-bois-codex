@@ -1,0 +1,113 @@
+{
+  "generatedUtc": "2026-09-27T00:18:43.5375401+00:00",
+  "passed": 26,
+  "failed": 0,
+  "durationMilliseconds": 9772.9916,
+  "scope": "Real SQLite WAL/FULL transactions, isolated fixture realms only, injected I/O failure, abrupt child-process exit before/after commit, concurrency, closed-database restore, account expiry/recovery and signed offline save boundaries. No user P05 data opened.",
+  "tests": [
+    {
+      "name": "new_realm_starter_wallet_and_database_constraints",
+      "status": "PASS"
+    },
+    {
+      "name": "commerce_idempotency_binds_intent_and_guid_representation",
+      "status": "PASS"
+    },
+    {
+      "name": "concurrent_same_command_credits_once",
+      "status": "PASS"
+    },
+    {
+      "name": "concurrent_different_purchases_cannot_overspend",
+      "status": "PASS"
+    },
+    {
+      "name": "failed_receipt_is_durable_and_does_not_change_inventory",
+      "status": "PASS"
+    },
+    {
+      "name": "equip_and_repair_are_server_quoted_and_idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "match_reservation_blocks_commerce_and_second_race",
+      "status": "PASS"
+    },
+    {
+      "name": "race_rewards_fines_condition_qualification_and_replay_atomic",
+      "status": "PASS"
+    },
+    {
+      "name": "forged_settlement_rolls_back_entire_match",
+      "status": "PASS"
+    },
+    {
+      "name": "failed_database_commit_rolls_back_then_retry_exactly_once",
+      "status": "PASS"
+    },
+    {
+      "name": "process_crash_before_commit_recovers_without_partial_debit",
+      "status": "PASS"
+    },
+    {
+      "name": "process_crash_after_commit_replay_does_not_double_debit",
+      "status": "PASS"
+    },
+    {
+      "name": "migration_preserves_identity_credit_capability_and_backup_once",
+      "status": "PASS"
+    },
+    {
+      "name": "migration_rejects_corrupt_and_offline_into_online_without_reset",
+      "status": "PASS"
+    },
+    {
+      "name": "restart_fences_abandoned_match_and_preserves_completed_receipts",
+      "status": "PASS"
+    },
+    {
+      "name": "accounts_upgrade_login_recovery_rotation_and_expiry",
+      "status": "PASS"
+    },
+    {
+      "name": "login_session_cap_and_logout_all_are_durable",
+      "status": "PASS"
+    },
+    {
+      "name": "signed_save_auth_free_ownership_validation_and_replay",
+      "status": "PASS"
+    },
+    {
+      "name": "online_separation_rejects_local_save_and_realm_relabel",
+      "status": "PASS"
+    },
+    {
+      "name": "closed_database_backup_restore_retains_identity_wallet_and_receipts",
+      "status": "PASS"
+    },
+    {
+      "name": "exclusive_owner_does_not_fence_other_live_host",
+      "status": "PASS"
+    },
+    {
+      "name": "security_audit_contains_safe_codes_not_credentials",
+      "status": "PASS"
+    },
+    {
+      "name": "restart_rejects_divergent_database_projection_without_reset",
+      "status": "PASS"
+    },
+    {
+      "name": "startup_compares_profile_session_reservation_and_receipt_rows",
+      "status": "PASS"
+    },
+    {
+      "name": "storage_port_cannot_rewrite_existing_receipt_prefix",
+      "status": "PASS"
+    },
+    {
+      "name": "bankrupt_restart_is_gated_atomic_and_replay_safe",
+      "status": "PASS"
+    }
+  ]
+}

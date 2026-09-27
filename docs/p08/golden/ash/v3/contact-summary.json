@@ -1,0 +1,146 @@
+{
+  "scope": "Actual evaluated runtime mesh rays; contact evidence only, not visual fidelity acceptance.",
+  "productionAccepted": false,
+  "grips": {
+    "L": {
+      "gripRadiusMeters": 0.019,
+      "centreRayHits": 9,
+      "centreRaySamples": 12,
+      "minimumCentreRayClearanceMeters": -0.0010211958140134807,
+      "maximumCentreRayClearanceMeters": 0.04538029557466507,
+      "missingAngularSamplesDegrees": [
+        210,
+        240,
+        270
+      ],
+      "notAnExactCollisionOrFidelityProof": true
+    },
+    "R": {
+      "gripRadiusMeters": 0.019,
+      "centreRayHits": 9,
+      "centreRaySamples": 12,
+      "minimumCentreRayClearanceMeters": -0.0010469673722982402,
+      "maximumCentreRayClearanceMeters": 0.04535468047857284,
+      "missingAngularSamplesDegrees": [
+        90,
+        120,
+        150
+      ],
+      "notAnExactCollisionOrFidelityProof": true
+    }
+  },
+  "soleClearanceMeters": {
+    "L": 0.00015927857160567653,
+    "R": -0.0004276632666587888
+  },
+  "seat": [
+    {
+      "x": -0.06,
+      "garmentAboveMarker": {
+        "point": [
+          -0.06000003218650818,
+          0.04999986290931702,
+          0.9142826795578003
+        ],
+        "distance": 0.13028261065483093,
+        "normal": [
+          0.39125001430511475,
+          0.2261369824409485,
+          -0.892068088054657
+        ],
+        "material": "AshV2_TailoredClothing_Baked"
+      },
+      "actualBikeSurface": {
+        "object": "Apex_L0_Body",
+        "point": [
+          -0.06000003218650818,
+          0.04999986290931702,
+          0.9060394167900085
+        ],
+        "distance": 0.19796065986156464
+      },
+      "garmentMinusSeatMeters": 0.008243262767791748
+    },
+    {
+      "x": -0.03,
+      "garmentAboveMarker": {
+        "point": [
+          -0.030000030994415283,
+          0.04999986290931702,
+          0.9184341430664062
+        ],
+        "distance": 0.1344340741634369,
+        "normal": [
+          0.070121169090271,
+          0.13784460723400116,
+          0.9879686236381531
+        ],
+        "material": "AshV2_TailoredClothing_Baked"
+      },
+      "actualBikeSurface": {
+        "object": "Apex_L0_Body",
+        "point": [
+          -0.030000030994415283,
+          0.04999986290931702,
+          0.9057990312576294
+        ],
+        "distance": 0.19820109009742737
+      },
+      "garmentMinusSeatMeters": 0.012635111808776855
+    },
+    {
+      "x": 0.03,
+      "garmentAboveMarker": {
+        "point": [
+          0.02999996766448021,
+          0.04999986290931702,
+          0.9183076024055481
+        ],
+        "distance": 0.13430757820606232,
+        "normal": [
+          -0.002769227372482419,
+          0.04617307707667351,
+          -0.9989296197891235
+        ],
+        "material": "AshV2_TailoredClothing_Baked"
+      },
+      "actualBikeSurface": {
+        "object": "Apex_L0_Body",
+        "point": [
+          0.02999996766448021,
+          0.04999986290931702,
+          0.9057990312576294
+        ],
+        "distance": 0.19820109009742737
+      },
+      "garmentMinusSeatMeters": 0.012508571147918701
+    },
+    {
+      "x": 0.06,
+      "garmentAboveMarker": {
+        "point": [
+          0.059999965131282806,
+          0.04999986290931702,
+          0.9142261147499084
+        ],
+        "distance": 0.13022607564926147,
+        "normal": [
+          -0.4106394052505493,
+          0.19233939051628113,
+          -0.891280472278595
+        ],
+        "material": "AshV2_TailoredClothing_Baked"
+      },
+      "actualBikeSurface": {
+        "object": "Apex_L0_Body",
+        "point": [
+          0.059999965131282806,
+          0.04999986290931702,
+          0.9060394167900085
+        ],
+        "distance": 0.19796068966388702
+      },
+      "garmentMinusSeatMeters": 0.008186697959899902
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "generatedUtc": "2026-09-26T22:18:03.158767+00:00",
+  "runId": "20260926T214515Z",
+  "runStatusAtRead": "PASS",
+  "elapsedSecondsAtRead": 1800.2823679,
+  "acceptedEqualTargetSnapshots": 192724,
+  "maximumCorrectionMeters": 16.258056521474785,
+  "replayMismatches": 0,
+  "modeGroups": [
+    {
+      "modePair": "Riding -> Riding",
+      "Count": 140183,
+      "Outliers": 64,
+      "Maximum": 3.7067968778815046
+    },
+    {
+      "modePair": "Riding -> Falling",
+      "Count": 61,
+      "Outliers": 52,
+      "Maximum": 16.258056521474785
+    },
+    {
+      "modePair": "Falling -> Riding",
+      "Count": 103,
+      "Outliers": 85,
+      "Maximum": 11.30389582900895
+    },
+    {
+      "modePair": "Falling -> Falling",
+      "Count": 8017,
+      "Outliers": 20,
+      "Maximum": 6.199031372699834
+    },
+    {
+      "modePair": "Detached -> Detached",
+      "Count": 3403,
+      "Outliers": 0,
+      "Maximum": 0
+    },
+    {
+      "modePair": "Running -> Running",
+      "Count": 25373,
+      "Outliers": 0,
+      "Maximum": 0
+    },
+    {
+      "modePair": "Remounting -> Remounting",
+      "Count": 11314,
+      "Outliers": 0,
+      "Maximum": 0
+    },
+    {
+      "modePair": "Airborne -> Airborne",
+      "Count": 3205,
+      "Outliers": 0,
+      "Maximum": 0.20269521765082746
+    },
+    {
+      "modePair": "Wrecked -> Wrecked",
+      "Count": 1051,
+      "Outliers": 0,
+      "Maximum": 0.01904296875
+    },
+    {
+      "modePair": "Wrecked -> Riding",
+      "Count": 11,
+      "Outliers": 9,
+      "Maximum": 8.872817939829453
+    },
+    {
+      "modePair": "Riding -> Wrecked",
+      "Count": 3,
+      "Outliers": 3,
+      "Maximum": 4.641271475514423
+    }
+  ],
+  "pedestrianRecoveryCorrespondences": [
+    {
+      "peer": 3,
+      "atSeconds": 215.1049385,
+      "deltaMeters": 9.135018897159702,
+      "presentedDeltaMeters": 9.064950756311667,
+      "noNeighborCounterfactualDeltaMeters": 9.135009250132153,
+      "replayVerifiedBefore": true,
+      "replayVerifiedAfter": true,
+      "beforeAuthorityTick": 2811,
+      "afterAuthorityTick": 2814,
+      "comparedPredictionTick": 2831,
+      "rttMilliseconds": 226.92144944571498,
+      "leadTicks": 10,
+      "pedestrianId": 4008,
+      "stumbledAgeBefore": 177,
+      "expectedRecoveryTickFromKnownAge": 2814,
+      "observedRecoveryTick": 2814,
+      "recoveryTickMatches": true,
+      "observedCrashes": [
+        {
+          "Tick": 2814,
+          "Kind": "Crash",
+          "SourceId": 2,
+          "TargetId": 0,
+          "Value": 350
+        }
+      ]
+    }
+  ],
+  "sourceFiles": {
+    "Packages/com.racingbois.foundation/Runtime/Simulation/RiderPrediction.cs": "9f6a3c6e62a763d0895ab18c028993db7326c04593eee6edc0016c37aee5f6a0",
+    "Packages/com.racingbois.foundation/Runtime/Simulation/PedestrianSimulation.cs": "f19fabac5631c657e47215cbe26b329a93687e89557a8ae9ad4b8e58b086f9f5",
+    "Packages/com.racingbois.foundation/Runtime/Simulation/DrivingDynamics.cs": "c1019ca549dc17c2c9ecbb07f72e23304b14a7c7ef08514eecefe957d6cc2081"
+  },
+  "finding": "Authoritative PedestrianSimulation increments age and recovers Stumbled pedestrians at 180 ticks; RiderPrediction.AdvanceNeighbors leaves non-Walking pedestrian mode/age unchanged. ResolveContacts skips Stumbled pedestrians. Corresponding recovery/crash events explain an additional deterministic prediction gap distinct from remote rider immunity.",
+  "limits": "Read-only live bounded trace plus exact source discrepancy. No production/probe/source edits, no new predictor implementation, no rendered Unity smoothness acceptance. Timing correspondence is preserved separately from any future isolated regression/counterfactual implementation.",
+  "maximumEpisode": "maximum-correction-episode.json"
+}
