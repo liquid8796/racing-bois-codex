@@ -1,0 +1,261 @@
+{
+  "source": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Canyon/V18/RB_Golden_Canyon_V18_01.blend",
+  "parentSource": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Canyon/V17/RB_Golden_Canyon_V17_05.blend",
+  "changedObjects": [
+    "Canyon_L0_Far_33",
+    "Canyon_L1_Far_33",
+    "Canyon_L2_Far_33"
+  ],
+  "audit": [
+    {
+      "object": "Canyon_L0_Far_33",
+      "vertices": 13485,
+      "triangles": 26966,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2098288.959306797,
+      "minimumPrimaryUvCross": 0.020505326203419827,
+      "minimumPhysicalCrossSquaredMetres": 0.013951781205832958,
+      "materials": [
+        "Canyon_Sandstone"
+      ],
+      "minimumBlender": [
+        -148.0,
+        167.5,
+        -100.0
+      ],
+      "maximumBlender": [
+        -77.2019271850586,
+        352.5,
+        79.30644989013672
+      ],
+      "uvPolicy": "Physical world projection per triangle at2.4m/repeat; no epsilon UV offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_33",
+      "vertices": 5664,
+      "triangles": 11324,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2098056.8360146354,
+      "minimumPrimaryUvCross": 0.06729189809993841,
+      "minimumPhysicalCrossSquaredMetres": 0.2333726096112514,
+      "materials": [
+        "Canyon_Sandstone"
+      ],
+      "minimumBlender": [
+        -148.00010681152344,
+        167.49554443359375,
+        -100.00059509277344
+      ],
+      "maximumBlender": [
+        -77.21446228027344,
+        352.5042724609375,
+        79.301513671875
+      ],
+      "uvPolicy": "Physical world projection per triangle at2.4m/repeat; no epsilon UV offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_33",
+      "vertices": 2159,
+      "triangles": 4314,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2096178.0243556842,
+      "minimumPrimaryUvCross": 0.03598570240137633,
+      "minimumPhysicalCrossSquaredMetres": 0.04499180635320954,
+      "materials": [
+        "Canyon_Sandstone"
+      ],
+      "minimumBlender": [
+        -148.00082397460938,
+        167.44436645507812,
+        -100.00479888916016
+      ],
+      "maximumBlender": [
+        -77.12251281738281,
+        352.5204772949219,
+        79.27835845947266
+      ],
+      "uvPolicy": "Physical world projection per triangle at2.4m/repeat; no epsilon UV offsets."
+    }
+  ],
+  "otherSceneMeshesExactlyUnchanged": 649,
+  "cameraAndLightingExactlyUnchanged": true,
+  "materialsAndImagesOutsideTargetUnchanged": true,
+  "fixedScene": {
+    "cameraMatrix": [
+      [
+        0.9919589161872864,
+        -0.0033129698131233454,
+        0.1265169084072113,
+        1.7000000476837158
+      ],
+      [
+        0.1265602707862854,
+        0.025966502726078033,
+        -0.9916189908981323,
+        3.0
+      ],
+      [
+        2.121391062814837e-09,
+        0.9996573328971863,
+        0.026176994666457176,
+        1.5499999523162842
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 28.0,
+    "sensorWidth": 36.0,
+    "sensorFit": "HORIZONTAL",
+    "clipStart": 0.10000000149011612,
+    "clipEnd": 2500.0,
+    "resolution": [
+      1536,
+      717,
+      100
+    ],
+    "lights": [
+      [
+        "Canyon_WarmSun",
+        [
+          [
+            -0.9335474371910095,
+            -0.03732261061668396,
+            0.35650551319122314,
+            0.0
+          ],
+          [
+            0.3584538400173187,
+            -0.09720180928707123,
+            0.9284732937812805,
+            0.0
+          ],
+          [
+            -6.352740911097499e-08,
+            0.9945646524429321,
+            0.10412093251943588,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "SUN",
+        1.7999999523162842,
+        [
+          1.0,
+          0.8299999833106995,
+          0.6200000047683716
+        ]
+      ]
+    ],
+    "worldNodes": [
+      [
+        "Background",
+        "BACKGROUND",
+        [
+          [
+            "Color",
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806,
+              1.0
+            ]
+          ],
+          [
+            "Strength",
+            0.8500000238418579
+          ],
+          [
+            "Weight",
+            0.0
+          ]
+        ],
+        null
+      ],
+      [
+        "World Output",
+        "OUTPUT_WORLD",
+        [],
+        null
+      ],
+      [
+        "Environment Texture",
+        "TEX_ENVIRONMENT",
+        [
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Canyon\\V13\\Sky\\qwantani_sunset_puresky_4k.hdr"
+      ],
+      [
+        "Texture Coordinate",
+        "TEX_COORD",
+        [],
+        null
+      ],
+      [
+        "Mapping",
+        "MAPPING",
+        [
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "Location",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "Rotation",
+            [
+              0.0,
+              0.0,
+              4.447000026702881
+            ]
+          ],
+          [
+            "Scale",
+            [
+              1.0,
+              1.0,
+              1.0
+            ]
+          ]
+        ],
+        null
+      ]
+    ],
+    "viewTransform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.25,
+    "gamma": 1.0
+  },
+  "surfacePolicy": "East-facing front toward road/camera, retreating irregular terraces and deep joints, closed rear volume; no whole-scan stretch.",
+  "visualAccepted": false,
+  "exportedToAssets": false
+}
