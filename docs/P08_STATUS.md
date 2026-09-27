@@ -2,7 +2,15 @@
 
 **P08–P10 chưa hoàn thành.** Bản chính vẫn là Unity Windows 10/11 x64, online authority/dữ liệu trên OCI và LAN offline ở realm cục bộ riêng. Các bản art/UI Golden vẫn chưa khớp concept đã chốt; production masks hiện giữ **route/bike/character = 1/1/1**. Nội dung dưới đây cập nhật phần đầu hồ sơ sau khi tiếp tục `racing-bois-2` và `racing-bois-3`; các checkpoint lịch sử phía dưới được giữ nguyên theo phạm vi bằng chứng của chúng.
 
-## Công việc đã kiểm chứng trong lượt tiếp tục
+## Checkpoint mới nhất: `9a0b14d` đã push lên master
+
+- `55aff3b`: atomic receipt đã kiểm native; player Apex R5 build 0 lỗi/cảnh báo, giữ nguyên settings/font/source, chạy DX11 và tạo 18 PNG có kiểm hash. [Review ảnh thật](p08/golden/apex/r5/native-20260928-01/REVIEW.md) vẫn ghi rõ các sai khác hình học/material, chưa nghiệm thu art.
+- `c9f78df`: NativeProbe/PosePreview đã tích hợp preservation và chạy Windows thật. [WSS/pose evidence](p10/diagnostic-preservation/README.md) có reconnect giữ identity/room, nguồn/player không đổi; 48 ảnh pose và 1.496 mẫu được xác minh. Lần Pose bị chặn ở DX11 vẫn được giữ, không đổi thành PASS.
+- `835b27a`: [verifier ZIP LAN](../tools/p10/native-lan-archive/README.md) kiểm archive đã chuyển bằng SHA ngoài gói và toàn bộ 360 payload files; 20 controls PASS. Chưa thay thế thử hai máy vật lý tắt WAN.
+- `9a0b14d`: [cinematic localization](p08/media/localization/README.md) có 531 khóa mỗi ngôn ngữ ENU/DEU/ESP/FRA/ITA/VI; native Unity kiểm 354 lựa chọn cảnh và 2.334 caption bindings. Đây là copy của cinematic, chưa phải localization toàn game, render/readability hay voice acceptance.
+- Import mới của Canyon V16 bị chặn bởi UV xẹp ở guardrail. Candidate V17 đang sửa UV và bố cục thung lũng; mọi render còn sai concept đều giữ trạng thái chưa nghiệm thu. Không mở masks.
+
+## Các checkpoint đã kiểm chứng trước đó
 
 | Patch / bằng chứng | Kết quả thực tế và giới hạn |
 |---|---|

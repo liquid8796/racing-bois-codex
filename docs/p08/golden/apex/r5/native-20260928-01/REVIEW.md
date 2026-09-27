@@ -1,6 +1,6 @@
 # Apex R5 actual Windows review
 
-The Windows64 Mono player built successfully with zero errors/warnings, explicit Direct3D11, unchanged bound sources, restored project settings, and preserved original fonts/dirty assets. Build receipt: `../../../../unity/build-d33dd349e5b44d238c5dce13c6d4908c.json`. `launch-check.json` binds the exact receipt and all player files before/after the owned process. The player exited 0 and produced 18 hash-verified, independently decoded 1920x1080 PNGs (six views at each of three LODs).
+The Windows64 Mono player built successfully with zero errors/warnings, explicit Direct3D11, unchanged bound sources, restored project settings, and preserved original fonts/dirty assets. Build receipt: `../../../unity/build-d33dd349e5b44d238c5dce13c6d4908c.json`. `launch-check.json` binds the exact receipt and all player files before/after the owned process. The player exited 0 and produced 18 hash-verified, independently decoded 1920x1080 PNGs (six views at each of three LODs).
 
 The locked reference remains `ArtSource/Concepts/P08/Golden/apex-v2.png`, SHA256 `f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819`. Root inspected the actual LOD0 three-quarter, front and side views against corresponding reference views. These studio camera views are useful for silhouette comparison, but their lighting, camera angle and framing are not an exact reference reconstruction.
 
