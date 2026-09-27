@@ -46,6 +46,7 @@ Gói P07 và SHA-256: [hồ sơ phân phối](docs/p07/backend/DELIVERY.md). Gi�
 
 ## Bắt đầu đọc
 
+- [Thiết lập Windows, Git LFS và direct Unity MCP đã ghim revision](docs/SETUP.md)
 - [Báo cáo reverse và các gap](docs/REVERSE_ENGINEERING_REPORT.md)
 - [Kế hoạch từng phase, deliverable và gate](docs/PHASE_PLAN.md)
 - [Yêu cầu đã chốt và checklist asset](docs/REQUIREMENTS.md)
