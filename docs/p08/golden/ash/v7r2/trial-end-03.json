@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: V7R2_TRIAL_END {\"sourceSaved\": false, \"actionsEdited\": false, \"worldVerticalShift\": -0.22161618280410766, \"beforeMinimum\": 0.22361618280410767, \"afterMinimum\": 0.002000093460083008, \"regionMinima\": {\"RB_P06_Rider_L0_Head\": 0.01147317886352539, \"RB_P06_Rider_L0_Torso\": 0.011750102043151855, \"RB_P06_Rider_L0_UpperArm_R\": 0.30093520879745483, \"RB_P06_Rider_L0_UpperArm_L\": 0.002053499221801758, \"RB_P06_Rider_L0_Finger_Index_2_R\": 0.1613450050354004, \"RB_P06_Rider_L0_Finger_Index_1_R\": 0.1636067032814026, \"RB_P06_Rider_L0_Finger_Index_3_R\": 0.16028499603271484, \"RB_P06_Rider_L0_Hand_R\": 0.10901796817779541, \"RB_P06_Rider_L0_Finger_Middle_2_R\": 0.1195712685585022, \"RB_P06_Rider_L0_Finger_Middle_1_R\": 0.12909400463104248, \"RB_P06_Rider_L0_Finger_Middle_3_R\": 0.11383998394012451, \"RB_P06_Rider_L0_Finger_Ring_2_R\": 0.09335720539093018, \"RB_P06_Rider_L0_Finger_Ring_1_R\": 0.10621368885040283, \"RB_P06_Rider_L0_Finger_Ring_3_R\": 0.08338731527328491, \"RB_P06_Rider_L0_Finger_Pinky_2_R\": 0.08411186933517456, \"RB_P06_Rider_L0_Finger_Pinky_1_R\": 0.09485441446304321, \"RB_P06_Rider_L0_Finger_Pinky_3_R\": 0.0751413106918335, \"RB_P06_Rider_L0_Finger_Thumb_2_R\": 0.19392484426498413, \"RB_P06_Rider_L0_Finger_Thumb_3_R\": 0.20243895053863525, \"RB_P06_Rider_L0_Finger_Thumb_1_R\": 0.18249726295471191, \"RB_P06_Rider_L0_Forearm_R\": 0.1504518985748291, \"RB_P06_Rider_L0_Finger_Index_2_L\": 0.2605288028717041, \"RB_P06_Rider_L0_Finger_Index_1_L\": 0.2391076683998108, \"RB_P06_Rider_L0_Finger_Middle_1_L\": 0.23278051614761353, \"RB_P06_Rider_L0_Finger_Index_3_L\": 0.2854658365249634, \"RB_P06_Rider_L0_Hand_L\": 0.202445387840271, \"RB_P06_Rider_L0_Finger_Middle_2_L\": 0.2571359872817993, \"RB_P06_Rider_L0_Finger_Middle_3_L\": 0.2838316559791565, \"RB_P06_Rider_L0_Finger_Ring_2_L\": 0.24789965152740479, \"RB_P06_Rider_L0_Finger_Ring_1_L\": 0.2284630537033081, \"RB_P06_Rider_L0_Finger_Pinky_1_L\": 0.22921806573867798, \"RB_P06_Rider_L0_Finger_Ring_3_L\": 0.27306222915649414, \"RB_P06_Rider_L0_Finger_Pinky_2_L\": 0.24737650156021118, \"RB_P06_Rider_L0_Finger_Pinky_3_L\": 0.26312923431396484, \"RB_P06_Rider_L0_Finger_Thumb_3_L\": 0.28816068172454834, \"RB_P06_Rider_L0_Finger_Thumb_2_L\": 0.25051814317703247, \"RB_P06_Rider_L0_Finger_Thumb_1_L\": 0.2372714877128601, \"RB_P06_Rider_L0_Forearm_L\": 0.07239925861358643, \"RB_P06_Rider_L0_Shin_L\": 0.02664586901664734, \"RB_P06_Rider_L0_Shin_R\": 0.09466008096933365, \"RB_P06_Rider_L0_Foot_L\": 0.01988571509718895, \"RB_P06_Rider_L0_Foot_R\": 0.07554604113101959, \"RB_P06_Rider_L0_Hip\": 0.002097487449645996, \"RB_P06_Rider_L0_Thigh_L\": 0.009928107261657715, \"RB_P06_Rider_L0_Thigh_R\": 0.09585559368133545}, \"render\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7r2/trial-end-03.png\", \"visualAccepted\": false}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: V7R2_TRIAL_END {\"sourceSaved\": false, \"actionsEdited\": false, \"worldVerticalShift\": -0.22161618280410766, \"beforeMinimum\": 0.22361618280410767, \"afterMinimum\": 0.002000093460083008, \"regionMinima\": {\"RB_P06_Rider_L0_Head\": 0.01147317886352539, \"RB_P06_Rider_L0_Torso\": 0.011750102043151855, \"RB_P06_Rider_L0_UpperArm_R\": 0.30093520879745483, \"RB_P06_Rider_L0_UpperArm_L\": 0.002053499221801758, \"RB_P06_Rider_L0_Finger_Index_2_R\": 0.1613450050354004, \"RB_P06_Rider_L0_Finger_Index_1_R\": 0.1636067032814026, \"RB_P06_Rider_L0_Finger_Index_3_R\": 0.16028499603271484, \"RB_P06_Rider_L0_Hand_R\": 0.10901796817779541, \"RB_P06_Rider_L0_Finger_Middle_2_R\": 0.1195712685585022, \"RB_P06_Rider_L0_Finger_Middle_1_R\": 0.12909400463104248, \"RB_P06_Rider_L0_Finger_Middle_3_R\": 0.11383998394012451, \"RB_P06_Rider_L0_Finger_Ring_2_R\": 0.09335720539093018, \"RB_P06_Rider_L0_Finger_Ring_1_R\": 0.10621368885040283, \"RB_P06_Rider_L0_Finger_Ring_3_R\": 0.08338731527328491, \"RB_P06_Rider_L0_Finger_Pinky_2_R\": 0.08411186933517456, \"RB_P06_Rider_L0_Finger_Pinky_1_R\": 0.09485441446304321, \"RB_P06_Rider_L0_Finger_Pinky_3_R\": 0.0751413106918335, \"RB_P06_Rider_L0_Finger_Thumb_2_R\": 0.19392484426498413, \"RB_P06_Rider_L0_Finger_Thumb_3_R\": 0.20243895053863525, \"RB_P06_Rider_L0_Finger_Thumb_1_R\": 0.18249726295471191, \"RB_P06_Rider_L0_Forearm_R\": 0.1504518985748291, \"RB_P06_Rider_L0_Finger_Index_2_L\": 0.2605288028717041, \"RB_P06_Rider_L0_Finger_Index_1_L\": 0.2391076683998108, \"RB_P06_Rider_L0_Finger_Middle_1_L\": 0.23278051614761353, \"RB_P06_Rider_L0_Finger_Index_3_L\": 0.2854658365249634, \"RB_P06_Rider_L0_Hand_L\": 0.202445387840271, \"RB_P06_Rider_L0_Finger_Middle_2_L\": 0.2571359872817993, \"RB_P06_Rider_L0_Finger_Middle_3_L\": 0.2838316559791565, \"RB_P06_Rider_L0_Finger_Ring_2_L\": 0.24789965152740479, \"RB_P06_Rider_L0_Finger_Ring_1_L\": 0.2284630537033081, \"RB_P06_Rider_L0_Finger_Pinky_1_L\": 0.22921806573867798, \"RB_P06_Rider_L0_Finger_Ring_3_L\": 0.27306222915649414, \"RB_P06_Rider_L0_Finger_Pinky_2_L\": 0.24737650156021118, \"RB_P06_Rider_L0_Finger_Pinky_3_L\": 0.26312923431396484, \"RB_P06_Rider_L0_Finger_Thumb_3_L\": 0.28816068172454834, \"RB_P06_Rider_L0_Finger_Thumb_2_L\": 0.25051814317703247, \"RB_P06_Rider_L0_Finger_Thumb_1_L\": 0.2372714877128601, \"RB_P06_Rider_L0_Forearm_L\": 0.07239925861358643, \"RB_P06_Rider_L0_Shin_L\": 0.02664586901664734, \"RB_P06_Rider_L0_Shin_R\": 0.09466008096933365, \"RB_P06_Rider_L0_Foot_L\": 0.01988571509718895, \"RB_P06_Rider_L0_Foot_R\": 0.07554604113101959, \"RB_P06_Rider_L0_Hip\": 0.002097487449645996, \"RB_P06_Rider_L0_Thigh_L\": 0.009928107261657715, \"RB_P06_Rider_L0_Thigh_R\": 0.09585559368133545}, \"render\": \"D:/Project/Unity/racing-bois/docs/p08/golden/ash/v7r2/trial-end-03.png\", \"visualAccepted\": false}\n"
+    },
+    "isError": false
+  }
+}

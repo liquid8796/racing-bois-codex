@@ -1,0 +1,477 @@
+{
+    "schema": 1,
+    "attemptId": "271eced6ccda4c158abc09e8555e750c",
+    "utc": "2026-09-27T11:21:12.9406514Z",
+    "unityVersion": "6000.5.7f1",
+    "descriptor": "docs/p08/golden/ash/v7r1/descriptor-control.json",
+    "descriptorSha256": "a6b25c23bfc3682b91d1bff1fb16797b6639f3dd152105aeb5ab682d4fb049b0",
+    "sourceFingerprint": "fa29ee6e624503507eb9e08cf74d2ffc6c02b3e3575e07027bf7711d5b63dace",
+    "failure": "InvalidOperationException: Collapsed primary UV triangle: RB_Golden_Ash_V7R1_UvControl/AshV7_L0_Skin at 51117",
+    "passed": false,
+    "sourceBindingPassed": false,
+    "inputs": [
+        {
+            "path": "ArtSource/Concepts/P08/Golden/ash-v2-review.md",
+            "sha256": "85f43e75c0338e3159daeee146a5ccbecd523e792a51bf6d061a4da42012b48f",
+            "bytes": 1499
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+            "sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+            "bytes": 2385932
+        },
+        {
+            "path": "ArtSource/P08/Golden/Ash/V7/RB_Golden_Ash_V7.blend",
+            "sha256": "3981a210d2e79ca9d5a2aa4cb511e174b81cf49c1f50280b4e8322be1e601578",
+            "bytes": 189442955
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_BaseColor.png",
+            "sha256": "69bb4073e685624840fc9db0a300e42da535671bca7a5eb126bbd3dfd7bbe100",
+            "bytes": 121429
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_MetallicSmoothness.png",
+            "sha256": "3097c1ea67553a65af36bdae529b927be81a2d1a12e011bc7447c6c680409c26",
+            "bytes": 66283
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Normal.png",
+            "sha256": "35d4375d3a35685e1693d1b4857cb4d1b8637174bc3661736883bd62e47db5bf",
+            "bytes": 280515
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_AgedBrass_Occlusion.png",
+            "sha256": "9108cefa224d03828fb95ad9135c413a3c427fd98af5f66080eb55c8a9eda53b",
+            "bytes": 67458
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_BaseColor.png",
+            "sha256": "5d4c48411b014d4411b8e028c1151f2377ff0f843746a2ee056eaf39ea73784d",
+            "bytes": 302842
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_MetallicSmoothness.png",
+            "sha256": "e1bbe6bb70d137894b4f988f36093b65eb246c40ce227cb500fe89fa8a97deb6",
+            "bytes": 301013
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Normal.png",
+            "sha256": "e245650455cc63432e6e7bfd29999185247c7c062fac34da08f98c262a3f5507",
+            "bytes": 10290
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Brows_Occlusion.png",
+            "sha256": "a0ab66970541814db61810f434913469f8b933df2cfc176cf93b4bd57e4155c8",
+            "bytes": 309507
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_BaseColor.png",
+            "sha256": "8220acc1f9786c7e63d0127226793d5349ea9ba508c392d2ff03e040e329a3e4",
+            "bytes": 155959
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_MetallicSmoothness.png",
+            "sha256": "013c6bc810c2169b0df4f2cb80c72b4f87a2b8f8a15172b1d3244131f958d436",
+            "bytes": 5674
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Normal.png",
+            "sha256": "6c4f21eafbf99271d922b4cf1140587f8d2724344debddaf26e3ff4df72f89bc",
+            "bytes": 2352
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Eyes_Occlusion.png",
+            "sha256": "05268d1f59550a43215fb1ef7717d54a5fd5233e81179e20daaf2ff0446bfdec",
+            "bytes": 3530
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_BaseColor.png",
+            "sha256": "2e667645adea4351af79de02fd89ab8fcbf2ad03e44ba5120d91425d64754507",
+            "bytes": 747498
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_MetallicSmoothness.png",
+            "sha256": "497dec4e814983d77292f474a3fc69037c48f10fa5a0463e549faf2bebcb5287",
+            "bytes": 72150
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Normal.png",
+            "sha256": "6703c3c07baaf5ee313c88bbfffc3e595d952508103a7d589bd18796ccbbeb94",
+            "bytes": 359063
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_Hair_Occlusion.png",
+            "sha256": "3145c50a0a42de91e010dec257591c01df6ea02f0db37e4f84f70167e0a5391a",
+            "bytes": 66947
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_BaseColor.png",
+            "sha256": "d644ca432898e82ff177acc5665feba9662860dc811ee84182cc0d8ce9fd987d",
+            "bytes": 4799
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_MetallicSmoothness.png",
+            "sha256": "418c6bac3384a43bbd585d8b817d973d9b44a8d6095da8ee5fe99ed9fc69074e",
+            "bytes": 107907
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Normal.png",
+            "sha256": "55ea4ca8447fe6850d738f599a9167152f248beffd93ab1c5c91a95add13f42a",
+            "bytes": 53279
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V2/Textures/AshV2_OchreThread_Occlusion.png",
+            "sha256": "e55022721bff940b28d5e5f1b3dac883d2c04da038e2a1f23eee7cfffee2331c",
+            "bytes": 111133
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_BaseColor.png",
+            "sha256": "93859172f09205060b01fb4e70d800f9985a8c62e6ca39ae7fc6e05a83bcb027",
+            "bytes": 732767
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_MetallicSmoothness.png",
+            "sha256": "bee0298f26bd280b077c9a9c8c0e4bb56b5d22348430ed2955974e89326b0e7d",
+            "bytes": 523516
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Normal.png",
+            "sha256": "bf64987012627de645ec8de85060fa4816ac8c6c6a90c2d4078b0da761e3e9ba",
+            "bytes": 413294
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_BootLeather_Occlusion.png",
+            "sha256": "747cdf9c77bbf52fba9d7204d1eb2b9377495fa8b9a4c86d9e8c5f34caae0a71",
+            "bytes": 539368
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_BaseColor.png",
+            "sha256": "fee6334d4708bfb64f76217ca807820acc9ed205e2e851debf2505ed626f784b",
+            "bytes": 59963
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_MetallicSmoothness.png",
+            "sha256": "16da8068e7b6ed5e40529d79996091f37ba45ef2196ba71aff91b0c4256c82a9",
+            "bytes": 174420
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Normal.png",
+            "sha256": "47ef637ba38bb776f5682026d351adc8a1bc5b9d9a26ba3b104a5e1529791bb7",
+            "bytes": 202184
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V3/Textures/AshV3_Rubber_Occlusion.png",
+            "sha256": "10c8329ea1780e9ed82d869b4150f289ebc61a8fbd326875c03e2eb7d3b83f11",
+            "bytes": 214905
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_BaseColor.png",
+            "sha256": "cc28b4cbb4ad1d4a67bac5717f7facf73cd855734552613b014ecf81fa040ca0",
+            "bytes": 7707
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_MetallicSmoothness.png",
+            "sha256": "b028287e92a309131d42dcc8bf2ccac8a1ff2ffa8564c2591693ab401fbc30be",
+            "bytes": 140540
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_Normal.png",
+            "sha256": "02b88dbad749a9824293f6a05b6d46724b04db2c9614838405da13a7fdb41587",
+            "bytes": 5805
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_Forelocks_Occlusion.png",
+            "sha256": "872b1b3ab40af8b5a7168e76f677e4ef74b6d92220f99035f473f685b502d361",
+            "bytes": 123810
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_BaseColor.png",
+            "sha256": "7df83c0eebf760f74ecc8969ae77aaf36ec879b8218960255266bd66fa429397",
+            "bytes": 188715
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_MetallicSmoothness.png",
+            "sha256": "11ef8c9530b67477c271ca51c9353b7eea93d55459df661815bf6ac62192d7df",
+            "bytes": 746768
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_Normal.png",
+            "sha256": "52cf6bfedac17bf20936a5610ca6e55accb74bb659d0e1c6542461004b6a6df8",
+            "bytes": 890679
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_LeatherDetails_Occlusion.png",
+            "sha256": "38d458e1ea10682153e95fe675cc62a3a3dc240123bc33d34fca09a6dddc82b3",
+            "bytes": 581215
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_BaseColor.png",
+            "sha256": "bb9591a0f9b4290faf3abda2827c6de4a88abc975516aa648e91a8646ff32d9a",
+            "bytes": 2905558
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_MetallicSmoothness.png",
+            "sha256": "9c13f931f841a69e9ce0fbf429d3f73b55477b5482ae2bca4a3b52db3fc2cde0",
+            "bytes": 2085169
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_Normal.png",
+            "sha256": "de4660cecde9c8310b3585781f6f7dbdb6f411075f16c7902fd0644a2f360aa3",
+            "bytes": 4318858
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V4/Textures/AshV4_TailoredLeather_Occlusion.png",
+            "sha256": "f941935543e52eda05310bef0e8cc3fb0cd362fd3f5b92fa7dee894b7d3e22b4",
+            "bytes": 937156
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V6/Textures/AshV6_Skin_BaseColor.png",
+            "sha256": "415155a3f267293ea6fe2308127fcd935d7d723c1dc51f6d7f3be83da3152e9b",
+            "bytes": 1420769
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V6/Textures/AshV6_Skin_MetallicSmoothness.png",
+            "sha256": "74f021405dc64464e8d074a6693a8b3661a7e2408bafdeca63c8c430bddfe208",
+            "bytes": 611317
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V6/Textures/AshV6_Skin_Normal.png",
+            "sha256": "da2214cb85048494e47bb51b014c3f5afd4c3479b85129f93240050694f0401c",
+            "bytes": 1095961
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V6/Textures/AshV6_Skin_Occlusion.png",
+            "sha256": "1b00dc55e6ca3bcc530e394598575ed6d7a7bf6c9b55ec1c686394951c1eac34",
+            "bytes": 578221
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_AmberGlass_BaseColor.png",
+            "sha256": "d751028ce7a5d45605389e571a181914966986aa338f31ac46b5012830eec2bd",
+            "bytes": 5809
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_AmberGlass_MetallicSmoothness.png",
+            "sha256": "fa469461f7ce7e8f7d4a0c7b368bd9ca2bbc3a39b730afa211079ed5fda45f52",
+            "bytes": 5806
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_AmberGlass_Normal.png",
+            "sha256": "02b88dbad749a9824293f6a05b6d46724b04db2c9614838405da13a7fdb41587",
+            "bytes": 5805
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_AmberGlass_Occlusion.png",
+            "sha256": "5c31911e89276ba08e1813cbb95bc7bb516a8d22ce188d6fc4a379ac9cb3e3a9",
+            "bytes": 5804
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL0_BaseColor.png",
+            "sha256": "41a95adf1499d57f352e2f4c23576fe0d12218b72c398c5723da3033a8db0568",
+            "bytes": 748443
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL0_MetallicSmoothness.png",
+            "sha256": "1d4ae47e0b2dac7a3397ad6b03f2bbd52c5efa4432bc9dd9527ef0b99599a085",
+            "bytes": 1646706
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL0_Normal.png",
+            "sha256": "f7ec8beafb6678ab4a1e27964d7ccb442b31dea84444dc0ca95e2a822042d6b4",
+            "bytes": 1155187
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL0_Occlusion.png",
+            "sha256": "5f458efc6cc4ed39143f7d31d94decd1bfbb3b01938d556f1b480b92c41142af",
+            "bytes": 1387351
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL1_BaseColor.png",
+            "sha256": "d18b8db40797f5c6300eafa9140986c9f1f4afcc8c5ab3142be596c499f39be6",
+            "bytes": 344505
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL1_MetallicSmoothness.png",
+            "sha256": "db720fdaf8c7071e3f677be1e266583dccf2af787c83905dad2e9e30c3e4b629",
+            "bytes": 766052
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL1_Normal.png",
+            "sha256": "30749166899160a2ac064c1f7fd349506c974ed3ed962da12c793f200c3efb2f",
+            "bytes": 444423
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL1_Occlusion.png",
+            "sha256": "5dcf73362ceb9cf141df104fd55c8120b7979a62dabf480853cd1949304c637e",
+            "bytes": 625127
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL2_BaseColor.png",
+            "sha256": "6df5742c2b2c51eb53291c83197f70e0643c2490c943fd1f63e1bf4bfdfd6aee",
+            "bytes": 132542
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL2_MetallicSmoothness.png",
+            "sha256": "d04f657c8f7275bd542377fe0ae617c1a9adbd78b5ba12c97d085ebdcc12e68a",
+            "bytes": 275829
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL2_Normal.png",
+            "sha256": "fe480b2297063ff57e22756131673e0eab97bb346bed6efde63c84e20a01ce85",
+            "bytes": 187073
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7/Textures/AshV7_EquipmentL2_Occlusion.png",
+            "sha256": "59b1017371d924a4e30aafacbe94d904eb51204c6d92b1e6636242678ee4f3ab",
+            "bytes": 227734
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Ash/V7R1/RB_Golden_Ash_V7R1_UvControl.fbx",
+            "sha256": "da8a56822b5c02d4512d060e954edab5a2e8d2710298b7b85c6fd5a74053c95b",
+            "bytes": 16606124
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs",
+            "sha256": "e416f2f3b2ae2c36bbe6292374e98a69bfa2f8427778fccc88e28787a0cfb1f8",
+            "bytes": 2835
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Animation.cs",
+            "sha256": "231af1e4b0c79156a5d889f00057d90a9d5ef8faf2ceae3b15d8931c9edb8dac",
+            "bytes": 1648
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Build.cs",
+            "sha256": "ebdb9798155481e234d3c01d87d1ca61a95fa3df3a484fabdf2da04949acfeeb",
+            "bytes": 10047
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Compilation.cs",
+            "sha256": "428050012ed2f958c61f6a8fedb61120993fc284241a8a4b008896e21f817676",
+            "bytes": 3247
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Contract.cs",
+            "sha256": "dcb4bc23f2b205dbc21cef7a1d156fcfb865fd1717f27dc46401390d89dce445",
+            "bytes": 15508
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Environment.cs",
+            "sha256": "9287dc0622752379dd87003122aa6918cc3ebbdfe9b2eee5d53856014f3c363b",
+            "bytes": 10357
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Garage.cs",
+            "sha256": "07d8a53899784635dec7cb742d128f8959624b32af95245500bdf075de292acc",
+            "bytes": 33355
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.GeometryProbe.cs",
+            "sha256": "abbde56353604fd61123cc0975bef488c723569b4d4d5509c0ef0e1f544c5782",
+            "bytes": 3876
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
+            "sha256": "dfc1c926f5d2404831f1c4985d83e1182e071c8d868e0e483955831edbcb8e9e",
+            "bytes": 19243
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Lighting.cs",
+            "sha256": "5d3fe0851a74c47ac6fff81ed8f007dcfcfba0f120a5273adbddb31eb56bac68",
+            "bytes": 2638
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Modules.cs",
+            "sha256": "f85bc31422303e74714b902310115743f89cee800fae33c593a3f6f02c9b9d0b",
+            "bytes": 21449
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.RestPose.cs",
+            "sha256": "8f48ce5cbceb56f7849198d138b02bb5082a360635c9cd3b2bfd4c03fa33088e",
+            "bytes": 3584
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Scene.cs",
+            "sha256": "18dbcb06b4a6058b16a81a02fa18a39eee3dd5a486ae40cf10c0b7b02ed8c071",
+            "bytes": 7145
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs",
+            "sha256": "626113d23d1f645a3b1d98e07972b8dda56d97ce3d2358f9c15fa6b1b289bb73",
+            "bytes": 22965
+        },
+        {
+            "path": "Assets/RacingBois/Editor/RacingBois.Authoring.Editor.asmdef",
+            "sha256": "05852f1be165987cbc90668c5fea344febd5848d9dd9cd3ac1a1b799d4d60aa7",
+            "bytes": 459
+        },
+        {
+            "path": "Assets/RacingBois/Editor/UrpProfileAuthoring.cs",
+            "sha256": "a0c743af55dfe8c8491e8872290a6749ce63bbb823af53b3e2fab594d69e70b2",
+            "bytes": 4061
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenCaptureRunner.cs",
+            "sha256": "1cc5c5ffe0fbbc27cf1ac8d834795aa4ca79f61ec117d98b5bdb69eda8092ca9",
+            "bytes": 7411
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewController.cs",
+            "sha256": "f84197f80b529ca5b9ccaf20ca1de5b432aadb213b425dd6493b984b32776eb1",
+            "bytes": 8762
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewPipelineScope.cs",
+            "sha256": "9566dafc6b1e13e78d7fac6654e1ebb0b5116845a9b76438b7798d1dea423799",
+            "bytes": 864
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenSkinBounds.cs",
+            "sha256": "daad4616ee4f2a9016edc3f3b2b66c68d038a3b0255af2424bef08d0e624951c",
+            "bytes": 637
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef",
+            "sha256": "105f1f8bd7f90e023b18fde0cbff574b4f4f1b991a181780d63a220c5cb044bf",
+            "bytes": 221
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll",
+            "sha256": "4c14792d25d41664c6a76da31a0e62d54ab26fe4fb925962dfe1dee6efcca062",
+            "bytes": 307200
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.pdb",
+            "sha256": "88a6573bbd3decb3aafac347df2ed3a8870f7439cfbe3e11a6846fac00b981b5",
+            "bytes": 94208
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.dll",
+            "sha256": "50410e7a81f134df7ffeb0fc209feb624751e4a78f21239f171c16dd4b3b39c9",
+            "bytes": 203776
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.pdb",
+            "sha256": "c04ad70b4e7bad8d474e7d7c33508c28a112f96a0ea7e33b81db743f75099116",
+            "bytes": 75676
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.dll",
+            "sha256": "d0d4a570ed5ade72d2dda0e62991c0a282e295c89f9ed16392956d010a9225ed",
+            "bytes": 15872
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.pdb",
+            "sha256": "8ccbfedafbe9e928d1d0d6fd1b7995c83ade89ad83baa52368586edc88033f4c",
+            "bytes": 24880
+        },
+        {
+            "path": "docs/p08/golden/ash/v7r1/descriptor-control.json",
+            "sha256": "a6b25c23bfc3682b91d1bff1fb16797b6639f3dd152105aeb5ab682d4fb049b0",
+            "bytes": 32432
+        }
+    ],
+    "outputs": [],
+    "assets": [],
+    "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
+}

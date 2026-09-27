@@ -1,0 +1,51 @@
+{
+  "control": {
+    "path": "_local/p08-ash-v7r1-staging/triangulated-diagnostic.fbx",
+    "sha256": "da8a56822b5c02d4512d060e954edab5a2e8d2710298b7b85c6fd5a74053c95b",
+    "meshes": [
+      {
+        "name": "AshV7_L0_Skin_RetainedBody.001",
+        "vertices": 72954,
+        "polygons": 142973,
+        "triangles": 142973,
+        "nonTrianglePolygons": 0,
+        "minimumDoubleCross": 3.417710559006082e-11,
+        "failures": [],
+        "falsePassUsingOldFloatEdges": 0,
+        "alternativeTriangulationFailures": []
+      },
+      {
+        "name": "AshV7_L1_Skin_RetainedBody.001",
+        "vertices": 36068,
+        "polygons": 70234,
+        "triangles": 70234,
+        "nonTrianglePolygons": 0,
+        "minimumDoubleCross": 7.708393923167023e-10,
+        "failures": [],
+        "falsePassUsingOldFloatEdges": 0,
+        "alternativeTriangulationFailures": []
+      },
+      {
+        "name": "AshV7_L2_Skin_RetainedBody.001",
+        "vertices": 11099,
+        "polygons": 20933,
+        "triangles": 20933,
+        "nonTrianglePolygons": 0,
+        "minimumDoubleCross": 7.630276854797557e-09,
+        "failures": [],
+        "falsePassUsingOldFloatEdges": 0,
+        "alternativeTriangulationFailures": []
+      }
+    ],
+    "scope": "Read-only binary FBX. Nontriangle polygons use fan triangulation and require Blender/native confirmation."
+  },
+  "nonMeshObjectCount": 7847,
+  "changedNonMeshObjects": [],
+  "comparisonNormalization": "Ignore randomized root object IDs/order; remove exporter temporary mesh-name suffix .001; normalize expected absolute STRIP texture folder between export destinations. All remaining scalar/array data compared exactly as a multiset; connection mapping is a separate gate.",
+  "meshPositionsExact": true,
+  "originalSourceSha256": "3981a210d2e79ca9d5a2aa4cb511e174b81cf49c1f50280b4e8322be1e601578",
+  "originalExportSha256": "56df79a8697ed04e3613fc940602d257cc7c42d69bf9c7e543e7769162d8c41d",
+  "nativePending": true,
+  "visualAccepted": false,
+  "passed": true
+}

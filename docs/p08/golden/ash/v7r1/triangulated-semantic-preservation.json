@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "semanticBindings": {
+    "animationChannels": {
+      "same": true,
+      "count": 5538
+    },
+    "skinClusters": {
+      "same": true,
+      "count": 135
+    },
+    "shapeDeltas": {
+      "same": true,
+      "count": 6
+    },
+    "orderedMaterialBindings": {
+      "same": true,
+      "count": 3
+    }
+  },
+  "triangleCornerChecks": [
+    {
+      "mesh": "AshV7_L0_Skin_RetainedBody",
+      "triangles": 142973,
+      "cornerOrMaterialFailures": [],
+      "incompleteOriginalPolygons": []
+    },
+    {
+      "mesh": "AshV7_L1_Skin_RetainedBody",
+      "triangles": 70234,
+      "cornerOrMaterialFailures": [],
+      "incompleteOriginalPolygons": []
+    },
+    {
+      "mesh": "AshV7_L2_Skin_RetainedBody",
+      "triangles": 20933,
+      "cornerOrMaterialFailures": [],
+      "incompleteOriginalPolygons": []
+    }
+  ],
+  "scope": "Exact connection-bound animation curves, skin weights/transforms, shape deltas, material ordering, and original polygon UV corner membership. Native importer/render still separate."
+}
