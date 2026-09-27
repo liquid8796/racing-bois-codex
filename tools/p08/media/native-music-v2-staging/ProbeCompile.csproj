@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><ImplicitUsings>disable</ImplicitUsings><Nullable>disable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors><AssemblyName>RacingBois.NativeMusic.ProbeV2</AssemblyName>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="NativeMusicProbe.cs" />
+    <Compile Include="ProbeReceipt.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Adapters.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/ScriptAssemblies/RacingBois.Client.Application.dll"><Private>false</Private></Reference>
+    <Reference Include="$(ProjectRoot)Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll"><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

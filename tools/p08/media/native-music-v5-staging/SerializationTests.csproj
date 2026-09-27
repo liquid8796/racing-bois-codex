@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><Nullable>disable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ProbeReceipt.cs" /><Compile Include="SerializationTests.cs" />
+    <Reference Include="$(ProjectRoot)Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll" />
+  </ItemGroup>
+</Project>

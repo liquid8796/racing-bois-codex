@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>9</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><ImplicitUsings>disable</ImplicitUsings><Nullable>disable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>RacingBois.NativeMusic.Preflight</AssemblyName>
+    <ProjectRoot>$(MSBuildThisFileDirectory)../../../../</ProjectRoot>
+    <UnityManaged>C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed</UnityManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="P08MusicDirector.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Adapters/DesktopConfiguration.cs" />
+    <Compile Include="$(ProjectRoot)Assets/RacingBois/Client/Application/DesktopRuntimeConfig.cs" />
+    <Reference Include="$(UnityManaged)/UnityEngine/*.dll" />
+  </ItemGroup>
+</Project>

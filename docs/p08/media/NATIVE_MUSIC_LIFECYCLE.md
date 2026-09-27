@@ -1,0 +1,20 @@
+# Native streamed music: verified lifecycle repair
+
+The native adapter now recognizes completion, restarts a finite clip on an explicit same-ID Play/Resume, preserves paused/seeked playback, and keeps unrelated unlock gestures from restarting an ended song. Pause retains an existing load error instead of hiding it behind a paused status. The Web branch is unchanged.
+
+An actual Unity6000.5.7f1 test exposed the previous streaming rejection: `DownloadHandlerAudioClip.streamAudio=true` produced a streamed runtime clip whose `AudioClip.loadType` still reported DecompressOnLoad. Four read-only transfers used the same short fixture and416-second production OGG with streaming on/off. Both modes returned that same loadType. Streaming requests retained true native handler readbacks, rejected bounded GetData calls with the engine's explicit streamed-sample diagnostic, and had materially different observed memory behavior. For the long song, streaming object memory was250,696bytes and observed Unity allocated-memory delta5,292,492bytes; non-streaming object memory was53,310,897bytes with delta50,616,731bytes. These measurements do not represent total process memory or a release budget.
+
+The production guard therefore verifies the requested native handler streaming contract before sending and before accepting content, then records provenance for the exact owned clip. It does not use the Inspector-oriented loadType getter as a runtime-stream detector. The12MiB encoded-byte bound remains enforced, streaming remains required, and production never requests full PCM data or runs the diagnostic GetData failures.
+
+The final V5 probe passed28 functional checks in an isolated Unity Editor Play-mode scene using the actual installed production component, a real1.2-second Vorbis stream and real AudioSources. It covered pause during loading, pending/loaded seek, natural completion, explicit replay, pause/resume position, looping, loop-off completion, listener pause, stop during loading, error retention and gesture idempotence. The28 checks are separate from two direct UnPause observations on independently owned sources. The fixture played at gain0; audible quality, full game mixing and standalone-player playback are not inferred.
+
+The final device configuration was1024samples×4buffers at48kHz. Source-pause settlement was bounded by that actual queued window with sample-rate conversion, followed by an exact no-drift hold over a full clip duration. In this run both source and listener paused playheads remained unchanged throughout settlement and hold. Listener DSP time also remained unchanged. All4 tracked clips were released, owned objects were gone, listener state was restored, and source/assembly/fixture bytes were stable. Root separately confirmed no remaining music owners or unnamed runtime clips, restored the clean Race scene and rechecked its original hash.
+
+Failures remain intact:
+
+- V1 timed out waiting for its rejected clip; a separate control proved Pause could mask an immediate file error. Its dynamic JsonUtility receipt also omitted DTO lists.
+- V2 used CLR serialization and retained the successful four-transfer diagnostic with expected GetData logs. Reflection/transport reporting around the first Start was ambiguous; that does not rewrite the completed source-bound receipt or prove transport replay.
+- V3 incorrectly assumed a source paused before clip assignment was a never-paused UnPause negative; actual native behavior refuted that test premise.
+- V4 measured a1024-sample advance after an immediate Pause read, matching one actual DSP block. Its fixed256-sample assertion failed. V5 separates device-bound command settlement from the stronger exact settled no-drift requirement; it does not relabel V4 as passed.
+
+The final receipt is `native-music-lifecycle-v5-20260928.json`; direct transfer evidence is `native-music-uwr-v2-20260928.json`. All previous stages and receipts are preserved. Original NotoSans source bytes, the unowned Ash source and protected Club remain unchanged.

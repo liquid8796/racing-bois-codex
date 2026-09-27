@@ -1,0 +1,48 @@
+{
+  "schema": 5,
+  "probeOnly": true,
+  "productionSourceUnchangedSha256": "eb7ad87bd9e73c47408fd4abac7290312edd697fdecc3944583c11818570cdc7",
+  "sourceFiles": [
+    {
+      "path": "Directory.Build.props",
+      "sha256": "882fdad1bdbe9ae368659e080424794b0f4720bde80ee9ef67e3055dff8cef9a"
+    },
+    {
+      "path": "NativeMusicProbe.cs",
+      "sha256": "3586edea4eb1dc85c782d03f63b61ac2a8c1928ea7e89c5c8941e196de6b54dd"
+    },
+    {
+      "path": "preflight.py",
+      "sha256": "62a5f0aa7a48f6eb211e1f83a44409ea17f92d626abe7ecdb6d6f3362e68cb78"
+    },
+    {
+      "path": "ProbeCompile.csproj",
+      "sha256": "912fa9a8cff9290aed7c18f10dbb1aa7a55e66e1012f62891d44c3a86c78b79b"
+    },
+    {
+      "path": "ProbeReceipt.cs",
+      "sha256": "29a925efb19eefc5db376eac9e1063c7c687568199c6de6121d420f9e6cff901"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9eba617755c2ae05761c9168273c06dae5fc87903cff265900b3090f7ae66cce"
+    },
+    {
+      "path": "SerializationTests.cs",
+      "sha256": "174a881999c3224a7306c43ba11e3763aaa20d152a9ddd48fe3bef4fd4c3fcdf"
+    },
+    {
+      "path": "SerializationTests.csproj",
+      "sha256": "a9403fc1e428dfdfb622d365702a860222992ce383b47dd019696711693bea06"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "43f4baac36dccc2282f999e09dd7b582c01e039416e07aaddc1d485f3aaf4014"
+    }
+  ],
+  "probeDllSha256": "486b37a62467f815ca81baa401c16ab62a9f3dc8710e7287c18ffd2ad55550a5",
+  "managedCompilationPassed": true,
+  "serializerAndRateMathGroupsPassed": 8,
+  "expectedFunctionalChecks": 28,
+  "nativePlaybackVerified": false
+}

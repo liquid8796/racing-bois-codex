@@ -34,13 +34,12 @@ namespace RacingBois.Client.Adapters
         public bool IsLooping => loop;
         public float Gain => gain;
         public long LastNativeDownloadedBytes { get; private set; }
-        /// <summary>The currently owned clip came from a download handler whose streamAudio contract was verified before send and extraction.</summary>
         public bool UsesNativeStreamingClip
         {
             get
             {
 #if !UNITY_WEBGL || UNITY_EDITOR
-                return ownedNativeStream && ownedClip != null && output != null && output.clip == ownedClip;
+                return ownedClip != null && ownedClip.loadType == AudioClipLoadType.Streaming;
 #else
                 return false;
 #endif
@@ -51,7 +50,6 @@ namespace RacingBois.Client.Adapters
         private double pendingSeek;
 #if !UNITY_WEBGL || UNITY_EDITOR
         private bool unlocked;
-        private bool ownedNativeStream;
         private enum NativeVoice { Ready, Playing, Paused, Ended }
         private NativeVoice nativeVoice;
         private bool nativePlaybackObserved;
@@ -138,7 +136,6 @@ namespace RacingBois.Client.Adapters
                 output.Pause();
                 if (nativeVoice == NativeVoice.Playing) nativeVoice = NativeVoice.Paused;
             }
-            if (CurrentStatus == "error") return; // Pausing must not hide a synchronous native load failure.
 #endif
             if (CurrentId.Length > 0) Report("paused");
         }
@@ -179,7 +176,6 @@ namespace RacingBois.Client.Adapters
 #if UNITY_WEBGL && !UNITY_EDITOR
             if(initialized)RB_MusicStop();
 #else
-            ownedNativeStream = false;
             generation++;
             if (request != null) { request.Abort(); request.Dispose(); request = null; }
             if (loading != null) { StopCoroutine(loading); loading = null; }
@@ -296,12 +292,8 @@ namespace RacingBois.Client.Adapters
                 if (localBytes <= 0 || (ulong)localBytes > MaximumNativeMusicBytes) { loading = null; Fail("music-size-rejected"); yield break; }
             }
             var local = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.OGGVORBIS); request = local;
-            // AudioClip.loadType is not the downloaded clip's storage contract: native Unity 6000.5.7f1
-            // reports DecompressOnLoad even when GetData is refused for streamed samples. Bind ownership
-            // to the requested and verified handler mode instead. Never access downloadHandler.data.
-            var handler = (DownloadHandlerAudioClip)local.downloadHandler;
-            handler.streamAudio = true;
-            if (!handler.streamAudio) { local.Dispose(); request = null; loading = null; Fail("music-streaming-unavailable"); yield break; }
+            // Unity creates a Streaming clip here, not a full-float PCM clip. Never access downloadHandler.data.
+            ((DownloadHandlerAudioClip)local.downloadHandler).streamAudio = true;
             local.timeout = 30; var operation = local.SendWebRequest();
             bool oversized = false;
             while (!operation.isDone)
@@ -316,12 +308,12 @@ namespace RacingBois.Client.Adapters
             if (oversized || local.downloadedBytes > MaximumNativeMusicBytes) { local.Dispose(); loading = null; Fail("music-size-rejected"); yield break; }
             if (local.result != UnityWebRequest.Result.Success) { local.Dispose(); loading = null; Fail("music-download-failed"); yield break; }
             LastNativeDownloadedBytes = (long)local.downloadedBytes;
-            if (!handler.streamAudio) { local.Dispose(); loading = null; Fail("music-streaming-unavailable"); yield break; }
             AudioClip clip;
             try { clip = DownloadHandlerAudioClip.GetContent(local); } catch (Exception) { local.Dispose(); loading = null; Fail("music-decode-failed"); yield break; }
             local.Dispose(); loading = null;
             if (clip == null) { Fail("music-decode-failed"); yield break; }
-            ownedClip = clip; ownedNativeStream = true; output.clip = clip; output.loop = loop; ApplyMix(); Seek(pendingSeek);
+            if (clip.loadType != AudioClipLoadType.Streaming) { Destroy(clip); Fail("music-streaming-unavailable"); yield break; }
+            ownedClip = clip; output.clip = clip; output.loop = loop; ApplyMix(); Seek(pendingSeek);
             Debug.Log("RB_MUSIC_NATIVE_READY Streaming bytes=" + LastNativeDownloadedBytes);
             if (!paused && unlocked) ResumeNative();
         }
