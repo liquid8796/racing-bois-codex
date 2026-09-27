@@ -1,0 +1,180 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "synthetic complete corresponding-view contract is accepted as evidence only",
+      "passed": true
+    },
+    {
+      "name": "unaccepted candidate rejected even with successful native import",
+      "passed": true
+    },
+    {
+      "name": "pending candidate cannot substitute a true boolean",
+      "passed": true
+    },
+    {
+      "name": "omitted difference list rejected",
+      "passed": true
+    },
+    {
+      "name": "known mismatch remains rejected",
+      "passed": true
+    },
+    {
+      "name": "empty reviewer rejected",
+      "passed": true
+    },
+    {
+      "name": "required rear view cannot be omitted",
+      "passed": true
+    },
+    {
+      "name": "one view cannot stand in twice",
+      "passed": true
+    },
+    {
+      "name": "color dimension cannot be omitted",
+      "passed": true
+    },
+    {
+      "name": "blank material observation rejected",
+      "passed": true
+    },
+    {
+      "name": "geometry mismatch rejected",
+      "passed": true
+    },
+    {
+      "name": "unreviewed lighting rejected",
+      "passed": true
+    },
+    {
+      "name": "stale descriptor rejected",
+      "passed": true
+    },
+    {
+      "name": "stale concept rejected",
+      "passed": true
+    },
+    {
+      "name": "stale render rejected",
+      "passed": true
+    },
+    {
+      "name": "new capture hash cannot conceal stale descriptor binding",
+      "passed": true
+    },
+    {
+      "name": "render dimensions checked against PNG",
+      "passed": true
+    },
+    {
+      "name": "concept cannot substitute runtime render",
+      "passed": true
+    },
+    {
+      "name": "duplicate pixels cannot supply different angles",
+      "passed": true
+    },
+    {
+      "name": "fabricated non-native capture type rejected",
+      "passed": true
+    },
+    {
+      "name": "omitted forced LOD policy rejected",
+      "passed": true
+    },
+    {
+      "name": "review cannot predate capture",
+      "passed": true
+    },
+    {
+      "name": "failed native import rejected",
+      "passed": true
+    },
+    {
+      "name": "missing native material preservation gate rejected",
+      "passed": true
+    },
+    {
+      "name": "collapsed native LOD declaration rejected",
+      "passed": true
+    },
+    {
+      "name": "accepted material bytes cannot change during binding",
+      "passed": true
+    },
+    {
+      "name": "accepted prefab rig and LOD bytes cannot change",
+      "passed": true
+    },
+    {
+      "name": "accepted mesh and rig source bytes cannot change",
+      "passed": true
+    },
+    {
+      "name": "duplicated semantic bindings rejected",
+      "passed": true
+    },
+    {
+      "name": "bike cannot map to wrong content kind",
+      "passed": true
+    },
+    {
+      "name": "wrong catalog index rejected",
+      "passed": true
+    },
+    {
+      "name": "review cannot be rebound to another valid catalog identity",
+      "passed": true
+    },
+    {
+      "name": "environment cannot replace a police rider",
+      "passed": true
+    },
+    {
+      "name": "environment cannot replace a protected weapon",
+      "passed": true
+    },
+    {
+      "name": "removed manifest cannot leave an unchecked Golden actor in a pack",
+      "passed": true
+    },
+    {
+      "name": "empty manifest retains ordinary legacy prefab support",
+      "passed": true
+    },
+    {
+      "name": "mapped slot cannot silently retain a previous different prefab",
+      "passed": true
+    },
+    {
+      "name": "missing native prefab output rejected",
+      "passed": true
+    },
+    {
+      "name": "repository traversal rejected",
+      "passed": true
+    },
+    {
+      "name": "rider requires native rig result",
+      "passed": true
+    }
+  ],
+  "syntheticFixturesOnly": true,
+  "visualAcceptanceProved": false,
+  "scope": "Contract rejection and immutable binding controls. No real asset is accepted, imported, rendered or changed by these tests.",
+  "sources": {
+    "tools/p08/promotion/Directory.Build.props": "591ba445bccfd0dbbb295b30db8b1f41dfc5fcc2c6d8e79f0467d92ab1fe92ab",
+    "tools/p08/promotion/GateTests.csproj": "b4a6b877d284a154f3c76d25a1b28918587803cc1d4a0321c31082f7c7193423",
+    "tools/p08/promotion/Preflight.csproj": "26705aa183ed005515ee33433ef5a22b278dea3f445e5674d558a17e9cb41900",
+    "tools/p08/promotion/Program.cs": "6702446f7b84466d4e7c647ab6c63eb939adaa1f3727f38d88247a1e2ca142f9",
+    "Assets/RacingBois/Editor/GoldenProductionGate.cs": "d12507f137c9b8f0f6ec533e2c97fcba99389263a65ba0548761097d1780d636",
+    "Assets/RacingBois/Editor/GoldenProductionBindings.cs": "f5219ebf0d422cd7a4d385e106d91e1d9907aa8e5b7ac8fa2d4125570301b387",
+    "Assets/RacingBois/Editor/GoldenProductionCapture.cs": "b2bcd8730b119b617176b0c4ea96b5bd5c03a652a55192027485d22656bd36d8",
+    "Assets/RacingBois/Editor/GoldenSampleBuilder.Promotion.cs": "55e5298c5225b241fcb7a8028345e6f7c2f93516333071d0e47c80e9a0251c7f",
+    "Assets/RacingBois/Editor/P08ContentPackBuilder.cs": "a56d70f900fa92b6781e334fef39c0dde2628ed939708b0964d115b9bbcb0a93"
+  },
+  "sourceStable": true
+}

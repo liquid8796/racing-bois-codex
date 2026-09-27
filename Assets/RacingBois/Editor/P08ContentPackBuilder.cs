@@ -30,7 +30,7 @@ namespace RacingBois.Authoring.Editor
         private static readonly Color[] Ground = {Color.white,new Color(.38f,.41f,.46f),new Color(.69f,.72f,.67f),new Color(.82f,.78f,.63f),new Color(.56f,.66f,.40f)};
         [Serializable] private sealed class AudioDelivery { public AudioEntry[] clips = null; }
         [Serializable] private sealed class AudioEntry { public string id = "", category = "", role = "", oggPath = "", oggSha256 = ""; public bool signalAuditPassed = false; }
-        [Serializable] private sealed class BuildReceipt { public int schema=1; public bool passed; public string unityVersion, target, contentHash, output; public P08BundleEntry[] entries; public DependencyReceipt[] dependencies; }
+        [Serializable] private sealed class BuildReceipt { public int schema=1; public bool passed; public string unityVersion, target, contentHash, output; public P08BundleEntry[] entries; public DependencyReceipt[] dependencies; public GoldenProductionGate.FileRef promotionManifest; }
         [Serializable] private sealed class DependencyReceipt { public string id; public string[] dependsOn; }
 
         public static void Setup() { PrepareRoutes(); PrepareActors(); Validate(); }
@@ -38,12 +38,13 @@ namespace RacingBois.Authoring.Editor
 
         public static void PrepareRoutes()
         {
+            var bindings = GoldenProductionBindings.Load(); bindings.ValidateConsumed(PackPrefabNames());
             Directory.CreateDirectory(Root); Directory.CreateDirectory(Materials);
             for (int i=0;i<5;i++)
             {
                 var route=Upsert<P08RouteContent>(Root+"Route-"+i+".asset"); route.CourseIndex=i;
-                route.Props=Props[i].Select(Prefab).ToArray();
-                route.Guardrail=Prefab("RB_P06_Guardrail"); route.Chevron=Prefab("RB_P06_Chevron"); route.UtilityPole=Prefab("RB_P06_UtilityPole");
+                route.Props=Props[i].Select(name=>bindings.Resolve(name,Prefab)).ToArray();
+                route.Guardrail=bindings.Resolve("RB_P06_Guardrail",Prefab); route.Chevron=bindings.Resolve("RB_P06_Chevron",Prefab); route.UtilityPole=bindings.Resolve("RB_P06_UtilityPole",Prefab);
                 route.Asphalt=Tinted("Asphalt",i,Color.white); route.Shoulder=Tinted("Gravel",i,i==0?Color.white:Ground[i]);
                 route.Landscape=Tinted("Gravel",i,Ground[i],"Landscape");
                 route.Paint=Require<Material>("Assets/RacingBois/Materials/RacePaint.mat"); route.YellowPaint=Require<Material>("Assets/RacingBois/Materials/RaceYellow.mat");
@@ -60,14 +61,15 @@ namespace RacingBois.Authoring.Editor
 
         public static void PrepareActors()
         {
+            var bindings = GoldenProductionBindings.Load(); bindings.ValidateConsumed(PackPrefabNames());
             Directory.CreateDirectory(Root); var delivery=ReadAudio();
             var actor=Upsert<P08ActorContent>(Root+"Actors.asset");
-            actor.Bikes=Enumerable.Range(0,BikeCatalog.Count).Select(i=>Prefab("RB_P08_Bike_"+i.ToString("D2"))).ToArray();
-            actor.Riders=Enumerable.Range(0,CharacterCatalog.Count).Select(i=>Prefab(CharacterCatalog.GetAt(i).ArtId)).ToArray();
+            actor.Bikes=Enumerable.Range(0,BikeCatalog.Count).Select(i=>bindings.Resolve("RB_P08_Bike_"+i.ToString("D2"),Prefab)).ToArray();
+            actor.Riders=Enumerable.Range(0,CharacterCatalog.Count).Select(i=>bindings.Resolve(CharacterCatalog.GetAt(i).ArtId,Prefab)).ToArray();
             actor.Portraits=Enumerable.Range(0,CharacterCatalog.Count*3).Select(i=>Portrait(i/3,i%3)).ToArray();
-            actor.PoliceBike=Prefab("RB_P06_PoliceMotorcycle"); actor.PoliceRider=Prefab("RB_P06_PoliceRider");
-            actor.Coupe=Prefab("RB_P06_TrafficCoupe"); actor.Van=Prefab("RB_P06_TrafficVan"); actor.Pedestrian=Prefab("RB_Pedestrian"); actor.Club=Prefab("RB_Club");
-            actor.TrafficExtras=P08ArtBuilder.Entries().Where(x=>x.kind=="traffic").Select(x=>Prefab(x.name)).ToArray();
+            actor.PoliceBike=bindings.Resolve("RB_P06_PoliceMotorcycle",Prefab); actor.PoliceRider=bindings.Resolve("RB_P06_PoliceRider",Prefab);
+            actor.Coupe=bindings.Resolve("RB_P06_TrafficCoupe",Prefab); actor.Van=bindings.Resolve("RB_P06_TrafficVan",Prefab); actor.Pedestrian=bindings.Resolve("RB_Pedestrian",Prefab); actor.Club=bindings.Resolve("RB_Club",Prefab);
+            actor.TrafficExtras=P08ArtBuilder.Entries().Where(x=>x.kind=="traffic").Select(x=>bindings.Resolve(x.name,Prefab)).ToArray();
             actor.RiderClips=AssetDatabase.LoadAllAssetsAtPath("Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx").OfType<AnimationClip>()
                 .Where(c=>P06HeroAssetBuilder.ClipNames.Contains(c.name)).OrderBy(c=>c.name).ToArray();
             var library=Upsert<P08ContentLibrary>(Root+"Library.asset"); var bank=Upsert<RaceAudioBank>(Root+"AudioBank.asset");
@@ -90,8 +92,23 @@ namespace RacingBois.Authoring.Editor
 
         public static void Validate()
         {
-            Require<P08ActorContent>(Root+"Actors.asset").Validate();
-            for(int i=0;i<5;i++) Require<P08RouteContent>(Root+"Route-"+i+".asset").Validate(i);
+            var bindings = GoldenProductionBindings.Load(); bindings.ValidateConsumed(PackPrefabNames());
+            var actor=Require<P08ActorContent>(Root+"Actors.asset"); actor.Validate();
+            for(int i=0;i<actor.Bikes.Length;i++) bindings.ValidateBound("RB_P08_Bike_"+i.ToString("D2"),actor.Bikes[i]);
+            for(int i=0;i<actor.Riders.Length;i++) bindings.ValidateBound(CharacterCatalog.GetAt(i).ArtId,actor.Riders[i]);
+            bindings.ValidateBound("RB_P06_PoliceMotorcycle",actor.PoliceBike); bindings.ValidateBound("RB_P06_PoliceRider",actor.PoliceRider);
+            bindings.ValidateBound("RB_P06_TrafficCoupe",actor.Coupe); bindings.ValidateBound("RB_P06_TrafficVan",actor.Van);
+            bindings.ValidateBound("RB_Pedestrian",actor.Pedestrian); bindings.ValidateBound("RB_Club",actor.Club);
+            var traffic=P08ArtBuilder.Entries().Where(x=>x.kind=="traffic").ToArray();
+            if(actor.TrafficExtras==null||actor.TrafficExtras.Length!=traffic.Length)throw new InvalidOperationException("Traffic pack count changed.");
+            for(int i=0;i<traffic.Length;i++)bindings.ValidateBound(traffic[i].name,actor.TrafficExtras[i]);
+            for(int i=0;i<5;i++)
+            {
+                var route=Require<P08RouteContent>(Root+"Route-"+i+".asset"); route.Validate(i);
+                for(int j=0;j<Props[i].Length;j++)bindings.ValidateBound(Props[i][j],route.Props[j]);
+                bindings.ValidateBound("RB_P06_Guardrail",route.Guardrail);bindings.ValidateBound("RB_P06_Chevron",route.Chevron);bindings.ValidateBound("RB_P06_UtilityPole",route.UtilityPole);
+            }
+            SharedFurniturePaths();
             var audio=ReadAudio(); if(audio.Count(x=>x.category=="music")!=25)throw new InvalidOperationException("Expected 25 streamed compositions/scores.");
             foreach(var route in RouteMusic)if(!audio.Any(x=>x.category=="music"&&x.id==route))throw new InvalidOperationException("Route music missing.");
             Debug.Log("RB_P08_CONTENT_VALIDATED");
@@ -101,12 +118,13 @@ namespace RacingBois.Authoring.Editor
         public static void BuildWeb()=>Build(BuildTarget.WebGL,"Build/Content","webgl");
         private static void Build(BuildTarget target,string output,string label)
         {
+            var promotionIdentity = GoldenProductionBindings.ManifestIdentity();
             Validate(); Directory.CreateDirectory(output); var audio=ReadAudio();
             // Shared road furniture, markings and their surfaces are explicitly assigned to actors.
             // Their transitive dependencies cannot be duplicated in all five route bundles.
-            var sharedRoots=new[]{Root+"Actors.asset",P06+"RB_P06_Guardrail.prefab",P06+"RB_P06_Chevron.prefab",P06+"RB_P06_UtilityPole.prefab",
+            var sharedRoots=new[]{Root+"Actors.asset"}.Concat(SharedFurniturePaths()).Concat(new[]{
                 "Assets/RacingBois/Materials/RacePaint.mat","Assets/RacingBois/Materials/RaceYellow.mat","Assets/RacingBois/Materials/P06/RB_P06_Roadside.mat",
-                "Assets/RacingBois/Materials/P06/RB_P06_Asphalt.mat","Assets/RacingBois/Materials/P06/RB_P06_Gravel.mat"};
+                "Assets/RacingBois/Materials/P06/RB_P06_Asphalt.mat","Assets/RacingBois/Materials/P06/RB_P06_Gravel.mat"}).ToArray();
             var common=AssetDatabase.GetDependencies(sharedRoots,true).Where(x=>!x.EndsWith(".cs",StringComparison.Ordinal)&&!x.EndsWith(".asmdef",StringComparison.Ordinal)&&!x.EndsWith(".dll",StringComparison.Ordinal)).Distinct().OrderBy(x=>x,StringComparer.Ordinal).ToArray();
             var builds=new List<AssetBundleBuild>{new AssetBundleBuild{assetBundleName="actors",assetNames=common}};
             for(int i=0;i<5;i++)builds.Add(new AssetBundleBuild{assetBundleName="route-"+i,assetNames=new[]{Root+"Route-"+i+".asset"}});
@@ -129,10 +147,13 @@ namespace RacingBois.Authoring.Editor
                 string relative="music/"+track.id+"-"+sha+".ogg";File.Copy(track.oggPath,Path.Combine(output,relative),true);
                 entries.Add(new P08BundleEntry{id=track.id,url=relative,sha256=sha,bytes=new FileInfo(track.oggPath).Length,kind="music",courseIndex=-1,asset=""});
             }
+            // Recheck acceptance, native source and the actual pack references after the build window.
+            Validate();
+            GoldenProductionBindings.RequireSameManifest(promotionIdentity);
             var manifest=new P08ContentManifest{schema=1,buildTarget=target.ToString(),contentHash=GameplayRules.ContentHash,actorsId="actors",bundles=entries.ToArray()};
             ContentManifestRules.Validate(manifest,GameplayRules.ContentHash,new Uri(Path.GetFullPath(output)+Path.DirectorySeparatorChar));
             File.WriteAllText(Path.Combine(output,"manifest.json"),JsonUtility.ToJson(manifest,true));
-            Directory.CreateDirectory("docs/p08/streaming"); File.WriteAllText("docs/p08/streaming/"+label+"-build.json",JsonUtility.ToJson(new BuildReceipt{passed=true,unityVersion=UnityEngine.Application.unityVersion,target=target.ToString(),contentHash=GameplayRules.ContentHash,output=output,entries=entries.ToArray(),dependencies=dependencies.ToArray()},true));
+            Directory.CreateDirectory("docs/p08/streaming"); File.WriteAllText("docs/p08/streaming/"+label+"-build.json",JsonUtility.ToJson(new BuildReceipt{passed=true,unityVersion=UnityEngine.Application.unityVersion,target=target.ToString(),contentHash=GameplayRules.ContentHash,output=output,entries=entries.ToArray(),dependencies=dependencies.ToArray(),promotionManifest=promotionIdentity},true));
             Debug.Log("RB_P08_"+label.ToUpperInvariant()+"_PACKS_BUILT");
         }
         private static AudioEntry[] ReadAudio()
@@ -156,6 +177,25 @@ namespace RacingBois.Authoring.Editor
             return Require<Sprite>(path);
         }
         private static GameObject Prefab(string name)=>Require<GameObject>((name.StartsWith("RB_P08_",StringComparison.Ordinal)?P08:name.StartsWith("RB_P06_",StringComparison.Ordinal)?P06:"Assets/RacingBois/Prefabs/")+name+".prefab");
+        private static string[] SharedFurniturePaths()
+        {
+            var first=Require<P08RouteContent>(Root+"Route-0.asset");
+            var shared=new[]{first.Guardrail,first.Chevron,first.UtilityPole};
+            if(shared.Any(x=>x==null))throw new InvalidOperationException("Shared route furniture is incomplete.");
+            for(int i=1;i<5;i++)
+            {
+                var route=Require<P08RouteContent>(Root+"Route-"+i+".asset");
+                if(!shared.SequenceEqual(new[]{route.Guardrail,route.Chevron,route.UtilityPole}))
+                    throw new InvalidOperationException("Routes must reference the same accepted shared furniture.");
+            }
+            var paths=shared.Select(AssetDatabase.GetAssetPath).ToArray();
+            if(paths.Any(x=>string.IsNullOrEmpty(x)||!x.EndsWith(".prefab",StringComparison.Ordinal)))throw new InvalidOperationException("Shared furniture must be persistent prefab assets.");
+            return paths;
+        }
+        private static IEnumerable<string> PackPrefabNames()=>Enumerable.Range(0,BikeCatalog.Count).Select(i=>"RB_P08_Bike_"+i.ToString("D2"))
+            .Concat(CharacterCatalog.All.Select(x=>x.ArtId)).Concat(Props.SelectMany(x=>x))
+            .Concat(new[]{"RB_P06_Guardrail","RB_P06_Chevron","RB_P06_UtilityPole","RB_P06_PoliceMotorcycle","RB_P06_PoliceRider","RB_P06_TrafficCoupe","RB_P06_TrafficVan","RB_Pedestrian","RB_Club"})
+            .Concat(P08ArtBuilder.Entries().Where(x=>x.kind=="traffic").Select(x=>x.name));
         private static T Require<T>(string path)where T:UnityEngine.Object=>AssetDatabase.LoadAssetAtPath<T>(path)??throw new InvalidOperationException("Content asset missing: "+path);
         private static T Upsert<T>(string path)where T:ScriptableObject
         {var value=AssetDatabase.LoadAssetAtPath<T>(path);if(value==null){value=ScriptableObject.CreateInstance<T>();AssetDatabase.CreateAsset(value,path);}return value;}
