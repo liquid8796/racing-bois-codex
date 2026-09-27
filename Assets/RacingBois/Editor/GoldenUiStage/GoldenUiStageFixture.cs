@@ -98,7 +98,8 @@ namespace RacingBois.Authoring.Editor
 
         [Serializable] private sealed class CaptureReport
         {
-            public string mode, apexPrefab, ashPrefab, riderPreviewClip, environmentPrefab, workshopPrefab, workshopScene, workshopState, workshopError, workshopSceneSha256, mainConceptSha256, garageConceptSha256, knownFailures;
+            public string mode, apexPrefab, sparkPrefab, ashPrefab, riderPreviewClip, environmentPrefab, workshopPrefab, workshopScene, workshopState, workshopError, workshopSceneSha256, mainConceptSha256, garageConceptSha256, knownFailures;
+            public int previewedBikeIndex;
             public bool workshopReady;
             public int workshopLightmappedRenderers, workshopReflections, workshopProbePositions;
             public bool visualAccepted, workshopMissing, selectedBikeMissing, renderedThumbnailsMissing, aspectMatchesReference;
@@ -113,7 +114,9 @@ namespace RacingBois.Authoring.Editor
             private readonly GoldenUiStageConfiguration settings;
             private readonly List<Action> restore = new List<Action>();
             private readonly HashSet<GameObject> capturedObjects = new HashSet<GameObject>();
-            private GameObject owner, apex, ash, environment, workshop;
+            private GameObject owner, apex, spark, ash, environment, workshop;
+            private GoldenBikeThumbnails ownedThumbnails;
+            private Sprite[] thumbnails;
             private GoldenUiWorkshopScope bakedWorkshop;
             private GoldenUiStageFocus previewFocus;
             private Camera camera;
@@ -121,7 +124,7 @@ namespace RacingBois.Authoring.Editor
             private Label notice;
             private GoldenUiStageInputScope input;
             private bool garageMode, ownsGarage, selectedBikeMissing, disposed;
-            private int apexIndex;
+            private int apexIndex, sparkIndex, previewedBikeIndex;
             private float lastAspect;
             private Bounds subjectBounds;
             private GoldenUiStageCamera.Geometry subjectGeometry;
@@ -136,9 +139,11 @@ namespace RacingBois.Authoring.Editor
             {
                 // Validate inputs before touching the live presentation.
                 var apexAsset = Prefab(settings.ApexPrefab); var ashAsset = Prefab(settings.AshPrefab); var environmentAsset = Prefab(settings.EnvironmentPrefab);
+                var sparkAsset = string.IsNullOrEmpty(settings.SparkPrefab) ? null : Prefab(settings.SparkPrefab);
                 var workshopAsset = string.IsNullOrWhiteSpace(settings.WorkshopPrefab) ? null : Prefab(settings.WorkshopPrefab);
                 if (workshopAsset != null && !string.IsNullOrEmpty(settings.WorkshopScenePath)) throw new InvalidOperationException("Select a baked workshop scene or an unbaked prefab, not both.");
                 apexIndex = BikeCatalog.All.Single(value => value.Id == "rb-apex").CatalogIndex;
+                sparkIndex = BikeCatalog.All.Single(value => value.Id == "rb-spark-450").CatalogIndex;
                 previousFocus = context.Document.rootVisualElement.panel?.focusController.focusedElement as VisualElement;
                 bool bootstrapEnabled = context.enabled; restore.Add(() => { if (context != null) context.enabled = bootstrapEnabled; }); context.enabled = false;
                 Hide(context.Stage.gameObject); Hide(context.Stage.Road.gameObject);
@@ -150,6 +155,15 @@ namespace RacingBois.Authoring.Editor
                 var lighting = new GoldenUiStageLighting(owner, settings);
                 restore.Add(lighting.Dispose);
                 apex = Spawn(apexAsset); ash = Spawn(ashAsset); environment = Spawn(environmentAsset);
+                if (sparkAsset != null) { spark = Spawn(sparkAsset); spark.SetActive(false); }
+                thumbnails = settings.RenderedBikeThumbnails;
+                if (thumbnails == null)
+                {
+                    ownedThumbnails = new GoldenBikeThumbnails();
+                    thumbnails = new Sprite[BikeCatalog.Count];
+                    thumbnails[apexIndex] = ownedThumbnails.Render(apexAsset, settings.GarageBikeEuler);
+                    if (sparkAsset != null) thumbnails[sparkIndex] = ownedThumbnails.Render(sparkAsset, settings.GarageBikeEuler);
+                }
                 if (workshopAsset != null) workshop = Spawn(workshopAsset);
                 apex.transform.SetPositionAndRotation(settings.BikePosition, Quaternion.Euler(settings.BikeEuler));
                 ash.transform.SetPositionAndRotation(settings.StandingRiderPosition, Quaternion.Euler(settings.StandingRiderEuler));
@@ -232,6 +246,8 @@ namespace RacingBois.Authoring.Editor
             {
                 if (ownsGarage) { ownsGarage = false; GaragePrototypeFixture.Close(); }
                 garageRoot = null; garageMode = false; selectedBikeMissing = false;
+                previewedBikeIndex = apexIndex;
+                if (spark != null) spark.SetActive(false);
                 bakedWorkshop?.SetGarageVisible(false);
                 apex.transform.SetPositionAndRotation(settings.BikePosition, Quaternion.Euler(settings.BikeEuler));
                 apex.SetActive(true); ash.SetActive(true); environment.SetActive(true); if (workshop != null) workshop.SetActive(false);
@@ -244,18 +260,29 @@ namespace RacingBois.Authoring.Editor
             {
                 if (garageMode) return;
                 var surface = context.Document.rootVisualElement.Q("surface"); var previousChildren = new HashSet<VisualElement>(surface.Children());
-                GaragePrototypeFixture.Open(context.Document, settings.RenderedBikeThumbnails, PreviewBike); ownsGarage = true;
+                garageMode = true;
+                GaragePrototypeFixture.Open(context.Document, thumbnails, PreviewBike); ownsGarage = true;
                 garageRoot = surface.Children().Single(child => !previousChildren.Contains(child) && child.name == "career");
-                garageMode = true; selectedBikeMissing = false; apex.SetActive(true); ash.SetActive(false); environment.SetActive(false); if (workshop != null) workshop.SetActive(true);
-                ForceVisibleLods();
-                apex.transform.SetPositionAndRotation(settings.BikePosition, Quaternion.Euler(settings.GarageBikeEuler));
+                ash.SetActive(false); environment.SetActive(false); if (workshop != null) workshop.SetActive(true);
                 bakedWorkshop?.SetGarageVisible(true);
                 camera.clearFlags = CameraClearFlags.SolidColor; camera.backgroundColor = new Color(.025f, .025f, .028f);
-                subjectGeometry = GoldenUiStageCamera.Measure(apex); subjectBounds = subjectGeometry.Bounds; targetRect = settings.GarageSubjectRect; Reframe(); UpdateNotice();
+                PreviewBike(previewedBikeIndex);
             }
             private void PreviewBike(int index)
             {
-                selectedBikeMissing = index != apexIndex; if (apex != null) apex.SetActive(!selectedBikeMissing); UpdateNotice();
+                previewedBikeIndex = index;
+                var selected = index == apexIndex ? apex : index == sparkIndex ? spark : null;
+                selectedBikeMissing = selected == null;
+                apex.SetActive(selected == apex);
+                if (spark != null) spark.SetActive(selected == spark);
+                if (selected != null && garageMode)
+                {
+                    selected.transform.SetPositionAndRotation(settings.BikePosition, Quaternion.Euler(settings.GarageBikeEuler));
+                    ForceVisibleLods();
+                    subjectGeometry = GoldenUiStageCamera.Measure(selected); subjectBounds = subjectGeometry.Bounds;
+                    targetRect = settings.GarageSubjectRect; Reframe();
+                }
+                UpdateNotice();
             }
             private void ForceVisibleLods()
             {
@@ -285,7 +312,8 @@ namespace RacingBois.Authoring.Editor
             internal CaptureReport Report() => new CaptureReport
             {
                 mode = garageMode ? "garage-v2" : "main-v2", visualAccepted = false,
-                apexPrefab = settings.ApexPrefab, ashPrefab = settings.AshPrefab, riderPreviewClip = settings.MainRiderClipName, environmentPrefab = settings.EnvironmentPrefab, workshopPrefab = settings.WorkshopPrefab,
+                apexPrefab = settings.ApexPrefab, sparkPrefab = settings.SparkPrefab, previewedBikeIndex = previewedBikeIndex,
+                ashPrefab = settings.AshPrefab, riderPreviewClip = settings.MainRiderClipName, environmentPrefab = settings.EnvironmentPrefab, workshopPrefab = settings.WorkshopPrefab,
                 workshopScene = settings.WorkshopScenePath, workshopState = bakedWorkshop?.State, workshopError = bakedWorkshop?.ErrorCode, workshopReady = bakedWorkshop != null && bakedWorkshop.IsReady,
                 workshopSceneSha256 = bakedWorkshop?.LoadedSceneSha256, workshopLightmappedRenderers = bakedWorkshop?.BakedRendererCount ?? 0,
                 workshopReflections = bakedWorkshop?.BakedReflectionCount ?? 0, workshopProbePositions = bakedWorkshop?.AuthoredProbePositions ?? 0,
@@ -302,7 +330,7 @@ namespace RacingBois.Authoring.Editor
                 foreach (var identity in new[] { "rb-spark-450", "rb-apex" })
                 {
                     int index = BikeCatalog.All.Single(value => value.Id == identity).CatalogIndex;
-                    if (settings.RenderedBikeThumbnails == null || index >= settings.RenderedBikeThumbnails.Length || settings.RenderedBikeThumbnails[index] == null) return true;
+                    if (thumbnails == null || index >= thumbnails.Length || thumbnails[index] == null) return true;
                 }
                 return false;
             }
@@ -313,6 +341,7 @@ namespace RacingBois.Authoring.Editor
                 Cleanup(() => previewFocus?.Dispose()); previewFocus = null;
                 Cleanup(() => input?.Dispose()); input = null;
                 if (ownsGarage) { ownsGarage = false; Cleanup(GaragePrototypeFixture.Close); }
+                Cleanup(() => ownedThumbnails?.Dispose()); ownedThumbnails = null; thumbnails = null;
                 garageRoot = null; Cleanup(() => toolbar?.RemoveFromHierarchy()); toolbar = null;
                 if (owner != null) Cleanup(() => UnityEngine.Object.DestroyImmediate(owner));
                 for (int i = restore.Count - 1; i >= 0; i--)

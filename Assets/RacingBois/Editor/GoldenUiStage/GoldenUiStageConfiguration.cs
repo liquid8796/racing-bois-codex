@@ -7,6 +7,7 @@ namespace RacingBois.Authoring.Editor
     public sealed class GoldenUiStageConfiguration
     {
         public string ApexPrefab = "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Apex_r4.prefab";
+        public string SparkPrefab = "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Spark_v1.prefab";
         public string AshPrefab = "Assets/RacingBois/Golden/Generated/Prefabs/RB_Golden_Ash_V4.prefab";
         public string MainRiderClipSource = "Assets/RacingBois/Art/P08/Golden/Ash/V4/RB_Golden_Ash_V4.fbx";
         public string MainRiderClipName = "RB_P06_Rider_Rig|RB_MenuHero";
