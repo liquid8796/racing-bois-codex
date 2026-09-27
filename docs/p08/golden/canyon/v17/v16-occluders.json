@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: CANYON_V16_OCCLUDERS {\"rays\": [{\"uvTopLeft\": [0.45, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.45, 0.22], \"hit\": {\"object\": \"Canyon_L0_Far_33\", \"pointBlender\": [-95.76686096191406, 509.4441833496094, 20.645349502563477]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.45, 0.32], \"hit\": {\"object\": \"Canyon_L0_Road_06\", \"pointBlender\": [-9.704057693481445, 62.075958251953125, -2.9802322387695312e-08]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.45, 0.42], \"hit\": {\"object\": \"Canyon_L0_Road_01\", \"pointBlender\": [-1.58568274974823, 19.968141555786133, 0.0]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.6, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.6, 0.22], \"hit\": {\"object\": \"Canyon_L0_Far_35\", \"pointBlender\": [1.1210708618164062, 614.9519653320312, 24.073238372802734]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.6, 0.32], \"hit\": {\"object\": \"Canyon_L0_Guardrail_Beam_Tile02\", \"pointBlender\": [1.704039454460144, 26.387765884399414, 0.9511301517486572]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.6, 0.42], \"hit\": {\"object\": \"Canyon_L0_Road_01\", \"pointBlender\": [1.7228056192398071, 20.3902587890625, 1.1920928955078125e-07]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.75, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.75, 0.22], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [23.5267333984375, 123.16490936279297, 5.869725227355957]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.75, 0.32], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [23.47055435180664, 121.1209487915039, -1.4035601615905762]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.75, 0.42], \"hit\": {\"object\": \"Canyon_L0_Guardrail_Beam_Tile01\", \"pointBlender\": [3.4938549995422363, 12.591716766357422, 0.7153465747833252]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.9, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.22], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [45.04095458984375, 124.77384948730469, 5.827916145324707]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.32], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [44.56987762451172, 122.08673095703125, -1.3593559265136719]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.42], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [43.95392990112305, 119.03978729248047, -8.313811302185059]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}], \"scope\": \"Read-only actual mesh ray ownership; no source or visibility changes.\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: CANYON_V16_OCCLUDERS {\"rays\": [{\"uvTopLeft\": [0.45, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.45, 0.22], \"hit\": {\"object\": \"Canyon_L0_Far_33\", \"pointBlender\": [-95.76686096191406, 509.4441833496094, 20.645349502563477]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.45, 0.32], \"hit\": {\"object\": \"Canyon_L0_Road_06\", \"pointBlender\": [-9.704057693481445, 62.075958251953125, -2.9802322387695312e-08]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.45, 0.42], \"hit\": {\"object\": \"Canyon_L0_Road_01\", \"pointBlender\": [-1.58568274974823, 19.968141555786133, 0.0]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.6, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.6, 0.22], \"hit\": {\"object\": \"Canyon_L0_Far_35\", \"pointBlender\": [1.1210708618164062, 614.9519653320312, 24.073238372802734]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.6, 0.32], \"hit\": {\"object\": \"Canyon_L0_Guardrail_Beam_Tile02\", \"pointBlender\": [1.704039454460144, 26.387765884399414, 0.9511301517486572]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.6, 0.42], \"hit\": {\"object\": \"Canyon_L0_Road_01\", \"pointBlender\": [1.7228056192398071, 20.3902587890625, 1.1920928955078125e-07]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.75, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.75, 0.22], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [23.5267333984375, 123.16490936279297, 5.869725227355957]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.75, 0.32], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [23.47055435180664, 121.1209487915039, -1.4035601615905762]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.75, 0.42], \"hit\": {\"object\": \"Canyon_L0_Guardrail_Beam_Tile01\", \"pointBlender\": [3.4938549995422363, 12.591716766357422, 0.7153465747833252]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.9, 0.12], \"hit\": null, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\", \"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.22], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [45.04095458984375, 124.77384948730469, 5.827916145324707]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.32], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [44.56987762451172, 122.08673095703125, -1.3593559265136719]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.42], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [43.95392990112305, 119.03978729248047, -8.313811302185059]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}], \"scope\": \"Read-only actual mesh ray ownership; no source or visibility changes.\"}\n"
+    },
+    "isError": false
+  }
+}

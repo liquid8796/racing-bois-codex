@@ -1,0 +1,427 @@
+{
+    "schema": 1,
+    "attemptId": "f1fae1f4f9f241669d004ad4f1295d20",
+    "utc": "2026-09-27T20:12:46.1504700Z",
+    "unityVersion": "6000.5.7f1",
+    "descriptor": "docs/p08/golden/canyon/v17/candidate05-descriptor.json",
+    "descriptorSha256": "660b483b30ae2a72994d37ddde0f6117ea46edd3392fa59d88932c157f71c7d4",
+    "sourceFingerprint": "53e1e411a855cd49da7e9e41a9894138017b2e75f790640cb916bd5f7d067ddb",
+    "failure": "InvalidOperationException: Physical model dimensions outside declared envelope: RB_Golden_Canyon_v17 (850.00, 200.92, 1538.00)",
+    "passed": false,
+    "sourceBindingPassed": false,
+    "inputs": [
+        {
+            "path": "ArtSource/Concepts/P08/Golden/canyon-v2-review.md",
+            "sha256": "31bbe15f79d48dd412054ee16bcc23c9fab1abc1c960e0b1cb4cfa21bd2d5ebc",
+            "bytes": 1024
+        },
+        {
+            "path": "ArtSource/Concepts/P08/Golden/canyon-v2.png",
+            "sha256": "83273dae6721d9f2c6f5d6bf4a6f39146322d8efeabc5cec0cb332e5a1cfa610",
+            "bytes": 3438544
+        },
+        {
+            "path": "ArtSource/P08/Golden/Canyon/V17/RB_Golden_Canyon_V17_05.blend",
+            "sha256": "b02ce427127da026540830c2043540c47292a14a2bd953618a4f6e5af3c95a78",
+            "bytes": 241484560
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_BaseColor.png",
+            "sha256": "77d9e4dbf8fe32973bb0b10655005c3747d4d48ee0610bd264cc30e4db41a53a",
+            "bytes": 8779984
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_MetallicSmoothness.png",
+            "sha256": "0ec2c711582f7934432c1a364961568070453d7ab4c800b562a4a1fa8514cce2",
+            "bytes": 4272995
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Normal.png",
+            "sha256": "489b1dfc31172f48bb6eb938ce2cf89e2c1d42667f9e2ce0000e3955b194da7f",
+            "bytes": 9361913
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Occlusion.png",
+            "sha256": "e33cceaac2f53dad5c8dc1a6d36f1cb3c2520509e15bb1123d92240391d16f7a",
+            "bytes": 3859958
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_BaseColor.png",
+            "sha256": "d876cf282cd21cb1e5dbaf42fae351798cd70d9f39648c5be1340c8e0fea4038",
+            "bytes": 6545521
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_MetallicSmoothness.png",
+            "sha256": "370571295665bc3a977ed8774289222746b9ede52a4cfe26eb0cf6cdd7c7021d",
+            "bytes": 2500713
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Normal.png",
+            "sha256": "e8c968bb307fb87d79fa058f36d32e7c317c7f6ac99c5fff5bc8ce9dbda4185d",
+            "bytes": 7571552
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Occlusion.png",
+            "sha256": "c03dc6659c9efb20dbbd50949fe8fe38c6c7356064bdad0f415e62d952380cc6",
+            "bytes": 3043681
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_BaseColor.png",
+            "sha256": "d10bd8113a24908ff16d66fdc672e0182b808f960f4fa3f1517d7c831149d802",
+            "bytes": 6732642
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_MetallicSmoothness.png",
+            "sha256": "857003a4faf8895ccaad344025129de98536e8452b283df4cbc1873fe3d4d9c0",
+            "bytes": 2819813
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Normal.png",
+            "sha256": "9c6c88f2982b048b0d69b5aecc09698e5a403997c6e2dbc747ef073a10c69816",
+            "bytes": 7695111
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Occlusion.png",
+            "sha256": "3d47a79df9f9c1e3d70132e516654ed02df924d9fb218ba713fd9ba4c57d4325",
+            "bytes": 3107612
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_BaseColor.png",
+            "sha256": "c245627abea1c5b7098b004fcebeeb0e35519f3bac27ab2a6ace7d65db64b49b",
+            "bytes": 8491792
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_MetallicSmoothness.png",
+            "sha256": "6d60c21ad23ccdb47db87b31ab684d0c030c02a0fe62998d07fbf9b887bec095",
+            "bytes": 3165919
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Normal.png",
+            "sha256": "d73c8db8baf16fdb5954b29a1ab79d8920537d6fd4809c0b75a575232e77f58b",
+            "bytes": 7702169
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Occlusion.png",
+            "sha256": "19b14c27599dd153281875d2b460ec0fac58988a57825abc747f8e088096edc9",
+            "bytes": 2899795
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_BaseColor.png",
+            "sha256": "e9f16bb7a8116d1b6cd40a4f267e914dc4bf9a6b37c915df6050f7d476a6cbab",
+            "bytes": 253649
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_MetallicSmoothness.png",
+            "sha256": "796f6bac6e7828c8198b6acd290b5603dc6cde05f1457b558dc4caf946085cef",
+            "bytes": 247462
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd",
+            "bytes": 1879
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_BaseColor.png",
+            "sha256": "cfdc58150b2620d8d83073085da3d75ab805047ae382b7af3e64fc9fa74730ec",
+            "bytes": 254332
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_MetallicSmoothness.png",
+            "sha256": "cc9be5062061b15871c7041949f1a2beab5402ddb87c2a79e0e1fb7d4eac89dd",
+            "bytes": 249023
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd",
+            "bytes": 1879
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_BaseColor.png",
+            "sha256": "00413033f6f6745db8d0b74674f68e4d77073db6014f2635f87ba33603b4b8c7",
+            "bytes": 9363231
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_MetallicSmoothness.png",
+            "sha256": "2931af83e0bf38831c8eaf9ea3632832892e7fd317f4ee09a3d37eed9dec5c0c",
+            "bytes": 4788577
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Normal.png",
+            "sha256": "88a6dd6cb7570f570b249f54b4e371ae261a4499ec37e00bc3cb0ec62590bd20",
+            "bytes": 8949193
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Occlusion.png",
+            "sha256": "604656a8b299576a2137c1b428072a988d0b778166c7ca0096ee7a8280ecda83",
+            "bytes": 2912661
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_BaseColor.png",
+            "sha256": "075736075b97df6d36ee1e4cda609d0d0b7b67aefcf172f17969c0f0cb45fb9f",
+            "bytes": 319863
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_MetallicSmoothness.png",
+            "sha256": "829e7507514fca8f5bf28ecefd8a00d0829ec0bf420f8694a58d41cfa70e6437",
+            "bytes": 248673
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd",
+            "bytes": 1879
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_BaseColor.png",
+            "sha256": "03cc4088f54b4d0d477acf3bee620b981a65f1aaca48c6418180066b0fb8e48d",
+            "bytes": 253495
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_MetallicSmoothness.png",
+            "sha256": "0c53b887d7148b06b0482164c6fc9ef9b14c5529c20977923e57aacd54cc6d2a",
+            "bytes": 247045
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd",
+            "bytes": 1879
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_BaseColor.png",
+            "sha256": "47d4a8540d68c30199d0ddcd8adf1c1b079812e3f906b6db9480696f13bc64aa",
+            "bytes": 7553975
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_MetallicSmoothness.png",
+            "sha256": "1025f7ceb8f29dfefc2594667ed38bd0c3953a6742c8aa3a4ca37d0cdcf5a6ba",
+            "bytes": 1625297
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Normal.png",
+            "sha256": "d478ef3d1ff505435d9965548044e7535b7560883af4ababa075036c7caa1597",
+            "bytes": 8239006
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Occlusion.png",
+            "sha256": "69ca56d1856ea64ee5396b7a8069ea56f448f574a7122f6b0e40666604fa5042",
+            "bytes": 2255806
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_MetallicSmoothness.png",
+            "sha256": "1171d15f9c7c7f1a03e5e7395cc8e9c0ab591cffff8ce5995db8da2c535db252",
+            "bytes": 247796
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd",
+            "bytes": 1879
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_BaseColor.png",
+            "sha256": "de740ce933aa59daf0fdc888f58295166f7a3d7b6865f1507d80ade13abf5131",
+            "bytes": 253484
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_MetallicSmoothness.png",
+            "sha256": "15c0762a5cd6efe1cb2ba23895101e12c399e1ccf16bfedd02a7d39d232f8abe",
+            "bytes": 246864
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd",
+            "bytes": 1879
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_MetallicSmoothness.png",
+            "sha256": "8fc0c5ab5b9259748b22992f5b0f3169c99e81ad53b1978a06ec9a7e78acd03c",
+            "bytes": 248008
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_Normal.png",
+            "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd",
+            "bytes": 1879
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Textures/Canyon_WhitePaint_BaseColor.png",
+            "sha256": "79b2a941d9f14815cb3be72e2a2ac87f65cba224af49f242405c64da9c5ad7fb",
+            "bytes": 554302
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Textures/Canyon_YellowPaint_BaseColor.png",
+            "sha256": "b9ed6296ebb10865833668c788a0dc56fee7cbfb0ee7c35c823293fa8a4accb3",
+            "bytes": 572691
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V17/RB_Golden_Canyon.fbx",
+            "sha256": "3b2083193d62d09a111caa8046514c9308363a1cac6fcf770b73fcfb5a3b5f8a",
+            "bytes": 120213116
+        },
+        {
+            "path": "Assets/RacingBois/Client/Presentation/RiderAnimationSet.cs",
+            "sha256": "e416f2f3b2ae2c36bbe6292374e98a69bfa2f8427778fccc88e28787a0cfb1f8",
+            "bytes": 2835
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Animation.cs",
+            "sha256": "231af1e4b0c79156a5d889f00057d90a9d5ef8faf2ceae3b15d8931c9edb8dac",
+            "bytes": 1648
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Build.cs",
+            "sha256": "46bced08a5c6ccdd1f8485e24f397f064a6314ae3b9f277d35b3264c9f8e6e5a",
+            "bytes": 18471
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Compilation.cs",
+            "sha256": "428050012ed2f958c61f6a8fedb61120993fc284241a8a4b008896e21f817676",
+            "bytes": 3247
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.ConstantMaps.cs",
+            "sha256": "232ee4c5abb6b7a86d0a195eefb07c034c99913c9474f612e9575591503c250c",
+            "bytes": 4772
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Contract.cs",
+            "sha256": "168e30e0857c09d1d9af0dfbcaeae588c3726db578aeb6e58dcc21f986ea0960",
+            "bytes": 15615
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Environment.cs",
+            "sha256": "bae77a84a66b0517f867e68030c4c27cf371bf450fab53553525b523fc84de40",
+            "bytes": 10395
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Garage.cs",
+            "sha256": "aa0894b17355f0bddd56730c30e0ef54cdb9cfa7cfd75c03fac274601c006d3e",
+            "bytes": 33765
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.GeometryProbe.cs",
+            "sha256": "abbde56353604fd61123cc0975bef488c723569b4d4d5509c0ef0e1f544c5782",
+            "bytes": 3876
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs",
+            "sha256": "3b903432e935cdda251cf87f20878954853957d6115dbc9a86754076c9300483",
+            "bytes": 19663
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Lighting.cs",
+            "sha256": "8bda907e9b47724821987b60464d1985969ab4d439ff9fa933b8318d78a287df",
+            "bytes": 3139
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Modules.cs",
+            "sha256": "f85bc31422303e74714b902310115743f89cee800fae33c593a3f6f02c9b9d0b",
+            "bytes": 21449
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Outputs.cs",
+            "sha256": "3872c19c25f543f7f3f565a7526fd6f577c60a0b72e23e2d71dd83a56524e74f",
+            "bytes": 1862
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Promotion.cs",
+            "sha256": "da34bd6616fbcd1fb9f990556b085ec55ac5c3a927cbb40c15a4deef87f9a06f",
+            "bytes": 1928
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.ReceiptFiles.cs",
+            "sha256": "5fc33340d90bbc1a29039afdf00304e1e2857f66374de1cd164aa79aadea2357",
+            "bytes": 1830
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.RestPose.cs",
+            "sha256": "8f48ce5cbceb56f7849198d138b02bb5082a360635c9cd3b2bfd4c03fa33088e",
+            "bytes": 3584
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Scene.cs",
+            "sha256": "8a575921adb40fbd59eef4005aef17d661cc4e9819790da4065d298539b4b235",
+            "bytes": 7203
+        },
+        {
+            "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs",
+            "sha256": "35b1be54096b1d3e9c75c3cd79d3ec3c7cf459082cdf0fa4459ca4383cbd20ea",
+            "bytes": 23041
+        },
+        {
+            "path": "Assets/RacingBois/Editor/RacingBois.Authoring.Editor.asmdef",
+            "sha256": "05852f1be165987cbc90668c5fea344febd5848d9dd9cd3ac1a1b799d4d60aa7",
+            "bytes": 459
+        },
+        {
+            "path": "Assets/RacingBois/Editor/UrpProfileAuthoring.cs",
+            "sha256": "a0c743af55dfe8c8491e8872290a6749ce63bbb823af53b3e2fab594d69e70b2",
+            "bytes": 4061
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenCaptureRunner.cs",
+            "sha256": "1cc5c5ffe0fbbc27cf1ac8d834795aa4ca79f61ec117d98b5bdb69eda8092ca9",
+            "bytes": 7411
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewController.cs",
+            "sha256": "f84197f80b529ca5b9ccaf20ca1de5b432aadb213b425dd6493b984b32776eb1",
+            "bytes": 8762
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenReviewPipelineScope.cs",
+            "sha256": "9566dafc6b1e13e78d7fac6654e1ebb0b5116845a9b76438b7798d1dea423799",
+            "bytes": 864
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/GoldenSkinBounds.cs",
+            "sha256": "daad4616ee4f2a9016edc3f3b2b66c68d038a3b0255af2424bef08d0e624951c",
+            "bytes": 637
+        },
+        {
+            "path": "Assets/RacingBois/Golden/Runtime/RacingBois.Golden.asmdef",
+            "sha256": "105f1f8bd7f90e023b18fde0cbff574b4f4f1b991a181780d63a220c5cb044bf",
+            "bytes": 221
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.dll",
+            "sha256": "71eabe5ca88816ed7889e62e2ea15ece25d1c6a68f7d75eaead00893671d2471",
+            "bytes": 380928
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Authoring.Editor.pdb",
+            "sha256": "c1daf537130c04058d984f1baba09fbe43c5cb17d5f9f3c961a7ccff6f41f8d4",
+            "bytes": 114460
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.dll",
+            "sha256": "27889c57ee34e9bfeffb1cf5fe7da7cee1b889ea0118f60711a479fc4a4898f1",
+            "bytes": 204288
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Client.Presentation.pdb",
+            "sha256": "04a8b505ba06aeecd595b064cd39b09b1b2fdbed027d3424bc1cf8f7cc9d5e3f",
+            "bytes": 76084
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.dll",
+            "sha256": "d0d4a570ed5ade72d2dda0e62991c0a282e295c89f9ed16392956d010a9225ed",
+            "bytes": 15872
+        },
+        {
+            "path": "Library/ScriptAssemblies/RacingBois.Golden.pdb",
+            "sha256": "8ccbfedafbe9e928d1d0d6fd1b7995c83ade89ad83baa52368586edc88033f4c",
+            "bytes": 24880
+        },
+        {
+            "path": "docs/p08/golden/canyon/v17/candidate05-descriptor.json",
+            "sha256": "660b483b30ae2a72994d37ddde0f6117ea46edd3392fa59d88932c157f71c7d4",
+            "bytes": 39616
+        },
+        {
+            "path": "docs/p08/golden/canyon/v17/candidate05-module-lod-map.json",
+            "sha256": "8d5074e9eb63e0ae689a972940f297c4eb9f01d04d64dd73715b5b3919355af6",
+            "bytes": 96237
+        }
+    ],
+    "outputs": [],
+    "assets": [],
+    "scope": "Exact-input Unity import, materials, prefab, LOD and rig structure only. Visual quality, concept fidelity, deformation appearance, contacts and performance require separate approval."
+}

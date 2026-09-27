@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "sourceCandidate": "Canyon V16",
+  "importReceipt": "docs/p08/golden/unity/import-7840314026104c5ea83d0c208d609f22.json",
+  "fbx": "Assets/RacingBois/Art/P08/Golden/Canyon/V16/RB_Golden_Canyon.fbx",
+  "fbxSha256": "bc731bbf85aefbd98d12f73a5e6320b4eeb5d33c5981a2ea11e1ab9debde81ea",
+  "mesh": "Canyon_L0_Guardrail_Beam_Tile00",
+  "triangleIndex": 391,
+  "indices": [416, 417, 418],
+  "uv": [[0, 0.166666672], [0, 0], [0, 0]],
+  "meshLocalPositions": [[0.001278987, -0.048830100, 0.001099926], [0.001773357, -0.048830110, 0.001488287], [0.001754618, -0.048830140, 0.001511713]],
+  "passed": false,
+  "visualAccepted": false,
+  "scope": "First failing native imported UV triangle under the current validator. Actual Unity Mesh data was read through direct Unity MCP. No claim that this is the only bad face; V16 source is preserved. V17 must repair and audit all collapsed UVs without changing the threshold."
+}

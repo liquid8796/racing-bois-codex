@@ -1,12 +1,23 @@
 {
     "passed": true,
-    "utc": "2026-09-27T19:12:37.5548557Z",
+    "utc": "2026-09-27T20:37:26.3882142Z",
     "scene": "Assets/RacingBois/Golden/Generated/GoldenReview.unity",
-    "sceneSha256": "c032429bd3b1ec537ca59ca048c18692e78feab92014502ae8867279d1cbe588",
-    "descriptor": "docs/p08/golden/apex/r5/descriptor.json",
-    "descriptorSha256": "8bbddbc46d4a49b0086d3059b29ee9ad753d4b13c59a461321b9e7d46bc669dd",
+    "sceneSha256": "06bad50bc5e0c298fca74237a323d21e44162da0cfb62bc4e4b9fc075eb6ccdc",
+    "descriptor": "docs/p08/golden/canyon/v17/candidate05-descriptor-r1.json",
+    "descriptorSha256": "11c78e114f776409d0797175f279a453430d92dcc3035652e55e49c198f65da8",
     "assetIds": [
-        "RB_Golden_Apex_r5"
+        "RB_Golden_Canyon_v17"
     ],
-    "additionalInputs": []
+    "additionalInputs": [
+        {
+            "path": "docs/p08/golden/canyon/v17/candidate05-camera-recipe.json",
+            "sha256": "90ce72e8fab6997866e343e6fc62ace38051f33d38417f564fa38441fb70dcc6",
+            "bytes": 1321
+        },
+        {
+            "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Sky/qwantani_sunset_puresky_4k.hdr",
+            "sha256": "10ac5a0327925511e17fb0b6d903899265ffbb2b4a5ebdc9c66abec38778eddb",
+            "bytes": 16890545
+        }
+    ]
 }

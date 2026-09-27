@@ -1,0 +1,404 @@
+{
+  "schema": 1,
+  "revision": "bounds-r1",
+  "reviewOnly": true,
+  "visualAccepted": false,
+  "descriptor": {
+    "path": "docs/p08/golden/canyon/v17/candidate05-descriptor-r1.json",
+    "sha256": "11c78e114f776409d0797175f279a453430d92dcc3035652e55e49c198f65da8"
+  },
+  "previousDescriptor": {
+    "path": "docs/p08/golden/canyon/v17/candidate05-descriptor.json",
+    "sha256": "660b483b30ae2a72994d37ddde0f6117ea46edd3392fa59d88932c157f71c7d4"
+  },
+  "preservedFailedImport": {
+    "path": "docs/p08/golden/unity/import-f1fae1f4f9f241669d004ad4f1295d20.json",
+    "sha256": "ee5d9e5523e22ec582322056e592bd3bb76621761895d8d775b78b3a218d84e9"
+  },
+  "originalPublication": {
+    "path": "docs/p08/golden/canyon/v17/candidate05-publication.json",
+    "sha256": "2ed319d94a7410580bfa998ac8451185563bc0d25bf8a58328e23790a35d0c20"
+  },
+  "source": {
+    "path": "ArtSource/P08/Golden/Canyon/V17/RB_Golden_Canyon_V17_05.blend",
+    "sha256": "b02ce427127da026540830c2043540c47292a14a2bd953618a4f6e5af3c95a78"
+  },
+  "fbx": {
+    "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V17/RB_Golden_Canyon.fbx",
+    "sha256": "3b2083193d62d09a111caa8046514c9308363a1cac6fcf770b73fcfb5a3b5f8a"
+  },
+  "moduleMap": {
+    "path": "docs/p08/golden/canyon/v17/candidate05-module-lod-map.json",
+    "sha256": "8d5074e9eb63e0ae689a972940f297c4eb9f01d04d64dd73715b5b3919355af6"
+  },
+  "cameraRecipe": {
+    "path": "docs/p08/golden/canyon/v17/candidate05-camera-recipe.json",
+    "sha256": "90ce72e8fab6997866e343e6fc62ace38051f33d38417f564fa38441fb70dcc6"
+  },
+  "changedFields": [
+    "maximumBelowGround",
+    "maximumSize",
+    "minimumSize"
+  ],
+  "boundsToleranceMetres": 0.05,
+  "belowGroundMarginMetres": 0.01,
+  "measurementBasis": "Same frozen FBX, exact transformed LOD0 vertices, independently matched to native Unity LOD0 bounds.",
+  "fbxLod0": {
+    "level": 0,
+    "meshCount": 217,
+    "minimumUnity": [
+      -200.0,
+      -103.92393493652344,
+      -8.000001907348633
+    ],
+    "maximumUnity": [
+      650.0,
+      96.9999008178711,
+      1530.0
+    ],
+    "sizeUnity": [
+      850.0,
+      200.92383575439453,
+      1538.0000019073486
+    ],
+    "minimumOwners": [
+      {
+        "object": "Canyon_L0_DistantGround",
+        "vertex": 0
+      },
+      {
+        "object": "Canyon_L0_Opposite_32",
+        "vertex": 2245
+      },
+      {
+        "object": "Canyon_L0_Shoulder_1_Tile00",
+        "vertex": 44
+      }
+    ],
+    "maximumOwners": [
+      {
+        "object": "Canyon_L0_DistantGround",
+        "vertex": 142
+      },
+      {
+        "object": "Canyon_L0_Far_36",
+        "vertex": 15
+      },
+      {
+        "object": "Canyon_L0_Far_44",
+        "vertex": 1443
+      }
+    ]
+  },
+  "nativeLod0": {
+    "scope": "actual native LOD0 mesh vertices in prefab metres",
+    "rendererCount": 217,
+    "vertexCount": 2474208,
+    "min": [
+      -200,
+      -103.923874,
+      -8
+    ],
+    "max": [
+      650,
+      96.9999161,
+      1529.99988
+    ],
+    "size": [
+      850,
+      200.9238,
+      1537.99988
+    ],
+    "minimumOwners": [
+      "L0_R000",
+      "L0_R000",
+      "L0_R000"
+    ],
+    "maximumOwners": [
+      "L0_R000",
+      "L0_R000",
+      "L0_R000"
+    ]
+  },
+  "sourceFbxMapsRecipeUnchanged": true,
+  "inputs": [
+    {
+      "path": "ArtSource/Concepts/P08/Golden/canyon-v2-review.md",
+      "sha256": "31bbe15f79d48dd412054ee16bcc23c9fab1abc1c960e0b1cb4cfa21bd2d5ebc"
+    },
+    {
+      "path": "ArtSource/Concepts/P08/Golden/canyon-v2.png",
+      "sha256": "83273dae6721d9f2c6f5d6bf4a6f39146322d8efeabc5cec0cb332e5a1cfa610"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Canyon/V16/RB_Golden_Canyon.blend",
+      "sha256": "c7681657df4666b13d22a15adbfaa17b42fd7413b8d4294a3cada4eb485cc01c"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Canyon/V17/RB_Golden_Canyon_V17_05.blend",
+      "sha256": "b02ce427127da026540830c2043540c47292a14a2bd953618a4f6e5af3c95a78"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Canyon/V17/RB_Golden_Canyon_V17_05.fbx",
+      "sha256": "3b2083193d62d09a111caa8046514c9308363a1cac6fcf770b73fcfb5a3b5f8a"
+    },
+    {
+      "path": "ArtSource/Weapons/RB_Club.blend",
+      "sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_BaseColor.png",
+      "sha256": "77d9e4dbf8fe32973bb0b10655005c3747d4d48ee0610bd264cc30e4db41a53a"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_MetallicSmoothness.png",
+      "sha256": "0ec2c711582f7934432c1a364961568070453d7ab4c800b562a4a1fa8514cce2"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Normal.png",
+      "sha256": "489b1dfc31172f48bb6eb938ce2cf89e2c1d42667f9e2ce0000e3955b194da7f"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Asphalt_Occlusion.png",
+      "sha256": "e33cceaac2f53dad5c8dc1a6d36f1cb3c2520509e15bb1123d92240391d16f7a"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_BaseColor.png",
+      "sha256": "d876cf282cd21cb1e5dbaf42fae351798cd70d9f39648c5be1340c8e0fea4038"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_MetallicSmoothness.png",
+      "sha256": "370571295665bc3a977ed8774289222746b9ede52a4cfe26eb0cf6cdd7c7021d"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Normal.png",
+      "sha256": "e8c968bb307fb87d79fa058f36d32e7c317c7f6ac99c5fff5bc8ce9dbda4185d"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff01_Occlusion.png",
+      "sha256": "c03dc6659c9efb20dbbd50949fe8fe38c6c7356064bdad0f415e62d952380cc6"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_BaseColor.png",
+      "sha256": "d10bd8113a24908ff16d66fdc672e0182b808f960f4fa3f1517d7c831149d802"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_MetallicSmoothness.png",
+      "sha256": "857003a4faf8895ccaad344025129de98536e8452b283df4cbc1873fe3d4d9c0"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Normal.png",
+      "sha256": "9c6c88f2982b048b0d69b5aecc09698e5a403997c6e2dbc747ef073a10c69816"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff02_Occlusion.png",
+      "sha256": "3d47a79df9f9c1e3d70132e516654ed02df924d9fb218ba713fd9ba4c57d4325"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_BaseColor.png",
+      "sha256": "c245627abea1c5b7098b004fcebeeb0e35519f3bac27ab2a6ace7d65db64b49b"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_MetallicSmoothness.png",
+      "sha256": "6d60c21ad23ccdb47db87b31ab684d0c030c02a0fe62998d07fbf9b887bec095"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Normal.png",
+      "sha256": "d73c8db8baf16fdb5954b29a1ab79d8920537d6fd4809c0b75a575232e77f58b"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Cliff03_Occlusion.png",
+      "sha256": "19b14c27599dd153281875d2b460ec0fac58988a57825abc747f8e088096edc9"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_BaseColor.png",
+      "sha256": "e9f16bb7a8116d1b6cd40a4f267e914dc4bf9a6b37c915df6050f7d476a6cbab"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_MetallicSmoothness.png",
+      "sha256": "796f6bac6e7828c8198b6acd290b5603dc6cde05f1457b558dc4caf946085cef"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_DryGrass_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_BaseColor.png",
+      "sha256": "cfdc58150b2620d8d83073085da3d75ab805047ae382b7af3e64fc9fa74730ec"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_MetallicSmoothness.png",
+      "sha256": "cc9be5062061b15871c7041949f1a2beab5402ddb87c2a79e0e1fb7d4eac89dd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Galvanized_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_BaseColor.png",
+      "sha256": "00413033f6f6745db8d0b74674f68e4d77073db6014f2635f87ba33603b4b8c7"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_MetallicSmoothness.png",
+      "sha256": "2931af83e0bf38831c8eaf9ea3632832892e7fd317f4ee09a3d37eed9dec5c0c"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Normal.png",
+      "sha256": "88a6dd6cb7570f570b249f54b4e371ae261a4499ec37e00bc3cb0ec62590bd20"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Gravel_Occlusion.png",
+      "sha256": "604656a8b299576a2137c1b428072a988d0b778166c7ca0096ee7a8280ecda83"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_BaseColor.png",
+      "sha256": "075736075b97df6d36ee1e4cda609d0d0b7b67aefcf172f17969c0f0cb45fb9f"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_MetallicSmoothness.png",
+      "sha256": "829e7507514fca8f5bf28ecefd8a00d0829ec0bf420f8694a58d41cfa70e6437"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Reflector_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_BaseColor.png",
+      "sha256": "03cc4088f54b4d0d477acf3bee620b981a65f1aaca48c6418180066b0fb8e48d"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_MetallicSmoothness.png",
+      "sha256": "0c53b887d7148b06b0482164c6fc9ef9b14c5529c20977923e57aacd54cc6d2a"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sage_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_BaseColor.png",
+      "sha256": "47d4a8540d68c30199d0ddcd8adf1c1b079812e3f906b6db9480696f13bc64aa"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_MetallicSmoothness.png",
+      "sha256": "1025f7ceb8f29dfefc2594667ed38bd0c3953a6742c8aa3a4ca37d0cdcf5a6ba"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Normal.png",
+      "sha256": "d478ef3d1ff505435d9965548044e7535b7560883af4ababa075036c7caa1597"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Sandstone_Occlusion.png",
+      "sha256": "69ca56d1856ea64ee5396b7a8069ea56f448f574a7122f6b0e40666604fa5042"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_MetallicSmoothness.png",
+      "sha256": "1171d15f9c7c7f1a03e5e7395cc8e9c0ab591cffff8ce5995db8da2c535db252"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_WhitePaint_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_BaseColor.png",
+      "sha256": "de740ce933aa59daf0fdc888f58295166f7a3d7b6865f1507d80ade13abf5131"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_MetallicSmoothness.png",
+      "sha256": "15c0762a5cd6efe1cb2ba23895101e12c399e1ccf16bfedd02a7d39d232f8abe"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_Wood_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_MetallicSmoothness.png",
+      "sha256": "8fc0c5ab5b9259748b22992f5b0f3169c99e81ad53b1978a06ec9a7e78acd03c"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/Textures/Canyon_YellowPaint_Normal.png",
+      "sha256": "76944f0bc81a92b281cd35587ae86667b41849efc89093db9fa79cc271e8edfd"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Sky/qwantani_sunset_puresky_4k.hdr",
+      "sha256": "10ac5a0327925511e17fb0b6d903899265ffbb2b4a5ebdc9c66abec38778eddb"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Textures/Canyon_WhitePaint_BaseColor.png",
+      "sha256": "79b2a941d9f14815cb3be72e2a2ac87f65cba224af49f242405c64da9c5ad7fb"
+    },
+    {
+      "path": "Assets/RacingBois/Art/P08/Golden/Canyon/V13/Textures/Canyon_YellowPaint_BaseColor.png",
+      "sha256": "b9ed6296ebb10865833668c788a0dc56fee7cbfb0ee7c35c823293fa8a4accb3"
+    },
+    {
+      "path": "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs",
+      "sha256": "35b1be54096b1d3e9c75c3cd79d3ec3c7cf459082cdf0fa4459ca4383cbd20ea"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v14/unity-lighting-v1.json",
+      "sha256": "c254b3ae4d571d02ed1eecff991a3b3bf0d8f6db5239a483f6bee0521cd77f49"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v16/descriptor.json",
+      "sha256": "44eb173dad45ce9e6d46e2245498d2cd44e17614bbaf0085535663222b23d097"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-camera-recipe.json",
+      "sha256": "90ce72e8fab6997866e343e6fc62ace38051f33d38417f564fa38441fb70dcc6"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-descriptor-r1.json",
+      "sha256": "11c78e114f776409d0797175f279a453430d92dcc3035652e55e49c198f65da8"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-descriptor.json",
+      "sha256": "660b483b30ae2a72994d37ddde0f6117ea46edd3392fa59d88932c157f71c7d4"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-fbx-roundtrip.json",
+      "sha256": "a48908d4ea00d3ebb0e9d6ccc10949fc3fa234c6239fb716f0f51007138a9922"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-gameplay.png",
+      "sha256": "5a4c507129d661758da93bc303ff55872a3e0d03f86cf1c4356f7e5bd88c8a13"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-lod-bounds-r1.json",
+      "sha256": "b001276e656c4580c18739c6b1a47011bd45a211d584148ee6170641a88ff581"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-module-lod-map.json",
+      "sha256": "8d5074e9eb63e0ae689a972940f297c4eb9f01d04d64dd73715b5b3919355af6"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/candidate05-source-audit.json",
+      "sha256": "03284137c6503dd6158709c5f5db72efae5730c87310e6b0ca1a857968504d96"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/native-lod0-bounds.json",
+      "sha256": "04c5314ac6692233e67d87ab23cdd960e3c133b2eec288e064405ff59df284bb"
+    },
+    {
+      "path": "docs/p08/golden/canyon/v17/native-lod0-y-extrema.json",
+      "sha256": "54484c95f3c8b8a6591b915f29e615be61625f949fcca72f0744818a9a48edbc"
+    },
+    {
+      "path": "docs/p08/golden/unity/import-f1fae1f4f9f241669d004ad4f1295d20.json",
+      "sha256": "ee5d9e5523e22ec582322056e592bd3bb76621761895d8d775b78b3a218d84e9"
+    },
+    {
+      "path": "tools/p08/golden/canyon_v17/publish_candidate05.py",
+      "sha256": "38be1750e0f2c734d99cdeb494b61bc22616976600a5fdd0417ff1cbf2e98b16"
+    },
+    {
+      "path": "tools/p08/golden/canyon_v17_bounds_r1/audit_lod_bounds.py",
+      "sha256": "32dc01e12f00527f13ac9f374449d17371472bc2e9ab8ef8c9c0e1ff21118cc5"
+    },
+    {
+      "path": "tools/p08/golden/canyon_v17_bounds_r1/prepare_revision.py",
+      "sha256": "778ed71b2a4be5503e4fabceced66ad2eb35ee06c983bea11ddd7a4d6864f1d3"
+    }
+  ],
+  "nativeImportValidationPassed": false,
+  "scope": "Corrected measurement population only: all-LOD union to native-consumed LOD0. Same tolerance; no geometry, UV, material, module map or camera changes."
+}

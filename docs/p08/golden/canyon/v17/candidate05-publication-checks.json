@@ -1,0 +1,27 @@
+{
+  "scope": "Local read-only publication-verifier negative controls; no publish, Unity import or visual acceptance.",
+  "realFrozenHandoffPassed": true,
+  "controls": [
+    {
+      "case": "destination_changed",
+      "rejected": true,
+      "reason": "Publication destination/source differs."
+    },
+    {
+      "case": "source_hash_changed",
+      "rejected": true,
+      "reason": "Bound input changed: ArtSource/P08/Golden/Canyon/V17/RB_Golden_Canyon_V17_05.blend"
+    },
+    {
+      "case": "descriptor_hash_changed",
+      "rejected": true,
+      "reason": "Bound input changed: docs/p08/golden/canyon/v17/candidate05-descriptor.json"
+    },
+    {
+      "case": "accepted_claim_changed",
+      "rejected": true,
+      "reason": "Not a review-only handoff."
+    }
+  ],
+  "passed": true
+}

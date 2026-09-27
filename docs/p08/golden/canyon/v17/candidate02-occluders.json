@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: CANYON_V17_OCCLUDERS02 {\"rays\": [{\"uvTopLeft\": [0.5, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_36\", \"pointBlender\": [-91.68449401855469, 734.932373046875, 70.58000946044922]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.5, 0.42], \"hit\": {\"object\": \"Canyon_L0_Bend_03\", \"pointBlender\": [-12.506120681762695, 114.3451919555664, 3.9970273971557617]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.5, 0.5], \"hit\": {\"object\": \"Canyon_L0_Boulder_68\", \"pointBlender\": [-4.306386947631836, 50.077003479003906, 0.30725526809692383]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.5, 0.6], \"hit\": {\"object\": \"Canyon_L0_Road_02\", \"pointBlender\": [-0.5720922946929932, 20.808292388916016, -1.1920928955078125e-07]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.65, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_38\", \"pointBlender\": [50.19377517700195, 770.5223388671875, 72.20294189453125]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.65, 0.42], \"hit\": {\"object\": \"Canyon_L0_Far_38\", \"pointBlender\": [52.36869430541992, 800.5183715820312, 18.65644645690918]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.65, 0.5], \"hit\": {\"object\": \"Canyon_L0_Bend_05\", \"pointBlender\": [9.989506721496582, 132.99581909179688, -1.7991976737976074]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.65, 0.6], \"hit\": {\"object\": \"Canyon_L0_Sage_Tile02\", \"pointBlender\": [3.0269298553466797, 23.713401794433594, -0.20947885513305664]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.8, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_40\", \"pointBlender\": [193.516845703125, 785.8404541015625, 71.927490234375]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.8, 0.42], \"hit\": {\"object\": \"Canyon_L0_Opposite_20\", \"pointBlender\": [78.08891296386719, 313.9085998535156, 8.062602996826172]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.8, 0.5], \"hit\": {\"object\": \"Canyon_L0_Opposite_20\", \"pointBlender\": [76.07494354248047, 305.16143798828125, -6.052225112915039]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.8, 0.6], \"hit\": {\"object\": \"Canyon_L0_Guardrail_Beam_Tile01\", \"pointBlender\": [3.6520180702209473, 10.912400245666504, 0.8936804533004761]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.9, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_41\", \"pointBlender\": [301.62744140625, 832.43798828125, 74.97178649902344]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.42], \"hit\": {\"object\": \"Canyon_L0_Opposite_21\", \"pointBlender\": [127.92059326171875, 351.2254943847656, 8.732114791870117]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.5], \"hit\": {\"object\": \"Canyon_L0_Opposite_21\", \"pointBlender\": [122.22545623779297, 334.98388671875, -6.673919200897217]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.6], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [46.677391052246094, 126.64214324951172, -8.547731399536133]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_42\", \"pointBlender\": [344.6220397949219, 780.4255981445312, 69.63594055175781]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.42], \"hit\": {\"object\": \"Canyon_L0_Opposite_32\", \"pointBlender\": [264.8489685058594, 598.2330932617188, 13.695831298828125]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.5], \"hit\": {\"object\": \"Canyon_L0_Opposite_24\", \"pointBlender\": [172.6211395263672, 389.03656005859375, -7.910915374755859]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.6], \"hit\": {\"object\": \"Canyon_L0_Opposite_24\", \"pointBlender\": [174.85690307617188, 393.3514404296875, -29.989152908325195]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}], \"scope\": \"Read-only actual mesh ray ownership; no source or visibility changes.\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: CANYON_V17_OCCLUDERS02 {\"rays\": [{\"uvTopLeft\": [0.5, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_36\", \"pointBlender\": [-91.68449401855469, 734.932373046875, 70.58000946044922]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.5, 0.42], \"hit\": {\"object\": \"Canyon_L0_Bend_03\", \"pointBlender\": [-12.506120681762695, 114.3451919555664, 3.9970273971557617]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.5, 0.5], \"hit\": {\"object\": \"Canyon_L0_Boulder_68\", \"pointBlender\": [-4.306386947631836, 50.077003479003906, 0.30725526809692383]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.5, 0.6], \"hit\": {\"object\": \"Canyon_L0_Road_02\", \"pointBlender\": [-0.5720922946929932, 20.808292388916016, -1.1920928955078125e-07]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.65, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_38\", \"pointBlender\": [50.19377517700195, 770.5223388671875, 72.20294189453125]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.65, 0.42], \"hit\": {\"object\": \"Canyon_L0_Far_38\", \"pointBlender\": [52.36869430541992, 800.5183715820312, 18.65644645690918]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.65, 0.5], \"hit\": {\"object\": \"Canyon_L0_Bend_05\", \"pointBlender\": [9.989506721496582, 132.99581909179688, -1.7991976737976074]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.65, 0.6], \"hit\": {\"object\": \"Canyon_L0_Sage_Tile02\", \"pointBlender\": [3.0269298553466797, 23.713401794433594, -0.20947885513305664]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.8, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_40\", \"pointBlender\": [193.516845703125, 785.8404541015625, 71.927490234375]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.8, 0.42], \"hit\": {\"object\": \"Canyon_L0_Opposite_20\", \"pointBlender\": [78.08891296386719, 313.9085998535156, 8.062602996826172]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.8, 0.5], \"hit\": {\"object\": \"Canyon_L0_Opposite_20\", \"pointBlender\": [76.07494354248047, 305.16143798828125, -6.052225112915039]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.8, 0.6], \"hit\": {\"object\": \"Canyon_L0_Guardrail_Beam_Tile01\", \"pointBlender\": [3.6520180702209473, 10.912400245666504, 0.8936804533004761]}, \"nonLandformSheetsSkipped\": []}, {\"uvTopLeft\": [0.9, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_41\", \"pointBlender\": [301.62744140625, 832.43798828125, 74.97178649902344]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.42], \"hit\": {\"object\": \"Canyon_L0_Opposite_21\", \"pointBlender\": [127.92059326171875, 351.2254943847656, 8.732114791870117]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.5], \"hit\": {\"object\": \"Canyon_L0_Opposite_21\", \"pointBlender\": [122.22545623779297, 334.98388671875, -6.673919200897217]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.9, 0.6], \"hit\": {\"object\": \"Canyon_L0_Bend_07\", \"pointBlender\": [46.677391052246094, 126.64214324951172, -8.547731399536133]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.3], \"hit\": {\"object\": \"Canyon_L0_Far_42\", \"pointBlender\": [344.6220397949219, 780.4255981445312, 69.63594055175781]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.42], \"hit\": {\"object\": \"Canyon_L0_Opposite_32\", \"pointBlender\": [264.8489685058594, 598.2330932617188, 13.695831298828125]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.5], \"hit\": {\"object\": \"Canyon_L0_Opposite_24\", \"pointBlender\": [172.6211395263672, 389.03656005859375, -7.910915374755859]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}, {\"uvTopLeft\": [0.97, 0.6], \"hit\": {\"object\": \"Canyon_L0_Opposite_24\", \"pointBlender\": [174.85690307617188, 393.3514404296875, -29.989152908325195]}, \"nonLandformSheetsSkipped\": [\"Canyon_AerialPerspective\"]}], \"scope\": \"Read-only actual mesh ray ownership; no source or visibility changes.\"}\n"
+    },
+    "isError": false
+  }
+}
