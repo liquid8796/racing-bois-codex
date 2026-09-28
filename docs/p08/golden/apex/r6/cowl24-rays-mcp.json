@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: COWL_RAYS=[{\"pixel\": [540, 348], \"layers\": [{\"name\": \"R4 flush swept clear lens 1\", \"position\": [0.1943359524011612, 0.7620675563812256, 0.8491675853729248]}, {\"name\": \"R4 flush swept clear lens 1\", \"position\": [0.1943359524011612, 0.7618486285209656, 0.8491559028625488]}, {\"name\": \"R4 headlamp aperture depth 1\", \"position\": [0.1943359524011612, 0.7610089778900146, 0.8491110801696777]}, {\"name\": \"R4 recessed optical seal 1\", \"position\": [0.1943359524011612, 0.7607125639915466, 0.8490952849388123]}]}, {\"pixel\": [560, 346], \"layers\": [{\"name\": \"R4 swept continuous optical cowl 1\", \"position\": [0.1552734524011612, 0.7634086608886719, 0.8531509637832642]}, {\"name\": \"R4 swept continuous optical cowl 1\", \"position\": [0.1552734524011612, 0.7596538066864014, 0.8529506921768188]}, {\"name\": \"R3 Broad faced tapered frame spar 1\", \"position\": [0.1552734524011612, 0.31508979201316833, 0.829240620136261]}, {\"name\": \"R6 recessed tank sill insert 1\", \"position\": [0.1552734524011612, 0.21316035091876984, 0.8238043785095215]}]}, {\"pixel\": [580, 337], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [0.1162109375, 0.7687764167785645, 0.871040403842926]}, {\"name\": \"R4 fitted screen collar\", \"position\": [0.1162109375, 0.7645378708839417, 0.870814323425293]}, {\"name\": \"Inverted fork upper.001\", \"position\": [0.1162109375, 0.5346105694770813, 0.8585515022277832]}, {\"name\": \"Lower triple clamp\", \"position\": [0.1162109375, 0.5241002440452576, 0.8579909205436707]}]}, {\"pixel\": [600, 340], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [0.0771484375, 0.7789783477783203, 0.8657166957855225]}, {\"name\": \"R4 fitted screen collar\", \"position\": [0.0771484375, 0.7739547491073608, 0.8654487729072571]}, {\"name\": \"Lower triple clamp\", \"position\": [0.0771484375, 0.5331304669380188, 0.8526048064231873]}, {\"name\": \"Lower triple clamp\", \"position\": [0.0771484375, 0.4922601878643036, 0.8504250645637512]}]}, {\"pixel\": [619, 349], \"layers\": [{\"name\": \"Lower triple clamp\", \"position\": [0.040039051324129105, 0.5429015159606934, 0.8355228304862976]}, {\"name\": \"Lower triple clamp\", \"position\": [0.040039051324129105, 0.48447877168655396, 0.8324069380760193]}, {\"name\": \"R4 tank mounting underside\", \"position\": [0.040039051324129105, 0.39399999380111694, 0.8275814056396484]}, {\"name\": \"R4 angular pressed fuel tank\", \"position\": [0.040039051324129105, 0.3215876519680023, 0.8237193822860718]}]}, {\"pixel\": [640, 336], \"layers\": [{\"name\": \"R4 fitted central nose blade\", \"position\": [-0.000976582057774067, 0.79783034324646, 0.8745457530021667]}, {\"name\": \"R4 fitted central nose blade\", \"position\": [-0.000976582057774067, 0.7930168509483337, 0.8742890357971191]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.000976582057774067, 0.7920238375663757, 0.8742360472679138]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.000976582057774067, 0.7867717146873474, 0.8739559054374695]}]}, {\"pixel\": [660, 349], \"layers\": [{\"name\": \"Lower triple clamp\", \"position\": [-0.04003908857703209, 0.5429015159606934, 0.8355228304862976]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.04003908857703209, 0.48447877168655396, 0.8324069380760193]}, {\"name\": \"R4 tank mounting underside\", \"position\": [-0.04003908857703209, 0.39399999380111694, 0.8275814056396484]}, {\"name\": \"R4 angular pressed fuel tank\", \"position\": [-0.04003908857703209, 0.3215876519680023, 0.8237193822860718]}]}, {\"pixel\": [680, 340], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [-0.07910160720348358, 0.7784724235534668, 0.865689754486084]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.07910160720348358, 0.7735422253608704, 0.865426778793335]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.07910160720348358, 0.5331304669380188, 0.8526048064231873]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.07910160720348358, 0.4922601878643036, 0.8504250645637512]}]}, {\"pixel\": [700, 337], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [-0.11816411465406418, 0.768775463104248, 0.8710403442382812]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.11816411465406418, 0.7644839286804199, 0.8708114624023438]}, {\"name\": \"Inverted fork upper\", \"position\": [-0.11816411465406418, 0.5339107513427734, 0.8585141897201538]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.11816411465406418, 0.5241001844406128, 0.8579909205436707]}]}, {\"pixel\": [720, 346], \"layers\": [{\"name\": \"R4 swept continuous optical cowl -1\", \"position\": [-0.15722662210464478, 0.7631735801696777, 0.8531384468078613]}, {\"name\": \"R4 swept continuous optical cowl -1\", \"position\": [-0.15722662210464478, 0.7594186663627625, 0.852938175201416]}, {\"name\": \"R3 Broad faced tapered frame spar -1\", \"position\": [-0.15722662210464478, 0.3150898814201355, 0.829240620136261]}, {\"name\": \"R6 recessed tank sill insert -1\", \"position\": [-0.15722662210464478, 0.22644351422786713, 0.824512779712677]}]}, {\"pixel\": [740, 348], \"layers\": [{\"name\": \"R4 recessed optical seal -1\", \"position\": [-0.19628913700580597, 0.7606046199798584, 0.8490896224975586]}, {\"name\": \"R4 recessed optical seal -1\", \"position\": [-0.19628913700580597, 0.7562023401260376, 0.8488548398017883]}, {\"name\": \"R4 integrated formed cowl shoulder -1\", \"position\": [-0.19628913700580597, 0.752439558506012, 0.8486541509628296]}, {\"name\": \"R4 integrated formed cowl shoulder -1\", \"position\": [-0.19628913700580597, 0.7518283128738403, 0.8486215472221375]}]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: COWL_RAYS=[{\"pixel\": [540, 348], \"layers\": [{\"name\": \"R4 flush swept clear lens 1\", \"position\": [0.1943359524011612, 0.7620675563812256, 0.8491675853729248]}, {\"name\": \"R4 flush swept clear lens 1\", \"position\": [0.1943359524011612, 0.7618486285209656, 0.8491559028625488]}, {\"name\": \"R4 headlamp aperture depth 1\", \"position\": [0.1943359524011612, 0.7610089778900146, 0.8491110801696777]}, {\"name\": \"R4 recessed optical seal 1\", \"position\": [0.1943359524011612, 0.7607125639915466, 0.8490952849388123]}]}, {\"pixel\": [560, 346], \"layers\": [{\"name\": \"R4 swept continuous optical cowl 1\", \"position\": [0.1552734524011612, 0.7634086608886719, 0.8531509637832642]}, {\"name\": \"R4 swept continuous optical cowl 1\", \"position\": [0.1552734524011612, 0.7596538066864014, 0.8529506921768188]}, {\"name\": \"R3 Broad faced tapered frame spar 1\", \"position\": [0.1552734524011612, 0.31508979201316833, 0.829240620136261]}, {\"name\": \"R6 recessed tank sill insert 1\", \"position\": [0.1552734524011612, 0.21316035091876984, 0.8238043785095215]}]}, {\"pixel\": [580, 337], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [0.1162109375, 0.7687764167785645, 0.871040403842926]}, {\"name\": \"R4 fitted screen collar\", \"position\": [0.1162109375, 0.7645378708839417, 0.870814323425293]}, {\"name\": \"Inverted fork upper.001\", \"position\": [0.1162109375, 0.5346105694770813, 0.8585515022277832]}, {\"name\": \"Lower triple clamp\", \"position\": [0.1162109375, 0.5241002440452576, 0.8579909205436707]}]}, {\"pixel\": [600, 340], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [0.0771484375, 0.7789783477783203, 0.8657166957855225]}, {\"name\": \"R4 fitted screen collar\", \"position\": [0.0771484375, 0.7739547491073608, 0.8654487729072571]}, {\"name\": \"Lower triple clamp\", \"position\": [0.0771484375, 0.5331304669380188, 0.8526048064231873]}, {\"name\": \"Lower triple clamp\", \"position\": [0.0771484375, 0.4922601878643036, 0.8504250645637512]}]}, {\"pixel\": [619, 349], \"layers\": [{\"name\": \"Lower triple clamp\", \"position\": [0.040039051324129105, 0.5429015159606934, 0.8355228304862976]}, {\"name\": \"Lower triple clamp\", \"position\": [0.040039051324129105, 0.48447877168655396, 0.8324069380760193]}, {\"name\": \"R4 tank mounting underside\", \"position\": [0.040039051324129105, 0.39399999380111694, 0.8275814056396484]}, {\"name\": \"R4 angular pressed fuel tank\", \"position\": [0.040039051324129105, 0.3215876519680023, 0.8237193822860718]}]}, {\"pixel\": [640, 336], \"layers\": [{\"name\": \"R4 fitted central nose blade\", \"position\": [-0.000976582057774067, 0.79783034324646, 0.8745457530021667]}, {\"name\": \"R4 fitted central nose blade\", \"position\": [-0.000976582057774067, 0.7930168509483337, 0.8742890357971191]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.000976582057774067, 0.7920238375663757, 0.8742360472679138]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.000976582057774067, 0.7867717146873474, 0.8739559054374695]}]}, {\"pixel\": [660, 349], \"layers\": [{\"name\": \"Lower triple clamp\", \"position\": [-0.04003908857703209, 0.5429015159606934, 0.8355228304862976]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.04003908857703209, 0.48447877168655396, 0.8324069380760193]}, {\"name\": \"R4 tank mounting underside\", \"position\": [-0.04003908857703209, 0.39399999380111694, 0.8275814056396484]}, {\"name\": \"R4 angular pressed fuel tank\", \"position\": [-0.04003908857703209, 0.3215876519680023, 0.8237193822860718]}]}, {\"pixel\": [680, 340], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [-0.07910160720348358, 0.7784724235534668, 0.865689754486084]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.07910160720348358, 0.7735422253608704, 0.865426778793335]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.07910160720348358, 0.5331304669380188, 0.8526048064231873]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.07910160720348358, 0.4922601878643036, 0.8504250645637512]}]}, {\"pixel\": [700, 337], \"layers\": [{\"name\": \"R4 fitted screen collar\", \"position\": [-0.11816411465406418, 0.768775463104248, 0.8710403442382812]}, {\"name\": \"R4 fitted screen collar\", \"position\": [-0.11816411465406418, 0.7644839286804199, 0.8708114624023438]}, {\"name\": \"Inverted fork upper\", \"position\": [-0.11816411465406418, 0.5339107513427734, 0.8585141897201538]}, {\"name\": \"Lower triple clamp\", \"position\": [-0.11816411465406418, 0.5241001844406128, 0.8579909205436707]}]}, {\"pixel\": [720, 346], \"layers\": [{\"name\": \"R4 swept continuous optical cowl -1\", \"position\": [-0.15722662210464478, 0.7631735801696777, 0.8531384468078613]}, {\"name\": \"R4 swept continuous optical cowl -1\", \"position\": [-0.15722662210464478, 0.7594186663627625, 0.852938175201416]}, {\"name\": \"R3 Broad faced tapered frame spar -1\", \"position\": [-0.15722662210464478, 0.3150898814201355, 0.829240620136261]}, {\"name\": \"R6 recessed tank sill insert -1\", \"position\": [-0.15722662210464478, 0.22644351422786713, 0.824512779712677]}]}, {\"pixel\": [740, 348], \"layers\": [{\"name\": \"R4 recessed optical seal -1\", \"position\": [-0.19628913700580597, 0.7606046199798584, 0.8490896224975586]}, {\"name\": \"R4 recessed optical seal -1\", \"position\": [-0.19628913700580597, 0.7562023401260376, 0.8488548398017883]}, {\"name\": \"R4 integrated formed cowl shoulder -1\", \"position\": [-0.19628913700580597, 0.752439558506012, 0.8486541509628296]}, {\"name\": \"R4 integrated formed cowl shoulder -1\", \"position\": [-0.19628913700580597, 0.7518283128738403, 0.8486215472221375]}]}]\n"
+    },
+    "isError": false
+  }
+}

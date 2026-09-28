@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"RB_Golden_Apex_r6_editable26.blend\"\nR6_COWL26={\"saved\": \"D:\\\\Project\\\\Unity\\\\racing-bois\\\\ArtSource\\\\P08\\\\Golden\\\\Apex\\\\R6\\\\RB_Golden_Apex_r6_editable26.blend\", \"sides\": [{\"side\": -1, \"mirrorBaseBefore\": [-0.18000000715255737, 0.5659999847412109, 1.0268312692642212], \"mirrorBaseAfter\": [-0.17550000548362732, 0.5658300518989563, 0.9542500376701355], \"upperShoulderFront\": [[-0.14572501182556152, 0.7222987413406372, 0.8758249282836914], [-0.15648126602172852, 0.7241703271865845, 0.8749249577522278], [-0.16723750531673431, 0.7260419130325317, 0.8740249872207642], [-0.1779937595129013, 0.7279133796691895, 0.8731249570846558], [-0.1887499988079071, 0.7297849655151367, 0.8722249865531921], [-0.1995062530040741, 0.731656551361084, 0.8713250160217285], [-0.2102625072002411, 0.7335281372070312, 0.8704249858856201], [-0.2210187464952469, 0.7353996634483337, 0.8695250153541565], [-0.23177500069141388, 0.737271249294281, 0.8686250448226929]], \"unchangedMirrorCases\": true}, {\"side\": 1, \"mirrorBaseBefore\": [0.18000000715255737, 0.5659999847412109, 1.0268312692642212], \"mirrorBaseAfter\": [0.17550000548362732, 0.5658300518989563, 0.9542500376701355], \"upperShoulderFront\": [[0.14572501182556152, 0.7222987413406372, 0.8758249282836914], [0.15648126602172852, 0.7241703271865845, 0.8749249577522278], [0.16723750531673431, 0.7260419130325317, 0.8740249872207642], [0.1779937595129013, 0.7279133796691895, 0.8731249570846558], [0.1887499988079071, 0.7297849655151367, 0.8722249865531921], [0.1995062530040741, 0.731656551361084, 0.8713250160217285], [0.2102625072002411, 0.7335281372070312, 0.8704249858856201], [0.2210187464952469, 0.7353996634483337, 0.8695250153541565], [0.23177500069141388, 0.737271249294281, 0.8686250448226929]], \"unchangedMirrorCases\": true}], \"visualAccepted\": false}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"RB_Golden_Apex_r6_editable26.blend\"\nR6_COWL26={\"saved\": \"D:\\\\Project\\\\Unity\\\\racing-bois\\\\ArtSource\\\\P08\\\\Golden\\\\Apex\\\\R6\\\\RB_Golden_Apex_r6_editable26.blend\", \"sides\": [{\"side\": -1, \"mirrorBaseBefore\": [-0.18000000715255737, 0.5659999847412109, 1.0268312692642212], \"mirrorBaseAfter\": [-0.17550000548362732, 0.5658300518989563, 0.9542500376701355], \"upperShoulderFront\": [[-0.14572501182556152, 0.7222987413406372, 0.8758249282836914], [-0.15648126602172852, 0.7241703271865845, 0.8749249577522278], [-0.16723750531673431, 0.7260419130325317, 0.8740249872207642], [-0.1779937595129013, 0.7279133796691895, 0.8731249570846558], [-0.1887499988079071, 0.7297849655151367, 0.8722249865531921], [-0.1995062530040741, 0.731656551361084, 0.8713250160217285], [-0.2102625072002411, 0.7335281372070312, 0.8704249858856201], [-0.2210187464952469, 0.7353996634483337, 0.8695250153541565], [-0.23177500069141388, 0.737271249294281, 0.8686250448226929]], \"unchangedMirrorCases\": true}, {\"side\": 1, \"mirrorBaseBefore\": [0.18000000715255737, 0.5659999847412109, 1.0268312692642212], \"mirrorBaseAfter\": [0.17550000548362732, 0.5658300518989563, 0.9542500376701355], \"upperShoulderFront\": [[0.14572501182556152, 0.7222987413406372, 0.8758249282836914], [0.15648126602172852, 0.7241703271865845, 0.8749249577522278], [0.16723750531673431, 0.7260419130325317, 0.8740249872207642], [0.1779937595129013, 0.7279133796691895, 0.8731249570846558], [0.1887499988079071, 0.7297849655151367, 0.8722249865531921], [0.1995062530040741, 0.731656551361084, 0.8713250160217285], [0.2102625072002411, 0.7335281372070312, 0.8704249858856201], [0.2210187464952469, 0.7353996634483337, 0.8695250153541565], [0.23177500069141388, 0.737271249294281, 0.8686250448226929]], \"unchangedMirrorCases\": true}], \"visualAccepted\": false}\n"
+    },
+    "isError": false
+  }
+}

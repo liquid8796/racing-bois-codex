@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: COWL26_INPUTS=[{\"name\": \"R4 fitted windscreen side support -1\", \"vertices\": [{\"i\": 0, \"p\": [-0.14499999582767487, 0.7098299860954285, 0.8670000433921814]}, {\"i\": 5, \"p\": [-0.18700000643730164, 0.7128300070762634, 0.8490000367164612]}, {\"i\": 41, \"p\": [-0.18066667020320892, 0.6148300170898438, 0.9167777299880981]}, {\"i\": 59, \"p\": [-0.17749999463558197, 0.5658300518989563, 0.9492500424385071]}, {\"i\": 77, \"p\": [-0.1743333339691162, 0.5168300271034241, 0.9807777404785156]}, {\"i\": 113, \"p\": [-0.1680000126361847, 0.4188300371170044, 1.0410000085830688]}]}, {\"name\": \"R4 integrated formed cowl shoulder -1\", \"vertices\": [{\"i\": 0, \"p\": [-0.23399999737739563, 0.7361400127410889, 0.8700000047683716]}, {\"i\": 12, \"p\": [-0.23199999332427979, 0.7738999724388123, 0.8083333373069763]}, {\"i\": 104, \"p\": [-0.2198592722415924, 0.5120000243186951, 0.9200000166893005]}, {\"i\": 116, \"p\": [-0.19863562285900116, 0.7649999856948853, 0.8399999737739563]}]}, {\"name\": \"R4 swept continuous optical cowl -1\", \"vertices\": [{\"i\": 16, \"p\": [-0.133200004696846, 0.730974018573761, 0.8729999661445618]}, {\"i\": 18, \"p\": [-0.14572501182556152, 0.7222987413406372, 0.8758249282836914]}, {\"i\": 20, \"p\": [-0.15569999814033508, 0.7205610275268555, 0.8762999773025513]}, {\"i\": 22, \"p\": [-0.19049999117851257, 0.727484941482544, 0.8734999895095825]}, {\"i\": 24, \"p\": [-0.22529999911785126, 0.734408974647522, 0.8707000017166138]}, {\"i\": 26, \"p\": [-0.23177500069141388, 0.737271249294281, 0.8686250448226929]}, {\"i\": 28, \"p\": [-0.2337999939918518, 0.7399159669876099, 0.8637999892234802]}, {\"i\": 30, \"p\": [-0.2329999953508377, 0.7550199627876282, 0.8389999866485596]}, {\"i\": 32, \"p\": [-0.2321999967098236, 0.7701240181922913, 0.8142000436782837]}]}, {\"name\": \"R4 fitted windscreen side support 1\", \"vertices\": [{\"i\": 0, \"p\": [0.14499999582767487, 0.7098299860954285, 0.8670000433921814]}, {\"i\": 5, \"p\": [0.18700000643730164, 0.7128300070762634, 0.8490000367164612]}, {\"i\": 41, \"p\": [0.18066667020320892, 0.6148300170898438, 0.9167777299880981]}, {\"i\": 59, \"p\": [0.17749999463558197, 0.5658300518989563, 0.9492500424385071]}, {\"i\": 77, \"p\": [0.1743333339691162, 0.5168300271034241, 0.9807777404785156]}, {\"i\": 113, \"p\": [0.1680000126361847, 0.4188300371170044, 1.0410000085830688]}]}, {\"name\": \"R4 integrated formed cowl shoulder 1\", \"vertices\": [{\"i\": 0, \"p\": [0.23399999737739563, 0.7361400127410889, 0.8700000047683716]}, {\"i\": 12, \"p\": [0.23199999332427979, 0.7738999724388123, 0.8083333373069763]}, {\"i\": 104, \"p\": [0.2198592722415924, 0.5120000243186951, 0.9200000166893005]}, {\"i\": 116, \"p\": [0.19863562285900116, 0.7649999856948853, 0.8399999737739563]}]}, {\"name\": \"R4 swept continuous optical cowl 1\", \"vertices\": [{\"i\": 16, \"p\": [0.133200004696846, 0.730974018573761, 0.8729999661445618]}, {\"i\": 18, \"p\": [0.14572501182556152, 0.7222987413406372, 0.8758249282836914]}, {\"i\": 20, \"p\": [0.15569999814033508, 0.7205610275268555, 0.8762999773025513]}, {\"i\": 22, \"p\": [0.19049999117851257, 0.727484941482544, 0.8734999895095825]}, {\"i\": 24, \"p\": [0.22529999911785126, 0.734408974647522, 0.8707000017166138]}, {\"i\": 26, \"p\": [0.23177500069141388, 0.737271249294281, 0.8686250448226929]}, {\"i\": 28, \"p\": [0.2337999939918518, 0.7399159669876099, 0.8637999892234802]}, {\"i\": 30, \"p\": [0.2329999953508377, 0.7550199627876282, 0.8389999866485596]}, {\"i\": 32, \"p\": [0.2321999967098236, 0.7701240181922913, 0.8142000436782837]}]}]\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: COWL26_INPUTS=[{\"name\": \"R4 fitted windscreen side support -1\", \"vertices\": [{\"i\": 0, \"p\": [-0.14499999582767487, 0.7098299860954285, 0.8670000433921814]}, {\"i\": 5, \"p\": [-0.18700000643730164, 0.7128300070762634, 0.8490000367164612]}, {\"i\": 41, \"p\": [-0.18066667020320892, 0.6148300170898438, 0.9167777299880981]}, {\"i\": 59, \"p\": [-0.17749999463558197, 0.5658300518989563, 0.9492500424385071]}, {\"i\": 77, \"p\": [-0.1743333339691162, 0.5168300271034241, 0.9807777404785156]}, {\"i\": 113, \"p\": [-0.1680000126361847, 0.4188300371170044, 1.0410000085830688]}]}, {\"name\": \"R4 integrated formed cowl shoulder -1\", \"vertices\": [{\"i\": 0, \"p\": [-0.23399999737739563, 0.7361400127410889, 0.8700000047683716]}, {\"i\": 12, \"p\": [-0.23199999332427979, 0.7738999724388123, 0.8083333373069763]}, {\"i\": 104, \"p\": [-0.2198592722415924, 0.5120000243186951, 0.9200000166893005]}, {\"i\": 116, \"p\": [-0.19863562285900116, 0.7649999856948853, 0.8399999737739563]}]}, {\"name\": \"R4 swept continuous optical cowl -1\", \"vertices\": [{\"i\": 16, \"p\": [-0.133200004696846, 0.730974018573761, 0.8729999661445618]}, {\"i\": 18, \"p\": [-0.14572501182556152, 0.7222987413406372, 0.8758249282836914]}, {\"i\": 20, \"p\": [-0.15569999814033508, 0.7205610275268555, 0.8762999773025513]}, {\"i\": 22, \"p\": [-0.19049999117851257, 0.727484941482544, 0.8734999895095825]}, {\"i\": 24, \"p\": [-0.22529999911785126, 0.734408974647522, 0.8707000017166138]}, {\"i\": 26, \"p\": [-0.23177500069141388, 0.737271249294281, 0.8686250448226929]}, {\"i\": 28, \"p\": [-0.2337999939918518, 0.7399159669876099, 0.8637999892234802]}, {\"i\": 30, \"p\": [-0.2329999953508377, 0.7550199627876282, 0.8389999866485596]}, {\"i\": 32, \"p\": [-0.2321999967098236, 0.7701240181922913, 0.8142000436782837]}]}, {\"name\": \"R4 fitted windscreen side support 1\", \"vertices\": [{\"i\": 0, \"p\": [0.14499999582767487, 0.7098299860954285, 0.8670000433921814]}, {\"i\": 5, \"p\": [0.18700000643730164, 0.7128300070762634, 0.8490000367164612]}, {\"i\": 41, \"p\": [0.18066667020320892, 0.6148300170898438, 0.9167777299880981]}, {\"i\": 59, \"p\": [0.17749999463558197, 0.5658300518989563, 0.9492500424385071]}, {\"i\": 77, \"p\": [0.1743333339691162, 0.5168300271034241, 0.9807777404785156]}, {\"i\": 113, \"p\": [0.1680000126361847, 0.4188300371170044, 1.0410000085830688]}]}, {\"name\": \"R4 integrated formed cowl shoulder 1\", \"vertices\": [{\"i\": 0, \"p\": [0.23399999737739563, 0.7361400127410889, 0.8700000047683716]}, {\"i\": 12, \"p\": [0.23199999332427979, 0.7738999724388123, 0.8083333373069763]}, {\"i\": 104, \"p\": [0.2198592722415924, 0.5120000243186951, 0.9200000166893005]}, {\"i\": 116, \"p\": [0.19863562285900116, 0.7649999856948853, 0.8399999737739563]}]}, {\"name\": \"R4 swept continuous optical cowl 1\", \"vertices\": [{\"i\": 16, \"p\": [0.133200004696846, 0.730974018573761, 0.8729999661445618]}, {\"i\": 18, \"p\": [0.14572501182556152, 0.7222987413406372, 0.8758249282836914]}, {\"i\": 20, \"p\": [0.15569999814033508, 0.7205610275268555, 0.8762999773025513]}, {\"i\": 22, \"p\": [0.19049999117851257, 0.727484941482544, 0.8734999895095825]}, {\"i\": 24, \"p\": [0.22529999911785126, 0.734408974647522, 0.8707000017166138]}, {\"i\": 26, \"p\": [0.23177500069141388, 0.737271249294281, 0.8686250448226929]}, {\"i\": 28, \"p\": [0.2337999939918518, 0.7399159669876099, 0.8637999892234802]}, {\"i\": 30, \"p\": [0.2329999953508377, 0.7550199627876282, 0.8389999866485596]}, {\"i\": 32, \"p\": [0.2321999967098236, 0.7701240181922913, 0.8142000436782837]}]}]\n"
+    },
+    "isError": false
+  }
+}
