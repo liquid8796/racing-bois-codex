@@ -1,0 +1,3428 @@
+{
+  "source": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Canyon/V19/RB_Golden_Canyon_V19_10.blend",
+  "parentSource": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Canyon/V19/RB_Golden_Canyon_V19_09.blend",
+  "changedObjects": [
+    "Canyon_L0_Far_33",
+    "Canyon_L1_Far_33",
+    "Canyon_L2_Far_33",
+    "Canyon_L0_Far_34",
+    "Canyon_L1_Far_34",
+    "Canyon_L2_Far_34",
+    "Canyon_L0_Far_35",
+    "Canyon_L1_Far_35",
+    "Canyon_L2_Far_35",
+    "Canyon_L0_Far_36",
+    "Canyon_L1_Far_36",
+    "Canyon_L2_Far_36",
+    "Canyon_L0_Far_37",
+    "Canyon_L1_Far_37",
+    "Canyon_L2_Far_37",
+    "Canyon_L0_Far_38",
+    "Canyon_L1_Far_38",
+    "Canyon_L2_Far_38",
+    "Canyon_L0_Far_39",
+    "Canyon_L1_Far_39",
+    "Canyon_L2_Far_39",
+    "Canyon_L0_Far_40",
+    "Canyon_L1_Far_40",
+    "Canyon_L2_Far_40",
+    "Canyon_L0_Far_41",
+    "Canyon_L1_Far_41",
+    "Canyon_L2_Far_41",
+    "Canyon_L0_Far_42",
+    "Canyon_L1_Far_42",
+    "Canyon_L2_Far_42",
+    "Canyon_L0_Far_43",
+    "Canyon_L1_Far_43",
+    "Canyon_L2_Far_43",
+    "Canyon_L0_Far_44",
+    "Canyon_L1_Far_44",
+    "Canyon_L2_Far_44"
+  ],
+  "layout": [
+    [
+      33,
+      -105,
+      290,
+      112,
+      0,
+      65,
+      -44,
+      48,
+      112,
+      62
+    ],
+    [
+      34,
+      -150,
+      430,
+      103,
+      -5,
+      124,
+      -48,
+      50,
+      112,
+      64
+    ],
+    [
+      35,
+      -190,
+      605,
+      153,
+      -12,
+      168,
+      -52,
+      52,
+      108,
+      62
+    ],
+    [
+      36,
+      -94,
+      720,
+      100,
+      -22,
+      76,
+      -56,
+      54,
+      96,
+      58
+    ],
+    [
+      37,
+      -210,
+      870,
+      158,
+      -35,
+      217,
+      -60,
+      56,
+      88,
+      54
+    ],
+    [
+      38,
+      -62,
+      990,
+      105,
+      -50,
+      65,
+      -64,
+      60,
+      84,
+      50
+    ],
+    [
+      39,
+      -170,
+      1150,
+      173,
+      -65,
+      251,
+      -68,
+      64,
+      76,
+      46
+    ],
+    [
+      40,
+      37,
+      1165,
+      106,
+      -80,
+      48,
+      -70,
+      66,
+      72,
+      44
+    ],
+    [
+      41,
+      -54,
+      1340,
+      141,
+      -90,
+      242,
+      -72,
+      68,
+      68,
+      42
+    ],
+    [
+      42,
+      180,
+      1450,
+      134,
+      -90,
+      50,
+      -74,
+      70,
+      64,
+      40
+    ],
+    [
+      43,
+      60,
+      1590,
+      184,
+      -95,
+      260,
+      -76,
+      72,
+      60,
+      38
+    ],
+    [
+      44,
+      315,
+      1700,
+      192,
+      -110,
+      220,
+      -80,
+      85,
+      64,
+      38
+    ]
+  ],
+  "physicalSurfaces": [
+    {
+      "seed": 38.61,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 392.1125283624257,
+      "jointsPerBed": 56,
+      "verticesPerRing": 224,
+      "verticalRings": 18,
+      "bedHeightsMetres": [
+        -0.15923158842532192,
+        8.02677867391423,
+        14.665981311672219,
+        22.750007802665202
+      ],
+      "rockStartMetres": -7.4696602846442,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4801494890343747,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 33
+    },
+    {
+      "seed": 39.54,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 392.1125283624257,
+      "jointsPerBed": 56,
+      "verticesPerRing": 224,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        2.45832836098261,
+        11.702037186583215,
+        22.40886956894555
+      ],
+      "rockStartMetres": -6.253775211756969,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.632788646798872,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 33
+    },
+    {
+      "seed": 40.71,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 195.3395496069084,
+      "jointsPerBed": 28,
+      "verticesPerRing": 112,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        27.70242004715692,
+        37.50523161495039,
+        43.70723424279822
+      ],
+      "rockStartMetres": 20,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.355535610939114,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 33
+    },
+    {
+      "seed": 43.410000000000004,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 184.64183492804545,
+      "jointsPerBed": 26,
+      "verticesPerRing": 104,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        26.380980239533528,
+        33.57620635162402,
+        40.70119222832818
+      ],
+      "rockStartMetres": 20,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.420889329914644,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 33
+    },
+    {
+      "seed": 47.91,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 111.9784397578155,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 17,
+      "bedHeightsMetres": [
+        -30.577484604466008,
+        -21.292810682585696,
+        -12.853456607435874,
+        -2.855437001757309,
+        4.25674210922989
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4975128152827892,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 33
+    },
+    {
+      "seed": 48.91,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 105.26896209127499,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 18,
+      "bedHeightsMetres": [
+        -30.987001762267028,
+        -21.03248813985556,
+        -14.502710934490096,
+        -6.2896249536515825,
+        4.004237540230861
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.69098553868389,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 33
+    },
+    {
+      "seed": 49.91,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 105.64012717805747,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 18,
+      "bedHeightsMetres": [
+        -30.96699275544961,
+        -24.16907886044646,
+        -15.379238918503688,
+        -7.681238389672217,
+        1.0065622387737676
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 2,
+      "uniformDetailScale": 2.6977624122591806,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 33
+    },
+    {
+      "seed": 39.78,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 382.1432866620445,
+      "jointsPerBed": 55,
+      "verticesPerRing": 220,
+      "verticalRings": 39,
+      "bedHeightsMetres": [
+        0.16738922966223413,
+        10.251372562155751,
+        17.71643838746067,
+        27.645571947146976,
+        37.43296327304242,
+        47.72780241182599,
+        56.69366347010882,
+        62.69418351910653,
+        69.6470309305819,
+        76.02462579731358,
+        85.60387613382912
+      ],
+      "rockStartMetres": -6.891102277890155,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.603208214881306,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 34
+    },
+    {
+      "seed": 40.71,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 382.1432866620445,
+      "jointsPerBed": 55,
+      "verticesPerRing": 220,
+      "verticalRings": 36,
+      "bedHeightsMetres": [
+        -4.385251315750853,
+        5.417560252042616,
+        11.619562879890449,
+        19.97891519491412,
+        30.88716425475894,
+        37.48453591619244,
+        46.99759816697832,
+        57.310719112840786,
+        66.08245851289092,
+        74.11707898043886
+      ],
+      "rockStartMetres": -12.087671362907773,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.355535610939114,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 34
+    },
+    {
+      "seed": 41.88,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 160.5265745020361,
+      "jointsPerBed": 23,
+      "verticesPerRing": 92,
+      "verticalRings": 14,
+      "bedHeightsMetres": [
+        87.70485347724389,
+        97.50902436735123,
+        104.63325453508514,
+        115.34113461071502
+      ],
+      "rockStartMetres": 79,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.327551866272188,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 34
+    },
+    {
+      "seed": 44.580000000000005,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 176.73168519076555,
+      "jointsPerBed": 25,
+      "verticesPerRing": 100,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        87.84909098068238,
+        95.6964715926124,
+        103.74942968947744
+      ],
+      "rockStartMetres": 79,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4540523896212108,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 34
+    },
+    {
+      "seed": 47.28,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 177.43729377770802,
+      "jointsPerBed": 25,
+      "verticesPerRing": 100,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        87.09472674952121,
+        97.3637922419748,
+        104.31125455855545,
+        111.96565912595361
+      ],
+      "rockStartMetres": 79,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.471626285423554,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 34
+    },
+    {
+      "seed": 49.08,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 90.4875745346464,
+      "jointsPerBed": 13,
+      "verticesPerRing": 52,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        38.39090402234433,
+        46.78943393462396,
+        54.503708056306095,
+        61.9609823219007
+      ],
+      "rockStartMetres": 32,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.3239730540935852,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 34
+    },
+    {
+      "seed": 50.08,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 92.78699878813022,
+      "jointsPerBed": 13,
+      "verticesPerRing": 52,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        40.16934267533361,
+        46.96663211096529,
+        53.77701330986383,
+        62.77732100042704
+      ],
+      "rockStartMetres": 32,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.2572907583162305,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 34
+    },
+    {
+      "seed": 40.949999999999996,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 440.03691399070493,
+      "jointsPerBed": 63,
+      "verticesPerRing": 252,
+      "verticalRings": 26,
+      "bedHeightsMetres": [
+        0.7355922383898328,
+        15.147425000457039,
+        29.601072805311013,
+        50.250636925327306,
+        64.95133596148244,
+        79.7509762217118,
+        99.73740235319147,
+        118.89631274382137
+      ],
+      "rockStartMetres": -13.763546244260036,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        97.78184393021141,
+        51.78184393021141,
+        -1.2181560697885914,
+        -55.21815606978859
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.5667927879694616,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 41.879999999999995,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 440.03691399070493,
+      "jointsPerBed": 63,
+      "verticesPerRing": 252,
+      "verticalRings": 28,
+      "bedHeightsMetres": [
+        -3.329478675833805,
+        15.757195865488477,
+        30.555963677747506,
+        51.08857055926682,
+        69.30005517326981,
+        85.30349359276852,
+        98.86376677185444,
+        115.33494415692667
+      ],
+      "rockStartMetres": -19.03433167943468,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        92.2092295982505,
+        46.2092295982505,
+        -6.790770401749498,
+        -60.7907704017495
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.3275519334711134,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 43.05,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 177.7601743604253,
+      "jointsPerBed": 25,
+      "verticesPerRing": 100,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        130.50581745589625,
+        138.01931635240726,
+        147.88524233210592,
+        156.7208431685849
+      ],
+      "rockStartMetres": 123,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.730495759967198,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 45.75,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 181.8164925874289,
+      "jointsPerBed": 26,
+      "verticesPerRing": 104,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        131.77286142158846,
+        139.35778798750835,
+        147.08618923791073
+      ],
+      "rockStartMetres": 123,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.256377423473168,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 48.449999999999996,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 184.1549931999117,
+      "jointsPerBed": 26,
+      "verticesPerRing": 104,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        129.49361746598515,
+        139.2171651351523,
+        147.94174637813512
+      ],
+      "rockStartMetres": 123,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.685910051830433,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 51.15,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 181.05421522367405,
+      "jointsPerBed": 26,
+      "verticesPerRing": 104,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        131.65614757333242,
+        139.09986607823885,
+        147.84434044541194
+      ],
+      "rockStartMetres": 123,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.537619381757395,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 50.25,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 108.78255364644984,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 18,
+      "bedHeightsMetres": [
+        84.58975144874421,
+        91.2540412291055,
+        99.30440884340715,
+        106.1155700694544,
+        113.13735184942061
+      ],
+      "rockStartMetres": 76,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.5309714100076235,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 51.25,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 105.72618275395764,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        83.86370008839731,
+        92.19286917714999,
+        103.06130108030993,
+        112.33098724149386
+      ],
+      "rockStartMetres": 76,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.3638109637759044,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 52.25,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 112.56456034445323,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        84.53105323473574,
+        94.19159406554172,
+        101.53595522642354
+      ],
+      "rockStartMetres": 76,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 2,
+      "uniformDetailScale": 2.645447931066883,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 35
+    },
+    {
+      "seed": 42.12,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 378.87336232977214,
+      "jointsPerBed": 54,
+      "verticesPerRing": 216,
+      "verticalRings": 24,
+      "bedHeightsMetres": [
+        -11.872272788102013,
+        -4.189643824327735,
+        2.210724576296112,
+        12.685032574985367,
+        22.86844088987868,
+        32.34007170648124
+      ],
+      "rockStartMetres": -19.70469542860042,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.301779787405394,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 36
+    },
+    {
+      "seed": 43.05,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 378.87336232977214,
+      "jointsPerBed": 54,
+      "verticesPerRing": 216,
+      "verticalRings": 21,
+      "bedHeightsMetres": [
+        -11.115120518007913,
+        -3.6016216214969035,
+        6.2643043582017555,
+        15.099905194680744,
+        25.096423357720326
+      ],
+      "rockStartMetres": -18.620937973904162,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.730495759967198,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 36
+    },
+    {
+      "seed": 44.22,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 187.99956064626355,
+      "jointsPerBed": 27,
+      "verticesPerRing": 108,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        39.8186935897138,
+        49.72757087347054,
+        55.991020595585724,
+        63.65532833121324
+      ],
+      "rockStartMetres": 31,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.2618084069251836,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 36
+    },
+    {
+      "seed": 46.92,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 172.7831328732601,
+      "jointsPerBed": 25,
+      "verticesPerRing": 100,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        37.07699862341428,
+        44.09514120417475,
+        50.506230365200054,
+        59.51809722001303
+      ],
+      "rockStartMetres": 31,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4245931063069293,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 36
+    },
+    {
+      "seed": 51.42,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 111.25840315932496,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 24,
+      "bedHeightsMetres": [
+        -31.58991350539145,
+        -22.076064938810305,
+        -14.868412081235874,
+        -7.937764300575509,
+        0.10788044078071835,
+        7.017811695426644,
+        14.587985208218015
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.2986286298510095,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 36
+    },
+    {
+      "seed": 52.42,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 116.60147016803936,
+      "jointsPerBed": 17,
+      "verticesPerRing": 68,
+      "verticalRings": 20,
+      "bedHeightsMetres": [
+        -32.617327037718496,
+        -24.928865262707404,
+        -15.499523582759139,
+        -6.293877604090085,
+        4.321182136081916,
+        14.369731234288338
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.7048901784437476,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 36
+    },
+    {
+      "seed": 43.29,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 446.1147904677165,
+      "jointsPerBed": 64,
+      "verticesPerRing": 256,
+      "verticalRings": 36,
+      "bedHeightsMetres": [
+        -1.7125347459477993,
+        12.606899682334166,
+        25.682868492051036,
+        43.20970924694482,
+        58.23657813005773,
+        76.73287281563896,
+        89.85845072591835,
+        104.74203434002627,
+        118.31735881972051,
+        138.80639713805792,
+        157.14323946729925,
+        176.13407220552833
+      ],
+      "rockStartMetres": -17.468150184224235,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        145.7233856616502,
+        99.72338566165021,
+        46.72338566165021,
+        -7.276614338349788
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.494778482567199,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 44.22,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 446.1147904677165,
+      "jointsPerBed": 64,
+      "verticesPerRing": 256,
+      "verticalRings": 35,
+      "bedHeightsMetres": [
+        4.4669884333269,
+        23.72119208733768,
+        37.14271164272198,
+        52.805604019726005,
+        69.35951529641154,
+        86.96247231445143,
+        100.77123995884888,
+        119.1252212456455,
+        132.79196079082595,
+        153.43185876180888,
+        167.18636654945095
+      ],
+      "rockStartMetres": -11.351705156386902,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        143.60574036036206,
+        97.60574036036206,
+        44.60574036036206,
+        -9.394259639637937
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.2618084069251836,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 45.39,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 215.2827160864181,
+      "jointsPerBed": 31,
+      "verticesPerRing": 124,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        178.99031514472154,
+        187.64193534520746,
+        194.05816802846311,
+        203.0594989650308
+      ],
+      "rockStartMetres": 172,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4201612260976617,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 48.09,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 218.40795972400898,
+      "jointsPerBed": 31,
+      "verticesPerRing": 124,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        180.95101435169636,
+        189.10382845228742,
+        198.21020752861295
+      ],
+      "rockStartMetres": 172,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.559465228341196,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 50.79,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 204.92956153269165,
+      "jointsPerBed": 29,
+      "verticesPerRing": 116,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        179.11109656261578,
+        187.91458044310457,
+        195.0976925918967
+      ],
+      "rockStartMetres": 172,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6904467214571923,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 52.59,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 93.64197606484089,
+      "jointsPerBed": 13,
+      "verticesPerRing": 52,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        132.13087405987608,
+        139.3484393073013,
+        149.46619141922565
+      ],
+      "rockStartMetres": 125,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6803804299706826,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 53.59,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 101.71988040955652,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        133.85167803330114,
+        144.28245782358545,
+        151.45851377065674
+      ],
+      "rockStartMetres": 125,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.3092320280629792,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 54.59,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 115.28524582839098,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        133.57722529711714,
+        140.4098628817071,
+        148.4882754050766,
+        156.49349909630723
+      ],
+      "rockStartMetres": 125,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 2,
+      "uniformDetailScale": 2.4610678643148276,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 37
+    },
+    {
+      "seed": 44.459999999999994,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 359.40205415193617,
+      "jointsPerBed": 51,
+      "verticesPerRing": 204,
+      "verticalRings": 18,
+      "bedHeightsMetres": [
+        -1.3996900366956062,
+        6.433113770460263,
+        14.212356174723904,
+        24.942351626031236
+      ],
+      "rockStartMetres": -9.781817211634039,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.334420061457422,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 45.38999999999999,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 359.40205415193617,
+      "jointsPerBed": 51,
+      "verticesPerRing": 204,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        0.8974229495448283,
+        9.549043258988217,
+        15.965275577518309
+      ],
+      "rockStartMetres": -6.09289200715141,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4201612260976617,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 46.559999999999995,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 166.05272397463563,
+      "jointsPerBed": 24,
+      "verticesPerRing": 96,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        28.76245157478843,
+        35.52096410719969,
+        46.15769569989061,
+        52.5049330163456
+      ],
+      "rockStartMetres": 20,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.61785150135438,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 49.26,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 158.80078465188782,
+      "jointsPerBed": 23,
+      "verticesPerRing": 92,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        27.897841484693345,
+        34.02512988982198,
+        44.279603657090775,
+        55.08005716934349
+      ],
+      "rockStartMetres": 20,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.738160472870277,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 51.959999999999994,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 152.09468758447832,
+      "jointsPerBed": 22,
+      "verticesPerRing": 88,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        27.840600421130148,
+        33.88410707906041,
+        43.41923557062728
+      ],
+      "rockStartMetres": 20,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6205189079573756,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 54.66,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 163.4768080028918,
+      "jointsPerBed": 23,
+      "verticesPerRing": 92,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        26.660935602872996,
+        34.01048670142882,
+        43.06485467717539
+      ],
+      "rockStartMetres": 20,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.339445060129947,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 53.75999999999999,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 93.04578838016981,
+      "jointsPerBed": 13,
+      "verticesPerRing": 52,
+      "verticalRings": 21,
+      "bedHeightsMetres": [
+        -30.511028807864932,
+        -19.988423071154102,
+        -13.677758496472961,
+        -3.660321625364304,
+        3.995010112765158,
+        10.066635548868362
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.478908939036046,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 54.75999999999999,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 96.47233522423655,
+      "jointsPerBed": 14,
+      "verticesPerRing": 56,
+      "verticalRings": 18,
+      "bedHeightsMetres": [
+        -31.60402588982106,
+        -20.857618363957954,
+        -14.223688369083902,
+        -7.190687288442859,
+        2.216172385989921
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.6774974563322758,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 38
+    },
+    {
+      "seed": 45.629999999999995,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 441.53207558969814,
+      "jointsPerBed": 63,
+      "verticesPerRing": 252,
+      "verticalRings": 37,
+      "bedHeightsMetres": [
+        7.060579275343687,
+        27.777413893558904,
+        46.975605667636614,
+        61.392380735293614,
+        78.70904793192551,
+        92.59195113308908,
+        107.35852312144073,
+        125.59195572591364,
+        138.85726606129413,
+        158.20108847860922,
+        173.79151377354958,
+        193.59996204735455,
+        207.26977798388782
+      ],
+      "rockStartMetres": -6.020690945190265,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        182.9940883013742,
+        136.9940883013742,
+        83.9940883013742,
+        29.994088301374205
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.5581078359473395,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 39
+    },
+    {
+      "seed": 46.559999999999995,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 441.53207558969814,
+      "jointsPerBed": 63,
+      "verticesPerRing": 252,
+      "verticalRings": 36,
+      "bedHeightsMetres": [
+        6.503796365392791,
+        20.717416417250806,
+        41.13618696555628,
+        54.69176667188427,
+        70.1686635664561,
+        90.06702954740163,
+        109.65106553324281,
+        127.16218925417766,
+        143.9456001196419,
+        158.98658956516434,
+        177.44360445141925,
+        194.64602878530118
+      ],
+      "rockStartMetres": -9.258655209395638,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        177.94810884169695,
+        131.94810884169695,
+        78.94810884169695,
+        24.94810884169695
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.61785150135438,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 39
+    },
+    {
+      "seed": 47.73,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 240.80733099774542,
+      "jointsPerBed": 34,
+      "verticesPerRing": 136,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        214.92761544933455,
+        222.93611842000973,
+        230.14143314533976
+      ],
+      "rockStartMetres": 206,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.5214999209983944,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 39
+    },
+    {
+      "seed": 50.43,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 249.7526926547467,
+      "jointsPerBed": 36,
+      "verticesPerRing": 144,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        213.88624824158978,
+        220.43802176062673,
+        226.72549370307388,
+        234.42762614813546
+      ],
+      "rockStartMetres": 206,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6765830689873837,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 39
+    },
+    {
+      "seed": 54.92999999999999,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 101.69734199074185,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        165.3414405786898,
+        171.99834303393345,
+        181.39146146432813
+      ],
+      "rockStartMetres": 159,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6653210489530466,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 39
+    },
+    {
+      "seed": 55.92999999999999,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 99.06808372477137,
+      "jointsPerBed": 14,
+      "verticesPerRing": 56,
+      "verticalRings": 14,
+      "bedHeightsMetres": [
+        165.1524578706676,
+        172.09777215672239,
+        180.95002737285267,
+        191.89415259749967
+      ],
+      "rockStartMetres": 159,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.2711951013479847,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 39
+    },
+    {
+      "seed": 56.92999999999999,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 108.11297052878807,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        165.32615861468366,
+        175.12883093229902,
+        184.8358457362301
+      ],
+      "rockStartMetres": 159,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 2,
+      "uniformDetailScale": 2.4582698721778797,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 39
+    },
+    {
+      "seed": 46.8,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 360.53401998515545,
+      "jointsPerBed": 52,
+      "verticesPerRing": 208,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        -3.172128468287836,
+        4.470746623750758
+      ],
+      "rockStartMetres": -10.772204422282583,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.3026286672034075,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 40
+    },
+    {
+      "seed": 47.73,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 360.53401998515545,
+      "jointsPerBed": 52,
+      "verticesPerRing": 208,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        -8.06010860024982,
+        -0.0516056295746381
+      ],
+      "rockStartMetres": -16.987724049584372,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.5214999209983944,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 40
+    },
+    {
+      "seed": 48.9,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 162.90977235319173,
+      "jointsPerBed": 23,
+      "verticesPerRing": 92,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        10.90605625306489,
+        17.667716475807538,
+        27.09193730762854
+      ],
+      "rockStartMetres": 3,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.541263219456596,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 40
+    },
+    {
+      "seed": 51.6,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 163.22750552790228,
+      "jointsPerBed": 23,
+      "verticesPerRing": 92,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        11.210962172888685,
+        18.036090093795792,
+        27.11072735657808,
+        35.518572952822524
+      ],
+      "rockStartMetres": 3,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.444859341789197,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 40
+    },
+    {
+      "seed": 54.3,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 181.04235098580443,
+      "jointsPerBed": 26,
+      "verticesPerRing": 104,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        9.830320707358624,
+        19.645535898966045,
+        27.16226659471431,
+        37.25085873747594
+      ],
+      "rockStartMetres": 3,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.502037136252511,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 40
+    },
+    {
+      "seed": 56.099999999999994,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 110.22691385086657,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        -31.376128937961766,
+        -23.590497957172374,
+        -15.943277055303952
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4719993818252988,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 40
+    },
+    {
+      "seed": 57.099999999999994,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 103.90327410547698,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        -32.06060771248394,
+        -21.792913316335216,
+        -15.4038815421236
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.513164641120966,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 40
+    },
+    {
+      "seed": 47.97,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 401.7333279570871,
+      "jointsPerBed": 57,
+      "verticesPerRing": 228,
+      "verticalRings": 35,
+      "bedHeightsMetres": [
+        -2.751204423837308,
+        13.660283736304436,
+        34.49482124025427,
+        49.74680386256851,
+        69.4750028573054,
+        86.32144464319764,
+        102.51266125135781,
+        115.67979498059331,
+        132.64787047318725,
+        151.29928175024736,
+        167.37156646078267,
+        181.58555274641014
+      ],
+      "rockStartMetres": -18.240952660927988,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        170.50258495402056,
+        124.50258495402056,
+        71.50258495402056,
+        17.502584954020563
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6574730069846737,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 48.9,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 401.7333279570871,
+      "jointsPerBed": 57,
+      "verticesPerRing": 228,
+      "verticalRings": 36,
+      "bedHeightsMetres": [
+        -4.94692304654302,
+        9.271733309845217,
+        27.750486640758822,
+        47.35371212524922,
+        63.34302173536423,
+        80.62386058555137,
+        99.96963287752885,
+        116.34643147125905,
+        136.47727693651984,
+        151.9685635034665,
+        165.73916275051022,
+        179.5201008461271,
+        194.72174954815716
+      ],
+      "rockStartMetres": -19.85297929960791,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        166.07532016007872,
+        120.07532016007872,
+        67.07532016007872,
+        13.075320160078718
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.541263219456596,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 50.07,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 174.34459582551165,
+      "jointsPerBed": 25,
+      "verticesPerRing": 100,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        203.15072414444876,
+        214.13063582494215,
+        222.56133723397215
+      ],
+      "rockStartMetres": 197,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.2743307890123106,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 52.77,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 170.7290842375092,
+      "jointsPerBed": 24,
+      "verticesPerRing": 96,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        203.587218856861,
+        214.29715176210448,
+        224.04062455159692
+      ],
+      "rockStartMetres": 197,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.664875043043139,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 55.47,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 180.95849772943072,
+      "jointsPerBed": 26,
+      "verticesPerRing": 104,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        204.3742373130226,
+        210.37976599747344,
+        221.03270331183649
+      ],
+      "rockStartMetres": 197,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.7122848803628585,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 58.17,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 182.50265284747306,
+      "jointsPerBed": 26,
+      "verticesPerRing": 104,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        203.85799726016558,
+        214.17075710707286,
+        224.8549556163307
+      ],
+      "rockStartMetres": 197,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.3184059933155368,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 57.269999999999996,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 94.89095102894822,
+      "jointsPerBed": 14,
+      "verticesPerRing": 56,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        157.7730294762623,
+        168.48578682182233,
+        176.69735576735366,
+        187.00946264659387
+      ],
+      "rockStartMetres": 150,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.2915268781071063,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 58.269999999999996,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 106.93489472131881,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        158.54055721146506,
+        164.73469580868186,
+        173.82070638958248,
+        182.21727942305733
+      ],
+      "rockStartMetres": 150,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.4103965756629577,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 59.269999999999996,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 107.087865976065,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        158.03506724022736,
+        164.66607610757637,
+        173.4852958337404
+      ],
+      "rockStartMetres": 150,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 2,
+      "uniformDetailScale": 2.5960978879029426,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 41
+    },
+    {
+      "seed": 49.14,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 393.2726749212428,
+      "jointsPerBed": 56,
+      "verticesPerRing": 224,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        -12.034534840622392,
+        -3.3033730624481095,
+        4.93090233291904
+      ],
+      "rockStartMetres": -19.317328593798912,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6180449181956646,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 42
+    },
+    {
+      "seed": 50.07,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 393.2726749212428,
+      "jointsPerBed": 56,
+      "verticesPerRing": 224,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        -8.20895463850977,
+        2.7709570419836176
+      ],
+      "rockStartMetres": -14.359678782958529,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.2743307890123106,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 42
+    },
+    {
+      "seed": 51.24,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 204.0720237591361,
+      "jointsPerBed": 29,
+      "verticesPerRing": 116,
+      "verticalRings": 14,
+      "bedHeightsMetres": [
+        13.72875769919483,
+        19.88590200775434,
+        27.36837794480016,
+        37.767511408994324
+      ],
+      "rockStartMetres": 5,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4686632166194613,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 42
+    },
+    {
+      "seed": 53.940000000000005,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 215.53205682427696,
+      "jointsPerBed": 31,
+      "verticesPerRing": 124,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        11.656349051110737,
+        22.364249472419033,
+        32.27248478313777
+      ],
+      "rockStartMetres": 5,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.550596659155417,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 42
+    },
+    {
+      "seed": 58.44,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 101.05154612577867,
+      "jointsPerBed": 14,
+      "verticesPerRing": 56,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        -31.542546415596917,
+        -22.091469686908567,
+        -15.520659741560848,
+        -7.207014866939971
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.506872192994706,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 42
+    },
+    {
+      "seed": 59.44,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 107.21866380993158,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        -30.593156663991977,
+        -24.378456159407506,
+        -16.31081012716095,
+        -9.280913748265448
+      ],
+      "rockStartMetres": -39,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.2832775888655306,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 42
+    },
+    {
+      "seed": 50.309999999999995,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 455.5774130530121,
+      "jointsPerBed": 65,
+      "verticesPerRing": 260,
+      "verticalRings": 36,
+      "bedHeightsMetres": [
+        1.4039662820420205,
+        15.005950820878425,
+        35.01756123629333,
+        51.505390741584634,
+        71.61095995474774,
+        89.39578793810382,
+        107.97337548625241,
+        121.53630684919939,
+        142.2804173354367,
+        159.48315566255644,
+        175.47770637775704,
+        190.3588890246598,
+        208.67179603660645
+      ],
+      "rockStartMetres": -12.68848012147042,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        190.08900567957988,
+        144.08900567957988,
+        91.08900567957988,
+        37.089005679579884
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.3164538193886983,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 51.239999999999995,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 455.5774130530121,
+      "jointsPerBed": 65,
+      "verticesPerRing": 260,
+      "verticalRings": 36,
+      "bedHeightsMetres": [
+        8.520775256658373,
+        21.772205049442995,
+        37.144166548716306,
+        57.182780982557155,
+        77.94546855698891,
+        97.53639713003386,
+        117.21442024519811,
+        133.43658119416241,
+        153.87550448889115,
+        173.84567284328833,
+        189.0642183784893,
+        209.96655462604568
+      ],
+      "rockStartMetres": -7.207982634970984,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        187.72936458196654,
+        141.72936458196654,
+        88.72936458196654,
+        34.729364581966536
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4686632166194613,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 52.41,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 226.35254418924913,
+      "jointsPerBed": 32,
+      "verticesPerRing": 128,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        222.2621750571343,
+        230.2056087498022,
+        239.22630662025404
+      ],
+      "rockStartMetres": 215,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.7244075306516606,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 55.11,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 234.25356746545526,
+      "jointsPerBed": 33,
+      "verticesPerRing": 132,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        222.34146053945733,
+        230.06504406498425,
+        236.1941138332113,
+        245.22311647990136
+      ],
+      "rockStartMetres": 215,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.454548227655323,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 57.809999999999995,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 228.67090382140356,
+      "jointsPerBed": 33,
+      "verticesPerRing": 132,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        221.7033874715271,
+        230.74032183282543,
+        238.38855881082418,
+        246.89743302162242
+      ],
+      "rockStartMetres": 215,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4027781109361968,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 59.61,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 102.1181314484574,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        174.6597959545652,
+        181.0505479226813,
+        188.96844599328688,
+        196.6435342754594
+      ],
+      "rockStartMetres": 168,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.396825955027907,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 60.61,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 114.18382443321512,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        175.20224201682868,
+        185.75662241090322,
+        194.41786876608603,
+        203.04373595219295
+      ],
+      "rockStartMetres": 168,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.3556524436735344,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 61.61,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 103.29512805752614,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        175.61009990161256,
+        183.15065796099952,
+        192.49364063687608,
+        199.73266037780922
+      ],
+      "rockStartMetres": 168,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 2,
+      "uniformDetailScale": 2.357160023337201,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 43
+    },
+    {
+      "seed": 51.48,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 465.8929818779612,
+      "jointsPerBed": 67,
+      "verticesPerRing": 268,
+      "verticalRings": 32,
+      "bedHeightsMetres": [
+        7.878458902860736,
+        21.579364444284444,
+        36.27132652003886,
+        54.245000789781194,
+        73.715818966956,
+        91.25291812732641,
+        112.14606937428354,
+        132.51977225148468,
+        147.57867963844794,
+        166.54215427487972
+      ],
+      "rockStartMetres": -6.439591395593446,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        151.87440245840187,
+        105.87440245840187,
+        52.874402458401875,
+        -1.1255975415981254
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.4577328469240456,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    },
+    {
+      "seed": 52.41,
+      "kind": "base",
+      "referencePlanPerimeterMetres": 465.8929818779612,
+      "jointsPerBed": 67,
+      "verticesPerRing": 268,
+      "verticalRings": 32,
+      "bedHeightsMetres": [
+        7.141384501110035,
+        23.250878409378668,
+        41.08399500210162,
+        58.06440897406519,
+        77.60010900975412,
+        98.20433284477421,
+        119.0642847885445,
+        136.4213484447517,
+        150.46698777488,
+        165.4607158471461
+      ],
+      "rockStartMetres": -7.120790556024265,
+      "coarseDistantBase": true,
+      "macroBenchHeights": [
+        147.59973583287433,
+        101.59973583287433,
+        48.59973583287433,
+        -5.40026416712567
+      ],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.7244075306516606,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    },
+    {
+      "seed": 53.58,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 206.10052863272097,
+      "jointsPerBed": 29,
+      "verticesPerRing": 116,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        183.440156532517,
+        190.26645737632765,
+        197.9719351242556,
+        205.62132553908754
+      ],
+      "rockStartMetres": 175,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.717379901718232,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    },
+    {
+      "seed": 56.28,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 205.7287387729521,
+      "jointsPerBed": 29,
+      "verticesPerRing": 116,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        181.21021639688115,
+        188.6960533909969,
+        197.24380695517357,
+        206.79236587289233
+      ],
+      "rockStartMetres": 175,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.2709809135849355,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    },
+    {
+      "seed": 58.98,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 209.72295910509527,
+      "jointsPerBed": 30,
+      "verticesPerRing": 120,
+      "verticalRings": 14,
+      "bedHeightsMetres": [
+        182.45176830654964,
+        189.5784147057566,
+        198.1901212443845,
+        206.61459646583535
+      ],
+      "rockStartMetres": 175,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.5934651855786797,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    },
+    {
+      "seed": 61.68,
+      "kind": "upper",
+      "referencePlanPerimeterMetres": 201.27740426124237,
+      "jointsPerBed": 29,
+      "verticesPerRing": 116,
+      "verticalRings": 12,
+      "bedHeightsMetres": [
+        183.08380716976535,
+        192.7414007380794,
+        201.05031821171724
+      ],
+      "rockStartMetres": 175,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.6720122506085318,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    },
+    {
+      "seed": 60.78,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 109.95574844268992,
+      "jointsPerBed": 16,
+      "verticesPerRing": 64,
+      "verticalRings": 15,
+      "bedHeightsMetres": [
+        135.72703344357797,
+        143.96785246496802,
+        150.99791857811215,
+        160.81408909913443
+      ],
+      "rockStartMetres": 128,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 0,
+      "uniformDetailScale": 2.3389133472935555,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    },
+    {
+      "seed": 61.78,
+      "kind": "spur",
+      "referencePlanPerimeterMetres": 102.75475451745541,
+      "jointsPerBed": 15,
+      "verticesPerRing": 60,
+      "verticalRings": 14,
+      "bedHeightsMetres": [
+        136.04850931977853,
+        144.8635014414176,
+        153.7085692949404,
+        164.19987476530514
+      ],
+      "rockStartMetres": 128,
+      "coarseDistantBase": false,
+      "macroBenchHeights": [],
+      "heightProfile": "Stable per-column bounded profile; analytical vertical derivative lower bound greater than0.70.",
+      "cc0Patch": 1,
+      "uniformDetailScale": 2.6086033653991763,
+      "sampling": "Vertices at fractured block shoulders and bed transitions; no uniform dense grid.",
+      "moduleIndex": 44
+    }
+  ],
+  "audit": [
+    {
+      "object": "Canyon_L0_Far_33",
+      "vertices": 13246,
+      "triangles": 26464,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2676420.8039589273,
+      "minimumPrimaryUvCross": 1.4254849034500694e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.2835929371358361,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -259.99652099609375,
+        206.09225463867188,
+        -82.0
+      ],
+      "maximumBlender": [
+        7.7210693359375,
+        422.7334899902344,
+        55.76460266113281
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_33",
+      "vertices": 5836,
+      "triangles": 11644,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2674522.665271403,
+      "minimumPrimaryUvCross": 1.5845848633233572e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.1177039472386241,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -260.01800537109375,
+        206.06195068359375,
+        -82.00245666503906
+      ],
+      "maximumBlender": [
+        7.7210693359375,
+        422.74468994140625,
+        55.56446075439453
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_33",
+      "vertices": 2263,
+      "triangles": 4498,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2667858.2808148875,
+      "minimumPrimaryUvCross": 8.294118813978457e-07,
+      "minimumPhysicalCrossSquaredMetres": 2.128195548430085,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -260.01800537109375,
+        206.06195068359375,
+        -82.00740051269531
+      ],
+      "maximumBlender": [
+        7.928985595703125,
+        422.74468994140625,
+        55.36322784423828
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_34",
+      "vertices": 22062,
+      "triangles": 44096,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2965535.975814001,
+      "minimumPrimaryUvCross": 1.8658891320910698e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.228764733299613,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -293.00189208984375,
+        344.4051818847656,
+        -82.0
+      ],
+      "maximumBlender": [
+        -29.724472045898438,
+        545.0195922851562,
+        122.48193359375
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_34",
+      "vertices": 9715,
+      "triangles": 19402,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2963511.274345485,
+      "minimumPrimaryUvCross": 1.0789648285935982e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.029264525277540088,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -293.00189208984375,
+        344.4765930175781,
+        -82.00393676757812
+      ],
+      "maximumBlender": [
+        -29.54065704345703,
+        545.0195922851562,
+        122.40774536132812
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_34",
+      "vertices": 3762,
+      "triangles": 7496,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2956625.660068065,
+      "minimumPrimaryUvCross": 6.130704638396267e-07,
+      "minimumPhysicalCrossSquaredMetres": 2.380958704277873,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -292.7559509277344,
+        344.8072204589844,
+        -82.00514221191406
+      ],
+      "maximumBlender": [
+        -29.54065704345703,
+        544.3408203125,
+        122.29594421386719
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_35",
+      "vertices": 21690,
+      "triangles": 43344,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 20498866.630627215,
+      "minimumPrimaryUvCross": 1.7455072054417542e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.36190627608448267,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -422.8355712890625,
+        395.5400085449219,
+        -82.0
+      ],
+      "maximumBlender": [
+        61.18952941894531,
+        872.4165649414062,
+        164.08187866210938
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_35",
+      "vertices": 9553,
+      "triangles": 19070,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 20491285.606967844,
+      "minimumPrimaryUvCross": 2.795872457994619e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.04905778216198087,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -422.5283203125,
+        395.60638427734375,
+        -82.0024642944336
+      ],
+      "maximumBlender": [
+        61.15928649902344,
+        872.4165649414062,
+        164.08187866210938
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_35",
+      "vertices": 3702,
+      "triangles": 7368,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 20468306.929292757,
+      "minimumPrimaryUvCross": 1.2596087528571331e-07,
+      "minimumPhysicalCrossSquaredMetres": 4.44861364364624,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -423.0347900390625,
+        395.8161315917969,
+        -82.01092529296875
+      ],
+      "maximumBlender": [
+        61.63231658935547,
+        871.9530639648438,
+        163.68374633789062
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_36",
+      "vertices": 15748,
+      "triangles": 31472,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2391527.2588730836,
+      "minimumPrimaryUvCross": 8.728717859618484e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.30481069794041105,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -222.1065673828125,
+        620.9088745117188,
+        -82.0
+      ],
+      "maximumBlender": [
+        25.297119140625,
+        837.7115478515625,
+        74.44918823242188
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_36",
+      "vertices": 6935,
+      "triangles": 13846,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2390201.0876257103,
+      "minimumPrimaryUvCross": 8.709931189621045e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.03199709623459057,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -222.1065673828125,
+        620.90380859375,
+        -82.00242614746094
+      ],
+      "maximumBlender": [
+        25.23051643371582,
+        837.7115478515625,
+        74.44918823242188
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_36",
+      "vertices": 2687,
+      "triangles": 5350,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2385371.612677636,
+      "minimumPrimaryUvCross": 2.1966127405903535e-07,
+      "minimumPhysicalCrossSquaredMetres": 1.041648866608739,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -221.44744873046875,
+        621.1356811523438,
+        -82.00553131103516
+      ],
+      "maximumBlender": [
+        25.712421417236328,
+        837.7115478515625,
+        74.61273193359375
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_37",
+      "vertices": 25236,
+      "triangles": 50440,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 32051690.734785922,
+      "minimumPrimaryUvCross": 2.0251706978058337e-09,
+      "minimumPhysicalCrossSquaredMetres": 0.33063292503356934,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -477.05322265625,
+        604.232666015625,
+        -82.0
+      ],
+      "maximumBlender": [
+        70.33039093017578,
+        1112.3165283203125,
+        209.95252990722656
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_37",
+      "vertices": 11112,
+      "triangles": 22192,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 32041190.343609843,
+      "minimumPrimaryUvCross": 1.2023625650670056e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.21252879401436076,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -477.072509765625,
+        604.1618041992188,
+        -82.00361633300781
+      ],
+      "maximumBlender": [
+        70.33039093017578,
+        1112.3919677734375,
+        210.01263427734375
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_37",
+      "vertices": 4303,
+      "triangles": 8574,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 32005824.64377945,
+      "minimumPrimaryUvCross": 1.4803506376281916e-07,
+      "minimumPhysicalCrossSquaredMetres": 9.170560501515865,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -476.6016845703125,
+        603.4886474609375,
+        -82.00569152832031
+      ],
+      "maximumBlender": [
+        70.53257751464844,
+        1112.274169921875,
+        209.4892578125
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_38",
+      "vertices": 13828,
+      "triangles": 27624,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2391633.2271009353,
+      "minimumPrimaryUvCross": 6.069266089703262e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.31989270757185295,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -205.48414611816406,
+        878.9317626953125,
+        -82.0
+      ],
+      "maximumBlender": [
+        36.61541748046875,
+        1106.4775390625,
+        63.763648986816406
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_38",
+      "vertices": 6093,
+      "triangles": 12154,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2389965.555826109,
+      "minimumPrimaryUvCross": 1.1545022338133037e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.3858765180921182,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -205.48414611816406,
+        878.9317626953125,
+        -82.00216674804688
+      ],
+      "maximumBlender": [
+        36.65391540527344,
+        1106.3892822265625,
+        63.74689483642578
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_38",
+      "vertices": 2364,
+      "triangles": 4696,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2382857.354963237,
+      "minimumPrimaryUvCross": 5.122898280029986e-07,
+      "minimumPhysicalCrossSquaredMetres": 2.6482885479927063,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -205.8224334716797,
+        878.982421875,
+        -82.00439453125
+      ],
+      "maximumBlender": [
+        36.75297546386719,
+        1106.3892822265625,
+        63.643310546875
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_39",
+      "vertices": 24426,
+      "triangles": 48824,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 40805088.901358895,
+      "minimumPrimaryUvCross": 6.347715575394375e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.5066387932747602,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -475.74224853515625,
+        877.759521484375,
+        -82.0
+      ],
+      "maximumBlender": [
+        90.63726043701172,
+        1405.3746337890625,
+        246.19158935546875
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_39",
+      "vertices": 10755,
+      "triangles": 21482,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 40791285.833439134,
+      "minimumPrimaryUvCross": 2.4329598513617157e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.6221084595017601,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -475.74224853515625,
+        877.759521484375,
+        -82.00184631347656
+      ],
+      "maximumBlender": [
+        90.54975128173828,
+        1405.237060546875,
+        246.21475219726562
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_39",
+      "vertices": 4164,
+      "triangles": 8300,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 40743967.69585833,
+      "minimumPrimaryUvCross": 3.684292373407061e-07,
+      "minimumPhysicalCrossSquaredMetres": 14.41243548411876,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -475.7000732421875,
+        878.3319702148438,
+        -82.02039337158203
+      ],
+      "maximumBlender": [
+        89.86990356445312,
+        1404.740966796875,
+        246.16836547851562
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_40",
+      "vertices": 10538,
+      "triangles": 21048,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2102609.3781359936,
+      "minimumPrimaryUvCross": 1.7581695932467056e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.5185386463999748,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -89.84280395507812,
+        1060.501708984375,
+        -82.0
+      ],
+      "maximumBlender": [
+        124.77104949951172,
+        1293.9517822265625,
+        46.36206817626953
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_40",
+      "vertices": 4644,
+      "triangles": 9260,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2100958.0105262054,
+      "minimumPrimaryUvCross": 5.725732479255896e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.17565368764917366,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -89.78720092773438,
+        1060.501708984375,
+        -82.0035171508789
+      ],
+      "maximumBlender": [
+        124.77104949951172,
+        1293.9517822265625,
+        46.37548065185547
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_40",
+      "vertices": 1803,
+      "triangles": 3578,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2094716.2268508445,
+      "minimumPrimaryUvCross": 1.8124756195891933e-06,
+      "minimumPhysicalCrossSquaredMetres": 3.1376712918281555,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -90.14108276367188,
+        1060.9130859375,
+        -82.00548553466797
+      ],
+      "maximumBlender": [
+        124.18081665039062,
+        1292.938720703125,
+        46.42023468017578
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_41",
+      "vertices": 23514,
+      "triangles": 46992,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 32586297.269844722,
+      "minimumPrimaryUvCross": 2.7020774506780754e-10,
+      "minimumPhysicalCrossSquaredMetres": 0.3499629935249686,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -307.3193054199219,
+        1093.88720703125,
+        -82.0
+      ],
+      "maximumBlender": [
+        180.67718505859375,
+        1596.5751953125,
+        238.38624572753906
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_41",
+      "vertices": 10356,
+      "triangles": 20676,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 32573799.662595633,
+      "minimumPrimaryUvCross": 1.4453080732224066e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.038663665181957185,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -307.4745788574219,
+        1094.111083984375,
+        -82.00309753417969
+      ],
+      "maximumBlender": [
+        180.58432006835938,
+        1596.4569091796875,
+        238.4012451171875
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_41",
+      "vertices": 4012,
+      "triangles": 7988,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 32527982.48960315,
+      "minimumPrimaryUvCross": 5.261849729265577e-07,
+      "minimumPhysicalCrossSquaredMetres": 20.736172676086426,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -307.4551696777344,
+        1094.10791015625,
+        -82.0101318359375
+      ],
+      "maximumBlender": [
+        180.90342712402344,
+        1595.6536865234375,
+        238.53321838378906
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_42",
+      "vertices": 10912,
+      "triangles": 21800,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2449511.8881001803,
+      "minimumPrimaryUvCross": 4.37278879772407e-09,
+      "minimumPhysicalCrossSquaredMetres": 0.5214913189411163,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        30.202392578125,
+        1363.6302490234375,
+        -82.0
+      ],
+      "maximumBlender": [
+        302.9483642578125,
+        1595.3912353515625,
+        49.01145935058594
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_42",
+      "vertices": 4808,
+      "triangles": 9592,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2447774.1808654848,
+      "minimumPrimaryUvCross": 3.700831507913449e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.015207925953291124,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        30.47637939453125,
+        1363.998291015625,
+        -82.00223541259766
+      ],
+      "maximumBlender": [
+        302.82391357421875,
+        1595.6435546875,
+        49.0040283203125
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_42",
+      "vertices": 1865,
+      "triangles": 3706,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 2442002.593668848,
+      "minimumPrimaryUvCross": 2.3109932619780338e-06,
+      "minimumPhysicalCrossSquaredMetres": 1.3175526559352875,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        30.863128662109375,
+        1363.073486328125,
+        -82.00623321533203
+      ],
+      "maximumBlender": [
+        302.5279846191406,
+        1595.3984375,
+        48.9862060546875
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_43",
+      "vertices": 26992,
+      "triangles": 53952,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 39116112.06268489,
+      "minimumPrimaryUvCross": 7.511330224474477e-09,
+      "minimumPhysicalCrossSquaredMetres": 0.1486703590489924,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -249.8673095703125,
+        1364.212158203125,
+        -82.0
+      ],
+      "maximumBlender": [
+        362.413818359375,
+        1864.455810546875,
+        254.99510192871094
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_43",
+      "vertices": 11885,
+      "triangles": 23738,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 39103963.82423806,
+      "minimumPrimaryUvCross": 1.6053861906506484e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.2381836605436547,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -249.7607421875,
+        1364.2967529296875,
+        -82.001708984375
+      ],
+      "maximumBlender": [
+        362.3868408203125,
+        1864.323486328125,
+        254.9515838623047
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_43",
+      "vertices": 4601,
+      "triangles": 9170,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 39064183.20084333,
+      "minimumPrimaryUvCross": 4.7360472543722665e-08,
+      "minimumPhysicalCrossSquaredMetres": 7.329255476593971,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        -249.37762451171875,
+        1363.9248046875,
+        -82.020263671875
+      ],
+      "maximumBlender": [
+        362.103515625,
+        1863.686767578125,
+        254.9515838623047
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L0_Far_44",
+      "vertices": 25520,
+      "triangles": 51008,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 30202336.5917463,
+      "minimumPrimaryUvCross": 5.5744090898812715e-08,
+      "minimumPhysicalCrossSquaredMetres": 0.14352828118717298,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        41.423980712890625,
+        1490.9298095703125,
+        -82.0
+      ],
+      "maximumBlender": [
+        606.8900146484375,
+        1960.5054931640625,
+        214.94052124023438
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L1_Far_44",
+      "vertices": 11237,
+      "triangles": 22442,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 30192398.186654925,
+      "minimumPrimaryUvCross": 1.2583283648393007e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.45058429532218724,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        41.312255859375,
+        1490.9298095703125,
+        -82.00176239013672
+      ],
+      "maximumBlender": [
+        606.918701171875,
+        1960.4005126953125,
+        214.9148406982422
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    },
+    {
+      "object": "Canyon_L2_Far_44",
+      "vertices": 4351,
+      "triangles": 8670,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "signedVolumeCubicMetres": 30158254.458523635,
+      "minimumPrimaryUvCross": 1.7948415520496752e-07,
+      "minimumPhysicalCrossSquaredMetres": 0.07453746488317847,
+      "materials": [
+        "Canyon_Cliff01",
+        "Canyon_Sandstone"
+      ],
+      "sourceUvAliasPhysicalProjections": [],
+      "minimumBlender": [
+        41.509490966796875,
+        1490.593505859375,
+        -82.02291870117188
+      ],
+      "maximumBlender": [
+        607.019775390625,
+        1960.279541015625,
+        214.9148406982422
+      ],
+      "uvPolicy": "Side UVs from continuous originalCC0 islands; exact sampling aliases use recorded physical triangle projection into source atlas. Caps physical2.4m. No epsilon offsets."
+    }
+  ],
+  "sceneLodTriangles": [
+    2057636,
+    1013973,
+    410585
+  ],
+  "otherSceneMeshesExactlyUnchanged": 616,
+  "cameraAndLightingExactlyUnchanged": true,
+  "materialAndImageMembershipUnchanged": true,
+  "fixedScene": {
+    "cameraMatrix": [
+      [
+        0.9919589161872864,
+        -0.0033129698131233454,
+        0.1265169084072113,
+        1.7000000476837158
+      ],
+      [
+        0.1265602707862854,
+        0.025966502726078033,
+        -0.9916189908981323,
+        3.0
+      ],
+      [
+        2.121391062814837e-09,
+        0.9996573328971863,
+        0.026176994666457176,
+        1.5499999523162842
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 28.0,
+    "sensorWidth": 36.0,
+    "sensorFit": "HORIZONTAL",
+    "clipStart": 0.10000000149011612,
+    "clipEnd": 2500.0,
+    "resolution": [
+      1536,
+      717,
+      100
+    ],
+    "lights": [
+      [
+        "Canyon_WarmSun",
+        [
+          [
+            -0.9335474371910095,
+            -0.03732261061668396,
+            0.35650551319122314,
+            0.0
+          ],
+          [
+            0.3584538400173187,
+            -0.09720180928707123,
+            0.9284732937812805,
+            0.0
+          ],
+          [
+            -6.352740911097499e-08,
+            0.9945646524429321,
+            0.10412093251943588,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "SUN",
+        1.7999999523162842,
+        [
+          1.0,
+          0.8299999833106995,
+          0.6200000047683716
+        ]
+      ]
+    ],
+    "worldNodes": [
+      [
+        "Background",
+        "BACKGROUND",
+        [
+          [
+            "Color",
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806,
+              1.0
+            ]
+          ],
+          [
+            "Strength",
+            0.8500000238418579
+          ],
+          [
+            "Weight",
+            0.0
+          ]
+        ],
+        null
+      ],
+      [
+        "World Output",
+        "OUTPUT_WORLD",
+        [],
+        null
+      ],
+      [
+        "Environment Texture",
+        "TEX_ENVIRONMENT",
+        [
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "D:\\Project\\Unity\\racing-bois\\Assets\\RacingBois\\Art\\P08\\Golden\\Canyon\\V13\\Sky\\qwantani_sunset_puresky_4k.hdr"
+      ],
+      [
+        "Texture Coordinate",
+        "TEX_COORD",
+        [],
+        null
+      ],
+      [
+        "Mapping",
+        "MAPPING",
+        [
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "Location",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "Rotation",
+            [
+              0.0,
+              0.0,
+              4.447000026702881
+            ]
+          ],
+          [
+            "Scale",
+            [
+              1.0,
+              1.0,
+              1.0
+            ]
+          ]
+        ],
+        null
+      ]
+    ],
+    "viewTransform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.25,
+    "gamma": 1.0
+  },
+  "visualAccepted": false,
+  "exportedToAssets": false
+}
