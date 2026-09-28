@@ -1,0 +1,1457 @@
+{
+  "schema": 1,
+  "passed": true,
+  "utc": "2026-09-28T02:02:20.8340337Z",
+  "checks": [
+    {
+      "name": "missing_current_roster_reported_before_mutation",
+      "passed": true
+    },
+    {
+      "name": "Setup_rejects_complete_inventory_before_writing",
+      "passed": true
+    },
+    {
+      "name": "Setup_writes_no_output",
+      "passed": true
+    },
+    {
+      "name": "PrepareRoutes_rejects_complete_inventory_before_writing",
+      "passed": true
+    },
+    {
+      "name": "PrepareRoutes_writes_no_output",
+      "passed": true
+    },
+    {
+      "name": "PrepareActors_rejects_complete_inventory_before_writing",
+      "passed": true
+    },
+    {
+      "name": "PrepareActors_writes_no_output",
+      "passed": true
+    },
+    {
+      "name": "protected_files_unchanged",
+      "passed": true
+    },
+    {
+      "name": "audio_source_and_importer_bytes_unchanged",
+      "passed": true
+    },
+    {
+      "name": "loaded_scene_setup_unchanged",
+      "passed": true
+    },
+    {
+      "name": "preexisting_dirty_assets_unchanged",
+      "passed": true
+    },
+    {
+      "name": "actual_97_audio_inventory_valid",
+      "passed": true
+    },
+    {
+      "name": "audio_rejects_duplicate-id",
+      "passed": true
+    },
+    {
+      "name": "audio_rejects_duplicate-path",
+      "passed": true
+    },
+    {
+      "name": "audio_rejects_missing-role",
+      "passed": true
+    },
+    {
+      "name": "audio_rejects_missing-route-music",
+      "passed": true
+    },
+    {
+      "name": "audio_rejects_unknown-category",
+      "passed": true
+    },
+    {
+      "name": "audio_rejects_extra-entry",
+      "passed": true
+    },
+    {
+      "name": "fresh_fixture_root",
+      "passed": true
+    },
+    {
+      "name": "dirty_destination_rejected",
+      "passed": true
+    },
+    {
+      "name": "scoped_save_changes_only_requested_destination",
+      "passed": true
+    },
+    {
+      "name": "clean_existing_destination_allowed",
+      "passed": true
+    },
+    {
+      "name": "owned_fixture_clean",
+      "passed": true
+    },
+    {
+      "name": "original_drafts_preserved_after_scoped_save_fixture",
+      "passed": true
+    },
+    {
+      "name": "protected_files_preserved_after_fixture",
+      "passed": true
+    }
+  ],
+  "protectedFiles": {
+    "ArtSource/Weapons/RB_Club.blend": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f",
+    "ArtSource/P08/Golden/Ash/V7R2/RB_Golden_Ash_V7R2.blend": "6d689a5df0ddf9de97d249bd4f56fd8a4e7bba844af80fc44a11c54fd428dcd8",
+    "Assets/RacingBois/UI/Fonts/NotoSans-Regular SDF.asset": "758d967293e80b4ff61c92e83419513176a6a6564490c2fb5ffdc51f1cf72fa3",
+    "Assets/RacingBois/UI/Fonts/NotoSans-ExtraBold SDF.asset": "e17386894e80dffe8afffc5f94f60dc1008419e7847c48f01a5ae225a847843a",
+    "Assets/RacingBois/Scenes/Race.unity": "2b62e87c123d398bd8c6d99e2a3723e14a4232fb4d346c10064a1d52a3094bc5"
+  },
+  "audioFiles": {
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_after-the-flag.ogg": "a2c4d9de4e73850c9d3b916228076fad76fd002719f947ae33e8efeca5971c14",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_after-the-flag.ogg.meta": "597e1072671c7310736e6dffa4eff66104a4896da5010e5d00104275e6b56d65",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_amber-apex.ogg": "e5e905369cb9b56c3e34f5705b0641c69ccc8a87b4828de12415fd32f6599403",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_amber-apex.ogg.meta": "5570c29672885847d05fe90f95ad7487f4f6bacc1688f02dbac07990f622b35c",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blue-hour-service.ogg": "c1af10dc78191ee611948fd7ebd51c4637499d6f7e8b0eb3a0f6312fc29ce56e",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blue-hour-service.ogg.meta": "181b1c74ea7623fe8cb629a9ffcd277c2ee3d1e73dbdce60882048193823bf6c",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blueprint-lull.ogg": "3ee7cabfc3f4e7dc0f04168bb94ad63440c63ae529bd09711fc297709e3172b5",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blueprint-lull.ogg.meta": "c31bdc1f122177bbf9702b0c7db8ebc42a9060f88a3ea4152b1ed76a93843613",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_brake-light-waltz.ogg": "284fb17973d9a60cca04bfbf34d6c0d4db28576f5c4d9fc60d6dc8c30ea6986d",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_brake-light-waltz.ogg.meta": "a6c345636a47268c225a9968626059d4fe2878e319e5ec1b3c84550c7d6c5d47",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_clutch-and-kindness.ogg": "4d91b96e3ca151b0732dba7e905961897a5f2e51786c0f2e23d71a59a8f3753c",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_clutch-and-kindness.ogg.meta": "8c6a37f49a57118a8014cf29ed07150b1af823867ede7280beedd887aa54589c",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_concrete-comet.ogg": "dda546b44fa1ba46236c6dcfea5c5af1f9dba5fa4601497aab18e6f585a4df5a",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_concrete-comet.ogg.meta": "5f8ed303a68d1bcd13c353efcde604c8ab45f422388bd1bb4dd386a7da3f87cb",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_copper-weather.ogg": "955f60755ea4121ce36e2b36952691911b8aec76875b3b1da8bc39e5818926c8",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_copper-weather.ogg.meta": "8b6b0468580af1106b2f0318fa1148398f52d6d5313f89b4ce9a6d8fd8bbe61e",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_dust-signal.ogg": "45de7c9ea3876f4f2bd7fff9bfc0ebfa9d65fb1c3f87371d6a49bc6b17b79e6f",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_dust-signal.ogg.meta": "15bcbceff08d5ac580c76846f50c7ef81819300fe5a70dd39b6a45c7d6f1f3fc",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_found-the-line.ogg": "7e1ac50274072de41074612bd97f91535722e7b58c2fd11d58232d1fde474bf9",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_found-the-line.ogg.meta": "5b2dda6d7dc2d18904680a2c3e528c033a1ec1042f49e6bfbeaa55f67fc3ccf6",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_freight-of-light.ogg": "42fc4ca272d9a1ee2dcff6365216ba8174b930fdcb4b8eb1c0ed0e6669324c23",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_freight-of-light.ogg.meta": "eddac5986bfd43a311f9346fdf3e8d90848af8001933f9bbdcbf830c4f7b833d",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_last-light-repair.ogg": "5320a36922da10d9f438b1247009d5b5e3f69d66a9c7d34bc5040ed6c20580b6",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_last-light-repair.ogg.meta": "21fadb1796dd3e3ba8b010fb633031f3a2fc85887653b2521baf6bf72e8b30a8",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_meridian-lobby.ogg": "481fa82610bda34fbb3ea4f3c8d2bde66c238af1106dad631349e7393d6e2678",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_meridian-lobby.ogg.meta": "21ded45398a80286c7adec4a85a2912c6813de1cb99d63105ad0c43887c28460",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_neon-receipt.ogg": "12cae9f4a16a721a724bac95c142370950d1d1d3783c8c0047216a0cee8d3608",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_neon-receipt.ogg.meta": "9ab5c311c85e9dfb8b1988ab713d4912c0db262d32aeff1a4c2758ee41c1a7dd",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_nightshift-meters.ogg": "d295fb7532644f97ab3b1586d20e99109e46bbf0232dc40379f4bd7d1df4f8aa",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_nightshift-meters.ogg.meta": "64a2c324a86afcba62e30f5c1800dadc88de4e85abdac37bc3b2b6c499ca33ba",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_orchard-afterburn.ogg": "6292d7784c53d6fc31c946a1c63833b2e5113ca576026af77ec5777bb52c1578",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_orchard-afterburn.ogg.meta": "6994df4b4d35f727e343be734ab44be12848e11e0d6a16ae7a5e3ca35bb8b31f",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_paddock-sunrise.ogg": "66085c205e249daab7afa3d38a015a527b23ca7442e8f86a38897e4800109aac",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_paddock-sunrise.ogg.meta": "95c92512e78a7efa28e6fcbb059fa1e1c817d8770af0754ce265791fa3b4ca0b",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_quiet-pitlane.ogg": "e350345e8ec40d25e8a11654bd73058b56954f295e1c8ec690eb00c4f83d446c",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_quiet-pitlane.ogg.meta": "126af1c881b212589ff145a29c462ee08723c69179aad372238bdd8965ed2807",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_ridge-line-promise.ogg": "713a3dbc33a15ba68900b86522b9ff6442ab3e58ee567364082e5ec63d26d67e",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_ridge-line-promise.ogg.meta": "faec5bd35b43fdbfac49f30cb1d26f4543a702cbcb4847c5f15b5a9f1d5db849",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_rival-frequency.ogg": "690d664dd11642028be1bd29b5c732a14aff0c7a0053490d09f364433da15a16",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_rival-frequency.ogg.meta": "1a077f7656947ea77fa0a96c58f11f26deae1955029a31daba9bc7c9b377e787",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_safe-passage.ogg": "32b0ee589cc58519683c2f170e32bed0e34b443f80ba82f0739abd9b7aa91042",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_safe-passage.ogg.meta": "33da3f02f951dc65cf9faf3f0f9ed6b9fcb2de7376572d8289c5347c2153f854",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_switchback-radio.ogg": "fb7c3e5a805796b451f0a3675654fffa8730ce99d6601c89f96a617c56caad83",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_switchback-radio.ogg.meta": "d77dab16cda66efd1ceac014c86cde8e2d0237de3fcfa88a9af53f74b4c3174f",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_the-short-way.ogg": "5c7b44a71261cac684b82d5806da85e0ff8278ec6526f981a2f166d5c9c6a603",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_the-short-way.ogg.meta": "f3be0af0dd7637a61e51508526f8c7b89d5cedcd5f79cf6482ebaab99bdbe723",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_two-lane-covenant.ogg": "008e78c9c89348b1e223496eec56090c63b855ec00163067863b12e74a205266",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_two-lane-covenant.ogg.meta": "bec2cb1b49426334d9b5ba7db299b022e4ea2f12865f6b10a50e9fdf4833964f",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_warm-engine-home.ogg": "b00b55a7639c9e3ef8e15a6a630ea21f77bece48ccc6b717435ec42060882d2c",
+    "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_warm-engine-home.ogg.meta": "248158d941247ae2c584f855dadc65ae9e9ab9a0418defcbf6450b101e8d935d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_apex-four-engine.ogg": "cf5f7c2f4a4b4ca4e2cdd8694dfc70fb155f4d946587ed4fd7585bdee90e3b27",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_apex-four-engine.ogg.meta": "46e2c273eaaa92d17b2a8b3978205596807e60bfce71a34a97772117c89fac3f",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-alert.ogg": "e52f8bf9578400ae2e913dc38232fd831d1a41e7d37e5a79aee146eaed230362",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-alert.ogg.meta": "8761a4a7faff8eb934da5402f76351b63404f4fb849be572b2e3f102e6d27cc6",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-cheer.ogg": "d892366ed392039310bdd60c5c205b3530de29f0e9673080e1811ae0538aeae8",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-cheer.ogg.meta": "61053cd777581b636fb8faa1654ba139fa38be075fa3af86ea7d47fa741f75e7",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-concern.ogg": "2fc1f6b6d0a88a4953ecd3d6a74ad10d0c9888f0cc9ea04835b8b75015f2fc7d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-concern.ogg.meta": "009b5c5acc16ea7878700e7abe9708b44ff7e08456c734682039f2d717afd268",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-effort-hard.ogg": "01409f1e8794008da59af9623f8866f6746280363c82b313e028ecd9309bd496",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-effort-hard.ogg.meta": "7cdbf5683f7b8eb07dcd73b30cb0f33c15ed27d9700987e4807266ed7c347fc0",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-refuse.ogg": "597fae3592fa5d13a23b4805a57f1a60a6741aada9a29a6e73ac030207439cc5",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-refuse.ogg.meta": "76a6494310fbeeb197302fa2b28904ea85de67202b0b54e660d54a37b4db263d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-victory.ogg": "4531fe21674fb059f0072ec63b652bf4c83b0d2d52437975b4a7258a9728c58d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-victory.ogg.meta": "c00a77b5be8198fd808569ee112ea6e663ff04716c266171b0437b5a3cb0564c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boost-pressure.ogg": "b251e3beee807aeecb83329d273d96fb0c58538496453b70087531ca8d4743a4",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boost-pressure.ogg.meta": "9def77ea4a7bc9074e65dda5504ef5337a532cefdaa1f70f108c31070b40a44b",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-asphalt-step.ogg": "9a1a96dbfe8901b4c60a6b267cfbf25be09f22bf9042219d2d1cf743cb2598aa",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-asphalt-step.ogg.meta": "0e066574d901c95a3edca213685519c433beddaf4fac8ed874ef27f879bd3ea6",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-side-contact.ogg": "36f44ab5efb107b8170e23940f1a1ad838b7e036e1c24f706d294ef3f4f166e3",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-side-contact.ogg.meta": "f8d0a710b164af482f79767803ecb37ac9c0c22a8800b672399edfe18b2e4ee0",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-air-sweep.ogg": "0028125ac727cf77724c13278aa8f1a298ce954fdadf64ce74d7d117df2df4c2",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-air-sweep.ogg.meta": "de540604e6398e2b80e1bb9647933b467074f57b038eb7d2085185851017cc79",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-link-contact.ogg": "fea852c2c50e9711392fda545ed6cf8725421750f85d2ac6824e921974bbe3cb",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-link-contact.ogg.meta": "661f01ba2430bd8a2ddd4f52de6e5b125711390dd3e532833f362ffc6e2d81b3",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-barrier-heavy.ogg": "d308cd133e2be46350ae547c363b7a27e6ef2412859ecfcb0a469d9d1039c0ec",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-barrier-heavy.ogg.meta": "7013a8d1ea1e981ca5e1cdc4febd93694607b02e5cd1f6aa821d3bd8ca4e3e2c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-shoulder-light.ogg": "feb7a4abb4698ae445a5ce4002cf443b2e4edd30ba94ae444218f301e6bf732a",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-shoulder-light.ogg.meta": "b948ce4cdf43da5d0312dfd394196e6cad32be6ac715188f4c5cf06667feb0d1",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-traffic-medium.ogg": "734ef955424bf3093266c39857ccdad1d3c4d33556cda9f7e28b2eac902ee046",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-traffic-medium.ogg.meta": "a989c8b5942a9e68c3dc8cf2df09b47ff2b0502030f7f0d0e2c8ec7e65f9d4fe",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-disbelief.ogg": "5361abfbb23d87e97147238aab1fe3d1a97e978fb2e2f21dc26f74ca2d5a68f4",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-disbelief.ogg.meta": "47e43b07497b827e054ebd8b2242357e4c32d2d8bed7749e8cc0a078bf9efab7",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-effort-high.ogg": "fdf123cd94458043acbad6164f465f37376fa1126ca1a1ee0f5cd3cb650b31c6",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-effort-high.ogg.meta": "a50474e9392a0c398391cab804180ee940d2801afe2ee5e585feb234407ceb6c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-refusal.ogg": "1c004908a514a66ebb5d7886233032d64a5b2687ea795ad73585e4906938a49c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-refusal.ogg.meta": "f520b41f0dabecb6b6f3c9705ad516b4cf70951a52d70139fc9dbd9127327d83",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-rev.ogg": "efc764d66b5961a3d8b77648e4b28c195f44e01644b66d953dcbe9ae671ed768",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-rev.ogg.meta": "8967c57dbfa21f718aa4322799931b74990e931aa673c24600dcc9a8c9e051c5",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-shock.ogg": "ba55e0d2716da473d4d03c14ef16025ee0b4c34e457447a20fb953fcecdfe083",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-shock.ogg.meta": "f4533c3d11243f763836d0cc3d47d6d39fc461d0fdc4a357fa01a5d8dd0dce75",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-step-aside.ogg": "a5f4271a474c6da77323f24288dfdda6347104671ea75601927919d682a04f45",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-step-aside.ogg.meta": "ef0766178b09eec42671d901352e95d633d22cc357f227ec1bea06e5a30b7773",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_engine-touring.ogg": "33092853d76622a82e2c7bea64fe197d88ca3c7b922bf2c33d8a811af6331358",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_engine-touring.ogg.meta": "9c430a53abceceb3a64a7fd107d257b7f34511500e8fc9e8fd5b7b1abd498afe",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-air-sweep.ogg": "e4199eba17d9c3c4843f50668ce798f2b838d49ac557df604d47e7f2c548ba65",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-air-sweep.ogg.meta": "137dafdaaab4aed4fce3b4bc4d5326ce571087ddf35ecfcf9ce5d7c373768ce1",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-heavy.ogg": "ada1fcb55220c540223aee4effcd2a3de50ccfb6ac737051ebf22ecff2edd022",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-heavy.ogg.meta": "596afdb45ef61584ad2f175396ca30c9b20b1bca258a169fb135a565705b7aa6",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-light.ogg": "5699271c8d4a4c442ccfd01136dc147d7c9309b0167ea4c8f1784c7f0037d1b3",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-light.ogg.meta": "bc36621a49ede7d9c73f0ce33ba645b14fa83ad60bfa2e5f4ae8520566e400bc",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-alarm.ogg": "076f509eb1aa95946ca8a7925aab57023945fae4b7148e38ed0b603acbd794b4",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-alarm.ogg.meta": "ebdc547b2eaed52a023a6bd30c39b4da34322ef15abd5dbc9cd2ed6edd13a1d7",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-effort-soft.ogg": "61529794978c05610c91c6c8c9085a27cb5ab876ecb4dcf7e30c36e2f7372c53",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-effort-soft.ogg.meta": "67ead61021700b4f16dd826a2369d5e509f70457d008c8dc1f40bfc4dcf851f5",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-lookout.ogg": "001cdf37e84ccd64b4dc6bb7794e3a31bc8e1be3158dbcad17237bf533ec540d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-lookout.ogg.meta": "a9956e24c2c9055eafa2fe9630735c3dd20a8d5ca19a43c95a4069959cae5625",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-panic.ogg": "0775bd475dd82eb2a31da57ddff747cd952e4513a75f8d67a3cbb4f5405b51fe",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-panic.ogg.meta": "ab7d1d853aad8336fba2989ac625d151aaa3fbb16f8b073639c559d83f03867a",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-retort.ogg": "3bcf6adaa9d29fc2243a238e6f9f59108f5ca8ebb2668dd3aeb772e200d7b78b",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-retort.ogg.meta": "4bbd02d52509cfa610ffb26280c1d0adc250a4ef9729fd27705a5551d604c227",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-surprise.ogg": "1485fa7a9715ec95b255e6adfc9aece55d33ac79f8cefdaee481400b5a08731c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-surprise.ogg.meta": "eeec76f2342d349b79c4d8d1dfcbaca1e153195472b628a5f697e2aa062f131b",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-confusion.ogg": "2851d9036ac923c374bc80a99370ab985443fd66d12ed8c1799ea53d909e5447",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-confusion.ogg.meta": "ea3288a8bacfd491508a93be0106b544270f2b07b81576704869f89247a2500d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-effort-short.ogg": "ce94a2271fc5518d2bfda5a73bd220e6abf5346a1668b18274c5dad3acf8eeeb",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-effort-short.ogg.meta": "cd5446a45d013b51b62f61bfc86092f2d2289767e2ed3d4b1460ae50fe1fac68",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-protest.ogg": "4c336d3de3ef9dd5b9d10723fd6019ac565f5a1dcbb1929e4d07e6461a98567e",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-protest.ogg.meta": "6ca9d6f9a76fa0bd407c5e982ea0e31c48fe183223e0c234a8007c807dfead66",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-surprise.ogg": "cea8a7b0ce22f082061b949dbbfda34be3b5f1be15b852f3944955bbdf2ae1df",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-surprise.ogg.meta": "c7382165f224d5ef6024bdfa8f35c24a44f6a9684cafc5ec0f0f67562f736813",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-wait.ogg": "ca96ce93520938a1f2f27f8d70113ad3164a32da847063bb92ead1ec8b480a9b",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-wait.ogg.meta": "7655b38b214b9113f8552817c901fd90f0864d30a9a2e814ee025f9dfc69ed30",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_leather-road-slide.ogg": "7034282ac0b0f3ca6eeaf6b120df14006d86cfb8a2282c783851bb8fb6feb85d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_leather-road-slide.ogg.meta": "1cf191d65553b12b06c3046924ca25a04d1dd5e20437bfc38c07c1a1e0a71dce",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-attention.ogg": "dc00975ffd5219c4b0023c3faeceb19666181569cd194536e8b827e886d8b315",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-attention.ogg.meta": "f3bf9d38a3daecc5d9ad60c97f8176188ebcfb76fd2dbbd0a63ae0d56f5b37e7",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-effort-deep.ogg": "a97782c1b7efd11076ef9cf8cc756d0006cb4db60a8dd2070e0210ce6ce1f045",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-effort-deep.ogg.meta": "eec533a42ec043f3da2995525da402a33e35cc984e4bff762876b9c09b946448",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-greeting.ogg": "c1cafec68f9a96ca959d4542b242eb7abaa00b2272c8b1a3faf5b3a74932d333",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-greeting.ogg.meta": "f3aa07fb808dab966b0d43d7b23d634cab140c182e08dbadb768311b728ee717",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-stop.ogg": "78cce9e6c7f6fd3c9d5d5a69d91ffac90525fbcc13c0bc009a7ca8ed7fca481d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-stop.ogg.meta": "244e55257be62e75bb0b5aa9c4e3f325f91293666042033711274605087f573e",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-tease.ogg": "713326dfa270fe6ce14c8210adae61e746338c46fde9825cc34552f478cf56b3",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-tease.ogg.meta": "9d171dcae99d543a9bf7f971599d64aaa387fe3bdaa9c91b501daa047f7c7290",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-warning.ogg": "3b686e932785fc80b29c0ca081d2c2a04af378357a9f9a548e1088dc8755a3d3",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-warning.ogg.meta": "64a2538c3e8e5ab89664950e3b94b3e4d01f696c8f117bdbb2545fe5f1622332",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_opponent-engine.ogg": "c31b5bb06d6fbc3e90070352aade5ac8b2ff9cc804e048488a710754b7036015",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_opponent-engine.ogg.meta": "919a8fd4746b7b522547ba52a8866e854e6fb30d07882144ef198963fa43e17a",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-long-call.ogg": "ed65e96f4dcf8b62e487277c1c52cdc0bac6205cc2a0628eb45295e5da6807ec",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-long-call.ogg.meta": "867921925f4b407f5bdf328843dceaee680a07625bd98e63e6dbd07ae2ea8c87",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-short-call.ogg": "65b1ab1e1f298b36691957a9ac2ab4f1ca2eb27c6b6497076384bb15b8452e0c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-short-call.ogg.meta": "86a5b10086b3acc54983063a299f00c6eee047c9ce6f0026a73600e28b0e1120",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-amused.ogg": "3ffb5661c057673c414ea2ae2d59fb3ab72fecee4f5705ea6d1b0e6802ef4be4",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-amused.ogg.meta": "3bc670bb956816f0ca14689ed3dd9c35d57da62b03a064764b202c7b2c2c8d89",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-caution.ogg": "740e390237d366dd83b8f1f74d3b27907dd20a2cf58d07ed1d3bfa08016190d8",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-caution.ogg.meta": "9964401149d02786eb46b4f167247bea4a0957a8b91d6db3852d0f47f4acc1f8",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-effort-burst.ogg": "ef83ef05a51692beef88ab129a5e16911dcde19636661569bb920388b6e028dc",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-effort-burst.ogg.meta": "a3e0a0211edad102062a4b9b7b5613892b9a72beddebdbc9436b25a3fed14600",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-question.ogg": "cf64766343b118615c70ae76a2af8cd35b66d31f643ef6ff0e48c601f94457c4",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-question.ogg.meta": "9681e8d6b42c8e82a93b77c23f88786221d44b1ca275cd54e30394a3a78e4131",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-startle.ogg": "9c4b54fe0fdfb70672f4c85ec9dc5b6ab7a2b8320865a922f44f99bfe59ce37e",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-startle.ogg.meta": "6753977249c129d766b9b907160d0c642c78e255d1b3018ee93b87582a76cc5b",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-warning.ogg": "931622140b8067d74bba2165fc4866ec433ac28959364f118095fddf68a1ae72",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-warning.ogg.meta": "9aa5484a7c8b0bf67fefe871bf5f504d368dc3d326f8fda992b9938c9d76f1eb",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-challenge.ogg": "816d29ac0bea7734174cf3e6ad2c9e99e3a66a3aa11dc35a5d41746a370fd5d5",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-challenge.ogg.meta": "9ddbcffe2e5741daf2b032deb47477e38f18e9a3049c33154a1ae0630a75c54a",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort.ogg": "37a6456ae951b5942abf7f2d14c0aa65372ac485407d25c59eebb08fd4fa3f22",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort.ogg.meta": "79c8b45abdab97f671ab21cec53e36651cb4c95016b541177a57a948988862e8",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort-long.ogg": "d16150981b31e4e4fbd07ef181c38e063871fe3621f835702354b8f137c39802",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort-long.ogg.meta": "adf8cd5972b37ba133d3c8ef8a355f66c9f08b2249086f1d73e49f11546521d5",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-hold.ogg": "08502037a211522a24f27e7667c8dc125bc049418565c6d94101f6afb01a246e",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-hold.ogg.meta": "447aa6e28bc58134a38cfefe33a537137b4ea50333a798a07114fa724c596717",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-question.ogg": "a6fd15f82fdc639e79eec38b1eee6191bb07b7b55756583d3b4dc6615a8ac6dd",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-question.ogg.meta": "35e34bd7d13077dd728ba064c1fb5454abccd4cca7648914f0af5aadeaa147bc",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-slow.ogg": "fe053b41d8608ae79e55a98bf645a20bc35ab7ff557413a0b7e748d9a665f1fc",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-slow.ogg.meta": "c4a7a61d83d3a1213b5d8b0ffdf03658cdcc798568c53f6c8370e884e4c8f768",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sport-twin-engine.ogg": "c9ce893e2c232f35241dcb35b0ebe62ba622757bf267814e83fb58b92b89f75b",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sport-twin-engine.ogg.meta": "08edce5cc66f39b22a56548cad723982bdab21d5a18325fb68778c9dfec2cd7d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_street-single-engine.ogg": "258fe66ab20e3d7c5f935b2710922eb9cfc8db54ba05af407f4653036bb65771",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_street-single-engine.ogg.meta": "c30fb9ffb0929f9648be0704f91aa8ee6ef05ab822d9c6a480b72ab8d2cfe78e",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_suspension-bottom.ogg": "581a85dd20b24aaa39b679a95f0adcfbaece1339f8701508f99f1e7bb216cded",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_suspension-bottom.ogg.meta": "2f90e8c2eb347bf5f6e0607517ec0a841726503ea09d654f3a671d93d306730c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-asphalt-drift.ogg": "f54f4c853402ce1d11d01b818f4033d04dcddca069adb774c10f977a8327741c",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-asphalt-drift.ogg.meta": "16a9099b38335fb104cafc3214bacbe1df65bdfe4c6d4cabb8350ef9fa28f7f9",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-gravel-drift.ogg": "5fb0fedd02f945410f2d0db2596b19706ba721bf8e9614b48f9d590444a3d5dd",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-gravel-drift.ogg.meta": "f7cf2b04682278ae2e2835400dbc989883bb6b8a2982c6ab3e69046acdc1af45",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_traffic-four-cylinder.ogg": "ce99873ced709dfa11239b06f7370054ab0645ba3659573d40465f761ecdae5f",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_traffic-four-cylinder.ogg.meta": "36cbc019f4d8cf383c81796d0cf144dd93a6b18e70271beb6404bd805e493e6d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tunnel-engine-resonance.ogg": "1b3762314cf994396879a6a4a0998f50f0ab466f55091793be1479334603b922",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tunnel-engine-resonance.ogg.meta": "c821e5a30feb6b9b38d0e164a2df32a8435e1f608ab225b323d4511f4adb1597",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-effort-low.ogg": "ee83017b51275d694846c95fbac12cb49a98d66496d0edc83ccbedb618b227c6",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-effort-low.ogg.meta": "70b2fc589d6eb7e660a234aaf02aa78565f4966178a6d70a6b14a5b5612a55e2",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-help.ogg": "701e8304d0cd6cbc8a1d9867f238e00f3e5bd077dd364ce3482da21f06990a2d",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-help.ogg.meta": "133bcbabd0aa8a20d9d1d1b481a592d166aab8c26f7b71fc59ba7112c3c3b1b6",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-ready.ogg": "4b78965ab1a6f0935415aa63b9ea226b549b72752d7ae2ed3367c4d1489d7a20",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-ready.ogg.meta": "90912a47849e7da6d230feacb1d52bfdd119153cf3ae028e234f6ec2767cb45a",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-startle.ogg": "6e725253e920c131ba13eed8dc94586c8ff1b0cb16c9d5c1f31909996a668f13",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-startle.ogg.meta": "b1cb7eb9aad9cba33d5bd860528e92bc851afbba2f9df2b644966e567b9f614b",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-step-back.ogg": "12ce255d29287fafc20168efae5c495754742427dad36a96a32be856632b7cbc",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-step-back.ogg.meta": "b46cfd07c1d2db41115705a361fdd0001e5c120fb5eebdf9e133fc83632e5071",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-tourist-alarm.ogg": "ca88924ae801c25fe3a5948a62ee197e8d0f2cf15eefa5318a8f474129baaaed",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-tourist-alarm.ogg.meta": "623d824f5fd29b34e9ac1fd98dc0463167bb0cfa8b1c09f3d15ee99144632f38",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_wood-grip-contact.ogg": "2496adb4e99b915e97fad1082ce189c39195a116a6114e8c49e64c7db3fac7f4",
+    "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_wood-grip-contact.ogg.meta": "ce17e92595dd449101632f5563b302564b6cc3fba03fa3cc2eba610834046805"
+  },
+  "outputSnapshot": "{\"Assets/RacingBois/Content/P08\":{\"exists\":false,\"files\":{}},\"Assets/RacingBois/Materials/P08/Routes\":{\"exists\":false,\"files\":{}}}",
+  "preflight": {
+    "schema": 1,
+    "passed": false,
+    "scope": "Read-only preparation prerequisites; no art acceptance, composition, bundle or player build inferred.",
+    "checks": [
+      {
+        "input": "production-bindings",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_Bike_00",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_Bike_01",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_Bike_02",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_Bike_03",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_Bike_04",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_Bike_05",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_Bike_06",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_06.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_07",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_07.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_08",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_08.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_09",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_09.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_10",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_10.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_11",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_11.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_12",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_12.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_13",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_13.prefab"
+      },
+      {
+        "input": "RB_P08_Bike_14",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Bike_14.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_00",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_00.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_01",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_01.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_02",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_02.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_03",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_03.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_04",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_04.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_05",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_05.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_06",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_06.prefab"
+      },
+      {
+        "input": "RB_P08_Rider_07",
+        "passed": false,
+        "error": "Content asset missing: Assets/RacingBois/Prefabs/P08/RB_P08_Rider_07.prefab"
+      },
+      {
+        "input": "RB_P06_RockA",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_RockB",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_Sage",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_DryGrass",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_Guardrail",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_Chevron",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CityWarehouse",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CityCornerShop",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CityStreetlamp",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CityBusShelter",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CityLoadingGantry",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CityWaterTank",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_RidgeFir",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_RidgeGranite",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_RidgeStoneWall",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_RidgeTimberHut",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_RidgeSnowPole",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_RidgeGalleryArch",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CoastPalm",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CoastSurfShack",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CoastBeacon",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CoastBridgePier",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CoastBoulder",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_CoastBroadleafShrub",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_OrchardAppleTree",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_OrchardBarn",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_OrchardSilo",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_OrchardFence",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_OrchardHayBale",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P08_OrchardProduceKiosk",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_UtilityPole",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_PoliceMotorcycle",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_PoliceRider",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_TrafficCoupe",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_P06_TrafficVan",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_Pedestrian",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "RB_Club",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P06/RB_P06_Asphalt.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P06/RB_P06_Gravel.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/RacePaint.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/RaceYellow.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P06/RB_P06_Roadside.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Universal Render Pipeline/Lit",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Skybox/Procedural",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Audio/P06/RB_P06_AudioBank.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_00.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_01.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_02.png",
+        "passed": false,
+        "error": "Portrait texture/importer missing."
+      },
+      {
+        "input": "audio-delivery",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_after-the-flag.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_amber-apex.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blue-hour-service.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_blueprint-lull.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_brake-light-waltz.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_clutch-and-kindness.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_concrete-comet.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_copper-weather.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_dust-signal.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_found-the-line.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_freight-of-light.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_last-light-repair.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_meridian-lobby.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_neon-receipt.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_nightshift-meters.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_orchard-afterburn.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_paddock-sunrise.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_quiet-pitlane.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_ridge-line-promise.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_rival-frequency.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_safe-passage.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_switchback-radio.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_the-short-way.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_two-lane-covenant.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Music/RB_P08_warm-engine-home.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_apex-four-engine.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-alert.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-cheer.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-concern.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-effort-hard.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-refuse.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_ash-victory.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boost-pressure.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-asphalt-step.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_boot-side-contact.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-air-sweep.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_chain-link-contact.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-barrier-heavy.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-shoulder-light.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_crash-traffic-medium.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-disbelief.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-effort-high.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-refusal.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-rev.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-shock.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_echo-step-aside.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_engine-touring.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-air-sweep.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-heavy.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_glove-contact-light.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-alarm.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-effort-soft.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-lookout.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-panic.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-retort.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_juno-surprise.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-confusion.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-effort-short.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-protest.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-surprise.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_kai-wait.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_leather-road-slide.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-attention.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-effort-deep.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-greeting.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-stop.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-tease.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_mako-warning.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_opponent-engine.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-long-call.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_patrol-short-call.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-amused.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-caution.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-effort-burst.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-question.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-startle.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_rook-warning.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-challenge.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-effort-long.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-hold.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-question.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sol-slow.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_sport-twin-engine.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_street-single-engine.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_suspension-bottom.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-asphalt-drift.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tire-gravel-drift.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_traffic-four-cylinder.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_tunnel-engine-resonance.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-effort-low.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-help.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-ready.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-startle.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-step-back.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_vale-tourist-alarm.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Art/P08/Audio/Sfx/RB_P08_wood-grip-contact.ogg",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/Route-0.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-0-Asphalt.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-0-Gravel.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-0-Landscape.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Water-0.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Sky-0.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/Route-1.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-1-Asphalt.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-1-Gravel.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-1-Landscape.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Water-1.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Sky-1.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/Route-2.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-2-Asphalt.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-2-Gravel.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-2-Landscape.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Water-2.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Sky-2.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/Route-3.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-3-Asphalt.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-3-Gravel.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-3-Landscape.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Water-3.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Sky-3.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/Route-4.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-4-Asphalt.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-4-Gravel.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Route-4-Landscape.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Water-4.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Materials/P08/Routes/Sky-4.mat",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/Actors.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/Library.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "Assets/RacingBois/Content/P08/AudioBank.asset",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "input": "clean-input-dependencies",
+        "passed": true,
+        "error": ""
+      }
+    ]
+  },
+  "compiledProof": {
+    "path": "docs/p08/content/compiled-preparation-20260928-01.json",
+    "sha256": "d5e8040b488b876e77bf5cfb24ae5b551e82c1626f6fa5c9338d1f6db08d0aeb"
+  },
+  "fixture": "Assets/RacingBois/Diagnostics/P08DesktopBuild/Preparation-20260928-01",
+  "scope": "Actual Unity missing-prerequisite entry points, audio mutation controls and scoped-save fixture. Full successful production composition remains unverified because required assets are absent.",
+  "fullCompositionVerified": false,
+  "p08Accepted": false,
+  "releaseAccepted": false
+}

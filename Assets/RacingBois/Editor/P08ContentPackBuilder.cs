@@ -12,7 +12,7 @@ using UnityEngine;
 namespace RacingBois.Authoring.Editor
 {
     /// <summary>Explicit pack roots keep actors shared, one route resident and music outside the Unity heap.</summary>
-    public static class P08ContentPackBuilder
+    public static partial class P08ContentPackBuilder
     {
         public const string Root = "Assets/RacingBois/Content/P08/";
         private const string Materials = "Assets/RacingBois/Materials/P08/Routes/";
@@ -33,10 +33,13 @@ namespace RacingBois.Authoring.Editor
         [Serializable] private sealed class BuildReceipt { public int schema=1; public bool passed; public string unityVersion, target, contentHash, output; public P08BundleEntry[] entries; public DependencyReceipt[] dependencies; public GoldenProductionGate.FileRef promotionManifest; }
         [Serializable] private sealed class DependencyReceipt { public string id; public string[] dependsOn; }
 
-        public static void Setup() { PrepareRoutes(); PrepareActors(); Validate(); }
+        public static void Setup() => RunPreparation(() => { ComposeRoutes(); ComposeActors(); Validate(); });
         public static void Prepare() => Setup();
 
-        public static void PrepareRoutes()
+        public static void PrepareRoutes() => RunPreparation(ComposeRoutes);
+        public static void PrepareActors() => RunPreparation(ComposeActors);
+
+        private static void ComposeRoutes()
         {
             var bindings = GoldenProductionBindings.Load(); bindings.ValidateConsumed(PackPrefabNames());
             Directory.CreateDirectory(Root); Directory.CreateDirectory(Materials);
@@ -56,10 +59,10 @@ namespace RacingBois.Authoring.Editor
                 route.SunEuler=i==1?new Vector3(12,-55,0):i==4?new Vector3(28,-42,0):new Vector3(38,-28,0);
                 route.RouteMusicId=RouteMusic[i]; route.Validate(i); EditorUtility.SetDirty(route);
             }
-            AssetDatabase.SaveAssets(); Debug.Log("RB_P08_ROUTE_CONTENT_READY");
+            SavePrepared(RouteOutputs()); Debug.Log("RB_P08_ROUTE_CONTENT_READY");
         }
 
-        public static void PrepareActors()
+        private static void ComposeActors()
         {
             var bindings = GoldenProductionBindings.Load(); bindings.ValidateConsumed(PackPrefabNames());
             Directory.CreateDirectory(Root); var delivery=ReadAudio();
@@ -87,7 +90,7 @@ namespace RacingBois.Authoring.Editor
             foreach(var role in P08AudioRoles.All) if(!ids.Contains(role.Id))throw new InvalidOperationException("Missing functional audio role "+role.Id);
             if(sfx.Length!=72)throw new InvalidOperationException("Expected 72 authored sound cues.");
             actor.Validate(); EditorUtility.SetDirty(actor); EditorUtility.SetDirty(library); EditorUtility.SetDirty(bank);
-            AssetDatabase.SaveAssets(); Debug.Log("RB_P08_ACTOR_CONTENT_READY");
+            SavePrepared(ActorOutputs()); Debug.Log("RB_P08_ACTOR_CONTENT_READY");
         }
 
         public static void Validate()
@@ -159,7 +162,7 @@ namespace RacingBois.Authoring.Editor
         private static AudioEntry[] ReadAudio()
         {
             var data=JsonUtility.FromJson<AudioDelivery>(File.ReadAllText("docs/p08/media/audio-delivery.json"));
-            if(data?.clips==null||data.clips.Length!=97||data.clips.Any(x=>!x.signalAuditPassed||!File.Exists(x.oggPath)))throw new InvalidOperationException("Audited audio delivery is incomplete.");
+            if(data?.clips==null||data.clips.Length!=97||data.clips.Any(x=>x==null||!x.signalAuditPassed||!File.Exists(x.oggPath)))throw new InvalidOperationException("Audited audio delivery is incomplete.");
             return data.clips;
         }
         private static void ImportSound(AudioEntry entry)

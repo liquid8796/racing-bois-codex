@@ -58,13 +58,14 @@ assigned to a rock slot. Its eventual production integration needs an explicit
 reviewed modular/route mapping and native gameplay-view validation, in addition
 to its own art acceptance.
 
-The preparation path also needs a preservation pass before use:
-`PrepareRoutes()` and `PrepareActors()` still perform global `SaveAssets`, and
-portrait/audio import helpers change import settings. A future preparation
-patch must validate the complete prerequisite inventory before any `Upsert`,
-use scoped saves/importer changes and preserve unrelated drafts/fonts. Calling
-`Setup()` now would create partial route assets before eventually failing on
-missing actors; it is not a safe repair for this missing-content condition.
+The preparation path now checks the entire shared pack before any `Upsert` or
+portrait/audio importer change. `Setup()`, `PrepareRoutes()` and `PrepareActors()`
+all reject the current 41 missing prefab/portrait inputs without creating route
+assets. Global `SaveAssets` has been replaced by saves of the exact generated
+route/material or actor/library/bank paths. Dirty input dependencies/importers
+and existing output drafts are rejected, while unrelated drafts are preserved.
+[Native verification](PREPARATION_SAFETY_20260928.md) covers 25 checks; successful
+full production composition is still unverified because those inputs are absent.
 
 The next content work is therefore the missing/reviewed roster and portraits,
 Ridge provenance reconciliation and reference-matched route/actor acceptance,

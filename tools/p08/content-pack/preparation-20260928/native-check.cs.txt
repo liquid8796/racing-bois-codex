@@ -1,0 +1,70 @@
+var flags = System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static;
+var builder = typeof(RacingBois.Authoring.Editor.P08ContentPackBuilder);
+var checks = new System.Collections.Generic.List<object>();
+System.Action<string, bool> check = (name, passed) => { checks.Add(new { name, passed }); if (!passed) throw new System.InvalidOperationException(name); };
+System.Func<System.Action, string> rejected = action => { try { action(); return ""; } catch (System.Exception e) { while (e.InnerException != null) e = e.InnerException; return e.Message; } };
+System.Func<string, string> hash = path => { using (var sha = System.Security.Cryptography.SHA256.Create()) using (var stream = System.IO.File.OpenRead(path)) return System.BitConverter.ToString(sha.ComputeHash(stream)).Replace("-", "").ToLowerInvariant(); };
+string proof = "docs/p08/content/compiled-preparation-20260928-01.json";
+builder.Assembly.GetType("RacingBois.Authoring.Editor.P08DesktopCompiledSources").GetMethod("VerifyExecutingAssemblies", flags).Invoke(null, new object[] { proof });
+var protectedPaths = new [] { "ArtSource/Weapons/RB_Club.blend", "ArtSource/P08/Golden/Ash/V7R2/RB_Golden_Ash_V7R2.blend", "Assets/RacingBois/UI/Fonts/NotoSans-Regular SDF.asset", "Assets/RacingBois/UI/Fonts/NotoSans-ExtraBold SDF.asset", "Assets/RacingBois/Scenes/Race.unity" };
+var before = protectedPaths.ToDictionary(path => path, hash);
+var audioJson = Newtonsoft.Json.Linq.JObject.Parse(System.IO.File.ReadAllText("docs/p08/media/audio-delivery.json"));
+var audioPaths = ((Newtonsoft.Json.Linq.JArray)audioJson["clips"]).Select(x => (string)x["oggPath"]).SelectMany(path => new[] { path, path + ".meta" }).Where(System.IO.File.Exists).ToDictionary(path => path, hash);
+var drafts = new RacingBois.Authoring.Editor.NativeBuildDirtyAssetGuard();
+string scenes = Newtonsoft.Json.JsonConvert.SerializeObject(UnityEditor.SceneManagement.EditorSceneManager.GetSceneManagerSetup());
+var roots = new[] { "Assets/RacingBois/Content/P08", "Assets/RacingBois/Materials/P08/Routes" };
+System.Func<string> outputs = () => Newtonsoft.Json.JsonConvert.SerializeObject(roots.ToDictionary(path => path, path => new { exists = System.IO.Directory.Exists(path), files = System.IO.Directory.Exists(path) ? System.IO.Directory.GetFiles(path, "*", System.IO.SearchOption.AllDirectories).OrderBy(x => x).ToDictionary(file => file, hash) : new System.Collections.Generic.Dictionary<string,string>() }));
+string outputsBefore = outputs();
+var preflight = Newtonsoft.Json.Linq.JObject.Parse(RacingBois.Authoring.Editor.P08ContentPackBuilder.InspectPreparation());
+check("missing_current_roster_reported_before_mutation", !(bool)preflight["passed"] && ((Newtonsoft.Json.Linq.JArray)preflight["checks"]).Count(x => !(bool)x["passed"]) == 41);
+foreach (string entry in new[] { "Setup", "PrepareRoutes", "PrepareActors" })
+{
+    string error = rejected(() => builder.GetMethod(entry).Invoke(null, null));
+    check(entry + "_rejects_complete_inventory_before_writing", error.StartsWith("content_preparation_prerequisites:", System.StringComparison.Ordinal) && error.Contains("RB_P08_Bike_06") && error.Contains("RB_P08_Rider_00") && error.Contains("Portrait_07_02"));
+    check(entry + "_writes_no_output", outputs() == outputsBefore);
+}
+check("protected_files_unchanged", before.All(row => hash(row.Key) == row.Value));
+check("audio_source_and_importer_bytes_unchanged", audioPaths.All(row => hash(row.Key) == row.Value));
+check("loaded_scene_setup_unchanged", scenes == Newtonsoft.Json.JsonConvert.SerializeObject(UnityEditor.SceneManagement.EditorSceneManager.GetSceneManagerSetup()));
+drafts.VerifyUnchanged(); check("preexisting_dirty_assets_unchanged", true);
+
+var deliveryType = builder.GetNestedType("AudioDelivery", System.Reflection.BindingFlags.NonPublic);
+var validateAudio = builder.GetMethod("ValidateAudioInventory", flags);
+System.Action<Newtonsoft.Json.Linq.JObject> validate = json => { var delivery = UnityEngine.JsonUtility.FromJson(json.ToString(), deliveryType); validateAudio.Invoke(null, new[] { deliveryType.GetField("clips").GetValue(delivery) }); };
+validate(audioJson); check("actual_97_audio_inventory_valid", true);
+foreach (string mutation in new[] { "duplicate-id", "duplicate-path", "missing-role", "missing-route-music", "unknown-category", "extra-entry" })
+{
+    var copy = (Newtonsoft.Json.Linq.JObject)audioJson.DeepClone();
+    var clips = (Newtonsoft.Json.Linq.JArray)copy["clips"];
+    if (mutation == "duplicate-id") clips[1]["id"] = clips[0]["id"].DeepClone();
+    if (mutation == "duplicate-path") clips[1]["oggPath"] = clips[0]["oggPath"].DeepClone();
+    if (mutation == "missing-role") clips.First(x => (string)x["id"] == "street-single-engine")["id"] = "missing-functional-engine";
+    if (mutation == "missing-route-music") clips.First(x => (string)x["id"] == "amber-apex")["id"] = "missing-route-score";
+    if (mutation == "unknown-category") clips[0]["category"] = "unrecognized";
+    if (mutation == "extra-entry") clips.Add(clips[0].DeepClone());
+    check("audio_rejects_" + mutation, rejected(() => validate(copy)).Length != 0);
+}
+
+string owned = "Assets/RacingBois/Diagnostics/P08DesktopBuild/Preparation-20260928-01";
+check("fresh_fixture_root", !System.IO.Directory.Exists(owned));
+System.IO.Directory.CreateDirectory(owned);
+var first = UnityEngine.ScriptableObject.CreateInstance<RacingBois.Client.Presentation.P08RouteContent>();
+var second = UnityEngine.ScriptableObject.CreateInstance<RacingBois.Client.Presentation.P08RouteContent>();
+UnityEditor.AssetDatabase.CreateAsset(first, owned + "/first.asset");
+UnityEditor.AssetDatabase.CreateAsset(second, owned + "/second.asset");
+string firstBefore = hash(owned + "/first.asset"), secondBefore = hash(owned + "/second.asset");
+first.RouteMusicId = "owned-first-edited"; second.RouteMusicId = "unrelated-draft-kept";
+UnityEditor.EditorUtility.SetDirty(first); UnityEditor.EditorUtility.SetDirty(second);
+check("dirty_destination_rejected", rejected(() => builder.GetMethod("CheckPreparedOutput", flags).Invoke(null, new object[] { owned + "/second.asset" })).Contains("unsaved authoring"));
+builder.GetMethod("SavePrepared", flags).Invoke(null, new object[] { new[] { owned + "/first.asset" } });
+check("scoped_save_changes_only_requested_destination", hash(owned + "/first.asset") != firstBefore && !UnityEditor.EditorUtility.IsDirty(first) && hash(owned + "/second.asset") == secondBefore && UnityEditor.EditorUtility.IsDirty(second) && second.RouteMusicId == "unrelated-draft-kept");
+UnityEditor.AssetDatabase.SaveAssetIfDirty(second);
+builder.GetMethod("CheckPreparedOutput", flags).Invoke(null, new object[] { owned + "/second.asset" });
+check("clean_existing_destination_allowed", true);
+check("owned_fixture_clean", !UnityEditor.EditorUtility.IsDirty(first) && !UnityEditor.EditorUtility.IsDirty(second));
+drafts.VerifyUnchanged(); check("original_drafts_preserved_after_scoped_save_fixture", true);
+check("protected_files_preserved_after_fixture", before.All(row => hash(row.Key) == row.Value));
+var receipt = new { schema = 1, passed = true, utc = System.DateTime.UtcNow.ToString("O"), checks, protectedFiles = before, audioFiles = audioPaths, outputSnapshot = outputsBefore, preflight, compiledProof = new { path = proof, sha256 = hash(proof) }, fixture = owned,
+    scope = "Actual Unity missing-prerequisite entry points, audio mutation controls and scoped-save fixture. Full successful production composition remains unverified because required assets are absent.", fullCompositionVerified = false, p08Accepted = false, releaseAccepted = false };
+System.IO.File.WriteAllText("docs/p08/content/preparation-native-20260928-01.json", Newtonsoft.Json.JsonConvert.SerializeObject(receipt, Newtonsoft.Json.Formatting.Indented));
+return new { passed = true, checks = checks.Count, missingInputs = 41, fullCompositionVerified = false };
