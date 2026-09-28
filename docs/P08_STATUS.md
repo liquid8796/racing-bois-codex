@@ -2,7 +2,15 @@
 
 **P08–P10 chưa hoàn thành.** Bản chính vẫn là Unity Windows 10/11 x64, online authority/dữ liệu trên OCI và LAN offline ở realm cục bộ riêng. Các bản art/UI Golden vẫn chưa khớp concept đã chốt; production masks hiện giữ **route/bike/character = 1/1/1**. Nội dung dưới đây cập nhật phần đầu hồ sơ sau khi tiếp tục `racing-bois-2` và `racing-bois-3`; các checkpoint lịch sử phía dưới được giữ nguyên theo phạm vi bằng chứng của chúng.
 
-## Checkpoint mới nhất: `9a0b14d` đã push lên master
+## Checkpoint mới nhất: `5545181` đã push lên master
+
+- `7336147`, `50494ec`, `56ace88`, `41dcab5`: đã hoàn tất phạm vi UI dùng font sao chép riêng ở sáu ngôn ngữ và hai kích thước. [Review cuối](p08/ui-owned-render/20260928-bounded-ui-review.md) có 1.976 kiểm tra native/108 ảnh fit, thêm 48 ảnh cuộn và 24 cặp đầu/cuối khác nhau; focus nằm trong viewport. Bộ 5.743 contract native cũng đạt với union hiện tại. Đây chưa phải nghiệm thu gameplay, thiết bị input thật hay fidelity concept.
+- `56ace88`: bộ dựng desktop bảo toàn scene/UI/font/settings và auditor schema3 đã biên dịch, qua 69 kiểm tra managed. [Hai lần gọi BuildTo thật](p08/desktop/PRESERVATION_20260928.md) dừng trước tạo output, giữ nguyên nguồn: lần đầu chặn atlas riêng còn dirty, lần sau chặn Actors.asset bị thiếu. Chưa có Windows player P08 mới.
+- [Kiểm kê nội dung hiện tại](p08/content/DESKTOP_PREREQUISITES_20260928.md): thiếu tám asset nội dung, chín prefab xe, tám rider và 24 portrait; sáu mục Ridge lệch hash khai báo. Toàn bộ 97 OGG khớp hash. Không tạo placeholder hoặc đổi mask để vượt điều kiện gói nội dung.
+- `1642e81`: lưu các nguồn/render Canyon V19 tới06, gồm lỗi04 được giữ và sửa thứ tự cạnh ở05. [Review](p08/golden/canyon/v19/ROOT_REVIEW_THROUGH_06.md) vẫn ghi chưa đạt concept. Các thử nghiệm Canyon tiếp theo và Apex R6 đang ở source review, chưa export Assets hay promotion.
+- `5545181`: [đối chiếu Ash read-only](p08/golden/ash/v7r2-local-audit/README.md) xác minh dữ liệu đã kiểm của 530 mesh, rig/weights/material/action khớp bản backup có hash cũ; khác biệt trạng thái editor còn được giới hạn rõ. File cục bộ6d689… và backup472b… đều giữ nguyên. Candidate tiếp theo dùng bản sao sở hữu riêng; không áp receipt cũ cho hash mới.
+
+Các checkpoint chi tiết dưới đây là lịch sử có source binding riêng.
 
 - `55aff3b`: atomic receipt đã kiểm native; player Apex R5 build 0 lỗi/cảnh báo, giữ nguyên settings/font/source, chạy DX11 và tạo 18 PNG có kiểm hash. [Review ảnh thật](p08/golden/apex/r5/native-20260928-01/REVIEW.md) vẫn ghi rõ các sai khác hình học/material, chưa nghiệm thu art.
 - `c9f78df`: NativeProbe/PosePreview đã tích hợp preservation và chạy Windows thật. [WSS/pose evidence](p10/diagnostic-preservation/README.md) có reconnect giữ identity/room, nguồn/player không đổi; 48 ảnh pose và 1.496 mẫu được xác minh. Lần Pose bị chặn ở DX11 vẫn được giữ, không đổi thành PASS.
@@ -33,7 +41,7 @@ Regression 261 nhóm/17 suite và socket soak tám giờ vẫn là bằng chứn
 
 ## Gate còn mở và thứ tự tiếp tục
 
-1. Hoàn tất review/commit/push các thay đổi preservation/build, native art review R5/Canyon và cập nhật receipt đúng revision. Bản tích hợp bảo vệ cho NativeProbe/Pose đang được review độc lập; không suy native PASS từ staged compile. Xử lý nguồn Ash V7R2 đã đổi mà không mất thay đổi chưa thuộc patch. Không dùng lại hướng dẫn `P08ArtBuilder.Setup` cũ cho Golden: pipeline cũ ép material/rig; Golden cần descriptor và binding được duyệt riêng.
+1. Tiếp tục art Golden sau các checkpoint code/preservation/UI đã publish. Nguồn Ash cục bộ đã được đối chiếu read-only và giữ nguyên; mọi sửa mới dùng candidate riêng. Không dùng lại hướng dẫn `P08ArtBuilder.Setup` cũ cho Golden: pipeline cũ ép material/rig; Golden cần descriptor và binding được duyệt riêng. Phần chuẩn bị content vẫn cần preflight toàn bộ đầu vào và scoped saves trước khi được dùng.
 2. Giữ nguyên concept/hash, giải quyết sai khác của bộ mẫu Apex/Ash/Canyon/menu/garage trước khi nhân rộng. Garage-v2 vẫn dùng Spark reference cũ hơn Golden Spark-v1; cần chốt sự nhất quán, không tự thay concept bằng render hiện tại. Spark V2 refined06 vẫn rejected; Canyon V16, MenuEnvironment V1 và Garage V7 đã có source/import hoặc bake theo receipt tương ứng nhưng chưa visual accepted.
 3. Hoàn thành 15 bike identities, 8 rider/24 portrait states, 5 route families/25 level variants, props/traffic/equipment và semantic mapping. Ledger hiện vẫn [192 partial / 299 pending / 0 accepted](p08/content/ContentParityLedger.md); không đếm SKU/LOD/file duplicates thành independent assets.
 4. Chạy scene/prefab/rig/clip/contact, audio/cinematic/localization, campaign/UI/input và Windows player QA thực; xây full installed content/player rồi audit và đóng gói candidate. Chỉ mở mask khi gate tương ứng đạt.
