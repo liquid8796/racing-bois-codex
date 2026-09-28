@@ -4,7 +4,11 @@
 
 This section supersedes current-state wording in the historical checkpoints below. **P08, P09 and P10 are not complete.** The user authorizes continuous implementation, validation, commit and normal push to master after each completed patch. No Jarvis MCP, paid asset-recovery services, concept substitution or weakened visual gate is permitted. Windows 10/11 remains primary, OCI retains online authority, and offline LAN remains a separate local realm. Production route/bike/character masks are still **1/1/1**.
 
-Latest published continuation checkpoints (through `7336147`):
+Latest published continuation checkpoints (through `41dcab5`):
+
+- `50494ec`, `56ace88` and `41dcab5` close the bounded copied-font UI language/focus/fit/scroll exercise. [Final review](p08/ui-owned-render/20260928-bounded-ui-review.md): 1,976 native checks with 108 fit captures, plus 48 explicit-scroll captures and 24 distinct top/bottom pairs. Actual compact classes match output sizes; original globals/fonts and source bindings remain preserved. Physical input, complete gameplay and concept fidelity remain unaccepted.
+- `56ace88` also installs the scoped desktop builder and schema-3 auditor. [Native prerequisite rejection](p08/desktop/PRESERVATION_20260928.md) preserves originals and creates no player output. The [full content audit](p08/content/DESKTOP_PREREQUISITES_20260928.md) identifies eight missing content assets, nine missing bike prefabs, eight missing riders, 24 missing portraits and six Ridge entries with source/hash mismatches. Audio 97/97 matches its recorded hashes. A full Windows P08 player has not been built from this revision.
+- `1642e81` publishes the frozen Canyon V19 comparisons through06, including the retained04 geometry failure and05 saved-source correction. [Root review](p08/golden/canyon/v19/ROOT_REVIEW_THROUGH_06.md) keeps visual acceptance false; no Assets export or promotion occurred. Later Canyon composition and Apex fairing studies continue in separate source versions. Ash's unowned V7R2 change is being accounted for against its exact preserved backup before any new authoring.
 
 - `c9f78df` completed the scoped NativeProbe/Pose build preservation work. The real Windows WSS specimen completed two connections, two races and reconnect/leave/logout checks; the separate pose build produced 48 validated PNGs. These are bounded native diagnostics, not full-game or performance acceptance. See [diagnostic preservation](p10/diagnostic-preservation/README.md).
 - `835b27a` added transferred LAN ZIP verification, including the actual self-contained archive and 20 rejection/validation controls. Physical two-PC WAN-disconnected play remains unverified.
@@ -12,8 +16,9 @@ Latest published continuation checkpoints (through `7336147`):
 - `1e0d0e6` and `11facdd` publish Canyon V17 UV/bounds repairs and all bound review-renderer assets. Its actual native render remains [visually unaccepted](p08/golden/canyon/v17/native-20260928-01/REVIEW.md). `6337427` publishes the frozen Far33-only V18 experiment and [root render review](p08/golden/canyon/v18/ROOT_REVIEW.md); it has no Assets export or promotion. V19 is a separate ongoing composition study.
 - `6513679` fixes streaming verification and finite music lifecycle behavior, with [28 real Unity lifecycle checks](p08/media/NATIVE_MUSIC_LIFECYCLE.md), native transfer evidence and preserved failed attempts. This is not audible standalone mix acceptance. `6205427` verifies the fresh-FBX [single-reimport optimization](p08/golden/import-once/README.md) with actual native positive, negative, fallback and repeat controls.
 
-The full P08 desktop builder is now being revised to use owned scene/UI/font
-copies and scoped settings restoration. No new full-game release acceptance is
+The full P08 desktop builder now has the owned scene/UI/font and settings
+preservation implementation, but its successful native build path is blocked by
+the missing content prerequisites above. No new full-game release acceptance is
 claimed. The user deferred the foreground 600-second measurement and asked to
 continue other work; do not rerun it unattended or ask again while this direction
 stands. Original Club/Ash sources and the two pre-existing SDF font changes remain
