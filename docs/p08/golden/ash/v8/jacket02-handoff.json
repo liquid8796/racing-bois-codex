@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "scope": "Frozen bounded clothing study, retained before further tailoring. Numeric preservation passed; visual/reference fidelity not achieved.",
+  "candidate": {
+    "path": "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket02.blend",
+    "bytes": 87361747,
+    "sha256": "d7b3286885e51b3b825b41a9e6c1fd26610151c6369381ec840ccf39a06f595d"
+  },
+  "rejectedGlossyStudy": {
+    "path": "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket01.blend",
+    "bytes": 87359849,
+    "sha256": "0c398c786931f43eedd5f8dcaf6a7f3b5a783e9e0c40f3597c203a91643c2552"
+  },
+  "preservedRenderState": {
+    "path": "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket02_Rendered.blend",
+    "bytes": 87348050,
+    "sha256": "b56302212fdfb1be68de440cc6cd9b73536aa039e06c2092db14d6c7375bb167"
+  },
+  "protected": [
+    {
+      "path": "ArtSource/P08/Golden/Ash/V7R2/RB_Golden_Ash_V7R2.blend",
+      "bytes": 87342023,
+      "sha256": "6d689a5df0ddf9de97d249bd4f56fd8a4e7bba844af80fc44a11c54fd428dcd8"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Ash/V7R2/RB_Golden_Ash_V7R2.blend1",
+      "bytes": 87335715,
+      "sha256": "472b1c44108999a4fd634795885db3ccc7afbdc230e4fa7885b8e9bb97426bb0"
+    },
+    {
+      "path": "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_PreEdit.blend",
+      "bytes": 87342023,
+      "sha256": "6d689a5df0ddf9de97d249bd4f56fd8a4e7bba844af80fc44a11c54fd428dcd8"
+    },
+    {
+      "path": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+      "bytes": 2385932,
+      "sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6"
+    },
+    {
+      "path": "ArtSource/Weapons/RB_Club.blend",
+      "bytes": 935897,
+      "sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f"
+    }
+  ],
+  "images": [
+    {
+      "path": "docs/p08/golden/ash/v8/before/body-front.png",
+      "bytes": 1063364,
+      "sha256": "9867263574a155ccef535af5e8314e22287d660081468f310aafbbca42dac57d"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/before/portrait-front.png",
+      "bytes": 1345829,
+      "sha256": "e57d2d2b0d46d65dd5125d87766435a9c31f8b315b6bd414e5b5d96da6b5ab8c"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/before/portrait-profile.png",
+      "bytes": 1225471,
+      "sha256": "5be6ae62055e452d8478b71bd9bf460b6c40852a62f95cc15918f8977eb2b4c3"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket01/body-front.png",
+      "bytes": 1064275,
+      "sha256": "f6bf82b7a1a02ec91084e3cb9219e4cfbd684cffd1a7904047bc7755ee6e3a23"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket01/portrait-front.png",
+      "bytes": 1355299,
+      "sha256": "ea98009bdae394bd594b3616372b77afd368fde35b05e4ccde79ea4641e24789"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket01/portrait-profile.png",
+      "bytes": 1234788,
+      "sha256": "143c2a9b0280fc8aa4f41b8bcfbbc1416d6db9fd28f2cde918b7710db7471d6f"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket02/body-front.png",
+      "bytes": 1063611,
+      "sha256": "aaf7ceaabb67ef953e66676566746b27a80402d2c2071f829955202fd61b7c1b"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket02/portrait-front.png",
+      "bytes": 1395774,
+      "sha256": "383ab005b00d31c673b2602fc743e39a93a15851dee69807effc70ce123f4f3c"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket02/portrait-profile.png",
+      "bytes": 1260069,
+      "sha256": "3cec2749dcd23d862550bf4765b03c9ba93ae782bbcc2175e416b9d14f78562c"
+    }
+  ],
+  "recipes": [
+    {
+      "path": "tools/p08/golden/ash_v8/author_jacket01.py",
+      "bytes": 10738,
+      "sha256": "a8011c7954f2a1ee9569f23ec73988a4d2b61e3012bc71aefab9e1633f93ddb0"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/finish_jacket02.py",
+      "bytes": 3827,
+      "sha256": "a00fd18a7cad54cfe9e4860c4f677e9d824263d3760126cdd4c86ae224055563"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/freeze_jacket02.py",
+      "bytes": 4525,
+      "sha256": "e4a51e920eac261397414ea847bda783b95a37e78facb24f0ba112283828cbc0"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/open_owned.py",
+      "bytes": 1863,
+      "sha256": "018b101202f786be4f4dabf54a2dc3c313b7875a244fd0006f8a4ac675389a6a"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/open_owned_02.py",
+      "bytes": 1832,
+      "sha256": "1361118fc50d226ef65bec358e680eb609e94e6761dcfc2631d2baeee69a78f1"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/probe_actor.py",
+      "bytes": 1492,
+      "sha256": "ea5aa50b6cea0c2868ae25660529ec83c8928e23aee2087fb90577437457f14d"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/probe_clothing.py",
+      "bytes": 1785,
+      "sha256": "6c2e0f8fcf07a3159ec40fc3b7c5549cb8c60e3ecc855c5bf44673902e60b3b6"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/probe_clothing_02.py",
+      "bytes": 1762,
+      "sha256": "01c26529c3d7c0e5be3fc81fd046bd5b358e0d0bdc8e56f4170ae31f486518ff"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/probe_fall_floor_jacket02.py",
+      "bytes": 2433,
+      "sha256": "006d20b6a9d29e68c22d168d0af10b56d7bb464fb6cdcdf94b0247bba0fb4018"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/render_before.py",
+      "bytes": 2232,
+      "sha256": "5b906b6fca8183bd6465ce2b28db86517bf8b60fbf62144d1f3c51b6554c5446"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/render_jacket01.py",
+      "bytes": 2254,
+      "sha256": "4a74a5c7ecf2d92f19af4a023bd1c90fe76790fc3a171c91f5fcf36b25c4e96f"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/render_jacket02.py",
+      "bytes": 2254,
+      "sha256": "2795eb693f030247bd55e57d3d9788054d2224f7dc267a262731e2140bf69efd"
+    },
+    {
+      "path": "tools/p08/golden/ash_v8/verify_saved_jacket02.py",
+      "bytes": 5486,
+      "sha256": "99ccacbf60451f5e33b44ff6ce2ff13bbd4d2c7dcf1088b4df24892b1e707b0a"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "docs/p08/golden/ash/v8/handshake.json",
+      "bytes": 5127,
+      "sha256": "8980c2768cb193aeaba1a0acb05c3b8f36b6afd315bf7c20815273859aa71189"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/open-owned-02.json",
+      "bytes": 43965,
+      "sha256": "3f8d87be4aa7bd5cb3b9640170466780a19a0b91c9385e003ffc6b4c35c7e910"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/actor-probe.json",
+      "bytes": 10535,
+      "sha256": "86a2aeb23f450181889d6cd3570abcde3c41037858de9e0aae9a2b130501f37c"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/clothing-probe-02.json",
+      "bytes": 19705,
+      "sha256": "7766d17d1eb6b6e1a3b0c243c18faa38fcb43be2c7f4f0945547db84afe8f796"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/author-jacket01.json",
+      "bytes": 8259,
+      "sha256": "98751567a8c88756cfab4e33d8682a6d1759583c9a21dc1fdb6cffa755518109"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/finish-jacket02.json",
+      "bytes": 5911,
+      "sha256": "538e224130be158e70733ade62ab93ab6278434d262aa590b02bf4fb58f436a2"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/before-renders.json",
+      "bytes": 5735,
+      "sha256": "51c5b868b1f5c053cd2d12c7fe4e21468cc09942b9a444bc8e2b5325e7b66192"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket01-renders.json",
+      "bytes": 5767,
+      "sha256": "2b4f49c892566e06b1dec7e067e9b712b75dae9bbf82a53364ade32cc5959139"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket02-renders.json",
+      "bytes": 5767,
+      "sha256": "49490e7b23c18f13a6d205897b5ba2a2ad3ee8c8e6e1e104c0be84f5de02095a"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/saved-jacket02-verification.json",
+      "bytes": 6141,
+      "sha256": "67216ea060fd13b1d945eaedb202a13174b5ac811403ce3d3e64b05530bafed6"
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/fall-floor-jacket02.json",
+      "bytes": 77965,
+      "sha256": "97f4495295a69395915500ba7c5cb8eff4440bd16ef10ff3cacada94dd28fed5"
+    }
+  ],
+  "savedPreservation": {
+    "passed": true,
+    "baseline": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_PreEdit.blend",
+    "candidate": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket02.blend",
+    "renderStatePreservedAs": "D:/Project/Unity/racing-bois/ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket02_Rendered.blend",
+    "lods": [
+      {
+        "lod": 0,
+        "changedVertices": 8281,
+        "maximumDisplacementMetres": 0.004467142580681935,
+        "protectedVertexCount": 20409,
+        "changedProtectedVertices": [],
+        "uvTopologyWeightsMorphDeltasExact": true,
+        "materialChangesExactlyExpected": true
+      },
+      {
+        "lod": 1,
+        "changedVertices": 5210,
+        "maximumDisplacementMetres": 0.004454167500097401,
+        "protectedVertexCount": 7525,
+        "changedProtectedVertices": [],
+        "uvTopologyWeightsMorphDeltasExact": true,
+        "materialChangesExactlyExpected": true
+      },
+      {
+        "lod": 2,
+        "changedVertices": 1315,
+        "maximumDisplacementMetres": 0.004077539513407862,
+        "protectedVertexCount": 2085,
+        "changedProtectedVertices": [],
+        "uvTopologyWeightsMorphDeltasExact": true,
+        "materialChangesExactlyExpected": true
+      }
+    ],
+    "actionsExact": 13,
+    "restBonesExact": 45,
+    "autoexecute": false,
+    "visualAccepted": false,
+    "poseContactAccepted": false
+  },
+  "lodFallMinimums": [
+    0.002875417470932007,
+    0.0029857810586690903,
+    0.00369052030146122
+  ],
+  "fallSamples": 145,
+  "materialScope": "Shared cloth/leather-detail/thread finish includes trousers and gloves; geometry is bounded upper-garment folds only.",
+  "visualAccepted": false,
+  "runtimeReady": false,
+  "proceduralFinishRequiresBake": true,
+  "unityImported": false,
+  "fbxExported": false,
+  "review": "Amber/charcoal finish improved; the jacket remains too smooth/inflated, so reference-driven tailoring/folds/collar geometry is next."
+}

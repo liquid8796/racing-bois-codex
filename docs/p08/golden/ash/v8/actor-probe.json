@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: ASH_V8_ACTOR {\"bounds\": {\"minimum\": [-0.35843291878700256, -0.219741553068161, -0.0025483183562755585], \"maximum\": [0.36024707555770874, 0.12097369134426117, 1.8239998817443848]}, \"vertices\": 72954, \"polygons\": 111043, \"materials\": [{\"index\": 0, \"material\": \"AshV6_Skin_Baked\", \"polygons\": 12506, \"vertices\": 6255}, {\"index\": 1, \"material\": \"AshV4_LeatherDetails_Baked\", \"polygons\": 24940, \"vertices\": 13310}, {\"index\": 2, \"material\": \"AshV2_AgedBrass_Baked\", \"polygons\": 2218, \"vertices\": 1414}, {\"index\": 3, \"material\": \"AshV3_BootLeather_Baked\", \"polygons\": 7490, \"vertices\": 3839}, {\"index\": 4, \"material\": \"AshV2_Brows_Baked\", \"polygons\": 146, \"vertices\": 101}, {\"index\": 5, \"material\": \"AshV3_Rubber_Baked\", \"polygons\": 2304, \"vertices\": 1285}, {\"index\": 6, \"material\": \"AshV4_TailoredLeather_Baked\", \"polygons\": 25976, \"vertices\": 12982}, {\"index\": 7, \"material\": \"AshV2_OchreThread_Baked\", \"polygons\": 8043, \"vertices\": 6929}, {\"index\": 8, \"material\": \"AshV2_Eyes_Baked\", \"polygons\": 486, \"vertices\": 247}, {\"index\": 9, \"material\": \"AshV2_Hair_Baked\", \"polygons\": 2095, \"vertices\": 1136}, {\"index\": 10, \"material\": \"AshV4_Forelocks_Baked\", \"polygons\": 3401, \"vertices\": 3898}, {\"index\": 11, \"material\": \"AshV7_EquipmentL0_Baked\", \"polygons\": 19774, \"vertices\": 20194}, {\"index\": 12, \"material\": \"AshV7_AmberGlass_Baked\", \"polygons\": 1664, \"vertices\": 1540}], \"shapeKeys\": [\"Basis\", \"Happy\", \"Focused\"], \"collections\": {\"name\": \"Scene Collection\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 9, \"children\": [{\"name\": \"Collection\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 1, \"children\": []}, {\"name\": \"AshV2_Editable_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 325, \"children\": []}, {\"name\": \"AshV2_Runtime_LODs\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 3, \"children\": []}, {\"name\": \"ApexR2_ContactReferenceOnly\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 22, \"children\": []}, {\"name\": \"AshV4_SewnDetails_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 44, \"children\": []}, {\"name\": \"AshV4_HairDetails_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 1, \"children\": []}, {\"name\": \"AshV6_Equipment\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 0, \"children\": []}, {\"name\": \"AshV6_Equipment_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 69, \"children\": []}, {\"name\": \"AshV7_Equipment\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 0, \"children\": []}, {\"name\": \"AshV7_Equipment_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 69, \"children\": []}, {\"name\": \"ApexR4_ContactReferenceOnly\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 22, \"children\": []}]}, \"cameras\": [{\"name\": \"AshV2_ReviewCamera\", \"location\": [2.199998378753662, -4.810413360595703, 1.3211474418640137], \"rotation\": [1.5022631883621216, -1.1416325662594318e-08, 0.44610559940338135], \"kind\": \"ORTHO\", \"scale\": 1.8975821733474731}]}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: ASH_V8_ACTOR {\"bounds\": {\"minimum\": [-0.35843291878700256, -0.219741553068161, -0.0025483183562755585], \"maximum\": [0.36024707555770874, 0.12097369134426117, 1.8239998817443848]}, \"vertices\": 72954, \"polygons\": 111043, \"materials\": [{\"index\": 0, \"material\": \"AshV6_Skin_Baked\", \"polygons\": 12506, \"vertices\": 6255}, {\"index\": 1, \"material\": \"AshV4_LeatherDetails_Baked\", \"polygons\": 24940, \"vertices\": 13310}, {\"index\": 2, \"material\": \"AshV2_AgedBrass_Baked\", \"polygons\": 2218, \"vertices\": 1414}, {\"index\": 3, \"material\": \"AshV3_BootLeather_Baked\", \"polygons\": 7490, \"vertices\": 3839}, {\"index\": 4, \"material\": \"AshV2_Brows_Baked\", \"polygons\": 146, \"vertices\": 101}, {\"index\": 5, \"material\": \"AshV3_Rubber_Baked\", \"polygons\": 2304, \"vertices\": 1285}, {\"index\": 6, \"material\": \"AshV4_TailoredLeather_Baked\", \"polygons\": 25976, \"vertices\": 12982}, {\"index\": 7, \"material\": \"AshV2_OchreThread_Baked\", \"polygons\": 8043, \"vertices\": 6929}, {\"index\": 8, \"material\": \"AshV2_Eyes_Baked\", \"polygons\": 486, \"vertices\": 247}, {\"index\": 9, \"material\": \"AshV2_Hair_Baked\", \"polygons\": 2095, \"vertices\": 1136}, {\"index\": 10, \"material\": \"AshV4_Forelocks_Baked\", \"polygons\": 3401, \"vertices\": 3898}, {\"index\": 11, \"material\": \"AshV7_EquipmentL0_Baked\", \"polygons\": 19774, \"vertices\": 20194}, {\"index\": 12, \"material\": \"AshV7_AmberGlass_Baked\", \"polygons\": 1664, \"vertices\": 1540}], \"shapeKeys\": [\"Basis\", \"Happy\", \"Focused\"], \"collections\": {\"name\": \"Scene Collection\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 9, \"children\": [{\"name\": \"Collection\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 1, \"children\": []}, {\"name\": \"AshV2_Editable_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 325, \"children\": []}, {\"name\": \"AshV2_Runtime_LODs\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 3, \"children\": []}, {\"name\": \"ApexR2_ContactReferenceOnly\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 22, \"children\": []}, {\"name\": \"AshV4_SewnDetails_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 44, \"children\": []}, {\"name\": \"AshV4_HairDetails_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 1, \"children\": []}, {\"name\": \"AshV6_Equipment\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 0, \"children\": []}, {\"name\": \"AshV6_Equipment_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 69, \"children\": []}, {\"name\": \"AshV7_Equipment\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": false, \"objects\": 0, \"children\": []}, {\"name\": \"AshV7_Equipment_Source\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 69, \"children\": []}, {\"name\": \"ApexR4_ContactReferenceOnly\", \"excluded\": false, \"hideViewport\": false, \"hideRender\": true, \"objects\": 22, \"children\": []}]}, \"cameras\": [{\"name\": \"AshV2_ReviewCamera\", \"location\": [2.199998378753662, -4.810413360595703, 1.3211474418640137], \"rotation\": [1.5022631883621216, -1.1416325662594318e-08, 0.44610559940338135], \"kind\": \"ORTHO\", \"scale\": 1.8975821733474731}]}\n"
+    },
+    "isError": false
+  }
+}
