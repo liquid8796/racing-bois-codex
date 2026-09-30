@@ -27,6 +27,8 @@ PROFILES = {
                       "texture_version": "v3.5-20260815", "texture_quality": "extreme", "delight": True,
                       "geometry_quality": "detailed", "generate_parts": False}, 80, 120),
     "low-poly": ({"model": "P1-20260311", "texture": True, "pbr": True, "face_limit": 20000}, 50, 80),
+    "ui-prop": ({"model": "P1-20260311", "texture": True, "pbr": True, "face_limit": 5000,
+                 "texture_version": "v3.5-20260815", "texture_quality": "detailed", "delight": True}, 60, 100),
     "ui-extraction": ({"model": "seedream_v5", "size": "2K", "output_format": "png", "watermark": False}, 10, 30),
 }
 
