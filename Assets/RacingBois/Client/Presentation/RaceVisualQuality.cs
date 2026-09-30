@@ -10,6 +10,8 @@ namespace RacingBois.Client.Presentation
         public Camera ViewCamera;
         public Volume PostProcess;
         private UniversalRenderPipelineAsset original, runtime;
+        private RenderPipelineAsset originalQualityPipeline;
+        private RaceTextureStreamingScope textureStreaming;
         public int Index { get; private set; } = 1;
         public void Apply(int index)
         {
@@ -18,11 +20,14 @@ namespace RacingBois.Client.Presentation
             {
                 original = GraphicsSettings.defaultRenderPipeline as UniversalRenderPipelineAsset;
                 if (original == null) return;
+                originalQualityPipeline = QualitySettings.renderPipeline;
                 runtime = Instantiate(original);
                 runtime.name = "Racing Bois runtime quality";
                 GraphicsSettings.defaultRenderPipeline = runtime;
                 QualitySettings.renderPipeline = runtime;
+                textureStreaming = new RaceTextureStreamingScope();
             }
+            textureStreaming.Apply(Index);
             runtime.renderScale = Index == 0 ? .78f : 1;
             runtime.msaaSampleCount = Index == 2 ? 4 : 2;
             runtime.shadowDistance = Index == 0 ? 35 : Index == 1 ? 70 : 100;
@@ -41,9 +46,10 @@ namespace RacingBois.Client.Presentation
         }
         private void OnDestroy()
         {
+            textureStreaming?.Dispose();
             if (runtime == null) return;
             if (GraphicsSettings.defaultRenderPipeline == runtime) GraphicsSettings.defaultRenderPipeline = original;
-            if (QualitySettings.renderPipeline == runtime) QualitySettings.renderPipeline = original;
+            if (QualitySettings.renderPipeline == runtime) QualitySettings.renderPipeline = originalQualityPipeline;
             Destroy(runtime);
         }
     }

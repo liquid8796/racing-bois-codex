@@ -1,0 +1,57 @@
+if (!UnityEditor.EditorApplication.isPlaying || UnityEditor.EditorApplication.isCompiling) throw new System.InvalidOperationException("Require stable quiet Play mode.");
+var scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if (scene.path != "Assets/RacingBois/Diagnostics/NativeMusicProbe/QuietProbe-20260928.unity" || UnityEngine.SceneManagement.SceneManager.sceneCount != 1) throw new System.InvalidOperationException("Wrong diagnostic scene.");
+var drafts = new RacingBois.Authoring.Editor.NativeBuildDirtyAssetGuard();
+var flags = System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static;
+typeof(RacingBois.Authoring.Editor.P08ContentPackBuilder).Assembly.GetType("RacingBois.Authoring.Editor.P08DesktopCompiledSources").GetMethod("VerifyExecutingAssemblies", flags).Invoke(null, new object[] { "docs/p08/tripo/compiled-runtime-quality-20260930-01.json" });
+var paths = new[] { "ProjectSettings/QualitySettings.asset", "ProjectSettings/GraphicsSettings.asset", "Assets/RacingBois/Scenes/Race.unity", "Assets/RacingBois/UI/Fonts/NotoSans-Regular SDF.asset", "Assets/RacingBois/UI/Fonts/NotoSans-ExtraBold SDF.asset", "ArtSource/Weapons/RB_Club.blend" };
+System.Func<string,string> hash = path => { using (var h = System.Security.Cryptography.SHA256.Create()) using (var f = System.IO.File.OpenRead(path)) return System.BitConverter.ToString(h.ComputeHash(f)).Replace("-", "").ToLowerInvariant(); };
+var before = paths.ToDictionary(path => path, hash);
+var checks = new System.Collections.Generic.List<object>();
+System.Action<string,bool> check = (name, pass) => { checks.Add(new { name, passed=pass }); if (!pass) throw new System.InvalidOperationException(name); };
+bool active = UnityEngine.QualitySettings.streamingMipmapsActive;
+float budget = UnityEngine.QualitySettings.streamingMipmapsMemoryBudget;
+int reduction = UnityEngine.QualitySettings.streamingMipmapsMaxLevelReduction;
+float lod = UnityEngine.QualitySettings.lodBias;
+var aniso = UnityEngine.QualitySettings.anisotropicFiltering;
+var originalGraphics = UnityEngine.Rendering.GraphicsSettings.defaultRenderPipeline;
+var originalQuality = UnityEngine.QualitySettings.renderPipeline;
+UnityEngine.GameObject owner = null;
+try
+{
+    owner = new UnityEngine.GameObject("OwnedRuntimeTextureBudgetProbe"); owner.hideFlags = UnityEngine.HideFlags.HideAndDontSave;
+    var quality = owner.AddComponent<RacingBois.Client.Presentation.RaceVisualQuality>();
+    foreach (int index in new[] { 0, 1, 2, -1, 5 })
+    {
+        quality.Apply(index);
+        int clamped = UnityEngine.Mathf.Clamp(index, 0, 2);
+        check("streaming_active_" + index, UnityEngine.QualitySettings.streamingMipmapsActive);
+        check("budget_" + index, UnityEngine.QualitySettings.streamingMipmapsMemoryBudget == (clamped == 0 ? 256 : clamped == 1 ? 512 : 768));
+        check("reduction_" + index, UnityEngine.QualitySettings.streamingMipmapsMaxLevelReduction == (clamped == 0 ? 3 : 2));
+    }
+    UnityEngine.Object.DestroyImmediate(owner); owner = null;
+    check("streaming_original_restored", UnityEngine.QualitySettings.streamingMipmapsActive == active && UnityEngine.QualitySettings.streamingMipmapsMemoryBudget == budget && UnityEngine.QualitySettings.streamingMipmapsMaxLevelReduction == reduction);
+    check("graphics_original_restored", UnityEngine.Rendering.GraphicsSettings.defaultRenderPipeline == originalGraphics);
+    check("quality_override_original_restored", UnityEngine.QualitySettings.renderPipeline == originalQuality);
+    owner = new UnityEngine.GameObject("OwnedRuntimeTextureBudgetExternalWriterProbe"); owner.hideFlags = UnityEngine.HideFlags.HideAndDontSave;
+    quality = owner.AddComponent<RacingBois.Client.Presentation.RaceVisualQuality>(); quality.Apply(1);
+    UnityEngine.QualitySettings.streamingMipmapsMemoryBudget = 333;
+    UnityEngine.Object.DestroyImmediate(owner); owner = null;
+    check("external_budget_preserved", UnityEngine.QualitySettings.streamingMipmapsMemoryBudget == 333);
+    check("remaining_owned_settings_restored", UnityEngine.QualitySettings.streamingMipmapsActive == active && UnityEngine.QualitySettings.streamingMipmapsMaxLevelReduction == reduction);
+}
+finally
+{
+    if (owner != null) UnityEngine.Object.DestroyImmediate(owner);
+    UnityEngine.QualitySettings.streamingMipmapsActive = active;
+    UnityEngine.QualitySettings.streamingMipmapsMemoryBudget = budget;
+    UnityEngine.QualitySettings.streamingMipmapsMaxLevelReduction = reduction;
+    UnityEngine.QualitySettings.lodBias = lod;
+    UnityEngine.QualitySettings.anisotropicFiltering = aniso;
+}
+drafts.VerifyUnchanged(); check("dirty_assets_preserved", true);
+check("protected_saved_bytes_preserved", before.All(pair => hash(pair.Key) == pair.Value));
+var receipt = new { schema=1, passed=true, checks, protectedFiles=before, utc=System.DateTime.UtcNow.ToString("O"), scene=scene.path,
+    scope="Actual Unity Play-mode quality settings, clamping, pipeline ownership and restoration. No texture residency, GPU memory, full P08 player or 60FPS acceptance inferred.", renderingPerformanceVerified=false, releaseAccepted=false };
+System.IO.File.WriteAllText("docs/p08/tripo/runtime-quality-native-20260930-01.json", Newtonsoft.Json.JsonConvert.SerializeObject(receipt, Newtonsoft.Json.Formatting.Indented));
+return new { passed=true, checks=checks.Count, renderingPerformanceVerified=false };

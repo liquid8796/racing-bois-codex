@@ -1,0 +1,806 @@
+{
+  "schema": "racing-bois.laptop-asset-budget-proposal.v1",
+  "date": "2026-09-30",
+  "status": "proposed-read-only",
+  "implemented": false,
+  "performanceMeasured": false,
+  "phaseAccepted": false,
+  "hardwareTarget": {
+    "discreteGpuVramClassGB": 4,
+    "ramClassGB": 16,
+    "cpuMinimum": null,
+    "physicalDeviceMeasurement": null
+  },
+  "existingNativeTargets": {
+    "os": "Windows10/11x64",
+    "graphicsApi": "Direct3D11",
+    "width": 1920,
+    "height": 1080,
+    "gameQuality": "Medium",
+    "minimumMeanFps": 60,
+    "maximumFrameP95Ms": 20,
+    "durationSeconds": 600,
+    "maximumProcessWorkingSetBytes": 2147483648,
+    "gpuCpuManagedNativeMemoryMustBeRecordedSeparately": true,
+    "foregroundRunDeferred": true
+  },
+  "currentReadOnlyAudit": {
+    "runtimeQualityImplementation": "RaceVisualQuality.Apply + RaceTextureStreamingScope + RaceBootstrap.ApplyQuality",
+    "runtimeProfiles": [
+      {
+        "index": 0,
+        "renderScale": 0.78,
+        "msaa": 2,
+        "shadowDistanceMetres": 35,
+        "shadowMap": 1024,
+        "lodBias": 0.65,
+        "cameraFarMetres": 420,
+        "streamingMipmapsActive": true,
+        "streamingBudget": 256,
+        "maximumMipReduction": 3
+      },
+      {
+        "index": 1,
+        "renderScale": 1,
+        "msaa": 2,
+        "shadowDistanceMetres": 70,
+        "shadowMap": 2048,
+        "lodBias": 1,
+        "cameraFarMetres": 650,
+        "streamingMipmapsActive": true,
+        "streamingBudget": 512,
+        "maximumMipReduction": 2
+      },
+      {
+        "index": 2,
+        "renderScale": 1,
+        "msaa": 4,
+        "shadowDistanceMetres": 100,
+        "shadowMap": 2048,
+        "lodBias": 1.3,
+        "cameraFarMetres": 650,
+        "streamingMipmapsActive": true,
+        "streamingBudget": 768,
+        "maximumMipReduction": 2
+      }
+    ],
+    "serializedStandaloneDefaultUnityQualityIndex": 5,
+    "serializedUnityQualityLevels": [
+      {
+        "name": "Very Low",
+        "streamingMipmapsActive": 0,
+        "streamingMipmapsMemoryBudgetStored": 512.0,
+        "globalTextureMipmapLimit": 1
+      },
+      {
+        "name": "Low",
+        "streamingMipmapsActive": 0,
+        "streamingMipmapsMemoryBudgetStored": 512.0,
+        "globalTextureMipmapLimit": 0
+      },
+      {
+        "name": "Medium",
+        "streamingMipmapsActive": 0,
+        "streamingMipmapsMemoryBudgetStored": 512.0,
+        "globalTextureMipmapLimit": 0
+      },
+      {
+        "name": "High",
+        "streamingMipmapsActive": 0,
+        "streamingMipmapsMemoryBudgetStored": 512.0,
+        "globalTextureMipmapLimit": 0
+      },
+      {
+        "name": "Very High",
+        "streamingMipmapsActive": 0,
+        "streamingMipmapsMemoryBudgetStored": 512.0,
+        "globalTextureMipmapLimit": 0
+      },
+      {
+        "name": "Ultra",
+        "streamingMipmapsActive": 0,
+        "streamingMipmapsMemoryBudgetStored": 512.0,
+        "globalTextureMipmapLimit": 0
+      }
+    ],
+    "serializedMipLimitGroups": [],
+    "legacyP08BuilderCodePolicy": {
+      "baseColorMax": 1024,
+      "otherMapMax": 512,
+      "normalFormat": "BC5",
+      "otherFormat": "BC7",
+      "textureReadable": false,
+      "meshReadable": true,
+      "meshCompression": "Low",
+      "skinInfluences": 2,
+      "materialCountExactly": 1,
+      "threeLodHeights": [
+        0.22,
+        0.075,
+        0.009
+      ],
+      "absoluteTriangleCeilingEnforced": false,
+      "textureStreamingExplicitlyEnabled": false
+    },
+    "goldenDiagnosticCodePolicy": {
+      "materialWideMaxDefault": 2048,
+      "materialWideMaxAllowed": [
+        512,
+        1024,
+        2048,
+        4096
+      ],
+      "normalFormat": "BC5",
+      "otherFormat": "BC7",
+      "textureStreamingFlag": true,
+      "textureReadable": false,
+      "meshReadable": true,
+      "meshCompression": "Off",
+      "skinInfluences": 4,
+      "preservesDeclaredMaterialSlots": true,
+      "lodCrossFade": true,
+      "absoluteTriangleOrMaterialCeilingEnforced": false
+    },
+    "sampleSerializedMetadata": {
+      "legacyBikesABaseColor": {
+        "standaloneOverride": false,
+        "standaloneFormat": "Automatic",
+        "streamingFlag": false,
+        "mipGroup": ""
+      },
+      "goldenApexPearlBaseColor": {
+        "standaloneOverride": true,
+        "standaloneFormatSerializedValue": 25,
+        "expectedFormatFromImporter": "BC7",
+        "standaloneMaxSize": 2048,
+        "streamingFlag": true,
+        "mipGroup": ""
+      }
+    },
+    "sourceHQ02Report": {
+      "triangles": 1944606,
+      "vertices": 1044125,
+      "baseColor": [
+        8192,
+        8192
+      ],
+      "normal": [
+        4096,
+        4096
+      ],
+      "orm": [
+        4096,
+        4096
+      ],
+      "shippingAccepted": false
+    },
+    "runtimeSetsTextureStreaming": true,
+    "runtimeSetsTextureMipGroups": false,
+    "runtimeChangesGlobalMipLimit": false,
+    "runtimeRestoration": "Restore scope values only while they still equal applied values; restore actual original QualitySettings.renderPipeline override",
+    "runtimePatchNativeConfigurationEvidence": {
+      "passed": true,
+      "nativeCheckCount": 22,
+      "compiledAssemblyCount": 10,
+      "receiptPaths": [
+        "docs/p08/tripo/runtime-quality-native-20260930-01.json",
+        "docs/p08/tripo/compiled-runtime-quality-20260930-01.json"
+      ],
+      "textureResidencyMeasured": false,
+      "gpuMemoryMeasured": false,
+      "frameBudgetsMeasured": false,
+      "fullP08ReleaseAccepted": false
+    }
+  },
+  "existingBudgetProposals": {
+    "architectureNearBikeRiderCombinedLod0Range": [
+      20000,
+      40000
+    ],
+    "architectureLodRatios": [
+      1,
+      0.5,
+      0.2
+    ],
+    "architectureOrdinaryPropLod0Range": [
+      200,
+      5000
+    ],
+    "architectureHeroTextureRange": [
+      1024,
+      2048
+    ],
+    "architecturePropTextureRange": [
+      256,
+      1024
+    ],
+    "laterApexBikeOnlyLod0Range": [
+      45000,
+      65000
+    ],
+    "laterApexMiddleApproximate": 24000,
+    "laterApexFarApproximate": 8000,
+    "bothAreUnmeasured": true,
+    "nearActorBudgetConflictRetained": true
+  },
+  "proposedMediumExports": [
+    {
+      "category": "hero-bike",
+      "textureMaxDimensions": {
+        "baseColor": 2048,
+        "normal": 1024,
+        "metallicSmoothness": 1024
+      },
+      "lodTriangleCeilings": [
+        28000,
+        14000,
+        5600
+      ],
+      "materialSlotTargetMaximum": 4,
+      "mipGroupProposed": "RB.P08.Hero"
+    },
+    {
+      "category": "hero-rider",
+      "textureMaxDimensions": {
+        "baseColor": 2048,
+        "normal": 1024,
+        "metallicSmoothness": 1024
+      },
+      "lodTriangleCeilings": [
+        12000,
+        6000,
+        2400
+      ],
+      "materialSlotTargetMaximum": 4,
+      "mipGroupProposed": "RB.P08.Hero"
+    },
+    {
+      "category": "secondary-bike",
+      "textureMaxDimensions": {
+        "baseColor": 1024,
+        "normal": 1024,
+        "metallicSmoothness": 512
+      },
+      "lodTriangleCeilings": [
+        14000,
+        7000,
+        2800
+      ],
+      "materialSlotTargetMaximum": 2,
+      "mipGroupProposed": "RB.P08.Secondary"
+    },
+    {
+      "category": "secondary-rider",
+      "textureMaxDimensions": {
+        "baseColor": 1024,
+        "normal": 1024,
+        "metallicSmoothness": 512
+      },
+      "lodTriangleCeilings": [
+        6000,
+        3000,
+        1200
+      ],
+      "materialSlotTargetMaximum": 2,
+      "mipGroupProposed": "RB.P08.Secondary"
+    },
+    {
+      "category": "ordinary-modular-prop-scenery",
+      "textureMaxDimensions": {
+        "baseColor": 1024,
+        "normal": 512,
+        "metallicSmoothness": 512
+      },
+      "lodTriangleCeilings": [
+        5000,
+        2500,
+        1000
+      ],
+      "materialSlotTargetMaximum": 2,
+      "mipGroupProposed": "RB.P08.Environment"
+    },
+    {
+      "category": "small-repeated-roadside-prop",
+      "textureMaxDimensions": {
+        "baseColor": 512,
+        "normal": 512,
+        "metallicSmoothness": 512
+      },
+      "lodTriangleCeilings": [
+        1000,
+        500,
+        200
+      ],
+      "materialSlotTargetMaximum": 1,
+      "mipGroupProposed": "RB.P08.Environment"
+    }
+  ],
+  "proposedHeroBikeRiderCombinedLodCeilings": [
+    40000,
+    20000,
+    8000
+  ],
+  "proposedSourceSeparation": {
+    "rawTripoAndBlenderMastersLocation": "ArtSource",
+    "sourceTextureMaxMayBe8192": true,
+    "shippingTextureMaximumMedium": 2048,
+    "shippingTextureMaximumSelectiveHigh": 4096,
+    "shippingTexture8192Allowed": false,
+    "rawDenseReconstructionShippingAllowed": false,
+    "complexLandmarkExceptionRequiresExplicitVisualAndNativeEvidence": true,
+    "wholeSceneSingleLodGroupAllowed": false,
+    "conceptFidelityRequirementPercent": 100,
+    "textureOrTriangleComplianceIsNotVisualAcceptance": true
+  },
+  "proposedP08TexturePlanningCeiling": {
+    "bytes": 536870912,
+    "partitionsBytes": {
+      "sharedActors": 268435456,
+      "currentRoute": 134217728,
+      "auxiliaryVfxPortraits": 134217728
+    },
+    "implemented": false,
+    "uniqueTexturesCountedOnce": true,
+    "optionalAoAndEmissionIncluded": true,
+    "swapOverlapMustBeMeasured": true
+  },
+  "proposedIntegration": {
+    "onlyNewP08ImporterMembershipAndGroups": true,
+    "groupNames": [
+      "RB.P08.Hero",
+      "RB.P08.Secondary",
+      "RB.P08.Environment"
+    ],
+    "newGlobalMipLimitChange": false,
+    "fontsAndUnrelatedExistingTexturesExcludedFromNewLimits": true,
+    "streamingBudgetIsGlobalSoftAndIncludesNonStreamingTextures": true,
+    "streamingBudgetIsNotVramOrP08HardCap": true,
+    "nativeCameraResidencyReadbackRequiredBeforeEnabling": true,
+    "perMapResolutionViaBakedDerivativeInputs": "Current Golden descriptor uses one maxSize for all material maps",
+    "diagnosticMeshReadabilityPreserved": "Shipping-copy CPU readability evaluation only after geometric/pose checks",
+    "runtimeMediumBudgetAlreadyConfigured": 512,
+    "configurationNativePassed": true,
+    "p08ImporterMembershipAndMipGroupsImplemented": false,
+    "cameraAndTextureResidencyVerificationStillRequired": true
+  },
+  "arithmetic": {
+    "basis": "BC7/BC5 16-byte4x4blocks; full mip chain to1x1; MiB=2^20bytes",
+    "notMeasuredRuntimeMemory": true,
+    "excludes": [
+      "driverOverhead",
+      "renderTargets",
+      "meshBuffers",
+      "CPUcopies",
+      "alignmentOrOtherRuntimeOverhead"
+    ],
+    "singleMaps": [
+      {
+        "size": 512,
+        "bytes": 349552,
+        "mib": 0.3333587646484375,
+        "mips": [
+          {
+            "width": 512,
+            "height": 512,
+            "blockBytes": 262144
+          },
+          {
+            "width": 256,
+            "height": 256,
+            "blockBytes": 65536
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "blockBytes": 16384
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "blockBytes": 4096
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "blockBytes": 1024
+          },
+          {
+            "width": 16,
+            "height": 16,
+            "blockBytes": 256
+          },
+          {
+            "width": 8,
+            "height": 8,
+            "blockBytes": 64
+          },
+          {
+            "width": 4,
+            "height": 4,
+            "blockBytes": 16
+          },
+          {
+            "width": 2,
+            "height": 2,
+            "blockBytes": 16
+          },
+          {
+            "width": 1,
+            "height": 1,
+            "blockBytes": 16
+          }
+        ]
+      },
+      {
+        "size": 1024,
+        "bytes": 1398128,
+        "mib": 1.3333587646484375,
+        "mips": [
+          {
+            "width": 1024,
+            "height": 1024,
+            "blockBytes": 1048576
+          },
+          {
+            "width": 512,
+            "height": 512,
+            "blockBytes": 262144
+          },
+          {
+            "width": 256,
+            "height": 256,
+            "blockBytes": 65536
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "blockBytes": 16384
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "blockBytes": 4096
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "blockBytes": 1024
+          },
+          {
+            "width": 16,
+            "height": 16,
+            "blockBytes": 256
+          },
+          {
+            "width": 8,
+            "height": 8,
+            "blockBytes": 64
+          },
+          {
+            "width": 4,
+            "height": 4,
+            "blockBytes": 16
+          },
+          {
+            "width": 2,
+            "height": 2,
+            "blockBytes": 16
+          },
+          {
+            "width": 1,
+            "height": 1,
+            "blockBytes": 16
+          }
+        ]
+      },
+      {
+        "size": 2048,
+        "bytes": 5592432,
+        "mib": 5.3333587646484375,
+        "mips": [
+          {
+            "width": 2048,
+            "height": 2048,
+            "blockBytes": 4194304
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "blockBytes": 1048576
+          },
+          {
+            "width": 512,
+            "height": 512,
+            "blockBytes": 262144
+          },
+          {
+            "width": 256,
+            "height": 256,
+            "blockBytes": 65536
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "blockBytes": 16384
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "blockBytes": 4096
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "blockBytes": 1024
+          },
+          {
+            "width": 16,
+            "height": 16,
+            "blockBytes": 256
+          },
+          {
+            "width": 8,
+            "height": 8,
+            "blockBytes": 64
+          },
+          {
+            "width": 4,
+            "height": 4,
+            "blockBytes": 16
+          },
+          {
+            "width": 2,
+            "height": 2,
+            "blockBytes": 16
+          },
+          {
+            "width": 1,
+            "height": 1,
+            "blockBytes": 16
+          }
+        ]
+      },
+      {
+        "size": 4096,
+        "bytes": 22369648,
+        "mib": 21.333358764648438,
+        "mips": [
+          {
+            "width": 4096,
+            "height": 4096,
+            "blockBytes": 16777216
+          },
+          {
+            "width": 2048,
+            "height": 2048,
+            "blockBytes": 4194304
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "blockBytes": 1048576
+          },
+          {
+            "width": 512,
+            "height": 512,
+            "blockBytes": 262144
+          },
+          {
+            "width": 256,
+            "height": 256,
+            "blockBytes": 65536
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "blockBytes": 16384
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "blockBytes": 4096
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "blockBytes": 1024
+          },
+          {
+            "width": 16,
+            "height": 16,
+            "blockBytes": 256
+          },
+          {
+            "width": 8,
+            "height": 8,
+            "blockBytes": 64
+          },
+          {
+            "width": 4,
+            "height": 4,
+            "blockBytes": 16
+          },
+          {
+            "width": 2,
+            "height": 2,
+            "blockBytes": 16
+          },
+          {
+            "width": 1,
+            "height": 1,
+            "blockBytes": 16
+          }
+        ]
+      },
+      {
+        "size": 8192,
+        "bytes": 89478512,
+        "mib": 85.33335876464844,
+        "mips": [
+          {
+            "width": 8192,
+            "height": 8192,
+            "blockBytes": 67108864
+          },
+          {
+            "width": 4096,
+            "height": 4096,
+            "blockBytes": 16777216
+          },
+          {
+            "width": 2048,
+            "height": 2048,
+            "blockBytes": 4194304
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "blockBytes": 1048576
+          },
+          {
+            "width": 512,
+            "height": 512,
+            "blockBytes": 262144
+          },
+          {
+            "width": 256,
+            "height": 256,
+            "blockBytes": 65536
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "blockBytes": 16384
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "blockBytes": 4096
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "blockBytes": 1024
+          },
+          {
+            "width": 16,
+            "height": 16,
+            "blockBytes": 256
+          },
+          {
+            "width": 8,
+            "height": 8,
+            "blockBytes": 64
+          },
+          {
+            "width": 4,
+            "height": 4,
+            "blockBytes": 16
+          },
+          {
+            "width": 2,
+            "height": 2,
+            "blockBytes": 16
+          },
+          {
+            "width": 1,
+            "height": 1,
+            "blockBytes": 16
+          }
+        ]
+      }
+    ],
+    "threeMapSets": {
+      "heroThreeMap": {
+        "dimensions": [
+          2048,
+          1024,
+          1024
+        ],
+        "bytes": 8388688,
+        "mib": 8.000076293945312
+      },
+      "secondaryThreeMap": {
+        "dimensions": [
+          1024,
+          1024,
+          512
+        ],
+        "bytes": 3145808,
+        "mib": 3.0000762939453125
+      },
+      "environmentThreeMap": {
+        "dimensions": [
+          1024,
+          512,
+          512
+        ],
+        "bytes": 2097232,
+        "mib": 2.0000762939453125
+      },
+      "smallPropThreeMap": {
+        "dimensions": [
+          512,
+          512,
+          512
+        ],
+        "bytes": 1048656,
+        "mib": 1.0000762939453125
+      },
+      "sourceHQ02HypotheticalBCThreeMap": {
+        "dimensions": [
+          8192,
+          4096,
+          4096
+        ],
+        "bytes": 134217808,
+        "mib": 128.0000762939453
+      }
+    }
+  },
+  "officialSources": {
+    "bc7": "https://learn.microsoft.com/en-us/windows/win32/direct3d11/bc7-format",
+    "bc5": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/TextureFormat.BC5.html",
+    "streamingBudget": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/QualitySettings-streamingMipmapsMemoryBudget.html",
+    "mipGroups": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/TextureMipmapLimitGroups.html"
+  },
+  "inputBindings": {
+    "Assets/RacingBois/Client/Presentation/RaceVisualQuality.cs": "4d0fc7596fb3804bd10c8254537c3191e64c8b28d07554d041e3a5f4fb82a69c",
+    "Assets/RacingBois/Client/Bootstrap/RaceBootstrap.cs": "3fbcc89643baea1c2cefdd1c43644c5cd31990789a9b4920a51c81084cc065e2",
+    "Assets/RacingBois/Client/Bootstrap/DesktopAcceptanceRecorder.cs": "1a8b01628431e6baf4373ee4da34093541491c590c06c32b2797834c69ddca5f",
+    "Assets/RacingBois/Settings/Desktop/DesktopPipeline.asset": "964baa85a9cf53e5d0e5bc9eca53ebd5a26dd50402612fa6f7804d69231d665d",
+    "ProjectSettings/QualitySettings.asset": "ddbcd284817c74093c8bc91abdc2ff4284f832c5d58ccf9bb9ff1784cbcb512d",
+    "Assets/RacingBois/Editor/P08ArtBuilder.cs": "df8c8bd9b162d4cb0913d87868cee17947be76eb073b446ab39d46fc6a6eb189",
+    "Assets/RacingBois/Editor/GoldenSampleBuilder.Import.cs": "9096e97e999c5a43e1ea0ddd43bc06137bf678d19732b0fc4d36e3b2a4e31e7d",
+    "Assets/RacingBois/Editor/GoldenSampleBuilder.Contract.cs": "168e30e0857c09d1d9af0dfbcaeae588c3726db578aeb6e58dcc21f986ea0960",
+    "Assets/RacingBois/Editor/GoldenSampleBuilder.Validation.cs": "35b1be54096b1d3e9c75c3cd79d3ec3c7cf459082cdf0fa4459ca4383cbd20ea",
+    "Assets/RacingBois/Art/P08/RB_P08_BikesA_Atlas_BaseColor.png.meta": "71eaa52a7abf1c22a8ff968356facd3a2d698f8d7f401cee17f39d9f05783854",
+    "Assets/RacingBois/Art/P08/Golden/Apex/Apex_Pearl_BaseColor.png.meta": "30fcf0cca5ad84ebaeb06b77643367ade87ae6b54feda0343112ac2b01c15543",
+    "docs/TECHNICAL_ARCHITECTURE.md": "329964f64de2d2a6d7bb562c424a25a898937f0340a5cd2adcfa035bed9ef663",
+    "docs/p08/desktop/README.md": "fa7ed03295e998097f81f01860da3149ce44e2ce6f6501662b3f6ba7061164e5",
+    "docs/p08/golden/apex/AUTHORING_PLAN.md": "025885639dc9efd0fe40fc07d25e5cbae9666fde31c5669587237ae3bf32c32f",
+    "docs/p08/golden/unity/README.md": "f53295be1ecf5bd3dbb2664222ca1e6e605011eaeb7fd8805adae1d549178579",
+    "docs/p08/tripo/apex/20260930-hq02/HQ02_REVIEW.md": "cb8db5caa7cd9458931c43d3405a3e2e6b95544f69749ff5259413e66be13c51",
+    "Assets/RacingBois/Client/Presentation/RaceTextureStreamingScope.cs": "82d60e4239482b6c7551a026af651c6ea8335f00acafd98850fa01e4314d7caa",
+    "docs/p08/tripo/runtime-quality-native-20260930-01.json": "84848170e545a0e4d53f2eaea70ddcc973042db9bcaec7ca11462c3f31dcf042",
+    "docs/p08/tripo/compiled-runtime-quality-20260930-01.json": "f144b4ba0c0e8493a3f02c27af05a247ec891c7d278abefdf47191e27378b1e2"
+  },
+  "markdown": {
+    "path": "docs/p08/tripo/LAPTOP_ASSET_BUDGET_20260930.md",
+    "sha256": "7450bf305ad3873c5ec6154431320bb7a1675db610c4f671a54013a75c7e146c"
+  },
+  "validationPlan": [
+    "fresh owned source/export/import paths and dirty-state snapshots",
+    "actual texture/LOD/material/bounds/rig/channel readbacks",
+    "corresponding native concept and gameplay-camera comparisons including LOD transitions",
+    "native dependency closure rejects raw sources and8K shippingmaps",
+    "record real actor-density and route-swap counters/residency",
+    "unchanged600second target laptop measurement when foreground available"
+  ],
+  "stagingPaths": [
+    "docs/p08/tripo/LAPTOP_ASSET_BUDGET_20260930.md",
+    "docs/p08/tripo/laptop-asset-budget-20260930.json"
+  ],
+  "reviewerChangedRuntimeOrImporters": false,
+  "rootInstalledSeparateRuntimeStreamingPatch": true
+}
