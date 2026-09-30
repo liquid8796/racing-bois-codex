@@ -1,0 +1,130 @@
+{
+  "apiCalled": false,
+  "date": "2026-09-30",
+  "jobs": [
+    {
+      "accessors": 4,
+      "assetId": "RB_APEX_HQ02_20260930",
+      "decodedComponents": 14186818,
+      "metadataNormalizationPassed": true,
+      "productionAccepted": false,
+      "status": "metadata_normalized",
+      "visualAccepted": false
+    },
+    {
+      "accessors": 144,
+      "assetId": "RB_APEX_PARTS01_20260930",
+      "decodedComponents": 14101354,
+      "metadataNormalizationPassed": true,
+      "productionAccepted": false,
+      "status": "metadata_normalized",
+      "visualAccepted": false
+    },
+    {
+      "accessors": 4,
+      "assetId": "RB_APEX_TRIAL01_20260930",
+      "decodedComponents": 10753137,
+      "metadataNormalizationPassed": true,
+      "productionAccepted": false,
+      "status": "metadata_normalized",
+      "visualAccepted": false
+    },
+    {
+      "accessors": 4,
+      "assetId": "RB_SPARK_HQ01_20260930",
+      "decodedComponents": 14225366,
+      "metadataNormalizationPassed": true,
+      "productionAccepted": false,
+      "status": "metadata_normalized",
+      "visualAccepted": false
+    }
+  ],
+  "keyFileAccessed": false,
+  "outputs": [
+    {
+      "bytes": 34672,
+      "path": "tools/p08/tripo/normalize_glb.py",
+      "sha256": "f0ef0dd37db25b14e106fe89809098b4bf7737f4fbd354f0681c17d209dd10dd"
+    },
+    {
+      "bytes": 19713,
+      "path": "tools/p08/tripo/test_normalize_glb.py",
+      "sha256": "4c537252a0a78f83856406418e6b364f0362a52b1963a10801c8dfca16274420"
+    },
+    {
+      "bytes": 3511,
+      "path": "docs/p08/tripo/normalization-20260930/README.md",
+      "sha256": "831c7797e4f06670e2b70c2697f68c676b7c515cedeee4d135b0b1a1104d770e"
+    },
+    {
+      "bytes": 5280,
+      "path": "docs/p08/tripo/normalization-20260930/RB_APEX_HQ02_20260930.json",
+      "sha256": "e6de4dfb98c841769ec01e929d491216da22be4bb97f7a5bd0ffdd2dd362ed8d"
+    },
+    {
+      "bytes": 71400952,
+      "path": "ArtSource/P08/Tripo/Apex/20260930-hq02/derived/RB_Apex_HQ02_Normalized.glb",
+      "sha256": "c5ba8aec863c454e243ebf716c6613730cd039beb0b51dcf3c4fc70df9bebe0d"
+    },
+    {
+      "bytes": 39537,
+      "path": "docs/p08/tripo/normalization-20260930/RB_APEX_PARTS01_20260930.json",
+      "sha256": "21a85be6e5985622d1f92b3c8f64b3f3c607763672c8238a76aa511164b3d0fb"
+    },
+    {
+      "bytes": 51521776,
+      "path": "ArtSource/P08/Tripo/Apex/20260930-parts01/derived/RB_Apex_Parts01_Normalized.glb",
+      "sha256": "0f04e39ae7fdbfb689464b3f908d7dc2aa35ac5e002e575d9dcb3264019789f7"
+    },
+    {
+      "bytes": 5098,
+      "path": "docs/p08/tripo/normalization-20260930/RB_APEX_TRIAL01_20260930.json",
+      "sha256": "11bdb64ccdd41cc86f3b05eb5be53dfe64eaff31815a9917dec056d8afc533e5"
+    },
+    {
+      "bytes": 46245020,
+      "path": "ArtSource/Trials/Tripo/Apex/20260930-01/derived/RB_Apex_Trial01_Normalized.glb",
+      "sha256": "43455904f5b5b79f151dd6c9e8c7b941151fbc539651111319e6862c67029800"
+    },
+    {
+      "bytes": 5257,
+      "path": "docs/p08/tripo/normalization-20260930/RB_SPARK_HQ01_20260930.json",
+      "sha256": "9d29cf572402faaadeadde556cae4dc70ba2bd8d7b28be2c4f30ede7d9c27607"
+    },
+    {
+      "bytes": 72013860,
+      "path": "ArtSource/P08/Tripo/Spark/20260930-hq01/derived/RB_Spark_HQ01_Normalized.glb",
+      "sha256": "6c4b4215211ef1d17bfbb63eeff57483677eaedb50705c899b299dad1f7e5031"
+    }
+  ],
+  "productionAccepted": false,
+  "protectedRawInputs": [
+    {
+      "bytes": 71400948,
+      "path": "ArtSource/P08/Tripo/Apex/20260930-hq02/model.glb",
+      "sha256": "fc3f47be5748da6c2ec10dfaecc12f357ab20581bf8b5ef37ab75c2f083f1611"
+    },
+    {
+      "bytes": 51520092,
+      "path": "ArtSource/P08/Tripo/Apex/20260930-parts01/model.glb",
+      "sha256": "042c4f12a9fb09d7cbe00709cbc5e1e5d2a0daa1ae42db7b0c4a3d2bd2912a2b"
+    },
+    {
+      "bytes": 46244992,
+      "path": "ArtSource/Trials/Tripo/Apex/20260930-01/model.glb",
+      "sha256": "1f7489ed458adb97f2f6ec90968b41ac7307cedaab3c63ee8f2b14d532114a42"
+    },
+    {
+      "bytes": 72013848,
+      "path": "ArtSource/P08/Tripo/Spark/20260930-hq01/model.glb",
+      "sha256": "896e625af9a9a647b080b47fbb7f038950a1e3af61e22826eae872030ab7465c"
+    }
+  ],
+  "rawInputsOverwritten": false,
+  "schema": "racing-bois.glb-normalization-handoff.v1",
+  "steganographyAssessed": false,
+  "steganographyRemoved": false,
+  "testCount": 22,
+  "testsPassed": true,
+  "visualAccepted": false
+}
