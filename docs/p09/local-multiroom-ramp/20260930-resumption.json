@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "reviewDate": "2026-09-30",
+  "checkedUtc": "2026-09-30T04:13:10.4980654Z",
+  "bindingsPassed": true,
+  "phaseAccepted": false,
+  "newLoadRunStarted": false,
+  "oldMetadataPidTerminated": false,
+  "externalEndpointUsed": false,
+  "runs": [
+    {
+      "run": "docs/p09/local-multiroom/20260928T021243Z/run.json",
+      "sha256": "9752c79900937ab42a81e8ddeda5a2e7eb3883e192a9215c729aed04774896a9",
+      "status": "PASS",
+      "errorCode": null,
+      "rooms": 2,
+      "peersPerRoom": 8,
+      "requestedSeconds": 60,
+      "boundSourcesVerified": 171,
+      "changedCurrentSources": [],
+      "originalOwnedProcessExit": [
+        {
+          "label": "probe-0",
+          "pid": 38192,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-1",
+          "pid": 40120,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "server",
+          "pid": 23008,
+          "terminatedBySupervisor": true,
+          "exitCode": 1
+        }
+      ],
+      "fullRoomWindow": {
+        "firstUtc": "2026-09-28T09:12:58.724915+07:00",
+        "lastUtc": "2026-09-28T09:13:54.936522+07:00",
+        "sampleCount": 29,
+        "elapsedSeconds": 56.21144589999312,
+        "scope": "Counters span first to last full-room observation; reconnects/result transitions inside that interval remain included.",
+        "tickSamples": 3373,
+        "bucketCounts": [
+          260,
+          1696,
+          262,
+          967,
+          141,
+          39,
+          6,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bucketUpperBoundsMilliseconds": [
+          0.05,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16.667,
+          25,
+          50,
+          100,
+          250,
+          null
+        ],
+        "p50UpperBoundMilliseconds": 0.1,
+        "p95UpperBoundMilliseconds": 1,
+        "p99UpperBoundMilliseconds": 2,
+        "slowTicksDelta": 0,
+        "droppedCatchupTicksDelta": 0,
+        "persistenceFailuresDelta": 0
+      },
+      "wholeWindow": {
+        "tickSamples": 3615,
+        "bucketCounts": [
+          374,
+          1738,
+          270,
+          1011,
+          153,
+          51,
+          10,
+          2,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bucketUpperBoundsMilliseconds": [
+          0.05,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16.667,
+          25,
+          50,
+          100,
+          250,
+          null
+        ],
+        "p50UpperBoundMilliseconds": 0.1,
+        "p95UpperBoundMilliseconds": 1,
+        "p99UpperBoundMilliseconds": 2,
+        "slowTicksDelta": 0,
+        "droppedCatchupTicksDelta": 0,
+        "persistenceFailuresDelta": 0
+      },
+      "maximumObservedServerPrivateBytes": 50712576,
+      "publishedServerFilesVerified": 47,
+      "publishedProbeFilesVerified": 13
+    },
+    {
+      "run": "docs/p09/local-multiroom/20260928T021416Z/run.json",
+      "sha256": "bb2878b5f19b8ca457809fb63cecb23a99806b96975d57b6ac7d777c68eeda48",
+      "status": "FAIL",
+      "errorCode": "room_probe_failed",
+      "rooms": 8,
+      "peersPerRoom": 8,
+      "requestedSeconds": 180,
+      "boundSourcesVerified": 171,
+      "changedCurrentSources": [],
+      "originalOwnedProcessExit": [
+        {
+          "label": "probe-0",
+          "pid": 29036,
+          "terminatedBySupervisor": true,
+          "exitCode": 1
+        },
+        {
+          "label": "probe-1",
+          "pid": 37096,
+          "terminatedBySupervisor": false,
+          "exitCode": 1
+        },
+        {
+          "label": "probe-2",
+          "pid": 34384,
+          "terminatedBySupervisor": false,
+          "exitCode": 1
+        },
+        {
+          "label": "probe-3",
+          "pid": 37528,
+          "terminatedBySupervisor": false,
+          "exitCode": 1
+        },
+        {
+          "label": "probe-4",
+          "pid": 37912,
+          "terminatedBySupervisor": false,
+          "exitCode": 1
+        },
+        {
+          "label": "probe-5",
+          "pid": 39116,
+          "terminatedBySupervisor": false,
+          "exitCode": 1
+        },
+        {
+          "label": "probe-6",
+          "pid": 38180,
+          "terminatedBySupervisor": false,
+          "exitCode": 1
+        },
+        {
+          "label": "probe-7",
+          "pid": 16164,
+          "terminatedBySupervisor": false,
+          "exitCode": 1
+        },
+        {
+          "label": "server",
+          "pid": 41836,
+          "terminatedBySupervisor": true,
+          "exitCode": 1
+        }
+      ],
+      "fullRoomWindow": null,
+      "wholeWindow": null,
+      "maximumObservedServerPrivateBytes": null,
+      "publishedServerFilesVerified": 47,
+      "publishedProbeFilesVerified": 13
+    },
+    {
+      "run": "docs/p09/local-multiroom-ramp/20260928T021818Z/run.json",
+      "sha256": "22ff2830965f0138eeeb4a20c9a039e1dba6be11aa76ec52957d76c1be6b0cc5",
+      "status": "PASS",
+      "errorCode": null,
+      "rooms": 8,
+      "peersPerRoom": 8,
+      "requestedSeconds": 180,
+      "boundSourcesVerified": 171,
+      "changedCurrentSources": [],
+      "originalOwnedProcessExit": [
+        {
+          "label": "probe-0",
+          "pid": 38992,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-1",
+          "pid": 40352,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-2",
+          "pid": 31844,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-3",
+          "pid": 40332,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-4",
+          "pid": 17460,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-5",
+          "pid": 30924,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-6",
+          "pid": 30220,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "probe-7",
+          "pid": 17992,
+          "terminatedBySupervisor": false,
+          "exitCode": 0
+        },
+        {
+          "label": "server",
+          "pid": 26936,
+          "terminatedBySupervisor": true,
+          "exitCode": 1
+        }
+      ],
+      "fullRoomWindow": {
+        "firstUtc": "2026-09-28T09:21:24.361093+07:00",
+        "lastUtc": "2026-09-28T09:24:19.372452+07:00",
+        "sampleCount": 88,
+        "elapsedSeconds": 175.01085850000527,
+        "scope": "Counters span first to last full-room observation; reconnects/result transitions inside that interval remain included.",
+        "tickSamples": 10500,
+        "bucketCounts": [
+          0,
+          22,
+          5470,
+          1426,
+          648,
+          2543,
+          372,
+          14,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bucketUpperBoundsMilliseconds": [
+          0.05,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16.667,
+          25,
+          50,
+          100,
+          250,
+          null
+        ],
+        "p50UpperBoundMilliseconds": 0.25,
+        "p95UpperBoundMilliseconds": 2,
+        "p99UpperBoundMilliseconds": 4,
+        "slowTicksDelta": 0,
+        "droppedCatchupTicksDelta": 0,
+        "persistenceFailuresDelta": 0
+      },
+      "wholeWindow": {
+        "tickSamples": 21479,
+        "bucketCounts": [
+          1621,
+          2235,
+          9003,
+          2710,
+          2267,
+          3134,
+          474,
+          24,
+          3,
+          0,
+          1,
+          3,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bucketUpperBoundsMilliseconds": [
+          0.05,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16.667,
+          25,
+          50,
+          100,
+          250,
+          null
+        ],
+        "p50UpperBoundMilliseconds": 0.25,
+        "p95UpperBoundMilliseconds": 2,
+        "p99UpperBoundMilliseconds": 4,
+        "slowTicksDelta": 4,
+        "droppedCatchupTicksDelta": 0,
+        "persistenceFailuresDelta": 0
+      },
+      "maximumObservedServerPrivateBytes": 64823296,
+      "publishedServerFilesVerified": 47,
+      "publishedProbeFilesVerified": 13
+    }
+  ],
+  "rampVerification": "docs/p09/local-multiroom-ramp/20260928T021818Z/verification.json",
+  "rampVerifierExecutedOnce": true,
+  "independentCurrentInventoryMembership": {
+    "newUnboundFiles": [],
+    "fileCount": 171,
+    "missingBoundFiles": []
+  },
+  "currentMatchingProcesses": [],
+  "handshakeDiagnostic": {
+    "causalLimit": "Failed burst probes do not record individual handshake HTTP responses",
+    "request31ElapsedSeconds": 0.3027077999940957,
+    "first30Status": 400,
+    "request31Status": 429,
+    "policy": "30 fixed-window requests per minute per IP; queue limit zero",
+    "report": "docs/p09/local-multiroom/handshake-limit-20260928.json"
+  },
+  "staticReview": {
+    "findings": [
+      "Loopback scope uses declared flag; endpoint is not independently restricted",
+      "Boundary health realm linkage and zero rooms/sessions are not explicit verifier assertions",
+      "Recorded source hashes are checked; added current inventory members require separate enumeration"
+    ],
+    "originalActualDataSatisfiesTheseFacts": true,
+    "verifierImplementationChanged": false
+  },
+  "scope": "Original raw loopback receipts, current source and retained binary bindings, terminal owned-process accounting, and static review only. No OCI capacity, geographic client gameplay, physical LAN, Unity rendering, eight-hour soak, art fidelity or phase acceptance.",
+  "fileBindings": {
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-0.json": "49f3a9acdbfd7d3084185b2517b6a9ab249979d8925b23f75df23df0717bc390",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-1.json": "f5dfffc687ebe4a9b7ef2ed42704929c64ac141224a3552092b23e167631ed99",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-2.json": "ab131be86bbe653128da297e08db8b4afa41b27089812ced7d3bede96a3888c1",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-3.json": "644a0626217201cfcbb24597c5ccf94dc2da99ac7efff15d9325bed8a36c1154",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-4.json": "4349fe08b6054567fdf9ac9388df6d6a569a0be73636cf7514be2e8c4461f558",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-5.json": "a86f4599535fd1ae5813603ba2a53efdfb353e753bf56195ede126180b955dc2",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-6.json": "68f8711705f58bcbc4885fb38008bc107bef88ef42eb7c9655f0a35604628f97",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-7.json": "6fcbda7eb3bf8e89c84c0612910bcff9faa8fb48e4b8157f3e121867f4a95ed6",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/run.json": "22ff2830965f0138eeeb4a20c9a039e1dba6be11aa76ec52957d76c1be6b0cc5",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/verification.json": "d11d4dcca0c01b9ca6e41afb3cee0194064cd5cb3064b94fe8d4bbc29119761a",
+    "docs/p09/local-multiroom-ramp/20260930-resumption.md": "de70046616f9d668649caf26ca172b4e8129a0848b1ffe9f3ebdbbdd6f282c39",
+    "docs/p09/local-multiroom/20260928T021243Z/room-0.json": "62ef0880986d7f0e574e169e5267e63cdcb1294cf34c9214ca061455893a1702",
+    "docs/p09/local-multiroom/20260928T021243Z/room-1.json": "9787032347dc5a39eac53b7061b4c13884abcc1c86202f9248256708971716a0",
+    "docs/p09/local-multiroom/20260928T021243Z/run.json": "9752c79900937ab42a81e8ddeda5a2e7eb3883e192a9215c729aed04774896a9",
+    "docs/p09/local-multiroom/20260928T021243Z/verification.json": "f79449391379d8884dd740fc79e8e5574a04ca69516d6addff5a48b4ee80ac26",
+    "docs/p09/local-multiroom/20260928T021416Z/room-1.json": "ac8f241794fe1b391b1fa7652e856233cdaeb46e93dfa5749a077a672012f97c",
+    "docs/p09/local-multiroom/20260928T021416Z/room-2.json": "7419d45d1eadd083b9903021f981f6b718463b2fca0bbbe4340df0db2f114e91",
+    "docs/p09/local-multiroom/20260928T021416Z/room-3.json": "4a631fc49c61067ca2ad5ba1a097d32a6562ab4b597e6996181c56fdf433494e",
+    "docs/p09/local-multiroom/20260928T021416Z/room-4.json": "fec4fd26a6ec7a02059c2a5bad87e5d0b0427ad0577affafbbc6fcacef85e93d",
+    "docs/p09/local-multiroom/20260928T021416Z/room-5.json": "a5f15bc6fdacba60f95d359d7e42425f872b94b015df770780e3c61331de8b10",
+    "docs/p09/local-multiroom/20260928T021416Z/room-6.json": "8b6e9f30d7cf419920f06a4dff43723b586de70a9cbe6c84de2d5d23a0ec6bba",
+    "docs/p09/local-multiroom/20260928T021416Z/room-7.json": "2fa5e1f942561f451e141f0794157a9c2e81c234300feed2871326726f94c7a7",
+    "docs/p09/local-multiroom/20260928T021416Z/run.json": "bb2878b5f19b8ca457809fb63cecb23a99806b96975d57b6ac7d777c68eeda48",
+    "docs/p09/local-multiroom/handshake-limit-20260928.json": "65fa889e72b194b561a322e9cd966117bf9d63ae44efbbf100701a8228a0d547",
+    "docs/p09/local-multiroom/verifier-controls-20260928.json": "14dc6b52d847b3982d916aef7cd5286e21ffe83d0e4a7c55fb2251e5fc0f11c4",
+    "tools/p09/run-local-multiroom-ramp.py": "3681acde86bcb86dabdd66f8d736c7159b4ed98feb9aa74b29740c8376d58832",
+    "tools/p09/run-local-multiroom.py": "0257f4465b336bb4c15fe70ac85fcb4a1177f8e5a7b7aef3ca250a0bc721e29b",
+    "tools/p09/test_local_multiroom_evidence.py": "50b84875b2607cda070f0e99e8cb4abaf6a6da3ac57ea9f0842bac904102c0ca",
+    "tools/p09/verify-local-handshake-limit.py": "52fcad05e112191034df31f580b3bb82ebf4073d050f608fdc121f63745cc00a",
+    "tools/p09/verify-local-multiroom-ramp.py": "ebdccf38c3edf338a3ebc03b031d3608a8caa3dd893f3ca9487ce8a418c12c7b",
+    "tools/p09/verify-local-multiroom.py": "5aac703fc43c660205e25279af2f108a85e4ba0dfc249249dcb1116f039855f8"
+  },
+  "stagingPaths": [
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-0.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-1.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-2.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-3.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-4.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-5.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-6.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/room-7.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/run.json",
+    "docs/p09/local-multiroom-ramp/20260928T021818Z/verification.json",
+    "docs/p09/local-multiroom-ramp/20260930-resumption.md",
+    "docs/p09/local-multiroom/20260928T021243Z/room-0.json",
+    "docs/p09/local-multiroom/20260928T021243Z/room-1.json",
+    "docs/p09/local-multiroom/20260928T021243Z/run.json",
+    "docs/p09/local-multiroom/20260928T021243Z/verification.json",
+    "docs/p09/local-multiroom/20260928T021416Z/room-1.json",
+    "docs/p09/local-multiroom/20260928T021416Z/room-2.json",
+    "docs/p09/local-multiroom/20260928T021416Z/room-3.json",
+    "docs/p09/local-multiroom/20260928T021416Z/room-4.json",
+    "docs/p09/local-multiroom/20260928T021416Z/room-5.json",
+    "docs/p09/local-multiroom/20260928T021416Z/room-6.json",
+    "docs/p09/local-multiroom/20260928T021416Z/room-7.json",
+    "docs/p09/local-multiroom/20260928T021416Z/run.json",
+    "docs/p09/local-multiroom/handshake-limit-20260928.json",
+    "docs/p09/local-multiroom/verifier-controls-20260928.json",
+    "tools/p09/run-local-multiroom-ramp.py",
+    "tools/p09/run-local-multiroom.py",
+    "tools/p09/test_local_multiroom_evidence.py",
+    "tools/p09/verify-local-handshake-limit.py",
+    "tools/p09/verify-local-multiroom-ramp.py",
+    "tools/p09/verify-local-multiroom.py",
+    "docs/p09/local-multiroom-ramp/20260930-resumption.json"
+  ],
+  "processInspectionScope": "Only Python/dotnet/published server/probe executable types with matching task paths; inspection shells are excluded."
+}

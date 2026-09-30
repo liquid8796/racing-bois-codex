@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": [
+    {
+      "name": "actual_two_room_run",
+      "passed": true
+    },
+    {
+      "name": "failed_child",
+      "passed": true
+    },
+    {
+      "name": "duplicate_room",
+      "passed": true
+    },
+    {
+      "name": "missing_child",
+      "passed": true
+    },
+    {
+      "name": "truncated_duration",
+      "passed": true
+    },
+    {
+      "name": "no_resume",
+      "passed": true
+    },
+    {
+      "name": "invalid_snapshot",
+      "passed": true
+    },
+    {
+      "name": "no_progress",
+      "passed": true
+    },
+    {
+      "name": "stale_probe",
+      "passed": true
+    },
+    {
+      "name": "source_substitution",
+      "passed": true
+    },
+    {
+      "name": "incomplete_cleanup",
+      "passed": true
+    },
+    {
+      "name": "unsampled_room_count",
+      "passed": true
+    },
+    {
+      "name": "forged_histogram",
+      "passed": true
+    },
+    {
+      "name": "reset_histogram",
+      "passed": true
+    },
+    {
+      "name": "false_memory",
+      "passed": true
+    },
+    {
+      "name": "realm_switch",
+      "passed": true
+    },
+    {
+      "name": "phase_acceptance",
+      "passed": true
+    }
+  ],
+  "testSha256": "50b84875b2607cda070f0e99e8cb4abaf6a6da3ac57ea9f0842bac904102c0ca",
+  "verifierSha256": "5aac703fc43c660205e25279af2f108a85e4ba0dfc249249dcb1116f039855f8",
+  "runSha256": "9752c79900937ab42a81e8ddeda5a2e7eb3883e192a9215c729aed04774896a9",
+  "scope": "16 negative mutations of real raw-loopback evidence plus unchanged positive control; no new runtime/OCI/release acceptance."
+}
