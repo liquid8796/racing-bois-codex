@@ -1,0 +1,3215 @@
+{
+  "schema": "racing-bois.tripo-conversion-inventory.v1",
+  "captured_at_utc": "2026-09-30T04:10:21.005629+00:00",
+  "scope": "Read-only disk/provenance/actual image inventory. No key file accessed; no API, DCC or Unity calls; no source/promotion/Git mutation. Only this new evidence directory authored.",
+  "new_user_direction": "Direct TripoAI plus Blender; all prior assets enter conversion candidates while locked concepts and 100-percent fidelity requirement remain binding.",
+  "inventory_boundary": "Current P08 catalog slots, manifest props, existing legacy production mappings and Golden review examples. Not a claim every parity-ledger item is a separate mesh.",
+  "tripo_api_deliveries": [
+    {
+      "task_id": "7c8068e9-c221-4be9-aeed-c80a8f79803e",
+      "receipt": {
+        "path": "ArtSource/Trials/Tripo/Apex/20260930-01/receipt.json",
+        "exists": true,
+        "sha256": "930cb2d1183d303265d8f1abcfb2722d3bd02e7964f11567419c06c9168a3f0c",
+        "bytes": 2222,
+        "stable_during_hash": true
+      },
+      "request_parameters": {
+        "model": "v3.1-20260211",
+        "texture": true,
+        "pbr": true,
+        "texture_quality": "standard",
+        "geometry_quality": "standard",
+        "enable_image_autofix": false,
+        "quad": false,
+        "smart_low_poly": false,
+        "generate_parts": false
+      },
+      "status": "completed",
+      "credits_consumed_historical": 30.0,
+      "wallet_historical_after": {
+        "balance": 570.0,
+        "frozen": 0.0
+      },
+      "balance_scope": "Historical trial receipt only; does not establish current balance or number of keys.",
+      "reference": {
+        "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+        "exists": true,
+        "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819",
+        "bytes": 2410957,
+        "stable_during_hash": true,
+        "declared_sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819",
+        "declared_hash_matches": true
+      },
+      "input": {
+        "path": "ArtSource/Concepts/P08/Golden/apex-local3d-input-v1.png",
+        "exists": true,
+        "sha256": "c8c6ce7799ea86c64b13ca33fa5f2450e636ba64579b81914d1eff6b3f93fdb4",
+        "bytes": 2315465,
+        "stable_during_hash": true,
+        "declared_sha256": "c8c6ce7799ea86c64b13ca33fa5f2450e636ba64579b81914d1eff6b3f93fdb4",
+        "declared_hash_matches": true
+      },
+      "artifacts": [
+        {
+          "path": "ArtSource/Trials/Tripo/Apex/20260930-01/model.glb",
+          "exists": true,
+          "sha256": "1f7489ed458adb97f2f6ec90968b41ac7307cedaab3c63ee8f2b14d532114a42",
+          "bytes": 46244992,
+          "stable_during_hash": true,
+          "declared_sha256": "1f7489ed458adb97f2f6ec90968b41ac7307cedaab3c63ee8f2b14d532114a42",
+          "declared_hash_matches": true
+        },
+        {
+          "path": "ArtSource/Trials/Tripo/Apex/20260930-01/Apex_Tripo_raw_import.blend",
+          "exists": true,
+          "sha256": "c4f0c38a15bef6eb72d3bfa865df6660f6f2ac5bf3b7d91c9485576fe9f4d8f3",
+          "bytes": 72614734,
+          "stable_during_hash": true,
+          "declared_sha256": "c4f0c38a15bef6eb72d3bfa865df6660f6f2ac5bf3b7d91c9485576fe9f4d8f3",
+          "declared_hash_matches": true
+        },
+        {
+          "path": "ArtSource/Trials/Tripo/Apex/20260930-01/Apex_Tripo_review.blend",
+          "exists": true,
+          "sha256": "5de24960e09dce659588507b3429a681630ce9c624311f62a42b8f45ea8a7b28",
+          "bytes": 72625235,
+          "stable_during_hash": true,
+          "declared_sha256": "5de24960e09dce659588507b3429a681630ce9c624311f62a42b8f45ea8a7b28",
+          "declared_hash_matches": true
+        },
+        {
+          "path": "docs/tripo-api-trial/20260930/renders/axis_negative.png",
+          "exists": true,
+          "sha256": "b30058f0e134028d6ee463daa0577bb53f40fda7b152075ed476c04bd8dd4028",
+          "bytes": 1278122,
+          "stable_during_hash": true,
+          "declared_sha256": "b30058f0e134028d6ee463daa0577bb53f40fda7b152075ed476c04bd8dd4028",
+          "declared_hash_matches": true
+        },
+        {
+          "path": "docs/tripo-api-trial/20260930/renders/axis_positive.png",
+          "exists": true,
+          "sha256": "3a058875c42cc058ddbed260d427348628cb486fff6d9e8662c13b4d31f97474",
+          "bytes": 1245594,
+          "stable_during_hash": true,
+          "declared_sha256": "3a058875c42cc058ddbed260d427348628cb486fff6d9e8662c13b4d31f97474",
+          "declared_hash_matches": true
+        },
+        {
+          "path": "docs/tripo-api-trial/20260930/renders/quarter_negative.png",
+          "exists": true,
+          "sha256": "046f06fb3cf5ef1904e8f5a72eda392e32418c08c9a3e5894617d848cc145337",
+          "bytes": 1396384,
+          "stable_during_hash": true,
+          "declared_sha256": "046f06fb3cf5ef1904e8f5a72eda392e32418c08c9a3e5894617d848cc145337",
+          "declared_hash_matches": true
+        },
+        {
+          "path": "docs/tripo-api-trial/20260930/renders/quarter_positive.png",
+          "exists": true,
+          "sha256": "d39f351d67c1933efbd7d8d5e2c2ff61f1a06d5f9b1fb377fc6ec1e832dfd08d",
+          "bytes": 1401638,
+          "stable_during_hash": true,
+          "declared_sha256": "d39f351d67c1933efbd7d8d5e2c2ff61f1a06d5f9b1fb377fc6ec1e832dfd08d",
+          "declared_hash_matches": true
+        },
+        {
+          "path": "docs/tripo-api-trial/20260930/renders/side.png",
+          "exists": true,
+          "sha256": "4ca6fb3acb24668b6bd9595811ee65b6fb9599ca8aea47330ff26539df49d0ee",
+          "bytes": 1475798,
+          "stable_during_hash": true,
+          "declared_sha256": "4ca6fb3acb24668b6bd9595811ee65b6fb9599ca8aea47330ff26539df49d0ee",
+          "declared_hash_matches": true
+        }
+      ],
+      "mesh_summary": {
+        "meshes": 1,
+        "vertices": 789003,
+        "triangles": 1480371,
+        "materials": 1,
+        "packed_maps": [
+          2048,
+          2048
+        ],
+        "map_count": 3,
+        "physical_scale": "normalized; no production metre calibration",
+        "rig_parts_lods": "not delivered"
+      },
+      "visual_accepted": false,
+      "production_accepted": false,
+      "unity_integration": "not performed",
+      "open_mismatches": [
+        "Opaque silver windscreen instead of smoked transparent glass.",
+        "Blank lamp rectangles instead of recessed projector optics.",
+        "Long round under-tail cans instead of two compact rounded-rectangle outlets in integrated rear housing.",
+        "Tall central rear lamp instead of thin upper strip and small lower lamp.",
+        "Soft inflated tank/fairing/seat transitions and smeared component seams."
+      ]
+    }
+  ],
+  "separate_local_reconstruction": [
+    {
+      "backend": "TripoSR local; not TripoAI API",
+      "receipt": {
+        "path": "_local/p08-local3d/outputs/apex-grid128/receipt.json",
+        "exists": true,
+        "sha256": "d37d4de5066e8e04ee2d788a9e2b4a3528bd9cec1f86660e7433f55e7a6b0c52",
+        "bytes": 1233,
+        "stable_during_hash": true
+      },
+      "output": {
+        "path": "_local/p08-local3d/outputs/apex-grid128/apex-grid128.glb",
+        "exists": true,
+        "sha256": "0841e9255cd6d1cfbb4126def3047f976d43138a5bc2aa6fb3b94bcd17da9202",
+        "bytes": 342816,
+        "stable_during_hash": true,
+        "declared_sha256": "0841e9255cd6d1cfbb4126def3047f976d43138a5bc2aa6fb3b94bcd17da9202",
+        "declared_hash_matches": true
+      },
+      "status": "completed_unaccepted",
+      "faces": 17090,
+      "source_commit": "107cefdc244c39106fa830359024f6a2f1c78871",
+      "model_commit": "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+      "api_credits_used": 0,
+      "production_accepted": false
+    }
+  ],
+  "current_roster": [
+    {
+      "semantic_name": "RB_P08_Bike_00",
+      "display_name": "Spark 450",
+      "kind": "bike",
+      "catalog_index": 0,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Golden/spark-v1.png",
+        "exists": true,
+        "sha256": "e358ecf1a809f5373aa45ef92cbd6897ed1e1693cacc73b0f6df697d91bedce6",
+        "bytes": 2513839,
+        "stable_during_hash": true
+      },
+      "reference_role": "current Golden override",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_00.prefab",
+        "exists": true,
+        "sha256": "9e78d3f9dd9a53a01429210639f4eb0e67cf814fd507e54b31e148cc992574e1",
+        "bytes": 2446,
+        "stable_during_hash": true
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_00.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_00.fbx",
+        "exists": false
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 3,
+      "note": "Current production slot aliases P06 motorcycle; distinct Golden Spark remains unaccepted. Preserve alias as historical input."
+    },
+    {
+      "semantic_name": "RB_P08_Bike_01",
+      "display_name": "Kestrel",
+      "kind": "bike",
+      "catalog_index": 1,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/01-kestrel-v1.png",
+        "exists": true,
+        "sha256": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+        "bytes": 2535331,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_01.prefab",
+        "exists": true,
+        "sha256": "c38038b1f85909e0379e877970d5e57acc39bf6f7d2c47062e27b664e45efb5f",
+        "bytes": 11470,
+        "stable_during_hash": true
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_01.blend",
+        "exists": true,
+        "sha256": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b",
+        "bytes": 1139802,
+        "stable_during_hash": true,
+        "declared_sha256": "76dd1f9547a4036b8808e4217c599174a75ea91b4872d6f6322fbb7bf3a2538b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_01.fbx",
+        "exists": true,
+        "sha256": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4",
+        "bytes": 1268492,
+        "stable_during_hash": true,
+        "declared_sha256": "e681bae74ce07cbf85332823ac7462dbeecead2ccd677c3b05624b16941857d4",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/01-kestrel-v1.png",
+        "exists": true,
+        "sha256": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+        "bytes": 2535331,
+        "stable_during_hash": true,
+        "declared_sha256": "f35419682281b2c0ed590579ea7bff0814bbfe6ca4d2bcced31c1de45f558b95",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_02",
+      "display_name": "Rift 250",
+      "kind": "bike",
+      "catalog_index": 2,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/02-rift-250-v1.png",
+        "exists": true,
+        "sha256": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+        "bytes": 2446769,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_02.prefab",
+        "exists": true,
+        "sha256": "657b37c057d0ef5dece7bf00b769e0aae78034550614dc71e533068dcf845285",
+        "bytes": 11462,
+        "stable_during_hash": true
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_02.blend",
+        "exists": true,
+        "sha256": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41",
+        "bytes": 1103805,
+        "stable_during_hash": true,
+        "declared_sha256": "dec57b433161c512b95daa38b41902ac8cef716ec59770135eaebc50c62d2d41",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_02.fbx",
+        "exists": true,
+        "sha256": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999",
+        "bytes": 1226348,
+        "stable_during_hash": true,
+        "declared_sha256": "32a39aad38739f08fec86b292685198e843db2e366a918c5c0b5f0d9772f4999",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/02-rift-250-v1.png",
+        "exists": true,
+        "sha256": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+        "bytes": 2446769,
+        "stable_during_hash": true,
+        "declared_sha256": "4d4e950630f4d60b5a20a02de4228f2192818e53c7ff162a4172ae0814278a3c",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_03",
+      "display_name": "Jackal",
+      "kind": "bike",
+      "catalog_index": 3,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/03-jackal-v1.png",
+        "exists": true,
+        "sha256": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+        "bytes": 2690103,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_03.prefab",
+        "exists": true,
+        "sha256": "00dedcfb6d0caea48110617d10237ce4928b28678b093ecf9bb4061bfddbc168",
+        "bytes": 11467,
+        "stable_during_hash": true
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_03.blend",
+        "exists": true,
+        "sha256": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03",
+        "bytes": 1141144,
+        "stable_during_hash": true,
+        "declared_sha256": "ea6f755cca310a38d784841ee15bb73d810816ad7700a9c1a0ad01cd5131ea03",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_03.fbx",
+        "exists": true,
+        "sha256": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3",
+        "bytes": 1270268,
+        "stable_during_hash": true,
+        "declared_sha256": "54f321acbed09e72ef96661def522c1c607478d995aadb72726d8513a5bb7cc3",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/03-jackal-v1.png",
+        "exists": true,
+        "sha256": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+        "bytes": 2690103,
+        "stable_during_hash": true,
+        "declared_sha256": "b791e8cb28d6d2452439fd37d070b078bc71fb74e5ba78196503360dbf462926",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_04",
+      "display_name": "Ember",
+      "kind": "bike",
+      "catalog_index": 4,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/04-ember-v1.png",
+        "exists": true,
+        "sha256": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+        "bytes": 2529536,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_04.prefab",
+        "exists": true,
+        "sha256": "28c05da77a8ded4588ae9b6408713212071b1ca684c95b0eb4028ef269052d96",
+        "bytes": 11479,
+        "stable_during_hash": true
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_04.blend",
+        "exists": true,
+        "sha256": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569",
+        "bytes": 1149788,
+        "stable_during_hash": true,
+        "declared_sha256": "9ed74f31f53d9bcb18468a7e5f9e464d202d624e2b748dc25a2c4d42755ca569",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_04.fbx",
+        "exists": true,
+        "sha256": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5",
+        "bytes": 1280700,
+        "stable_during_hash": true,
+        "declared_sha256": "a3c74c75573ca740a35cc2c5717e2009f07cde7a2f022cea392b81e0f130cab5",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/04-ember-v1.png",
+        "exists": true,
+        "sha256": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+        "bytes": 2529536,
+        "stable_during_hash": true,
+        "declared_sha256": "8194502c4c1f8ef45e77d1fbb73f381955cb95db32553d5255c592254275ec0d",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_05",
+      "display_name": "Apex",
+      "kind": "bike",
+      "catalog_index": 5,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+        "exists": true,
+        "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819",
+        "bytes": 2410957,
+        "stable_during_hash": true
+      },
+      "reference_role": "current Golden override",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_05.prefab",
+        "exists": true,
+        "sha256": "d138c7b9c3a6987178252f70b2f922a55c6599c32584a1e4e59fb483397e5436",
+        "bytes": 11471,
+        "stable_during_hash": true
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_05.blend",
+        "exists": true,
+        "sha256": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162",
+        "bytes": 2917197,
+        "stable_during_hash": true,
+        "declared_sha256": "84ce2da3f754dafef04e1998a0965c58d6c6d01fdde0cb99e3e202c3f21fa162",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_05.fbx",
+        "exists": true,
+        "sha256": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262",
+        "bytes": 1297996,
+        "stable_during_hash": true,
+        "declared_sha256": "8fe7e62bd59447191f88c23c82e2c35cbeddea3b79837001f2a1adf2c6a29262",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [
+        "7c8068e9-c221-4be9-aeed-c80a8f79803e"
+      ],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 1,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/05-apex-v1.png",
+        "exists": true,
+        "sha256": "baba735ce7f94d64a514ea1e87f9fc3ecdcaee865fd219e8794ec118d1f222f8",
+        "bytes": 2631499,
+        "stable_during_hash": true,
+        "declared_sha256": "baba735ce7f94d64a514ea1e87f9fc3ecdcaee865fd219e8794ec118d1f222f8",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_06",
+      "display_name": "Corvus",
+      "kind": "bike",
+      "catalog_index": 6,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/06-corvus-v1.png",
+        "exists": true,
+        "sha256": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+        "bytes": 2619626,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_06.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_06.blend",
+        "exists": true,
+        "sha256": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b",
+        "bytes": 1973246,
+        "stable_during_hash": true,
+        "declared_sha256": "02ebb5f4064e346023d349849f1b8ed9bf7f8ec68f24604ee2df41b9a6e94c1b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_06.fbx",
+        "exists": true,
+        "sha256": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685",
+        "bytes": 1236092,
+        "stable_during_hash": true,
+        "declared_sha256": "d5667085e0423b0c6a7d5f1aa8c5de7090021f7704722f9889aba2948f7e6685",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/06-corvus-v1.png",
+        "exists": true,
+        "sha256": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+        "bytes": 2619626,
+        "stable_during_hash": true,
+        "declared_sha256": "02527303f1a393f6299db35eeeaa0980aa0f32716b943ad3bad511ec7e0aa20a",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_07",
+      "display_name": "Viper",
+      "kind": "bike",
+      "catalog_index": 7,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/07-viper-v1.png",
+        "exists": true,
+        "sha256": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+        "bytes": 2570202,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_07.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_07.blend",
+        "exists": true,
+        "sha256": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7",
+        "bytes": 2051848,
+        "stable_during_hash": true,
+        "declared_sha256": "2d7f63bb9452e023c4d28f57ed0a5950882bb44f28e8a3a93ad823675bf520c7",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_07.fbx",
+        "exists": true,
+        "sha256": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def",
+        "bytes": 1297180,
+        "stable_during_hash": true,
+        "declared_sha256": "7334d1ba6ab50ff8fd5fed78de8a5a39fb06b3374c1c2398b7bd4080d09b2def",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/07-viper-v1.png",
+        "exists": true,
+        "sha256": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+        "bytes": 2570202,
+        "stable_during_hash": true,
+        "declared_sha256": "16284b62b2ac9847ecc13726fd4a11e18e410286f1ca2e172cf031d20eb88df0",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_08",
+      "display_name": "Rift 750 N",
+      "kind": "bike",
+      "catalog_index": 8,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/08-rift-750-n-v1.png",
+        "exists": true,
+        "sha256": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+        "bytes": 2584029,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_08.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_08.blend",
+        "exists": true,
+        "sha256": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26",
+        "bytes": 1971693,
+        "stable_during_hash": true,
+        "declared_sha256": "fbe8c5f086c4e352b3f0302e7389c7aa6bca7457e8a77f4116c32f8fbf164e26",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_08.fbx",
+        "exists": true,
+        "sha256": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae",
+        "bytes": 1232748,
+        "stable_during_hash": true,
+        "declared_sha256": "7eccdb2ab8d821c47038980c7ea9606c6f969c06958a5ad53c1a5023770f50ae",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/08-rift-750-n-v1.png",
+        "exists": true,
+        "sha256": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+        "bytes": 2584029,
+        "stable_during_hash": true,
+        "declared_sha256": "d5849493c7f5d7772b1f024d463a94fc5edc4c4dc4d2ba43f9a79b57cc532037",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_09",
+      "display_name": "Specter",
+      "kind": "bike",
+      "catalog_index": 9,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/09-specter-v1.png",
+        "exists": true,
+        "sha256": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+        "bytes": 2424071,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_09.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_09.blend",
+        "exists": true,
+        "sha256": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea",
+        "bytes": 3411735,
+        "stable_during_hash": true,
+        "declared_sha256": "9ca5dad4f46cfad6a58e197665bd453d298f244564b127a41b481294d946f0ea",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_09.fbx",
+        "exists": true,
+        "sha256": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a",
+        "bytes": 1299084,
+        "stable_during_hash": true,
+        "declared_sha256": "ed4a3a7430f7f9ced93735cf58a589b001577c9d17a6b28952ca64975b479b9a",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/09-specter-v1.png",
+        "exists": true,
+        "sha256": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+        "bytes": 2424071,
+        "stable_during_hash": true,
+        "declared_sha256": "863807cbe5c3a908f047b007743b77e1b6ba2fce794c4bca47d9a990e1d20691",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_10",
+      "display_name": "Nightjar",
+      "kind": "bike",
+      "catalog_index": 10,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/10-nightjar-v1.png",
+        "exists": true,
+        "sha256": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+        "bytes": 2577325,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_10.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_10.blend",
+        "exists": true,
+        "sha256": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb",
+        "bytes": 1975841,
+        "stable_during_hash": true,
+        "declared_sha256": "1686eb4463c281b31f38d952b7a66b170c6a0ed5d593657e84711df76312f2cb",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_10.fbx",
+        "exists": true,
+        "sha256": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be",
+        "bytes": 1237644,
+        "stable_during_hash": true,
+        "declared_sha256": "0543e90f3447e54bc51c5567ebab6d8e4f6efee92232c97709aec5b1df2060be",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/10-nightjar-v1.png",
+        "exists": true,
+        "sha256": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+        "bytes": 2577325,
+        "stable_during_hash": true,
+        "declared_sha256": "98cfa4d5a2d55be23a86d8ea58e8432dd6cb1b604d8104a3aef60f63b4cbf731",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_11",
+      "display_name": "Cinder 10",
+      "kind": "bike",
+      "catalog_index": 11,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/11-cinder-10-v1.png",
+        "exists": true,
+        "sha256": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+        "bytes": 2736725,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_11.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_11.blend",
+        "exists": true,
+        "sha256": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259",
+        "bytes": 4040209,
+        "stable_during_hash": true,
+        "declared_sha256": "2706b71baecf66c0501ba7fc05e17278ce87133d6f5a25d21cd85e5df014e259",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_11.fbx",
+        "exists": true,
+        "sha256": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed",
+        "bytes": 1297692,
+        "stable_during_hash": true,
+        "declared_sha256": "178eecc8b0b66386fb5b8a7407b9401824c298d54665c8eca5305305a4c37aed",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/11-cinder-10-v1.png",
+        "exists": true,
+        "sha256": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+        "bytes": 2736725,
+        "stable_during_hash": true,
+        "declared_sha256": "69403da5ab63ab3f2085d435e16b0556c0c1a8009dd305bf54386d0204313241",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_12",
+      "display_name": "Rift 750",
+      "kind": "bike",
+      "catalog_index": 12,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/12-rift-750-v1.png",
+        "exists": true,
+        "sha256": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+        "bytes": 2559964,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_12.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_12.blend",
+        "exists": true,
+        "sha256": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb",
+        "bytes": 4035309,
+        "stable_during_hash": true,
+        "declared_sha256": "f96cfbc304813136996f90c5c172a0e77794fb533205a3d237651a951edc96bb",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_12.fbx",
+        "exists": true,
+        "sha256": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19",
+        "bytes": 1294044,
+        "stable_during_hash": true,
+        "declared_sha256": "9e8a35ea53178e3395c7cf28a0d97cd8c96ab1f6b1002fdfc72c98372232db19",
+        "declared_hash_matches": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 5,
+      "historical_export_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/12-rift-750-v1.png",
+        "exists": true,
+        "sha256": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+        "bytes": 2559964,
+        "stable_during_hash": true,
+        "declared_sha256": "8cb114b8db769c5a6d2d0664a26700de1db8c279b49a5bc981185bc78bb44a0d",
+        "declared_hash_matches": true
+      }
+    },
+    {
+      "semantic_name": "RB_P08_Bike_13",
+      "display_name": "Odyssey",
+      "kind": "bike",
+      "catalog_index": 13,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/13-odyssey-v1.png",
+        "exists": true,
+        "sha256": "8df7072d59c6a3b2d238d2bc68034ec65200c94a7234a311bab7d5dac104ca1a",
+        "bytes": 2602073,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_13.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_13.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_13.fbx",
+        "exists": false
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 4
+    },
+    {
+      "semantic_name": "RB_P08_Bike_14",
+      "display_name": "Havoc",
+      "kind": "bike",
+      "catalog_index": 14,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Bikes/14-havoc-v1.png",
+        "exists": true,
+        "sha256": "8945eff9a73d9b7ad1be209e7f4723c19881ad8ec7e472312687ba475283a2b1",
+        "bytes": 2628770,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Bike_14.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Bike_14.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Bike_14.fbx",
+        "exists": false
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 4
+    },
+    {
+      "semantic_name": "RB_P08_Rider_00",
+      "display_name": "Ash",
+      "kind": "rider",
+      "catalog_index": 0,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+        "exists": true,
+        "sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+        "bytes": 2385932,
+        "stable_during_hash": true
+      },
+      "reference_role": "current Golden override",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_00.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_00.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_00.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_00_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 2
+    },
+    {
+      "semantic_name": "RB_P08_Rider_01",
+      "display_name": "Juno",
+      "kind": "rider",
+      "catalog_index": 1,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Riders/01-juno-v1.png",
+        "exists": true,
+        "sha256": "6b69efe9989bf365e71dc9b63c97a0cc721ccd3458c1fec756fc916693ac2712",
+        "bytes": 2261724,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_01.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_01.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_01.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_01_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 6
+    },
+    {
+      "semantic_name": "RB_P08_Rider_02",
+      "display_name": "Mako",
+      "kind": "rider",
+      "catalog_index": 2,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Riders/02-mako-v1.png",
+        "exists": true,
+        "sha256": "86e9b7784a0ae2491e111989fa5337f4385b5fc240267e4bef030a537a246cbb",
+        "bytes": 2286147,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_02.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_02.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_02.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_02_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 6
+    },
+    {
+      "semantic_name": "RB_P08_Rider_03",
+      "display_name": "Rook",
+      "kind": "rider",
+      "catalog_index": 3,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Riders/03-rook-v1.png",
+        "exists": true,
+        "sha256": "32368be9a5b75b2b552c5f00578be09be6596a375fdc1547d7ab8dea945783cf",
+        "bytes": 2303438,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_03.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_03.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_03.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_03_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 6
+    },
+    {
+      "semantic_name": "RB_P08_Rider_04",
+      "display_name": "Sol",
+      "kind": "rider",
+      "catalog_index": 4,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Riders/04-sol-v1.png",
+        "exists": true,
+        "sha256": "749273c722a5bc4ebe5bc51ccb598b2b091882e0c06057f7ce600293c123b3ad",
+        "bytes": 2305702,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_04.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_04.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_04.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_04_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 6
+    },
+    {
+      "semantic_name": "RB_P08_Rider_05",
+      "display_name": "Vale",
+      "kind": "rider",
+      "catalog_index": 5,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Riders/05-vale-v1.png",
+        "exists": true,
+        "sha256": "f6eaaa17b7dd470b0c5a0e245d52e30b2cff559c279780d0d978c06eec168dca",
+        "bytes": 2184508,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_05.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_05.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_05.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_05_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 6
+    },
+    {
+      "semantic_name": "RB_P08_Rider_06",
+      "display_name": "Echo",
+      "kind": "rider",
+      "catalog_index": 6,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Riders/06-echo-v1.png",
+        "exists": true,
+        "sha256": "abd5b1fee9bb6d9585a2c2f1f307167297211890c405245e783cb1e44e4604cc",
+        "bytes": 2378209,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_06.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_06.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_06.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_06_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 6
+    },
+    {
+      "semantic_name": "RB_P08_Rider_07",
+      "display_name": "Kai",
+      "kind": "rider",
+      "catalog_index": 7,
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Riders/07-kai-v1.png",
+        "exists": true,
+        "sha256": "9f74def9ea47b9c81f79fe573548a2775c1bc4b95259b1a1501ed2e1bdd10fba",
+        "bytes": 2269113,
+        "stable_during_hash": true
+      },
+      "reference_role": "catalog concept; current visual review required before submitting",
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_Rider_07.prefab",
+        "exists": false
+      },
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_Rider_07.blend",
+        "exists": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_Rider_07.fbx",
+        "exists": false
+      },
+      "portraits": [
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_00.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_01.png",
+          "exists": false
+        },
+        {
+          "path": "Assets/RacingBois/Art/P08/Portraits/RB_P08_Portrait_07_02.png",
+          "exists": false
+        }
+      ],
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 6
+    },
+    {
+      "semantic_name": "RB_P08_CityBusShelter",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "bytes": 2602350,
+        "stable_during_hash": true,
+        "declared_sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "bytes": 12004842,
+        "stable_during_hash": true,
+        "declared_sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityBusShelter.fbx",
+        "exists": true,
+        "sha256": "c299d11023a7ad9a0cc526bbb2bdf7faf17149431882b31933a1c68d10cd9271",
+        "bytes": 148652,
+        "stable_during_hash": true,
+        "declared_sha256": "c299d11023a7ad9a0cc526bbb2bdf7faf17149431882b31933a1c68d10cd9271",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityBusShelter.prefab",
+        "exists": true,
+        "sha256": "7ff6ec6af2a98568ef9a30ffabf26cbbd4cd691cf6e8427bcd70fcd4335bd35c",
+        "bytes": 7906,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CityBusShelter"
+    },
+    {
+      "semantic_name": "RB_P08_CityCornerShop",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "bytes": 2602350,
+        "stable_during_hash": true,
+        "declared_sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "bytes": 12004842,
+        "stable_during_hash": true,
+        "declared_sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityCornerShop.fbx",
+        "exists": true,
+        "sha256": "bab4682e01904d0431f9ea0604d21a7850eab57771e6cfce652daaaad4736132",
+        "bytes": 311260,
+        "stable_during_hash": true,
+        "declared_sha256": "bab4682e01904d0431f9ea0604d21a7850eab57771e6cfce652daaaad4736132",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityCornerShop.prefab",
+        "exists": true,
+        "sha256": "ed737d07868e31171311f6a4f05ee2cd8e62dde4daf2f78f17710f031cc8f1a5",
+        "bytes": 7894,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CityCornerShop"
+    },
+    {
+      "semantic_name": "RB_P08_CityLoadingGantry",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "bytes": 2602350,
+        "stable_during_hash": true,
+        "declared_sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "bytes": 12004842,
+        "stable_during_hash": true,
+        "declared_sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityLoadingGantry.fbx",
+        "exists": true,
+        "sha256": "c6cc9318824586d088ad2fb077fd2e484e046411dd64c5d1202792228aa7d0b6",
+        "bytes": 201292,
+        "stable_during_hash": true,
+        "declared_sha256": "c6cc9318824586d088ad2fb077fd2e484e046411dd64c5d1202792228aa7d0b6",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityLoadingGantry.prefab",
+        "exists": true,
+        "sha256": "7dff51af3b45358c3f45196933d7fcc8a86430a6637ede6a83f2e465d1d2cb86",
+        "bytes": 7912,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CityLoadingGantry"
+    },
+    {
+      "semantic_name": "RB_P08_CityStreetlamp",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "bytes": 2602350,
+        "stable_during_hash": true,
+        "declared_sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "bytes": 12004842,
+        "stable_during_hash": true,
+        "declared_sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityStreetlamp.fbx",
+        "exists": true,
+        "sha256": "24a3a8251cf47f8574b12c0d03c104607418e98a1ae14dbc578e26a579512b0c",
+        "bytes": 79916,
+        "stable_during_hash": true,
+        "declared_sha256": "24a3a8251cf47f8574b12c0d03c104607418e98a1ae14dbc578e26a579512b0c",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityStreetlamp.prefab",
+        "exists": true,
+        "sha256": "8ee81b2268bbc092490c0b528cdbe8268ca6e33d5311ddf620d4ddcc4f7b77fa",
+        "bytes": 7882,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CityStreetlamp"
+    },
+    {
+      "semantic_name": "RB_P08_CityWarehouse",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "bytes": 2602350,
+        "stable_during_hash": true,
+        "declared_sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "bytes": 12004842,
+        "stable_during_hash": true,
+        "declared_sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityWarehouse.fbx",
+        "exists": true,
+        "sha256": "1362d12bf93c24b4895980dac3dcbe04200a606fc21c48ba0be6f002d5624875",
+        "bytes": 489468,
+        "stable_during_hash": true,
+        "declared_sha256": "1362d12bf93c24b4895980dac3dcbe04200a606fc21c48ba0be6f002d5624875",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityWarehouse.prefab",
+        "exists": true,
+        "sha256": "90237754da8803674e7b935ddaefcb94ca84a1c40994512b4093b03b53df8a4e",
+        "bytes": 7893,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CityWarehouse"
+    },
+    {
+      "semantic_name": "RB_P08_CityWaterTank",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/neon-district-v1.png",
+        "exists": true,
+        "sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "bytes": 2602350,
+        "stable_during_hash": true,
+        "declared_sha256": "043f75b4c5959235ce3552671770f7957dfbd1e34bf844451d35c333551e63a9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_neon.blend",
+        "exists": true,
+        "sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "bytes": 12004842,
+        "stable_during_hash": true,
+        "declared_sha256": "1497f9996bfbec8c15d0ec888e5ab521eddb37acbbe2a54c770cbb86418136fc",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CityWaterTank.fbx",
+        "exists": true,
+        "sha256": "0dddc76cab04106d257ff9cc5f81baa35e495d18509557bb37d257d474642901",
+        "bytes": 166220,
+        "stable_during_hash": true,
+        "declared_sha256": "0dddc76cab04106d257ff9cc5f81baa35e495d18509557bb37d257d474642901",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CityWaterTank.prefab",
+        "exists": true,
+        "sha256": "321b211e46c9828557821504915d8ae4270ea2bec049bdecc724e0fc8a6be70e",
+        "bytes": 7892,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CityWaterTank"
+    },
+    {
+      "semantic_name": "RB_P08_CoastBeacon",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "bytes": 3061436,
+        "stable_during_hash": true,
+        "declared_sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "bytes": 12882255,
+        "stable_during_hash": true,
+        "declared_sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBeacon.fbx",
+        "exists": true,
+        "sha256": "940d8efe0481447621ae5b35f14dd006581ac387e743d67e871b7f73cd828ae2",
+        "bytes": 115820,
+        "stable_during_hash": true,
+        "declared_sha256": "940d8efe0481447621ae5b35f14dd006581ac387e743d67e871b7f73cd828ae2",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBeacon.prefab",
+        "exists": true,
+        "sha256": "2a13a046a64bb9468454851130a823815d4d876dab66b95d4ef4e3fdbf419d23",
+        "bytes": 7904,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CoastBeacon"
+    },
+    {
+      "semantic_name": "RB_P08_CoastBoulder",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "bytes": 3061436,
+        "stable_during_hash": true,
+        "declared_sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "bytes": 12882255,
+        "stable_during_hash": true,
+        "declared_sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBoulder.fbx",
+        "exists": true,
+        "sha256": "d8ca5ea95ce2507de00bb5ed27210642494e957b0c380d96f074bbafbf7b8213",
+        "bytes": 63340,
+        "stable_during_hash": true,
+        "declared_sha256": "d8ca5ea95ce2507de00bb5ed27210642494e957b0c380d96f074bbafbf7b8213",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBoulder.prefab",
+        "exists": true,
+        "sha256": "9dd14290886896bbb61373e40b2f804106137b24e33d495134c47fc574433031",
+        "bytes": 7892,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CoastBoulder"
+    },
+    {
+      "semantic_name": "RB_P08_CoastBridgePier",
+      "kind": "landmark",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "bytes": 3061436,
+        "stable_during_hash": true,
+        "declared_sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "bytes": 12882255,
+        "stable_during_hash": true,
+        "declared_sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBridgePier.fbx",
+        "exists": true,
+        "sha256": "0e404eed77758b4dd56eee73e274cf267a88056d6396157a9564ad373ba94b09",
+        "bytes": 155388,
+        "stable_during_hash": true,
+        "declared_sha256": "0e404eed77758b4dd56eee73e274cf267a88056d6396157a9564ad373ba94b09",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBridgePier.prefab",
+        "exists": true,
+        "sha256": "f784599a3feb2e5415bd071452316e18fa13b2ba82167b5ba61e05868975f076",
+        "bytes": 7274,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CoastBridgePier"
+    },
+    {
+      "semantic_name": "RB_P08_CoastBroadleafShrub",
+      "kind": "foliage",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "bytes": 3061436,
+        "stable_during_hash": true,
+        "declared_sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "bytes": 12882255,
+        "stable_during_hash": true,
+        "declared_sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastBroadleafShrub.fbx",
+        "exists": true,
+        "sha256": "6e0bb08db0d515bcde3c1ec6336a105b12b40e197abed28b1a0966c8e20b43d3",
+        "bytes": 86060,
+        "stable_during_hash": true,
+        "declared_sha256": "6e0bb08db0d515bcde3c1ec6336a105b12b40e197abed28b1a0966c8e20b43d3",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastBroadleafShrub.prefab",
+        "exists": true,
+        "sha256": "38766869a9b4dd1815b8e02a68ff8c40e97ab06a0800c22b3530479563222b94",
+        "bytes": 7826,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CoastBroadleafShrub"
+    },
+    {
+      "semantic_name": "RB_P08_CoastPalm",
+      "kind": "foliage",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "bytes": 3061436,
+        "stable_during_hash": true,
+        "declared_sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "bytes": 12882255,
+        "stable_during_hash": true,
+        "declared_sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastPalm.fbx",
+        "exists": true,
+        "sha256": "f79fbf463e7dbb9e89081f2f16959ee94807b8fc22283f61c1202367dc8204ba",
+        "bytes": 422716,
+        "stable_during_hash": true,
+        "declared_sha256": "f79fbf463e7dbb9e89081f2f16959ee94807b8fc22283f61c1202367dc8204ba",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastPalm.prefab",
+        "exists": true,
+        "sha256": "0682253f158c15a176eaafe66b231a6a614222073933dbc6631613caaf319d32",
+        "bytes": 7810,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CoastPalm"
+    },
+    {
+      "semantic_name": "RB_P08_CoastSurfShack",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/coastal-line-v1.png",
+        "exists": true,
+        "sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "bytes": 3061436,
+        "stable_during_hash": true,
+        "declared_sha256": "fe23c4e79a2b2cf1f430d7a70b83e9be444220a9d129bf0ced79919a5c58c5f9",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_coast.blend",
+        "exists": true,
+        "sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "bytes": 12882255,
+        "stable_during_hash": true,
+        "declared_sha256": "6e83c38fec650b1ee45fac56cc00b434f47752f300f2f5b01898371208dd166b",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_CoastSurfShack.fbx",
+        "exists": true,
+        "sha256": "25923ff4a7d3c03480cbd558c127b7ddbeea4be8b113ff0cab6c1cf2c81b2ce5",
+        "bytes": 391324,
+        "stable_during_hash": true,
+        "declared_sha256": "25923ff4a7d3c03480cbd558c127b7ddbeea4be8b113ff0cab6c1cf2c81b2ce5",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_CoastSurfShack.prefab",
+        "exists": true,
+        "sha256": "ec9ba898bcdf5be95ca612512fa665e9700d5ff1c242e8a479cdd0859db1f19b",
+        "bytes": 7895,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "CoastSurfShack"
+    },
+    {
+      "semantic_name": "RB_P08_OrchardAppleTree",
+      "kind": "foliage",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "bytes": 2849197,
+        "stable_during_hash": true,
+        "declared_sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "bytes": 13312253,
+        "stable_during_hash": true,
+        "declared_sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardAppleTree.fbx",
+        "exists": true,
+        "sha256": "24b701c3f1cb5ae39f28ddd22d19c0bcafe45e92021def786df55cb59583f57b",
+        "bytes": 193884,
+        "stable_during_hash": true,
+        "declared_sha256": "24b701c3f1cb5ae39f28ddd22d19c0bcafe45e92021def786df55cb59583f57b",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardAppleTree.prefab",
+        "exists": true,
+        "sha256": "38863a10fbd62a237d192726f1691f3fde3fb794487de6660d89e2ea3bc4abfe",
+        "bytes": 7803,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "OrchardAppleTree"
+    },
+    {
+      "semantic_name": "RB_P08_OrchardBarn",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "bytes": 2849197,
+        "stable_during_hash": true,
+        "declared_sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "bytes": 13312253,
+        "stable_during_hash": true,
+        "declared_sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardBarn.fbx",
+        "exists": true,
+        "sha256": "d44af8613fba3ca0ed74704bb67849e8b5c0919d3a3424de5f1c7afdc7ecc742",
+        "bytes": 398444,
+        "stable_during_hash": true,
+        "declared_sha256": "d44af8613fba3ca0ed74704bb67849e8b5c0919d3a3424de5f1c7afdc7ecc742",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardBarn.prefab",
+        "exists": true,
+        "sha256": "0157363d128bf378ad96c573997ddeeba62edd73622a5a54269648e99999521b",
+        "bytes": 7897,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "OrchardBarn"
+    },
+    {
+      "semantic_name": "RB_P08_OrchardFence",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "bytes": 2849197,
+        "stable_during_hash": true,
+        "declared_sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "bytes": 13312253,
+        "stable_during_hash": true,
+        "declared_sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardFence.fbx",
+        "exists": true,
+        "sha256": "32b9c37ef277672ceb8f8f962a4a959c20b12a4740edad77a9f83f56fe7bd6bd",
+        "bytes": 76284,
+        "stable_during_hash": true,
+        "declared_sha256": "32b9c37ef277672ceb8f8f962a4a959c20b12a4740edad77a9f83f56fe7bd6bd",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardFence.prefab",
+        "exists": true,
+        "sha256": "cb37c28ba9ad6472a208376f0c99f5ac0b4e0fe79bc7cb1d6a3523c2aad3113a",
+        "bytes": 7917,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "OrchardFence"
+    },
+    {
+      "semantic_name": "RB_P08_OrchardHayBale",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "bytes": 2849197,
+        "stable_during_hash": true,
+        "declared_sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "bytes": 13312253,
+        "stable_during_hash": true,
+        "declared_sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardHayBale.fbx",
+        "exists": true,
+        "sha256": "761bc59f380178a1a06fd4d54d203546b60130d48d93b6c1bad16f9fe8512398",
+        "bytes": 176460,
+        "stable_during_hash": true,
+        "declared_sha256": "761bc59f380178a1a06fd4d54d203546b60130d48d93b6c1bad16f9fe8512398",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardHayBale.prefab",
+        "exists": true,
+        "sha256": "62e32830b21aa991405d63601388fb01d3c2683873096c6e80fd9791d060cb78",
+        "bytes": 7911,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "OrchardHayBale"
+    },
+    {
+      "semantic_name": "RB_P08_OrchardProduceKiosk",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "bytes": 2849197,
+        "stable_during_hash": true,
+        "declared_sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "bytes": 13312253,
+        "stable_during_hash": true,
+        "declared_sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardProduceKiosk.fbx",
+        "exists": true,
+        "sha256": "e3239b85e3f38562ff775e83f133574cb59834cdf9b74d2aa3a4b90bc7f47105",
+        "bytes": 286428,
+        "stable_during_hash": true,
+        "declared_sha256": "e3239b85e3f38562ff775e83f133574cb59834cdf9b74d2aa3a4b90bc7f47105",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardProduceKiosk.prefab",
+        "exists": true,
+        "sha256": "fe2af588a7ceff6ed083303d5ece3f578e47f27c999a87ecd0a26bdbe7cca3a2",
+        "bytes": 7911,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "OrchardProduceKiosk"
+    },
+    {
+      "semantic_name": "RB_P08_OrchardSilo",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/orchard-road-v1.png",
+        "exists": true,
+        "sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "bytes": 2849197,
+        "stable_during_hash": true,
+        "declared_sha256": "8f1d6bd5f25037b2382003e7748101e1ae8a4f84b8ba4e3243f064581a6ffe3f",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_orchard.blend",
+        "exists": true,
+        "sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "bytes": 13312253,
+        "stable_during_hash": true,
+        "declared_sha256": "d22a0ae71f59b29ac1514f5c1e2b99b7b44a3dceded4796e7b739115b8b8c2a1",
+        "declared_hash_matches": true
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_OrchardSilo.fbx",
+        "exists": true,
+        "sha256": "7b45624c6bcfd7e00b719b4dd2294120bf5258644d42a331efe78d76f802f1ab",
+        "bytes": 403756,
+        "stable_during_hash": true,
+        "declared_sha256": "7b45624c6bcfd7e00b719b4dd2294120bf5258644d42a331efe78d76f802f1ab",
+        "declared_hash_matches": true
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_OrchardSilo.prefab",
+        "exists": true,
+        "sha256": "4167b363052a1d813db54e45ef583ba8ddbbf0d91705887e70f90ef990338e6b",
+        "bytes": 7905,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "OrchardSilo"
+    },
+    {
+      "semantic_name": "RB_P08_RidgeFir",
+      "kind": "foliage",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "bytes": 3109546,
+        "stable_during_hash": true,
+        "declared_sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "bytes": 11770040,
+        "stable_during_hash": true,
+        "declared_sha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "declared_hash_matches": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeFir.fbx",
+        "exists": true,
+        "sha256": "684e3b248a149a80e9bf4c8456c61a5455199510fb20afb6b728b7858f35a373",
+        "bytes": 663132,
+        "stable_during_hash": true,
+        "declared_sha256": "79aee4f97f9a0fbf62a78fa61e660a1a2918b52058f7ae9a79002edb22e7d5db",
+        "declared_hash_matches": false
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeFir.prefab",
+        "exists": true,
+        "sha256": "958023838a047a93ee9fcf25f200e87a96e5b2af8b7ccfabd8b3f814120b2a47",
+        "bytes": 7799,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "RidgeFir"
+    },
+    {
+      "semantic_name": "RB_P08_RidgeGalleryArch",
+      "kind": "landmark",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "bytes": 3109546,
+        "stable_during_hash": true,
+        "declared_sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "bytes": 11770040,
+        "stable_during_hash": true,
+        "declared_sha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "declared_hash_matches": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeGalleryArch.fbx",
+        "exists": true,
+        "sha256": "f5ee6144b1472e26c8ed65dd021f6043b4cdc61c8b8aa80cb43a51d12a309d3b",
+        "bytes": 182508,
+        "stable_during_hash": true,
+        "declared_sha256": "c454333c4efac915ae5bf62671101a0bd4d9b5e5db77d5933699dbf44ffdaea5",
+        "declared_hash_matches": false
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeGalleryArch.prefab",
+        "exists": true,
+        "sha256": "4556ce92448ace6380a9b0d1786d3338fd0d2468f60dabd39e36faf1d3596db2",
+        "bytes": 7283,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "RidgeGalleryArch"
+    },
+    {
+      "semantic_name": "RB_P08_RidgeGranite",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "bytes": 3109546,
+        "stable_during_hash": true,
+        "declared_sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "bytes": 11770040,
+        "stable_during_hash": true,
+        "declared_sha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "declared_hash_matches": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeGranite.fbx",
+        "exists": true,
+        "sha256": "bb07add43fa3f16e59e3e3ff88d7429b3f203864fc505542fe1920a7e37673b2",
+        "bytes": 84988,
+        "stable_during_hash": true,
+        "declared_sha256": "6ef8170cb18713f6695a3e5c027c7b6f33fb864a35362feb98d939ea2db6efd5",
+        "declared_hash_matches": false
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeGranite.prefab",
+        "exists": true,
+        "sha256": "cbddf57fb3a21e50433bfa88cc3150c338b7874ff02474e2e9caf709268d76d6",
+        "bytes": 7891,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "RidgeGranite"
+    },
+    {
+      "semantic_name": "RB_P08_RidgeSnowPole",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "bytes": 3109546,
+        "stable_during_hash": true,
+        "declared_sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "bytes": 11770040,
+        "stable_during_hash": true,
+        "declared_sha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "declared_hash_matches": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeSnowPole.fbx",
+        "exists": true,
+        "sha256": "18e14ea8fb3c23a0f242c2dc0394243b3cae80e49fd37b2513d9c2073581c8cf",
+        "bytes": 42604,
+        "stable_during_hash": true,
+        "declared_sha256": "e15087b9b33a155d650da8beea1fd745691216a548f2e7061b8cf325347f2c67",
+        "declared_hash_matches": false
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeSnowPole.prefab",
+        "exists": true,
+        "sha256": "f7df228cb7b925b496553f1b3ab59900812295afd443c28e58296be7b1c31cd3",
+        "bytes": 7900,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "RidgeSnowPole"
+    },
+    {
+      "semantic_name": "RB_P08_RidgeStoneWall",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "bytes": 3109546,
+        "stable_during_hash": true,
+        "declared_sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "bytes": 11770040,
+        "stable_during_hash": true,
+        "declared_sha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "declared_hash_matches": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeStoneWall.fbx",
+        "exists": true,
+        "sha256": "86ff88b3f0dd55d0da06862c5dfdabfe99dd4da342a1414bb40ed84f78ad62a2",
+        "bytes": 440252,
+        "stable_during_hash": true,
+        "declared_sha256": "a629ae4addb71e0bba0e25336e444fcf0c72da3d5eb3659ae6550f40dabf235f",
+        "declared_hash_matches": false
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeStoneWall.prefab",
+        "exists": true,
+        "sha256": "206f8d6393ffaa9bdb8d8ebb4bf21638ffde2b4b53ea553c87fb5696ef29508c",
+        "bytes": 7912,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "RidgeStoneWall"
+    },
+    {
+      "semantic_name": "RB_P08_RidgeTimberHut",
+      "kind": "scenery",
+      "locked_reference": {
+        "path": "ArtSource/Concepts/P08/Environments/ridge-pass-v1.png",
+        "exists": true,
+        "sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "bytes": 3109546,
+        "stable_during_hash": true,
+        "declared_sha256": "40576e0ba85d6714ac3c8b230750fd813a7b540c4ff0ac091c5f204fec2273c2",
+        "declared_hash_matches": true
+      },
+      "reference_role": "environment sheet; isolate one approved prop input before Tripo submission",
+      "canonical_source": {
+        "path": "ArtSource/P08/RB_P08_ridge.blend",
+        "exists": true,
+        "sha256": "00b672e4cb6e622f662bcab8baf3718ffd9fc2dcc8050c183826e27c18face4a",
+        "bytes": 11770040,
+        "stable_during_hash": true,
+        "declared_sha256": "81e8350b336ef9d5340d65ebd3d59a2671abd3a972aeff7c16430b43cbad2843",
+        "declared_hash_matches": false
+      },
+      "canonical_fbx": {
+        "path": "Assets/RacingBois/Art/P08/RB_P08_RidgeTimberHut.fbx",
+        "exists": true,
+        "sha256": "6e2eb1ab1257b71714e3c2e6e7c8acef0f195a5853e8d2dff159d4857db3f1c8",
+        "bytes": 278348,
+        "stable_during_hash": true,
+        "declared_sha256": "274ac9c04cdff0acaf3d3c837ba04b5949c3530bbc2b13a56ecb876fcf26579b",
+        "declared_hash_matches": false
+      },
+      "canonical_prefab": {
+        "path": "Assets/RacingBois/Prefabs/P08/RB_P08_RidgeTimberHut.prefab",
+        "exists": true,
+        "sha256": "b4cd35943d47204ded1758dd2184e98fe04a9139eb468f0418afa06998a51583",
+        "bytes": 7897,
+        "stable_during_hash": true
+      },
+      "tripo_api_jobs": [],
+      "visual_accepted": false,
+      "production_accepted": false,
+      "priority_group": 8,
+      "route_group": "RidgeTimberHut"
+    }
+  ],
+  "legacy_core_mappings": [
+    {
+      "mapping_id": "p06-motorcycle",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Motorcycle.prefab",
+          "exists": true,
+          "sha256": "65b224290b278e29079dd7aa7d26271b948bb826f31651cbacb6c9f7faeaf7d3",
+          "bytes": 11446,
+          "stable_during_hash": true
+        },
+        {
+          "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Motorcycle.fbx",
+          "exists": true,
+          "sha256": "4632a0516fb258427e16e6737617ee3bb20ff154bddd49e99bc3c95432a2e2bd",
+          "bytes": 852668,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Hero/RB_P06_Motorcycle.blend",
+          "exists": true,
+          "sha256": "c3d0eb637083c03d631eb093eb8dd1ed78825b5a1c71b4bbb8d95f2e2f640c69",
+          "bytes": 10409214,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/motorcycle-v1.png",
+          "exists": true,
+          "sha256": "0304a71c990a7149c9b43a01192155ebdfbec67643b909e2b7bc86f855c40c87",
+          "bytes": 2713939,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-rider",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Rider.prefab",
+          "exists": true,
+          "sha256": "0209fb1046727fd5ddac88cee169cd499296f021e6d07241ebb0d46e8b781f3e",
+          "bytes": 18187,
+          "stable_during_hash": true
+        },
+        {
+          "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx",
+          "exists": true,
+          "sha256": "d12abec227b04b0ce02f7adfdac87ff32dabe96f2bd2f020beae4245dc22eda4",
+          "bytes": 2021740,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Hero/RB_P06_Rider.blend",
+          "exists": true,
+          "sha256": "44e39962659ac127cb70712d05224aa444a655bc5341606aad0522b517cc90a5",
+          "bytes": 40705215,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/rider-v1.png",
+          "exists": true,
+          "sha256": "8cd8bde4c607a9284b9ce6d88eb6088a9c10703487f890de7a2418f337d1f197",
+          "bytes": 2334654,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-policemotorcycle",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceMotorcycle.prefab",
+          "exists": true,
+          "sha256": "c9069590474b5c71e65028c0c7f34638d8ce00ba736dc14aad95c9e027cfdf95",
+          "bytes": 11452,
+          "stable_during_hash": true
+        },
+        {
+          "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_PoliceMotorcycle.fbx",
+          "exists": true,
+          "sha256": "6982e2e84442338e8b4c558395de15e65518d29b7939548dc8b84d651131f75e",
+          "bytes": 929468,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Hero/RB_P06_PoliceMotorcycle.blend",
+          "exists": true,
+          "sha256": "d7df6bd2b98b2292e4b935b27c5b028b4efe2af3b1b7e22c8a2f12b41b9eb971",
+          "bytes": 46582775,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/patrol-v1.png",
+          "exists": true,
+          "sha256": "c01c34930b26efd408b721b08e4f90354f097a1af744e70d52999b0d0fb4ca9b",
+          "bytes": 2217270,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-policerider",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_PoliceRider.prefab",
+          "exists": true,
+          "sha256": "2f1927c02960c74b073a98c67ebf59db447a70076cf98a4a5ae1534c68b683ba",
+          "bytes": 18193,
+          "stable_during_hash": true
+        },
+        {
+          "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_Rider.fbx",
+          "exists": true,
+          "sha256": "d12abec227b04b0ce02f7adfdac87ff32dabe96f2bd2f020beae4245dc22eda4",
+          "bytes": 2021740,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Hero/RB_P06_Rider.blend",
+          "exists": true,
+          "sha256": "44e39962659ac127cb70712d05224aa444a655bc5341606aad0522b517cc90a5",
+          "bytes": 40705215,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/patrol-v1.png",
+          "exists": true,
+          "sha256": "c01c34930b26efd408b721b08e4f90354f097a1af744e70d52999b0d0fb4ca9b",
+          "bytes": 2217270,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-trafficcoupe",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficCoupe.prefab",
+          "exists": true,
+          "sha256": "3e308d535e847860439e7693a8bf8b40fab66eab1170c9e29784374712741134",
+          "bytes": 7107,
+          "stable_during_hash": true
+        },
+        {
+          "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficCoupe.fbx",
+          "exists": true,
+          "sha256": "271c7ad1fd5490d86f3bf923d032e6ede7851c20ccd79125bd19971423121720",
+          "bytes": 357724,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Hero/RB_P06_TrafficCoupe.blend",
+          "exists": true,
+          "sha256": "4adada4410b1338831e589ae8790c525e5b60ed75275c8d5ff848b66afdc76d1",
+          "bytes": 39080470,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P03P04/coupe-concept-v1.png",
+          "exists": true,
+          "sha256": "c2644d82bade1a5e6c4d278d0b4b98699ff0072431243825470a2eebb015d8be",
+          "bytes": 1779231,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-trafficvan",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_TrafficVan.prefab",
+          "exists": true,
+          "sha256": "c2faee19bee0173fd257e5d1badc652892154a71aba27b0f4779cbb2e3c571ed",
+          "bytes": 7126,
+          "stable_during_hash": true
+        },
+        {
+          "path": "Assets/RacingBois/Art/P06/Hero/RB_P06_TrafficVan.fbx",
+          "exists": true,
+          "sha256": "4ca5f8d4dfe974d827ec3188cbcab9361e4d8b57f6468d948847cc27c7bb8fa8",
+          "bytes": 369180,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Hero/RB_P06_TrafficVan.blend",
+          "exists": true,
+          "sha256": "a29f63959fff87d6e1da40c2fa28399dc76c8b05399a73e765202213c4994786",
+          "bytes": 39948185,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P03P04/van-concept-v1.png",
+          "exists": true,
+          "sha256": "35ca5eb116a5332848a797e662f247b0d1f5bad73087ac8530509aeea1614a54",
+          "bytes": 1810187,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-rocka",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_RockA.prefab",
+          "exists": true,
+          "sha256": "8f5e39be5ad951b7da09b4c5320133ba4a0106f9aa3cfdf00f3ad1c3486a233f",
+          "bytes": 7898,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Environment/RB_P06_CanyonKit.blend",
+          "exists": true,
+          "sha256": "3379bf19cc4f92f849f601ab007e22c9b90d0c7e96465e8ac1f67723a7f6855f",
+          "bytes": 8873958,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/create_environment.py",
+          "exists": true,
+          "sha256": "68b828041798a94d13b04b484135c3b4d7a2d1afbd335872bb38d1ac5eb13da0",
+          "bytes": 18508,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/refine_environment_surfaces.py",
+          "exists": true,
+          "sha256": "6732b19ea522be701bc42d7d9977dac45b4fcaf107635bb09059c8e68070726f",
+          "bytes": 3701,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/canyon-v1.png",
+          "exists": true,
+          "sha256": "5fa4da8484228a9c6f0e6e2f8c11f7a9f6d9007f6edcec4ddb464a46712c6074",
+          "bytes": 2871329,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-rockb",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_RockB.prefab",
+          "exists": true,
+          "sha256": "a49e1398f92bd165ec5177dca12abafee3707ec9b868d9710e6a7e31eb066cd2",
+          "bytes": 7900,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Environment/RB_P06_CanyonKit.blend",
+          "exists": true,
+          "sha256": "3379bf19cc4f92f849f601ab007e22c9b90d0c7e96465e8ac1f67723a7f6855f",
+          "bytes": 8873958,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/create_environment.py",
+          "exists": true,
+          "sha256": "68b828041798a94d13b04b484135c3b4d7a2d1afbd335872bb38d1ac5eb13da0",
+          "bytes": 18508,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/refine_environment_surfaces.py",
+          "exists": true,
+          "sha256": "6732b19ea522be701bc42d7d9977dac45b4fcaf107635bb09059c8e68070726f",
+          "bytes": 3701,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/canyon-v1.png",
+          "exists": true,
+          "sha256": "5fa4da8484228a9c6f0e6e2f8c11f7a9f6d9007f6edcec4ddb464a46712c6074",
+          "bytes": 2871329,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-sage",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Sage.prefab",
+          "exists": true,
+          "sha256": "10584f16d4333fdb164cd87524164e1d18825827b99006751ccd441a1b901bf9",
+          "bytes": 7793,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Environment/RB_P06_CanyonKit.blend",
+          "exists": true,
+          "sha256": "3379bf19cc4f92f849f601ab007e22c9b90d0c7e96465e8ac1f67723a7f6855f",
+          "bytes": 8873958,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/create_environment.py",
+          "exists": true,
+          "sha256": "68b828041798a94d13b04b484135c3b4d7a2d1afbd335872bb38d1ac5eb13da0",
+          "bytes": 18508,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/refine_environment_surfaces.py",
+          "exists": true,
+          "sha256": "6732b19ea522be701bc42d7d9977dac45b4fcaf107635bb09059c8e68070726f",
+          "bytes": 3701,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/canyon-v1.png",
+          "exists": true,
+          "sha256": "5fa4da8484228a9c6f0e6e2f8c11f7a9f6d9007f6edcec4ddb464a46712c6074",
+          "bytes": 2871329,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-drygrass",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_DryGrass.prefab",
+          "exists": true,
+          "sha256": "bb5a1ca0eec324518ffd7067f7b37339b4021bf57e1135ac6ee8394749a80de9",
+          "bytes": 7809,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Environment/RB_P06_CanyonKit.blend",
+          "exists": true,
+          "sha256": "3379bf19cc4f92f849f601ab007e22c9b90d0c7e96465e8ac1f67723a7f6855f",
+          "bytes": 8873958,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/create_environment.py",
+          "exists": true,
+          "sha256": "68b828041798a94d13b04b484135c3b4d7a2d1afbd335872bb38d1ac5eb13da0",
+          "bytes": 18508,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/refine_environment_surfaces.py",
+          "exists": true,
+          "sha256": "6732b19ea522be701bc42d7d9977dac45b4fcaf107635bb09059c8e68070726f",
+          "bytes": 3701,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/canyon-v1.png",
+          "exists": true,
+          "sha256": "5fa4da8484228a9c6f0e6e2f8c11f7a9f6d9007f6edcec4ddb464a46712c6074",
+          "bytes": 2871329,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-guardrail",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Guardrail.prefab",
+          "exists": true,
+          "sha256": "af043c8a138f7ca0e6e9bfd03861af89a299e136143ab85003efa99f6216111c",
+          "bytes": 7902,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Environment/RB_P06_CanyonKit.blend",
+          "exists": true,
+          "sha256": "3379bf19cc4f92f849f601ab007e22c9b90d0c7e96465e8ac1f67723a7f6855f",
+          "bytes": 8873958,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/create_environment.py",
+          "exists": true,
+          "sha256": "68b828041798a94d13b04b484135c3b4d7a2d1afbd335872bb38d1ac5eb13da0",
+          "bytes": 18508,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/refine_environment_surfaces.py",
+          "exists": true,
+          "sha256": "6732b19ea522be701bc42d7d9977dac45b4fcaf107635bb09059c8e68070726f",
+          "bytes": 3701,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/canyon-v1.png",
+          "exists": true,
+          "sha256": "5fa4da8484228a9c6f0e6e2f8c11f7a9f6d9007f6edcec4ddb464a46712c6074",
+          "bytes": 2871329,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-chevron",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_Chevron.prefab",
+          "exists": true,
+          "sha256": "6cbd250951d44dddcf218c842f2809bc57c0df5e2071914b785a218c64b82d83",
+          "bytes": 7915,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Environment/RB_P06_CanyonKit.blend",
+          "exists": true,
+          "sha256": "3379bf19cc4f92f849f601ab007e22c9b90d0c7e96465e8ac1f67723a7f6855f",
+          "bytes": 8873958,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/create_environment.py",
+          "exists": true,
+          "sha256": "68b828041798a94d13b04b484135c3b4d7a2d1afbd335872bb38d1ac5eb13da0",
+          "bytes": 18508,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/refine_environment_surfaces.py",
+          "exists": true,
+          "sha256": "6732b19ea522be701bc42d7d9977dac45b4fcaf107635bb09059c8e68070726f",
+          "bytes": 3701,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/canyon-v1.png",
+          "exists": true,
+          "sha256": "5fa4da8484228a9c6f0e6e2f8c11f7a9f6d9007f6edcec4ddb464a46712c6074",
+          "bytes": 2871329,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p06-utilitypole",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/P06/RB_P06_UtilityPole.prefab",
+          "exists": true,
+          "sha256": "52764d0578e2e5b669b7d7a4640eb1c4a70816876cf6c16243517a1305280368",
+          "bytes": 7861,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/P06/Environment/RB_P06_CanyonKit.blend",
+          "exists": true,
+          "sha256": "3379bf19cc4f92f849f601ab007e22c9b90d0c7e96465e8ac1f67723a7f6855f",
+          "bytes": 8873958,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/create_environment.py",
+          "exists": true,
+          "sha256": "68b828041798a94d13b04b484135c3b4d7a2d1afbd335872bb38d1ac5eb13da0",
+          "bytes": 18508,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p06/refine_environment_surfaces.py",
+          "exists": true,
+          "sha256": "6732b19ea522be701bc42d7d9977dac45b4fcaf107635bb09059c8e68070726f",
+          "bytes": 3701,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P06/canyon-v1.png",
+          "exists": true,
+          "sha256": "5fa4da8484228a9c6f0e6e2f8c11f7a9f6d9007f6edcec4ddb464a46712c6074",
+          "bytes": 2871329,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p03-pedestrian",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/RB_Pedestrian.prefab",
+          "exists": true,
+          "sha256": "a8129f72497eaa6186c604b29accaa8a3b5d6e8e4465239c2eb61bf7f8dbc0f0",
+          "bytes": 28744,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/Characters/RB_Pedestrian.blend",
+          "exists": true,
+          "sha256": "2de6dadd9c678ddd3156a097e20a9ddbbe11d6ae9dbf87ea48f1792fc79bc605",
+          "bytes": 184069,
+          "stable_during_hash": true
+        },
+        {
+          "path": "tools/p03/assets/create_pedestrian.py",
+          "exists": true,
+          "sha256": "340371f71d5e6c1a3ef7f7b392ec5736b1ece87eb0f19b93edb31fe3583dc66c",
+          "bytes": 9879,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P03P04/pedestrian-concept-v1.png",
+          "exists": true,
+          "sha256": "cf1fb82768d108453b8a8a034370f4c43e912e0744aa570601a814cd647478d4",
+          "bytes": 1889393,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "implemented_pending_qa",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": false
+    },
+    {
+      "mapping_id": "p04-club",
+      "production": [
+        {
+          "path": "Assets/RacingBois/Prefabs/RB_Club.prefab",
+          "exists": true,
+          "sha256": "fce16a9a40db1d71b29d651302b0a0a007340bbbb79f3a007cc7c06dc18df6bf",
+          "bytes": 6568,
+          "stable_during_hash": true
+        },
+        {
+          "path": "Assets/RacingBois/Art/Weapons/Club/RB_Club.fbx",
+          "exists": true,
+          "sha256": "a20ff9df9edd387b08ff535c52a9faf9bef918bbca584321c33778f0dec41056",
+          "bytes": 54940,
+          "stable_during_hash": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "ArtSource/Weapons/RB_Club.blend",
+          "exists": true,
+          "sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f",
+          "bytes": 935897,
+          "stable_during_hash": true
+        }
+      ],
+      "references": [
+        {
+          "path": "ArtSource/Concepts/P03P04/club-concept-v1.png",
+          "exists": true,
+          "sha256": "d6e0c6f0563d4cf9d57773e0e112452c940f11dc5eab55cdd6de478ceed52957",
+          "bytes": 1485851,
+          "stable_during_hash": true
+        }
+      ],
+      "tripo_api_jobs": [],
+      "qa_state": "source_changed_since_historical_receipt",
+      "overlap_note": "P06 motorcycle is Bike00 current alias; P06 rider shared with police rider. Deduplicate by actual source and retain separate semantic/material roles.",
+      "protected_input": true
+    }
+  ],
+  "staged_authored_candidates": [
+    {
+      "directory": "ArtSource/P08/Golden/Apex/R7",
+      "source_paths_present": [
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate01.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate01_failed_closure.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate01_failed_context.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate02.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate03.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate04_failed_radial.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate05.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate06.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate07.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate08.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate09.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate10.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate11.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate12.blend",
+        "ArtSource/P08/Golden/Apex/R7/RB_Golden_Apex_r7_candidate13.blend"
+      ],
+      "hash_scope": "Path inventory only; authored candidates are outside Tripo API provenance and require their own immutable handoff.",
+      "visual_accepted": false
+    },
+    {
+      "directory": "ArtSource/P08/Golden/Ash/V8",
+      "source_paths_present": [
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket01.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket02.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket02_ProbeState.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Jacket02_Rendered.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_PreEdit.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Tailoring03_Rejected.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Tailoring03_Rejected_Rendered.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Tailoring04_ProbeState.blend",
+        "ArtSource/P08/Golden/Ash/V8/RB_Golden_Ash_V8_Tailoring04_Rejected.blend"
+      ],
+      "hash_scope": "Path inventory only; authored candidates are outside Tripo API provenance and require their own immutable handoff.",
+      "visual_accepted": false
+    },
+    {
+      "directory": "ArtSource/P08/Golden/Canyon/V20",
+      "source_paths_present": [
+        "ArtSource/P08/Golden/Canyon/V20/RB_Golden_Canyon_V20_01.blend",
+        "ArtSource/P08/Golden/Canyon/V20/RB_Golden_Canyon_V20_02.blend",
+        "ArtSource/P08/Golden/Canyon/V20/RB_Golden_Canyon_V20_10.blend"
+      ],
+      "hash_scope": "Path inventory only; authored candidates are outside Tripo API provenance and require their own immutable handoff.",
+      "visual_accepted": false
+    }
+  ],
+  "actually_inspected_images": [
+    {
+      "path": "ArtSource/Concepts/P08/Golden/apex-v2.png",
+      "exists": true,
+      "sha256": "f8b09f6d24e95724be935f0993bfcd02d2bfaf070e85982c1eba57e6a8479819",
+      "bytes": 2410957,
+      "stable_during_hash": true
+    },
+    {
+      "path": "ArtSource/Concepts/P08/Golden/apex-local3d-input-v1.png",
+      "exists": true,
+      "sha256": "c8c6ce7799ea86c64b13ca33fa5f2450e636ba64579b81914d1eff6b3f93fdb4",
+      "bytes": 2315465,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/tripo-api-trial/20260930/renders/quarter_positive.png",
+      "exists": true,
+      "sha256": "d39f351d67c1933efbd7d8d5e2c2ff61f1a06d5f9b1fb377fc6ec1e832dfd08d",
+      "bytes": 1401638,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/tripo-api-trial/20260930/renders/side.png",
+      "exists": true,
+      "sha256": "4ca6fb3acb24668b6bd9595811ee65b6fb9599ca8aea47330ff26539df49d0ee",
+      "bytes": 1475798,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/tripo-api-trial/20260930/renders/axis_negative.png",
+      "exists": true,
+      "sha256": "b30058f0e134028d6ee463daa0577bb53f40fda7b152075ed476c04bd8dd4028",
+      "bytes": 1278122,
+      "stable_during_hash": true
+    },
+    {
+      "path": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+      "exists": true,
+      "sha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+      "bytes": 2385932,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/p08/golden/ash/v8/jacket02/body-front.png",
+      "exists": true,
+      "sha256": "aaf7ceaabb67ef953e66676566746b27a80402d2c2071f829955202fd61b7c1b",
+      "bytes": 1063611,
+      "stable_during_hash": true
+    },
+    {
+      "path": "ArtSource/Concepts/P08/Golden/canyon-v2.png",
+      "exists": true,
+      "sha256": "83273dae6721d9f2c6f5d6bf4a6f39146322d8efeabc5cec0cb332e5a1cfa610",
+      "bytes": 3438544,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/p08/golden/canyon/v20/candidate02-gameplay.png",
+      "exists": true,
+      "sha256": "f6031e72d0e447bc81b573d850af8154c0c0cceafbec155b03ef3d6a89bbb21a",
+      "bytes": 1989251,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/p08/golden/apex/r7/13-quarter.png",
+      "exists": true,
+      "sha256": "7030f2eeb8666928929b83aceb6bcc4c0b8f5d8b51b94108bcbe54857dba6cb4",
+      "bytes": 1344016,
+      "stable_during_hash": true
+    }
+  ],
+  "priority_queue": [
+    {
+      "order": 1,
+      "asset": "Apex / RB_P08_Bike_05",
+      "action": "One controlled highest-supported-quality Tripo candidate against current alpha single-asset input; root verifies actual provider schema/credit estimate first. Compare with raw standard trial in five full-object views, plus master rear. Then bounded Blender glass/lamp/outlet repair, physical anchors, articulation, retopology, LOD and fresh Unity evidence.",
+      "why": "Only existing API delivery; controlled baseline and exact input available. Single-view raw candidate does not resolve rear design."
+    },
+    {
+      "order": 2,
+      "asset": "Ash / RB_P08_Rider_00",
+      "action": "Prepare a reviewed single complete character or garment input from current locked sheet; do not submit the multi-panel portrait/body atlas as one asset. Compare generated body/clothing/face in front/back/profile; retain current owned45-bone/13-action recipient as technical baseline only, then retopology/weight transfer and real pose checks.",
+      "why": "Representative rider currently looks like smooth inflated tracksuit, sparse hair and simplified boots/gloves; canonical slot/portraits missing."
+    },
+    {
+      "order": 3,
+      "asset": "Spark / RB_P08_Bike_00",
+      "action": "Lock hero and side consistency, prepare one reviewed single-asset input, generate independent model then fit actual tank/frame/engine attachment. Repair garage thumbnail conflict separately under locked UI review.",
+      "why": "Starting player bike currently aliases P06; rejected Golden tank floats above frame."
+    },
+    {
+      "order": 4,
+      "asset": "Odyssey and Havoc / RB_P08_Bike_13,14",
+      "action": "Inspect each actual sheet, resolve view conflicts and produce separate single-asset inputs; Tripo candidates plus Blender assembly/runtime delivery.",
+      "why": "No canonical production sources, FBXs or prefabs."
+    },
+    {
+      "order": 5,
+      "asset": "Kestrel, Rift250, Jackal, Ember, Corvus, Viper, Rift750N, Specter, Nightjar, Cinder10, Rift750",
+      "action": "Each distinct locked concept gets own candidate; preserve catalog semantic IDs/handling and record old/new source binding. Do not propagate Apex geometry by recolor.",
+      "why": "Existing export manifest passed=false and no accepted Tripo conversion."
+    },
+    {
+      "order": 6,
+      "asset": "Juno, Mako, Rook, Sol, Vale, Echo, Kai plus24portrait states acrossall8riders",
+      "action": "Separate identities and reviewed complete body inputs; same rig/contact/LOD contract proven by representative Ash before expanding. Derive actual neutral/happy/focused portraits from final accepted character meshes.",
+      "why": "Canonical8rider roster and24PNG states missing."
+    },
+    {
+      "order": 7,
+      "asset": "Canyon modular RockA/RockB, foliage and road furniture",
+      "action": "Use locked canyon-v2 corresponding isolated rock/cliff/foliage concept details as new reviewed inputs; Tripo module geometry plus Blender terrain volume/support and route assembly. Keep exact road/nearfield/skyline view comparison.",
+      "why": "Current V20 representative still has overhanging shelf and repeated tall wall skyline; route contract has individual props, no whole-Canyon root slot."
+    },
+    {
+      "order": 8,
+      "asset": "24city/ridge/coast/orchard props",
+      "action": "Individualprop single-asset inputs with source/concept hashes; preserve group identities and reconcile Ridge original provenance before replacement; compose routes only after accepted modules.",
+      "why": "Scene sheets contain many unrelated objects; sixRidge entries currently mismatch declared source/export hashes."
+    },
+    {
+      "order": 9,
+      "asset": "Police bike/rider, traffic coupe/van, pedestrian and Club; legacycoreduplicate roles",
+      "action": "Separate owned candidates from exact protected sources; prove inputviews first. Club original remains read-only and any replacement must live under a fresh path. Preserve actual sharedrig/protocol roles, then fresh runtime review.",
+      "why": "Existing auxiliary actors are legacy Blender art, not converted Tripo/API outputs."
+    },
+    {
+      "order": 10,
+      "asset": "Garage environment and 3D-derived UI thumbnails",
+      "action": "Inventory workshop components against garage-environment-v1; prepare only actual component inputs. Re-render UI thumbnails from accepted meshes with locked camera/layout. UI itself remains code/native layout production rather than mesh conversion.",
+      "why": "3D-derived presentation must remain synchronized with accepted underlying asset identities."
+    }
+  ],
+  "acceptance_state": "All conversion records pending or unaccepted. File presence, tasksuccess, polygoncount and qualityparameter are not visual acceptance.",
+  "protected_club": {
+    "path": "ArtSource/Weapons/RB_Club.blend",
+    "exists": true,
+    "sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f",
+    "bytes": 935897,
+    "stable_during_hash": true,
+    "declared_sha256": "553f60a0bd9ab32413c3c584aa61cf5a4076752364efb4b8f0a92b567c67a37f",
+    "declared_hash_matches": true
+  },
+  "source_bindings": [
+    {
+      "path": "docs/p08/art/export-manifest.json",
+      "exists": true,
+      "sha256": "55f9860a1c9496dc3fb3dbe3c34ec634a9e8388b72fabcbdc5e1f143408ec18c",
+      "bytes": 48612,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/p08/content/production-mappings.json",
+      "exists": true,
+      "sha256": "22d7948a83cd323a1b607409772de3dd54ff5b7da5aab4c716365977e87426a4",
+      "bytes": 354239,
+      "stable_during_hash": true
+    },
+    {
+      "path": "docs/p08/content/desktop-prerequisites-20260928-01.json",
+      "exists": true,
+      "sha256": "62fd3e7d2928a43fad3572b7104c28fdd0ed20cfb7e96d751e032cb9fad6ae83",
+      "bytes": 128814,
+      "stable_during_hash": true
+    },
+    {
+      "path": "Assets/RacingBois/Editor/P08ContentPackBuilder.cs",
+      "exists": true,
+      "sha256": "73abe2836e4914557e9e702eba0798daf1b3e6244e279a7ddfad596e70dbe8eb",
+      "bytes": 21039,
+      "stable_during_hash": true
+    },
+    {
+      "path": "ArtSource/Concepts/P08/bike-concept-manifest.json",
+      "exists": true,
+      "sha256": "f07724cb8fb18cd8044bdf96019f3ea7ee53b2874452d8357f34df79b59d7249",
+      "bytes": 4443,
+      "stable_during_hash": true
+    },
+    {
+      "path": "ArtSource/Concepts/P08/rider-concept-manifest.json",
+      "exists": true,
+      "sha256": "38a7fe9e99646e8004289045d37c3f69b143a5a41d460c2648f89242a2fd9221",
+      "bytes": 2575,
+      "stable_during_hash": true
+    },
+    {
+      "path": "tools/tripo_api_trial/generate.py",
+      "exists": true,
+      "sha256": "a614f39ca06c5b035747fc634fc76f9b437ac9a9f8a70c1099a9ac53b6563d7f",
+      "bytes": 17393,
+      "stable_during_hash": true
+    },
+    {
+      "path": "tools/tripo_api_trial/preflight.py",
+      "exists": true,
+      "sha256": "18e0144980646ce48256af7efc7ffe560272b26b3e87d61d919dca6d7018f745",
+      "bytes": 2075,
+      "stable_during_hash": true
+    }
+  ],
+  "counts": {
+    "p08_bike_slots": 15,
+    "p08_rider_slots": 8,
+    "p08_manifest_props": 24,
+    "legacy_core_semantic_mappings": 15,
+    "tripo_api_deliveries": 1,
+    "accepted_tripo_assets": 0,
+    "declared_source_export_hash_mismatches": 12
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "passed": true,
+  "exitCode": 0,
+  "sourceFiles": {
+    "tools/p08/tripo/keyring.py": "e95ae276b220a7441528ee5cd62e96d7ab485fafa7c4c427498f6c10d11b8b32",
+    "tools/p08/tripo/test_keyring.py": "bcd5031f06b6c4d970330c3d7f9fa0b03879aa7444a137cddf180437a0aaaa98",
+    "tools/p08/tripo/api.py": "588b1b8e53fdb8731c1f5c9088503df1867f83682cf34e8a5bc888bdc8791e9e",
+    "tools/p08/tripo/generate_candidate.py": "2d14d1915cdf045402f01b2ce49efe2be66ed4cd3a6ec50c96e498fc456c8a0c",
+    "tools/p08/tripo/recover_candidate.py": "c48a16939a789538afac1d266f862c96ba79c1655c846e44598dfbe6ac839b2b",
+    "tools/p08/tripo/test_generate_candidate.py": "9daabe7783b402ac22dbbf47bb8ef5a6c441ed0eff52c69b76ecad9f68f906ac",
+    "tools/tripo_api_trial/generate.py": "a614f39ca06c5b035747fc634fc76f9b437ac9a9f8a70c1099a9ac53b6563d7f"
+  },
+  "sourceStable": true,
+  "logSha256": "d5120848406d4d05a78bf95b51e5f43f0c766470070bf9e77645229619e673ce",
+  "command": "python -m unittest discover -s tools/p08/tripo -p test_*.py -v",
+  "scope": "48 offline lifecycle/transport/keyring controls; fake keys, no generation or key-file mutation."
+}
