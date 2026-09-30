@@ -88,3 +88,5 @@
 docs/p08/golden/canyon/v17/overhang-audit/side-profile-provenance.svg -whitespace
 # Exact pre-viewport source retained for the recorded native comparison.
 tools/p08/media/viewport-staging/before-RaceScreen.cs -whitespace
+# Frozen direct-Blender stdout/stderr preserves exact native CRLF/log bytes.
+docs/p08/tripo/spark/20260930-hq01/*.log -text -whitespace
