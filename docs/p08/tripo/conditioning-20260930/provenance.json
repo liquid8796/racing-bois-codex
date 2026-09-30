@@ -1,0 +1,243 @@
+{
+  "schema": "racing-bois.tripo-conditioning-review.v1",
+  "reviewDate": "2026-09-30",
+  "allSourceImagesInspectedBeforeWork": true,
+  "originalReferenceHashesVerifiedUnchanged": {
+    "ArtSource/Concepts/P08/Golden/ash-v2.png": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+    "ArtSource/Concepts/P08/Bikes/13-odyssey-v1.png": "8df7072d59c6a3b2d238d2bc68034ec65200c94a7234a311bab7d5dac104ca1a",
+    "ArtSource/Concepts/P08/Bikes/14-havoc-v1.png": "8945eff9a73d9b7ad1be209e7f4723c19881ad8ec7e472312687ba475283a2b1",
+    "ArtSource/Concepts/P08/Golden/spark-v1.png": "e358ecf1a809f5373aa45ef92cbd6897ed1e1693cacc73b0f6df697d91bedce6",
+    "ArtSource/Concepts/P08/Golden/spark-v1-side.png": "ad5478c942350462a34d12b1ba9f9714cb00a595ff9465bc1d000cf6b5e7ad0b"
+  },
+  "inputs": [
+    {
+      "asset": "Ash",
+      "master": "ArtSource/Concepts/P08/Golden/ash-v2.png",
+      "input": "ArtSource/Concepts/P08/TripoInputs/20260930/ash-front-v1.png",
+      "selectedView": "leftmost helmeted full-body neutral front",
+      "prompt": "docs/p08/tripo/conditioning-20260930/ash-v1-prompt.txt",
+      "outputFile": "exec-f94b5d36-f83b-4034-beef-8857044e48a4.png",
+      "differences": [
+        "face reinterpreted; local nose/jaw/eyes differ",
+        "leather wear, seams and fold paths redrawn",
+        "goggles, gloves and boot details need reference comparison"
+      ],
+      "masterSha256": "6fa1090e13547df14e578f0ac77504ae5722d99a031a09e5f575c2775f9ce7e6",
+      "inputSha256": "bb05ab025ff12f209095d7a49bdbba5af9f6f857d5cdd31fd25f47caaf5473ea",
+      "imageMetadata": {
+        "path": "ArtSource/Concepts/P08/TripoInputs/20260930/ash-front-v1.png",
+        "sha256": "bb05ab025ff12f209095d7a49bdbba5af9f6f857d5cdd31fd25f47caaf5473ea",
+        "bytes": 1828040,
+        "mode": "RGBA",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "alphaExtrema": [
+          0,
+          254
+        ],
+        "alphaBounds": [
+          89,
+          11,
+          1012,
+          1488
+        ],
+        "transparentPixels": 1121527,
+        "fullyOpaquePixels": 0,
+        "nearOpaquePixelsAbove250": 408816,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sideMiddleAlpha": [
+          0,
+          0
+        ]
+      },
+      "rootReviewPending": true,
+      "visualAccepted": false,
+      "productionAccepted": false,
+      "promptSha256": "01b377f266f012639b11852ce0a9726bae90bf8b3a1104144cd28a098d7673ec",
+      "generationMode": "built-in ImageGen with explicit referenced_image_paths",
+      "exactModelIdentity": "not exposed by tool",
+      "requestedTransparentBackground": true,
+      "originalBuiltInOutput": "C:/Users/Liquid/.codex/generated_images/01a0f079-d0dd-7ca3-baef-af4e2a6673d4/exec-f94b5d36-f83b-4034-beef-8857044e48a4.png",
+      "conditioningStatus": "unaccepted input study"
+    },
+    {
+      "asset": "Odyssey",
+      "master": "ArtSource/Concepts/P08/Bikes/13-odyssey-v1.png",
+      "input": "ArtSource/Concepts/P08/TripoInputs/20260930/odyssey-quarter-v1.png",
+      "selectedView": "large left-panel front-quarter hero",
+      "prompt": "docs/p08/tripo/conditioning-20260930/odyssey-v1-prompt.txt",
+      "outputFile": "exec-2b630f85-b11a-4b8c-b265-3463ed80977b.png",
+      "differences": [
+        "perspective and relative wheel presentation differ",
+        "rack/luggage stitching, engine case and wear details re-rendered",
+        "front tyre reaches lower canvas edge; hidden side is not specified"
+      ],
+      "masterSha256": "8df7072d59c6a3b2d238d2bc68034ec65200c94a7234a311bab7d5dac104ca1a",
+      "inputSha256": "e7fbc4e880414de6d8943edd24c0ee5b5b70c2984dfb84db5bb106948c7954b3",
+      "imageMetadata": {
+        "path": "ArtSource/Concepts/P08/TripoInputs/20260930/odyssey-quarter-v1.png",
+        "sha256": "e7fbc4e880414de6d8943edd24c0ee5b5b70c2984dfb84db5bb106948c7954b3",
+        "bytes": 2442078,
+        "mode": "RGBA",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "alphaExtrema": [
+          0,
+          254
+        ],
+        "alphaBounds": [
+          45,
+          5,
+          1443,
+          1024
+        ],
+        "transparentPixels": 755418,
+        "fullyOpaquePixels": 0,
+        "nearOpaquePixelsAbove250": 747798,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sideMiddleAlpha": [
+          0,
+          0
+        ]
+      },
+      "rootReviewPending": true,
+      "visualAccepted": false,
+      "productionAccepted": false,
+      "promptSha256": "30ce0f6e020c79224ad3339b3d943f5b4d7c4bd2c0a86f70b82dade942aef672",
+      "generationMode": "built-in ImageGen with explicit referenced_image_paths",
+      "exactModelIdentity": "not exposed by tool",
+      "requestedTransparentBackground": true,
+      "originalBuiltInOutput": "C:/Users/Liquid/.codex/generated_images/01a0f079-d0dd-7ca3-baef-af4e2a6673d4/exec-2b630f85-b11a-4b8c-b265-3463ed80977b.png",
+      "conditioningStatus": "unaccepted input study"
+    },
+    {
+      "asset": "Havoc",
+      "master": "ArtSource/Concepts/P08/Bikes/14-havoc-v1.png",
+      "input": "ArtSource/Concepts/P08/TripoInputs/20260930/havoc-quarter-v1.png",
+      "selectedView": "large left-panel front-quarter hero",
+      "prompt": "docs/p08/tripo/conditioning-20260930/havoc-v1-prompt.txt",
+      "outputFile": "exec-1376dc77-3909-4862-a9bd-4ad72eddd4f1.png",
+      "differences": [
+        "relative proportions and engine/header/fitting details re-rendered",
+        "front tyre reaches lower canvas edge; rear tyre close to left edge",
+        "master hero/front omit mirrors while master rear includes mirrors; conflict unresolved"
+      ],
+      "masterSha256": "8945eff9a73d9b7ad1be209e7f4723c19881ad8ec7e472312687ba475283a2b1",
+      "inputSha256": "9aff430adcf529668e070db5f9c6ee6d5e23fd7e8ac545d7a0732ad2982a0b15",
+      "imageMetadata": {
+        "path": "ArtSource/Concepts/P08/TripoInputs/20260930/havoc-quarter-v1.png",
+        "sha256": "9aff430adcf529668e070db5f9c6ee6d5e23fd7e8ac545d7a0732ad2982a0b15",
+        "bytes": 2724109,
+        "mode": "RGBA",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "alphaExtrema": [
+          0,
+          254
+        ],
+        "alphaBounds": [
+          0,
+          13,
+          1522,
+          1024
+        ],
+        "transparentPixels": 581573,
+        "fullyOpaquePixels": 0,
+        "nearOpaquePixelsAbove250": 920152,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sideMiddleAlpha": [
+          0,
+          0
+        ]
+      },
+      "rootReviewPending": true,
+      "visualAccepted": false,
+      "productionAccepted": false,
+      "promptSha256": "f3997c6a80217584684ec97c0222ade200a1918f4b27d85d5d9c3d3e80ba0440",
+      "generationMode": "built-in ImageGen with explicit referenced_image_paths",
+      "exactModelIdentity": "not exposed by tool",
+      "requestedTransparentBackground": true,
+      "originalBuiltInOutput": "C:/Users/Liquid/.codex/generated_images/01a0f079-d0dd-7ca3-baef-af4e2a6673d4/exec-1376dc77-3909-4862-a9bd-4ad72eddd4f1.png",
+      "conditioningStatus": "unaccepted input study"
+    },
+    {
+      "asset": "Spark",
+      "master": "ArtSource/Concepts/P08/Golden/spark-v1.png",
+      "input": "ArtSource/Concepts/P08/Golden/spark-v1-side.png",
+      "selectedView": "existing standalone side image, reused as-is",
+      "differences": [
+        "floor/backdrop retained in existing RGB input",
+        "quarter master also inspected; visible identity consistent",
+        "hidden opposite side not specified by input"
+      ],
+      "masterSha256": "e358ecf1a809f5373aa45ef92cbd6897ed1e1693cacc73b0f6df697d91bedce6",
+      "inputSha256": "ad5478c942350462a34d12b1ba9f9714cb00a595ff9465bc1d000cf6b5e7ad0b",
+      "imageMetadata": {
+        "path": "ArtSource/Concepts/P08/Golden/spark-v1-side.png",
+        "sha256": "ad5478c942350462a34d12b1ba9f9714cb00a595ff9465bc1d000cf6b5e7ad0b",
+        "bytes": 2466723,
+        "mode": "RGB",
+        "dimensions": [
+          1536,
+          1024
+        ]
+      },
+      "rootReviewPending": true,
+      "visualAccepted": false,
+      "productionAccepted": false,
+      "generationMode": "none; reuse existing bytes",
+      "conditioningStatus": "existing single-asset candidate usable as-is; root review pending"
+    }
+  ],
+  "imageMetadataBinding": {
+    "path": "docs/p08/tripo/conditioning-20260930/image-metadata.json",
+    "sha256": "43fcbf903ae028ae899c5baa034b0c788692965d80d657b8792503a862fb2047"
+  },
+  "noApiJobSubmitted": true,
+  "noKeyFileAccess": true,
+  "noBlenderOrUnityOperations": true,
+  "phaseAccepted": false,
+  "rasterManipulationMethod": "Only built-in image generation; byte-for-byte copy into workspace. Pillow used only for read-only decoding/metadata.",
+  "outputBindings": {
+    "ArtSource/Concepts/P08/TripoInputs/20260930/ash-front-v1.png": "bb05ab025ff12f209095d7a49bdbba5af9f6f857d5cdd31fd25f47caaf5473ea",
+    "docs/p08/tripo/conditioning-20260930/ash-v1-prompt.txt": "01b377f266f012639b11852ce0a9726bae90bf8b3a1104144cd28a098d7673ec",
+    "ArtSource/Concepts/P08/TripoInputs/20260930/odyssey-quarter-v1.png": "e7fbc4e880414de6d8943edd24c0ee5b5b70c2984dfb84db5bb106948c7954b3",
+    "docs/p08/tripo/conditioning-20260930/odyssey-v1-prompt.txt": "30ce0f6e020c79224ad3339b3d943f5b4d7c4bd2c0a86f70b82dade942aef672",
+    "ArtSource/Concepts/P08/TripoInputs/20260930/havoc-quarter-v1.png": "9aff430adcf529668e070db5f9c6ee6d5e23fd7e8ac545d7a0732ad2982a0b15",
+    "docs/p08/tripo/conditioning-20260930/havoc-v1-prompt.txt": "f3997c6a80217584684ec97c0222ade200a1918f4b27d85d5d9c3d3e80ba0440",
+    "docs/p08/tripo/conditioning-20260930/image-metadata.json": "43fcbf903ae028ae899c5baa034b0c788692965d80d657b8792503a862fb2047",
+    "docs/p08/tripo/conditioning-20260930/README.md": "e42ae03da4a1ff0f2f0b46605b5ce726f07e0b74abbc6a1a126718b57d689933"
+  },
+  "stagingPaths": [
+    "ArtSource/Concepts/P08/TripoInputs/20260930/ash-front-v1.png",
+    "ArtSource/Concepts/P08/TripoInputs/20260930/havoc-quarter-v1.png",
+    "ArtSource/Concepts/P08/TripoInputs/20260930/odyssey-quarter-v1.png",
+    "docs/p08/tripo/conditioning-20260930/README.md",
+    "docs/p08/tripo/conditioning-20260930/ash-v1-prompt.txt",
+    "docs/p08/tripo/conditioning-20260930/havoc-v1-prompt.txt",
+    "docs/p08/tripo/conditioning-20260930/image-metadata.json",
+    "docs/p08/tripo/conditioning-20260930/odyssey-v1-prompt.txt",
+    "docs/p08/tripo/conditioning-20260930/provenance.json"
+  ]
+}
