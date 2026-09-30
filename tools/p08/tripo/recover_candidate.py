@@ -55,21 +55,22 @@ def main():
                 raise transport.SafeFailure("The persisted task ended without a model.")
             if status == "success":
                 outputs = data.get("output") or {}
-                for name, url, destination, limit, preview in [
+                deliveries = [("image", outputs.get("generated_image_url"), directory / "image", 32 * 1024**2, True)] if receipt.get("jobKind") == "image_to_image" else [
                     ("model", outputs.get("model_url"), directory / "model.glb", 600 * 1024**2, False),
                     ("preview", outputs.get("rendered_image_url"), directory / "preview", 32 * 1024**2, True),
-                ]:
+                ]
+                for name, url, destination, limit, preview in deliveries:
                     if name == "preview" and not url:
                         continue
                     existing = receipt.setdefault("artifacts", {}).get(name)
                     if existing:
                         saved = Path(existing["path"]).resolve()
-                        allowed = {"model.glb"} if name == "model" else {"preview.png", "preview.jpg", "preview.webp"}
+                        allowed = {"model.glb"} if name == "model" else {name + extension for extension in (".png", ".jpg", ".webp")}
                         if saved.parent != directory or saved.name not in allowed:
                             raise transport.SafeFailure("Receipt artifact must belong to this candidate and expected filename.")
                     if existing and Path(existing["path"]).is_file() and transport.sha256_file(Path(existing["path"])) == existing["sha256"]:
                         continue
-                    for old in ([destination] if not preview else [directory / ("preview" + extension) for extension in (".png", ".jpg", ".webp")]):
+                    for old in ([destination] if not preview else [directory / (name + extension) for extension in (".png", ".jpg", ".webp")]):
                         if old.exists():
                             preserved = old.with_name(old.stem + "-incomplete-" + str(time.time_ns()) + old.suffix)
                             relative(old); relative(preserved)

@@ -41,6 +41,15 @@ and the retained first rejection are in
 preflight reserves are recorded; the API exposes no documented per-task hard cap.
 Actual task costs and delivered map sizes are inspected separately.
 
+The UI extraction profile uses the direct V3 image-to-image endpoint with a
+reviewed prompt file, Seedream v5, PNG and an explicit optional-watermark disable
+request. The raw prompt file is hash-bound separately from its posted text.
+Delivered dimensions and metadata are inspected; a requested size or watermark
+setting is not evidence of achieved dimensions or verified hidden-watermark
+absence. Image jobs share the same credit/reservation/recovery boundary and can
+be recovered without a model URL. UI controls and text remain native Unity;
+generated images are conditioning studies for individual UI graphics/modules.
+
 Example using an already reviewed single-bike input:
 
 ```powershell

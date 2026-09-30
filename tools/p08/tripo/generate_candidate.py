@@ -27,6 +27,7 @@ PROFILES = {
                       "texture_version": "v3.5-20260815", "texture_quality": "extreme", "delight": True,
                       "geometry_quality": "detailed", "generate_parts": False}, 80, 120),
     "low-poly": ({"model": "P1-20260311", "texture": True, "pbr": True, "face_limit": 20000}, 50, 80),
+    "ui-extraction": ({"model": "seedream_v5", "size": "2K", "output_format": "png", "watermark": False}, 10, 30),
 }
 
 
@@ -82,6 +83,7 @@ def run():
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--key-file", type=Path, default=Path("C:/Users/Liquid/Desktop/tripo_api_key.txt"))
     parser.add_argument("--profile", choices=PROFILES, default="high-quality-parts")
+    parser.add_argument("--prompt-file", type=Path, help="Reviewed UI image-editing instruction; required for ui-extraction")
     args = parser.parse_args()
     keyring = Keyring(args.key_file)
     candidate = args.out.resolve()
@@ -94,17 +96,33 @@ def run():
             raise transport.SafeFailure("Required input/reference missing.")
     if args.input.suffix.lower() not in {".png", ".jpg", ".jpeg"} or args.input.stat().st_size > transport.MAX_IMAGE_BYTES:
         raise transport.SafeFailure("A reviewed PNG/JPEG under20MiB is required.")
-    candidate.mkdir(parents=True, exist_ok=False)
     parameters, expected_cost, budget = PROFILES[args.profile]
     parameters = dict(parameters)
+    image_job = args.profile == "ui-extraction"
+    prompt_file = None
+    if image_job:
+        if args.prompt_file is None:
+            raise transport.SafeFailure("A reviewed prompt file is required for UI image extraction.")
+        relative(args.prompt_file)
+        prompt = args.prompt_file.read_text(encoding="utf-8").strip()
+        if not prompt or len(prompt) > 1024:
+            raise transport.SafeFailure("UI prompt must contain1..1024 characters.")
+        parameters["prompt"] = prompt
+        prompt_file = {"path": relative(args.prompt_file), "sha256": transport.sha256_file(args.prompt_file), "characters": len(prompt)}
+    elif args.prompt_file is not None:
+        raise transport.SafeFailure("Prompt file is only supported by the UI image profile.")
+    route = "/generation/image-to-image" if image_job else "/generation/image-to-model"
     if parameters["model"].startswith("v3"):
         parameters.update(enable_image_autofix=False)
         if not parameters.get("generate_parts"):
             parameters.update(quad=False, smart_low_poly=False)
+    candidate.mkdir(parents=True, exist_ok=False)
     receipt = {"schema": "racing-bois.tripo-candidate.v2", "createdUtc": transport.utc_now(),
                "status": "unaccepted", "visualAccepted": False, "productionAccepted": False,
                "freeCreditsAuthorizedByUser": True, "maximumCreditsPerKey": 600,
                "profile": args.profile, "expectedCreditsEstimate": expected_cost, "preflightBudget": budget,
+               "jobKind": "image_to_image" if image_job else "image_to_model", "route": route,
+               "promptFile": prompt_file,
                "budgetScope": "Balance and per-key task receipts are checked locally; the API exposes no documented task hard spending cap.",
                "input": {"path": relative(args.input), "sha256": transport.sha256_file(args.input)},
                "reference": {"path": relative(args.reference), "sha256": transport.sha256_file(args.reference)},
@@ -152,7 +170,7 @@ def run():
             receipt["pipelineStatus"] = "submission_pending"
             save()
             try:
-                task = api_call(key.authentication_value(), "POST", "/generation/image-to-model", {"input": token, **parameters})
+                task = api_call(key.authentication_value(), "POST", route, {"input": token, **parameters})
             except ApiFailure as error:
                 # Only a definitive rejection can select another key. Unknown POST outcomes stop.
                 if error.definitive_rejection:
@@ -213,9 +231,12 @@ def run():
                 output = data.get("output") or {}
                 receipt["pipelineStatus"] = "downloading"
                 save()
-                receipt["artifacts"]["model"] = transport.download_asset(output.get("model_url"), candidate / "model.glb", 600 * 1024 * 1024)
+                if image_job:
+                    receipt["artifacts"]["image"] = transport.download_asset(output.get("generated_image_url"), candidate / "image", 32 * 1024 * 1024, preview=True)
+                else:
+                    receipt["artifacts"]["model"] = transport.download_asset(output.get("model_url"), candidate / "model.glb", 600 * 1024 * 1024)
                 save()
-                if output.get("rendered_image_url"):
+                if not image_job and output.get("rendered_image_url"):
                     receipt["artifacts"]["preview"] = transport.download_asset(output["rendered_image_url"], candidate / "preview", 32 * 1024 * 1024, preview=True)
                 receipt.update(pipelineStatus="completed", completedUtc=transport.utc_now())
                 save()
