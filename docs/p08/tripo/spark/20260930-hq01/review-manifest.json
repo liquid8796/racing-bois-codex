@@ -1,0 +1,460 @@
+{
+  "schema": 1,
+  "visualAccepted": false,
+  "productionAccepted": false,
+  "ownedOutputs": [
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/before.json",
+      "bytes": 4491,
+      "sha256": "e4f8635e2cf653f7433de5485885b234437e7f3bd236d5d318f33e95feaad184"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/handshake.json",
+      "bytes": 5127,
+      "sha256": "8980c2768cb193aeaba1a0acb05c3b8f36b6afd315bf7c20815273859aa71189"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/raw-import-mcp.json",
+      "bytes": 9217,
+      "sha256": "5dfbc940c4c4cf29245866360f2c2e53f5ce6d185a3e024b1712ae26fe32cc7e"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/raw-import-preflight.json",
+      "bytes": 954,
+      "sha256": "30ecc3920dcc9487f43381f4ebc323afec9b091adfaf79ee4ce686102f6d70ed"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/raw-import-stderr.log",
+      "bytes": 25022,
+      "sha256": "821aa61c90da3c96a9f4d35bfb0975244e1f07f7f5c36272264e505a11eca78e"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/raw-import-stdout.log",
+      "bytes": 2733,
+      "sha256": "5c2d2b80272222952a357d0344ca4f046bc0b3b1012da270415e4183985e6336"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/raw-import.json",
+      "bytes": 4278,
+      "sha256": "8c8eddc23d03f68b7829bbdc358040437b03bb7eeef6adf80bdcc45362f42402"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/reload-saved-mcp.json",
+      "bytes": 4155,
+      "sha256": "b2a69eb377b0a50252d8ff0d657af3d2c1d2286ed1e8b23a363c74e18f2c7344"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/reload-saved-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/reload-saved-stderr.log",
+      "bytes": 25024,
+      "sha256": "520306789e4942afe95bf5b9f9f6f2716f3eea24dc903dd0d2c6b72780936105"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/reload-saved-stdout.log",
+      "bytes": 346,
+      "sha256": "b14855edb49f0ef4730aca779778dcf7bd65f903d184a6909db57a506fd8baa8"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/reload-saved.json",
+      "bytes": 1423,
+      "sha256": "9e69f5ee04e29f12c76fb97298fde22de0afc3c50773cdb92788451de787a4c2"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-mcp.json",
+      "bytes": 5331,
+      "sha256": "a1ec000b420928443215489933c4104a1ca7edf68cd4df9897efff6a58a9d044"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-stderr.log",
+      "bytes": 25043,
+      "sha256": "2a589e5a9abbe249efddae827d99b6320505a0fe57d3687e20e84e5bf6bdb472"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-stdout.log",
+      "bytes": 900,
+      "sha256": "fae60b694aa20e1f5ce419c770962514ec2c6afd031703630e4a163cd8054811"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_negative.json",
+      "bytes": 2331,
+      "sha256": "3e2a88e0b3671b088a0fa375260aab603810b9c02142cda5beb134cb07c6d571"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-mcp.json",
+      "bytes": 5391,
+      "sha256": "6da22bb9e9a5b6e915453f33cacc8dc596c3be25376ed2898b1a4830facd94e6"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-stderr.log",
+      "bytes": 25045,
+      "sha256": "586e957ee16abe9dd4afc5d2e8860190deae4bd3d9abea3ede61f68bef4eb1c1"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-stdout.log",
+      "bytes": 930,
+      "sha256": "d2fab38827d2ed4b0a34e78efc7aec7bc4a83d72df86a330514eb150a97a7cec"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-axis_positive.json",
+      "bytes": 2361,
+      "sha256": "bfbbd6237f8a961815b0926ad94ca3e97fb045040dcfe3d020867809378db2aa"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-mcp.json",
+      "bytes": 5411,
+      "sha256": "faebc743a32c104cc8f645ec982ef13130e651caa868aa640c996f03bd3b1018"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-stderr.log",
+      "bytes": 25051,
+      "sha256": "2291fdc018a6f172a8d55cda948cb141b35a3bdf9daa15fc12f945872a4a3e0b"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-stdout.log",
+      "bytes": 940,
+      "sha256": "7bde64bf69c1c1d808b977e4f6a90851837153335166962d08441440b2e641e9"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative.json",
+      "bytes": 2377,
+      "sha256": "37e1709db329639ab26a2c555d9933dc1e46916b1cab51b5453f1627d2a4061a"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-mcp.json",
+      "bytes": 5405,
+      "sha256": "449597b4be00ea444eb5d9de558fa1c8d2d04476c76d3ec9ca19a4f04e56f116"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-stderr.log",
+      "bytes": 25051,
+      "sha256": "e0073beecd2b83ea2aea693294348a6e79dc2b52b99af12d80dc1ae5522b3f81"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-stdout.log",
+      "bytes": 937,
+      "sha256": "fd3258df5ff818c1b9220f874ceb59f42f1981c9a22f3a76fa452a47586b6e6a"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive.json",
+      "bytes": 2374,
+      "sha256": "791007edc0e6795f2e491897e518061a5a231ba1b9425491e7b91668916cc13b"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-side-mcp.json",
+      "bytes": 5315,
+      "sha256": "3dc4d03eabaf1783f3e9319d0110c68f764b41f0c4afe094a04b3b10e9882c34"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-side-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-side-stderr.log",
+      "bytes": 25025,
+      "sha256": "304dbac62d64412169a6d24098c7b34b021f76ec0278df78faa9f0e1766d118a"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-side-stdout.log",
+      "bytes": 892,
+      "sha256": "aea1e1d80019f65aad7c6c6a1ca31634cd647e6c84507efd3fe2e5c845e1c574"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/render-side.json",
+      "bytes": 2305,
+      "sha256": "7bb28478b8628fcfe2a1cf070bd3acfe2e404f94f69e349b850eebf6d8185bbc"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-mcp.json",
+      "bytes": 4983,
+      "sha256": "cec9478d35ac71ce567cae47fd208744a88bd16d4269d9375283f10e1635648d"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-stderr.log",
+      "bytes": 25034,
+      "sha256": "e40da4718c8b7889f8d1279b6645daace057320d856f65d8bc95f9e3aead5d71"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-stdout.log",
+      "bytes": 744,
+      "sha256": "026db87d546935d63ea02f1b3778be38dd80c19b677031d654bd6ff8e5e31afd"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint.json",
+      "bytes": 2066,
+      "sha256": "d981f2ab1b6b0b3a4392cb534dfa93ac4988ad13b368da69f6308aac183e37e0"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/review-setup-mcp.json",
+      "bytes": 9091,
+      "sha256": "43772b59ee1c866c1ccc371bb7629e3f2fdffd98c247d4ec7d0008764bd40bda"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/review-setup-preflight.json",
+      "bytes": 1191,
+      "sha256": "08acffd863d8f1dfddb26d1a98c71b15a7091d0ffb7ca9c2527e2d457111a325"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/review-setup-stderr.log",
+      "bytes": 25028,
+      "sha256": "b28ddf083c8bbd3e597e60e3210d5c1698c9a593f4c79154d04605c9734398e9"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/review-setup-stdout.log",
+      "bytes": 2682,
+      "sha256": "e0b2d9166b44adcebca4316a73c40c408cd2182a741f780c5e2547ed878d4f90"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/review-setup.json",
+      "bytes": 4463,
+      "sha256": "f848f315d18ffd895f3399919683b2de6f390af18a81c3e7fbdcb05ca7603d67"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/REVIEW.md",
+      "bytes": 1445,
+      "sha256": "1991a97c7b6d60ec4347cbb74077e69f39632d9e1fa8bf498c4c1679942b100d"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/saved-verification-mcp.json",
+      "bytes": 7089,
+      "sha256": "7fc105fd791ec29c68e33213bbf80019a2b4a0efc3b6ad60d704d5f80bc182a1"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/saved-verification-preflight.json",
+      "bytes": 1424,
+      "sha256": "ffe4163be880053fb8948afb96befdf89785aa5e6c47d0527f2fa0aa65bc0cee"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/saved-verification-stderr.log",
+      "bytes": 25032,
+      "sha256": "94845ae5ea7456aa9bbd906b09b8732d5e73c8f329c8b957066de28d0cbf287e"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/saved-verification-stdout.log",
+      "bytes": 1701,
+      "sha256": "dcc99bd6829e126635f3a3cf09ddaab2fa33d988fd309306e9de6589924596bf"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/saved-verification.json",
+      "bytes": 3518,
+      "sha256": "4c4dd2511dd75a179d547cb8e400ebc65cb2b077c14277ea2f34290278b8f5a2"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/raw-import.py",
+      "bytes": 22222,
+      "sha256": "972809fc6f09a585940390367240c632d3b9c559849a261af2ab7ae15199fd4a"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/reload-saved.py",
+      "bytes": 22226,
+      "sha256": "69cbeaf86c4dfa8f586afa2ac36a5ce5bb9510b3d983fed3d115c79bfb8bf093"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-axis_negative.py",
+      "bytes": 22243,
+      "sha256": "796a4a63be645a386faf5d292485a1d71ae9548fece3c7863825ce71c6caa3f1"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-axis_positive.py",
+      "bytes": 22243,
+      "sha256": "ad32727aaebda6c7b727e940dc47e282594f27cb2befb7503bd97c78efcded5f"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-quarter_negative.py",
+      "bytes": 22249,
+      "sha256": "9dfebf95aa72579bb21c094c96d8dd22c23539a282595c141e5c064443478b01"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-quarter_positive.py",
+      "bytes": 22249,
+      "sha256": "aeedd490352b12129ac1022bc780af62ca969300fca89fee11b649b790c57a6c"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-side.py",
+      "bytes": 22225,
+      "sha256": "3efa4b28a60bada8acbe7edb70a3d599a9683efd2f1cada4c66fff11f5df908f"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/rendered-checkpoint.py",
+      "bytes": 22236,
+      "sha256": "938f69c5f08950dd8812260c739aa5180e2f595cfb70b6fb4360017dfb0a63b7"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/review-setup.py",
+      "bytes": 22228,
+      "sha256": "553c0363c4e452247c0f2e2510bcd72d04e8387808cdf0056507b904182354c4"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/prepared-code/saved-verification.py",
+      "bytes": 22232,
+      "sha256": "6d652ea1badfbab13d5ea1f610b7b4fa59b20ad95285e89a6c677110f1dd25a8"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/renders/axis_negative.png",
+      "bytes": 1242132,
+      "sha256": "7abe662f4f5cb2d20dfcf861530c8cde1700fa7fd7cfab5f271a71a798ce1d95"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/renders/axis_positive.png",
+      "bytes": 1246631,
+      "sha256": "aa6802e9829635b25a65b5c862c24b5599cff49b0a6a0f2948d17c86d466a3f0"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/renders/quarter_negative.png",
+      "bytes": 1506084,
+      "sha256": "efd3294eef657ee2985ac5be995f6103ad60fff36d0847d2cbefae1b24714ecd"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/renders/quarter_positive.png",
+      "bytes": 1524624,
+      "sha256": "901620fcc223c16d70fb4616a8ed91d1d9356d61956bd7b5e212c052d42fa1ce"
+    },
+    {
+      "path": "docs/p08/tripo/spark/20260930-hq01/renders/side.png",
+      "bytes": 1587955,
+      "sha256": "53e66a81e3c36b5e633e30a91f739e29967187847d38a09ce1f9f8a7e2260c34"
+    },
+    {
+      "path": "ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_raw_import.blend",
+      "bytes": 217293670,
+      "sha256": "4e6d63570d1a0dc323a95d574ef8b0845b617d69bc2df8ef5fe10b12105f66a2"
+    },
+    {
+      "path": "ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_review.blend",
+      "bytes": 217304271,
+      "sha256": "c412eebd0bd24c9ade04bffa7ab03c82b88fda7f2a9c64ec19bd9c7127f60463"
+    },
+    {
+      "path": "ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_review_rendered.blend",
+      "bytes": 217304270,
+      "sha256": "49658b11b88a08a8cf86a685f2c8c2cc6302c48a09a72fc96ec0c7993515a02b"
+    },
+    {
+      "path": "tools/p08/tripo/spark-hq-review/config.json",
+      "bytes": 1283,
+      "sha256": "d94845f9aea25d37faca00381ce8b03a39e8be661fb74840ac08667ea77a5d5d"
+    },
+    {
+      "path": "tools/p08/tripo/spark-hq-review/review_support.py",
+      "bytes": 20638,
+      "sha256": "47497c3786aff31fb7265afe9cd8e9dc5ca3bd999483085cd26b9c780ee962a6"
+    },
+    {
+      "path": "tools/p08/tripo/spark-hq-review/run_stage.py",
+      "bytes": 8551,
+      "sha256": "d1c94b57f20d572b57808830aa9bfeb05368af5fe252e695c03b5aa2577b0856"
+    }
+  ],
+  "sourceGlbSha256": "896e625af9a9a647b080b47fbb7f038950a1e3af61e22826eae872030ab7465c",
+  "rootInspectedViews": [
+    "quarter_positive",
+    "side",
+    "axis_negative"
+  ],
+  "stagingPaths": [
+    "docs/p08/tripo/spark/20260930-hq01/before.json",
+    "docs/p08/tripo/spark/20260930-hq01/handshake.json",
+    "docs/p08/tripo/spark/20260930-hq01/raw-import-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/raw-import-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/raw-import-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/raw-import-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/raw-import.json",
+    "docs/p08/tripo/spark/20260930-hq01/reload-saved-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/reload-saved-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/reload-saved-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/reload-saved-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/reload-saved.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_negative-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_negative.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_positive-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-axis_positive.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_negative.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-quarter_positive.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-side-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-side-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/render-side-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-side-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/render-side.json",
+    "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/rendered-checkpoint.json",
+    "docs/p08/tripo/spark/20260930-hq01/review-setup-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/review-setup-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/review-setup-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/review-setup-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/review-setup.json",
+    "docs/p08/tripo/spark/20260930-hq01/REVIEW.md",
+    "docs/p08/tripo/spark/20260930-hq01/saved-verification-mcp.json",
+    "docs/p08/tripo/spark/20260930-hq01/saved-verification-preflight.json",
+    "docs/p08/tripo/spark/20260930-hq01/saved-verification-stderr.log",
+    "docs/p08/tripo/spark/20260930-hq01/saved-verification-stdout.log",
+    "docs/p08/tripo/spark/20260930-hq01/saved-verification.json",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/raw-import.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/reload-saved.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-axis_negative.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-axis_positive.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-quarter_negative.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-quarter_positive.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/render-side.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/rendered-checkpoint.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/review-setup.py",
+    "docs/p08/tripo/spark/20260930-hq01/prepared-code/saved-verification.py",
+    "docs/p08/tripo/spark/20260930-hq01/renders/axis_negative.png",
+    "docs/p08/tripo/spark/20260930-hq01/renders/axis_positive.png",
+    "docs/p08/tripo/spark/20260930-hq01/renders/quarter_negative.png",
+    "docs/p08/tripo/spark/20260930-hq01/renders/quarter_positive.png",
+    "docs/p08/tripo/spark/20260930-hq01/renders/side.png",
+    "ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_raw_import.blend",
+    "ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_review.blend",
+    "ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_review_rendered.blend",
+    "tools/p08/tripo/spark-hq-review/config.json",
+    "tools/p08/tripo/spark-hq-review/review_support.py",
+    "tools/p08/tripo/spark-hq-review/run_stage.py",
+    "docs/p08/tripo/spark/20260930-hq01/review-manifest.json"
+  ]
+}

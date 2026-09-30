@@ -1,0 +1,123 @@
+{
+  "schema": "racing-bois.tripo-owned-blender-stage.v1",
+  "stage": "saved-verification",
+  "candidate_status": "unaccepted",
+  "visual_accepted": false,
+  "production_accepted": false,
+  "config_sha256": "d94845f9aea25d37faca00381ce8b03a39e8be661fb74840ac08667ea77a5d5d",
+  "review_source_path": "D:/Project/Unity/racing-bois/ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_review.blend",
+  "geometry_byte_arrays_verified": true,
+  "packed_texture_bytes_verified": true,
+  "geometry": [
+    {
+      "object": "tripo_node_81fa69c3-82cc-454b-b310-275eab324b1a",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": null,
+      "modifiers": [],
+      "mesh": "tripo_mesh_81fa69c3-82cc-454b-b310-275eab324b1a",
+      "vertices": 1050334,
+      "edges": 2989463,
+      "polygons": 1940898,
+      "triangles": 1940898,
+      "positions_diagnostic": {
+        "count": 1050334,
+        "byte_compare_with_owned_baseline": true
+      },
+      "uv_layers": [
+        {
+          "name": "UVMap",
+          "loops": 5822694
+        }
+      ],
+      "materials": [
+        "tripo_material_81fa69c3-82cc-454b-b310-275eab324b1a"
+      ],
+      "shape_keys": [],
+      "vertex_groups": []
+    }
+  ],
+  "images": [
+    {
+      "name": "Color_81fa69c3-82cc-454b-b310-275eab324b1a",
+      "size": [
+        8192,
+        8192
+      ],
+      "color_space": "sRGB",
+      "packed": true,
+      "packed_bytes": 9459624
+    },
+    {
+      "name": "NormalGL_81fa69c3-82cc-454b-b310-275eab324b1a",
+      "size": [
+        4096,
+        4096
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "packed_bytes": 2910489
+    },
+    {
+      "name": "ORM_81fa69c3-82cc-454b-b310-275eab324b1a",
+      "size": [
+        4096,
+        4096
+      ],
+      "color_space": "Non-Color",
+      "packed": true,
+      "packed_bytes": 2740092
+    }
+  ],
+  "auto_execute": false,
+  "physical_scale": "Not calibrated",
+  "semantic_parts": "Unverified",
+  "rigs": [],
+  "actions": [],
+  "host_verified_input_bytes_preserved": true,
+  "host_model_binding": {
+    "path": "D:\\Project\\Unity\\racing-bois\\ArtSource\\P08\\Tripo\\Spark\\20260930-hq01\\model.glb",
+    "bytes": 72013848,
+    "sha256": "896e625af9a9a647b080b47fbb7f038950a1e3af61e22826eae872030ab7465c"
+  },
+  "host_raw_source_binding": {
+    "path": "D:\\Project\\Unity\\racing-bois\\ArtSource\\P08\\Tripo\\Spark\\20260930-hq01\\Spark_Tripo_hq01_raw_import.blend",
+    "bytes": 217293670,
+    "sha256": "4e6d63570d1a0dc323a95d574ef8b0845b617d69bc2df8ef5fe10b12105f66a2"
+  },
+  "host_review_source_binding": {
+    "path": "D:\\Project\\Unity\\racing-bois\\ArtSource\\P08\\Tripo\\Spark\\20260930-hq01\\Spark_Tripo_hq01_review.blend",
+    "bytes": 217304271,
+    "sha256": "c412eebd0bd24c9ade04bffa7ab03c82b88fda7f2a9c64ec19bd9c7127f60463"
+  },
+  "host_prepared_code_binding": {
+    "path": "D:\\Project\\Unity\\racing-bois\\docs\\p08\\tripo\\spark\\20260930-hq01\\prepared-code\\saved-verification.py",
+    "bytes": 22232,
+    "sha256": "6d652ea1badfbab13d5ea1f610b7b4fa59b20ad95285e89a6c677110f1dd25a8"
+  }
+}

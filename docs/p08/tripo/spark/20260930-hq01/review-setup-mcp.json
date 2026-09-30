@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "meta": null,
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": {
+        "listChanged": false
+      },
+      "resources": {
+        "subscribe": false,
+        "listChanged": false
+      },
+      "tools": {
+        "listChanged": false
+      },
+      "completions": null,
+      "tasks": null
+    },
+    "serverInfo": {
+      "name": "BlenderMCP",
+      "title": null,
+      "version": "1.30.0",
+      "websiteUrl": null,
+      "icons": null
+    },
+    "instructions": "Blender MCP drives a live Blender instance. execute_blender_code runs\narbitrary Python there, so scripts must not assume anything about the user's Blender.\n\nBefore writing code, call get_addon_status() to read `blender_version` and get_scene_info() to\nsee what already exists.\n\nWhen writing code:\n- Look shader nodes up by type, never by name. Node names are localized on a non-English Blender\n  UI, so `nodes[\"Principled BSDF\"]` returns None there; use\n  `next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")` instead.\n- Never hardcode enum identifiers; they change between Blender versions. Read the valid values\n  first, e.g.\n  `[i.identifier for i in scene.render.image_settings.bl_rna.properties[\"file_format\"].enum_items]`.\n- `scene.render.engine` is the exception: it is a dynamic enum and RNA under-reports it, because\n  engines registered by add-ons are not RNA enum items. Read the current value, which is always\n  valid, and if you must switch engines assign inside `try/except TypeError`; the error lists\n  every accepted identifier.\n- With `use_nodes` enabled (the default for new materials), set colors on the shader node inputs.\n  `material.diffuse_color` only drives viewport display and does not affect the render.\n\nAfter changing anything, call get_viewport_screenshot() to confirm the result looks right and\nget_scene_info() to confirm the objects exist.\n\nCall the asset_creation_strategy prompt for the full asset-library workflow (Poly Haven,\nSketchfab, Poly Pizza, Hyper3D Rodin, Hunyuan3D)."
+  },
+  "tool_names": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "get_object_info",
+    "get_viewport_screenshot",
+    "execute_blender_code",
+    "describe_node_type",
+    "bpy_api_lookup",
+    "get_polyhaven_categories",
+    "search_polyhaven_assets",
+    "download_polyhaven_asset",
+    "set_texture",
+    "get_polyhaven_status",
+    "get_hyper3d_status",
+    "get_sketchfab_status",
+    "search_sketchfab_models",
+    "get_sketchfab_model_preview",
+    "download_sketchfab_model",
+    "get_polypizza_status",
+    "search_polypizza_models",
+    "download_polypizza_model",
+    "generate_hyper3d_model_via_text",
+    "generate_hyper3d_model_via_images",
+    "poll_rodin_job_status",
+    "import_generated_asset",
+    "get_hunyuan3d_status",
+    "generate_hunyuan3d_model",
+    "poll_hunyuan_job_status",
+    "import_generated_asset_hunyuan",
+    "export_scene",
+    "record_trajectory_feedback"
+  ],
+  "tool": "execute_blender_code",
+  "result": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Code executed successfully: Info: Saved as \"Spark_Tripo_hq01_review.blend\"\nTRIPO_HQ_STAGE_JSON {\"schema\": \"racing-bois.tripo-owned-blender-stage.v1\", \"stage\": \"review-setup\", \"candidate_status\": \"unaccepted\", \"visual_accepted\": false, \"production_accepted\": false, \"config_sha256\": \"d94845f9aea25d37faca00381ce8b03a39e8be661fb74840ac08667ea77a5d5d\", \"review_source_path\": \"D:/Project/Unity/racing-bois/ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_review.blend\", \"source_geometry_modified\": false, \"geometry_signature_verified\": true, \"bounds_min\": [-0.1809127926826477, -0.4893478751182556, -0.2706982493400574], \"bounds_max\": [0.1807444542646408, 0.4895661175251007, 0.2705281376838684], \"dimensions\": [0.3616572618484497, 0.9789140224456787, 0.5412263870239258], \"long_axis\": 1, \"front_sign_provisional\": 1, \"cameras\": [{\"name\": \"TripoHQReview_quarter_positive\", \"location\": [3.2990942001342773, 1.7996609210968018, 1.0996410846710205], \"rotation_euler\": [1.286112904548645, 1.283204476010269e-08, 2.070143222808838], \"projection\": \"ORTHO\", \"ortho_scale\": 1.3324755430221558, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_quarter_negative\", \"location\": [3.2990942001342773, -1.7994427680969238, 1.0996410846710205], \"rotation_euler\": [1.2861130237579346, 1.977884300785604e-09, 1.0714497566223145], \"projection\": \"ORTHO\", \"ortho_scale\": 1.3324753046035767, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_side\", \"location\": [3.910686492919922, 0.00010912120342254639, 0.195453479886055], \"rotation_euler\": [1.5208380222320557, 8.863471379072507e-08, 1.5707963705062866], \"projection\": \"ORTHO\", \"ortho_scale\": 1.174696922302246, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_axis_positive\", \"location\": [-8.416920900344849e-05, 3.8963325023651123, 0.3895372748374939], \"rotation_euler\": [1.4711277484893799, 8.698891917902074e-08, 3.1415927410125732], \"projection\": \"ORTHO\", \"ortho_scale\": 1.144702672958374, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_axis_negative\", \"location\": [-8.416920900344849e-05, -3.8961141109466553, 0.3895372748374939], \"rotation_euler\": [1.4711275100708008, -0.0, 0.0], \"projection\": \"ORTHO\", \"ortho_scale\": 1.1447030305862427, \"sensor_fit\": \"HORIZONTAL\"}], \"engine\": \"BLENDER_EEVEE\", \"view_transform\": \"AgX\", \"look\": \"None\", \"exposure\": 0.0, \"resolution\": [1536, 1024], \"camera_calibration\": \"Uncalibrated full-object orthographic diagnostics matching previous API trial directions. Actual front sign must be visually confirmed before assigning front/rear names. No concept fidelity or physical scale accepted.\", \"physical_scale\": \"Not calibrated; canonical dimensions recorded only as future constraints\"}\n",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": {
+      "result": "Code executed successfully: Info: Saved as \"Spark_Tripo_hq01_review.blend\"\nTRIPO_HQ_STAGE_JSON {\"schema\": \"racing-bois.tripo-owned-blender-stage.v1\", \"stage\": \"review-setup\", \"candidate_status\": \"unaccepted\", \"visual_accepted\": false, \"production_accepted\": false, \"config_sha256\": \"d94845f9aea25d37faca00381ce8b03a39e8be661fb74840ac08667ea77a5d5d\", \"review_source_path\": \"D:/Project/Unity/racing-bois/ArtSource/P08/Tripo/Spark/20260930-hq01/Spark_Tripo_hq01_review.blend\", \"source_geometry_modified\": false, \"geometry_signature_verified\": true, \"bounds_min\": [-0.1809127926826477, -0.4893478751182556, -0.2706982493400574], \"bounds_max\": [0.1807444542646408, 0.4895661175251007, 0.2705281376838684], \"dimensions\": [0.3616572618484497, 0.9789140224456787, 0.5412263870239258], \"long_axis\": 1, \"front_sign_provisional\": 1, \"cameras\": [{\"name\": \"TripoHQReview_quarter_positive\", \"location\": [3.2990942001342773, 1.7996609210968018, 1.0996410846710205], \"rotation_euler\": [1.286112904548645, 1.283204476010269e-08, 2.070143222808838], \"projection\": \"ORTHO\", \"ortho_scale\": 1.3324755430221558, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_quarter_negative\", \"location\": [3.2990942001342773, -1.7994427680969238, 1.0996410846710205], \"rotation_euler\": [1.2861130237579346, 1.977884300785604e-09, 1.0714497566223145], \"projection\": \"ORTHO\", \"ortho_scale\": 1.3324753046035767, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_side\", \"location\": [3.910686492919922, 0.00010912120342254639, 0.195453479886055], \"rotation_euler\": [1.5208380222320557, 8.863471379072507e-08, 1.5707963705062866], \"projection\": \"ORTHO\", \"ortho_scale\": 1.174696922302246, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_axis_positive\", \"location\": [-8.416920900344849e-05, 3.8963325023651123, 0.3895372748374939], \"rotation_euler\": [1.4711277484893799, 8.698891917902074e-08, 3.1415927410125732], \"projection\": \"ORTHO\", \"ortho_scale\": 1.144702672958374, \"sensor_fit\": \"HORIZONTAL\"}, {\"name\": \"TripoHQReview_axis_negative\", \"location\": [-8.416920900344849e-05, -3.8961141109466553, 0.3895372748374939], \"rotation_euler\": [1.4711275100708008, -0.0, 0.0], \"projection\": \"ORTHO\", \"ortho_scale\": 1.1447030305862427, \"sensor_fit\": \"HORIZONTAL\"}], \"engine\": \"BLENDER_EEVEE\", \"view_transform\": \"AgX\", \"look\": \"None\", \"exposure\": 0.0, \"resolution\": [1536, 1024], \"camera_calibration\": \"Uncalibrated full-object orthographic diagnostics matching previous API trial directions. Actual front sign must be visually confirmed before assigning front/rear names. No concept fidelity or physical scale accepted.\", \"physical_scale\": \"Not calibrated; canonical dimensions recorded only as future constraints\"}\n"
+    },
+    "isError": false
+  }
+}
